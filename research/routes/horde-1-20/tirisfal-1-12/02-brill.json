@@ -1,0 +1,3066 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "tirisfal-1-12",
+ "title": "Brill",
+ "steps": [
+  {
+   "id": "tirisfal-1-12:043",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run east to Brill. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.7,
+      "y": 52,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run east to Brill.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:044",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Renee"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.7,
+      "y": 52,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Renee"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=5688",
+     "label": "Wowhead Classic NPC 5688"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5688,
+     "name": "Innkeeper Renee",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 61.7,
+      "y": 52
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5688",
+       "label": "Wowhead Classic NPC 5688"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Cooking a basic meal gives Well Fed: +5% kill xp for 15 minutes, if you keep food on hand. The route does not require it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5688",
+       "label": "Wowhead Classic NPC 5688"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:045",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vital Intelligence to Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 383,
+     "label": "Vital Intelligence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=383",
+     "label": "Wowhead Classic quest 383"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:046",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Continue Your Training to Shari Stilwell"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.2,
+      "y": 52.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91209,
+     "label": "Continue Your Training"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:126",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "At level 8, accept A Second Home from Shari Stilwell and report to Breton Samuels at Bandarion Keep"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.22,
+      "y": 52.66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91282,
+     "label": "A Second Home"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 21.85,
+      "y": 45.23,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91282,
+     "label": "A Second Home"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 91282, npcs 246152 and 246349"
+    },
+    {
+     "url": "https://github.com/Ludovicus-Maior/WoW-Pro-Guides/blob/main/WoWPro_Leveling/Forever/Horde/01_12_Hendo_Tirisfal_Glades.lua",
+     "label": "WoW-Pro Forever Tirisfal (id and order only)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:048",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Rogue's Deal to Innkeeper Renee"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.7,
+      "y": 52,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8,
+     "label": "A Rogue's Deal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8",
+     "label": "Wowhead Classic quest 8"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Go back to Calvin Montague and defeat him for A Rogue's Deal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 38.23,
+      "y": 56.79,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "complete",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "turnin",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 590, npc 6784 spawn"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "tirisfal-1-12:049",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept At War With The Scarlet Crusade from Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 427,
+     "label": "At War With The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead Classic quest 427"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:051",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gordo's Task to Junior Apothecary Holland"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.4,
+      "y": 48.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5481,
+     "label": "Gordo's Task"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5481",
+     "label": "Wowhead Classic quest 5481"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:052",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Doom Weed from Junior Apothecary Holland"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.4,
+      "y": 48.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5482,
+     "label": "Doom Weed"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead Classic quest 5482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:053",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A New Plague from Apothecary Johaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.5,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 367,
+     "label": "A New Plague"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead Classic quest 367"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:054",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Putrid Task from Deathguard Dillinger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 404,
+     "label": "A Putrid Task"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead Classic quest 404"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:055",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Graverobbers from Magistrate Sevren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.3,
+      "y": 50.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 358,
+     "label": "Graverobbers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead Classic quest 358"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:058",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Discipline from Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99134,
+     "label": "Discipline"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Executor Zygand in Brill.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:059",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Patience from Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99141,
+     "label": "Patience"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Executor Zygand: collect reports from Deathguard Dillinger, Deathguard Kristof and Gordo. Do it while you pass them.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:060",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sticks and Bones from Deathguard Bartholomew"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.5,
+      "y": 51.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86784,
+     "label": "Sticks and Bones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ],
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest: 6 Dry Branches for Eleanor Shackleton.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:061",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Seeking Refuge from Bareth Dawnstone"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32,
+      "y": 46.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99144,
+     "label": "Seeking Refuge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever escort: Bareth Dawnstone is held at the Crusader's Outpost, right where you kill Scarlet Warriors. Turn in to Shari Stilwell in Brill.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:062",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Seeking Refuge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 99144,
+     "objective": 1,
+     "label": "Seeking Refuge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: escort despawn tip for Seeking Refuge"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: escort despawn tip for Seeking Refuge"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:057",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Fields of Grief from Deathguard Simmer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 40.9,
+      "y": 54.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 365,
+     "label": "Fields of Grief"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead Classic quest 365"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete At War With The Scarlet Crusade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 47.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 427,
+     "objective": 1,
+     "label": "At War With The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead Classic quest 427"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Scarlet Warriors are at Solliden Farmstead west of Brill. Fields of Grief pumpkins grow in the same area.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=427",
+       "label": "Wowhead Classic quest 427"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1535
+     ],
+     "name": "Scarlet Warrior",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 32.1,
+      "y": 47.7
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1535",
+       "label": "Wowhead Classic NPC 1535"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:064",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Fields of Grief"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 35.8,
+      "y": 50.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 365,
+     "objective": 1,
+     "label": "Fields of Grief"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead Classic quest 365"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 375,
+     "name": "Tirisfal Pumpkin",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 35.8,
+      "y": 50.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=375",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:065",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A New Plague"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 64.2,
+      "y": 58.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 367,
+     "objective": 1,
+     "label": "A New Plague"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead Classic quest 367"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Darkhound Blood drops from the darkhounds roaming around Brill. Duskbats in the same fields drop pelts for The Chill of Death.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=367",
+       "label": "Wowhead Classic quest 367"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1548
+     ],
+     "name": "Cursed Darkhound (Darkhound Blood)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 64.2,
+      "y": 58.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1548",
+       "label": "Wowhead Classic NPC 1548"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2858",
+       "label": "Wowhead Classic item 2858"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1547
+     ],
+     "name": "Decrepit Darkhound (Darkhound Blood)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 49.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1547",
+       "label": "Wowhead Classic NPC 1547"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2858",
+       "label": "Wowhead Classic item 2858"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:066",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Putrid Task"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 53.5,
+      "y": 53.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 404,
+     "objective": 1,
+     "label": "A Putrid Task"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead Classic quest 404"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1525
+     ],
+     "name": "Rotting Dead (Putrid Claw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 53.5,
+      "y": 53.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1525",
+       "label": "Wowhead Classic NPC 1525"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2855",
+       "label": "Wowhead Classic item 2855"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1526
+     ],
+     "name": "Ravaged Corpse (Putrid Claw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 52.7,
+      "y": 52.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1526",
+       "label": "Wowhead Classic NPC 1526"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2855",
+       "label": "Wowhead Classic item 2855"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:067",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Doom Weed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.1,
+      "y": 39.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5482,
+     "objective": 1,
+     "label": "Doom Weed"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead Classic quest 5482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 176753,
+     "name": "Doom Weed",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 57.1,
+      "y": 39.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=176753",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:087",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Graverobbers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 55.8,
+      "y": 42.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "objective": 1,
+     "label": "Graverobbers"
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "objective": 2,
+     "label": "Graverobbers"
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "objective": 3,
+     "label": "Graverobbers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead Classic quest 358"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rot Hide gnolls in the graveyard north of Brill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=358",
+       "label": "Wowhead Classic quest 358"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1941
+     ],
+     "name": "Rot Hide Graverobber",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 55.8,
+      "y": 42.5
+     },
+     "radius": 3.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1941",
+       "label": "Wowhead Classic NPC 1941"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1675
+     ],
+     "name": "Rot Hide Mongrel",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 33.7
+     },
+     "radius": 2.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1675",
+       "label": "Wowhead Classic NPC 1675"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1941
+     ],
+     "name": "Rot Hide Graverobber (Embalming Ichor)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 55.8,
+      "y": 42.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1941",
+       "label": "Wowhead Classic NPC 1941"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2834",
+       "label": "Wowhead Classic item 2834"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1675
+     ],
+     "name": "Rot Hide Mongrel (Embalming Ichor)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 33.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1675",
+       "label": "Wowhead Classic NPC 1675"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2834",
+       "label": "Wowhead Classic item 2834"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:068",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Sticks and Bones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 56.2,
+      "y": 53.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 86784,
+     "objective": 1,
+     "label": "Sticks and Bones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ],
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 671154,
+     "name": "Dry Branch",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 56.2,
+      "y": 53.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=671154",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:069",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Patience"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "objective": 1,
+     "label": "Patience"
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "objective": 2,
+     "label": "Patience"
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "objective": 3,
+     "label": "Patience"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1496
+     ],
+     "name": "Deathguard Dillinger (Dillinger's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.2,
+      "y": 51.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1496",
+       "label": "Wowhead Classic NPC 1496"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251001
+     ],
+     "name": "Deathguard Kristof (Kristof's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 65.2,
+      "y": 60.2
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251001",
+       "label": "Wowhead Classic NPC 251001"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10666
+     ],
+     "name": "Gordo (Gordo's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 43.1,
+      "y": 54.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10666",
+       "label": "Wowhead Classic NPC 10666"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:070",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Discipline"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 99134,
+     "objective": 1,
+     "label": "Discipline"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "tirisfal-1-12:072",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in At War With The Scarlet Crusade to Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 427,
+     "label": "At War With The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead Classic quest 427"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:073",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seeking Refuge to Shari Stilwell"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.2,
+      "y": 52.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99144,
+     "label": "Seeking Refuge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:074",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept At War With The Scarlet Crusade from Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=370",
+     "label": "Wowhead Classic quest 370"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:075",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Fields of Grief to Apothecary Johaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.5,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 365,
+     "label": "Fields of Grief"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead Classic quest 365"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:076",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Fields of Grief from Apothecary Johaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.5,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 407,
+     "label": "Fields of Grief"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=407",
+     "label": "Wowhead Classic quest 407"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:077",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Fields of Grief to Captured Scarlet Zealot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 62,
+      "y": 51.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 407,
+     "label": "Fields of Grief"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=407",
+     "label": "Wowhead Classic quest 407"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:078",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A New Plague to Apothecary Johaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.5,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 367,
+     "label": "A New Plague"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead Classic quest 367"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:079",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A New Plague from Apothecary Johaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.5,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 368,
+     "label": "A New Plague"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=368",
+     "label": "Wowhead Classic quest 368"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:080",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Putrid Task to Deathguard Dillinger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 404,
+     "label": "A Putrid Task"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead Classic quest 404"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:081",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Mills Overrun from Deathguard Dillinger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 426,
+     "label": "The Mills Overrun"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=426",
+     "label": "Wowhead Classic quest 426"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Doom Weed to Junior Apothecary Holland"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.4,
+      "y": 48.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5482,
+     "label": "Doom Weed"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead Classic quest 5482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:123",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tomb Weed from Junior Apothecary Holland, pick 5 Tomb Weed, and turn it in"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.44,
+      "y": 48.85,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99142,
+     "label": "Tomb Weed"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 75.8,
+      "y": 61.1,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99142,
+     "label": "Tomb Weed"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.44,
+      "y": 48.85,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99142,
+     "label": "Tomb Weed"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 99142, object 694732, npc 10665"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "tirisfal-1-12:084",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sticks and Bones to Eleanor Shackleton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.3,
+      "y": 55.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86784,
+     "label": "Sticks and Bones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Undead"
+      }
+     ],
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand in to Eleanor Shackleton.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:085",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Patience to Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99141,
+     "label": "Patience"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "tirisfal-1-12:086",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Discipline to Executor Zygand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 51.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99134,
+     "label": "Discipline"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "tirisfal-1-12:088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Graverobbers to Magistrate Sevren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.3,
+      "y": 50.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 358,
+     "label": "Graverobbers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead Classic quest 358"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:089",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Prodigal Lich from Magistrate Sevren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.3,
+      "y": 50.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 405,
+     "label": "The Prodigal Lich"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=405",
+     "label": "Wowhead Classic quest 405"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:090",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Forsaken Duties from Magistrate Sevren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.3,
+      "y": 50.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 359,
+     "label": "Forsaken Duties"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=359",
+     "label": "Wowhead Classic quest 359"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:091",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wanted: Maggot Eye from Wanted!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.7,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 398,
+     "label": "Wanted: Maggot Eye"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=398",
+     "label": "Wowhead Classic quest 398"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:092",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Haunted Mills from Coleman Farthing"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.7,
+      "y": 52.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 362,
+     "label": "The Haunted Mills"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=362",
+     "label": "Wowhead Classic quest 362"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

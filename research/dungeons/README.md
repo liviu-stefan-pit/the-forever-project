@@ -30,7 +30,7 @@ Quest/NPC/object/item ids, levels, prerequisites, rewards and XP are read progra
 
 ### New Forever dungeons (all `verified: false`)
 
-The nine new dungeons have stable id slugs (used as `tags.dungeonId` in steps-v2.json): `ruins-of-lordaeron`, `city-of-dalaran`, `excavation-site-wetlands`, `the-drowned-city`, `kroldok-stronghold`, `alcaz-prison`, `blackmaw-hold`, `shapers-terrace`, `hall-of-thanes`.
+The nine new dungeons have stable id slugs (used as `tags.dungeonId` in the dungeons pack): `ruins-of-lordaeron`, `city-of-dalaran`, `excavation-site-wetlands`, `the-drowned-city`, `kroldok-stronghold`, `alcaz-prison`, `blackmaw-hold`, `shapers-terrace`, `hall-of-thanes`.
 - 49 Horde quests across the nine dungeons, all with imported QuestieDB v1.1.3 ids; 47 have `foreverConfidence` from that import.
 - Level ranges and locations are official (Blizzard). Quest ids, giver and turn-in NPC ids, and Forever-frame coordinates are taken from `content/questie-db` when the name plus level, giver and zone or dungeon agree.
 - Every Forever quest stays `verified: false` until it is checked in game. Quests 79953 and 81951 are never used.

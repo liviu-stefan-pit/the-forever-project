@@ -1,0 +1,4477 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Blackrock Depths: pick-ups and the run",
+ "steps": [
+  {
+   "id": "dungeons:blackrock-depths:accept:3443",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3443",
+     "label": "Wowhead Classic: Forging the Shaft"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Forging the Shaft from Kalaran Windblade in Searing Gorge (level 40+, quest level 48)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3443,
+     "label": "Forging the Shaft"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3443",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3443",
+     "label": "Wowhead Classic: Forging the Shaft"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Forging the Shaft to Kalaran Windblade (Searing Gorge)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3443,
+     "label": "Forging the Shaft"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3452",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3452",
+     "label": "Wowhead Classic: The Flame's Casing"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Flame's Casing from Kalaran Windblade in Searing Gorge (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3452,
+     "label": "The Flame's Casing"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3452",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3452",
+     "label": "Wowhead Classic: The Flame's Casing"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Flame's Casing to Kalaran Windblade (Searing Gorge)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3452,
+     "label": "The Flame's Casing"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3453",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3453",
+     "label": "Wowhead Classic: The Torch of Retribution"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Torch of Retribution from Kalaran Windblade in Searing Gorge (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3453,
+     "label": "The Torch of Retribution"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3453",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3453",
+     "label": "Wowhead Classic: The Torch of Retribution"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Torch of Retribution to Kalaran Windblade (Searing Gorge)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3453,
+     "label": "The Torch of Retribution"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3454",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3454",
+     "label": "Wowhead Classic: The Torch of Retribution"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Torch of Retribution from Kalaran Windblade in Searing Gorge (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3454,
+     "label": "The Torch of Retribution"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3454",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3454",
+     "label": "Wowhead Classic: The Torch of Retribution"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Torch of Retribution to Torch of Retribution (Searing Gorge). Reward choices include Torch of Retribution"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39.1,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3454,
+     "label": "The Torch of Retribution"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 149047,
+     "name": "Torch of Retribution",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39.1
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=149047",
+       "label": "Wowhead Classic: Torch of Retribution"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3462",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3462",
+     "label": "Wowhead Classic: Squire Maltrake"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Squire Maltrake from Kalaran Windblade in Searing Gorge (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3462,
+     "label": "Squire Maltrake"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8479,
+     "name": "Kalaran Windblade",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.1,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8479",
+       "label": "Wowhead Classic: Kalaran Windblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3462",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3462",
+     "label": "Wowhead Classic: Squire Maltrake"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Squire Maltrake to Squire Maltrake (Searing Gorge)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.2,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3462,
+     "label": "Squire Maltrake"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8509,
+     "name": "Squire Maltrake",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.2,
+      "y": 39
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8509",
+       "label": "Wowhead Classic: Squire Maltrake"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3463",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3463",
+     "label": "Wowhead Classic: Set Them Ablaze!"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Set Them Ablaze! from Squire Maltrake in Searing Gorge (level 40+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.2,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3463,
+     "label": "Set Them Ablaze!"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8509,
+     "name": "Squire Maltrake",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.2,
+      "y": 39
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8509",
+       "label": "Wowhead Classic: Squire Maltrake"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3463",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3463",
+     "label": "Wowhead Classic: Set Them Ablaze!"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Set Them Ablaze! to Squire Maltrake (Searing Gorge). Reward choices include Dragonflight Leggings, Drakefire Headguard, Axe of the Ebon Drake"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.2,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3463,
+     "label": "Set Them Ablaze!"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8509,
+     "name": "Squire Maltrake",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 39.2,
+      "y": 39
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8509",
+       "label": "Wowhead Classic: Squire Maltrake"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3481",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3481",
+     "label": "Wowhead Classic: Trinkets..."
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Trinkets... from Hoard of the Black Dragonflight in Searing Gorge (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.9,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3481,
+     "label": "Trinkets..."
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 149502,
+     "name": "Hoard of the Black Dragonflight",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 38.9,
+      "y": 39
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=149502",
+       "label": "Wowhead Classic: Hoard of the Black Dragonflight"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3481",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3481",
+     "label": "Wowhead Classic: Trinkets..."
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trinkets... to Hoard of the Black Dragonflight (Searing Gorge). Reward choices include Hoard of the Black Dragonflight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.9,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3481,
+     "label": "Trinkets..."
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 149502,
+     "name": "Hoard of the Black Dragonflight",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 38.9,
+      "y": 39
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=149502",
+       "label": "Wowhead Classic: Hoard of the Black Dragonflight"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3906",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3906",
+     "label": "Wowhead Classic: Disharmony of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Disharmony of Flame from Thunderheart in Badlands (level 48+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.3,
+      "y": 48.3,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3906,
+     "label": "Disharmony of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9084,
+     "name": "Thunderheart",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.3,
+      "y": 48.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9084",
+       "label": "Wowhead Classic: Thunderheart"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3906",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3906",
+     "label": "Wowhead Classic: Disharmony of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Disharmony of Flame to Thunderheart (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.3,
+      "y": 48.3,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3906,
+     "label": "Disharmony of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9084,
+     "name": "Thunderheart",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.3,
+      "y": 48.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9084",
+       "label": "Wowhead Classic: Thunderheart"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4022",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4022",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Taste of Flame from Cyrus Therepentous in Burning Steppes (level 52+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4022,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4022",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4022",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Taste of Flame to Cyrus Therepentous (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4022,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4023",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4023",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Taste of Flame from Cyrus Therepentous in Burning Steppes (level 52+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4023,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4023",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4023",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Taste of Flame to Cyrus Therepentous (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4023,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4061",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4061",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Rise of the Machines from Hierophant Theodora Mulvadania in Badlands (level 52+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4061,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9079,
+     "name": "Hierophant Theodora Mulvadania",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3,
+      "y": 47.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9079",
+       "label": "Wowhead Classic: Hierophant Theodora Mulvadania"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4061",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4061",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Rise of the Machines to Hierophant Theodora Mulvadania (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4061,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9079,
+     "name": "Hierophant Theodora Mulvadania",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9079",
+       "label": "Wowhead Classic: Hierophant Theodora Mulvadania"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4062",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4062",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Rise of the Machines from Hierophant Theodora Mulvadania in Badlands (level 52+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4062,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9079,
+     "name": "Hierophant Theodora Mulvadania",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3,
+      "y": 47.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9079",
+       "label": "Wowhead Classic: Hierophant Theodora Mulvadania"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4062",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4062",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Rise of the Machines to Lotwil Veriatus (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 25.9,
+      "y": 44.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4062,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2921,
+     "name": "Lotwil Veriatus",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 25.9,
+      "y": 44.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2921",
+       "label": "Wowhead Classic: Lotwil Veriatus"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:7562",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7562",
+     "label": "Wowhead Classic: Mor'zul Bloodbringer"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Mor'zul Bloodbringer from Kurgul in Orgrimmar (level 60+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 47.5,
+      "y": 46.7,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7562,
+     "label": "Mor'zul Bloodbringer"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5815,
+     "name": "Kurgul",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 47.5,
+      "y": 46.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5815",
+       "label": "Wowhead Classic: Kurgul"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warlock) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:7562",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7562",
+     "label": "Wowhead Classic: Mor'zul Bloodbringer"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mor'zul Bloodbringer to Mor'zul Bloodbringer (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 12.7,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7562,
+     "label": "Mor'zul Bloodbringer"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14436,
+     "name": "Mor'zul Bloodbringer",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 12.7,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14436",
+       "label": "Wowhead Classic: Mor'zul Bloodbringer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:7563",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7563",
+     "label": "Wowhead Classic: Rage of Blood"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rage of Blood from Mor'zul Bloodbringer in Burning Steppes (level 60+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 12.7,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7563,
+     "label": "Rage of Blood"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14436,
+     "name": "Mor'zul Bloodbringer",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 12.7,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14436",
+       "label": "Wowhead Classic: Mor'zul Bloodbringer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:7563",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7563",
+     "label": "Wowhead Classic: Rage of Blood"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rage of Blood to Mor'zul Bloodbringer (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 12.7,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7563,
+     "label": "Rage of Blood"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14436,
+     "name": "Mor'zul Bloodbringer",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 12.7,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14436",
+       "label": "Wowhead Classic: Mor'zul Bloodbringer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:7564",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7564",
+     "label": "Wowhead Classic: Wildeyes"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wildeyes from Mor'zul Bloodbringer in Burning Steppes (level 60+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 12.7,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7564,
+     "label": "Wildeyes"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14436,
+     "name": "Mor'zul Bloodbringer",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 12.7,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14436",
+       "label": "Wowhead Classic: Mor'zul Bloodbringer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:7564",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7564",
+     "label": "Wowhead Classic: Wildeyes"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wildeyes to Gorzeeki Wildeyes (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 12.4,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7564,
+     "label": "Wildeyes"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14437,
+     "name": "Gorzeeki Wildeyes",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 12.4,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14437",
+       "label": "Wowhead Classic: Gorzeeki Wildeyes"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3801",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3801",
+     "label": "Wowhead Classic: Dark Iron Legacy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dark Iron Legacy (level 48+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 28.96,
+      "y": 28.93,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3801,
+     "label": "Dark Iron Legacy"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (510 base at level 52); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3981",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3981",
+     "label": "Wowhead Classic: Commander Gor'shak"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Commander Gor'shak from Galamav the Marksman in Badlands (level 48+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 6,
+      "y": 47.7,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3981,
+     "label": "Commander Gor'shak"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9081,
+     "name": "Galamav the Marksman",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 6,
+      "y": 47.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9081",
+       "label": "Wowhead Classic: Galamav the Marksman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5100 XP base, high for level 52.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4081",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4081",
+     "label": "Wowhead Classic: KILL ON SIGHT: Dark Iron Dwarves"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept KILL ON SIGHT: Dark Iron Dwarves from WANTED in Badlands (level 48+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.7,
+      "y": 47.4,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4081,
+     "label": "KILL ON SIGHT: Dark Iron Dwarves"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 164867,
+     "name": "WANTED",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.7,
+      "y": 47.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=164867",
+       "label": "Wowhead Classic: WANTED"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5100 XP base, high for level 52.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4136",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4136",
+     "label": "Wowhead Classic: Ribbly Screwspigot"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ribbly Screwspigot from Yuka Screwspigot in Burning Steppes (level 48+, quest level 53)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 66.1,
+      "y": 21.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4136,
+     "label": "Ribbly Screwspigot"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9544,
+     "name": "Yuka Screwspigot",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 66.1,
+      "y": 21.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9544",
+       "label": "Wowhead Classic: Yuka Screwspigot"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (2650 base at level 53); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4324",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4324",
+     "label": "Wowhead Classic: Yuka Screwspigot"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Yuka Screwspigot from Yorba Screwspigot in Tanaris (level 48+, quest level 53)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 24,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4324,
+     "label": "Yuka Screwspigot"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9706,
+     "name": "Yorba Screwspigot",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 24
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9706",
+       "label": "Wowhead Classic: Yorba Screwspigot"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (2650 base at level 53); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4201",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4201",
+     "label": "Wowhead Classic: The Love Potion"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Love Potion from Mistress Nagmara in Blackrock Depths (level 50+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4201,
+     "label": "The Love Potion"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:7201",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7201",
+     "label": "Wowhead Classic: The Last Element"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Last Element from Shadowmage Vivian Lagrave in Badlands (level 48+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7201,
+     "label": "The Last Element"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5450 XP base, high for level 54.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4083",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4083",
+     "label": "Wowhead Classic: The Spectral Chalice"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Spectral Chalice from Spectral Chalice in Blackrock Depths (level 40+, quest level 55)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4083,
+     "label": "The Spectral Chalice"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4123",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4123",
+     "label": "Wowhead Classic: The Heart of the Mountain"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Heart of the Mountain from Maxwort Uberglint in Burning Steppes (level 50+, quest level 55)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 23.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4123,
+     "label": "The Heart of the Mountain"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9536,
+     "name": "Maxwort Uberglint",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 23.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9536",
+       "label": "Wowhead Classic: Maxwort Uberglint"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4133",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4133",
+     "label": "Wowhead Classic: Vivian Lagrave"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vivian Lagrave from Apothecary Zinge in Undercity (level 50+, quest level 55)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 50.1,
+      "y": 68,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4133,
+     "label": "Vivian Lagrave"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5204,
+     "name": "Apothecary Zinge",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 50.1,
+      "y": 68
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5204",
+       "label": "Wowhead Classic: Apothecary Zinge"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (560 base at level 55); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4134",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4134",
+     "label": "Wowhead Classic: Lost Thunderbrew Recipe"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Lost Thunderbrew Recipe from Shadowmage Vivian Lagrave in Badlands (level 50+, quest level 55)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4134,
+     "label": "Lost Thunderbrew Recipe"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3907",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3907",
+     "label": "Wowhead Classic: Disharmony of Fire"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Disharmony of Fire from Thunderheart in Badlands (level 48+, quest level 56)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.3,
+      "y": 48.3,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3907,
+     "label": "Disharmony of Fire"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9084,
+     "name": "Thunderheart",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.3,
+      "y": 48.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9084",
+       "label": "Wowhead Classic: Thunderheart"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 7300 XP base, high for level 56.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4024",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4024",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Taste of Flame from Cyrus Therepentous in Burning Steppes (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4024,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4063",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4063",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Rise of the Machines from Lotwil Veriatus in Badlands (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 25.9,
+      "y": 44.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4063,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2921,
+     "name": "Lotwil Veriatus",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 25.9,
+      "y": 44.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2921",
+       "label": "Wowhead Classic: Lotwil Veriatus"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6200 XP base, high for level 58.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:9131",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=9131",
+     "label": "Wowhead Classic: Binding the Dreadnaught"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Binding the Dreadnaught from Korfax, Champion of the Light in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 72,
+      "y": 48.5,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 9131,
+     "label": "Binding the Dreadnaught"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 16112,
+     "name": "Korfax, Champion of the Light",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 72,
+      "y": 48.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=16112",
+       "label": "Wowhead Classic: Korfax, Champion of the Light"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:run",
+   "section": "Blackrock Depths",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Blackrock Depths (levels 52-60) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4081,
+     "objective": 1,
+     "label": "KILL ON SIGHT: Dark Iron Dwarves: Anvilrage Guardsman"
+    },
+    {
+     "type": "complete",
+     "questId": 4081,
+     "objective": 2,
+     "label": "KILL ON SIGHT: Dark Iron Dwarves: Anvilrage Warden"
+    },
+    {
+     "type": "complete",
+     "questId": 4081,
+     "objective": 3,
+     "label": "KILL ON SIGHT: Dark Iron Dwarves: Anvilrage Footman"
+    },
+    {
+     "type": "collect",
+     "itemId": 11313,
+     "count": 1,
+     "questId": 4136,
+     "objective": 1,
+     "label": "Ribbly Screwspigot: Ribbly's Head"
+    },
+    {
+     "type": "collect",
+     "itemId": 8846,
+     "count": 1,
+     "questId": 4201,
+     "objective": 1,
+     "label": "The Love Potion: Gromsblood"
+    },
+    {
+     "type": "collect",
+     "itemId": 11405,
+     "count": 1,
+     "questId": 4201,
+     "objective": 2,
+     "label": "The Love Potion: Giant Silver Vein"
+    },
+    {
+     "type": "collect",
+     "itemId": 11413,
+     "count": 1,
+     "questId": 4201,
+     "objective": 3,
+     "label": "The Love Potion: Nagmara's Filled Vial"
+    },
+    {
+     "type": "collect",
+     "itemId": 11129,
+     "count": 1,
+     "questId": 7201,
+     "objective": 1,
+     "label": "The Last Element: Essence of the Elements"
+    },
+    {
+     "type": "collect",
+     "itemId": 7910,
+     "count": 1,
+     "questId": 4083,
+     "objective": 1,
+     "label": "The Spectral Chalice: Star Ruby"
+    },
+    {
+     "type": "collect",
+     "itemId": 3577,
+     "count": 1,
+     "questId": 4083,
+     "objective": 2,
+     "label": "The Spectral Chalice: Gold Bar"
+    },
+    {
+     "type": "collect",
+     "itemId": 6037,
+     "count": 1,
+     "questId": 4083,
+     "objective": 3,
+     "label": "The Spectral Chalice: Truesilver Bar"
+    },
+    {
+     "type": "collect",
+     "itemId": 11309,
+     "count": 1,
+     "questId": 4123,
+     "objective": 1,
+     "label": "The Heart of the Mountain: The Heart of the Mountain"
+    },
+    {
+     "type": "collect",
+     "itemId": 11312,
+     "count": 1,
+     "questId": 4134,
+     "objective": 1,
+     "label": "Lost Thunderbrew Recipe: Lost Thunderbrew Recipe"
+    },
+    {
+     "type": "complete",
+     "questId": 3907,
+     "objective": 1,
+     "label": "Disharmony of Fire: Lord Incendius"
+    },
+    {
+     "type": "collect",
+     "itemId": 11126,
+     "count": 1,
+     "questId": 3907,
+     "objective": 2,
+     "label": "Disharmony of Fire: Tablet of Kurniya"
+    },
+    {
+     "type": "collect",
+     "itemId": 11230,
+     "count": 1,
+     "questId": 4024,
+     "objective": 1,
+     "label": "A Taste of Flame: Encased Fiery Essence"
+    },
+    {
+     "type": "collect",
+     "itemId": 11268,
+     "count": 1,
+     "questId": 4063,
+     "objective": 1,
+     "label": "The Rise of the Machines: Head of Argelmach"
+    },
+    {
+     "type": "collect",
+     "itemId": 11269,
+     "count": 1,
+     "questId": 4063,
+     "objective": 2,
+     "label": "The Rise of the Machines: Intact Elemental Core"
+    },
+    {
+     "type": "collect",
+     "itemId": 22528,
+     "count": 1,
+     "questId": 9131,
+     "objective": 1,
+     "label": "Binding the Dreadnaught: Dark Iron Scraps"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:blackrock-depths:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "BRD is huge: decide the route (prison, Ring of Law, Lyceum, Emperor) before you enter and avoid patrolling golems.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1584",
+       "label": "Wowhead Classic: Blackrock Depths"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Fire resistance helps for Lord Incendius and the Lyceum; drink during the Ring of Law arena reset.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1584",
+       "label": "Wowhead Classic: Blackrock Depths"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Grab Commander Gor'shak and the Ring of Law early; the Kharan Mighthammer and Princess Moira chain is the big XP step.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1584",
+       "label": "Wowhead Classic: Blackrock Depths"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Blackrock Depths once. Do not reset for more dark iron.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Anvilrage Guardsman",
+     "npcId": 8891,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for KILL ON SIGHT: Dark Iron Dwarves; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=8891",
+         "label": "Wowhead Classic: Anvilrage Guardsman"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8891",
+       "label": "Wowhead Classic: Anvilrage Guardsman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Anvilrage Warden",
+     "npcId": 8890,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for KILL ON SIGHT: Dark Iron Dwarves; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=8890",
+         "label": "Wowhead Classic: Anvilrage Warden"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8890",
+       "label": "Wowhead Classic: Anvilrage Warden"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Anvilrage Footman",
+     "npcId": 8892,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for KILL ON SIGHT: Dark Iron Dwarves; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=8892",
+         "label": "Wowhead Classic: Anvilrage Footman"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8892",
+       "label": "Wowhead Classic: Anvilrage Footman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Lord Incendius",
+     "npcId": 9017,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Disharmony of Fire; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=9017",
+         "label": "Wowhead Classic: Lord Incendius"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9017",
+       "label": "Wowhead Classic: Lord Incendius"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=1584",
+     "label": "Wowhead Classic: Blackrock Depths level range"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

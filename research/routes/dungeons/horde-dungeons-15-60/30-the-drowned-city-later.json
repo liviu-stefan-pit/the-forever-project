@@ -1,0 +1,458 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "The Drowned City (later quests)",
+ "steps": [
+  {
+   "id": "dungeons:forever:the-drowned-city:accept:95775",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Drowned City `95775` from Kin'weelay (Grom'gol, Stranglethorn Vale): rub the tablets inside the Drowned City. Requires Locating the Lost City (95770)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 32.27,
+      "y": 27.71,
+      "zone": "Stranglethorn Vale",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95775,
+     "label": "The Drowned City"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:complete:95775",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete The Drowned City `95775`: use the hide and charcoal to rub the tablets inside the Drowned City."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 95775,
+     "objective": 1,
+     "label": "The Drowned City"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:turnin:95775",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Drowned City `95775` to Kin'weelay (Grom'gol, Stranglethorn Vale)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 32.27,
+      "y": 27.71,
+      "zone": "Stranglethorn Vale",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95775,
+     "label": "The Drowned City"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:accept:95776",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Only Good Brinescale... `95776` from Commander Aggro'gosh (Grom'gol): slay Var'Taka in the Drowned City. Requires 95770 and Enemies in the Water (95773)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 32.17,
+      "y": 28.9,
+      "zone": "Stranglethorn Vale",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95776,
+     "label": "The Only Good Brinescale..."
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:complete:95776",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete The Only Good Brinescale... `95776`: slay Var'Taka in the Drowned City."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 95776,
+     "objective": 1,
+     "label": "Var'Taka"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:turnin:95776",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Only Good Brinescale... `95776` to Commander Aggro'gosh (Grom'gol)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 32.17,
+      "y": 28.9,
+      "zone": "Stranglethorn Vale",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95776,
+     "label": "The Only Good Brinescale..."
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:accept:96078",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept A Tale Spun Around the Fire `96078` from Kin'weelay (Grom'gol) after The Drowned City. +2350 XP. Take the tablet etchings to Master Gadrin."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 32.27,
+      "y": 27.71,
+      "zone": "Stranglethorn Vale",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96078,
+     "label": "A Tale Spun Around the Fire"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:complete:96078",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete A Tale Spun Around the Fire `96078` by reaching Master Gadrin in Sen'jin Village."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.95,
+      "y": 74.72,
+      "zone": "Durotar",
+      "exact": false
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96078,
+     "objective": 1,
+     "label": "A Tale Spun Around the Fire"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:the-drowned-city:turnin:96078",
+   "section": "The Drowned City",
+   "tags": {
+    "dungeonId": "the-drowned-city"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in A Tale Spun Around the Fire `96078` to Master Gadrin in Sen'jin Village, Durotar (+2350 XP)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.95,
+      "y": 74.72,
+      "zone": "Durotar",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96078,
+     "label": "A Tale Spun Around the Fire"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "The Drowned City",
+    "levels": [
+     35,
+     40
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

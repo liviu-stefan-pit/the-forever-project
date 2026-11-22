@@ -22,7 +22,7 @@ nds=d['wowForever']['newDungeons']
 fq=[q for nd in nds for q in nd['quests']]
 n_id=sum(1 for q in fq if q.get('id'))
 n_conf=sum(1 for q in fq if q.get('foreverConfidence'))
-L+=[f"The nine new dungeons have stable id slugs (used as `tags.dungeonId` in steps-v2.json): "+", ".join(f"`{nd['id']}`" for nd in nds)+".",
+L+=[f"The nine new dungeons have stable id slugs (used as `tags.dungeonId` in the dungeons pack): "+", ".join(f"`{nd['id']}`" for nd in nds)+".",
     f"- {len(fq)} Horde quests across the nine dungeons, all with imported QuestieDB v1.1.3 ids; {n_conf} have `foreverConfidence` from that import.",
     "- Level ranges and locations are official (Blizzard). Quest ids, giver and turn-in NPC ids, and Forever-frame coordinates are taken from `content/questie-db` when the name plus level, giver and zone or dungeon agree.",
     "- Every Forever quest stays `verified: false` until it is checked in game. Quests 79953 and 81951 are never used.",

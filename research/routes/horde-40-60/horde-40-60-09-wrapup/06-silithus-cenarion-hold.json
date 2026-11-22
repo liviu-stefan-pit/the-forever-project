@@ -1,0 +1,1526 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-09-wrapup",
+ "title": "Silithus (Cenarion Hold)",
+ "steps": [
+  {
+   "id": "h4060:silithus:t8276",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Taking Back Silithus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.1,
+      "y": 38.3,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8276,
+     "label": "Taking Back Silithus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8276",
+     "label": "Wowhead Classic quest 8276 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:fp-cenarion-hold",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Cenarion Hold flight path from Runk Windtamer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "zone": "Silithus",
+      "x": 48.68,
+      "y": 36.67,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Cenarion Hold flight path",
+     "place": "Cenarion Hold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 15178,
+     "name": "Runk Windtamer",
+     "at": {
+      "mapId": 1451,
+      "zone": "Silithus",
+      "x": 48.68,
+      "y": 36.67
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8280",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Securing the Supply Lines"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.1,
+      "y": 38.3,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8280,
+     "label": "Securing the Supply Lines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8280",
+     "label": "Wowhead Classic quest 8280 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:c8280",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Securing the Supply Lines"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 54.1,
+      "y": 28.1,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 8280,
+     "objective": 1,
+     "label": "Dredge Striker"
+    },
+    {
+     "type": "mob",
+     "name": "Dredge Striker",
+     "npcIds": [
+      11740
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Dredge Striker (level 55-56) spawns are densest around 54.1, 28.1 (68 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      11740
+     ],
+     "name": "Dredge Striker",
+     "mapId": 1451,
+     "zone": "Silithus",
+     "center": {
+      "x": 54.1,
+      "y": 28.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8280",
+     "label": "Wowhead Classic quest 8280 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8277",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Deadly Desert Venom"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.6,
+      "y": 38.6,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8277,
+     "label": "Deadly Desert Venom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8277",
+     "label": "Wowhead Classic quest 8277 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:c8277",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Deadly Desert Venom"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 56.1,
+      "y": 30.2,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 20373,
+     "count": 1,
+     "questId": 8277,
+     "objective": 1,
+     "label": "Stonelash Scorpid Stinger"
+    },
+    {
+     "type": "collect",
+     "itemId": 20376,
+     "count": 1,
+     "questId": 8277,
+     "objective": 2,
+     "label": "Sand Skitterer Fang"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Stonelash Scorpid (level 54-55) spawns are densest around 56.1, 30.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Sand Skitterer (level 55-56) spawns are densest around 56.0, 27.0. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      11735
+     ],
+     "name": "Stonelash Scorpid",
+     "mapId": 1451,
+     "zone": "Silithus",
+     "center": {
+      "x": 56.1,
+      "y": 30.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      11738
+     ],
+     "name": "Sand Skitterer",
+     "mapId": 1451,
+     "zone": "Silithus",
+     "center": {
+      "x": 56,
+      "y": 27
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8277",
+     "label": "Wowhead Classic quest 8277 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8283",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Wanted - Deathclasp, Terror of the Sands"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.35,
+      "y": 38.27,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8283,
+     "label": "Wanted - Deathclasp, Terror of the Sands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8283",
+     "label": "Wowhead Classic quest 8283 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8332",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Dukes of the Council"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.96,
+      "y": 38.16,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8332,
+     "label": "Dukes of the Council"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8332",
+     "label": "Wowhead Classic quest 8332 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8341",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Lords of the Council"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.96,
+      "y": 38.16,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8341,
+     "label": "Lords of the Council"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8341",
+     "label": "Wowhead Classic quest 8341 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8332",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Dukes of the Council"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.96,
+      "y": 38.16,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8332,
+     "label": "Dukes of the Council"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8332",
+     "label": "Wowhead Classic quest 8332 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8341",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Lords of the Council"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.96,
+      "y": 38.16,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8341,
+     "label": "Lords of the Council"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8341",
+     "label": "Wowhead Classic quest 8341 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8349",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Bor Wildmane"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.96,
+      "y": 38.16,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8349,
+     "label": "Bor Wildmane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8349",
+     "label": "Wowhead Classic quest 8349 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8280",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Securing the Supply Lines"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.1,
+      "y": 38.3,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8280,
+     "label": "Securing the Supply Lines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8280",
+     "label": "Wowhead Classic quest 8280 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8277",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Deadly Desert Venom"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.6,
+      "y": 38.6,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8277,
+     "label": "Deadly Desert Venom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8277",
+     "label": "Wowhead Classic quest 8277 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stop Silithus after Securing the Supply Lines and Deadly Desert Venom. Do not take the crusher, tablet, encrypted-text, or Silithyst follow-ups.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 8277 next 8278; 8280 next 8281; 8284 8 fragments; 8318 10 texts"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:silithus:a8278",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Noggle's Last Hope"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.61,
+      "y": 38.63,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8278,
+     "label": "Noggle's Last Hope"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8278",
+     "label": "Wowhead Classic quest 8278 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8281",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stepping Up Security"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.15,
+      "y": 38.29,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8281,
+     "label": "Stepping Up Security"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8281",
+     "label": "Wowhead Classic quest 8281 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8278",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Noggle's Last Hope"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.61,
+      "y": 38.63,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8278,
+     "label": "Noggle's Last Hope"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8278",
+     "label": "Wowhead Classic quest 8278 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8281",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stepping Up Security"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.15,
+      "y": 38.29,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8281,
+     "label": "Stepping Up Security"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8281",
+     "label": "Wowhead Classic quest 8281 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8282",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Noggle's Lost Satchel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.63,
+      "y": 38.5,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8282,
+     "label": "Noggle's Lost Satchel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8282",
+     "label": "Wowhead Classic quest 8282 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8282",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Noggle's Lost Satchel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 51.63,
+      "y": 38.5,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8282,
+     "label": "Noggle's Lost Satchel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8282",
+     "label": "Wowhead Classic quest 8282 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8283",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Wanted - Deathclasp, Terror of the Sands"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 50.75,
+      "y": 33.65,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8283,
+     "label": "Wanted - Deathclasp, Terror of the Sands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8283",
+     "label": "Wowhead Classic quest 8283 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8286",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: What Tomorrow Brings"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 49.45,
+      "y": 36.45,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8286,
+     "label": "What Tomorrow Brings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8286",
+     "label": "Wowhead Classic quest 8286 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8286",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: What Tomorrow Brings"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 49.45,
+      "y": 36.45,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8286,
+     "label": "What Tomorrow Brings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8286",
+     "label": "Wowhead Classic quest 8286 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8284",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Twilight Mystery"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 49.67,
+      "y": 37.46,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8284,
+     "label": "The Twilight Mystery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8284",
+     "label": "Wowhead Classic quest 8284 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8318",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Secret Communication"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 48.57,
+      "y": 37.78,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8318,
+     "label": "Secret Communication"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8318",
+     "label": "Wowhead Classic quest 8318 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8320",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Twilight Geolords"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 48.62,
+      "y": 37.87,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8320,
+     "label": "Twilight Geolords"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8320",
+     "label": "Wowhead Classic quest 8320 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:a8361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Abyssal Contacts"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 48.57,
+      "y": 37.78,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8361,
+     "label": "Abyssal Contacts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8361",
+     "label": "Wowhead Classic quest 8361 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8318",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Secret Communication"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 48.57,
+      "y": 37.78,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8318,
+     "label": "Secret Communication"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8318",
+     "label": "Wowhead Classic quest 8318 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:silithus:t8320",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Twilight Geolords"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1451,
+      "x": 48.62,
+      "y": 37.87,
+      "zone": "Silithus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8320,
+     "label": "Twilight Geolords"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8320",
+     "label": "Wowhead Classic quest 8320 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

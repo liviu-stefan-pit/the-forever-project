@@ -59,7 +59,7 @@ def main() -> int:
         if NAME + "DB" not in raw:
             continue
         doc = json.loads(raw)
-        is_pack = isinstance(doc, dict) and doc.get("schema") == "project-forever/route" and isinstance(doc.get("steps"), list)
+        is_pack = isinstance(doc, dict) and doc.get("schema") in ("project-forever/route", "project-forever/route-segment") and isinstance(doc.get("steps"), list)
         is_hooks = p.relative_to(ROOT).as_posix() == "professions/profession_hooks.json"
         if not (is_pack or is_hooks):
             continue

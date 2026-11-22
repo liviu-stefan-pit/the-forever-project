@@ -1,0 +1,1668 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-03-tanaris-feralas",
+ "title": "Feralas (Camp Mojache)",
+ "steps": [
+  {
+   "id": "h4060:feralas:home-mojache",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Camp Mojache with Innkeeper Greul."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 74.8,
+      "y": 45.18,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Camp Mojache",
+     "place": "Camp Mojache"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7737,
+     "name": "Innkeeper Greul",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 74.8,
+      "y": 45.18
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:fp-mojache",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Camp Mojache flight path from Shyn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 75.45,
+      "y": 44.36,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Camp Mojache flight path",
+     "place": "Camp Mojache"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8020,
+     "name": "Shyn",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 75.45,
+      "y": 44.36
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:riverglades:t95033",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: On the Other Side"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.4,
+      "y": 43.4,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95033,
+     "label": "On the Other Side"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:feralas:a2862",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: War on the Woodpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2862,
+     "label": "War on the Woodpaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Camp Mojache's Woodpaw, Gordunni and Zukk'ash quests are clustered east of the camp; do them in one loop before the long ride west.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemId": 12203,
+     "itemName": "Red Wolf Meat",
+     "qty": 40,
+     "skillTarget": 215,
+     "npc": {
+      "id": 8145,
+      "name": "Sheendra Tallgrass",
+      "zone": "Feralas",
+      "x": 74.5,
+      "y": 42.7,
+      "mapId": 1444
+     },
+     "note": "Keep Red Wolf Meat from Longtooth Runner (Feralas, lvl 40-41) for Hot Wolf Ribs. Buy Recipe: Hot Wolf Ribs from Sheendra Tallgrass (Feralas 74.5, 42.7) for 50s. Recipe learnable at 175; every craft gives a point until 215 (about 40 crafts). Feralas/Hinterlands/Desolace wolves; Sheendra is in Camp Mojache.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=12203",
+       "label": "Wowhead Classic item"
+      },
+      {
+       "url": "https://wowfdb.com/zones/feralas/map/",
+       "label": "WoW Forever DB zone map (NPC positions)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=8145",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/sentinel/professions/research/professions",
+       "label": "Project Forever research: professions (Sentinel)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8020,
+     "name": "Shyn",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 75.5,
+      "y": 44.4
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2862",
+     "label": "Wowhead Classic quest 2862 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2975",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.8,
+      "y": 43.6,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2975,
+     "label": "The Ogres of Feralas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2975",
+     "label": "Wowhead Classic quest 2975 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2973",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A New Cloak's Sheen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.94,
+      "y": 42.74,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2973,
+     "label": "A New Cloak's Sheen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2973",
+     "label": "Wowhead Classic quest 2973 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2973",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A New Cloak's Sheen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.94,
+      "y": 42.74,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2973,
+     "label": "A New Cloak's Sheen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2973",
+     "label": "Wowhead Classic quest 2973 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2974",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Grim Discovery"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.94,
+      "y": 42.74,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2974,
+     "label": "A Grim Discovery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2974",
+     "label": "Wowhead Classic quest 2974 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2974",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Grim Discovery"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.94,
+      "y": 42.74,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2974,
+     "label": "A Grim Discovery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2974",
+     "label": "Wowhead Classic quest 2974 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a92878",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Lost for Words"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 44.02,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92878,
+     "label": "Lost for Words"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92878",
+     "label": "Wowhead Classic quest 92878 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t92878",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Lost for Words"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 44.02,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92878,
+     "label": "Lost for Words"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92878",
+     "label": "Wowhead Classic quest 92878 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2987",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Gordunni Cobalt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.7,
+      "y": 44.3,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2987,
+     "label": "Gordunni Cobalt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2987",
+     "label": "Wowhead Classic quest 2987 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2822",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Mark of Quality"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.43,
+      "y": 42.91,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2822,
+     "label": "The Mark of Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2822",
+     "label": "Wowhead Classic quest 2822 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2822",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Mark of Quality"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.43,
+      "y": 42.91,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2822,
+     "label": "The Mark of Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2822",
+     "label": "Wowhead Classic quest 2822 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a7734",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Improved Quality"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.43,
+      "y": 42.91,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7734,
+     "label": "Improved Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7734",
+     "label": "Wowhead Classic quest 7734 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t7734",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Improved Quality"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.43,
+      "y": 42.91,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7734,
+     "label": "Improved Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7734",
+     "label": "Wowhead Classic quest 7734 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a3062",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Dark Heart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3062,
+     "label": "Dark Heart"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3062",
+     "label": "Wowhead Classic quest 3062 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a4120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Strength of Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4120,
+     "label": "The Strength of Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4120",
+     "label": "Wowhead Classic quest 4120 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a3063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Vengeance on the Northspring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3063,
+     "label": "Vengeance on the Northspring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3063",
+     "label": "Wowhead Classic quest 3063 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t3062",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Dark Heart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3062,
+     "label": "Dark Heart"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3062",
+     "label": "Wowhead Classic quest 3062 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t4120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Strength of Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4120,
+     "label": "The Strength of Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4120",
+     "label": "Wowhead Classic quest 4120 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t3063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Vengeance on the Northspring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.18,
+      "y": 43.83,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3063,
+     "label": "Vengeance on the Northspring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3063",
+     "label": "Wowhead Classic quest 3063 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:c2862",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: War on the Woodpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 70.4,
+      "y": 51,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 9237,
+     "count": 1,
+     "questId": 2862,
+     "objective": 1,
+     "label": "Woodpaw Gnoll Mane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Woodpaw Mongrel (level 40-41) spawns are densest around 70.4, 51.0. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5249
+     ],
+     "name": "Woodpaw Mongrel",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 70.4,
+      "y": 51
+     },
+     "radius": 14.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5251
+     ],
+     "name": "Woodpaw Trapper",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 69.9,
+      "y": 51
+     },
+     "radius": 13.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5253
+     ],
+     "name": "Woodpaw Brute",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 70.5,
+      "y": 51.4
+     },
+     "radius": 12.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2862",
+     "label": "Wowhead Classic quest 2862 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2862",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: War on the Woodpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2862,
+     "label": "War on the Woodpaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2862",
+     "label": "Wowhead Classic quest 2862 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Alpha Strike"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2863,
+     "label": "Alpha Strike"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2863",
+     "label": "Wowhead Classic quest 2863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:c2863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Alpha Strike"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 71.4,
+      "y": 55.9,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2863,
+     "objective": 1,
+     "label": "Woodpaw Alpha"
+    },
+    {
+     "type": "mob",
+     "name": "Woodpaw Alpha",
+     "npcIds": [
+      5258
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Woodpaw Alpha (level 43-44) spawns are densest around 71.4, 55.9 (12 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5258
+     ],
+     "name": "Woodpaw Alpha",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 71.4,
+      "y": 55.9
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2863",
+     "label": "Wowhead Classic quest 2863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Alpha Strike"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2863,
+     "label": "Alpha Strike"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2863",
+     "label": "Wowhead Classic quest 2863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2902",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Woodpaw Investigation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2902,
+     "label": "Woodpaw Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2902",
+     "label": "Wowhead Classic quest 2902 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2902",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Woodpaw Investigation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 71.6,
+      "y": 55.9,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2902,
+     "label": "Woodpaw Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2902",
+     "label": "Wowhead Classic quest 2902 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2903",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Battle Plans"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 71.6,
+      "y": 55.9,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2903,
+     "label": "The Battle Plans"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2903",
+     "label": "Wowhead Classic quest 2903 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

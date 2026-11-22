@@ -1,0 +1,2479 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-02-riverglades-arathi",
+ "title": "Rog'mar, level 41 and up",
+ "steps": [
+  {
+   "id": "h4060:riverglades:travel-6f4795",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back at Rog'mar: the Riverglades quests of level 41 and up are open now."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "Back at Rog'mar: the Riverglades quests of level 41 and up are open now."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94672",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Encroaching Twilight"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Needs earlier quest(s) 94483, 94483 from the levels below 40 (covered by the 20-40 research).",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94672,
+     "label": "Encroaching Twilight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94680",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Twilight Missives"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Needs earlier quest(s) 94483, 94483 from the levels below 40 (covered by the 20-40 research).",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94680,
+     "label": "Twilight Missives"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95033",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: On the Other Side"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 58.1,
+      "y": 45.3,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95033,
+     "label": "On the Other Side"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94680",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Twilight Missives"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 48,
+      "y": 48.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 265745,
+     "count": 1,
+     "questId": 94680,
+     "objective": 1,
+     "label": "Twilight Missive"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Twilight Shadowmancer (level 39-40) spawns are densest around 48.0, 48.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      254560
+     ],
+     "name": "Twilight Shadowmancer",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48,
+      "y": 48.2
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94672",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Encroaching Twilight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 48.9,
+      "y": 49.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94672,
+     "objective": 1,
+     "label": "Twilight Raider"
+    },
+    {
+     "type": "complete",
+     "questId": 94672,
+     "objective": 2,
+     "label": "Twilight Shadowmancer"
+    },
+    {
+     "type": "complete",
+     "questId": 94672,
+     "objective": 3,
+     "label": "Twilight Neophyte"
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Raider",
+     "npcIds": [
+      256952
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Shadowmancer",
+     "npcIds": [
+      254560
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Neophyte",
+     "npcIds": [
+      256798
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Twilight Raider (level 39-40) spawns are densest around 48.9, 49.9 (290 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Twilight Shadowmancer (level 39-40) spawns are densest around 48.0, 48.2 (156 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256952
+     ],
+     "name": "Twilight Raider",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.9,
+      "y": 49.9
+     },
+     "radius": 7.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      254560
+     ],
+     "name": "Twilight Shadowmancer",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48,
+      "y": 48.2
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256798
+     ],
+     "name": "Twilight Neophyte",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.1,
+      "y": 49.2
+     },
+     "radius": 6.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94672",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Encroaching Twilight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94672,
+     "label": "Encroaching Twilight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94680",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Twilight Missives"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94680,
+     "label": "Twilight Missives"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94727",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Digging for Answers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94727,
+     "label": "Digging for Answers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95882",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: WANTED: Scoutmaster Vargas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.6,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95882,
+     "label": "WANTED: Scoutmaster Vargas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95992",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: WANTED: Ghostmaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95992,
+     "label": "WANTED: Ghostmaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96105",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: King of the Wild Plains"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Needs earlier quest(s) 96104, 96104 from the levels below 40 (covered by the 20-40 research).",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96105,
+     "label": "King of the Wild Plains"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c96105",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: King of the Wild Plains"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.9,
+      "y": 52.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 281052,
+     "count": 1,
+     "questId": 96105,
+     "objective": 1,
+     "label": "Ombassa's Hide"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Ombassa (level 41) spawns are densest around 59.9, 52.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "King of the Wild Plains",
+     "groupSize": 3,
+     "tips": [],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      263315
+     ],
+     "name": "Ombassa",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 59.9,
+      "y": 52.2
+     },
+     "radius": 4.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95992",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: WANTED: Ghostmaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 51.2,
+      "y": 56.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 271828,
+     "count": 1,
+     "questId": 95992,
+     "objective": 1,
+     "label": "Ghostmaw's Fang"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Ghostmaw (level 42) spawns are densest around 51.2, 56.9. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "WANTED: Ghostmaw",
+     "groupSize": 3,
+     "tips": [],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      263380
+     ],
+     "name": "Ghostmaw",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 51.2,
+      "y": 56.9
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95882",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: WANTED: Scoutmaster Vargas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 75.4,
+      "y": 34.3,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 268581,
+     "count": 1,
+     "questId": 95882,
+     "objective": 1,
+     "label": "Scoutmaster's Eye"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Scoutmaster Vargas (level 42) spawns are densest around 75.4, 34.3. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "WANTED: Scoutmaster Vargas",
+     "groupSize": 3,
+     "tips": [],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260211
+     ],
+     "name": "Scoutmaster Vargas",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 75.4,
+      "y": 34.3
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95882",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: WANTED: Scoutmaster Vargas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95882,
+     "label": "WANTED: Scoutmaster Vargas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96105",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: King of the Wild Plains"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96105,
+     "label": "King of the Wild Plains"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95992",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: WANTED: Ghostmaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 58.1,
+      "y": 45.3,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95992,
+     "label": "WANTED: Ghostmaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94727",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Digging for Answers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94727,
+     "label": "Digging for Answers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95417",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Purple Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95417,
+     "label": "The Purple Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95602",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Sickening Lights"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95602,
+     "label": "Sickening Lights"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95602",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Destroy 5 Twilight Ritual Circles in the Sunnyglade caves before turning Sickening Lights in to Clubtoe."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95602,
+     "label": "Sickening Lights"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 95602 pre 94727, objectivesText: 5 Twilight Ritual Circles; 95427 pre group 95601 and 95602"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95417",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Purple Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 49.2,
+      "y": 46.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95417,
+     "label": "The Purple Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95601",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Purple Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 49.2,
+      "y": 46.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95601,
+     "label": "The Purple Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95601",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Purple Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 48.5,
+      "y": 49,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95601,
+     "objective": 1,
+     "label": "Empowered Brute"
+    },
+    {
+     "type": "complete",
+     "questId": 95601,
+     "objective": 2,
+     "label": "Twilight Ritualist"
+    },
+    {
+     "type": "mob",
+     "name": "Empowered Brute",
+     "npcIds": [
+      261711
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Ritualist",
+     "npcIds": [
+      262169
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Empowered Brute (level 38-39) spawns are densest around 48.5, 49.0 (40 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Twilight Ritualist (level 39-41) spawns are densest around 48.6, 48.7 (46 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      261711
+     ],
+     "name": "Empowered Brute",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.5,
+      "y": 49
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      262169
+     ],
+     "name": "Twilight Ritualist",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.6,
+      "y": 48.7
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95601",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Purple Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95601,
+     "label": "The Purple Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95427",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Twilight No More!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95427,
+     "label": "Twilight No More!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95427",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Twilight No More!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 47.3,
+      "y": 50.5,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 265750,
+     "count": 1,
+     "questId": 95427,
+     "objective": 1,
+     "label": "Chogg's Head"
+    },
+    {
+     "type": "collect",
+     "itemId": 265751,
+     "count": 1,
+     "questId": 95427,
+     "objective": 2,
+     "label": "Zac's Head"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Chogg'Zac (level 41) spawns are densest around 47.3, 50.5. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Chogg'Zac (level 41) spawns are densest around 47.3, 50.5. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Twilight No More!",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Chogg'Zac's twilight camp is still a group fight. Pull one cultist at a time and save cooldowns for the named elite.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256899
+     ],
+     "name": "Chogg'Zac",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 47.3,
+      "y": 50.5
+     },
+     "radius": 2.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256899
+     ],
+     "name": "Chogg'Zac",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 47.3,
+      "y": 50.5
+     },
+     "radius": 2.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95427",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Twilight No More!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95427,
+     "label": "Twilight No More!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95418",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Spread the Word"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 50,
+      "y": 47,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95418,
+     "label": "Spread the Word"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95418",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Spread the Word"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95418,
+     "label": "Spread the Word"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95420",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Land of Giants"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.5,
+      "y": 44,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95420,
+     "label": "Land of Giants"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95420",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Land of Giants"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95420,
+     "label": "Land of Giants"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95424",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Might Makes Right"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95424,
+     "label": "Might Makes Right"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95425",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Unworthy Champion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95425,
+     "label": "Unworthy Champion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95425",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Unworthy Champion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 74.7,
+      "y": 26.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 269257,
+     "count": 1,
+     "questId": 95425,
+     "objective": 1,
+     "label": "Skullbasher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Klunk (level 42) spawns are densest around 74.7, 26.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260973
+     ],
+     "name": "Klunk",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 74.7,
+      "y": 26.2
+     },
+     "radius": 2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95424",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Might Makes Right"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 75.2,
+      "y": 29.3,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95424,
+     "objective": 1,
+     "label": "Twilight Mauler"
+    },
+    {
+     "type": "complete",
+     "questId": 95424,
+     "objective": 2,
+     "label": "Twilight Firecaller"
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Mauler",
+     "npcIds": [
+      260968
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Firecaller",
+     "npcIds": [
+      261497
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Twilight Mauler (level 41-42) spawns are densest around 75.2, 29.3 (105 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Twilight Firecaller (level 40-41) spawns are densest around 76.2, 28.3 (43 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260968
+     ],
+     "name": "Twilight Mauler",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 75.2,
+      "y": 29.3
+     },
+     "radius": 5.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      261497
+     ],
+     "name": "Twilight Firecaller",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 76.2,
+      "y": 28.3
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

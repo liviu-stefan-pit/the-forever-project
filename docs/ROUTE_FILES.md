@@ -1,0 +1,106 @@
+# Route files
+
+How route packs are laid out on disk and how to edit them. The step format itself is in
+[ROUTE_SCHEMA.md](ROUTE_SCHEMA.md).
+
+## Layout
+
+A pack (one guide page on the site, e.g. `durotar-1-12`) is a **folder** with one file per route segment.
+Packs are grouped by bracket: `research/routes/horde-1-20/`, `horde-20-40/`, `horde-40-60/`, and the dungeon quests
+in `research/routes/dungeons/`.
+
+```
+research/routes/horde-1-20/
+  durotar-1-12/
+    pack.json                      manifest: pack fields + segment order
+    01-valley-of-trials.json       steps for one hub or zone visit
+    02-senjin-village.json
+    03-razor-hill.json
+    …
+```
+
+`pack.json` holds everything a pack has except its steps, plus the ordered segment list:
+
+```json
+{
+ "schema": "project-forever/route-manifest",
+ "version": 2,
+ "id": "durotar-1-12",
+ "title": "Durotar 1-12 (Horde)",
+ "levels": [1, 12],
+ "next": "barrens-12-20",
+ "segments": ["01-valley-of-trials.json", "02-senjin-village.json", "…"]
+}
+```
+
+Each segment file holds its steps:
+
+```json
+{
+ "schema": "project-forever/route-segment",
+ "pack": "durotar-1-12",
+ "title": "Valley of Trials",
+ "steps": [ { "id": "durotar-1-12:001", "tags": {}, "text": […], "actions": […], "conditions": [] } ]
+}
+```
+
+The build (`web/scripts/routeSource.ts`) joins the segments in `segments` order into one pack. The result is
+identical to the old single-file pack, so the site, the validators and the audits see no difference.
+Single-file packs (`"schema": "project-forever/route"` with `steps`) still load, but every pack in the repo now
+uses a segment folder.
+
+## Segments
+
+- A segment is a **hub or zone visit**: Valley of Trials, Razor Hill, Ratchet, Crossroads second round. Not a
+  level. The level at a step depends on Balanced vs Speedrun and changes whenever XP or step order changes, so
+  level boundaries would keep moving; hubs don't.
+- Aim for about 15-60 steps per segment. Split a segment that grows past that, and merge one that shrinks.
+- File names are `NN-slug.json`. The number is only for sorting in a file listing; the order the build uses is
+  the `segments` list in `pack.json`.
+- To add, split, rename or reorder a segment, change the file(s) **and** the `segments` list. The build fails on a
+  segment file that is not listed, a listed file that is missing, or a segment whose `pack` is not the folder's id.
+
+## Editing steps
+
+- **Leave out `n`.** It is the step's position in the joined pack and is filled in when segments are joined. A
+  segment step that has `n` fails the build.
+- **Never renumber or rename an existing step id.** Players' progress (checked steps, current step) is saved by
+  step id, so changing an id resets it. The old numeric ids (`durotar-1-12:042`) are just names now: they don't
+  have to be in order, and a step keeps its id when it moves, even to another segment.
+- **New steps get a descriptive id**: `<pack>:<action>-<questId>` for quest steps (`barrens-12-20:accept-882`,
+  `barrens-12-20:turnin-882`), or `<pack>:<short-slug>` otherwise (`tirisfal-1-12:grind-sr-12`). Ids must be unique
+  in the pack.
+- **Moving a step** is cut and paste, within a file or between segment files. Nothing else needs to change.
+- Formatting: one-space indent, UTF-8 (no `\u` escapes), a trailing newline, the same as the files already have.
+  Python tools can use `research/tools/route_files.py` (`iter_step_files`, `load_pack`, `write_json`).
+
+## Checking a change
+
+From `web/`:
+
+```
+npm run data        # joins, validates and builds the site data; fails on a broken pack
+npm test            # includes the route checks that read the built data
+npm run audit:route # optional structure report
+```
+
+`python3 research/nova/tools/check_coords.py` checks the 1-20 coordinates against the quest database.
+
+## Status
+
+| Packs | Layout |
+|---|---|
+| Horde 1-20, 20-40, 40-60 (`research/routes/horde-*/`) | segment folders, edited directly |
+| Dungeon quests (`research/routes/dungeons/horde-dungeons-15-60/`) | segment folder, one file per dungeon (the four largest split at the run) |
+
+There are no generators or catalogs behind the packs any more. The old 1-20 Python spec and the 20-40
+catalog monolith were out of date (the packs had been edited by hand since they were last generated, so re-running
+them would have undone those edits). The 40-60 catalog still matched its packs and was retired with `split-pack.ts`
+so every bracket works the same way. The dungeons generator (`research/dungeons/tools/steps.py`) was out of date
+too and was removed; dungeon placement in the leveling route still comes from
+`research/dungeons/integration-plan.json`. Old docs and review reports that name `research/nova/v2/`, `research/horde-20-40/`,
+`research/horde-40-60/packs/`, `research/catalog/` or `research/dungeons/steps-v2.json` describe that earlier layout.
+
+`research/routes/horde-20-40/class-professions.json` and `horde-40-60/class-professions.json` keep the
+`classProfessions` / `tipsMatrix` blocks that every pack in those brackets used to repeat. The build does not read them:
+`research/professions/class_professions.json` and `tips_matrix.json` are the live copies.

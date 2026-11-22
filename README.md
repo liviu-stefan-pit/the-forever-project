@@ -88,7 +88,7 @@ hosted on Cloudflare Pages with root directory `web`, build command `npm run bui
 `predev` / `prebuild` hooks. It writes `web/public/data/` (git-ignored) from this repo's `research/` route
 packs and `content/questie-db/` only (see [docs/PROVENANCE.md](docs/PROVENANCE.md)). It:
 
-- finds every route-v2 pack under `research/` and validates it against `contracts/route-v2.schema.json`;
+- finds every route-v2 pack under `research/` (single files and segment folders) and validates it against `contracts/route-v2.schema.json`;
   a schema error or duplicate pack/step id fails the build;
 - strips low-confidence Forever quests (79953, 81951) with a warning, and marks steps that use
   Forever-only quests as unverified;
@@ -105,7 +105,8 @@ No environment variables are required. Optional:
 - `PF_PREREQ_CHECK=warn` or `off`: the prerequisite check fails the build by default (`fail`); `warn` lists
   findings in `manifest.json` warnings instead, `off` skips it.
 
-Route content follows [docs/ROUTE_SCHEMA.md](docs/ROUTE_SCHEMA.md).
+Route content follows [docs/ROUTE_SCHEMA.md](docs/ROUTE_SCHEMA.md); how packs are split into files and edited is in
+[docs/ROUTE_FILES.md](docs/ROUTE_FILES.md).
 
 ### Sync with the game
 

@@ -73,7 +73,8 @@ Nothing is merged without the maintainer's review.
 Route accuracy and clean sourcing matter more than speed. These rules come from [CREDITS.md](CREDITS.md):
 
 - **Cite every source.** Each fact must come from a source we can check. Route steps cite theirs in
-  `sources[]` (see [docs/ROUTE_SCHEMA.md](docs/ROUTE_SCHEMA.md)).
+  `sources[]` (see [docs/ROUTE_SCHEMA.md](docs/ROUTE_SCHEMA.md)). How route files are laid out, and why step ids
+  must never be renumbered, is in [docs/ROUTE_FILES.md](docs/ROUTE_FILES.md).
 - **New source, new CREDITS.md row,** in the same pull request, keeping the table's exact column order
   (`Name | URL | Licence | Used for | Files`). The in-app Credits page is generated from that table.
 - **Licences:** MIT, BSD, Apache-2.0, CC0 and CC BY are free to use with credit. GPL and CC BY-SA need care:

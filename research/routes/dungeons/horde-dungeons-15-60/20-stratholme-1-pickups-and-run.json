@@ -1,0 +1,2571 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Stratholme: pick-ups and the run",
+ "steps": [
+  {
+   "id": "dungeons:stratholme:accept:5742",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5742",
+     "label": "Wowhead Classic: Redemption"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Redemption from Tirion Fordring in Eastern Plaguelands (level 52+, quest level 56)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5742,
+     "label": "Redemption"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5742",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5742",
+     "label": "Wowhead Classic: Redemption"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Redemption to Tirion Fordring (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5742,
+     "label": "Redemption"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5781",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5781",
+     "label": "Wowhead Classic: Of Forgotten Memories"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Of Forgotten Memories from Tirion Fordring in Eastern Plaguelands (level 52+, quest level 57)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5781,
+     "label": "Of Forgotten Memories"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5781",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5781",
+     "label": "Wowhead Classic: Of Forgotten Memories"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Of Forgotten Memories to Tirion Fordring (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5781,
+     "label": "Of Forgotten Memories"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5845",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5845",
+     "label": "Wowhead Classic: Of Lost Honor"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Of Lost Honor from Tirion Fordring in Eastern Plaguelands (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5845,
+     "label": "Of Lost Honor"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5845",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5845",
+     "label": "Wowhead Classic: Of Lost Honor"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Of Lost Honor to Tirion Fordring (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5845,
+     "label": "Of Lost Honor"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5846",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5846",
+     "label": "Wowhead Classic: Of Love and Family"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Of Love and Family from Tirion Fordring in Eastern Plaguelands (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5846,
+     "label": "Of Love and Family"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1855,
+     "name": "Tirion Fordring",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 5.2,
+      "y": 35.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1855",
+       "label": "Wowhead Classic: Tirion Fordring"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5846",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5846",
+     "label": "Wowhead Classic: Of Love and Family"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Of Love and Family to Artist Renfray (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 65.8,
+      "y": 75.4,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5846,
+     "label": "Of Love and Family"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11936,
+     "name": "Artist Renfray",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 65.8,
+      "y": 75.4
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11936",
+       "label": "Wowhead Classic: Artist Renfray"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5281",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5281",
+     "label": "Wowhead Classic: The Restless Souls"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Restless Souls from Caretaker Alen in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 69.9,
+      "y": 53.7,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5281,
+     "label": "The Restless Souls"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11038,
+     "name": "Caretaker Alen",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 69.9,
+      "y": 53.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11038",
+       "label": "Wowhead Classic: Caretaker Alen"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5281",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5281",
+     "label": "Wowhead Classic: The Restless Souls"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Restless Souls to Egan (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 11.4,
+      "y": 26.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5281,
+     "label": "The Restless Souls"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11140,
+     "name": "Egan",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 11.4,
+      "y": 26.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11140",
+       "label": "Wowhead Classic: Egan"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5461",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5461",
+     "label": "Wowhead Classic: The Human, Ras Frostwhisper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Human, Ras Frostwhisper from Magistrate Marduke in Western Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.6,
+      "y": 74.1,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5461,
+     "label": "The Human, Ras Frostwhisper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11286,
+     "name": "Magistrate Marduke",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.6,
+      "y": 74.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11286",
+       "label": "Wowhead Classic: Magistrate Marduke"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5461",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5461",
+     "label": "Wowhead Classic: The Human, Ras Frostwhisper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Human, Ras Frostwhisper to Magistrate Marduke (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.6,
+      "y": 74.1,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5461,
+     "label": "The Human, Ras Frostwhisper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11286,
+     "name": "Magistrate Marduke",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.6,
+      "y": 74.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11286",
+       "label": "Wowhead Classic: Magistrate Marduke"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5462",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5462",
+     "label": "Wowhead Classic: The Dying, Ras Frostwhisper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Dying, Ras Frostwhisper from Magistrate Marduke in Western Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.6,
+      "y": 74.1,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5462,
+     "label": "The Dying, Ras Frostwhisper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11286,
+     "name": "Magistrate Marduke",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.6,
+      "y": 74.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11286",
+       "label": "Wowhead Classic: Magistrate Marduke"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:turnin:5462",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5462",
+     "label": "Wowhead Classic: The Dying, Ras Frostwhisper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Dying, Ras Frostwhisper to Leonid Barthalomew the Revered (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.9,
+      "y": 48.3,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5462,
+     "label": "The Dying, Ras Frostwhisper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11036,
+     "name": "Leonid Barthalomew the Revered",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.9,
+      "y": 48.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11036",
+       "label": "Wowhead Classic: Leonid Barthalomew the Revered"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5067",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5067",
+     "label": "Wowhead Classic: Leggings of Arcana"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Leggings of Arcana from Malyfous's Catalogue in Winterspring (level 57+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61,
+      "y": 38.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5067,
+     "label": "Leggings of Arcana"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 175927,
+     "name": "Malyfous's Catalogue",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61,
+      "y": 38.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=175927",
+       "label": "Wowhead Classic: Malyfous's Catalogue"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5063",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5063",
+     "label": "Wowhead Classic: Cap of the Scarlet Savant"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Cap of the Scarlet Savant from Malyfous's Catalogue in Winterspring (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61,
+      "y": 38.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5063,
+     "label": "Cap of the Scarlet Savant"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 175927,
+     "name": "Malyfous's Catalogue",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61,
+      "y": 38.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=175927",
+       "label": "Wowhead Classic: Malyfous's Catalogue"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5068",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5068",
+     "label": "Wowhead Classic: Breastplate of Bloodthirst"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Breastplate of Bloodthirst from Malyfous's Catalogue in Winterspring (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61,
+      "y": 38.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5068,
+     "label": "Breastplate of Bloodthirst"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 175927,
+     "name": "Malyfous's Catalogue",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61,
+      "y": 38.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=175927",
+       "label": "Wowhead Classic: Malyfous's Catalogue"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5122",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5122",
+     "label": "Wowhead Classic: The Medallion of Faith"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Medallion of Faith from Aurius in Stratholme (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 5122,
+     "label": "The Medallion of Faith"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5212",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5212",
+     "label": "Wowhead Classic: The Flesh Does Not Lie"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Flesh Does Not Lie from Betina Bigglezink in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5212,
+     "label": "The Flesh Does Not Lie"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5214",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5214",
+     "label": "Wowhead Classic: The Great Fras Siabi"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Great Fras Siabi from Smokey LaRue in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 70.9,
+      "y": 48.4,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5214,
+     "label": "The Great Fras Siabi"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11033,
+     "name": "Smokey LaRue",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 70.9,
+      "y": 48.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11033",
+       "label": "Wowhead Classic: Smokey LaRue"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5243",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5243",
+     "label": "Wowhead Classic: Houses of the Holy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Houses of the Holy from Leonid Barthalomew the Revered in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.9,
+      "y": 48.3,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5243,
+     "label": "Houses of the Holy"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11036,
+     "name": "Leonid Barthalomew the Revered",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.9,
+      "y": 48.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11036",
+       "label": "Wowhead Classic: Leonid Barthalomew the Revered"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5251",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5251",
+     "label": "Wowhead Classic: The Archivist"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Archivist from Duke Nicholas Zverenhoff in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.6,
+      "y": 50.1,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5251,
+     "label": "The Archivist"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11039,
+     "name": "Duke Nicholas Zverenhoff",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.6,
+      "y": 50.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11039",
+       "label": "Wowhead Classic: Duke Nicholas Zverenhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 8300 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5282",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5282",
+     "label": "Wowhead Classic: The Restless Souls"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Restless Souls from Egan in Eastern Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 11.4,
+      "y": 26.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5282,
+     "label": "The Restless Souls"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11140,
+     "name": "Egan",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 11.4,
+      "y": 26.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11140",
+       "label": "Wowhead Classic: Egan"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5463",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5463",
+     "label": "Wowhead Classic: Menethil's Gift"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Menethil's Gift from Leonid Barthalomew the Revered in Eastern Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.9,
+      "y": 48.3,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5463,
+     "label": "Menethil's Gift"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11036,
+     "name": "Leonid Barthalomew the Revered",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.9,
+      "y": 48.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11036",
+       "label": "Wowhead Classic: Leonid Barthalomew the Revered"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:accept:5848",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5848",
+     "label": "Wowhead Classic: Of Love and Family"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Stratholme",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Of Love and Family from Artist Renfray in Western Plaguelands (level 52+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 65.8,
+      "y": 75.4,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5848,
+     "label": "Of Love and Family"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11936,
+     "name": "Artist Renfray",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 65.8,
+      "y": 75.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11936",
+       "label": "Wowhead Classic: Artist Renfray"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:stratholme:run",
+   "section": "Stratholme",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Stratholme (levels 58-60) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 26.5,
+      "y": 10.4,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12731,
+     "count": 1,
+     "questId": 5067,
+     "objective": 1,
+     "label": "Leggings of Arcana: Pristine Hide of the Beast"
+    },
+    {
+     "type": "collect",
+     "itemId": 12735,
+     "count": 1,
+     "questId": 5067,
+     "objective": 2,
+     "label": "Leggings of Arcana: Frayed Abomination Stitching"
+    },
+    {
+     "type": "collect",
+     "itemId": 12360,
+     "count": 1,
+     "questId": 5067,
+     "objective": 3,
+     "label": "Leggings of Arcana: Arcanite Bar"
+    },
+    {
+     "type": "collect",
+     "itemId": 12736,
+     "count": 1,
+     "questId": 5067,
+     "objective": 4,
+     "label": "Leggings of Arcana: Frostwhisper's Embalming Fluid"
+    },
+    {
+     "type": "collect",
+     "itemId": 12731,
+     "count": 1,
+     "questId": 5063,
+     "objective": 1,
+     "label": "Cap of the Scarlet Savant: Pristine Hide of the Beast"
+    },
+    {
+     "type": "collect",
+     "itemId": 12735,
+     "count": 1,
+     "questId": 5063,
+     "objective": 2,
+     "label": "Cap of the Scarlet Savant: Frayed Abomination Stitching"
+    },
+    {
+     "type": "collect",
+     "itemId": 12363,
+     "count": 1,
+     "questId": 5063,
+     "objective": 3,
+     "label": "Cap of the Scarlet Savant: Arcane Crystal"
+    },
+    {
+     "type": "collect",
+     "itemId": 12734,
+     "count": 1,
+     "questId": 5063,
+     "objective": 4,
+     "label": "Cap of the Scarlet Savant: Enchanted Scarlet Thread"
+    },
+    {
+     "type": "collect",
+     "itemId": 12731,
+     "count": 1,
+     "questId": 5068,
+     "objective": 1,
+     "label": "Breastplate of Bloodthirst: Pristine Hide of the Beast"
+    },
+    {
+     "type": "collect",
+     "itemId": 12735,
+     "count": 1,
+     "questId": 5068,
+     "objective": 2,
+     "label": "Breastplate of Bloodthirst: Frayed Abomination Stitching"
+    },
+    {
+     "type": "collect",
+     "itemId": 12360,
+     "count": 1,
+     "questId": 5068,
+     "objective": 3,
+     "label": "Breastplate of Bloodthirst: Arcanite Bar"
+    },
+    {
+     "type": "collect",
+     "itemId": 12753,
+     "count": 1,
+     "questId": 5068,
+     "objective": 4,
+     "label": "Breastplate of Bloodthirst: Skin of Shadow"
+    },
+    {
+     "type": "collect",
+     "itemId": 12845,
+     "count": 1,
+     "questId": 5122,
+     "objective": 1,
+     "label": "The Medallion of Faith: Medallion of Faith"
+    },
+    {
+     "type": "collect",
+     "itemId": 13174,
+     "count": 1,
+     "questId": 5212,
+     "objective": 1,
+     "label": "The Flesh Does Not Lie: Plagued Flesh Sample"
+    },
+    {
+     "type": "collect",
+     "itemId": 13172,
+     "count": 1,
+     "questId": 5214,
+     "objective": 1,
+     "label": "The Great Fras Siabi: Siabi's Premium Tobacco"
+    },
+    {
+     "type": "collect",
+     "itemId": 13180,
+     "count": 1,
+     "questId": 5243,
+     "objective": 1,
+     "label": "Houses of the Holy: Stratholme Holy Water"
+    },
+    {
+     "type": "complete",
+     "questId": 5251,
+     "objective": 1,
+     "label": "The Archivist: Archivist Galford"
+    },
+    {
+     "type": "complete",
+     "questId": 5282,
+     "objective": 1,
+     "label": "The Restless Souls: Restless Soul"
+    },
+    {
+     "type": "collect",
+     "itemId": 14679,
+     "count": 1,
+     "questId": 5848,
+     "objective": 1,
+     "label": "Of Love and Family: Of Love and Family"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Stratholme",
+    "instanceId": 2017,
+    "levels": [
+     58,
+     60
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:stratholme:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Live side: pull Scarlet packs one at a time, the bastion is full of patrols. Undead side: abominations hit hard.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2017",
+       "label": "Wowhead Classic: Stratholme"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Undead side ghouls stack disease; dispel aggressively.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2017",
+       "label": "Wowhead Classic: Stratholme"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Do Live side for the Scarlet quest items, Undead side for Ramstein and the Baron quests.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2017",
+       "label": "Wowhead Classic: Stratholme"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Stratholme once, both sides. Do not reset for another Baron.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Archivist Galford",
+     "npcId": 10811,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for The Archivist; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=10811",
+         "label": "Wowhead Classic: Archivist Galford"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10811",
+       "label": "Wowhead Classic: Archivist Galford"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=2017",
+     "label": "Wowhead Classic: Stratholme level range"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

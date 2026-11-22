@@ -1,0 +1,628 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Alcaz Prison",
+ "steps": [
+  {
+   "id": "dungeons:forever:alcaz-prison:accept:95283",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Missing Kor'kron `95283` from Eitrigg (Orgrimmar): Speak with Nazeer Bloodspike in Brackenwall Village."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 34.28,
+      "y": 39.35,
+      "zone": "Orgrimmar",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95283,
+     "label": "The Missing Kor'kron"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowf.io/en/quests/95283",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:accept:95284",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Elite of the Elite `95284` from Nazeer Bloodpike (Dustwallow Marsh): Find the missing Kor'kron Elites.. Needs: The Missing Kor'kron"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 35.21,
+      "y": 30.66,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95284,
+     "label": "The Elite of the Elite"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:run",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Run Alcaz Prison (levels 48-53, Alcaz Island, Dustwallow Marsh). Breadcrumb from Eitrigg in Orgrimmar to Brackenwall Village."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+     "label": "Blizzard: Explore the New Dungeons of WoW: Forever"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run Alcaz Prison once. Do not accept No Orc Left Behind.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:turnin:95283",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Missing Kor'kron `95283` to Nazeer Bloodpike (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 35.21,
+      "y": 30.66,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95283,
+     "label": "The Missing Kor'kron"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowf.io/en/quests/95283",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:turnin:95284",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Elite of the Elite `95284` to Sergeant Ulka (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95284,
+     "label": "The Elite of the Elite"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:accept:95285",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Right Place, Wrong Time `95285` from Sergeant Ulka (Dustwallow Marsh): Speak with Sergeant Ulka to learn more about the situation on Alcaz Isle."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95285,
+     "label": "Right Place, Wrong Time"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:turnin:95285",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Right Place, Wrong Time `95285` to Sergeant Ulka (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95285,
+     "label": "Right Place, Wrong Time"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:accept:96332",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept A Little Payback `96332` from Sergeant Ulka (Dustwallow Marsh): Enter the Alcaz Prison and slay 15 Strashasz Soldiers, 8 Strashaz Enchantresses, and bring the head of Tidemistress Ca'zass to Sergeant Ulka.. Needs: The Elite of the Elite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96332,
+     "label": "A Little Payback"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:turnin:96332",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in A Little Payback `96332` to Sergeant Ulka (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96332,
+     "label": "A Little Payback"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:accept:96334",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Blood Red Bandanas `96334` from Sergeant Ulka (Dustwallow Marsh): Enter Alcaz Prison and collect 8 Blood Red Bandanas from the human guards there.. Needs: The Elite of the Elite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 70.3,
+      "y": 18.85,
+      "zone": "Dustwallow Marsh",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96334,
+     "label": "Blood Red Bandanas"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:alcaz-prison:turnin:96334",
+   "section": "Alcaz Prison",
+   "tags": {
+    "dungeonId": "alcaz-prison"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Blood Red Bandanas `96334` to Eitrigg (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 34.28,
+      "y": 39.35,
+      "zone": "Orgrimmar",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96334,
+     "label": "Blood Red Bandanas"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Alcaz Prison",
+    "levels": [
+     48,
+     53
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowforevercompass.com/dungeons/alcaz-prison/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

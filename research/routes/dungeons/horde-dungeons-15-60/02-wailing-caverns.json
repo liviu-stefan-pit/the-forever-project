@@ -1,0 +1,1848 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Wailing Caverns",
+ "steps": [
+  {
+   "id": "dungeons:wailing-caverns:accept:1489",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1489",
+     "label": "Wowhead Classic: Hamuul Runetotem"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hamuul Runetotem from Tonga Runetotem in The Barrens (level 12+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.3,
+      "y": 31.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1489,
+     "label": "Hamuul Runetotem"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3448,
+     "name": "Tonga Runetotem",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 52.3,
+      "y": 31.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3448",
+       "label": "Wowhead Classic: Tonga Runetotem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Two-minute breadcrumb that unlocks Leaders of the Fang.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:959",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=959",
+     "label": "Wowhead Classic: Trouble at the Docks"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Trouble at the Docks from Crane Operator Bigglefuzz in The Barrens (level 14+, quest level 18)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.1,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 959,
+     "label": "Trouble at the Docks"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3665,
+     "name": "Crane Operator Bigglefuzz",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.1,
+      "y": 37.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3665",
+       "label": "Wowhead Classic: Crane Operator Bigglefuzz"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:962",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=962",
+     "label": "Wowhead Classic: Serpentbloom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Serpentbloom from Apothecary Zamah in Thunder Bluff (level 14+, quest level 18)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 22.8,
+      "y": 20.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 962,
+     "label": "Serpentbloom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3419,
+     "name": "Apothecary Zamah",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 22.8,
+      "y": 20.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3419",
+       "label": "Wowhead Classic: Apothecary Zamah"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:1487",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1487",
+     "label": "Wowhead Classic: Deviate Eradication"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Deviate Eradication from Ebru in The Barrens (level 15+, quest level 21)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 46,
+      "y": 35.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1487,
+     "label": "Deviate Eradication"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5768,
+     "name": "Ebru",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 46,
+      "y": 35.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5768",
+       "label": "Wowhead Classic: Ebru"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 2050 XP base, high for level 21.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:1491",
+   "section": "Wailing Caverns",
+   "tags": {
+    "dungeonId": "wailing-caverns"
+   },
+   "conditions": [],
+   "verified": true,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Smart Drinks from Mebok Mizzyrix in Ratchet (level 13+, quest level 18). Requires Raptor Horns (865). Bring 6 Wailing Essences from Evolving Ectoplasm inside Wailing Caverns."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1491,
+     "label": "Smart Drinks"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3446,
+     "name": "Mebok Mizzyrix",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.4,
+      "y": 37.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3446",
+       "label": "Wowhead Classic: Mebok Mizzyrix"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1491",
+     "label": "Wowhead Classic: Smart Drinks"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:1491",
+   "section": "Wailing Caverns",
+   "tags": {
+    "dungeonId": "wailing-caverns"
+   },
+   "conditions": [],
+   "verified": true,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Smart Drinks to Mebok Mizzyrix (Ratchet)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1491,
+     "label": "Smart Drinks"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1491",
+     "label": "Wowhead Classic: Smart Drinks"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:run",
+   "section": "Wailing Caverns",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Wailing Caverns (levels 17-24) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 46,
+      "y": 36.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6443,
+     "count": 1,
+     "questId": 1486,
+     "objective": 1,
+     "label": "Deviate Hides: Deviate Hide"
+    },
+    {
+     "type": "collect",
+     "itemId": 5334,
+     "count": 1,
+     "questId": 959,
+     "objective": 1,
+     "label": "Trouble at the Docks: 99-Year-Old Port"
+    },
+    {
+     "type": "collect",
+     "itemId": 5339,
+     "count": 1,
+     "questId": 962,
+     "objective": 1,
+     "label": "Serpentbloom: Serpentbloom"
+    },
+    {
+     "type": "complete",
+     "questId": 1487,
+     "objective": 1,
+     "label": "Deviate Eradication: Deviate Ravager"
+    },
+    {
+     "type": "complete",
+     "questId": 1487,
+     "objective": 2,
+     "label": "Deviate Eradication: Deviate Viper"
+    },
+    {
+     "type": "complete",
+     "questId": 1487,
+     "objective": 3,
+     "label": "Deviate Eradication: Deviate Shambler"
+    },
+    {
+     "type": "complete",
+     "questId": 1487,
+     "objective": 4,
+     "label": "Deviate Eradication: Deviate Dreadfang"
+    },
+    {
+     "type": "collect",
+     "itemId": 6464,
+     "count": 6,
+     "questId": 1491,
+     "objective": 1,
+     "label": "Smart Drinks: Wailing Essence"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:wailing-caverns:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Deviate mobs come in loose groups; pull back to the corridor so nothing aggros from the pools. Mark the lashers.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=718",
+       "label": "Wowhead Classic: Wailing Caverns"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Druids of the Fang cast Sleep and heal; ask for interrupts and keep a dispel ready.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=718",
+       "label": "Wowhead Classic: Wailing Caverns"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Collect Deviate Hides and Serpentbloom while moving; the four Fang leaders are spread out, so follow the outer ramp loop instead of jumping into the water.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=718",
+       "label": "Wowhead Classic: Wailing Caverns"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Clear Wailing Caverns once through the fang lords and Mutanus. Use the Glowing Shard only if it drops. Do not reset for essences or hides.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 1487 and 6981 source item 10441"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Deviate Ravager",
+     "npcId": 3636,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Deviate Eradication; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=3636",
+         "label": "Wowhead Classic: Deviate Ravager"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3636",
+       "label": "Wowhead Classic: Deviate Ravager"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Deviate Viper",
+     "npcId": 5755,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Deviate Eradication; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=5755",
+         "label": "Wowhead Classic: Deviate Viper"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5755",
+       "label": "Wowhead Classic: Deviate Viper"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Deviate Shambler",
+     "npcId": 5761,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Deviate Eradication; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=5761",
+         "label": "Wowhead Classic: Deviate Shambler"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5761",
+       "label": "Wowhead Classic: Deviate Shambler"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Deviate Dreadfang",
+     "npcId": 5056,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Deviate Eradication; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=5056",
+         "label": "Wowhead Classic: Deviate Dreadfang"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5056",
+       "label": "Wowhead Classic: Deviate Dreadfang"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=718",
+     "label": "Wowhead Classic: Wailing Caverns level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:6981",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6981",
+     "label": "Wowhead Classic: The Glowing Shard"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If the Glowing Shard drops on this clear, accept The Glowing Shard. Do not reset for it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 6981,
+     "label": "The Glowing Shard"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 2650 XP base, high for level 26.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:1489",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1489",
+     "label": "Wowhead Classic: Hamuul Runetotem"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hamuul Runetotem to Arch Druid Hamuul Runetotem (Thunder Bluff)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 78.6,
+      "y": 28.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1489,
+     "label": "Hamuul Runetotem"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5769,
+     "name": "Arch Druid Hamuul Runetotem",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 78.6,
+      "y": 28.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5769",
+       "label": "Wowhead Classic: Arch Druid Hamuul Runetotem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:959",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=959",
+     "label": "Wowhead Classic: Trouble at the Docks"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trouble at the Docks to Crane Operator Bigglefuzz (The Barrens)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.1,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 959,
+     "label": "Trouble at the Docks"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3665,
+     "name": "Crane Operator Bigglefuzz",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.1,
+      "y": 37.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3665",
+       "label": "Wowhead Classic: Crane Operator Bigglefuzz"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:962",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=962",
+     "label": "Wowhead Classic: Serpentbloom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Serpentbloom to Apothecary Zamah (Thunder Bluff). Reward choices include Apothecary Gloves"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 22.8,
+      "y": 20.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 962,
+     "label": "Serpentbloom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3419,
+     "name": "Apothecary Zamah",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 22.8,
+      "y": 20.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3419",
+       "label": "Wowhead Classic: Apothecary Zamah"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:1487",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1487",
+     "label": "Wowhead Classic: Deviate Eradication"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Deviate Eradication to Ebru (The Barrens). Reward choices include Pattern: Deviate Scale Belt, Dagmire Gauntlets, Sizzle Stick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 46,
+      "y": 35.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1487,
+     "label": "Deviate Eradication"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5768,
+     "name": "Ebru",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 46,
+      "y": 35.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5768",
+       "label": "Wowhead Classic: Ebru"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Leatherworking",
+     "itemId": 6476,
+     "itemName": "Pattern: Deviate Scale Belt",
+     "note": "Quest reward recipe: Pattern: Deviate Scale Belt.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/item=6476",
+       "label": "Wowhead Classic: Pattern: Deviate Scale Belt"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB items (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:6981",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6981",
+     "label": "Wowhead Classic: The Glowing Shard"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Glowing Shard to Falla Sagewind (The Barrens), only if you accepted it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 48.2,
+      "y": 32.8,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6981,
+     "label": "The Glowing Shard"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8418,
+     "name": "Falla Sagewind",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.2,
+      "y": 32.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8418",
+       "label": "Wowhead Classic: Falla Sagewind"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:3369",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 3369 pre 6981, races Horde"
+    }
+   ],
+   "verified": false,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If you turned in The Glowing Shard, accept In Nightmares from Falla Sagewind."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 48.18,
+      "y": 32.78,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3369,
+     "label": "In Nightmares from Falla Sagewind"
+    }
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8418,
+     "name": "Falla Sagewind",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.18,
+      "y": 32.78
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 3369 pre 6981, races Horde"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:3369",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 3369 end npc 5769"
+    }
+   ],
+   "verified": false,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Nightmares to Hamuul Runetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 78.62,
+      "y": 28.56,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3369,
+     "label": "In Nightmares"
+    }
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5769,
+     "name": "Hamuul Runetotem",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 78.62,
+      "y": 28.56
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 3369 end npc 5769"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:1490",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1490",
+     "label": "Wowhead Classic: Nara Wildmane"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Nara Wildmane from Arch Druid Hamuul Runetotem in Thunder Bluff (level 12+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 78.6,
+      "y": 28.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1490,
+     "label": "Nara Wildmane"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5769,
+     "name": "Arch Druid Hamuul Runetotem",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 78.6,
+      "y": 28.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5769",
+       "label": "Wowhead Classic: Arch Druid Hamuul Runetotem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Breadcrumb in Thunder Bluff that unlocks Leaders of the Fang.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:1490",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1490",
+     "label": "Wowhead Classic: Nara Wildmane"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Nara Wildmane to Nara Wildmane (Thunder Bluff)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 75.7,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1490,
+     "label": "Nara Wildmane"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5770,
+     "name": "Nara Wildmane",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 75.7,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5770",
+       "label": "Wowhead Classic: Nara Wildmane"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:accept:914",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=914",
+     "label": "Wowhead Classic: Leaders of the Fang"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Leaders of the Fang from Nara Wildmane in Thunder Bluff (level 11+, quest level 22)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 75.7,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 914,
+     "label": "Leaders of the Fang"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5770,
+     "name": "Nara Wildmane",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 75.7,
+      "y": 31.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5770",
+       "label": "Wowhead Classic: Nara Wildmane"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Main Wailing Caverns reward quest; the Nara Wildmane chain is short and the run ends at the last Fang leader anyway.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:turnin:914",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Wailing Caverns",
+    "instanceId": 718,
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=914",
+     "label": "Wowhead Classic: Leaders of the Fang"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Wailing Caverns",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Leaders of the Fang to Nara Wildmane (Thunder Bluff). Reward choices include Wingblade, Crescent Staff"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 75.7,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 914,
+     "label": "Leaders of the Fang"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5770,
+     "name": "Nara Wildmane",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 75.7,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5770",
+       "label": "Wowhead Classic: Nara Wildmane"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:wailing-caverns:off",
+   "section": "Wailing Caverns",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Stay in the Barrens (Crossroads, Camp Taurajo chains) and go to Stonetalon Mountains around 18-22."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:wailing-caverns:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

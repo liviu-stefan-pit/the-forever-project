@@ -1,0 +1,1643 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-03-stonetalon-ashenvale-hillsbrad",
+ "title": "Arathi Highlands detour",
+ "steps": [
+  {
+   "id": "horde-20-40:turnin-78270",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Goblin Lockpicks to Veenix in Stonetalon Mountains.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 58.22,
+      "y": 51.74,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 78270,
+     "label": "Goblin Lockpicks"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-79980",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Scramble to Mound of Dirt in Stonetalon Mountains.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 39.62,
+      "y": 49.82,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 79980,
+     "label": "Scramble"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-79974",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Wet Job from Mound of Dirt in Stonetalon Mountains.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 39.62,
+      "y": 49.82,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 79974,
+     "label": "Wet Job"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79974",
+     "label": "Wowhead / Forever quest 79974"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag Wet Job"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-79974",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Wet Job to Carved Figurine in Loch Modan (Stonewrought Dam).",
+       "kind": "friendly"
+      },
+      {
+       "t": "Do this dam step at 20-25. Corpse-run from Dun Algaz; Horde gets flagged in Loch Modan."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "zone": "Loch Modan",
+      "x": 49.43,
+      "y": 12.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 79974,
+     "label": "Wet Job"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79974",
+     "label": "Wowhead / Forever quest 79974"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag Wet Job"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-79975",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Eagle's Fist from Carved Figurine in Loch Modan (Stonewrought Dam).",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "zone": "Loch Modan",
+      "x": 49.43,
+      "y": 12.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 79975,
+     "label": "Eagle's Fist"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79975",
+     "label": "Wowhead / Forever quest 79975"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag Eagle's Fist"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-79975",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Eagle's Fist to Messenger Bag in Arathi Highlands (Thoradin's Wall).",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 22.48,
+      "y": 24.14,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 79975,
+     "label": "Eagle's Fist"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79975",
+     "label": "Wowhead / Forever quest 79975"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag Eagle's Fist"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-79976",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up This Must Be The Place from Messenger Bag in Arathi Highlands (Thoradin's Wall).",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 22.48,
+      "y": 24.14,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 79976,
+     "label": "This Must Be The Place"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79976",
+     "label": "Wowhead / Forever quest 79976"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag This Must Be The Place"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-79976",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in This Must Be The Place to Hastily Rolled-Up Satchel in Arathi Highlands (Thoradin's Wall).",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 22.48,
+      "y": 24.15,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 79976,
+     "label": "This Must Be The Place"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=79976",
+     "label": "Wowhead / Forever quest 79976"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Cozy Sleeping Bag This Must Be The Place"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sigil of Strom from Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 639,
+     "label": "Sigil of Strom"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sigil of Strom."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 639,
+     "objective": 1,
+     "label": "Sigil of Strom"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sigil of Strom to Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 639,
+     "label": "Sigil of Strom"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-640",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Broken Sigil from Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 640,
+     "label": "The Broken Sigil"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-640",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Broken Sigil."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 640,
+     "objective": 1,
+     "label": "The Broken Sigil"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-640",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Broken Sigil to Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 640,
+     "label": "The Broken Sigil"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-641",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sigil of Thoradin from Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 641,
+     "label": "Sigil of Thoradin"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-641",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sigil of Thoradin."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 641,
+     "objective": 1,
+     "label": "Sigil of Thoradin"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-641",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sigil of Thoradin to Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 641,
+     "label": "Sigil of Thoradin"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-643",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sigil of Arathor from Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 643,
+     "label": "Sigil of Arathor"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-643",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sigil of Arathor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 643,
+     "objective": 1,
+     "label": "Sigil of Arathor"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-643",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sigil of Arathor to Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 643,
+     "label": "Sigil of Arathor"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-644",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sigil of Trollbane from Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 644,
+     "label": "Sigil of Trollbane"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-644",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sigil of Trollbane."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 644,
+     "objective": 1,
+     "label": "Sigil of Trollbane"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-644",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sigil of Trollbane to Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 644,
+     "label": "Sigil of Trollbane"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-645",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Trol'kalar from Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 645,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-645",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Trol'kalar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 28.86,
+      "y": 59.62,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 645,
+     "objective": 1,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-645",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trol'kalar to Trollbane's Tomb in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 28.86,
+      "y": 59.62,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 645,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-646",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Trol'kalar from Trollbane's Tomb in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 28.86,
+      "y": 59.62,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 646,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-646",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Trol'kalar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 646,
+     "objective": 1,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-646",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trol'kalar to Zengu in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.8,
+      "y": 33.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 646,
+     "label": "Trol'kalar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-80001",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Optional: pick up Rekindle from Firepit in Stonetalon Mountains.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 40.6,
+      "y": 52.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 80001,
+     "label": "Rekindle"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Optional follow-up at the Firepit near Pocket Litter. Needs Simple Wood and Flint and Tinder.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: optional Rekindle 80001"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=80001",
+     "label": "Wowhead / Forever quest 80001"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: optional Rekindle 80001"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-80001",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Optional: turn in Rekindle to Firepit in Stonetalon Mountains.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 40.6,
+      "y": 52.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 80001,
+     "label": "Rekindle"
+    }
+   ],
+   "conditions": [],
+   "section": "Stonetalon Mountains",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cozy Sleeping Bag item grants resting while you use it.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Cozy Sleeping Bag chain"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=80001",
+     "label": "Wowhead / Forever quest 80001"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: optional Rekindle 80001"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

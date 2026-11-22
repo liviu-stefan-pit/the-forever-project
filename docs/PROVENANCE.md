@@ -18,7 +18,7 @@ The `data/` and `web/public/data/` folders are build output and are git-ignored.
 | Area | Files | Source |
 |---|---|---|
 | Quest / NPC / object / item / zone DB | `content/questie-db/*` | Pinned QuestieDB release v1.1.3 (GPL-3.0), fetched by `pipeline/questie_import.py` with sha256 checks; see that folder's README |
-| 1-20 route packs | `research/nova/v2/*.json`, `research/nova/zones/*`, `research/nova/catalog/*` | Written by Nova from content/questie-db, the QuestieDB Forever data (`tools/dump.lua`) and Wowhead quest pages, which each step cites in `sources[]` (1) |
+| 1-20 route packs | `research/routes/horde-1-20/` (one folder per pack, one file per segment), `research/nova/catalog/*` | Written by Nova from content/questie-db, the QuestieDB Forever data (`tools/dump.lua`) and Wowhead quest pages, which each step cites in `sources[]` (1) |
 | 40-60 route pack, gold, pre-BiS | `research/horde-40-60/*` | Built by `research/horde-40-60/tools/*` from content/questie-db plus cited Wowhead pages (1) |
 | Dungeon chains | `research/dungeons/*` | Built by `research/dungeons/tools/*` from QuestieDB (`dump.lua`, `dumpfv.lua`) plus cited pages (1) |
 | Professions, tips, trainers | `research/professions/*` | Written by Sentinel and Vulkan, with NPC coordinates from QuestieDB and cited sources |

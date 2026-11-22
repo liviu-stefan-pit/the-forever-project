@@ -1,0 +1,1371 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-05-desolace",
+ "title": "Khan Hratha and Shadowprey Village",
+ "steps": [
+  {
+   "id": "horde-20-40:accept-96222",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Khan Hratha from Umarak in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 43.48,
+      "y": 78.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96222,
+     "label": "Khan Hratha"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-96222",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Khan Hratha."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 43.48,
+      "y": 78.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96222,
+     "objective": 1,
+     "label": "Khan Hratha"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-96222",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Khan Hratha to Umarak in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 43.48,
+      "y": 78.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96222,
+     "label": "Khan Hratha"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1436",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Alliance Relations for Keldran when 1434 and 1435 are turned in at Ghost Walker, and turn it in only when you leave Desolace for the next zone."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 22.56,
+      "y": 52.63,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1436,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1436",
+     "label": "Wowhead Classic quest 1436"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 1436 pre group 1434 and 1435, end npc 5640 in Orgrimmar"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-5381",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hand of Iruxos to Taiga Wisemane in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.82,
+      "y": 68.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5381,
+     "label": "Hand of Iruxos"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Portals of the Legion from Taiga Wisemane in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.82,
+      "y": 68.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5581,
+     "label": "Portals of the Legion"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish objective 1 for Portals of the Legion around Demon Portal Guardian in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 49.4,
+      "y": 76,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5581,
+     "objective": 1,
+     "label": "Portals of the Legion"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-5741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sceptre of Light to Azore Aldamort in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 38.88,
+      "y": 27.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5741,
+     "label": "Sceptre of Light"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6027",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Book of the Ancients from Azore Aldamort in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 38.88,
+      "y": 27.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6027,
+     "label": "Book of the Ancients"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6027",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Book of the Ancients."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 38.88,
+      "y": 27.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6027,
+     "objective": 1,
+     "label": "Book of the Ancients"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6142",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Clam Bait — Soft-shelled Clam Meat."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 33.2,
+      "y": 29.31,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6142,
+     "objective": 1,
+     "label": "Clam Bait"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-6027",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Book of the Ancients to Azore Aldamort in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 38.88,
+      "y": 27.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6027,
+     "label": "Book of the Ancients"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5501",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Bone Collector — Kodo Bone."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 51.62,
+      "y": 59.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5501,
+     "objective": 1,
+     "label": "Bone Collector"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-5501",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bone Collector to Bibbly F'utzbuckle in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 62.33,
+      "y": 38.99,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5501,
+     "label": "Bone Collector"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5561",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Kodo Roundup from Smeed Scrabblescrew in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 60.86,
+      "y": 61.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5561,
+     "label": "Kodo Roundup"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5561",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Kodo Roundup — Kodo Kombobulator.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 60.86,
+      "y": 61.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5561,
+     "objective": 1,
+     "label": "Kodo Roundup"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pick up the kodo bones while you walk the tame targets back to Smeed. If an apparition spawns, finish or run; do not make a second graveyard trip.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB quest 5501 item 13703, level 39, no pre; quest 5561 same graveyard"
+      },
+      {
+       "url": "https://www.curseforge.com/wow/addons/openxp",
+       "label": "OpenXP does 5561 at the graveyard and does not take 5501"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:turnin-6142",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Clam Bait to Mai'Lahii in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 22.64,
+      "y": 71.97,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6142,
+     "label": "Clam Bait"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-6143",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Other Fish to Fry to Drulzegar Skraghook in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 23.32,
+      "y": 72.87,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6143,
+     "label": "Other Fish to Fry"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5763",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Keep Roon's Kodo Horn in the bag. There is no Desolace kill. Turn it in to Hemet Nesingwary when the route reaches Nesingwary's Expedition."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.05,
+      "y": 72.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5763,
+     "objective": 1,
+     "label": "Hunting in Stranglethorn"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5763",
+     "label": "Wowhead Classic quest 5763"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 5763 sourceItem 14546, end npc 715"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-5763",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hunting in Stranglethorn to Hemet Nesingwary in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 35.66,
+      "y": 10.81,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5763,
+     "label": "Hunting in Stranglethorn"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5821",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Bodyguard for Hire from Cork Gizelton in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 66.54,
+      "y": 37.51,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5821,
+     "label": "Bodyguard for Hire"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-5561",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Kodo Roundup to Smeed Scrabblescrew in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 60.86,
+      "y": 61.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5561,
+     "label": "Kodo Roundup"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-5821",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bodyguard for Hire to Smeed Scrabblescrew in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 60.86,
+      "y": 61.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5821,
+     "label": "Bodyguard for Hire"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6161",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Claim Rackmore's Treasure! — Rackmore's Silver Key, Rackmore's Golden Key."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.78,
+      "y": 62.47,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6161,
+     "objective": 1,
+     "label": "Claim Rackmore's Treasure!"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-6161",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Claim Rackmore's Treasure! to Rackmore's Chest in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 30,
+      "y": 8.71,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6161,
+     "label": "Claim Rackmore's Treasure!"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:forever-extras-desolace",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Forever-new quests in Desolace (ids 90000 and above, from the quest database). They are listed separately from the Classic route and every step is unverified."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-5581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Portals of the Legion to Taiga Wisemane in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.82,
+      "y": 68.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5581,
+     "label": "Portals of the Legion"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-97265",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Hate the Hatefury to Aka'rai in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.32,
+      "y": 67.05,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97265,
+     "label": "Hate the Hatefury"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

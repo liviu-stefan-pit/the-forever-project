@@ -1,12 +1,15 @@
-"""Compare every coordinate in research/nova/v2/*.json with the QuestieDB v1.1.3 Forever release
+"""Compare every coordinate in the Horde 1-20 route (research/routes/horde-1-20/, one file per segment) with the QuestieDB v1.1.3 Forever release
 (content/questie-db, merged from PR #5). Flags any NPC / mob / object / goto coordinate more than 2 map points away
-from the nearest Forever spawn of the same entity on the same map. With --fix, rewrites the packs.
+from the nearest Forever spawn of the same entity on the same map. With --fix, rewrites the segment files.
 
 Usage: python3 check_coords.py [--db DIR] [--fix]
 DIR defaults to content/questie-db on main (QuestieDB v1.1.3 Forever, merged in #5)."""
 import json, glob, os, sys, math, re, subprocess, statistics
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 REPO = os.path.abspath(os.path.join(ROOT, '..', '..'))
+sys.path.insert(0, os.path.join(REPO, 'research', 'tools'))
+from route_files import iter_step_files, write_json  # noqa: E402
+ROUTES = os.path.join(REPO, 'research', 'routes', 'horde-1-20')
 LIMIT = 2.0
 DBSRC = 'https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db'
 
@@ -58,8 +61,8 @@ def check(where, ent, mapid, xy, area=False):
 
 def ent_for(kind, i): return (N if kind == 'npc' else O).get(str(i))
 
-for f in sorted(glob.glob(os.path.join(ROOT, 'v2', '*.json'))):
-    pack = json.load(open(f)); slug = os.path.basename(f)[:-5]; changed = False
+for f, pack in iter_step_files(ROUTES):
+    changed = False
     for s in pack['steps']:
         gotos = [a for a in s['actions'] if a['type'] == 'goto']
         g = gotos[0]['at'] if gotos else None
@@ -106,7 +109,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'v2', '*.json'))):
                 new = check(f"{s['id']} hook npc {n.get('name')}", ent_for('npc', n['id']), n['mapId'], (n['x'], n['y']))
                 if new: n['x'], n['y'] = new; changed = True
     if FIX and changed:
-        json.dump(pack, open(f, 'w'), indent=1, ensure_ascii=False)
+        write_json(f, pack)
 
 print(f'checked {checked} coordinates against PR #5 v1.1.3 Forever data; >{LIMIT} pt deltas: {len(flags)}; no Forever spawn on that map: {len(missing)}')
 for w, old, new, d in flags: print(f'  {"FIXED" if FIX else "FLAG"} {w}: {old} -> {new} (delta {d})')

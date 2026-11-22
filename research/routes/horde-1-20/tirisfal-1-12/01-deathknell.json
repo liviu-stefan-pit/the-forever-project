@@ -1,0 +1,2933 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "tirisfal-1-12",
+ "title": "Deathknell",
+ "steps": [
+  {
+   "id": "tirisfal-1-12:001",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rude Awakening from Undertaker Mordo"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.2,
+      "y": 71.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 363,
+     "label": "Rude Awakening"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=363",
+     "label": "Wowhead Classic quest 363"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "professionHooks": [
+    {
+     "itemId": 19205,
+     "itemName": "Plans: Gloves of the Dawn",
+     "qty": 1,
+     "skillTarget": 300,
+     "npc": {
+      "id": 10856,
+      "name": "Argent Quartermaster Hasana",
+      "zone": "Tirisfal Glades",
+      "x": 83.3,
+      "y": 68.1,
+      "mapId": 1420
+     },
+     "note": "Buy Plans: Gloves of the Dawn from Argent Quartermaster Hasana (Tirisfal Glades 83.3, 68.1) for 3g 60s . Learnable at 300; the Forever leveling plan uses Gloves of the Dawn for skill 300–320 (yellow at 320). Reagents: 2x Arcanite Bar, 10x Truesilver Bar, 1x Righteous Orb. Plan the stop when your route passes this zone.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/blacksmithing/leveling/",
+       "label": "WoW Forever DB: Blacksmithing leveling (recipe sources, client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/blacksmithing/recipes/",
+       "label": "WoW Forever DB: Blacksmithing recipes (reagents, skill colours)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "QuestieDB v1.1.3 Forever data (project-forever PR #5, content/questie-db)"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/npcs/10856",
+       "label": "Icy Veins WoW Forever DB: NPC (position, vendor stock)"
+      }
+     ],
+     "verified": true,
+     "profession": "Blacksmithing"
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:002",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rude Awakening to Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 363,
+     "label": "Rude Awakening"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=363",
+     "label": "Wowhead Classic quest 363"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:003",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Mindless Ones from Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 364,
+     "label": "The Mindless Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=364",
+     "label": "Wowhead Classic quest 364"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:004",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Damned from Novice Elreth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.9,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 376,
+     "label": "The Damned"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=376",
+     "label": "Wowhead Classic quest 376"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:005",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Mindless Ones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.5,
+      "y": 63.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 364,
+     "objective": 1,
+     "label": "The Mindless Ones"
+    },
+    {
+     "type": "complete",
+     "questId": 364,
+     "objective": 2,
+     "label": "The Mindless Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=364",
+     "label": "Wowhead Classic quest 364"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The zombies shamble in the fields just north-east of the Deathknell church. Kill scavengers and duskbats there too for The Damned.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=364",
+       "label": "Wowhead Classic quest 364"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1501
+     ],
+     "name": "Mindless Zombie",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 32.5,
+      "y": 63.8
+     },
+     "radius": 2.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1501",
+       "label": "Wowhead Classic NPC 1501"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1502
+     ],
+     "name": "Wretched Zombie",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 32.9,
+      "y": 63.2
+     },
+     "radius": 2.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1502",
+       "label": "Wowhead Classic NPC 1502"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:006",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Damned"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 35.9,
+      "y": 60.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 376,
+     "objective": 1,
+     "label": "The Damned"
+    },
+    {
+     "type": "complete",
+     "questId": 376,
+     "objective": 2,
+     "label": "The Damned"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=376",
+     "label": "Wowhead Classic quest 376"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1509
+     ],
+     "name": "Ragged Scavenger (Scavenger Paw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 35.9,
+      "y": 60.6
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1509",
+       "label": "Wowhead Classic NPC 1509"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3265",
+       "label": "Wowhead Classic item 3265"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1508
+     ],
+     "name": "Young Scavenger (Scavenger Paw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 31,
+      "y": 62.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1508",
+       "label": "Wowhead Classic NPC 1508"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3265",
+       "label": "Wowhead Classic item 3265"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1512
+     ],
+     "name": "Duskbat (Duskbat Wing)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 30.8,
+      "y": 66.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1512",
+       "label": "Wowhead Classic NPC 1512"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3264",
+       "label": "Wowhead Classic item 3264"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1513
+     ],
+     "name": "Mangy Duskbat (Duskbat Wing)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 35.4,
+      "y": 61.4
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1513",
+       "label": "Wowhead Classic NPC 1513"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3264",
+       "label": "Wowhead Classic item 3264"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:007",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Mindless Ones to Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 364,
+     "label": "The Mindless Ones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=364",
+     "label": "Wowhead Classic quest 364"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:008",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Difficult Path from Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98601,
+     "label": "A Difficult Path"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Undead paladins (new in Forever) start their class chain here.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:009",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Difficult Path to Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98601,
+     "label": "A Difficult Path"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:010",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rediscovering the Light from Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 90902,
+     "label": "Rediscovering the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:011",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Rediscovering the Light"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31.7,
+      "y": 63.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 90902,
+     "objective": 1,
+     "label": "Rediscovering the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Use Holy Light on the Injured Deathguards outside the church.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      259377
+     ],
+     "name": "Injured Deathguard",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 31.7,
+      "y": 63.8
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=259377",
+       "label": "Wowhead Classic NPC 259377"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:012",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rediscovering the Light to Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 90902,
+     "label": "Rediscovering the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:013",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Coming to Terms from Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91208,
+     "label": "Coming to Terms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:014",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Coming to Terms"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 27.7,
+      "y": 63.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 91208,
+     "objective": 1,
+     "label": "Coming to Terms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      246143
+     ],
+     "name": "Frightened Paladin",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 27.7,
+      "y": 63.8
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=246143",
+       "label": "Wowhead Classic NPC 246143"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:015",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Coming to Terms to Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91208,
+     "label": "Coming to Terms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:016",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Continue Your Training from Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91209,
+     "label": "Continue Your Training"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This takes you to Shari Stilwell in Brill; you go there anyway.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Alchemy",
+     "itemName": "Recipe: Minor Mender's Potion",
+     "skillTarget": 30,
+     "npc": {
+      "id": 1934,
+      "name": "Tirisfal Farmer",
+      "zone": "Tirisfal Glades",
+      "x": 37.9,
+      "y": 50.6
+     },
+     "note": "Kill Tirisfal Farmer (Tirisfal Glades, lvl 6-7): the recipe Recipe: Minor Mender's Potion drops here. Forever-new potion recipe; drops from Tirisfal Farmer (also Gnarlpine Mystic, Alliance zone).",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+       "label": "Wowhead Forever: Alchemy overview (single page spot-check)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=1934",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/items/250988",
+       "label": "Icy Veins WoW Forever DB: item"
+      }
+     ],
+     "verified": false,
+     "itemId": 250988
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:017",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rattling the Rattlecages from Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3901,
+     "label": "Rattling the Rattlecages"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3901",
+     "label": "Wowhead Classic quest 3901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:018",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Damned to Novice Elreth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.9,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 376,
+     "label": "The Damned"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=376",
+     "label": "Wowhead Classic quest 376"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:019",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Scavenging Deathknell from Deathguard Saltain"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31.6,
+      "y": 65.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3902,
+     "label": "Scavenging Deathknell"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3902",
+     "label": "Wowhead Classic quest 3902"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:020",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Marla's Last Wish from Novice Elreth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.9,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6395,
+     "label": "Marla's Last Wish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6395",
+     "label": "Wowhead Classic quest 6395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Night Web's Hollow from Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 380,
+     "label": "Night Web's Hollow"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=380",
+     "label": "Wowhead Classic quest 380"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:022",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Light in the Darkness from Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98389,
+     "label": "A Light in the Darkness"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Aramis Hammerhand: free 6 Webbed Victims in Night Web's Hollow. Do it on the same trip as Night Web's Hollow.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Undead paladins are new in Forever. Aramis Hammerhand in Deathknell is the one to look for first if you play one.",
+     "classes": [
+      "Paladin"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:023",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Light in the Darkness"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 98389,
+     "objective": 1,
+     "label": "A Light in the Darkness"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Webbed Victims are inside Night Web's Hollow.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:027",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Night Web's Hollow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 28.3,
+      "y": 57.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 380,
+     "objective": 1,
+     "label": "Night Web's Hollow"
+    },
+    {
+     "type": "complete",
+     "questId": 380,
+     "objective": 2,
+     "label": "Night Web's Hollow"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=380",
+     "label": "Wowhead Classic quest 380"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Night Web's Hollow is north-west of Deathknell. The spiders are packed close; fight near the entrance and pull one at a time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=380",
+       "label": "Wowhead Classic quest 380"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1504
+     ],
+     "name": "Young Night Web Spider",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 28.3,
+      "y": 57.4
+     },
+     "radius": 2.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1504",
+       "label": "Wowhead Classic NPC 1504"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1505
+     ],
+     "name": "Night Web Spider",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 24.8,
+      "y": 59.7
+     },
+     "radius": 1.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1505",
+       "label": "Wowhead Classic NPC 1505"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:024",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Rattling the Rattlecages"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 33,
+      "y": 61.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3901,
+     "objective": 1,
+     "label": "Rattling the Rattlecages"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3901",
+     "label": "Wowhead Classic quest 3901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1890
+     ],
+     "name": "Rattlecage Skeleton",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 33,
+      "y": 61.6
+     },
+     "radius": 3.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1890",
+       "label": "Wowhead Classic NPC 1890"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:025",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Scavenging Deathknell"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.9,
+      "y": 64.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3902,
+     "objective": 1,
+     "label": "Scavenging Deathknell"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3902",
+     "label": "Wowhead Classic quest 3902"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Scavenged Goods lie around the ruined houses of Deathknell.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3902",
+       "label": "Wowhead Classic quest 3902"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 164662,
+     "name": "Equipment Boxes",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 32.9,
+      "y": 64.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=164662",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:026",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Marla's Last Wish"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31.2,
+      "y": 65.1,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6395,
+     "objective": 1,
+     "label": "Marla's Last Wish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6395",
+     "label": "Wowhead Classic quest 6395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 178090,
+     "name": "Marla's Grave",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 31.2,
+      "y": 65.1
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=178090",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:028",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rattling the Rattlecages to Shadow Priest Sarvis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.8,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3901,
+     "label": "Rattling the Rattlecages"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3901",
+     "label": "Wowhead Classic quest 3901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:029",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Scavenging Deathknell to Deathguard Saltain"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31.6,
+      "y": 65.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3902,
+     "label": "Scavenging Deathknell"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3902",
+     "label": "Wowhead Classic quest 3902"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:030",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Marla's Last Wish to Novice Elreth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 30.9,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6395,
+     "label": "Marla's Last Wish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6395",
+     "label": "Wowhead Classic quest 6395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:031",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Night Web's Hollow to Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 380,
+     "label": "Night Web's Hollow"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=380",
+     "label": "Wowhead Classic quest 380"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:032",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Light in the Darkness to Aramis Hammerhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31,
+      "y": 66.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98389,
+     "label": "A Light in the Darkness"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/tirisfal-glades/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand in to Aramis Hammerhand in Deathknell.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/tirisfal-glades-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tirisfal-glades/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:033",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Scarlet Crusade from Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 381,
+     "label": "The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=381",
+     "label": "Wowhead Classic quest 381"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:034",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Scarlet Crusade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 37.5,
+      "y": 68,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 381,
+     "objective": 1,
+     "label": "The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=381",
+     "label": "Wowhead Classic quest 381"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Scarlet Crusade camp is east of Deathknell. Scarlet Converts and Initiates fight in pairs; pull from the edge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=381",
+       "label": "Wowhead Classic quest 381"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1506
+     ],
+     "name": "Scarlet Convert (Scarlet Armband)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 37.5,
+      "y": 68
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1506",
+       "label": "Wowhead Classic NPC 1506"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3266",
+       "label": "Wowhead Classic item 3266"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1507
+     ],
+     "name": "Scarlet Initiate (Scarlet Armband)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 37.5,
+      "y": 68
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1507",
+       "label": "Wowhead Classic NPC 1507"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3266",
+       "label": "Wowhead Classic item 3266"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:035",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Scarlet Crusade to Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 381,
+     "label": "The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=381",
+     "label": "Wowhead Classic quest 381"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:036",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Red Messenger from Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 382,
+     "label": "The Red Messenger"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=382",
+     "label": "Wowhead Classic quest 382"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:037",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Red Messenger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 36.6,
+      "y": 68.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 382,
+     "objective": 1,
+     "label": "The Red Messenger"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=382",
+     "label": "Wowhead Classic quest 382"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Meven Korgal is in the Scarlet camp; he carries the orders.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=382",
+       "label": "Wowhead Classic quest 382"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1667
+     ],
+     "name": "Meven Korgal (Scarlet Crusade Documents)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 36.6,
+      "y": 68.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1667",
+       "label": "Wowhead Classic NPC 1667"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2885",
+       "label": "Wowhead Classic item 2885"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:038",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Red Messenger to Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 382,
+     "label": "The Red Messenger"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=382",
+     "label": "Wowhead Classic quest 382"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:039",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vital Intelligence from Executor Arren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 383,
+     "label": "Vital Intelligence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=383",
+     "label": "Wowhead Classic quest 383"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "tirisfal-1-12:040",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Visit your class trainer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Train level 6 before you leave Deathknell.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Forever paladin: check your trainer for Undead paladin spells before you leave.",
+     "classes": [
+      "Paladin"
+     ],
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: each creature can only be skinned once, so skin your own kills right away before someone else does.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: every profession gets a camp object at skill 20. Push your professions to 20 early to unlock it.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: crafting items to sell to vendors no longer pays (vendor prices were cut on 16 Oct). Craft for skill-ups, your own gear and other players.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: healing potions are made with First Aid now, so keep your Linen Cloth for First Aid.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cloth-farming/",
+       "label": "theforeverguides.com"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: starter-zone Herbalism and Skinning trainers teach only the first rank. Train the next rank in your capital.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/crafting-trainers/",
+       "label": "theforeverguides.com"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gordo's Task from Gordo"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 43.1,
+      "y": 54.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5481,
+     "label": "Gordo's Task"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5481",
+     "label": "Wowhead Classic quest 5481"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gordo walks the road to Brill. His quest gives you Gloom Weed to pick on the way.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5481",
+       "label": "Wowhead Classic quest 5481"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:042",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Rogue's Deal from Calvin Montague"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 38.2,
+      "y": 56.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8,
+     "label": "A Rogue's Deal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8",
+     "label": "Wowhead Classic quest 8"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Calvin Montague by the farm on the road to Brill. Short quest, good early XP.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=8",
+       "label": "Wowhead Classic quest 8"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

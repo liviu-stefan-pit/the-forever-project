@@ -20,8 +20,8 @@ that stays at 60. Sources: [GameSpot](https://www.gamespot.com/articles/wow-fore
   are excluded everywhere. Result: `catalog/forever_quests_1_20.json`, 132 quests (levels ≤ 23).
 - **Coordinates:** all pins and goto points use the Forever map frame (Mulgore was redrawn in Forever, so Classic
   coordinates there are off by up to ~10 points). `tools/check_coords.py` compares all 595 NPC, mob, object and goto
-  coordinates in `v2/` with the PR #5 v1.1.3 data and flags any delta over 2 map points. `build_v2.py` runs it with
-  `--fix`. Last run: 1 fixed (Taillasher Eggs, Durotar), 0 left.
+  coordinates in `research/routes/horde-1-20/` with the PR #5 v1.1.3 data and flags any delta over 2 map points;
+  `--fix` rewrites the segment files.
 
 ## Route order
 
@@ -111,10 +111,11 @@ Step ids are positional (`<pack>:<n>`), so steps after an insert or removal get 
 - Orgrimmar / Thunder Bluff / Undercity Forever quests are not routed yet.
 - Skyborne starts on `zephras-isle` (257 steps; Shaman Call of Fire 97243–97257 added, Hunter Taming the Beast 94007 dropped because it needs level 10). The pack ends at `zephras-isle:194` (n=257). A join from 95350 into the existing Mulgore route is still unverified.
 
-## Rebuild
-`tools/route_spec.py` (our route) → `python3 tools/build_route.py` (checks every quest id and name against the
-QuestieDB catalog and the Forever catalog, writes `zones/`) → `python tools/build_v2.py contracts/route-v2.schema.json` (writes `v2/`,
-snaps coordinates to PR #5 with `check_coords.py --fix`, validates). `python3 tools/check_coords.py` on its own exits 1 if any delta is over 2.
+## Where the route lives
+The route is edited directly in `research/routes/horde-1-20/<pack>/`: a `pack.json` manifest and one file per segment
+(Valley of Trials, Razor Hill, Crossroads, …). See [docs/ROUTE_FILES.md](../../docs/ROUTE_FILES.md). The old generator chain
+(`tools/route_spec.py` → `build_route.py` → `zones/` → `build_v2.py` → `v2/`) was removed: the JSON had been edited by hand
+since, so re-running it would have undone those edits. `python3 tools/check_coords.py` exits 1 if any coordinate delta is over 2.
 
 ## Handoff to 20–40 (Lyra)
 - **Hearth hand-in:** `barrens-12-20:135` (n=148) still turns in Harpy Lieutenants to Darsok Swiftdagger at the Crossroads (The Barrens 51.6, 30.9,

@@ -1,0 +1,2623 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Blackrock Depths: turn-ins and follow-ups",
+ "steps": [
+  {
+   "id": "dungeons:blackrock-depths:turnin:3801",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3801",
+     "label": "Wowhead Classic: Dark Iron Legacy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dark Iron Legacy"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3801,
+     "label": "Dark Iron Legacy"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3981",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3981",
+     "label": "Wowhead Classic: Commander Gor'shak"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Commander Gor'shak to Commander Gor'shak (Blackrock Depths)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3981,
+     "label": "Commander Gor'shak"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4081",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4081",
+     "label": "Wowhead Classic: KILL ON SIGHT: Dark Iron Dwarves"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in KILL ON SIGHT: Dark Iron Dwarves to Warlord Goretooth (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4081,
+     "label": "KILL ON SIGHT: Dark Iron Dwarves"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4136",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4136",
+     "label": "Wowhead Classic: Ribbly Screwspigot"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ribbly Screwspigot to Yuka Screwspigot (Burning Steppes). Reward choices include Rancor Boots, Penance Spaulders, Splintsteel Armor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 66.1,
+      "y": 21.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4136,
+     "label": "Ribbly Screwspigot"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9544,
+     "name": "Yuka Screwspigot",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 66.1,
+      "y": 21.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9544",
+       "label": "Wowhead Classic: Yuka Screwspigot"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4324",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4324",
+     "label": "Wowhead Classic: Yuka Screwspigot"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Yuka Screwspigot to Yuka Screwspigot (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 66.1,
+      "y": 21.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4324,
+     "label": "Yuka Screwspigot"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9544,
+     "name": "Yuka Screwspigot",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 66.1,
+      "y": 21.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9544",
+       "label": "Wowhead Classic: Yuka Screwspigot"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4201",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4201",
+     "label": "Wowhead Classic: The Love Potion"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Love Potion to Mistress Nagmara (Blackrock Depths). Reward choices include Nagmara's Whipping Belt, Manacle Cuffs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4201,
+     "label": "The Love Potion"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:7201",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7201",
+     "label": "Wowhead Classic: The Last Element"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Last Element to Shadowmage Vivian Lagrave (Badlands). Reward choices include Lagrave's Seal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7201,
+     "label": "The Last Element"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4083",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4083",
+     "label": "Wowhead Classic: The Spectral Chalice"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Spectral Chalice to Spectral Chalice (Blackrock Depths)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4083,
+     "label": "The Spectral Chalice"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4123",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4123",
+     "label": "Wowhead Classic: The Heart of the Mountain"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Heart of the Mountain to Maxwort Uberglint (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 23.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4123,
+     "label": "The Heart of the Mountain"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9536,
+     "name": "Maxwort Uberglint",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 23.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9536",
+       "label": "Wowhead Classic: Maxwort Uberglint"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4133",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4133",
+     "label": "Wowhead Classic: Vivian Lagrave"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vivian Lagrave to Shadowmage Vivian Lagrave (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4133,
+     "label": "Vivian Lagrave"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4134",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4134",
+     "label": "Wowhead Classic: Lost Thunderbrew Recipe"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Lost Thunderbrew Recipe to Shadowmage Vivian Lagrave (Badlands). Reward choices include Superior Healing Potion, Greater Mana Potion, Swiftstrike Cudgel, Limb Cleaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4134,
+     "label": "Lost Thunderbrew Recipe"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3907",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3907",
+     "label": "Wowhead Classic: Disharmony of Fire"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Disharmony of Fire to Thunderheart (Badlands). Reward choices include Crypt Demon Bracers, Sunborne Cape, Nightfall Gloves, Stalwart Clutch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.3,
+      "y": 48.3,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3907,
+     "label": "Disharmony of Fire"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9084,
+     "name": "Thunderheart",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.3,
+      "y": 48.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9084",
+       "label": "Wowhead Classic: Thunderheart"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4024",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4024",
+     "label": "Wowhead Classic: A Taste of Flame"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever quest rows"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Taste of Flame to Cyrus Therepentous (Burning Steppes). Reward choices include Shaleskin Cape, Wyrmhide Spaulders, Valconian Sash"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 95.1,
+      "y": 31.6,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4024,
+     "label": "A Taste of Flame"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9459,
+     "name": "Cyrus Therepentous",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 95.1,
+      "y": 31.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9459",
+       "label": "Wowhead Classic: Cyrus Therepentous"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4063",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4063",
+     "label": "Wowhead Classic: The Rise of the Machines"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Rise of the Machines to Lotwil Veriatus (Badlands). Reward choices include Basaltscale Armor, Azure Moon Amice, Raincaster Drape, Lavaplate Gauntlets"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 25.9,
+      "y": 44.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4063,
+     "label": "The Rise of the Machines"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2921,
+     "name": "Lotwil Veriatus",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 25.9,
+      "y": 44.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2921",
+       "label": "Wowhead Classic: Lotwil Veriatus"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:9131",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=9131",
+     "label": "Wowhead Classic: Binding the Dreadnaught"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Binding the Dreadnaught to Korfax, Champion of the Light (Eastern Plaguelands). Reward choices include Insignia of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 72,
+      "y": 48.5,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 9131,
+     "label": "Binding the Dreadnaught"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 16112,
+     "name": "Korfax, Champion of the Light",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 72,
+      "y": 48.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=16112",
+       "label": "Wowhead Classic: Korfax, Champion of the Light"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3802",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3802",
+     "label": "Wowhead Classic: Dark Iron Legacy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dark Iron Legacy (level 48+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 3802,
+     "label": "Dark Iron Legacy"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5100 XP base, high for level 52.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3802",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3802",
+     "label": "Wowhead Classic: Dark Iron Legacy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dark Iron Legacy to Monument of Franclorn Forgewright (Blackrock Depths). Reward choices include Shadowforge Key"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3802,
+     "label": "Dark Iron Legacy"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:3982",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3982",
+     "label": "Wowhead Classic: What Is Going On?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept What Is Going On? from Commander Gor'shak in Blackrock Depths (level 48+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 3982,
+     "label": "What Is Going On?"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:3982",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3982",
+     "label": "Wowhead Classic: What Is Going On?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in What Is Going On? to Commander Gor'shak (Blackrock Depths)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3982,
+     "label": "What Is Going On?"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4001",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4001",
+     "label": "Wowhead Classic: What Is Going On?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept What Is Going On? from Commander Gor'shak in Blackrock Depths (level 48+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4001,
+     "label": "What Is Going On?"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (540 base at level 54); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4001",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4001",
+     "label": "Wowhead Classic: What Is Going On?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in What Is Going On? to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4001,
+     "label": "What Is Going On?"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4002",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4002",
+     "label": "Wowhead Classic: The Eastern Kingdom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Eastern Kingdom from Thrall in Orgrimmar (level 48+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4002,
+     "label": "The Eastern Kingdom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "No XP data in the source; treat as optional.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4002",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4002",
+     "label": "Wowhead Classic: The Eastern Kingdom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Eastern Kingdom to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4002,
+     "label": "The Eastern Kingdom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4082",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4082",
+     "label": "Wowhead Classic: KILL ON SIGHT: High Ranking Dark Iron Officials"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept KILL ON SIGHT: High Ranking Dark Iron Officials from KILL ON SIGHT in Badlands (level 50+, quest level 54)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.9,
+      "y": 46.7,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4082,
+     "label": "KILL ON SIGHT: High Ranking Dark Iron Officials"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 164868,
+     "name": "KILL ON SIGHT",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 3.9,
+      "y": 46.7
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=164868",
+       "label": "Wowhead Classic: KILL ON SIGHT"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5450 XP base, high for level 54.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4082",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4082",
+     "label": "Wowhead Classic: KILL ON SIGHT: High Ranking Dark Iron Officials"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in KILL ON SIGHT: High Ranking Dark Iron Officials to Warlord Goretooth (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4082,
+     "label": "KILL ON SIGHT: High Ranking Dark Iron Officials"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4122",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4122",
+     "label": "Wowhead Classic: Grark Lorkrub"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Grark Lorkrub from Lexlort in Badlands (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.9,
+      "y": 47.6,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4122,
+     "label": "Grark Lorkrub"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9080,
+     "name": "Lexlort",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.9,
+      "y": 47.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9080",
+       "label": "Wowhead Classic: Lexlort"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6200 XP base, high for level 58.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4122",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4122",
+     "label": "Wowhead Classic: Grark Lorkrub"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Grark Lorkrub to Grark Lorkrub (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 40.2,
+      "y": 34.2,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4122,
+     "label": "Grark Lorkrub"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9520,
+     "name": "Grark Lorkrub",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 40.2,
+      "y": 34.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9520",
+       "label": "Wowhead Classic: Grark Lorkrub"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4121",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4121",
+     "label": "Wowhead Classic: Precarious Predicament"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Precarious Predicament from Grark Lorkrub in Burning Steppes (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 40.2,
+      "y": 34.2,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4121,
+     "label": "Precarious Predicament"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9520,
+     "name": "Grark Lorkrub",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 40.2,
+      "y": 34.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9520",
+       "label": "Wowhead Classic: Grark Lorkrub"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4121",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4121",
+     "label": "Wowhead Classic: Precarious Predicament"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Precarious Predicament to Lexlort (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.9,
+      "y": 47.6,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4121,
+     "label": "Precarious Predicament"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9080,
+     "name": "Lexlort",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.9,
+      "y": 47.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9080",
+       "label": "Wowhead Classic: Lexlort"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4132",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4132",
+     "label": "Wowhead Classic: Operation: Death to Angerforge"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Operation: Death to Angerforge from Warlord Goretooth in Badlands (level 52+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4132,
+     "label": "Operation: Death to Angerforge"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 7750 XP base, high for level 58.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4132",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4132",
+     "label": "Wowhead Classic: Operation: Death to Angerforge"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Operation: Death to Angerforge to Warlord Goretooth (Badlands). Reward choices include Conqueror's Medallion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4132,
+     "label": "Operation: Death to Angerforge"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4003",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4003",
+     "label": "Wowhead Classic: The Royal Rescue"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Royal Rescue from Thrall in Orgrimmar (level 48+, quest level 59)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4003,
+     "label": "The Royal Rescue"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 8050 XP base, high for level 59.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4003",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4003",
+     "label": "Wowhead Classic: The Royal Rescue"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Royal Rescue to Princess Moira Bronzebeard (Blackrock Depths)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4003,
+     "label": "The Royal Rescue"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-depths:accept:4004",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4004",
+     "label": "Wowhead Classic: The Princess Saved?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Princess Saved? from Princess Moira Bronzebeard in Blackrock Depths (level 48+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4004,
+     "label": "The Princess Saved?"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 9950 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:turnin:4004",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Depths",
+    "instanceId": 1584,
+    "levels": [
+     52,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4004",
+     "label": "Wowhead Classic: The Princess Saved?"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Depths",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Princess Saved? to Thrall (Orgrimmar). Reward choices include Thrall's Resolve, Eye of Orgrimmar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4004,
+     "label": "The Princess Saved?"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-depths:off",
+   "section": "Blackrock Depths",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Burning Steppes, Western Plaguelands, Eastern Plaguelands and Winterspring quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:blackrock-depths:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

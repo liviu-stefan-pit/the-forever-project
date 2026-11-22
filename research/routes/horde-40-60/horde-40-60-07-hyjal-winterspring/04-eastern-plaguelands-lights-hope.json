@@ -1,0 +1,2204 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-07-hyjal-winterspring",
+ "title": "Eastern Plaguelands (Light's Hope)",
+ "steps": [
+  {
+   "id": "h4060:eastern-plaguelands:a6021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Zaeldarr the Outcast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 69.9,
+      "y": 53.7,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6021,
+     "label": "Zaeldarr the Outcast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Tirion Fordring and Nathanos Blightcaller give overlapping kill quests in the south of the zone; do them together.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Paladins: use Exorcism as an opener on undead and keep Blessing of Wisdom up; Turn Undead removes a second attacker.",
+     "classes": [
+      "Paladin"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Mages and warlocks: the ghoul and skeleton packs are slow, so kite them with Frost Nova or Curse of Exhaustion.",
+     "classes": [
+      "Mage",
+      "Warlock"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12636,
+     "name": "Georgia",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 70.5,
+      "y": 47.5
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6021",
+     "label": "Wowhead Classic quest 6021 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5281",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Restless Souls"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 69.93,
+      "y": 53.72,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5281,
+     "label": "The Restless Souls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5281",
+     "label": "Wowhead Classic quest 5281 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6030",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn Duke Nicholas Zverenhoff in at Light's Hope before riding to Tirion."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.63,
+      "y": 50.09,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6030,
+     "label": "Turn Duke Nicholas Zverenhoff in at Light's Hope before riding to Tirion."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6030",
+     "label": "Wowhead Classic quest 6030"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 6030 no pre, end npc 11039 spawn 71.63, 50.09, zone 139, uiMapId 1423"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:eastern-plaguelands:fp-lights-hope",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Light's Hope Chapel flight path from Georgia. Horde uses the same chapel flight master."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 70.53,
+      "y": 47.55,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Light's Hope Chapel flight path",
+     "place": "Light's Hope Chapel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12636,
+     "name": "Georgia",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 70.53,
+      "y": 47.55
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5517",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Chromatic Mantle of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.79,
+      "y": 50.25,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5517,
+     "label": "Chromatic Mantle of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5517",
+     "label": "Wowhead Classic quest 5517 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5513",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Mantles of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.79,
+      "y": 50.25,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5513,
+     "label": "Mantles of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5513",
+     "label": "Wowhead Classic quest 5513 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5211",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Defenders of Darrowshire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 50.04,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5211,
+     "label": "Defenders of Darrowshire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5211",
+     "label": "Wowhead Classic quest 5211 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5517",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Chromatic Mantle of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.79,
+      "y": 50.25,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5517,
+     "label": "Chromatic Mantle of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5517",
+     "label": "Wowhead Classic quest 5517 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5513",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Mantles of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.79,
+      "y": 50.25,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5513,
+     "label": "Mantles of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5513",
+     "label": "Wowhead Classic quest 5513 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5211",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Defenders of Darrowshire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 50.04,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5211,
+     "label": "Defenders of Darrowshire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5211",
+     "label": "Wowhead Classic quest 5211 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6164",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Augustus' Receipt Book"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 11.4,
+      "y": 26.4,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6164,
+     "label": "Augustus' Receipt Book"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6164",
+     "label": "Wowhead Classic quest 6164 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5281",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Restless Souls"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 11.36,
+      "y": 26.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5281,
+     "label": "The Restless Souls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5281",
+     "label": "Wowhead Classic quest 5281 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5542",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Demon Dogs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5542,
+     "label": "Demon Dogs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5542",
+     "label": "Wowhead Classic quest 5542 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5543",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Blood Tinged Skies"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5543,
+     "label": "Blood Tinged Skies"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5543",
+     "label": "Wowhead Classic quest 5543 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a5544",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Carrion Grubbage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5544,
+     "label": "Carrion Grubbage"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5544",
+     "label": "Wowhead Classic quest 5544 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6022",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: To Kill With Purpose"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "From Nathanos Blightcaller at his farm south-west of Light's Hope.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.2,
+      "y": 63.5,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6022,
+     "label": "To Kill With Purpose"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6022",
+     "label": "Wowhead Classic quest 6022 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6133",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Ranger Lord's Behest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6133,
+     "label": "The Ranger Lord's Behest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6133",
+     "label": "Wowhead Classic quest 6133 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6042",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Un-Life's Little Annoyances"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6042,
+     "label": "Un-Life's Little Annoyances"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6042",
+     "label": "Wowhead Classic quest 6042 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6133",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Ranger Lord's Behest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6133,
+     "label": "The Ranger Lord's Behest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6133",
+     "label": "Wowhead Classic quest 6133 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6042",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Un-Life's Little Annoyances"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6042,
+     "label": "Un-Life's Little Annoyances"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6042",
+     "label": "Wowhead Classic quest 6042 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c5542",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Demon Dogs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 20.8,
+      "y": 60.5,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5542,
+     "objective": 1,
+     "label": "Plaguehound Runt"
+    },
+    {
+     "type": "complete",
+     "questId": 5542,
+     "objective": 2,
+     "label": "Plaguehound"
+    },
+    {
+     "type": "complete",
+     "questId": 5542,
+     "objective": 3,
+     "label": "Frenzied Plaguehound"
+    },
+    {
+     "type": "mob",
+     "name": "Plaguehound Runt",
+     "npcIds": [
+      8596
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Plaguehound",
+     "npcIds": [
+      8597
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Frenzied Plaguehound",
+     "npcIds": [
+      8598
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Plaguehound Runt (level 53-54) spawns are densest around 20.8, 60.5 (51 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Plaguehound (level 55-56) spawns are densest around 56.3, 51.0 (34 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8596
+     ],
+     "name": "Plaguehound Runt",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 20.8,
+      "y": 60.5
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8597
+     ],
+     "name": "Plaguehound",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 56.3,
+      "y": 51
+     },
+     "radius": 12.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8598
+     ],
+     "name": "Frenzied Plaguehound",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 44.5,
+      "y": 28.3
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5542",
+     "label": "Wowhead Classic quest 5542 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c5543",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Blood Tinged Skies"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 30,
+      "y": 64.2,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5543,
+     "objective": 1,
+     "label": "Plaguebat"
+    },
+    {
+     "type": "mob",
+     "name": "Plaguebat",
+     "npcIds": [
+      8600
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Plaguebat (level 53-55) spawns are densest around 30.0, 64.2 (86 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8600
+     ],
+     "name": "Plaguebat",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 30,
+      "y": 64.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5543",
+     "label": "Wowhead Classic quest 5543 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c5544",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Carrion Grubbage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 41.1,
+      "y": 55.8,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13853,
+     "count": 1,
+     "questId": 5544,
+     "objective": 1,
+     "label": "Slab of Carrion Worm Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Carrion Grub (level 54-55) spawns are densest around 41.1, 55.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8603
+     ],
+     "name": "Carrion Grub",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 41.1,
+      "y": 55.8
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8605
+     ],
+     "name": "Carrion Devourer",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 49,
+      "y": 31.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5544",
+     "label": "Wowhead Classic quest 5544 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c6021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Zaeldarr the Outcast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 23.1,
+      "y": 72.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 15785,
+     "count": 1,
+     "questId": 6021,
+     "objective": 1,
+     "label": "Zaeldarr's Head"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Zaeldarr the Outcast (level 54-55) spawns are densest around 23.1, 72.6. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12250
+     ],
+     "name": "Zaeldarr the Outcast",
+     "mapId": 1423,
+     "zone": "Eastern Plaguelands",
+     "center": {
+      "x": 23.1,
+      "y": 72.6
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6021",
+     "label": "Wowhead Classic quest 6021 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6024",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Hameya's Plea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.9,
+      "y": 72.96,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6024,
+     "label": "Hameya's Plea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6024",
+     "label": "Wowhead Classic quest 6024 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6024",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Hameya's Plea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 23.58,
+      "y": 73.79,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6024,
+     "label": "Hameya's Plea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6024",
+     "label": "Wowhead Classic quest 6024 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c6022",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: To Kill With Purpose"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Nathanos's tasks have the Plaguehound and bat kills overlap with Demon Dogs and Blood Tinged Skies: do them in the same loop.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 15448,
+     "count": 1,
+     "questId": 6022,
+     "objective": 1,
+     "label": "Coagulated Rot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6022",
+     "label": "Wowhead Classic quest 6022 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:c6164",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Augustus' Receipt Book"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 14,
+      "y": 24.2,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 15884,
+     "count": 1,
+     "questId": 6164,
+     "objective": 1,
+     "label": "Augustus' Receipt Book"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6164",
+     "label": "Wowhead Classic quest 6164 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5542",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Demon Dogs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5542,
+     "label": "Demon Dogs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5542",
+     "label": "Wowhead Classic quest 5542 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5543",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Blood Tinged Skies"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5543,
+     "label": "Blood Tinged Skies"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5543",
+     "label": "Wowhead Classic quest 5543 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t5544",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Carrion Grubbage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 5.2,
+      "y": 35.6,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5544,
+     "label": "Carrion Grubbage"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5544",
+     "label": "Wowhead Classic quest 5544 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Zaeldarr the Outcast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 69.9,
+      "y": 53.7,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6021,
+     "label": "Zaeldarr the Outcast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6021",
+     "label": "Wowhead Classic quest 6021 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6022",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: To Kill With Purpose"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.2,
+      "y": 63.5,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6022,
+     "label": "To Kill With Purpose"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6022",
+     "label": "Wowhead Classic quest 6022 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6164",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Augustus' Receipt Book"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 11.4,
+      "y": 26.4,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6164,
+     "label": "Augustus' Receipt Book"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6164",
+     "label": "Wowhead Classic quest 6164 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6026",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: That's Asking A Lot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 70.88,
+      "y": 48.43,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6026,
+     "label": "That's Asking A Lot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6026",
+     "label": "Wowhead Classic quest 6026 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6026",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: That's Asking A Lot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 70.88,
+      "y": 48.43,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6026,
+     "label": "That's Asking A Lot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6026",
+     "label": "Wowhead Classic quest 6026 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a84319",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Oh No Ye Don't!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 53.41,
+      "y": 58.55,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 84319,
+     "label": "Oh No Ye Don't!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=84319",
+     "label": "Wowhead Classic quest 84319 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t84319",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Oh No Ye Don't!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 53.41,
+      "y": 58.55,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 84319,
+     "label": "Oh No Ye Don't!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=84319",
+     "label": "Wowhead Classic quest 84319 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5142",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Little Pamela"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 49.17,
+      "y": 78.57,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5142,
+     "label": "Little Pamela"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5142",
+     "label": "Wowhead Classic quest 5142 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

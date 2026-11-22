@@ -3,7 +3,8 @@
  *
  *   node --experimental-strip-types scripts/build-data.ts [--research DIR] [--out DIR]
  *
- * Discovers every route-v2 pack under `research/` (any `*.json` whose top level is
+ * Discovers every route-v2 pack under `research/` (segment folders with a `pack.json` manifest, see
+ * docs/ROUTE_FILES.md, and any `*.json` whose top level is
  * `{ "schema": "project-forever/route", "version": 2 }`; `tools/`, `catalog/` and `node_modules/` are skipped),
  * validates each against `contracts/route-v2.schema.json` (errors fail the build), enforces the route rules,
  * joins `research/professions/profession_hooks.json` onto steps, and writes the site data the UI loads from
@@ -20,7 +21,7 @@
  * Rules: quests 79953 and 81951 (low-confidence Forever quests) are stripped from every route with a warning;
  * any step that uses a `forever: true` quest is forced to `verified: false` (warning when it said true).
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, unlinkSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, unlinkSync, writeFileSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
@@ -53,11 +54,11 @@ import { runIntegrity } from "./guide-integrity.ts";
 import { enrichCompleteSteps } from "./enrich-complete.ts";
 import { compactSteps } from "./compact-steps.ts";
 import { runXpSimPipeline, writeDungeonOnSim } from "./xp-sim.ts";
+import { discoverPacks as discoverRoutePacks } from "./routeSource.ts";
 import { isChainTerminal, resolveNextGuide } from "../src/lib/routeChains.ts";
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
 export const EXCLUDED_QUESTS: ReadonlySet<number> = new Set([79953, 81951]);
-const SKIP_DIRS = new Set(["tools", "catalog", "node_modules", ".git"]);
 
 // ---------- types ----------
 
@@ -126,31 +127,9 @@ function readJson<T>(p: string): T {
   return JSON.parse(readFileSync(p, "utf-8")) as T;
 }
 
-function isPack(v: unknown): v is RoutePack {
-  return !!v && typeof v === "object" && (v as RoutePack).schema === "project-forever/route" && (v as RoutePack).version === 2;
-}
-
-/** Every route-v2 pack JSON under `dir` (sorted, deterministic). */
+/** Every route-v2 pack under `dir`: single files and segment folders (see routeSource.ts). */
 export function discoverPacks(dir: string): { path: string; pack: RoutePack }[] {
-  const out: { path: string; pack: RoutePack }[] = [];
-  const walk = (d: string) => {
-    for (const name of readdirSync(d).sort()) {
-      const p = join(d, name);
-      if (statSync(p).isDirectory()) {
-        if (!SKIP_DIRS.has(name)) walk(p);
-      } else if (name.endsWith(".json")) {
-        let v: unknown;
-        try {
-          v = readJson(p);
-        } catch {
-          continue;
-        }
-        if (isPack(v)) out.push({ path: p, pack: v });
-      }
-    }
-  };
-  if (existsSync(dir)) walk(dir);
-  return out;
+  return discoverRoutePacks(dir) as unknown as { path: string; pack: RoutePack }[];
 }
 
 export function makeValidators(schemaPath = join(ROOT, "contracts/route-v2.schema.json")) {

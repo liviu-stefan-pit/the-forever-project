@@ -1,0 +1,2520 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Zul'Farrak",
+ "steps": [
+  {
+   "id": "dungeons:zulfarrak:accept:2933",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2933",
+     "label": "Wowhead Classic: Venom Bottles"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Venom Bottles from Venom Bottle in The Hinterlands (level 40+, quest level 43)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 23.5,
+      "y": 58.8,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2933,
+     "label": "Venom Bottles"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 142702,
+     "name": "Venom Bottle",
+     "at": {
+      "mapId": 1425,
+      "zone": "The Hinterlands",
+      "x": 23.5,
+      "y": 58.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=142702",
+       "label": "Wowhead Classic: Venom Bottle"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2933",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2933",
+     "label": "Wowhead Classic: Venom Bottles"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Venom Bottles to Apothecary Lydon (Hillsbrad Foothills)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.4,
+      "y": 19.1,
+      "zone": "Hillsbrad Foothills",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2933,
+     "label": "Venom Bottles"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2216,
+     "name": "Apothecary Lydon",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 61.4,
+      "y": 19.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2216",
+       "label": "Wowhead Classic: Apothecary Lydon"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:3520",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3520",
+     "label": "Wowhead Classic: Screecher Spirits"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Screecher Spirits from Yeh'kinya in Tanaris (level 40+, quest level 44)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3520,
+     "label": "Screecher Spirits"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:3520",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3520",
+     "label": "Wowhead Classic: Screecher Spirits"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Screecher Spirits to Yeh'kinya (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3520,
+     "label": "Screecher Spirits"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2934",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2934",
+     "label": "Wowhead Classic: Undamaged Venom Sac"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Undamaged Venom Sac from Apothecary Lydon in Hillsbrad Foothills (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.4,
+      "y": 19.1,
+      "zone": "Hillsbrad Foothills",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2934,
+     "label": "Undamaged Venom Sac"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2216,
+     "name": "Apothecary Lydon",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 61.4,
+      "y": 19.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2216",
+       "label": "Wowhead Classic: Apothecary Lydon"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2934",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2934",
+     "label": "Wowhead Classic: Undamaged Venom Sac"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Undamaged Venom Sac to Apothecary Lydon (Hillsbrad Foothills)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.4,
+      "y": 19.1,
+      "zone": "Hillsbrad Foothills",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2934,
+     "label": "Undamaged Venom Sac"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2216,
+     "name": "Apothecary Lydon",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 61.4,
+      "y": 19.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2216",
+       "label": "Wowhead Classic: Apothecary Lydon"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2935",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2935",
+     "label": "Wowhead Classic: Consult Master Gadrin"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Consult Master Gadrin from Apothecary Lydon in Hillsbrad Foothills (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.4,
+      "y": 19.1,
+      "zone": "Hillsbrad Foothills",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2935,
+     "label": "Consult Master Gadrin"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2216,
+     "name": "Apothecary Lydon",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 61.4,
+      "y": 19.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2216",
+       "label": "Wowhead Classic: Apothecary Lydon"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2935",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2935",
+     "label": "Wowhead Classic: Consult Master Gadrin"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Consult Master Gadrin to Master Gadrin (Durotar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2935,
+     "label": "Consult Master Gadrin"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3188,
+     "name": "Master Gadrin",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 56,
+      "y": 74.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3188",
+       "label": "Wowhead Classic: Master Gadrin"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2864",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2864",
+     "label": "Wowhead Classic: Tran'rek"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tran'rek from Krazek in Stranglethorn Vale (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 26.9,
+      "y": 77.2,
+      "zone": "Stranglethorn Vale",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2864,
+     "label": "Tran'rek"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 773,
+     "name": "Krazek",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.9,
+      "y": 77.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=773",
+       "label": "Wowhead Classic: Krazek"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (390 base at level 45); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2865",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2865",
+     "label": "Wowhead Classic: Scarab Shells"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Scarab Shells from Tran'rek in Tanaris (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2865,
+     "label": "Scarab Shells"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7876,
+     "name": "Tran'rek",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.6,
+      "y": 26.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7876",
+       "label": "Wowhead Classic: Tran'rek"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 3900 XP base, high for level 45.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2936",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2936",
+     "label": "Wowhead Classic: The Spider God"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Spider God from Master Gadrin in Durotar (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2936,
+     "label": "The Spider God"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3188,
+     "name": "Master Gadrin",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 56,
+      "y": 74.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3188",
+       "label": "Wowhead Classic: Master Gadrin"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 4850 XP base, high for level 45.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:3042",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3042",
+     "label": "Wowhead Classic: Troll Temper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Troll Temper from Trenton Lighthammer in Tanaris (level 40+, quest level 45)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.4,
+      "y": 28.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3042,
+     "label": "Troll Temper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7804,
+     "name": "Trenton Lighthammer",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.4,
+      "y": 28.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7804",
+       "label": "Wowhead Classic: Trenton Lighthammer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 3900 XP base, high for level 45.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2846",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2846",
+     "label": "Wowhead Classic: Tiara of the Deep"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tiara of the Deep from Tabetha in Dustwallow Marsh (level 40+, quest level 46)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2846,
+     "label": "Tiara of the Deep"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6050 XP base, high for level 46.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2861",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2861",
+     "label": "Wowhead Classic: Tabetha's Task"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tabetha's Task from Ursyn Ghull in Thunder Bluff (level 40+, quest level 46)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 25.7,
+      "y": 14.2,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2861,
+     "label": "Tabetha's Task"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3048,
+     "name": "Ursyn Ghull",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 25.7,
+      "y": 14.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3048",
+       "label": "Wowhead Classic: Ursyn Ghull"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (405 base at level 46); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2768",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2768",
+     "label": "Wowhead Classic: Divino-matic Rod"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Divino-matic Rod from Chief Engineer Bilgewhizzle in Tanaris (level 40+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2768,
+     "label": "Divino-matic Rod"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7407,
+     "name": "Chief Engineer Bilgewhizzle",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.5,
+      "y": 28.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7407",
+       "label": "Wowhead Classic: Chief Engineer Bilgewhizzle"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6300 XP base, high for level 47.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:3527",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3527",
+     "label": "Wowhead Classic: The Prophecy of Mosh'aru"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Prophecy of Mosh'aru from Yeh'kinya in Tanaris (level 40+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3527,
+     "label": "The Prophecy of Mosh'aru"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5250 XP base, high for level 47.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:accept:2770",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2770",
+     "label": "Wowhead Classic: Gahz'rilla"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gahz'rilla from Wizzle Brassbolts in Thousand Needles (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "x": 78.1,
+      "y": 77.1,
+      "zone": "Thousand Needles",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2770,
+     "label": "Gahz'rilla"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4453,
+     "name": "Wizzle Brassbolts",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.1,
+      "y": 77.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4453",
+       "label": "Wowhead Classic: Wizzle Brassbolts"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:run",
+   "section": "Zul'Farrak",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Zul'Farrak (levels 44-54) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 38.7,
+      "y": 20.1,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 9238,
+     "count": 1,
+     "questId": 2865,
+     "objective": 1,
+     "label": "Scarab Shells: Uncracked Scarab Shell"
+    },
+    {
+     "type": "collect",
+     "itemId": 9523,
+     "count": 1,
+     "questId": 3042,
+     "objective": 1,
+     "label": "Troll Temper: Troll Temper"
+    },
+    {
+     "type": "collect",
+     "itemId": 9234,
+     "count": 1,
+     "questId": 2846,
+     "objective": 1,
+     "label": "Tiara of the Deep: Tiara of the Deep"
+    },
+    {
+     "type": "collect",
+     "itemId": 8548,
+     "count": 1,
+     "questId": 2768,
+     "objective": 1,
+     "label": "Divino-matic Rod: Divino-matic Rod"
+    },
+    {
+     "type": "collect",
+     "itemId": 10660,
+     "count": 1,
+     "questId": 3527,
+     "objective": 1,
+     "label": "The Prophecy of Mosh'aru: First Mosh'aru Tablet"
+    },
+    {
+     "type": "collect",
+     "itemId": 10661,
+     "count": 1,
+     "questId": 3527,
+     "objective": 2,
+     "label": "The Prophecy of Mosh'aru: Second Mosh'aru Tablet"
+    },
+    {
+     "type": "collect",
+     "itemId": 8707,
+     "count": 1,
+     "questId": 2770,
+     "objective": 1,
+     "label": "Gahz'rilla: Gahz'rilla's Electrified Scale"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:zulfarrak:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The pyramid stair event pulls the whole troll army; hold the top of the stairs and pick up adds as they arrive.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1176",
+       "label": "Wowhead Classic: Zul'Farrak"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Stay at the top of the stairs during the event; sandfury shaman packs need interrupts.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1176",
+       "label": "Wowhead Classic: Zul'Farrak"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Use the Mallet of Zul'Farrak at the gong for Gahz'rilla; collect Scarab Shells as you clear.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1176",
+       "label": "Wowhead Classic: Zul'Farrak"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Zul'Farrak once. Do not reset for another Gahz'rilla.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=1176",
+     "label": "Wowhead Classic: Zul'Farrak level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2864",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2864",
+     "label": "Wowhead Classic: Tran'rek"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tran'rek to Tran'rek (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2864,
+     "label": "Tran'rek"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7876,
+     "name": "Tran'rek",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.6,
+      "y": 26.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7876",
+       "label": "Wowhead Classic: Tran'rek"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2865",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2865",
+     "label": "Wowhead Classic: Scarab Shells"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Scarab Shells to Tran'rek (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2865,
+     "label": "Scarab Shells"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7876,
+     "name": "Tran'rek",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.6,
+      "y": 26.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7876",
+       "label": "Wowhead Classic: Tran'rek"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2936",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2936",
+     "label": "Wowhead Classic: The Spider God"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Spider God to Master Gadrin (Durotar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2936,
+     "label": "The Spider God"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3188,
+     "name": "Master Gadrin",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 56,
+      "y": 74.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3188",
+       "label": "Wowhead Classic: Master Gadrin"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:3042",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3042",
+     "label": "Wowhead Classic: Troll Temper"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Troll Temper to Trenton Lighthammer (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.4,
+      "y": 28.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3042,
+     "label": "Troll Temper"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7804,
+     "name": "Trenton Lighthammer",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.4,
+      "y": 28.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7804",
+       "label": "Wowhead Classic: Trenton Lighthammer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2846",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2846",
+     "label": "Wowhead Classic: Tiara of the Deep"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tiara of the Deep to Tabetha (Dustwallow Marsh). Reward choices include Spellshifter Rod, Gemshale Pauldrons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2846,
+     "label": "Tiara of the Deep"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2861",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2861",
+     "label": "Wowhead Classic: Tabetha's Task"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tabetha's Task to Tabetha (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2861,
+     "label": "Tabetha's Task"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2768",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2768",
+     "label": "Wowhead Classic: Divino-matic Rod"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Divino-matic Rod to Chief Engineer Bilgewhizzle (Tanaris). Reward choices include Masons Fraternity Ring, Engineer's Guild Headpiece"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2768,
+     "label": "Divino-matic Rod"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7407,
+     "name": "Chief Engineer Bilgewhizzle",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.5,
+      "y": 28.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7407",
+       "label": "Wowhead Classic: Chief Engineer Bilgewhizzle"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:3527",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3527",
+     "label": "Wowhead Classic: The Prophecy of Mosh'aru"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Prophecy of Mosh'aru to Yeh'kinya (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3527,
+     "label": "The Prophecy of Mosh'aru"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:turnin:2770",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Zul'Farrak",
+    "instanceId": 1176,
+    "levels": [
+     44,
+     54
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2770",
+     "label": "Wowhead Classic: Gahz'rilla"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Zul'Farrak",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gahz'rilla to Wizzle Brassbolts (Thousand Needles). Reward choices include Carrot on a Stick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "x": 78.1,
+      "y": 77.1,
+      "zone": "Thousand Needles",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2770,
+     "label": "Gahz'rilla"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4453,
+     "name": "Wizzle Brassbolts",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.1,
+      "y": 77.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4453",
+       "label": "Wowhead Classic: Wizzle Brassbolts"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:zulfarrak:off",
+   "section": "Zul'Farrak",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Tanaris, Feralas and The Hinterlands quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:zulfarrak:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

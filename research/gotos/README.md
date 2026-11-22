@@ -9,8 +9,7 @@ python3 research/gotos/backfill.py          # edit the packs + write report.json
 python3 research/gotos/backfill.py --check  # exit 1 if any pack would still change
 ```
 
-Re-run it after regenerating `research/dungeons/steps-v2.json` or `research/horde-40-60/horde-40-60.route.json`,
-because their generators overwrite the packs. It is idempotent: steps that already have a goto are not touched.
+It reads whole packs, segment folders included, and writes each step back to its own segment file. It is idempotent: steps that already have a goto are not touched.
 
 ## Rules
 

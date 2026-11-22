@@ -1,0 +1,4967 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Sunken Temple (Temple of Atal'Hakkar): pick-ups and the run",
+ "steps": [
+  {
+   "id": "dungeons:sunken-temple:accept:1444",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1444",
+     "label": "Wowhead Classic: Return to Fel'Zerul"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to Fel'Zerul from Atal'ai Exile in The Hinterlands (level 38+, quest level 44)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 33.8,
+      "y": 75.2,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1444,
+     "label": "Return to Fel'Zerul"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5598,
+     "name": "Atal'ai Exile",
+     "at": {
+      "mapId": 1425,
+      "zone": "The Hinterlands",
+      "x": 33.8,
+      "y": 75.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5598",
+       "label": "Wowhead Classic: Atal'ai Exile"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:1444",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1444",
+     "label": "Wowhead Classic: Return to Fel'Zerul"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Fel'Zerul to Fel'zerul (Swamp of Sorrows)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.9,
+      "y": 54.8,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1444,
+     "label": "Return to Fel'Zerul"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1443,
+     "name": "Fel'zerul",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 47.9,
+      "y": 54.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1443",
+       "label": "Wowhead Classic: Fel'zerul"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:4787",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4787",
+     "label": "Wowhead Classic: The Ancient Egg"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Ancient Egg from Yeh'kinya in Tanaris (level 40+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4787,
+     "label": "The Ancient Egg"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:4787",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4787",
+     "label": "Wowhead Classic: The Ancient Egg"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Ancient Egg to Yeh'kinya (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4787,
+     "label": "The Ancient Egg"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3380",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3380",
+     "label": "Wowhead Classic: The Sunken Temple"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Sunken Temple from Witch Doctor Uzer'i in Feralas (level 46+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.4,
+      "y": 43.4,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3380,
+     "label": "The Sunken Temple"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8115,
+     "name": "Witch Doctor Uzer'i",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 74.4,
+      "y": 43.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8115",
+       "label": "Wowhead Classic: Witch Doctor Uzer'i"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (3650 base at level 51); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:3380",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3380",
+     "label": "Wowhead Classic: The Sunken Temple"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Sunken Temple to Marvon Rivetseeker (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.7,
+      "y": 45.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3380,
+     "label": "The Sunken Temple"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7771,
+     "name": "Marvon Rivetseeker",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.7,
+      "y": 45.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7771",
+       "label": "Wowhead Classic: Marvon Rivetseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3444",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3444",
+     "label": "Wowhead Classic: The Stone Circle"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Stone Circle from Marvon Rivetseeker in Tanaris (level 46+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.7,
+      "y": 45.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3444,
+     "label": "The Stone Circle"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7771,
+     "name": "Marvon Rivetseeker",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.7,
+      "y": 45.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7771",
+       "label": "Wowhead Classic: Marvon Rivetseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:3444",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3444",
+     "label": "Wowhead Classic: The Stone Circle"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Stone Circle to Marvon Rivetseeker (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.7,
+      "y": 45.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3444,
+     "label": "The Stone Circle"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7771,
+     "name": "Marvon Rivetseeker",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.7,
+      "y": 45.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7771",
+       "label": "Wowhead Classic: Marvon Rivetseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:4147",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4147",
+     "label": "Wowhead Classic: Marvon's Workshop"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Marvon's Workshop from Larion in Un'Goro Crater (level 47+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 45.5,
+      "y": 8.7,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4147,
+     "label": "Marvon's Workshop"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9118,
+     "name": "Larion",
+     "at": {
+      "mapId": 1449,
+      "zone": "Un'Goro Crater",
+      "x": 45.5,
+      "y": 8.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9118",
+       "label": "Wowhead Classic: Larion"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:4147",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4147",
+     "label": "Wowhead Classic: Marvon's Workshop"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Marvon's Workshop to Liv Rizzlefix (The Barrens)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.5,
+      "y": 38.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4147,
+     "label": "Marvon's Workshop"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8496,
+     "name": "Liv Rizzlefix",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.5,
+      "y": 38.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8496",
+       "label": "Wowhead Classic: Liv Rizzlefix"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8151",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8151",
+     "label": "Wowhead Classic: The Hunter's Charm"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Hunter's Charm from Kary Thunderhorn in Thunder Bluff (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 58.5,
+      "y": 88.3,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8151,
+     "label": "The Hunter's Charm"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3038,
+     "name": "Kary Thunderhorn",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 58.5,
+      "y": 88.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3038",
+       "label": "Wowhead Classic: Kary Thunderhorn"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Hunter) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8151",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8151",
+     "label": "Wowhead Classic: The Hunter's Charm"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Hunter's Charm to Ogtinc (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8151,
+     "label": "The Hunter's Charm"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8153",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8153",
+     "label": "Wowhead Classic: Courser Antlers"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Courser Antlers from Ogtinc in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8153,
+     "label": "Courser Antlers"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Hunter) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8153",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8153",
+     "label": "Wowhead Classic: Courser Antlers"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Courser Antlers to Ogtinc (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8153,
+     "label": "Courser Antlers"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8231",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8231",
+     "label": "Wowhead Classic: Wavethrashing"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wavethrashing from Ogtinc in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8231,
+     "label": "Wavethrashing"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Hunter) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8231",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8231",
+     "label": "Wowhead Classic: Wavethrashing"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wavethrashing to Ogtinc (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8231,
+     "label": "Wavethrashing"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8233",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8233",
+     "label": "Wowhead Classic: A Simple Request"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Simple Request from Ormok in Orgrimmar (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 43.9,
+      "y": 54.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8233,
+     "label": "A Simple Request"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3328,
+     "name": "Ormok",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 43.9,
+      "y": 54.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3328",
+       "label": "Wowhead Classic: Ormok"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Rogue) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8233",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8233",
+     "label": "Wowhead Classic: A Simple Request"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Simple Request to Lord Jorach Ravenholdt (Alterac Mountains)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1416,
+      "x": 86,
+      "y": 78.9,
+      "zone": "Alterac Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8233,
+     "label": "A Simple Request"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6768,
+     "name": "Lord Jorach Ravenholdt",
+     "at": {
+      "mapId": 1416,
+      "zone": "Alterac Mountains",
+      "x": 86,
+      "y": 78.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6768",
+       "label": "Wowhead Classic: Lord Jorach Ravenholdt"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8234",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8234",
+     "label": "Wowhead Classic: Sealed Azure Bag"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sealed Azure Bag from Lord Jorach Ravenholdt in Alterac Mountains (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1416,
+      "x": 86,
+      "y": 78.9,
+      "zone": "Alterac Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8234,
+     "label": "Sealed Azure Bag"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6768,
+     "name": "Lord Jorach Ravenholdt",
+     "at": {
+      "mapId": 1416,
+      "zone": "Alterac Mountains",
+      "x": 86,
+      "y": 78.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6768",
+       "label": "Wowhead Classic: Lord Jorach Ravenholdt"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Rogue) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8234",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8234",
+     "label": "Wowhead Classic: Sealed Azure Bag"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sealed Azure Bag to Archmage Xylem (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8234,
+     "label": "Sealed Azure Bag"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8235",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8235",
+     "label": "Wowhead Classic: Encoded Fragments"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Encoded Fragments from Archmage Xylem in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8235,
+     "label": "Encoded Fragments"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Rogue) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8235",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8235",
+     "label": "Wowhead Classic: Encoded Fragments"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encoded Fragments to Archmage Xylem (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8235,
+     "label": "Encoded Fragments"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8250",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8250",
+     "label": "Wowhead Classic: Magecraft"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Magecraft from Thurston Xane in Thunder Bluff (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 25.2,
+      "y": 21,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8250,
+     "label": "Magecraft"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3049,
+     "name": "Thurston Xane",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 25.2,
+      "y": 21
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3049",
+       "label": "Wowhead Classic: Thurston Xane"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8250",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8250",
+     "label": "Wowhead Classic: Magecraft"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Magecraft to Sanath Lim-yo (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 28.1,
+      "y": 50.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8250,
+     "label": "Magecraft"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8395,
+     "name": "Sanath Lim-yo",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 28.1,
+      "y": 50.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8395",
+       "label": "Wowhead Classic: Sanath Lim-yo"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8251",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8251",
+     "label": "Wowhead Classic: Magic Dust"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Magic Dust from Archmage Xylem in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8251,
+     "label": "Magic Dust"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8251",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8251",
+     "label": "Wowhead Classic: Magic Dust"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Magic Dust to Archmage Xylem (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8251,
+     "label": "Magic Dust"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8252",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8252",
+     "label": "Wowhead Classic: The Siren's Coral"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Siren's Coral from Archmage Xylem in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8252,
+     "label": "The Siren's Coral"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8252",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8252",
+     "label": "Wowhead Classic: The Siren's Coral"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Siren's Coral to Archmage Xylem (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8252,
+     "label": "The Siren's Coral"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8254",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8254",
+     "label": "Wowhead Classic: Cenarion Aid"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Priest"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Cenarion Aid from Malakai Cross in Thunder Bluff (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 24.6,
+      "y": 22.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8254,
+     "label": "Cenarion Aid"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3045,
+     "name": "Malakai Cross",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 24.6,
+      "y": 22.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3045",
+       "label": "Wowhead Classic: Malakai Cross"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Priest) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8254",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8254",
+     "label": "Wowhead Classic: Cenarion Aid"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Priest"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Cenarion Aid to Ogtinc (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8254,
+     "label": "Cenarion Aid"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8255",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8255",
+     "label": "Wowhead Classic: Of Coursers We Know"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Priest"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Of Coursers We Know from Ogtinc in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8255,
+     "label": "Of Coursers We Know"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Priest) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8255",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8255",
+     "label": "Wowhead Classic: Of Coursers We Know"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Priest"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Of Coursers We Know to Ogtinc (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8255,
+     "label": "Of Coursers We Know"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8423",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8423",
+     "label": "Wowhead Classic: Warrior Kinship"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Warrior Kinship from Fallen Hero of the Horde in Swamp of Sorrows (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.3,
+      "y": 66.1,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8423,
+     "label": "Warrior Kinship"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7572,
+     "name": "Fallen Hero of the Horde",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 34.3,
+      "y": 66.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7572",
+       "label": "Wowhead Classic: Fallen Hero of the Horde"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warrior) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8423",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8423",
+     "label": "Wowhead Classic: Warrior Kinship"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Warrior Kinship to Fallen Hero of the Horde (Swamp of Sorrows)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.3,
+      "y": 66.1,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8423,
+     "label": "Warrior Kinship"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7572,
+     "name": "Fallen Hero of the Horde",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 34.3,
+      "y": 66.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7572",
+       "label": "Wowhead Classic: Fallen Hero of the Horde"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8424",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8424",
+     "label": "Wowhead Classic: War on the Shadowsworn"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept War on the Shadowsworn from Fallen Hero of the Horde in Swamp of Sorrows (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.3,
+      "y": 66.1,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8424,
+     "label": "War on the Shadowsworn"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7572,
+     "name": "Fallen Hero of the Horde",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 34.3,
+      "y": 66.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7572",
+       "label": "Wowhead Classic: Fallen Hero of the Horde"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warrior) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:turnin:8424",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8424",
+     "label": "Wowhead Classic: War on the Shadowsworn"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in War on the Shadowsworn to Fallen Hero of the Horde (Swamp of Sorrows)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.3,
+      "y": 66.1,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8424,
+     "label": "War on the Shadowsworn"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7572,
+     "name": "Fallen Hero of the Horde",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 34.3,
+      "y": 66.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7572",
+       "label": "Wowhead Classic: Fallen Hero of the Horde"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:1445",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1445",
+     "label": "Wowhead Classic: The Temple of Atal'Hakkar"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Temple of Atal'Hakkar from Fel'zerul in Swamp of Sorrows (level 38+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.9,
+      "y": 54.8,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1445,
+     "label": "The Temple of Atal'Hakkar"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1443,
+     "name": "Fel'zerul",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 47.9,
+      "y": 54.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1443",
+       "label": "Wowhead Classic: Fel'zerul"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5900 XP base, high for level 50.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8410",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8410",
+     "label": "Wowhead Classic: Elemental Mastery"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Elemental Mastery from Haromm in Swamp of Sorrows (level 50+, quest level 50)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 48.2,
+      "y": 57.9,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8410,
+     "label": "Elemental Mastery"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 986,
+     "name": "Haromm",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 48.2,
+      "y": 57.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=986",
+       "label": "Wowhead Classic: Haromm"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Shaman) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3446",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3446",
+     "label": "Wowhead Classic: Into the Depths"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Into the Depths from Marvon Rivetseeker in Tanaris (level 46+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.7,
+      "y": 45.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3446,
+     "label": "Into the Depths"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7771,
+     "name": "Marvon Rivetseeker",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.7,
+      "y": 45.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7771",
+       "label": "Wowhead Classic: Marvon Rivetseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 4900 XP base, high for level 51.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3447",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3447",
+     "label": "Wowhead Classic: Secret of the Circle"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Secret of the Circle from Marvon Rivetseeker in Tanaris (level 46+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.7,
+      "y": 45.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3447,
+     "label": "Secret of the Circle"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7771,
+     "name": "Marvon Rivetseeker",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 52.7,
+      "y": 45.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7771",
+       "label": "Wowhead Classic: Marvon Rivetseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6100 XP base, high for level 51.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:4146",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4146",
+     "label": "Wowhead Classic: Zapper Fuel"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Zapper Fuel from Liv Rizzlefix in The Barrens (level 47+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.5,
+      "y": 38.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4146,
+     "label": "Zapper Fuel"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8496,
+     "name": "Liv Rizzlefix",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.5,
+      "y": 38.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8496",
+       "label": "Wowhead Classic: Liv Rizzlefix"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5100 XP base, high for level 52.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8232",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8232",
+     "label": "Wowhead Classic: The Green Drake"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Green Drake from Ogtinc in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8232,
+     "label": "The Green Drake"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Hunter) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8236",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8236",
+     "label": "Wowhead Classic: The Azure Key"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Rogue"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Azure Key from Archmage Xylem in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8236,
+     "label": "The Azure Key"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Rogue) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8253",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8253",
+     "label": "Wowhead Classic: Destroy Morphaz"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Destroy Morphaz from Archmage Xylem in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.2,
+      "y": 40.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8253,
+     "label": "Destroy Morphaz"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8379,
+     "name": "Archmage Xylem",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 29.2,
+      "y": 40.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8379",
+       "label": "Wowhead Classic: Archmage Xylem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8256",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8256",
+     "label": "Wowhead Classic: The Ichor of Undeath"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Priest"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Ichor of Undeath from Ogtinc in Azshara (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.4,
+      "y": 42.6,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8256,
+     "label": "The Ichor of Undeath"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8405,
+     "name": "Ogtinc",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 42.4,
+      "y": 42.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8405",
+       "label": "Wowhead Classic: Ogtinc"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Priest) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8419",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8419",
+     "label": "Wowhead Classic: An Imp's Request"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept An Imp's Request from Kartosh in Swamp of Sorrows (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 48.6,
+      "y": 55.6,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8419,
+     "label": "An Imp's Request"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 988,
+     "name": "Kartosh",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 48.6,
+      "y": 55.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=988",
+       "label": "Wowhead Classic: Kartosh"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warlock) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8420",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8420",
+     "label": "Wowhead Classic: Hot and Itchy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hot and Itchy from Impsy in Felwood (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 41.4,
+      "y": 45,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8420,
+     "label": "Hot and Itchy"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 14470,
+     "name": "Impsy",
+     "at": {
+      "mapId": 1448,
+      "zone": "Felwood",
+      "x": 41.4,
+      "y": 45
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=14470",
+       "label": "Wowhead Classic: Impsy"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warlock) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:8425",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=8425",
+     "label": "Wowhead Classic: Voodoo Feathers"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior"
+   ],
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Voodoo Feathers from Fallen Hero of the Horde in Swamp of Sorrows (level 50+, quest level 52)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.3,
+      "y": 66.1,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8425,
+     "label": "Voodoo Feathers"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7572,
+     "name": "Fallen Hero of the Horde",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 34.3,
+      "y": 66.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7572",
+       "label": "Wowhead Classic: Fallen Hero of the Horde"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Warrior) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:1446",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1446",
+     "label": "Wowhead Classic: Jammal'an the Prophet"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Jammal'an the Prophet from Atal'ai Exile in The Hinterlands (level 38+, quest level 53)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 33.8,
+      "y": 75.2,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1446,
+     "label": "Jammal'an the Prophet"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5598,
+     "name": "Atal'ai Exile",
+     "at": {
+      "mapId": 1425,
+      "zone": "The Hinterlands",
+      "x": 33.8,
+      "y": 75.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5598",
+       "label": "Wowhead Classic: Atal'ai Exile"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6550 XP base, high for level 53.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3528",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3528",
+     "label": "Wowhead Classic: The God Hakkar"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The God Hakkar from Yeh'kinya in Tanaris (level 40+, quest level 53)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67,
+      "y": 22.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3528,
+     "label": "The God Hakkar"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8579,
+     "name": "Yeh'kinya",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22.4
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8579",
+       "label": "Wowhead Classic: Yeh'kinya"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:accept:3373",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3373",
+     "label": "Wowhead Classic: The Essence of Eranikus"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Essence of Eranikus from the item Essence of Eranikus (drops in the dungeon) (level 48+, quest level 55)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 3373,
+     "label": "The Essence of Eranikus"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (2800 base at level 55); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:sunken-temple:run",
+   "section": "Sunken Temple (Temple of Atal'Hakkar)",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Sunken Temple (Temple of Atal'Hakkar) (levels 50-60) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 69.9,
+      "y": 53.5,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6181,
+     "count": 1,
+     "questId": 1445,
+     "objective": 1,
+     "label": "The Temple of Atal'Hakkar: Fetish of Hakkar"
+    },
+    {
+     "type": "collect",
+     "itemId": 7069,
+     "count": 1,
+     "questId": 8410,
+     "objective": 1,
+     "label": "Elemental Mastery: Elemental Air"
+    },
+    {
+     "type": "collect",
+     "itemId": 7068,
+     "count": 1,
+     "questId": 8410,
+     "objective": 2,
+     "label": "Elemental Mastery: Elemental Fire"
+    },
+    {
+     "type": "collect",
+     "itemId": 7067,
+     "count": 1,
+     "questId": 8410,
+     "objective": 3,
+     "label": "Elemental Mastery: Elemental Earth"
+    },
+    {
+     "type": "collect",
+     "itemId": 7070,
+     "count": 1,
+     "questId": 8410,
+     "objective": 4,
+     "label": "Elemental Mastery: Elemental Water"
+    },
+    {
+     "type": "collect",
+     "itemId": 11318,
+     "count": 1,
+     "questId": 4146,
+     "objective": 1,
+     "label": "Zapper Fuel: Atal'ai Haze"
+    },
+    {
+     "type": "collect",
+     "itemId": 20019,
+     "count": 1,
+     "questId": 8232,
+     "objective": 1,
+     "label": "The Green Drake: Tooth of Morphaz"
+    },
+    {
+     "type": "collect",
+     "itemId": 20022,
+     "count": 1,
+     "questId": 8236,
+     "objective": 1,
+     "label": "The Azure Key: Azure Key"
+    },
+    {
+     "type": "collect",
+     "itemId": 20085,
+     "count": 1,
+     "questId": 8253,
+     "objective": 1,
+     "label": "Destroy Morphaz: Arcane Shard"
+    },
+    {
+     "type": "collect",
+     "itemId": 7972,
+     "count": 1,
+     "questId": 8256,
+     "objective": 1,
+     "label": "The Ichor of Undeath: Ichor of Undeath"
+    },
+    {
+     "type": "collect",
+     "itemId": 14256,
+     "count": 1,
+     "questId": 8419,
+     "objective": 1,
+     "label": "An Imp's Request: Felcloth"
+    },
+    {
+     "type": "collect",
+     "itemId": 14256,
+     "count": 1,
+     "questId": 8420,
+     "objective": 1,
+     "label": "Hot and Itchy: Felcloth"
+    },
+    {
+     "type": "collect",
+     "itemId": 20606,
+     "count": 1,
+     "questId": 8425,
+     "objective": 1,
+     "label": "Voodoo Feathers: Amber Voodoo Feather"
+    },
+    {
+     "type": "collect",
+     "itemId": 20607,
+     "count": 1,
+     "questId": 8425,
+     "objective": 2,
+     "label": "Voodoo Feathers: Blue Voodoo Feather"
+    },
+    {
+     "type": "collect",
+     "itemId": 20608,
+     "count": 1,
+     "questId": 8425,
+     "objective": 3,
+     "label": "Voodoo Feathers: Green Voodoo Feather"
+    },
+    {
+     "type": "collect",
+     "itemId": 6212,
+     "count": 1,
+     "questId": 1446,
+     "objective": 1,
+     "label": "Jammal'an the Prophet: Head of Jammal'an"
+    },
+    {
+     "type": "collect",
+     "itemId": 10662,
+     "count": 1,
+     "questId": 3528,
+     "objective": 1,
+     "label": "The God Hakkar: Filled Egg of Hakkar"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Sunken Temple (Temple of Atal'Hakkar)",
+    "instanceId": 1477,
+    "levels": [
+     50,
+     60
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:sunken-temple:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The balcony troll ring must be cleared in order to unlock Jammal'an; mark each statue troll.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1477",
+       "label": "Wowhead Classic: Sunken Temple (Temple of Atal'Hakkar)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Dragonkin breathe fire; avoid the front of drakes and keep cooldowns for the Eranikus shade.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1477",
+       "label": "Wowhead Classic: Sunken Temple (Temple of Atal'Hakkar)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Pick up the Atal'ai Haunts and class quest items as you go; most quests finish on the bottom floor.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1477",
+       "label": "Wowhead Classic: Sunken Temple (Temple of Atal'Hakkar)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run the Sunken Temple once. Do not reset for a second Morphaz.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=1477",
+     "label": "Wowhead Classic: Sunken Temple (Temple of Atal'Hakkar) level range"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

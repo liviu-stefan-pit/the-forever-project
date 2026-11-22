@@ -1,0 +1,382 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Excavation Site: Wetlands",
+ "steps": [
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:accept:95663",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Dragonmaw Rumors `95663` from Zaruk (Arathi Highlands): Travel to the Wetlands and meet the Deathstalker Agent in the hills above the Dragonmaw camp."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "x": 74.54,
+      "y": 35.64,
+      "zone": "Arathi Highlands",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95663,
+     "label": "Dragonmaw Rumors"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:turnin:95663",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Dragonmaw Rumors `95663` to Deathstalker Agent"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 95663,
+     "label": "Dragonmaw Rumors"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:accept:95697",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Changing Tastes `95697` from Borstan (Orgrimmar): Enter the Excavation Sites in the Wetlands and bring back Thicket Raptor Meat."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 57.2,
+      "y": 53.32,
+      "zone": "Orgrimmar",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95697,
+     "label": "Changing Tastes"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://mobalytics.gg/wow-forever/dungeons/excavation-site-wetlands-quests",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.gamespot.com/articles/wow-forever-excavation-site-wetlands-dungeon-guide-quests-bosses-and-loot/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:accept:95682",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Open the Maw `95682` from Deathstalker Agent: Slay the Dragonmaw forces within the Excavation Site and return to the Deathstalker Agent outside with anything you recover.. Needs: Dragonmaw Rumors (Zaruk, Hammerfall 74.4, 35.6)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 95682,
+     "label": "Open the Maw"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://mobalytics.gg/wow-forever/dungeons/excavation-site-wetlands-quests",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.gamespot.com/articles/wow-forever-excavation-site-wetlands-dungeon-guide-quests-bosses-and-loot/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:run",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Run Excavation Site: Wetlands (levels 24-29, Above Whelgar's Excavation, Wetlands). Long trek: Hillsbrad -> Arathi Highlands -> Thandol Span."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1437,
+      "x": 53.4,
+      "y": 65.3,
+      "zone": "Wetlands",
+      "exact": false
+     }
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+     "label": "Blizzard: Explore the New Dungeons of WoW: Forever"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:turnin:95697",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Changing Tastes `95697` to Borstan (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 57.2,
+      "y": 53.32,
+      "zone": "Orgrimmar",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95697,
+     "label": "Changing Tastes"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://mobalytics.gg/wow-forever/dungeons/excavation-site-wetlands-quests",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.gamespot.com/articles/wow-forever-excavation-site-wetlands-dungeon-guide-quests-bosses-and-loot/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:excavation-site-wetlands:turnin:95682",
+   "section": "Excavation Site: Wetlands",
+   "tags": {
+    "dungeonId": "excavation-site-wetlands"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Open the Maw `95682` to Deathstalker Agent"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 95682,
+     "label": "Open the Maw"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://mobalytics.gg/wow-forever/dungeons/excavation-site-wetlands-quests",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.gamespot.com/articles/wow-forever-excavation-site-wetlands-dungeon-guide-quests-bosses-and-loot/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

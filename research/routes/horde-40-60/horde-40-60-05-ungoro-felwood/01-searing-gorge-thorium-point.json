@@ -1,0 +1,1764 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-05-ungoro-felwood",
+ "title": "Searing Gorge (Thorium Point)",
+ "steps": [
+  {
+   "id": "h4060:searing-gorge:a7723",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Curse These Fat Fingers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7723,
+     "label": "Curse These Fat Fingers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Balanced only: Thorium Point quests fit if you want Thorium Brotherhood reputation for crafting.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3305,
+     "name": "Grisha",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 34.8,
+      "y": 30.9
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7723",
+     "label": "Wowhead Classic quest 7723 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:fp-thorium",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Thorium Point flight path from Grisha."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 34.84,
+      "y": 30.87,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Thorium Point flight path",
+     "place": "Thorium Point"
+    }
+   ],
+   "conditions": [],
+   "section": "Searing Gorge",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3305,
+     "name": "Grisha",
+     "at": {
+      "mapId": 1427,
+      "zone": "Searing Gorge",
+      "x": 34.84,
+      "y": 30.87
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:searing-gorge:a7724",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Fiery Menace!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7724,
+     "label": "Fiery Menace!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7724",
+     "label": "Wowhead Classic quest 7724 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a7727",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Incendosaurs? Whateverosaur is More Like It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7727,
+     "label": "Incendosaurs? Whateverosaur is More Like It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7727",
+     "label": "Wowhead Classic quest 7727 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a7722",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: What the Flux?"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.8,
+      "y": 28.5,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7722,
+     "label": "What the Flux?"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7722",
+     "label": "Wowhead Classic quest 7722 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a3441",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Divine Retribution"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3441,
+     "label": "Divine Retribution"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3441",
+     "label": "Wowhead Classic quest 3441 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t3441",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Divine Retribution"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3441,
+     "label": "Divine Retribution"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3441",
+     "label": "Wowhead Classic quest 3441 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a3442",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Flawless Flame"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3442,
+     "label": "The Flawless Flame"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3442",
+     "label": "Wowhead Classic quest 3442 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c7723",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Curse These Fat Fingers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.3,
+      "y": 48,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 7723,
+     "objective": 1,
+     "label": "Heavy War Golem"
+    },
+    {
+     "type": "mob",
+     "name": "Heavy War Golem",
+     "npcIds": [
+      5854
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Heavy War Golem (level 47-49) spawns are densest around 38.3, 48.0 (23 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5854
+     ],
+     "name": "Heavy War Golem",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 38.3,
+      "y": 48
+     },
+     "radius": 13.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7723",
+     "label": "Wowhead Classic quest 7723 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c7724",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Fiery Menace!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 29.6,
+      "y": 56.5,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 7724,
+     "objective": 1,
+     "label": "Greater Lava Spider"
+    },
+    {
+     "type": "mob",
+     "name": "Greater Lava Spider",
+     "npcIds": [
+      5858
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Greater Lava Spider (level 47-49) spawns are densest around 29.6, 56.5 (26 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5858
+     ],
+     "name": "Greater Lava Spider",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 29.6,
+      "y": 56.5
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7724",
+     "label": "Wowhead Classic quest 7724 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c7727",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Incendosaurs? Whateverosaur is More Like It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 48.5,
+      "y": 26.5,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 7727,
+     "objective": 1,
+     "label": "Incendosaur"
+    },
+    {
+     "type": "mob",
+     "name": "Incendosaur",
+     "npcIds": [
+      9318
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Incendosaur (level 47-49) spawns are densest around 48.5, 26.5 (13 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9318
+     ],
+     "name": "Incendosaur",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 48.5,
+      "y": 26.5
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7727",
+     "label": "Wowhead Classic quest 7727 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "tags": {},
+   "conditions": [],
+   "minutes": 8,
+   "id": "h4060:searing-gorge:c7722",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: What the Flux? — loot Secret Plans: Fiery Flux from the plans in the Slag Pit of the Cauldron."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 40.45,
+      "y": 35.74,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 18922,
+     "count": 1,
+     "questId": 7722,
+     "objective": 1,
+     "label": "Secret Plans: Fiery Flux"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:searing-gorge:t7723",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Curse These Fat Fingers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7723,
+     "label": "Curse These Fat Fingers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7723",
+     "label": "Wowhead Classic quest 7723 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t7724",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Fiery Menace!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7724,
+     "label": "Fiery Menace!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7724",
+     "label": "Wowhead Classic quest 7724 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t7727",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Incendosaurs? Whateverosaur is More Like It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.6,
+      "y": 27.8,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7727,
+     "label": "Incendosaurs? Whateverosaur is More Like It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7727",
+     "label": "Wowhead Classic quest 7727 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "tags": {},
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:searing-gorge:t7722",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: What the Flux? to Master Smith Burninate"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.8,
+      "y": 28.51,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7722,
+     "label": "What the Flux?"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:searing-gorge:c3442",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Flawless Flame"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 48,
+      "y": 49.4,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 10509,
+     "count": 1,
+     "questId": 3442,
+     "objective": 1,
+     "label": "Heart of Flame"
+    },
+    {
+     "type": "collect",
+     "itemId": 10511,
+     "count": 1,
+     "questId": 3442,
+     "objective": 2,
+     "label": "Golem Oil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Blazing Elemental (level 45-47) spawns are densest around 48.0, 49.4. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Tempered War Golem (level 45-47) spawns are densest around 64.0, 58.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5850
+     ],
+     "name": "Blazing Elemental",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 48,
+      "y": 49.4
+     },
+     "radius": 14.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5852
+     ],
+     "name": "Inferno Elemental",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 39.7,
+      "y": 58.6
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5855
+     ],
+     "name": "Magma Elemental",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 41,
+      "y": 57.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5853
+     ],
+     "name": "Tempered War Golem",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 64,
+      "y": 58.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5854
+     ],
+     "name": "Heavy War Golem",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 38.3,
+      "y": 48
+     },
+     "radius": 13.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5855
+     ],
+     "name": "Magma Elemental",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 41,
+      "y": 57.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3442",
+     "label": "Wowhead Classic quest 3442 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t3442",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Flawless Flame"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.1,
+      "y": 39,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3442,
+     "label": "The Flawless Flame"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3442",
+     "label": "Wowhead Classic quest 3442 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a3443",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Forging the Shaft"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.06,
+      "y": 38.99,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3443,
+     "label": "Forging the Shaft"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3443",
+     "label": "Wowhead Classic quest 3443 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t3443",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Forging the Shaft"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.06,
+      "y": 38.99,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3443,
+     "label": "Forging the Shaft"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3443",
+     "label": "Wowhead Classic quest 3443 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a7701",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: WANTED: Overseer Maltorius"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 37.65,
+      "y": 26.47,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7701,
+     "label": "WANTED: Overseer Maltorius"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7701",
+     "label": "Wowhead Classic quest 7701 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a7728",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: STOLEN: Smithing Tuyere and Lookout's Spyglass"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 37.65,
+      "y": 26.47,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7728,
+     "label": "STOLEN: Smithing Tuyere and Lookout's Spyglass"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7728",
+     "label": "Wowhead Classic quest 7728 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a7729",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: JOB OPPORTUNITY: Culling the Competition"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 37.65,
+      "y": 26.47,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7729,
+     "label": "JOB OPPORTUNITY: Culling the Competition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7729",
+     "label": "Wowhead Classic quest 7729 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t7701",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: WANTED: Overseer Maltorius"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 37.74,
+      "y": 26.56,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7701,
+     "label": "WANTED: Overseer Maltorius"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7701",
+     "label": "Wowhead Classic quest 7701 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t7728",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: STOLEN: Smithing Tuyere and Lookout's Spyglass"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.97,
+      "y": 27.51,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7728,
+     "label": "STOLEN: Smithing Tuyere and Lookout's Spyglass"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7728",
+     "label": "Wowhead Classic quest 7728 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t7729",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: JOB OPPORTUNITY: Culling the Competition"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.97,
+      "y": 27.51,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7729,
+     "label": "JOB OPPORTUNITY: Culling the Competition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7729",
+     "label": "Wowhead Classic quest 7729 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a4449",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Caught!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 65.59,
+      "y": 62.17,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4449,
+     "label": "Caught!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4449",
+     "label": "Wowhead Classic quest 4449 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:t4449",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Caught!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 65.59,
+      "y": 62.17,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4449,
+     "label": "Caught!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4449",
+     "label": "Wowhead Classic quest 4449 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:a81900",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Burning Beast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 14.56,
+      "y": 36.42,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 81900,
+     "label": "The Burning Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=81900",
+     "label": "Wowhead Classic quest 81900 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:badlands:t81900",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Burning Beast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1419,
+      "x": 50.64,
+      "y": 14.3,
+      "zone": "Blasted Lands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 81900,
+     "label": "The Burning Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=81900",
+     "label": "Wowhead Classic quest 81900 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

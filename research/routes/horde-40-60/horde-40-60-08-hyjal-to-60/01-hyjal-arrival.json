@@ -1,0 +1,1908 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-08-hyjal-to-60",
+ "title": "Mount Hyjal arrival",
+ "steps": [
+  {
+   "id": "h4060:mount-hyjal:travel-e67d15",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "From Everlook, ride east through Darkwhisper Gorge into Mount Hyjal"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "From Everlook, ride east through Darkwhisper Gorge into Mount Hyjal. Faction quests need level 54; the zone's quests are built for 56-60."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "From Everlook, ride east through Darkwhisper Gorge into Mount Hyjal. Faction quests need level 54; the zone's quests are built for 56-60."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "WoW Forever's Mount Hyjal is worth almost the full 58-60 experience for the Horde. Take every quest a hub offers before moving to the next one.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowforeveraddon.com/guides/quests/mount-hyjal/",
+       "label": "www.wowforeveraddon.com"
+      },
+      {
+       "url": "https://wofwforever.com/en/guides/wow-forever-mount-hyjal-access/",
+       "label": "wofwforever.com"
+      },
+      {
+       "url": "https://khorium.pro/guide-view.html?slug=wow-forever-mount-hyjal-quests",
+       "label": "khorium.pro"
+      },
+      {
+       "url": "https://bytetavern.com/wow-forever-mount-hyjal/",
+       "label": "bytetavern.com"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "elite",
+     "text": "Group up for the elite quests; tanks of any class should claim the Doomguard and chimaera pulls.",
+     "classes": [
+      "Warrior",
+      "Paladin",
+      "Druid"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "roles": [
+      "tank"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "Mount Hyjal's published level 60 is unverified. Quest levels here are about 56-60 and many require 54. Do not add a Hyjal Summit or Barrow Deeps raid.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB Mount Hyjal quest levels and reqLevel; zones.json 616 uiMapId 2482"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Darkwhisper Gorge has high-level demons. Grab the Tainted Foothills flight path before you ride deeper into Mount Hyjal.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://www.wowforeveraddon.com/guides/quests/mount-hyjal/",
+     "label": "www.wowforeveraddon.com"
+    },
+    {
+     "url": "https://wofwforever.com/en/guides/wow-forever-mount-hyjal-access/",
+     "label": "wofwforever.com"
+    },
+    {
+     "url": "https://khorium.pro/guide-view.html?slug=wow-forever-mount-hyjal-quests",
+     "label": "khorium.pro"
+    },
+    {
+     "url": "https://bytetavern.com/wow-forever-mount-hyjal/",
+     "label": "bytetavern.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a91754",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Rub Some Dirt In It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54,
+      "y": 84.4,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91754,
+     "label": "Rub Some Dirt In It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a91755",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Leaves to Ligatures"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54,
+      "y": 84.4,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91755,
+     "label": "Leaves to Ligatures"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a91923",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Celastrus the Bitter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54.8,
+      "y": 84.6,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91923,
+     "label": "Celastrus the Bitter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c91754",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Rub Some Dirt In It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 247889,
+     "count": 1,
+     "questId": 91754,
+     "objective": 1,
+     "label": "Untainted Soil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c91923",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Celastrus the Bitter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 65.7,
+      "y": 73.5,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 282028,
+     "count": 1,
+     "questId": 91923,
+     "objective": 1,
+     "label": "Broken Frond of Celastrus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Celastrus the Bitter (level 57) spawns are densest around 65.7, 73.5. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Celastrus the Bitter",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Celastrus the Bitter is a demon elite. Clear the camp, then burn cooldowns on the pull with two other players.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+         "label": "github.com"
+        },
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Hold Celastrus in place and let the healer stabilize before the group commits damage.",
+       "roles": [
+        "tank"
+       ],
+       "classes": [
+        "Warrior",
+        "Paladin",
+        "Druid"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+         "label": "github.com"
+        },
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      249051
+     ],
+     "name": "Celastrus the Bitter",
+     "mapId": 2482,
+     "zone": "Mount Hyjal",
+     "center": {
+      "x": 65.7,
+      "y": 73.5
+     },
+     "radius": 5.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c91755",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Leaves to Ligatures"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 65.8,
+      "y": 71.8,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 247892,
+     "count": 1,
+     "questId": 91755,
+     "objective": 1,
+     "label": "Verdant Leaves"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Tainted Shrubbery (level 55-56) spawns are densest around 65.8, 71.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      248395
+     ],
+     "name": "Tainted Shrubbery",
+     "mapId": 2482,
+     "zone": "Mount Hyjal",
+     "center": {
+      "x": 65.8,
+      "y": 71.8
+     },
+     "radius": 8.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t91923",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Celastrus the Bitter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54.8,
+      "y": 84.6,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91923,
+     "label": "Celastrus the Bitter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t91754",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Rub Some Dirt In It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54,
+      "y": 84.4,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91754,
+     "label": "Rub Some Dirt In It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t91755",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Leaves to Ligatures"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54,
+      "y": 84.4,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91755,
+     "label": "Leaves to Ligatures"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a91770",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Bark Bite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 54,
+      "y": 84.4,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91770,
+     "label": "Bark Bite"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c91770",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Bark Bite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 53.4,
+      "y": 84.3,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 91770,
+     "objective": 1,
+     "label": "Fraxinus"
+    },
+    {
+     "type": "mob",
+     "name": "Fraxinus",
+     "npcIds": [
+      248366
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Fraxinus (level 60) spawns are densest around 53.4, 84.3 (1 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Fraxinus",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Fraxinus on Bark Bite hits hard for a solo player. Bring two partners, clear the path, and save a defensive for the enrage window.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+         "label": "github.com"
+        },
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Face Fraxinus away from the group and do not turn him during the bite.",
+       "roles": [
+        "tank"
+       ],
+       "classes": [
+        "Warrior",
+        "Paladin",
+        "Druid"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+         "label": "github.com"
+        },
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false,
+     "npcId": 248366
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      248366
+     ],
+     "name": "Fraxinus",
+     "mapId": 2482,
+     "zone": "Mount Hyjal",
+     "center": {
+      "x": 53.4,
+      "y": 84.3
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t91770",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Bark Bite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 53.4,
+      "y": 84.3,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91770,
+     "label": "Bark Bite"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a92959",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Dying Ancients"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 53.4,
+      "y": 84.3,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92959,
+     "label": "The Dying Ancients"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a95766",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Fine Feathered Friend"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 53.4,
+      "y": 84.3,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95766,
+     "label": "Fine Feathered Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t92959",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Dying Ancients"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 53.4,
+      "y": 84.3,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92959,
+     "label": "The Dying Ancients"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t95766",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Fine Feathered Friend"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95766,
+     "label": "Fine Feathered Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a95317",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Notation, Notation, Notation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95317,
+     "label": "Notation, Notation, Notation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a95320",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Curious Question"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95320,
+     "label": "A Curious Question"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c95317",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Notation, Notation, Notation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 45.6,
+      "y": 74.8,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 274396,
+     "count": 1,
+     "questId": 95317,
+     "objective": 1,
+     "label": "Fel Ash Experimentation Notes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Ashen Acolyte (level 56-57) spawns are densest around 45.6, 74.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260422
+     ],
+     "name": "Ashen Acolyte",
+     "mapId": 2482,
+     "zone": "Mount Hyjal",
+     "center": {
+      "x": 45.6,
+      "y": 74.8
+     },
+     "radius": 6.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t95320",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Curious Question"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.6,
+      "y": 73.5,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95320,
+     "label": "A Curious Question"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t95317",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Notation, Notation, Notation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95317,
+     "label": "Notation, Notation, Notation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a95380",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Prolific Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95380,
+     "label": "A Prolific Source"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a96262",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Prickly Pinecones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96262,
+     "label": "Prickly Pinecones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c96262",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Prickly Pinecones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 273304,
+     "count": 1,
+     "questId": 96262,
+     "objective": 1,
+     "label": "Prickly Pinecone"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:c95380",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Prolific Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 50,
+      "y": 78,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 273008,
+     "count": 1,
+     "questId": 95380,
+     "objective": 1,
+     "label": "Fel-Slime Ooze"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Noxious Slime (level 56-57) spawns are densest around 50.0, 78.0. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      243509
+     ],
+     "name": "Noxious Slime",
+     "mapId": 2482,
+     "zone": "Mount Hyjal",
+     "center": {
+      "x": 50,
+      "y": 78
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t95380",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Prolific Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95380,
+     "label": "A Prolific Source"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t96262",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Prickly Pinecones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96262,
+     "label": "Prickly Pinecones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a95316",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Experimental Method"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95316,
+     "label": "The Experimental Method"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:t95316",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Experimental Method"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95316,
+     "label": "The Experimental Method"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:mount-hyjal:a94782",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Western Post"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "x": 48.3,
+      "y": 85.7,
+      "zone": "Mount Hyjal",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94782,
+     "label": "The Western Post"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

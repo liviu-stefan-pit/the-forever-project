@@ -1,0 +1,1428 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Ruins of Lordaeron",
+ "steps": [
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:travel:uc",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron",
+    "dungeonPart": "pickup"
+   },
+   "conditions": [],
+   "verified": false,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Take the zeppelin from Orgrimmar to Undercity (Tirisfal). Ruins of Lordaeron is above the Undercity. This trip is only on the dungeon route."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 50.8,
+      "y": 13.8,
+      "zone": "Durotar",
+      "exact": false
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.7,
+      "y": 58.8,
+      "zone": "Tirisfal Glades",
+      "exact": false
+     }
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/zone=1497",
+     "label": "Zeppelin Orgrimmar to Undercity, then the ruins above Undercity"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:92421",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Light's Justice `92421` from Morbin Lightbane (Undercity): Collect 25 Intact Limbs within The Ruins of Lordaeron for Morbin Lightbane in the Undercity."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 58.08,
+      "y": 89.51,
+      "zone": "Undercity",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92421,
+     "label": "Light's Justice"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:92401",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept A Frightened Request `92401` from Tabitha Heartweaver (Silverpine Forest): Investigate the disappearance of Edward Heartweaver in the Ruins of Lordaeron."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.52,
+      "y": 43.02,
+      "zone": "Silverpine Forest",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92401,
+     "label": "A Frightened Request"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pick up A Frightened Request from Tabitha at the Sepulcher only if it is not already in the log, then finish it inside the Ruins.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 92401, npc 250686 area 130"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:95216",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "verified": false,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The New Plague `95216` from Theodore Griffs (Undercity). Requires A Recipe For Death (451). Collect the Highly Toxic Strain from Witherfang inside Ruins of Lordaeron."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 46.31,
+      "y": 71.91,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95216,
+     "label": "The New Plague"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11835,
+     "name": "Theodore Griffs",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 46.31,
+      "y": 71.91
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11835",
+       "label": "Questie npc 11835"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=95216",
+     "label": "Wowhead Classic: The New Plague"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 95216, npc 11835, prereq 451"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:95216",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "verified": false,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The New Plague to Theodore Griffs (Undercity)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 46.31,
+      "y": 71.91,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95216,
+     "label": "The New Plague"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=95216",
+     "label": "Wowhead Classic: The New Plague"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:92422",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "verified": false,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Wrath of Rath'mael `92422` from Deathguard Kristof (Brill). Requires Rear Guard Patrol (99156). Kill Rath'mael inside Ruins of Lordaeron."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.25,
+      "y": 60.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92422,
+     "label": "The Wrath of Rath'mael"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 251001,
+     "name": "Deathguard Kristof",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 65.25,
+      "y": 60.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251001",
+       "label": "Questie npc 251001"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92422",
+     "label": "Wowhead Classic: The Wrath of Rath'mael"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:92422",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "verified": false,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Wrath of Rath'mael to Deathguard Kristof (Brill)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.25,
+      "y": 60.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92422,
+     "label": "The Wrath of Rath'mael"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92422",
+     "label": "Wowhead Classic: The Wrath of Rath'mael"
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:run",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Run Ruins of Lordaeron (levels 15-20, Ruins above the Undercity, Tirisfal Glades). Easy: from the Undercity. Loot 25 Intact Limbs on this one clear. Do not extra-pull if you are short after that clear."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 66,
+      "y": 11,
+      "zone": "Undercity",
+      "exact": false
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 275443,
+     "count": 1,
+     "questId": 95216,
+     "objective": 1,
+     "label": "The New Plague: Highly Toxic Strain"
+    },
+    {
+     "type": "complete",
+     "questId": 92422,
+     "objective": 1,
+     "label": "The Wrath of Rath'mael: Rath'mael"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+     "label": "Blizzard: Explore the New Dungeons of WoW: Forever"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:92421",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Light's Justice `92421` to Morbin Lightbane (Undercity)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 58.08,
+      "y": 89.51,
+      "zone": "Undercity",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92421,
+     "label": "Light's Justice"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:92401",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in A Frightened Request `92401` to Tabitha Heartweaver (Silverpine Forest)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.52,
+      "y": 43.02,
+      "zone": "Silverpine Forest",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92401,
+     "label": "A Frightened Request"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:97288",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If the Abominable Head drops on this clear, accept Unending Torment. Do not reset for it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 97288,
+     "label": "Unending Torment"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:97288",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Unending Torment `97288` to Master Apothecary Faranell (Undercity), only if you accepted it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97288,
+     "label": "Unending Torment"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:97289",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97289 pre 97288"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If you turned in Unending Torment. Accept Unending Torment from Faranell and bring the head to Othmar's body."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97289,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97289 pre 97288"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:97289",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie npc 271613 area 1497"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unending Torment at the Unfinished Abomination."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 45.88,
+      "y": 61.7,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97289,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 271613,
+     "name": "the Unfinished Abomination",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 45.88,
+      "y": 61.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie npc 271613 area 1497"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:97290",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97290 pre 97289"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Unending Torment from the Unfinished Abomination and report to Faranell."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 45.88,
+      "y": 61.7,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97290,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 271613,
+     "name": "the Unfinished Abomination",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 45.88,
+      "y": 61.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97290 pre 97289"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:97290",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97290 end npc 2055"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unending Torment to Master Apothecary Faranell."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97290,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Master Apothecary Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97290 end npc 2055"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:97291",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97291 items; npcs 4554, 4615, 4585"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Unending Torment. Get the Toxic Skullcap from Tawny Grisette, Blisterweed by the herbalism trainer, and Essence of Agony from Ezekiel Graves."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97291,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Tawny Grisette, Blisterweed by the herbalism trainer,",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97291 items; npcs 4554, 4615, 4585"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:97291",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97291 end npc 2055"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unending Torment to Faranell."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97291,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97291 end npc 2055"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:97292",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97292 object 460007, pre 97291"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Unending Torment and inject the Hissing Serum above Othmar's body."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97292,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Master Apothecary Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97292 object 460007, pre 97291"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:97292",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 97292 end npc 2055"
+    }
+   ],
+   "verified": false,
+   "section": "Ruins of Lordaeron",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unending Torment to Faranell."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.82,
+      "y": 69.28,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97292,
+     "label": "Unending Torment"
+    }
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.82,
+      "y": 69.28
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 97292 end npc 2055"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:accept:95204",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If the Crest of Lordaeron drops on this clear, accept Crest of Lordaeron. Do not reset for it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 95204,
+     "label": "Crest of Lordaeron"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:ruins-of-lordaeron:turnin:95204",
+   "section": "Ruins of Lordaeron",
+   "tags": {
+    "dungeonId": "ruins-of-lordaeron"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Crest of Lordaeron `95204` to Oran Snakewrithe (Undercity), only if you accepted it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 73.06,
+      "y": 32.85,
+      "zone": "Undercity",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95204,
+     "label": "Crest of Lordaeron"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ruins of Lordaeron",
+    "levels": [
+     15,
+     20
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://gamer-guides.com/warcraft-forever/ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

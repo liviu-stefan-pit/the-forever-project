@@ -1,0 +1,1778 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-01-riverglades-stv",
+ "title": "Swamp of Sorrows (Stonard)",
+ "steps": [
+  {
+   "id": "h4060:swamp-of-sorrows:t1420",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Report to Helgrum"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.7,
+      "y": 55.2,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1420,
+     "label": "Report to Helgrum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Stonard quests overlap: kill the crocs, whelps and Marsh Inkspewers while you walk the coast for Lack of Surplus. Leave the naga quests for the balanced route unless they are on your path.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6026,
+     "name": "Breyk",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 46.1,
+      "y": 54.8
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1420",
+     "label": "Wowhead Classic quest 1420 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1424",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Pool of Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.9,
+      "y": 54.8,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1424,
+     "label": "Pool of Tears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1424",
+     "label": "Wowhead Classic quest 1424 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a698",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 44.7,
+      "y": 57.2,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 698,
+     "label": "Lack of Surplus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=698",
+     "label": "Wowhead Classic quest 698 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1430",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Fresh Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 44.7,
+      "y": 57.2,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1430,
+     "label": "Fresh Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemId": 12037,
+     "itemName": "Mystery Meat",
+     "npc": {
+      "id": 989,
+      "name": "Banalash",
+      "zone": "Swamp of Sorrows",
+      "x": 44.8,
+      "y": 56.6,
+      "mapId": 1435
+     },
+     "note": "Banalash in Stonard sells Recipe: Carrion Surprise. Mystery Meat drops all through the 40s (Swamp, Tanaris, Desolace), so cooking it as you go is free skill.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=12232",
+       "label": "Wowhead Classic item 12232 (reference link)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "profession": "Cooking",
+     "itemId": 12206,
+     "itemName": "Tender Crab Meat",
+     "qty": 40,
+     "skillTarget": 265,
+     "npc": {
+      "id": 989,
+      "name": "Banalash",
+      "zone": "Swamp of Sorrows",
+      "x": 44.8,
+      "y": 56.6,
+      "mapId": 1435
+     },
+     "note": "Keep Tender Crab Meat from Silt Crawler (Swamp of Sorrows, lvl 40-41) for Spiced Chili Crab. Buy Recipe: Spiced Chili Crab from Banalash (Swamp of Sorrows 44.8, 56.6) for 1g 20s. Recipe learnable at 225; every craft gives a point until 265 (about 40 crafts). Swamp of Sorrows/STV crabs; Banalash is in Stonard.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=12206",
+       "label": "Wowhead Classic item"
+      },
+      {
+       "url": "https://wowfdb.com/zones/swamp-of-sorrows/map/",
+       "label": "WoW Forever DB zone map (NPC positions)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=989",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/sentinel/professions/research/professions",
+       "label": "Project Forever research: professions (Sentinel)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1430",
+     "label": "Wowhead Classic quest 1430 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c698",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 56.9,
+      "y": 39,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6169,
+     "count": 1,
+     "questId": 698,
+     "objective": 1,
+     "label": "Unprepared Sawtooth Flank"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Sawtooth Crocolisk (level 38-39) spawns are densest around 56.9, 39.0. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1082
+     ],
+     "name": "Sawtooth Crocolisk",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 56.9,
+      "y": 39
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1087
+     ],
+     "name": "Sawtooth Snapper",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 83.4,
+      "y": 36.3
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=698",
+     "label": "Wowhead Classic quest 698 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c1430",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Fresh Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 96,
+      "y": 46.3,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6184,
+     "count": 1,
+     "questId": 1430,
+     "objective": 1,
+     "label": "Monstrous Crawler Leg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Monstrous Crawler (level 43-44) spawns are densest around 96.0, 46.3. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1088
+     ],
+     "name": "Monstrous Crawler",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 96,
+      "y": 46.3
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1430",
+     "label": "Wowhead Classic quest 1430 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c1424",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Pool of Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 74.6,
+      "y": 51.9,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6175,
+     "count": 1,
+     "questId": 1424,
+     "objective": 1,
+     "label": "Atal'ai Artifact"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1424",
+     "label": "Wowhead Classic quest 1424 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t698",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 81.3,
+      "y": 81,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 698,
+     "label": "Lack of Surplus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=698",
+     "label": "Wowhead Classic quest 698 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a699",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 81.3,
+      "y": 81,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 699,
+     "label": "Lack of Surplus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=699",
+     "label": "Wowhead Classic quest 699 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c699",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.4,
+      "y": 36.3,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6168,
+     "count": 1,
+     "questId": 699,
+     "objective": 1,
+     "label": "Sawtooth Snapper Claw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Sawtooth Snapper (level 41-42) spawns are densest around 83.4, 36.3. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1087
+     ],
+     "name": "Sawtooth Snapper",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 83.4,
+      "y": 36.3
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=699",
+     "label": "Wowhead Classic quest 699 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t699",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Lack of Surplus"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 81.3,
+      "y": 81,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 699,
+     "label": "Lack of Surplus"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=699",
+     "label": "Wowhead Classic quest 699 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1422",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 81.3,
+      "y": 81,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1422,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1422",
+     "label": "Wowhead Classic quest 1422 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1422",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1422,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1422",
+     "label": "Wowhead Classic quest 1422 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1426",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1426,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1426",
+     "label": "Wowhead Classic quest 1426 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c1426",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 86.5,
+      "y": 87.2,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1426,
+     "objective": 1,
+     "label": "Marsh Murloc"
+    },
+    {
+     "type": "complete",
+     "questId": 1426,
+     "objective": 2,
+     "label": "Marsh Inkspewer"
+    },
+    {
+     "type": "complete",
+     "questId": 1426,
+     "objective": 3,
+     "label": "Marsh Flesheater"
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Murloc",
+     "npcIds": [
+      747
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Inkspewer",
+     "npcIds": [
+      750
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Flesheater",
+     "npcIds": [
+      751
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Marsh Murloc (level 41-42) spawns are densest around 86.5, 87.2 (9 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Marsh Inkspewer (level 42-43) spawns are densest around 88.5, 76.4 (48 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      747
+     ],
+     "name": "Marsh Murloc",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 86.5,
+      "y": 87.2
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      750
+     ],
+     "name": "Marsh Inkspewer",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 88.5,
+      "y": 76.4
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      751
+     ],
+     "name": "Marsh Flesheater",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 66.4,
+      "y": 83.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1426",
+     "label": "Wowhead Classic quest 1426 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1426",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1426,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1426",
+     "label": "Wowhead Classic quest 1426 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1427",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1427,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1427",
+     "label": "Wowhead Classic quest 1427 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1427",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Threat From the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 81.3,
+      "y": 81,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1427,
+     "label": "Threat From the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1427",
+     "label": "Wowhead Classic quest 1427 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1428",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Continued Threat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1428,
+     "label": "Continued Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1428",
+     "label": "Wowhead Classic quest 1428 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:c1428",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Continued Threat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 88.5,
+      "y": 76.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1428,
+     "objective": 1,
+     "label": "Marsh Inkspewer"
+    },
+    {
+     "type": "complete",
+     "questId": 1428,
+     "objective": 2,
+     "label": "Marsh Flesheater"
+    },
+    {
+     "type": "complete",
+     "questId": 1428,
+     "objective": 3,
+     "label": "Marsh Oracle"
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Inkspewer",
+     "npcIds": [
+      750
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Flesheater",
+     "npcIds": [
+      751
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Marsh Oracle",
+     "npcIds": [
+      752
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Marsh Inkspewer (level 42-43) spawns are densest around 88.5, 76.4 (48 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Marsh Flesheater (level 43-44) spawns are densest around 66.4, 83.1 (16 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      750
+     ],
+     "name": "Marsh Inkspewer",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 88.5,
+      "y": 76.4
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      751
+     ],
+     "name": "Marsh Flesheater",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 66.4,
+      "y": 83.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      752
+     ],
+     "name": "Marsh Oracle",
+     "mapId": 1435,
+     "zone": "Swamp of Sorrows",
+     "center": {
+      "x": 63.1,
+      "y": 80.4
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1428",
+     "label": "Wowhead Classic quest 1428 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1428",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Continued Threat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 83.8,
+      "y": 80.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1428,
+     "label": "Continued Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1428",
+     "label": "Wowhead Classic quest 1428 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1430",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Fresh Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 44.7,
+      "y": 57.2,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1430,
+     "label": "Fresh Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1430",
+     "label": "Wowhead Classic quest 1430 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1424",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Pool of Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.9,
+      "y": 54.8,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1424,
+     "label": "Pool of Tears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1424",
+     "label": "Wowhead Classic quest 1424 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a1393",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Galen's Escape"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 65.47,
+      "y": 18.16,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1393,
+     "label": "Galen's Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1393",
+     "label": "Wowhead Classic quest 1393 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t1393",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Galen's Escape"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.81,
+      "y": 39.76,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1393,
+     "label": "Galen's Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1393",
+     "label": "Wowhead Classic quest 1393 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a93464",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Visiting Mage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 25.98,
+      "y": 31.4,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93464,
+     "label": "The Visiting Mage"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93464",
+     "label": "Wowhead Classic quest 93464 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:t93464",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Visiting Mage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 38.88,
+      "y": 27.16,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93464,
+     "label": "The Visiting Mage"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93464",
+     "label": "Wowhead Classic quest 93464 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

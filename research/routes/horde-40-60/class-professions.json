@@ -1,0 +1,1150 @@
+{
+ "_note": "The classProfessions and tipsMatrix blocks every 40-60 pack used to repeat. Kept once here for reference. The build does not read this file: research/professions/class_professions.json and tips_matrix.json already cover all nine classes, and pack blocks were only used for classes missing there.",
+ "classProfessions": {
+  "Warrior": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Mining",
+      "Blacksmithing"
+     ],
+     "reason": "Blacksmiths make the Lionheart Helm, a pre-raid helm for damage warriors, and can make their own weapons and armour.",
+     "roles": [
+      "dps",
+      "tank"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Mining",
+      "Engineering"
+     ],
+     "reason": "Engineering gives grenades, sappers and target dummies, the strongest tools for tanking and PvP."
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "Devilsaur leather and the Devilsaur set, plus steady gold from leather sales while leveling."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Mining",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Mining reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Blacksmithing with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Paladin": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Mining",
+      "Blacksmithing"
+     ],
+     "reason": "Plate crafting and weapon upgrades; Lionheart Helm for Retribution.",
+     "roles": [
+      "dps",
+      "tank"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Mana potions and flasks for a healer, and herbs are easy to gather while questing.",
+     "roles": [
+      "healer"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Mining",
+      "Engineering"
+     ],
+     "reason": "Grenades and gadgets for tanking and PvP."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Mining",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Mining reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Blacksmithing with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Hunter": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "Devilsaur set and Blackstone-tier mail crafts; skinning pays for training while leveling."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Mining",
+      "Engineering"
+     ],
+     "reason": "Engineers make the best ranged weapons and scopes before raids (for example the Blastershot Launcher)."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Skinning reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Leatherworking with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Rogue": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "Devilsaur Gauntlets and Leggings are pre-raid best for rogues; skinning is gold while leveling."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Mining",
+      "Engineering"
+     ],
+     "reason": "Engineering gadgets for PvP and Gnomish/Goblin tools."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Skinning reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Leatherworking with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Priest": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Mana potions for healing and leveling; herbs are everywhere on the 50-60 route.",
+     "roles": [
+      "healer"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "Tailors make Robe of the Archmage-tier caster gear and Truefaith Vestments for healers; enchanters disenchant the leftover cloth gear."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Herbalism",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Herbalism reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Alchemy",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Alchemy with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Shaman": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Mana potions and elixirs; easy to gather while questing."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Mining",
+      "Blacksmithing"
+     ],
+     "reason": "Weapon crafting for Enhancement.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "Mail and leather pieces plus gold from leather."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Herbalism",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Herbalism reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Alchemy",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Alchemy with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Mage": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "Robe of the Archmage and other cloth crafts; enchanting turns the leftover gear into materials."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Mana potions and Flask of Supreme Power later."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Tailoring",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Tailoring with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Enchanting with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Warlock": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "Felcloth from Felwood feeds Robe of the Void and other warlock tailoring; enchanting uses the cloth gear you replace."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Mana and health potions; Felwood herbs are on the route."
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Tailoring",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Tailoring with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Enchanting with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  "Druid": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Herbalism",
+      "Alchemy"
+     ],
+     "reason": "Herbalism works in Travel Form gathering runs; alchemy covers potions for every spec."
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "Leather gear for Feral and Hide of the Wild for healers.",
+     "roles": [
+      "dps",
+      "tank",
+      "healer"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Bandages cut downtime for every class and are needed for elites without a healer."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Well Fed buffs add stats, and in WoW Forever cooked food also gives a small kill-experience bonus and powers camp features."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Optional; useful for cooking skill and for Mightfish and Stonescale Eel if you sell to raiders."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Herbalism",
+     "skillTarget": 300,
+     "levels": [
+      50,
+      58
+     ],
+     "note": "Herbalism reaches 300 naturally by gathering in Un'Goro, Felwood, Winterspring and the Plaguelands along this route."
+    },
+    {
+     "profession": "Alchemy",
+     "skillTarget": 300,
+     "levels": [
+      55,
+      60
+     ],
+     "note": "Level Alchemy with the materials saved from the route; buy the last recipes in the capitals or from the vendors linked in the step hooks."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      56
+     ],
+     "note": "Follow the cooking hooks: Roast Raptor and Giant Clam Scorcho in Stranglethorn, Tender Wolf Steak from Tanaris, Monster Omelet from Felwood."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      40,
+      55
+     ],
+     "note": "Buy Expert First Aid in Dustwallow Marsh and do the Triage quest at Hammerfall once you reach 225 skill."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Profession",
+     "label": "Warcraft Wiki: Professions"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ },
+ "tipsMatrix": {
+  "Warrior": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Keep a two-hander for questing and swap to sword and board only for elites and dungeons. Sweeping Strikes or Cleave on two mobs is faster than one-at-a-time pulls.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "Bandage between pulls; First Aid is your cheapest downtime fix until you have a healer.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "tank": [
+    {
+     "kind": "general",
+     "text": "In dungeons, mark one kill target and one sheep or trap target per pack; Sunder the skull and tab-Sunder the second mob.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Paladin": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "WoW Forever lets Undead play Paladin. Quest with Seal of Command or Seal of Righteousness and a slow two-hander; judge only when you will reseal before the next swing.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      },
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Pull two mobs, use Consecration only when three or more are on you, and drink while Blessing of Wisdom ticks. Undead Paladins can use Cannibalize on humanoid and undead corpses instead of eating.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      },
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    }
+   ],
+   "tank": [
+    {
+     "kind": "general",
+     "text": "Tank with Righteous Fury and a shield; Consecration holds packs but costs mana, so let the healer know before big pulls.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Holy Light rank downranking keeps mana up; save Lay on Hands for a wipe-saving moment on the tank.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Hunter": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Feign Death drops threat from extra mobs; use it to reset bad pulls instead of running. Keep the pet a level-appropriate beast so it holds aggro.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "WoW Forever lets hunters use traps in combat and gives pets gear scaling and family abilities; check your pet family's ability before you choose a new one.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Rogue": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Stealth past mobs that are not quest targets and open with Cheap Shot on casters. Use Sprint and Vanish to skip long runs back to a quest area.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "Pick Lockpicking up as you go: the lockboxes from this bracket open junk boxes you can sell and the skill opens doors in Blackrock Depths.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Priest": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Shadow is the fast way to level: Mind Blast, Shadow Word: Pain, wand. Power Word: Shield before the mob arrives so you take no pushback.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "In dungeons use lower ranks of Heal and Greater Heal; Renew on the tank before big pulls saves mana.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Shaman": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "WoW Forever adds Horde-aligned Skyborne (Windshapers) as Shaman. Their racials differ from Orc, Troll and Tauren, so check them before you pick totems and talents.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      },
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315643/return-to-azeroth-in-world-of-warcraft-forever",
+       "label": "Blizzard: Return to Azeroth"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Enhancement with Windfury and a slow two-hander levels fastest. Drop only the totems you need for the fight; Searing Totem on single mobs is wasted mana.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Chain Heal at rank 1 or 2 is your most efficient group heal; keep Mana Spring Totem down in long fights.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Mage": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Frost: Frost Nova, step back, Frostbolt. Arcane Explosion AoE pulls with a Frost Nova reset are the fastest way through mob camps. WoW Forever opens Orc Mage for the Horde.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      },
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "Conjure food and water before each zone so you never pay for drinks.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Warlock": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Affliction with the Voidwalker: dot two mobs, Drain Life, Life Tap and keep moving. WoW Forever opens Troll Warlock for the Horde.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315821/wow-foreverwhats-new-and-what-feels-familiar",
+       "label": "Blizzard: WoW Forever, what's new (class changes)"
+      },
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    },
+    {
+     "kind": "general",
+     "text": "Farm Soul Shards on the last mob of a pull, not the first, so you are not waiting on Drain Soul.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Druid": {
+   "any": [
+    {
+     "kind": "speed",
+     "text": "Quest in Cat Form; shift to Bear for two or more mobs. Travel Form between quest areas until your mount, and use it to skip fights you do not need.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false,
+     "routes": [
+      "speedrun"
+     ]
+    }
+   ],
+   "tank": [
+    {
+     "kind": "general",
+     "text": "Bear tanks hold packs with Swipe; ask for a mark on the kill target.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Regrowth and Rejuvenation on the tank, Healing Touch only for big hits; Innervate yourself during long boss fights.",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ }
+}

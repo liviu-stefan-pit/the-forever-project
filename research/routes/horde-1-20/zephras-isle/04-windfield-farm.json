@@ -1,0 +1,1117 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle",
+ "title": "Windfield farm (Balanced)",
+ "steps": [
+  {
+   "id": "zephras-isle:118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Great Ursera Spirit from Lotheluum Starbreeze. The follow-up conversation is with Urs'endris near the falls northeast of Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.99,
+      "y": 75.08,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94006,
+     "label": "The Great Ursera Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94006"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94006",
+     "label": "Wowhead quest 94006"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:119",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand The Great Ursera Spirit over to Urs'endris."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 69.81,
+      "y": 61.71,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94006,
+     "label": "The Great Ursera Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94006"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94006",
+     "label": "Wowhead quest 94006"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Blood Tithe from Alvarion Windfield. Stay and listen: to what Alvarion Windfield has to say and find Aamelia Windfield at the Windfield Orchard."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:121",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Blood Tithe at Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92679,
+     "objective": 1,
+     "label": "Blood Tithe"
+    },
+    {
+     "type": "complete",
+     "questId": 92679,
+     "objective": 2,
+     "label": "Blood Tithe"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:122",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Blood Tithe over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:123",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Make Yourself Useful from Aamelia Windfield. Bring back 10 Ripe Stormapples and slay 5 Hungry Bandits at the Windfield Orchard."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92682,
+     "label": "Make Yourself Useful"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92682"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92682",
+     "label": "Wowhead quest 92682"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:129",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Flutterfly Dust from Aamelia Windfield. Bring back 5 Flutterfly Dust from the Flutterflies around the Gustberry Lowlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92683,
+     "label": "Flutterfly Dust"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92683"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92683",
+     "label": "Wowhead quest 92683"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:126",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Ornery Ornery Galestriders from Aamelia Windfield. Bring back 7 Lowlands Galestrider Tenderloins from the Ornery Galestriders found throughout the Gustberry Lowlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92684,
+     "label": "Ornery Ornery Galestriders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92684"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92684",
+     "label": "Wowhead quest 92684"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:132",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up What Is My Purpose? from Malfunctioning Cyclone Construct. The follow-up conversation is with Aamelia Windfield about the Malfunctioning Cyclone Construct."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.87,
+      "y": 78.25,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92698,
+     "label": "What Is My Purpose?"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92698"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92698",
+     "label": "Wowhead quest 92698"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:124",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Make Yourself Useful at Hungry Bandit."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.23,
+      "y": 80.57,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92682,
+     "objective": 1,
+     "label": "Make Yourself Useful"
+    },
+    {
+     "type": "complete",
+     "questId": 92682,
+     "objective": 2,
+     "label": "Make Yourself Useful"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92682"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92682",
+     "label": "Wowhead quest 92682"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:130",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Flutterfly Dust at Flutterfly Dust."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 50.4,
+      "y": 78.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92683,
+     "objective": 1,
+     "label": "Flutterfly Dust"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92683"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92683",
+     "label": "Wowhead quest 92683"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:127",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Ornery Ornery Galestriders at Ornery Galestrider."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 55.88,
+      "y": 72.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92684,
+     "objective": 1,
+     "label": "Ornery Ornery Galestriders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92684"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92684",
+     "label": "Wowhead quest 92684"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:125",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Make Yourself Useful over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92682,
+     "label": "Make Yourself Useful"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92682"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92682",
+     "label": "Wowhead quest 92682"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:131",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Flutterfly Dust over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92683,
+     "label": "Flutterfly Dust"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92683"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92683",
+     "label": "Wowhead quest 92683"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:128",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Ornery Ornery Galestriders over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92684,
+     "label": "Ornery Ornery Galestriders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92684"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92684",
+     "label": "Wowhead quest 92684"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:133",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand What Is My Purpose? over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92698,
+     "label": "What Is My Purpose?"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92698"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92698",
+     "label": "Wowhead quest 92698"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:134",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Hills Have Eyes from Aamelia Windfield. Bring back 7 Blood-Stained Bandit Masks from Highwayman Bandits in the Gustberry Lowlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92685,
+     "label": "The Hills Have Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92685"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92685",
+     "label": "Wowhead quest 92685"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:135",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through The Hills Have Eyes at Bandit Highwayman."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 49.17,
+      "y": 74.96,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92685,
+     "objective": 1,
+     "label": "The Hills Have Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92685"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92685",
+     "label": "Wowhead quest 92685"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:136",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand The Hills Have Eyes over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92685,
+     "label": "The Hills Have Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92685"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92685",
+     "label": "Wowhead quest 92685"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:137",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Standing Our Ground from Aamelia Windfield. The follow-up conversation is with Aamelia Windfield when you are ready to confront the bandit leader."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92693,
+     "label": "Standing Our Ground"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92693"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92693",
+     "label": "Wowhead quest 92693"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:138",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Standing Our Ground at Ferauu the Bludgeon."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.31,
+      "y": 77.37,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92693,
+     "objective": 1,
+     "label": "Standing Our Ground"
+    },
+    {
+     "type": "complete",
+     "questId": 92693,
+     "objective": 2,
+     "label": "Standing Our Ground"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92693"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92693",
+     "label": "Wowhead quest 92693"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:139",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Standing Our Ground over to Aamelia Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92693,
+     "label": "Standing Our Ground"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92693"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92693",
+     "label": "Wowhead quest 92693"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:140",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Deliver the News from Aamelia Windfield. The follow-up conversation is with Alvarion Windfield in Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.7,
+      "y": 81.95,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92703,
+     "label": "Deliver the News"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92703"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92703",
+     "label": "Wowhead quest 92703"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:141",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Deliver the News over to Alvarion Windfield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92703,
+     "label": "Deliver the News"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92703"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92703",
+     "label": "Wowhead quest 92703"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

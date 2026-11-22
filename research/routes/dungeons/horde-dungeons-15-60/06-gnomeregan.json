@@ -1,0 +1,434 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Gnomeregan",
+ "steps": [
+  {
+   "id": "dungeons:gnomeregan:accept:2842",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2842 npc 3413"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Chief Engineer Scooty from Sovik."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 75.49,
+      "y": 25.36,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2842,
+     "label": "Chief Engineer Scooty"
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3413,
+     "name": "Sovik",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 75.49,
+      "y": 25.36
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2842 npc 3413"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:gnomeregan:turnin:2842",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2842 end npc 7853"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Chief Engineer Scooty to Scooty."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 27.6,
+      "y": 77.48,
+      "zone": "Stranglethorn Vale",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2842,
+     "label": "Chief Engineer Scooty"
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7853,
+     "name": "Scooty",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.6,
+      "y": 77.48
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2842 end npc 7853"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:gnomeregan:accept:2843",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2843 pre 2842"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gnomer-gooooone! from Scooty and take the teleporter."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 27.6,
+      "y": 77.48,
+      "zone": "Stranglethorn Vale",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2843,
+     "label": "Gnomer-gooooone!"
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7853,
+     "name": "Scooty",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.6,
+      "y": 77.48
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2843 pre 2842"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:gnomeregan:accept:2841",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2841 npc 3412"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rig Wars from Nogg."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 75.99,
+      "y": 25.41,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2841,
+     "label": "Rig Wars"
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3412,
+     "name": "Nogg",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 75.99,
+      "y": 25.41
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2841 npc 3412"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:gnomeregan:run",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2841 zone Gnomeregan"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Gnomeregan once and finish Rig Wars."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "x": 27.6,
+      "y": 77.48,
+      "zone": "Stranglethorn Vale",
+      "exact": true
+     }
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run Gnomeregan once. If the Grime-Encrusted Ring does not drop, skip 2945.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2841 zone Gnomeregan"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "If you find Kernobee during this one clear, escort him out and turn in to Scooty. Do not search for him, and do not reset.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie npc 7850 spawns zone 721 -1,-1; ends npc 7853"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:gnomeregan:turnin:2841",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 2841 end npc 3412"
+    }
+   ],
+   "verified": false,
+   "section": "Gnomeregan",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rig Wars to Nogg."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 75.99,
+      "y": 25.41,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2841,
+     "label": "Rig Wars"
+    }
+   ],
+   "dungeon": {
+    "name": "Gnomeregan"
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3412,
+     "name": "Nogg",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 75.99,
+      "y": 25.41
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 2841 end npc 3412"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1075 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Scarlet Monastery",
+ "steps": [
+  {
+   "id": "dungeons:scarlet-monastery:accept:1051",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1051",
+     "label": "Wowhead Classic: Vorrel's Revenge"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vorrel's Revenge from Vorrel Sengutz in Scarlet Monastery (level 25+, quest level 33)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 1051,
+     "label": "Vorrel's Revenge"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:accept:1113",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1113",
+     "label": "Wowhead Classic: Hearts of Zeal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hearts of Zeal from Master Apothecary Faranell in Undercity (level 30+, quest level 33)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.8,
+      "y": 69.3,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1113,
+     "label": "Hearts of Zeal"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Master Apothecary Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.8,
+      "y": 69.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2055",
+       "label": "Wowhead Classic: Master Apothecary Faranell"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 3300 XP base, high for level 33.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:accept:1049",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1049",
+     "label": "Wowhead Classic: Compendium of the Fallen"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 1049 races 162"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Tauren"
+      }
+     ],
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   },
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Compendium of the Fallen only on an orc, tauren, or troll. Undead skip it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 34.4,
+      "y": 46.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1049,
+     "label": "Compendium of the Fallen"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3978,
+     "name": "Sage Truthseeker",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 34.4,
+      "y": 46.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3978",
+       "label": "Wowhead Classic: Sage Truthseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Library boss quest with a strong reward; worth it if you set Thunder Bluff hearth or pass through.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:accept:1048",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1048",
+     "label": "Wowhead Classic: Into The Scarlet Monastery"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Into The Scarlet Monastery from Varimathras in Undercity (level 33+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1048,
+     "label": "Into The Scarlet Monastery"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5150 XP base, high for level 42.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:run",
+   "section": "Scarlet Monastery",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Scarlet Monastery (levels 26-45) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 82.6,
+      "y": 33.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 5538,
+     "count": 1,
+     "questId": 1051,
+     "objective": 1,
+     "label": "Vorrel's Revenge: Vorrel's Wedding Ring"
+    },
+    {
+     "type": "collect",
+     "itemId": 5805,
+     "count": 1,
+     "questId": 1113,
+     "objective": 1,
+     "label": "Hearts of Zeal: Heart of Zeal"
+    },
+    {
+     "type": "collect",
+     "itemId": 5861,
+     "count": 1,
+     "questId": 1160,
+     "objective": 1,
+     "label": "Test of Lore: Beginnings of the Undead Threat"
+    },
+    {
+     "type": "collect",
+     "itemId": 5535,
+     "count": 1,
+     "questId": 1049,
+     "objective": 1,
+     "label": "Compendium of the Fallen: Compendium of the Fallen"
+    },
+    {
+     "type": "complete",
+     "questId": 1048,
+     "objective": 1,
+     "label": "Into The Scarlet Monastery: High Inquisitor Whitemane"
+    },
+    {
+     "type": "complete",
+     "questId": 1048,
+     "objective": 2,
+     "label": "Into The Scarlet Monastery: Scarlet Commander Mograine"
+    },
+    {
+     "type": "complete",
+     "questId": 1048,
+     "objective": 3,
+     "label": "Into The Scarlet Monastery: Herod"
+    },
+    {
+     "type": "complete",
+     "questId": 1048,
+     "objective": 4,
+     "label": "Into The Scarlet Monastery: Houndmaster Loksey"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:scarlet-monastery:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Scarlet humanoids flee at low health; position packs so runners don't chain-pull the next room.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=796",
+       "label": "Wowhead Classic: Scarlet Monastery"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Library and Armory caster pulls hurt; stand behind the tank's line-of-sight corners.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=796",
+       "label": "Wowhead Classic: Scarlet Monastery"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Library for Compendium and Test of Lore, then Armory and Cathedral back to back; Graveyard is quick XP for Vorrel's Revenge.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=796",
+       "label": "Wowhead Classic: Scarlet Monastery"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run every Scarlet Monastery wing once. Do not reset a wing for more hearts.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 1048 pre none, 1113 pre 1109"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "High Inquisitor Whitemane",
+     "npcId": 3977,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Into The Scarlet Monastery; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=3977",
+         "label": "Wowhead Classic: High Inquisitor Whitemane"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3977",
+       "label": "Wowhead Classic: High Inquisitor Whitemane"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Scarlet Commander Mograine",
+     "npcId": 3976,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Into The Scarlet Monastery; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=3976",
+         "label": "Wowhead Classic: Scarlet Commander Mograine"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3976",
+       "label": "Wowhead Classic: Scarlet Commander Mograine"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Herod",
+     "npcId": 3975,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Into The Scarlet Monastery; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=3975",
+         "label": "Wowhead Classic: Herod"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3975",
+       "label": "Wowhead Classic: Herod"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Houndmaster Loksey",
+     "npcId": 3974,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Into The Scarlet Monastery; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=3974",
+         "label": "Wowhead Classic: Houndmaster Loksey"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3974",
+       "label": "Wowhead Classic: Houndmaster Loksey"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=796",
+     "label": "Wowhead Classic: Scarlet Monastery level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:scarlet-monastery:turnin:1051",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1051",
+     "label": "Wowhead Classic: Vorrel's Revenge"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vorrel's Revenge to Monika Sengutz (Hillsbrad Foothills). Reward choices include Grimsteel Cape, Mantle of Woe, Vorrel's Boots"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 62.7,
+      "y": 18.9,
+      "zone": "Hillsbrad Foothills",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1051,
+     "label": "Vorrel's Revenge"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3982,
+     "name": "Monika Sengutz",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 62.7,
+      "y": 18.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3982",
+       "label": "Wowhead Classic: Monika Sengutz"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:turnin:1113",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1113",
+     "label": "Wowhead Classic: Hearts of Zeal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hearts of Zeal to Master Apothecary Faranell (Undercity)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 48.8,
+      "y": 69.3,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1113,
+     "label": "Hearts of Zeal"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2055,
+     "name": "Master Apothecary Faranell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 48.8,
+      "y": 69.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2055",
+       "label": "Wowhead Classic: Master Apothecary Faranell"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:turnin:1049",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1049",
+     "label": "Wowhead Classic: Compendium of the Fallen"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Tauren"
+      }
+     ],
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   },
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Compendium of the Fallen to Sage Truthseeker (Thunder Bluff). Reward choices include Vile Protector, Omega Orb, Forcestone Buckler"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 34.4,
+      "y": 46.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1049,
+     "label": "Compendium of the Fallen"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3978,
+     "name": "Sage Truthseeker",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 34.4,
+      "y": 46.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3978",
+       "label": "Wowhead Classic: Sage Truthseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:turnin:1048",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scarlet Monastery",
+    "instanceId": 796,
+    "levels": [
+     26,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1048",
+     "label": "Wowhead Classic: Into The Scarlet Monastery"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scarlet Monastery",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Into The Scarlet Monastery to Varimathras (Undercity). Reward choices include Sword of Omen, Prophetic Cane, Dragon's Blood Necklace"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1048,
+     "label": "Into The Scarlet Monastery"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scarlet-monastery:off",
+   "section": "Scarlet Monastery",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Arathi Highlands (Hammerfall), Thousand Needles and Desolace quests cover levels 30-40."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:scarlet-monastery:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

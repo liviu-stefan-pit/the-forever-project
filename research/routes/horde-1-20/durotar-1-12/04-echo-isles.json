@@ -1,0 +1,1143 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "durotar-1-12",
+ "title": "Echo Isles",
+ "steps": [
+  {
+   "id": "durotar-1-12:094",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run back south to Sen'jin with Practical Prey and Minshina's Skull ready to finish"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run back south to Sen'jin with Practical Prey and Minshina's Skull ready to finish.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:100",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Bloodtalon Matriarch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 68.8,
+      "y": 71.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97223,
+     "objective": 1,
+     "label": "Bloodtalon Matriarch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill the Bloodtalon Matriarch (level 9) for her eggs; raptors are along the south-east coast.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      268530
+     ],
+     "name": "Bloodtalon Matriarch (Bloodtalon Matriarch Eggs)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 68.8,
+      "y": 71.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=268530",
+       "label": "Wowhead Classic NPC 268530"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:097",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Break a Few Eggs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 68,
+      "y": 80.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 815,
+     "objective": 1,
+     "label": "Break a Few Eggs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=815",
+     "label": "Wowhead Classic quest 815"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Taillasher Eggs sit in raptor nests on the south-east coast near the Echo Isles. Grab them while you are down here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=815",
+       "label": "Wowhead Classic quest 815"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3240,
+     "name": "Taillasher Eggs",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 68,
+      "y": 80.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3240",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:096",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Zalazane"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 67.7,
+      "y": 84,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 826,
+     "objective": 1,
+     "label": "Zalazane"
+    },
+    {
+     "type": "complete",
+     "questId": 826,
+     "objective": 2,
+     "label": "Zalazane"
+    },
+    {
+     "type": "complete",
+     "questId": 826,
+     "objective": 3,
+     "label": "Zalazane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=826",
+     "label": "Wowhead Classic quest 826"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Zalazane is a caster on the Echo Isles surrounded by hexed trolls. Clear the trolls around him first, then fight him alone.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=826",
+       "label": "Wowhead Classic quest 826"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Pull the guards one at a time, then take Zalazane with interrupts ready.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=826",
+       "label": "Wowhead Classic quest 826"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Group with someone if you can; solo, kill him slowly and keep your mana for heals.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=826",
+       "label": "Wowhead Classic quest 826"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Burst him down. If you are a melee class, use your stun when his health gets low so he cannot heal.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=826",
+       "label": "Wowhead Classic quest 826"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3207
+     ],
+     "name": "Hexed Troll",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 67.7,
+      "y": 84
+     },
+     "radius": 4.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3207",
+       "label": "Wowhead Classic NPC 3207"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3206
+     ],
+     "name": "Voodoo Troll",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 67.2,
+      "y": 86.6
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3206",
+       "label": "Wowhead Classic NPC 3206"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3205
+     ],
+     "name": "Zalazane (Zalazane's Head)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 67.5,
+      "y": 87.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3205",
+       "label": "Wowhead Classic NPC 3205"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4866",
+       "label": "Wowhead Classic item 4866"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:101",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Disenchant Hexed Pendants from the isle trolls until you have three Luminous Residue. Skip this if you are not an enchanter."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 67.7,
+      "y": 84,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96873,
+     "objective": 1,
+     "label": "A Pain in the Neck"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 96873 requiredSkill Enchanting"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96873",
+     "label": "Wowhead quest 96873"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Enchanters only: disenchant Hexed Pendants from Echo Isles trolls into Luminous Residue. Skip this if you are not an enchanter.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:099",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Forgotten Loa Idols"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 67,
+      "y": 84.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97225,
+     "objective": 1,
+     "label": "Forgotten Loa Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The idols are on the Echo Isles; collect them while you are there for Zalazane.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 660647,
+     "name": "Forgotten Loa Idol",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 67,
+      "y": 84.7
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=660647",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:090",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Practical Prey"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 64.4,
+      "y": 84.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 817,
+     "objective": 1,
+     "label": "Practical Prey"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=817",
+     "label": "Wowhead Classic quest 817"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tigers are thickest in southern Durotar around Sen'jin (see map pins). Finish the furs on the run back south.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=817",
+       "label": "Wowhead Classic quest 817"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3121
+     ],
+     "name": "Durotar Tiger (Durotar Tiger Fur)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 64.4,
+      "y": 84.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3121",
+       "label": "Wowhead Classic NPC 3121"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4892",
+       "label": "Wowhead Classic item 4892"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:095",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Minshina's Skull"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 67.5,
+      "y": 87.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 808,
+     "objective": 1,
+     "label": "Minshina's Skull"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=808",
+     "label": "Wowhead Classic quest 808"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Swim over from Sen'jin; Minshina's Skull sits inside the ring of power on the Echo Isles.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=808",
+       "label": "Wowhead Classic quest 808"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3237,
+     "name": "Imprisoned Darkspear",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 67.5,
+      "y": 87.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3237",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:098",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Practical Prey to Vel'rin Fang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 73.9,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 817,
+     "label": "Practical Prey"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=817",
+     "label": "Wowhead Classic quest 817"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:102",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Forgotten Loa Idols to Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97225,
+     "label": "Forgotten Loa Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:103",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bloodtalon Matriarch to Xar'Ti"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.3,
+      "y": 75.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97223,
+     "label": "Bloodtalon Matriarch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:104",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Pain in the Neck to Pa'zula"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56.7,
+      "y": 73.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96873,
+     "label": "A Pain in the Neck"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand in to Pa'zula in Sen'jin.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:105",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Minshina's Skull to Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 808,
+     "label": "Minshina's Skull"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=808",
+     "label": "Wowhead Classic quest 808"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Zalazane to Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 826,
+     "label": "Zalazane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=826",
+     "label": "Wowhead Classic quest 826"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:107",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Use your hearthstone"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Use your hearthstone"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hearth back to Razor Hill.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

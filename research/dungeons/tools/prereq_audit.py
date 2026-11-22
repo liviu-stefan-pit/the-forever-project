@@ -1,4 +1,4 @@
-"""Audit in-pack prerequisite order in research/dungeons/steps-v2.json.
+"""Audit in-pack prerequisite order in the dungeons pack (research/routes/dungeons/horde-dungeons-15-60/).
 
 Walks steps in order for each route (balanced, speedrun). An accept is an
 in-pack violation if a prerequisite from content/questie-db is also in this
@@ -13,14 +13,15 @@ import json
 import sys
 from collections import defaultdict
 
-from paths import STEPS_JSON, QUESTS_JSON, README_MD, DUNGEONS_JSON
+from paths import STEPS_PACK, QUESTS_JSON, README_MD, DUNGEONS_JSON
+from route_files import load_pack
 
 
 ROUTES = ("balanced", "speedrun")
 
 
 def load():
-    steps = json.loads(STEPS_JSON.read_text())["steps"]
+    steps = load_pack(STEPS_PACK)["steps"]
     quests = json.loads(QUESTS_JSON.read_text())
     return steps, quests
 

@@ -1,0 +1,2989 @@
+{
+ "_note": "The classProfessions and tipsMatrix blocks every 20-40 pack used to repeat. Kept once here for reference. The build does not read this file: research/professions/class_professions.json and tips_matrix.json already cover all nine classes, and pack blocks were only used for classes missing there.",
+ "classProfessions": {
+  "Warrior": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Mining",
+      "Blacksmithing"
+     ],
+     "reason": "(dps) Leveling: Mining feeds Blacksmithing, which makes weapon and plate upgrades as you level; the Lodestone and Sharpening Wheel camp objects add melee power.",
+     "roles": [
+      "dps",
+      "tank"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Blacksmithing",
+      "Engineering"
+     ],
+     "reason": "(dps) Level 60: Weapons carry warrior damage, so a smith arms both hands while leveling; at 60 Engineering adds bombs and gadgets. Fury should keep First Aid high because Victory Rush is its only self-heal.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Blacksmithing",
+      "Alchemy"
+     ],
+     "reason": "(tank) Level 60: A tank wants shields, shield spikes and armor elixirs; Blacksmithing plus Alchemy covers both, and First Aid potions and cures are now First Aid-only in Forever.",
+     "roles": [
+      "tank"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Mining",
+     "skillTarget": 65,
+     "levels": [
+      5,
+      12
+     ],
+     "note": "Copper in any starting zone (Poor Copper veins were cut in starter areas)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 125,
+     "levels": [
+      12,
+      25
+     ],
+     "note": "Tin/Silver in the Barrens, Ashenvale, Thousand Needles. Journeyman at 50 (level 10), Expert at 125 (level 20)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 175,
+     "levels": [
+      25,
+      35
+     ],
+     "note": "Iron/Gold in Arathi, Desolace, Stranglethorn, Thousand Needles."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 225,
+     "levels": [
+      35,
+      45
+     ],
+     "note": "Mithril/Truesilver in Tanaris, the Hinterlands, Azshara. Artisan at 200 (level 35)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Thorium in Un'Goro, Burning Steppes, Winterspring, Eastern Plaguelands."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warrior-arms-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warrior-fury-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/warrior/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warrior-protection-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Rogue": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "(dps) Leveling: Skinning costs nothing on beasts you already kill and Leatherworking turns it into leather/mail upgrades; most Forever leather recipes belong to Leatherworking.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Alchemy",
+      "Engineering"
+     ],
+     "reason": "(dps) Level 60: Leather gear and free materials help while leveling; at 60 melee elixirs and Engineering's satchels, nets and goggles add damage and control a rogue lacks.",
+     "roles": [
+      "dps"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 75,
+     "levels": [
+      6,
+      20
+     ],
+     "note": "Light Leather from beasts 6-25."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 150,
+     "levels": [
+      16,
+      35
+     ],
+     "note": "Medium Leather from beasts 16-35; Heavy from 26-45."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 225,
+     "levels": [
+      30,
+      45
+     ],
+     "note": "Heavy/Thick Leather (Thick from beasts 36+: Feralas, Hinterlands, Tanaris)."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Rugged Leather from beasts 46+ (Winterspring, Eastern Plaguelands, Un'Goro)."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-rogue-assassination-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-rogue-combat-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-rogue-subtlety-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/rogue/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Hunter": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "(dps) Leveling: Skinning costs nothing on beasts you already kill and Leatherworking turns it into leather/mail upgrades; most Forever leather recipes belong to Leatherworking.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Engineering",
+      "Alchemy"
+     ],
+     "reason": "(dps) Level 60: Hunters skin everything they kill anyway; Leatherworking turns it into mail and leather upgrades. At 60 Engineering gives scopes, ammo and stuns, Alchemy the agility potions.",
+     "roles": [
+      "dps"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 75,
+     "levels": [
+      6,
+      20
+     ],
+     "note": "Light Leather from beasts 6-25."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 150,
+     "levels": [
+      16,
+      35
+     ],
+     "note": "Medium Leather from beasts 16-35; Heavy from 26-45."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 225,
+     "levels": [
+      30,
+      45
+     ],
+     "note": "Heavy/Thick Leather (Thick from beasts 36+: Feralas, Hinterlands, Tanaris)."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Rugged Leather from beasts 46+ (Winterspring, Eastern Plaguelands, Un'Goro)."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-hunter-beast-mastery-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-hunter-marksmanship-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-hunter-survival-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/hunter/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Mage": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "(dps) Leveling: Humanoids drop cloth anyway; Tailoring turns it into gear and bags, and Enchanting disenchants spare greens and makes wands and staves from low skill.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Tailoring",
+      "Alchemy"
+     ],
+     "reason": "(dps) Level 60: Mages kill humanoids that drop cloth, so Tailoring is free gear and bags; Enchanting adds crafter-only staves while leveling. At 60 the tailor-only robe and belt plus Alchemy's mana and power elixirs win.",
+     "roles": [
+      "dps"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Tailoring",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-mage-arcane-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-mage-fire-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-mage-frost-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/mage/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Warlock": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "(dps) Leveling: Humanoids drop cloth anyway; Tailoring turns it into gear and bags, and Enchanting disenchants spare greens and makes wands and staves from low skill. / (dps) Level 60: Tailoring is the clear pick: shadow cloth gear, the Robe of the Void and soul-shard bags. Enchanting is a smaller add (orb, wand, a level-45 staff). Gathering early can pay for spell ranks.",
+     "roles": [
+      "dps"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Tailoring",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warlock-affliction-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warlock-demonology-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-warlock-destruction-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/warlock/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Priest": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Tailoring",
+      "Enchanting"
+     ],
+     "reason": "(healer) Leveling: Humanoids drop cloth anyway; Tailoring turns it into gear and bags, and Enchanting disenchants spare greens and makes wands and staves from low skill.",
+     "roles": [
+      "healer",
+      "dps"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Tailoring",
+      "Alchemy"
+     ],
+     "reason": "(healer) Level 60: Cloth drops pay for Tailoring and the Truefaith robe is tailor-only; early Enchanting wands cut downtime. At 60 swap Enchanting for Alchemy for mana potions if gold matters more than wands.",
+     "roles": [
+      "healer"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Alchemy",
+      "Enchanting"
+     ],
+     "reason": "(dps) Level 60: Shadow wants Shadow Power elixirs and spellblasting potions every raid, and Enchanting's wand/orb help while leveling; Tailoring is rated just as high, so keep it if you levelled it.",
+     "roles": [
+      "dps"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Tailoring",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Tailoring",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Cloth bands: Linen ~1-20, Wool ~15-30, Silk 28-40, Mageweave 38-50, Runecloth 50+. Tailors now also need Alchemist dyes (Cerulean Dye in 128 recipes)."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "Enchanting",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Disenchant your own green drops; Forever Enchanting makes gear (wands, staves, relics) from skill 1."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-priest-discipline-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-priest-holy-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/priest/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-priest-shadow-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Shaman": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "(dps) Leveling: Skinning costs nothing on beasts you already kill and Leatherworking turns it into leather/mail upgrades; most Forever leather recipes belong to Leatherworking.",
+     "roles": [
+      "dps",
+      "healer"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Alchemy",
+      "Engineering"
+     ],
+     "reason": "(dps) Level 60: Leatherworking makes mail and leather pieces while leveling; at 60 Engineering grenades and nets fill the shaman's missing hard crowd control and Alchemy supplies flasks. / (healer) Level 60: Same leveling plan; at 60 flasks and elixirs matter most for a healer, Engineering is a lighter add.",
+     "roles": [
+      "dps",
+      "healer"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 75,
+     "levels": [
+      6,
+      20
+     ],
+     "note": "Light Leather from beasts 6-25."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 150,
+     "levels": [
+      16,
+      35
+     ],
+     "note": "Medium Leather from beasts 16-35; Heavy from 26-45."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 225,
+     "levels": [
+      30,
+      45
+     ],
+     "note": "Heavy/Thick Leather (Thick from beasts 36+: Feralas, Hinterlands, Tanaris)."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Rugged Leather from beasts 46+ (Winterspring, Eastern Plaguelands, Un'Goro)."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-shaman-elemental-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/shaman/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Druid": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Skinning",
+      "Leatherworking"
+     ],
+     "reason": "(dps) Leveling: Skinning costs nothing on beasts you already kill and Leatherworking turns it into leather/mail upgrades; most Forever leather recipes belong to Leatherworking.",
+     "roles": [
+      "dps",
+      "tank",
+      "healer"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Alchemy",
+      "Leatherworking"
+     ],
+     "reason": "(dps) Level 60: Druids can gather and skin in forms; leather gear suits cat and bear all the way up. Balance at 60 does better with Alchemy + Herbalism. / (tank) Level 60: Armor kits and leather armor stack bear armor; Alchemy flasks and Free Action work in form in Forever.",
+     "roles": [
+      "dps",
+      "tank"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Alchemy",
+      "Herbalism"
+     ],
+     "reason": "(healer) Level 60: Herbalism in travel form turns movement into gold and feeds Alchemy's healing-power and mana elixirs.",
+     "roles": [
+      "healer"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Skinning",
+     "skillTarget": 75,
+     "levels": [
+      6,
+      20
+     ],
+     "note": "Light Leather from beasts 6-25."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 150,
+     "levels": [
+      16,
+      35
+     ],
+     "note": "Medium Leather from beasts 16-35; Heavy from 26-45."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 225,
+     "levels": [
+      30,
+      45
+     ],
+     "note": "Heavy/Thick Leather (Thick from beasts 36+: Feralas, Hinterlands, Tanaris)."
+    },
+    {
+     "profession": "Skinning",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Rugged Leather from beasts 46+ (Winterspring, Eastern Plaguelands, Un'Goro)."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "Leatherworking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Uses your Skinning output; 406 of the 593 Forever recipes that use leather are Leatherworking. Pristine Leather is a new Scarce reagent."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-druid-balance-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-druid-feral-cat-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/druid/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-druid-feral-bear-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-druid-restoration-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  },
+  "Paladin": {
+   "primary": [
+    {
+     "rank": 1,
+     "pair": [
+      "Mining",
+      "Blacksmithing"
+     ],
+     "reason": "(dps) Leveling: Mining feeds Blacksmithing, which makes weapon and plate upgrades as you level; the Lodestone and Sharpening Wheel camp objects add melee power.",
+     "roles": [
+      "dps",
+      "tank",
+      "healer"
+     ]
+    },
+    {
+     "rank": 2,
+     "pair": [
+      "Blacksmithing",
+      "Engineering"
+     ],
+     "reason": "(dps) Level 60: Undead Paladin is a new Horde option in Forever. A smith supplies two-handers while leveling and the smith-only Legionite Glaive at 60; Engineering adds ranged tools.",
+     "roles": [
+      "dps"
+     ]
+    },
+    {
+     "rank": 3,
+     "pair": [
+      "Blacksmithing",
+      "Alchemy"
+     ],
+     "reason": "(tank) Level 60: Shields, spikes and tank plate from Blacksmithing plus Alchemy elixirs. / (healer) Level 60: Mana elixirs and flasks first; Blacksmithing healing plate is BoE so it can also be bought.",
+     "roles": [
+      "tank",
+      "healer"
+     ]
+    }
+   ],
+   "secondary": [
+    {
+     "profession": "First Aid",
+     "reason": "Forever moved healing potions to First Aid and added poultices and tourniquets; rated S or A for most specs. Level it with your cloth."
+    },
+    {
+     "profession": "Cooking",
+     "reason": "Food gives small XP and stat buffs in Forever and cooks build campfires for camp buffs; pair with Fishing."
+    },
+    {
+     "profession": "Fishing",
+     "reason": "Feeds Cooking; Fish Bowl camp object. Lowest value of the three for most specs, but it costs no primary slot."
+    }
+   ],
+   "levelingPlan": [
+    {
+     "profession": "Mining",
+     "skillTarget": 65,
+     "levels": [
+      5,
+      12
+     ],
+     "note": "Copper in any starting zone (Poor Copper veins were cut in starter areas)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 125,
+     "levels": [
+      12,
+      25
+     ],
+     "note": "Tin/Silver in the Barrens, Ashenvale, Thousand Needles. Journeyman at 50 (level 10), Expert at 125 (level 20)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 175,
+     "levels": [
+      25,
+      35
+     ],
+     "note": "Iron/Gold in Arathi, Desolace, Stranglethorn, Thousand Needles."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 225,
+     "levels": [
+      35,
+      45
+     ],
+     "note": "Mithril/Truesilver in Tanaris, the Hinterlands, Azshara. Artisan at 200 (level 35)."
+    },
+    {
+     "profession": "Mining",
+     "skillTarget": 300,
+     "levels": [
+      45,
+      60
+     ],
+     "note": "Thorium in Un'Goro, Burning Steppes, Winterspring, Eastern Plaguelands."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 75,
+     "levels": [
+      5,
+      15
+     ],
+     "note": "Reach 75 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 150,
+     "levels": [
+      10,
+      25
+     ],
+     "note": "Reach 150 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Reach 225 and train the next rank (Journeyman needs 50 skill + level 10, Expert 125 + level 20, Artisan 200 + level 35). Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      60
+     ],
+     "note": "Finish with Artisan recipes. Feeds on Mining bars; Forever smiths also need Sulfuric Acid and Sandpaper from other professions."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 150,
+     "levels": [
+      5,
+      25
+     ],
+     "note": "Linen to ~80, Wool to 150 (trainer teaches Apprentice and Journeyman)."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Buy Expert First Aid - Under Wraps (1g) from Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (36.4, 30.4) at 125 skill; Silk and Mageweave to 225."
+    },
+    {
+     "profession": "First Aid",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Triage (id 6622) from Doctor Gregory Victor, Hammerfall, Arathi (73.4, 36.8): level 35 + First Aid 225; Runecloth bandages finish it."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 225,
+     "levels": [
+      25,
+      40
+     ],
+     "note": "Expert Cookbook from Wulan, Shadowprey Village, Desolace (26.2, 69.8) at 125 skill."
+    },
+    {
+     "profession": "Cooking",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Clamlette Surprise (id 6610) from Dirge Quikcleave, Gadgetzan (52.6, 28.0): level 35; bring 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 225,
+     "levels": [
+      20,
+      40
+     ],
+     "note": "Expert Fishing - The Bass and You (1g) from Old Man Heming, Booty Bay (27.4, 77.0) at 125 skill, level 20."
+    },
+    {
+     "profession": "Fishing",
+     "skillTarget": 300,
+     "levels": [
+      35,
+      50
+     ],
+     "note": "Quest Nat Pagle, Angler Extreme (id 6607) from Nat Pagle, Dustwallow Marsh (58.6, 60.0): level 35."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-paladin-retribution-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/classes/paladin/professions/",
+     "label": "Forever Guides: class professions"
+    },
+    {
+     "url": "https://warcraftmaps.com/whats-new",
+     "label": "WarcraftMaps"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-paladin-protection-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://wowfdb.com/tier-lists/professions-paladin-holy-pve/",
+     "label": "WoW Forever DB: profession tier list"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/crafting-trainers/",
+     "label": "Forever Guides: crafting trainers"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/herb-farming/",
+     "label": "Forever Guides: herb farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/ore-farming/",
+     "label": "Forever Guides: ore farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/leather-farming/",
+     "label": "Forever Guides: leather farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cloth-farming/",
+     "label": "Forever Guides: cloth farming"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/first-aid/",
+     "label": "Forever Guides: first aid"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/cooking/",
+     "label": "Forever Guides: cooking"
+    },
+    {
+     "url": "https://theforeverguides.com/professions/fishing/",
+     "label": "Forever Guides: fishing"
+    }
+   ],
+   "verified": false
+  }
+ },
+ "tipsMatrix": {
+  "Warrior": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Victory Rush (level 20) heals after a kill, so you can chain pulls with less eating than in Classic; keep First Aid bandages for the rage-starved levels before 20.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      },
+      {
+       "url": "https://wowfdb.com/tier-lists/professions-warrior-fury-pve/",
+       "label": "WoW Forever DB: warrior-fury PvE profession tier list"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Tactical Mastery is baseline at level 14, so stance swaps keep some Rage from that level on.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Rend and Sunder Armor now tag a mob instantly: open with them on contested quest mobs to claim the kill credit before other players.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Class training 1-60 costs about 206-207 gold in Forever; budget for it alongside the level-40 mount.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tank": [
+    {
+     "kind": "elite",
+     "text": "Vanguard lets you Charge in Defensive Stance: Charge in, then Thunder Clap (usable in Defensive Stance) without a stance dance on elite or multi-mob pulls.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Blessing of Salvation is removed; Defensive Stance threat was raised to 80% to compensate, so don't plan around a paladin dropping your DPS's threat.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      },
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Rage from damage taken now ignores armor and absorbs, and a Priest's Power Word: Shield no longer cuts your Rage.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "general",
+     "text": "Recklessness, Retaliation and Shield Wall no longer share a cooldown, so Recklessness is free to use on a dangerous elite without losing your defensive buttons.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "elite",
+     "text": "Against elites, crits now pay much more Rage (raised to 100% extra in the 8 Oct notes): open with cooldowns so early crits fund your rotation.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warrior/changes",
+       "label": "WarcraftMaps: Warrior changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Rogue": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Sap no longer breaks Stealth, so you can Sap one mob of a pair and keep your opener on the other.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Poisons and sharpening stones stack on the same weapon and poisons have more charges, so keep both up while leveling.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "One-handed axes are now usable by Rogues; take the best weapon that drops instead of matching it to talents (Hack and Slash).",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Poised (level 18): out of combat at full Energy your next Energy ability costs 10 less, so open each pull at full Energy instead of rushing.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "dps": [
+    {
+     "kind": "elite",
+     "text": "Sap does flag you for PvP on flagged targets; on PvP rulesets check the target before Sapping near the other faction.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "elite",
+     "text": "Mutilate needs a dagger in each hand; if you take it in Assassination, plan your weapon upgrades as daggers.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/rogue/changes",
+       "label": "WarcraftMaps: Rogue changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Hunter": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Aimed Shot is baseline at level 20 for every Hunter, not a Marksmanship talent; it shares a cooldown with Multi-Shot.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/hunter/changes",
+       "label": "WarcraftMaps: Hunter changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Pets scale from your gear now and don't take player buffs: weapon and Agility upgrades help twice, so don't skip them.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/hunter/changes",
+       "label": "WarcraftMaps: Hunter changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Auto Shot needs half a second standing still before it fires; test your kiting rhythm before relying on it.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/hunter/changes",
+       "label": "WarcraftMaps: Hunter changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "You can no longer tame a beast above your own level; plan pet upgrades by level.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/hunter/changes",
+       "label": "WarcraftMaps: Hunter changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "elite",
+     "text": "Traps work in combat on one shared 30-second cooldown: drop Freezing Trap mid-fight on the add, not only before the pull.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/hunter/changes",
+       "label": "WarcraftMaps: Hunter changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Skinning everything you kill is free income in Forever, and Skinning + Leatherworking is the fan-site leveling pick for Hunters.",
+     "roles": [
+      "dps"
+     ],
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/classes/hunter/professions/",
+       "label": "Forever Guides: best professions for Hunter"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  "Mage": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Learn Comprehension (Mage-only minor tradeskill) early so you can read Mage scrolls found in the world.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/mage/changes",
+       "label": "WarcraftMaps: Mage changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Frostfire Bolt arrives at level 40 for every Mage.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/mage/changes",
+       "label": "WarcraftMaps: Mage changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Low-rank spells proc Arcane Concentration and Impact less often, and spells far below your level get less from Spell Damage: keep spell ranks current instead of downranking fillers.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/mage/changes",
+       "label": "WarcraftMaps: Mage changes in WoW Forever vs Classic (patch 1.60.1)"
+      },
+      {
+       "url": "https://warcraftmaps.com/whats-new",
+       "label": "WarcraftMaps: What's new in WoW Forever vs Classic"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Orc Mage is a new Horde race/class pair in Forever (official).",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live",
+       "label": "Blizzard News: World of Warcraft: Forever Now Live"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "elite",
+     "text": "Polymorph is still your job in groups; Blizzard says crowd control stays important.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/mage/changes",
+       "label": "WarcraftMaps: Mage changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Frost is still the safe leveling line: slows and roots keep mobs off you and Ice Lance (talent) is an instant finisher on frozen targets.",
+     "roles": [
+      "dps"
+     ],
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/mage/changes",
+       "label": "WarcraftMaps: Mage changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Warlock": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Drain Soul now has a rising chance per tick to give a Soul Shard, so you no longer need the kill for shards (less often if it doesn't kill, since the launch notes).",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warlock/changes",
+       "label": "WarcraftMaps: Warlock changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Life Tap scales with Spirit and pets scale from your stats, so Spirit and Stamina gear is no longer dead weight.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warlock/changes",
+       "label": "WarcraftMaps: Warlock changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Curse of Agony and Curse of Doom are Banes: you can keep one Bane and one curse up on the same target.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warlock/changes",
+       "label": "WarcraftMaps: Warlock changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Troll Warlock is a new Horde pair in Forever (official).",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live",
+       "label": "Blizzard News: World of Warcraft: Forever Now Live"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Gathering in starter zones can pay for spell ranks; a tester bought every rank from Skinning sales.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/classes/warlock/professions/",
+       "label": "Forever Guides: best professions for Warlock"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "dps": [
+    {
+     "kind": "elite",
+     "text": "In groups, agree who holds which curse before the pull; Curse of the Elements now covers all magic damage and Curse of Shadows is gone.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/warlock/changes",
+       "label": "WarcraftMaps: Warlock changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Priest": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Fear Ward and Devouring Plague are baseline at level 20 for every Priest, whatever the race; Divine Spirit is baseline at 30.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Shadow Word: Death is a new baseline spell at level 32, useful as a finisher.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "healer": [
+    {
+     "kind": "elite",
+     "text": "Prayer of Healing heals your target's party, not yours: target a member of the group you want to heal.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Renew from several Priests can stack on one target and can crit.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Fade drops twice the threat, so use it early when an elite turns to you.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "speed",
+     "text": "Shadow keeps Spirit Tap on talent row 1 and gets Shadow Word: Death to finish, which cuts downtime between kills.",
+     "roles": [
+      "dps"
+     ],
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/priest/changes",
+       "label": "WarcraftMaps: Priest changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Shaman": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Buff totems last 5 minutes and the totem global cooldown is 1 second; Call of the Elements (level 20) drops a full set at once.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Totemic Recall (level 20) takes totems back and restores mana; Totemic Call (level 22) moves your totems to you every 30 seconds, so you can drop totems once per quest camp.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Weapon imbues last 60 minutes and stack with sharpening stones.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "You still need the totem class quests while leveling.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Skyborne (Windshaper) Shaman is a new Horde option starting on Zephras Isle (official).",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live",
+       "label": "Blizzard News: World of Warcraft: Forever Now Live"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "general",
+     "text": "Two-handed axes and maces are baseline for Shaman, so Enhancement can use them without a talent.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "elite",
+     "text": "Engineering grenades and nets cover the Shaman's lack of hard crowd control on elites.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/",
+       "label": "WoW Forever DB: shaman-enhancement PvE profession tier list"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Your totems now buff the whole raid (Windfury, Flametongue, Grace of Air, Strength of Earth), so you're not tied to one group.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/shaman/changes",
+       "label": "WarcraftMaps: Shaman changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Druid": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Most potions work in forms now, so you can drink a potion without shifting out.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Revive (out-of-combat resurrection) at level 12; Nature's Grasp at 10 and Omen of Clarity at 20 are baseline.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Doors, objects and herb nodes can be used in forms, so you can gather in travel form.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      },
+      {
+       "url": "https://wowfdb.com/tier-lists/professions-druid-balance-pve/",
+       "label": "WoW Forever DB: druid-balance PvE profession tier list"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tank": [
+    {
+     "kind": "elite",
+     "text": "Bear Form threat is 115% and auto attacks use your weapon's DPS, so a real weapon upgrade matters for tanking elites.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Lacerate (level 42) is a new stacking Feral bleed.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "general",
+     "text": "Tiger's Fury is gone; Shifting Power (Cat talent) trades mana for 40 Energy on a 16-second cooldown.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Poised (level 32): out of combat at full Energy, your next Energy ability costs 10 less; start Cat pulls at full Energy.",
+     "roles": [
+      "dps"
+     ],
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/druid/changes",
+       "label": "WarcraftMaps: Druid changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Herbalism in travel form turns movement into gold and supplies Alchemy; it ranks S for Restoration.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://wowfdb.com/tier-lists/professions-druid-restoration-pve/",
+       "label": "WoW Forever DB: druid-restoration PvE profession tier list"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  "Paladin": {
+   "any": [
+    {
+     "kind": "general",
+     "text": "Undead Paladin is a new Horde race/class pair in WoW Forever (official), and Undead is the only Horde Paladin race.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live",
+       "label": "Blizzard News: World of Warcraft: Forever Now Live"
+      },
+      {
+       "url": "https://warcraftmaps.com/classes",
+       "label": "WarcraftMaps: classes and Horde/Alliance race lists"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Holy Strike (level 6), Seal of Fury and Judgement (by level 10) give you buttons early; Judgement no longer consumes your Seal, so press it on cooldown.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Lay on Hands is every 20 minutes; Consecration is baseline at 20 but weak on big pulls (full damage on the first 4 targets only).",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tank": [
+    {
+     "kind": "elite",
+     "text": "Seal of Fury's Judgement taunts at 10 yards and Righteous Fury comes at level 10: Protection can tank group quests early.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "healer": [
+    {
+     "kind": "general",
+     "text": "Holy keeps single-target strength and adds group healing (Holy Shock, Light's Vigil).",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "dps": [
+    {
+     "kind": "general",
+     "text": "Salvation is no longer a Blessing and Blessing of Kings is baseline; Retribution can level with Seal of Fury before a two-hander drops.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/classes/paladin/changes",
+       "label": "WarcraftMaps: Paladin changes in WoW Forever vs Classic (patch 1.60.1)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ }
+}

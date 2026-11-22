@@ -1,0 +1,988 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Blackfathom Deeps",
+ "steps": [
+  {
+   "id": "dungeons:blackfathom-deeps:accept:6562",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6562",
+     "label": "Wowhead Classic: Trouble in the Deeps"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Trouble in the Deeps from Tsunaman in Stonetalon Mountains (level 17+, quest level 22)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1442,
+      "x": 47.4,
+      "y": 64.2,
+      "zone": "Stonetalon Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6562,
+     "label": "Trouble in the Deeps"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11862,
+     "name": "Tsunaman",
+     "at": {
+      "mapId": 1442,
+      "zone": "Stonetalon Mountains",
+      "x": 47.4,
+      "y": 64.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11862",
+       "label": "Wowhead Classic: Tsunaman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (435 base at level 22); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:accept:6563",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6563",
+     "label": "Wowhead Classic: The Essence of Aku'Mai"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Essence of Aku'Mai from Je'neu Sancrea in Ashenvale (level 17+, quest level 22)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.6,
+      "y": 34.3,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6563,
+     "label": "The Essence of Aku'Mai"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.6,
+      "y": 34.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12736",
+       "label": "Wowhead Classic: Je'neu Sancrea"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:accept:6561",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6561",
+     "label": "Wowhead Classic: Blackfathom Villainy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Blackfathom Villainy from Argent Guard Thaelrid in Blackfathom Deeps (level 18+, quest level 27)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 6561,
+     "label": "Blackfathom Villainy"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (1650 base at level 27); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:accept:6921",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6921",
+     "label": "Wowhead Classic: Amongst the Ruins"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Amongst the Ruins from Je'neu Sancrea in Ashenvale (level 21+, quest level 27)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.6,
+      "y": 34.3,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6921,
+     "label": "Amongst the Ruins"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.6,
+      "y": 34.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12736",
+       "label": "Wowhead Classic: Je'neu Sancrea"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:run",
+   "section": "Blackfathom Deeps",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Blackfathom Deeps (levels 24-32) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 14.5,
+      "y": 14.2,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 16784,
+     "count": 1,
+     "questId": 6563,
+     "objective": 1,
+     "label": "The Essence of Aku'Mai: Sapphire of Aku'Mai"
+    },
+    {
+     "type": "collect",
+     "itemId": 6914,
+     "count": 1,
+     "questId": 1740,
+     "objective": 1,
+     "label": "The Orb of Soran'ruk: Soran'ruk Fragment"
+    },
+    {
+     "type": "collect",
+     "itemId": 6915,
+     "count": 1,
+     "questId": 1740,
+     "objective": 2,
+     "label": "The Orb of Soran'ruk: Large Soran'ruk Fragment"
+    },
+    {
+     "type": "collect",
+     "itemId": 5881,
+     "count": 1,
+     "questId": 6561,
+     "objective": 1,
+     "label": "Blackfathom Villainy: Head of Kelris"
+    },
+    {
+     "type": "collect",
+     "itemId": 16762,
+     "count": 1,
+     "questId": 6921,
+     "objective": 1,
+     "label": "Amongst the Ruins: Fathom Core"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:blackfathom-deeps:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Lots of swimming; pull murlocs and nagas out of the water so casters can't kite you.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=719",
+       "label": "Wowhead Classic: Blackfathom Deeps"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Bring breath and water-walking if you have it; Aku'mai and Lorgus Jett packs spike damage.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=719",
+       "label": "Wowhead Classic: Blackfathom Deeps"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Grab the Sapphires of Aku'Mai on the wall crystals early in the run for the Essence quest.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=719",
+       "label": "Wowhead Classic: Blackfathom Deeps"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Blackfathom Deeps once. Do not reset for more sapphires or for the Damp Note.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 6921 and 6563"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=719",
+     "label": "Wowhead Classic: Blackfathom Deeps level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:accept:6922",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 6922 start item 16782"
+    }
+   ],
+   "verified": false,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If Baron Aquanis drops the Strange Water Globe, accept Baron Aquanis. Do not reset for it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 6922,
+     "label": "Baron Aquanis"
+    }
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   }
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:turnin:6922",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 6922 end npc 12736"
+    }
+   ],
+   "verified": false,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Baron Aquanis to Je'neu Sancrea if you accepted it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.56,
+      "y": 34.29,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6922,
+     "label": "Baron Aquanis"
+    }
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea if you accepted it",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.56,
+      "y": 34.29
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 6922 end npc 12736"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:turnin:6562",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6562",
+     "label": "Wowhead Classic: Trouble in the Deeps"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trouble in the Deeps to Je'neu Sancrea (Ashenvale)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.6,
+      "y": 34.3,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6562,
+     "label": "Trouble in the Deeps"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.6,
+      "y": 34.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12736",
+       "label": "Wowhead Classic: Je'neu Sancrea"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:turnin:6563",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6563",
+     "label": "Wowhead Classic: The Essence of Aku'Mai"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Essence of Aku'Mai to Je'neu Sancrea (Ashenvale)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.6,
+      "y": 34.3,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6563,
+     "label": "The Essence of Aku'Mai"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.6,
+      "y": 34.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12736",
+       "label": "Wowhead Classic: Je'neu Sancrea"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:turnin:6561",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6561",
+     "label": "Wowhead Classic: Blackfathom Villainy"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Blackfathom Villainy to Bashana Runetotem (Thunder Bluff). Reward choices include Gravestone Scepter, Arctic Buckler"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 71.1,
+      "y": 34.2,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6561,
+     "label": "Blackfathom Villainy"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9087,
+     "name": "Bashana Runetotem",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 71.1,
+      "y": 34.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9087",
+       "label": "Wowhead Classic: Bashana Runetotem"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:turnin:6921",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6921",
+     "label": "Wowhead Classic: Amongst the Ruins"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackfathom Deeps",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Amongst the Ruins to Je'neu Sancrea (Ashenvale)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "x": 11.6,
+      "y": 34.3,
+      "zone": "Ashenvale",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6921,
+     "label": "Amongst the Ruins"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12736,
+     "name": "Je'neu Sancrea",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.6,
+      "y": 34.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12736",
+       "label": "Wowhead Classic: Je'neu Sancrea"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackfathom-deeps:off",
+   "section": "Blackfathom Deeps",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Ashenvale (Splintertree Post, Zoram'gar) and Stonetalon Mountains quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:blackfathom-deeps:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

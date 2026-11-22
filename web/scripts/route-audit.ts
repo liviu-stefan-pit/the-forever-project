@@ -6,14 +6,14 @@
  * Writes one JSON file per pack plus summary.json under web/tmp/route-audit/.
  * Always exits 0 unless the script throws. Findings are a report, not a gate.
  */
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { basename, join, relative } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import type { Action, RoutePack, RouteStyle, Step } from "../../contracts/schema.ts";
+import { discoverPacks as discoverRoutePacks } from "./routeSource.ts";
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
 const OUT_DIR = join(ROOT, "web/tmp/route-audit");
-const SKIP_DIRS = new Set(["tools", "catalog", "node_modules", ".git", "tmp"]);
 const ROUTES: readonly RouteStyle[] = ["balanced", "speedrun"];
 const QUEST_ACTIONS = new Set(["accept", "complete", "turnin", "collect"]);
 const HUB_YARDS = 1.5;
@@ -85,35 +85,9 @@ export interface RouteFindings {
   genericComplete: GenericComplete[];
 }
 
-function readJson(p: string): unknown {
-  return JSON.parse(readFileSync(p, "utf8"));
-}
-
-function isPack(v: unknown): v is RoutePack {
-  return !!v && typeof v === "object" && (v as RoutePack).schema === "project-forever/route" && (v as RoutePack).version === 2;
-}
-
-/** Every route-v2 pack JSON under `dir` (sorted). Skips tools/, catalog/, node_modules/, tmp/. */
+/** Every route-v2 pack under `dir` (single files and segment folders; same discovery as build-data). */
 export function discoverPacks(dir: string): { path: string; pack: RoutePack }[] {
-  const out: { path: string; pack: RoutePack }[] = [];
-  const walk = (d: string) => {
-    for (const name of readdirSync(d).sort()) {
-      const p = join(d, name);
-      if (statSync(p).isDirectory()) {
-        if (!SKIP_DIRS.has(name)) walk(p);
-      } else if (name.endsWith(".json")) {
-        let v: unknown;
-        try {
-          v = readJson(p);
-        } catch {
-          continue;
-        }
-        if (isPack(v)) out.push({ path: p, pack: v });
-      }
-    }
-  };
-  if (existsSync(dir)) walk(dir);
-  return out;
+  return discoverRoutePacks(dir) as unknown as { path: string; pack: RoutePack }[];
 }
 
 /** No `routes`, or an empty list, means both. An explicit list is used as written. */

@@ -1,0 +1,2135 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-06-plaguelands",
+ "title": "Azshara (Valormok)",
+ "steps": [
+  {
+   "id": "h4060:felwood:fly-d27337",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly Bloodvenom Post -> Valormok (Azshara)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 11.4,
+      "y": 78.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly Bloodvenom Post -> Valormok (Azshara)."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a5535",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Spiritual Unrest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 11.4,
+      "y": 78.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5535,
+     "label": "Spiritual Unrest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Azshara is mostly a quick stop for the Valormok quests and the delivery chain that pays you for flights you are taking anyway.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8610,
+     "name": "Kroum",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 22,
+      "y": 49.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5535",
+     "label": "Wowhead Classic quest 5535 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a5536",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Land Filled with Hatred"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 11.4,
+      "y": 78.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5536,
+     "label": "A Land Filled with Hatred"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5536",
+     "label": "Wowhead Classic quest 5536 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3517",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stealing Knowledge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3517,
+     "label": "Stealing Knowledge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3517",
+     "label": "Wowhead Classic quest 3517 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:fp-valormok",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Valormok flight path from Kroum."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 21.96,
+      "y": 49.62,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Valormok flight path",
+     "place": "Valormok"
+    }
+   ],
+   "conditions": [],
+   "section": "Azshara",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8610,
+     "name": "Kroum",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 21.96,
+      "y": 49.62
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a3601",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Kim'jael Indeed!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 53.5,
+      "y": 21.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3601,
+     "label": "Kim'jael Indeed!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3601",
+     "label": "Wowhead Classic quest 3601 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:c5535",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Spiritual Unrest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 17.3,
+      "y": 70.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5535,
+     "objective": 1,
+     "label": "Highborne Apparition"
+    },
+    {
+     "type": "complete",
+     "questId": 5535,
+     "objective": 2,
+     "label": "Highborne Lichling"
+    },
+    {
+     "type": "mob",
+     "name": "Highborne Apparition",
+     "npcIds": [
+      6116
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Highborne Lichling",
+     "npcIds": [
+      6117
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Highborne Apparition (level 45-46) spawns are densest around 17.3, 70.7 (11 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Highborne Lichling (level 46-47) spawns are densest around 16.7, 70.8 (10 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6116
+     ],
+     "name": "Highborne Apparition",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 17.3,
+      "y": 70.7
+     },
+     "radius": 3.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6117
+     ],
+     "name": "Highborne Lichling",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 16.7,
+      "y": 70.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5535",
+     "label": "Wowhead Classic quest 5535 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:c5536",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Land Filled with Hatred"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 19.8,
+      "y": 62.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5536,
+     "objective": 1,
+     "label": "Haldarr Satyr"
+    },
+    {
+     "type": "complete",
+     "questId": 5536,
+     "objective": 2,
+     "label": "Haldarr Trickster"
+    },
+    {
+     "type": "complete",
+     "questId": 5536,
+     "objective": 3,
+     "label": "Haldarr Felsworn"
+    },
+    {
+     "type": "mob",
+     "name": "Haldarr Satyr",
+     "npcIds": [
+      6125
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Haldarr Trickster",
+     "npcIds": [
+      6126
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Haldarr Felsworn",
+     "npcIds": [
+      6127
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Haldarr Satyr (level 45-46) spawns are densest around 19.8, 62.2 (7 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Haldarr Trickster (level 45-47) spawns are densest around 20.3, 62.2 (4 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6125
+     ],
+     "name": "Haldarr Satyr",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 19.8,
+      "y": 62.2
+     },
+     "radius": 1.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6126
+     ],
+     "name": "Haldarr Trickster",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 20.3,
+      "y": 62.2
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6127
+     ],
+     "name": "Haldarr Felsworn",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 20.5,
+      "y": 61.2
+     },
+     "radius": 3.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5536",
+     "label": "Wowhead Classic quest 5536 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:c3517",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Stealing Knowledge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 35.2,
+      "y": 56.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 10538,
+     "count": 1,
+     "questId": 3517,
+     "objective": 1,
+     "label": "Tablet of Beth'Amara"
+    },
+    {
+     "type": "collect",
+     "itemId": 10539,
+     "count": 1,
+     "questId": 3517,
+     "objective": 2,
+     "label": "Tablet of Jin'yael"
+    },
+    {
+     "type": "collect",
+     "itemId": 10540,
+     "count": 1,
+     "questId": 3517,
+     "objective": 3,
+     "label": "Tablet of Markri"
+    },
+    {
+     "type": "collect",
+     "itemId": 10541,
+     "count": 1,
+     "questId": 3517,
+     "objective": 4,
+     "label": "Tablet of Sael'hai"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3517",
+     "label": "Wowhead Classic quest 3517 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:c3601",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Kim'jael Indeed!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 56.1,
+      "y": 30.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 10717,
+     "count": 1,
+     "questId": 3601,
+     "objective": 1,
+     "label": "Kim'Jael's Compass"
+    },
+    {
+     "type": "collect",
+     "itemId": 10715,
+     "count": 1,
+     "questId": 3601,
+     "objective": 2,
+     "label": "Kim'Jael's Scope"
+    },
+    {
+     "type": "collect",
+     "itemId": 10722,
+     "count": 1,
+     "questId": 3601,
+     "objective": 3,
+     "label": "Kim'Jael's Stuffed Chicken"
+    },
+    {
+     "type": "collect",
+     "itemId": 10718,
+     "count": 1,
+     "questId": 3601,
+     "objective": 4,
+     "label": "Kim'Jael's Wizzlegoober"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3601",
+     "label": "Wowhead Classic quest 3601 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t5535",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Spiritual Unrest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 11.4,
+      "y": 78.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5535,
+     "label": "Spiritual Unrest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5535",
+     "label": "Wowhead Classic quest 5535 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t5536",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Land Filled with Hatred"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 11.4,
+      "y": 78.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5536,
+     "label": "A Land Filled with Hatred"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5536",
+     "label": "Wowhead Classic quest 5536 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t3517",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stealing Knowledge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3517,
+     "label": "Stealing Knowledge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3517",
+     "label": "Wowhead Classic quest 3517 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3518",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Delivery to Magatha"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Delivery quests pay well for a flight you are making anyway: take the Thunder Bluff and Undercity ones and hand them in as the route passes those cities.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3518,
+     "label": "Delivery to Magatha"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3518",
+     "label": "Wowhead Classic quest 3518 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Delivery to Jes'rimon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3541,
+     "label": "Delivery to Jes'rimon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3541",
+     "label": "Wowhead Classic quest 3541 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3542",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Delivery to Andron Gant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3542,
+     "label": "Delivery to Andron Gant"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3542",
+     "label": "Wowhead Classic quest 3542 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3561",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Delivery to Archmage Xylem"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3561,
+     "label": "Delivery to Archmage Xylem"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3561",
+     "label": "Wowhead Classic quest 3561 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t3601",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Kim'jael Indeed!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 53.5,
+      "y": 21.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3601,
+     "label": "Kim'jael Indeed!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3601",
+     "label": "Wowhead Classic quest 3601 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a5534",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Kim'jael's \"Missing\" Equipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 53.5,
+      "y": 21.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5534,
+     "label": "Kim'jael's \"Missing\" Equipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5534",
+     "label": "Wowhead Classic quest 5534 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:c5534",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Kim'jael's \"Missing\" Equipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 44.4,
+      "y": 53.9,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13815,
+     "count": 1,
+     "questId": 5534,
+     "objective": 1,
+     "label": "Some Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Spitelash Siren (level 50-52) spawns are densest around 44.4, 53.9. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6195
+     ],
+     "name": "Spitelash Siren",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 44.4,
+      "y": 53.9
+     },
+     "radius": 9.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6196
+     ],
+     "name": "Spitelash Myrmidon",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 46.1,
+      "y": 53
+     },
+     "radius": 9.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7885
+     ],
+     "name": "Spitelash Battlemaster",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 70.5,
+      "y": 87.5
+     },
+     "radius": 6.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5534",
+     "label": "Wowhead Classic quest 5534 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t5534",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Kim'jael's \"Missing\" Equipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 53.5,
+      "y": 21.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5534,
+     "label": "Kim'jael's \"Missing\" Equipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5534",
+     "label": "Wowhead Classic quest 5534 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "tags": {},
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:azshara:t3561",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Delivery to Archmage Xylem in Azshara"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.25,
+      "y": 40.21,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3561,
+     "label": "Delivery to Archmage Xylem"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:travel-aaae3e",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "WoW Forever adds new Azshara quests; work through them hub by hub."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "WoW Forever adds new Azshara quests; work through them hub by hub."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a91488",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Home on the Range"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 21.8,
+      "y": 52.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91488,
+     "label": "Home on the Range"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a91568",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Long Walks on the Beach"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.5,
+      "y": 51.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91568,
+     "label": "Long Walks on the Beach"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a91569",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Blue Gold"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.5,
+      "y": 51.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91569,
+     "label": "Blue Gold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:c91488",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Home on the Range"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 18.8,
+      "y": 58.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 238463,
+     "count": 1,
+     "questId": 91488,
+     "objective": 1,
+     "label": "Mosshoof Hide"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Mosshoof Runner (level 45-47) spawns are densest around 18.8, 58.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8759
+     ],
+     "name": "Mosshoof Runner",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 18.8,
+      "y": 58.8
+     },
+     "radius": 7.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8760
+     ],
+     "name": "Mosshoof Stag",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 25.9,
+      "y": 81.5
+     },
+     "radius": 8.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      8761
+     ],
+     "name": "Mosshoof Courser",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 52.1,
+      "y": 35.4
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:c91568",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Long Walks on the Beach"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 47.4,
+      "y": 52.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 246684,
+     "count": 1,
+     "questId": 91568,
+     "objective": 1,
+     "label": "Highborne Treasure Fragment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Makrinni Burrower (level 50-51) spawns are densest around 47.4, 52.1. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      247470
+     ],
+     "name": "Makrinni Burrower",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 47.4,
+      "y": 52.1
+     },
+     "radius": 7.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:c91569",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Blue Gold"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 68.7,
+      "y": 28.5,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 246680,
+     "count": 1,
+     "questId": 91569,
+     "objective": 1,
+     "label": "Mana-Siphoning Wand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Blood Elf Arcanist (level 52-53) spawns are densest around 68.7, 28.5. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      246920
+     ],
+     "name": "Blood Elf Arcanist",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 68.7,
+      "y": 28.5
+     },
+     "radius": 2.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a92346",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Beneath Nordrassil"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.6,
+      "y": 51.4,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92346,
+     "label": "Beneath Nordrassil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:t91568",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Long Walks on the Beach"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.5,
+      "y": 51.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91568,
+     "label": "Long Walks on the Beach"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:t91569",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Blue Gold"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.5,
+      "y": 51.8,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91569,
+     "label": "Blue Gold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:t91488",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Home on the Range"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 21.8,
+      "y": 52.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91488,
+     "label": "Home on the Range"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

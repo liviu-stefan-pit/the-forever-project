@@ -1,0 +1,1374 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "durotar-1-12",
+ "title": "Sen'jin Village",
+ "steps": [
+  {
+   "id": "durotar-1-12:040",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Peon's Burden from Ukor. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2161,
+     "label": "A Peon's Burden"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2161",
+     "label": "Wowhead Classic quest 2161"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ukor waits on the road east out of the Valley. His quest ends at the Razor Hill inn, so you can turn it in when you get there.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2161",
+       "label": "Wowhead Classic quest 2161"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Sen'jin Village to Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 805,
+     "label": "Report to Sen'jin Village"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=805",
+     "label": "Wowhead Classic quest 805"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:042",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Solvent Spirit from Master Vornal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.9,
+      "y": 74.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 818,
+     "label": "A Solvent Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=818",
+     "label": "Wowhead Classic quest 818"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:043",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Practical Prey from Vel'rin Fang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 73.9,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 817,
+     "label": "Practical Prey"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=817",
+     "label": "Wowhead Classic quest 817"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:044",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Legging It from Vel'rin Fang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 73.9,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96821,
+     "label": "Legging It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Vel'rin Fang. The Ridgeshade spiders are on the way north to Razor Hill, so it costs almost no extra time.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:046",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Minshina's Skull from Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 808,
+     "label": "Minshina's Skull"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=808",
+     "label": "Wowhead Classic quest 808"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:047",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Zalazane from Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 826,
+     "label": "Zalazane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=826",
+     "label": "Wowhead Classic quest 826"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Take Zalazane now so it is in your log when you reach the Echo Isles at 10-11.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=826",
+       "label": "Wowhead Classic quest 826"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:048",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Forgotten Loa Idols from Master Vornal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.9,
+      "y": 74.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97225,
+     "label": "Forgotten Loa Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:049",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bloodtalon Matriarch from Xar'Ti"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.3,
+      "y": 75.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97223,
+     "label": "Bloodtalon Matriarch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:050",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Pain in the Neck from Pa'zula"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56.7,
+      "y": 73.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96873,
+     "label": "A Pain in the Neck"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Needs Luminous Residue, which you get by disenchanting Hexed Pendants from Echo Isles trolls. Only take it if you or a friend has Enchanting.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:051",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Report to Orgnil from Master Gadrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 56,
+      "y": 74.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 823,
+     "label": "Report to Orgnil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=823",
+     "label": "Wowhead Classic quest 823"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:045",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Thwarting Kolkar Aggression from Lar Prowltusk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 54.2,
+      "y": 73.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 786,
+     "label": "Thwarting Kolkar Aggression"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=786",
+     "label": "Wowhead Classic quest 786"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:052",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Solvent Spirit"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 62.8,
+      "y": 72.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 818,
+     "objective": 1,
+     "label": "A Solvent Spirit"
+    },
+    {
+     "type": "complete",
+     "questId": 818,
+     "objective": 2,
+     "label": "A Solvent Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=818",
+     "label": "Wowhead Classic quest 818"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Makrura and crawlers line the coast north of Sen'jin. Kill both on the same walk up the beach.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=818",
+       "label": "Wowhead Classic quest 818"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3103
+     ],
+     "name": "Makrura Clacker (Intact Makrura Eye)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 62.8,
+      "y": 72.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3103",
+       "label": "Wowhead Classic NPC 3103"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4887",
+       "label": "Wowhead Classic item 4887"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3107
+     ],
+     "name": "Surf Crawler (Crawler Mucus)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 63.9,
+      "y": 78.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3107",
+       "label": "Wowhead Classic NPC 3107"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4888",
+       "label": "Wowhead Classic item 4888"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3106
+     ],
+     "name": "Pygmy Surf Crawler (Crawler Mucus)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 61,
+      "y": 57.2
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3106",
+       "label": "Wowhead Classic NPC 3106"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4888",
+       "label": "Wowhead Classic item 4888"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:053",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Thwarting Kolkar Aggression"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 49.8,
+      "y": 81.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 786,
+     "objective": 1,
+     "label": "Thwarting Kolkar Aggression"
+    },
+    {
+     "type": "complete",
+     "questId": 786,
+     "objective": 2,
+     "label": "Thwarting Kolkar Aggression"
+    },
+    {
+     "type": "complete",
+     "questId": 786,
+     "objective": 3,
+     "label": "Thwarting Kolkar Aggression"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=786",
+     "label": "Wowhead Classic quest 786"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The three sets of Attack Plans are on the ground inside Kolkar Crag. Stay on the edge of the camp and kill only the centaurs that stand between you and the plans.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=786",
+       "label": "Wowhead Classic quest 786"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3189,
+     "name": "Attack Plan: Valley of Trials",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 49.8,
+      "y": 81.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3189",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 3190,
+     "name": "Attack Plan: Sen'jin Village",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 47.7,
+      "y": 77.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3190",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 3192,
+     "name": "Attack Plan: Orgrimmar",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 46.2,
+      "y": 78.9
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3192",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:054",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Lost in the Shadows from Pal'juh"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 46.3,
+      "y": 78.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99123,
+     "label": "Lost in the Shadows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pal'juh is held inside Kolkar Crag; talk to her to start the escort.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:055",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Lost in the Shadows"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 46.3,
+      "y": 78.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99123,
+     "objective": 1,
+     "label": "Lost in the Shadows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 275811 spawn, zone 14"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: escort despawn tip for 99123"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever escort from Kolkar Crag. Free Pal'juh while you are in the camp; the turn-in is Master Vornal in Sen'jin.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: escort despawn tip for 99123"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:056",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Solvent Spirit to Master Vornal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.9,
+      "y": 74.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 818,
+     "label": "A Solvent Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=818",
+     "label": "Wowhead Classic quest 818"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:057",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Lost in the Shadows to Master Vornal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 55.9,
+      "y": 74.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99123,
+     "label": "Lost in the Shadows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:058",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Thwarting Kolkar Aggression to Lar Prowltusk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 54.2,
+      "y": 73.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 786,
+     "label": "Thwarting Kolkar Aggression"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=786",
+     "label": "Wowhead Classic quest 786"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:059",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Legging It"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.4,
+      "y": 57.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96821,
+     "objective": 1,
+     "label": "Legging It"
+    },
+    {
+     "type": "complete",
+     "questId": 96821,
+     "objective": 2,
+     "label": "Legging It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill Ridgeshade Creepers and Lurkers in the ridge between Sen'jin and Razor Hill as you walk north.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      266850
+     ],
+     "name": "Ridgeshade Creeper",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 52.4,
+      "y": 57.8
+     },
+     "radius": 8.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=266850",
+       "label": "Wowhead Classic NPC 266850"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      266849
+     ],
+     "name": "Ridgeshade Lurker",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 52.2,
+      "y": 57.7
+     },
+     "radius": 8.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=266849",
+       "label": "Wowhead Classic NPC 266849"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}
