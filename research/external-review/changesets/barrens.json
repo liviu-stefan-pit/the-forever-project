@@ -1,0 +1,254 @@
+{
+  "routeId": "barrens-12-20",
+  "mapId": 1413,
+  "opCounts": { "add": 7, "modify": 1, "reorder": 3, "drop": 1, "tip": 5, "total": 17 },
+  "ops": [
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:003",
+      "questId": 924,
+      "action": "accept",
+      "prereqQuestIds": [809],
+      "why": "809 is turned in at Ak'Zeloth and then abandoned; 924 is the one-object follow-up.",
+      "text": "Accept The Demon Seed from Ak'Zeloth before you leave Far Watch Post. The altar is west of here, and you have to come back to the same orc to finish.",
+      "goto": { "mapId": 1413, "x": 62.34, "y": 20.07, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=924", "label": "Wowhead Classic quest 924" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 924 pre 809, start npc 3521" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:003",
+      "questId": 924,
+      "action": "complete",
+      "prereqQuestIds": [809],
+      "why": "The only objective is the Altar of Fire. Do it on this visit so Far Watch is not a second trip.",
+      "text": "Use the Flawed Power Stone at the Altar of Fire, then go straight back to Ak'Zeloth. If the stone expires, a replacement exists, but it is the same errand.",
+      "goto": { "mapId": 1413, "x": 47.98, "y": 19.07, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=924", "label": "Wowhead Classic quest 924" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 3525 The Altar of Fire spawn" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:003",
+      "questId": 924,
+      "action": "turnin",
+      "prereqQuestIds": [809, 924],
+      "why": "Turn-in is the same NPC as 809, so the Crossroads ride starts after this hub is finished.",
+      "text": "Turn in The Demon Seed to Ak'Zeloth, then take the road to the Crossroads. Do not stay for the repeatable stone unless the first one expired.",
+      "goto": { "mapId": 1413, "x": 62.34, "y": 20.07, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=924", "label": "Wowhead Classic quest 924" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 3521 Ak'Zeloth spawn" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "barrens-12-20:003",
+      "questId": 926,
+      "prereqQuestIds": [924],
+      "why": "926 is repeatable and only replaces an expired Flawed Power Stone.",
+      "text": "If the Flawed Power Stone expires before you reach the altar, pick up the replacement stone. That repeat is not a second quest line.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=926", "label": "Wowhead Classic quest 926" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 926 repeatable" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "barrens-12-20:023",
+      "questId": 870,
+      "prereqQuestIds": [],
+      "why": "Complete step has no goto. Exploration has no pin; the Forgotten Pools mushroom cluster is the matching landmark.",
+      "text": "Run west to the Forgotten Pools and explore the water. The laden mushrooms on the bank are the same pool you will pick over later for spores.",
+      "goto": { "mapId": 1413, "x": 45.18, "y": 23.27, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=870", "label": "Wowhead Classic quest 870" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 3640 Laden Mushroom, northern cluster" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "barrens-12-20:087",
+      "questId": 867,
+      "afterStepId": "barrens-12-20:079",
+      "prereqQuestIds": [],
+      "why": "Witchwing harpies are on the ridge beside Walton. The current step runs back there after The Escape ends in Ratchet.",
+      "text": "Kill the Witchwing harpies for Harpy Raiders while you are still at Walton, before you ride east to Wizzlecrank's shredder.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=867", "label": "Wowhead Classic quest 867" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 3276-3280 spawns on the northern ridge" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP Barrens guide id order: harpies before the shredder return" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "barrens-12-20:039",
+      "alsoStepIds": ["barrens-12-20:040"],
+      "place": "039 after barrens-12-20:043; 040 after barrens-12-20:045 and before barrens-12-20:046",
+      "questId": 97253,
+      "prereqQuestIds": [],
+      "why": "Parts piles sit on the same south shore as the freebooters and Baron Longshore. The route walks that shore twice.",
+      "text": "Accept the Ratchet kill and wanted quests before you leave town, loot the parts piles on the pirate shore, and turn the parts in on the same return as the freebooters.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=97253", "label": "Wowhead Forever quest 97253" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 660930 beside pirate camps" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "barrens-12-20:042",
+      "alsoStepIds": ["barrens-12-20:126"],
+      "questId": 866,
+      "prereqQuestIds": [],
+      "why": "Root Samples is a herbalism skill quest. The route gives it to everyone and never completes it.",
+      "text": "Skip Root Samples unless you are herbalism. It is a profession pick, and this route has no complete step for it.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=866", "label": "Wowhead Classic quest 866" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 866 sort HERBALISM, requiredSkill 182" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "barrens-12-20:113",
+      "alsoStepIds": ["barrens-12-20:114"],
+      "afterStepId": "barrens-12-20:110",
+      "questId": 850,
+      "prereqQuestIds": [],
+      "why": "Barak stands next to Regthar. The route accepts Kolkar Leaders, rides south, then comes back.",
+      "text": "Kill Barak Kodobane as soon as you accept Kolkar Leaders, turn the head in to Regthar, and do not ride back here after the scytheclaw nests.",
+      "goto": { "mapId": 1413, "x": 42.8, "y": 23.5, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=850", "label": "Wowhead Classic quest 850" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 3394 Barak Kodobane single spawn" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:098",
+      "questId": 875,
+      "action": "complete",
+      "prereqQuestIds": [867],
+      "why": "875 is accepted at the Crossroads and turned in after the hearth with no kill step.",
+      "text": "Kill Witchwing Slayers for the lieutenant rings before you turn Echeyakee back in. The turn-in at the Crossroads is already later in the route.",
+      "goto": { "mapId": 1413, "x": 38.91, "y": 14.31, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=875", "label": "Wowhead Classic quest 875" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB item 5065 drops from npc 3278; spawn 38.91, 14.31" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "barrens-12-20:091",
+      "questId": 876,
+      "prereqQuestIds": [875],
+      "why": "Serena and Letter to Jin'Zil are the Stonetalon breadcrumb. Guides that do them also open a full mountain route.",
+      "text": "After the lieutenant rings, Darsok offers Serena Bloodfeather and then a letter to Jin'Zil in Stonetalon. Skip both. Stonetalon mobs start in the mid-teens if the Barrens hubs feel packed, but do not level there yet.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=876", "label": "Wowhead Classic quest 876" },
+        { "url": "https://www.wowhead.com/classic/quest=1060", "label": "Wowhead Classic quest 1060" },
+        { "url": "https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges", "label": "Mobalytics Forever zone brackets: Stonetalon 15-27" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "barrens-12-20:037",
+      "questId": 1483,
+      "prereqQuestIds": [],
+      "why": "Sputtervalve is already the Samophlange giver. 1483 is one talk into Windshear Crag.",
+      "text": "Sputtervalve can send you to Ziz Fizziks in Stonetalon. Take that talk only as a pointer. Leave the Windshear quests for the Stonetalon route.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1483", "label": "Wowhead Classic quest 1483" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1483 breadcrumbFor 1093, start npc 3442" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "barrens-12-20:092",
+      "questId": 3281,
+      "action": "accept",
+      "prereqQuestIds": [869],
+      "why": "Gazrog's next quest is one chest. Every free guide takes it; this route stops at Raptor Thieves.",
+      "text": "When you turn in Raptor Thieves, accept Stolen Silver from Gazrog. It is one chest south of the road, not a second raptor grind.",
+      "goto": { "mapId": 1413, "x": 51.93, "y": 30.32, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3281", "label": "Wowhead Classic quest 3281" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3281 pre 869, start npc 3464" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:111",
+      "questId": 3281,
+      "action": "complete",
+      "prereqQuestIds": [869],
+      "why": "The chest is southeast of the scytheclaw nests, on the same southern loop.",
+      "text": "Open the Stolen Silver chest southeast of the raptor nests while you are already in the south for the scytheclaws.",
+      "goto": { "mapId": 1413, "x": 58.04, "y": 53.87, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3281", "label": "Wowhead Classic quest 3281" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 147557 single spawn" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "barrens-12-20:115",
+      "questId": 3281,
+      "action": "turnin",
+      "prereqQuestIds": [869, 3281],
+      "why": "The next Crossroads stop is the scytheclaw turn-in, so Gazrog is the same visit.",
+      "text": "Turn Stolen Silver in to Gazrog on the same Crossroads stop as The Angry Scytheclaws.",
+      "goto": { "mapId": 1413, "x": 51.93, "y": 30.32, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3281", "label": "Wowhead Classic quest 3281" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 3464 Gazrog spawn" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "barrens-12-20:117",
+      "questId": 4921,
+      "prereqQuestIds": [],
+      "why": "One corpse on the south road. The follow-up is a quillboar collection, so it stays a tip.",
+      "text": "Mankrik at the Crossroads offers Lost in Battle. The beaten corpse is at 49.33, 50.32, on the way toward Camp Taurajo. Skip Her Name Is Olgra after it; that one wants four quillboar drops.",
+      "goto": { "mapId": 1413, "x": 49.33, "y": 50.32, "zone": "The Barrens" },
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4921", "label": "Wowhead Classic quest 4921" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 10668 Beaten Corpse; quest 95774 pre 4921" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "barrens-12-20:120",
+      "questId": 907,
+      "prereqQuestIds": [882],
+      "why": "907 and 913 are short camp kills. 874 and 873 are the long tail, so they are not steps.",
+      "text": "After Ishamuhale, Jorn offers Enraged Thunder Lizards and then Cry of the Thunderhawk. Stormsnouts are at 48.92, 51.37 and a thunderhawk hatchling is at 46.76, 50.95. Stop before Mahren Skyseer.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=907", "label": "Wowhead Classic quest 907" },
+        { "url": "https://www.wowhead.com/classic/quest=913", "label": "Wowhead Classic quest 913" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 3240 and 3247 spawns; 874 pre 913" }
+      ],
+      "verified": false
+    }
+  ]
+}

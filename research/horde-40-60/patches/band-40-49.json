@@ -1,0 +1,1255 @@
+{
+  "band": "40-49",
+  "skipped": [
+    "Facing Negolash and King Mukla have no steps in this route.",
+    "Rog'mar flight path was not inserted: the first Rog'mar arrival is h4060:riverglades:travel-4a6965, which sits before h4060:badlands:a1419.",
+    "Bloodmaster's Ring stays class-unfiltered: quests.json classes is 0 on 94668, 94670, 94739, 94962, 94964, 94965, and 95063, so only tags.optional was set. Those steps were already balanced-only.",
+    "Powderfuse has no verified Horde flight master, so no fp step was added there.",
+    "Fly h4060:riverglades:fly-9c1b4f has no goto but is before h4060:badlands:a1419, so it was left unchanged."
+  ],
+  "stepPatches": [
+    {
+      "stepId": "h4060:stranglethorn-vale:a591",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:stranglethorn-vale:c591",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ],
+        "elite": [
+          {
+            "name": "The Mind's Eye",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Mai'Zoth keeps the Mind's Eye in a crowded hut. Clear the nearby trolls first, then kill him with two partners before he heals.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              },
+              {
+                "url": "https://www.wowhead.com/classic/quest=591",
+                "label": "Wowhead Classic quest 591 (reference link)"
+              }
+            ],
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:stranglethorn-vale:t591",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:a7845",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:t7845",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:a7846",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:c7846",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ],
+        "elite": [
+          {
+            "name": "Recover the Key!",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Jintha'Alor is not tuned for solo. Clear the trolls in the key room, then have three people kill the key holder.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              },
+              {
+                "url": "https://www.wowhead.com/classic/quest=7846",
+                "label": "Wowhead Classic quest 7846 (reference link)"
+              }
+            ],
+            "verified": true
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:t7846",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:a7847",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:t7847",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:a782",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:c782",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:t782",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:a793",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:t793",
+      "set": {
+        "tags": {
+          "optional": true
+        },
+        "routes": [
+          "balanced"
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a95427",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:c95427",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        },
+        "elite": [
+          {
+            "name": "Twilight No More!",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Chogg'Zac's twilight camp is still a group fight. Pull one cultist at a time and save cooldowns for the named elite.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+                "label": "github.com"
+              },
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t95427",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94768",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:c94768",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        },
+        "elite": [
+          {
+            "name": "Bring Me His Head",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Clear the guards around the named target, then have three people burn him down before extra adds join.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+                "label": "github.com"
+              },
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94768",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a95433",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:c95433",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        },
+        "elite": [
+          {
+            "name": "Death to the Executioner",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Executioner Morg is a named elite. Kill his guards first; a group of three should take him even though his smash was tuned down.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+                "label": "github.com"
+              },
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t95433",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a95120",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:c95120",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        },
+        "elite": [
+          {
+            "name": "WANTED: Old Rot-Chum",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Fight Old Rot-Chum at the water's edge with three people, and do not pull extra crocolisks with him.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+                "label": "github.com"
+              },
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t95120",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:shen-dralas:a99258",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:shen-dralas:c99258",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        },
+        "elite": [
+          {
+            "name": "Nascent Pylon Protector",
+            "groupSize": 3,
+            "tips": [
+              {
+                "kind": "elite",
+                "text": "Nascent Pylon Protectors hit like elites. Bring three, pull one protector, and do not fight it while a Corpsefeeder patrol is nearby.",
+                "sources": [
+                  {
+                    "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                    "label": "QuestieDB data/Forever (GPL-3.0)"
+                  }
+                ],
+                "verified": false
+              }
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+                "label": "github.com"
+              },
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false,
+            "npcId": 276401
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:shen-dralas:t99258",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94668",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94668",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94670",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94670",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94739",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94739",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94962",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94962",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94964",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94964",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a94965",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t94965",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:a95063",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:t95063",
+      "set": {
+        "tags": {
+          "forever": true,
+          "optional": true
+        }
+      }
+    },
+    {
+      "stepId": "h4060:shen-dralas:travel-9a2877",
+      "set": {
+        "tips": [
+          {
+            "kind": "general",
+            "text": "Shen'dralas has no published level bracket, so treat the band as unverified. Going Home does not list 1373, but it still asks for Gelkis standing.",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB",
+                "label": "QuestieDB 93125 empty pre; zones.json 16651 uiMapId 2652"
+              }
+            ],
+            "verified": false
+          },
+          {
+            "kind": "general",
+            "text": "Corpsefeeders are elite patrols in Shen'dralas. Let one pass or kill it alone before you pull a quest mob.",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:the-hinterlands:a7828",
+      "set": {
+        "tips": [
+          {
+            "kind": "speed",
+            "text": "Revantusk Village quests point at the Vilebranch trolls and the Wildhammer border; collect all of them before the first loop.",
+            "routes": [
+              "speedrun"
+            ],
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": true
+          },
+          {
+            "kind": "general",
+            "text": "From level 48 upward, most quests additionally reward gold. Forever does not convert leftover quest XP into gold at 60 \u2014 turn quests in while leveling instead of banking them for 60.",
+            "routes": [
+              "balanced",
+              "speedrun"
+            ],
+            "sources": [
+              {
+                "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+                "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+              }
+            ],
+            "verified": false
+          },
+          {
+            "kind": "general",
+            "text": "Most quests from level 48 pay gold, so turn them in when you finish them instead of saving them for 60.",
+            "sources": [
+              {
+                "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+                "label": "WoW Forever hotfixes \u2014 November 20, 2026"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:travel-70eade",
+      "set": {
+        "tips": [
+          {
+            "kind": "general",
+            "text": "Before this Kalimdor boat, hand in or abandon quests so the log stays under 40 slots.",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:riverglades:fly-f98adf",
+      "set": {
+        "tips": [
+          {
+            "kind": "general",
+            "text": "Before this Kalimdor hop, hand in or abandon quests so the log stays under 40 slots.",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                "label": "QuestieDB data/Forever (GPL-3.0)"
+              }
+            ],
+            "verified": false
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:badlands:fly-e9d5f0",
+      "set": {
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1418,
+              "x": 3.99,
+              "y": 44.78,
+              "zone": "Badlands",
+              "exact": true
+            }
+          },
+          {
+            "type": "fly",
+            "label": "Fly Kargath -> Stonard."
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:swamp-of-sorrows:fly-07dca2",
+      "set": {
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1435,
+              "x": 46.07,
+              "y": 54.83,
+              "zone": "Swamp of Sorrows",
+              "exact": true
+            }
+          },
+          {
+            "type": "fly",
+            "label": "Fly Stonard -> Grom'gol (Stranglethorn)."
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:stranglethorn-vale:travel-e6bbca",
+      "set": {
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1434,
+              "x": 26.87,
+              "y": 77.1,
+              "zone": "Stranglethorn Vale",
+              "exact": true
+            }
+          },
+          {
+            "type": "fly",
+            "label": "Fly Booty Bay -> Stonard, then Stonard -> Rog'mar (Riverglades), or use your hearthstone if it is set at Rog'mar."
+          }
+        ]
+      }
+    },
+    {
+      "stepId": "h4060:tanaris:fly-f0a185",
+      "set": {
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1446,
+              "x": 51.6,
+              "y": 25.44,
+              "zone": "Tanaris",
+              "exact": true
+            }
+          },
+          {
+            "type": "fly",
+            "label": "Fly Gadgetzan -> Camp Mojache (Feralas)."
+          }
+        ]
+      }
+    }
+  ],
+  "insertAfter": [
+    {
+      "afterStepId": "h4060:shen-dralas:travel-eac5ae",
+      "step": {
+        "id": "h4060:tanaris:home-gadgetzan",
+        "n": 406,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Set your hearth to Gadgetzan with Innkeeper Fizzgrimble."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1446,
+              "zone": "Tanaris",
+              "x": 52.51,
+              "y": 27.91,
+              "exact": true
+            }
+          },
+          {
+            "type": "home",
+            "label": "Set hearth to Gadgetzan",
+            "place": "Gadgetzan"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 7733,
+            "name": "Innkeeper Fizzgrimble",
+            "at": {
+              "mapId": 1446,
+              "zone": "Tanaris",
+              "x": 52.51,
+              "y": 27.91
+            },
+            "service": "innkeeper",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    },
+    {
+      "afterStepId": "h4060:tanaris:home-gadgetzan",
+      "step": {
+        "id": "h4060:tanaris:fp-gadgetzan",
+        "n": 406,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Get the Gadgetzan flight path from Bulkrek Ragefist."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1446,
+              "zone": "Tanaris",
+              "x": 51.6,
+              "y": 25.44,
+              "exact": true
+            }
+          },
+          {
+            "type": "fp",
+            "label": "Gadgetzan flight path",
+            "place": "Gadgetzan"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 7824,
+            "name": "Bulkrek Ragefist",
+            "at": {
+              "mapId": 1446,
+              "zone": "Tanaris",
+              "x": 51.6,
+              "y": 25.44
+            },
+            "service": "flightPath",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    },
+    {
+      "afterStepId": "h4060:tanaris:fly-f0a185",
+      "step": {
+        "id": "h4060:feralas:home-mojache",
+        "n": 458,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Set your hearth to Camp Mojache with Innkeeper Greul."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1444,
+              "zone": "Feralas",
+              "x": 74.8,
+              "y": 45.18,
+              "exact": true
+            }
+          },
+          {
+            "type": "home",
+            "label": "Set hearth to Camp Mojache",
+            "place": "Camp Mojache"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 7737,
+            "name": "Innkeeper Greul",
+            "at": {
+              "mapId": 1444,
+              "zone": "Feralas",
+              "x": 74.8,
+              "y": 45.18
+            },
+            "service": "innkeeper",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    },
+    {
+      "afterStepId": "h4060:feralas:home-mojache",
+      "step": {
+        "id": "h4060:feralas:fp-mojache",
+        "n": 458,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Get the Camp Mojache flight path from Shyn."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1444,
+              "zone": "Feralas",
+              "x": 75.45,
+              "y": 44.36,
+              "exact": true
+            }
+          },
+          {
+            "type": "fp",
+            "label": "Camp Mojache flight path",
+            "place": "Camp Mojache"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 8020,
+            "name": "Shyn",
+            "at": {
+              "mapId": 1444,
+              "zone": "Feralas",
+              "x": 75.45,
+              "y": 44.36
+            },
+            "service": "flightPath",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    },
+    {
+      "afterStepId": "h4060:feralas:fly-2a22b8",
+      "step": {
+        "id": "h4060:the-hinterlands:home-revantusk",
+        "n": 565,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Set your hearth to Revantusk Village with Lard."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1425,
+              "zone": "The Hinterlands",
+              "x": 78.14,
+              "y": 81.38,
+              "exact": true
+            }
+          },
+          {
+            "type": "home",
+            "label": "Set hearth to Revantusk Village",
+            "place": "Revantusk Village"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 14731,
+            "name": "Lard",
+            "at": {
+              "mapId": 1425,
+              "zone": "The Hinterlands",
+              "x": 78.14,
+              "y": 81.38
+            },
+            "service": "innkeeper",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    },
+    {
+      "afterStepId": "h4060:the-hinterlands:home-revantusk",
+      "step": {
+        "id": "h4060:the-hinterlands:fp-revantusk",
+        "n": 565,
+        "tags": {},
+        "text": [
+          {
+            "segments": [
+              {
+                "t": "Get the Revantusk Village flight path from Gorkas."
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "type": "goto",
+            "at": {
+              "mapId": 1425,
+              "zone": "The Hinterlands",
+              "x": 81.7,
+              "y": 81.76,
+              "exact": true
+            }
+          },
+          {
+            "type": "fp",
+            "label": "Revantusk Village flight path",
+            "place": "Revantusk Village"
+          }
+        ],
+        "conditions": [],
+        "routes": [
+          "balanced",
+          "speedrun"
+        ],
+        "pins": [
+          {
+            "kind": "npc",
+            "npcId": 4314,
+            "name": "Gorkas",
+            "at": {
+              "mapId": 1425,
+              "zone": "The Hinterlands",
+              "x": 81.7,
+              "y": 81.76
+            },
+            "service": "flightPath",
+            "sources": [
+              {
+                "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+                "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+              }
+            ],
+            "verified": true
+          }
+        ],
+        "minutes": 0.5,
+        "sources": [
+          {
+            "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+            "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+          }
+        ],
+        "verified": true
+      }
+    }
+  ]
+}

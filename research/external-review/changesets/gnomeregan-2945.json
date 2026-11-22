@@ -1,0 +1,41 @@
+{
+  "routeId": "gnomeregan-2945",
+  "verified": false,
+  "opCounts": { "drop": 2, "total": 2 },
+  "ops": [
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2945",
+      "questId": 2945,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "The machine has no location, so the whole 2945/2949 chain goes.",
+      "originalText": "Do not add Accept Grime-Encrusted Ring from Nogg. The Sparklematic has no pin, so the player can never finish 2945.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie object 142487 spawns zone 721 -1,-1; 2945 end object 142487"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2949",
+      "questId": 2949,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [2945],
+      "whyShort": "The machine has no location, so the whole 2945/2949 chain goes.",
+      "originalText": "Do not add Turn in Return of the Ring to Nogg. 2949 starts on the Sparklematic, which has no pin.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2949 start object 142487 spawn -1,-1; 2949 end npc 3412"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    }
+  ]
+}

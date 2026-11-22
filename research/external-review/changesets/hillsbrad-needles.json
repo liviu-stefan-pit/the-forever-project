@@ -1,0 +1,459 @@
+{
+  "routeId": "horde-20-40",
+  "mapIds": { "Hillsbrad Foothills": 1424, "Thousand Needles": 1441 },
+  "targetFile": "research/levels-20-40.route-v2.json",
+  "opCounts": { "add": 0, "modify": 1, "reorder": 7, "drop": 20, "tip": 2, "total": 30 },
+  "ops": [
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-1065",
+      "afterStepId": "horde-20-40:turnin-1064",
+      "questId": 1065,
+      "prereqQuestIds": [1064],
+      "whyShort": "1064 is already turned in at Magatha. Accept 1065 before the zeppelin, not after arriving in Tarren Mill.",
+      "original": "Pick up Journey to Tarren Mill from Apothecary Zamah in Thunder Bluff.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1065", "label": "Wowhead Classic quest 1065" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1065 pre 1064, start npc 3419" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-1065",
+      "questId": 1065,
+      "prereqQuestIds": [1064],
+      "whyShort": "The note is created on accept. The complete step sends the player back to Zamah for a carried item.",
+      "original": "Finish the work for Journey to Tarren Mill — Zamah's Note.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1065", "label": "Wowhead Classic quest 1065" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1065 has no kill objective" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-494",
+      "afterStepId": "horde-20-40:fp-2226",
+      "questId": 494,
+      "prereqQuestIds": [],
+      "whyShort": "Lesh stands on the Silverpine road into Hillsbrad. The route accepts 494 only after the Thunder Bluff loop.",
+      "original": "Pick up Time To Strike from Deathstalker Lesh in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=494", "label": "Wowhead Classic quest 494" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 2214 Deathstalker Lesh spawn 20.79, 47.40" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:turnin-494",
+      "afterStepId": "horde-20-40:hearth-2388",
+      "questId": 494,
+      "prereqQuestIds": [],
+      "whyShort": "Darthalia is in the Tarren Mill inn. Turn 494 in on the first visit.",
+      "original": "Turn in Time To Strike to High Executor Darthalia in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=494", "label": "Wowhead Classic quest 494" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 2215 High Executor Darthalia spawn 62.33, 20.45" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-501",
+      "afterStepId": "horde-20-40:accept-496",
+      "questId": 501,
+      "prereqQuestIds": [],
+      "whyShort": "501 has no prerequisite. Lions share the field loop with the bear tongues from 496.",
+      "original": "Pick up Elixir of Pain from Apothecary Lydon in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=501", "label": "Wowhead Classic quest 501" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 501 pre none, item 3496, start npc 2216" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-527",
+      "afterStepId": "horde-20-40:accept-501",
+      "questId": 527,
+      "prereqQuestIds": [],
+      "whyShort": "527 has no prerequisite. Farmers are the same south fields as the elixir kills.",
+      "original": "Pick up Battle of Hillsbrad from High Executor Darthalia in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=527", "label": "Wowhead Classic quest 527" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 527 pre none, creatures 2266, 2360, 232, 2403" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:complete-527",
+      "afterStepId": "horde-20-40:complete-501",
+      "questId": 527,
+      "prereqQuestIds": [],
+      "whyShort": "Finish the farmers on the same ride as the lion blood, before any Tarren Mill turn-in.",
+      "original": "Finish the work for Battle of Hillsbrad — Hillsbrad Farmer, Hillsbrad Farmhand, Farmer Ray, Farmer Getz.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=527", "label": "Wowhead Classic quest 527" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 527 creature objectives in Hillsbrad Fields" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-502",
+      "questId": 502,
+      "prereqQuestIds": [501],
+      "whyShort": "The elixir is used on Stanley in Southshore. The complete pin is still Lydon.",
+      "original": "Finish the work for Elixir of Pain — Elixir of Pain.",
+      "text": "Use the Elixir of Pain on Stanley. He is the turn-in, in the Southshore inn, not back at Lydon.",
+      "goto": { "mapId": 1424, "x": 32.66, "y": 35.32, "zone": "Hillsbrad Foothills" },
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=502", "label": "Wowhead Classic quest 502" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 2274 Stanley spawn 32.66, 35.32" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-7321",
+      "alsoStepIds": ["horde-20-40:complete-7321", "horde-20-40:turnin-7321"],
+      "questId": 7321,
+      "prereqQuestIds": [],
+      "whyShort": "Turtle meat stack, and the meat pin is in Alterac. Spices are a separate Dustwallow step.",
+      "original": "Pick up Soothing Turtle Bisque from Christoph Jeffcoat in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=7321", "label": "Wowhead Classic quest 7321" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 7321 items 3712 and 3713" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-547",
+      "alsoStepIds": ["horde-20-40:complete-547", "horde-20-40:turnin-547"],
+      "questId": 547,
+      "prereqQuestIds": [],
+      "whyShort": "Humbert's Sword is a single rare drop inside Dun Garok.",
+      "original": "Pick up Humbert's Sword from Deathguard Humbert in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=547", "label": "Wowhead Classic quest 547" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 547 item 3693" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-552",
+      "alsoStepIds": ["horde-20-40:complete-552", "horde-20-40:turnin-552", "horde-20-40:accept-553", "horde-20-40:complete-553", "horde-20-40:turnin-553"],
+      "questId": 552,
+      "prereqQuestIds": [],
+      "whyShort": "Helcular's Rod is a yeti rare. 553 only exists after that drop, so the flame run goes with it.",
+      "original": "Pick up Helcular's Revenge from Novice Thaivand in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=552", "label": "Wowhead Classic quest 552" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 552 item 3708, next 553" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-533",
+      "alsoStepIds": ["horde-20-40:complete-533", "horde-20-40:turnin-533"],
+      "questId": 533,
+      "prereqQuestIds": [498],
+      "whyShort": "Syndicate Missive is a rare document farm in Alterac. Dropping it blocks 503.",
+      "original": "Pick up Infiltration from Krusk in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=533", "label": "Wowhead Classic quest 533" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 533 pre 498, item 3601, next 503" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-544",
+      "alsoStepIds": ["horde-20-40:complete-544", "horde-20-40:turnin-544"],
+      "questId": 544,
+      "prereqQuestIds": [],
+      "whyShort": "Four named bloodstones in Alterac, off the Hillsbrad camp loop.",
+      "original": "Pick up Prison Break In from Magus Wordeen Voidglare in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=544", "label": "Wowhead Classic quest 544" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 544 items 3691, 3689, 3690, 3688" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-556",
+      "alsoStepIds": ["horde-20-40:complete-556", "horde-20-40:turnin-556", "horde-20-40:accept-557", "horde-20-40:complete-557", "horde-20-40:turnin-557"],
+      "questId": 556,
+      "prereqQuestIds": [],
+      "whyShort": "Stone tokens and the bracer follow-up are Alterac elemental farms.",
+      "original": "Pick up Stone Tokens from Keeper Bel'varil in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=556", "label": "Wowhead Classic quest 556" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 556 item 3714, next 557 item 3715" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-515",
+      "alsoStepIds": ["horde-20-40:complete-515", "horde-20-40:turnin-515", "horde-20-40:accept-517", "horde-20-40:complete-517", "horde-20-40:turnin-517", "horde-20-40:accept-524", "horde-20-40:complete-524", "horde-20-40:turnin-524"],
+      "questId": 515,
+      "prereqQuestIds": [513],
+      "whyShort": "515 is murloc eyes, naga scales, and a potion. 517 is the Dun Garok keg and 524 only follows that.",
+      "original": "Pick up Elixir of Agony from Master Apothecary Faranell in Undercity.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=515", "label": "Wowhead Classic quest 515" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 515 items 3388, 3509, 3510, next 517 then 524" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-541",
+      "alsoStepIds": ["horde-20-40:complete-541", "horde-20-40:turnin-541", "horde-20-40:accept-550", "horde-20-40:complete-550", "horde-20-40:turnin-550"],
+      "questId": 541,
+      "prereqQuestIds": [539],
+      "whyShort": "Dun Garok is four kill lists. 550 is only the commendation after that grind.",
+      "original": "Pick up Battle of Hillsbrad from High Executor Darthalia in Hillsbrad Foothills.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=541", "label": "Wowhead Classic quest 541" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 541 creatures 2344, 2345, 2346, 2304, next 550" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:accept-676",
+      "questId": 676,
+      "prereqQuestIds": [],
+      "whyShort": "The ogre kills and Hammerfall turn-in are the Arathi handoff. 677 is already later on this route, so the quest stays.",
+      "original": "Pick up The Hammer May Fall from Tallow in Hillsbrad Foothills.",
+      "text": "Take the hammer quest from Tallow while you are in Tarren Mill, and kill the Boulderfist ogres when the Arathi section starts. 677 needs this quest.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=676", "label": "Wowhead Classic quest 676" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 676 next 677, end npc 2771 in Arathi" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-4542",
+      "alsoStepIds": ["horde-20-40:complete-4542", "horde-20-40:turnin-4542"],
+      "afterStepId": "horde-20-40:to-needles",
+      "questId": 4542,
+      "prereqQuestIds": [],
+      "whyShort": "Moonhorn is on the lift road. The route hearths at Freewind and then runs back north for the letter.",
+      "original": "Pick up Message to Freewind Post from Brave Moonhorn in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4542", "label": "Wowhead Classic quest 4542" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 10079 Brave Moonhorn spawn 32.24, 22.17" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-4770",
+      "alsoStepIds": ["horde-20-40:turnin-4770"],
+      "questId": 4770,
+      "prereqQuestIds": [],
+      "whyShort": "Homeward Bound is a PARTY_ACCEPT escort from Highperch down to Whitereach.",
+      "original": "Pick up Homeward Bound from Pao'ka Swiftmountain in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4770", "label": "Wowhead Classic quest 4770" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 4770 flag PARTY_ACCEPT, npc 10427 to 10428" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-4904",
+      "alsoStepIds": ["horde-20-40:turnin-4904"],
+      "questId": 4904,
+      "prereqQuestIds": [],
+      "whyShort": "Free at Last is a PARTY_ACCEPT escort off Darkcloud Pinnacle.",
+      "original": "Pick up Free at Last from Lakota Windsong in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4904", "label": "Wowhead Classic quest 4904" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 4904 flag PARTY_ACCEPT, npc 10646" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5147",
+      "alsoStepIds": ["horde-20-40:complete-5147", "horde-20-40:turnin-5147"],
+      "questId": 5147,
+      "prereqQuestIds": [],
+      "whyShort": "Arnak is the elite at the top of the same pinnacle as the escort.",
+      "original": "Pick up WANTED: Arnak Grimtotem from Wanted Poster - Arnak Grimtotem in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5147", "label": "Wowhead Classic quest 5147" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5147 item 12884, object 176115" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-4881",
+      "alsoStepIds": ["horde-20-40:turnin-4881", "horde-20-40:accept-4966", "horde-20-40:complete-4966", "horde-20-40:turnin-4966"],
+      "questId": 4881,
+      "prereqQuestIds": [],
+      "whyShort": "The assassination note is a drop, and 4966 is the scripted Galak defense that follows it.",
+      "original": "Finish the work for Assassination Plot — Assassination Note.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4966", "label": "Wowhead Classic quest 4966" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 4881 item start 12564, next 4966 flag PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5088",
+      "alsoStepIds": ["horde-20-40:complete-5088", "horde-20-40:turnin-5088"],
+      "questId": 5088,
+      "prereqQuestIds": [5062],
+      "whyShort": "Arikara is a PARTY_ACCEPT summon. Sacred Fire still ends at Magatha.",
+      "original": "Pick up Arikara from Magatha Grimtotem in Thunder Bluff.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5088", "label": "Wowhead Classic quest 5088" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5088 pre 5062, flag PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-1148",
+      "alsoStepIds": ["horde-20-40:turnin-1148", "horde-20-40:accept-1184", "horde-20-40:turnin-1184"],
+      "questId": 1148,
+      "prereqQuestIds": [1146],
+      "whyShort": "Heart, talons, and carapace are a second farm after the 1147 kills, then a Barrens and Orgrimmar turn-in.",
+      "original": "Finish the work for Parts of the Swarm — Silithid Heart, Silithid Talon, Intact Silithid Carapace.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1148", "label": "Wowhead Classic quest 1148" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1148 items 5855, 5854, 5853, next 1184" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1107",
+      "alsoStepIds": ["horde-20-40:complete-1107", "horde-20-40:turnin-1107"],
+      "questId": 1107,
+      "prereqQuestIds": [1104, 1105],
+      "whyShort": "Encrusted tail fins are a Stranglethorn salt-scale collect. 1104 and 1105 still finish at the mirage.",
+      "original": "Pick up Encrusted Tail Fins from Wizzle Brassbolts in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1107", "label": "Wowhead Classic quest 1107" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1107 pre 1104 and 1105, item 5796" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1106",
+      "alsoStepIds": ["horde-20-40:complete-1106", "horde-20-40:turnin-1106", "horde-20-40:accept-1108", "horde-20-40:complete-1108", "horde-20-40:turnin-1108", "horde-20-40:accept-1137", "horde-20-40:turnin-1137"],
+      "questId": 1106,
+      "prereqQuestIds": [1104, 1105],
+      "whyShort": "Martek is a Badlands trip, Indurium is an ore farm there, and 1137 only returns the letter. 1190 is not on this route.",
+      "original": "Pick up Martek the Exiled from Fizzle Brassbolts in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1106", "label": "Wowhead Classic quest 1106" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1106 next 1108 next 1137 next 1190" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1178",
+      "alsoStepIds": ["horde-20-40:turnin-1178", "horde-20-40:accept-1180", "horde-20-40:turnin-1180", "horde-20-40:accept-1181", "horde-20-40:turnin-1181", "horde-20-40:accept-1182", "horde-20-40:complete-1182", "horde-20-40:turnin-1182", "horde-20-40:accept-1183", "horde-20-40:complete-1183", "horde-20-40:turnin-1183"],
+      "questId": 1178,
+      "prereqQuestIds": [1176],
+      "whyShort": "Sponsorship is Ratchet, then Booty Bay, then stolen plans. 1186 is not on this route. 1176 still turns in at Pozzik.",
+      "original": "Pick up Goblin Sponsorship from Pozzik in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1178", "label": "Wowhead Classic quest 1178" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1178 next 1180, 1181, 1182, 1183, next 1186" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5361",
+      "alsoStepIds": ["horde-20-40:complete-5361", "horde-20-40:turnin-5361"],
+      "questId": 5361,
+      "prereqQuestIds": [],
+      "whyShort": "Family Tree turns in at Nataka Longhorn in Feralas.",
+      "original": "Pick up Family Tree from Cliffwatcher Longhorn in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5361", "label": "Wowhead Classic quest 5361" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5361 end npc 11259" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5762",
+      "alsoStepIds": ["horde-20-40:complete-5762", "horde-20-40:turnin-5762"],
+      "questId": 5762,
+      "prereqQuestIds": [],
+      "whyShort": "The letter turns in at Hemet in Stranglethorn. It does not finish at the mirage.",
+      "original": "Pick up Hemet Nesingwary from Kravel Koalbeard in Thousand Needles.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5762", "label": "Wowhead Classic quest 5762" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5762 end npc 715, next none" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:accept-1115",
+      "questId": 1115,
+      "prereqQuestIds": [1114],
+      "whyShort": "1116 is already later on this route. The Booty Bay turn-in is the handoff, not a second mirage grind.",
+      "original": "Pick up The Rumormonger from Kravel Koalbeard in Thousand Needles.",
+      "text": "Carry Kravel's rumor to Kebok in Booty Bay when that stretch starts. 1116 needs this letter. Do not detour for it during the flats loop.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1115", "label": "Wowhead Classic quest 1115" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1115 pre 1114, next 1116, end npc 773" }
+      ],
+      "verified": false
+    }
+  ]
+}

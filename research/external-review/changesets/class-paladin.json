@@ -1,0 +1,149 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "note": "Paladin key already exists. These ops set the Undead pairs without reusing the current reason strings. Do not edit route JSON from this file.",
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "dps",
+      "spec": "retribution",
+      "pair": ["Mining", "Blacksmithing"],
+      "rejectedPairs": [
+        {
+          "pair": ["Blacksmithing", "Engineering"],
+          "whyShort": "Engineering is a 60 kit. Dropping Mining while leveling means buying the bars the smith needs."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "whyShort": "Herbs do not make the two-hander or the plate, and the mana camp overlaps Blessing of Wisdom."
+        }
+      ],
+      "whyShort": "Retribution wears plate and uses a two-hander the whole level path. Mining feeds Blacksmithing so those upgrades are made instead of bought.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Undead retribution notes"},
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Smith and alchemy camp tools"},
+        {"url": "research/external/web-notes/forever-vs-classic.md", "label": "Undead paladin is a named Forever combo"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "tank",
+      "spec": "protection",
+      "pair": ["Mining", "Blacksmithing"],
+      "rejectedPairs": [
+        {
+          "pair": ["Blacksmithing", "Engineering"],
+          "whyShort": "Same reject as retribution. Bombs do not replace the ore that builds the shield and the plate."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "whyShort": "Elixirs do not make a shield. Plate still has to come from a smith or the auction house."
+        }
+      ],
+      "whyShort": "Protection uses the same plate as retribution and adds a shield. One smith pair covers both, so the tank does not get a second pair.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Blacksmithing camp tools"},
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Undead paladin scope"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "healer",
+      "spec": "holy",
+      "pair": ["Mining", "Blacksmithing"],
+      "rejectedPairs": [
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "whyShort": "Closest healer alternative. Rejected because Holy still wears plate and the mana well camp overlaps Blessing of Wisdom."
+        },
+        {
+          "pair": ["Tailoring", "Enchanting"],
+          "whyShort": "Cloth and dusting do not replace plate while leveling."
+        }
+      ],
+      "whyShort": "Holy stays on Mining and Blacksmithing. Plate is still the armor, and mana is handled by heals, food, and First Aid.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Alchemy mana well versus Blessing of Wisdom"},
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Undead paladin scope"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "dps",
+      "whyShort": "First Aid, Cooking, and Fishing on every role. They are secondaries. Push First Aid with the cloth that is already dropping. Cooking and Fishing can trail it. Fishing feeds Cooking.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Secondary camp tools"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "tank",
+      "whyShort": "Same secondaries as retribution: First Aid, then Cooking and Fishing.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Secondary camp tools"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "healer",
+      "whyShort": "Same secondaries as retribution: First Aid, then Cooking and Fishing. Do not swap a primary slot for herbs.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Secondary camp tools"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "dps",
+      "whyShort": "Class-filtered only. 91282 is a short talk onto the keep. 94427 through 94441 is the level-12 lesson: ten linen, one resurrection, one plan drop. Ids confirmed in quests.json. Already owned by the Tirisfal review. Do not add 91316.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "91282, 94427, 94434, 94435, 94436, 94438, 94440, 94441, 91316"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "dps",
+      "questId": 91316,
+      "whyShort": "Making Repairs is twelve Sturdy Lumber. That is the Bandarion lumber farm. Leave the whole post-91282 keep chain out. 91282 itself stays.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "91316 pre 91294, item objective"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Paladin",
+      "role": "dps",
+      "questId": 91858,
+      "chain": [91858, 91859, 91860, 91861, 91862, 96204, 95034, 95036, 95042, 95111, 95125, 95126, 95140],
+      "whyShort": "Wolfsbane stays out. 91858 is real (req 18, level 22, Danitha to Trevan Rol), but 95036 needs Deadmines lumber (item 6994), an enchanted silver ingot, and the purified kor gem from Ashenvale 95042. That material grind drops the whole chain, including the short talks in front of it.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "91858 through 95140 and 95042"},
+        {"url": "content/questie-db/items.json", "label": "6994 npc 641, 267361, 272448 reward of 95042, 6995"}
+      ],
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "verified": false,
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "dps",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Dwukk and Krunn are on the Durotar file, then the Orgrimmar smiths and Makaru. Ore becomes the weapons and plate both hands use. No second leveling pair.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Dwukk, Krunn, Ug'thok, Makaru"},
+        {"url": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide", "label": "classes-warrior.md weapon notes"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "tank",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same Razor Hill and Orgrimmar trainers. Shields and plate are smithing, so the level-60 Alchemy row is not a second leveling pair.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Dwukk, Krunn, Ug'thok, Makaru"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "dps",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same Valley and Razor Hill trainers as Orc, then Orgrimmar. One leveling pair for weapons and plate.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Dwukk, Krunn, Makaru"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "tank",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same Durotar and Orgrimmar trainers. Smithing covers the shield and the plate. No second leveling pair.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Dwukk, Krunn, Makaru"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "dps",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Thrag Stonehoof and Brek Stonehoof are in Thunder Bluff, which the Mulgore file already enters. Camp Narache has neither trainer.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Mining", "Engineering"], "whyShort": "no trainer on the way"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Thrag, Brek; no Thunder Bluff engineering"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "tank",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same Thunder Bluff smith and miner. Plate and shields come from that pair. Alchemy stays off the leveling pair.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Thrag Stonehoof, Brek Stonehoof"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "dps",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Angus Hammerhand is in Tirisfal. Johan Focht is on the Silverpine file and Brom Killian is in Undercity. Ore still becomes the weapons.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/gathering-trainers/", "label": "trainers.json Angus Hammerhand, Johan Focht, Brom Killian"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "tank",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same Tirisfal smith, then Silverpine or Undercity mining. One leveling pair for plate and shields.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/gathering-trainers/", "label": "trainers.json Angus Hammerhand, Johan Focht, Brom Killian"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "dps",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Aedi Thriceforged and the Zephras miners are on the island. After Skywatcher Plateau the Mulgore file already reaches Thunder Bluff smiths and Brek.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://wowforeverguides.com/races/skyborne", "label": "skyborne-zephras.md Windshaper classes include Warrior"},
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Aedi Thriceforged, Messana Crestwind, Halavuul Cragwind"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "tank",
+      "pair": ["Mining", "Blacksmithing"],
+      "whyShort": "Same island smith and miners, then Thunder Bluff. Shields and plate stay on that pair. No second leveling pair.",
+      "rejected": [
+        {"pair": ["Skinning", "Leatherworking"], "whyShort": "wrong armor"},
+        {"pair": ["Herbalism", "Alchemy"], "whyShort": "long farm"}
+      ],
+      "sources": [
+        {"url": "https://wowforeverguides.com/races/skyborne", "label": "skyborne-zephras.md Windshaper Warrior"},
+        {"url": "https://theforeverguides.com/professions/crafting-trainers/", "label": "trainers.json Aedi, Zephras mining, Thunder Bluff"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Train at the Valley and Razor Hill warrior trainers the Durotar file already visits. Take First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Those trainer lines are already in durotar-1-12. Fishing does not make weapons.",
+      "sources": [
+        {"url": "https://theforeverguides.com/professions/first-aid/", "label": "First Aid holds the healing items"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Same Valley and Razor Hill trainer visits. Battle Stance from level 1. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Defensive Stance is not on a walked step. Do not add a trip to learn it.",
+      "sources": [
+        {"url": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide", "label": "classes-warrior.md stance and weapon notes"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Train at Frang and Tarshaw on the Durotar visits. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Troll warriors share the Orc start file. Simple Tablet (3065) is only the trainer letter after Cutting Teeth.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=3065", "label": "Questie 3065 classes 1 races 128"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Same Frang and Tarshaw visits. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Shield and stance training stays on trainers the file already visits.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=3065", "label": "Questie 3065"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Train on the Mulgore class-trainer lines, including Krang. Sparring Match (99108) is already there and is classes 0. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "99108 is not a warrior weapon quest. The city visit is already in the file.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=99108", "label": "Questie 99108 classes 0"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Same Mulgore trainer lines. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Thunder Bluff is already on the file for the smith and the warrior trainers.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=99108", "label": "Questie 99108"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Train on the Deathknell class-trainer line. Dillinger stays the Mills Overrun turn-in. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "The level-6 trainer visit and the mill hand-in are already in tirisfal-1-12.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=3095", "label": "Questie 3095 Simple Scroll classes 1 races 16"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Same Deathknell trainer line and the existing Dillinger visits. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Ulag is not the mill step. Do not add him for Defensive Stance.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1819", "label": "Questie 1819 Ulag at 59.47, 48.28"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "After the Mulgore landing, use the class-trainer lines that file already has. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "92532 and 94003 are Zephras quests. No walked Horde file contains that island.",
+      "sources": [
+        {"url": "https://wowforeverguides.com/races/skyborne", "label": "Windshaper handoff is Skywatcher Plateau, then Mulgore"},
+        {"url": "https://www.wowhead.com/classic/quest=92532", "label": "Questie 92532 pre 92461 zone Zephras"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Same Mulgore trainer lines after the plateau. First Aid and Cooking. Skip Fishing.",
+      "whyShort": "Skybreaker Bulwark (94003) stays on the island. Do not paste it onto Mulgore.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=94003", "label": "Questie 94003 classes 1 races 12884901888"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Veteran Uzzek (1505), Path of Defense (1498), Forged Steel (1503), and any Axe or Hammer of Orgrimmar on the Ragefire clear.",
+      "whyShort": "1505 is a Far Watch breadcrumb the Durotar review already refused. 1498 needs Singed Scales back in Durotar. Questie has no weapon quest with pre 5730, and 5726-5730 are classes 0.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1505", "label": "Questie 1505 exclusiveTo 1819"},
+        {"url": "https://www.wowhead.com/classic/quest=5730", "label": "Questie 5730 classes 0, no child quest"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Veteran Uzzek (1505) and a class-filtered Ragefire weapon.",
+      "whyShort": "Same as the dps drop. Hidden Enemies is one Horde clear, not a warrior weapon chain.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=5728", "label": "Questie 5728 classes 0 races 8589934770"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Veteran Uzzek (1505), Forged Steel (1503), and a Ragefire class weapon.",
+      "whyShort": "Trolls share the Orc handoff on 840. The weapon follow-ups are not steps.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1503", "label": "Questie 1503 chest is not a route step"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Veteran Uzzek (1505) and a Ragefire class weapon.",
+      "whyShort": "5726-5730 are not class-locked. Do not hang a hammer on that clear.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=5730", "label": "Questie no pre 5730"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Veteran Uzzek (1505) from Krang out to Far Watch.",
+      "whyShort": "Tauren do not turn in Conscript of the Horde at Far Watch. 1498 is the same scale farm.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1505", "label": "Questie 1505 end npc Uzzek"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Veteran Uzzek (1505) and Brutal Armor (1838).",
+      "whyShort": "1838 is a mat list (smoky iron, azurite, iron bars, phlogiston), which is a craft grind, and its chain is not a walked step.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1838", "label": "Questie 1838"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Speak with Dillinger (1818), Ulag the Cleaver (1819), and Agamand Heirlooms (1821).",
+      "whyShort": "Dillinger is already on Mills Overrun. Ulag's pin is 59.47, 48.28, not that mill objective. 1821 is four heirloom items and is not a step.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1819", "label": "Questie 1819"},
+        {"url": "https://www.wowhead.com/classic/quest=1821", "label": "Questie 1821"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "Ulag the Cleaver (1819) as the Defensive Stance stop.",
+      "whyShort": "1819 is exclusive with Path of Defense and is not the mill step the Tirisfal file walks.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1819", "label": "Questie 1819 exclusiveTo 1498"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "The Warrior's Path (92532) and The Skybreaker Bulwark (94003) on the Mulgore file.",
+      "whyShort": "Both are Zephras. 92532 needs 92461. 94003 is both Skyborne factions. The walked files do not include the island.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=92532", "label": "Questie 92532"},
+        {"url": "https://www.wowhead.com/classic/quest=94003", "label": "Questie 94003"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "tank",
+      "checkpoint": "The Skybreaker Bulwark (94003) as a Mulgore step, plus Hall of Thanes and Abandoned Ferocity.",
+      "whyShort": "94003 stays on Zephras. Hall of Thanes is Alliance. Abandoned Ferocity is a level-42 camp, not a walked step.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=94003", "label": "Questie 94003 zone Zephras"},
+        {"url": "https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide", "label": "classes-warrior.md names Hall of Thanes and Abandoned Ferocity as skips"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Whirlwind Weapon (1712, 1713, 1792) and a Leatherworking camp-tent detour.",
+      "whyShort": "The 20-40 notes already left that weapon chain off the route. Leatherworking is the wrong armor and the tent is a detour.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1792", "label": "Questie 1792 pre 1713"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Whirlwind Weapon (1712, 1713, 1792).",
+      "whyShort": "Same chain is not on the walked 20-40 route.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1712", "label": "Questie 1712 pre 1791"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Whirlwind Weapon (1712, 1713, 1792).",
+      "whyShort": "Cyclonian is not a step on the Horde route we walk.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1792", "label": "Questie 1792"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Whirlwind Weapon (1712, 1713, 1792).",
+      "whyShort": "Same Alterac weapon chain is not on the walked route.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1792", "label": "Questie 1792"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Warrior",
+      "role": "dps",
+      "checkpoint": "Whirlwind Weapon (1712, 1713, 1792).",
+      "whyShort": "Same chain, not on a walked file, including after the Mulgore landing.",
+      "sources": [
+        {"url": "https://www.wowhead.com/classic/quest=1792", "label": "Questie 1792"}
+      ],
+      "verified": false
+    }
+  ]
+}

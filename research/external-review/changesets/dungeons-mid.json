@@ -1,0 +1,1589 @@
+{
+  "routeId": "dungeons-mid",
+  "dungeons": [
+    "Shadowfang Keep",
+    "Blackfathom Deeps",
+    "Razorfen Kraul",
+    "Gnomeregan",
+    "Scarlet Monastery",
+    "Excavation Site: Wetlands",
+    "City of Dalaran"
+  ],
+  "verified": false,
+  "ops": [
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:shadowfang-keep:run",
+      "questId": 1014,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One Shadowfang clear finishes 1098, 1013, and 1014. Arugal is the end.",
+      "originalText": "Run Shadowfang Keep once. Do not reset for more worgs.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1014 zone Shadowfang Keep"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:run",
+      "questId": 6921,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One clear finishes 6563, 6921, and 6561. Sapphires are on the approach, not a second instance.",
+      "originalText": "Run Blackfathom Deeps once. Do not reset for more sapphires or for the Damp Note.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6921 and 6563"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:run",
+      "questId": 1102,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One Kraul clear finishes 1102, 1109, 1221, and Willix.",
+      "originalText": "Run Razorfen Kraul once. Do not reset for more guano or tubers.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1102 zone Razorfen Kraul"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:run",
+      "questId": 1048,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        1109
+      ],
+      "whyShort": "One pass of all four wings. 1113 needs 1109 turned in from Kraul first.",
+      "originalText": "Run every Scarlet Monastery wing once. Do not reset a wing for more hearts.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1048 pre none, 1113 pre 1109"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:run",
+      "questId": 96986,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "544, 93680, and 545 are already on the 20-40 route. One city clear is Atrexis and the book.",
+      "originalText": "Run City of Dalaran once for The Grave Knight and Opportunistic Education. Do not pick up Prison Break In again.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96986, 545 pre group 544 and 93680"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "horde-20-40:accept-95663",
+      "questId": 95663,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Open-world breadcrumb is already on the 20-40 route. The dungeon pack must not accept it again.",
+      "originalText": "Dragonmaw Rumors is already accepted in Arathi. Do not accept 95663 a second time at the dungeon.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 95663 npc 2787 area 45"
+        }
+      ],
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "at": {
+        "mapId": 1417,
+        "x": 74.54,
+        "y": 35.64,
+        "zone": "Arathi Highlands",
+        "npcId": 2787
+      }
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:run",
+      "questId": 2841,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2842
+      ],
+      "whyShort": "One Gnomeregan clear is Rig Wars and Kernobee. Do not reset for the ring.",
+      "originalText": "Run Gnomeregan once. If the Grime-Encrusted Ring does not drop, skip 2945.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2841 zone Gnomeregan"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:96987",
+      "questId": 96987,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Questie ends 96987 at Rexxie Copperclutch inside the city. No second clear for another finisher.",
+      "originalText": "Turn in Opportunistic Education to Rexxie Copperclutch near the sewer. There is no pin.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96987 end npc 268743"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:accept:6564",
+      "questId": 6564,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Damp Note is a low drop from tide priestesses. 6565 needs this quest.",
+      "originalText": "Do not accept Allegiance to the Old Gods from a Damp Note.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6564 start item 16790"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:turnin:6564",
+      "questId": 6564,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept. No priestess farm.",
+      "originalText": "Do not turn in Allegiance to the Old Gods.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6564 end npc 12736"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:accept:6565",
+      "questId": 6565,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6564
+      ],
+      "whyShort": "pre is 6564, which is refused.",
+      "originalText": "Do not accept the follow-up Allegiance to the Old Gods.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6565 pre 6564"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:turnin:6565",
+      "questId": 6565,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6564
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in the follow-up Allegiance to the Old Gods.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6565 end npc 12736"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:accept:1740",
+      "questId": 1740,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Warlock only, classes 256. Fragment count is a drop farm.",
+      "originalText": "Do not accept The Orb of Soran'ruk for this Blackfathom clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1740 classes 256"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:turnin:1740",
+      "questId": 1740,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in The Orb of Soran'ruk after Blackfathom.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1740"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:accept:1823",
+      "questId": 1823,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Warrior only, classes 1. The chain is not on the 20-40 route. 1838 is a materials list.",
+      "originalText": "Do not accept Speak with Ruga for the Razorfen Kraul clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1823 classes 1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:turnin:1823",
+      "questId": 1823,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Speak with Ruga from the Kraul pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1823"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:accept:1824",
+      "questId": 1824,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Warrior only, classes 1. The chain is not on the 20-40 route. 1838 is a materials list.",
+      "originalText": "Do not accept Trial at the Field of Giants for the Razorfen Kraul clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1824 classes 1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:turnin:1824",
+      "questId": 1824,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Trial at the Field of Giants from the Kraul pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1824"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:accept:1825",
+      "questId": 1825,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        1824
+      ],
+      "whyShort": "Warrior only, classes 1. The chain is not on the 20-40 route. 1838 is a materials list.",
+      "originalText": "Do not accept Speak with Thun'grim for the Razorfen Kraul clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1825 classes 1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:turnin:1825",
+      "questId": 1825,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        1824
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Speak with Thun'grim from the Kraul pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1825"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:accept:1838",
+      "questId": 1838,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        1824
+      ],
+      "whyShort": "Warrior only, classes 1. The chain is not on the 20-40 route. 1838 is a materials list.",
+      "originalText": "Do not accept Brutal Armor for the Razorfen Kraul clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1838 classes 1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:razorfen-kraul:turnin:1838",
+      "questId": 1838,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        1824
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Brutal Armor from the Kraul pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1838"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1149",
+      "questId": 1149,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1149 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1149",
+      "questId": 1149,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1149"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1150",
+      "questId": 1150,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1150 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1150",
+      "questId": 1150,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1150"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1151",
+      "questId": 1151,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1151 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1151",
+      "questId": 1151,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1151"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1152",
+      "questId": 1152,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1152 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1152",
+      "questId": 1152,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1152"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1154",
+      "questId": 1154,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1154 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1154",
+      "questId": 1154,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1154"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:6627",
+      "questId": 6627,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6627 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:6627",
+      "questId": 6627,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6627"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1159",
+      "questId": 1159,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1159 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1159",
+      "questId": 1159,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1159"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1160",
+      "questId": 1160,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Test of Lore is not on the 20-40 route. 1160 needs 1159. Drop the chain.",
+      "originalText": "Do not accept this Test of Faith or Test of Lore step for Scarlet Monastery.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1160 Test of Lore chain"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:turnin:1160",
+      "questId": 1160,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in this Test of Lore step from the Scarlet pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1160"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:544",
+      "questId": 544,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Already accepted on the 20-40 route at horde-20-40:accept-544.",
+      "originalText": "Do not accept Prison Break In again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 544"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:544",
+      "questId": 544,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Prison Break In again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 544"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:93680",
+      "questId": 93680,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Already on the 20-40 route. 545 needs this and 544.",
+      "originalText": "Do not accept Key to the City again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 93680"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:93680",
+      "questId": 93680,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Key to the City again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 93680"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:545",
+      "questId": 545,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Already on the 20-40 route. It is open-world patrols, not the instance.",
+      "originalText": "Do not accept Dalaran Patrols again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 545"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:545",
+      "questId": 545,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Dalaran Patrols again inside the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 545"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:92434",
+      "questId": 92434,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        545
+      ],
+      "whyShort": "Alterac review already refused Blood in the Streets. 96984 needs it.",
+      "originalText": "Do not accept Blood in the Streets from the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 92434"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:92434",
+      "questId": 92434,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        545
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Blood in the Streets from the dungeon pack.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 92434"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:96984",
+      "questId": 96984,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        92434
+      ],
+      "whyShort": "pre is 92434, which was dropped. Do not add Heart of Disruption back.",
+      "originalText": "Do not accept Heart of Disruption.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96984"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:96984",
+      "questId": 96984,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        92434
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Heart of Disruption.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96984"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:accept:96988",
+      "questId": 96988,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Six Cracked Sentry Cores miss a single clear. A second run is a farm.",
+      "originalText": "Do not accept Source of Power.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96988"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:city-of-dalaran:turnin:96988",
+      "questId": 96988,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Source of Power.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 96988"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:excavation-site-wetlands:accept:95664",
+      "questId": 95664,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Item start from the Relic Guardian. That prereq is not already turned in on the route.",
+      "originalText": "Do not accept Elder Knowledge from the Titan Relic.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 95664 start item 270866"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:excavation-site-wetlands:turnin:95664",
+      "questId": 95664,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal. Earthen Echo needs this.",
+      "originalText": "Do not turn in Elder Knowledge.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 95664 end npc 9087"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:excavation-site-wetlands:accept:98823",
+      "questId": 98823,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95664
+      ],
+      "whyShort": "pre is 95664, which is refused. Short weapon turn-in still needs that relic.",
+      "originalText": "Do not accept Earthen Echo.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 98823 pre 95664"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:forever:excavation-site-wetlands:turnin:98823",
+      "questId": 98823,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95664
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Earthen Echo to Muln Earthfury.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 98823 end npc 259118"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:accept:6922",
+      "questId": 6922,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Strange Water Globe drops from Baron Aquanis when the Fathom Core is looted on this clear.",
+      "originalText": "If Baron Aquanis drops the Strange Water Globe, accept Baron Aquanis. Do not reset for it.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6922 start item 16782"
+        }
+      ],
+      "afterStepId": "dungeons:blackfathom-deeps:run",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:blackfathom-deeps:turnin:6922",
+      "questId": 6922,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same Je'neu visit as 6563 and 6921.",
+      "originalText": "Turn in Baron Aquanis to Je'neu Sancrea if you accepted it.",
+      "at": {
+        "mapId": 1440,
+        "x": 11.56,
+        "y": 34.29,
+        "zone": "Ashenvale",
+        "npcId": 12736
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 6922 end npc 12736"
+        }
+      ],
+      "afterStepId": "dungeons:blackfathom-deeps:accept:6922",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2842",
+      "questId": 2842,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Sovik is in Orgrimmar. Breadcrumb to Scooty. Horde.",
+      "originalText": "Accept Chief Engineer Scooty from Sovik.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.49,
+        "y": 25.36,
+        "zone": "Orgrimmar",
+        "npcId": 3413
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2842 npc 3413"
+        }
+      ],
+      "afterStepId": "dungeons:razorfen-kraul:off",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2842",
+      "questId": 2842,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Scooty in Booty Bay also gives the teleporter quest.",
+      "originalText": "Turn in Chief Engineer Scooty to Scooty.",
+      "at": {
+        "mapId": 1434,
+        "x": 27.6,
+        "y": 77.48,
+        "zone": "Stranglethorn Vale",
+        "npcId": 7853
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2842 end npc 7853"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2842",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2843",
+      "questId": 2843,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2842
+      ],
+      "whyShort": "pre is 2842. Teleporter only. No kill credit.",
+      "originalText": "Accept Gnomer-gooooone! from Scooty and take the teleporter.",
+      "at": {
+        "mapId": 1434,
+        "x": 27.6,
+        "y": 77.48,
+        "zone": "Stranglethorn Vale",
+        "npcId": 7853
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2843 pre 2842"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:turnin:2842",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2841",
+      "questId": 2841,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "No pre. Blueprints and the safe combination are on Thermaplugg's clear.",
+      "originalText": "Accept Rig Wars from Nogg.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2841 npc 3412"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2843",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:run",
+      "questId": 2841,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2842
+      ],
+      "whyShort": "One clear. Kernobee is inside. Ring is optional.",
+      "originalText": "Run Gnomeregan once and finish Rig Wars and A Fine Mess.",
+      "at": {
+        "mapId": 1434,
+        "x": 27.6,
+        "y": 77.48,
+        "zone": "Stranglethorn Vale",
+        "npcId": 7853
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2841 zone Gnomeregan"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2841",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2904",
+      "questId": 2904,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Neutral escort inside the instance. Kernobee has no pin.",
+      "originalText": "Accept A Fine Mess from Kernobee and escort him to the exit.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2904 npc 7850 spawn -1,-1"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:run",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2904",
+      "questId": 2904,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Scooty is the same npc as 2843.",
+      "originalText": "Turn in A Fine Mess to Scooty.",
+      "at": {
+        "mapId": 1434,
+        "x": 27.6,
+        "y": 77.48,
+        "zone": "Stranglethorn Vale",
+        "npcId": 7853
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2904 end npc 7853"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2904",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2841",
+      "questId": 2841,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Nogg is the ring follow-up npc too.",
+      "originalText": "Turn in Rig Wars to Nogg.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2841 end npc 3412"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:turnin:2904",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2945",
+      "questId": 2945,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Only if item 9326 dropped on this clear. Do not reset.",
+      "originalText": "If you looted a Grime-Encrusted Ring, accept Grime-Encrusted Ring.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2945 start item 9326"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:turnin:2841",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2945",
+      "questId": 2945,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Sparklematic 142487 is inside Gnomeregan at spawn -1,-1. No pin.",
+      "originalText": "Turn in Grime-Encrusted Ring at the Sparklematic 5200.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2945 end object 142487"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2945",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2949",
+      "questId": 2949,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2945
+      ],
+      "whyShort": "Horde. pre is 2945. Same machine, no pin.",
+      "originalText": "Accept Return of the Ring from the Sparklematic.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2949 pre 2945 races Horde"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:turnin:2945",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2949",
+      "questId": 2949,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2945
+      ],
+      "whyShort": "Nogg just took Rig Wars.",
+      "originalText": "Turn in Return of the Ring to Nogg.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2949 end npc 3412"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2949",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2950",
+      "questId": 2950,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2949
+      ],
+      "whyShort": "One silver bar, one moss agate, and 30 silver. Same npc. No second dungeon.",
+      "originalText": "Accept Nogg's Ring Redo and bring a silver bar, a moss agate, and 30 silver.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2950 pre 2949"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:turnin:2949",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2950",
+      "questId": 2950,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2949
+      ],
+      "whyShort": "Ends at Nogg. Stop. Do not run the Sparklematic again.",
+      "originalText": "Turn in Nogg's Ring Redo to Nogg.",
+      "at": {
+        "mapId": 1454,
+        "x": 75.99,
+        "y": 25.41,
+        "zone": "Orgrimmar",
+        "npcId": 3412
+      },
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2950 end npc 3412"
+        }
+      ],
+      "afterStepId": "dungeons:gnomeregan:accept:2950",
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "verified": false,
+      "stepId": "dungeons:scarlet-monastery:accept:1049",
+      "questId": 1049,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "races 162 is orc, tauren, and troll. Undead cannot take Compendium of the Fallen.",
+      "originalText": "Accept Compendium of the Fallen only on an orc, tauren, or troll. Undead skip it.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 1049 races 162"
+        }
+      ],
+      "at": {
+        "mapId": 1456,
+        "x": 34.4,
+        "y": 46.87,
+        "zone": "Thunder Bluff",
+        "npcId": 3978
+      },
+      "targetFile": "research/dungeons/steps-v2.json"
+    }
+  ]
+}

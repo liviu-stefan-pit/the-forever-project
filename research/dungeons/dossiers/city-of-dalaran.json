@@ -1,0 +1,455 @@
+{
+  "id": "city-of-dalaran",
+  "name": "City of Dalaran",
+  "forever": true,
+  "levels": [
+    28,
+    33
+  ],
+  "runAt": 31,
+  "entrance": {
+    "zone": "Alterac Mountains",
+    "at": [
+      8,
+      61
+    ],
+    "note": "Forever dungeon. Catalog marks these coords unverified (warcraft.wiki.gg). Open-world Dalaran is hostile to Horde — enter through the sewer, do not walk the city streets. steps-v2 run goto is mapId 1416 at 8, 61."
+  },
+  "travel": {
+    "nearestFlight": "Tarren Mill",
+    "fromHubs": [
+      "Tarren Mill",
+      "Undercity",
+      "The Sepulcher"
+    ],
+    "how": "Hearth or fly to Tarren Mill (Zarise, Hillsbrad Foothills 60.14, 18.62). Run west into Alterac to the sewer at 8.0, 61.0. From Undercity, fly Michael Garrett or take the south road through Silverpine; do not use Alliance towns (Southshore, Stormwind, Dalaran streets)."
+  },
+  "quests": [
+    {
+      "questId": 544,
+      "name": "Prison Break In",
+      "xp": 3300,
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "turnIn": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Classic Era overworld attunement, not inside the Forever instance. Recover four bloodstone artifacts in the Dalaran ruins, then return to Voidglare. Dropped from levels-20-40.route-v2 as a slow Alterac farm; dungeon pack says do not pick it up again. QuestieDB groups it with 93680 as a required pre of 545. No dungeons:forever:city-of-dalaran step ids.",
+      "wing": null
+    },
+    {
+      "questId": 93680,
+      "name": "Key to the City",
+      "xp": null,
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "turnIn": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Forever attunement (high confidence). Overworld, not in the dungeon pack. 20-40 route has horde-20-40:accept/complete/turnin-93680 on balanced only. Questie-db objective is Grimy Key (279469) from Warden's Footlocker (object 670427, Alterac Mountains 16.3, 89.31). Catalog objective text says Dalaran Sewer Key. next=545. XP unknown in questie-db.",
+      "wing": null
+    },
+    {
+      "questId": 545,
+      "name": "Dalaran Patrols",
+      "xp": 2050,
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "turnIn": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "prerequisites": [
+        544,
+        93680
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Classic Era overworld: kill 6 Dalaran Summoners and 12 Elemental Slaves. QuestieDB pre.group is 544 and 93680. next=92434. Not in the dungeon step pack (steps-v2 says do not pick Prison Break In up again; 545 has no forever:city-of-dalaran step id).",
+      "wing": null
+    },
+    {
+      "questId": 92434,
+      "name": "Blood in the Streets",
+      "xp": 270,
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "turnIn": {
+        "npc": "Image of Archmage Modera",
+        "zone": "Silverpine Forest",
+        "hub": "Lordamere Lake",
+        "at": [
+          68.6,
+          45.1
+        ]
+      },
+      "prerequisites": [
+        545
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Forever attunement (high confidence). Find a way into Dalaran along Lordamere Lake; turn in to Modera in east Silverpine (NPC 269127, 68.62, 45.13), not in Stormwind or Southshore. sourceItem Grimy Key 279469. next=96984. Dropped from the dungeon pack and from the Alterac overworld review; 96984 was then dropped because this pre is gone.",
+      "wing": null
+    },
+    {
+      "questId": 96984,
+      "name": "Heart of Disruption",
+      "xp": null,
+      "giver": {
+        "npc": "Image of Archmage Modera",
+        "zone": "Silverpine Forest",
+        "hub": "Hillsbrad Foothills",
+        "at": [
+          68.6,
+          45.1
+        ]
+      },
+      "turnIn": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "prerequisites": [
+        92434
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:forever:city-of-dalaran:accept:96984",
+        "turnin": "dungeons:forever:city-of-dalaran:turnin:96984"
+      },
+      "notes": "Forever dungeon objective: collect Arcane Mote (251961) inside City of Dalaran. sourceItem Dalaran Sewer Key 277507. exclusiveTo Alliance 92458. Catalog lists it; steps-v2 accept/turnin were dropped because 92434 is dropped (blocked-93034-96984 / dungeons-mid). 20-40 dungeon insert still names 96984. Questie-db next=97287 Shrewd Negotiations (speak to Modera; not in the dungeon catalog). XP unknown.",
+      "wing": null
+    },
+    {
+      "questId": 96988,
+      "name": "Source of Power",
+      "xp": null,
+      "giver": {
+        "npc": "Doctor Martin Felben",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          46.61,
+          74.09
+        ]
+      },
+      "turnIn": {
+        "npc": "Doctor Martin Felben",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          46.61,
+          74.09
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Forever dungeon objective: collect 6 Cracked Sentry Cores inside City of Dalaran for the Undercity alchemist trainer. In the catalog and the 20-40 dungeon insert; no dungeons:forever:city-of-dalaran step ids. XP unknown. Rewards named in catalog: Unstable Power Core, Construct Cloak.",
+      "wing": null
+    },
+    {
+      "questId": 96986,
+      "name": "The Grave Knight",
+      "xp": null,
+      "giver": {
+        "npc": "Melisara",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          62.63,
+          20.65
+        ]
+      },
+      "turnIn": {
+        "npc": "Melisara",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          62.63,
+          20.65
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:city-of-dalaran:accept:96986",
+        "turnin": "dungeons:forever:city-of-dalaran:turnin:96986"
+      },
+      "notes": "Kill Atrexis the Grave Knight (NPC 247126, dungeon spawn -1,-1) inside City of Dalaran. This is the dungeon-pack kill quest. steps-v2 routes are balanced only. XP unknown. Catalog rewards: Gravewalker Boots, Undead Knight's Bracers.",
+      "wing": null
+    },
+    {
+      "questId": 96987,
+      "name": "Opportunistic Education",
+      "xp": null,
+      "giver": {
+        "npc": "Rexxie Copperclutch",
+        "zone": "City of Dalaran",
+        "hub": null,
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Rexxie Copperclutch",
+        "zone": "City of Dalaran",
+        "hub": null,
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:city-of-dalaran:accept:96987",
+        "turnin": "dungeons:forever:city-of-dalaran:turnin:96987"
+      },
+      "notes": "Accepted and turned in at Rexxie (NPC 268743) near the sewer entrance inside the instance; spawn -1,-1, no map pin. Collect The Founding of Dalaran (item 275996, object 656681) — complete step dungeons:forever:city-of-dalaran:complete:96987. Catalog import has no giver/turn-in NPC; public quests.json and questie-db supply 268743. XP unknown. steps-v2 routes balanced only.",
+      "wing": null
+    },
+    {
+      "questId": 97287,
+      "name": "Shrewd Negotiations",
+      "xp": 265,
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Hillsbrad Foothills",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "turnIn": {
+        "npc": "Image of Archmage Modera",
+        "zone": "Silverpine Forest",
+        "hub": "Lordamere Lake",
+        "at": [
+          68.62,
+          45.13
+        ]
+      },
+      "prerequisites": [
+        96984
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:city-of-dalaran:accept:97287",
+        "turnin": "dungeons:forever:city-of-dalaran:turnin:97287"
+      },
+      "notes": "Real name is Shrewd Negotiations, not a title on the Image. Questie pre.single is [92458, 96984] (any one). Horde path is 96984; 92458 is the Alliance exclusive of Heart of Disruption. Turn-in NPCs 252085 (Alliance Archmage Celindra) and 269127 (Image of Archmage Modera, Silverpine 68.62, 45.13). +265 XP."
+    }
+  ],
+  "runStepId": "dungeons:forever:city-of-dalaran:run",
+  "keys": [
+    {
+      "itemId": 279469,
+      "name": "Grimy Key",
+      "questId": 93680,
+      "questName": "Key to the City",
+      "giver": {
+        "npc": "Magus Wordeen Voidglare",
+        "zone": "Hillsbrad Foothills",
+        "hub": "Tarren Mill",
+        "at": [
+          61.6,
+          20.85
+        ]
+      },
+      "from": "Warden's Footlocker (object 670427), Alterac Mountains 16.3, 89.31",
+      "prerequisites": [],
+      "notes": "Questie-db objective of 93680. Also sourceItem of 92434. Catalog text for 93680 says Dalaran Sewer Key instead of this item. Do this after Tarren Mill (20-40 balanced optional steps)."
+    },
+    {
+      "itemId": 277507,
+      "name": "Dalaran Sewer Key",
+      "questId": 96984,
+      "questName": "Heart of Disruption",
+      "giver": {
+        "npc": "Image of Archmage Modera",
+        "zone": "Silverpine Forest",
+        "hub": "Lordamere Lake",
+        "at": [
+          68.6,
+          45.1
+        ]
+      },
+      "from": "Listed as sourceItem of 96984 in questie-db; no quest in this catalog is recorded as awarding the item.",
+      "prerequisites": [
+        544,
+        93680,
+        545,
+        92434
+      ],
+      "notes": "README/dungeons.json hordeAccess: sewer key from Image of Archmage Modera after the Tarren Mill chain. steps-v2: enter with Key to the City from Voidglare, not Modera. Chain in QuestieDB: 544 + 93680 -> 545 -> 92434 -> 96984 (needs this key) -> 97287."
+    }
+  ],
+  "prep": {
+    "group": "5-player, dungeon levels 28-33; runAt 31. Do this instance on its own (20-40 insert). Attunement/key work is overworld at Tarren Mill before the run.",
+    "consumables": [
+      "food",
+      "water",
+      "healing potions",
+      "mana drinks for healers"
+    ],
+    "hearth": "Tarren Mill",
+    "warnings": [
+      "Open-world Dalaran is hostile to Horde; use the sewer at Alterac 8.0, 61.0. Do not walk the city or go to Alliance towns.",
+      "Finish the Tarren Mill key chain (544, 93680, 545, 92434) before Heart of Disruption. 20-40 dropped 544 and 92434 as slow/blocked; dungeon pack still needs them if you want 96984.",
+      "steps-v2 run is for The Grave Knight and Opportunistic Education only. Do not pick up Prison Break In again inside the pack.",
+      "Rexxie and Atrexis have no outdoor map pins (spawn -1,-1).",
+      "At most five dungeon entries/resets per hour. Forever hotfix: dungeon kill XP +50%; if any member is greying the mobs, nobody gets XP.",
+      "Fan note in the catalog: a Black Tome from Arugal's table in Shadowfang Keep leads to a secret boss here (unofficial, unverified)."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Hillsbrad Foothills",
+      "levelBand": [
+        28,
+        33
+      ],
+      "why": "20-40 dungeons-off for City of Dalaran stays on Hillsbrad/Alterac/Arathi. Battle of Hillsbrad is a five-step human-camp grind in the same band as runAt 31; Souvenirs of Death and Dangerous! are skull/named-kill farms on that circuit.",
+      "questIds": [
+        527,
+        528,
+        529,
+        532,
+        539,
+        546,
+        567
+      ]
+    },
+    {
+      "zone": "Alterac Mountains",
+      "levelBand": [
+        30,
+        33
+      ],
+      "why": "Same-band Alterac loop after Tarren Mill. Prison Break In was already dropped from 20-40 as a four-bloodstone farm; Crown of Will and Baron Vardus are the remaining named/elite kills on that path.",
+      "questIds": [
+        544,
+        518,
+        566
+      ]
+    },
+    {
+      "zone": "Arathi Highlands",
+      "levelBand": [
+        30,
+        33
+      ],
+      "why": "20-40 dungeons-off text keeps Arathi as the Hillsbrad follow-on. Call to Arms and Foul Magics are the first Hammerfall kill loops a player would still be on at CoD level.",
+      "questIds": [
+        677,
+        678,
+        671
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "README and dungeons.json hordeAccess: Dalaran Sewer Key from Image of Archmage Modera after the Tarren Mill chain. steps-v2 run text: Key to the City from Magus Wordeen Voidglare (not Modera); open-world Dalaran hostile, enter the sewer.",
+    "Catalog 93680 objectiveSummary is Acquire the Dalaran Sewer Key. Questie-db 93680 objective is Grimy Key 279469 from Warden's Footlocker; Dalaran Sewer Key 277507 is a different item used only as sourceItem of 96984. Where 277507 is awarded is not in the catalog.",
+    "Catalog and 20-40 dungeon insert list dungeon quests 96984, 96986, 96987, 96988. steps-v2 only emits 96986 and 96987 (plus complete:96987). 96984 accept/turnin were dropped because 92434 Blood in the Streets was dropped (dungeons-mid, blocked-93034-96984).",
+    "544 is a QuestieDB group-pre of 545 with 93680, but hillsbrad-needles review dropped 544 from 20-40 as a slow Alterac bloodstone farm. Dungeon pack says do not accept 544 again.",
+    "steps-v2 City of Dalaran steps are routes: balanced only. 20-40 dungeon insert horde-20-40:dungeon:city-of-dalaran is balanced+speedrun.",
+    "Entrance 8.0, 61.0 is catalog verified:false. Rexxie Copperclutch and Atrexis have spawn -1,-1. Forever quest XP is null for 93680, 96984, 96986, 96987, 96988.",
+    "97287 Shrewd Negotiations is next of 96984 in questie-db (XP 265) but is not one of the 8 catalog dungeon quests."
+  ],
+  "notes": "Forever-only dungeon (id city-of-dalaran), levels 28-33, Alterac Mountains. Catalog: 8 of 8 Horde quests matched to QuestieDB v1.1.3; all verified:false until in-game. Key/attunement is a Tarren Mill chain (544, 93680, 545, 92434) then Modera; the dungeon pack actually run is 96986 + 96987. Pickup is Tarren Mill / sewer entrance / Undercity (96988) — never Stormwind. Dungeons-off: stay on Hillsbrad, Alterac and Arathi. One quested clear; do not reset-farm. XP figures are QuestieDB/catalog; Forever dungeon-quest bonus XP may be halved (unofficial)."
+}

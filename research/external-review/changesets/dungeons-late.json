@@ -1,0 +1,1237 @@
+{
+  "routeId": "dungeons-late",
+  "dungeons": [
+    "Razorfen Downs",
+    "Uldaman",
+    "Zul'Farrak",
+    "Maraudon",
+    "Sunken Temple",
+    "Blackrock Depths",
+    "Blackrock Spire",
+    "Dire Maul",
+    "Scholomance",
+    "Stratholme",
+    "The Drowned City",
+    "Krol'dok Stronghold",
+    "Alcaz Prison"
+  ],
+  "verified": false,
+  "opCounts": {
+    "add": 0,
+    "modify": 20,
+    "reorder": 2,
+    "drop": 22,
+    "tip": 13,
+    "total": 57
+  },
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "dungeons:uldaman:accept:2854",
+      "questId": 2854,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Wild Leather Armor is thick leather at Camp Mojache. It has no Uldaman objective.",
+      "originalText": "Do not accept Wild Leather Armor for the Uldaman clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:uldaman:turnin:2854",
+      "questId": 2854,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept. Jangdor is in Feralas.",
+      "originalText": "Do not turn in Wild Leather Armor after Uldaman.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:uldaman:accept:2855",
+      "questId": 2855,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2854
+      ],
+      "whyShort": "Wild Leather Shoulders needs armor kits and a wildvine. Pre is 2854, which is not a dungeon quest.",
+      "originalText": "Do not accept Wild Leather Shoulders for the Uldaman clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:uldaman:turnin:2855",
+      "questId": 2855,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        2854
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Wild Leather Shoulders after Uldaman.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "reorder",
+      "stepId": "dungeons:sunken-temple:accept:3380",
+      "afterStepId": "dungeons:sunken-temple:turnin:4787",
+      "questId": 3380,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "3444 needs 3380 or 3445. 3445 is missing. Turn 3380 in before 3444 is accepted.",
+      "originalText": "Accept The Sunken Temple from Witch Doctor Uzer'i before The Stone Circle.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "reorder",
+      "stepId": "dungeons:sunken-temple:turnin:3380",
+      "afterStepId": "dungeons:sunken-temple:accept:3380",
+      "questId": 3380,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Marvon is the 3444 giver. This turn-in is the prerequisite the guard checks.",
+      "originalText": "Turn in The Sunken Temple to Marvon Rivetseeker before accepting The Stone Circle.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:sunken-temple:accept:8412",
+      "questId": 8412,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        8410,
+        8411
+      ],
+      "whyShort": "8412 needs 8410 or 8411. 8410 is four elemental samples and is not turned in before this stop.",
+      "originalText": "Do not accept Spirit Totem on the Sunken Temple clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:sunken-temple:turnin:8412",
+      "questId": 8412,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        8410,
+        8411
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Spirit Totem after the temple.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:sunken-temple:accept:8413",
+      "questId": 8413,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        8412
+      ],
+      "whyShort": "8413 needs 8412, which is dropped.",
+      "originalText": "Do not accept Da Voodoo on the Sunken Temple clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:sunken-temple:turnin:8413",
+      "questId": 8413,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        8412
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Da Voodoo after the temple.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3443",
+      "questId": 3443,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3442
+      ],
+      "whyShort": "Forging the Shaft needs 3442. 3442 is balanced-only and is not a dungeon step. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3443",
+      "questId": 3443,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3442
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3452",
+      "questId": 3452,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3443
+      ],
+      "whyShort": "The Flame's Casing needs 3443. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3452",
+      "questId": 3452,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3443
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3453",
+      "questId": 3453,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3452
+      ],
+      "whyShort": "The Torch of Retribution talk needs 3452. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3453",
+      "questId": 3453,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3452
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3454",
+      "questId": 3454,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3453
+      ],
+      "whyShort": "The torch pickup needs 3453. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3454",
+      "questId": 3454,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3453
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3462",
+      "questId": 3462,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3454
+      ],
+      "whyShort": "Squire Maltrake needs 3454. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3462",
+      "questId": 3462,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3454
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3463",
+      "questId": 3463,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3462
+      ],
+      "whyShort": "Set Them Ablaze needs 3462. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3463",
+      "questId": 3463,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3462
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:3481",
+      "questId": 3481,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3463
+      ],
+      "whyShort": "Trinkets needs 3463. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:3481",
+      "questId": 3481,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3463
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:4022",
+      "questId": 4022,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3481
+      ],
+      "whyShort": "A Taste of Flame needs the molt from the torch chain. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:4022",
+      "questId": 4022,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        3481
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:4023",
+      "questId": 4023,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "A Taste of Flame still asks for the Black Dragonflight Molt from the torch chain. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:4023",
+      "questId": 4023,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:accept:4024",
+      "questId": 4024,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        4022,
+        4023
+      ],
+      "whyShort": "A Taste of Flame in the dungeon needs 4022 or 4023, both of which need the molt. Keep it on balanced.",
+      "originalText": "Accept this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "dungeons:blackrock-depths:turnin:4024",
+      "questId": 4024,
+      "routes": [
+        "balanced"
+      ],
+      "prereqQuestIds": [
+        4022,
+        4023
+      ],
+      "whyShort": "Same chain as the accept. Speedrun never gets the molt.",
+      "originalText": "Turn in this torch-chain step on balanced only.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:stratholme:accept:6135",
+      "questId": 6135,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6022,
+        6042,
+        6133
+      ],
+      "whyShort": "6135 needs all of 6022, 6042, and 6133. 6042 is not on the route. 6133 is a later level-60 revisit.",
+      "originalText": "Do not accept Duskwing for the Stratholme clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:stratholme:turnin:6135",
+      "questId": 6135,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6022,
+        6042,
+        6133
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Duskwing after Stratholme.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:stratholme:accept:6163",
+      "questId": 6163,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6135,
+        6136
+      ],
+      "whyShort": "6163 needs both 6135 and 6136. 6135 is dropped. 6136 is not a step.",
+      "originalText": "Do not accept Ramstein for this Stratholme clear.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:stratholme:turnin:6163",
+      "questId": 6163,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        6135,
+        6136
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in Ramstein after Stratholme.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:the-drowned-city:accept:95775",
+      "questId": 95775,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95770
+      ],
+      "whyShort": "95770 needs 95748, and 95748 needs 629. 629 was dropped.",
+      "originalText": "Do not accept The Drowned City tablet rubbings. The level-40 clear stays the other three quests.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:the-drowned-city:turnin:95775",
+      "questId": 95775,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95770
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in The Drowned City tablet rubbings.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:the-drowned-city:accept:95776",
+      "questId": 95776,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95770,
+        95773
+      ],
+      "whyShort": "95776 needs 95770 and 95773. Both sit on 95748, which needs 629.",
+      "originalText": "Do not accept The Only Good Brinescale for this dive.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:the-drowned-city:turnin:95776",
+      "questId": 95776,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95770,
+        95773
+      ],
+      "whyShort": "Same refusal as the accept.",
+      "originalText": "Do not turn in The Only Good Brinescale after the dive.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:accept:95309",
+      "questId": 95309,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95285
+      ],
+      "whyShort": "95309 has no turn-in npc. Leaving it accepted blocks 95454.",
+      "originalText": "Do not accept No Orc Left Behind. It cannot be handed in.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:accept:95454",
+      "questId": 95454,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95309
+      ],
+      "whyShort": "No giver and no turn-in. Pre is 95309, which has no finisher.",
+      "originalText": "Do not accept The Honor of the Kor'kron.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:accept:96369",
+      "questId": 96369,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        95454
+      ],
+      "whyShort": "No giver and no turn-in. Pre is 95454.",
+      "originalText": "Do not accept Bad News for Folkar.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:accept:95483",
+      "questId": 95483,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        96369
+      ],
+      "whyShort": "No giver. Pre is 96369. The Thrall turn-in cannot start.",
+      "originalText": "Do not accept Thrall Needs to Know.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:turnin:95483",
+      "questId": 95483,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [
+        96369
+      ],
+      "whyShort": "The accept is dropped. Thrall has nothing to take.",
+      "originalText": "Do not turn in Thrall Needs to Know.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:alcaz-prison:accept:96335",
+      "questId": 96335,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "No giver and no turn-in. The shackle key has nobody to start it.",
+      "originalText": "Do not accept The Man in the Iron Chains.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:razorfen-downs:run",
+      "questId": 3341,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One Downs clear finishes the host, the idol, Malcin, and the end boss.",
+      "originalText": "Run Razorfen Downs once. Do not reset for Agamaggan blood or extra scourge.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:uldaman:run",
+      "questId": 2342,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One dig finishes the necklace, the reagent run, the discs, and the family chest.",
+      "originalText": "Run Uldaman once. Do not reset for more power stones.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:zulfarrak:run",
+      "questId": 2770,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One Zul'Farrak clear finishes the scarabs, the temper, the rod, the tiara, the prophecy, and Gahz'rilla.",
+      "originalText": "Run Zul'Farrak once. Do not reset for another Gahz'rilla.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:maraudon:run",
+      "questId": 7064,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Orange and purple are the same visit.",
+      "originalText": "Run Maraudon once, both wings. Do not reset for more shadowshards.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:sunken-temple:run",
+      "questId": 1446,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One temple clear after 3380 is turned in. 8412 stays off.",
+      "originalText": "Run the Sunken Temple once. Do not reset for a second Morphaz.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:blackrock-depths:run",
+      "questId": 3907,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "One Depths clear. The torch chain is balanced only.",
+      "originalText": "Run Blackrock Depths once. Do not reset for more dark iron.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:blackrock-spire:run",
+      "questId": 4742,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Lower makes the seal. Upper is the one trip that uses it.",
+      "originalText": "Run Lower Blackrock Spire once, then Upper once. Do not reset Lower for extra eggs.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:dire-maul:run",
+      "questId": 7461,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Three wings, one circuit.",
+      "originalText": "Run each Dire Maul wing once. Do not reset for another tribute.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:scholomance:run",
+      "questId": 5382,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "The butcher, Kirtonos, Dawn's Gambit, and Ras are this clear.",
+      "originalText": "Run Scholomance once. Do not reset for more plaguebat hatchlings.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:stratholme:run",
+      "questId": 5251,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "Living side then undead side. Duskwing and Ramstein stay off.",
+      "originalText": "Run Stratholme once, both sides. Do not reset for another Baron.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:forever:the-drowned-city:run",
+      "questId": 96774,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "The level-40 clear is the idol, the saltseers, and the captain.",
+      "originalText": "Dive the Drowned City once around level 40. Do not take the tablet rubbings or the brinescale count that need The Vile Reef.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:forever:kroldok-stronghold:run",
+      "questId": 94968,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "94768 and 95278 are already on the Riverglades route.",
+      "originalText": "Run Krol'dok Stronghold once. Do not reset for another Eye of Mugg.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:forever:alcaz-prison:run",
+      "questId": 95285,
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "prereqQuestIds": [],
+      "whyShort": "The Kor'kron follow-ups with no finisher stay off.",
+      "originalText": "Run Alcaz Prison once. Do not accept No Orc Left Behind.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "QuestieDB Forever quest rows"
+        }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    }
+  ]
+}

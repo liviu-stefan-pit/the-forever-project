@@ -1,0 +1,1167 @@
+{
+  "id": "blackrock-spire",
+  "name": "Blackrock Spire (Lower and Upper)",
+  "forever": false,
+  "levels": [55, 60],
+  "runAt": 58,
+  "entrance": {
+    "zone": "Searing Gorge",
+    "at": [34.8, 85.3],
+    "note": "Same Blackrock Mountain as BRD; take the LBRS portal (not BRD, not Molten Core). Alternate Burning Steppes mouth 29.4, 38.3. Upper Blackrock Spire is a separate instance behind the Seal of Ascension."
+  },
+  "travel": {
+    "nearestFlight": "Flame Crest",
+    "fromHubs": [
+      "Kargath",
+      "Flame Crest",
+      "Thorium Point"
+    ],
+    "how": "Fly Flame Crest and ride west into Blackrock Mountain, or Kargath west through Searing Gorge / Thorium Point then south. Run LBRS at 58. Skip UBRS (Seal of Ascension) while leveling."
+  },
+  "quests": [
+    {
+      "questId": 4810,
+      "name": "Return to Tinkee",
+      "xp": 2700,
+      "giver": { "npc": "Felnok Steelspring", "zone": "Winterspring", "hub": "Everlook", "at": [61.6, 38.6] },
+      "turnIn": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "prerequisites": [
+        4809
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4810", "turnin": "dungeons:blackrock-spire:turnin:4810" },
+      "notes": "endgame/attunement/alliance/skip — Winterspring Felnok chain (needs 4809); not a Flame Crest pickup without that chain."
+    },
+    {
+      "questId": 6804,
+      "name": "Poisoned Water",
+      "xp": 4350,
+      "giver": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "turnIn": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6804", "turnin": "dungeons:blackrock-spire:turnin:6804" },
+      "notes": "endgame/attunement/alliance/skip — Molten Core attunement (Duke Hydraxis, Azshara)."
+    },
+    {
+      "questId": 6805,
+      "name": "Stormers and Rumblers",
+      "xp": 6000,
+      "giver": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "turnIn": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6805", "turnin": "dungeons:blackrock-spire:turnin:6805" },
+      "notes": "endgame/attunement/alliance/skip — Molten Core attunement (Duke Hydraxis, Azshara)."
+    },
+    {
+      "questId": 4788,
+      "name": "The Final Tablets",
+      "xp": 7750,
+      "giver": { "npc": "Prospector Ironboot", "zone": "Tanaris", "hub": "Tanaris", "at": [66.9, 24.0] },
+      "turnIn": { "npc": "Prospector Ironboot", "zone": "Tanaris", "hub": "Tanaris", "at": [66.9, 24.0] },
+      "prerequisites": [
+        5065
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4788", "turnin": "dungeons:blackrock-spire:turnin:4788" },
+      "notes": "endgame/attunement/alliance/skip — Tanaris Mosh'aru tablet chain; UBRS/tablet, not a hub LBRS quest."
+    },
+    {
+      "questId": 5065,
+      "name": "The Lost Tablets of Mosh'aru",
+      "xp": 7750,
+      "giver": { "npc": "Prospector Ironboot", "zone": "Tanaris", "hub": "Tanaris", "at": [66.9, 24.0] },
+      "turnIn": { "npc": "Prospector Ironboot", "zone": "Tanaris", "hub": "Tanaris", "at": [66.9, 24.0] },
+      "prerequisites": [
+        3528
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5065", "turnin": "dungeons:blackrock-spire:turnin:5065" },
+      "notes": "endgame/attunement/alliance/skip — Long Hakkari/Mosh'aru chain from Zul'Farrak / Tanaris."
+    },
+    {
+      "questId": 4724,
+      "name": "The Pack Mistress",
+      "xp": 6400,
+      "giver": { "npc": "Galamav the Marksman", "zone": "Badlands", "hub": "Kargath", "at": [6.0, 47.7] },
+      "turnIn": { "npc": "Galamav the Marksman", "zone": "Badlands", "hub": "Kargath", "at": [6.0, 47.7] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4724", "turnin": "dungeons:blackrock-spire:turnin:4724" },
+      "notes": "Kargath (Galamav). Kill Halycon in Lower Blackrock Spire; one LBRS clear."
+    },
+    {
+      "questId": 4729,
+      "name": "Kibler's Exotic Pets",
+      "xp": 6400,
+      "giver": { "npc": "Kibler", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.9, 21.9] },
+      "turnIn": { "npc": "Kibler", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.9, 21.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4729", "turnin": "dungeons:blackrock-spire:turnin:4729" },
+      "notes": "Flame Crest (Kibler). Cage a Worg Pup in LBRS (Kibler's Cage)."
+    },
+    {
+      "questId": 4862,
+      "name": "En-Ay-Es-Tee-Why",
+      "xp": 6400,
+      "giver": { "npc": "Kibler", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.9, 21.9] },
+      "turnIn": { "npc": "Kibler", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.9, 21.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4862", "turnin": "dungeons:blackrock-spire:turnin:4862" },
+      "notes": "Flame Crest (Kibler). Spire Spider Eggs from the LBRS spider pits."
+    },
+    {
+      "questId": 4981,
+      "name": "Operative Bijou",
+      "xp": 6400,
+      "giver": { "npc": "Lexlort", "zone": "Badlands", "hub": "Kargath", "at": [5.9, 47.6] },
+      "turnIn": { "npc": "Bijou", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4981", "turnin": "dungeons:blackrock-spire:turnin:4981" },
+      "notes": "Kargath (Lexlort). Find Bijou inside LBRS."
+    },
+    {
+      "questId": 4982,
+      "name": "Bijou's Belongings",
+      "xp": 6400,
+      "giver": { "npc": "Bijou", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Bijou", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "prerequisites": [
+        4981
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4982", "turnin": "dungeons:blackrock-spire:turnin:4982" },
+      "notes": "Bijou inside LBRS: recover her belongings in the same visit."
+    },
+    {
+      "questId": 4983,
+      "name": "Bijou's Reconnaissance Report",
+      "xp": 6400,
+      "giver": { "npc": "Bijou", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Lexlort", "zone": "Badlands", "hub": "Kargath", "at": [5.9, 47.6] },
+      "prerequisites": [
+        4982
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4983", "turnin": "dungeons:blackrock-spire:turnin:4983" },
+      "notes": "Turn Bijou's report in to Lexlort at Kargath after 4982."
+    },
+    {
+      "questId": 4734,
+      "name": "Egg Freezing",
+      "xp": 8300,
+      "giver": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "turnIn": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "prerequisites": [
+        4810
+      ],
+      "breadcrumb": 4907,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4734", "turnin": "dungeons:blackrock-spire:turnin:4734" },
+      "notes": "endgame/attunement/alliance/skip — Tinkee egg freeze needs the Felnok/Winterspring chain (4810); Rookery is not a no-chain Flame Crest pickup."
+    },
+    {
+      "questId": 4735,
+      "name": "Egg Collection",
+      "xp": 9950,
+      "giver": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "turnIn": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "prerequisites": [
+        4734
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4735", "turnin": "dungeons:blackrock-spire:turnin:4735" },
+      "notes": "endgame/attunement/alliance/skip — Egg Collection follow-up of 4734; UBRS/rookery chain."
+    },
+    {
+      "questId": 4742,
+      "name": "Seal of Ascension",
+      "xp": 8300,
+      "giver": { "npc": "Vaelan", "zone": null, "hub": null, "at": null },
+      "turnIn": { "npc": "Vaelan", "zone": null, "hub": null, "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4742", "turnin": "dungeons:blackrock-spire:turnin:4742" },
+      "notes": "endgame/attunement/alliance/skip — Seal of Ascension (UBRS key). LBRS gems plus Unadorned Seal; endgame, not a leveling LBRS."
+    },
+    {
+      "questId": 4743,
+      "name": "Seal of Ascension",
+      "xp": 9950,
+      "giver": { "npc": "Vaelan", "zone": null, "hub": null, "at": null },
+      "turnIn": { "npc": "Vaelan", "zone": null, "hub": null, "at": null },
+      "prerequisites": [
+        4742
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4743", "turnin": "dungeons:blackrock-spire:turnin:4743" },
+      "notes": "endgame/attunement/alliance/skip — Emberstrife forged seal; UBRS attunement."
+    },
+    {
+      "questId": 4768,
+      "name": "The Darkstone Tablet",
+      "xp": 8300,
+      "giver": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "turnIn": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "prerequisites": [],
+      "breadcrumb": 4769,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4768", "turnin": "dungeons:blackrock-spire:turnin:4768" },
+      "notes": "endgame/attunement/alliance/skip — Darkstone Tablet is Upper Blackrock Spire; 4769 is an Undercity breadcrumb. Not one LBRS leveling run."
+    },
+    {
+      "questId": 4769,
+      "name": "Vivian Lagrave and the Darkstone Tablet",
+      "xp": 660,
+      "giver": { "npc": "Apothecary Zinge", "zone": "Undercity", "hub": "Undercity", "at": [50.1, 68.0] },
+      "turnIn": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4769", "turnin": "dungeons:blackrock-spire:turnin:4769" },
+      "notes": "endgame/attunement/alliance/skip — Undercity breadcrumb to Vivian for the Darkstone Tablet."
+    },
+    {
+      "questId": 4866,
+      "name": "Mother's Milk",
+      "xp": 9950,
+      "giver": { "npc": "Ragged John", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.0, 23.8] },
+      "turnIn": { "npc": "Ragged John", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.0, 23.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4866", "turnin": "dungeons:blackrock-spire:turnin:4866" },
+      "notes": "Flame Crest (Ragged John). Get spat on by Mother Smolderweb in LBRS, then return."
+    },
+    {
+      "questId": 4867,
+      "name": "Urok Doomhowl",
+      "xp": 9950,
+      "giver": { "npc": "Warosh", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Warosh", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4867", "turnin": "dungeons:blackrock-spire:turnin:4867" },
+      "notes": "endgame/attunement/alliance/skip — Warosh inside LBRS; Urok summon is a side event, not a hub pickup."
+    },
+    {
+      "questId": 4903,
+      "name": "Warlord's Command",
+      "xp": 8300,
+      "giver": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "turnIn": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4903", "turnin": "dungeons:blackrock-spire:turnin:4903" },
+      "notes": "Kargath (Goretooth). Omokk, Voone, Wyrmthalak and the documents in one LBRS run. Do not continue into the Onyxia attunement (4941)."
+    },
+    {
+      "questId": 4907,
+      "name": "Tinkee Steamboil",
+      "xp": 660,
+      "giver": { "npc": "Felnok Steelspring", "zone": "Winterspring", "hub": "Everlook", "at": [61.6, 38.6] },
+      "turnIn": { "npc": "Tinkee Steamboil", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 24.0] },
+      "prerequisites": [
+        4810
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4907", "turnin": "dungeons:blackrock-spire:turnin:4907" },
+      "notes": "endgame/attunement/alliance/skip — Winterspring breadcrumb to Tinkee."
+    },
+    {
+      "questId": 4941,
+      "name": "Eitrigg's Wisdom",
+      "xp": 6600,
+      "giver": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        4903
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4941", "turnin": "dungeons:blackrock-spire:turnin:4941" },
+      "notes": "endgame/attunement/alliance/skip — Eitrigg/Thrall after Warlord's Command; Onyxia attunement, trip to Orgrimmar."
+    },
+    {
+      "questId": 4974,
+      "name": "For The Horde!",
+      "xp": 9950,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        4941
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:4974", "turnin": "dungeons:blackrock-spire:turnin:4974" },
+      "notes": "endgame/attunement/alliance/skip — For The Horde! (Rend in UBRS) — Onyxia/Nefarian attunement."
+    },
+    {
+      "questId": 5047,
+      "name": "Finkle Einhorn, At Your Service!",
+      "xp": 6600,
+      "giver": { "npc": "Finkle Einhorn", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Malyfous Darkhammer", "zone": "Winterspring", "hub": "Everlook", "at": [61.0, 38.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5047", "turnin": "dungeons:blackrock-spire:turnin:5047" },
+      "notes": "endgame/attunement/alliance/skip — Finkle Einhorn inside; turn in at Malyfous in Winterspring."
+    },
+    {
+      "questId": 5126,
+      "name": "Lorax's Tale",
+      "xp": 660,
+      "giver": { "npc": "Lorax", "zone": "Winterspring", "hub": "Everlook", "at": [63.8, 73.8] },
+      "turnIn": { "npc": "Lorax", "zone": "Winterspring", "hub": "Everlook", "at": [63.8, 73.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5126", "turnin": "dungeons:blackrock-spire:turnin:5126" },
+      "notes": "endgame/attunement/alliance/skip — Lorax Winterspring weaponsmith chain."
+    },
+    {
+      "questId": 5127,
+      "name": "The Demon Forge",
+      "xp": 8300,
+      "giver": { "npc": "Lorax", "zone": "Winterspring", "hub": "Everlook", "at": [63.8, 73.8] },
+      "turnIn": { "npc": "Lorax", "zone": "Winterspring", "hub": "Everlook", "at": [63.8, 73.8] },
+      "prerequisites": [
+        5126
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5127", "turnin": "dungeons:blackrock-spire:turnin:5127" },
+      "notes": "endgame/attunement/alliance/skip — Goraluk Anvilcrack in UBRS; Winterspring chain."
+    },
+    {
+      "questId": 5160,
+      "name": "The Matron Protectorate",
+      "xp": 6600,
+      "giver": { "npc": "Awbee", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Haleh", "zone": "Winterspring", "hub": "Everlook", "at": [54.5, 51.2] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5160", "turnin": "dungeons:blackrock-spire:turnin:5160" },
+      "notes": "endgame/attunement/alliance/skip — Awbee in UBRS; chromatic/Winterspring chain."
+    },
+    {
+      "questId": 5161,
+      "name": "Wrath of the Blue Flight",
+      "xp": 660,
+      "giver": { "npc": "Haleh", "zone": "Winterspring", "hub": "Everlook", "at": [54.5, 51.2] },
+      "turnIn": { "npc": "Haleh", "zone": "Winterspring", "hub": "Everlook", "at": [54.5, 51.2] },
+      "prerequisites": [
+        5160
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5161", "turnin": "dungeons:blackrock-spire:turnin:5161" },
+      "notes": "endgame/attunement/alliance/skip — Haleh Winterspring; chromatic flight."
+    },
+    {
+      "questId": 5162,
+      "name": "Wrath of the Blue Flight",
+      "xp": 6600,
+      "giver": { "npc": "Haleh", "zone": "Winterspring", "hub": "Everlook", "at": [54.5, 51.2] },
+      "turnIn": { "npc": "Jeziba", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.8] },
+      "prerequisites": [
+        5161
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5162", "turnin": "dungeons:blackrock-spire:turnin:5162" },
+      "notes": "endgame/attunement/alliance/skip — Haleh to Jeziba; chromatic."
+    },
+    {
+      "questId": 5164,
+      "name": "Catalogue of the Wayward",
+      "xp": 660,
+      "giver": { "npc": "Jeziba", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.8] },
+      "turnIn": { "npc": "Catalogue of the Wayward", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.6] },
+      "prerequisites": [
+        5162
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5164", "turnin": "dungeons:blackrock-spire:turnin:5164" },
+      "notes": "endgame/attunement/alliance/skip — Catalogue of the Wayward; chromatic."
+    },
+    {
+      "questId": 5166,
+      "name": "Breastplate of the Chromatic Flight",
+      "xp": 9950,
+      "giver": { "npc": "Catalogue of the Wayward", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.6] },
+      "turnIn": { "npc": "Jeziba", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.8] },
+      "prerequisites": [
+        5164
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5166", "turnin": "dungeons:blackrock-spire:turnin:5166" },
+      "notes": "endgame/attunement/alliance/skip — Chromatic breastplate; UBRS + long chain."
+    },
+    {
+      "questId": 5167,
+      "name": "Legplates of the Chromatic Defier",
+      "xp": 9950,
+      "giver": { "npc": "Catalogue of the Wayward", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.6] },
+      "turnIn": { "npc": "Jeziba", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [39.4, 66.8] },
+      "prerequisites": [
+        5164
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5167", "turnin": "dungeons:blackrock-spire:turnin:5167" },
+      "notes": "endgame/attunement/alliance/skip — Chromatic legplates; UBRS + long chain."
+    },
+    {
+      "questId": 5306,
+      "name": "Snakestone of the Shadow Huntress",
+      "xp": 8300,
+      "giver": { "npc": "Kilram", "zone": "Winterspring", "hub": "Everlook", "at": [61.3, 37.1] },
+      "turnIn": { "npc": "Kilram", "zone": "Winterspring", "hub": "Everlook", "at": [61.3, 37.1] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:5306", "turnin": "dungeons:blackrock-spire:turnin:5306" },
+      "notes": "endgame/attunement/alliance/skip — Kilram in Everlook (weaponsmith); Vosh'gajin in LBRS. Not a hub pickup."
+    },
+    {
+      "questId": 6566,
+      "name": "What the Wind Carries",
+      "xp": 660,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        4974
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6566", "turnin": "dungeons:blackrock-spire:turnin:6566" },
+      "notes": "endgame/attunement/alliance/skip — Onyxia attunement (Thrall)."
+    },
+    {
+      "questId": 6567,
+      "name": "The Champion of the Horde",
+      "xp": 3300,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Rexxar", "zone": "Feralas", "hub": "Feralas", "at": [46.4, 18.2] },
+      "prerequisites": [
+        6566
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6567", "turnin": "dungeons:blackrock-spire:turnin:6567" },
+      "notes": "endgame/attunement/alliance/skip — Onyxia attunement (Rexxar)."
+    },
+    {
+      "questId": 6568,
+      "name": "The Testament of Rexxar",
+      "xp": 4950,
+      "giver": { "npc": "Rexxar", "zone": "Feralas", "hub": "Feralas", "at": [46.4, 18.2] },
+      "turnIn": { "npc": "Myranda the Hag", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [50.8, 77.8] },
+      "prerequisites": [
+        6567
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6568", "turnin": "dungeons:blackrock-spire:turnin:6568" },
+      "notes": "endgame/attunement/alliance/skip — Onyxia attunement (Myranda)."
+    },
+    {
+      "questId": 6569,
+      "name": "Oculus Illusions",
+      "xp": 6600,
+      "giver": { "npc": "Myranda the Hag", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [50.8, 77.8] },
+      "turnIn": { "npc": "Myranda the Hag", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [50.8, 77.8] },
+      "prerequisites": [
+        6568
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6569", "turnin": "dungeons:blackrock-spire:turnin:6569" },
+      "notes": "endgame/attunement/alliance/skip — Oculus Illusions in LBRS; Onyxia attunement chain, not a hub pickup."
+    },
+    {
+      "questId": 6570,
+      "name": "Emberstrife",
+      "xp": 4950,
+      "giver": { "npc": "Myranda the Hag", "zone": "Western Plaguelands", "hub": "Western Plaguelands", "at": [50.8, 77.8] },
+      "turnIn": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "prerequisites": [
+        6569
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6570", "turnin": "dungeons:blackrock-spire:turnin:6570" },
+      "notes": "endgame/attunement/alliance/skip — Onyxia attunement (Emberstrife)."
+    },
+    {
+      "questId": 6582,
+      "name": "The Test of Skulls, Scryer",
+      "xp": 6600,
+      "giver": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "turnIn": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "prerequisites": [
+        6570
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6582", "turnin": "dungeons:blackrock-spire:turnin:6582" },
+      "notes": "endgame/attunement/alliance/skip — Test of Skulls (Onyxia attunement)."
+    },
+    {
+      "questId": 6583,
+      "name": "The Test of Skulls, Somnus",
+      "xp": 6600,
+      "giver": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "turnIn": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "prerequisites": [
+        6570
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6583", "turnin": "dungeons:blackrock-spire:turnin:6583" },
+      "notes": "endgame/attunement/alliance/skip — Test of Skulls (Onyxia attunement)."
+    },
+    {
+      "questId": 6584,
+      "name": "The Test of Skulls, Chronalis",
+      "xp": 6600,
+      "giver": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "turnIn": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "prerequisites": [
+        6570
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6584", "turnin": "dungeons:blackrock-spire:turnin:6584" },
+      "notes": "endgame/attunement/alliance/skip — Test of Skulls (Onyxia attunement)."
+    },
+    {
+      "questId": 6585,
+      "name": "The Test of Skulls, Axtroz",
+      "xp": 6600,
+      "giver": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "turnIn": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "prerequisites": [
+        6582,
+        6583,
+        6584
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6585", "turnin": "dungeons:blackrock-spire:turnin:6585" },
+      "notes": "endgame/attunement/alliance/skip — Test of Skulls (Onyxia attunement)."
+    },
+    {
+      "questId": 6601,
+      "name": "Ascension...",
+      "xp": 4950,
+      "giver": { "npc": "Emberstrife", "zone": "Dustwallow Marsh", "hub": "Dustwallow Marsh", "at": [56.7, 87.7] },
+      "turnIn": { "npc": "Rexxar", "zone": "Feralas", "hub": "Feralas", "at": [46.4, 18.2] },
+      "prerequisites": [
+        6585
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6601", "turnin": "dungeons:blackrock-spire:turnin:6601" },
+      "notes": "endgame/attunement/alliance/skip — Onyxia attunement (Ascension)."
+    },
+    {
+      "questId": 6602,
+      "name": "Blood of the Black Dragon Champion",
+      "xp": 9950,
+      "giver": { "npc": "Rexxar", "zone": "Feralas", "hub": "Feralas", "at": [46.4, 18.2] },
+      "turnIn": { "npc": "Rexxar", "zone": "Feralas", "hub": "Feralas", "at": [46.4, 18.2] },
+      "prerequisites": [
+        6601
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6602", "turnin": "dungeons:blackrock-spire:turnin:6602" },
+      "notes": "endgame/attunement/alliance/skip — Blood of the Black Dragon Champion (UBRS Rend) — Onyxia attunement."
+    },
+    {
+      "questId": 6821,
+      "name": "Eye of the Emberseer",
+      "xp": 8300,
+      "giver": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "turnIn": { "npc": "Duke Hydraxis", "zone": "Azshara", "hub": "Azshara", "at": [79.3, 73.7] },
+      "prerequisites": [
+        6804,
+        6805
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:6821", "turnin": "dungeons:blackrock-spire:turnin:6821" },
+      "notes": "endgame/attunement/alliance/skip — Eye of the Emberseer (UBRS) — Molten Core attunement."
+    },
+    {
+      "questId": 7761,
+      "name": "Blackhand's Command",
+      "xp": 6600,
+      "giver": { "npc": "Blackhand's Command", "zone": null, "hub": null, "at": null },
+      "turnIn": { "npc": "Drakkisath's Brand", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-spire:accept:7761", "turnin": "dungeons:blackrock-spire:turnin:7761" },
+      "notes": "endgame/attunement/alliance/skip — Blackhand's Command letter; Nefarian attunement (Mark of Drakkisath)."
+    },
+    {
+      "questId": 7667,
+      "name": "Material Assistance",
+      "xp": 4950,
+      "giver": { "npc": "Sagorne Creststrider", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [38.7, 35.9] },
+      "turnIn": { "npc": "Sagorne Creststrider", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [38.7, 35.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Shaman",
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Shaman material assistance (LBRS); endgame."
+    },
+    {
+      "questId": 8921,
+      "name": "The Ectoplasmic Distiller",
+      "xp": 6600,
+      "giver": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "turnIn": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "prerequisites": [
+        8922,
+        8923
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Ectoplasmic Distiller; Dungeon Set 2."
+    },
+    {
+      "questId": 8923,
+      "name": "A Supernatural Device",
+      "xp": 6600,
+      "giver": { "npc": "Mokvar", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [35.0, 38.3] },
+      "turnIn": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "prerequisites": [
+        8913,
+        8914,
+        8915,
+        8916,
+        8917,
+        8918,
+        8919,
+        8920
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — A Supernatural Device; Dungeon Set 2."
+    },
+    {
+      "questId": 8924,
+      "name": "Hunting for Ectoplasm",
+      "xp": 6600,
+      "giver": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "turnIn": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "prerequisites": [
+        8921
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Hunting for Ectoplasm; Dungeon Set 2."
+    },
+    {
+      "questId": 8925,
+      "name": "A Portable Power Source",
+      "xp": 6600,
+      "giver": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "turnIn": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "prerequisites": [
+        8924
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Portable Power Source; Dungeon Set 2."
+    },
+    {
+      "questId": 8928,
+      "name": "A Shifty Merchant",
+      "xp": 3300,
+      "giver": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "turnIn": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "prerequisites": [
+        8925
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — A Shifty Merchant; Dungeon Set 2."
+    },
+    {
+      "questId": 8946,
+      "name": "Proof of Life",
+      "xp": 6600,
+      "giver": { "npc": "Ysida Harmon", "zone": null, "hub": null, "at": null },
+      "turnIn": { "npc": "Anthion Harmon", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [26.1, 11.3] },
+      "prerequisites": [
+        8945
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Anthion/Valthalak extra-life chain."
+    },
+    {
+      "questId": 8961,
+      "name": "Three Kings of Flame",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8960,
+        9032
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Lord Valthalak / Dungeon Set 2."
+    },
+    {
+      "questId": 8962,
+      "name": "Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8961
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8963,
+      "name": "Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8961
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8964,
+      "name": "Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8961
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8965,
+      "name": "Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8961
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8970,
+      "name": "I See Alcaz Island In Your Future...",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8966,
+        8967,
+        8968,
+        8969
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Alcaz Island; Valthalak."
+    },
+    {
+      "questId": 8978,
+      "name": "Return to Mokvar",
+      "xp": 6600,
+      "giver": { "npc": "Mux Manascrambler", "zone": "Tanaris", "hub": "Tanaris", "at": [52.5, 27.2] },
+      "turnIn": { "npc": "Mokvar", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [35.0, 38.3] },
+      "prerequisites": [
+        8928
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Return to Mokvar; Dungeon Set 2."
+    },
+    {
+      "questId": 8985,
+      "name": "More Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8970
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — More Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8986,
+      "name": "More Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8970
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — More Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8987,
+      "name": "More Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8970
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — More Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8988,
+      "name": "More Components of Importance",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8970
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — More Components of Importance; Valthalak."
+    },
+    {
+      "questId": 8996,
+      "name": "Return to Bodley",
+      "xp": 660,
+      "giver": { "npc": "Spirit of Lord Valthalak", "zone": "Blackrock Spire", "hub": "Blackrock Spire", "at": null },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8995
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Return to Bodley; Valthalak."
+    },
+    {
+      "questId": 8998,
+      "name": "Back to the Beginning",
+      "xp": 660,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Mokvar", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [35.0, 38.3] },
+      "prerequisites": [
+        8996
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Back to the Beginning; Dungeon Set 2."
+    },
+    {
+      "questId": 9015,
+      "name": "The Challenge",
+      "xp": 6600,
+      "giver": { "npc": "Falrin Treeshaper", "zone": "Dire Maul", "hub": "Dire Maul", "at": null },
+      "turnIn": { "npc": "Anthion Harmon", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [26.1, 11.3] },
+      "prerequisites": [
+        8950
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — The Challenge (Anthion); Dire Maul / extra-life, not leveling."
+    },
+    {
+      "questId": 9032,
+      "name": "Bodley's Unfortunate Fate",
+      "xp": 1650,
+      "giver": { "npc": "Mokvar", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [35.0, 38.3] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8957,
+        9016,
+        9017,
+        9018,
+        9019,
+        9020,
+        9021,
+        9022
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Bodley's Unfortunate Fate; Dungeon Set 2."
+    }
+  ],
+  "runStepId": "dungeons:blackrock-spire:run",
+  "keys": [
+    {
+      "name": "Unadorned Seal of Ascension",
+      "questId": null,
+      "from": "Drops from Scarshield orcs in Lower Blackrock Spire",
+      "opens": "Turned in with the three gemstones on 4742 to start the UBRS key",
+      "note": "Endgame. Not needed for a leveling LBRS."
+    },
+    {
+      "name": "Seal of Ascension",
+      "questId": 4743,
+      "from": "Vaelan (Scarshield Infiltrator) in LBRS: 4742 gemstones from Omokk/Voone/Wyrmthalak, then 4743 at Emberstrife",
+      "opens": "Upper Blackrock Spire door",
+      "note": "UBRS is endgame (Rend / Drakkisath / Onyxia-Nefarian attunement). Skip while leveling."
+    }
+  ],
+  "prep": {
+    "group": "5-player Lower Blackrock Spire at 58 (runAt). UBRS is a keyed endgame instance — do not add it to a leveling clear.",
+    "consumables": [
+      "food",
+      "water",
+      "healing potions",
+      "mana drinks for healers"
+    ],
+    "hearth": "Kargath",
+    "warnings": [
+      "Leveling run is LBRS only: Omokk, Voone, Halycon, Mother Smolderweb, Wyrmthalak, Bijou.",
+      "Pick up Kargath (Galamav, Lexlort, Goretooth) and Flame Crest (Kibler, Ragged John) before you enter.",
+      "Skip Onyxia attunement (4941/4974/Rexxar/Emberstrife), Nefarian (7761), Molten Core (Hydraxis 6821), Seal of Ascension, chromatic, and Dungeon Set 2.",
+      "Pull orc packs into corridors; spider and worg rooms near Halycon need line-of-sight pulls.",
+      "LBRS is long; drink after each big room."
+    ],
+    "classQuests": [
+      "Shaman 7667 Material Assistance (endgame; skip while leveling)."
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Eastern Plaguelands",
+      "levelBand": [55, 60],
+      "why": "Nathanos and Light's Hope outdoor loops in horde-40-60.route.json (Demon Dogs, Blood Tinged Skies, Carrion Grubbage, To Kill With Purpose) are the slow same-band XP an LBRS run at 58 replaces.",
+      "questIds": [
+        5542,
+        5543,
+        5544,
+        6022
+      ]
+    },
+    {
+      "zone": "Winterspring",
+      "levelBand": [55, 60],
+      "why": "Everlook elite hunts and Winterfall kills in horde-40-60.route.json (Ursius, Brumeran, Threat of the Winterfall) sit in the same band as LBRS.",
+      "questIds": [
+        5054,
+        5055,
+        5082
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "4768 The Darkstone Tablet lists pre [4769] in dungeons.json; questie-db has no pre and marks 4769 breadcrumbFor 4768.",
+    "4907 Tinkee Steamboil is breadcrumbFor 4734 in questie-db.",
+    "8985-8988 More Components of Importance list two-quest pre groups in dungeons.json vs pre.single [8970] in questie-db.",
+    "Vaelan is named Vaelan in dungeons.json/README but npc 10299 is Scarshield Infiltrator in questie-db (same id, disguise).",
+    "Endgame/attunement quests 7667, 8921-8928, 8946, 8961-8965, 8970, 8978, 8985-8988, 8996, 8998, 9015, 9032 are in the dungeons.json BRS list but have no steps-v2 accept/turnin.",
+    "8946, 8961, 9015, 9032 are duplicated across BRD, BRS, and Dire Maul packs.",
+    "Classic Era XP in dungeons.json; README notes Forever may halve dungeon-quest bonus XP (unofficial). Amounts here are Classic Era base."
+  ],
+  "notes": "Horde-only leveling dossier. Pickup hubs for the required set are Kargath and Flame Crest. Wings: Lower Blackrock Spire (leveling) and Upper Blackrock Spire (Seal of Ascension, endgame). Kill Omokk, Voone and Wyrmthalak in one LBRS to finish the required Horde quests. Dungeons-off replacement: Eastern Plaguelands, Western Plaguelands, Silithus and Winterspring. XP figures are Classic Era from dungeons.json / questie-db."
+}

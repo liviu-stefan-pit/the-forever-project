@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* theme: Horde red / bronze frames on a dark canvas (docs/DESIGN.md) */
+
+@layer base {
+  /* Sticky top bar height: title row (56px) + route toolbar row (49px) below 2xl. */
+  :root {
+    --topbar-h: 105px;
+  }
+  @media (min-width: 1800px) {
+    :root {
+      --topbar-h: 56px;
+    }
+  }
+  html {
+    color-scheme: dark;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background-color: #120c0a;
+    color: #f3ead7;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  :focus-visible {
+    outline: 2px solid #c6a15a;
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: #7f1d1d;
+    color: #f3ead7;
+  }
+}
+
+/* Warm field: dark canvas, Horde-red glow at the top, faint bronze, vignette. */
+.azeroth-bg {
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(155, 44, 44, 0.16) 0%, transparent 52%),
+    radial-gradient(circle at 88% 92%, rgba(198, 161, 90, 0.08) 0%, transparent 42%),
+    radial-gradient(ellipse at 50% 120%, rgba(12, 9, 7, 0.85) 0%, transparent 55%);
+  background-color: #120c0a;
+  background-attachment: fixed;
+}
+
+/* Stylised zone grid, used by the map placeholder (and P8's no-image fallback). */
+.map-grid {
+  background-color: #120e0a;
+  background-image:
+    radial-gradient(ellipse at 50% 18%, rgba(155, 44, 44, 0.10), transparent 55%),
+    linear-gradient(to right, rgba(198, 161, 90, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(198, 161, 90, 0.12) 1px, transparent 1px);
+  background-size: 100% 100%, 10% 10%, 10% 10%;
+}
+
+/* Active step: bronze inset ring + Horde-red left rail (static cue), soft glow breathing on top. */
+@keyframes activeGlow {
+  0%,
+  100% {
+    box-shadow: inset 0 0 0 1px rgba(198, 161, 90, 0.7), 0 10px 24px -12px rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    box-shadow: inset 0 0 0 1px rgba(198, 161, 90, 0.95), 0 10px 30px -10px rgba(198, 161, 90, 0.28);
+  }
+}
+/* Off-screen cards skip layout; `auto` remembers the last real height. Typical card ~160px. */
+.step-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 160px;
+}
+.step-active {
+
+  position: relative;
+  animation: activeGlow 3s ease-in-out infinite;
+  background: linear-gradient(145deg, #2a1d16, #1c150f);
+  box-shadow: inset 0 0 0 1px rgba(198, 161, 90, 0.8);
+}
+.step-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #9b2c2c;
+  border-radius: 2px 0 0 2px;
+}
+
+/* Card hover lift and pressable controls. */
+.lift {
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.lift:hover {
+  transform: translateY(-1px);
+}
+.press {
+  transition: transform 0.12s ease, background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.press:active {
+  transform: scale(0.97);
+}
+
+/* Tick fill when a step is completed. */
+@keyframes tickPop {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.tick-pop {
+  animation: tickPop 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Footer link underline grow. */
+.link-grow {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease;
+}
+.link-grow:hover,
+.link-grow:focus-visible {
+  background-size: 100% 1px;
+}
+
+@keyframes panelReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.panel-animate {
+  animation: panelReveal 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes drawerIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.drawer-in {
+  animation: drawerIn 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes sheetIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.sheet-in {
+  animation: sheetIn 0.26s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.2s ease both;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, rgba(58, 46, 28, 0.55) 25%, rgba(92, 74, 46, 0.55) 37%, rgba(58, 46, 28, 0.55) 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: 0.125rem;
+}
+
+@keyframes stopPing {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+.stop-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: stopPing 1.8s ease-out infinite;
+}
+
+/* Current step on the map: static bronze ring + a soft ping (the ping is dropped for reduced motion). */
+@keyframes ringPing {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+.ring-ping {
+  animation: ringPing 1.6s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Classic client frame: bronze fill, gold inset ring. */
+.wow-frame {
+  background-color: #1c150f;
+  border: 1px solid #3d2e18;
+  box-shadow: inset 0 0 0 1px rgba(198, 161, 90, 0.4);
+  border-radius: 2px;
+}
+
+/* Quest / search reading surface. rt-* tokens stay bright on dark frames; darken here for contrast. */
+.parchment {
+  background-color: #e6d3a8;
+  color: #3a2a16;
+}
+.parchment .text-rt-friendly {
+  color: #1a7a28;
+}
+.parchment .text-rt-warn {
+  color: #b45a10;
+}
+.parchment .text-rt-enemy {
+  color: #9b2c2c;
+}
+.parchment .text-rt-buy {
+  color: #7a5a08;
+}
+.parchment .text-rt-loot {
+  color: #6d28d9;
+}
+.parchment .text-rt-pick {
+  color: #1f5f96;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b542e;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a15a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .step-active {
+    animation: none;
+    box-shadow: inset 0 0 0 2px rgba(198, 161, 90, 0.8);
+  }
+  .lift:hover,
+  .press:active {
+    transform: none;
+  }
+  .stop-ping,
+  .ring-ping {
+    display: none;
+  }
+}

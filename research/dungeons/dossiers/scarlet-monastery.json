@@ -1,0 +1,264 @@
+{
+  "id": "scarlet-monastery",
+  "name": "Scarlet Monastery",
+  "forever": false,
+  "levels": [26, 45],
+  "runAt": 29,
+  "entrance": {
+    "zone": "Tirisfal Glades",
+    "at": [82.6, 33.8],
+    "note": "Northeast Tirisfal monastery courtyard. Four wing portals inside the building (left to right per Wowhead Classic: Graveyard, Cathedral, Armory, Library). Armory and Cathedral doors need The Scarlet Key from Library. steps-v2 run goto is mapId 1420 at 82.6, 33.8."
+  },
+  "travel": {
+    "nearestFlight": "Undercity",
+    "fromHubs": ["Undercity", "Brill", "Tarren Mill"],
+    "how": "Fly Michael Garrett in Undercity (63.25, 48.56) or walk east from Brill through Tirisfal to 82.6, 33.8. From Tarren Mill, run north through the river/Undercity elevator then east. Horde pickup is Brill / Undercity / the courtyard — do not send the player to Stormwind or Southshore."
+  },
+  "quests": [
+    {
+      "questId": 1149,
+      "name": "Test of Faith",
+      "xp": 1050,
+      "giver": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "turnIn": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Prerequisite chain start (leap of faith). Catalog balanced-only. No SM step ids. Take it when already in Thousand Needles. Leads to 1150.",
+      "wing": null
+    },
+    {
+      "questId": 1150,
+      "name": "Test of Endurance",
+      "xp": 2450,
+      "giver": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "turnIn": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "prerequisites": [1149],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Grenka's Claw, outside the dungeon. Catalog speedrun:true as a chain unlock. No SM step ids. Leads to 1151.",
+      "wing": null
+    },
+    {
+      "questId": 1151,
+      "name": "Test of Strength",
+      "xp": 3050,
+      "giver": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "turnIn": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "prerequisites": [1150],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Fragments of Rok'Alim, outside. Catalog speedrun:false. Leads to 1152.",
+      "wing": null
+    },
+    {
+      "questId": 1152,
+      "name": "Test of Lore",
+      "xp": 1200,
+      "giver": { "npc": "Dorn Plainstalker", "zone": "Thousand Needles", "hub": "Freewind Post", "at": [54.0, 41.5] },
+      "turnIn": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "prerequisites": [1151],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Travel handoff Thousand Needles -> Braug Dimspirit at Talondeep Path. Catalog speedrun:false. Leads to 1154.",
+      "wing": null
+    },
+    {
+      "questId": 1154,
+      "name": "Test of Lore",
+      "xp": 1850,
+      "giver": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "turnIn": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "prerequisites": [1152],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Legacy of the Aspects, outside SM. Catalog speedrun:false. Leads to 6627.",
+      "wing": null
+    },
+    {
+      "questId": 6627,
+      "name": "Test of Lore",
+      "xp": 245,
+      "giver": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "turnIn": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "prerequisites": [1154],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Riddle at Braug. Catalog speedrun:false. Leads to 1159. Catalog table lists 1159 before 6627; QuestieDB order is 1154 -> 6627 -> 1159.",
+      "wing": null
+    },
+    {
+      "questId": 1159,
+      "name": "Test of Lore",
+      "xp": 1200,
+      "giver": { "npc": "Braug Dimspirit", "zone": "Stonetalon Mountains", "hub": "Talondeep Path", "at": [78.8, 45.7] },
+      "turnIn": { "npc": "Parqual Fintallas", "zone": "Undercity", "hub": "Undercity", "at": [57.8, 65.4] },
+      "prerequisites": [6627],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Travel Braug -> Parqual Fintallas in Undercity (57.8, 65.42 in questie-db). Catalog speedrun:false. Unlocks dungeon step 1160.",
+      "wing": null
+    },
+    {
+      "questId": 1051,
+      "name": "Vorrel's Revenge",
+      "xp": 3300,
+      "giver": { "npc": "Vorrel Sengutz", "zone": "Scarlet Monastery", "hub": "Graveyard", "at": null },
+      "turnIn": { "npc": "Monika Sengutz", "zone": "Hillsbrad Foothills", "hub": "Tarren Mill", "at": [62.7, 18.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:scarlet-monastery:accept:1051", "turnin": "dungeons:scarlet-monastery:turnin:1051" },
+      "notes": "Pick up from Vorrel inside Graveyard (no outdoor coords). Wedding ring 5538 drops from Nancy Vishas in Alterac Mountains 32.33, 32.78 (questie-db) — outside the instance. Turn in at Tarren Mill, not Stormwind. Catalog speedrun:false (extra travel). Rewards: Grimsteel Cape, Mantle of Woe, Vorrel's Boots.",
+      "wing": "Graveyard"
+    },
+    {
+      "questId": 1113,
+      "name": "Hearts of Zeal",
+      "xp": 3300,
+      "giver": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.8, 69.3] },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.8, 69.3] },
+      "prerequisites": [1109],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:scarlet-monastery:accept:1113", "turnin": "dungeons:scarlet-monastery:turnin:1113" },
+      "notes": "20 Hearts of Zeal from Scarlet humanoids in any wing (Loksey, Herod, Mograine, Whitemane, Vishas, Sentries, etc.). Requires Going, Going, Guano! 1109 from Razorfen Kraul / Faranell. Run every wing once; do not reset a wing for more hearts. Catalog speedrun:true.",
+      "wing": "Graveyard/Library/Armory/Cathedral"
+    },
+    {
+      "questId": 1160,
+      "name": "Test of Lore",
+      "xp": 2100,
+      "giver": { "npc": "Parqual Fintallas", "zone": "Undercity", "hub": "Undercity", "at": [57.8, 65.4] },
+      "turnIn": { "npc": "Parqual Fintallas", "zone": "Undercity", "hub": "Undercity", "at": [57.8, 65.4] },
+      "prerequisites": [1159],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Dungeon book Beginnings of the Undead Threat (5861) in Library. No dedicated accept/turnin steps; the run step collects it. Catalog marks insideDungeon:false (conflict). speedrun:false. Leads to 6628 (Undercity riddle, not in this catalog).",
+      "wing": "Library"
+    },
+    {
+      "questId": 1049,
+      "name": "Compendium of the Fallen",
+      "xp": 3550,
+      "giver": { "npc": "Sage Truthseeker", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [34.4, 46.9] },
+      "turnIn": { "npc": "Sage Truthseeker", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [34.4, 46.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Orc/Tauren/Troll (Undead skip)",
+      "optional": false,
+      "stepIds": { "accept": "dungeons:scarlet-monastery:accept:1049", "turnin": "dungeons:scarlet-monastery:turnin:1049" },
+      "notes": "Library book Compendium of the Fallen (5535). steps-v2 race filter Orc/Tauren/Troll; questie-db races 162. Catalog marks insideDungeon:false (conflict with README Library). Rewards: Vile Protector, Omega Orb, Forcestone Buckler. Worth it if Thunder Bluff hearth/pass-through.",
+      "wing": "Library"
+    },
+    {
+      "questId": 1048,
+      "name": "Into The Scarlet Monastery",
+      "xp": 5150,
+      "giver": { "npc": "Varimathras", "zone": "Undercity", "hub": "Undercity", "at": [56.2, 92.2] },
+      "turnIn": { "npc": "Varimathras", "zone": "Undercity", "hub": "Undercity", "at": [56.2, 92.2] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:scarlet-monastery:accept:1048", "turnin": "dungeons:scarlet-monastery:turnin:1048" },
+      "notes": "Kill Houndmaster Loksey (Library), Herod (Armory), Scarlet Commander Mograine and High Inquisitor Whitemane (Cathedral). Pickup is Varimathras in Undercity, not Stormwind. Catalog speedrun:true (5150 base). Rewards: Sword of Omen, Prophetic Cane, Dragon's Blood Necklace.",
+      "wing": "Library/Armory/Cathedral"
+    }
+  ],
+  "runStepId": "dungeons:scarlet-monastery:run",
+  "keys": [
+    {
+      "itemId": null,
+      "name": "The Scarlet Key",
+      "questId": null,
+      "from": "Chest behind Arcanist Doan, Library (Wowhead Classic strategy guide)",
+      "unlocks": ["Armory", "Cathedral"],
+      "prerequisites": [],
+      "notes": "Classic courtyard doors: Graveyard and Library open; Armory and Cathedral locked until this key. Not present in content/questie-db items.json Forever import — do not invent an item id. Clear Library before Armory/Cathedral if the group has no key."
+    }
+  ],
+  "prep": {
+    "group": "5-player. Overall 26-45; runAt 29 is for Graveyard. Suggested wing order and bands (Wowhead Classic zone page): Graveyard 26-36 at ~29, Library 29-39 at ~32, Armory 32-42 at ~35, Cathedral 35-45 at ~38. Do not combine SM with another instance.",
+    "consumables": ["food", "water", "healing potions", "mana drinks for healers"],
+    "hearth": "Undercity",
+    "warnings": [
+      "Horde pickup is Brill / Undercity / the SM courtyard. Do not send the player to Stormwind (Alliance Into the Scarlet Monastery is a different quest and is not in the Horde catalog).",
+      "Run order: Graveyard (Vorrel + hearts) -> Library (Compendium, Test of Lore book, Loksey, Scarlet Key) -> Armory (Herod) -> Cathedral (Mograine + Whitemane). Armory/Cathedral need the Library key.",
+      "Scarlet humanoids flee at low health; stop runners from chaining the next room.",
+      "Run every wing once. Do not reset a wing for more Hearts of Zeal.",
+      "Hearts of Zeal 1113 requires RFK quest 1109 (Going, Going, Guano!) at Faranell first.",
+      "Vorrel's ring is from Nancy Vishas in Alterac (32.33, 32.78), then Tarren Mill — not inside Graveyard.",
+      "Compendium 1049 is Orc/Tauren/Troll only; Undead skip it.",
+      "At most five dungeon entries/resets per hour. Forever hotfix: dungeon kill XP +50%; if any member is greying the mobs, nobody gets XP."
+    ],
+    "classQuests": [
+      {
+        "questId": 1951,
+        "name": "Rituals of Power",
+        "class": "Mage",
+        "xp": 3150,
+        "notes": "In content/questie-db (classes 128, pre 1950, Tabetha/Dustwallow turn-in via NPC 6546). Book is the Classic SM Library mage quest. Not in dungeons.json SM list and not in steps-v2 — do not invent a dungeon-pack step."
+      }
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Arathi Highlands",
+      "levelBand": [30, 40],
+      "why": "20-40 dungeons-off for SM is Hammerfall / Thousand Needles / Desolace. Call to Arms and Guile of the Raptor are the long Hammerfall kill loops in the Library-to-Cathedral band.",
+      "questIds": [677, 678, 701, 702]
+    },
+    {
+      "zone": "Thousand Needles",
+      "levelBand": [30, 35],
+      "why": "Same dungeons-off replacement. Pacify the Centaur plus the Shimmering Flats part/venom/shell collect loop is the slow Needles XP a Graveyard/Library run replaces.",
+      "questIds": [4841, 1110, 1104, 1105]
+    },
+    {
+      "zone": "Desolace",
+      "levelBand": [32, 40],
+      "why": "Same dungeons-off replacement. Bone Collector and Centaur Bounty are the long kodo-graveyard / centaur-kill farms in the Armory-Cathedral band.",
+      "questIds": [5501, 1366]
+    }
+  ],
+  "sourceConflicts": [
+    "Catalog 1049 and 1160 mark the Library books insideDungeon:false; README wings, the run-step collect actions, and Wowhead Classic treat both books as inside Library.",
+    "Wowhead Classic zone page / strategy guide: Graveyard 26-36, Library 29-39, Armory 32-42, Cathedral 35-45. Wowhead Classic Dungeons Overview also lists Graveyard 28-38. Warcraft Tavern: Graveyard 26-35, Library 30-40. Catalog overall range is 26-45.",
+    "The Scarlet Key for Armory/Cathedral is in Wowhead Classic guides; it is not in the Forever questie-db items import, so itemId is left null.",
+    "Test of Lore 1149-1159/6627 have no dungeons:scarlet-monastery step ids. 1160 is collected on the run step but has no accept/turnin steps.",
+    "Catalog table order lists 1159 before 6627; QuestieDB next-chain is 1154 -> 6627 -> 1159 -> 1160.",
+    "Classic Era XP in dungeons.json / questie-db; catalog notes Forever may halve dungeon-quest bonus XP (unofficial)."
+  ],
+  "notes": "Horde-only pack (Alliance 1050/1053 are absent from the Horde questie-db import). Pickup hub: Undercity and Brill, levels 30-40. Wings at different levels — do Graveyard first at runAt 29, then Library, then keyed Armory+Cathedral. Dungeons-off: Arathi (Hammerfall), Thousand Needles and Desolace. One quested pass per wing; do not reset-farm hearts. XP figures are Classic Era from dungeons.json / questie-db."
+}

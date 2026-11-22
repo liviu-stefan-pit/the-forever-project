@@ -1,0 +1,218 @@
+{
+  "routeId": "horde-40-60",
+  "mapIds": {
+    "Mount Hyjal": 2482,
+    "Silithus": 1451,
+    "Shen'dralas": 2652,
+    "Un'Goro Crater": 1449,
+    "Azshara": 1447
+  },
+  "targetFile": "research/horde-40-60/horde-40-60.route.json",
+  "opCounts": { "add": 0, "modify": 0, "reorder": 0, "drop": 7, "tip": 6, "total": 13 },
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "h4060:winterspring:a969",
+      "alsoStepIds": [
+        "h4060:winterspring:c969",
+        "h4060:winterspring:t969",
+        "h4060:winterspring:travel-eb5c19"
+      ],
+      "questId": 969,
+      "prereqQuestIds": [],
+      "whyShort": "Luck Be With You is 4 Frostmaul Shards. The Everlook exit at n=1200 exists only to do it. 975 is not on the route.",
+      "original": "Skip Luck Be With You and do not leave Mount Hyjal through Everlook for Frostmaul shards.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 969 next 975, 4 Frostmaul Shards, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a7732",
+      "alsoStepIds": ["h4060:feralas:t7732"],
+      "questId": 7732,
+      "prereqQuestIds": [7730, 7731],
+      "whyShort": "The carapace stack was dropped. The report accept and turn-in are still on the route.",
+      "original": "Skip Zukk'ash Report. Do not accept it or turn it in.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 7732 pre group 7730 and 7731" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:azshara:a4494",
+      "alsoStepIds": [
+        "h4060:un-goro-crater:t4494",
+        "h4060:un-goro-crater:a4496",
+        "h4060:un-goro-crater:c4496",
+        "h4060:un-goro-crater:t4496"
+      ],
+      "questId": 4494,
+      "prereqQuestIds": [7732],
+      "whyShort": "Horde 4494 needs 7732. 32 is the other faction lead-in. 4496 and its soil samples sit behind 4494.",
+      "original": "Do not accept March of the Silithid or Bungle in the Jungle.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4494 pre.single 32 or 7732, next 4496; 4496 pre 4493 or 4494" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:shen-dralas:a93034",
+      "alsoStepIds": [
+        "h4060:shen-dralas:t93034",
+        "h4060:shen-dralas:a93035",
+        "h4060:shen-dralas:t93035",
+        "h4060:shen-dralas:a93037",
+        "h4060:shen-dralas:t93037",
+        "h4060:shen-dralas:a93041",
+        "h4060:shen-dralas:t93041",
+        "h4060:shen-dralas:a93044",
+        "h4060:shen-dralas:t93044",
+        "h4060:shen-dralas:a93045",
+        "h4060:shen-dralas:t93045",
+        "h4060:shen-dralas:a93058",
+        "h4060:shen-dralas:t93058",
+        "h4060:shen-dralas:a93062",
+        "h4060:shen-dralas:t93062",
+        "h4060:shen-dralas:a93122",
+        "h4060:shen-dralas:t93122"
+      ],
+      "questId": 93034,
+      "prereqQuestIds": [1373],
+      "whyShort": "93034 needs 1373, the Gelkis reputation grind, which is not on the route. 93035 through 93122 require that chain. 93044 is not in quests.json. 93128 is not on the route.",
+      "original": "Skip Valley of Bones and every Gelkis follow-up through Checking Things Out. Do not add Khan Jehn.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 93034 pre 1373 next 93035; 93041 pre group 93035 and 93037; 93045 pre 93044; 93122 pre group 93058 and 93062 next 93128" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:mount-hyjal:a94504",
+      "alsoStepIds": ["h4060:mount-hyjal:t94504"],
+      "questId": 94504,
+      "prereqQuestIds": [],
+      "whyShort": "Barkskin Beginnings is a reputation raise to Neutral with Barkskin Burrow.",
+      "original": "Skip Barkskin Beginnings. Do not grind Barkskin Burrow to Neutral.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94504 reputation objective, no pre, no next" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:mount-hyjal:a96666",
+      "alsoStepIds": ["h4060:mount-hyjal:t96666"],
+      "questId": 96666,
+      "prereqQuestIds": [],
+      "whyShort": "Burrow Bonding is a reputation raise to Friendly with Barkskin Burrow.",
+      "original": "Skip Burrow Bonding. Do not grind Barkskin Burrow to Friendly.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 96666 reputation objective, no pre, no next" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:mount-hyjal:a90854",
+      "alsoStepIds": ["h4060:mount-hyjal:c90854", "h4060:mount-hyjal:t90854"],
+      "questId": 90854,
+      "prereqQuestIds": [95026],
+      "whyShort": "Leather for Inclement Weather is 2 Rugged Armor Kits and 1 Cured Rugged Hide. 95026 is already on the route, so this is a mat delivery, not a missing prerequisite.",
+      "original": "Skip Leather for Inclement Weather. Do not craft the rugged kits for Zet'gan.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 90854 pre.single 92449 or 95026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:mount-hyjal:travel-e67d15",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "Public notes call Mount Hyjal level 60. Questie req levels on this hub are often 54, with quest levels 56-60. The published 60 is unverified. No Summit raid and no Barrow Deeps.",
+      "original": "Mount Hyjal's published level 60 is unverified. Questie quest levels here are about 56-60 and many require 54. Do not add a Hyjal Summit or Barrow Deeps raid.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB Mount Hyjal quest levels and reqLevel; zones.json 616 uiMapId 2482" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:shen-dralas:travel-9a2877",
+      "questId": 93125,
+      "prereqQuestIds": [],
+      "whyShort": "The Shen'dralas bracket was unpublished. Questie levels on the kept chain are the low 40s. 93125 has no pre, but its text still says to maintain Gelkis standing, and 1373 is not on the route.",
+      "original": "Shen'dralas has no published level bracket, so treat the band as unverified. Going Home does not list 1373, but it still asks for Gelkis standing.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 93125 empty pre; zones.json 16651 uiMapId 2652" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:silithus:t8277",
+      "questId": 8277,
+      "prereqQuestIds": [],
+      "whyShort": "8276, 8277, and 8280 have empty pre lists and stay. Their next quests are 20 Dredge Crushers, more stingers, a satchel, 8 tablet fragments, and 10 encrypted texts.",
+      "original": "Stop Silithus after Securing the Supply Lines and Deadly Desert Venom. Do not take the crusher, tablet, encrypted-text, or Silithyst follow-ups.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 8277 next 8278; 8280 next 8281; 8284 8 fragments; 8318 10 texts" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP Horde 55-56 and 58-59 Silithus, facts only" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:mount-hyjal:dungeon-d40300",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "One quested clear of Blackmaw Hold. Questie quest levels are 55-60. A public table with no level number is unverified. This is not an instance script.",
+      "original": "Blackmaw Hold is one quested clear for the dungeon quests already listed. Do not script the instance. Its published level is unverified.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 92066 level 55, 97198 level 59, 92065 and 97327 level 60, 99187 level 58" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:mount-hyjal:dungeon-030568",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "One quested clear of Shaper's Terrace. 95928, 97049, and 95926 are quest level 60, req 55. The public note of about 59 is unverified. 95924 and 95925 are not in quests.json.",
+      "original": "Shaper's Terrace is one quested clear. Do not script the instance. Treat a level near 59 as unverified next to quest level 60.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95928, 97049, 95926 level 60 req 55, empty pre; zones.json area 4382 parent 490" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:forever:blackmaw-hold:accept:92065",
+      "questId": 92065,
+      "prereqQuestIds": [],
+      "whyShort": "Blackmaw Reclamation has an accept and no turn-in step. Questie starts and ends on npc 236573. 92343 is available because 92346 is already on the Horde route.",
+      "original": "Turn Varrox Bleakhoof's Head in to the same Gatekeeper Rageroar who gave Blackmaw Reclamation. Get to the Roots of It is already opened by Beneath Nordrassil.",
+      "targetFile": "research/dungeons/steps-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 92065 start and end npc 236573; 92343 pre.single 92345 or 92346; 92346 next 92343" }
+      ],
+      "verified": false
+    }
+  ]
+}

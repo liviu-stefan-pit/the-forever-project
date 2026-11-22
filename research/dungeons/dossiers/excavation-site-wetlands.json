@@ -1,0 +1,195 @@
+{
+  "id": "excavation-site-wetlands",
+  "name": "Excavation Site: Wetlands",
+  "forever": true,
+  "levels": [24, 29],
+  "runAt": 27,
+  "entrance": {
+    "zone": "Wetlands",
+    "at": [53.4, 65.3],
+    "note": "Above Whelgar's Excavation. Reported (warcraft.wiki.gg / dungeons.json); verified false. Deathstalker Agent is on a hill outside, not at this cave mouth."
+  },
+  "travel": {
+    "nearestFlight": "Hammerfall",
+    "fromHubs": ["Tarren Mill", "Hammerfall"],
+    "how": "Bad speedrun fit. Realistic Horde path is only if the route is already Tarren Mill east into Arathi: Hammerfall for Zaruk, then south across Thandol Span into Alliance Wetlands on foot — there is no Horde flight in Wetlands and Menethil Harbor is Alliance. Do not send Horde via Booty Bay, Dun Morogh, or a Kalimdor boat just for this dungeon."
+  },
+  "quests": [
+    {
+      "questId": 95697,
+      "name": "Changing Tastes",
+      "xp": 0,
+      "giver": {
+        "npc": "Borstan",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [57.2, 53.32]
+      },
+      "turnIn": {
+        "npc": "Borstan",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [57.2, 53.32]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:forever:excavation-site-wetlands:accept:95697",
+        "turnin": "dungeons:forever:excavation-site-wetlands:turnin:95697"
+      },
+      "notes": "XP unknown in QuestieDB and quests.json. Cooking recipe reward (Recipe: Twice-Spiced Raptor Slice). Pickup in Orgrimmar is a cross-continent extra if you are already in Hillsbrad/Arathi for the dungeon. Balanced only in steps-v2. Forever, verified false."
+    },
+    {
+      "questId": 95663,
+      "name": "Dragonmaw Rumors",
+      "xp": 0,
+      "giver": {
+        "npc": "Zaruk",
+        "zone": "Arathi Highlands",
+        "hub": "Hammerfall",
+        "at": [74.54, 35.64]
+      },
+      "turnIn": {
+        "npc": "Deathstalker Agent",
+        "zone": "Wetlands",
+        "hub": "",
+        "at": [51.4, 59.2]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:excavation-site-wetlands:accept:95663",
+        "turnin": "dungeons:forever:excavation-site-wetlands:turnin:95663"
+      },
+      "notes": "Required lead-in for 95682. XP unknown in QuestieDB/quests.json. Deathstalker Agent has no Questie spawn; 51.4, 59.2 is web-only (warcraft.wiki.gg / Mobalytics). Balanced only. Forever, verified false."
+    },
+    {
+      "questId": 95682,
+      "name": "Open the Maw",
+      "xp": 0,
+      "giver": {
+        "npc": "Deathstalker Agent",
+        "zone": "Wetlands",
+        "hub": "",
+        "at": [51.4, 59.2]
+      },
+      "turnIn": {
+        "npc": "Deathstalker Agent",
+        "zone": "Wetlands",
+        "hub": "",
+        "at": [51.4, 59.2]
+      },
+      "prerequisites": [95663],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:excavation-site-wetlands:accept:95682",
+        "turnin": "dungeons:forever:excavation-site-wetlands:turnin:95682"
+      },
+      "notes": "XP unknown in QuestieDB/quests.json. Web walkthroughs: 2 Dragonmaw Saboteurs, 4 Dragonmaw Warders, loot Dragonmaw Dispatch. Agent coords web-only. Balanced only. Forever, verified false."
+    },
+    {
+      "questId": 95664,
+      "name": "Elder Knowledge",
+      "xp": 0,
+      "giver": {
+        "npc": "Titan Relic",
+        "zone": "Excavation Site: Wetlands",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Bashana Runetotem",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [71.06, 34.19]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Item-start from Titan Relic (item 270866) dropped by Relic Guardian inside the dungeon. XP unknown in QuestieDB. In dungeons.json/README but dropped from steps-v2 (dungeons-mid). Would have been dungeons:forever:excavation-site-wetlands:accept:95664 / turnin:95664. Thunder Bluff trip after Wetlands is a long hearth. Forever, verified false."
+    },
+    {
+      "questId": 98823,
+      "name": "Earthen Echo",
+      "xp": 0,
+      "giver": {
+        "npc": "Bashana Runetotem",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [71.06, 34.19]
+      },
+      "turnIn": {
+        "npc": "Muln Earthfury",
+        "zone": "Mulgore",
+        "hub": "",
+        "at": [33.41, 22.59]
+      },
+      "prerequisites": [95664],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Follow-up to Elder Knowledge. Skywatcher Plateau, northwest Mulgore. XP unknown in QuestieDB. Dropped from steps-v2 with 95664. Forever, verified false."
+    }
+  ],
+  "runStepId": "dungeons:forever:excavation-site-wetlands:run",
+  "keys": [],
+  "prep": {
+    "group": "Five-player Forever dungeon. Catalog range 24-29; runAt 27. Fan guides warn the last boss is higher than 24. Unverified in game.",
+    "consumables": ["food", "water", "healing potions"],
+    "hearth": "Tarren Mill or Hammerfall — not Menethil Harbor",
+    "warnings": [
+      "Wetlands is Alliance territory. No Horde flight. Treat the run as optional; 20-40 dungeons-off text says stay on Hillsbrad and Ashenvale.",
+      "All five Horde quests are Forever-new and verified false until checked in game.",
+      "Do not invent Classic Wetlands quests for this dungeon.",
+      "Changing Tastes pickup is Orgrimmar; do not add a silly Org-to-Wetlands-to-Org loop unless the hearth/zeppelin is already planned.",
+      "Kill XP inside dungeons is increased; five entries/resets per hour (Forever hotfix)."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Hillsbrad Foothills",
+      "levelBand": [24, 29],
+      "why": "Only replace if the route is already Tarren Mill toward Arathi for Zaruk. Skull grind, Dangerous!, and the tail of Battle of Hillsbrad are the slow 24-29 work; Wetlands overworld is Alliance and is not a Horde substitute.",
+      "questIds": [546, 567, 539, 509]
+    },
+    {
+      "zone": "Arathi Highlands",
+      "levelBand": [30, 32],
+      "why": "Hammerfall is on the path to Zaruk, but Arathi kill quests sit above the 24-29 dungeon band. Do not drag a speedrun into Arathi just for this instance.",
+      "questIds": [671, 677]
+    }
+  ],
+  "sourceConflicts": [
+    "Official/catalog level range is 24-29 (Blizzard / dungeons.json). Mobalytics lists 24-32; Warcraft Tavern lists the dungeon 26-33. Used 24-29.",
+    "dungeons.json has 5 Horde quests. Mobalytics and Warcraft Tavern list 3 Horde (Changing Tastes, Open the Maw, Elder Knowledge) and omit Dragonmaw Rumors / Earthen Echo as separate rows.",
+    "steps-v2 has accept/turnin for 95663, 95697, 95682 and the run. 95664 and 98823 were dropped (dungeons-mid); gotos/report.json still names dungeons:forever:excavation-site-wetlands:accept:95664.",
+    "Zaruk: dungeons.json 74.54, 35.64 vs README/wiki 74.4, 35.6.",
+    "Borstan: dungeons.json/Questie 57.2, 53.32 vs warcraft.wiki.gg 57.4, 53.4.",
+    "Bashana: excavation catalog 71.06, 34.19 vs wiki 70.8, 33.8.",
+    "Deathstalker Agent: no Questie coordinates (zoneId 11 only). Web 51.4, 59.2 used to fill the gap; flag as unverified.",
+    "Forever XP: QuestieDB and quests.json have no xp field (set 0). warcraft.wiki.gg reports 550/6950/1400/6950 for 95663/95682/95664/98823 and 6950 for 95697; warcraftmaps.com reports 250 for 95663. Not copied into xp.",
+    "Entrance 53.4, 65.3 is reported, not Questie-verified."
+  ],
+  "notes": "Forever-only dungeon. Horde access is a long EK trek through Hillsbrad and Arathi into Alliance Wetlands — a bad speedrun fit. Pickup: Zaruk in Hammerfall, Agent outside the instance, Borstan in Orgrimmar if you want the cooking quest. Item relic chain is Thunder Bluff / Mulgore after the run and is not on the current step pack. Quest 79953 and 81951 are not used."
+}

@@ -1,0 +1,262 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Hunter",
+      "role": "dps",
+      "pair": ["Skinning", "Leatherworking"],
+      "rejected": [
+        {
+          "pair": ["Mining", "Engineering"],
+          "why": "Ore nodes are a second circuit, and starter copper veins were cut. Engineering is not required to level a hunter."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "why": "Herb nodes are a second circuit. Potions are consumables, not the leather and mail the class wears."
+        }
+      ],
+      "whyShort": "Kagil teaches Apprentice Skinning in the Valley of Trials. Kamari teaches Leatherworking in Orgrimmar, the same city 6081 already visits.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Hunter role notes"},
+        {"url": "research/professions/trainers.json", "label": "Kagil 267327, Kamari 5811"},
+        {"url": "content/questie-db/quests.json", "label": "6081 Training the Beast"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Hunter",
+      "role": "dps",
+      "pair": ["Skinning", "Leatherworking"],
+      "rejected": [
+        {
+          "pair": ["Mining", "Engineering"],
+          "why": "Ore nodes are a second circuit, and starter copper veins were cut. Engineering is not required to level a hunter."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "why": "Herb nodes are a second circuit. Potions are consumables, not the leather and mail the class wears."
+        }
+      ],
+      "whyShort": "Trolls share the Orc start. Kagil is in the Valley of Trials, and Leatherworking is Kamari on the 6081 Orgrimmar trip.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "6062 race mask 130, Orc and Troll"},
+        {"url": "research/professions/trainers.json", "label": "Kagil 267327, Kamari 5811"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Hunter",
+      "role": "dps",
+      "pair": ["Skinning", "Leatherworking"],
+      "rejected": [
+        {
+          "pair": ["Mining", "Engineering"],
+          "why": "Ore nodes are a second circuit, and starter copper veins were cut. Engineering is not required to level a hunter."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "why": "Herb nodes are a second circuit. Potions are consumables, not the leather and mail the class wears."
+        }
+      ],
+      "whyShort": "Nawka teaches Apprentice Skinning on Red Cloud Mesa. Chaw Stronghide teaches Leatherworking in Bloodhoof, beside Yaw Sharpmane.",
+      "sources": [
+        {"url": "research/professions/trainers.json", "label": "Nawka Wildsong 267330, Chaw Stronghide 3069"},
+        {"url": "content/questie-db/npcs.json", "label": "Yaw Sharpmane 3065"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Hunter",
+      "role": "dps",
+      "pair": ["Skinning", "Leatherworking"],
+      "rejected": [
+        {
+          "pair": ["Mining", "Engineering"],
+          "why": "Zephras mining trainers have unknown skill caps, and ore would still be a node circuit."
+        },
+        {
+          "pair": ["Herbalism", "Alchemy"],
+          "why": "Herb nodes are a second circuit. Potions are consumables, not the leather and mail the class wears."
+        }
+      ],
+      "whyShort": "Indari Sunseam teaches Apprentice Leatherworking beside Elayaa Easewind. Beast corpses supply the leather once Skinning is trained.",
+      "sources": [
+        {"url": "research/external/web-notes/skyborne-zephras.md", "label": "Horde Windshaper class list includes Hunter"},
+        {"url": "research/professions/trainers.json", "label": "Indari Sunseam 251993"},
+        {"url": "content/questie-db/npcs.json", "label": "Elayaa Easewind 254084"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "First Aid, Cooking, and Fishing use no primary slot and add no node circuit.",
+      "text": "Take First Aid, Cooking, and Fishing as secondaries. Train them when a trainer is already on the route. Do not detour for Triage (6622), Clamlette Surprise (6610), or Nat Pagle, Angler Extreme (6607).",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Three secondaries plus two primaries"},
+        {"url": "content/questie-db/quests.json", "label": "6622, 6610, 6607"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Same secondary rule as Orc. No extra circuit.",
+      "text": "Take First Aid, Cooking, and Fishing as secondaries. Skip 6622, 6610, and 6607 as required stops.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Three secondaries plus two primaries"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Same secondary rule. No extra circuit.",
+      "text": "Take First Aid, Cooking, and Fishing as secondaries. Skip 6622, 6610, and 6607 as required stops.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Three secondaries plus two primaries"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Same secondary rule. No extra circuit.",
+      "text": "Take First Aid, Cooking, and Fishing as secondaries. Skip 6622, 6610, and 6607 as required stops.",
+      "sources": [
+        {"url": "research/external/web-notes/travel-and-campfires.md", "label": "Three secondaries plus two primaries"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "6062, 6083, and 6082 stay in Durotar on beasts the starter already fights. 6081 is one speak in Orgrimmar.",
+      "text": "At 10, tame from Thotar at Razor Hill: 6062, then 6083, then 6082, then speak to Ormak Grimshot (6081). Train hunter ranks on that same pair of NPCs. This is not a second zone. Breadcrumbs 6068, 6069, and 6070 are optional ways to reach Thotar.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "6062, 6083, 6082, 6081"},
+        {"url": "content/questie-db/npcs.json", "label": "Thotar 3171, Ormak Grimshot 3352"},
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Pet at 10, pet tanks, hunter stays at range"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Same Durotar tame chain as Orc. Race mask 130 covers both.",
+      "text": "At 10, tame from Thotar: 6062, 6083, 6082, then 6081 to Ormak. Train on those NPCs. Do not add a second circuit.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "6062 races 130"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "6061, 6087, and 6088 stay in Mulgore. 6089 is one speak on Hunter Rise.",
+      "text": "At 10, tame from Yaw Sharpmane in Bloodhoof: 6061, then 6087, then 6088, then speak to Holt Thunderhorn (6089). Train hunter ranks there. Breadcrumbs 6065, 6066, and 6067 only point at Yaw. 96130 is a separate pelt quest, not a required farm.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "6061, 6087, 6088, 6089, 96130"},
+        {"url": "content/questie-db/npcs.json", "label": "Yaw Sharpmane 3065, Holt Thunderhorn 3039"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "94007 is a report from Elayaa Easewind to Quel'ana Quickgale, both on Zephras Isle.",
+      "text": "At 10, turn in 94007 to Quel'ana Quickgale in Valanaar and train there. Quest records for 94013 and 94050 are missing, so later tame steps are UNKNOWN and not a required farm. Whether Ishlee or Mendalass teaches Apprentice Skinning is UNKNOWN. Both trainer rows are tagged Artisan.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "94007 Taming the Beast"},
+        {"url": "content/questie-db/npcs.json", "label": "Elayaa 254084, Quel'ana 252389"},
+        {"url": "research/professions/trainers.json", "label": "Ishlee 257003, Mendalass 257024"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "No web note says Forever hunters still buy ammo, so an ammo vendor stop would be an invented circuit.",
+      "text": "Do not add an ammo or quiver checkpoint for Orc hunters.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Hunter checkpoints listed; ammo absent"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Ammo use is UNKNOWN, same as Orc.",
+      "text": "Do not add an ammo or quiver checkpoint for Troll hunters.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Ammo absent"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Ammo use is UNKNOWN.",
+      "text": "Do not add an ammo or quiver checkpoint for Tauren hunters.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Ammo absent"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "Ammo use is UNKNOWN.",
+      "text": "Do not add an ammo or quiver checkpoint for Skyborne hunters.",
+      "sources": [
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Ammo absent"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Hunter",
+      "role": "dps",
+      "whyShort": "No Forever source says Forsaken can be Hunters. The tame chain that exists uses race mask 130, which excludes Undead.",
+      "text": "Skip Undead. Do not add a hunter pair, trainer stop, or tame quest for Forsaken.",
+      "sources": [
+        {"url": "content/questie-db/quests.json", "label": "6062 races 130; 6081 races 146 is only the follow-up"},
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "No Forsaken hunter note"}
+      ],
+      "verified": false
+    }
+  ]
+}

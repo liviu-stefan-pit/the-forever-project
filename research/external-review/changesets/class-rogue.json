@@ -1,0 +1,218 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "verified": false,
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Rogue",
+      "role": "dps",
+      "pair": ["Leatherworking", "Skinning"],
+      "rejectedPairs": [
+        ["Engineering", "Mining"],
+        ["Alchemy", "Herbalism"]
+      ],
+      "whyShort": "Skin beasts the Durotar and Barrens route already kills. Train at Kagil, then Dranh or Thuwd, and Krulmoo or Kamari. Skip the Wetlands leather camp and Waldor's cave.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "QuestieDB quest 3088 race bit 2 class 8; npc 3155" },
+        { "url": "file://research/professions/trainers.json", "label": "Kagil 267327, Dranh 6387, Krulmoo 3703, Kamari 5811, Waldor 5784" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Rogue",
+      "role": "dps",
+      "pair": ["Leatherworking", "Skinning"],
+      "rejectedPairs": [
+        ["Engineering", "Mining"],
+        ["Alchemy", "Herbalism"]
+      ],
+      "whyShort": "Same Valley of Trials path as Orc. Quest 3083 is the Troll Rogue starter. Hides come from route kills, not a side farm.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "QuestieDB quest 3083 race bit 128 class 8" },
+        { "url": "file://research/professions/trainers.json", "label": "Kagil 267327 and Barrens or Orgrimmar leather trainers" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Rogue",
+      "role": "dps",
+      "pair": ["Leatherworking", "Skinning"],
+      "rejectedPairs": [
+        ["Engineering", "Mining"],
+        ["Alchemy", "Herbalism"]
+      ],
+      "whyShort": "Deathknell and Brill already have the trainers. Skin Tirisfal corpses on the way to Brill. Do not detour to Wetlands for Medium Leather.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "QuestieDB quest 3096 race bit 16 class 8; npc 2122" },
+        { "url": "file://research/professions/trainers.json", "label": "Margaret Weaver 267324, Shelene Rhobart 3549, Rand Rhobart 6289" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Rogue",
+      "role": "dps",
+      "pair": ["Leatherworking", "Skinning"],
+      "rejectedPairs": [
+        ["Engineering", "Mining"],
+        ["Alchemy", "Herbalism"]
+      ],
+      "whyShort": "Zephras has a Rogue trainer and both profession trainers. After the isle, use the Kalimdor trainers. The shared Horde route has no Zephras steps, and the join point is unknown.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "Questie npcs 251389, 252379, 254087; quest 92483 class 8 races 0" },
+        { "url": "file://research/professions/trainers.json", "label": "Indari Sunseam 251993, Mendalass Tattermend 257024" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "3088 is a read-and-talk after 788, which the Durotar route already turns in. Rwag stands in the Valley.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "quests.json 3088 pre 788" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "3083 is the Troll twin of 3088. Same prerequisite 788, same trainer.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "quests.json 3083 pre 788" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "3096 needs 364, already on the Deathknell steps. David Trias is in Deathknell.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "quests.json 3096 pre 364" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "First Aid, Cooking, and Fishing only. Poisons and lockpicking are spells, not professions. No poison-material farm.",
+      "sources": [
+        { "url": "file://research/professions/README.md", "label": "Healing potions moved to First Aid; Cooking builds campfires" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same secondaries as Orc. No poison-material farm.",
+      "sources": [
+        { "url": "file://research/professions/README.md", "label": "First Aid holds healing potions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same secondaries. No poison-material farm.",
+      "sources": [
+        { "url": "file://research/professions/README.md", "label": "First Aid holds healing potions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same secondaries once they leave Zephras. 92483 stays off the shared route because 92461 is a Zephras quest. No poison-material farm.",
+      "sources": [
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "quest 92483 pre 92461, zone Zephras Isle" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "The Medium Leather camp is Mottled Razormaw in Wetlands. That zone is not on the Horde kill route.",
+      "sources": [
+        { "url": "file://research/professions/profession_hooks.json", "label": "hook p2-083 Wetlands mob 1023" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same Wetlands Razormaw camp. Skin Barrens and later route beasts instead.",
+      "sources": [
+        { "url": "file://research/professions/profession_hooks.json", "label": "hook p2-083" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same Wetlands camp. Tirisfal and later Horde zones already have skinnable corpses.",
+      "sources": [
+        { "url": "file://research/professions/profession_hooks.json", "label": "hook p2-083" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Do not send a Skyborne Rogue to Wetlands for leather, and do not add 92483 onto the mainland route.",
+      "sources": [
+        { "url": "file://research/professions/profession_hooks.json", "label": "hook p2-083" },
+        { "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5", "label": "quest 92483 zone Zephras Isle" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Waldor's verified coordinates are the cave above Wailing Caverns. Use Camp Taurajo or Orgrimmar instead.",
+      "sources": [
+        { "url": "file://research/professions/trainers.json", "label": "Waldor 5784 at 45.97, 35.85" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Rogue",
+      "role": "dps",
+      "whyShort": "Same Waldor cave. It is off the Barrens road.",
+      "sources": [
+        { "url": "file://research/professions/trainers.json", "label": "Waldor 5784" }
+      ],
+      "verified": false
+    }
+  ]
+}

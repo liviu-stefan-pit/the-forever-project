@@ -1,0 +1,296 @@
+{
+  "routeId": "horde-40-60",
+  "mapId": 1418,
+  "opCounts": { "add": 0, "modify": 1, "reorder": 1, "drop": 18, "tip": 4, "total": 24 },
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "h4060:badlands:grind-speedrun-before-782",
+      "alsoStepIds": ["h4060:badlands:grind-balanced-before-782"],
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The modeled elemental and ogre grinds are a long camp. 2258, 710, and 782 already use those mobs.",
+      "original": "Do not grind rock elementals to 40 or Dustbelcher maulers to 41 as their own steps. Stop when the coyote, buzzard, shard, and Tho'grun objectives are finished.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 41-42 Badlands quest ids 782, 2202, 712, no separate grind step" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2258 needs 5 rock shards; 710 needs 10 small shards; 782 is Boss Tho'grun" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:badlands:a713",
+      "alsoStepIds": ["h4060:badlands:c713", "h4060:badlands:t713"],
+      "questId": 713,
+      "prereqQuestIds": [],
+      "whyShort": "Coolant Heads Prevail is frost oil, then a gyrochronatom and two potions. Nothing in the kill loop provides them.",
+      "original": "Skip Coolant Heads Prevail and do not pick up Gyro... What? or Liquid Stone.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=713", "label": "Wowhead Classic quest 713" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 713 next 714; 714 pre 713 next 715" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:badlands:t782",
+      "questId": 782,
+      "prereqQuestIds": [],
+      "whyShort": "782 is the one elite kill on the Kargath loop. The follow-ups are a second elemental camp, Uldaman parts, and two level 50 elementals.",
+      "original": "Turn in Broken Alliances and take Report to Helgrum for the flight to Stonard. Do not accept the second Broken Alliances, the rest of Study of the Elements: Rock, or Uldaman Reagent Run.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 782 next 793; 710 next 711; 2258 next 2202" },
+        { "url": "https://www.wowhead.com/classic/quest=793", "label": "Wowhead Classic quest 793" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a8365",
+      "alsoStepIds": ["h4060:tanaris:c8365", "h4060:tanaris:t8365"],
+      "questId": 8365,
+      "prereqQuestIds": [],
+      "whyShort": "Twenty pirate hats are a rare-drop stack. The shipment crate does not need them.",
+      "original": "Skip Pirate Hats Ahoy! Kill the Southsea counts for Southsea Shakedown while you loot Stoley's Shipment.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=8365", "label": "Wowhead Classic quest 8365" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 8365 objective is 20 Southsea Pirate Hats; 8366 is kill counts; 2873 is one shipment" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a351",
+      "questId": 351,
+      "prereqQuestIds": [],
+      "whyShort": "The Tanaris homing robot is a long escort. The beacon is optional loot, not a planned step.",
+      "original": "If the OOX-17/TN distress beacon drops, leave it. Do not start the escort.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=351", "label": "Wowhead Classic quest 351" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 351 sourceItem 8623, next 648" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a3520",
+      "alsoStepIds": ["h4060:tanaris:c3520"],
+      "questId": 3520,
+      "prereqQuestIds": [],
+      "whyShort": "Screecher spirits are a Feralas objective with no turn-in on the route, and the follow-up is a Zul'Farrak tablet pair.",
+      "original": "Skip Screecher Spirits. Do not add The Prophecy of Mosh'aru.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3520", "label": "Wowhead Classic quest 3520" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3520 next 3527; objective is 3 screecher spirits" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a2874",
+      "questId": 2874,
+      "prereqQuestIds": [2873],
+      "whyShort": "Deliver to MacKinley ends in Booty Bay. This route never goes back there after the port.",
+      "original": "Turn in Stoley's Shipment at Steamwheedle Port and do not take Deliver to MacKinley.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=2874", "label": "Wowhead Classic quest 2874" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2874 pre 2873, ends at MacKinley in Booty Bay" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a97540",
+      "alsoStepIds": ["h4060:tanaris:t97540"],
+      "questId": 97540,
+      "prereqQuestIds": [],
+      "whyShort": "Oasis walks the quenched turtle back across the desert. That escort is longer than the turn-in.",
+      "original": "Skip Oasis. Do not escort the turtle to Torta.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 97540 objective is to lead Tooga back to Torta; turn-in pin is Tanaris 31.8, 74.2" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:a96912",
+      "alsoStepIds": ["h4060:tanaris:t96912", "h4060:tanaris:a84138", "h4060:tanaris:a84135", "h4060:tanaris:t84135", "h4060:tanaris:a84137", "h4060:tanaris:t84137"],
+      "questId": 96912,
+      "prereqQuestIds": [],
+      "whyShort": "These four quests are level 60: a duel quota, a Winterspring handoff, and two mech errands.",
+      "original": "Skip Field of Honor: Week 1, Frosty Favors, Beach Bot, and Mechanical Romance on the 40-50 pass.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 96912, 84138, 84135, and 84137 are quest level 60" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:tanaris:t2605",
+      "questId": 2605,
+      "prereqQuestIds": [],
+      "whyShort": "The dew gland drops in the same valley as the thistleshrub kills. The quest after the town talk leaves Tanaris.",
+      "original": "Turn in The Thirsty Goblin at Marin. In Good Taste is only the talk to Sprinkle in Gadgetzan. Do not take Sprinkle's Secret Ingredient.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2605 next 2606; 2606 pre 2605 next 2641; 2641 is a violet tragan" },
+        { "url": "https://www.wowhead.com/classic/quest=2641", "label": "Wowhead Classic quest 2641" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:tanaris:travel-6e1a1d",
+      "questId": 95472,
+      "prereqQuestIds": [95321],
+      "whyShort": "Consolation Prize turns in at Powderfuse Port. The port boat is the ride, and that landing is not a Riverglades quest loop.",
+      "original": "The free boat at Steamwheedle Port returns to Powderfuse Port. Take it when Consolation Prize is in the bag, turn that quest in, and do not pick up other Riverglades quests there.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95472 pre 95321; turn-in goto is map 2548 at 77.1, 52.9" },
+        { "url": "https://www.curseforge.com/wow/addons/wow-pro-leveling", "label": "WoW-Pro Horde chapter 3 uses Tanaris map 1446 for the Steamwheedle turn-ins" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "h4060:tanaris:dungeon-8a15af",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "Zul'Farrak is one clear when a group is already there. Tablet quests and an instance script are a second project.",
+      "original": "One Zul'Farrak clear is enough if a group is forming. Do not run a dungeon script, and do not stay for tablet quests.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3527 pre 3520 and asks for the two Mosh'aru tablets" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink 42-44 treats Uldaman as its own dungeon visit, separate from the outdoor loop" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "h4060:riverglades:t95033",
+      "afterStepId": "h4060:tanaris:fly-f0a185",
+      "questId": 95033,
+      "prereqQuestIds": [],
+      "whyShort": "On the Other Side is turned in at Camp Mojache during the Riverglades stretch, then the route flies there again after Tanaris.",
+      "original": "Carry On the Other Side from Riverglades and turn it in to Witch Doctor Uzer'i on the Camp Mojache landing, before the Woodpaw and Gordunni accepts. The Shadowprey alternate does not pass this turn-in.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95033 has no pre; turn-in is Uzer'i, map 1444 at 74.4, 43.4" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 41-42 Feralas opens at Camp Mojache with 2987, 2975, and 2862" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a2822",
+      "alsoStepIds": ["h4060:feralas:c2822", "h4060:feralas:t2822"],
+      "questId": 2822,
+      "prereqQuestIds": [],
+      "whyShort": "Ten thick yeti hides are a hide farm, and the follow-up is ten Rage Scar hides.",
+      "original": "Skip The Mark of Quality and Improved Quality.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=2822", "label": "Wowhead Classic quest 2822" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2822 next 7734; 7734 pre 2822" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a2973",
+      "alsoStepIds": ["h4060:feralas:c2973", "h4060:feralas:t2973", "h4060:feralas:a2974", "h4060:feralas:c2974", "h4060:feralas:t2974"],
+      "questId": 2973,
+      "prereqQuestIds": [],
+      "whyShort": "Sprite darter wings are a camp, and the follow-up is twenty grimtotem horns plus an Orgrimmar crate.",
+      "original": "Skip A New Cloak's Sheen and both A Grim Discovery quests.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=2973", "label": "Wowhead Classic quest 2973" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2973 next 2974; 2974 pre 2973 next 2976" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a7730",
+      "alsoStepIds": ["h4060:feralas:c7730", "h4060:feralas:t7730", "h4060:feralas:a7731", "h4060:feralas:c7731", "h4060:feralas:t7731", "h4060:feralas:a7732"],
+      "questId": 7730,
+      "prereqQuestIds": [2903],
+      "whyShort": "Twenty carapaces are a bug stack. The report needs that stack and Stinglasher, and it is the Horde lead-in to March of the Silithid.",
+      "original": "Skip Zukk'ash Infestation, Stinglasher, and Zukk'ash Report. March of the Silithid then has no Horde prerequisite from this pass.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=7730", "label": "Wowhead Classic quest 7730" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 7730 and 7731 pre 2903; 7732 pre group 7730 and 7731; 4494 pre.single 32 or 7732" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a7721",
+      "alsoStepIds": ["h4060:feralas:c7721", "h4060:feralas:t7721", "h4060:feralas:a7003", "h4060:feralas:c7003", "h4060:feralas:t7003"],
+      "questId": 7721,
+      "prereqQuestIds": [],
+      "whyShort": "The Forgotten Coast pair is 10 elemental cores plus 15 shrinker residues on giants.",
+      "original": "Skip Fuel for the Zapping and Zapped Giants.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=7003", "label": "Wowhead Classic quest 7003" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 7003 is 15 miniaturization residues; 7721 is 10 water elemental cores" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a2766",
+      "questId": 2766,
+      "prereqQuestIds": [],
+      "whyShort": "The Feralas homing robot is a long escort from a random beacon.",
+      "original": "If the OOX-22/FE distress beacon drops, leave it. Do not start the escort.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=2766", "label": "Wowhead Classic quest 2766" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 2766 sourceItem 8705, next 2767" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:a3121",
+      "questId": 3121,
+      "prereqQuestIds": [],
+      "whyShort": "A Strange Request is accepted and never turned in. The return quest opens the muisek chain.",
+      "original": "Do not accept A Strange Request from Witch Doctor Uzer'i.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3121", "label": "Wowhead Classic quest 3121" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3121 next 3122; 3122 pre 3121" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:azshara:a4494",
+      "questId": 4494,
+      "prereqQuestIds": [7732],
+      "whyShort": "Horde March of the Silithid needs the Zukk'ash report. This pass drops that report.",
+      "original": "Do not accept March of the Silithid on this pass. Its Horde prerequisite is Zukk'ash Report, and that chain was dropped. The Alliance-style prerequisite 32 does not replace it.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4494 pre.single 32 or 7732, next 4496" },
+        { "url": "https://www.wowhead.com/classic/quest=4494", "label": "Wowhead Classic quest 4494" }
+      ],
+      "verified": false
+    }
+  ]
+}

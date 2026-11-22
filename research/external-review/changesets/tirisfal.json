@@ -1,0 +1,550 @@
+{
+  "routeId": "tirisfal-1-12",
+  "mapId": 1420,
+  "questieZoneId": 85,
+  "undercityMapId": 1458,
+  "verified": false,
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:056",
+      "questId": 375,
+      "why": "Long pelt farm: 5 Duskbat Pelts (item 2876 from npcs 1553 and 1554) plus Coarse Thread. Drop the whole quest.",
+      "originalText": "Accept The Chill of Death from Gretchen Dedmar",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 375, item 2876"},
+        {"url": "research/external/curseforge/openxp/OpenXP/Guides/forever/Horde-01-14_Undead.lua", "label": "OpenXP Horde 1-14 Undead (CC BY-NC-SA, id only)"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:071",
+      "questId": 375,
+      "why": "Same pelt farm as the accept. Drop with the rest of 375.",
+      "originalText": "Complete The Chill of Death",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 375"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:083",
+      "questId": 375,
+      "why": "Turn-in of the dropped pelt farm.",
+      "originalText": "Turn in The Chill of Death to Gretchen Dedmar",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 375"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:047",
+      "questId": 97558,
+      "why": "Three-camp drop farm: 8 Duskbat Wing Membranes, 6 Darkhound Hides, 3 Vile Fin skins. Drop the whole quest.",
+      "originalText": "Accept Hides for the Forsaken from Shelene Rhobart",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97558, items 278242 278243 278244"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:095",
+      "questId": 97558,
+      "why": "Completion of the three-camp hide farm.",
+      "originalText": "Complete Hides for the Forsaken",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97558"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "tirisfal-1-12:102",
+      "questId": 97558,
+      "why": "Turn-in of the dropped hide farm.",
+      "originalText": "Turn in Hides for the Forsaken to Shelene Rhobart",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97558"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 91285,
+      "prereqQuestIds": [],
+      "why": "Start of the Bandarion kill chain. Later step 91316 is 12 Sturdy Lumber, so the whole chain is dropped. Not in the route.",
+      "originalText": "Do not add Murlocs at the Gates",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91285 next 91294"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 91294,
+      "prereqQuestIds": [91285],
+      "why": "Talk step in the lumber chain. Dropped with 91316.",
+      "originalText": "Do not add Touring the Grounds",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91294"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 91316,
+      "prereqQuestIds": [91294],
+      "why": "Long lumber farm: 12 Sturdy Lumber from Shadowvale.",
+      "originalText": "Do not add Making Repairs",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91316"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 91317,
+      "prereqQuestIds": [91294],
+      "why": "Named kill plus head, same keep chain as the lumber farm. Drop the whole chain.",
+      "originalText": "Do not add The Tarnished",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91317"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 95803,
+      "prereqQuestIds": [91317],
+      "why": "Undercity hand-in that only exists after The Tarnished. Dropped with that chain.",
+      "originalText": "Do not add A Token of Good Faith",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95803"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 354,
+      "prereqQuestIds": [362],
+      "why": "Opens the Agamand family chain whose end is the Family Crypt grind. Drop 354, 355, and 408 together. Leave 362 in the route.",
+      "originalText": "Do not add Deaths in the Family",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 354 next 355"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 355,
+      "prereqQuestIds": [354, 362],
+      "why": "Talk bridge into The Family Crypt. Dropped with 408.",
+      "originalText": "Do not add Speak with Sevren",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 355 pre group 354 and 362"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 408,
+      "prereqQuestIds": [355],
+      "why": "Crypt grind: 8 Wailing Ancestors, 8 Rotting Ancestors, and Captain Dargol's skull. Level 13.",
+      "originalText": "Do not add The Family Crypt",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 408"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 357,
+      "prereqQuestIds": [405],
+      "why": "Lich spellbook starts an island chain (366, 409, 411). Not a short Tirisfal step. Leave the existing 405 Undercity turn-in.",
+      "originalText": "Do not add The Lich's Identity",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 357 next 366"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 366,
+      "prereqQuestIds": [357],
+      "why": "Return trip to Gunther's Retreat. Dropped with the lich island chain.",
+      "originalText": "Do not add Return the Book",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 366"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 409,
+      "prereqQuestIds": [366],
+      "why": "Summon fight on Gunther's island. Dropped with the lich chain.",
+      "originalText": "Do not add Proving Allegiance",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 409"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 411,
+      "prereqQuestIds": [409],
+      "why": "Nether Gem hand-in that only follows the island summon. Dropped with that chain.",
+      "originalText": "Do not add The Prodigal Lich Returns",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 411"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 369,
+      "prereqQuestIds": [368],
+      "why": "Four Vicious Night Web Spider venom samples. Sends the player back to the mine. Drop 369 and 492 together.",
+      "originalText": "Do not add the venom step of A New Plague",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 369 next 492"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 492,
+      "prereqQuestIds": [369],
+      "why": "Drink delivery that exists only after the venom farm.",
+      "originalText": "Do not add the drink step of A New Plague",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 492"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 99156,
+      "prereqQuestIds": [356],
+      "why": "Level 13 heart turn-in with a further next quest. Outside 1-12. 356 itself is a normal kill quest and is added separately.",
+      "originalText": "Do not add the second Rear Guard Patrol",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 99156 level 13"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 91858,
+      "prereqQuestIds": [],
+      "why": "Wolfsbane weapon chain. Req 18, level 22, turn-in is Trevan Rol in Silverpine, next is 91859. Hand to the Silverpine agent. Do not add in Tirisfal 1-12.",
+      "originalText": "Do not add Diplomatic Incident",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91858 next 91859"},
+        {"url": "research/external/web-notes/classes-hunter-druid-shaman-paladin.md", "label": "Undead paladin notes"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 590,
+      "prereqQuestIds": [8],
+      "afterStepId": "tirisfal-1-12:048",
+      "routes": ["balanced"],
+      "why": "Short duel. Prerequisite 8 is already turned in at the Brill inn. One run back to the Deathknell road. Skip on the speedrun because of the backtrack.",
+      "originalText": "Go back to Calvin Montague and defeat him for A Rogue's Deal",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 38.23, "y": 56.79, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 590, "label": "A Rogue's Deal"},
+        {"type": "complete", "questId": 590, "label": "A Rogue's Deal"},
+        {"type": "turnin", "questId": 590, "label": "A Rogue's Deal"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 590, npc 6784 spawn"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 360,
+      "prereqQuestIds": [359],
+      "afterStepId": "tirisfal-1-12:113",
+      "routes": ["balanced", "speedrun"],
+      "why": "Single talk back to Brill. 359 is already turned in at Linnea, and the route returns to town anyway.",
+      "originalText": "Accept Return to the Magistrate from Deathguard Linnea and turn it in to Magistrate Sevren",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 65.49, "y": 60.25, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 360, "label": "Return to the Magistrate"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 61.26, "y": 50.84, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 360, "label": "Return to the Magistrate"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 360, npcs 1495 and 1499"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 356,
+      "prereqQuestIds": [],
+      "afterStepId": "tirisfal-1-12:113",
+      "routes": ["balanced", "speedrun"],
+      "why": "Standard 8 and 8 kill quest from Linnea in the field just east of her camp. No item grind. Do not pick up 99156.",
+      "originalText": "Accept Rear Guard Patrol from Deathguard Linnea, kill 8 Bleeding Horrors and 8 Wandering Spirits, and turn it in",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 65.49, "y": 60.25, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 356, "label": "Rear Guard Patrol"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 76.2, "y": 60.1, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 356, "label": "Rear Guard Patrol"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 65.49, "y": 60.25, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 356, "label": "Rear Guard Patrol"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 356, npcs 1529 and 1532"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 99142,
+      "prereqQuestIds": [5482],
+      "afterStepId": "tirisfal-1-12:082",
+      "routes": ["balanced", "speedrun"],
+      "why": "Short node follow-up to Doom Weed, which the route already turns in. Five Tomb Weed from object 694732 in the same eastern field as Rear Guard Patrol.",
+      "originalText": "Accept Tomb Weed from Junior Apothecary Holland, pick 5 Tomb Weed, and turn it in",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 57.44, "y": 48.85, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 99142, "label": "Tomb Weed"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 75.8, "y": 61.1, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 99142, "label": "Tomb Weed"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 57.44, "y": 48.85, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 99142, "label": "Tomb Weed"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 99142, object 694732, npc 10665"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 371,
+      "prereqQuestIds": [370],
+      "afterStepId": "tirisfal-1-12:100",
+      "routes": ["balanced", "speedrun"],
+      "why": "Next Scarlet war step after 370, which is already in the route. One captain and five friars in the eastern camp, not an item farm.",
+      "originalText": "Accept At War With The Scarlet Crusade from Executor Zygand, kill Captain Vachon and 5 Scarlet Friars, and turn it in",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 60.59, "y": 51.76, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 371, "label": "At War With The Scarlet Crusade"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 78.82, "y": 56.13, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 371, "label": "At War With The Scarlet Crusade"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 60.59, "y": 51.76, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 371, "label": "At War With The Scarlet Crusade"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 371, npcs 1664 and 1538"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 372,
+      "prereqQuestIds": [371],
+      "afterStepId": "tirisfal-1-12:100",
+      "routes": ["balanced", "speedrun"],
+      "why": "Last short Scarlet war step. Captain Melrache and two bodyguards. Only add after 371.",
+      "originalText": "Accept At War With The Scarlet Crusade from Executor Zygand, kill Captain Melrache and his two bodyguards, and turn it in",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 60.59, "y": 51.76, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 372, "label": "At War With The Scarlet Crusade"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 79.52, "y": 25.15, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 372, "label": "At War With The Scarlet Crusade"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 60.59, "y": 51.76, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 372, "label": "At War With The Scarlet Crusade"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 372, npcs 1665 and 1660"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 91282,
+      "prereqQuestIds": [],
+      "afterStepId": "tirisfal-1-12:046",
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Short talk at level 8 from the same trainer who already receives 91209. Puts the paladin on Bandarion Keep for the level-12 lesson. No kill count. Do not continue into 91285.",
+      "originalText": "At level 8, accept A Second Home from Shari Stilwell and report to Breton Samuels at Bandarion Keep",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 60.22, "y": 52.66, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 91282, "label": "A Second Home"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 21.85, "y": 45.23, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 91282, "label": "A Second Home"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91282, npcs 246152 and 246349"},
+        {"url": "research/external/curseforge/wow-pro/WoWPro_Leveling/Forever/Horde/01_12_Hendo_Tirisfal_Glades.lua", "label": "WoW-Pro Forever Tirisfal (id and order only)"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94427,
+      "prereqQuestIds": [],
+      "afterStepId": "tirisfal-1-12:115",
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Level-12 Redemption opener. Questie prerequisite list is empty. Req 12. One talk from Danitha Morr to Tanis Alderwood during the Undercity visit already on the route.",
+      "originalText": "At level 12, accept A Lesson in Divinity from Danitha Morr and speak to Tanis Alderwood in the Undercity",
+      "actions": [
+        {"type": "goto", "at": {"mapId": 1420, "x": 22.09, "y": 44.66, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "accept", "questId": 94427, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1458, "x": 65.48, "y": 37.49, "zone": "Undercity", "exact": true}},
+        {"type": "turnin", "questId": 94427, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94427, npcs 246378 and 257648"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94434,
+      "prereqQuestIds": [94427],
+      "afterStepId": "tirisfal-1-12:115",
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Ten Linen Cloth to the same Undercity npc. Common cloth from Scarlets already killed for the war quests, not a rare blue and not its own camp.",
+      "originalText": "Bring 10 Linen Cloth to Tanis Alderwood",
+      "actions": [
+        {"type": "accept", "questId": 94434, "label": "A Lesson in Divinity"},
+        {"type": "complete", "questId": 94434, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1458, "x": 65.48, "y": 37.49, "zone": "Undercity", "exact": true}},
+        {"type": "turnin", "questId": 94434, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94434, item 2589"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94435,
+      "prereqQuestIds": [94434],
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Walk back from the Undercity linen turn-in to Danitha. Talk only. Do this before the zeppelin.",
+      "originalText": "Return to Danitha Morr at Bandarion Keep",
+      "actions": [
+        {"type": "accept", "questId": 94435, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 22.09, "y": 44.66, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 94435, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94435"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94436,
+      "prereqQuestIds": [94435],
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Same keep. Talk to Deathguard Billmuth a few steps from Danitha.",
+      "originalText": "Speak with Deathguard Billmuth at Bandarion Keep",
+      "actions": [
+        {"type": "accept", "questId": 94436, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 21.92, "y": 44.5, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 94436, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94436, npc 257655"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94438,
+      "prereqQuestIds": [94436],
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "One resurrection in Venomweb Vale. Same eastern side of Tirisfal as the Scarlet friars.",
+      "originalText": "Use the Symbol of Life on Deathguard Falgan in Venomweb Vale",
+      "actions": [
+        {"type": "accept", "questId": 94438, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 86.73, "y": 47.72, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 94438, "label": "A Lesson in Divinity"},
+        {"type": "turnin", "questId": 94438, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94438, npc 257663"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94440,
+      "prereqQuestIds": [94438],
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "One quest item, Scarlet Crusade Attack Plans, from Scarlet Zealots and Friars in the camp already used for quest 371. Turn in at Billmuth.",
+      "originalText": "Bring the Scarlet Crusade Attack Plans from the Venomweb Vale Scarlets to Deathguard Billmuth",
+      "actions": [
+        {"type": "accept", "questId": 94440, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 86.76, "y": 43.06, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "complete", "questId": 94440, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 21.92, "y": 44.5, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 94440, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94440, item 264693"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 94441,
+      "prereqQuestIds": [94440],
+      "classes": ["Paladin"],
+      "routes": ["balanced", "speedrun"],
+      "why": "Closing talk of the level-12 lesson. Chain ends here in Questie. Finish before the zeppelin.",
+      "originalText": "Speak with Danitha Morr in Bandarion Keep",
+      "actions": [
+        {"type": "accept", "questId": 94441, "label": "A Lesson in Divinity"},
+        {"type": "goto", "at": {"mapId": 1420, "x": 22.09, "y": 44.66, "zone": "Tirisfal Glades", "exact": true}},
+        {"type": "turnin", "questId": 94441, "label": "A Lesson in Divinity"}
+      ],
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94441"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "questId": 94427,
+      "classes": ["Paladin"],
+      "why": "Ordering constraint. Linen is in the Undercity, Falgan is in eastern Tirisfal, and the zeppelin leaves after the flight path. Do 94427-94434 on the Bethor visit, then 94435-94441, and only then take the zeppelin.",
+      "originalText": "Paladins: finish A Lesson in Divinity before the zeppelin. Hearth is in Brill, not at the keep.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94427 through 94441"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "tirisfal-1-12:118",
+      "why": "Silverpine handoff for the weapon chain that was not added here.",
+      "originalText": "Undead paladins: Wolfsbane starts later as Diplomatic Incident (91858) from Danitha Morr, req 18, and turns in at the Sepulcher.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 91858"}
+      ],
+      "verified": false
+    }
+  ]
+}

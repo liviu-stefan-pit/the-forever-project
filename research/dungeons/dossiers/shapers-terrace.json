@@ -1,0 +1,102 @@
+{
+  "id": "shapers-terrace",
+  "name": "Shaper's Terrace",
+  "forever": true,
+  "levels": [58, 60],
+  "runAt": 60,
+  "placement": "at60",
+  "entrance": {
+    "zone": "Un'Goro Crater",
+    "at": [48.1, 6.1],
+    "note": "Northern hills of Un'Goro Crater, titan temple above Marshal's Refuge. Catalog pin is reported (warcrafttavern.com/forever/guides/shapers-terrace/, verified: false). Horde access from the catalog: bring Un'Goro power crystals for the consoles inside (Blizzard)."
+  },
+  "travel": {
+    "nearestFlight": "Marshal's Refuge",
+    "fromHubs": ["Marshal's Refuge", "Gadgetzan", "Camp Mojache", "Thunder Bluff"],
+    "how": "Fly Marshal's Refuge in Un'Goro and climb the northern stairs to 48.1, 6.1; Gadgetzan is the usual Horde approach into the crater. Do not send Horde to Alliance Un'Goro camps."
+  },
+  "quests": [
+    {
+      "questId": 95928,
+      "name": "Crystalline Elements",
+      "xp": 0,
+      "giver": { "npc": "Mayena Earthseeker", "zone": "Mulgore", "hub": "Skywatcher Plateau", "at": [34.97, 22.08] },
+      "turnIn": { "npc": "Mayena Earthseeker", "zone": "Mulgore", "hub": "Skywatcher Plateau", "at": [34.97, 22.08] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:shapers-terrace:accept:95928", "turnin": "dungeons:forever:shapers-terrace:turnin:95928" },
+      "notes": "Bring a Moist Crystal, Charged Crystal, Noxious Crystal and Fiery Crystal from inside Shaper's Terrace. These are dungeon loot, not the outdoor Un'Goro Power Crystals used on consoles. Giver is in northwest Mulgore (Skywatcher Plateau), not Marshal's Refuge — drop unless the route already visits that plateau. Catalog/QDB req 55 / level 60. XP not in QuestieDB (use 0); unofficial web 17650."
+    },
+    {
+      "questId": 97049,
+      "name": "Essence of Seeping Slimes",
+      "xp": 0,
+      "giver": { "npc": "Chemist Fuely", "zone": "Undercity", "hub": "Undercity", "at": [47.45, 73.35] },
+      "turnIn": { "npc": "Chemist Fuely", "zone": "Undercity", "hub": "Undercity", "at": [47.45, 73.35] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:shapers-terrace:accept:97049", "turnin": "dungeons:forever:shapers-terrace:turnin:97049" },
+      "notes": "8 Seeping Slime Essence inside the terrace. Giver is Chemist Fuely in the Apothecarium, Undercity — Eastern Kingdoms, a cross-continent detour from Un'Goro. Planner should drop unless the 40-60 route is already in Undercity. Catalog/QDB req 55 / level 60. XP not in QuestieDB (use 0); unofficial web 17650."
+    },
+    {
+      "questId": 95926,
+      "name": "The Dark Crystal",
+      "xp": 0,
+      "giver": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:shapers-terrace:accept:95926", "turnin": "dungeons:forever:shapers-terrace:turnin:95926" },
+      "notes": "Drained Crystal Fragment near the Achromatic Crystal inside. Same Undercity Apothecarium hub as 97049; pick both up together if already there, otherwise drop. Catalog/QDB req 55 / level 60. XP not in QuestieDB (use 0); unofficial web 6600."
+    }
+  ],
+  "runStepId": "dungeons:forever:shapers-terrace:run",
+  "keys": [
+    "No door key. Catalog hordeAccess (Blizzard): bring Un'Goro power crystals for the consoles inside.",
+    "Unofficial web (ConquestCapped / GameTruth): each of four consoles eats 15 Power Crystals of one color (red/yellow/blue/green), 60 total, to summon Cinder, Bolt, Snowtalon, Vitrix and then Nanaya. That count is not in dungeons.json or QuestieDB. You can enter and fight without crystals; consoles/Nanaya need them.",
+    "J.D. Collie's outdoor Crystals of Power (4284) is a separate Un'Goro world quest, not a dungeon attunement."
+  ],
+  "prep": {
+    "group": "5-player, dungeon levels 58-60; this does not fit min+2 before 60 — run at 60 in the at-60 block.",
+    "consumables": ["food", "water", "healing potions", "mana drinks for healers"],
+    "hearth": "Marshal's Refuge",
+    "warnings": [
+      "placement at60: minimum 58 so min+2 is 60; do not splice an inline run in the 50s.",
+      "Bag Un'Goro Power Crystals before flying to the terrace if the group wants console bosses / Nanaya (catalog). Do not invent a required count from web guides.",
+      "Crystalline Elements items (Moist/Charged/Noxious/Fiery) are inside the dungeon and are not the outdoor power crystals.",
+      "All three Horde quest givers are off-zone (Mulgore and Undercity). Do not add a zeppelin from Un'Goro or a ride to Mulgore just for these; pick them up only at hubs the 40-60 route already visits.",
+      "Alliance terrace quests (Panic at the Digsite / Mapping the Way Forward / Digestible Research from Curator Thorius in Ironforge) are not in the Horde catalog — do not add them."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Un'Goro Crater",
+      "levelBand": [50, 55],
+      "why": "At 60 the terrace XP can replace leftover Marshal's Refuge kill loops on horde-40-60 that are already green.",
+      "questIds": [4289, 4290, 4291, 4301, 4501, 4503, 4504]
+    },
+    {
+      "zone": "Silithus",
+      "levelBand": [55, 60],
+      "why": "Silithus openers on horde-40-60 are the next outdoor band after Un'Goro; an at-60 terrace run can replace the first Cenarion Hold breadcrumb loop.",
+      "questIds": [8276, 8277, 8280]
+    }
+  ],
+  "sourceConflicts": [
+    "Power-crystal counts (15 per color / 60 total for Nanaya) come only from unofficial Forever web guides. Catalog/Blizzard only says to bring Un'Goro power crystals for the consoles. Count not stored as fact.",
+    "Forever quest XP is missing in QuestieDB; unofficial web XP noted per quest and not stored in xp.",
+    "Giver pins: dungeons.json Mayena 34.97, 22.08 vs ConquestCapped 34.8, 22.2. Used catalog/QuestieDB.",
+    "All Forever quests remain verified: false until checked in game."
+  ],
+  "notes": "Forever-only five-player dungeon in northern Un'Goro, levels 58-60. placement at60 and runAt 60 because min+2 is 60 — it does not fit the +2 rule before 60. Three Horde quests, all optional for the planner because none of the givers stand in Un'Goro (Mulgore Skywatcher Plateau; Undercity Apothecarium). Bring outdoor Power Crystals for consoles per the catalog. Dungeons-off: remaining Un'Goro and Silithus. XP 0 from repo sources."
+}

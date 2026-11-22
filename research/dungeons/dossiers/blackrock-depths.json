@@ -1,0 +1,805 @@
+{
+  "id": "blackrock-depths",
+  "name": "Blackrock Depths",
+  "forever": false,
+  "levels": [52, 60],
+  "runAt": 55,
+  "entrance": {
+    "zone": "Searing Gorge",
+    "at": [34.8, 85.3],
+    "note": "South of Thorium Point into Blackrock Mountain, then the BRD portal. Alternate Burning Steppes mouth 29.4, 38.3. Coordinates from research/dungeons/dungeons.json (Questie dungeons.lua)."
+  },
+  "travel": {
+    "nearestFlight": "Thorium Point",
+    "fromHubs": [
+      "Kargath",
+      "Thorium Point",
+      "Flame Crest"
+    ],
+    "how": "From Kargath ride west into Searing Gorge, grab Thorium Point, then south into Blackrock Mountain. From Flame Crest ride west to the mountain. Run BRD once around 55 while the 40-60 route is already in Searing Gorge / Burning Steppes — do not hearth back from Un'Goro for this instance."
+  },
+  "quests": [
+    {
+      "questId": 3443,
+      "name": "Forging the Shaft",
+      "xp": 4400,
+      "giver": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "turnIn": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "prerequisites": [
+        3442
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3443", "turnin": "dungeons:blackrock-depths:turnin:3443" },
+      "notes": "endgame/attunement/alliance/skip — Searing Gorge overworld chain (needs 3442 Divine Retribution); not a BRD interior quest."
+    },
+    {
+      "questId": 3452,
+      "name": "The Flame's Casing",
+      "xp": 4700,
+      "giver": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "turnIn": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "prerequisites": [
+        3443
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3452", "turnin": "dungeons:blackrock-depths:turnin:3452" },
+      "notes": "endgame/attunement/alliance/skip — Kalaran overworld chain; Twilight hammers, not inside BRD."
+    },
+    {
+      "questId": 3453,
+      "name": "The Torch of Retribution",
+      "xp": 470,
+      "giver": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "turnIn": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "prerequisites": [
+        3452
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3453", "turnin": "dungeons:blackrock-depths:turnin:3453" },
+      "notes": "endgame/attunement/alliance/skip — Kalaran talk step; not inside BRD."
+    },
+    {
+      "questId": 3454,
+      "name": "The Torch of Retribution",
+      "xp": 4700,
+      "giver": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "turnIn": { "npc": "Torch of Retribution", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.1] },
+      "prerequisites": [
+        3453
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3454", "turnin": "dungeons:blackrock-depths:turnin:3454" },
+      "notes": "endgame/attunement/alliance/skip — Kalaran torch object; not inside BRD."
+    },
+    {
+      "questId": 3462,
+      "name": "Squire Maltrake",
+      "xp": 470,
+      "giver": { "npc": "Kalaran Windblade", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.1, 39.0] },
+      "turnIn": { "npc": "Squire Maltrake", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.2, 39.0] },
+      "prerequisites": [
+        3454
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3462", "turnin": "dungeons:blackrock-depths:turnin:3462" },
+      "notes": "endgame/attunement/alliance/skip — Kalaran talk to Squire Maltrake; not inside BRD."
+    },
+    {
+      "questId": 3481,
+      "name": "Trinkets...",
+      "xp": 470,
+      "giver": { "npc": "Hoard of the Black Dragonflight", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [38.9, 39.0] },
+      "turnIn": { "npc": "Hoard of the Black Dragonflight", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [38.9, 39.0] },
+      "prerequisites": [
+        3463
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3481", "turnin": "dungeons:blackrock-depths:turnin:3481" },
+      "notes": "endgame/attunement/alliance/skip — Hoard chest after Set Them Ablaze; Searing Gorge overworld."
+    },
+    {
+      "questId": 3463,
+      "name": "Set Them Ablaze!",
+      "xp": 7600,
+      "giver": { "npc": "Squire Maltrake", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.2, 39.0] },
+      "turnIn": { "npc": "Squire Maltrake", "zone": "Searing Gorge", "hub": "Thorium Point", "at": [39.2, 39.0] },
+      "prerequisites": [
+        3462
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3463", "turnin": "dungeons:blackrock-depths:turnin:3463" },
+      "notes": "endgame/attunement/alliance/skip — Set Them Ablaze is four Searing Gorge towers, not BRD."
+    },
+    {
+      "questId": 3801,
+      "name": "Dark Iron Legacy",
+      "xp": 510,
+      "giver": { "npc": "Franclorn Forgewright", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [29.0, 28.9] },
+      "turnIn": { "npc": "Franclorn Forgewright", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [29.0, 28.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3801", "turnin": "dungeons:blackrock-depths:turnin:3801" },
+      "notes": "endgame/attunement/alliance/skip — Franclorn in Blackrock Mountain (not Kargath/Flame Crest/Thorium Point). Shadowforge Key lead-in; skip on a prison/arena leveling run."
+    },
+    {
+      "questId": 3802,
+      "name": "Dark Iron Legacy",
+      "xp": 5100,
+      "giver": { "npc": "Franclorn Forgewright", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [29.0, 28.9] },
+      "turnIn": { "npc": "Monument of Franclorn Forgewright", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [
+        3801
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3802", "turnin": "dungeons:blackrock-depths:turnin:3802" },
+      "notes": "endgame/attunement/alliance/skip — Shadowforge Key (Fineous Darkvire). Optional for a mid-50s leveling clear; needed for a full Emperor/Lyceum clear."
+    },
+    {
+      "questId": 3906,
+      "name": "Disharmony of Flame",
+      "xp": 5100,
+      "giver": { "npc": "Thunderheart", "zone": "Badlands", "hub": "Kargath", "at": [3.3, 48.3] },
+      "turnIn": { "npc": "Thunderheart", "zone": "Badlands", "hub": "Kargath", "at": [3.3, 48.3] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3906", "turnin": "dungeons:blackrock-depths:turnin:3906" },
+      "notes": "Kargath pickup. Kill Overmaster Pyron in the Blackrock Mountain quarry on the way in; unlocks 3907 and 3981/7201."
+    },
+    {
+      "questId": 3981,
+      "name": "Commander Gor'shak",
+      "xp": 5100,
+      "giver": { "npc": "Galamav the Marksman", "zone": "Badlands", "hub": "Kargath", "at": [6.0, 47.7] },
+      "turnIn": { "npc": "Commander Gor'shak", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [
+        3906
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3981", "turnin": "dungeons:blackrock-depths:turnin:3981" },
+      "notes": "Kargath (Galamav). Requires 3906. Find Commander Gor'shak in the Detention Block; bring a Prison Cell Key from High Interrogator Gerstahn."
+    },
+    {
+      "questId": 4081,
+      "name": "KILL ON SIGHT: Dark Iron Dwarves",
+      "xp": 5100,
+      "giver": { "npc": "WANTED", "zone": "Badlands", "hub": "Kargath", "at": [3.7, 47.4] },
+      "turnIn": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4081", "turnin": "dungeons:blackrock-depths:turnin:4081" },
+      "notes": "Kargath WANTED poster. Kill Anvilrage dwarves on the way through the instance."
+    },
+    {
+      "questId": 4136,
+      "name": "Ribbly Screwspigot",
+      "xp": 2650,
+      "giver": { "npc": "Yuka Screwspigot", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [66.1, 21.9] },
+      "turnIn": { "npc": "Yuka Screwspigot", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [66.1, 21.9] },
+      "prerequisites": [],
+      "breadcrumb": 4324,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4136", "turnin": "dungeons:blackrock-depths:turnin:4136" },
+      "notes": "Flame Crest (Yuka). Kill Ribbly in the Grim Guzzler. 4324 from Tanaris is a breadcrumb only (questie-db has no pre)."
+    },
+    {
+      "questId": 4324,
+      "name": "Yuka Screwspigot",
+      "xp": 2650,
+      "giver": { "npc": "Yorba Screwspigot", "zone": "Tanaris", "hub": "Tanaris", "at": [67.0, 24.0] },
+      "turnIn": { "npc": "Yuka Screwspigot", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [66.1, 21.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4324", "turnin": "dungeons:blackrock-depths:turnin:4324" },
+      "notes": "endgame/attunement/alliance/skip — Tanaris breadcrumb to Yuka at Flame Crest; skip, pick up 4136 directly."
+    },
+    {
+      "questId": 3982,
+      "name": "What Is Going On?",
+      "xp": 4100,
+      "giver": { "npc": "Commander Gor'shak", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "turnIn": { "npc": "Commander Gor'shak", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [
+        3981
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3982", "turnin": "dungeons:blackrock-depths:turnin:3982" },
+      "notes": "In-run follow-up at Gor'shak (defend him). Same prison visit as 3981. Stop here; 4001 sends you to Thrall."
+    },
+    {
+      "questId": 4001,
+      "name": "What Is Going On?",
+      "xp": 540,
+      "giver": { "npc": "Commander Gor'shak", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        3981,
+        3982
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4001", "turnin": "dungeons:blackrock-depths:turnin:4001" },
+      "notes": "endgame/attunement/alliance/skip — Turn in at Thrall in Orgrimmar; not completable inside one BRD leveling run."
+    },
+    {
+      "questId": 4002,
+      "name": "The Eastern Kingdom",
+      "xp": 540,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        4001
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4002", "turnin": "dungeons:blackrock-depths:turnin:4002" },
+      "notes": "endgame/attunement/alliance/skip — Thrall talk step; Princess/Emperor chain, leave the instance."
+    },
+    {
+      "questId": 4022,
+      "name": "A Taste of Flame",
+      "xp": 5450,
+      "giver": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "turnIn": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "prerequisites": [
+        3481
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4022", "turnin": "dungeons:blackrock-depths:turnin:4022" },
+      "notes": "endgame/attunement/alliance/skip — Cyrus Therepentous at Slither Rock (east Burning Steppes), needs the Kalaran trinket chain."
+    },
+    {
+      "questId": 4023,
+      "name": "A Taste of Flame",
+      "xp": 5450,
+      "giver": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "turnIn": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4023", "turnin": "dungeons:blackrock-depths:turnin:4023" },
+      "notes": "endgame/attunement/alliance/skip — Alternate Cyrus lead-in (Black Dragonflight Molt); not a hub pickup."
+    },
+    {
+      "questId": 4061,
+      "name": "The Rise of the Machines",
+      "xp": 5450,
+      "giver": { "npc": "Hierophant Theodora Mulvadania", "zone": "Badlands", "hub": "Kargath", "at": [3.0, 47.8] },
+      "turnIn": { "npc": "Hierophant Theodora Mulvadania", "zone": "Badlands", "hub": "Kargath", "at": [3.0, 47.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4061", "turnin": "dungeons:blackrock-depths:turnin:4061" },
+      "notes": "Kargath (Theodora). Overworld shards from Burning Steppes war golems before you enter; do it while the route is in Searing Gorge / Burning Steppes."
+    },
+    {
+      "questId": 4062,
+      "name": "The Rise of the Machines",
+      "xp": 1350,
+      "giver": { "npc": "Hierophant Theodora Mulvadania", "zone": "Badlands", "hub": "Kargath", "at": [3.0, 47.8] },
+      "turnIn": { "npc": "Lotwil Veriatus", "zone": "Badlands", "hub": "Badlands", "at": [25.9, 44.9] },
+      "prerequisites": [
+        4061
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4062", "turnin": "dungeons:blackrock-depths:turnin:4062" },
+      "notes": "Kargath follow-up of 4061; turn in at Lotwil on the Badlands Uldaman road (short ride from Kargath)."
+    },
+    {
+      "questId": 4082,
+      "name": "KILL ON SIGHT: High Ranking Dark Iron Officials",
+      "xp": 5450,
+      "giver": { "npc": "KILL ON SIGHT", "zone": "Badlands", "hub": "Kargath", "at": [3.9, 46.7] },
+      "turnIn": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "prerequisites": [
+        4081
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4082", "turnin": "dungeons:blackrock-depths:turnin:4082" },
+      "notes": "Kargath WANTED follow-up of 4081. High-ranking Anvilrage officers; same BRD clear."
+    },
+    {
+      "questId": 4201,
+      "name": "The Love Potion",
+      "xp": 5450,
+      "giver": { "npc": "Mistress Nagmara", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "turnIn": { "npc": "Mistress Nagmara", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4201", "turnin": "dungeons:blackrock-depths:turnin:4201" },
+      "notes": "endgame/attunement/alliance/skip — Mistress Nagmara inside; needs Gromsblood from Felwood plus her vial — extra travel."
+    },
+    {
+      "questId": 7201,
+      "name": "The Last Element",
+      "xp": 5450,
+      "giver": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "turnIn": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "prerequisites": [
+        3906
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:7201", "turnin": "dungeons:blackrock-depths:turnin:7201" },
+      "notes": "Kargath (Vivian Lagrave). Questie-db requires 3906 (dungeons.json listed none). Essence of the Elements from golems/elementals inside."
+    },
+    {
+      "questId": 4083,
+      "name": "The Spectral Chalice",
+      "xp": 560,
+      "giver": { "npc": "Spectral Chalice", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "turnIn": { "npc": "Spectral Chalice", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4083", "turnin": "dungeons:blackrock-depths:turnin:4083" },
+      "notes": "endgame/attunement/alliance/skip — Spectral Chalice inside; Dark Iron mining/blacksmith turn-in, not a hub quest."
+    },
+    {
+      "questId": 4123,
+      "name": "The Heart of the Mountain",
+      "xp": 5650,
+      "giver": { "npc": "Maxwort Uberglint", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 23.9] },
+      "turnIn": { "npc": "Maxwort Uberglint", "zone": "Burning Steppes", "hub": "Flame Crest", "at": [65.2, 23.9] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4123", "turnin": "dungeons:blackrock-depths:turnin:4123" },
+      "notes": "Flame Crest (Maxwort). Heart of the Mountain is in the Dark Coffer in the BRD vault (Relic Coffer Keys from dwarves). Catalog marks outside objectives; questie-db zone is Blackrock Depths."
+    },
+    {
+      "questId": 4133,
+      "name": "Vivian Lagrave",
+      "xp": 560,
+      "giver": { "npc": "Apothecary Zinge", "zone": "Undercity", "hub": "Undercity", "at": [50.1, 68.0] },
+      "turnIn": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4133", "turnin": "dungeons:blackrock-depths:turnin:4133" },
+      "notes": "endgame/attunement/alliance/skip — Undercity breadcrumb to Vivian; skip unless you pass Zinge."
+    },
+    {
+      "questId": 4134,
+      "name": "Lost Thunderbrew Recipe",
+      "xp": 5650,
+      "giver": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "turnIn": { "npc": "Shadowmage Vivian Lagrave", "zone": "Badlands", "hub": "Kargath", "at": [2.9, 47.8] },
+      "prerequisites": [],
+      "breadcrumb": 4133,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4134", "turnin": "dungeons:blackrock-depths:turnin:4134" },
+      "notes": "Kargath (Vivian Lagrave). Lost Thunderbrew Recipe in the Grim Guzzler. 4133 is an Undercity breadcrumb only (questie-db has no pre)."
+    },
+    {
+      "questId": 3907,
+      "name": "Disharmony of Fire",
+      "xp": 7300,
+      "giver": { "npc": "Thunderheart", "zone": "Badlands", "hub": "Kargath", "at": [3.3, 48.3] },
+      "turnIn": { "npc": "Thunderheart", "zone": "Badlands", "hub": "Kargath", "at": [3.3, 48.3] },
+      "prerequisites": [
+        3906
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:3907", "turnin": "dungeons:blackrock-depths:turnin:3907" },
+      "notes": "Kargath follow-up of 3906. Kill Lord Incendius inside on a standard BRD path."
+    },
+    {
+      "questId": 4024,
+      "name": "A Taste of Flame",
+      "xp": 6200,
+      "giver": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "turnIn": { "npc": "Cyrus Therepentous", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [95.1, 31.6] },
+      "prerequisites": [
+        4022,
+        4023
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4024", "turnin": "dungeons:blackrock-depths:turnin:4024" },
+      "notes": "endgame/attunement/alliance/skip — Bael'Gar inside after the Cyrus chain; long out-of-hub chain."
+    },
+    {
+      "questId": 4063,
+      "name": "The Rise of the Machines",
+      "xp": 6200,
+      "giver": { "npc": "Lotwil Veriatus", "zone": "Badlands", "hub": "Badlands", "at": [25.9, 44.9] },
+      "turnIn": { "npc": "Lotwil Veriatus", "zone": "Badlands", "hub": "Badlands", "at": [25.9, 44.9] },
+      "prerequisites": [
+        4062
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4063", "turnin": "dungeons:blackrock-depths:turnin:4063" },
+      "notes": "Dungeon step of the Kargath machine chain: Golem Lord Argelmach plus Intact Elemental Cores inside. Pickup at Lotwil, not the Kargath porch."
+    },
+    {
+      "questId": 4121,
+      "name": "Precarious Predicament",
+      "xp": 7750,
+      "giver": { "npc": "Grark Lorkrub", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [40.2, 34.2] },
+      "turnIn": { "npc": "Lexlort", "zone": "Badlands", "hub": "Kargath", "at": [5.9, 47.6] },
+      "prerequisites": [
+        4122
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4121", "turnin": "dungeons:blackrock-depths:turnin:4121" },
+      "notes": "endgame/attunement/alliance/skip — Grark escort starts in Burning Steppes and runs through BRD; not a hub pickup and not a normal dungeon clear."
+    },
+    {
+      "questId": 4122,
+      "name": "Grark Lorkrub",
+      "xp": 6200,
+      "giver": { "npc": "Lexlort", "zone": "Badlands", "hub": "Kargath", "at": [5.9, 47.6] },
+      "turnIn": { "npc": "Grark Lorkrub", "zone": "Burning Steppes", "hub": "Burning Steppes", "at": [40.2, 34.2] },
+      "prerequisites": [
+        4082
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4122", "turnin": "dungeons:blackrock-depths:turnin:4122" },
+      "notes": "endgame/attunement/alliance/skip — Find Grark in the world. Questie-db requires 4082; escort continues as 4121. Skip on a leveling BRD."
+    },
+    {
+      "questId": 4132,
+      "name": "Operation: Death to Angerforge",
+      "xp": 7750,
+      "giver": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "turnIn": { "npc": "Warlord Goretooth", "zone": "Badlands", "hub": "Kargath", "at": [5.8, 47.5] },
+      "prerequisites": [
+        4121
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4132", "turnin": "dungeons:blackrock-depths:turnin:4132" },
+      "notes": "endgame/attunement/alliance/skip — Angerforge kill requires the Grark escort chain (4121)."
+    },
+    {
+      "questId": 7562,
+      "name": "Mor'zul Bloodbringer",
+      "xp": 620,
+      "giver": { "npc": "Kurgul", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [47.5, 46.7] },
+      "turnIn": { "npc": "Mor'zul Bloodbringer", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.7, 31.6] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:7562", "turnin": "dungeons:blackrock-depths:turnin:7562" },
+      "notes": "endgame/attunement/alliance/skip — Warlock Dreadsteed breadcrumb from Orgrimmar; endgame class chain."
+    },
+    {
+      "questId": 7563,
+      "name": "Rage of Blood",
+      "xp": 7750,
+      "giver": { "npc": "Mor'zul Bloodbringer", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.7, 31.6] },
+      "turnIn": { "npc": "Mor'zul Bloodbringer", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.7, 31.6] },
+      "prerequisites": [],
+      "breadcrumb": 7562,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:7563", "turnin": "dungeons:blackrock-depths:turnin:7563" },
+      "notes": "endgame/attunement/alliance/skip — Warlock Dreadsteed; Winterspring blood."
+    },
+    {
+      "questId": 7564,
+      "name": "Wildeyes",
+      "xp": 3100,
+      "giver": { "npc": "Mor'zul Bloodbringer", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.7, 31.6] },
+      "turnIn": { "npc": "Gorzeeki Wildeyes", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.4, 31.6] },
+      "prerequisites": [
+        7563
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:7564", "turnin": "dungeons:blackrock-depths:turnin:7564" },
+      "notes": "endgame/attunement/alliance/skip — Warlock Dreadsteed; Gorzeeki at the Altar of Storms."
+    },
+    {
+      "questId": 4003,
+      "name": "The Royal Rescue",
+      "xp": 8050,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Princess Moira Bronzebeard", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "prerequisites": [
+        4002
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4003", "turnin": "dungeons:blackrock-depths:turnin:4003" },
+      "notes": "endgame/attunement/alliance/skip — Rescue Princess Moira for Thrall; second BRD trip after Orgrimmar, not one leveling run."
+    },
+    {
+      "questId": 4004,
+      "name": "The Princess Saved?",
+      "xp": 9950,
+      "giver": { "npc": "Princess Moira Bronzebeard", "zone": "Blackrock Depths", "hub": "Blackrock Depths", "at": null },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [
+        4003
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:4004", "turnin": "dungeons:blackrock-depths:turnin:4004" },
+      "notes": "endgame/attunement/alliance/skip — Return to Thrall; end of the Princess chain."
+    },
+    {
+      "questId": 9131,
+      "name": "Binding the Dreadnaught",
+      "xp": 6600,
+      "giver": { "npc": "Korfax, Champion of the Light", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [72.0, 48.5] },
+      "turnIn": { "npc": "Korfax, Champion of the Light", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [72.0, 48.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:blackrock-depths:accept:9131", "turnin": "dungeons:blackrock-depths:turnin:9131" },
+      "notes": "endgame/attunement/alliance/skip — Korfax at Light's Hope wants Dark Iron Scraps; Argent Dawn Dreadnaught (endgame), not a leveling BRD."
+    },
+    {
+      "questId": 7627,
+      "name": "Wheel of the Black March",
+      "xp": 6600,
+      "giver": { "npc": "Mor'zul Bloodbringer", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.7, 31.6] },
+      "turnIn": { "npc": "Gorzeeki Wildeyes", "zone": "Burning Steppes", "hub": "Blackrock Mountain", "at": [12.4, 31.6] },
+      "prerequisites": [
+        7564
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Warlock Dreadsteed mats from BRD; endgame."
+    },
+    {
+      "questId": 8946,
+      "name": "Proof of Life",
+      "xp": 6600,
+      "giver": { "npc": "Ysida Harmon", "zone": null, "hub": null, "at": null },
+      "turnIn": { "npc": "Anthion Harmon", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [26.1, 11.3] },
+      "prerequisites": [
+        8945
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Anthion/Valthalak extra-life chain."
+    },
+    {
+      "questId": 8961,
+      "name": "Three Kings of Flame",
+      "xp": 6600,
+      "giver": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8960,
+        9032
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Lord Valthalak / Dungeon Set 2."
+    },
+    {
+      "questId": 9015,
+      "name": "The Challenge",
+      "xp": 6600,
+      "giver": { "npc": "Falrin Treeshaper", "zone": "Dire Maul", "hub": "Dire Maul", "at": null },
+      "turnIn": { "npc": "Anthion Harmon", "zone": "Eastern Plaguelands", "hub": "Light's Hope Chapel", "at": [26.1, 11.3] },
+      "prerequisites": [
+        8950
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — The Challenge (Anthion); Dire Maul / extra-life, not leveling."
+    },
+    {
+      "questId": 9032,
+      "name": "Bodley's Unfortunate Fate",
+      "xp": 1650,
+      "giver": { "npc": "Mokvar", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [35.0, 38.3] },
+      "turnIn": { "npc": "Bodley", "zone": null, "hub": null, "at": [48.9, 63.9] },
+      "prerequisites": [
+        8957,
+        9016,
+        9017,
+        9018,
+        9019,
+        9020,
+        9021,
+        9022
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "endgame/attunement/alliance/skip — Bodley's Unfortunate Fate; Dungeon Set 2."
+    }
+  ],
+  "runStepId": "dungeons:blackrock-depths:run",
+  "keys": [
+    {
+      "name": "Shadowforge Key",
+      "questId": 3802,
+      "from": "Dark Iron Legacy (3801/3802), Franclorn Forgewright in Blackrock Mountain (Burning Steppes 29.0, 28.9 in questie-db)",
+      "opens": "Inner BRD gates (Shadowforge City, Lyceum, many shortcuts toward the Emperor)",
+      "note": "Optional on a prison / Ring of Law / Grim Guzzler leveling run. Take it if the group is clearing to Incendius or the Emperor."
+    },
+    {
+      "name": "Prison Cell Key",
+      "questId": null,
+      "from": "Drops from High Interrogator Gerstahn in the Detention Block",
+      "opens": "Prison cells (Commander Gor'shak, Kharan Mighthammer)",
+      "note": "Required to finish 3981/3982 on the Kargath prison path."
+    },
+    {
+      "name": "Relic Coffer Key",
+      "questId": null,
+      "from": "Drops from Shadowforge dwarves inside BRD",
+      "opens": "Relic coffers in the vault; needed for 4123 The Heart of the Mountain (Dark Coffer)",
+      "note": "Farm during the same clear as Heart of the Mountain."
+    }
+  ],
+  "prep": {
+    "group": "5-player, dungeon levels 52-60; do not enter before 55 (runAt). BRD is a long instance — one planned clear (prison + arena + Grim Guzzler, add Incendius/Argelmach if the group is fast), not a farm reset.",
+    "consumables": [
+      "food",
+      "water",
+      "healing potions",
+      "mana drinks for healers",
+      "fire resistance (Incendius, Lyceum)"
+    ],
+    "hearth": "Kargath",
+    "warnings": [
+      "One run around 55 while the route is in Searing Gorge / Burning Steppes. Do not travel back from Un'Goro.",
+      "Pick up Kargath posters and Thunderheart / Galamav / Vivian / Theodora quests, plus Flame Crest Maxwort and Yuka, before you enter.",
+      "Kill Pyron (3906) in the BRM quarry on the way in.",
+      "Decide the slice before you zone: prison (Gor'shak), Ring of Law, Grim Guzzler (Ribbly, Thunderbrew), vault (Heart), Incendius, Argelmach. Emperor / Princess is a later trip.",
+      "Skip Onyxia/Nefarian/MC attunement, Dreadsteed, Dungeon Set 2, and the Thrall Princess chain on this run.",
+      "Avoid patrolling golems; drink during the Ring of Law reset."
+    ],
+    "classQuests": [
+      "Warlock Dreadsteed lead-ins 7562-7564 and 7627 Wheel of the Black March (endgame; skip while leveling)."
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Searing Gorge",
+      "levelBand": [52, 55],
+      "why": "Thorium Point kill quests in horde-40-60.route.json (Fat Fingers, Fiery Menace, Incendosaurs, What the Flux) are the slow same-band outdoor XP a mid-50s BRD clear replaces.",
+      "questIds": [
+        7723,
+        7724,
+        7727,
+        7722
+      ]
+    },
+    {
+      "zone": "Burning Steppes",
+      "levelBand": [52, 56],
+      "why": "Flame Crest outdoor loops in horde-40-60.route.json sit next to the BRM entrance; BRD quest XP beats Broodling Essence and Tablet of the Seven.",
+      "questIds": [
+        4726,
+        4296
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "7201 The Last Element has prerequisites [] in dungeons.json but pre.single [3906] in content/questie-db; used questie-db.",
+    "4134 Lost Thunderbrew Recipe lists pre [4133] in dungeons.json; questie-db has no pre and marks 4133 breadcrumbFor 4134.",
+    "4136 Ribbly Screwspigot lists pre [4324] in dungeons.json; questie-db has no pre and marks 4324 breadcrumbFor 4136.",
+    "4122 Grark Lorkrub has pre [] in dungeons.json but pre.single [4082] in questie-db; used questie-db.",
+    "4001 What Is Going On? pre is [3982] in dungeons.json vs [3981, 3982] in questie-db; used questie-db.",
+    "4002 The Eastern Kingdom has xp null in dungeons.json vs 540 in questie-db; used 540.",
+    "4123 The Heart of the Mountain: dungeons.json/README treat objectives as outside the dungeon; questie-db zone is Blackrock Depths (Dark Coffer in the vault).",
+    "Franclorn Forgewright has zone/x/y null in dungeons.json; questie-db spawns him in Burning Steppes 28.96, 28.93 (Blackrock Mountain mouth). Used questie-db pin.",
+    "Endgame quests 7627, 8946, 8961, 9015, 9032 are in the dungeons.json BRD list but have no steps-v2 accept/turnin.",
+    "Kalaran 3443-3481 are packed as BRD prerequisites but every objective is Searing Gorge overworld (already on the 40-60 route as 3441/3442).",
+    "Classic Era XP in dungeons.json; README notes Forever may halve dungeon-quest bonus XP (unofficial). Amounts here are Classic Era base."
+  ],
+  "notes": "Horde-only leveling dossier. Pickup hubs are Kargath, Flame Crest, and Thorium Point at 50-56. BRD is huge: one mid-50s run while the route is in Searing Gorge / Burning Steppes, not a trip back from Un'Goro. Dungeons-off replacement: Burning Steppes, Western Plaguelands, Eastern Plaguelands and Winterspring. XP figures are Classic Era from dungeons.json / questie-db."
+}

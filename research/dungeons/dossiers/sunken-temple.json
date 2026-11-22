@@ -1,0 +1,1475 @@
+{
+  "id": "sunken-temple",
+  "name": "Sunken Temple (Temple of Atal'Hakkar)",
+  "forever": false,
+  "levels": [
+    50,
+    60
+  ],
+  "runAt": 53,
+  "entrance": {
+    "zone": "Swamp of Sorrows",
+    "at": [
+      69.9,
+      53.5
+    ],
+    "note": "Temple island in the Pool of Tears east of Stonard. Questie dungeon entrance; same coords on dungeons:sunken-temple:run. Dungeon minimum 50; runAt 53 (max(50+3, 53))."
+  },
+  "travel": {
+    "nearestFlight": "Stonard",
+    "fromHubs": [
+      "Stonard",
+      "Grom'gol",
+      "Kargath",
+      "Orgrimmar"
+    ],
+    "how": "Fly to Stonard in Swamp of Sorrows. Run east onto the Pool of Tears temple island (69.9, 53.5) and enter the Temple of Atal'Hakkar. Horde hub is Stonard; do not send pickups through Nethergarde or other Alliance Swamp of Sorrows points."
+  },
+  "quests": [
+    {
+      "prerequisites": [
+        1424,
+        1429
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:1444",
+        "turnin": "dungeons:sunken-temple:turnin:1444"
+      },
+      "notes": "Prerequisite. Full Atal'ai tablet chain in order: 1424 Pool of Tears (Fel'zerul, Stonard — collect Atal'ai Artifacts in the Pool of Tears) → 1429 The Atal'ai Exile (deliver to Hinterlands) → 1444. 1424 and 1429 were dropped from this pack; the 40-60 route owns them. Optional so the planner can drop instead of adding a Hinterlands detour. Speedrun true in catalog if already at the Exile. Classic Era base XP at 44.",
+      "questId": 1444,
+      "name": "Return to Fel'Zerul",
+      "xp": 3750,
+      "giver": {
+        "npc": "Atal'ai Exile",
+        "zone": "The Hinterlands",
+        "hub": "Shadra'Alor",
+        "at": [
+          33.8,
+          75.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Fel'zerul",
+        "zone": "Swamp of Sorrows",
+        "hub": "Stonard",
+        "at": [
+          47.9,
+          54.8
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        1424,
+        1429,
+        1444
+      ],
+      "breadcrumb": 1444,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:1445",
+        "turnin": "dungeons:sunken-temple:turnin:1445"
+      },
+      "notes": "Collect 20 Fetish of Hakkar inside. Cannot pick up without 1424→1429→1444. Optional: drop instead of a Hinterlands detour. Speedrun true in catalog once the chain is done. Classic Era base XP at 50.",
+      "questId": 1445,
+      "name": "The Temple of Atal'Hakkar",
+      "xp": 5900,
+      "giver": {
+        "npc": "Fel'zerul",
+        "zone": "Swamp of Sorrows",
+        "hub": "Stonard",
+        "at": [
+          47.9,
+          54.8
+        ]
+      },
+      "turnIn": {
+        "npc": "Fel'zerul",
+        "zone": "Swamp of Sorrows",
+        "hub": "Stonard",
+        "at": [
+          47.9,
+          54.8
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        3520,
+        3527
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:4787",
+        "turnin": "dungeons:sunken-temple:turnin:4787"
+      },
+      "notes": "Prerequisite for 3528. Yeh'kinya chain in order: 3520 Screecher Spirits (Yeh'kinya, Feralas screechers) → 3527 The Prophecy of Mosh'aru (Zul'Farrak tablets) → 4787 Ancient Egg (Jintha'Alor, Hinterlands). Optional: ZF + Hinterlands egg is a long out-of-zone chain. Speedrun false. Classic Era base XP at 50.",
+      "questId": 4787,
+      "name": "The Ancient Egg",
+      "xp": 5900,
+      "giver": {
+        "npc": "Yeh'kinya",
+        "zone": "Tanaris",
+        "hub": "Steamwheedle Port",
+        "at": [
+          67,
+          22.4
+        ]
+      },
+      "turnIn": {
+        "npc": "Yeh'kinya",
+        "zone": "Tanaris",
+        "hub": "Steamwheedle Port",
+        "at": [
+          67,
+          22.4
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Shaman",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8410",
+        "turnin": "dungeons:sunken-temple:turnin:8410"
+      },
+      "notes": "Shaman. Catalog XP 3550 vs QuestieDB 3800. Catalog first Horde giver is Haromm in Stonard (also Siln/Tigor Skychaser in TB); QuestieDB start is Beram Skychaser (3032, TB) and Sagorne Creststrider (13417, Org), not Haromm. Leads to 8412 then 8413. Optional class chain. Classic Era base XP at 50.",
+      "questId": 8410,
+      "name": "Elemental Mastery",
+      "xp": 3550,
+      "giver": {
+        "npc": "Haromm",
+        "zone": "Swamp of Sorrows",
+        "hub": "Stonard",
+        "at": [
+          48.2,
+          57.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains",
+        "hub": "Chillwind Point",
+        "at": [
+          80.5,
+          66.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3380",
+        "turnin": "dungeons:sunken-temple:turnin:3380"
+      },
+      "notes": "Horde breadcrumb Camp Mojache → Marvon at Broken Pillar, Tanaris. Low XP; speedrun false. Unlocks 3444 (Horde anyOf 3380; Alliance 3445 is missing from the Horde Questie import). Optional if you are not already in Feralas. Classic Era base XP at 51.",
+      "questId": 3380,
+      "name": "The Sunken Temple",
+      "xp": 3650,
+      "giver": {
+        "npc": "Witch Doctor Uzer'i",
+        "zone": "Feralas",
+        "hub": "Camp Mojache",
+        "at": [
+          74.4,
+          43.4
+        ]
+      },
+      "turnIn": {
+        "npc": "Marvon Rivetseeker",
+        "zone": "Tanaris",
+        "hub": "Broken Pillar",
+        "at": [
+          52.7,
+          45.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        3380
+      ],
+      "breadcrumb": 3380,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3444",
+        "turnin": "dungeons:sunken-temple:turnin:3444"
+      },
+      "notes": "Retrieve the Stone Circle from Marvon's workshop in Ratchet. Questie/catalog anyOf 3380 or 3445; Horde uses 3380. Unlocks 3446 and 3447. Optional with the Marvon set so the planner can drop a Feralas→Tanaris→Ratchet detour from Stonard. Classic Era base XP at 51.",
+      "questId": 3444,
+      "name": "The Stone Circle",
+      "xp": 4900,
+      "giver": {
+        "npc": "Marvon Rivetseeker",
+        "zone": "Tanaris",
+        "hub": "Broken Pillar",
+        "at": [
+          52.7,
+          45.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Marvon Rivetseeker",
+        "zone": "Tanaris",
+        "hub": "Broken Pillar",
+        "at": [
+          52.7,
+          45.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        3380,
+        3444
+      ],
+      "breadcrumb": 3380,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3446",
+        "turnin": "dungeons:sunken-temple:turnin:3446"
+      },
+      "notes": "Turn in at the Altar of Hakkar object inside. Needs 3444. Optional with the Marvon chain. Classic Era base XP at 51. Speedrun true in catalog once Marvon is done.",
+      "questId": 3446,
+      "name": "Into the Depths",
+      "xp": 4900,
+      "giver": {
+        "npc": "Marvon Rivetseeker",
+        "zone": "Tanaris",
+        "hub": "Broken Pillar",
+        "at": [
+          52.7,
+          45.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Altar of Hakkar",
+        "zone": "The Temple of Atal'Hakkar",
+        "hub": "Sunken Temple",
+        "at": null
+      }
+    },
+    {
+      "prerequisites": [
+        3380,
+        3444
+      ],
+      "breadcrumb": 3380,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3447",
+        "turnin": "dungeons:sunken-temple:turnin:3447"
+      },
+      "notes": "Turn in at the Idol of Hakkar object inside. Needs 3444. Optional with the Marvon chain. Classic Era base XP at 51.",
+      "questId": 3447,
+      "name": "Secret of the Circle",
+      "xp": 6100,
+      "giver": {
+        "npc": "Marvon Rivetseeker",
+        "zone": "Tanaris",
+        "hub": "Broken Pillar",
+        "at": [
+          52.7,
+          45.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Idol of Hakkar",
+        "zone": "The Temple of Atal'Hakkar",
+        "hub": "Sunken Temple",
+        "at": null
+      }
+    },
+    {
+      "prerequisites": [
+        4145,
+        4147
+      ],
+      "breadcrumb": 4147,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:4146",
+        "turnin": "dungeons:sunken-temple:turnin:4146"
+      },
+      "notes": "Collect Atal'ai Haze inside; turn in to Larion at Marshal's Refuge. Needs 4147. Full chain: 4145 Larion and Muigin (Un'Goro, owned by the 40-60 route) → 4147 Marvon's Workshop (Ratchet) → 4146. Optional: drop instead of an Un'Goro detour. Classic Era base XP at 52.",
+      "questId": 4146,
+      "name": "Zapper Fuel",
+      "xp": 5100,
+      "giver": {
+        "npc": "Liv Rizzlefix",
+        "zone": "The Barrens",
+        "hub": "Ratchet",
+        "at": [
+          62.5,
+          38.7
+        ]
+      },
+      "turnIn": {
+        "npc": "Larion",
+        "zone": "Un'Goro Crater",
+        "hub": "Marshal's Refuge",
+        "at": [
+          45.5,
+          8.7
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        4145
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:4147",
+        "turnin": "dungeons:sunken-temple:turnin:4147"
+      },
+      "notes": "Travel to Marvon's workshop in Ratchet. Needs 4145 Larion and Muigin (Un'Goro pest plants; dropped from this pack, 40-60 owns it). Optional with 4146. Classic Era base XP at 52. Speedrun false.",
+      "questId": 4147,
+      "name": "Marvon's Workshop",
+      "xp": 2550,
+      "giver": {
+        "npc": "Larion",
+        "zone": "Un'Goro Crater",
+        "hub": "Marshal's Refuge",
+        "at": [
+          45.5,
+          8.7
+        ]
+      },
+      "turnIn": {
+        "npc": "Liv Rizzlefix",
+        "zone": "The Barrens",
+        "hub": "Ratchet",
+        "at": [
+          62.5,
+          38.7
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Hunter",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8151",
+        "turnin": "dungeons:sunken-temple:turnin:8151"
+      },
+      "notes": "Hunter breadcrumb TB → Ogtinc in Azshara. Chain in order: 8151 → 8153 Courser Antlers → 8231 Wavethrashing → 8232 The Green Drake (Morphaz). Optional class chain / Azshara detour. Classic Era base XP at 52.",
+      "questId": 8151,
+      "name": "The Hunter's Charm",
+      "xp": 510,
+      "giver": {
+        "npc": "Kary Thunderhorn",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [
+          58.5,
+          88.3
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8151
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Hunter",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8153",
+        "turnin": "dungeons:sunken-temple:turnin:8153"
+      },
+      "notes": "Hunter. Perfect Courser Antlers in Azshara. Needs 8151. Optional class chain.",
+      "questId": 8153,
+      "name": "Courser Antlers",
+      "xp": 5100,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8153
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Hunter",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8231",
+        "turnin": "dungeons:sunken-temple:turnin:8231"
+      },
+      "notes": "Hunter. Wavethrasher scales on the Azshara coast. Needs 8153. Optional class chain.",
+      "questId": 8231,
+      "name": "Wavethrashing",
+      "xp": 5100,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8231
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Hunter",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8232",
+        "turnin": "dungeons:sunken-temple:turnin:8232"
+      },
+      "notes": "Hunter dungeon finale: Tooth of Morphaz inside. Needs 8151→8153→8231. Optional: drop instead of the Azshara hunter chain. Run tip: do not reset for a second Morphaz.",
+      "questId": 8232,
+      "name": "The Green Drake",
+      "xp": 6350,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Rogue",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8233",
+        "turnin": "dungeons:sunken-temple:turnin:8233"
+      },
+      "notes": "Rogue breadcrumb Org → Ravenholdt. Chain: 8233 → 8234 Sealed Azure Bag → 8235 Encoded Fragments → 8236 The Azure Key (Morphaz). Optional class chain.",
+      "questId": 8233,
+      "name": "A Simple Request",
+      "xp": 510,
+      "giver": {
+        "npc": "Ormok",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [
+          43.9,
+          54.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Lord Jorach Ravenholdt",
+        "zone": "Alterac Mountains",
+        "hub": "Ravenholdt Manor",
+        "at": [
+          86,
+          78.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8233
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Rogue",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8234",
+        "turnin": "dungeons:sunken-temple:turnin:8234"
+      },
+      "notes": "Rogue. Sealed Azure Bag in the wild; turn in to Xylem. Needs 8233. Optional class chain.",
+      "questId": 8234,
+      "name": "Sealed Azure Bag",
+      "xp": 5100,
+      "giver": {
+        "npc": "Lord Jorach Ravenholdt",
+        "zone": "Alterac Mountains",
+        "hub": "Ravenholdt Manor",
+        "at": [
+          86,
+          78.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8234
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Rogue",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8235",
+        "turnin": "dungeons:sunken-temple:turnin:8235"
+      },
+      "notes": "Rogue. Encoded Fragments in Azshara. Needs 8234. Optional class chain.",
+      "questId": 8235,
+      "name": "Encoded Fragments",
+      "xp": 5100,
+      "giver": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8235
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Rogue",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8236",
+        "turnin": "dungeons:sunken-temple:turnin:8236"
+      },
+      "notes": "Rogue dungeon finale: Azure Key from Morphaz; turn in at Ravenholdt. Optional: drop instead of the Alterac/Azshara rogue chain.",
+      "questId": 8236,
+      "name": "The Azure Key",
+      "xp": 6350,
+      "giver": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Lord Jorach Ravenholdt",
+        "zone": "Alterac Mountains",
+        "hub": "Ravenholdt Manor",
+        "at": [
+          86,
+          78.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Mage",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8250",
+        "turnin": "dungeons:sunken-temple:turnin:8250"
+      },
+      "notes": "Mage breadcrumb. Catalog giver Thurston Xane (TB); QuestieDB start list is mixed-faction trainers (331, 3047, 4567, 7311 Uthel'nay, 7312) and zone Stormwind City — Horde still uses a Horde trainer. Chain: 8250 → 8251 Magic Dust → 8252 Siren's Coral → 8253 Destroy Morphaz. Optional class chain.",
+      "questId": 8250,
+      "name": "Magecraft",
+      "xp": 510,
+      "giver": {
+        "npc": "Thurston Xane",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [
+          25.2,
+          21
+        ]
+      },
+      "turnIn": {
+        "npc": "Sanath Lim-yo",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem tower)",
+        "at": [
+          28.1,
+          50.1
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8250
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Mage",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8251",
+        "turnin": "dungeons:sunken-temple:turnin:8251"
+      },
+      "notes": "Mage. Glittering Dust in Azshara. Needs 8250. Optional class chain.",
+      "questId": 8251,
+      "name": "Magic Dust",
+      "xp": 5100,
+      "giver": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8251
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Mage",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8252",
+        "turnin": "dungeons:sunken-temple:turnin:8252"
+      },
+      "notes": "Mage. Enchanted Coral in Azshara. Needs 8251. Optional class chain.",
+      "questId": 8252,
+      "name": "The Siren's Coral",
+      "xp": 5100,
+      "giver": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8252
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Mage",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8253",
+        "turnin": "dungeons:sunken-temple:turnin:8253"
+      },
+      "notes": "Mage dungeon finale: Arcane Shard from Morphaz. Optional: drop instead of the Azshara mage chain.",
+      "questId": 8253,
+      "name": "Destroy Morphaz",
+      "xp": 6350,
+      "giver": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Archmage Xylem",
+        "zone": "Azshara",
+        "hub": "Azshara (Xylem)",
+        "at": [
+          29.2,
+          40.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Priest",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8254",
+        "turnin": "dungeons:sunken-temple:turnin:8254"
+      },
+      "notes": "Priest breadcrumb TB → Ogtinc. Chain: 8254 → 8255 Of Coursers We Know → 8256 Ichor of Undeath → 8257 Blood of Morphaz. Optional class chain.",
+      "questId": 8254,
+      "name": "Cenarion Aid",
+      "xp": 510,
+      "giver": {
+        "npc": "Malakai Cross",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [
+          24.6,
+          22.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8254
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Priest",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8255",
+        "turnin": "dungeons:sunken-temple:turnin:8255"
+      },
+      "notes": "Priest. Healthy Courser Glands in Azshara. Needs 8254. Optional class chain.",
+      "questId": 8255,
+      "name": "Of Coursers We Know",
+      "xp": 5100,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8255
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Priest",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8256",
+        "turnin": "dungeons:sunken-temple:turnin:8256"
+      },
+      "notes": "Priest. Ichor of Undeath; catalog marks insideDungeon true. Needs 8255. Optional class chain. Accepted before the run in steps-v2.",
+      "questId": 8256,
+      "name": "The Ichor of Undeath",
+      "xp": 5100,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8256
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Priest",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8257",
+        "turnin": "dungeons:sunken-temple:turnin:8257"
+      },
+      "notes": "Priest dungeon finale: Blood of Morphaz; turn in to Greta Mosshoof in Felwood. steps-v2 accept/turnin are after the run. Optional class chain.",
+      "questId": 8257,
+      "name": "Blood of Morphaz",
+      "xp": 6350,
+      "giver": {
+        "npc": "Ogtinc",
+        "zone": "Azshara",
+        "hub": "Azshara hinterlands",
+        "at": [
+          42.4,
+          42.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Greta Mosshoof",
+        "zone": "Felwood",
+        "hub": "Emerald Sanctuary",
+        "at": [
+          51.2,
+          82.1
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8410
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Shaman",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Shaman. Bloodshot Spider Eyes and Thick Black Claws in the Plaguelands/Alterac. Needs 8410. No steps-v2 ids. Optional: Alterac detour. Classic Era base XP at 52.",
+      "questId": 8412,
+      "name": "Spirit Totem",
+      "xp": 5100,
+      "giver": {
+        "npc": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains",
+        "hub": "Chillwind Point",
+        "at": [
+          80.5,
+          66.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains",
+        "hub": "Chillwind Point",
+        "at": [
+          80.5,
+          66.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8410,
+        8412
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Shaman",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Shaman dungeon finale: Amber/Blue/Green Voodoo Feathers inside. Needs 8412. No steps-v2 ids. Optional class chain.",
+      "questId": 8413,
+      "name": "Da Voodoo",
+      "xp": 6350,
+      "giver": {
+        "npc": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains",
+        "hub": "Chillwind Point",
+        "at": [
+          80.5,
+          66.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Bath'rah the Windwatcher",
+        "zone": "Alterac Mountains",
+        "hub": "Chillwind Point",
+        "at": [
+          80.5,
+          66.9
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8419",
+        "turnin": "dungeons:sunken-temple:turnin:8419"
+      },
+      "notes": "Warlock. Felcloth; catalog marks insideDungeon true. Alternate starter 8420 Hot and Itchy (Impsy). Chain anyOf 8419/8420 → 8421 The Wrong Stuff (Felwood) → 8422 Trolls of a Feather. Optional class chain.",
+      "questId": 8419,
+      "name": "An Imp's Request",
+      "xp": 3800,
+      "giver": {
+        "npc": "Kartosh",
+        "zone": "Swamp of Sorrows",
+        "hub": "Stonard",
+        "at": [
+          48.6,
+          55.6
+        ]
+      },
+      "turnIn": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8420",
+        "turnin": "dungeons:sunken-temple:turnin:8420"
+      },
+      "notes": "Warlock alternate starter at Impsy (same Felcloth as 8419). Optional class chain.",
+      "questId": 8420,
+      "name": "Hot and Itchy",
+      "xp": 3800,
+      "giver": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      },
+      "turnIn": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8419
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8421",
+        "turnin": "dungeons:sunken-temple:turnin:8421"
+      },
+      "notes": "Warlock. Rotting Wood and Bloodvenom Essence in Felwood. Catalog anyOf 8419 or 8420. steps-v2 accept/turnin after the run. Optional class chain.",
+      "questId": 8421,
+      "name": "The Wrong Stuff",
+      "xp": 5100,
+      "giver": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      },
+      "turnIn": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8421
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8422",
+        "turnin": "dungeons:sunken-temple:turnin:8422"
+      },
+      "notes": "Warlock dungeon finale: voodoo feathers inside. Needs 8421. Optional: drop instead of the Felwood warlock chain.",
+      "questId": 8422,
+      "name": "Trolls of a Feather",
+      "xp": 6350,
+      "giver": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      },
+      "turnIn": {
+        "npc": "Impsy",
+        "zone": "Felwood",
+        "hub": "Shatter Scar Vale",
+        "at": [
+          41.4,
+          45
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8423",
+        "turnin": "dungeons:sunken-temple:turnin:8423"
+      },
+      "notes": "Warrior. Kill Helboars in Blasted Lands. Chain: 8423 → 8424 War on the Shadowsworn → 8425 Voodoo Feathers. Optional class chain (Blasted Lands detour from Stonard).",
+      "questId": 8423,
+      "name": "Warrior Kinship",
+      "xp": 5100,
+      "giver": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      },
+      "turnIn": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8423
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8424",
+        "turnin": "dungeons:sunken-temple:turnin:8424"
+      },
+      "notes": "Warrior. Shadowsworn kills in Blasted Lands. Needs 8423. Optional class chain.",
+      "questId": 8424,
+      "name": "War on the Shadowsworn",
+      "xp": 5100,
+      "giver": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      },
+      "turnIn": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        8423,
+        8424
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:8425",
+        "turnin": "dungeons:sunken-temple:turnin:8425"
+      },
+      "notes": "Warrior dungeon finale: voodoo feathers inside. Optional class chain.",
+      "questId": 8425,
+      "name": "Voodoo Feathers",
+      "xp": 6350,
+      "giver": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      },
+      "turnIn": {
+        "npc": "Fallen Hero of the Horde",
+        "zone": "Swamp of Sorrows",
+        "hub": "Blasted Lands border",
+        "at": [
+          34.3,
+          66.1
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        1424,
+        1429
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:1446",
+        "turnin": "dungeons:sunken-temple:turnin:1446"
+      },
+      "notes": "Head of Jammal'an inside. Catalog/QuestieDB have no coded pre, but the giver is the Atal'ai Exile in the Hinterlands; reaching him is 1424 Pool of Tears → 1429 The Atal'ai Exile. Optional: drop instead of a Hinterlands detour. Speedrun true in catalog if you are already at the Exile. Classic Era base XP at 53.",
+      "questId": 1446,
+      "name": "Jammal'an the Prophet",
+      "xp": 6550,
+      "giver": {
+        "npc": "Atal'ai Exile",
+        "zone": "The Hinterlands",
+        "hub": "Shadra'Alor",
+        "at": [
+          33.8,
+          75.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Atal'ai Exile",
+        "zone": "The Hinterlands",
+        "hub": "Shadra'Alor",
+        "at": [
+          33.8,
+          75.2
+        ]
+      }
+    },
+    {
+      "prerequisites": [
+        3520,
+        3527,
+        4787
+      ],
+      "breadcrumb": 4787,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3528",
+        "turnin": "dungeons:sunken-temple:turnin:3528"
+      },
+      "notes": "Filled Egg of Hakkar. Full Yeh'kinya chain in order: 3520 Screecher Spirits → 3527 The Prophecy of Mosh'aru (Zul'Farrak) → 4787 The Ancient Egg (Jintha'Alor) → 3528. Catalog marks insideDungeon false. Optional: drop instead of ZF + Hinterlands. Speedrun false. Classic Era base XP at 53. Leads to 5065 (LBRS, out of this pack).",
+      "questId": 3528,
+      "name": "The God Hakkar",
+      "xp": 7900,
+      "giver": {
+        "npc": "Yeh'kinya",
+        "zone": "Tanaris",
+        "hub": "Steamwheedle Port",
+        "at": [
+          67,
+          22.4
+        ]
+      },
+      "turnIn": {
+        "npc": "Yeh'kinya",
+        "zone": "Tanaris",
+        "hub": "Steamwheedle Port",
+        "at": [
+          67,
+          22.4
+        ]
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:sunken-temple:accept:3373",
+        "turnin": "dungeons:sunken-temple:turnin:3373"
+      },
+      "notes": "Item-started inside from Essence of Eranikus. Turn in at the Essence Font object in the same lair. No out-of-zone chain. Low XP; speedrun false in catalog. Leads to 3374 (Itharius, Swamp of Sorrows) which is not in this pack. Classic Era base XP at 55.",
+      "questId": 3373,
+      "name": "The Essence of Eranikus",
+      "xp": 2800,
+      "giver": {
+        "npc": "Essence of Eranikus (item 10454)",
+        "zone": "The Temple of Atal'Hakkar",
+        "hub": "Sunken Temple",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Essence Font",
+        "zone": "The Temple of Atal'Hakkar",
+        "hub": "Sunken Temple",
+        "at": null
+      }
+    },
+    {
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Level-60 endgame/attunement. Catalog category endgame; route balanced/speedrun both false. Turn-in is Alliance Teldrassil. No steps-v2 ids. Outside 1-60 Horde leveling — drop it. Leads to 8734.",
+      "questId": 8733,
+      "name": "Eranikus, Tyrant of the Dream",
+      "xp": 6600,
+      "giver": {
+        "npc": "Malfurion Stormrage",
+        "zone": "The Temple of Atal'Hakkar",
+        "hub": "Sunken Temple",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Forest Wisp",
+        "zone": "Teldrassil",
+        "hub": "Teldrassil",
+        "at": [
+          37.5,
+          47.9
+        ]
+      }
+    }
+  ],
+  "runStepId": "dungeons:sunken-temple:run",
+  "keys": [],
+  "prep": {
+    "group": "Five-player. Run once at 53. Do not reset for a second Morphaz. At most five dungeon entries/resets per hour. Balcony troll ring must be cleared to unlock Jammal'an.",
+    "consumables": [
+      "food",
+      "water",
+      "healing potions",
+      "fire resist if you have it for dragonkin"
+    ],
+    "hearth": "Stonard",
+    "warnings": [
+      "Dungeon min 50 so runAt 53, cap 60.",
+      "Long Atal'ai tablet chain (1424→1429→1444→1445) and Jammal'an (1446 via the same Exile) are optional — drop them instead of a Hinterlands detour. 1424 and 1429 are owned by the 40-60 route.",
+      "Yeh'kinya / God Hakkar chain (3520→3527 ZF→4787 Jintha'Alor→3528) is optional. Do not add Zul'Farrak just for 3528.",
+      "Marvon chain (3380 Camp Mojache→3444 Ratchet chest→3446/3447) and Zapper Fuel (4145 Un'Goro→4147→4146) are optional out-of-zone sets.",
+      "Class Morphaz/voodoo-feather quests are optional; show only for that class. Do not reset for a second Morphaz.",
+      "Kill XP inside dungeons is increased; if any party member would get no XP because mobs are trivial, nobody gets XP (Forever hotfix)."
+    ],
+    "classQuests": [
+      "Hunter 8232 The Green Drake (pre 8151→8153→8231, Ogtinc Azshara, Morphaz)",
+      "Rogue 8236 The Azure Key (pre 8233→8234→8235, Ravenholdt/Xylem, Morphaz)",
+      "Mage 8253 Destroy Morphaz (pre 8250→8251→8252, Xylem)",
+      "Priest 8257 Blood of Morphaz (pre 8254→8255→8256, Ogtinc then Greta Mosshoof)",
+      "Shaman 8413 Da Voodoo (pre 8410→8412, Bath'rah; no steps-v2 ids)",
+      "Warlock 8422 Trolls of a Feather (pre 8419 or 8420 then 8421, Impsy Felwood)",
+      "Warrior 8425 Voodoo Feathers (pre 8423→8424, Fallen Hero of the Horde)"
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Un'Goro Crater",
+      "levelBand": [
+        50,
+        55
+      ],
+      "why": "Catalog dungeons-off replacement. Roll the Bones, Lar'korwi, Expedition Salvation, and the A-Me chase are the slow Marshal's Refuge work a Stonard ST run at 53 replaces.",
+      "questIds": [
+        3882,
+        4503,
+        3883,
+        3881,
+        4243,
+        4290,
+        4291,
+        4145
+      ]
+    },
+    {
+      "zone": "Felwood",
+      "levelBand": [
+        51,
+        54
+      ],
+      "why": "Catalog dungeons-off replacement. Jaedenar and corrupt-water completes are the other slow 51-54 Kalimdor work in the ST band.",
+      "questIds": [
+        5155,
+        6162,
+        5157,
+        5156
+      ]
+    },
+    {
+      "zone": "Azshara",
+      "levelBand": [
+        51,
+        53
+      ],
+      "why": "Same band. Kim'jael, Stealing Knowledge, and satyr kills are the slow Azshara work if ST is covering 53.",
+      "questIds": [
+        3517,
+        3601,
+        5534,
+        86746,
+        86777,
+        91568
+      ]
+    },
+    {
+      "zone": "The Hinterlands",
+      "levelBand": [
+        50,
+        51
+      ],
+      "why": "Jintha'Alor (Elder Torntusk / Dark Vessels / Separation Anxiety) is the slow same-band EK work; it is also the 4787 egg detour the ST dossier marks optional.",
+      "questIds": [
+        7845,
+        7846,
+        7847,
+        7849,
+        7850
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "8410 XP: dungeons.json 3550 vs QuestieDB 3800. Dossier uses catalog 3550.",
+    "8410 giver: dungeons.json lists Haromm (Stonard) first plus TB shaman trainers; QuestieDB start is 3032 Beram Skychaser and 13417 Sagorne Creststrider, not Haromm 986.",
+    "8250 giver: dungeons.json uses Thurston Xane (3049, TB); QuestieDB start is 331/3047/4567/7311/7312 and zone Stormwind City. Horde pack still uses the catalog Horde trainer.",
+    "1446 has empty prerequisites in dungeons.json and QuestieDB, but the only giver is the Atal'ai Exile in the Hinterlands (reached via 1424→1429). Dossier lists 1424, 1429 as access prerequisites and marks the quest optional.",
+    "3444 Questie pre.single is [3380, 3445] (any one). 3445 The Sunken Temple (Alliance) is missing from the Horde Questie import. Horde prerequisites are 3380 only.",
+    "8412 Spirit Totem and 8413 Da Voodoo are in dungeons.json/README but have no dungeons:sunken-temple accept/turnin steps.",
+    "8733 is in the catalog as endgame; no steps-v2 ids; turn-in is Teldrassil.",
+    "web/public/data/quests.json is a build output and was not present as a source file; XP and pres come from dungeons.json then content/questie-db."
+  ],
+  "notes": "Classic Temple of Atal'Hakkar, Horde only. Pickup Stonard / Un'Goro / Orgrimmar around 48-52. Dungeon min 50 so runAt 53 (max(50+3, 53)), cap 60. 39 catalog quests. Long Atal'ai tablet (1424→1429→1444→1445), Yeh'kinya (3520→3527→4787→3528), and Jammal'an (1446 via the Exile) chains are listed in order and marked optional so the planner can drop them instead of adding Hinterlands/ZF detours. Dungeons off: Felwood, Un'Goro, Azshara. Classic XP; Forever live XP unverified."
+}

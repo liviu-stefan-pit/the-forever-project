@@ -1,0 +1,342 @@
+{
+  "id": "razorfen-downs",
+  "name": "Razorfen Downs",
+  "forever": false,
+  "levels": [
+    35,
+    45
+  ],
+  "runAt": 38,
+  "entrance": {
+    "zone": "The Barrens",
+    "at": [
+      49,
+      93.9
+    ],
+    "note": "Southern Barrens at the Thousand Needles border, east of Razorfen Kraul and next to the Great Lift. QuestieDB dungeon entrance (verified in catalog). Myriam Moonsinger stands just outside at 49.0, 94.9."
+  },
+  "travel": {
+    "nearestFlight": "Camp Taurajo (Omusa Thunderhorn, The Barrens 44.45, 59.15)",
+    "fromHubs": [
+      "Thunder Bluff: fly Tal to Camp Taurajo, then run south-east to the Great Lift. Do not detour through Orgrimmar.",
+      "Camp Taurajo: run south-east along the road to 49.0, 93.9.",
+      "Freewind Post: the Great Lift dumps you next to the entrance; run north a few yards.",
+      "Undercity: pick up Bring the End (3341) from Andrew Brownell and turn in An Unholy Alliance (6522) at Varimathras while you are in the city — those givers are Undercity, not Orgrimmar."
+    ],
+    "how": "Fly to Camp Taurajo, then follow the southern Barrens road toward the Great Lift. The portal is at 49.0, 93.9. Hearth at Innkeeper Byula in Camp Taurajo, or keep an Undercity hearth if you are chaining 6522/3341 turn-ins."
+  },
+  "quests": [
+    {
+      "questId": 6626,
+      "name": "A Host of Evil",
+      "xp": 3450,
+      "giver": {
+        "npc": "Myriam Moonsinger",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [
+          49,
+          94.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Myriam Moonsinger",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [
+          49,
+          94.9
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:6626",
+        "turnin": "dungeons:razorfen-downs:turnin:6626"
+      },
+      "notes": "Kill Razorfen Battleguards, Thornweavers, and Death's Head Cultists outside the instance near the entrance. Balanced only. Catalog speedrun:false."
+    },
+    {
+      "questId": 6522,
+      "name": "An Unholy Alliance",
+      "xp": 3500,
+      "giver": {
+        "npc": "Small Scroll",
+        "zone": "Razorfen Kraul",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Varimathras",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          56.2,
+          92.2
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:6522",
+        "turnin": "dungeons:razorfen-downs:turnin:6522"
+      },
+      "notes": "Item-start: Small Scroll (17008) drops from Charlga Razorflank in Razorfen Kraul, then this pack turns it in at Varimathras. Leads to 6521. Balanced and speedrun."
+    },
+    {
+      "questId": 3523,
+      "name": "Scourge of the Downs",
+      "xp": 285,
+      "giver": {
+        "npc": "Belnistrasz",
+        "zone": "Razorfen Downs",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Belnistrasz",
+        "zone": "Razorfen Downs",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:3523",
+        "turnin": "dungeons:razorfen-downs:turnin:3523"
+      },
+      "notes": "Oathstone talk inside the instance. Low XP (285) but required to unlock Extinguishing the Idol (3525). Catalog route.speedrun is false; steps-v2 still emits it on speedrun because 3525 needs it."
+    },
+    {
+      "questId": 3341,
+      "name": "Bring the End",
+      "xp": 4300,
+      "giver": {
+        "npc": "Andrew Brownell",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          74,
+          33.3
+        ]
+      },
+      "turnIn": {
+        "npc": "Andrew Brownell",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          74,
+          33.3
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:3341",
+        "turnin": "dungeons:razorfen-downs:turnin:3341"
+      },
+      "notes": "Skull of the Coldbringer from Amnennar inside the instance. Pickup and turn-in are Undercity, not Orgrimmar. Rewards: Vanquisher's Sword, Amberglow Talisman."
+    },
+    {
+      "questId": 6521,
+      "name": "An Unholy Alliance",
+      "xp": 4200,
+      "giver": {
+        "npc": "Varimathras",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          56.2,
+          92.2
+        ]
+      },
+      "turnIn": {
+        "npc": "Varimathras",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [
+          56.2,
+          92.2
+        ]
+      },
+      "prerequisites": [
+        6522
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:6521",
+        "turnin": "dungeons:razorfen-downs:turnin:6521"
+      },
+      "notes": "Ambassador Malcin's Head. Catalog marks the kill as outside the dungeon (insideDungeon:false). Balanced only. Rewards: Skullbreaker, Nail Spitter, Zealot's Robe."
+    },
+    {
+      "questId": 3525,
+      "name": "Extinguishing the Idol",
+      "xp": 4250,
+      "giver": {
+        "npc": "Belnistrasz",
+        "zone": "Razorfen Downs",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Belnistrasz",
+        "zone": "Razorfen Downs",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "prerequisites": [
+        3523
+      ],
+      "breadcrumb": 3523,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:3525",
+        "turnin": "dungeons:razorfen-downs:turnin:3525"
+      },
+      "notes": "Escort/ritual inside the instance. Balanced and speedrun. Reward: Dragonclaw Ring. steps-v2 turn-in is Belnistrasz; QuestieDB and web/public/data/quests.json finish at object Belnistrasz's Brazier (152097)."
+    },
+    {
+      "questId": 97196,
+      "name": "The Coldbringer's Eye",
+      "xp": null,
+      "giver": {
+        "npc": "Sutara Plainstalker",
+        "zone": "Mulgore",
+        "hub": "Thunder Bluff",
+        "at": [
+          34.56,
+          23
+        ]
+      },
+      "turnIn": {
+        "npc": "Sutara Plainstalker",
+        "zone": "Mulgore",
+        "hub": "Thunder Bluff",
+        "at": [
+          34.56,
+          23
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-downs:accept:97196",
+        "turnin": "dungeons:razorfen-downs:turnin:97196"
+      },
+      "notes": "QuestieDB NPC 264078 spawns Mulgore 34.56, 23 (zone 215). No XP field. Recover item 276916 inside Razorfen Downs."
+    }
+  ],
+  "runStepId": "dungeons:razorfen-downs:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player. Gong event spawns waves: tank stacks them on one corner. Undead casters silence. Burn idol-ritual adds on Extinguishing the Idol; the escort must survive. Run once; do not reset for Agamaggan blood or extra scourge.",
+    "consumables": [],
+    "hearth": "Innkeeper Byula, Camp Taurajo 45.58, 59.04. Use Innkeeper Norman in Undercity (67.74, 37.89) if chaining 6522/3341.",
+    "warnings": [
+      "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026).",
+      "6522 starts from Charlga in Razorfen Kraul, not inside Downs. Bring the scroll if you already ran RFK.",
+      "Do not require an Orgrimmar trip. Myriam is at the Barrens entrance; 3341 and 6522 are Undercity."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Desolace",
+      "levelBand": [
+        32,
+        40
+      ],
+      "why": "README dungeons-off replacement. Desolace completes in levels-20-40.route-v2.json (naga, satyr, centaur, Hand of Iruxos) are the long Kalimdor work in the RFD band.",
+      "questIds": [
+        6142,
+        6143,
+        5381,
+        5741,
+        1434,
+        1435,
+        1365,
+        1366,
+        5501,
+        5561,
+        6161,
+        97265,
+        93225
+      ]
+    },
+    {
+      "zone": "Dustwallow Marsh",
+      "levelBand": [
+        35,
+        41
+      ],
+      "why": "README dungeons-off replacement. Brackenwall / Shady Rest / Theramore spy circuit in levels-20-40.route-v2.json, plus Firemane (1168) in horde-40-60.route.json.",
+      "questIds": [
+        1201,
+        1202,
+        1269,
+        1273,
+        1177,
+        1238,
+        1239,
+        1240,
+        1251,
+        1321,
+        1322,
+        1276,
+        1168
+      ]
+    },
+    {
+      "zone": "Stranglethorn Vale",
+      "levelBand": [
+        32,
+        44
+      ],
+      "why": "README dungeons-off replacement. First and second STV circuits in levels-20-40.route-v2.json, then the 8-minute Grom'gol / Booty Bay completes in horde-40-60.route.json that sit in the upper RFD band.",
+      "questIds": [
+        189,
+        605,
+        568,
+        569,
+        581,
+        213,
+        596,
+        582,
+        570,
+        584,
+        585,
+        586,
+        572,
+        589
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "3523 catalog route.speedrun is false (285 XP), but steps-v2 accept/turnin 3523 are on both balanced and speedrun because 3525 requires it.",
+    "3525 turn-in: steps-v2 and README turn in to Belnistrasz (NPC 8516). content/questie-db and web/public/data/quests.json end at object 152097 Belnistrasz's Brazier. dungeons.json lists both.",
+    "6522 is filed under razorfen-downs but the starter item drops in Razorfen Kraul (Charlga Razorflank). That is documented in dungeons.json droppedBy, not a data error.",
+    "6626 coordinates: dungeons.json/steps-v2 use 49.0, 94.9; web/public/data/quests.json uses 49.01, 94.94 (rounding only)."
+  ],
+  "notes": "Classic Horde dungeon. Catalog forever:false, verified:true against Questie Classic-era data (not live Forever). Pickup hub is Thunder Bluff, Undercity, and the Barrens/Thousand Needles border, levels 34-40. Dungeons-off: Desolace, Dustwallow Marsh, and Stranglethorn Vale."
+}

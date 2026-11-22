@@ -1,0 +1,606 @@
+{
+  "routeId": "horde-20-40-stonetalon-ashenvale",
+  "mapIds": { "stonetalon": 1442, "ashenvale": 1440, "barrens": 1413 },
+  "questieAreaIds": { "stonetalon": 406, "ashenvale": 331, "barrens": 17 },
+  "targetFile": "research/levels-20-40.route-v2.json",
+  "verified": false,
+  "speedrunQuestIds": [1060, 1061, 1062, 1068, 6548, 6629, 1483, 1093, 1094, 1095, 1096, 6461, 1063, 1064, 5881, 6562, 6442, 216, 6503, 25, 6383],
+  "droppedQuestIds": [6282, 6283, 6284, 6421, 6481, 6301, 6381, 6393, 1058, 1090, 1092, 1087, 1088, 1089, 86576, 97538, 78270, 79980, 6382, 2, 23, 24, 247, 6441, 6544, 6462, 6641, 6482, 6504, 6571, 6581, 6621, 95042],
+  "ops": [
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:to-stonetalon",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "Grimtotem and Windshear are already done in Late Barrens.",
+      "originalText": "From the western Barrens road, climb into Stonetalon. Clear the Grimtotem camp on the border, then work the Venture Co. and harpy circuits and take the Sun Rock Retreat flight path.",
+      "text": "Fly or ride to Sun Rock Retreat and get Tharm's flight path. Grimtotem (6548, 6629) and Windshear (1062, 1068, 1093) are already finished earlier in this file.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quests 6548, 6629, 1062, 1068, 1093 already on this route" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:accept-5881",
+      "questId": 5881,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "One letter at Maggran, turned in later at the Great Lift.",
+      "originalText": "Pick up Calling in the Reserves from Maggran Earthbinder in Stonetalon Mountains.",
+      "text": "Accept Calling in the Reserves from Maggran at 47.2, 61.16 on both routes. Turn it in to Grish Longrunner when this file reaches the Great Lift.",
+      "at": { "mapId": 1442, "x": 47.2, "y": 61.16, "zone": "Stonetalon Mountains", "npcId": 11860 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 5881, pre empty, end npc 12576" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "horde-20-40:accept-6562",
+      "questId": 6562,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Talk at Sun Rock. Turn in at Je'neu on the Zoram visit already in Ashenvale. Do not take 6563.",
+      "originalText": "Accept Trouble in the Deeps from Tsunaman, then turn it in to Je'neu Sancrea at Zoram'gar.",
+      "at": { "mapId": 1442, "x": 47.36, "y": 64.25, "zone": "Stonetalon Mountains", "npcId": 11862 },
+      "turnInAt": { "mapId": 1440, "x": 11.56, "y": 34.29, "zone": "Ashenvale", "npcId": 12736 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 6562, pre empty, next 6563, 435 xp" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-25",
+      "questId": 25,
+      "afterStepId": "horde-20-40:accept-6503",
+      "prereqQuestIds": [],
+      "whyShort": "Mastok stands in Splintertree. Accept before leaving for the lake.",
+      "originalText": "Pick up Stonetalon Standstill from Mastok Wrilehiss in Ashenvale.",
+      "text": "Accept Stonetalon Standstill from Mastok at 73.67, 60.0 on the first Splintertree stop, with Ashenvale Outrunners.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 25, npc 12737, pre empty" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:complete-25",
+      "questId": 25,
+      "afterStepId": "horde-20-40:turnin-6503",
+      "prereqQuestIds": [],
+      "whyShort": "Twelve elementals at Mystral Lake, before any satyr camp.",
+      "originalText": "Finish the work for Stonetalon Standstill — Befouled Water Elemental.",
+      "text": "Kill 12 Befouled Water Elementals at Mystral Lake and scout the gazebo before riding to the satyrs.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 3917 spawn 49.36, 69.85 area 331" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-25",
+      "questId": 25,
+      "prereqQuestIds": [],
+      "whyShort": "The kill pin is the lake, not Senani.",
+      "originalText": "Finish the work for Stonetalon Standstill — Befouled Water Elemental.",
+      "text": "Complete Stonetalon Standstill on the elementals at 49.36, 69.85.",
+      "at": { "mapId": 1440, "x": 49.36, "y": 69.85, "zone": "Ashenvale", "npcId": 3917 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 3917 spawns area 331" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:turnin-1060",
+      "questId": 6461,
+      "prereqQuestIds": [],
+      "whyShort": "Short border quests only. Not a second 15-20 Barrens guide.",
+      "originalText": "If the Barrens is crowded at 15-17, dip the south Stonetalon road for 6548, 6461, and 1483.",
+      "text": "At 15-17, 6548, 6461, and 1483 have no prerequisite. 1060 still needs 876. Skip 1058, Protect Kaya, Besseleth, and the peak.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6548, 6461, 1483 pre empty" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:turnin-6383",
+      "questId": 6383,
+      "prereqQuestIds": [],
+      "whyShort": "6383 is a turn-in with no xp. The three beasts are single spawns.",
+      "originalText": "Accept and turn in The Ashenvale Hunt at Senani. Do not camp Sharptalon, Shadumbra, or Ursangous.",
+      "text": "Turn in 6383 and leave. Sharptalon is level 31 at 74.98, 70.06, Shadumbra level 28 at 57.5, 56.05, Ursangous level 25 at 39.76, 65.21. Hand the items in later if one drops. 247 needs all three.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npcs 12676, 12677, 12678" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:turnin-25",
+      "questId": 1918,
+      "prereqQuestIds": [],
+      "whyShort": "The globe is a drop from the elementals you are already killing.",
+      "originalText": "If the Befouled Water Globe drops, accept 1918, turn it in at Mastok, accept 824, and turn 824 in at Je'neu with the Zoram quests.",
+      "text": "Do not camp elementals for the globe. If it drops, 824 turns in at 11.56, 34.29 on the Zoram trip. Do not accept 6563.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1918 item start 16408, next 824; 6563 is 20 sapphires" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6282",
+      "questId": 6282,
+      "prereqQuestIds": [],
+      "whyShort": "28 harpies only to open the Ripper elite.",
+      "originalText": "Pick up Harpies Threaten from Maggran Earthbinder.",
+      "text": "Drop 6282 and 6283.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6282 next 6283; npc 12579 rank 1" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6283",
+      "questId": 6283,
+      "prereqQuestIds": [6282],
+      "whyShort": "Bloodfury Ripper is a level 26 elite.",
+      "originalText": "Pick up Bloodfury Bloodline from Maggran Earthbinder.",
+      "text": "Drop 6283.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 12579 rank 1 at 30.75, 61.91" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6284",
+      "questId": 6284,
+      "prereqQuestIds": [],
+      "whyShort": "Besseleth is a level 21 elite.",
+      "originalText": "Pick up Arachnophobia from the wanted poster.",
+      "text": "Drop 6284.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 11921 rank 1" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6421",
+      "questId": 6421,
+      "prereqQuestIds": [],
+      "whyShort": "Ten crystals only to open Goggeroc.",
+      "originalText": "Pick up Boulderslide Ravine from Mor'rogal.",
+      "text": "Drop 6421 and 6481.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6421 next 6481" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6481",
+      "questId": 6481,
+      "prereqQuestIds": [6421],
+      "whyShort": "Goggeroc is a level 20 elite.",
+      "originalText": "Pick up Earthen Arise from Mor'rogal.",
+      "text": "Drop 6481.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 11920 rank 1 at 57.4, 89.4" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6301",
+      "questId": 6301,
+      "prereqQuestIds": [],
+      "whyShort": "Ten seeds, then ten mounds.",
+      "originalText": "Pick up Cycle of Rebirth from Tammra Windfield.",
+      "text": "Drop 6301 and 6381.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6301 next 6381, 10 Gaea Seeds" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6381",
+      "questId": 6381,
+      "prereqQuestIds": [6301],
+      "whyShort": "Plant follow-up of the seed farm.",
+      "originalText": "Pick up New Life from Tammra Windfield.",
+      "text": "Drop 6381.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6381 pre 6301" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6393",
+      "questId": 6393,
+      "prereqQuestIds": [],
+      "whyShort": "Ten Incendrites.",
+      "originalText": "Pick up Elemental War from Tsunaman.",
+      "text": "Drop 6393. Tsunaman is still the giver for 6562.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6393, 10 Incendrites" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1058",
+      "questId": 1058,
+      "prereqQuestIds": [],
+      "whyShort": "Sap, whiskers, 30 eyes, and a dragon scale.",
+      "originalText": "Pick up Jin'Zil's Forest Magic from Witch Doctor Jin'Zil.",
+      "text": "Drop 1058.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1058 item counts" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1090",
+      "questId": 1090,
+      "prereqQuestIds": [],
+      "whyShort": "Piznik mine escort.",
+      "originalText": "Pick up Gerenzo's Orders from Piznik.",
+      "text": "Drop 1090 and 1092.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1090 flags PARTY_ACCEPT, STAY_ALIVE" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1092",
+      "questId": 1092,
+      "prereqQuestIds": [1090],
+      "whyShort": "Follow-up of the Piznik escort.",
+      "originalText": "Pick up Gerenzo's Orders from Piznik to deliver to Ziz.",
+      "text": "Drop 1092.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1092 pre 1090" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1087",
+      "questId": 1087,
+      "prereqQuestIds": [],
+      "whyShort": "Peak quota, then Ordanus, then the Den.",
+      "originalText": "Pick up Cenarius' Legacy from Braelyn Firehand.",
+      "text": "Drop 1087, 1088, and 1089.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1087 next 1088 next 1089" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1088",
+      "questId": 1088,
+      "prereqQuestIds": [1087],
+      "whyShort": "Named kill in Ashenvale for a Stonetalon turn-in.",
+      "originalText": "Pick up Ordanus from Braelyn Firehand.",
+      "text": "Drop 1088.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 4273 at 62.05, 51.37 area 331" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1089",
+      "questId": 1089,
+      "prereqQuestIds": [1088],
+      "whyShort": "Three keys inside the Den.",
+      "originalText": "Pick up The Den from Braelyn Firehand.",
+      "text": "Drop 1089.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1089 pre 1088, three key items" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-86576",
+      "questId": 86576,
+      "prereqQuestIds": [],
+      "whyShort": "Fifteen Glittering Sunstones.",
+      "originalText": "Pick up Bloodfury Trinkets from Maggran Earthbinder.",
+      "text": "Drop 86576.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 86576, 15 of item 277936" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-97538",
+      "questId": 97538,
+      "prereqQuestIds": [],
+      "whyShort": "Thirty pods and a Thunder Bluff turn-in.",
+      "originalText": "Pick up Pigments for Paints from Tah Winterhoof.",
+      "text": "Drop 97538.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97538, 30 Mirkweed Pods" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-78270",
+      "questId": 78270,
+      "prereqQuestIds": [],
+      "whyShort": "Rogue quest, no xp, objective text points at Shadowfang Keep.",
+      "originalText": "Pick up Goblin Lockpicks from Veenix.",
+      "text": "Drop 78270 from this open-world stretch.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 78270 classes 8, objectivesText Shadowfang Keep" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-79980",
+      "questId": 79980,
+      "prereqQuestIds": [79192],
+      "whyShort": "195 xp, then a level 32 chain out of the zone.",
+      "originalText": "Pick up Scramble from Pocket Litter.",
+      "text": "Drop 79980. Do not add 79974 or 79975. Keep 79192.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 79980 next 79974 next 79975" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6382",
+      "questId": 6382,
+      "prereqQuestIds": [882],
+      "whyShort": "882 is not on this route file.",
+      "originalText": "Pick up The Ashenvale Hunt from Jorn Skyseer.",
+      "text": "Drop 6382 and its turn-in. 6383 does not require it.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6382 pre.single 882; 6383 pre empty" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-23",
+      "questId": 23,
+      "prereqQuestIds": [6383],
+      "whyShort": "Single level 25 bear spawn.",
+      "originalText": "Finish Ursangous's Paw.",
+      "text": "Drop 23.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 12678 one spawn" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-24",
+      "questId": 24,
+      "prereqQuestIds": [6383],
+      "whyShort": "Single level 28 cat spawn.",
+      "originalText": "Finish Shadumbra's Head.",
+      "text": "Drop 24.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 12677 one spawn" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-2",
+      "questId": 2,
+      "prereqQuestIds": [6383],
+      "whyShort": "Single level 31 hippogryph spawn.",
+      "originalText": "Finish Sharptalon's Claw.",
+      "text": "Drop 2.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 12676 one spawn" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-247",
+      "questId": 247,
+      "prereqQuestIds": [2, 23, 24],
+      "whyShort": "Needs all three hunt items.",
+      "originalText": "Pick up The Hunt Completed from Senani Thunderheart.",
+      "text": "Drop 247.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 247 pre.group 2, 23, 24" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6441",
+      "questId": 6441,
+      "prereqQuestIds": [],
+      "whyShort": "Sixteen satyr horns.",
+      "originalText": "Pick up Satyr Horns from Pixel.",
+      "text": "Drop 6441.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6441, 16 horns" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6544",
+      "questId": 6544,
+      "prereqQuestIds": [],
+      "whyShort": "Escort.",
+      "originalText": "Pick up Torek's Assault from Torek.",
+      "text": "Drop 6544.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6544 PARTY_ACCEPT" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6462",
+      "questId": 6462,
+      "prereqQuestIds": [],
+      "whyShort": "Eight charms in the troll cave.",
+      "originalText": "Pick up Troll Charm from Mitsuwa.",
+      "text": "Drop 6462.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6462, 8 charms" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6641",
+      "questId": 6641,
+      "prereqQuestIds": [],
+      "whyShort": "Escort.",
+      "originalText": "Pick up Vorsha the Lasher from Muglash.",
+      "text": "Drop 6641.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6641 PARTY_ACCEPT" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6482",
+      "questId": 6482,
+      "prereqQuestIds": [],
+      "whyShort": "Escort.",
+      "originalText": "Pick up Freedom to Ruul from Ruul Snowhoof.",
+      "text": "Drop 6482.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6482 PARTY_ACCEPT" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6504",
+      "questId": 6504,
+      "prereqQuestIds": [],
+      "whyShort": "Twelve pages into three chapters.",
+      "originalText": "Pick up The Lost Pages from Gurda Ragescar.",
+      "text": "Drop 6504.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6504, 12 pages" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6571",
+      "questId": 6571,
+      "prereqQuestIds": [],
+      "whyShort": "Four supply items from different camps.",
+      "originalText": "Pick up Warsong Supplies from Locke Okarr.",
+      "text": "Drop 6571 and 6581.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6571 four items" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6581",
+      "questId": 6581,
+      "prereqQuestIds": [],
+      "whyShort": "Saw-blade errand with no xp.",
+      "originalText": "Pick up Warsong Saw Blades from Pixel.",
+      "text": "Drop 6581.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6581 xp empty" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6621",
+      "questId": 6621,
+      "prereqQuestIds": [216],
+      "whyShort": "Banner is a second trip after 216 is already turned in at Zoram.",
+      "originalText": "Pick up King of the Foulweald from Karang Amakkar.",
+      "text": "Drop 6621. Keep 216.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6621 pre 216" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-95042",
+      "questId": 95042,
+      "prereqQuestIds": [],
+      "whyShort": "One Kor Gem.",
+      "originalText": "Pick up Seeking the Kor Gem from Ulric Frostveil.",
+      "text": "Drop 95042.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 95042 item 6995" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    }
+  ]
+}

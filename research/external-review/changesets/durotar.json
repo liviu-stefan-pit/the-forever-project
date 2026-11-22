@@ -1,0 +1,347 @@
+{
+  "routeId": "durotar-1-12",
+  "mapId": 1411,
+  "verified": false,
+  "ops": [
+    {
+      "op": "add",
+      "questId": 97279,
+      "stepId": "durotar-1-12:004",
+      "reason": "Wayward Weapons is turned in at step 012 with no complete. Weapons are on the valley floor during Cutting Teeth.",
+      "prereqQuestIds": [],
+      "whyShort": "Six ground spawns in the same boar field. One extra loot pass, no new camp.",
+      "text": "Pick up Abandoned Training Weapons off the valley floor while you kill Mottled Boars.",
+      "goto": { "mapId": 1411, "x": 44.6, "y": 64.6, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 673476 spawns, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=97279", "label": "Wowhead quest 97279" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "questId": 97279,
+      "stepId": "durotar-1-12:012",
+      "reason": "Turn-in currently happens before any weapons are looted. Move it to the Gornek hand-in after the new complete.",
+      "prereqQuestIds": [],
+      "whyShort": "Kzan Thornslash is inside the Den, which the route already visits to turn in Cutting Teeth.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=97279", "label": "Wowhead quest 97279" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 4402,
+      "stepId": "durotar-1-12:011",
+      "reason": "Galgar's Cactus Apple Surprise is turned in at step 013 with no complete.",
+      "prereqQuestIds": [788],
+      "whyShort": "Cactus Apples sit on the same ground as the scorpid and peon loop.",
+      "text": "Loot Cactus Apples from the plants around the valley while you finish the scorpid tails.",
+      "goto": { "mapId": 1411, "x": 44.7, "y": 64.8, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 171938 spawns, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=4402", "label": "Wowhead quest 4402" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "questId": 4402,
+      "stepId": "durotar-1-12:013",
+      "reason": "Turn-in sits two steps after the accept, before the player has left the Den to pick apples. Move it to after the scorpid and peon steps.",
+      "prereqQuestIds": [788],
+      "whyShort": "Galgar stands at the Den entrance, already on the return path.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4402", "label": "Wowhead quest 4402" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 6394,
+      "stepId": "durotar-1-12:033",
+      "reason": "Thazz'ril's Pick is accepted and turned in with no complete. The pick is in the cave on the medallion trip.",
+      "prereqQuestIds": [5441],
+      "whyShort": "One object at the cave pool, same run as Yarrog Baneshadow.",
+      "text": "Grab Thazz'ril's Pick beside the pool in the Burning Blade cave before you kill Yarrog.",
+      "goto": { "mapId": 1411, "x": 43.73, "y": 53.79, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 178087 spawn, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=6394", "label": "Wowhead quest 6394" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "questId": 6394,
+      "stepId": "durotar-1-12:035",
+      "reason": "Turn-in currently follows the medallion turn-in, but the pick was never looted. Keep the turn-in after the new cave complete.",
+      "prereqQuestIds": [5441],
+      "whyShort": "Foreman Thazz'ril is on the Den exit the route already uses.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=6394", "label": "Wowhead quest 6394" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "questId": 817,
+      "stepId": "durotar-1-12:098",
+      "reason": "Practical Prey is turned in, then Forgotten Loa Idols, Bloodtalon Matriarch, and A Pain in the Neck are still completed on the isles.",
+      "prereqQuestIds": [],
+      "whyShort": "One Sen'jin visit after every isle objective, instead of a second boat trip.",
+      "text": "Finish idols, the matriarch egg, and the enchanting residue on the isles before any Sen'jin turn-in.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=817", "label": "Wowhead quest 817" },
+        { "url": "https://www.wowhead.com/classic/quest=97225", "label": "Wowhead quest 97225" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "questId": 99123,
+      "stepId": "durotar-1-12:055",
+      "reason": "Complete step has no goto. The escort starts on Pal'juh inside the kolkar camp.",
+      "prereqQuestIds": [],
+      "whyShort": "Same camp as the three attack plans. Escort ends at Sen'jin, which is the next turn-in anyway.",
+      "goto": { "mapId": 1411, "x": 46.3, "y": 78.6, "zone": "Durotar" },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 275811 spawn, zone 14" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "questId": 96873,
+      "stepId": "durotar-1-12:101",
+      "reason": "Complete step has no goto. Residue comes from Hexed Pendants on the Echo Isles trolls.",
+      "prereqQuestIds": [],
+      "whyShort": "Same trolls as Zalazane. Only enchanters can disenchant the pendants.",
+      "text": "Disenchant Hexed Pendants from the isle trolls until you have three Luminous Residue. Skip this if you are not an enchanter.",
+      "goto": { "mapId": 1411, "x": 67.7, "y": 84.0, "zone": "Durotar" },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 96873 requiredSkill Enchanting" },
+        { "url": "https://www.wowhead.com/classic/quest=96873", "label": "Wowhead quest 96873" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "questId": 831,
+      "stepId": "durotar-1-12:126",
+      "reason": "The Orgrimmar entry pin uses Doras's indoor coordinates on the Durotar map, which lands in the Valley of Trials.",
+      "prereqQuestIds": [830],
+      "whyShort": "Replaces a bad pin with the grunt on the Durotar road at the city.",
+      "goto": { "mapId": 1411, "x": 50.5, "y": 13.5, "zone": "Durotar" },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 3296 spawn, zone 14" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1516,
+      "stepId": null,
+      "reason": "Shaman Call of Earth is done on the Felstalkers in the Burning Blade cave. The route never picks it up.",
+      "prereqQuestIds": [],
+      "whyShort": "Two hooves from mobs already pulled for the medallion. Giver is beside Zureetha.",
+      "text": "Shamans: take Call of Earth from Canaga and loot two Felstalker hooves in the cave.",
+      "goto": { "mapId": 1411, "x": 42.4, "y": 69.2, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Shaman"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 5887 and Felstalker 3102, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=1516", "label": "Wowhead quest 1516" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1517,
+      "stepId": null,
+      "reason": "Follow-up after 1516. Drink the Earth Sapta at Spirit Rock before leaving the valley.",
+      "prereqQuestIds": [1516],
+      "whyShort": "One hill south of the Den, then straight back to Canaga.",
+      "text": "Shamans: drink the Earth Sapta at Spirit Rock, south of the Den.",
+      "goto": { "mapId": 1411, "x": 44.0, "y": 76.2, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Shaman"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 5891 spawn, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=1517", "label": "Wowhead quest 1517" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1518,
+      "stepId": null,
+      "reason": "Closes Call of Earth. Turn the quartz in to Canaga before Report to Sen'jin.",
+      "prereqQuestIds": [1517],
+      "whyShort": "Turn-in is the same NPC, no extra travel.",
+      "text": "Shamans: bring the Rough Quartz back to Canaga Earthcaller.",
+      "goto": { "mapId": 1411, "x": 42.4, "y": 69.2, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Shaman"],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1518", "label": "Wowhead quest 1518" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 96652,
+      "stepId": null,
+      "reason": "Forever breadcrumb on the barrel beside Zureetha. Prerequisite 794 is already turned in here. WoW-Pro and TUGs both take it.",
+      "prereqQuestIds": [794],
+      "whyShort": "One object at the quest giver the route already uses, turned in on the road to Razor Hill.",
+      "text": "Take the Lost Journal from the barrel beside Zureetha and bring it to Brakk on the way into Razor Hill.",
+      "goto": { "mapId": 1411, "x": 42.8, "y": 69.1, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 654925 and NPC 265809" },
+        { "url": "https://www.wowhead.com/classic/quest=96652", "label": "Wowhead quest 96652" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 96604,
+      "stepId": null,
+      "reason": "Immediate follow-up from Brakk. Sit at his campfire for the rest buff, then turn it in on the spot.",
+      "prereqQuestIds": [96652],
+      "whyShort": "Campfire is one step from Brakk. No kill credit.",
+      "text": "Sit at Brakk's campfire until the rest buff lands, then turn the quest in.",
+      "goto": { "mapId": 1411, "x": 52.1, "y": 47.4, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 460003 spawn, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=96604", "label": "Wowhead quest 96604" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 5649,
+      "stepId": null,
+      "reason": "Troll priest breadcrumb from Ken'jai in the Den to Tai'jin in Razor Hill. The route visits both places and never takes it.",
+      "prereqQuestIds": [],
+      "whyShort": "Two trainers already on the path. No kills.",
+      "text": "Troll priests: take In Favor of Spirituality from Ken'jai and talk to Tai'jin in Razor Hill.",
+      "goto": { "mapId": 1411, "x": 42.4, "y": 68.8, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Priest"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 3707 and 3706 spawns" },
+        { "url": "https://www.wowhead.com/classic/quest=5649", "label": "Wowhead quest 5649" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 5648,
+      "stepId": null,
+      "reason": "Follow-up from Tai'jin. Heal and fortify one grunt beside Razor Hill, then hand it back.",
+      "prereqQuestIds": [5649],
+      "whyShort": "Grunt Kor'ja is just south of the inn. Two spells and a turn-in.",
+      "text": "Troll priests: lesser-heal Grunt Kor'ja, buff her with Fortitude, and return to Tai'jin.",
+      "goto": { "mapId": 1411, "x": 53.1, "y": 46.5, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Priest"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 12430 spawn, zone 14" },
+        { "url": "https://www.wowhead.com/classic/quest=5648", "label": "Wowhead quest 5648" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 2983,
+      "stepId": null,
+      "reason": "Shaman level-10 breadcrumb from Swart. The route already passes the Razor Hill trainers and leaves toward the Barrens on 840.",
+      "prereqQuestIds": [],
+      "whyShort": "One accept. The kill chain starts in the Barrens, not here.",
+      "text": "Shamans: accept Call of Fire from Swart. Turn it in to Kranal Fiss in the Barrens with the conscript handoff.",
+      "goto": { "mapId": 1411, "x": 54.4, "y": 42.6, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "classes": ["Shaman"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB NPC 3173 spawn, zone 14; NPC 5907 is Barrens map 1413" },
+        { "url": "https://www.wowhead.com/classic/quest=2983", "label": "Wowhead quest 2983" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 832,
+      "stepId": null,
+      "reason": "Burning Shadows starts from the eye that cultists drop in Skull Rock. The route already clears that cave for 827 and 5726 and then visits Neeru.",
+      "prereqQuestIds": [],
+      "whyShort": "Same cave, same Orgrimmar turn-in as Neeru Fireblade. No extra camp.",
+      "text": "If a Burning Blade cultist drops the eye, accept Burning Shadows and hand it to Neeru with the Skull Rock report.",
+      "goto": { "mapId": 1411, "x": 52.5, "y": 9.4, "zone": "Durotar" },
+      "routes": ["balanced", "speedrun"],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 832 item start; Neeru 3216 at 49.5, 50.6 in Orgrimmar" },
+        { "url": "https://www.wowhead.com/classic/quest=832", "label": "Wowhead quest 832" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 816,
+      "stepId": "durotar-1-12:123",
+      "reason": "Lost But Not Forgotten is a rare crocolisk drop along the river, then a return to the farm. Free guides include it. Cut the whole quest.",
+      "prereqQuestIds": [],
+      "whyShort": "Removing it deletes a low drop-rate lap. Nothing later in this route requires 816.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=816", "label": "Wowhead quest 816" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 816, no follow-up in this route" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 812,
+      "stepId": "durotar-1-12:110",
+      "reason": "Need for a Cure applies a damaging poison and forces an Orgrimmar cure. Cut it together with 813.",
+      "prereqQuestIds": [],
+      "whyShort": "Skipping Rhinag avoids the poison and the cure trip. No later quest needs 812.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=812", "label": "Wowhead quest 812" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 813,
+      "stepId": "durotar-1-12:127",
+      "reason": "Finding the Antidote is the cure for 812. Questie gives it no XP. It is a venom-sac collection and two city trips.",
+      "prereqQuestIds": [],
+      "whyShort": "Drops with 812. The route no longer needs the sacs.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 813, xp null, repeatable" },
+        { "url": "https://www.wowhead.com/classic/quest=813", "label": "Wowhead quest 813" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "questId": 835,
+      "stepId": "durotar-1-12:116",
+      "reason": "A Simmering Storm is looted from the harpies, then the route turns it in and comes back again for Securing the Lines.",
+      "prereqQuestIds": [],
+      "whyShort": "One Rezlak visit can turn in both quests.",
+      "text": "Loot the Dull Stormy Orb while you kill the harpies, then turn in Securing the Lines and A Simmering Storm together.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97281 item start 277661" },
+        { "url": "https://www.wowhead.com/classic/quest=97281", "label": "Wowhead quest 97281" }
+      ],
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "verified": false,
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "shadow",
+      "pair": ["Tailoring", "Enchanting"],
+      "whyShort": "Both Troll priest roles take Tailoring and Enchanting. Cloth bolts drop off humanoids already on the kill path and become worn pieces and bags. Uncommon greens become wands, so no herb or ore loop.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-shadow-pve/", "label": "WoW Forever DB priest shadow professions" },
+        { "url": "https://theforeverguides.com/classes/priest/professions/", "label": "Forever Guides priest professions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "holy/discipline",
+      "pair": ["Tailoring", "Enchanting"],
+      "whyShort": "Same pair as the Troll shadow priest.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-holy-pve/", "label": "WoW Forever DB priest holy professions" },
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-discipline-pve/", "label": "WoW Forever DB priest discipline professions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Priest",
+      "role": "shadow",
+      "pair": ["Tailoring", "Enchanting"],
+      "whyShort": "Both Undead priest roles take Tailoring and Enchanting. The same kill-dropped cloth covers gear and bags, and disenchanted greens cover the wand, with no gathering detour.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-shadow-pve/", "label": "WoW Forever DB priest shadow professions" },
+        { "url": "https://theforeverguides.com/classes/priest/professions/", "label": "Forever Guides priest professions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Priest",
+      "role": "holy/discipline",
+      "pair": ["Tailoring", "Enchanting"],
+      "whyShort": "Same pair as the Undead shadow priest.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-holy-pve/", "label": "WoW Forever DB priest holy professions" },
+        { "url": "https://wowfdb.com/tier-lists/professions-priest-discipline-pve/", "label": "WoW Forever DB priest discipline professions" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "whyShort": "First Aid, Cooking, and Fishing stay secondary for both Troll priest roles. Bandages spend the cloth already looted. Food and fish do not open a third gathering route.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/first-aid/", "label": "Forever Guides first aid" },
+        { "url": "https://theforeverguides.com/professions/cooking/", "label": "Forever Guides cooking" },
+        { "url": "https://theforeverguides.com/professions/fishing/", "label": "Forever Guides fishing" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "whyShort": "Same three secondaries as the Troll priest: First Aid, Cooking, and Fishing, for both Undead roles.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/first-aid/", "label": "Forever Guides first aid" },
+        { "url": "https://theforeverguides.com/professions/cooking/", "label": "Forever Guides cooking" },
+        { "url": "https://theforeverguides.com/professions/fishing/", "label": "Forever Guides fishing" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "questIds": [5649, 5648],
+      "whyShort": "Questie 5649 and 5648 are class 16, race 128, sort PRIEST. Ken'jai (3707) is at 42.36, 68.81 beside the Den the route already enters. Tai'jin (3706) is at 54.26, 42.93 in Razor Hill, and Grunt Kor'ja (12430) is at 53.1, 46.46. One talk, two spells, one hand-in.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quests 5649 and 5648, npcs 3707, 3706, 12430" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "rejectedPair": ["Herbalism", "Alchemy"],
+      "whyShort": "Herb nodes are a separate circuit. Do not add an Alchemy checkpoint that waits on that farm.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/herb-farming/", "label": "Forever Guides herb farming" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "rejectedPair": ["Skinning", "Leatherworking"],
+      "whyShort": "Leather does not fill priest cloth slots. Skip a skinning checkpoint.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/leather-farming/", "label": "Forever Guides leather farming" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "rejectedPair": ["Herbalism", "Alchemy"],
+      "whyShort": "Same herb-circuit skip as the Troll priest. No Alchemy checkpoint.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/herb-farming/", "label": "Forever Guides herb farming" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "rejectedPair": ["Skinning", "Leatherworking"],
+      "whyShort": "Same wrong-armor skip as the Troll priest. No Leatherworking checkpoint.",
+      "sources": [
+        { "url": "https://theforeverguides.com/professions/leather-farming/", "label": "Forever Guides leather farming" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "skipped": true,
+      "whyShort": "Questie priest letter 3085 is race 128 only. Forever notes add Orc Mage, not Orc Priest. No profession checkpoint.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 3085 races 128" },
+        { "url": "https://news.blizzard.com/en-us/article/24315643/return-to-azeroth-in-world-of-warcraft-forever", "label": "Blizzard Forever race and class notes" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "skipped": true,
+      "whyShort": "No Forever source adds Tauren Priest, and the priest starter letters are Troll and Undead. No profession checkpoint.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quests 3085 races 128 and 3097 races 16" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Priest",
+      "role": "shadow",
+      "alsoRoles": ["holy/discipline"],
+      "skipped": true,
+      "whyShort": "Windshaper class lists name Druid, Hunter, Rogue, Shaman, and Warrior, and mark Priest unavailable. No profession checkpoint.",
+      "sources": [
+        { "url": "https://wowforeverguides.com/races/skyborne", "label": "Skyborne race class list, as recorded in skyborne-zephras notes" }
+      ],
+      "verified": false
+    }
+  ]
+}

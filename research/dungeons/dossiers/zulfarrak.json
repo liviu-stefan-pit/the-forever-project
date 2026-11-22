@@ -1,0 +1,245 @@
+{
+  "id": "zulfarrak",
+  "name": "Zul'Farrak",
+  "forever": false,
+  "levels": [44, 54],
+  "runAt": 47,
+  "entrance": {
+    "zone": "Tanaris",
+    "at": [38.7, 20.1],
+    "note": "Northwest Tanaris. Pickup hubs are Gadgetzan and Steamwheedle Port, levels 42-47. Horde flight is Bulkrek Ragefist in Gadgetzan."
+  },
+  "travel": {
+    "nearestFlight": "Gadgetzan (Bulkrek Ragefist, Tanaris 51.6, 25.4)",
+    "fromHubs": [
+      "Gadgetzan: walk northwest to 38.7, 20.1. Tran'rek 51.6, 26.8, Trenton Lighthammer 51.4, 28.8, Chief Engineer Bilgewhizzle 52.5, 28.5.",
+      "Steamwheedle Port: Yeh'kinya 67.0, 22.4 (3520/3527); ride west to Gadgetzan then the instance.",
+      "Brackenwall Village: fly -> Gadgetzan (h4060).",
+      "Camp Mojache: fly Shyn -> Gadgetzan.",
+      "Thousand Needles (Mirage Raceway): Wizzle Brassbolts 78.1, 77.1 for optional 2770, then fly or ride to Gadgetzan."
+    ],
+    "how": "Fly to Gadgetzan. Set hearth at Innkeeper Fizzgrimble (Tanaris 52.51, 27.91). Ride northwest to the portal at 38.7, 20.1."
+  },
+  "quests": [
+    {
+      "questId": 2933,
+      "name": "Venom Bottles",
+      "xp": 3600,
+      "giver": { "npc": "Venom Bottle", "zone": "The Hinterlands", "hub": "Revantusk Village", "at": [23.5, 58.8] },
+      "turnIn": { "npc": "Apothecary Lydon", "zone": "Hillsbrad Foothills", "hub": "Tarren Mill", "at": [61.4, 19.1] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2933", "turnin": "dungeons:zulfarrak:turnin:2933" },
+      "notes": "Object start in the Hinterlands. Unlocks 2934. Catalog speedrun:true as a chain lead-in when you are already in Hinterlands."
+    },
+    {
+      "questId": 3520,
+      "name": "Screecher Spirits",
+      "xp": 3750,
+      "giver": { "npc": "Yeh'kinya", "zone": "Tanaris", "hub": "Steamwheedle Port", "at": [67.0, 22.4] },
+      "turnIn": { "npc": "Yeh'kinya", "zone": "Tanaris", "hub": "Steamwheedle Port", "at": [67.0, 22.4] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:3520", "turnin": "dungeons:zulfarrak:turnin:3520" },
+      "notes": "Kill screechers outside ZF (Feralas). Unlocks 3527. Catalog speedrun:true when you pass Yeh'kinya."
+    },
+    {
+      "questId": 2864,
+      "name": "Tran'rek",
+      "xp": 390,
+      "giver": { "npc": "Krazek", "zone": "Stranglethorn Vale", "hub": "Booty Bay", "at": [26.9, 77.2] },
+      "turnIn": { "npc": "Tran'rek", "zone": "Tanaris", "hub": "Gadgetzan", "at": [51.6, 26.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2864", "turnin": "dungeons:zulfarrak:turnin:2864" },
+      "notes": "Talk-only breadcrumb for 2865 (QuestieDB breadcrumbFor 2865). Catalog speedrun:false (390 XP). Balanced only in steps-v2. 2865 can be taken in Gadgetzan without this."
+    },
+    {
+      "questId": 2865,
+      "name": "Scarab Shells",
+      "xp": 3900,
+      "giver": { "npc": "Tran'rek", "zone": "Tanaris", "hub": "Gadgetzan", "at": [51.6, 26.8] },
+      "turnIn": { "npc": "Tran'rek", "zone": "Tanaris", "hub": "Gadgetzan", "at": [51.6, 26.8] },
+      "prerequisites": [],
+      "breadcrumb": 2864,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2865", "turnin": "dungeons:zulfarrak:turnin:2865" },
+      "notes": "Uncracked Scarab Shells inside. Catalog speedrun:true. dungeons.json anyOf [2864]; QuestieDB has no required pre."
+    },
+    {
+      "questId": 2934,
+      "name": "Undamaged Venom Sac",
+      "xp": 3900,
+      "giver": { "npc": "Apothecary Lydon", "zone": "Hillsbrad Foothills", "hub": "Tarren Mill", "at": [61.4, 19.1] },
+      "turnIn": { "npc": "Apothecary Lydon", "zone": "Hillsbrad Foothills", "hub": "Tarren Mill", "at": [61.4, 19.1] },
+      "prerequisites": [2933],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2934", "turnin": "dungeons:zulfarrak:turnin:2934" },
+      "notes": "Undamaged Venom Sac is outside ZF (Hinterlands spiders). Unlocks 2935. Catalog speedrun:true as chain lead-in."
+    },
+    {
+      "questId": 2935,
+      "name": "Consult Master Gadrin",
+      "xp": 2900,
+      "giver": { "npc": "Apothecary Lydon", "zone": "Hillsbrad Foothills", "hub": "Tarren Mill", "at": [61.4, 19.1] },
+      "turnIn": { "npc": "Master Gadrin", "zone": "Durotar", "hub": "Sen'jin Village", "at": [56.0, 74.7] },
+      "prerequisites": [2934],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2935", "turnin": "dungeons:zulfarrak:turnin:2935" },
+      "notes": "Travel to Sen'jin. Unlocks 2936. Catalog speedrun:true."
+    },
+    {
+      "questId": 2936,
+      "name": "The Spider God",
+      "xp": 4850,
+      "giver": { "npc": "Master Gadrin", "zone": "Durotar", "hub": "Sen'jin Village", "at": [56.0, 74.7] },
+      "turnIn": { "npc": "Master Gadrin", "zone": "Durotar", "hub": "Sen'jin Village", "at": [56.0, 74.7] },
+      "prerequisites": [2935],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2936", "turnin": "dungeons:zulfarrak:turnin:2936" },
+      "notes": "Tablet inside ZF. Catalog speedrun:true (4850 base). Leads to 2937 (not in this pack)."
+    },
+    {
+      "questId": 3042,
+      "name": "Troll Temper",
+      "xp": 3900,
+      "giver": { "npc": "Trenton Lighthammer", "zone": "Tanaris", "hub": "Gadgetzan", "at": [51.4, 28.8] },
+      "turnIn": { "npc": "Trenton Lighthammer", "zone": "Tanaris", "hub": "Gadgetzan", "at": [51.4, 28.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:3042", "turnin": "dungeons:zulfarrak:turnin:3042" },
+      "notes": "Troll Temper drops inside. Catalog speedrun:true."
+    },
+    {
+      "questId": 2846,
+      "name": "Tiara of the Deep",
+      "xp": 6050,
+      "giver": { "npc": "Tabetha", "zone": "Dustwallow Marsh", "hub": "Tabetha's Farm", "at": [46.1, 57.1] },
+      "turnIn": { "npc": "Tabetha", "zone": "Dustwallow Marsh", "hub": "Tabetha's Farm", "at": [46.1, 57.1] },
+      "prerequisites": [],
+      "breadcrumb": 2861,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2846", "turnin": "dungeons:zulfarrak:turnin:2846" },
+      "notes": "Tiara of the Deep from Hydromancer Velratha inside. Catalog speedrun:true (6050 base). 2861 is an optional breadcrumb (QuestieDB breadcrumbFor 2846; dungeons.json 2846 has empty prereqs and 2861 leadsTo [])."
+    },
+    {
+      "questId": 2861,
+      "name": "Tabetha's Task",
+      "xp": 405,
+      "giver": { "npc": "Ursyn Ghull", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [25.7, 14.2] },
+      "turnIn": { "npc": "Tabetha", "zone": "Dustwallow Marsh", "hub": "Tabetha's Farm", "at": [46.1, 57.1] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2861", "turnin": "dungeons:zulfarrak:turnin:2861" },
+      "notes": "Talk-only breadcrumb for 2846. Catalog speedrun:false (405 XP). Balanced only in steps-v2. dungeons.json also lists Anastasia Hartwell and Deino; QuestieDB starts from Anastasia, Deino, and Alliance mage trainers (no Ursyn). steps-v2 accept is Ursyn Ghull."
+    },
+    {
+      "questId": 2768,
+      "name": "Divino-matic Rod",
+      "xp": 6300,
+      "giver": { "npc": "Chief Engineer Bilgewhizzle", "zone": "Tanaris", "hub": "Gadgetzan", "at": [52.5, 28.5] },
+      "turnIn": { "npc": "Chief Engineer Bilgewhizzle", "zone": "Tanaris", "hub": "Gadgetzan", "at": [52.5, 28.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2768", "turnin": "dungeons:zulfarrak:turnin:2768" },
+      "notes": "Divino-matic Rod from Sergeant Bly after the pyramid event. Catalog speedrun:true (6300 base)."
+    },
+    {
+      "questId": 3527,
+      "name": "The Prophecy of Mosh'aru",
+      "xp": 5250,
+      "giver": { "npc": "Yeh'kinya", "zone": "Tanaris", "hub": "Steamwheedle Port", "at": [67.0, 22.4] },
+      "turnIn": { "npc": "Yeh'kinya", "zone": "Tanaris", "hub": "Steamwheedle Port", "at": [67.0, 22.4] },
+      "prerequisites": [3520],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:3527", "turnin": "dungeons:zulfarrak:turnin:3527" },
+      "notes": "First and Second Mosh'aru Tablets inside. Catalog speedrun:true. Leads to 4787 (not in this pack)."
+    },
+    {
+      "questId": 2770,
+      "name": "Gahz'rilla",
+      "xp": 7100,
+      "giver": { "npc": "Wizzle Brassbolts", "zone": "Thousand Needles", "hub": "Mirage Raceway", "at": [78.1, 77.1] },
+      "turnIn": { "npc": "Wizzle Brassbolts", "zone": "Thousand Needles", "hub": "Mirage Raceway", "at": [78.1, 77.1] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:zulfarrak:accept:2770", "turnin": "dungeons:zulfarrak:turnin:2770" },
+      "notes": "Gahz'rilla's Electrified Scale. Optional; often skipped. Catalog speedrun:false and insideDungeon:false. Role tip: use the Mallet of Zul'Farrak at the gong. No mallet quest is in this pack, steps-v2, or questie-db (Qiaga the Keeper exists as an NPC in Hinterlands). Balanced only in steps-v2."
+    }
+  ],
+  "runStepId": "dungeons:zulfarrak:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player, dungeon levels 44-54; do not enter before 47 (runAt). Pyramid stair event pulls the troll army — tank holds the top of the stairs. Sandfury shaman packs need interrupts.",
+    "consumables": ["food", "water", "healing potions", "mana drinks for healers"],
+    "hearth": "Innkeeper Fizzgrimble, Gadgetzan 52.51, 27.91.",
+    "warnings": [
+      "Gahz'rilla (2770) is optional and often skipped. Catalog speedrun:false. Summoning uses the Mallet of Zul'Farrak at the gong; there is no mallet quest in dungeons.json / steps-v2 / questie-db.",
+      "Do not detour to Booty Bay for 2864 — take Scarab Shells (2865) in Gadgetzan.",
+      "Do not detour for 2861 if you can reach Tabetha; take 2846 directly.",
+      "Spider God chain starts from a Hinterlands venom bottle, not from Gadgetzan.",
+      "3520 is outdoor Feralas screechers before the ZF tablets (3527).",
+      "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026)."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Tanaris",
+      "levelBand": [43, 50],
+      "why": "h4060 Gadgetzan / Steamwheedle pirate and Wastewander rounds, Dunemaul, Noxious Lair, Scrimshank, and balanced-only Thistleshrub Valley are the slow same-band overworld a ZF run at 47 replaces. Speedrun also grinds Scorpid Dunestalker to 46 before The Thirsty Goblin.",
+      "questIds": [1690, 1707, 1691, 8366, 2873, 5863, 3362, 82, 10, 2605]
+    },
+    {
+      "zone": "Feralas",
+      "levelBand": [40, 45],
+      "why": "README dungeons-off includes Feralas. Camp Mojache Woodpaw / Gordunni loop in h4060 is the same band as ZF pickup (42-47).",
+      "questIds": [2862, 2975, 2987, 2863, 2902, 2903, 2980]
+    }
+  ],
+  "sourceConflicts": [
+    "2865 prerequisites: dungeons.json anyOf [2864]; QuestieDB and web/public/data/quests.json have no required pre (2864 is breadcrumbFor 2865).",
+    "2861 leadsTo is [] in dungeons.json; QuestieDB next/breadcrumbFor is 2846. 2846 has empty prereqs in dungeons.json.",
+    "2861 givers: steps-v2 accept is Ursyn Ghull Thunder Bluff 25.7, 14.2; dungeons.json lists Ursyn, Anastasia, and Deino; QuestieDB start npcs are 4568, 5144, 5497, 5885 (no Ursyn).",
+    "2770 insideDungeon:false in dungeons.json while the boss is inside ZF; speedrun:false because of mallet / extra travel. No Sacred Mallet / Mallet of Zul'Farrak quest exists in the catalog.",
+    "Classic Era XP in dungeons.json; catalog notes Forever may halve dungeon-quest bonus XP (unofficial). Amounts here are Classic Era base."
+  ],
+  "notes": "Horde-available Classic dungeon (neutral givers in Gadgetzan). Pickup hub is Gadgetzan and Steamwheedle Port, levels 42-47. Dungeons-off: Tanaris, Feralas and The Hinterlands. One quested clear; do not reset-farm. XP figures are Classic Era from dungeons.json / questie-db / web/public/data/quests.json."
+}

@@ -1,0 +1,129 @@
+# Checks every pull request and every push to main.
+# The job names below are the required status checks in .github/rulesets/protect-main.json:
+# rename a job only together with that file (and the ruleset in the repository settings).
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: "Web: typecheck, test, build"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: web/.node-version
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # Some tests read the generated web/public/data/, which is git-ignored.
+      - name: Build route data
+        run: npm run data
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+  addons:
+    name: "Addons: Lua checks"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lua 5.1
+        run: sudo apt-get update && sudo apt-get install -y lua5.1
+
+      - name: Lua syntax
+        run: |
+          set -euo pipefail
+          status=0
+          while IFS= read -r -d '' file; do
+            if ! luac5.1 -p -- "$file"; then
+              echo "::error file=$file::Lua syntax error"
+              status=1
+            fi
+          done < <(find addon -name '*.lua' -print0)
+          exit "$status"
+
+      - name: TOC metadata and file list
+        run: |
+          set -euo pipefail
+          status=0
+          for toc in addon/*/*.toc; do
+            dir=$(dirname "$toc")
+            echo "Checking $toc"
+            for key in Interface Version; do
+              if ! grep -Eq "^## ${key}: *[^[:space:]]" "$toc"; then
+                echo "::error file=$toc::missing '## ${key}:' line"
+                status=1
+              fi
+            done
+            # Every non-comment, non-empty line is a file the client loads.
+            while IFS= read -r line; do
+              line=${line%$'\r'}
+              line="${line#"${line%%[![:space:]]*}"}"
+              line="${line%"${line##*[![:space:]]}"}"
+              [[ -z "$line" || "$line" == \#* ]] && continue
+              path="$dir/${line//\\//}"
+              if [[ ! -f "$path" ]]; then
+                echo "::error file=$toc::listed file '$line' does not exist"
+                status=1
+              fi
+            done < "$toc"
+          done
+          exit "$status"
+
+      # Runs GuideWebExport against a mocked WoW Forever client (with its own
+      # asserts) and checks that the committed sample export is up to date.
+      - name: GuideWebExport mock-client harness
+        run: |
+          set -euo pipefail
+          lua5.1 addon/tests/mock_client.lua > "$RUNNER_TEMP/GuideWebExport.sample.lua"
+          if ! diff -u --strip-trailing-cr contracts/fixtures/GuideWebExport.sample.lua "$RUNNER_TEMP/GuideWebExport.sample.lua"; then
+            echo "::error file=contracts/fixtures/GuideWebExport.sample.lua::sample is out of date; regenerate it with: lua5.1 addon/tests/mock_client.lua > contracts/fixtures/GuideWebExport.sample.lua"
+            exit 1
+          fi
+
+  pipeline:
+    name: "Pipeline: Python tests"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Lua lets the addon export tests run instead of skipping.
+      - name: Install Lua 5.1
+        run: sudo apt-get update && sudo apt-get install -y lua5.1
+
+      # Standard library only. Tests that need a local QuestieDB install or Pillow skip themselves.
+      - name: Unit tests
+        run: python -I -m unittest discover -s pipeline/tests -v

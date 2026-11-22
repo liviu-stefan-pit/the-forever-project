@@ -1,0 +1,336 @@
+{
+  "id": "alcaz-prison",
+  "name": "Alcaz Prison",
+  "forever": true,
+  "levels": [48, 53],
+  "runAt": 51,
+  "entrance": {
+    "zone": "Dustwallow Marsh",
+    "at": null,
+    "note": "Forever-only dungeon on Alcaz Island, Dustwallow Marsh. Catalog entrance is null (not published). Official location is Alcaz Island. Sergeant Ulka stands on the island at 70.3, 18.85. Travel is boat or swim — there is no flight path on the island."
+  },
+  "travel": {
+    "nearestFlight": "Brackenwall Village",
+    "fromHubs": ["Orgrimmar", "Brackenwall Village", "Thunder Bluff"],
+    "how": "Start the breadcrumb with Eitrigg in Orgrimmar (The Missing Kor'kron 95283) and fly to Brackenwall Village to Nazeer Bloodpike. Alcaz Island is off the northeast Dustwallow coast; there is no flight path. Boat or swim from the Dustwallow shore to the island (Sergeant Ulka 70.3, 18.85). Do not start the dungeon quests without 95283 → 95284 → 95285."
+  },
+  "quests": [
+    {
+      "questId": 95283,
+      "name": "The Missing Kor'kron",
+      "xp": 1300,
+      "giver": {
+        "npc": "Eitrigg",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [34.28, 39.35]
+      },
+      "turnIn": {
+        "npc": "Nazeer Bloodpike",
+        "zone": "Dustwallow Marsh",
+        "hub": "Brackenwall Village",
+        "at": [35.21, 30.66]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:alcaz-prison:accept:95283",
+        "turnin": "dungeons:forever:alcaz-prison:turnin:95283"
+      },
+      "notes": "Required breadcrumb. Speak with Nazeer in Brackenwall. Catalog/README: Horde access is this Eitrigg → Brackenwall breadcrumb. Planner must take 95283 before any Alcaz Island quest. XP 1300 from QuestieDB. verified:false. foreverConfidence:high. steps-v2 routes: balanced only."
+    },
+    {
+      "questId": 95284,
+      "name": "The Elite of the Elite",
+      "xp": 1300,
+      "giver": {
+        "npc": "Nazeer Bloodpike",
+        "zone": "Dustwallow Marsh",
+        "hub": "Brackenwall Village",
+        "at": [35.21, 30.66]
+      },
+      "turnIn": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "prerequisites": [95283],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:alcaz-prison:accept:95284",
+        "turnin": "dungeons:forever:alcaz-prison:turnin:95284"
+      },
+      "notes": "Find the missing Kor'kron Elites; turn in on Alcaz Island (boat/swim from Brackenwall). Catalog prerequisitesByName: The Missing Kor'kron. QuestieDB has no pre on 95284. XP 1300 from QuestieDB. leadsTo 95285. verified:false."
+    },
+    {
+      "questId": 95285,
+      "name": "Right Place, Wrong Time",
+      "xp": 1300,
+      "giver": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "turnIn": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "prerequisites": [95284],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:alcaz-prison:accept:95285",
+        "turnin": "dungeons:forever:alcaz-prison:turnin:95285"
+      },
+      "notes": "Talk to Ulka on the island. QuestieDB pre.single 95284. Unlocks the dungeon quests (95309, 96332, 96334). XP 1300 from QuestieDB. Not in the original fan-guide list of 40. verified:false."
+    },
+    {
+      "questId": 95309,
+      "name": "No Orc Left Behind",
+      "xp": null,
+      "giver": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "turnIn": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "prerequisites": [95285],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Enter Alcaz Prison and find Commander Folkar. No turn-in in the import. QuestieDB pre.single 95285; README/prerequisitesByName say The Elite of the Elite (95284). No steps-v2 ids. Run tip: Do not accept No Orc Left Behind. XP unknown. Skip unless you are chasing the inner Kor'kron/Varian chain (95454→96369→95483)."
+    },
+    {
+      "questId": 95454,
+      "name": "The Honor of the Kor'kron",
+      "xp": null,
+      "giver": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "prerequisites": [95309],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Look for King Varian Wrynn in Alcaz Prison. Import has no start or end NPC/object/item — not invented. Needs 95309. No steps-v2 ids. XP unknown. Skip with the 95309 chain."
+    },
+    {
+      "questId": 96369,
+      "name": "Bad News for Folkar",
+      "xp": null,
+      "giver": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "prerequisites": [95454],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Report back to Commander Folkar. Import has no start or end. Needs 95454. No steps-v2 ids. XP unknown. Skip with the 95309 chain."
+    },
+    {
+      "questId": 95483,
+      "name": "Thrall Needs to Know",
+      "xp": null,
+      "giver": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Thrall",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [31.73, 37.82]
+      },
+      "prerequisites": [96369],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Bring word of Varian Wrynn's fate to Thrall. Import has no start NPC. Needs 96369. No steps-v2 ids. XP unknown. Skip with the 95309 chain."
+    },
+    {
+      "questId": 96332,
+      "name": "A Little Payback",
+      "xp": null,
+      "giver": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "turnIn": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "prerequisites": [95285],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:alcaz-prison:accept:96332",
+        "turnin": "dungeons:forever:alcaz-prison:turnin:96332"
+      },
+      "notes": "Kill 15 Strashasz Soldiers, 8 Strashaz Enchantresses, and Tidemistress Ca'zass; turn in to Ulka on the island. QuestieDB pre.single 95285; README/prerequisitesByName say The Elite of the Elite (95284). No XP in QuestieDB. verified:false. Do not pick up without 95283→95284→95285."
+    },
+    {
+      "questId": 96334,
+      "name": "Blood Red Bandanas",
+      "xp": null,
+      "giver": {
+        "npc": "Sergeant Ulka",
+        "zone": "Dustwallow Marsh",
+        "hub": "Alcaz Island",
+        "at": [70.3, 18.85]
+      },
+      "turnIn": {
+        "npc": "Eitrigg",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [34.28, 39.35]
+      },
+      "prerequisites": [95285],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:alcaz-prison:accept:96334",
+        "turnin": "dungeons:forever:alcaz-prison:turnin:96334"
+      },
+      "notes": "Collect 8 Blood Red Bandanas from human guards inside. Catalog/Questie turn-in is Eitrigg in Orgrimmar; README only names Ulka as giver. QuestieDB pre.single 95285; README/prerequisitesByName say 95284. No XP in QuestieDB. Do not pick up without the Eitrigg breadcrumb."
+    },
+    {
+      "questId": 96335,
+      "name": "The Man in the Iron Chains",
+      "xp": null,
+      "giver": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": null,
+        "zone": "Alcaz Prison",
+        "hub": "",
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": 95283,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Recover the Alcaz Shackle Key from The Questioner. Catalog minLevel null. Import has no start, end, or pre — not invented. No steps-v2 ids. XP unknown. foreverEvidence includes authoredFix. Skip."
+    }
+  ],
+  "runStepId": "dungeons:forever:alcaz-prison:run",
+  "keys": [],
+  "prep": {
+    "group": "Five-player Forever dungeon on Alcaz Island. Run once around 51. Do not accept No Orc Left Behind (steps-v2 run tip). At most five dungeon entries/resets per hour.",
+    "consumables": ["food", "water", "healing potions", "water walking or a fast swim if you have it"],
+    "hearth": "Brackenwall Village",
+    "warnings": [
+      "Full breadcrumb before any dungeon quest: 95283 The Missing Kor'kron (Eitrigg, Orgrimmar) → 95284 The Elite of the Elite (Nazeer, Brackenwall) → 95285 Right Place, Wrong Time (Ulka, Alcaz Island). Do not start 96332/96334 without it.",
+      "Travel is Dustwallow boat or swim to Alcaz Island. No island flight path. Entrance coordinates are not published.",
+      "steps-v2 Alcaz steps are routes: balanced only.",
+      "Quests 79953 and 81951 are not used.",
+      "All ten catalog quests stay verified:false until checked in game. Do not invent missing givers, turn-ins, or XP.",
+      "Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026)."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "The Hinterlands",
+      "levelBand": [48, 51],
+      "why": "Same 48-53 band as Alcaz. Jintha'Alor and the Wildhammer message chain are the slow Revantusk work a Dustwallow island run would replace.",
+      "questIds": [7845, 7846, 7847, 7849, 7850, 7843, 7815]
+    },
+    {
+      "zone": "Tanaris",
+      "levelBand": [48, 50],
+      "why": "Same band. Scrimshank, Dunemaul, Thirsty Goblin, and balanced-only Thistleshrub Valley are the slow Gadgetzan completes if Alcaz is covering 48-51.",
+      "questIds": [10, 2605, 5863, 3362]
+    },
+    {
+      "zone": "Azshara",
+      "levelBand": [51, 53],
+      "why": "Upper Alcaz band. Kim'jael, satyr, and the short Azshara breadcrumb XP (530) are the other slow 51-53 work.",
+      "questIds": [3601, 5534, 3517, 3541, 86746, 86777]
+    }
+  ],
+  "sourceConflicts": [
+    "95283 objective text says Nazeer Bloodspike; NPC name in QuestieDB/dungeons.json is Nazeer Bloodpike.",
+    "95284 has no QuestieDB pre, but catalog prerequisitesByName and README say it needs The Missing Kor'kron (95283). Dossier uses 95283 so the planner cannot start island quests without Eitrigg.",
+    "95309/96332/96334: README and prerequisitesByName say The Elite of the Elite (95284). QuestieDB / prerequisitesFromImport use 95285.",
+    "96334 turn-in is Eitrigg in Orgrimmar in dungeons.json and QuestieDB; README lists Sergeant Ulka as the giver and does not name the turn-in.",
+    "95309, 95454, 96369, 95483, 96335 are in the catalog (10 of 10 Horde quests) but have no dungeons:forever:alcaz-prison accept/turnin steps. steps-v2 run tip says do not accept No Orc Left Behind.",
+    "XP: only 95283/95284/95285 have QuestieDB xp (1300). Remaining Forever quests have no xp field; left null. web/public/data/quests.json is a build output and was not present as a source file.",
+    "Entrance is unpublished (catalog entrance:null). Do not invent coordinates.",
+    "steps-v2 Alcaz accept/run/turnin are routes: balanced only."
+  ],
+  "notes": "Forever-only dungeon (id alcaz-prison), official levels 48-53, Alcaz Island, Dustwallow Marsh. runAt 51 (48+3). 10 of 10 Horde catalog quests matched to QuestieDB v1.1.3; all verified:false. Pack emits breadcrumb 95283→95284→95285 then 96332 and 96334. Travel is fly Brackenwall then boat/swim to the island."
+}

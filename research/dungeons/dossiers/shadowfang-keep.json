@@ -1,0 +1,137 @@
+{
+  "id": "shadowfang-keep",
+  "name": "Shadowfang Keep",
+  "forever": false,
+  "levels": [22, 30],
+  "runAt": 25,
+  "entrance": {
+    "zone": "Silverpine Forest",
+    "at": [44.8, 67.8],
+    "note": "South of The Sepulcher on the Silverpine road. Questie dungeon entrance; same coords on dungeons:shadowfang-keep:run."
+  },
+  "travel": {
+    "nearestFlight": "The Sepulcher",
+    "fromHubs": ["The Sepulcher", "Undercity"],
+    "how": "From The Sepulcher walk south on the Silverpine road to the keep at 44.8, 67.8; Undercity is the Apothecarium stop for The Book of Ur, not a detour through Hillsbrad."
+  },
+  "quests": [
+    {
+      "questId": 1098,
+      "name": "Deathstalkers in Shadowfang",
+      "xp": 2000,
+      "giver": {
+        "npc": "High Executor Hadrec",
+        "zone": "Silverpine Forest",
+        "hub": "The Sepulcher",
+        "at": [43.4, 40.9]
+      },
+      "turnIn": {
+        "npc": "Deathstalker Vincent",
+        "zone": "Shadowfang Keep",
+        "hub": "",
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:shadowfang-keep:accept:1098",
+        "turnin": "dungeons:shadowfang-keep:turnin:1098"
+      },
+      "notes": "Turn in inside the instance (Vincent has no outdoor map point). Speedrun and balanced. Classic Era base XP at 25; Forever dungeon-quest bonus XP may be halved (unofficial)."
+    },
+    {
+      "questId": 1013,
+      "name": "The Book of Ur",
+      "xp": 2100,
+      "giver": {
+        "npc": "Keeper Bel'dugur",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [53.7, 54.5]
+      },
+      "turnIn": {
+        "npc": "Keeper Bel'dugur",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [53.7, 54.5]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:shadowfang-keep:accept:1013",
+        "turnin": "dungeons:shadowfang-keep:turnin:1013"
+      },
+      "notes": "Balanced only in steps-v2. Book of Ur is in the library side room; extra Undercity trip. Classic Era base XP at 26."
+    },
+    {
+      "questId": 1014,
+      "name": "Arugal Must Die",
+      "xp": 3300,
+      "giver": {
+        "npc": "Dalar Dawnweaver",
+        "zone": "Silverpine Forest",
+        "hub": "The Sepulcher",
+        "at": [44.2, 39.8]
+      },
+      "turnIn": {
+        "npc": "Dalar Dawnweaver",
+        "zone": "Silverpine Forest",
+        "hub": "The Sepulcher",
+        "at": [44.2, 39.8]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:shadowfang-keep:accept:1014",
+        "turnin": "dungeons:shadowfang-keep:turnin:1014"
+      },
+      "notes": "Biggest Horde SFK XP quest; Head of Arugal from the last boss. Speedrun and balanced. Classic Era base XP at 27."
+    }
+  ],
+  "runStepId": "dungeons:shadowfang-keep:run",
+  "keys": [],
+  "prep": {
+    "group": "Five-player, run once at 25. Do not reset for more worgs. At most five dungeon entries/resets per hour.",
+    "consumables": ["food", "water", "healing potions"],
+    "hearth": "The Sepulcher",
+    "warnings": [
+      "Forever: Fenrus summons Voidwalkers at 50% health; Wolf Master Nandos summons worgs (fan report).",
+      "Forever: Arugal's table book can give the Black Tome that leads to a secret boss in City of Dalaran (fan report, unofficial).",
+      "Courtyard and stair pulls are packed; Arugal Void Bolt needs line of sight.",
+      "Kill XP inside dungeons is increased; if any party member would get no XP because mobs are trivial, nobody gets XP (Forever hotfix).",
+      "Do not send the group through Southshore."
+    ],
+    "classQuests": [
+      "Warlock 1740 The Orb of Soran'ruk: Large Soran'ruk Fragment drops from Shadowfang Darksouls inside SFK; the quest is cataloged under Blackfathom Deeps and has no dungeons:shadowfang-keep step ids."
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Hillsbrad Foothills",
+      "levelBand": [20, 30],
+      "why": "Same 20-30 band as SFK. Battle of Hillsbrad and the skull/named-NPC farms are the slow Tarren Mill work the dungeons-off text says to keep; drop them when the keep is run.",
+      "questIds": [527, 528, 529, 532, 539, 546, 567, 549, 498, 496]
+    },
+    {
+      "zone": "The Barrens",
+      "levelBand": [18, 22],
+      "why": "Late Barrens leftovers at the bottom of the SFK band. Guns of Northwatch and the Gilthares escort are the slowest 20-40 Barrens completes; skip if SFK is already covering 22-25.",
+      "questIds": [891, 898, 868, 843]
+    }
+  ],
+  "sourceConflicts": [
+    "research/nova/v2/silverpine-11-15.json is levels 11-15 and has no overlapping slow quests in the SFK 22-30 band.",
+    "QuestieDB Forever coords for Hadrec are 43.42, 40.86 and Dalar 44.2, 39.81; dungeons.json uses 43.4, 40.9 and 44.2, 39.8.",
+    "Forever Fenrus/Nandos/Black Tome changes are fan-reported (wowclassicforever.info), not Blizzard-published."
+  ],
+  "notes": "Three Horde quests in dungeons.json, all with steps in steps-v2.json. Pickup at The Sepulcher around 20-25; Book of Ur is the only Undercity extra. Dungeons off: stay on Silverpine leftovers and Tarren Mill. Classic XP from Questie/quests.json; Forever live XP unverified."
+}

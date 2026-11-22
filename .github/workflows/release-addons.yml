@@ -1,0 +1,209 @@
+# Publishes the in-game addons as GitHub releases.
+#
+# For each addon, the version comes from the "## Version:" line of its .toc. A release
+# tagged <lowercase-name>-v<version> (for example guidewebexport-v2.3.0) is created with
+# <Name>-<version>.zip, unless that tag already exists. To ship a new build, bump the
+# .toc version. A rolling release <lowercase-name>-latest is then refreshed so this
+# stable link always serves the newest zip:
+#   https://github.com/<owner>/<repo>/releases/download/<lowercase-name>-latest/<Name>.zip
+name: Release addons
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "addon/**"
+  workflow_dispatch:
+    inputs:
+      addon:
+        description: Which addon to release
+        type: choice
+        options: [all, GuideWebExport, AdventureLog]
+        default: all
+      force:
+        description: Rebuild and replace the release even if the version tag already exists
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-addons
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Release addons
+    if: github.repository == 'liviu-stefan-pit/the-forever-project'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ADDON_CHOICE: ${{ inputs.addon || 'all' }}
+      FORCE: ${{ inputs.force && 'true' || 'false' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lua 5.1 and zip
+        run: sudo apt-get update && sudo apt-get install -y lua5.1 zip
+
+      - name: Build and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          repo_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
+          out_dir="${RUNNER_TEMP}/addon-release"
+          mkdir -p "$out_dir"
+
+          # Files that stay in the repository but are not shipped to players.
+          is_dev_only() {
+            case "$1" in
+              tests/*|*/tests/*) return 0 ;;
+              API_REFERENCE.md|.*|*/.*) return 0 ;;
+              *) return 1 ;;
+            esac
+          }
+
+          release_exists() {
+            gh release view "$1" > /dev/null 2>&1
+          }
+
+          tag_exists() {
+            git ls-remote --exit-code --tags origin "refs/tags/$1" > /dev/null 2>&1
+          }
+
+          write_notes() {
+            local name="$1" version="$2" tag="$3" notes="$4"
+            local readme="${repo_url}/blob/${tag}/addon/${name}/README.md"
+            {
+              echo "**${name} ${version}** for WoW: Forever 1.60.1."
+              echo
+              echo "> **Experimental.** This addon is a work in progress. Please report problems at ${repo_url}/issues."
+              echo
+              if [[ "$name" == "AdventureLog" ]]; then
+                echo "AdventureLog keeps a diary of one character while you play: where you go, quests, experience,"
+                echo "loot, kills, deaths and time. WoW saves it to the addon's SavedVariables on logout or /reload,"
+                echo "and **Export Adventure.bat** (in the addon folder) writes it to a local folder and a zip you can share."
+                echo "Nothing is uploaded anywhere."
+              else
+                echo "GuideWebExport saves your character's progress (completed quests, quest log, level, professions,"
+                echo "gold, gear and more) to its SavedVariables file. Type /gwe, then /reload, and upload"
+                echo "GuideWebExport.lua on the guide site's Profile page. Nothing is uploaded anywhere by the addon."
+              fi
+              echo
+              echo "### Install"
+              echo
+              echo "1. Download **${name}-${version}.zip** below (or the always-current ${repo_url}/releases/download/${name,,}-latest/${name}.zip)."
+              echo "2. Unzip it into \`World of Warcraft\\_forever_\\Interface\\AddOns\\\` so that \`AddOns\\${name}\\${name}.toc\` exists."
+              echo "3. On the character screen open **AddOns**, tick **${name}** (and *Load out of date AddOns* if it is marked out of date)."
+              echo
+              echo "More details: [addon README](${readme})."
+            } > "$notes"
+          }
+
+          release_addon() {
+            local name="$1"
+            local lower="${name,,}"
+            local dir="addon/${name}"
+            local toc="${dir}/${name}.toc"
+
+            echo "::group::${name}"
+            if [[ ! -f "$toc" ]]; then
+              echo "::error file=${toc}::missing .toc"
+              return 1
+            fi
+
+            local version
+            version=$(sed -n 's/^## Version:[[:space:]]*\([^[:space:]]*\).*$/\1/p' "$toc" | tr -d '\r' | head -n 1)
+            if [[ ! "$version" =~ ^[0-9A-Za-z][0-9A-Za-z.+-]*$ ]]; then
+              echo "::error file=${toc}::could not read a valid '## Version:' (got '${version}')"
+              return 1
+            fi
+
+            local tag="${lower}-v${version}"
+            local latest_tag="${lower}-latest"
+            echo "${name} ${version} -> ${tag}"
+
+            if tag_exists "$tag" || release_exists "$tag"; then
+              if [[ "$FORCE" != "true" ]]; then
+                echo "::notice title=${name}::${tag} already exists; skipped. Bump '## Version:' in ${toc} to release a new build."
+                echo "::endgroup::"
+                return 0
+              fi
+              echo "Force: replacing existing release ${tag}"
+              if release_exists "$tag"; then
+                gh release delete "$tag" --yes --cleanup-tag
+              else
+                git push origin ":refs/tags/${tag}"
+              fi
+            fi
+
+            # Syntax check every Lua file that ships.
+            while IFS= read -r -d '' file; do
+              luac5.1 -p -- "$file"
+            done < <(find "$dir" -name '*.lua' -not -path '*/tests/*' -print0)
+
+            # Stage tracked files only, so local leftovers never end up in the zip.
+            local stage="${out_dir}/stage-${name}"
+            rm -rf "$stage"
+            mkdir -p "${stage}/${name}"
+            local rel
+            while IFS= read -r -d '' file; do
+              rel="${file#"${dir}/"}"
+              if is_dev_only "$rel"; then
+                echo "skip ${rel}"
+                continue
+              fi
+              mkdir -p "${stage}/${name}/$(dirname "$rel")"
+              cp -- "$file" "${stage}/${name}/${rel}"
+            done < <(git ls-files -z -- "$dir")
+
+            if [[ ! -f "${stage}/${name}/${name}.toc" ]]; then
+              echo "::error::${name}.toc is missing from the staged addon"
+              return 1
+            fi
+
+            local zip_versioned="${out_dir}/${name}-${version}.zip"
+            local zip_stable="${out_dir}/${name}.zip"
+            rm -f "$zip_versioned" "$zip_stable"
+            (cd "$stage" && zip -r -X -q "$zip_versioned" "$name")
+            cp -- "$zip_versioned" "$zip_stable"
+            unzip -l "$zip_versioned"
+
+            local notes="${out_dir}/${name}-notes.md"
+            write_notes "$name" "$version" "$tag" "$notes"
+
+            gh release create "$tag" "$zip_versioned" \
+              --target "$GITHUB_SHA" \
+              --title "${name} ${version}" \
+              --notes-file "$notes" \
+              --latest
+
+            # Rolling release behind the stable download link.
+            if release_exists "$latest_tag"; then
+              gh release delete "$latest_tag" --yes --cleanup-tag
+            elif tag_exists "$latest_tag"; then
+              git push origin ":refs/tags/${latest_tag}"
+            fi
+            gh release create "$latest_tag" "$zip_stable" \
+              --target "$GITHUB_SHA" \
+              --title "${name} (latest)" \
+              --notes "Always the newest ${name} build, currently ${version} (${repo_url}/releases/tag/${tag}). Stable download link: ${repo_url}/releases/download/${latest_tag}/${name}.zip" \
+              --latest=false
+
+            echo "Published ${tag} and refreshed ${latest_tag}"
+            echo "::endgroup::"
+          }
+
+          case "$ADDON_CHOICE" in
+            all) addons=(GuideWebExport AdventureLog) ;;
+            GuideWebExport|AdventureLog) addons=("$ADDON_CHOICE") ;;
+            *) echo "::error::unknown addon '${ADDON_CHOICE}'"; exit 1 ;;
+          esac
+
+          for addon in "${addons[@]}"; do
+            release_addon "$addon"
+          done

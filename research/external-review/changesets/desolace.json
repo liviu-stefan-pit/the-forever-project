@@ -1,0 +1,449 @@
+{
+  "routeId": "horde-20-40",
+  "mapId": 1443,
+  "opCounts": { "add": 0, "modify": 2, "reorder": 4, "drop": 22, "tip": 3, "total": 31 },
+  "ops": [
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:to-desolace",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The travel line sends the player to the coast, then the next quests run back to Orgrimmar and Ghost Walker.",
+      "original": "Fly to Sun Rock or ride out of Thousand Needles with Alliance Relations already in the log. Land at Ghost Walker Post, clear Sargeron and Thunder Axe, then take the Shadowprey flight path on the way to the west shore.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 33-34 Desolace id order starts at Shadowprey 21.60, 74.13" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB zone 405 uiMapId 1443; quest 1432 ends at npc 5641" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-5763",
+      "questId": 5763,
+      "prereqQuestIds": [],
+      "whyShort": "5763 is a carried horn. The complete pin is Roon, who already gave the quest.",
+      "original": "Keep Roon's Kodo Horn in the bag. There is no Desolace kill. Turn it in to Hemet Nesingwary when the route reaches Nesingwary's Expedition.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5763", "label": "Wowhead Classic quest 5763" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5763 sourceItem 14546, end npc 715" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-1431",
+      "alsoStepIds": ["horde-20-40:turnin-1431", "horde-20-40:accept-1432"],
+      "afterStepId": "horde-20-40:turnin-98070",
+      "questId": 1431,
+      "prereqQuestIds": [],
+      "whyShort": "1432 has to be in the log before Ghost Walker. The route accepts it after the player is already in Desolace.",
+      "original": "In Orgrimmar, accept Alliance Relations from Craven Drok, turn it in to Keldran, and take the next Alliance Relations for Takata before you fly toward Desolace.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1432", "label": "Wowhead Classic quest 1432" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1432 pre 1431, quest 1434 pre 1432" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-6142",
+      "alsoStepIds": ["horde-20-40:accept-6143", "horde-20-40:accept-5381", "horde-20-40:accept-5763", "horde-20-40:accept-97265", "horde-20-40:accept-5741", "horde-20-40:accept-6161"],
+      "afterStepId": "horde-20-40:hearth-11106",
+      "questId": 6142,
+      "prereqQuestIds": [],
+      "whyShort": "Shore and fortress quests are accepted after the satyr turn-ins, so the north end is walked twice.",
+      "original": "On the first Shadowprey stop, accept Clam Bait, Other Fish to Fry, Hand of Iruxos, Hunting in Stranglethorn, and Hate the Hatefury, then accept Sceptre of Light and Claim Rackmore's Treasure on the way up the shore.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP id order: 6142 and 5741 before the fortress and the caravan" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 6142, 6143, 5381, 5763, 5741, 6161 have no pre; 97265 has no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-1366",
+      "alsoStepIds": ["horde-20-40:complete-1366", "horde-20-40:turnin-1366", "horde-20-40:accept-93225", "horde-20-40:complete-93225", "horde-20-40:turnin-93225"],
+      "afterStepId": "horde-20-40:turnin-1365",
+      "questId": 1366,
+      "prereqQuestIds": [1365],
+      "whyShort": "1366 and 93225 are the same Kolkar camp as Khan Dez'hepah. The route returns there after the shore.",
+      "original": "After Khan Dez'hepah, loot 15 centaur ears and 5 carved totems in that village, then turn both in to Felgur and Gurda on the same Ghost Walker stop.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP id order: 1365 then 1366 at Kolkar, one return to Felgur" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1366 pre 1365; 93225 has no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:turnin-1436",
+      "afterStepId": "horde-20-40:turnin-93225",
+      "questId": 1436,
+      "prereqQuestIds": [1434, 1435],
+      "whyShort": "1436 is a flight to Orgrimmar in the middle of the zone, and the player then flies back for the centaur camps.",
+      "original": "Accept Alliance Relations for Keldran when 1434 and 1435 are turned in at Ghost Walker, and turn it in only when you leave Desolace for the next zone.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1436", "label": "Wowhead Classic quest 1436" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1436 pre group 1434 and 1435, end npc 5640 in Orgrimmar" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1368",
+      "alsoStepIds": ["horde-20-40:complete-1368", "horde-20-40:turnin-1368"],
+      "questId": 1368,
+      "prereqQuestIds": [],
+      "whyShort": "Gelkis Alliance is a 3000-reputation grind. The complete pin is the giver, not a camp.",
+      "original": "Skip Gelkis Alliance. Friendly reputation with the Gelkis is a kill grind, and the follow-ups leave the village.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1368", "label": "Wowhead Classic quest 1368" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1368 reputation faction 92 value 3000, next 1370" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1370",
+      "alsoStepIds": ["horde-20-40:complete-1370", "horde-20-40:turnin-1370"],
+      "questId": 1370,
+      "prereqQuestIds": [1368],
+      "whyShort": "Stealing Supplies needs the Gelkis grind, then a second trip through Magram Village.",
+      "original": "Skip Stealing Supplies. It requires Gelkis Alliance and another hostile pass through Magram Village.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1370 pre single 1368 or 1384" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1373",
+      "alsoStepIds": ["horde-20-40:complete-1373", "horde-20-40:turnin-1373"],
+      "questId": 1373,
+      "prereqQuestIds": [1370],
+      "whyShort": "Ongeku needs 1370, and the shard is in Swamp of Sorrows. The next quest is not on this route.",
+      "original": "Skip Ongeku. The Draenethyst Shard is a Swamp of Sorrows objective, and the follow-up is not in this 20-40 file.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1373 pre 1370, next 93034, item 6190" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1367",
+      "alsoStepIds": ["horde-20-40:complete-1367", "horde-20-40:turnin-1367"],
+      "questId": 1367,
+      "prereqQuestIds": [],
+      "whyShort": "Magram Alliance is the other 3000-reputation grind. The route already keeps Gelkis steps too.",
+      "original": "Skip Magram Alliance. Doing both centaur factions is two reputation grinds.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1367 reputation faction 93 value 3000, next 1369" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1369",
+      "alsoStepIds": ["horde-20-40:complete-1369", "horde-20-40:turnin-1369"],
+      "questId": 1369,
+      "prereqQuestIds": [1367],
+      "whyShort": "Broken Tears needs the Magram reputation and a trip to the Gelkis village.",
+      "original": "Skip Broken Tears with the rest of the Magram chain.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1369 pre single 1367 or 1386, next 92743" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1371",
+      "alsoStepIds": ["horde-20-40:complete-1371", "horde-20-40:turnin-1371"],
+      "questId": 1371,
+      "prereqQuestIds": [1369],
+      "whyShort": "Gizmo for Warug is an engineering dummy that is not a Desolace kill.",
+      "original": "Skip Gizmo for Warug. It asks for an Advanced Target Dummy after Broken Tears.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1371 pre 1369, item 4392" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1375",
+      "alsoStepIds": ["horde-20-40:complete-1375", "horde-20-40:turnin-1375"],
+      "questId": 1375,
+      "prereqQuestIds": [1371],
+      "whyShort": "Khan Shaka is locked behind the Magram reputation chain.",
+      "original": "Skip Khan Shaka. The head is only available after Gizmo for Warug.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1375 pre 1371" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92743",
+      "alsoStepIds": ["horde-20-40:turnin-92743"],
+      "questId": 92743,
+      "prereqQuestIds": [1369],
+      "whyShort": "The crown is a Badlands item, and 1369 is not kept. There is no complete step.",
+      "original": "Skip A Conqueror's Crown. It needs Broken Tears and a crown from the Badlands.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92743 pre 1369, next 92841" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92754",
+      "alsoStepIds": ["horde-20-40:turnin-92754"],
+      "questId": 92754,
+      "prereqQuestIds": [1369],
+      "whyShort": "Shadow Protection potions require the Magram chain, which is dropped.",
+      "original": "Skip A New Need for Shadow Protection. Its prerequisite is Broken Tears.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92754 pre 1369" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92755",
+      "alsoStepIds": ["horde-20-40:turnin-92755"],
+      "questId": 92755,
+      "prereqQuestIds": [1370],
+      "whyShort": "Mysterious Mysticism requires Stealing Supplies.",
+      "original": "Skip Mysterious Mysticism. Its prerequisite is Stealing Supplies.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92755 pre 1370" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92814",
+      "alsoStepIds": ["horde-20-40:turnin-92814"],
+      "questId": 92814,
+      "prereqQuestIds": [1370],
+      "whyShort": "The tailor mask requires Stealing Supplies.",
+      "original": "Skip I Need a Tailor. Its prerequisite is Stealing Supplies.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92814 pre 1370" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92817",
+      "alsoStepIds": ["horde-20-40:turnin-92817"],
+      "questId": 92817,
+      "prereqQuestIds": [1370],
+      "whyShort": "The harness requires Stealing Supplies.",
+      "original": "Skip Leather Technique. Its prerequisite is Stealing Supplies.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92817 pre 1370" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92818",
+      "alsoStepIds": ["horde-20-40:turnin-92818"],
+      "questId": 92818,
+      "prereqQuestIds": [1369],
+      "whyShort": "The axes require Broken Tears.",
+      "original": "Skip Big, No, MASSIVE Iron Axes. Its prerequisite is Broken Tears.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 92818 pre 1369" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:complete-1480",
+      "alsoStepIds": ["horde-20-40:turnin-1480", "horde-20-40:accept-1481", "horde-20-40:complete-1481", "horde-20-40:turnin-1481", "horde-20-40:accept-1482", "horde-20-40:complete-1482", "horde-20-40:turnin-1482", "horde-20-40:accept-1484", "horde-20-40:turnin-1484", "horde-20-40:accept-1488", "horde-20-40:complete-1488", "horde-20-40:turnin-1488"],
+      "questId": 1480,
+      "prereqQuestIds": [],
+      "whyShort": "Each Corrupter hand-in returns to Ghost Walker, and 1488 is a level 40 pair.",
+      "original": "Skip The Corrupter from the Flayed Demon Skin through Lord Azrethoc and Jugkar. The chain turns in at Ghost Walker after every piece.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1480 item start, 1481 pre 1480, 1482 pre 1481, 1484 pre 1482, 1488 pre 1484" },
+        { "url": "https://www.wowhead.com/classic/quest=1488", "label": "Wowhead Classic quest 1488" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6027",
+      "alsoStepIds": ["horde-20-40:complete-6027", "horde-20-40:turnin-6027"],
+      "questId": 6027,
+      "prereqQuestIds": [5741],
+      "whyShort": "Book of the Ancients is a level 38 summon after the sceptre is already done. OpenXP stops at 5741.",
+      "original": "Skip Book of the Ancients. Turn in the Sceptre of Light and leave the statue.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 6027 level 38, pre 5741" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 33-34 turns in 5741 and does not take 6027" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5581",
+      "alsoStepIds": ["horde-20-40:complete-5581", "horde-20-40:turnin-5581"],
+      "questId": 5581,
+      "prereqQuestIds": [5381],
+      "whyShort": "Six Mannoroc portals are a separate south trip after the fortress box.",
+      "original": "Skip Portals of the Legion. Hand of Iruxos ends at Taiga. Do not take the Mannoroc follow-up.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5581 pre 5381, level 38" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5943",
+      "alsoStepIds": ["horde-20-40:turnin-5943"],
+      "questId": 5943,
+      "prereqQuestIds": [],
+      "whyShort": "The south caravan is a level 38 party escort through Mannoroc.",
+      "original": "Skip the south Gizelton Caravan. The north Bodyguard for Hire is the one that shares the Kormek road.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5943 level 38, PARTY_ACCEPT, npc 11626" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6134",
+      "alsoStepIds": ["horde-20-40:complete-6134", "horde-20-40:turnin-6134"],
+      "questId": 6134,
+      "prereqQuestIds": [],
+      "whyShort": "Ghost-o-plasm is a level 39 graveyard collection on the balanced route only.",
+      "original": "Skip Ghost-o-plasm Round Up. It is a separate graveyard trip at level 39.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 6134 level 39, reqLevel 34" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-6132",
+      "alsoStepIds": ["horde-20-40:turnin-6132"],
+      "questId": 6132,
+      "prereqQuestIds": [],
+      "whyShort": "Get Me Out of Here is a party escort from the Valley of Spears back to the graveyard.",
+      "original": "Skip Get Me Out of Here. It is an escort out of the Valley of Spears.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 6132 level 39, PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-5386",
+      "alsoStepIds": ["horde-20-40:complete-5386", "horde-20-40:turnin-5386"],
+      "questId": 5386,
+      "prereqQuestIds": [],
+      "whyShort": "The two Bloodbelly fish come from the repeatable shellfish trade, which is not on the route.",
+      "original": "Skip Catch of the Day. It needs two Bloodbelly fish from the repeatable bucket trade at the pier.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5386 item 13546; quest 5421 repeatable item 13545" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1361",
+      "alsoStepIds": ["horde-20-40:turnin-1361", "horde-20-40:accept-1362", "horde-20-40:turnin-1362"],
+      "questId": 1361,
+      "prereqQuestIds": [],
+      "whyShort": "1365 has no prerequisite. These steps detour to Hillsbrad and the Barrens after Felgur.",
+      "original": "Skip Regthar Deathgate and The Kolkar of Desolace. Khan Dez'hepah does not require that breadcrumb.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1362 breadcrumbFor 1365; quest 1365 has no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1528",
+      "alsoStepIds": ["horde-20-40:turnin-1528"],
+      "questId": 1528,
+      "prereqQuestIds": [],
+      "whyShort": "Call of Water is the shaman breadcrumb to the Barrens. The next step is not in this section.",
+      "original": "Skip Call of Water in the Desolace block. It is a shaman errand to Islen Waterseer, and the follow-up is not here.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 1528 sort SHAMAN, next 1530, end npc 5901" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:to-desolace",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "Maraudon is a later dungeon file. The Valley of Spears is only a landmark on the way south.",
+      "original": "Do not start a Maraudon clear from Shadowprey or the Valley of Spears. A later dungeon pass owns that instance.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/zone=405/desolace", "label": "Wowhead Classic Desolace" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:complete-1434",
+      "questId": 97265,
+      "prereqQuestIds": [],
+      "whyShort": "Hate the Hatefury uses the same Sargeron satyrs as Befouled by Satyr, including the tricksters.",
+      "original": "Kill the Hatefury tricksters on this same Sargeron pass so Hate the Hatefury finishes with Befouled by Satyr.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97265 creatures include 4671 with the 1434 satyr ids, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:complete-5561",
+      "questId": 5501,
+      "prereqQuestIds": [],
+      "whyShort": "Bone Collector is the same graveyard as the kodo roundup. Apparitions can spawn off the bones.",
+      "original": "Pick up the kodo bones while you walk the tame targets back to Smeed. If an apparition spawns, finish or run; do not make a second graveyard trip.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 5501 item 13703, level 39, no pre; quest 5561 same graveyard" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP does 5561 at the graveyard and does not take 5501" }
+      ],
+      "verified": false
+    }
+  ]
+}

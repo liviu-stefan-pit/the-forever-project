@@ -1,0 +1,866 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/liviu-stefan-pit/project-forever/contracts/route-v2.schema.json",
+  "title": "project-forever route schema v2",
+  "description": "Authoring pack: steps + class professions + tips matrix. Mirrors contracts/schema.ts. See docs/ROUTE_SCHEMA.md.",
+  "type": "object",
+  "required": [
+    "schema",
+    "version",
+    "steps"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "project-forever/route"
+    },
+    "version": {
+      "const": 2
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "levels": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 60
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "bracket": {
+      "type": "string",
+      "minLength": 1
+    },
+    "next": {
+      "type": "string",
+      "minLength": 1
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Step"
+      }
+    },
+    "classProfessions": {
+      "$ref": "#/$defs/ClassProfessionsFile"
+    },
+    "tipsMatrix": {
+      "$ref": "#/$defs/TipsMatrixFile"
+    }
+  },
+  "$defs": {
+    "SourceRef": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "url",
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "RouteStyle": {
+      "enum": [
+        "balanced",
+        "speedrun"
+      ]
+    },
+    "Role": {
+      "enum": [
+        "tank",
+        "healer",
+        "dps"
+      ]
+    },
+    "ClassKey": {
+      "enum": [
+        "Warrior",
+        "Hunter",
+        "Rogue",
+        "Priest",
+        "Shaman",
+        "Mage",
+        "Warlock",
+        "Druid",
+        "Paladin"
+      ]
+    },
+    "PrimaryProfession": {
+      "enum": [
+        "Alchemy",
+        "Blacksmithing",
+        "Enchanting",
+        "Engineering",
+        "Herbalism",
+        "Leatherworking",
+        "Mining",
+        "Skinning",
+        "Tailoring"
+      ]
+    },
+    "SecondaryProfession": {
+      "enum": [
+        "Cooking",
+        "First Aid",
+        "Fishing"
+      ]
+    },
+    "ProfessionKey": {
+      "enum": [
+        "Alchemy",
+        "Blacksmithing",
+        "Enchanting",
+        "Engineering",
+        "Herbalism",
+        "Leatherworking",
+        "Mining",
+        "Skinning",
+        "Tailoring",
+        "Cooking",
+        "First Aid",
+        "Fishing"
+      ]
+    },
+    "ZoneCoord": {
+      "type": "object",
+      "properties": {
+        "mapId": {
+          "type": "integer"
+        },
+        "zone": {
+          "type": "string"
+        },
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "required": [
+        "mapId",
+        "zone",
+        "x",
+        "y"
+      ],
+      "additionalProperties": false
+    },
+    "NpcRef": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "zone": {
+          "type": "string"
+        },
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "mapId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "zone",
+        "x",
+        "y"
+      ],
+      "additionalProperties": false
+    },
+    "DungeonRef": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "instanceId": {
+          "type": "integer"
+        },
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "additionalProperties": false
+    },
+    "Tip": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "general",
+            "elite",
+            "profession",
+            "speed",
+            "advice"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Role"
+          }
+        },
+        "classes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClassKey"
+          }
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RouteStyle"
+          }
+        },
+        "dungeons": {
+          "type": "boolean"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          }
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "kind",
+        "text",
+        "sources",
+        "verified"
+      ],
+      "additionalProperties": false
+    },
+    "ProfessionHook": {
+      "type": "object",
+      "properties": {
+        "profession": {
+          "$ref": "#/$defs/ProfessionKey"
+        },
+        "itemId": {
+          "type": "integer"
+        },
+        "itemName": {
+          "type": "string"
+        },
+        "qty": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "skillTarget": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300
+        },
+        "npc": {
+          "$ref": "#/$defs/NpcRef"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          }
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "profession",
+        "note",
+        "sources",
+        "verified"
+      ],
+      "additionalProperties": false
+    },
+    "EliteTactic": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "npcId": {
+          "type": "integer"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "groupSize": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 40
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Tip"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          }
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "tips",
+        "sources",
+        "verified"
+      ],
+      "additionalProperties": false
+    },
+    "Pin": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "npc"
+            },
+            "npcId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "at": {
+              "$ref": "#/$defs/ZoneCoord"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/SourceRef"
+              }
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "service": {
+              "enum": [
+                "questGiver",
+                "turnIn",
+                "vendor",
+                "trainer",
+                "flightPath",
+                "innkeeper"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "npcId",
+            "name",
+            "at",
+            "sources",
+            "verified"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "object"
+            },
+            "objectId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "at": {
+              "$ref": "#/$defs/ZoneCoord"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/SourceRef"
+              }
+            },
+            "verified": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "kind",
+            "objectId",
+            "name",
+            "at",
+            "sources",
+            "verified"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "mobArea"
+            },
+            "npcIds": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 1
+            },
+            "name": {
+              "type": "string"
+            },
+            "mapId": {
+              "type": "integer"
+            },
+            "zone": {
+              "type": "string"
+            },
+            "polygon": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "x": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  },
+                  "y": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 100
+                  }
+                },
+                "required": [
+                  "x",
+                  "y"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 3
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/SourceRef"
+              }
+            },
+            "verified": {
+              "type": "boolean"
+            },
+            "center": {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "y": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              },
+              "required": [
+                "x",
+                "y"
+              ],
+              "additionalProperties": false
+            },
+            "radius": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "kind",
+            "npcIds",
+            "name",
+            "mapId",
+            "zone",
+            "sources",
+            "verified"
+          ],
+          "additionalProperties": false,
+          "anyOf": [
+            {
+              "required": [
+                "polygon"
+              ]
+            },
+            {
+              "required": [
+                "center",
+                "radius"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "Step": {
+      "type": "object",
+      "description": "Guide step (contracts/schema.ts Step). v1 fields are loose here; v2 fields are strict.",
+      "required": [
+        "id",
+        "n",
+        "tags",
+        "text",
+        "actions",
+        "conditions"
+      ],
+      "not": {
+        "required": [
+          "raw"
+        ]
+      },
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "n": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "section": {
+          "type": "string"
+        },
+        "stop": {
+          "type": "integer"
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "dungeonPart": {
+              "enum": ["pickup", "prep", "run", "turnin"]
+            }
+          }
+        },
+        "text": {
+          "type": "array"
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type"
+            ]
+          }
+        },
+        "conditions": {
+          "type": "array"
+        },
+        "filter": {
+          "type": "object"
+        },
+        "bonus": {
+          "type": "object"
+        },
+        "mayBeSkipped": {
+          "type": "object"
+        },
+        "routes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RouteStyle"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "dungeon": {
+          "$ref": "#/$defs/DungeonRef"
+        },
+        "dungeonsOff": {
+          "type": "boolean"
+        },
+        "dungeonsOffRoutes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/RouteStyle"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "alternativeTo": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "classes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClassKey"
+          }
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Role"
+          }
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Tip"
+          }
+        },
+        "professionHooks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ProfessionHook"
+          }
+        },
+        "elite": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EliteTactic"
+          }
+        },
+        "pins": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Pin"
+          }
+        },
+        "minutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          }
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "not": {
+            "required": [
+              "dungeon",
+              "dungeonsOff"
+            ]
+          }
+        }
+      ]
+    },
+    "ProfessionPair": {
+      "type": "object",
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pair": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PrimaryProfession"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "reason": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Role"
+          }
+        }
+      },
+      "required": [
+        "rank",
+        "pair",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "ProfessionMilestone": {
+      "type": "object",
+      "properties": {
+        "profession": {
+          "$ref": "#/$defs/ProfessionKey"
+        },
+        "skillTarget": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300
+        },
+        "stepIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "levels": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "profession",
+        "skillTarget",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "ClassProfessions": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ProfessionPair"
+          }
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "profession": {
+                "$ref": "#/$defs/SecondaryProfession"
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "profession",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "levelingPlan": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ProfessionMilestone"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceRef"
+          }
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "primary",
+        "secondary",
+        "levelingPlan",
+        "sources",
+        "verified"
+      ],
+      "additionalProperties": false
+    },
+    "ClassProfessionsFile": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/ClassKey"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/ClassProfessions"
+      }
+    },
+    "TipsMatrixFile": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/ClassKey"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "propertyNames": {
+          "enum": [
+            "tank",
+            "healer",
+            "dps",
+            "any"
+          ]
+        },
+        "additionalProperties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Tip"
+          }
+        }
+      }
+    }
+  }
+}

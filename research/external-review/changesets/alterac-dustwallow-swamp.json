@@ -1,0 +1,340 @@
+{
+  "routeId": "horde-20-40-and-40-60",
+  "mapIds": { "Alterac Mountains": 1416, "Dustwallow Marsh": 1445, "Swamp of Sorrows": 1435 },
+  "opCounts": { "add": 0, "modify": 0, "reorder": 2, "drop": 16, "tip": 2, "total": 20 },
+  "slowChainsDropped": [
+    "533-503-506-507-508",
+    "519-520-521",
+    "1166",
+    "1169-1170-1171-1172",
+    "1206",
+    "81570",
+    "1261-1262-7541",
+    "1270",
+    "1116",
+    "1372-1383",
+    "1373",
+    "1393",
+    "1429",
+    "92434",
+    "93464",
+    "swamp level grinds"
+  ],
+  "blockedByMissingPrerequisite": [
+    { "questId": 1203, "missingPre": [1206], "note": "1203 is not on either route. 1206 is dropped, so the sword follow-up stays off." },
+    { "questId": 1117, "missingPre": [1116], "note": "1117 is not on either route." },
+    { "questId": 1173, "missingPre": [1172], "note": "1173 is not on either route." },
+    { "questId": 1388, "missingPre": [1383], "note": "1388 and 1391 are not on either route, so Nothing But The Truth never reaches Stonard." },
+    { "questId": 1444, "missingPre": [1429], "note": "1444 is not on these two route files." },
+    { "questId": 93034, "missingPre": [1373], "note": "93034 is on the 40-60 route in Desolace. Dropping 1373 leaves that step without its prerequisite." },
+    { "questId": 96984, "missingPre": [92434], "note": "96984 is only in the dungeon step file." },
+    { "questId": 93465, "missingPre": [93464], "note": "93465 is not on either route." }
+  ],
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-533",
+      "alsoStepIds": ["horde-20-40:complete-533", "horde-20-40:turnin-533", "horde-20-40:accept-503", "horde-20-40:complete-503", "horde-20-40:turnin-503", "horde-20-40:accept-506", "horde-20-40:turnin-506"],
+      "questId": 533,
+      "prereqQuestIds": [498],
+      "whyShort": "533 is the Syndicate missive camp. 503 and 506 only exist after that document.",
+      "original": "Do not farm Syndicate Footpads for the missive, and do not free Gol'dir or return Blackmoore's Legacy.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 31-32 turns in 533 and does not accept 503" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 533 pre 498, next 503; 506 pre 503" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:hillsbrad-foothills:a507",
+      "alsoStepIds": ["h4060:hillsbrad-foothills:c507", "h4060:hillsbrad-foothills:t507", "h4060:hillsbrad-foothills:a508", "h4060:hillsbrad-foothills:t508"],
+      "questId": 507,
+      "prereqQuestIds": [506],
+      "whyShort": "507 and 508 are the rest of the missive chain after 506.",
+      "original": "Skip Lord Aliden Perenolde and Taretha's Gift once Blackmoore's Legacy is off the route.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 507 pre 506, next 508; 508 pre 507" },
+        { "url": "https://www.wowhead.com/classic/quest=507", "label": "Wowhead Classic quest 507" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:hillsbrad-foothills:a519",
+      "alsoStepIds": ["h4060:hillsbrad-foothills:c519", "h4060:hillsbrad-foothills:t519", "h4060:hillsbrad-foothills:a520", "h4060:hillsbrad-foothills:c520", "h4060:hillsbrad-foothills:t520", "h4060:hillsbrad-foothills:a521", "h4060:feralas:t521"],
+      "questId": 519,
+      "prereqQuestIds": [518],
+      "whyShort": "519 is three named elites marked as a group of three. 520 and 521 follow it.",
+      "original": "After the ten Crushridge Maulers, leave the named ogre heads and the crown delivery.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 519 pre 518; 520 pre 519; 521 pre 520, end npc 2227" },
+        { "url": "https://www.wowhead.com/classic/quest=519", "label": "Wowhead Classic quest 519" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:dustwallow-marsh:a1166",
+      "alsoStepIds": ["h4060:dustwallow-marsh:c1166", "h4060:dustwallow-marsh:t1166"],
+      "questId": 1166,
+      "prereqQuestIds": [],
+      "whyShort": "1166 is the ogre grog, snuff, and strongbox pickup.",
+      "original": "Do not collect Mok'Morokk's grog, snuff, and strongbox.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1166 items 5834, 5835, 5836, no pre" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 41-42 does 1166; this pass still drops the ogre collection" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:dustwallow-marsh:a1169",
+      "alsoStepIds": ["h4060:dustwallow-marsh:c1169", "h4060:dustwallow-marsh:t1169", "h4060:dustwallow-marsh:a1170", "h4060:dustwallow-marsh:t1170", "h4060:dustwallow-marsh:a1171", "h4060:dustwallow-marsh:t1171", "h4060:dustwallow-marsh:a1172", "h4060:dustwallow-marsh:c1172", "h4060:dustwallow-marsh:t1172"],
+      "questId": 1169,
+      "prereqQuestIds": [],
+      "whyShort": "1169 is 15 tongues and 15 hearts. 1170 through 1172 only open after that stack.",
+      "original": "Skip the searing tongue and heart stack, the two Brackenwall talks, and the five Onyxia eggs.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1169 next 1170; 1172 pre 1171, object 20359" },
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 41-42 stops at 1171 and does not take 1172" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1206",
+      "alsoStepIds": ["horde-20-40:complete-1206", "horde-20-40:turnin-1206"],
+      "questId": 1206,
+      "prereqQuestIds": [1218],
+      "whyShort": "1206 is forty Darkmist eyes. 1203 is not on the route.",
+      "original": "Turn in the three Soothing Spices and leave. Do not farm forty spider eyes.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1206 pre 1218, next 1203" },
+        { "url": "https://www.curseforge.com/wow/addons/guidetime-bethink", "label": "Bethink H-38-39 farms the forty eyes; this pass drops that farm" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-81570",
+      "alsoStepIds": ["horde-20-40:turnin-81570"],
+      "questId": 81570,
+      "prereqQuestIds": [],
+      "whyShort": "81570 is a broadsword hand-in at Jarl and is exclusive with 1203. It is not a camp clear.",
+      "original": "Do not bring Jarl a Moonsteel Broadsword.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 81570 exclusiveTo 1203, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1261",
+      "alsoStepIds": ["horde-20-40:complete-1261", "horde-20-40:turnin-1261", "horde-20-40:accept-1262", "horde-20-40:complete-1262", "horde-20-40:turnin-1262", "horde-20-40:accept-7541", "horde-20-40:turnin-7541"],
+      "questId": 1261,
+      "prereqQuestIds": [1240],
+      "whyShort": "1261 is a rare murloc pendant. 1262 and 7541 are that same chain.",
+      "original": "Do not grind Muckshells for the Jeweled Pendant, and do not report it to Zor or turn in Service to the Horde.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 41-42 notes the pendant at about a 5% drop" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1261 pre 1240, next 1262; 7541 pre 1262" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1270",
+      "alsoStepIds": ["horde-20-40:turnin-1270"],
+      "questId": 1270,
+      "prereqQuestIds": [],
+      "whyShort": "1270 is a party escort and the turn-in is in Ratchet.",
+      "original": "Skip Stinky's Escape.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1270 flag PARTY_ACCEPT, end npc 3446" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1116",
+      "alsoStepIds": ["horde-20-40:complete-1116", "horde-20-40:turnin-1116"],
+      "questId": 1116,
+      "prereqQuestIds": [1115],
+      "whyShort": "1116 is ten dream-dust specks from whelps. 1117 is not on the route.",
+      "original": "Do not farm Swamp of Sorrows whelps for dream dust.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1116 pre 1115, next 1117, item 5803" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-1373",
+      "alsoStepIds": ["horde-20-40:complete-1373", "horde-20-40:turnin-1373"],
+      "questId": 1373,
+      "prereqQuestIds": [1370],
+      "whyShort": "1373 includes a 3000 Gelkis reputation grind. The shard is only one objective.",
+      "original": "Do not detour into the swamp for the Draenethyst Shard, and do not hold Gelkis reputation for Ongeku.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1373 pre 1370, reputation faction 92 value 3000, next 93034" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:swamp-of-sorrows:a1393",
+      "alsoStepIds": ["h4060:swamp-of-sorrows:t1393"],
+      "questId": 1393,
+      "prereqQuestIds": [],
+      "whyShort": "1393 is a party escort through the Lost Ones.",
+      "original": "Skip Galen's Escape.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1393 flag PARTY_ACCEPT" },
+        { "url": "https://github.com/WowPro/WowPro_Leveling", "label": "WoW-Pro Vanilla Horde chapter 3 marks 1393 elite escort" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:swamp-of-sorrows:a1429",
+      "alsoStepIds": ["h4060:the-hinterlands:t1429"],
+      "questId": 1429,
+      "prereqQuestIds": [1424],
+      "whyShort": "1429 turns in in the Hinterlands. 1444 is not on these route files.",
+      "original": "Turn in Pool of Tears and do not take The Atal'ai Exile.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/WowPro/WowPro_Leveling", "label": "WoW-Pro Vanilla Horde chapter 3 says not to take the follow-up after 1424" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1429 pre 1424, end npc 5598, next 1444" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:swamp-of-sorrows:a1372",
+      "alsoStepIds": ["h4060:swamp-of-sorrows:t1372", "h4060:swamp-of-sorrows:a1383", "h4060:swamp-of-sorrows:c1383", "h4060:swamp-of-sorrows:t1383"],
+      "questId": 1383,
+      "prereqQuestIds": [1372],
+      "whyShort": "1383 is panther hearts plus Mire Lord Fungus, and 1388 is not on the route.",
+      "original": "Do not start Nothing But The Truth. The fungus and the panther hearts are separate farms, and the chain never reaches Stonard.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1383 pre 1372, items 6080, 6081, 6082; 1388 is not a route step" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-92434",
+      "alsoStepIds": ["horde-20-40:complete-92434", "horde-20-40:turnin-92434"],
+      "questId": 92434,
+      "prereqQuestIds": [545],
+      "whyShort": "92434 turns in in Silverpine. The follow-up is a dungeon step, not this route.",
+      "original": "Finish Dalaran Patrols at Magus Voidglare and do not take Blood in the Streets.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 92434 pre 545, end npc 269127, next 96984" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-93464",
+      "alsoStepIds": ["horde-20-40:turnin-93464"],
+      "questId": 93464,
+      "prereqQuestIds": [1389],
+      "whyShort": "93464 turns in at Azore in Desolace after that zone is finished.",
+      "original": "Turn in the Draenethyst Crystals at the Harborage and do not carry The Visiting Mage back to Desolace.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 93464 pre 1389, end npc 11863, next 93465" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:swamp-of-sorrows:grind-speedrun-before-1430",
+      "alsoStepIds": ["h4060:swamp-of-sorrows:grind-balanced-before-1430"],
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The two grind steps are about 202 and 215 minutes and sit in front of Fresh Meat.",
+      "original": "Do not park on Sawtooth Snappers or Marsh Inkspewers for levels. Kill them only while 698, 699, and 1426 are open.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 43-44 kills snappers and inkspewers for 699 and 1426, with no separate level grind" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-1268",
+      "alsoStepIds": ["horde-20-40:turnin-1268", "horde-20-40:accept-1251", "horde-20-40:turnin-1251", "horde-20-40:accept-1269", "horde-20-40:turnin-1269", "horde-20-40:accept-1321", "horde-20-40:turnin-1321"],
+      "afterStepId": "horde-20-40:fp-11899",
+      "questId": 1268,
+      "prereqQuestIds": [],
+      "whyShort": "The inn clues are on the road into Brackenwall. The route currently clears spies first and walks back.",
+      "original": "On the way into Brackenwall, loot the hoofprints, the black shield, and Reethe's badge, turn them in, and show the shield to Do'gol before leaving the village.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 33-34 accepts 1268 and 1251 before 1201" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1268, 1251, and 1269 have no pre; 1321 pre 1251" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "h4060:swamp-of-sorrows:a1430",
+      "afterStepId": "h4060:swamp-of-sorrows:a1424",
+      "questId": 1430,
+      "prereqQuestIds": [],
+      "whyShort": "1430 is the same Stonard stop as 698 and 1424. The route accepts it after a long grind.",
+      "original": "Accept Lack of Surplus, Pool of Tears, and Fresh Meat in Stonard before riding east.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 43-44 accepts 1430 and 1424 before leaving Stonard" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 698, 1424, and 1430 have no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:dustwallow-marsh:c1168",
+      "questId": 1168,
+      "prereqQuestIds": [],
+      "whyShort": "1168 is the Firemane kill quest and has no item list. It stays after 1166 is removed.",
+      "original": "Kill the Firemane scouts, ashtails, and scalebanes on one south pass and turn them in to Tharg. Do not pick up Mok'Morokk's items while you are there.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1168 creatures 4329, 4331, 4328, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:complete-1177",
+      "questId": 1177,
+      "prereqQuestIds": [],
+      "whyShort": "Twelve Mirefin Heads finish at Mudcrush, who is already on the north loop.",
+      "original": "Kill the north-shore murlocs for twelve Mirefin Heads on the same walk as the Lost Report, then turn them in to Mudcrush.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP second Dustwallow pass completes 1177 on the north shore" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1177 item 5847, no pre, end npc 4503" }
+      ],
+      "verified": false
+    }
+  ]
+}

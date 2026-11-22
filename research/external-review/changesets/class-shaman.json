@@ -1,0 +1,333 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "verified": false,
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Shaman",
+      "role": "enhancement",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Forever DB scores Alchemy and Engineering S for Enhancement and names them partners. Smithing is also S, but taking it drops the nets, and Mining is only D.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/", "label": "WoW Forever DB Enhancement professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Shaman",
+      "role": "elemental",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same S pair as Enhancement. Elemental uses the grenades while leveling and the spell-power goggles later. Skinning falls to C because Lightning Bolt kills slowly.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-elemental-pve/", "label": "WoW Forever DB Elemental professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Shaman",
+      "role": "restoration",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Restoration’s list also puts Alchemy and Engineering at S. The healer is not parked on the leather pair, which is only A and skins fewer beasts.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/", "label": "WoW Forever DB Restoration professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Shaman",
+      "role": "enhancement",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Troll shaman is legal: Questie 3084 is class 64 and race bit 128. Berserking and beast slaying do not change the S pair.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/", "label": "WoW Forever DB Enhancement professions, 11 Nov 2026" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie quest 3084 Rune-Inscribed Tablet" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Shaman",
+      "role": "elemental",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same pair as the Orc caster. Bow skill is unused on a shaman, so it does not pull Tailoring or anything else into the slots.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-elemental-pve/", "label": "WoW Forever DB Elemental professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Shaman",
+      "role": "restoration",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Health regen does not replace flasks or nets. Restoration stays on the shared S pair.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/", "label": "WoW Forever DB Restoration professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Shaman",
+      "role": "enhancement",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Cultivation is level-gated and on a 15-minute cooldown, and Herbalism is only C for Enhancement. War Stomp does not replace Engineering.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/", "label": "WoW Forever DB Enhancement professions, 11 Nov 2026" },
+        { "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions", "label": "WarcraftMaps: Tauren Cultivation changes, as logged in professions research" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Shaman",
+      "role": "elemental",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Herbalism is B here, not the named partner. Swapping it in would drop Engineering.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-elemental-pve/", "label": "WoW Forever DB Elemental professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Shaman",
+      "role": "restoration",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "A Tauren healer still wants the S flasks and the S nets. Herbalism stays a rejected gatherer, not the second primary.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/", "label": "WoW Forever DB Restoration professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Shaman",
+      "role": "enhancement",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Windshaper shaman is a published Horde combo. No profession racial showed up, so the island start does not get its own pair.",
+      "sources": [
+        { "url": "https://news.blizzard.com/en-us/article/24315820/world-of-warcraft-forever-now-live", "label": "Blizzard: Forever launch, Windshaper Shaman" },
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-enhancement-pve/", "label": "WoW Forever DB Enhancement professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Shaman",
+      "role": "elemental",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same S pair. Zephras trainer pins were not treated as a reason to switch Elemental onto Herbalism.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-elemental-pve/", "label": "WoW Forever DB Elemental professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Shaman",
+      "role": "restoration",
+      "pair": ["Alchemy", "Engineering"],
+      "rejected": [
+        ["Skinning", "Leatherworking"],
+        ["Mining", "Blacksmithing"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same S pair as the other healers. No Skyborne-only healing craft was named.",
+      "sources": [
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/", "label": "WoW Forever DB Restoration professions, 11 Nov 2026" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [1516, 1517, 1518],
+      "whyShort": "Felstalker hooves are inside the Burning Blade cave the Durotar route already clears for 794. Spirit Rock is the hill south of the Den.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie quests 1516-1518; Felstalker 3102 zone 14" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [1516, 1517, 1518],
+      "whyShort": "Trolls share the Valley of Trials. 3084 sends them to Shikrik, then the same earth chain as the Orc, in the same cave.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie quests 3084 and 1516" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [1519, 1520, 1521],
+      "whyShort": "Ritual Salve drops from Bristleback Shaman in Brambleblade Ravine, which the Mulgore route already enters for 757. Drink at Kodo Rock and turn in at Camp Narache.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 1519 item 6634 from npc 2953, zone 215" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "all",
+      "class": "Shaman",
+      "role": "all",
+      "whyShort": "First Aid, then Cooking, then Fishing. Potions moved to First Aid. Fishing is last on every shaman list and only feeds the cook.",
+      "sources": [
+        { "url": "https://theforeverguides.com/classes/shaman/professions/", "label": "Forever Guides shaman professions, secondaries" },
+        { "url": "https://wowfdb.com/tier-lists/professions-shaman-restoration-pve/", "label": "WoW Forever DB: First Aid A, Cooking B, Fishing F on Restoration" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "all",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [2985, 2986, 1528, 1529, 1530, 1535, 1536, 1534, 220, 63, 100, 96],
+      "whyShort": "Call of Water leaves the route for Silverpine, Tarren Mill, and Ashenvale. The chain is long. 6563 stays out.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie Call of Water 1528 through 96" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [2983, 1522, 1524, 1525, 1526, 1527],
+      "whyShort": "2983 is only the Razor Hill breadcrumb. 1524-1527 are a Durotar shrine trip that the route does not already clear.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 2983 and 1524-1527" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [2983, 1522, 1524, 1525, 1526, 1527],
+      "whyShort": "Trolls use the same Durotar fire breadcrumb. The shrine kills are not on the cave the route already clears.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 2983 and 1524-1527" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [2984, 1523, 1524, 1525, 1526, 1527],
+      "whyShort": "2984 starts in Mulgore and still sends the shaman back to the Durotar shrine for the kills.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 2984 and 1524-1527" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Skyborne",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [92466, 92467, 92468, 98517, 97243, 97244, 97245, 97257],
+      "whyShort": "Earth and fire totems are Zephras steps. The Horde mainland route does not clear that island, so the starter-cave exception does not apply.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 92466-92468 and 97243-97257, zone Zephras Isle" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "all",
+      "class": "Shaman",
+      "role": "all",
+      "questIds": [1531, 1532, 96136, 79360, 7667, 8258, 8410],
+      "whyShort": "Air’s next step is Charlga in Razorfen Kraul. Darkreaver is Scholomance. Elemental Mastery is four samples. None of those are short stops already on the route. No separate weapon quest qualified.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "Questie 79360, 8258, 8410" }
+      ],
+      "verified": false
+    }
+  ]
+}

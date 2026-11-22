@@ -1,0 +1,275 @@
+{
+  "routeId": "horde-riverglades",
+  "mapId": 2548,
+  "opCounts": { "add": 0, "modify": 7, "reorder": 5, "drop": 3, "tip": 4, "total": 19 },
+  "ops": [
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:to-riverglades",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The travel line says the road is unverified. Horde flight is Rog'mar, and the Kalimdor shortcut is the free Powderfuse boat.",
+      "original": "When you reach the mid-30s, head to Riverglades. Use whatever flight path or road the in-game map shows from the Barrens or the eastern kingdoms hubs.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://bytetavern.com/wow-forever-riverglades/", "label": "Byte Tavern Riverglades access: Steamwheedle boat and Rog'mar flight" },
+        { "url": "https://maxdps.com/forever/travel", "label": "MaxDPS Forever travel: Powderfuse boat about 52 seconds" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB zone 16591 Riverglades uiMapId 2548" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:turnin-95141",
+      "afterStepId": "horde-20-40:to-riverglades",
+      "questId": 95141,
+      "prereqQuestIds": [],
+      "whyShort": "95141 is turned in during the Stranglethorn second circuit, which is a round trip to Rog'mar before the zone block.",
+      "original": "Turn in Report to Rog'mar to Krom'rosh when the route arrives at Rog'mar, not in the middle of Stranglethorn.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95141 no pre, end npc 256418, zone 33" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde turns 95141 in on the first Rog'mar stop" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:turnin-95143",
+      "afterStepId": "horde-20-40:turnin-95141",
+      "questId": 95143,
+      "prereqQuestIds": [],
+      "whyShort": "95143 is turned in during Arathi, so the player flies to Tan'jani and leaves again before the zone.",
+      "original": "Turn in Finding Tan'jani to Tan'jani on the same Rog'mar arrival as Report to Rog'mar.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95143 no pre, end npc 263190 in Riverglades" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:accept-93787",
+      "alsoStepIds": ["horde-20-40:accept-93788", "horde-20-40:accept-95951"],
+      "afterStepId": "horde-20-40:accept-93786",
+      "questId": 93787,
+      "prereqQuestIds": [],
+      "whyShort": "93787, 93788, and 95951 are accepted only after a full return from the previous quest.",
+      "original": "At Rog'mar, accept A Message in Blood, Food for the Taking, Borrowed Blades, and Fetch 'n' Fletch before leaving camp.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 93786, 93787, 93788, 95951 have no pre" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde accepts the Rog'mar south quests on one stop" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "horde-20-40:complete-93787",
+      "alsoStepIds": ["horde-20-40:complete-93788", "horde-20-40:complete-95951", "horde-20-40:accept-96103"],
+      "afterStepId": "horde-20-40:complete-93786",
+      "questId": 93787,
+      "prereqQuestIds": [],
+      "whyShort": "The south farm, the logging camp, and the carcass are walked as three separate trips.",
+      "original": "On one south ride, take the satchels with the farmhands, the axes and wood bundles at the logging camp, and A Feast for Buzzards from the carcass.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 93787 item 262640; 95951 wood bundles; 96103 no pre" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde does Meadowsbrook, the carcass, and Turner's Logging Camp in one outing" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-93787",
+      "questId": 93787,
+      "prereqQuestIds": [],
+      "whyShort": "The complete pin stands on Krom'rosh. The satchels come from the Meadowsbrook farmhands.",
+      "original": "Steal 6 Feed Satchels at Meadowsbrook while killing the farmhands for A Message in Blood.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 93787 objectivesText: 6 Feed Satchels from the Alliance farm in Meadowsbrook" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-95951",
+      "questId": 95951,
+      "prereqQuestIds": [],
+      "whyShort": "The complete pin stands on Tan'jani. The wood piles are at Turner's Logging Camp.",
+      "original": "Collect Wood Bundles from Peasant Woodpiles at Turner's Logging Camp and fletch 20 Makeshift Stickin' Spears while gathering axes.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95951 objectivesText: Peasant Woodpiles in Turner's Logging Camp" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-96063",
+      "questId": 96063,
+      "prereqQuestIds": [],
+      "whyShort": "The complete pin is Sleebo himself. The vials come from the marsh vents beside him.",
+      "original": "Collect Marsh Gas Vials from the vents by the ponds southwest of Sleebo, then turn the quest in to him.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 96063 item 272004 Marsh Gas Vial, giver npc 263367" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde collects the vials at the ponds southwest of Sleebo" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:complete-94480",
+      "questId": 94480,
+      "prereqQuestIds": [93787],
+      "whyShort": "94480 has no kill objective. The complete pin is Krom'rosh, and the turn-in is Gorg.",
+      "original": "A Gift From Our Enemies is the handoff of the stolen feed to Gorg. There is no second farm stop.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 94480 pre 93787, no objectives, end npc 256655" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "horde-20-40:accept-95982",
+      "alsoStepIds": ["horde-20-40:complete-95982", "horde-20-40:turnin-95982"],
+      "questId": 95982,
+      "prereqQuestIds": [],
+      "whyShort": "Not My Circus is 10 Briny Seafood Stew, and the complete pin is the giver.",
+      "original": "Skip Not My Circus. Ten stews is a cooking grind, and it has no follow-up.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95982: 10 Briny Seafood Stew, no pre, no next" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "horde-20-40:arrive-riverglades",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The arrival line says the zone opens around 36 and to do every quest below 40, including three that are not all under 40.",
+      "original": "Riverglades is about 36-44. Do the sub-40 Rog'mar quests here. Leave 96107 and the level 40 follow-ups, including 94532 and 94535 behind 96109, for the 40-60 route.",
+      "targetFile": "research/levels-20-40.route-v2.json",
+      "sources": [
+        { "url": "https://bytetavern.com/wow-forever-riverglades/", "label": "Byte Tavern client dump: area levels 36-44" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 96107 level 40 no pre; 94532 and 94535 pre 96109 level 40" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "h4060:riverglades:a95121",
+      "alsoStepIds": ["h4060:riverglades:c95121", "h4060:riverglades:t95121"],
+      "afterStepId": "h4060:riverglades:a95118",
+      "questId": 95121,
+      "prereqQuestIds": [],
+      "whyShort": "A Taste of the Sea is finished before the flight to Kargath. Saltwater Savages is the same east shore, much later.",
+      "original": "Accept A Taste of the Sea with Saltwater Savages and finish both on the Eastwind Shore in one stop.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95121 and 95118 have no pre; both are Riverglades shore quests" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde does the murloc eyes and the shore kills together" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "h4060:riverglades:t95602",
+      "questId": 95602,
+      "prereqQuestIds": [94727],
+      "whyShort": "Sickening Lights is turned in with no step that destroys the circles. 95427 needs this and 95601.",
+      "original": "Destroy 5 Twilight Ritual Circles in the Sunnyglade caves before turning Sickening Lights in to Clubtoe.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95602 pre 94727, objectivesText: 5 Twilight Ritual Circles; 95427 pre group 95601 and 95602" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "h4060:riverglades:c95163",
+      "questId": 95163,
+      "prereqQuestIds": [],
+      "whyShort": "The complete pin is far south of Na'zok. This extract has no creature spawn coordinates, so the pin is not moved.",
+      "original": "Drive Them Back is the young paletusks by Na'zok's farm. Do not ride to the south river pin until a Questie spawn confirms it.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95163 creature 258331, giver npc 256728, no spawn coordinates in quests.json" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde uses the paletusks across the river from the farm southeast of Bolder'ok" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:riverglades:a97884",
+      "alsoStepIds": ["h4060:riverglades:c97884", "h4060:riverglades:t97884"],
+      "questId": 97884,
+      "prereqQuestIds": [],
+      "whyShort": "Armory of Sunnyglade starts in Undercity for one tome. The route is not in Undercity for any other Riverglades quest.",
+      "original": "Skip Armory of Sunnyglade. It is a capital trip for a single Sunnyglade book.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 97884 start npc 5819, item 278868, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:tanaris:t95472",
+      "questId": 95472,
+      "prereqQuestIds": [95321],
+      "whyShort": "Consolation Prize requires 95321, and 95321 is not a step. 95321 itself requires 95312.",
+      "original": "Skip the Consolation Prize turn-in. The prerequisite chain is not on the route.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95472 pre 95321; quest 95321 pre 95312" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:riverglades:a95162",
+      "questId": 95162,
+      "prereqQuestIds": [],
+      "whyShort": "Paletusk Harvesting is 10 Chunks of Boar Meat at the same farm as Drive Them Back.",
+      "original": "Buy 10 Chunk of Boar Meat before this farm. Hand them to Na'zok with Drive Them Back. Do not hunt boars for the meat.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 95162 item 769, 10 Chunks of Boar Meat, giver npc 256728" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:stranglethorn-vale:dungeon-40f1cb",
+      "questId": 95775,
+      "prereqQuestIds": [95770],
+      "whyShort": "The step says dungeon quests are listed around it, and none are. One clear is enough. The dungeon pack owns the route inside.",
+      "original": "Before the one Drowned City clear, have 629 done, then 95748, 95770, and 95773, and hold 95775 and 95776. Skip 95789 if the ten artifacts are short. Skip 96774. The dungeon is about level 40.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95775 pre 95770; 95770 pre 95748; 95748 pre 629; 95776 pre group 95770 and 95773; 95789 no pre" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde schedules one Drowned City clear for those quests" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:riverglades:dungeon-492acb",
+      "questId": 94968,
+      "prereqQuestIds": [95278],
+      "whyShort": "The Krol'dok step has no quests. 95278 and 94768 are already done before it. One clear covers the hold quests.",
+      "original": "Before the one Krol'dok clear, accept 94968 and 94972 after 95278, and 94975 after 94768. Loot the moulding inside to start 94973, then bring 4 Thick Leather and 12 Iron Bar to Kreza for 94974. Do not script the bosses.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 94968 and 94972 pre 95278; 94975 pre 94768; 94973 from item 267137 next 94974" },
+        { "url": "https://www.curseforge.com/wow/addons/guidelime-bethink", "label": "Bethink Horde uses one Krol'dok clear and the leather and iron key afterward" }
+      ],
+      "verified": false
+    }
+  ]
+}

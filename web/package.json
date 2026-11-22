@@ -1,0 +1,44 @@
+{
+  "name": "the-forever-project",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node --experimental-strip-types scripts/build-data.ts",
+    "dev": "node scripts/free-dev-port.mjs && vite",
+    "prebuild": "node --experimental-strip-types scripts/build-data.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "data:fixtures": "node scripts/copy-fixtures.mjs",
+    "search:index": "node --experimental-strip-types scripts/build-search-index.ts",
+    "data": "node --experimental-strip-types scripts/build-data.ts",
+    "xp:sim": "node --experimental-strip-types scripts/xp-sim.ts",
+    "integrity": "node --experimental-strip-types scripts/guide-integrity.ts",
+    "audit:breadcrumbs": "node --experimental-strip-types scripts/breadcrumb-audit.ts",
+    "audit:route": "node --experimental-strip-types scripts/route-audit.ts"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/source-sans-3": "^5.3.1",
+    "minisearch": "^7.2.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^7.18.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "ajv": "^8.20.0",
+    "autoprefixer": "^10.7.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6",
+    "vitest": "^5.1.1"
+  }
+}

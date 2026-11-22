@@ -1,0 +1,575 @@
+{
+  "routeId": "dungeons-early",
+  "dungeons": ["Ragefire Chasm", "Wailing Caverns", "Ruins of Lordaeron"],
+  "verified": false,
+  "ops": [
+    {
+      "op": "tip",
+      "stepId": "dungeons:ragefire-chasm:accept:5726",
+      "questId": 5726,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Durotar already turns 5726 in before the placeholder. Mulgore never picks it up, so the pack accept stays for Tauren.",
+      "originalText": "If Hidden Enemies is already turned in to Thrall, do not accept 5726 or 5727 again.",
+      "at": { "mapId": 1454, "x": 31.73, "y": 37.82, "zone": "Orgrimmar", "npcId": 4949 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5726, npc 4949 area 1637" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:ragefire-chasm:run",
+      "questId": 5728,
+      "routes": ["balanced"],
+      "prereqQuestIds": [5727],
+      "whyShort": "One clear finishes 5728, 5761, 5723, and the satchel. Extra trogg loops are empty XP once the quest count is done.",
+      "originalText": "Run Ragefire Chasm once from the Cleft of Shadow. Do not reset for more troggs or for The Power to Destroy.",
+      "at": { "mapId": 1454, "x": 52.6, "y": 49.0, "zone": "Orgrimmar" },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5728 pre 5727, zone 2437" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:ragefire-chasm:accept:5725",
+      "questId": 5725,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Giver is Varimathras in Undercity. The placeholder is in Orgrimmar. The two books are not worth a zeppelin before level 16.",
+      "originalText": "Do not accept The Power to Destroy from Varimathras for this Ragefire clear.",
+      "at": { "mapId": 1458, "x": 56.25, "y": 92.2, "zone": "Undercity", "npcId": 2425 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5725, npc 2425 area 1497" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:ragefire-chasm:turnin:5725",
+      "questId": 5725,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Same refusal as the accept. No Undercity hand-in on this clear.",
+      "originalText": "Do not turn in The Power to Destroy after Ragefire.",
+      "at": { "mapId": 1458, "x": 56.25, "y": 92.2, "zone": "Undercity", "npcId": 2425 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5725 end npc 2425" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:ragefire-chasm:accept:5729",
+      "questId": 5729,
+      "routes": ["balanced"],
+      "prereqQuestIds": [5728],
+      "afterStepId": "dungeons:ragefire-chasm:turnin:5728",
+      "whyShort": "Talk at Thrall, who just took 5728. classes 0, Horde races. No kill.",
+      "originalText": "Accept Hidden Enemies from Thrall and speak to Neeru Fireblade.",
+      "at": { "mapId": 1454, "x": 31.73, "y": 37.82, "zone": "Orgrimmar", "npcId": 4949 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5729 pre 5728 next 5730" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:ragefire-chasm:turnin:5729",
+      "questId": 5729,
+      "routes": ["balanced"],
+      "prereqQuestIds": [5728],
+      "afterStepId": "dungeons:ragefire-chasm:accept:5729",
+      "whyShort": "Neeru is the 5761 turn-in, same visit.",
+      "originalText": "Turn in Hidden Enemies to Neeru Fireblade.",
+      "at": { "mapId": 1454, "x": 49.47, "y": 50.59, "zone": "Orgrimmar", "npcId": 3216 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5729 end npc 3216" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:ragefire-chasm:accept:5730",
+      "questId": 5730,
+      "routes": ["balanced"],
+      "prereqQuestIds": [5729],
+      "afterStepId": "dungeons:ragefire-chasm:turnin:5729",
+      "whyShort": "Talk back to Thrall. Last Hidden Enemies row in Questie. Stop after this.",
+      "originalText": "Accept Hidden Enemies from Neeru Fireblade and return to Thrall. Do not take a class weapon quest afterward.",
+      "at": { "mapId": 1454, "x": 49.47, "y": 50.59, "zone": "Orgrimmar", "npcId": 3216 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5730 pre 5729, no further next" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:ragefire-chasm:turnin:5730",
+      "questId": 5730,
+      "routes": ["balanced"],
+      "prereqQuestIds": [5729],
+      "afterStepId": "dungeons:ragefire-chasm:accept:5730",
+      "whyShort": "Thrall is a few rooms from Neeru. Ends the chain.",
+      "originalText": "Turn in Hidden Enemies to Thrall.",
+      "at": { "mapId": 1454, "x": 31.73, "y": 37.82, "zone": "Orgrimmar", "npcId": 4949 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 5730 end npc 4949" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:870",
+      "questId": 870,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Forgotten Pools is already on the Barrens before the dungeon placeholder.",
+      "originalText": "Do not accept The Forgotten Pools again inside the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 870, already on barrens-12-20" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:870",
+      "questId": 870,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Same Barrens quest. The pack must not turn it in a second time.",
+      "originalText": "Do not turn in The Forgotten Pools from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 870" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:877",
+      "questId": 877,
+      "routes": ["balanced"],
+      "prereqQuestIds": [870],
+      "whyShort": "Stagnant Oasis is an open-world Barrens step, already before the cavern.",
+      "originalText": "Do not accept The Stagnant Oasis from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 877 pre 870" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:877",
+      "questId": 877,
+      "routes": ["balanced"],
+      "prereqQuestIds": [870],
+      "whyShort": "Already turned in on the Barrens.",
+      "originalText": "Do not turn in The Stagnant Oasis from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 877" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:880",
+      "questId": 880,
+      "routes": ["balanced"],
+      "prereqQuestIds": [877],
+      "whyShort": "Altered Beings is turned in at barrens-12-20:102, before the placeholder.",
+      "originalText": "Do not accept Altered Beings from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 880 pre 877" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:880",
+      "questId": 880,
+      "routes": ["balanced"],
+      "prereqQuestIds": [877],
+      "whyShort": "880 is the prerequisite for 1489 and is already complete before the cavern.",
+      "originalText": "Do not turn in Altered Beings from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 52.26, "y": 31.93, "zone": "The Barrens", "npcId": 3448 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 880" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:865",
+      "questId": 865,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Raptor Horns is a Barrens drop quest, accepted at barrens-12-20:041. Not part of the cavern clear.",
+      "originalText": "Do not accept Raptor Horns from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 62.37, "y": 37.62, "zone": "The Barrens", "npcId": 3446 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 865 next 1491" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:865",
+      "questId": 865,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "The Barrens turns 865 in after the cavern placeholder. Leave that order. Do not finish the horns inside the instance.",
+      "originalText": "Do not turn in Raptor Horns from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 62.37, "y": 37.62, "zone": "The Barrens", "npcId": 3446 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 865" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:1491",
+      "questId": 1491,
+      "routes": ["balanced"],
+      "prereqQuestIds": [865],
+      "whyShort": "Handoff already skips 1491. pre 865 is not turned in before the cavern, and the horns are a drop farm.",
+      "originalText": "Do not accept Smart Drinks for this Wailing Caverns clear.",
+      "at": { "mapId": 1413, "x": 62.37, "y": 37.62, "zone": "The Barrens", "npcId": 3446 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1491 pre 865" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:1491",
+      "questId": 1491,
+      "routes": ["balanced"],
+      "prereqQuestIds": [865],
+      "whyShort": "Same chain as the accept. Six Wailing Essences are not collected on this clear.",
+      "originalText": "Do not turn in Smart Drinks after Wailing Caverns.",
+      "at": { "mapId": 1413, "x": 62.37, "y": 37.62, "zone": "The Barrens", "npcId": 3446 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1491" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:accept:1486",
+      "questId": 1486,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Deviate Hides is accepted, completed outside the portal, and turned in on the Barrens before step 106.",
+      "originalText": "Do not accept Deviate Hides again from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 45.99, "y": 35.66, "zone": "The Barrens", "npcId": 5767 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1486, npc 5767" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:wailing-caverns:turnin:1486",
+      "questId": 1486,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "barrens-12-20:105 already turns the hides in. A second turn-in would be a second 20-hide pass.",
+      "originalText": "Do not turn in Deviate Hides from the dungeon pack.",
+      "at": { "mapId": 1413, "x": 45.99, "y": 35.66, "zone": "The Barrens", "npcId": 5767 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1486" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:wailing-caverns:run",
+      "questId": 1487,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "One clear covers 1487, 959, 962, and the four fang gems. 6981 is a boss drop, not a reset.",
+      "originalText": "Clear Wailing Caverns once through the fang lords and Mutanus. Use the Glowing Shard only if it drops. Do not reset for essences or hides.",
+      "at": { "mapId": 1413, "x": 46.01, "y": 35.74, "zone": "The Barrens", "npcId": 5768 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1487 and 6981 source item 10441" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:wailing-caverns:accept:3369",
+      "questId": 3369,
+      "routes": ["balanced"],
+      "prereqQuestIds": [6981],
+      "afterStepId": "dungeons:wailing-caverns:turnin:6981",
+      "whyShort": "Only after the shard quest. Horde talk. Skip the step when 6981 never dropped.",
+      "originalText": "If you turned in The Glowing Shard, accept In Nightmares from Falla Sagewind.",
+      "at": { "mapId": 1413, "x": 48.18, "y": 32.78, "zone": "The Barrens", "npcId": 8418 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 3369 pre 6981, races Horde" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:wailing-caverns:turnin:3369",
+      "questId": 3369,
+      "routes": ["balanced"],
+      "prereqQuestIds": [6981],
+      "afterStepId": "dungeons:wailing-caverns:accept:3369",
+      "whyShort": "Hamuul is the same turn-in as 1489, already on the Thunder Bluff lap for 914.",
+      "originalText": "Turn in In Nightmares to Hamuul Runetotem.",
+      "at": { "mapId": 1456, "x": 78.62, "y": 28.56, "zone": "Thunder Bluff", "npcId": 5769 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 3369 end npc 5769" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "modify",
+      "stepId": "horde-20-40:dungeon:wailing-caverns",
+      "questId": 1487,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Handoff: Barrens already expands Wailing Caverns, so this placeholder must not start a second clear.",
+      "originalText": "If Deviate Eradication is already done, skip Wailing Caverns. If dungeons were off through level 20 and are on now, run the dungeon pack once. Do not run it twice.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1487, one clear" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "tip",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:92401",
+      "questId": 92401,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Silverpine already tips the breadcrumb and does not enter. This step is the inside objective on the Ruins clear.",
+      "originalText": "Pick up A Frightened Request from Tabitha at the Sepulcher only if it is not already in the log, then finish it inside the Ruins.",
+      "at": { "mapId": 1421, "x": 44.52, "y": 43.02, "zone": "Silverpine Forest", "npcId": 250686 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 92401, npc 250686 area 130" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:92422",
+      "questId": 92422,
+      "routes": ["balanced"],
+      "prereqQuestIds": [99156],
+      "whyShort": "pre 99156 is not on the Tirisfal route. 99156 races mask is 18, not full Horde. No separate Greataxe quest exists.",
+      "originalText": "Do not accept The Wrath of Rath'mael.",
+      "at": { "mapId": 1420, "x": 65.25, "y": 60.2, "zone": "Tirisfal Glades", "npcId": 251001 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 92422 pre 99156" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:92422",
+      "questId": 92422,
+      "routes": ["balanced"],
+      "prereqQuestIds": [99156],
+      "whyShort": "The kill is the same refused chain. Do not hunt Rath'mael for quest credit.",
+      "originalText": "Do not turn in The Wrath of Rath'mael.",
+      "at": { "mapId": 1420, "x": 65.25, "y": 60.2, "zone": "Tirisfal Glades", "npcId": 251001 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 92422 end npc 251001" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:95216",
+      "questId": 95216,
+      "routes": ["balanced"],
+      "prereqQuestIds": [451],
+      "whyShort": "pre 451 is the end of A Recipe For Death, already dropped on Silverpine as a drop farm.",
+      "originalText": "Do not accept The New Plague for Witherfang.",
+      "at": { "mapId": 1458, "x": 46.31, "y": 71.91, "zone": "Undercity", "npcId": 11835 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 95216 pre 451" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:95216",
+      "questId": 95216,
+      "routes": ["balanced"],
+      "prereqQuestIds": [451],
+      "whyShort": "Same refused chain as the accept.",
+      "originalText": "Do not turn in The New Plague.",
+      "at": { "mapId": 1458, "x": 46.31, "y": 71.91, "zone": "Undercity", "npcId": 11835 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 95216" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:97289",
+      "questId": 97289,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97288],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:turnin:97288",
+      "whyShort": "Horde, req 15, no pre before the head. This step is a walk across the Apothecarium.",
+      "originalText": "Accept Unending Torment from Faranell and bring the head to Othmar's body.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97289 pre 97288" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:97289",
+      "questId": 97289,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97288],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:accept:97289",
+      "whyShort": "The body is in the next room.",
+      "originalText": "Turn in Unending Torment at the Unfinished Abomination.",
+      "at": { "mapId": 1458, "x": 45.88, "y": 61.7, "zone": "Undercity", "npcId": 271613 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie npc 271613 area 1497" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:97290",
+      "questId": 97290,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97289],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:turnin:97289",
+      "whyShort": "Talk back to Faranell. No kill.",
+      "originalText": "Accept Unending Torment from the Unfinished Abomination and report to Faranell.",
+      "at": { "mapId": 1458, "x": 45.88, "y": 61.7, "zone": "Undercity", "npcId": 271613 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97290 pre 97289" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:97290",
+      "questId": 97290,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97289],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:accept:97290",
+      "whyShort": "Same npc as 97288.",
+      "originalText": "Turn in Unending Torment to Master Apothecary Faranell.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97290 end npc 2055" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:97291",
+      "questId": 97291,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97290],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:turnin:97290",
+      "whyShort": "Three vendor and herb stops in Undercity. Not a mob grind.",
+      "originalText": "Accept Unending Torment. Get the Toxic Skullcap from Tawny Grisette, Blisterweed by the herbalism trainer, and Essence of Agony from Ezekiel Graves.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97291 items; npcs 4554, 4615, 4585" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:97291",
+      "questId": 97291,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97290],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:accept:97291",
+      "whyShort": "All three stops are in Undercity, then back to Faranell.",
+      "originalText": "Turn in Unending Torment to Faranell.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97291 end npc 2055" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:accept:97292",
+      "questId": 97292,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97291],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:turnin:97291",
+      "whyShort": "One object click above the body already visited. Questie has no spawn for object 460007.",
+      "originalText": "Accept Unending Torment and inject the Hissing Serum above Othmar's body.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97292 object 460007, pre 97291" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "add",
+      "stepId": "dungeons:forever:ruins-of-lordaeron:turnin:97292",
+      "questId": 97292,
+      "routes": ["balanced"],
+      "prereqQuestIds": [97291],
+      "afterStepId": "dungeons:forever:ruins-of-lordaeron:accept:97292",
+      "whyShort": "Last talk of Unending Torment. Chain ends.",
+      "originalText": "Turn in Unending Torment to Faranell.",
+      "at": { "mapId": 1458, "x": 48.82, "y": 69.28, "zone": "Undercity", "npcId": 2055 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 97292 end npc 2055" }
+      ],
+      "verified": false,
+      "targetFile": "research/dungeons/steps-v2.json"
+    }
+  ]
+}

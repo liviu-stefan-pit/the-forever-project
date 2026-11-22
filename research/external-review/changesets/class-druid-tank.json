@@ -1,0 +1,91 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "tank",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "The pair stays Herbalism + Alchemy. Feral Bear's published best pair is the same: Alchemy S with Herbalism. Leatherworking is the next crafter and does not feed potions.",
+      "sources": [
+        {
+          "url": "research/external-review/reports/class-druid.md",
+          "label": "Accepted Druid plan: Herbalism + Alchemy on every listed row; bear was skipped"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-bear-pve/",
+          "label": "WoW Forever DB: Feral Bear professions, best pair Alchemy and Herbalism, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "tank",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "The pair stays Herbalism + Alchemy for Horde Skyborne bear tank. The published bear pair matches the other Druid roles.",
+      "sources": [
+        {
+          "url": "research/external-review/reports/class-druid.md",
+          "label": "Accepted Druid plan: Horde Skyborne is a druid; pair is Herbalism + Alchemy"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-bear-pve/",
+          "label": "WoW Forever DB: Feral Bear professions, best pair Alchemy and Herbalism, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "feral dps",
+      "rolesAlso": ["balance", "restoration healer", "tank"],
+      "whyShort": "Pick herbs that are already on the route being walked. Do not add a node circuit or a detour to fill Alchemy. If a herb is not on the way, skip it.",
+      "sources": [
+        {
+          "url": "research/external-review/reports/class-druid.md",
+          "label": "Accepted Druid plan: Herbalism feeds Alchemy on every row"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-bear-pve/",
+          "label": "WoW Forever DB: Herbalism leveling help is herbs picked while traveling between quests"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "feral dps",
+      "rolesAlso": ["balance", "restoration healer", "tank"],
+      "whyShort": "Pick herbs that are already on the route being walked. Do not add a node circuit or a detour to fill Alchemy. If a herb is not on the way, skip it.",
+      "sources": [
+        {
+          "url": "research/external-review/reports/class-druid.md",
+          "label": "Accepted Druid plan: same Herbalism + Alchemy pair for Horde Skyborne"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-bear-pve/",
+          "label": "WoW Forever DB: Herbalism leveling help is herbs picked while traveling between quests"
+        }
+      ],
+      "verified": false
+    }
+  ]
+}

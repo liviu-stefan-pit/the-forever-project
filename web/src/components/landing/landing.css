@@ -1,0 +1,406 @@
+/* Landing page (#/): faction cards over the Horde/Alliance fusion background. */
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.landing {
+  background-color: #0e0c12;
+}
+
+.fusion-canvas {
+  animation: landingFade 1.2s ease-out both;
+}
+
+.landing-vignette {
+  background:
+    radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(4, 4, 8, 0.6) 100%),
+    linear-gradient(to bottom, rgba(4, 4, 8, 0.35), transparent 25%, transparent 75%, rgba(4, 4, 8, 0.5));
+}
+
+/* ---------- entrance ---------- */
+
+@keyframes landingFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* `translate` (not `transform`) so the cards keep their own tilt transform. */
+@keyframes landingRise {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+.landing-rise {
+  animation: landingRise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes landingReveal {
+  from {
+    opacity: 0;
+    filter: blur(14px);
+    letter-spacing: 0.3em;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    letter-spacing: 0.04em;
+  }
+}
+@keyframes titleShimmer {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 250% 50%;
+  }
+}
+/* The title carries both palettes: bronze and blood red, gold in the middle, then ice and silver. */
+.landing-title {
+  background-image: linear-gradient(100deg, #e0b85a 0%, #ffe9a3 12%, #c45c54 26%, #e8d18a 40%, #9cc3f5 54%, #eef2f7 66%, #e0b85a 80%, #ffe9a3 92%, #e0b85a 100%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.04em;
+  animation:
+    landingReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) both,
+    titleShimmer 14s linear infinite;
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.6));
+}
+
+/* ---------- cards ---------- */
+
+.faction-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  --mx: 50%;
+  --my: 30%;
+  --lift: 0px;
+  transform: perspective(1100px) translateY(var(--lift)) rotateX(var(--rx)) rotateY(var(--ry));
+  transform-style: preserve-3d;
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+  border: 1px solid;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  isolation: isolate;
+}
+.faction-card:hover,
+.faction-card:focus-visible {
+  --lift: -6px;
+}
+.faction-card:focus-visible {
+  outline: 2px solid var(--card-ring);
+  outline-offset: 5px;
+}
+
+.faction-horde {
+  --card-ring: #e0b85a;
+  --sweep: #e0b85a;
+  border-color: rgba(198, 161, 90, 0.45);
+  background: linear-gradient(165deg, rgba(92, 20, 20, 0.82) 0%, rgba(34, 13, 10, 0.88) 50%, rgba(18, 12, 10, 0.94) 100%);
+  box-shadow:
+    0 30px 60px -28px rgba(0, 0, 0, 0.95),
+    inset 0 1px 0 rgba(255, 233, 163, 0.18);
+}
+.faction-horde:hover,
+.faction-horde:focus-visible {
+  border-color: rgba(224, 184, 90, 0.8);
+  box-shadow:
+    0 40px 70px -28px rgba(0, 0, 0, 0.95),
+    0 0 70px -12px rgba(196, 92, 84, 0.55),
+    inset 0 1px 0 rgba(255, 233, 163, 0.3);
+}
+/* Forge glow rising from the bottom of the Horde card. */
+.faction-horde::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% 115%, rgba(255, 122, 60, 0.32), transparent 55%),
+    radial-gradient(ellipse at 50% -10%, rgba(155, 44, 44, 0.35), transparent 50%);
+  animation: forgeFlicker 3.2s ease-in-out infinite;
+}
+@keyframes forgeFlicker {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+  40% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.85;
+  }
+}
+
+.faction-alliance {
+  --card-ring: #c9d3e0;
+  --sweep: #9cc3f5;
+  border-color: rgba(201, 211, 224, 0.3);
+  background: linear-gradient(165deg, rgba(16, 42, 86, 0.8) 0%, rgba(11, 20, 40, 0.88) 50%, rgba(8, 12, 24, 0.94) 100%);
+  box-shadow:
+    0 30px 60px -28px rgba(0, 0, 0, 0.95),
+    inset 0 1px 0 rgba(238, 242, 247, 0.14);
+}
+.faction-alliance:hover,
+.faction-alliance:focus-visible {
+  border-color: rgba(201, 211, 224, 0.6);
+  box-shadow:
+    0 40px 70px -28px rgba(0, 0, 0, 0.95),
+    0 0 70px -12px rgba(91, 143, 217, 0.45),
+    inset 0 1px 0 rgba(238, 242, 247, 0.25);
+}
+/* Frost creeping in from the corners; it spreads a little on hover. */
+.faction-alliance::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(238, 242, 247, 0.2), transparent 32%),
+    radial-gradient(circle at 100% 100%, rgba(156, 195, 245, 0.2), transparent 36%),
+    radial-gradient(circle at 100% 0%, rgba(156, 195, 245, 0.1), transparent 28%),
+    radial-gradient(circle at 0% 100%, rgba(238, 242, 247, 0.1), transparent 30%);
+  opacity: 0.7;
+  transition: opacity 0.6s ease;
+  animation: frostBreath 5s ease-in-out infinite;
+}
+.faction-alliance:hover::after,
+.faction-alliance:focus-visible::after {
+  opacity: 1;
+}
+@keyframes frostBreath {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.35);
+  }
+}
+
+/* A light that runs around the border on hover. */
+.faction-border {
+  position: absolute;
+  inset: -1px;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1.5px;
+  pointer-events: none;
+  background: conic-gradient(from var(--angle), transparent 0deg 250deg, var(--sweep) 300deg, #ffffff 325deg, transparent 345deg);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  animation: borderSpin 3.6s linear infinite;
+}
+.faction-card:hover .faction-border,
+.faction-card:focus-visible .faction-border {
+  opacity: 1;
+}
+@keyframes borderSpin {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* Glare that follows the pointer (position set from FactionCard). */
+.faction-glare {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.13), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.faction-card:hover .faction-glare {
+  opacity: 1;
+}
+
+@keyframes sigilFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.sigil-float {
+  animation: sigilFloat 6s ease-in-out infinite;
+}
+
+.faction-name-horde,
+.faction-name-alliance {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.7));
+}
+.faction-name-horde {
+  background-image: linear-gradient(180deg, #ffe9a3 0%, #e0b85a 45%, #c45c54 100%);
+}
+.faction-name-alliance {
+  background-image: linear-gradient(180deg, #ffffff 0%, #c9d3e0 45%, #5b8fd9 100%);
+}
+
+.faction-cta {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #c6a15a;
+  background: linear-gradient(180deg, #a83232 0%, #7f1d1d 55%, #5c1414 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 233, 163, 0.3),
+    0 10px 24px -10px rgba(155, 44, 44, 0.9);
+  transition:
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.faction-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 244, 208, 0.45) 50%, transparent 65%);
+  translate: -120% 0;
+  transition: translate 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faction-card:hover .faction-cta,
+.faction-card:focus-visible .faction-cta {
+  filter: brightness(1.15);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 233, 163, 0.4),
+    0 12px 30px -8px rgba(196, 92, 84, 0.9);
+}
+.faction-card:hover .faction-cta::after,
+.faction-card:focus-visible .faction-cta::after {
+  translate: 120% 0;
+}
+
+@keyframes livePing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(127, 212, 154, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 7px rgba(127, 212, 154, 0);
+  }
+}
+.landing-live {
+  animation: livePing 1.8s ease-out infinite;
+}
+
+/* "Coming soon" ribbon across the Alliance card's top-right corner. */
+.alliance-seal {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  pointer-events: none;
+}
+.alliance-seal > span {
+  position: absolute;
+  top: 30px;
+  right: -58px;
+  width: 210px;
+  rotate: 45deg;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #0a1020;
+  background: linear-gradient(90deg, #6f7d92, #eef2f7 30%, #c9d3e0 50%, #eef2f7 70%, #6f7d92);
+  background-size: 200% 100%;
+  box-shadow: 0 6px 16px -6px rgba(0, 0, 0, 0.8);
+  animation: ribbonShine 4s linear infinite;
+}
+@keyframes ribbonShine {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}
+
+.landing-chip {
+  border: 1px solid rgba(232, 209, 138, 0.22);
+  background: rgba(10, 10, 16, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* ---------- entering the Horde: a red wash grows from the card ---------- */
+
+@keyframes enterWash {
+  from {
+    clip-path: circle(0px at var(--ex) var(--ey));
+  }
+  to {
+    clip-path: circle(150vmax at var(--ex) var(--ey));
+  }
+}
+.landing-enter {
+  background: radial-gradient(circle at var(--ex) var(--ey), #9b2c2c 0%, #5c1414 30%, #120c0a 75%);
+  animation: enterWash 0.7s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+@keyframes enterSigil {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+.landing-enter-sigil {
+  left: calc(var(--ex) - 5rem);
+  top: calc(var(--ey) - 5rem);
+  animation: enterSigil 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-title,
+  .landing-rise,
+  .fusion-canvas,
+  .sigil-float,
+  .faction-border,
+  .faction-horde::after,
+  .faction-alliance::after,
+  .alliance-seal > span,
+  .landing-live {
+    animation: none;
+  }
+  .faction-card:hover,
+  .faction-card:focus-visible {
+    --lift: 0px;
+  }
+}

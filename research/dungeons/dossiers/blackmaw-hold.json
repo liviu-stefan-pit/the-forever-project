@@ -1,0 +1,160 @@
+{
+  "id": "blackmaw-hold",
+  "name": "Blackmaw Hold",
+  "forever": true,
+  "levels": [55, 60],
+  "runAt": 58,
+  "placement": "inline",
+  "entrance": {
+    "zone": "Azshara",
+    "at": null,
+    "note": "Catalog entrance is unpublished (dungeons.json entrance: null; README: Alcaz and Blackmaw entrances still not published). Unofficial web reports a furbolg tunnel in northern Azshara (Warcraft Tavern 38.7, 33.4; ConquestCapped 38.4, 32.6) with a Meeting Stone nearby; the instance portal is at the far end of that tunnel (ConquestCapped Azshara 35.0, 23.4; Warcraft Tavern also lists Winterspring 66.6, 84.4). Do not treat those pins as Questie-verified Forever data. Horde access: Azshara; fly Valormok and ride northeast. All Forever quests stay verified: false until checked in game."
+  },
+  "travel": {
+    "nearestFlight": "Valormok",
+    "fromHubs": ["Valormok", "Orgrimmar", "Thunder Bluff", "Camp Mojache"],
+    "how": "Fly to Valormok in western Azshara and ride northeast toward the northern mountains / old Timbermaw gate; do not send Horde to Talrendis Point."
+  },
+  "quests": [
+    {
+      "questId": 92346,
+      "name": "Beneath Nordrassil",
+      "xp": 560,
+      "giver": { "npc": "Jediga", "zone": "Azshara", "hub": "Valormok", "at": [22.56, 51.42] },
+      "turnIn": { "npc": "Nara Wildmane", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [75.65, 31.61] },
+      "prerequisites": [],
+      "breadcrumb": 92343,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": null, "turnin": null },
+      "notes": "Horde breadcrumb for Get to the Roots of It. QuestieDB v1.1.3: req 45, next 92343, XP 560. Already appears on the 40-60 Azshara pack. Alliance copy 92345 is not in the Horde+neutral import (README). No dungeon-pack step; pick up in Valormok when the route is already there, then turn in on Elder Rise only if Thunder Bluff is already on the path."
+    },
+    {
+      "questId": 92343,
+      "name": "Get to the Roots of It",
+      "xp": 0,
+      "giver": { "npc": "Nara Wildmane", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [75.65, 31.61] },
+      "turnIn": { "npc": "Nara Wildmane", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [75.65, 31.61] },
+      "prerequisites": [92346],
+      "breadcrumb": 92346,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:92343", "turnin": "dungeons:forever:blackmaw-hold:turnin:92343" },
+      "notes": "10 Nordrassil Root Caps inside the dungeon. Giver hub is Elder Rise, Thunder Bluff — same continent as Azshara but a capital detour from Valormok. Planner should drop unless the route already visits Thunder Bluff after 92346. QDB pre.single is [92345, 92346] (any one); Horde uses 92346. Catalog minLevel 45 / questLevel 55. XP not in QuestieDB (use 0); unofficial web 11300."
+    },
+    {
+      "questId": 97198,
+      "name": "Blackmaw Magic",
+      "xp": 0,
+      "giver": { "npc": "Muln Earthfury", "zone": "Mulgore", "hub": "Skywatcher Plateau", "at": [33.41, 22.59] },
+      "turnIn": { "npc": "Muln Earthfury", "zone": "Mulgore", "hub": "Skywatcher Plateau", "at": [33.41, 22.59] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:97198", "turnin": "dungeons:forever:blackmaw-hold:turnin:97198" },
+      "notes": "Recover a Blackmaw Ritual Totem. Giver is Muln Earthfury in northwest Mulgore (Skywatcher Plateau), not Bloodhoof or Thunder Bluff. Catalog minLevel 52 / questLevel 59. Drop unless the 40-60 route already passes that plateau. XP not in QuestieDB (use 0); unofficial web 16100."
+    },
+    {
+      "questId": 92066,
+      "name": "The Twin Bears",
+      "xp": 0,
+      "giver": { "npc": "Lorekeeper Nok", "zone": "Azshara", "hub": "Ursolan", "at": [41.31, 20.1] },
+      "turnIn": { "npc": "Lorekeeper Nok", "zone": "Azshara", "hub": "Ursolan", "at": [41.31, 20.1] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:92066", "turnin": "dungeons:forever:blackmaw-hold:turnin:92066" },
+      "notes": "Totem of Ursoc and Totem of Ursol inside. Giver/turn-in at Ursolan in Azshara (same zone as the dungeon). Neutral races (races 0). Catalog questLevel 55, minLevel null. XP not in QuestieDB (use 0); unofficial web 11300 and Timbermaw Neutral."
+    },
+    {
+      "questId": 92065,
+      "name": "Blackmaw Reclamation",
+      "xp": 0,
+      "giver": { "npc": "Gatekeeper Rageroar", "zone": "Azshara", "hub": "Ursolan", "at": [42.28, 20.13] },
+      "turnIn": { "npc": "Gatekeeper Rageroar", "zone": "Azshara", "hub": "Ursolan", "at": [42.28, 20.13] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:92065", "turnin": "dungeons:forever:blackmaw-hold:turnin:92065" },
+      "notes": "Varrox Bleakhoof's Head to Gatekeeper Rageroar at Ursolan. Catalog turnIn is null and README lists 92065 as no-finisher/accept-only; QuestieDB v1.1.3 has end npc 236573 and steps-v2 has turnin:92065 (placed before the run step). Record the exact step ids; planner should still turn in after the run. Neutral races. Catalog questLevel 60, minLevel null. XP not in QuestieDB (use 0); unofficial web 13200."
+    },
+    {
+      "questId": 97327,
+      "name": "Blackmaw Pouches",
+      "xp": 0,
+      "giver": { "npc": "Ekkal", "zone": "Azshara", "hub": "Ruins of Eldarath", "at": [42.0, 38.88] },
+      "turnIn": { "npc": "Ekkal", "zone": "Azshara", "hub": "Ruins of Eldarath", "at": [42.0, 38.88] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:97327", "turnin": "dungeons:forever:blackmaw-hold:turnin:97327" },
+      "notes": "5 Blackmaw Pouches for Ekkal at the Ruins of Eldarath. Same-zone Azshara pickup. Neutral races. Catalog questLevel 60, minLevel null. XP not in QuestieDB (use 0); unofficial web 13200."
+    },
+    {
+      "questId": 99187,
+      "name": "The Reliquary of Tyr",
+      "xp": 0,
+      "giver": { "npc": "Knight of Mourning", "zone": "Tirisfal Glades", "hub": "Tirisfal Glades", "at": [17.58, 67.6] },
+      "turnIn": { "npc": "Knight of Mourning", "zone": "Tirisfal Glades", "hub": "Tirisfal Glades", "at": [17.58, 67.6] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Paladin",
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:blackmaw-hold:accept:99187", "turnin": "dungeons:forever:blackmaw-hold:turnin:99187" },
+      "notes": "Recover the Reliquary of Tyr from Blackmaw Hold. QuestieDB sort PALADIN (classes 2), Horde races, req 50 / level 58. Giver is in Tirisfal Glades — Eastern Kingdoms, a cross-continent detour from Azshara. Planner should drop for non-Paladins and for any route that is not already in Tirisfal. XP not in QuestieDB (use 0)."
+    }
+  ],
+  "runStepId": "dungeons:forever:blackmaw-hold:run",
+  "keys": [
+    "No instance key in the catalog. Horde breadcrumb 92346 Beneath Nordrassil (Jediga, Valormok) unlocks 92343; Alliance 92345 is not in the Horde import.",
+    "Web guides also mention Timbermaw Neutral for the Ursolan pair (92066/92065); that reputation gate is not in QuestieDB or dungeons.json."
+  ],
+  "prep": {
+    "group": "5-player, dungeon levels 55-60; do not enter before 58 (runAt).",
+    "consumables": ["food", "water", "healing potions", "mana drinks for healers"],
+    "hearth": "Valormok",
+    "warnings": [
+      "Do not run before level 58.",
+      "Catalog givers are split: Thunder Bluff (92343), Mulgore Skywatcher Plateau (97198), Azshara Ursolan (92066, 92065), Azshara Ruins of Eldarath (97327), Tirisfal Paladin (99187). Record each hub honestly; drop TB/Mulgore/Tirisfal pickups rather than adding detours.",
+      "92346 is already on the 40-60 Azshara route; do not add a second accept.",
+      "Entrance coordinates are unpublished in-repo; do not invent a pin for the expander.",
+      "Do not add web-only quests (Claws That Rend, A Lost Memento, Feeding Time) — they are not in dungeons.json or the Horde QuestieDB match list."
+    ],
+    "classQuests": ["99187 The Reliquary of Tyr (Paladin, Tirisfal Knight of Mourning)"]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Azshara",
+      "levelBand": [50, 55],
+      "why": "Late Azshara outdoor loops on horde-40-60 sit under the 55-60 dungeon band; Blackmaw at 58 can replace leftover Valormok kill quests if the player is still in Azshara.",
+      "questIds": [3601, 5534, 5535, 5536]
+    },
+    {
+      "zone": "Western Plaguelands",
+      "levelBand": [52, 58],
+      "why": "If Blackmaw is run at 58 while the 50-60 pack is in the Plaguelands, the Bulwark cauldron shuttle is the slow outdoor XP in the same band (do not drop 5098; that is the Scholomance key chain).",
+      "questIds": [5229, 5230, 5231, 5232, 5233, 5234, 4984]
+    }
+  ],
+  "sourceConflicts": [
+    "dungeons.json and README: Blackmaw entrance unpublished. Warcraft Tavern: tunnel 38.7, 33.4 and portal on Winterspring 66.6, 84.4. ConquestCapped: tunnel 38.4, 32.6 and portal Azshara 35.0, 23.4. Fextralife wiki: 35, 23.4. Not resolved; entrance.at left null.",
+    "92065: dungeons.json turnIn null and README 'Forever quests with no finisher' vs QuestieDB v1.1.3 end npc 236573 and steps-v2 dungeons:forever:blackmaw-hold:turnin:92065 (ordered before the run). Used QDB finisher + exact step ids; did not invent a turn-in.",
+    "92343 pre.single [92345, 92346] in QDB; 92345 is missing from the Horde import (README). Horde chain is 92346 only.",
+    "Catalog hordeAccess lists Thunder Bluff, Mulgore and Azshara; QuestieDB also has 99187 in Tirisfal (Paladin), which the README quest list includes.",
+    "Web (ConquestCapped / Warcraftmaps) lists extra quests not in dungeons.json or the Horde QuestieDB match: Claws That Rend Tusks that Gore (Ogtinc), A Lost Memento (item start), Feeding Time (repeatable). Not added.",
+    "Forever dungeon-quest XP is absent from QuestieDB; unofficial web XP noted on each quest and not stored as xp.",
+    "All Forever quests remain verified: false until checked in game."
+  ],
+  "notes": "Forever-only five-player dungeon in Azshara, levels 55-60, runAt 58, placement inline (fits min+3 before 60). Pickup hubs are honestly split across Thunder Bluff, northwest Mulgore, Azshara (Ursolan and Eldarath), and a Paladin giver in Tirisfal. Azshara quests are the only ones the planner should treat as on-path for a Valormok run. Dungeons-off replacement is not written in the catalog (Forever dungeon); use remaining Azshara / Plaguelands outdoor quests. XP amounts are 0 unless QuestieDB had a figure (only 92346 has 560)."
+}

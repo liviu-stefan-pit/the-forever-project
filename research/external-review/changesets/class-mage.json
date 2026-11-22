@@ -1,0 +1,179 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "class": "Mage",
+  "skippedRaces": [
+    {
+      "race": "Tauren",
+      "whyShort": "No Forever note and no Mage class quest with the Tauren race bit."
+    },
+    {
+      "race": "Skyborne",
+      "whyShort": "Windshaper class lists omit Mage. Mage is written as Alliance High Order only. The wide Horde mask on a few level-60 mage quests is not a class unlock."
+    }
+  ],
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Mage",
+      "role": "frost",
+      "pair": ["Tailoring", "Enchanting"],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same cloth pair for Frost, Fire, and an early Arcane stretch. Buy dyes or skip dyed patterns. Do not level Alchemy to feed Tailoring. Orc Mage is legal: Glyphic Parchment 98576 is class Mage and race Orc.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#98576",
+        "research/professions/README.md"
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Mage",
+      "role": "frost",
+      "pair": ["Tailoring", "Enchanting"],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same pair for every Mage spec. Cloth and green drops come from normal kills. Enchanting covers the early wand. Dye recipes are bought or skipped, not an Alchemy detour.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#3086",
+        "research/professions/README.md"
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Mage",
+      "role": "frost",
+      "pair": ["Tailoring", "Enchanting"],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Same pair for every Mage spec. Undead Touch of the Grave can break Frost Nova, which is a pull note, not a profession change. Dyes stay a purchase or a skipped pattern.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#3098",
+        "research/professions/README.md"
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Mage",
+      "role": "frost",
+      "whyShort": "Quest single-target Frost. Improved Blizzard rank 3 is a 40% slow for 1.5 seconds, so do not add an AoE grind. Train water around 4 and food around 6. Those are spells, not quests. Read Glyphic Parchment 98576 and talk to Mai'ah.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#98576"
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Mage",
+      "role": "frost",
+      "whyShort": "Quest single-target Frost. The Blizzard slow cap is the same 40% for 1.5 seconds, so no AoE camp route. Water around 4 and food around 6 are trainer spells. Glyphic Tablet 3086, then the Un'thuwa talk 1883 if it is offered.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#3086",
+        "content/questie-db/quests.json#1883"
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Mage",
+      "role": "frost",
+      "whyShort": "Quest single-target Frost. Do not build pulls that need an endless Blizzard snare. Touch of the Grave can break Frost Nova. Water around 4 and food around 6 are trainer spells. Glyphic Scroll 3098, then Speak with Anastasia 1881.",
+      "sources": [
+        "research/external/web-notes/classes-mage.md",
+        "content/questie-db/quests.json#3098",
+        "content/questie-db/quests.json#1881"
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1952,
+      "whyShort": "Mage's Wand needs both Items of Power and Rituals of Power. That is a long chain, not a trainer stop.",
+      "sources": ["content/questie-db/quests.json#1952"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1952,
+      "whyShort": "Mage's Wand needs both Items of Power and Rituals of Power. That is a long chain, not a trainer stop.",
+      "sources": ["content/questie-db/quests.json#1952"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1952,
+      "whyShort": "Mage's Wand needs both Items of Power and Rituals of Power. That is a long chain, not a trainer stop.",
+      "sources": ["content/questie-db/quests.json#1952"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1884,
+      "whyShort": "Ju-Ju Heaps is four object clears, not a wand, water, or trainer step.",
+      "sources": ["content/questie-db/quests.json#1884"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1882,
+      "whyShort": "Balnir Snapdragons is a gather, not a wand, water, or trainer step.",
+      "sources": ["content/questie-db/quests.json#1882"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1960,
+      "whyShort": "The alchemist-shop robe chain is a material gather, not a short trainer stop.",
+      "sources": ["content/questie-db/quests.json#1960"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1960,
+      "whyShort": "The alchemist-shop robe chain is a material gather, not a short trainer stop.",
+      "sources": ["content/questie-db/quests.json#1960"],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Mage",
+      "role": "frost",
+      "questId": 1960,
+      "whyShort": "The alchemist-shop robe chain is a material gather, not a short trainer stop.",
+      "sources": ["content/questie-db/quests.json#1960"],
+      "verified": false
+    }
+  ]
+}

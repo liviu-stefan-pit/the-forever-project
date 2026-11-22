@@ -1,0 +1,422 @@
+{
+  "routeId": "horde-40-60",
+  "mapIds": {
+    "Un'Goro Crater": 1449,
+    "Felwood": 1448,
+    "Winterspring": 1452,
+    "Western Plaguelands": 1422,
+    "Eastern Plaguelands": 1423,
+    "Tirisfal Glades": 1420
+  },
+  "opCounts": { "add": 6, "modify": 0, "reorder": 0, "drop": 11, "tip": 10, "total": 27 },
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "h4060:un-goro-crater:t4494",
+      "alsoStepIds": ["h4060:azshara:a4494", "h4060:un-goro-crater:a4496", "h4060:un-goro-crater:c4496", "h4060:un-goro-crater:t4496"],
+      "questId": 4494,
+      "prereqQuestIds": [7732],
+      "whyShort": "Horde 4494 needs 7732, and 7732 is the Zukk'ash carapace report. 4496 and the hive queen sit behind it.",
+      "original": "Do not accept March of the Silithid in Azshara or turn it in at Gadgetzan. Do not take Bungle in the Jungle.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4494", "label": "Wowhead Classic quest 4494" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4494 pre 32 or 7732, next 4496; 4496 next 4507" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:un-goro-crater:a4284",
+      "alsoStepIds": ["h4060:un-goro-crater:c4284", "h4060:un-goro-crater:t4284"],
+      "questId": 4284,
+      "prereqQuestIds": [],
+      "whyShort": "Seven of each crystal color is a collection sink, and it is what opens the three pylon runs.",
+      "original": "Skip Crystals of Power. Do not accept the Northern, Eastern, or Western Pylon, or Making Sense of It.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4284", "label": "Wowhead Classic quest 4284" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4284 items 11186, 11188, 11185, 11184; 4285, 4287, 4288 pre 4284; 4321 pre all three" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:un-goro-crater:a4492",
+      "alsoStepIds": ["h4060:un-goro-crater:t4492", "h4060:un-goro-crater:a4491", "h4060:un-goro-crater:t4491"],
+      "questId": 4492,
+      "prereqQuestIds": [],
+      "whyShort": "Lost! only leads to the Ringo escort back to Marshal's Refuge.",
+      "original": "Skip Lost! and do not lead Ringo out of the volcano cave.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4491", "label": "Wowhead Classic quest 4491" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4492 next 4491; 4491 flagged PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:felwood:a4505",
+      "alsoStepIds": ["h4060:felwood:c4505", "h4060:felwood:t4505", "h4060:felwood:a4506", "h4060:felwood:t4506"],
+      "questId": 4505,
+      "prereqQuestIds": [],
+      "whyShort": "The moonwell sample exists to start the corrupted-saber escort.",
+      "original": "Skip Well of Corruption and do not take Winna's kitten to the moonwell.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4506", "label": "Wowhead Classic quest 4506" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4505 next 4506; 4506 flagged PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:felwood:a4102",
+      "alsoStepIds": ["h4060:felwood:c4102", "h4060:felwood:t4102"],
+      "questId": 4102,
+      "prereqQuestIds": [],
+      "whyShort": "Fifteen Blood Ambers are the plant-salve loop along the Felwood road.",
+      "original": "Skip Cleansing Felwood. Do not plant-salve corrupted flowers for Maybess.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4102", "label": "Wowhead Classic quest 4102" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4102 objective item 11503, 15 Blood Amber, no next" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:felwood:a4521",
+      "alsoStepIds": ["h4060:felwood:c4521", "h4060:felwood:t4521"],
+      "questId": 4521,
+      "prereqQuestIds": [],
+      "whyShort": "Thirty owlbeasts is its own camp, and the follow-up is another owl count in Winterspring.",
+      "original": "Skip Wild Guardians. Do not take the Winterspring follow-up.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4521", "label": "Wowhead Classic quest 4521" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4521 creatures 15 and 15, next 4741, end npc 10306 at 34.73, 52.79" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:winterspring:a3783",
+      "alsoStepIds": ["h4060:winterspring:c3783", "h4060:winterspring:t3783", "h4060:winterspring:a977", "h4060:winterspring:c977", "h4060:winterspring:t977"],
+      "questId": 3783,
+      "prereqQuestIds": [],
+      "whyShort": "The yeti chain goes from ten thick furs to two pristine horns and then a mechanical-chicken delivery.",
+      "original": "Skip both Are We There, Yeti? quests. Do not take the third step to the goblin towns.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=977", "label": "Wowhead Classic quest 977" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3783 next 977; 977 pre 3783 next 5163; 977 item 12367" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:winterspring:a4809",
+      "alsoStepIds": ["h4060:winterspring:c4809", "h4060:winterspring:t4809"],
+      "questId": 4809,
+      "prereqQuestIds": [4808],
+      "whyShort": "Eight uncracked horns are a chimera drop farm, and the next step flies back to Burning Steppes.",
+      "original": "Turn in Felnok Steelspring and decline Chillwind Horns. Do not return the horns to Tinkee.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4809", "label": "Wowhead Classic quest 4809" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4808 pre 4726 next 4809; 4809 next 4810; item 12444" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:winterspring:grind-speedrun-before-5055",
+      "alsoStepIds": ["h4060:winterspring:grind-balanced-before-5055"],
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "The modeled yeti and owlbeast grinds are a long camp. Ursius, Brumeran, and the Winterfall kills already use those mobs.",
+      "original": "Do not grind Ice Thistle yeti to 55 or crazed owlbeasts to 56 as their own steps.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.curseforge.com/wow/addons/openxp", "label": "OpenXP 54-55 Winterspring quest ids 3783, 6603, 980, 4842, 5082, no separate grind step" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 5054 and 5055 are single named kills; 5082 is Winterfall kill counts" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:winterspring:a969",
+      "alsoStepIds": ["h4060:winterspring:c969", "h4060:winterspring:t969", "h4060:winterspring:travel-eb5c19"],
+      "questId": 969,
+      "prereqQuestIds": [],
+      "whyShort": "Four Frostmaul Shards are a cave farm on the way out of Hyjal, and the cache follow-up stays in Everlook only after that farm.",
+      "original": "Skip Luck Be With You. Do not detour through Everlook after Hyjal for the shards.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=969", "label": "Wowhead Classic quest 969" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 969 item 12334, next 975, end npc 10307 at 61.92, 38.3" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:eastern-plaguelands:a6133",
+      "alsoStepIds": ["h4060:eastern-plaguelands:c6133", "h4060:eastern-plaguelands:t6133", "h4060:eastern-plaguelands:travel-869244"],
+      "questId": 6133,
+      "prereqQuestIds": [],
+      "whyShort": "The Quel'Lithien lodge is 8 rangers, 8 pathstriders, and 8 woodsmen plus the registry, off the Tirion road.",
+      "original": "Skip The Ranger Lord's Behest. Do not fly back to Light's Hope for that lodge.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=6133", "label": "Wowhead Classic quest 6133" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 6133 creatures 8565, 8564, 8563 and item 15847, no pre" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:un-goro-crater:t4243",
+      "questId": 4243,
+      "prereqQuestIds": [],
+      "whyShort": "Finding A-Me is the ape cave you are already in. The follow-up is a mithril casing and then an escort.",
+      "original": "Turn in Chasing A-Me 01 at the robot and do not accept the casing or the escort.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4244", "label": "Wowhead Classic quest 4244" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4243 next 4244; 4244 next 4245; 4245 flagged PARTY_ACCEPT" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:un-goro-crater:t4291",
+      "questId": 4291,
+      "prereqQuestIds": [4290],
+      "whyShort": "The nests finish beside the raptors. The bait quest is a separate devilsaur kill.",
+      "original": "Turn in The Scent of Lar'korwi and do not accept The Bait for Lar'korwi.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4292", "label": "Wowhead Classic quest 4292" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4291 next 4292; 4292 pre 4291" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:un-goro-crater:t4145",
+      "questId": 4145,
+      "prereqQuestIds": [],
+      "whyShort": "The bloodpetal counts finish around the east camp. The follow-up leaves for Marvon's workshop.",
+      "original": "Turn in Larion and Muigin and do not accept Marvon's Workshop.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4147", "label": "Wowhead Classic quest 4147" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4145 next 4147; 4147 pre 4145, end npc 8496" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:winterspring:t4808",
+      "questId": 4808,
+      "prereqQuestIds": [4726],
+      "whyShort": "4726 is already turned in in Burning Steppes. The Everlook hand-in is a talk.",
+      "original": "Turn in Felnok Steelspring at 61.63, 38.61 and decline the horn quest.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4808", "label": "Wowhead Classic quest 4808" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4808 pre 4726, end npc 10468 spawn 61.63, 38.61, map zone 618" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:winterspring:t5083",
+      "questId": 5083,
+      "prereqQuestIds": [],
+      "whyShort": "The firewater drops while killing Winterfall for 5082. The follow-up sends the player back to a Felwood cauldron.",
+      "original": "Turn in Winterfall Firewater at Donova and do not accept Falling to Corruption.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5084", "label": "Wowhead Classic quest 5084" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 5083 next 5084; 5084 pre 5083" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:winterspring:t5055",
+      "questId": 5055,
+      "prereqQuestIds": [5054],
+      "whyShort": "Ursius and Brumeran are one named each on the loop. Shy-Rotam is a later cave elite.",
+      "original": "Turn in Brumeran of the Chillwind and do not accept Shy-Rotam.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5056", "label": "Wowhead Classic quest 5056" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 5055 next 5056; 5056 pre 5055" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:felwood:t5157",
+      "questId": 5157,
+      "prereqQuestIds": [5155],
+      "whyShort": "The canteen fills at the Jaedenar moonwell the player is already visiting. The follow-up leaves the zone.",
+      "original": "Turn in Collection of the Corrupt Water at Bloodvenom and do not accept Seeking Spiritual Aid.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5158", "label": "Wowhead Classic quest 5158" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 5157 pre 5155 next 5158; 5158 end npc 5901" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:felwood:t8460",
+      "questId": 8460,
+      "prereqQuestIds": [],
+      "whyShort": "The first Timbermaw kills finish at Grazle on the south road. The next step is another hold trip, and the route flies to Everlook from Bloodvenom.",
+      "original": "Turn in Timbermaw Ally at Grazle (50.93, 85.01) and do not accept Speak to Nafien.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=8462", "label": "Wowhead Classic quest 8462" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 8460 next 8462; Grazle npc 11554 spawn 50.93, 85.01" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:western-plaguelands:t4984",
+      "questId": 4984,
+      "prereqQuestIds": [],
+      "whyShort": "Eight diseased wolves sit on the cauldron road. The follow-up is a second wildlife lap.",
+      "original": "Turn in The Wildlife Suffers Too at Mulgris and do not accept the bear follow-up.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=4985", "label": "Wowhead Classic quest 4985" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4984 next 4985; 4984 creature 1817" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:western-plaguelands:dungeon-0e89fa",
+      "questId": 838,
+      "prereqQuestIds": [5098],
+      "whyShort": "One Scholomance clear can use the quest 5098 offers. It is not a scripted run.",
+      "original": "Optional: one Scholomance clear if a group is already forming. Do not write the instance steps. 838 stays a tip.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=838", "label": "Wowhead Classic quest 838" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 5098 next 838; 838 pre 5098" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:western-plaguelands:dungeon-04957c",
+      "questId": null,
+      "prereqQuestIds": [],
+      "whyShort": "Stratholme is the same kind of stop as Scholomance: one clear, not a quest script.",
+      "original": "Optional: one Stratholme clear if a group is already forming. Stay on the open-world road otherwise.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/zone=2017/stratholme", "label": "Wowhead Classic Stratholme" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB zone 139 Eastern Plaguelands uiMapId 1423; the route step has no quest id" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "h4060:un-goro-crater:c4290",
+      "stepId": "h4060:un-goro-crater:a3884",
+      "questId": 3884,
+      "action": "accept",
+      "prereqQuestIds": [],
+      "whyShort": "The mangled journal drops from crater mobs the player is already killing and turns in at Marshal's Refuge.",
+      "original": "When A Mangled Journal drops, accept Williden's Journal.",
+      "text": "Accept Williden's Journal from item 11116 if it drops while killing for the carcass, the bones, and the pterrordax.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3884", "label": "Wowhead Classic quest 3884" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3884 sourceItem 11116, end npc 9270" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "h4060:un-goro-crater:t3881",
+      "stepId": "h4060:un-goro-crater:t3884",
+      "questId": 3884,
+      "action": "turnin",
+      "prereqQuestIds": [],
+      "whyShort": "Williden stands in the same refuge turn-in as Expedition Salvation.",
+      "original": "Turn Williden's Journal in to Williden Marshal with the other refuge quests.",
+      "text": "Turn in Williden's Journal to Williden Marshal.",
+      "goto": { "mapId": 1449, "x": 43.95, "y": 7.14, "zone": "Un'Goro Crater" },
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3884", "label": "Wowhead Classic quest 3884" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 9270 spawn 43.95, 7.14, zone 490, uiMapId 1449" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "h4060:western-plaguelands:t5233",
+      "stepId": "h4060:western-plaguelands:a5234",
+      "questId": 5234,
+      "action": "accept",
+      "prereqQuestIds": [5233],
+      "whyShort": "5233 ends at the cauldron. The filled bottle is a return, the same pattern as Felstone and Dalson's Tears. Do not continue to Gahrron's Wither.",
+      "original": "Accept Return to the Bulwark from the Writhing Haunt cauldron, then stop the cauldron chain.",
+      "text": "Accept Return to the Bulwark from the Scourge Cauldron at the Writhing Haunt.",
+      "goto": { "mapId": 1422, "x": 53.02, "y": 65.61, "zone": "Western Plaguelands" },
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5234", "label": "Wowhead Classic quest 5234" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB object 176393 starts 5234, spawn 53.02, 65.61, zone 28, uiMapId 1422; 5234 pre 5233 next 5235" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "h4060:western-plaguelands:a5234",
+      "stepId": "h4060:western-plaguelands:t5234",
+      "questId": 5234,
+      "action": "turnin",
+      "prereqQuestIds": [5233],
+      "whyShort": "Vandis is the same Bulwark turn-in already used for the first two bottles.",
+      "original": "Turn the Writhing Haunt bottle in to Shadow Priestess Vandis. Do not accept Target: Gahrron's Wither.",
+      "text": "Turn in Return to the Bulwark to Shadow Priestess Vandis.",
+      "goto": { "mapId": 1420, "x": 83.04, "y": 71.91, "zone": "Tirisfal Glades" },
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=5234", "label": "Wowhead Classic quest 5234" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB npc 11055 spawn 83.04, 71.91, zone 85, uiMapId 1420" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "afterStepId": "h4060:eastern-plaguelands:a6021",
+      "stepId": "h4060:eastern-plaguelands:t6030",
+      "questId": 6030,
+      "action": "turnin",
+      "prereqQuestIds": [],
+      "whyShort": "6030 is accepted in Everlook and has no prerequisite. The first Eastern Plaguelands stop is already Light's Hope.",
+      "original": "Turn Duke Nicholas Zverenhoff in at Light's Hope before riding to Tirion.",
+      "text": "Turn in Duke Nicholas Zverenhoff to Duke Nicholas Zverenhoff.",
+      "goto": { "mapId": 1423, "x": 71.63, "y": 50.09, "zone": "Eastern Plaguelands" },
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=6030", "label": "Wowhead Classic quest 6030" },
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 6030 no pre, end npc 11039 spawn 71.63, 50.09, zone 139, uiMapId 1423" }
+      ],
+      "verified": false
+    }
+  ]
+}

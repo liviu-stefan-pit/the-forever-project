@@ -1,0 +1,35 @@
+{
+  "routeId": "horde-20-40",
+  "opCounts": { "keep": 2, "total": 2 },
+  "ops": [
+    {
+      "op": "keep",
+      "stepId": "horde-20-40:accept-6382",
+      "questId": 6382,
+      "prereqQuestIds": [882],
+      "whyShort": "882 is completed in barrens-12-20.",
+      "originalText": "Pick up The Ashenvale Hunt from Jorn Skyseer in The Barrens.",
+      "text": "Keep the 6382 accept. 882 is accepted, completed, and turned in in barrens-12-20. 6382 is a talk to Senani, not a hunt.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6382 pre.single 882, objectivesText speak with Senani, xp 390, no next" },
+        { "url": "research/nova/v2/barrens-12-20.json", "label": "barrens-12-20:123 turnin questId 882" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    },
+    {
+      "op": "keep",
+      "stepId": "horde-20-40:turnin-6382",
+      "questId": 6382,
+      "prereqQuestIds": [882],
+      "whyShort": "882 is completed in barrens-12-20.",
+      "originalText": "Turn in The Ashenvale Hunt to Senani Thunderheart in Ashenvale.",
+      "text": "Keep the 6382 turn-in. It is the Senani handoff. Do not add a long hunt.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6382 has no objectives; 6383 has empty pre, no objectives, no xp" }
+      ],
+      "verified": false,
+      "targetFile": "research/levels-20-40.route-v2.json"
+    }
+  ]
+}

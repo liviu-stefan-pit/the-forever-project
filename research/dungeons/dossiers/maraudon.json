@@ -1,0 +1,285 @@
+{
+  "id": "maraudon",
+  "name": "Maraudon",
+  "forever": false,
+  "levels": [45, 52],
+  "runAt": 48,
+  "entrance": {
+    "zone": "Desolace",
+    "at": [29.1, 62.5],
+    "note": "Valley of Spears canyon west of Desolace. Orange (Vyletongue) and purple portals are in the outer canyon; Inner (Princess Theradras) is deeper. Questie dungeon entrance; same coords on dungeons:maraudon:run. Horde hub is Shadowprey Village — do not send givers or travel through Nijel's Point (Alliance)."
+  },
+  "travel": {
+    "nearestFlight": "Shadowprey Village",
+    "fromHubs": ["Shadowprey Village", "Camp Mojache", "Thunder Bluff", "Orgrimmar"],
+    "how": "Fly to Shadowprey Village in Desolace. Run east into the Valley of Spears / Maraudon canyon (29.1, 62.5). Pick up Vark Battlescar and Selendra at Shadowprey, Cavindra at the cave mouth, Willow at Kormek's Hut (62.2, 39.6, Twilight camp — not Nijel's Point), and the Centaur Pariah in south Desolace. Uthel'nay is an Orgrimmar pickup, not a Desolace town."
+  },
+  "quests": [
+    {
+      "questId": 7068,
+      "name": "Shadowshard Fragments",
+      "xp": 3450,
+      "giver": {
+        "npc": "Uthel'nay",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [39.2, 86.3]
+      },
+      "turnIn": {
+        "npc": "Uthel'nay",
+        "zone": "Orgrimmar",
+        "hub": "Orgrimmar",
+        "at": [39.2, 86.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7068",
+        "turnin": "dungeons:maraudon:turnin:7068"
+      },
+      "notes": "Purple-side shadowshard elementals. Catalog marks insideDungeon false (Questie droppedBy inside:false) while Questie objectivesText says collect from Maraudon; steps-v2 still completes it on the run. Speedrun false. Catalog minLevel 38 vs Questie reqLevel 39. Classic Era base XP at 42. Horde mage trainer in Orgrimmar — not an Alliance Desolace giver."
+    },
+    {
+      "questId": 7028,
+      "name": "Twisted Evils",
+      "xp": 5250,
+      "giver": {
+        "npc": "Willow",
+        "zone": "Desolace",
+        "hub": "Kormek's Hut",
+        "at": [62.2, 39.6]
+      },
+      "turnIn": {
+        "npc": "Willow",
+        "zone": "Desolace",
+        "hub": "Kormek's Hut",
+        "at": [62.2, 39.6]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7028",
+        "turnin": "dungeons:maraudon:turnin:7028"
+      },
+      "notes": "Inner. Theradric Crystal Carvings inside. Willow is Twilight's Hammer at Kormek's Hut (friendly AH), not Nijel's Point. Speedrun and balanced. Classic Era base XP at 47."
+    },
+    {
+      "questId": 7029,
+      "name": "Vyletongue Corruption",
+      "xp": 5250,
+      "giver": {
+        "npc": "Vark Battlescar",
+        "zone": "Desolace",
+        "hub": "Shadowprey Village",
+        "at": [23.2, 70.3]
+      },
+      "turnIn": {
+        "npc": "Vark Battlescar",
+        "zone": "Desolace",
+        "hub": "Shadowprey Village",
+        "at": [23.2, 70.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7029",
+        "turnin": "dungeons:maraudon:turnin:7029"
+      },
+      "notes": "Orange (Vyletongue) plants / Noxxious Scion. Horde giver is Vark at Shadowprey; Alliance counterpart is at Nijel's Point and is not in this pack. Catalog insideDungeon false; steps-v2 still completes it on the run. Speedrun false. Classic Era base XP at 47."
+    },
+    {
+      "questId": 7067,
+      "name": "The Pariah's Instructions",
+      "xp": 5450,
+      "giver": {
+        "npc": "Centaur Pariah",
+        "zone": "Desolace",
+        "hub": "Gelkis Village",
+        "at": [50.4, 86.7]
+      },
+      "turnIn": {
+        "npc": "Centaur Pariah",
+        "zone": "Desolace",
+        "hub": "Gelkis Village",
+        "at": [50.4, 86.7]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7067",
+        "turnin": "dungeons:maraudon:turnin:7067"
+      },
+      "notes": "South Desolace wandering centaur, not an Alliance town. Catalog insideDungeon false; steps-v2 completes Amulet of Union on the run. Speedrun false. Classic Era base XP at 48."
+    },
+    {
+      "questId": 7044,
+      "name": "Legends of Maraudon",
+      "xp": 3400,
+      "giver": {
+        "npc": "Cavindra",
+        "zone": "Desolace",
+        "hub": "Maraudon entrance",
+        "at": [32.1, 64.0]
+      },
+      "turnIn": {
+        "npc": "Celebras the Redeemed",
+        "zone": "Maraudon",
+        "hub": "Maraudon (inner)",
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7044",
+        "turnin": "dungeons:maraudon:turnin:7044"
+      },
+      "notes": "Orange/purple outer. Collect Celebrian Diamond and Celebrian Rod inside, turn in to Celebras the Redeemed (npc 13716, no Questie coords). Unlocks 7046 The Scepter of Celebras. Cavindra sits at the cave mouth you pass from Shadowprey. Low XP; speedrun false in catalog but keep it so the scepter chain can fire. verified:false (Celebras has no coordinates)."
+    },
+    {
+      "questId": 7046,
+      "name": "The Scepter of Celebras",
+      "xp": 5700,
+      "giver": {
+        "npc": "Celebras the Redeemed",
+        "zone": "Maraudon",
+        "hub": "Maraudon (inner)",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Celebras the Redeemed",
+        "zone": "Maraudon",
+        "hub": "Maraudon (inner)",
+        "at": null
+      },
+      "prerequisites": [7044],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7046",
+        "turnin": "dungeons:maraudon:turnin:7046"
+      },
+      "notes": "Accepted after turning in 7044 inside. Reward is the Scepter of Celebras, which ports to inner Maraudon on later runs (role tip). steps-v2 accept/turnin are after the run block. Speedrun true. verified:false (no Celebras coords)."
+    },
+    {
+      "questId": 7064,
+      "name": "Corruption of Earth and Seed",
+      "xp": 6100,
+      "giver": {
+        "npc": "Selendra",
+        "zone": "Desolace",
+        "hub": "Shadowprey Village",
+        "at": [26.9, 77.7]
+      },
+      "turnIn": {
+        "npc": "Selendra",
+        "zone": "Desolace",
+        "hub": "Shadowprey Village",
+        "at": [26.9, 77.7]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7064",
+        "turnin": "dungeons:maraudon:turnin:7064"
+      },
+      "notes": "Inner. Kill Princess Theradras. Horde giver is Selendra just south of Shadowprey; Alliance Keeper Marandis at Nijel's Point is not in this pack. Speedrun and balanced. Classic Era base XP at 51."
+    },
+    {
+      "questId": 7066,
+      "name": "Seed of Life",
+      "xp": 6100,
+      "giver": {
+        "npc": "Zaetar's Spirit",
+        "zone": "Maraudon",
+        "hub": "Maraudon (inner)",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Keeper Remulos",
+        "zone": "Moonglade",
+        "hub": "Moonglade",
+        "at": [36.2, 41.8]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:maraudon:accept:7066",
+        "turnin": "dungeons:maraudon:turnin:7066"
+      },
+      "notes": "Starts from Zaetar's Spirit after Princess Theradras dies (npc 12238, no Questie coords). Forever hotfix (Nov 6): Zaetar's Spirit now spawns correctly (fan report). Turn in at Keeper Remulos in Moonglade. Speedrun true. verified:false."
+    }
+  ],
+  "runStepId": "dungeons:maraudon:run",
+  "keys": [
+    {
+      "name": "Scepter of Celebras",
+      "questId": 7046,
+      "required": false,
+      "note": "From 7044 Legends of Maraudon (Celebrian Diamond + Celebrian Rod, orange/purple) then 7046. Ports to inner Maraudon on later runs. Not required for a first both-wings clear."
+    }
+  ],
+  "prep": {
+    "group": "Five-player. Run once, both wings (orange/purple outer then inner Princess). Do not reset for more shadowshards. At most five dungeon entries/resets per hour.",
+    "consumables": ["food", "water", "healing potions", "nature resist if you have it for Princess"],
+    "hearth": "Shadowprey Village",
+    "warnings": [
+      "Horde pickups are Shadowprey Village, the Maraudon cave mouth, Kormek's Hut, and the south Desolace Pariah. Do not send the group to Nijel's Point.",
+      "Orange (Vyletongue) and purple portals are in the outer canyon; Inner is Princess Theradras. Use the Celebras scepter after 7046 to skip to inner on later runs.",
+      "Princess Theradras knocks back; keep tank and healer near walls.",
+      "Forever: Zaetar's Spirit now spawns correctly after Princess Theradras dies (Nov 6 hotfix, fan report).",
+      "Kill XP inside dungeons is increased; if any party member would get no XP because mobs are trivial, nobody gets XP (Forever hotfix)."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Searing Gorge",
+      "levelBand": [48, 50],
+      "why": "Same 48-50 band as a Maraudon runAt. Thorium Point kill quests are balanced-only on the 40-60 route and are the slow same-band work a both-wings Maraudon clear replaces.",
+      "questIds": [7723, 7724, 7727, 7722, 3441, 3442]
+    },
+    {
+      "zone": "Tanaris",
+      "levelBand": [46, 50],
+      "why": "Catalog dungeons-off replacement. Thistleshrub Valley is balanced-only; Scrimshank / Dunemaul / Thirsty Goblin are the other slow Gadgetzan completes in this band.",
+      "questIds": [3362, 10, 2605, 5863, 82]
+    },
+    {
+      "zone": "The Hinterlands",
+      "levelBand": [47, 50],
+      "why": "Same band. Rin'ji is Trapped is balanced-only; the Revantusk kill loops are the other slow 47-50 work if Maraudon is covering the XP.",
+      "questIds": [2742, 7828, 7829, 7830, 7844, 7841]
+    }
+  ],
+  "sourceConflicts": [
+    "7068 minLevel is 38 in dungeons.json/README vs QuestieDB reqLevel 39.",
+    "7068/7029/7067: dungeons.json objectives.insideDungeon is false, but steps-v2:run completes them inside and Questie 7068 text says collect from Maraudon. Purple/orange outer is still the instance.",
+    "Cavindra coords: dungeons.json 32.1, 64.0 vs QuestieDB spawn 31.9, 63.8.",
+    "Forever quest 93404 Rot and Regret (Questie zone Maraudon, recover a Vial of Earth Song Water) is owned by the 40-60 Shen'dralas/Desolace route (pre 93594). It is not in the Horde maraudon pack. Not added.",
+    "Zaetar spawn hotfix is fan-reported (wowclassicforever.info), not Blizzard-published."
+  ],
+  "notes": "Classic Maraudon, Horde only. Pickup at Shadowprey Village and the entrance around 44-50; runAt 48 (45+3). Eight catalog quests, all with steps-v2 ids. Scepter chain is 7044 (Celebrian Diamond + Rod, orange/purple) → 7046. Dungeons off: Feralas (Camp Mojache), Tanaris, Azshara. Classic XP; Forever live XP unverified."
+}

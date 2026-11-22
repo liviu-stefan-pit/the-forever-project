@@ -1,0 +1,197 @@
+{
+  "id": "ragefire-chasm",
+  "name": "Ragefire Chasm",
+  "forever": false,
+  "levels": [13, 18],
+  "runAt": 16,
+  "entrance": {
+    "zone": "Orgrimmar",
+    "at": [52.6, 49.0],
+    "note": "Cleft of Shadow; walk down the ramp from the Valley of Spirits / Cleft of Shadow. Coordinates from Questie dungeons.lua via research/dungeons/dungeons.json."
+  },
+  "travel": {
+    "nearestFlight": "Orgrimmar",
+    "fromHubs": ["Razor Hill", "The Crossroads", "Orgrimmar"],
+    "how": "From Razor Hill or the Crossroads, walk or fly into Orgrimmar and drop into the Cleft of Shadow; the portal is on the cavern floor."
+  },
+  "quests": [
+    {
+      "questId": 5726,
+      "name": "Hidden Enemies",
+      "xp": 910,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5726", "turnin": "dungeons:ragefire-chasm:turnin:5726" },
+      "notes": "Outdoor Durotar pickup: Lieutenant's Insignia from Burning Blade Fanatics/Apprentices in Skull Rock. Orc/Troll already do this in durotar-1-12; Tauren still need the dungeon-pack accept. Unlocks 5727."
+    },
+    {
+      "questId": 5727,
+      "name": "Hidden Enemies",
+      "xp": 455,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [5726],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5727", "turnin": "dungeons:ragefire-chasm:turnin:5727" },
+      "notes": "Speak to Neeru Fireblade in the Cleft of Shadow (49.5, 50.6) with the insignia, then return to Thrall. Unlocks 5728."
+    },
+    {
+      "questId": 5723,
+      "name": "Testing an Enemy's Strength",
+      "xp": 800,
+      "giver": { "npc": "Rahauro", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [70.1, 29.5] },
+      "turnIn": { "npc": "Rahauro", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [70.1, 29.5] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5723", "turnin": "dungeons:ragefire-chasm:turnin:5723" },
+      "notes": "Kill 8 Ragefire Troggs and 8 Ragefire Shaman inside. Catalog marks it low XP / balanced-only; take it if you pass Elder Rise anyway (Tauren naturally do)."
+    },
+    {
+      "questId": 5722,
+      "name": "Searching for the Lost Satchel",
+      "xp": 880,
+      "giver": { "npc": "Rahauro", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [70.1, 29.5] },
+      "turnIn": { "npc": "Maur Grimtotem", "zone": "Ragefire Chasm", "hub": "Orgrimmar", "at": null },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5722", "turnin": "dungeons:ragefire-chasm:turnin:5722" },
+      "notes": "Turn in on Maur Grimtotem's corpse inside the instance (no outdoor coords). Leads to 5724."
+    },
+    {
+      "questId": 5724,
+      "name": "Returning the Lost Satchel",
+      "xp": 1450,
+      "giver": { "npc": "Maur Grimtotem", "zone": "Ragefire Chasm", "hub": "Orgrimmar", "at": null },
+      "turnIn": { "npc": "Rahauro", "zone": "Thunder Bluff", "hub": "Thunder Bluff", "at": [70.1, 29.5] },
+      "prerequisites": [5722],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5724", "turnin": "dungeons:ragefire-chasm:turnin:5724" },
+      "notes": "Accepted from Maur inside after 5722. Catalog speedrun:true (1450 base). Bracer rewards."
+    },
+    {
+      "questId": 5725,
+      "name": "The Power to Destroy...",
+      "xp": 1450,
+      "giver": { "npc": "Varimathras", "zone": "Undercity", "hub": "Undercity", "at": [56.2, 92.2] },
+      "turnIn": { "npc": "Varimathras", "zone": "Undercity", "hub": "Undercity", "at": [56.2, 92.2] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5725", "turnin": "dungeons:ragefire-chasm:turnin:5725" },
+      "notes": "Two books from Searing Blade Cultists/Warlocks inside. In dungeons.json as balanced+speedrun, but steps-v2 has no accept/turnin: giver is Undercity and the Horde RFC pickup is in Orgrimmar. Skip unless you are already in Undercity (do not add a zeppelin detour)."
+    },
+    {
+      "questId": 5728,
+      "name": "Hidden Enemies",
+      "xp": 1150,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [5727],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5728", "turnin": "dungeons:ragefire-chasm:turnin:5728" },
+      "notes": "Kill Bazzalan and Jergosh the Invoker inside. This is the dungeon step of the Hidden Enemies chain. Catalog balanced-only."
+    },
+    {
+      "questId": 5761,
+      "name": "Slaying the Beast",
+      "xp": 1150,
+      "giver": { "npc": "Neeru Fireblade", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [49.5, 50.6] },
+      "turnIn": { "npc": "Neeru Fireblade", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [49.5, 50.6] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5761", "turnin": "dungeons:ragefire-chasm:turnin:5761" },
+      "notes": "Taragaman the Hungerer's Heart. Giver is next to the RFC entrance. Catalog speedrun:true."
+    },
+    {
+      "questId": 5729,
+      "name": "Hidden Enemies",
+      "xp": 105,
+      "giver": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "turnIn": { "npc": "Neeru Fireblade", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [49.5, 50.6] },
+      "prerequisites": [5728],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5729", "turnin": "dungeons:ragefire-chasm:turnin:5729" },
+      "notes": "Talk-only follow-up after 5728. Not in dungeons.json quest list; in steps-v2 and questie-db (105 XP). Do not invent a class-weapon quest after 5730."
+    },
+    {
+      "questId": 5730,
+      "name": "Hidden Enemies",
+      "xp": 1450,
+      "giver": { "npc": "Neeru Fireblade", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [49.5, 50.6] },
+      "turnIn": { "npc": "Thrall", "zone": "Orgrimmar", "hub": "Orgrimmar", "at": [31.7, 37.8] },
+      "prerequisites": [5729],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:ragefire-chasm:accept:5730", "turnin": "dungeons:ragefire-chasm:turnin:5730" },
+      "notes": "Talk-only return to Thrall. Chain ends here (questie-db has no next). XP 1450 at level 16."
+    }
+  ],
+  "runStepId": "dungeons:ragefire-chasm:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player, dungeon levels 13-18; do not enter before 16 (runAt).",
+    "consumables": ["food", "water", "healing potions", "mana drinks for healers"],
+    "hearth": "Orgrimmar",
+    "warnings": [
+      "Do not run before level 16.",
+      "Finish 5726/5727 (Skull Rock insignia, then Neeru) before accepting 5728.",
+      "Grab 5723 and 5722 from Rahauro on Elder Rise if you pass Thunder Bluff (Tauren will).",
+      "Skip 5725 unless already in Undercity; do not zeppelin for it.",
+      "Pull troggs in pairs; kill shaman first; Taragaman and Jergosh are the real threats.",
+      "Skip side caves unless you still need Maur's satchel.",
+      "Stop after 5730; no class-weapon follow-up exists in questie-db."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "The Barrens",
+      "levelBand": [13, 16],
+      "why": "Crossroads harpy and raptor loops in nova/v2/barrens-12-20 are the slow outdoor XP in the same 13-16 band RFC pays at 16.",
+      "questIds": [867, 875, 869, 903]
+    },
+    {
+      "zone": "Durotar",
+      "levelBand": [12, 16],
+      "why": "Skull Rock Burning Blade finishers in nova/v2/durotar-1-12 sit at the Orgrimmar gate; RFC is the next room after those turn-ins.",
+      "questIds": [827, 829, 832]
+    }
+  ],
+  "sourceConflicts": [
+    "5725 is in dungeons.json (balanced and speedrun) and README but has no steps-v2 accept/turnin; early-dungeon review dropped it because Varimathras is in Undercity while the Horde RFC pickup is in Orgrimmar.",
+    "5729 and 5730 are in steps-v2 and content/questie-db but omitted from the dungeons.json Ragefire quest list.",
+    "Classic Era XP in dungeons.json; catalog notes Forever may halve dungeon-quest bonus XP (unofficial). Amounts here are Classic Era base.",
+    "Thrall pin is 31.7, 37.8 in dungeons.json vs 31.73, 37.82 in steps-v2/questie-db; used catalog 31.7, 37.8."
+  ],
+  "notes": "Horde-only instance. Pickup hub is Orgrimmar (Cleft of Shadow / Valley of Wisdom) at 13-16 between Durotar and the Barrens. Dungeons-off replacement: finish Durotar and early Northern Barrens from the Crossroads. One quested clear; do not reset-farm. XP figures are Classic Era from dungeons.json / questie-db."
+}

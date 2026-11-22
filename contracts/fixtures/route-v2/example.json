@@ -1,0 +1,92 @@
+{
+  "schema": "project-forever/route",
+  "version": 2,
+  "id": "example-synthetic",
+  "title": "SYNTHETIC EXAMPLE: shape only. Ids, names and coordinates are placeholders, not game data.",
+  "levels": [1, 5],
+  "steps": [
+    {
+      "id": "example:accept-a",
+      "n": 1,
+      "tags": {},
+      "text": [{ "segments": [{ "t": "Accept Example Quest A" }] }],
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1411, "x": 40, "y": 60, "zone": "Example Zone", "exact": true } },
+        { "type": "accept", "questId": 900001, "label": "Example Quest A" }
+      ],
+      "conditions": [],
+      "tips": [
+        { "kind": "speed", "text": "Placeholder: pull two at once.", "roles": ["dps"], "routes": ["speedrun"], "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false },
+        { "kind": "general", "text": "Placeholder: tank tip.", "roles": ["tank"], "classes": ["Warrior"], "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }
+      ],
+      "professionHooks": [
+        { "profession": "Cooking", "itemId": 900100, "itemName": "Example Meat", "qty": 5, "skillTarget": 50,
+          "npc": { "id": 900200, "name": "Example Cook", "zone": "Example Zone", "x": 41.5, "y": 61.2 },
+          "note": "Placeholder: keep these for the recipe sold by the example cook.",
+          "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }
+      ],
+      "pins": [
+        { "kind": "mobArea", "npcIds": [900300], "name": "Example Boar", "mapId": 1411, "zone": "Example Zone",
+          "polygon": [{ "x": 30, "y": 50 }, { "x": 35, "y": 48 }, { "x": 36, "y": 55 }],
+          "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }
+      ],
+      "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }],
+      "verified": false
+    },
+    {
+      "id": "example:dungeon",
+      "n": 2,
+      "tags": {},
+      "text": [{ "segments": [{ "t": "Example dungeon run" }] }],
+      "actions": [],
+      "conditions": [],
+      "routes": ["balanced", "speedrun"],
+      "dungeon": { "name": "Example Dungeon", "levels": [3, 5] },
+      "alternativeTo": ["example:open-world"],
+      "elite": [
+        { "name": "Example Boss", "npcId": 900400, "level": 5, "groupSize": 5,
+          "tips": [{ "kind": "elite", "text": "Placeholder: healer tip.", "roles": ["healer"], "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }],
+          "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }
+      ],
+      "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }],
+      "verified": false
+    },
+    {
+      "id": "example:open-world",
+      "n": 3,
+      "tags": {},
+      "text": [{ "segments": [{ "t": "Open-world alternative" }] }],
+      "actions": [],
+      "conditions": [],
+      "dungeonsOff": true,
+      "alternativeTo": ["example:dungeon"],
+      "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }],
+      "verified": false
+    },
+    {
+      "id": "example:bonus",
+      "n": 4,
+      "tags": {},
+      "text": [{ "segments": [{ "t": "Balanced-only side quest" }] }],
+      "actions": [],
+      "conditions": [],
+      "routes": ["balanced"],
+      "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }],
+      "verified": false
+    }
+  ],
+  "classProfessions": {
+    "Warrior": {
+      "primary": [{ "rank": 1, "pair": ["Mining", "Blacksmithing"], "reason": "Placeholder reason." }],
+      "secondary": [{ "profession": "First Aid", "reason": "Placeholder reason." }],
+      "levelingPlan": [{ "profession": "Mining", "skillTarget": 75, "levels": [10, 20], "note": "Placeholder milestone." }],
+      "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }],
+      "verified": false
+    }
+  },
+  "tipsMatrix": {
+    "Warrior": {
+      "tank": [{ "kind": "general", "text": "Placeholder.", "sources": [{ "url": "https://example.com/placeholder", "label": "placeholder" }], "verified": false }]
+    }
+  }
+}

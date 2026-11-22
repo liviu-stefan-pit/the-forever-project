@@ -1,0 +1,273 @@
+{
+  "id": "blackfathom-deeps",
+  "name": "Blackfathom Deeps",
+  "forever": false,
+  "levels": [24, 32],
+  "runAt": 27,
+  "entrance": {
+    "zone": "Ashenvale",
+    "at": [14.5, 14.2],
+    "note": "Zoram Strand cave north of Zoram'gar Outpost. Questie dungeon entrance; same coords on dungeons:blackfathom-deeps:run."
+  },
+  "travel": {
+    "nearestFlight": "Zoram'gar Outpost",
+    "fromHubs": ["Zoram'gar Outpost", "Splintertree Post", "Sun Rock Retreat"],
+    "how": "From Zoram'gar Outpost follow the Ashenvale coast north to the cave at 14.5, 14.2; pickup Je'neu at the outpost first. Do not route through Darkshore or Darnassus."
+  },
+  "quests": [
+    {
+      "questId": 6562,
+      "name": "Trouble in the Deeps",
+      "xp": 435,
+      "giver": {
+        "npc": "Tsunaman",
+        "zone": "Stonetalon Mountains",
+        "hub": "Sun Rock Retreat",
+        "at": [47.4, 64.2]
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:blackfathom-deeps:accept:6562",
+        "turnin": "dungeons:blackfathom-deeps:turnin:6562"
+      },
+      "notes": "Optional breadcrumb to 6563 (Questie breadcrumbFor). Balanced only. Low XP (435 at 22); take only if already at Sun Rock Retreat."
+    },
+    {
+      "questId": 6563,
+      "name": "The Essence of Aku'Mai",
+      "xp": 1750,
+      "giver": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": 6562,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:blackfathom-deeps:accept:6563",
+        "turnin": "dungeons:blackfathom-deeps:turnin:6563"
+      },
+      "notes": "Collect 20 Sapphires of Aku'Mai from wall crystals on the BFD run. Balanced only. dungeons.json marks the objective insideDungeon false and README route.why says outside the dungeon; the same README DPS tip says grab the crystals during the run."
+    },
+    {
+      "questId": 6564,
+      "name": "Allegiance to the Old Gods",
+      "xp": 1750,
+      "giver": {
+        "npc": "Damp Note",
+        "zone": "Blackfathom Deeps",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Item-start from Damp Note (item 16790) dropped by Blackfathom Tide Priestess. Unlocks 6565. In dungeons.json and README but dropped from steps-v2 (dungeons-mid: low drop, do not farm). XP 1750 is the dungeons.json/README figure."
+    },
+    {
+      "questId": 1740,
+      "name": "The Orb of Soran'ruk",
+      "xp": 2550,
+      "giver": {
+        "npc": "Doan Karhan",
+        "zone": "The Barrens",
+        "hub": "",
+        "at": [49.3, 57.2]
+      },
+      "turnIn": {
+        "npc": "Doan Karhan",
+        "zone": "The Barrens",
+        "hub": "",
+        "at": [49.3, 57.2]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warlock",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Warlock only. 3 Soran'ruk Fragments from Twilight Acolytes in BFD plus 1 Large Soran'ruk Fragment from Shadowfang Darksouls in SFK. Catalog speedrun:true, but dropped from steps-v2 (dungeons-mid: class-only drop farm). No dungeons:blackfathom-deeps:accept:1740 in current steps-v2."
+    },
+    {
+      "questId": 6565,
+      "name": "Allegiance to the Old Gods",
+      "xp": 2650,
+      "giver": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "prerequisites": [6564],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Kill Lorgus Jett inside BFD. Catalog speedrun:true, but dropped from steps-v2 because 6564 is refused. No current step ids."
+    },
+    {
+      "questId": 6561,
+      "name": "Blackfathom Villainy",
+      "xp": 1650,
+      "giver": {
+        "npc": "Argent Guard Thaelrid",
+        "zone": "Blackfathom Deeps",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Bashana Runetotem",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [71.1, 34.2]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:blackfathom-deeps:accept:6561",
+        "turnin": "dungeons:blackfathom-deeps:turnin:6561"
+      },
+      "notes": "Accept inside from Thaelrid; Head of Kelris from Twilight Lord Kelris. Turn in on Elder Rise. Balanced only. Extra Thunder Bluff trip after a Kalimdor coast run."
+    },
+    {
+      "questId": 6921,
+      "name": "Amongst the Ruins",
+      "xp": 2750,
+      "giver": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.6, 34.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:blackfathom-deeps:accept:6921",
+        "turnin": "dungeons:blackfathom-deeps:turnin:6921"
+      },
+      "notes": "Fathom Core from the altar in the Moonshrine Ruins inside BFD. Balanced only. dungeons.json marks insideDungeon false and README says outside; the object is in the instance."
+    },
+    {
+      "questId": 6922,
+      "name": "Baron Aquanis",
+      "xp": 3050,
+      "giver": {
+        "npc": "Strange Water Globe",
+        "zone": "Blackfathom Deeps",
+        "hub": "",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Je'neu Sancrea",
+        "zone": "Ashenvale",
+        "hub": "Zoram'gar Outpost",
+        "at": [11.56, 34.29]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:blackfathom-deeps:accept:6922",
+        "turnin": "dungeons:blackfathom-deeps:turnin:6922"
+      },
+      "notes": "Item-start from Strange Water Globe (item 16782) if Baron Aquanis drops it when the Fathom Core is looted. Do not reset for it. In steps-v2 and Questie, not in the dungeons.json BFD quest list or README table. XP from questie-db/quests.json."
+    }
+  ],
+  "runStepId": "dungeons:blackfathom-deeps:run",
+  "keys": [],
+  "prep": {
+    "group": "Five-player, run once at 27. Do not reset for sapphires or the Damp Note. At most five dungeon entries/resets per hour.",
+    "consumables": ["water breathing", "water walking if available", "food", "water", "healing potions"],
+    "hearth": "Zoram'gar Outpost",
+    "warnings": [
+      "Lots of swimming; pull murlocs and naga out of the water.",
+      "Aku'mai and Lorgus Jett packs spike damage.",
+      "Damp Note (6564) is a low drop; steps pack refuses the farm.",
+      "Kill XP inside dungeons is increased; if any party member would get no XP because mobs are trivial, nobody gets XP (Forever hotfix)."
+    ],
+    "classQuests": [
+      "Warlock 1740 The Orb of Soran'ruk from Doan Karhan in the Barrens (49.3, 57.2): fragments in BFD and SFK. Dropped from the current BFD step pack."
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Ashenvale",
+      "levelBand": [20, 30],
+      "why": "Same coast and level band as BFD. Naga heads at Zoram Strand, stealthed Outrunners, and Thistlefur are the slow Splintertree/Zoram'gar work the dungeons-off text keeps.",
+      "questIds": [6442, 6503, 216, 25]
+    },
+    {
+      "zone": "Stonetalon Mountains",
+      "levelBand": [20, 28],
+      "why": "Pickup hub for 6562. Earthen Arise, Gaea seed chain, and spider kills are the slow Sun Rock work you can cut when BFD is done.",
+      "questIds": [6481, 6301, 6381, 6461]
+    }
+  ],
+  "sourceConflicts": [
+    "dungeons.json lists 7 BFD quests (6562, 6563, 6564, 1740, 6565, 6561, 6921). steps-v2 also has 6922 (Baron Aquanis) and does not emit accept/turnin for 6564, 6565, or 1740 (dropped in research/external-review/changesets/dungeons-mid.json).",
+    "6564 XP: dungeons.json and README 1750 vs content/questie-db 1300. web/public/data/quests.json has no 6564/6565 rows. Used dungeons.json 1750.",
+    "6563 and 6921: README route.why says objectives outside the dungeon; README DPS tip and Classic play say sapphires/Fathom Core are inside BFD. dungeons.json insideDungeon is false for both.",
+    "6564 giver zone in dungeons.json names Darkshore on the Tide Priestess drop; item 16790 npcDrops 4802 (Blackfathom Tide Priestess) at the BFD tunnels.",
+    "Je'neu coords: dungeons.json 11.6, 34.3 vs Questie/quests.json 11.56, 34.29 (used on 6922 steps)."
+  ],
+  "notes": "Pickup at Zoram'gar (Je'neu) around 22-27; Tsunaman breadcrumb only if already in Stonetalon. Speedrun pack currently keeps 6922 if it drops and skips the Damp Note chain, the warlock orb, 6562/6563/6561/6921. Dungeons off: Ashenvale (Splintertree, Zoram'gar) and Stonetalon. Classic XP from catalog/Questie; Forever live XP unverified."
+}

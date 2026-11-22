@@ -1,0 +1,222 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "feral dps",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Feral Cat's published best pair is Alchemy with Herbalism. Leatherworking is the next crafter, and Engineering's ore does not feed potions.",
+      "sources": [
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-cat-pve/",
+          "label": "WoW Forever DB: Feral Cat professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "balance",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Balance keeps Alchemy with Herbalism. Engineering is close on that list, but Mining is F and does not supply herbs.",
+      "sources": [
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-balance-pve/",
+          "label": "WoW Forever DB: Balance professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "restoration healer",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Restoration rates both Alchemy and Herbalism S. Leatherworking is the next crafter and still needs a skinner, not herbs.",
+      "sources": [
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-restoration-pve/",
+          "label": "WoW Forever DB: Restoration professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "feral dps",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Windshaper Skyborne can be druids. Feral Cat still wants Alchemy fed by Herbalism.",
+      "sources": [
+        {
+          "url": "https://warcraftmaps.com/data/race-class-combinations",
+          "label": "WarcraftMaps: Forever race and class table, Windshaper Druid Yes"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-feral-cat-pve/",
+          "label": "WoW Forever DB: Feral Cat professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "balance",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Balance does not change the Skyborne pair. Alchemy with Herbalism stays the published pair.",
+      "sources": [
+        {
+          "url": "https://warcraftmaps.com/races/windshaper-skyborne",
+          "label": "WarcraftMaps: Windshaper classes include Druid"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-balance-pve/",
+          "label": "WoW Forever DB: Balance professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "restoration healer",
+      "pair": ["Herbalism", "Alchemy"],
+      "rejectedPairs": [
+        ["Leatherworking", "Skinning"],
+        ["Engineering", "Mining"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Restoration's S pair is Alchemy with Herbalism for Windshaper as well as Tauren.",
+      "sources": [
+        {
+          "url": "https://www.warcrafttavern.com/forever/guides/skyborne/",
+          "label": "Warcraft Tavern: Windshaper classes include Druid"
+        },
+        {
+          "url": "https://wowfdb.com/tier-lists/professions-druid-restoration-pve/",
+          "label": "WoW Forever DB: Restoration professions, 11 Nov 2026"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "feral dps",
+      "rolesAlso": ["balance", "restoration healer"],
+      "whyShort": "Bear Form is 10, Cat Form is 20, and Travel Form is 30 from the trainer, before a mount. No form quest chain is added.",
+      "sources": [
+        {
+          "url": "https://warcraft.wiki.gg/wiki/Druid_abilities_(Forever)",
+          "label": "Warcraft Wiki: Forever druid ability levels"
+        },
+        {
+          "url": "https://www.icy-veins.com/wow-forever/druid-shapeshift-forms",
+          "label": "Icy Veins: Travel Form at 30, before a mount, no quest"
+        },
+        {
+          "url": "https://wowf.io/en/spellbook/druid",
+          "label": "wowf.io: Bear 10, Cat 20, Travel 30"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Skyborne",
+      "class": "Druid",
+      "role": "feral dps",
+      "rolesAlso": ["balance", "restoration healer"],
+      "whyShort": "Same form levels: Bear 10, Cat 20, Travel 30 from the trainer, before a mount. Skyborne cat and bear quest steps are not added.",
+      "sources": [
+        {
+          "url": "https://warcraft.wiki.gg/wiki/Druid_abilities_(Forever)",
+          "label": "Warcraft Wiki: Forever druid ability levels"
+        },
+        {
+          "url": "https://www.icy-veins.com/wow-forever/druid-shapeshift-forms",
+          "label": "Icy Veins: Skyborne forms exist; Travel Form is trainer-only at 30"
+        }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Tauren",
+      "class": "Druid",
+      "role": "feral dps",
+      "rolesAlso": ["balance", "restoration healer"],
+      "questIds": [27, 28, 30, 31],
+      "whyShort": "27 through 31 are the Tauren aquatic chain. 28 is the lake bauble and 30 is the pendant swim. Leave it off the route.",
+      "sources": [
+        {
+          "url": "content/questie-db/quests.json",
+          "label": "Questie: 27, 28, 30, 31 are Druid, race 32, reqLevel 16"
+        }
+      ],
+      "verified": false
+    }
+  ],
+  "skipped": [
+    {
+      "kind": "race",
+      "name": "Orc",
+      "whyShort": "WarcraftMaps marks Orc Druid as No."
+    },
+    {
+      "kind": "race",
+      "name": "Undead",
+      "whyShort": "WarcraftMaps marks Undead Druid as No."
+    },
+    {
+      "kind": "race",
+      "name": "Troll",
+      "whyShort": "WarcraftMaps marks Troll Druid as No."
+    },
+    {
+      "kind": "role",
+      "name": "feral tank",
+      "whyShort": "Bear tank was not requested. Its Forever DB headline pair is also Herbalism plus Alchemy."
+    },
+    {
+      "kind": "quest",
+      "name": "Skyborne aquatic form",
+      "whyShort": "UNKNOWN. No level-16 aquatic quest in quests.json has the Horde Skyborne race bit. Do not reuse Tauren ids 27-31."
+    }
+  ]
+}

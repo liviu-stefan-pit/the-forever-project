@@ -1,0 +1,360 @@
+{
+  "format": 1,
+  "pins": {
+    "questiedb": {
+      "repo": "https://github.com/Questie/QuestieDB",
+      "commit": "5b857c29e32c1f0a6bc095bde64f6c5c05dd86ff",
+      "checkout": "research/external/github/QuestieDB",
+      "baseline": "data/Forever",
+      "eraIds": "data/Classic",
+      "correctionOrder": [
+        "src/corrections/Forever/legacy",
+        "src/corrections/Forever/generated",
+        "src/corrections/Forever/traces",
+        "src/corrections/Forever/forever*Fixes.lua"
+      ]
+    },
+    "evidence": {
+      "traces": "src/corrections/Forever/traces/foreverQuestTraces.lua",
+      "deltaBase": "src/corrections/Forever/generated/foreverBaseQuest.lua",
+      "authoredFixes": "src/corrections/Forever/foreverQuestFixes.lua"
+    },
+    "questie": {
+      "repo": "https://github.com/Questie/Questie",
+      "commit": "99bef7a7b721aefb4ba070029ef91d62e9108d61",
+      "checkout": "research/external/github/Questie"
+    }
+  },
+  "faction": "Horde (Horde + neutral quests; Alliance-only NPCs dropped unless a kept quest references them)",
+  "coordinates": "zone % (0-100) keyed by AreaTable zone id, Forever map frames (QuestieDB conversion)",
+  "foreverFlag": "true when the id is absent from data/Classic at the same QuestieDB commit",
+  "counts": {
+    "quests": 3926,
+    "questsForever": 1215,
+    "npcs": 8909,
+    "npcsForever": 2349,
+    "objects": 884,
+    "objectsForever": 229,
+    "items": 2959,
+    "itemsForever": 715,
+    "zones": 2814,
+    "questZoneFromGiver": 925,
+    "questsForeverHigh": 1211,
+    "questsForeverLow": 4
+  },
+  "foreverConfidence": "high: id >= 90000 (Forever's own quest id range) or Forever-specific evidence (player traces from Forever clients, or a wowhead.com/forever page cited in the generated delta-base); low: id < 90000 (season-era id reused) with no such evidence",
+  "foreverQuestsByZone": {
+    "unknown": 193,
+    "Mount Hyjal": 131,
+    "Zephras Isle": 121,
+    "Riverglades": 97,
+    "Tirisfal Glades": 60,
+    "Orgrimmar": 53,
+    "Mulgore": 48,
+    "Undercity": 46,
+    "Azshara": 39,
+    "Durotar": 36,
+    "Shen'dralas": 34,
+    "Stranglethorn Vale": 27,
+    "The Barrens": 27,
+    "Desolace": 23,
+    "Feralas": 22,
+    "Duskwood": 21,
+    "Silverpine Forest": 20,
+    "The Hinterlands": 20,
+    "Tanaris": 14,
+    "Alterac Mountains": 12,
+    "Dustwallow Marsh": 11,
+    "Arathi Highlands": 10,
+    "Moonglade": 10,
+    "sort:PRIEST": 10,
+    "Ruins of Lordaeron": 9,
+    "Stormwind City": 9,
+    "Thousand Needles": 8,
+    "Winterspring": 8,
+    "Stonetalon Mountains": 7,
+    "Swamp of Sorrows": 7,
+    "Thunder Bluff": 7,
+    "Blasted Lands": 6,
+    "Eastern Plaguelands": 6,
+    "Ashenvale": 5,
+    "Badlands": 5,
+    "Excavation Site: Wetlands": 5,
+    "Hillsbrad Foothills": 5,
+    "City of Dalaran": 4,
+    "Felwood": 4,
+    "sort:PALADIN": 4,
+    "Un'Goro Crater": 3,
+    "Blackrock Depths": 2,
+    "Elwynn Forest": 2,
+    "Maraudon": 2,
+    "Razorfen Downs": 2,
+    "Western Plaguelands": 2,
+    "sort:LUNAR_FESTIVAL": 2,
+    "sort:ROGUE": 2,
+    "Blackfathom Deeps": 1,
+    "Blackrock Spire": 1,
+    "Burning Steppes": 1,
+    "Dire Maul": 1,
+    "Gnomeregan": 1,
+    "Ironforge": 1,
+    "Stonewrought Dam": 1,
+    "The Hall of Thanes": 1,
+    "Thoradin's Wall": 1,
+    "Warsong Gulch": 1,
+    "Zul'Farrak": 1,
+    "sort:SEASONAL": 1,
+    "sort:SHAMAN": 1,
+    "sort:WARRIOR": 1
+  },
+  "foreverQuestsByZoneConfidence": {
+    "unknown": {
+      "high": 193,
+      "low": 0
+    },
+    "Mount Hyjal": {
+      "high": 131,
+      "low": 0
+    },
+    "Zephras Isle": {
+      "high": 121,
+      "low": 0
+    },
+    "Riverglades": {
+      "high": 97,
+      "low": 0
+    },
+    "Tirisfal Glades": {
+      "high": 60,
+      "low": 0
+    },
+    "Orgrimmar": {
+      "high": 51,
+      "low": 2
+    },
+    "Mulgore": {
+      "high": 48,
+      "low": 0
+    },
+    "Undercity": {
+      "high": 44,
+      "low": 2
+    },
+    "Azshara": {
+      "high": 39,
+      "low": 0
+    },
+    "Durotar": {
+      "high": 36,
+      "low": 0
+    },
+    "Shen'dralas": {
+      "high": 34,
+      "low": 0
+    },
+    "Stranglethorn Vale": {
+      "high": 27,
+      "low": 0
+    },
+    "The Barrens": {
+      "high": 27,
+      "low": 0
+    },
+    "Desolace": {
+      "high": 23,
+      "low": 0
+    },
+    "Feralas": {
+      "high": 22,
+      "low": 0
+    },
+    "Duskwood": {
+      "high": 21,
+      "low": 0
+    },
+    "Silverpine Forest": {
+      "high": 20,
+      "low": 0
+    },
+    "The Hinterlands": {
+      "high": 20,
+      "low": 0
+    },
+    "Tanaris": {
+      "high": 14,
+      "low": 0
+    },
+    "Alterac Mountains": {
+      "high": 12,
+      "low": 0
+    },
+    "Dustwallow Marsh": {
+      "high": 11,
+      "low": 0
+    },
+    "Arathi Highlands": {
+      "high": 10,
+      "low": 0
+    },
+    "Moonglade": {
+      "high": 10,
+      "low": 0
+    },
+    "sort:PRIEST": {
+      "high": 10,
+      "low": 0
+    },
+    "Ruins of Lordaeron": {
+      "high": 9,
+      "low": 0
+    },
+    "Stormwind City": {
+      "high": 9,
+      "low": 0
+    },
+    "Thousand Needles": {
+      "high": 8,
+      "low": 0
+    },
+    "Winterspring": {
+      "high": 8,
+      "low": 0
+    },
+    "Stonetalon Mountains": {
+      "high": 7,
+      "low": 0
+    },
+    "Swamp of Sorrows": {
+      "high": 7,
+      "low": 0
+    },
+    "Thunder Bluff": {
+      "high": 7,
+      "low": 0
+    },
+    "Blasted Lands": {
+      "high": 6,
+      "low": 0
+    },
+    "Eastern Plaguelands": {
+      "high": 6,
+      "low": 0
+    },
+    "Ashenvale": {
+      "high": 5,
+      "low": 0
+    },
+    "Badlands": {
+      "high": 5,
+      "low": 0
+    },
+    "Excavation Site: Wetlands": {
+      "high": 5,
+      "low": 0
+    },
+    "Hillsbrad Foothills": {
+      "high": 5,
+      "low": 0
+    },
+    "City of Dalaran": {
+      "high": 4,
+      "low": 0
+    },
+    "Felwood": {
+      "high": 4,
+      "low": 0
+    },
+    "sort:PALADIN": {
+      "high": 4,
+      "low": 0
+    },
+    "Un'Goro Crater": {
+      "high": 3,
+      "low": 0
+    },
+    "Blackrock Depths": {
+      "high": 2,
+      "low": 0
+    },
+    "Elwynn Forest": {
+      "high": 2,
+      "low": 0
+    },
+    "Maraudon": {
+      "high": 2,
+      "low": 0
+    },
+    "Razorfen Downs": {
+      "high": 2,
+      "low": 0
+    },
+    "Western Plaguelands": {
+      "high": 2,
+      "low": 0
+    },
+    "sort:LUNAR_FESTIVAL": {
+      "high": 2,
+      "low": 0
+    },
+    "sort:ROGUE": {
+      "high": 2,
+      "low": 0
+    },
+    "Blackfathom Deeps": {
+      "high": 1,
+      "low": 0
+    },
+    "Blackrock Spire": {
+      "high": 1,
+      "low": 0
+    },
+    "Burning Steppes": {
+      "high": 1,
+      "low": 0
+    },
+    "Dire Maul": {
+      "high": 1,
+      "low": 0
+    },
+    "Gnomeregan": {
+      "high": 1,
+      "low": 0
+    },
+    "Ironforge": {
+      "high": 1,
+      "low": 0
+    },
+    "Stonewrought Dam": {
+      "high": 1,
+      "low": 0
+    },
+    "The Hall of Thanes": {
+      "high": 1,
+      "low": 0
+    },
+    "Thoradin's Wall": {
+      "high": 1,
+      "low": 0
+    },
+    "Warsong Gulch": {
+      "high": 1,
+      "low": 0
+    },
+    "Zul'Farrak": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:SEASONAL": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:SHAMAN": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:WARRIOR": {
+      "high": 1,
+      "low": 0
+    }
+  }
+}

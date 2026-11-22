@@ -1,0 +1,53 @@
+{
+  "routeId": "horde-40-60",
+  "supersedes": "research/external-review/changesets/badlands-tanaris-feralas.json tip on h4060:tanaris:travel-6e1a1d",
+  "targetFile": "research/horde-40-60/horde-40-60.route.json",
+  "opCounts": { "add": 0, "modify": 0, "reorder": 0, "drop": 2, "tip": 1, "total": 3 },
+  "ops": [
+    {
+      "op": "drop",
+      "stepId": "h4060:feralas:t7732",
+      "questId": 7732,
+      "prereqQuestIds": [7730, 7731],
+      "whyShort": "The carapace stack was dropped, so the report turn-in goes too.",
+      "original": "Skip the Zukk'ash Report turn-in. The carapace stack that opens it was already dropped.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 7732 pre group 7730 and 7731" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "h4060:azshara:a4494",
+      "alsoStepIds": [
+        "h4060:un-goro-crater:t4494",
+        "h4060:un-goro-crater:a4496",
+        "h4060:un-goro-crater:c4496",
+        "h4060:un-goro-crater:t4496"
+      ],
+      "questId": 4494,
+      "prereqQuestIds": [7732],
+      "whyShort": "March of the Silithid was only a tip. Horde 4494 requires 7732. Questie pre.single is 32 or 7732, and 32 is not a Horde substitute.",
+      "original": "Drop March of the Silithid and Bungle in the Jungle. Horde 4494 needs Zukk'ash Report, and that report is dropped on this pass.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 4494 pre.single 32 or 7732, next 4496" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "h4060:tanaris:travel-6e1a1d",
+      "questId": 95472,
+      "prereqQuestIds": [95321],
+      "whyShort": "95472 was dropped because 95321 is not on the route. 95321 needs 95312. The boat is optional travel and is not Consolation Prize.",
+      "original": "The Steamwheedle boat to Powderfuse Port is optional travel, about a minute, and it is not tied to Consolation Prize.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95472 pre 95321; 95321 pre 95312" }
+      ],
+      "verified": false
+    }
+  ]
+}

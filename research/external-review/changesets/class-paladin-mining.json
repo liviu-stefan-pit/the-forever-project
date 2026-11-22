@@ -1,0 +1,19 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "note": "Undead Paladin keeps Mining and Blacksmithing for Retribution, Protection, and Holy. One shared mining tip. Do not change the pair. Do not add a mining circuit. Do not bring back Wolfsbane or quest 95036. Do not edit route JSON from this file.",
+  "ops": [
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Paladin",
+      "roles": ["dps", "tank", "healer"],
+      "specs": ["retribution", "protection", "holy"],
+      "whyShort": "Mine ore nodes that are already on the route. Do not add a mining circuit. Starter copper veins were cut in the starting zones. If bars are short, buy them or skip that craft.",
+      "sources": [
+        {"url": "research/professions/class_professions.json", "label": "Paladin Mining note: Poor Copper veins were cut in starter areas"},
+        {"url": "research/external-review/changesets/class-paladin.json", "label": "Accepted pair stays Mining and Blacksmithing; Wolfsbane and 95036 stay dropped"}
+      ],
+      "verified": false
+    }
+  ]
+}

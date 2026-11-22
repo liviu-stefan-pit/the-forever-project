@@ -1,0 +1,233 @@
+{
+  "targetFile": "research/professions/class_professions.json",
+  "skippedRaces": [
+    {
+      "race": "Tauren",
+      "reason": "Blizzard Horde race/class table leaves Warlock blank."
+    },
+    {
+      "race": "Skyborne",
+      "reason": "Blizzard Horde table leaves Warlock blank for Windshaper Skyborne. No public Forever source in this pass says they can be Warlocks."
+    }
+  ],
+  "ops": [
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Warlock",
+      "role": "Affliction",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Affliction leveling lives on shadow cloth and a wand. Command already buffs the demon, so a pet craft is not the second primary. Herbs, potions, and skins pay ranks but do not make that kit. First Aid covers bandages and the healing potions Forever moved there; Cooking and Fishing feed camp food.",
+      "sources": [
+        {"url": "https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever", "label": "Blizzard: Horde race and class table"},
+        {"url": "https://www.stillsixty.com/leveling/warlock", "label": "stillsixty: Warlock leveling specs and professions"},
+        {"url": "https://foreverdb.net/professions/best/warlock", "label": "ForeverDB: Warlock profession pick"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Orc",
+      "class": "Warlock",
+      "role": "Demonology",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Demonology still wears cloth. The pet scales from your stats, and Blood Fury is spell power, not a crafted weapon. Same pair as Affliction. Soul Link is a talent at 30, not a profession gate.",
+      "sources": [
+        {"url": "https://warcraftmaps.com/classes/warlock/changes", "label": "WarcraftMaps: pets scale from your stats"},
+        {"url": "https://www.stillsixty.com/leveling/warlock", "label": "stillsixty: Demonology leveling and Tailoring plus Enchanting"},
+        {"url": "https://wowforever.be/classes/warlock/leveling/", "label": "wowforever.be: Warlock leveling professions"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Warlock",
+      "role": "Affliction",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Undead sustain is Cannibalize and the drain loop, not a different craft. Spirit cloth feeds Life Tap. Enchanting covers the early wand. Alchemy duplicates First Aid potions. Skinning is gold, not the leveling kit.",
+      "sources": [
+        {"url": "https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever", "label": "Blizzard: Undead can be Warlock"},
+        {"url": "https://wowforever.be/classes/warlock/leveling/", "label": "wowforever.be: Tailoring, Enchanting, First Aid, Cooking"},
+        {"url": "https://foreverdb.net/professions/best/warlock", "label": "ForeverDB: same crafts for Affliction"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Undead",
+      "class": "Warlock",
+      "role": "Demonology",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Demonology on an Undead still wants the cloth set and the disenchant wand. The racial does not open Engineering, Leatherworking, or a gather pair. Keep First Aid for the health you tap away.",
+      "sources": [
+        {"url": "https://www.stillsixty.com/leveling/warlock", "label": "stillsixty: Demonology uses the same profession pair"},
+        {"url": "https://foreverdb.net/professions/best/warlock", "label": "ForeverDB: Demonology Tailoring"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Warlock",
+      "role": "Affliction",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "Troll Warlock is legal in Forever. Berserking is cast speed, so it does not swap the crafts. Affliction still wants shadow cloth and a wand. Beast Slaying does not justify Skinning as a primary.",
+      "sources": [
+        {"url": "https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever", "label": "Blizzard: Troll Warlock marked on the Horde table"},
+        {"url": "https://www.stillsixty.com/leveling/warlock", "label": "stillsixty: Affliction leveling professions"},
+        {"url": "https://foreverdb.net/professions/best/warlock", "label": "ForeverDB: Affliction Tailoring"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "set-pair",
+      "race": "Troll",
+      "class": "Warlock",
+      "role": "Demonology",
+      "pair": ["Tailoring", "Enchanting"],
+      "rejected": [
+        ["Herbalism", "Alchemy"],
+        ["Herbalism", "Skinning"]
+      ],
+      "secondaries": ["First Aid", "Cooking", "Fishing"],
+      "whyShort": "New race, same Demonology kit. The pet does not need a leather or metal craft. Tailoring and Enchanting stay the pair. Herbalism plus Skinning is the gold alternative, not the leveling pair.",
+      "sources": [
+        {"url": "https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever", "label": "Blizzard: Troll Warlock"},
+        {"url": "https://www.stillsixty.com/leveling/warlock", "label": "stillsixty: gathering is the gold swap, not the craft pair"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Warlock",
+      "role": "Affliction",
+      "whyShort": "Imp at the Den trainer on the existing level-1 stop (quest 3090 to Nartok). Do not add a grimoire errand. Succubus quests stay off the route. Demonic Sacrifice and Soul Link are not on this Affliction path.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quests 3090, 1485, 1499"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Orc",
+      "class": "Warlock",
+      "role": "Demonology",
+      "whyShort": "Same Imp stop. Demonic Sacrifice can be taken from level 20 after 10 Demonology points. Soul Link can be taken from level 30 after 20 Demonology points and Demonic Sacrifice. Both levels are third-party talent tables, not a Blizzard post. Buy pet booklets only during the Orgrimmar trains the 20-40 route already schedules at 20, 30, and 40. Grimoire item ids are UNKNOWN.",
+      "sources": [
+        {"url": "https://forevercalc.com/warlock/talents/", "label": "forevercalc: Demonic Sacrifice row 3 level 20, Soul Link row 5 level 30"},
+        {"url": "https://warcraft.wiki.gg/wiki/Warlock_abilities_(Forever)", "label": "Warcraft Wiki: Soul Link requires Demonic Sacrifice"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Warlock",
+      "role": "Affliction",
+      "whyShort": "Imp on the Tirisfal class-trainer visit already in 1-12 (quest 3099). Affliction does not spend points for Demonic Sacrifice or Soul Link while leveling. No extra Undercity trip for a booklet.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 3099"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Undead",
+      "class": "Warlock",
+      "role": "Demonology",
+      "whyShort": "Demonology timing matches Orc: Sacrifice from 20 if the tree is filled that far, Soul Link from 30. Train those ranks on the Orgrimmar stops at 20, 30, and 40. Felsteed pickup can be 4489 in Undercity or 3631 if you are already in Orgrimmar.",
+      "sources": [
+        {"url": "https://forevercalc.com/warlock/talents/", "label": "forevercalc talent rows"},
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3631, 4489, 4490"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Warlock",
+      "role": "Affliction",
+      "whyShort": "Starter letter is Tainted Tablet (98575) to Nartok, already on the Durotar 1-12 route. Imp there. Affliction skips Sacrifice and Soul Link. The 20-40 route already names Troll Warlock on the Orgrimmar train stops.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB quest 98575"},
+        {"url": "https://news.blizzard.com/en-us/article/24304075/create-the-hero-you-want-to-be-in-world-of-warcraft-forever", "label": "Blizzard: Troll Warlock"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "race": "Troll",
+      "class": "Warlock",
+      "role": "Demonology",
+      "whyShort": "Same Nartok stop for the Imp. Sacrifice and Soul Link follow the Demonology levels above. At the level-40 Orgrimmar train, 3631 from Zevrost starts Felsteed; 4490 is one talk to Strahad in Ratchet. Not in the route JSON today.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 3631 and 4490, required level 40"},
+        {"url": "https://forevercalc.com/warlock/talents/", "label": "forevercalc: Soul Link level 30"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Orc",
+      "class": "Warlock",
+      "role": "Demonology",
+      "questIds": [1510, 1511, 1512, 1515],
+      "whyShort": "Succubus chain middle steps. Required level 20 in Questie, but 20-40 already dropped them. Do not add the Dogran run for a grimoire or a pet.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1507, 1510, 1511, 1512, 1513, 1515"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Undead",
+      "class": "Warlock",
+      "role": "Demonology",
+      "questIds": [1510, 1511, 1512, 1515],
+      "whyShort": "Same dropped succubus steps. Undercity Binding 1474 also stays off; its lead-in is not on the route.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 1472, 1474, 1476"}
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop-checkpoint",
+      "race": "Troll",
+      "class": "Warlock",
+      "role": "Demonology",
+      "questIds": [1510, 1511, 1512, 1515],
+      "whyShort": "Troll uses the Horde succubus chain. Those steps stay dropped. Buy a succubus booklet only if the trainer you are already visiting sells one. Item id UNKNOWN.",
+      "sources": [
+        {"url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB succubus chain, race mask includes Troll"}
+      ],
+      "verified": false
+    }
+  ]
+}

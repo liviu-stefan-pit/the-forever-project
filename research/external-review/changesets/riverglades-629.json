@@ -1,0 +1,50 @@
+{
+  "routeId": "horde-40-60",
+  "supersedes": "research/external-review/changesets/riverglades.json tip on h4060:stranglethorn-vale:dungeon-40f1cb",
+  "targetFile": "research/horde-40-60/horde-40-60.route.json",
+  "opCounts": { "add": 0, "modify": 0, "reorder": 0, "drop": 2, "tip": 1, "total": 3 },
+  "ops": [
+    {
+      "op": "tip",
+      "stepId": "h4060:stranglethorn-vale:dungeon-40f1cb",
+      "questId": 95775,
+      "prereqQuestIds": [95770],
+      "whyShort": "629 is leaving 20-40 as a page farm, so the tablet chain that opens 95775 is not available. The step only needs the level of the one clear.",
+      "original": "Before the one Drowned City clear, have 629 done, then 95748, 95770, and 95773, and hold 95775 and 95776. Skip 95789 if the ten artifacts are short. Skip 96774. The dungeon is about level 40.",
+      "text": "Clear The Drowned City once around level 40, and leave the inside of that run to the dungeon pack.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95748 pre 629; 95770 pre 95748; 95773 pre 95748; 95775 pre 95770; 95776 pre group 95770 and 95773" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 95775,
+      "prereqQuestIds": [95770],
+      "whyShort": "95775 is not a step. It needs 95770, which needs 95748, which needs 629. Do not add it.",
+      "original": "Do not add The Drowned City quest 95775.",
+      "text": "Do not add 95775. Its prerequisite chain is not on this route.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95775 pre single 95770" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 95776,
+      "prereqQuestIds": [95770, 95773],
+      "whyShort": "95776 is not a step. It needs both 95770 and 95773, and both need 95748, which needs 629. Do not add it.",
+      "original": "Do not add The Only Good Brinescale quest 95776.",
+      "text": "Do not add 95776. Both prerequisites in its group are off the route.",
+      "targetFile": "research/horde-40-60/horde-40-60.route.json",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB", "label": "QuestieDB 95776 pre group 95770 and 95773" }
+      ],
+      "verified": false
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "id": "razorfen-kraul",
+  "name": "Razorfen Kraul",
+  "forever": false,
+  "levels": [32, 42],
+  "runAt": 35,
+  "entrance": {
+    "zone": "The Barrens",
+    "at": [42.9, 90.2],
+    "note": "Southern Barrens, west of the Great Lift and south of Camp Taurajo. QuestieDB dungeon entrance (verified in catalog)."
+  },
+  "travel": {
+    "nearestFlight": "Camp Taurajo (Omusa Thunderhorn, The Barrens 44.45, 59.15)",
+    "fromHubs": [
+      "Thunder Bluff: pick up A Vengeful Fate from Auld Stonespire (36.0, 59.9), then fly Tal to Camp Taurajo and run south. Do not detour through Orgrimmar.",
+      "The Crossroads: fly Devrak to Camp Taurajo, then run south past Taurajo toward the Great Lift.",
+      "Ratchet: pick up Blueleaf Tubers from Mebok Mizzyrix (62.4, 37.6) if taking that quest, then fly Bragok to the Crossroads or Camp Taurajo."
+    ],
+    "how": "Fly to Camp Taurajo, then run south along the road toward the Great Lift. The instance portal is at 42.9, 90.2, west of the lift. Hearth at Innkeeper Byula in Camp Taurajo (45.58, 59.04) or Innkeeper Pala in Thunder Bluff if turning in Auld Stonespire."
+  },
+  "quests": [
+    {
+      "questId": 1823,
+      "name": "Speak with Ruga",
+      "xp": 155,
+      "giver": {
+        "npc": "Torm Ragetotem",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [57.24, 87.37]
+      },
+      "turnIn": {
+        "npc": "Ruga Ragetotem",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [44.7, 59.4]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Warrior breadcrumb for 1824. QuestieDB also starts this from Sorek in Orgrimmar (80.4, 32.4) and Baltus Fowler in Undercity; dungeons.json lists only Sorek. Take Torm Ragetotem in Thunder Bluff if you are already there — do not require an Orgrimmar trip. Not emitted in steps-v2."
+    },
+    {
+      "questId": 1824,
+      "name": "Trial at the Field of Giants",
+      "xp": 1550,
+      "giver": {
+        "npc": "Ruga Ragetotem",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [44.7, 59.4]
+      },
+      "turnIn": {
+        "npc": "Ruga Ragetotem",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [44.7, 59.4]
+      },
+      "prerequisites": [1823],
+      "breadcrumb": 1823,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Warrior prerequisite. Silithid antennae in southern Barrens, outside the dungeon. Catalog speedrun:false. Not emitted in steps-v2."
+    },
+    {
+      "questId": 1825,
+      "name": "Speak with Thun'grim",
+      "xp": 780,
+      "giver": {
+        "npc": "Ruga Ragetotem",
+        "zone": "The Barrens",
+        "hub": "Camp Taurajo",
+        "at": [44.7, 59.4]
+      },
+      "turnIn": {
+        "npc": "Thun'grim Firegaze",
+        "zone": "The Barrens",
+        "hub": "The Crossroads",
+        "at": [57.2, 30.3]
+      },
+      "prerequisites": [1824],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Warrior breadcrumb toward Brutal Armor (1838). Thun'grim is east of the Crossroads, not in Orgrimmar. Not emitted in steps-v2."
+    },
+    {
+      "questId": 1221,
+      "name": "Blueleaf Tubers",
+      "xp": 2100,
+      "giver": {
+        "npc": "Mebok Mizzyrix",
+        "zone": "The Barrens",
+        "hub": "Ratchet",
+        "at": [62.4, 37.6]
+      },
+      "turnIn": {
+        "npc": "Mebok Mizzyrix",
+        "zone": "The Barrens",
+        "hub": "Ratchet",
+        "at": [62.4, 37.6]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": {
+        "accept": "dungeons:razorfen-kraul:accept:1221",
+        "turnin": "dungeons:razorfen-kraul:turnin:1221"
+      },
+      "notes": "Balanced only (steps-v2 routes: balanced). Take the Crate With Holes, Snufflenose Owner's Manual, and Snufflenose Command Stick from Mebok, then use the gopher inside the instance. Catalog speedrun:false because of the Ratchet extra stop."
+    },
+    {
+      "questId": 1144,
+      "name": "Willix the Importer",
+      "xp": 3050,
+      "giver": {
+        "npc": "Willix the Importer",
+        "zone": "Razorfen Kraul",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "turnIn": {
+        "npc": "Willix the Importer",
+        "zone": "Razorfen Kraul",
+        "hub": "Camp Taurajo",
+        "at": null
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-kraul:accept:1144",
+        "turnin": "dungeons:razorfen-kraul:turnin:1144"
+      },
+      "notes": "Escort inside the instance. No outdoor coordinates. Balanced and speedrun. Rewards: Monkey Ring, Tiger Band, Snake Hoop."
+    },
+    {
+      "questId": 1838,
+      "name": "Brutal Armor",
+      "xp": 3650,
+      "giver": {
+        "npc": "Thun'grim Firegaze",
+        "zone": "The Barrens",
+        "hub": "The Crossroads",
+        "at": [57.2, 30.3]
+      },
+      "turnIn": {
+        "npc": "Thun'grim Firegaze",
+        "zone": "The Barrens",
+        "hub": "The Crossroads",
+        "at": [57.2, 30.3]
+      },
+      "prerequisites": [1825],
+      "breadcrumb": 1825,
+      "itemStartInside": false,
+      "classOrRace": "Warrior",
+      "optional": true,
+      "stepIds": {
+        "accept": null,
+        "turnin": null
+      },
+      "notes": "Warrior. Vial of Phlogiston drops from Roogug inside RFK; the iron, azurite, and ingots are outside. Catalog speedrun:true for the class. Not emitted in steps-v2. dungeons.json lists prereq anyOf 1825; QuestieDB and web/public/data/quests.json list pre.single 1824."
+    },
+    {
+      "questId": 1109,
+      "name": "Going, Going, Guano!",
+      "xp": 3300,
+      "giver": {
+        "npc": "Master Apothecary Faranell",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [48.8, 69.3]
+      },
+      "turnIn": {
+        "npc": "Master Apothecary Faranell",
+        "zone": "Undercity",
+        "hub": "Undercity",
+        "at": [48.8, 69.3]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-kraul:accept:1109",
+        "turnin": "dungeons:razorfen-kraul:turnin:1109"
+      },
+      "notes": "Kraul Guano from bats inside the instance. Pack home is razorfen-kraul (removed from scarlet-monastery). Leads to Hearts of Zeal (1113) at Scarlet Monastery. Pickup is Undercity, not Orgrimmar."
+    },
+    {
+      "questId": 1102,
+      "name": "A Vengeful Fate",
+      "xp": 4050,
+      "giver": {
+        "npc": "Auld Stonespire",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [36.0, 59.9]
+      },
+      "turnIn": {
+        "npc": "Auld Stonespire",
+        "zone": "Thunder Bluff",
+        "hub": "Thunder Bluff",
+        "at": [36.0, 59.9]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:razorfen-kraul:accept:1102",
+        "turnin": "dungeons:razorfen-kraul:turnin:1102"
+      },
+      "notes": "Razorflank's Heart from Charlga Razorflank inside the instance. Pickup and turn-in are Thunder Bluff — do not send the player to Orgrimmar. Rewards: Berylline Pads, Marbled Buckler, Stonefist Girdle."
+    }
+  ],
+  "runStepId": "dungeons:razorfen-kraul:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player. Quilboar casters and totems: kill totems first and LoS around the bramble walls. Charlga heals herself and adds. Run once; do not reset for extra guano or tubers.",
+    "consumables": [],
+    "hearth": "Innkeeper Byula, Camp Taurajo 45.58, 59.04, or Innkeeper Pala, Thunder Bluff 45.81, 64.71 if turning in 1102.",
+    "warnings": [
+      "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026).",
+      "Known issue: players can fall into a cauldron near Roogug and get stuck — watch footing in that room (same hotfix notes).",
+      "Do not require an Orgrimmar trip for Auld Stonespire (Thunder Bluff) or Ruga (Camp Taurajo)."
+    ],
+    "classQuests": [
+      "Warrior 1823/1824/1825/1838: start Speak with Ruga from Torm Ragetotem in Thunder Bluff, do Trial at the Field of Giants at Camp Taurajo, then Brutal Armor at Thun'grim east of the Crossroads. Roogug drops the Vial of Phlogiston. No steps-v2 ids."
+    ]
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "The Barrens",
+      "levelBand": [25, 35],
+      "why": "README dungeons-off replacement is southern Barrens around Camp Taurajo. The quilboar and Taurajo completes in levels-20-40.route-v2.json are 4-minute (898 Free From the Hold is 8) overworld work in the same band as an RFK run at 35.",
+      "questIds": [893, 878, 879, 899, 868, 843, 1153, 898, 95774]
+    },
+    {
+      "zone": "Thousand Needles",
+      "levelBand": [28, 36],
+      "why": "README dungeons-off replacement after southern Barrens. Pacify the Centaur, Swarm Grows, and Shimmering Flats gather quests are the long Needles circuit in levels-20-40.route-v2.json (section Thousand Needles and the Shimmering Flats).",
+      "questIds": [4841, 1145, 1146, 1147, 1110, 1104, 1105, 1176, 1175, 5064, 4821, 98069, 98070]
+    }
+  ],
+  "sourceConflicts": [
+    "1823 giver: dungeons.json lists only Sorek in Orgrimmar 80.4, 32.4. QuestieDB starts 1823 from Torm Ragetotem (Thunder Bluff 57.24, 87.37), Sorek (Orgrimmar), and Baltus Fowler (Undercity). Use the Thunder Bluff trainer when already in TB.",
+    "1838 prerequisites: dungeons.json anyOf [1825]; content/questie-db and web/public/data/quests.json pre.single [1824].",
+    "1102 coordinates: dungeons.json/steps-v2 use 36.0, 59.9; web/public/data/quests.json uses 35.97, 59.92 (rounding only).",
+    "Warrior chain 1823/1824/1825/1838 is in dungeons.json but has no dungeons:razorfen-kraul:* steps in steps-v2.json."
+  ],
+  "notes": "Classic Horde dungeon. Catalog forever:false, verified:true against Questie Classic-era data (not live Forever). Pickup hub is Camp Taurajo / southern Barrens and Thunder Bluff, levels 25-30. Dungeons-off: Thousand Needles and southern Barrens, then Hillsbrad. Charlga also drops Small Scroll (17008) that starts An Unholy Alliance (6522), which lives in the Razorfen Downs pack."
+}

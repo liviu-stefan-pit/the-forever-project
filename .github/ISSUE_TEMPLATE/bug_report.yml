@@ -1,0 +1,61 @@
+name: Bug report
+description: Something on the site or in an addon does not work as it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. For a wrong quest, coordinate or step order, please use the **Route error** form instead.
+        For a security problem, do not open a public issue; see the security policy.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem?
+      options:
+        - Website
+        - GuideWebExport addon
+        - AdventureLog addon
+        - Running the project locally
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect to see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or URL
+      description: For example `#/guide/barrens-12-20` or `#/profile`.
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device, or addon version
+      description: For example "Firefox 140 on Windows 11" or "GuideWebExport 2.3.0".
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots, console errors or Lua errors
+      description: Remove anything personal (account names, file paths with your user name) before you paste.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues and this is not a duplicate.
+          required: true

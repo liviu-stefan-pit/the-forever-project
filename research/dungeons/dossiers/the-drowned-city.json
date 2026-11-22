@@ -1,0 +1,297 @@
+{
+  "id": "the-drowned-city",
+  "name": "The Drowned City",
+  "forever": true,
+  "levels": [
+    35,
+    40
+  ],
+  "runAt": 38,
+  "entrance": {
+    "zone": "Stranglethorn Vale",
+    "at": [
+      21,
+      28
+    ],
+    "note": "Forever-only dungeon off the coast of Stranglethorn Vale, west of Grom'gol. Entrance is underwater (reported) at 21.0, 28.0. Catalog verified:false. Official location: west of Grom'gol."
+  },
+  "travel": {
+    "nearestFlight": "Grom'gol (Thysta, Stranglethorn Vale 32.54, 29.35)",
+    "fromHubs": [
+      "Grom'gol: swim west of the camp and dive to the reported 21.0, 28.0 cavern.",
+      "Orgrimmar: zeppelin to Grom'gol, then swim west and dive.",
+      "Booty Bay: pick up Shady Saltseers and The Saltseer Captain from Krazek (26.95, 77.21), fly Gringer to Grom'gol, then swim west.",
+      "Mulgore / Thunder Bluff: pick up Ancient Gurubashi Idol from Mazu'kon at Skywatcher Plateau (32.5, 20.66) before leaving Kalimdor. Turn it in there after the run; do not send that turn-in to Orgrimmar."
+    ],
+    "how": "Fly or zeppelin to Grom'gol, swim west and dive (catalog hordeAccess; steps-v2 run text). Entrance coordinates are reported, not in-game verified."
+  },
+  "quests": [
+    {
+      "questId": 96774,
+      "name": "Ancient Gurubashi Idol",
+      "xp": null,
+      "giver": {
+        "npc": "Mazu'kon",
+        "zone": "Mulgore",
+        "hub": "Thunder Bluff",
+        "at": [
+          32.5,
+          20.66
+        ]
+      },
+      "turnIn": {
+        "npc": "Mazu'kon",
+        "zone": "Mulgore",
+        "hub": "Thunder Bluff",
+        "at": [
+          32.5,
+          20.66
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:96774",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:96774"
+      },
+      "notes": "Recover an Ancient Gurubashi Idol from the Drowned City. Horde. No XP in QuestieDB v1.1.3 or web/public/data/quests.json. steps-v2 routes: balanced only. foreverConfidence:high."
+    },
+    {
+      "questId": 95789,
+      "name": "Shady Saltseers",
+      "xp": null,
+      "giver": {
+        "npc": "Krazek",
+        "zone": "Stranglethorn Vale",
+        "hub": "Booty Bay",
+        "at": [
+          26.95,
+          77.21
+        ]
+      },
+      "turnIn": {
+        "npc": "Krazek",
+        "zone": "Stranglethorn Vale",
+        "hub": "Booty Bay",
+        "at": [
+          26.95,
+          77.21
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:95789",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:95789"
+      },
+      "notes": "Collect 10 Voodoo Infused Artifacts from Saltseer pirates. Neutral (races 0). No XP in QuestieDB or web quests.json. steps-v2 routes: balanced only. foreverEvidence includes authoredFix."
+    },
+    {
+      "questId": 95791,
+      "name": "The Saltseer Captain",
+      "xp": null,
+      "giver": {
+        "npc": "Krazek",
+        "zone": "Stranglethorn Vale",
+        "hub": "Booty Bay",
+        "at": [
+          26.95,
+          77.21
+        ]
+      },
+      "turnIn": {
+        "npc": "Krazek",
+        "zone": "Stranglethorn Vale",
+        "hub": "Booty Bay",
+        "at": [
+          26.95,
+          77.21
+        ]
+      },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:95791",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:95791"
+      },
+      "notes": "Slay 3 Saltseer Coroners and Captain Dreadrise. Neutral. No XP in QuestieDB or web quests.json. steps-v2 routes: balanced only."
+    },
+    {
+      "questId": 95775,
+      "name": "The Drowned City",
+      "xp": null,
+      "giver": {
+        "npc": "Kin'weelay",
+        "zone": "Stranglethorn Vale",
+        "hub": "Grom'gol",
+        "at": [
+          32.27,
+          27.71
+        ]
+      },
+      "turnIn": {
+        "npc": "Kin'weelay",
+        "zone": "Stranglethorn Vale",
+        "hub": "Grom'gol",
+        "at": [
+          32.27,
+          27.71
+        ]
+      },
+      "prerequisites": [
+        95770
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:95775",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:95775"
+      },
+      "notes": "Tablet rubbings inside the dungeon. QuestieDB pre.single is Locating the Lost City (95770). README also names The Vile Reef (629) and The Gurubashi Legends of Old (95748), which chain 629 → 95748 → 95770. No steps-v2 accept/turnin. Run tip: do not take the tablet rubbings that need The Vile Reef. No XP in any local source. foreverConfidence:high. Horde."
+    },
+    {
+      "questId": 95776,
+      "name": "The Only Good Brinescale...",
+      "xp": null,
+      "giver": {
+        "npc": "Commander Aggro'gosh",
+        "zone": "Stranglethorn Vale",
+        "hub": "Grom'gol",
+        "at": [
+          32.17,
+          28.9
+        ]
+      },
+      "turnIn": {
+        "npc": "Commander Aggro'gosh",
+        "zone": "Stranglethorn Vale",
+        "hub": "Grom'gol",
+        "at": [
+          32.17,
+          28.9
+        ]
+      },
+      "prerequisites": [
+        95770,
+        95773
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:95776",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:95776"
+      },
+      "notes": "Slay Var'Taka in the Drowned City. QuestieDB pre.group: Locating the Lost City (95770) and Enemies in the Water (95773). README names those plus the Vile Reef chain behind 95770. No steps-v2 accept/turnin. Run tip: do not take the brinescale count that needs The Vile Reef. No XP in any local source. foreverConfidence:high. Horde."
+    },
+    {
+      "questId": 96078,
+      "name": "A Tale Spun Around the Fire",
+      "xp": 2350,
+      "giver": {
+        "npc": "Kin'weelay",
+        "zone": "Stranglethorn Vale",
+        "hub": "Grom'gol",
+        "at": [
+          32.27,
+          27.71
+        ]
+      },
+      "turnIn": {
+        "npc": "Master Gadrin",
+        "zone": "Durotar",
+        "hub": "Sen'jin Village",
+        "at": [
+          55.95,
+          74.72
+        ]
+      },
+      "prerequisites": [
+        95775
+      ],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": {
+        "accept": "dungeons:forever:the-drowned-city:accept:96078",
+        "turnin": "dungeons:forever:the-drowned-city:turnin:96078"
+      },
+      "notes": "Follow-up of 95775. +2350 XP. Turn in to Master Gadrin, Sen'jin Village. QuestieDB NPC 3188 at 55.95, 74.72."
+    }
+  ],
+  "runStepId": "dungeons:forever:the-drowned-city:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player Forever dungeon. Swim west of Grom'gol and dive. Catalog has no role tips. Dive once around level 40.",
+    "consumables": [],
+    "hearth": "Innkeeper Thulbek, Grom'gol 31.49, 29.75. Booty Bay Innkeeper Skindle (27.04, 77.31) if turning in Krazek. Thunder Bluff / Mulgore if turning in Mazu'kon.",
+    "warnings": [
+      "Entrance 21.0, 28.0 is reported and catalog verified:false. Official text is only 'west of Grom'gol'.",
+      "Do not take 95775 tablet rubbings or 95776 brinescale/Var'Taka until The Vile Reef chain is done (steps-v2 run tip).",
+      "Quests 79953 and 81951 are not used (dungeons.json note).",
+      "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026).",
+      "All five Horde/neutral quests stay verified:false until checked in game. Do not invent XP or extra Forever mechanics."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Stranglethorn Vale",
+      "levelBand": [
+        32,
+        40
+      ],
+      "why": "Drowned City sits on the Grom'gol coast in the same band as the first and second STV circuits in levels-20-40.route-v2.json. Those 4-minute Bloodscalp / Grom'gol defense / crystal completes are the overworld XP a 35-40 dive would replace.",
+      "questIds": [
+        189,
+        605,
+        568,
+        569,
+        581,
+        213,
+        596,
+        582,
+        97328
+      ]
+    },
+    {
+      "zone": "Desolace",
+      "levelBand": [
+        32,
+        40
+      ],
+      "why": "Same level band on the 20-40 route. Shadowprey naga and Ghost Walker centaur/satyr completes are the other slow Kalimdor work a speedrun could drop if diving STV instead.",
+      "questIds": [
+        6142,
+        6143,
+        5381,
+        1434,
+        1435,
+        1366,
+        5501,
+        5561
+      ]
+    }
+  ],
+  "sourceConflicts": [
+    "95775 prerequisites: README lists The Vile Reef, The Gurubashi Legends of Old, and Locating the Lost City. QuestieDB pre.single is only 95770. The named quests are the chain 629 → 95748 → 95770, not three parallel pre.group requirements.",
+    "95775 and 95776 are in dungeons.json (5 of 5 Horde quests) but have no dungeons:forever:the-drowned-city:accept/turnin steps. steps-v2 run tip tells the player not to take them without The Vile Reef.",
+    "Forever dungeon XP is absent from content/questie-db (no xp field) and web/public/data/quests.json (xp null on 96774/95789/95791; 95775/95776 not in that file). XP left null.",
+    "steps-v2 accept/run/turnin for this dungeon are routes: balanced only, while the run-step tip also lists speedrun. Catalog has no route.balanced/speedrun flags on Forever quests.",
+    "Entrance 21.0, 28.0 comes from a fan guide cited in dungeons.json (hardcorehelper), marked verified:false. Official Blizzard text is only the west-of-Grom'gol location."
+  ],
+  "notes": "Forever-only dungeon (id the-drowned-city). Official levels 35-40, west of Grom'gol. 5 of 5 Horde catalog quests matched to QuestieDB v1.1.3; all verified:false. Pack emits 96774, 95789, and 95791 only."
+}

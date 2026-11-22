@@ -1,0 +1,3 @@
+`dungeons:gnomeregan:accept:2945` and `dungeons:gnomeregan:turnin:2949` are both add ops in `changesets/dungeons-mid.json`. Drop both. Questie object 142487 The Sparklematic 5200 spawns in zone 721 at -1,-1, so the machine has no location. `gnomeregan-2904.json` already drops `dungeons:gnomeregan:turnin:2945` and `dungeons:gnomeregan:accept:2949`. Leaving the Nogg accept and the Nogg turn-in would accept 2945 with no way to finish it, and would turn in 2949 with no way to accept it. The whole 2945/2949 chain goes.
+
+verified false. sources QuestieDB. targetFile `research/dungeons/steps-v2.json`.

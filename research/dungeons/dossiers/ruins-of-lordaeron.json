@@ -1,0 +1,201 @@
+{
+  "id": "ruins-of-lordaeron",
+  "name": "Ruins of Lordaeron",
+  "forever": true,
+  "levels": [15, 20],
+  "runAt": 18,
+  "entrance": {
+    "zone": "Undercity",
+    "at": [66.0, 11.0],
+    "note": "Forever-only dungeon in the ruins above the Undercity, Tirisfal Glades. Entrance 66.0, 11.0 is reported (gamer-guides.com) and used by steps-v2; verified: false. Horde access is from Undercity."
+  },
+  "travel": {
+    "nearestFlight": "Undercity",
+    "fromHubs": ["Brill", "Undercity", "The Sepulcher"],
+    "how": "From Brill or the Undercity, go up into the ruins above the city; grab Morbin in Undercity and Tabitha at the Sepulcher before you enter."
+  },
+  "quests": [
+    {
+      "questId": 92421,
+      "name": "Light's Justice",
+      "xp": 0,
+      "giver": { "npc": "Morbin Lightbane", "zone": "Undercity", "hub": "Undercity", "at": [58.08, 89.51] },
+      "turnIn": { "npc": "Morbin Lightbane", "zone": "Undercity", "hub": "Undercity", "at": [58.08, 89.51] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:92421", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:92421" },
+      "notes": "Collect 25 Intact Limbs inside on this one clear. QuestieDB v1.1.3 has no xp field. verified: false. foreverConfidence high (traces, wowheadForever)."
+    },
+    {
+      "questId": 95216,
+      "name": "The New Plague",
+      "xp": 0,
+      "giver": { "npc": "Theodore Griffs", "zone": "Undercity", "hub": "Undercity", "at": [46.31, 71.91] },
+      "turnIn": { "npc": "Theodore Griffs", "zone": "Undercity", "hub": "Undercity", "at": [46.31, 71.91] },
+      "prerequisites": [451],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:95216", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:95216" },
+      "notes": "Highly Toxic Strain from Witherfang inside. Requires A Recipe For Death 451. Pickup is spliced after silverpine-11-15:w2-451-3 for Undead. Kalimdor races have not done 451, so the prereq guard skips it for them."
+    },
+    {
+      "questId": 92422,
+      "name": "The Wrath of Rath'mael",
+      "xp": 0,
+      "giver": { "npc": "Deathguard Kristof", "zone": "Tirisfal Glades", "hub": "Brill", "at": [65.25, 60.2] },
+      "turnIn": { "npc": "Deathguard Kristof", "zone": "Tirisfal Glades", "hub": "Brill", "at": [65.25, 60.2] },
+      "prerequisites": [99156],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:92422", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:92422" },
+      "notes": "Kill Rath'mael inside. Requires Rear Guard Patrol 99156. Pickup is spliced after tirisfal-1-12:w2-99156-3 for Undead. Kalimdor races have not done 99156."
+    },
+    {
+      "questId": 92401,
+      "name": "A Frightened Request",
+      "xp": 0,
+      "giver": { "npc": "Tabitha Heartweaver", "zone": "Silverpine Forest", "hub": "The Sepulcher", "at": [44.52, 43.02] },
+      "turnIn": { "npc": "Tabitha Heartweaver", "zone": "Silverpine Forest", "hub": "The Sepulcher", "at": [44.52, 43.02] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:92401", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:92401" },
+      "notes": "Investigate Edward Heartweaver inside. Silverpine tips this pickup and does not enter; the clear belongs here. XP unknown (0). Pick up only if it is not already in the log."
+    },
+    {
+      "questId": 97288,
+      "name": "Unending Torment",
+      "xp": 0,
+      "giver": { "npc": "Abominable Head (item 280438)", "zone": "Ruins of Lordaeron", "hub": "Undercity", "at": null },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:97288", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:97288" },
+      "notes": "Accept if the Abominable Head drops on this clear; do not reset for it. First of five Unending Torment steps (97288-97292). QuestieDB has no xp on this starter. Leads to 97289."
+    },
+    {
+      "questId": 97289,
+      "name": "Unending Torment",
+      "xp": 1650,
+      "giver": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "turnIn": { "npc": "Unfinished Abomination", "zone": "Undercity", "hub": "Undercity", "at": [45.88, 61.7] },
+      "prerequisites": [97288],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:97289", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:97289" },
+      "notes": "Bring the Head of the Baron to Othmar's body (npc 271613). Undercity follow-up, not inside the dungeon. Catalog listed the chain as one row; steps-v2 expands 97289-97292. XP 1650 from questie-db."
+    },
+    {
+      "questId": 97290,
+      "name": "Unending Torment",
+      "xp": 1650,
+      "giver": { "npc": "Unfinished Abomination", "zone": "Undercity", "hub": "Undercity", "at": [45.88, 61.7] },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "prerequisites": [97289],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:97290", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:97290" },
+      "notes": "Report back to Faranell. XP 1650 from questie-db."
+    },
+    {
+      "questId": 97291,
+      "name": "Unending Torment",
+      "xp": 1650,
+      "giver": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "prerequisites": [97290],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:97291", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:97291" },
+      "notes": "City errand: Toxic Skullcap from Tawny Grisette (Trade Quarter 65.19, 49.84), Blisterweed near Katrina Alliestar / Martha (54.73, 48.92), Essence of Agony from Ezekiel Graves (Rogues' Quarter 75.2, 51.18). XP 1650."
+    },
+    {
+      "questId": 97292,
+      "name": "Unending Torment",
+      "xp": 1650,
+      "giver": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "turnIn": { "npc": "Master Apothecary Faranell", "zone": "Undercity", "hub": "Undercity", "at": [48.82, 69.28] },
+      "prerequisites": [97291],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:97292", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:97292" },
+      "notes": "Inject the Hissing Serum into object 460007 above Othmar's body. Questie-db has no object spawn; pin npc 271613 at 45.88, 61.7. Chain ends here. XP 1650."
+    },
+    {
+      "questId": 95204,
+      "name": "Crest of Lordaeron",
+      "xp": 0,
+      "giver": { "npc": "Crest of Lordaeron (item 275521)", "zone": "Ruins of Lordaeron", "hub": "Undercity", "at": null },
+      "turnIn": { "npc": "Oran Snakewrithe", "zone": "Undercity", "hub": "Undercity", "at": [73.06, 32.85] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:ruins-of-lordaeron:accept:95204", "turnin": "dungeons:forever:ruins-of-lordaeron:turnin:95204" },
+      "notes": "Accept only if the crest drops on this clear. exclusiveTo 95189 (95189 is not in the Horde questie import). XP unknown (0)."
+    }
+  ],
+  "runStepId": "dungeons:forever:ruins-of-lordaeron:run",
+  "keys": [],
+  "prep": {
+    "group": "5-player, dungeon levels 15-20; do not enter before 18 (runAt).",
+    "consumables": ["food", "water", "healing potions"],
+    "hearth": "Undercity",
+    "warnings": [
+      "Do not run before level 18.",
+      "Grab 92421 from Morbin Lightbane in Undercity before entering.",
+      "Grab 92401 from Tabitha Heartweaver at the Sepulcher if it is not already in the log.",
+      "Skip 95216 unless A Recipe For Death 451 is already complete.",
+      "Skip 92422 unless Rear Guard Patrol 99156 is already complete; do not start that elite chain for this run.",
+      "Loot 25 Intact Limbs on this one clear; do not extra-pull or reset if short.",
+      "97288 and 95204 are item drops; take them if they drop, do not reset.",
+      "Unending Torment 97289-97292 are Undercity follow-ups after the run, not a second dungeon entry.",
+      "At most five dungeon entries/resets per hour on Forever; kill XP inside is increased, and the party gets no XP if any member is too high."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Silverpine Forest",
+      "levelBand": [11, 15],
+      "why": "nova/v2/silverpine-11-15 is balanced-only (speedrun skips the whole road). RoL at 18 is the Undead dungeon alternative to those Sepulcher quests.",
+      "questIds": [421, 428, 429, 435, 425, 477, 478]
+    },
+    {
+      "zone": "Silverpine Forest",
+      "levelBand": [15, 20],
+      "why": "A Recipe For Death 447-451 is the slow elite/drop chain in the nova 1-24 catalog (the live silverpine pack dropped it). It is also the prereq of 95216, so skipping that chain is the same decision as skipping The New Plague.",
+      "questIds": [447, 450, 451]
+    }
+  ],
+  "sourceConflicts": [
+    "Entrance 66.0, 11.0 is reported (gamer-guides.com / steps-v2) and verified: false; not from Questie dungeon pins.",
+    "95216 and 92422 are in dungeons.json, README, and TUGs/WoW-Pro Forever; steps-v2 omits them (451 and 99156 prereq chains were refused in the 1-20 packs).",
+    "99156 Rear Guard Patrol is races 18 (Orc+Undead), while 92422 is the full Horde mask in questie-db.",
+    "Catalog lists six Horde quests and says later Unending Torment steps are not listed separately; steps-v2 and questie-db expand 97289-97292 as Undercity follow-ups with 1650 XP each.",
+    "XP is missing in questie-db for 92421, 95216, 92422, 92401, 97288, and 95204; left at 0. Did not invent Classic XP for this Forever dungeon.",
+    "All Forever quests remain verified: false until checked in game."
+  ],
+  "notes": "Forever-only dungeon (Blizzard level range 15-20). Do not invent Classic quests for it. Quest ids, givers, and Forever-frame coords from content/questie-db (QuestieDB v1.1.3). 79953 and 81951 are not used. One balanced clear; speedrun already skips RFC/WC in 1-20 and treats RoL the same."
+}

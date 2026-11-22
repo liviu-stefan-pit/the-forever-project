@@ -1,0 +1,133 @@
+{
+  "id": "kroldok-stronghold",
+  "name": "Krol'dok Stronghold",
+  "forever": true,
+  "levels": [40, 45],
+  "runAt": 43,
+  "entrance": {
+    "zone": "Riverglades",
+    "at": [37.5, 37.5],
+    "note": "Forever-only dungeon. Entrance 37.5, 37.5 is reported (warcrafttavern) and verified:false in dungeons.json. Horde access: fly to Rog'mar; a long Riverglades chain unlocks most quests."
+  },
+  "travel": {
+    "nearestFlight": "Rog'mar (Grakna, Riverglades 59.6, 45.1)",
+    "fromHubs": [
+      "Rog'mar: you start the 40-60 route here (flight master Grakna). Krom'rosh 59.37, 45.6, Tran'gul 59.51, 43.96, Kreza Darkthorn 59.92, 45.97.",
+      "Kargath: fly Gorrik -> Rog'mar if you already have the path.",
+      "Orgrimmar: fly to Rog'mar once the Riverglades path is unlocked."
+    ],
+    "how": "Fly to Rog'mar. Set hearth at Innkeeper Toka (Riverglades 57.99, 45.1). Da'grosh is in the hills west of Rog'mar (33.47, 37.93), not in town. The instance is reported at 37.5, 37.5."
+  },
+  "quests": [
+    {
+      "questId": 94975,
+      "name": "A Token of Vengeance",
+      "xp": null,
+      "giver": { "npc": "Da'grosh", "zone": "Riverglades", "hub": null, "at": [33.47, 37.93] },
+      "turnIn": { "npc": "Da'grosh", "zone": "Riverglades", "hub": null, "at": [33.47, 37.93] },
+      "prerequisites": [94768],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:kroldok-stronghold:accept:94975", "turnin": "dungeons:forever:kroldok-stronghold:turnin:94975" },
+      "notes": "Collect 15 Cultist Ears from Twilight's Hammer inside. Needs Bring Me His Head (94768). Da'grosh is west of Rog'mar, not at the flight master. XP is missing in questie-db, dungeons.json, and web/public/data/quests.json — not invented. verified:false."
+    },
+    {
+      "questId": 94968,
+      "name": "Eye of Mugg",
+      "xp": null,
+      "giver": { "npc": "Krom'rosh", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.37, 45.6] },
+      "turnIn": { "npc": "Krom'rosh", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.37, 45.6] },
+      "prerequisites": [95278],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:kroldok-stronghold:accept:94968", "turnin": "dungeons:forever:kroldok-stronghold:turnin:94968" },
+      "notes": "Kill the leader inside and bring proof to Krom'rosh. Import pre is 95278 (It Is Time, Brother...). prerequisitesByName also lists the Wayward Warrior chain (94744). steps-v2: do not reset for another Eye of Mugg. XP missing in sources — not invented. verified:false."
+    },
+    {
+      "questId": 94972,
+      "name": "Tome of Twilight",
+      "xp": null,
+      "giver": { "npc": "Tran'gul", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.51, 43.96] },
+      "turnIn": { "npc": "Tran'gul", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.51, 43.96] },
+      "prerequisites": [95278],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": false,
+      "stepIds": { "accept": "dungeons:forever:kroldok-stronghold:accept:94972", "turnin": "dungeons:forever:kroldok-stronghold:turnin:94972" },
+      "notes": "Recover the Tome of Twilight inside. Needs It Is Time, Brother... (95278). XP missing in sources — not invented. verified:false."
+    },
+    {
+      "questId": 94973,
+      "name": "Krol'dok Moulding",
+      "xp": 3300,
+      "giver": { "npc": "Krol'dok Moulding", "zone": "Krol'dok Stronghold", "hub": "Rog'mar", "at": null },
+      "turnIn": { "npc": "Kreza Darkthorn", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.92, 45.97] },
+      "prerequisites": [],
+      "breadcrumb": null,
+      "itemStartInside": true,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:kroldok-stronghold:accept:94973", "turnin": "dungeons:forever:kroldok-stronghold:turnin:94973" },
+      "notes": "Item 267137 starts the quest; questie-db npcDrops Tunk (259256, Blacksmith, rank 1, no spawn coords). Accept after the run (steps-v2 order). Find someone in Rog'mar — Kreza Darkthorn. Rewards Krol'dok Compound Key. Unlocks 94974. verified:false."
+    },
+    {
+      "questId": 94974,
+      "name": "Key Ingredients",
+      "xp": 3300,
+      "giver": { "npc": "Kreza Darkthorn", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.92, 45.97] },
+      "turnIn": { "npc": "Kreza Darkthorn", "zone": "Riverglades", "hub": "Rog'mar", "at": [59.92, 45.97] },
+      "prerequisites": [94973],
+      "breadcrumb": null,
+      "itemStartInside": false,
+      "classOrRace": null,
+      "optional": true,
+      "stepIds": { "accept": "dungeons:forever:kroldok-stronghold:accept:94974", "turnin": "dungeons:forever:kroldok-stronghold:turnin:94974" },
+      "notes": "Bring 4 Thick Leather and 12 Iron Bar to Kreza. Profession hook, not a dungeon-objective quest. Split from the combined fan-guide row 'Krol'dok Moulding / Key Ingredients'. verified:false."
+    }
+  ],
+  "runStepId": "dungeons:forever:kroldok-stronghold:run",
+  "keys": ["Krol'dok Compound Key — reward from 94973; not required to enter"],
+  "prep": {
+    "group": "5-player, Forever dungeon levels 40-45. Run once; do not reset for another Eye of Mugg. Long Riverglades chain (94744 / 94768 / 95278) unlocks 94975, 94968, and 94972.",
+    "consumables": ["food", "water", "healing potions", "4 Thick Leather and 12 Iron Bar if taking 94974"],
+    "hearth": "Innkeeper Toka, Rog'mar 57.99, 45.1 (h4060 sets hearth here at the start of 40-60).",
+    "warnings": [
+      "Fly to Rog'mar. Most givers are in town; Da'grosh is west at 33.47, 37.93.",
+      "Finish Bring Me His Head (94768) before 94975. Finish It Is Time, Brother... (95278) before 94968 and 94972. 95278 itself follows 94768; 94768 needs 94745 and 94748 after The Wayward Warrior (94744).",
+      "Do not invent XP for 94975/94968/94972 — questie-db has no xp field.",
+      "94973 is an inside item drop (Tunk); accept after the run.",
+      "steps-v2 emits this pack on balanced only, not speedrun.",
+      "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP (Blizzard Forever hotfixes through 20 Nov 2026).",
+      "Every Forever quest stays verified:false until checked in game. Quests 79953 and 81951 are not used."
+    ],
+    "classQuests": []
+  },
+  "speedrunReplaceCandidates": [
+    {
+      "zone": "Feralas",
+      "levelBand": [40, 45],
+      "why": "Krol'dok is 40-45 and steps-v2 is balanced-only. Camp Mojache's Woodpaw / Gordunni east loop in h4060 is the same-band overworld the dungeon replaces (or that speedrun keeps instead of the dungeon).",
+      "questIds": [2862, 2975, 2987, 2863, 2902, 2903, 2980]
+    },
+    {
+      "zone": "Badlands",
+      "levelBand": [35, 45],
+      "why": "h4060 Kargath stop (coyotes, reagents, buzzards, Tho'grun, first elemental quest) sits in the same band as a Krol'dok runAt of 43.",
+      "questIds": [1419, 2258, 703, 782, 710]
+    }
+  ],
+  "sourceConflicts": [
+    "94975, 94968, and 94972 have no xp in content/questie-db, dungeons.json, or web/public/data/quests.json.",
+    "94968 prerequisitesByName lists The Wayward Warrior chain (94744) and It Is Time, Brother...; prerequisitesFromImport is only 95278.",
+    "Entrance 37.5, 37.5 is fan-reported (warcrafttavern) and verified:false.",
+    "steps-v2 run/accept/turnin are routes: ['balanced'] only; no speedrun dungeon steps.",
+    "94973 giver has no zone/coords in dungeons.json (item start); Tunk 259256 has no spawns in questie-db npcs.json.",
+    "All five quests remain verified:false until checked in game."
+  ],
+  "notes": "Forever-only Horde dungeon (id kroldok-stronghold). 5 of 5 Horde quests matched to QuestieDB v1.1.3. Pickup hub is Rog'mar. Do not invent Forever quest data beyond these ids. Dungeons-off replacement is not listed on this dungeon in dungeons.json; same-band overworld is Feralas / remaining Riverglades."
+}

@@ -1,0 +1,536 @@
+{
+  "routeId": "mulgore-1-12",
+  "mapId": 1412,
+  "ops": [
+    {
+      "op": "add",
+      "questId": 3091,
+      "afterStepId": "mulgore-1-12:008",
+      "classes": ["Warrior"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Grull offers the warrior note on the 747 turn-in. Harutt stands in the same camp.",
+      "prereqQuestIds": [747],
+      "whyShort": "Two NPCs a few yards apart, no fighting.",
+      "text": "Accept Simple Note from Grull Hawkwind, then turn it in to Harutt Thunderhorn at 43.75, 76.72.",
+      "actions": [
+        { "type": "accept", "questId": 3091, "at": { "mapId": 1412, "x": 44.47, "y": 77.5, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 3091, "at": { "mapId": 1412, "x": 43.75, "y": 76.72, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3091", "label": "Wowhead Classic quest 3091" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 3092,
+      "afterStepId": "mulgore-1-12:008",
+      "classes": ["Hunter"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Grull offers the hunter note on the 747 turn-in. Lanka stands in the same camp.",
+      "prereqQuestIds": [747],
+      "whyShort": "Two NPCs a few yards apart, no fighting.",
+      "text": "Accept Etched Note from Grull Hawkwind, then turn it in to Lanka Farshot at 43.96, 76.35.",
+      "actions": [
+        { "type": "accept", "questId": 3092, "at": { "mapId": 1412, "x": 44.47, "y": 77.5, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 3092, "at": { "mapId": 1412, "x": 43.96, "y": 76.35, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3092", "label": "Wowhead Classic quest 3092" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 3093,
+      "afterStepId": "mulgore-1-12:008",
+      "classes": ["Shaman"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Grull offers the shaman note on the 747 turn-in. Meela stands in the same camp.",
+      "prereqQuestIds": [747],
+      "whyShort": "Two NPCs a few yards apart, no fighting.",
+      "text": "Accept Rune-Inscribed Note from Grull Hawkwind, then turn it in to Meela Dawnstrider at 44.58, 76.56.",
+      "actions": [
+        { "type": "accept", "questId": 3093, "at": { "mapId": 1412, "x": 44.47, "y": 77.5, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 3093, "at": { "mapId": 1412, "x": 44.58, "y": 76.56, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3093", "label": "Wowhead Classic quest 3093" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 3094,
+      "afterStepId": "mulgore-1-12:008",
+      "classes": ["Druid"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Grull offers the druid note on the 747 turn-in. Gart stands in the same camp.",
+      "prereqQuestIds": [747],
+      "whyShort": "Two NPCs a few yards apart, no fighting.",
+      "text": "Accept Verdant Note from Grull Hawkwind, then turn it in to Gart Mistrunner at 44.65, 76.55.",
+      "actions": [
+        { "type": "accept", "questId": 3094, "at": { "mapId": 1412, "x": 44.47, "y": 77.5, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 3094, "at": { "mapId": 1412, "x": 44.65, "y": 76.55, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=3094", "label": "Wowhead Classic quest 3094" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1519,
+      "afterStepId": "mulgore-1-12:019",
+      "classes": ["Shaman"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Call of Earth is picked up in Camp Narache and finished in the ravine the route already clears for 757 and 3376.",
+      "prereqQuestIds": [],
+      "whyShort": "Two Ritual Salves from Bristleback Shamans at 62.17, 78.12, then back to the seer.",
+      "text": "Accept Call of Earth from Seer Ravenfeather at 44.35, 76.77. Loot two Ritual Salves from Bristleback Shamans at 62.17, 78.12 and turn them in to the seer.",
+      "actions": [
+        { "type": "accept", "questId": 1519, "at": { "mapId": 1412, "x": 44.35, "y": 76.77, "zone": "Mulgore" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 62.17, "y": 78.12, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 1519 },
+        { "type": "turnin", "questId": 1519, "at": { "mapId": 1412, "x": 44.35, "y": 76.77, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1519", "label": "Wowhead Classic quest 1519" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1520,
+      "afterStepId": "mulgore-1-12:019",
+      "classes": ["Shaman"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "The earth spirit is at Kodo Rock, on the road down from Camp Narache.",
+      "prereqQuestIds": [1519],
+      "whyShort": "One use of the Earth Sapta at 51.99, 80.4 and a new quest.",
+      "text": "Accept the next Call of Earth and turn it in to the Minor Manifestation of Earth at Kodo Rock, 51.99, 80.4.",
+      "actions": [
+        { "type": "accept", "questId": 1520, "at": { "mapId": 1412, "x": 44.35, "y": 76.77, "zone": "Mulgore" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 51.99, "y": 80.4, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 1520, "at": { "mapId": 1412, "x": 51.99, "y": 80.4, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1520", "label": "Wowhead Classic quest 1520" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 1521,
+      "afterStepId": "mulgore-1-12:019",
+      "classes": ["Shaman"],
+      "routes": ["balanced", "speedrun"],
+      "reason": "Closes Call of Earth before the road to Bloodhoof.",
+      "prereqQuestIds": [1520],
+      "whyShort": "Walk back up to Seer Ravenfeather.",
+      "text": "Accept the last Call of Earth at Kodo Rock and turn it in to Seer Ravenfeather at 44.35, 76.77.",
+      "actions": [
+        { "type": "accept", "questId": 1521, "at": { "mapId": 1412, "x": 51.99, "y": 80.4, "zone": "Mulgore" } },
+        { "type": "turnin", "questId": 1521, "at": { "mapId": 1412, "x": 44.35, "y": 76.77, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=1521", "label": "Wowhead Classic quest 1521" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:015",
+      "questId": 95805,
+      "reason": "The complete step has no pin. The turn-in object is the Ritual Fire.",
+      "prereqQuestIds": [755],
+      "whyShort": "The fire is the turn-in already at step 016.",
+      "text": "Use the Smoldering Incense at the Ritual Fire at 56.61, 88.7.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 56.61, "y": 88.7, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 95805, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=95805", "label": "Wowhead Classic quest 95805" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "mulgore-1-12:014",
+      "questId": 95805,
+      "reason": "The incense is destroyed after ten minutes, and battleboars come after this step.",
+      "prereqQuestIds": [755],
+      "whyShort": "One run to a fire that is already the next turn-in.",
+      "text": "Carry the incense straight to the Ritual Fire at 56.61, 88.7 before you hunt battleboars. It burns out in ten minutes.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=95805", "label": "Wowhead Classic quest 95805" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "mulgore-1-12:080",
+      "questId": 746,
+      "afterStepId": "mulgore-1-12:047",
+      "reason": "Bael'dun diggers and the Mulgore forge both sit at 33, 55, next to the Palemane camp already killed at step 047. The route currently goes there only after the northeast mine.",
+      "prereqQuestIds": [],
+      "whyShort": "Same west hillside as Sharing the Land.",
+      "text": "Finish Dwarven Digging at the Bael'dun forge, 33.1, 54.8, before you leave the Palemane hills.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=746", "label": "Wowhead Classic quest 746" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "mulgore-1-12:081",
+      "questId": 743,
+      "beforeStepId": "mulgore-1-12:076",
+      "reason": "Windfury harpies are south of Morin. The mine is north of him. The route currently does the mine, then Bael'dun, then the harpies.",
+      "prereqQuestIds": [],
+      "whyShort": "One south stop before turning north into the mine.",
+      "text": "Kill the Windfury for Dangers of the Windfury at 59.5, 71.2 before you ride north to the Venture Co. mine.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=743", "label": "Wowhead Classic quest 743" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "reorder",
+      "stepId": "mulgore-1-12:065",
+      "questId": 754,
+      "beforeStepId": "mulgore-1-12:068",
+      "reason": "Winterhoof Well Stones sit at 51.8, 68, between Bloodhoof and Morin Cloudstalker. The cleanse is currently a pinless step still in the village.",
+      "prereqQuestIds": [748],
+      "whyShort": "One totem use on the road you are already taking.",
+      "text": "Cleanse the Winterhoof well on the way to Morin, before The Ravaged Caravan.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=754", "label": "Wowhead Classic quest 754" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:065",
+      "questId": 754,
+      "reason": "Step 065 completes Winterhoof Cleansing with no coordinates.",
+      "prereqQuestIds": [748],
+      "whyShort": "Use the totem at the well stones.",
+      "text": "Use the Winterhoof Cleansing Totem at the Well Stone cluster at 51.84, 67.93.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 51.84, "y": 67.93, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 754, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=754", "label": "Wowhead Classic quest 754" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:083",
+      "questId": 766,
+      "reason": "All four Mazzranache parts are pinned at 48.7, 50.9. Prairie Wolf Heart drops from Prairie Wolf Alphas, whose Mulgore spawns are farther north.",
+      "prereqQuestIds": [],
+      "whyShort": "The other three parts do fall off the cats, swoops, and plainstriders around 48.7, 50.9.",
+      "text": "Keep the cougar femur, swoop gizzard, and plainstrider scale at 48.7, 50.9. Get the Prairie Wolf Heart from a Prairie Wolf Alpha around 45.56, 35.4.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 45.56, "y": 35.4, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 766, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=766", "label": "Wowhead Classic quest 766" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:049",
+      "questId": 98430,
+      "reason": "The escort complete has no pin. Perith starts the walk.",
+      "prereqQuestIds": [],
+      "whyShort": "He is already the accept NPC at Palemane Rock.",
+      "text": "Start the escort at Perith Stormhoof, 33.11, 65.95, and stay with him until he is clear.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 33.11, "y": 65.95, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 98430, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=98430", "label": "Wowhead Classic quest 98430" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:101",
+      "questId": 772,
+      "reason": "Rite of Vision is completed with no pin. The water is drunk at the tribal fire.",
+      "prereqQuestIds": [771],
+      "whyShort": "Zarlman is already in Bloodhoof.",
+      "text": "Drink the Water of the Seers in front of Zarlman Two-Moons at 46.88, 61.19, then follow the vision to Seer Wiserunner at 34.31, 43.29.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 46.88, "y": 61.19, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 772, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=772", "label": "Wowhead Classic quest 772" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:104",
+      "questId": 773,
+      "reason": "Rite of Wisdom is completed with no pin. The spirit is the following turn-in.",
+      "prereqQuestIds": [772],
+      "whyShort": "One talk at Red Rocks.",
+      "text": "Speak with the Ancestral Spirit at 58.31, 30.7.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1412, "x": 58.31, "y": 30.7, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 773, "objective": 1 }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=773", "label": "Wowhead Classic quest 773" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 758,
+      "afterStepId": "mulgore-1-12:099",
+      "routes": ["balanced", "speedrun"],
+      "reason": "756's next quest is the Thunderhorn well. The route turns 756 in and never takes it. Well Stones stand just north of the village.",
+      "prereqQuestIds": [756],
+      "whyShort": "Accept from Mull, use the totem once, walk back.",
+      "text": "Accept Thunderhorn Cleansing from Mull Thunderhorn. Use the totem at the Well Stone at 44.48, 50.72, then turn it in to Mull.",
+      "actions": [
+        { "type": "accept", "questId": 758, "at": { "mapId": 1412, "x": 47.52, "y": 63.58, "zone": "Mulgore" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 44.48, "y": 50.72, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 758 },
+        { "type": "turnin", "questId": 758, "at": { "mapId": 1412, "x": 47.52, "y": 63.58, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=758", "label": "Wowhead Classic quest 758" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 759,
+      "afterStepId": "mulgore-1-12:099",
+      "routes": ["balanced", "speedrun"],
+      "reason": "758 leads to Wildmane Totem. Alpha teeth share the north field with 861 and 776. Do not continue into 760.",
+      "prereqQuestIds": [758],
+      "whyShort": "Eight teeth from Prairie Wolf Alphas already on the north loop, then a turn-in in Bloodhoof.",
+      "text": "Accept Wildmane Totem from Mull. Loot eight Prairie Alpha Teeth around 45.56, 35.4 and turn them in to Mull. Stop there.",
+      "actions": [
+        { "type": "accept", "questId": 759, "at": { "mapId": 1412, "x": 47.52, "y": 63.58, "zone": "Mulgore" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 45.56, "y": 35.4, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 759 },
+        { "type": "turnin", "questId": 759, "at": { "mapId": 1412, "x": 47.52, "y": 63.58, "zone": "Mulgore" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=759", "label": "Wowhead Classic quest 759" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 861,
+      "afterStepId": "mulgore-1-12:097",
+      "routes": ["balanced", "speedrun"],
+      "reason": "Skorn is in Bloodhoof. The claws drop on the same north field as Arra'chea, and the hand-in is in Thunder Bluff on a trip the route already makes.",
+      "prereqQuestIds": [],
+      "whyShort": "Four Flatland Prowler Claws around 51.81, 22.55.",
+      "text": "Accept The Hunter's Way from Skorn Whitecloud at 46.03, 63.44. Loot four Flatland Prowler Claws around 51.81, 22.55 and turn the quest in to Melor Stonehoof at Thunder Bluff 61.54, 80.92.",
+      "actions": [
+        { "type": "accept", "questId": 861, "at": { "mapId": 1412, "x": 46.03, "y": 63.44, "zone": "Mulgore" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 51.81, "y": 22.55, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 861 },
+        { "type": "turnin", "questId": 861, "at": { "mapId": 1456, "x": 61.54, "y": 80.92, "zone": "Thunder Bluff" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=861", "label": "Wowhead Classic quest 861" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 860,
+      "afterStepId": "mulgore-1-12:110",
+      "routes": ["balanced", "speedrun"],
+      "reason": "Melor gives the Crossroads breadcrumb after 861. It replaces 854 and does not block Plainstrider Menace.",
+      "prereqQuestIds": [861],
+      "whyShort": "One accept in Thunder Bluff and one turn-in beside Thork.",
+      "text": "Accept Sergra Darkthorn from Melor Stonehoof at 61.54, 80.92. Turn it in to Sergra Darkthorn at the Crossroads, 52.23, 31.01.",
+      "actions": [
+        { "type": "accept", "questId": 860, "at": { "mapId": 1456, "x": 61.54, "y": 80.92, "zone": "Thunder Bluff" } },
+        { "type": "turnin", "questId": 860, "at": { "mapId": 1413, "x": 52.23, "y": 31.01, "zone": "The Barrens" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=860", "label": "Wowhead Classic quest 860" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "questId": 776,
+      "afterStepId": "mulgore-1-12:110",
+      "routes": ["balanced", "speedrun"],
+      "reason": "775's next quest is the Horn of Arra'chea. Her Questie spawn is on the north field with the prowlers, not a separate camp.",
+      "prereqQuestIds": [775],
+      "whyShort": "One named kodo at 51.25, 24.82, then back to Cairne.",
+      "text": "Accept Rites of the Earthmother from Cairne. Take the Horn of Arra'chea at 51.25, 24.82 and return it to Cairne at 60.3, 51.68.",
+      "actions": [
+        { "type": "accept", "questId": 776, "at": { "mapId": 1456, "x": 60.3, "y": 51.68, "zone": "Thunder Bluff" } },
+        { "type": "goto", "at": { "mapId": 1412, "x": 51.25, "y": 24.82, "zone": "Mulgore" } },
+        { "type": "complete", "questId": 776 },
+        { "type": "turnin", "questId": 776, "at": { "mapId": 1456, "x": 60.3, "y": 51.68, "zone": "Thunder Bluff" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=776", "label": "Wowhead Classic quest 776" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": "mulgore-1-12:114",
+      "questId": 854,
+      "reason": "Kirge is in Camp Taurajo, off the east road to the Crossroads. 854 is exclusive with 844, which 860 leads into. Step 115 then walks back into Mulgore.",
+      "prereqQuestIds": [],
+      "whyShort": "Not short. It is a southern Barrens detour.",
+      "text": "Remove Journey to the Crossroads from this route.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=854", "label": "Wowhead Classic quest 854" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "mulgore-1-12:115",
+      "questId": 860,
+      "reason": "The last pin is Mulgore 52.0, 29.9 while the sentence says to continue at the Crossroads. Thork and Sergra stand there.",
+      "prereqQuestIds": [861],
+      "whyShort": "The handoff is one ride east, not a return from Camp Taurajo.",
+      "text": "Leave Thunder Bluff toward the Crossroads and stop at Thork, 51.5, 30.87 in the Barrens.",
+      "actions": [
+        { "type": "goto", "at": { "mapId": 1413, "x": 51.5, "y": 30.87, "zone": "The Barrens" } }
+      ],
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=854", "label": "Wowhead Classic quest 854" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "mulgore-1-12:115",
+      "questId": 860,
+      "reason": "Players leaving Thunder Bluff can mistake the north road pin for the zone exit.",
+      "prereqQuestIds": [],
+      "whyShort": "One road east to the Crossroads.",
+      "text": "The Crossroads is east of Mulgore. Camp Taurajo is a later Barrens stop, not the way out.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/npc=3429", "label": "Wowhead Classic NPC 3429" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 760,
+      "reason": "Party-accept cleanse in the harpy camp after Wildmane Totem. A second trip north, and the camp chain-pulls.",
+      "prereqQuestIds": [759],
+      "whyShort": "Not short.",
+      "text": "Do not add Wildmane Cleansing.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=760", "label": "Wowhead Classic quest 760" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 98435,
+      "reason": "Follow-up to 760. The well quest is the part being dropped, so the report goes with it.",
+      "prereqQuestIds": [760],
+      "whyShort": "Not short. It exists only after the harpy well.",
+      "text": "Do not add Thunderhorn's Report.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=98435", "label": "Wowhead Classic quest 98435" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 770,
+      "reason": "Starts from a rare drop off Ghost Howl.",
+      "prereqQuestIds": [],
+      "whyShort": "Not short. It is a rare hunt.",
+      "text": "Do not add The Demon Scarred Cloak.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=770", "label": "Wowhead Classic quest 770" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 744,
+      "reason": "Eyahn Eagletalon is in Thunder Bluff. The feathers come from harpies the route has already cleared for 743.",
+      "prereqQuestIds": [],
+      "whyShort": "Not short. It sends you back to the Windfury camp.",
+      "text": "Do not add Preparation for Ceremony.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=744", "label": "Wowhead Classic quest 744" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 6361,
+      "reason": "A Bundle of Hides starts at Jahan Hawkwing at the Crossroads, so the flight chain is a Barrens quest.",
+      "prereqQuestIds": [],
+      "whyShort": "Out of this route's zone.",
+      "text": "Do not add the Bundle of Hides flight chain on the Mulgore route.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=6361", "label": "Wowhead Classic quest 6361" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 76156,
+      "reason": "Stalk With The Earthmother adds a second mine collect, then cooking and fishing follow-ups in Thunder Bluff.",
+      "prereqQuestIds": [],
+      "whyShort": "Not short. The follow-ups leave the leveling line.",
+      "text": "Do not add Stalk With The Earthmother or its follow-ups.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=76156", "label": "Wowhead Classic quest 76156" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 6061,
+      "reason": "Hunter taming is three separate tame quests plus a Thunder Bluff training turn-in.",
+      "prereqQuestIds": [],
+      "whyShort": "Not a single nearby kill. It is its own class chain.",
+      "text": "Do not add Taming the Beast.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=6061", "label": "Wowhead Classic quest 6061" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "questId": 96659,
+      "reason": "The Adventurer opens a camping tutorial and a profession branch for every crafting skill.",
+      "prereqQuestIds": [],
+      "whyShort": "Not a combat step. It is a tutorial tree.",
+      "text": "Do not add The Adventurer or the Camping 101 quests.",
+      "sources": [
+        { "url": "https://www.wowhead.com/classic/quest=96659", "label": "Wowhead Classic quest 96659" }
+      ],
+      "verified": false
+    }
+  ],
+  "dropped": [760, 98435, 770, 744, 854, 6361, 6362, 6363, 6364, 76156, 6061, 96659]
+}

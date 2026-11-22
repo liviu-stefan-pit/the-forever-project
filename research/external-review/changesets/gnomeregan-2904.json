@@ -1,0 +1,92 @@
+{
+  "routeId": "gnomeregan-2904",
+  "verified": false,
+  "opCounts": { "drop": 4, "tip": 1, "total": 5 },
+  "ops": [
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2904",
+      "questId": 2904,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Kernobee spawn is -1,-1. Not a required step.",
+      "originalText": "Do not add Accept A Fine Mess. Kernobee has no pin.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie npc 7850 spawns zone 721 -1,-1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2904",
+      "questId": 2904,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Accept is not required, so the turn-in is not required.",
+      "originalText": "Do not add Turn in A Fine Mess to Scooty as a required step.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2904 start npc 7850 spawn -1,-1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "tip",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:run",
+      "questId": 2841,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [2842],
+      "whyShort": "Kernobee has no pin. Mention him on the one clear only.",
+      "originalText": "If you find Kernobee during this one clear, escort him out and turn the quest in to Scooty. Do not search the instance for him, and do not reset.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie npc 7850 spawns zone 721 -1,-1; 2904 ends npc 7853"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:turnin:2945",
+      "questId": 2945,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Sparklematic 142487 spawn is -1,-1. The machine has no location.",
+      "originalText": "Do not add Turn in Grime-Encrusted Ring at the Sparklematic 5200.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie object 142487 spawns zone 721 -1,-1; 2945 end object 142487"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    },
+    {
+      "op": "drop",
+      "verified": false,
+      "stepId": "dungeons:gnomeregan:accept:2949",
+      "questId": 2949,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [2945],
+      "whyShort": "2949 starts on the same machine. Spawn is -1,-1.",
+      "originalText": "Do not add Accept Return of the Ring from the Sparklematic.",
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+          "label": "Questie 2949 start object 142487 spawn -1,-1"
+        }
+      ],
+      "targetFile": "research/dungeons/steps-v2.json"
+    }
+  ]
+}

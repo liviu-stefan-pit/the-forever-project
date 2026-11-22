@@ -1,0 +1,102 @@
+name: Route error
+description: A wrong quest, coordinate, NPC, level or step order in a guide.
+title: "[Route]: "
+labels: ["route"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make the routes correct. A source we can check (QuestieDB, a Wowhead page, a screenshot from the game) helps a lot.
+        Please do not paste text from other guides, paid or free; describe the fact in your own words.
+  - type: input
+    id: guide
+    attributes:
+      label: Guide slug
+      description: The part after `#/guide/` in the address bar.
+      placeholder: barrens-12-20
+    validations:
+      required: true
+  - type: input
+    id: step
+    attributes:
+      label: Step
+      description: The step number or title as shown in the guide, or the quest id.
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route
+      options:
+        - Balanced
+        - Speedrun
+        - Both
+    validations:
+      required: true
+  - type: dropdown
+    id: race
+    attributes:
+      label: Character race
+      options:
+        - Orc
+        - Troll
+        - Tauren
+        - Undead
+        - Other / not relevant
+    validations:
+      required: true
+  - type: dropdown
+    id: class
+    attributes:
+      label: Character class
+      options:
+        - Warrior
+        - Hunter
+        - Rogue
+        - Priest
+        - Shaman
+        - Mage
+        - Warlock
+        - Druid
+        - Paladin
+        - Other / not relevant
+    validations:
+      required: true
+  - type: dropdown
+    id: dungeons
+    attributes:
+      label: Dungeons toggle
+      options:
+        - "Off"
+        - "On"
+        - Not sure
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of error?
+      multiple: true
+      options:
+        - Wrong or missing quest
+        - Wrong coordinates or map pin
+        - Wrong NPC or object
+        - Wrong step order
+        - Quest not available (prerequisite, level, race or class)
+        - Wrong level or XP
+        - Wrong tip or text
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: What is wrong, and what is correct?
+      description: Describe what the guide says, what actually happens in the game, and what the step should say instead.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: How do you know? A link (QuestieDB, Wowhead, a public page), in-game coordinates from /way or a map addon, or a screenshot.
+    validations:
+      required: true

@@ -1,0 +1,437 @@
+{
+  "routeId": "silverpine-11-15",
+  "mapId": 1421,
+  "questieAreaId": 130,
+  "verified": false,
+  "speedrunQuestIds": [445, 421, 428, 6321, 435, 429, 449, 3221, 1359],
+  "balancedAdds": [1359],
+  "ops": [
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr01",
+      "questId": 445,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Tirisfal handoff. Talk turn-in at Renferrel, no kills. First stop of the speedrun hub.",
+      "originalText": "Turn in Delivery to Silverpine Forest to Apothecary Renferrel",
+      "at": { "mapId": 1421, "x": 42.8, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1937 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 445, npc 1937 spawn area 130" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr02",
+      "questId": null,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Flight path is a single gossip at the bat the Undead supply quest also uses. Speedrun leaves from this npc, so it has to be taken on the first hub.",
+      "originalText": "Get the flight path from Karos Razok",
+      "at": { "mapId": 1421, "x": 45.62, "y": 42.6, "zone": "Silverpine Forest", "npcId": 2226 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 2226" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr03",
+      "questId": 421,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Five same-level kills on the road north. Accept before leaving the hub so the kills count on the only north pass.",
+      "originalText": "Accept Prove Your Worth from Dalar Dawnweaver",
+      "at": { "mapId": 1421, "x": 44.2, "y": 39.81, "zone": "Silverpine Forest", "npcId": 1938 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 421, no pre, next 422" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr04",
+      "questId": 428,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Breadcrumb with no kill objective. 429 has no pre, but 428 only completes if it is in the log before Rane.",
+      "originalText": "Accept Lost Deathstalkers from High Executor Hadrec",
+      "at": { "mapId": 1421, "x": 43.42, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1952 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 428, next 429, pre empty" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr05",
+      "questId": 6321,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Undead only. Accept at Podrig and turn in at Karos a few steps away, same visit as the flight path. Do not take 6323.",
+      "originalText": "Accept Supplying the Sepulcher from Deathguard Podrig, then turn it in to Karos Razok",
+      "filter": { "any": [[{ "race": "Undead" }]] },
+      "at": { "mapId": 1421, "x": 43.42, "y": 41.68, "zone": "Silverpine Forest", "npcId": 6389 },
+      "turnInAt": { "mapId": 1421, "x": 45.62, "y": 42.6, "npcId": 2226 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 6321, races 16, next 6323" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr06",
+      "questId": 421,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Five Moonrage Whitescalps between the Sepulcher and the north road. Done on the way to Rane, not as a second loop.",
+      "originalText": "Complete Prove Your Worth",
+      "at": { "mapId": 1421, "x": 55.67, "y": 19.75, "zone": "Silverpine Forest", "npcId": 1769 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 1769 spawns" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr07",
+      "questId": 428,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Turn-in is the same npc as the next two accepts.",
+      "originalText": "Turn in Lost Deathstalkers to Rane Yorick",
+      "at": { "mapId": 1421, "x": 53.46, "y": 13.43, "zone": "Silverpine Forest", "npcId": 1950 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 428 end npc 1950" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr08",
+      "questId": 429,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Hearts drop beside the escort. Speedrun turns them in on the return and does not take 430.",
+      "originalText": "Accept Wild Hearts from Rane Yorick",
+      "at": { "mapId": 1421, "x": 53.46, "y": 13.43, "zone": "Silverpine Forest", "npcId": 1950 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 429, pre empty, next 430, item 3164, text says 6" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr09",
+      "questId": 435,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Short escort from 56.18, 9.18 back to Rane. Opens 449, which opens 3221 and 1359. If Erland is missing, skip and do not wait.",
+      "originalText": "Accept and complete Escorting Erland, turn in to Rane Yorick, accept The Deathstalkers' Report",
+      "at": { "mapId": 1421, "x": 56.18, "y": 9.18, "zone": "Silverpine Forest", "npcId": 1978 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 435 no pre, next 449; 449 pre 435" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr10",
+      "questId": 429,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Mottled Worgs spawn on the Ivar Patch (example 56.16, 10.23 and 55.52, 17.32). Finish hearts before running south so there is no second north trip.",
+      "originalText": "Complete Wild Hearts",
+      "at": { "mapId": 1421, "x": 56.16, "y": 10.23, "zone": "Silverpine Forest", "npcId": 1766 },
+      "note": "Questie objectivesText says 6 Discolored Worg Hearts. OpenXP collect count is 3 and the existing route tip says 3. Count is unverified against Questie.",
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 429 text" },
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 1766" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr11",
+      "questId": 449,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [435],
+      "whyShort": "Carry the report back on the same return. Talk chain into 3221.",
+      "originalText": "Turn in The Deathstalkers' Report to High Executor Hadrec and accept Speak with Renferrel",
+      "at": { "mapId": 1421, "x": 43.42, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1952 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 449 pre 435 next 3221; 3221 pre 449 next 1359" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr12",
+      "questId": 421,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Turn-in only. Do not accept 422.",
+      "originalText": "Turn in Prove Your Worth to Dalar Dawnweaver",
+      "at": { "mapId": 1421, "x": 44.2, "y": 39.81, "zone": "Silverpine Forest", "npcId": 1938 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 421 next 422" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr13",
+      "questId": 3221,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [449],
+      "whyShort": "Next-door talk. Required pre for 1359.",
+      "originalText": "Turn in Speak with Renferrel to Apothecary Renferrel",
+      "at": { "mapId": 1421, "x": 42.8, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1937 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 3221" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr14",
+      "questId": 429,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Turn-in only. Do not accept Return to Quinn.",
+      "originalText": "Turn in Wild Hearts to Apothecary Renferrel",
+      "at": { "mapId": 1421, "x": 42.8, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1937 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 429 end npc 1937, next 430" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr15",
+      "questId": 1359,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [3221],
+      "whyShort": "Item already in the bags after 3221. Turn in while flying through Undercity. Accept 1358 and do not run it in Silverpine.",
+      "originalText": "Accept Zinge's Delivery from Apothecary Renferrel. In Undercity turn it in to Apothecary Zinge and accept Sample for Helbrim for the Barrens.",
+      "at": { "mapId": 1421, "x": 42.8, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1937 },
+      "turnInAt": { "questieAreaId": 1497, "x": 50.14, "y": 67.97, "zone": "Undercity", "npcId": 5204 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 1359 pre 3221 next 1358; npc 5204 spawn key 1497" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:sr16",
+      "questId": null,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Fly from the flight master already visited. Skip the south crate and the second Ivar trip.",
+      "originalText": "Fly to Undercity from Karos Razok, then take the zeppelin to Orgrimmar and the Barrens route.",
+      "at": { "mapId": 1421, "x": 45.62, "y": 42.6, "zone": "Silverpine Forest", "npcId": 2226 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 2226" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "silverpine-11-15:sr16",
+      "questId": 92401,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Breadcrumb only. Req 15, level 22, objective is inside Ruins of Lordaeron. Not a Silverpine combat step.",
+      "originalText": "At level 15, Tabitha Heartweaver outside the Sepulcher offers A Frightened Request. Horde can run Ruins of Lordaeron around 15-18. Do not enter it on this route.",
+      "at": { "mapId": 1421, "x": 44.52, "y": 43.02, "zone": "Silverpine Forest", "npcId": 250686 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 92401 and npc 250686" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:037",
+      "questId": 1359,
+      "routes": ["balanced"],
+      "prereqQuestIds": [3221],
+      "afterStepId": "silverpine-11-15:020",
+      "whyShort": "Same free handoff as speedrun. Balanced already stands on Renferrel for the 3221 turn-in.",
+      "originalText": "Accept Zinge's Delivery from Apothecary Renferrel",
+      "at": { "mapId": 1421, "x": 42.8, "y": 40.86, "zone": "Silverpine Forest", "npcId": 1937 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 1359 pre 3221" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "add",
+      "stepId": "silverpine-11-15:038",
+      "questId": 1359,
+      "routes": ["balanced"],
+      "prereqQuestIds": [3221],
+      "afterStepId": "silverpine-11-15:037",
+      "whyShort": "Turn in on the Undercity flight that balanced already takes. Accept 1358 and leave the Barrens step to that route.",
+      "originalText": "Turn in Zinge's Delivery to Apothecary Zinge and accept Sample for Helbrim",
+      "at": { "questieAreaId": 1497, "x": 50.14, "y": 67.97, "zone": "Undercity", "npcId": 5204 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 5204" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "modify",
+      "stepId": "silverpine-11-15:036",
+      "questId": null,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "The leave step should start at the flight master, then Undercity, then the zeppelin. 60.7, 58.8 on map 1421 is still Silverpine.",
+      "originalText": "Fly to the Undercity, take the zeppelin to Orgrimmar and run to the Crossroads for the Barrens route",
+      "at": { "mapId": 1421, "x": 45.62, "y": 42.6, "zone": "Silverpine Forest", "npcId": 2226 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua", "label": "Questie npc 2226" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "tip",
+      "stepId": "silverpine-11-15:036",
+      "questId": 92401,
+      "routes": ["balanced"],
+      "prereqQuestIds": [],
+      "whyShort": "Same breadcrumb as the speedrun tip. Do not build the dungeon.",
+      "originalText": "At level 15, Tabitha Heartweaver at 44.52, 43.02 offers A Frightened Request into the Ruins of Lordaeron. Save the dungeon for the later Ruins route.",
+      "at": { "mapId": 1421, "x": 44.52, "y": 43.02, "zone": "Silverpine Forest", "npcId": 250686 },
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie quest 92401" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 430,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [429],
+      "whyShort": "Opens a second north trip, then 91920 turns in at the Sepulcher, then 91921 needs a third trip. Balanced keeps 430, 91920, 91921, and 425.",
+      "originalText": "Accept Return to Quinn from Apothecary Renferrel",
+      "alsoDropQuestIds": [91920, 91921, 425],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 430 pre 429; 91920 pre 430; 91921 pre 91920; 425 pre 91921" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 477,
+      "routes": ["speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "One-off south camp. 478 only leads to the Ambermill chain. Balanced keeps 477 and 478 and stops before 481.",
+      "originalText": "Accept Border Crossings from Shadow Priest Allister",
+      "alsoDropQuestIds": [478],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 477 next 478; object 1627 at 49.89, 60.33; 478 next 481" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 422,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [421],
+      "whyShort": "422 is one book, but the chain's next step is a shackle farm and then a mine kill. Drop the whole chain.",
+      "originalText": "",
+      "alsoDropQuestIds": [423, 424, 99, 98298, 98299],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 422 pre 421; 423 items 3156 and 3157; 424 item 3634; 99 pre 424" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 437,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Nightlash is a spawn camp. Follow-ups are a ferry, an ichor farm, and Fenris. 440 requires 439, which is not on the route.",
+      "originalText": "",
+      "alsoDropQuestIds": [438, 439, 440, 441, 530, 443, 444, 446, 448, 442],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 437 next 438; 443 pre 439; 442 level 24" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 447,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Six bear hearts and six spider blood, then a Pyrewood journal and a lake-moss turn-in. Public guides keep it. This route does not.",
+      "originalText": "",
+      "alsoDropQuestIds": [450, 451],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 447 items 3253 and 3254, next 450, 451" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 6323,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [6321],
+      "whyShort": "Undead flight loop that returns to Podrig after the player has already left for Orgrimmar.",
+      "originalText": "",
+      "alsoDropQuestIds": [6322, 6324],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 6323 pre 6321; 6322 pre 6323; 6324 pre 6322" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 481,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [478],
+      "whyShort": "Two 100 xp talks whose payoff is 8 Dalaran Pendants and then Watching the Roads.",
+      "originalText": "",
+      "alsoDropQuestIds": [482, 479, 95981, 480],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 481 pre 478; 479 pre 482; 95981 pre 482; 480 pre group 479 and 95981" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 452,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Pyrewood council is a party kill. Not a solo 11-15 step.",
+      "originalText": "",
+      "alsoDropQuestIds": [460, 461, 491, 516, 493],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 452 PARTY_ACCEPT; 516 req 16; 493 req 19" }
+      ],
+      "verified": false
+    },
+    {
+      "op": "drop",
+      "stepId": null,
+      "questId": 92421,
+      "routes": ["balanced", "speedrun"],
+      "prereqQuestIds": [],
+      "whyShort": "Inside the Ruins. 92422 requires Tirisfal 99156. 92401 is the only breadcrumb, and it is a tip.",
+      "originalText": "",
+      "alsoDropQuestIds": [92422],
+      "sources": [
+        { "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua", "label": "Questie 92421 and 92422 zone Ruins of Lordaeron" }
+      ],
+      "verified": false
+    }
+  ]
+}
