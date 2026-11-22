@@ -44,7 +44,7 @@ jobs:
       ADDON_CHOICE: ${{ inputs.addon || 'all' }}
       FORCE: ${{ inputs.force && 'true' || 'false' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Lua 5.1 and zip
         run: sudo apt-get update && sudo apt-get install -y lua5.1 zip
