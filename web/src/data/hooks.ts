@@ -26,6 +26,7 @@ import {
   type ZoneMap,
 } from "./loader";
 import type { ClassProfessionsFile, Guide, GuideIndex, Insights } from "./schema";
+import { prettifySlug } from "../lib/levels";
 
 export type Resource<T> =
   | { status: "loading" }
@@ -64,6 +65,22 @@ function useResource<T>(key: string | null, load: () => Promise<T>): Resource<T>
 }
 
 export const useGuideIndex = (): Resource<GuideIndex> => useResource(keys.index, loadGuideIndex);
+/** Reader-facing guide title by slug: the index title, or a tidied slug while the index loads. */
+export function guideTitleOf(index: GuideIndex | undefined, slug: string): string {
+  return index?.entries?.find((e) => e.slug === slug)?.title?.trim() || prettifySlug(slug);
+}
+
+/** Guide slug whose step list holds `stepId` (step-id prefixes are not guide slugs). */
+export function guideOfStep(index: GuideIndex | undefined, stepId: string): string | undefined {
+  return index?.entries?.find((e) => e.stepIds.includes(stepId))?.slug;
+}
+
+/** `title(slug)` backed by the guide index. */
+export function useGuideTitle(): (slug: string) => string {
+  const index = dataOf(useGuideIndex());
+  return (slug) => guideTitleOf(index, slug);
+}
+
 export const useGuide = (slug: string | undefined): Resource<Guide> =>
   useResource(slug ? keys.guide(slug) : null, () => loadGuide(slug!));
 export const useQuests = (): Resource<QuestMap> => useResource(keys.quests, loadQuests);

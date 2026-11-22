@@ -1,8 +1,8 @@
 /** Left level timeline: 1→60 scale, race start, brackets → guides with progress rings. */
 import { memo } from "react";
 import { NavLink } from "react-router";
-import { useGuideIndex } from "../../data/hooks";
-import { parseRange, prettifySlug, slugRange, levelToFraction } from "../../lib/levels";
+import { guideTitleOf, useGuideIndex } from "../../data/hooks";
+import { parseRange, levelToFraction } from "../../lib/levels";
 import { isBalancedOnlyPack } from "../../lib/nextGuide";
 import { useCurrentGuideSlug, useGuideCompletion, useRouteStyle } from "../../state/progress";
 import { useRoutePosition } from "../../state/position";
@@ -13,11 +13,13 @@ import { Skeleton } from "../ui/States";
 
 const GuideRow = memo(function GuideRow({
   slug,
+  name,
   collapsed,
   current,
   offRoute,
 }: {
   slug: string;
+  name: string;
   collapsed: boolean;
   current: boolean;
   /** On speedrun, Silverpine is not part of the route — dimmed but still clickable. */
@@ -25,8 +27,6 @@ const GuideRow = memo(function GuideRow({
 }) {
   const stats = useGuideCompletion(slug, { defer: true });
   const value = stats && stats.total > 0 ? stats.done / stats.total : undefined;
-  const name = prettifySlug(slug);
-  const range = slugRange(slug);
   const pct = value === undefined ? undefined : Math.round(value * 100);
   const stepsLabel = stats && stats.total > 0 ? `${stats.done}/${stats.total} steps` : undefined;
   const titleBits = [name, offRoute ? "Balanced" : undefined, pct !== undefined ? `${pct}%` : undefined].filter(Boolean);
@@ -45,7 +45,7 @@ const GuideRow = memo(function GuideRow({
         }
       >
         {current && !collapsed && <span aria-hidden="true" className="absolute -left-[11px] top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full border-2 border-canvas bg-bronze-400 shadow-[0_0_10px_rgba(255,209,0,0.7)]" />}
-        <ProgressRing value={value} size={collapsed ? 30 : 26} label={collapsed ? (range ? String(range[0]) : "") : undefined} />
+        <ProgressRing value={value} size={collapsed ? 30 : 26} label={collapsed ? "" : undefined} />
         {!collapsed && (
           <span className="min-w-0 flex-1">
             <span className="flex items-center gap-1.5">
@@ -174,6 +174,7 @@ export function Timeline({ collapsed = false, onToggleCollapsed }: { collapsed?:
                       <GuideRow
                         key={slug}
                         slug={slug}
+                        name={guideTitleOf(indexRes.data, slug)}
                         collapsed={collapsed}
                         current={slug === currentSlug}
                         offRoute={routeStyle === "speedrun" && isBalancedOnlyPack(slug)}

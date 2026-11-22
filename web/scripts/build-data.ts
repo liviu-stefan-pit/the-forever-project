@@ -200,13 +200,13 @@ export function enforceRules(
     if (bad.length) {
       stripped++;
       warnings.push(`${packId}: stripped step ${s.id} (excluded quest ${bad.join(", ")})`);
-      for (const q of bad) issues.push({ severity: "warn", guide: packId, questId: q, msg: `Step ${s.id} removed: quest ${q} is excluded from every route (low-confidence WoW Forever quest).` });
+      for (const q of bad) issues.push({ severity: "warn", guide: packId, questId: q, msg: ISSUE_LEFT_OUT });
       continue;
     }
     if (ids.some(isForever) && s.verified !== false) {
       forced++;
       warnings.push(`${packId}: step ${s.id} uses a Forever quest; verified forced to false`);
-      issues.push({ severity: "info", guide: packId, step: s.id, msg: "Uses a WoW Forever quest; marked unverified until checked in game." });
+      issues.push({ severity: "info", guide: packId, step: s.id, msg: ISSUE_UNCHECKED });
       out.push({ ...s, verified: false });
       continue;
     }
@@ -380,6 +380,25 @@ function sectionsFor(packId: string, steps: Step[]): Section[] {
   return sections;
 }
 
+/** Route notes players read on the dashboard and Overview: plain words, no step or quest ids. */
+export const ISSUE_UNCHECKED = "New WoW Forever quest, not checked in game yet. Names, spots or counts may be slightly off.";
+export const ISSUE_LEFT_OUT = "Left out of the route: a new WoW Forever quest we could not confirm yet.";
+
+/**
+ * Reader-facing guide title. Pack titles carry authoring hints ("(Horde)", "13-60", "(dungeons toggle)")
+ * the site already shows elsewhere: every page is in the Horde section, and headers and the timeline show
+ * the level range. "Durotar 1-12 (Horde)" → "Durotar", "Horde dungeon quests 13-60 (dungeons toggle)" → "Dungeon quests".
+ */
+export function guideTitle(raw: string): string {
+  const t = raw
+    .replace(/\s*\((?:[^)]*\bhorde\b[^)]*|[^)]*\btoggle\b[^)]*)\)/gi, "")
+    .replace(/^\s*horde\s+/i, "")
+    .replace(/\s+\d+\s*[-–]\s*\d+\s*$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return t ? t.charAt(0).toUpperCase() + t.slice(1) : raw.trim();
+}
+
 export function packToGuide(pack: RoutePack, steps: Step[]): Guide {
   const numbered = steps.map((s, i) => ({ ...s, n: i + 1 }));
   const sections = sectionsFor(pack.id ?? "pack", numbered);
@@ -388,7 +407,7 @@ export function packToGuide(pack: RoutePack, steps: Step[]): Guide {
   return {
     slug: pack.id ?? "pack",
     name: pack.title ?? pack.id ?? "pack",
-    displayName: pack.title ?? pack.id ?? "pack",
+    displayName: guideTitle(pack.title ?? pack.id ?? "pack"),
     subgroup: isDungeonPack(pack, numbered) ? "Dungeons" : "Leveling",
     minLevel: min,
     maxLevel: max,
@@ -420,6 +439,7 @@ const START_ZONES: Record<string, string[]> = {
   "Red Cloud Mesa": ["Tauren"],
   "Tirisfal Glades": ["Undead"],
   "Deathknell": ["Undead"],
+  "Zephras Isle": ["Skyborne"],
 };
 
 /** Distinct step-id prefixes for one guide. The slug is always first; other prefixes are sorted. */
@@ -496,8 +516,9 @@ export function guideIndexEntries(index: GuideIndex, guides: readonly Guide[]): 
   const entries: NonNullable<GuideIndex["entries"]> = [];
   for (const bracket of index.brackets) {
     for (const slug of bracket.guides) {
-      const stepIds = bySlug.get(slug)?.steps.map((s) => s.id) ?? [];
-      entries.push({ slug, stepIds, stepCount: stepIds.length });
+      const g = bySlug.get(slug);
+      const stepIds = g?.steps.map((s) => s.id) ?? [];
+      entries.push({ slug, ...(g ? { title: g.displayName } : {}), stepIds, stepCount: stepIds.length });
     }
   }
   return entries;
@@ -1309,6 +1330,8 @@ export function buildData(opts: BuildOptions): DataManifest {
   drop("quests.json");
   drop("tips_matrix.json");
   w("quest-steps.json", questSteps);
+  // A quest left out of the route is not in quests-min.json: carry its name so the note can show it.
+  for (const it of issues) if (!it.step && it.questId != null) it.questName ??= db.quests[String(it.questId)]?.name;
   w("insights.json", buildInsights(issues));
   w("zones.json", zones);
   w("class_professions.json", classProf);

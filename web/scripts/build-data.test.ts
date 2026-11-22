@@ -5,6 +5,9 @@ import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import type { Guide, GuideIndex, Insights, RoutePack, Step, ZoneInfo } from "../../contracts/schema.ts";
 import {
+  guideTitle,
+  ISSUE_LEFT_OUT,
+  ISSUE_UNCHECKED,
   applyMapAssets,
   loadMapZoneAssets,
   attachIdPrefixes,
@@ -82,6 +85,17 @@ function writeResearch(packs: Record<string, unknown>, extra: (dir: string) => v
 }
 
 const read = <T>(out: string, rel: string) => JSON.parse(readFileSync(join(out, rel), "utf-8")) as T;
+
+describe("guideTitle", () => {
+  it("drops faction tags, toggle hints and level ranges the UI already shows", () => {
+    expect(guideTitle("Durotar 1-12 (Horde)")).toBe("Durotar");
+    expect(guideTitle("The Barrens 12-20 (Horde)")).toBe("The Barrens");
+    expect(guideTitle("Zephras Isle 1-12 (Horde Skyborne)")).toBe("Zephras Isle");
+    expect(guideTitle("Horde dungeon quests 13-60 (dungeons toggle)")).toBe("Dungeon quests");
+    expect(guideTitle("The Barrens (first half)")).toBe("The Barrens (first half)");
+    expect(guideTitle("Mount Hyjal to 60")).toBe("Mount Hyjal to 60");
+  });
+});
 
 describe("discoverPacks", () => {
   it("finds route-v2 packs by content and skips tools/, catalog/ and other JSON", () => {
@@ -337,7 +351,7 @@ describe("buildData", () => {
       { label: "1-12", guides: ["horde-1-12"], idPrefixes: { "horde-1-12": ["horde-1-12", "p"] } },
     ]);
     expect(idx.starts).toEqual([{ race: ["Orc", "Troll"], label: "Durotar", firstGuide: "horde-1-12" }]);
-    expect(idx.entries).toEqual([{ slug: "horde-1-12", stepIds: ["p:1", "p:3", "p:4"], stepCount: 3 }]);
+    expect(idx.entries).toEqual([{ slug: "horde-1-12", title: "Horde-1-12", stepIds: ["p:1", "p:3", "p:4"], stepCount: 3 }]);
 
     const quests = read<{ id: number; start: { name: string; at?: unknown }[]; xp?: number }[]>(out, "quests-min.json");
     expect(quests.map((q) => q.id)).toEqual([100, 95000]);
@@ -358,8 +372,8 @@ describe("buildData", () => {
     expect(ins.added).toEqual({});
     expect(ins.nearMisses).toEqual({});
     expect(ins.issues).toEqual([
-      { severity: "warn", guide: "horde-1-12", questId: 79953, msg: expect.stringContaining("Step p:2 removed") },
-      { severity: "info", guide: "horde-1-12", step: "p:3", msg: expect.stringContaining("unverified") },
+      { severity: "warn", guide: "horde-1-12", questId: 79953, questName: "Excluded book", msg: ISSUE_LEFT_OUT },
+      { severity: "info", guide: "horde-1-12", step: "p:3", msg: ISSUE_UNCHECKED },
     ]);
   });
 

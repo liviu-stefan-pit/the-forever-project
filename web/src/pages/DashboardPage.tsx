@@ -12,7 +12,7 @@ import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
 import { Icon } from "../components/ui/Icon";
 import { ErrorState, Skeleton } from "../components/ui/States";
 import { publicAsset, type ZonePoint } from "../components/map/route";
-import { dataOf, useGuide, useGuideIndex, useInsights, useQuests, useZones } from "../data/hooks";
+import { dataOf, useGuide, useGuideIndex, useGuideTitle, useInsights, useQuests, useZones } from "../data/hooks";
 import type { Guide, Step, StepSim } from "../data/schema";
 import type { QuestMap } from "../data/loader";
 import { actionChip } from "../lib/actions";
@@ -27,7 +27,6 @@ import {
   type StopGroup,
 } from "../lib/dashboard";
 import { pickNextOpenSteps } from "../lib/guideList";
-import { prettifySlug } from "../lib/levels";
 import { cardTips, type TipContext } from "../lib/stepExtras";
 import { stepSpot } from "../lib/stepPoints";
 import { useRecomputedSim } from "../lib/xp/useRecomputedSim";
@@ -157,6 +156,7 @@ function LevelBadge({ level }: { level: number }) {
 }
 
 function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests: QuestMap }) {
+  const guideTitle = useGuideTitle();
   const progress = useProgress();
   const active = useProfileApi().active;
   const now = model.now;
@@ -166,7 +166,7 @@ function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests:
         <p className="font-semibold">This guide is done.</p>
         {model.nextGuide && (
           <Link to={`/guide/${model.nextGuide}`} className="mt-1 inline-block font-semibold text-bronze-400 hover:text-bronze-300">
-            On to {prettifySlug(model.nextGuide)} →
+            On to {guideTitle(model.nextGuide)} →
           </Link>
         )}
       </div>
@@ -275,6 +275,7 @@ function StopRow({ slug, stop, quests }: { slug: string; stop: StopGroup; quests
 }
 
 function Goals({ model }: { model: Model }) {
+  const guideTitle = useGuideTitle();
   const next = model.milestones[0];
   const rest = model.milestones.slice(1);
   const lvl = Math.floor(model.levelNow);
@@ -327,7 +328,7 @@ function Goals({ model }: { model: Model }) {
           <span className="text-sm text-muted">
             Then:{" "}
             <Link to={`/guide/${model.nextGuide}`} className="font-semibold text-bronze-400 hover:text-bronze-300">
-              {prettifySlug(model.nextGuide)} →
+              {guideTitle(model.nextGuide)} →
             </Link>
           </span>
         )}
@@ -336,19 +337,22 @@ function Goals({ model }: { model: Model }) {
   );
 }
 
-function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upcoming: ReadonlySet<string> }) {
+function NoteLine({ slug, note, upcoming, questName }: { slug: string; note: NoteGroup; upcoming: ReadonlySet<string>; questName: (id: number) => string | undefined }) {
   const [open, setOpen] = useState(false);
   const soon = note.steps.filter((s) => upcoming.has(s.id)).length;
   const counts = note.steps.length
     ? `${note.steps.length} step${note.steps.length === 1 ? "" : "s"}${note.quests.length > 1 ? `, ${note.quests.length} quests` : ""}`
-    : undefined;
+    : note.questIds.length
+      ? `${note.questIds.length} quest${note.questIds.length === 1 ? "" : "s"}`
+      : undefined;
+  const expandable = note.quests.length > 0 || note.questIds.length > 0;
   return (
     <li className="border-t border-bronze-900 first:border-t-0">
       <button
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        disabled={!note.quests.length}
+        disabled={!expandable}
         className="flex min-h-touch w-full items-center gap-3 px-4 py-2.5 text-left text-sm text-ink enabled:hover:bg-canvas/40"
       >
         <Icon name={note.severity === "warn" ? "alert" : "info"} className={`h-4 w-4 shrink-0 ${note.severity === "warn" ? "text-rt-warn" : "text-bronze-400"}`} />
@@ -357,7 +361,7 @@ function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upc
           {counts && <span className="text-muted"> · {counts}</span>}
           <span className={soon ? " text-rt-warn" : " text-muted"}>{soon ? ` · ${soon} in your next stops` : note.steps.length ? " · none in your next stops" : ""}</span>
         </span>
-        {note.quests.length > 0 && (
+        {expandable && (
           <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-bronze-400">
             {open ? "Hide" : "Show"}
             <Icon name="chevronDown" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
@@ -371,6 +375,13 @@ function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upc
               {q.name} ·{" "}
               <Link to={stepLink(slug, q.steps[0]!)} className="font-semibold text-bronze-400 hover:text-bronze-300">
                 {stepRange(q.steps)}
+              </Link>
+            </li>
+          ))}
+          {note.questIds.map((id) => (
+            <li key={`q${id}`} className="break-inside-avoid">
+              <Link to={`/quest/${id}`} className="font-semibold text-bronze-400 hover:text-bronze-300">
+                {questName(id) ?? note.questNames[id] ?? `Quest ${id}`}
               </Link>
             </li>
           ))}
@@ -389,6 +400,7 @@ export function DashboardPage() {
   const zones = dataOf(useZones());
   const progress = useProgress();
   const active = useProfileApi().active;
+  const guideTitle = useGuideTitle();
   const guide = pos.guide;
   const model = useDashboardModel(pos, guide, quests);
 
@@ -410,7 +422,7 @@ export function DashboardPage() {
   }
 
   const guideError = guideRes.status === "error" ? guideRes : null;
-  const guideName = guideError ? "Guide unavailable" : (guide?.displayName ?? (pos.guideSlug ? prettifySlug(pos.guideSlug) : ""));
+  const guideName = guideError ? "Guide unavailable" : (guide?.displayName ?? (pos.guideSlug ? guideTitle(pos.guideSlug) : ""));
   const added = pos.guideSlug ? (insights?.added[pos.guideSlug] ?? []) : [];
   const started = !!progress.current;
   const zone = model?.heroMapId !== undefined ? zones?.get(model.heroMapId) : undefined;
@@ -529,7 +541,7 @@ export function DashboardPage() {
               </li>
             ))}
             {notes.map((n) => (
-              <NoteLine key={n.msg} slug={guide.slug} note={n} upcoming={model?.upcomingIds ?? new Set()} />
+              <NoteLine key={n.msg} slug={guide.slug} note={n} upcoming={model?.upcomingIds ?? new Set()} questName={(id) => quests?.get(id)?.name} />
             ))}
           </ul>
         </section>

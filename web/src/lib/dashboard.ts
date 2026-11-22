@@ -113,6 +113,10 @@ export interface NoteGroup {
   steps: Step[];
   /** Distinct quest names over those steps, each with its step numbers. */
   quests: { name: string; steps: Step[] }[];
+  /** Quests named by notes with no step in this guide (a quest left out of the route). */
+  questIds: number[];
+  /** Names the build carried for those quests. */
+  questNames: Record<number, string>;
 }
 
 /** Fold route issues sharing a message into one line. Issues whose step is not in the guide are dropped. */
@@ -127,11 +131,13 @@ export function groupNotes(issues: Insights["issues"], guideSteps: readonly Step
     const step = it.step ? byId.get(it.step) : undefined;
     let g = groups.get(it.msg);
     if (!g) {
-      g = { msg: it.msg, severity: it.severity, steps: [], quests: [] };
+      g = { msg: it.msg, severity: it.severity, steps: [], quests: [], questIds: [], questNames: {} };
       groups.set(it.msg, g);
     }
     if (it.severity === "warn") g.severity = "warn";
     if (step && !g.steps.includes(step)) g.steps.push(step);
+    if (!it.step && it.questId != null && !g.questIds.includes(it.questId)) g.questIds.push(it.questId);
+    if (it.questId != null && it.questName) g.questNames[it.questId] = it.questName;
   }
   for (const g of groups.values()) {
     g.steps.sort((a, b) => a.n - b.n);

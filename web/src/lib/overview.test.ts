@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import type { GuideIndex, Insights } from "../data/schema";
-import { issueHref, overviewIssues, overviewZoneMatch } from "./overview";
+import { groupOverviewNotes, issueHref, overviewIssues, overviewZoneMatch } from "./overview";
 
 const insights = JSON.parse(
   readFileSync(fileURLToPath(new URL("../../../contracts/fixtures/insights.json", import.meta.url)), "utf-8"),
@@ -36,5 +36,24 @@ describe("overviewZoneMatch", () => {
     expect(overviewZoneMatch(slug, ["The Barrens"], "Durotar")).toBe(slug.includes("durotar"));
     expect(overviewZoneMatch("12-17-the-barrens", undefined, "Barrens")).toBe(true);
     expect(overviewZoneMatch(slug, ["Durotar"], "")).toBe(true);
+  });
+});
+
+describe("groupOverviewNotes", () => {
+  it("folds per-step notes into one entry per message, with guides and step-less quests", () => {
+    const notes = groupOverviewNotes([
+      { severity: "info", guide: "durotar-1-12", step: "d:1", msg: "Unchecked" },
+      { severity: "info", guide: "durotar-1-12", step: "d:2", msg: "Unchecked" },
+      { severity: "info", guide: "barrens-12-20", step: "b:9", msg: "Unchecked" },
+      { severity: "warn", guide: "horde-20-40-03-x", questId: 79953, questName: "A Ludite's Guide", msg: "Left out" },
+      { severity: "warn", guide: "horde-20-40-03-x", questId: 79953, msg: "Left out" },
+    ]);
+    expect(notes.map((n) => n.msg)).toEqual(["Left out", "Unchecked"]);
+    expect(notes[0]!.questIds).toEqual([79953]);
+    expect(notes[0]!.questNames).toEqual({ 79953: "A Ludite's Guide" });
+    expect(notes[1]!.guides).toEqual([
+      { slug: "durotar-1-12", count: 2, firstStep: "d:1" },
+      { slug: "barrens-12-20", count: 1, firstStep: "b:9" },
+    ]);
   });
 });
