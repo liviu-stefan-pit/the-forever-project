@@ -1,0 +1,148 @@
+{
+  "asOf": "2026-11-22",
+  "note": "Gold figures are player and site estimates from the first month of WoW Forever. Prices move every week; check the Auction House before you commit to a farm.",
+  "sources": [
+    { "id": "cc-prof", "url": "https://conquestcapped.com/guides/wow-forever/wow-forever-best-professions/", "label": "ConquestCapped: WoW Forever best professions" },
+    { "id": "cc-bank", "url": "https://conquestcapped.com/guides/wow-forever/wow-forever-bank-alt/", "label": "ConquestCapped: bank alt setup" },
+    { "id": "cc-bmah", "url": "https://conquestcapped.com/guides/wow-forever/wow-forever-black-market-auction-house/", "label": "ConquestCapped: Black Market overview" },
+    { "id": "cc-post", "url": "https://conquestcapped.com/guides/wow-forever/wow-forever-top-of-the-post/", "label": "ConquestCapped: Top of the Post (Hyjal Postal Satchel)" },
+    { "id": "iv-riding", "url": "https://www.icy-veins.com/wow-forever/news/two-wow-forever-classes-can-skip-the-100-gold-riding-cost/", "label": "Icy Veins: two classes skip the 100g riding cost" },
+    { "id": "iv-spells", "url": "https://www.icy-veins.com/wow-forever/news/stop-wasting-gold-on-spells-and-crafting-before-level-40-in-wow-forever/", "label": "Icy Veins: stop spending on spells and crafting before 40" },
+    { "id": "iv-silver", "url": "https://www.icy-veins.com/wow-forever/news/stop-wasting-silver-early-in-wow-forever-if-you-want-your-level-40-mount/", "label": "Icy Veins: save silver early for the level 40 mount" },
+    { "id": "epic", "url": "https://epiccarry.com/blogs/wow-forever-gold-farming/", "label": "EpicCarry: WoW Forever gold farming (Nov 2026)" },
+    { "id": "tv", "url": "https://twistedvoxel.com/gold-in-wow-forevers-first-month-what-the-auction-house-pays-before-the-first-raids/", "label": "TwistedVoxel: what the Auction House pays in the first month" },
+    { "id": "blizz-hotfix", "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026", "label": "Blizzard: WoW Forever hotfixes, November 20 2026" },
+    { "id": "instant", "url": "https://instant-carry.com/blog/wow-forever-dungeon-limit-reduced-blizzard-nerfs-solo-gold-farming", "label": "Instant-Carry: dungeon limit cut to 5 per hour" },
+    { "id": "method-bags", "url": "https://www.method.gg/wow-forever/best-early-bags-in-wow-forever-crafted-bags-quest-bags-vendor-bags-and-more", "label": "Method: early bags in WoW Forever" },
+    { "id": "ts-routes", "url": "https://timesaver.gg/blog/wow-forever-herbalism-mining-routes", "label": "Timesaver: Mining and Herbalism routes" }
+  ],
+  "milestones": [
+    {
+      "id": "riding40",
+      "level": 40,
+      "label": "Riding and mount at 40",
+      "gold": 100,
+      "honoredGold": 90,
+      "freeFor": ["Paladin", "Warlock"],
+      "text": "Apprentice Riding comes with a racial mount. Being Honored with the faction you buy from takes 10% off. Paladins and Warlocks get theirs from a class quest instead.",
+      "sources": ["iv-riding", "cc-prof"]
+    },
+    {
+      "id": "dualspec",
+      "level": 40,
+      "label": "Dual Specialization",
+      "gold": 50,
+      "text": "Bought from your class trainer. Wait until the mount is paid for.",
+      "sources": ["cc-prof"]
+    },
+    {
+      "id": "riding60",
+      "level": 60,
+      "label": "Fast riding and swift mount at 60",
+      "gold": 1080,
+      "honoredGold": 1080,
+      "budgetHigh": 1200,
+      "text": "Journeyman Riding is 1,000g (900g at Honored). Some sites list the swift mount as a separate purchase, so plan for about 1,080 to 1,200g in total.",
+      "sources": ["cc-prof", "epic"]
+    }
+  ],
+  "pace": [
+    { "level": 30, "gold": 20, "text": "About 20g saved by level 30 keeps the level 40 mount in reach without stopping to farm.", "sources": ["iv-silver"] },
+    { "level": 40, "gold": 100, "text": "90 to 100g at 40 pays for riding the moment you ding.", "sources": ["iv-riding"] }
+  ],
+  "brackets": [
+    {
+      "levels": [1, 15],
+      "gph": "0.5–2.5",
+      "focus": "Save silver and set up, do not farm yet.",
+      "tips": [
+        "Take two gathering professions now (Skinning plus Herbalism or Mining) and leave crafting until 35 to 40.",
+        "Train only the spells you actually press. Skipping filler ranks before 40 saves about 30g.",
+        "Park a level 1 bank alt in Orgrimmar or Thunder Bluff. Mail it cloth, herbs, ore, spare greens and empty Waylaid Crates.",
+        "Never vendor an empty Waylaid Crate: they sell on the Auction House.",
+        "Buy or have made 8 to 10 slot bags early so long quest loops do not end in a bag-full trip."
+      ],
+      "spots": [
+        { "name": "Kolkar centaurs, Lushwater Oasis", "zone": "The Barrens", "levels": [13, 17], "text": "Linen Cloth while you quest the Oasis." },
+        { "name": "Zephras Isle copper", "zone": "Zephras Isle", "levels": [10, 15], "text": "The densest Copper veins around, if you are a miner." }
+      ],
+      "sources": ["iv-spells", "cc-bank", "method-bags", "cc-prof"]
+    },
+    {
+      "levels": [15, 30],
+      "gph": "2.5–8",
+      "focus": "Quest, gather on the way, run each dungeon once with its quests.",
+      "tips": [
+        "Collect every quest for a dungeon and run it once. Repeating low dungeons without quests pays poorly.",
+        "Aim for about 20g in the bank by level 30."
+      ],
+      "spots": [
+        { "name": "Bael'dun Mine", "zone": "The Barrens (south)", "levels": [22, 24], "text": "Tin, Copper and Silver inside the mine while you clear weak mobs." },
+        { "name": "Hillsbrad farmers and farmhands", "zone": "Hillsbrad Foothills", "levels": [20, 26], "text": "Steady Wool Cloth while you quest there." },
+        { "name": "Harpy cave", "zone": "Thousand Needles", "levels": [27, 32], "text": "Wool, Silk, coin and Vibrant Plumes that vendor for about 8s each." }
+      ],
+      "sources": ["epic", "cc-prof"]
+    },
+    {
+      "levels": [30, 40],
+      "gph": "8–18",
+      "focus": "Fund the level 40 mount.",
+      "tips": [
+        "Bank 90 to 100g by 40 and hold off on Dual Spec until the mount is paid.",
+        "Artisan gathering (225 to 300) opens at 35 for about 5g."
+      ],
+      "spots": [
+        { "name": "Elemental Exiles", "zone": "Arathi Highlands", "levels": [38, 39], "text": "The best farm without professions. Burning Exiles in the north-west first, Thundering Exiles in the centre next. Skip the Rumbling Exiles in the south." },
+        { "name": "Drywhisker kobolds", "zone": "Arathi Highlands", "levels": [33, 37], "text": "Silk Cloth, east of Hammerfall." },
+        { "name": "Sea-floor Giant Clams", "zone": "Stranglethorn Vale", "levels": [30, 40], "text": "Blue Pearls with no combat. They are wanted in sets of 9 for a Badlands quest." },
+        { "name": "Shadow panthers", "zone": "Swamp of Sorrows", "levels": [36, 40], "text": "Vendor tails on top of Skinning." }
+      ],
+      "sources": ["epic", "cc-prof", "tv"]
+    },
+    {
+      "levels": [40, 50],
+      "gph": "20–42",
+      "focus": "The best leveling gold. Questing alone pays about 10 to 20g an hour.",
+      "tips": [
+        "Most quests from level 48 up pay gold. Turn them in as you go instead of saving them for 60."
+      ],
+      "spots": [
+        { "name": "Surf Gliders, south shore", "zone": "Tanaris", "levels": [48, 50], "text": "The best open-world spot of the bracket, more so with Skinning and Mining. Leave the elite Giant Surf Gliders alone." },
+        { "name": "Owlbeasts", "zone": "The Hinterlands", "levels": [42, 47], "text": "Giant Eggs, Vibrant Plumes and Cured Ham Steak." },
+        { "name": "Rocs and Fire Rocs", "zone": "Tanaris", "levels": [41, 45], "text": "A safer Giant Egg loop north of Gadgetzan." },
+        { "name": "Gordunni ogres", "zone": "Feralas", "levels": [40, 47], "text": "Mageweave Cloth for bags." }
+      ],
+      "sources": ["epic", "tv", "cc-prof"]
+    },
+    {
+      "levels": [50, 60],
+      "gph": "18–35",
+      "focus": "Start the 60 riding fund.",
+      "tips": [
+        "At level 56, do Top of the Post for Sebelia at the Mount Hyjal summit camp (70.8, 51.4). It gives a free 18-slot bag and a useful clasp."
+      ],
+      "spots": [
+        { "name": "Diseased Black Bears", "zone": "Western Plaguelands", "levels": [51, 52], "text": "The best pre-60 loop with Skinning." },
+        { "name": "Scorching Elementals", "zone": "Un'Goro Crater", "levels": [53, 54], "text": "Essence of Fire and Elemental Fire without any profession." },
+        { "name": "Firetail Scorpids", "zone": "Burning Steppes", "levels": [56, 57], "text": "Raw drops plus good skins." },
+        { "name": "Frostsabers", "zone": "Winterspring", "levels": [56, 60], "text": "Frostsaber Leather with Skinning, north of Everlook." }
+      ],
+      "sources": ["cc-post", "epic", "tv"]
+    }
+  ],
+  "habits": [
+    { "text": "On the Auction House, match the lowest price for stackable goods instead of undercutting by 1 copper. The newest listing at the lowest price sells first.", "sources": ["tv"] },
+    { "text": "If the Auction House price minus the 5% cut is below the vendor price, vendor it.", "sources": ["tv"] },
+    { "text": "Never pay more than 50g on the Auction House for Black Lotus, Arcane Crystal and other top materials: the Black Market vendor in Powderfuse Port sells them at that price.", "sources": ["cc-bmah"] },
+    { "text": "Instances are capped at 5 entries an hour, so plan dungeon farms around about 12 minutes a run.", "sources": ["blizz-hotfix", "instant"] }
+  ],
+  "avoid": [
+    { "name": "Blackmaw Hold Devotee AoE", "text": "Hotfixed to drop nothing. Repeat farmers lost gold or were suspended." },
+    { "name": "Zul'Farrak graveyard zombies", "text": "Hotfixed to almost no copper or XP." },
+    { "name": "Scarlet Monastery rogue chest loop", "text": "The solo chests were removed." },
+    { "name": "Uldaman back-entrance boss resets", "text": "Hotfixed to drop nothing." },
+    { "name": "Vendor crafting shuffles", "text": "Vendor prices for wands, oils, elixirs, bandages and bars were cut." },
+    { "name": "Krol'dok Stronghold cliff-evade AoE", "text": "Exploits mob pathing; a likely target for economy locks." }
+  ],
+  "avoidSources": ["epic", "instant", "tv"]
+}

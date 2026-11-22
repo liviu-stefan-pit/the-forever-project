@@ -170,7 +170,7 @@ function ClassChip({ className = "" }: { className?: string }) {
     );
   }
   return (
-    <div ref={ref} className={`relative min-w-0 shrink ${className}`}>
+    <div ref={ref} className={`relative shrink-0 ${className}`}>
       <ClassChipButton ref={btnRef} cls={p.cls} role={p.role} open={open} onClick={toggle} />
       {open && (
         <div role="dialog" aria-label="Class and role" style={{ top: pos.top, left: pos.left }} className="wow-frame panel-animate fixed z-50 w-64 space-y-3 p-3 shadow-glow">
@@ -233,15 +233,15 @@ export function GuideXpMeter({
 }) {
   const pct = total > 0 ? (earned / total) * 100 : 0;
   return (
-    <div className={`flex min-w-0 shrink-0 flex-col justify-center gap-0.5 ${className}`} title={title}>
-      <div className="flex items-baseline justify-end gap-1.5 whitespace-nowrap text-[10px] leading-none">
-        <span className="font-semibold uppercase tracking-wider text-bronze-500/80">{bracket}</span>
+    <div className={`flex min-w-0 shrink flex-col justify-center gap-0.5 ${className}`} title={title}>
+      <div className="flex items-baseline justify-end gap-1.5 overflow-hidden whitespace-nowrap text-[10px] leading-none">
+        <span className="hidden font-semibold uppercase tracking-wider text-bronze-500/80 min-[400px]:inline">{bracket}</span>
         <span className="tabular-nums font-semibold text-ink">
           {earned.toLocaleString("en-US")} / {total.toLocaleString("en-US")} XP
         </span>
       </div>
       <div
-        className="h-1 w-full min-w-[5.5rem] overflow-hidden rounded-full bg-stroke"
+        className="h-1 w-full min-w-[4rem] overflow-hidden rounded-full bg-stroke"
         role="progressbar"
         aria-label="Guide XP"
         aria-valuemin={0}
@@ -438,7 +438,7 @@ export function TopBar() {
             Sync
           </button>
           <span className="hidden min-w-0 max-w-[15rem] text-[11px] leading-tight text-muted lg:line-clamp-2" title={sync.title} aria-live="polite">
-            {sync.statusText}
+            {sync.barText}
           </span>
         </div>
         )}
@@ -474,7 +474,7 @@ export function TopBar() {
         <GuideXpBar className="ml-auto" />
         {sync.available && (
           <span className="hidden min-w-0 flex-1 truncate text-xs text-muted sm:block lg:hidden" title={sync.title}>
-            {sync.statusText}
+            {sync.barText}
           </span>
         )}
       </div>

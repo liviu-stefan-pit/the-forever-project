@@ -455,7 +455,15 @@ function StepCardImpl({
 
           {!collapsed && (
             <>
-              <ActionChips actions={step.actions} questName={questName} lineVisible={lineVisible} profile={tipCtx?.profile} quests={tipCtx?.quests} stepId={step.id} />
+              <ActionChips
+                actions={step.actions}
+                questName={questName}
+                lineVisible={lineVisible}
+                profile={tipCtx?.profile}
+                quests={tipCtx?.quests}
+                stepId={step.id}
+                stepText={step.text.map((l) => l.segments.map((g) => g.t).join("")).join(" ")}
+              />
               <ConditionBadges conditions={step.conditions} stepId={step.id} />
             </>
           )}

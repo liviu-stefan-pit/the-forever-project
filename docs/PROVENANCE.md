@@ -22,6 +22,7 @@ The `data/` and `web/public/data/` folders are build output and are git-ignored.
 | 40-60 route pack, gold, pre-BiS | `research/horde-40-60/*` | Built by `research/horde-40-60/tools/*` from content/questie-db plus cited Wowhead pages (1) |
 | Dungeon chains | `research/dungeons/*` | Built by `research/dungeons/tools/*` from QuestieDB (`dump.lua`, `dumpfv.lua`) plus cited pages (1) |
 | Professions, tips, trainers | `research/professions/*` | Written by Sentinel and Vulkan, with NPC coordinates from QuestieDB and cited sources |
+| Gold plan | `research/gold/gold-plan.json` | Written for this project from a player research summary (22 Nov 2026) of public WoW Forever gold guides; every item cites its URLs. Figures are estimates and were not re-checked in game |
 | Route schema and example | `contracts/route-v2.schema.json`, `contracts/fixtures/route-v2/example.json` | Written for this project; the example uses placeholder ids and coordinates |
 | Zone fixture | `contracts/fixtures/zones.json` | Durotar `bounds` are the game's own world-map bounds (the same values HereBeDragons uses: left -1962.5, top 1808.33, 5287.5 × 3525). They are not a fit from guide lines |
 | Quest fixture | `contracts/fixtures/quests.json` | QuestieDB records: all 24 giver and 29 objective points match content/questie-db spawns (2) |

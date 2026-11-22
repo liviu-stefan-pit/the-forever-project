@@ -15,6 +15,7 @@ import {
   loadQuestsGeo,
   loadQuestSteps,
   loadTrainers,
+  loadGoldPlan,
   loadZones,
   type TrainerTierRow,
   peek,
@@ -27,6 +28,7 @@ import {
 } from "./loader";
 import type { ClassProfessionsFile, Guide, GuideIndex, Insights } from "./schema";
 import { prettifySlug } from "../lib/levels";
+import type { GoldPlan } from "../lib/goldPlan";
 
 export type Resource<T> =
   | { status: "loading" }
@@ -90,6 +92,7 @@ export const useQuestSteps = (): Resource<QuestStepsMap> => useResource(keys.que
 export const useZones = (): Resource<ZoneMap> => useResource(keys.zones, loadZones);
 export const useInsights = (): Resource<Insights> => useResource(keys.insights, loadInsights);
 export const useClassProfessions = (): Resource<ClassProfessionsFile> => useResource(keys.classProfessions, loadClassProfessions);
+export const useGoldPlan = (): Resource<GoldPlan | null> => useResource(keys.goldPlan, loadGoldPlan);
 export const useTrainerTiers = (): Resource<TrainerTierRow[]> => useResource(keys.trainers, loadTrainers);
 
 /** Data or undefined, for optional enrichments (quest names, zone info) that must not block rendering. */

@@ -5,6 +5,9 @@
  */
 import { useMemo, useState } from "react";
 import { Link } from "react-router";
+import { GoldGoal } from "../components/dashboard/GoldGoal";
+import { QuickStart } from "../components/dashboard/QuickStart";
+import { StartHere } from "../components/dashboard/StartHere";
 import { RouteMap } from "../components/dashboard/RouteMap";
 import { TONE } from "../components/step/ActionChips";
 import { RichLine } from "../components/step/RichLine";
@@ -29,6 +32,7 @@ import {
 import { pickNextOpenSteps } from "../lib/guideList";
 import { cardTips, type TipContext } from "../lib/stepExtras";
 import { stepSpot } from "../lib/stepPoints";
+import { fmtDays, fmtPlayTime, minutesToSixty } from "../lib/timeEstimate";
 import { useRecomputedSim } from "../lib/xp/useRecomputedSim";
 import { useProfileApi } from "../state/profile";
 import { useProgress } from "../state/progress";
@@ -138,6 +142,7 @@ function useDashboardModel(pos: RoutePosition, guide: Guide | undefined, quests:
       hasSim,
       milestones: levelMilestones(open, simOf, 4),
       finish: finishLevel(visible, simOf),
+      fraction: now ? Math.max(0, visible.indexOf(now)) / Math.max(1, visible.length) : 1,
       lastN: guide.steps[guide.steps.length - 1]?.n ?? guide.steps.length,
       upcomingIds,
       nextGuide: guide.nextByRoute?.[route] ?? guide.next,
@@ -274,7 +279,26 @@ function StopRow({ slug, stop, quests }: { slug: string; stop: StopGroup; quests
   );
 }
 
-function Goals({ model }: { model: Model }) {
+function TimeLeft({ slug, fraction }: { slug: string; fraction: number }) {
+  const index = dataOf(useGuideIndex());
+  const route = useProgress().routeStyle;
+  if (!index?.entries) return null;
+  const left = minutesToSixty(index.entries, slug, fraction, route);
+  if (left === undefined) return null;
+  return (
+    <div className="flex flex-col gap-1 rounded-sm border border-bronze-900 bg-canvas/50 px-3.5 py-3">
+      <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-bronze-400">Time to 60</span>
+      <span className="text-ink">
+        About <strong>{fmtPlayTime(left)}</strong> played on {route === "speedrun" ? "Speedrun" : "Balanced"}
+      </span>
+      <span className="text-xs text-muted">
+        {fmtDays(left, 2)} at 2 h a day, {fmtDays(left, 4)} at 4 h. Solo questing pace; dungeons, deaths and breaks add more.
+      </span>
+    </div>
+  );
+}
+
+function Goals({ model, slug }: { model: Model; slug: string }) {
   const guideTitle = useGuideTitle();
   const next = model.milestones[0];
   const rest = model.milestones.slice(1);
@@ -319,6 +343,8 @@ function Goals({ model }: { model: Model }) {
           ))}
         </ol>
       )}
+      <GoldGoal level={model.levelNow} />
+      <TimeLeft slug={slug} fraction={model.fraction} />
       <div className="flex flex-col gap-1 rounded-sm border border-bronze-900 bg-canvas/50 px-3.5 py-3">
         <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-bronze-400">Guide finish</span>
         <span className="text-ink">
@@ -463,17 +489,7 @@ export function DashboardPage() {
           ) : (
             <Skeleton className="h-40 w-full" />
           )}
-          {!active && (
-            <Link
-              to="/profile"
-              className="flex items-center gap-2.5 rounded-sm border border-dashed border-stroke px-3 py-2.5 text-[13px] leading-snug text-muted hover:border-bronze-500 hover:text-ink"
-            >
-              <Icon name="shield" className="h-4 w-4 shrink-0 text-bronze-400" />
-              <span>
-                <strong className="text-ink">Pick your class</strong> to get your class quests and tips on this route.
-              </span>
-            </Link>
-          )}
+          {active ? <StartHere defaultOpen={!started && (active.level ?? 1) > 1} /> : <QuickStart />}
         </div>
       </section>
 
@@ -520,8 +536,8 @@ export function DashboardPage() {
           )}
         </section>
 
-        {model && !guideError ? (
-          <Goals model={model} />
+        {model && guide && !guideError ? (
+          <Goals model={model} slug={guide.slug} />
         ) : (
           <section className="wow-frame p-5 lg:col-span-2" aria-label="Goals">
             {guideError ? <p className="text-sm text-muted">Goals appear once the guide loads.</p> : <Skeleton className="h-40 w-full" />}

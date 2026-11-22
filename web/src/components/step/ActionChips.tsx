@@ -33,7 +33,7 @@ export function FilterTag({ filter }: { filter: Filter | undefined }) {
   );
 }
 
-function Chip({ spec, stepId }: { spec: ChipSpec; stepId?: string }) {
+function Chip({ spec, stepId, echo = false }: { spec: ChipSpec; stepId?: string; echo?: boolean }) {
   const size = spec.secondary ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-xs";
   const strike = spec.unavailable ? "line-through opacity-70" : "";
   const cls = `inline-flex max-w-full items-center gap-1.5 rounded-sm border ${size} transition ${strike} ${TONE[spec.tone]}`;
@@ -41,7 +41,7 @@ function Chip({ spec, stepId }: { spec: ChipSpec; stepId?: string }) {
     <>
       <Icon name={spec.icon} className={spec.secondary ? "h-3 w-3 shrink-0" : "h-3.5 w-3.5 shrink-0"} strokeWidth={spec.icon === "exclaim" || spec.icon === "question" ? 3 : 2} />
       <span className="shrink-0 font-semibold">{spec.verb}</span>
-      {spec.text && <span className="min-w-0 truncate opacity-90">{spec.text}</span>}
+      {spec.text && <span className={`min-w-0 truncate opacity-90 ${echo ? "sr-only sm:not-sr-only" : ""}`}>{spec.text}</span>}
       {spec.unavailable && <span className="shrink-0 text-[10px] font-semibold uppercase no-underline">{spec.unavailable}</span>}
       {spec.count && <span className="shrink-0 tabular-nums opacity-80">{spec.count}</span>}
       {spec.badge && <span className="shrink-0 tabular-nums opacity-80">{spec.badge}</span>}
@@ -76,6 +76,13 @@ function Chip({ spec, stepId }: { spec: ChipSpec; stepId?: string }) {
 function WayChip({ way, label, filter }: { way: string; label: string; filter?: Filter }) {
   const [copied, setCopied] = useState(false);
   return (
+    <>
+    {/* Touch screens: copying /way is no use on the phone, but the coordinates are what you steer by in game. */}
+    <span className="hidden items-center gap-1.5 rounded-sm border border-stroke bg-canvas/50 px-2 py-0.5 font-mono text-[11px] text-ink touch:inline-flex">
+      <Icon name="pin" className="h-3 w-3 text-bronze-400" />
+      <span>{label}</span>
+      {filter && <FilterTag filter={filter} />}
+    </span>
     <button
       type="button"
       onClick={async () => {
@@ -103,6 +110,7 @@ function WayChip({ way, label, filter }: { way: string; label: string; filter?: 
         )}
       </span>
     </button>
+    </>
   );
 }
 
@@ -114,6 +122,7 @@ export function ActionChips({
   profile,
   quests,
   stepId,
+  stepText,
 }: {
   actions: readonly Action[];
   questName?: QuestNameLookup;
@@ -122,6 +131,8 @@ export function ActionChips({
   quests?: QuestLookup;
   /** Owning step. Quest chips set `step` to this id. */
   stepId?: string;
+  /** The step's own text. On phones a quest chip whose name the text already says shows just its verb. */
+  stepText?: string;
 }) {
   const shown = actions.filter((a) => lineVisible(a.filter));
   const chips = shown
@@ -148,7 +159,7 @@ export function ActionChips({
   return (
     <div className="flex flex-wrap items-center gap-1.5">
       {primary.map((c) => (
-        <Chip key={c.key} spec={c} stepId={stepId} />
+        <Chip key={c.key} spec={c} stepId={stepId} echo={!!stepText && !!c.text && !!c.to && stepText.toLowerCase().includes(c.text.toLowerCase())} />
       ))}
       {secondary.map((c) => (
         <Chip key={c.key} spec={c} stepId={stepId} />

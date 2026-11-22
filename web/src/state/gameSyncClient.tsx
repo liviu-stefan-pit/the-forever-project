@@ -56,6 +56,8 @@ export interface GameSyncUi {
   available: boolean;
   busy: boolean;
   statusText: string;
+  /** Status for the top bar: empty until a file is chosen (the button tooltip explains the first step). */
+  barText: string;
   title: string;
   sync: () => void;
   /** Characters in the last export read (name + realm), for linking a profile. */
@@ -370,6 +372,7 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     available: mode !== "none",
     busy,
     statusText,
+    barText: phase.phase === "no-file" ? "" : statusText,
     title,
     sync,
     characters,

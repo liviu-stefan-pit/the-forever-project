@@ -8,6 +8,7 @@
  * - A failed fetch is evicted from the cache so `retry` works.
  */
 import type { SearchDoc } from "../search/types";
+import type { GoldPlan } from "../lib/goldPlan";
 import { setStepPickQuestCatalog } from "../state/profileStore";
 import type { ClassProfessionsFile, Guide, GuideIndex, Insights, QuestDetail, QuestGeo, QuestInfo, QuestMin, ZoneInfo } from "./schema";
 
@@ -125,6 +126,7 @@ export const keys = {
   searchIndex: "search-index",
   classProfessions: "class-professions",
   trainers: "trainers",
+  goldPlan: "gold-plan",
   landing: "landing",
 } as const;
 
@@ -322,6 +324,21 @@ export interface TrainerTierRow {
   minLevel: number;
   minSkill: number;
   skillCap: number;
+}
+
+/** `gold-plan.json` (milestones, pace, where to earn). Optional: a 404 or `null` file is null. */
+export function loadGoldPlan(): Promise<GoldPlan | null> {
+  return cached(keys.goldPlan, async () => {
+    try {
+      const d = await fetchJson<GoldPlan | null>("gold-plan.json");
+      if (d === null) return null;
+      assert(Array.isArray(d?.milestones) && Array.isArray(d?.brackets), "gold-plan.json", "a gold plan");
+      return d;
+    } catch (e) {
+      if (e instanceof DataError && e.status === 404) return null;
+      throw e;
+    }
+  });
 }
 
 /** Slim `trainers.json` (profession tier caps). Optional: a 404 is an empty list. */
