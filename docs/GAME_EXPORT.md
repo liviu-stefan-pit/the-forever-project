@@ -65,13 +65,16 @@ The addon still only writes SavedVariables. WoW flushes that file on `/reload` o
 continuously while playing. Type `/gwe` (it also runs shortly after login) and then `/reload` or
 log out before the app can see new quests.
 
-While the guide is running with `npm run dev` or `npm run preview` from `web/`, the
-app reads `GuideWebExport.lua` from the WoW Forever WTF folder itself.
+In desktop Chrome or Edge (File System Access API), choose `GuideWebExport.lua` once under
+**Game sync → Choose file** on the Profile page. The browser keeps a handle to that file in the
+site's IndexedDB and reads it locally; nothing is uploaded. On startup, and when you press **Sync**
+in the top bar or **Sync now** on the Profile page, the app applies the export to the active
+profile. While the tab is visible it notices a newer file about every 8 seconds. After a browser
+restart Chrome may ask again: the status says "Click Sync…", and one click allows it. **Forget**
+drops the handle.
 
-The app first asks the local server whether the file exists and only then downloads it (no request
-for a missing file). On startup, and when you press **Sync** in the top bar or **Sync now** on the
-Profile page, it applies the export to the active profile. While the tab is visible it notices a
-newer file about every 8 seconds.
+Firefox, Safari and mobile browsers have no File System Access API: the Sync button is hidden there
+and **Import GuideWebExport.lua** on the Profile page does the same one-off.
 
 **Which character.** A profile follows one in-game character, identified by **name and realm**
 (`Profile.character`).
@@ -97,14 +100,6 @@ newer file about every 8 seconds.
   doesn't touch skills, gold or gear.
 
 The Profile page shows a plain readout of the synced fields and the current quest log.
-
-A static open of the production build has no `/api/game-sync` endpoint, so automatic sync does not
-run. The Profile page file upload still works.
-
-The server looks at the repo-root `config.local.json` keys `gwe_saved_variables` or `wow_root`,
-otherwise `C:\Program Files (x86)\World of Warcraft\_forever_\WTF\Account\*\SavedVariables\GuideWebExport.lua`
-(newest mtime). `WOW_FOREVER_ROOT` overrides the root. The server never accepts a path from the
-browser and never writes into the WoW folder.
 
 ## Saved data format (schema 4)
 

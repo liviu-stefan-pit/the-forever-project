@@ -96,7 +96,7 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
       </h2>
       {!sync.available ? (
         <p className="mt-1 text-sm text-muted" data-testid="game-sync-unavailable">
-          One-click sync needs the local app or a desktop Chrome / Edge browser. Here, use <strong className="text-ink">Import GuideWebExport.lua</strong>{" "}
+          One-click sync needs desktop Chrome or Edge. In this browser, use <strong className="text-ink">Import GuideWebExport.lua</strong>{" "}
           below; you can get the addon on the{" "}
           <Link to="/addons" className="text-bronze-400 hover:text-bronze-300">
             Addons

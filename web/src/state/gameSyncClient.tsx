@@ -13,42 +13,33 @@ import {
   type GameFileHandle,
 } from "./gameFileHandle";
 
-const STATUS_URL = "/api/game-sync/status";
-const FILE_URL = "/api/game-sync";
 const POLL_MS = 8000;
 export const GAME_FILE_REMINDER =
   "WoW writes the SavedVariables file (GuideWebExport.lua) only on /reload or logout, so type /reload in game before you press Sync.";
 
 export const GAME_SYNC_UNAVAILABLE =
-  "Automatic sync needs the local app. Import GuideWebExport.lua on the Profile page instead.";
+  "One-click sync needs desktop Chrome or Edge. Import GuideWebExport.lua on the Profile page instead.";
 
 export type GameSyncPhase =
   | { phase: "idle" }
   | { phase: "syncing" }
-  | { phase: "not-found" }
-  | { phase: "unreachable" }
-  /** No game-sync endpoint on this host (static build): automatic sync is hidden, upload still works. */
+  /** This browser cannot remember a file (no File System Access API): Sync is hidden, upload still works. */
   | { phase: "unavailable" }
-  /** Hosted site, file mode: GuideWebExport.lua has not been chosen yet. */
+  /** GuideWebExport.lua has not been chosen yet. */
   | { phase: "no-file" }
-  /** Hosted site, file mode: the browser wants a click before reading the file again. */
+  /** The browser wants a click before reading the file again. */
   | { phase: "needs-permission" }
-  /** Hosted site, file mode: the chosen file was moved or deleted. */
+  /** The chosen file was moved or deleted. */
   | { phase: "file-missing" }
-  /** Hosted site, file mode: the chosen file could not be read or parsed. */
+  /** The chosen file could not be read or parsed. */
   | { phase: "file-error" }
   | { phase: "result"; result: GameSyncResult; exportedAtText?: string };
 
-interface StatusJson {
-  found?: boolean;
-  mtimeMs?: number | null;
-}
-
 /**
- * Where Sync reads GuideWebExport.lua from: the local app server, a file the player picked in this
- * browser (hosted site, File System Access API), or nowhere (manual upload only).
+ * Where Sync reads GuideWebExport.lua from: a file the player picked in this browser (File System
+ * Access API, desktop Chrome / Edge), or nowhere (manual upload on the Profile page only).
  */
-export type GameSyncMode = "server" | "file" | "none";
+export type GameSyncMode = "file" | "none";
 
 export interface GameSyncUi {
   mode: GameSyncMode;
@@ -59,8 +50,7 @@ export interface GameSyncUi {
   /** Forget the remembered file ("file" mode). */
   forgetFile: () => void;
   /**
-   * False when there is neither a game-sync endpoint (local app) nor File System Access support
-   * (hosted site in Firefox / Safari / mobile). The Sync button and panel hide then; importing
+   * False without File System Access support (Firefox, Safari, mobile). The Sync button and panel hide then; importing
    * GuideWebExport.lua on the Profile page still works.
    */
   available: boolean;
@@ -74,53 +64,6 @@ export interface GameSyncUi {
   matched: GameExportCharacter | null;
   /** Link the active profile to a character (null unlinks), then sync. */
   linkCharacter: (link: CharacterLink | null) => void;
-}
-
-export type GameFileLoad =
-  /** The status request failed, was not OK, or was not the endpoint's JSON (a static host answers with index.html). */
-  | { kind: "no-server" }
-  | { kind: "not-found" }
-  | { kind: "unreachable" }
-  | { kind: "file"; text: string; mtimeMs: number | null };
-
-type FetchLike = (url: string) => Promise<Pick<Response, "ok" | "status" | "json" | "text">>;
-
-/** The status endpoint answers `{ found: boolean, mtimeMs }`; anything else means there is no endpoint. */
-function isStatusJson(v: unknown): v is StatusJson {
-  return typeof v === "object" && v !== null && typeof (v as StatusJson).found === "boolean";
-}
-
-/**
- * Ask the local server whether GuideWebExport.lua exists, and only then download it.
- * No file request is made when the status says there is no file (avoids a 404 on every load).
- */
-export async function loadGameFile(fetchFn: FetchLike): Promise<GameFileLoad> {
-  let status: StatusJson;
-  try {
-    const res = await fetchFn(STATUS_URL);
-    if (!res.ok) return { kind: "no-server" };
-    const body: unknown = await res.json();
-    if (!isStatusJson(body)) return { kind: "no-server" };
-    status = body;
-  } catch {
-    return { kind: "no-server" };
-  }
-  if (!status.found) return { kind: "not-found" };
-  const mtimeMs = typeof status.mtimeMs === "number" ? status.mtimeMs : null;
-
-  let res: Awaited<ReturnType<FetchLike>>;
-  try {
-    res = await fetchFn(FILE_URL);
-  } catch {
-    return { kind: "unreachable" };
-  }
-  if (res.status === 404) return { kind: "not-found" };
-  if (!res.ok) return { kind: "unreachable" };
-  try {
-    return { kind: "file", text: await res.text(), mtimeMs };
-  } catch {
-    return { kind: "unreachable" };
-  }
 }
 
 const GameSyncUiContext = createContext<GameSyncUi | null>(null);
@@ -160,8 +103,6 @@ export function gameSyncApplyIsCurrent(startedProfileId: string | null, currentP
 export function gameSyncStatusText(state: GameSyncPhase): string {
   if (state.phase === "idle") return "";
   if (state.phase === "syncing") return "Syncing";
-  if (state.phase === "not-found") return "The GuideWebExport addon was not found. Install it, type /gwe in game, then /reload.";
-  if (state.phase === "unreachable") return "Could not reach the local app server";
   if (state.phase === "unavailable") return GAME_SYNC_UNAVAILABLE;
   if (state.phase === "no-file") return "Choose GuideWebExport.lua once, then Sync reads it with one click.";
   if (state.phase === "needs-permission") return "Click Sync to let the browser read GuideWebExport.lua again.";
@@ -219,15 +160,10 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const [characters, setCharacters] = useState<CharacterLink[]>([]);
   const [matched, setMatched] = useState<GameExportCharacter | null>(null);
   const [busy, setBusy] = useState(true);
-  // Dev always has the endpoint, so the button shows at once; a production build shows it only
-  // after the status request proves the endpoint exists (`vite preview` does, a static host does not).
-  // Without the endpoint, browsers with the File System Access API switch to "file" mode.
-  const [mode, setMode] = useState<GameSyncMode>(import.meta.env.DEV ? "server" : "none");
+  const [mode] = useState<GameSyncMode>(() => (fileHandleSupported() ? "file" : "none"));
   const modeRef = useRef(mode);
   modeRef.current = mode;
   const [fileName, setFileName] = useState<string | null>(null);
-  /** False once the status request showed there is no local app server on this host. */
-  const serverRef = useRef<boolean | null>(null);
   const handleRef = useRef<GameFileHandle | null>(null);
   const handleLoadedRef = useRef(false);
 
@@ -265,64 +201,37 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
       baselineRef.current = true;
     };
 
-    const loaded = serverRef.current === false ? ({ kind: "no-server" } as const) : await loadGameFile((url) => fetch(url));
-    if (!alive.current) return;
-
-    if (loaded.kind === "no-server") {
-      serverRef.current = false;
-      if (!fileHandleSupported()) {
-        setMode("none");
-        setPhase({ phase: "unavailable" });
-        return;
-      }
-      setMode("file");
-      if (!handleLoadedRef.current) {
-        handleLoadedRef.current = true;
-        const saved = await loadSavedGameFile();
-        if (!alive.current) return;
-        // A file picked while the saved handle was loading wins.
-        if (!handleRef.current && saved) handleRef.current = saved;
-        setFileName(handleRef.current?.name ?? null);
-      }
-      if (!current()) return;
-      const handle = handleRef.current;
-      if (!handle) {
-        mtimeRef.current = null;
-        baselineRef.current = true;
-        setPhase({ phase: "no-file" });
-        return;
-      }
-      const read = await readGameFileHandle(handle, false);
-      if (!current()) return;
-      if (read.kind === "file") {
-        applyText(read.text, read.mtimeMs, { phase: "file-error" });
-        return;
-      }
-      mtimeRef.current = null;
-      baselineRef.current = true;
-      if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
-      else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
-      else setPhase({ phase: "file-error" });
+    if (modeRef.current === "none") {
+      setPhase({ phase: "unavailable" });
       return;
     }
-
-    serverRef.current = true;
-    setMode("server");
+    if (!handleLoadedRef.current) {
+      handleLoadedRef.current = true;
+      const saved = await loadSavedGameFile();
+      if (!alive.current) return;
+      // A file picked while the saved handle was loading wins.
+      if (!handleRef.current && saved) handleRef.current = saved;
+      setFileName(handleRef.current?.name ?? null);
+    }
     if (!current()) return;
-    if (loaded.kind === "not-found") {
+    const handle = handleRef.current;
+    if (!handle) {
       mtimeRef.current = null;
       baselineRef.current = true;
-      setCharacters([]);
-      setMatched(null);
-      setPhase({ phase: "not-found" });
+      setPhase({ phase: "no-file" });
       return;
     }
-    if (loaded.kind === "unreachable") {
-      baselineRef.current = true;
-      setPhase({ phase: "unreachable" });
+    const read = await readGameFileHandle(handle, false);
+    if (!current()) return;
+    if (read.kind === "file") {
+      applyText(read.text, read.mtimeMs, { phase: "file-error" });
       return;
     }
-    applyText(loaded.text, loaded.mtimeMs, { phase: "unreachable" });
+    mtimeRef.current = null;
+    baselineRef.current = true;
+    if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
+    else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
+    else setPhase({ phase: "file-error" });
   }, []);
 
   const runSync = useCallback(async () => {
@@ -366,21 +275,10 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let timer: ReturnType<typeof setInterval> | undefined;
 
-    /** Last-modified time of the export, or null when there is none / it cannot be read silently. */
+    /** Last-modified time of the picked file, or null when it cannot be read without a prompt. */
     const currentMtime = async (): Promise<number | null | "skip"> => {
-      if (serverRef.current === false) {
-        const handle = handleRef.current;
-        return handle ? gameFileHandleMtime(handle) : "skip";
-      }
-      try {
-        const res = await fetch(STATUS_URL);
-        if (!res.ok) return "skip";
-        const json: unknown = await res.json();
-        if (!isStatusJson(json)) return "skip";
-        return json.found && typeof json.mtimeMs === "number" ? json.mtimeMs : null;
-      } catch {
-        return "skip";
-      }
+      const handle = handleRef.current;
+      return handle ? gameFileHandleMtime(handle) : "skip";
     };
 
     const poll = async () => {
