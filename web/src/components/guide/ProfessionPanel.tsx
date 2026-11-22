@@ -88,6 +88,15 @@ export function ProfessionPanel({ profile, step, ctx }: { profile: Profile | nul
           })}
         </div>
       )}
+      {hooks.length > 0 && !(ctx.professions?.length || skills.length) && (
+        <p className="border-t border-stroke/60 pt-3 text-[11px] leading-snug text-muted" data-testid="profession-pick-hint">
+          Pick your professions on the{" "}
+          <a href="#/profile" className="text-bronze-400 hover:text-bronze-300">
+            Profile
+          </a>{" "}
+          page to see these notes on the steps too.
+        </p>
+      )}
       {hooks.length > 0 && (
         <ul className="space-y-1.5 border-t border-stroke/60 pt-3">
           {hooks.map((h, i) => {

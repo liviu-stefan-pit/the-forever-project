@@ -3,7 +3,7 @@ import type { Filter, Step, StepSim } from "../../data/schema";
 import type { QuestNameLookup } from "../../lib/actions";
 import { buildBlockedBanner } from "../../lib/blockedBanner";
 import { checkpointNextSentence } from "../../lib/xp/checkpointText";
-import { cardTips, hookReached, hookSkillWarning, hookText, isUnverified, routeMembership, type TipContext } from "../../lib/stepExtras";
+import { cardHooks, cardTips, hookReached, hookSkillWarning, hookText, isUnverified, routeMembership, type TipContext } from "../../lib/stepExtras";
 import { useEngine, useIsCurrent, useStepDone, useStepRequirement, useStepStatus } from "../../state/progress";
 import type { ActiveRoute, StepsForQuest } from "../../state/questProgress";
 import { unavailableTag as tagFromRequirement } from "../../state/stepRequirement";
@@ -131,12 +131,16 @@ function StepCardImpl({
   const bonus = step.bonus;
   const sim = simOverride ?? step.sim?.[tipCtx.route];
   const levelUpNext = sim?.levelUp != null ? checkpointNextSentence(sim.next) : undefined;
-  const { tip, advice, elite, hooks, professionTips } = cardTips(step, tipCtx);
+  const { tip, advice, elite, professionTips } = cardTips(step, tipCtx);
+  const hooks = cardHooks(step, tipCtx);
+  const [xpOpen, setXpOpen] = useState(false);
   const dungeon = step.dungeon;
   const membership = routeMembership(step);
   const showBalancedExtra = membership === "balanced" && !!tipCtx.guideHasSpeedrun;
   const unverified = isUnverified(step);
   const xpBadge = sim && sim.gained > 0 ? sim : undefined;
+  // Hover tooltip on desktop; tapping the badge shows the same breakdown on phones.
+  const xpBreakdown = xpBadge ? gainedTooltip(xpBadge) : undefined;
   const collapsed = !!unavailableTag;
   const displayDone = isDone || collapsed;
   const requirement =
@@ -270,15 +274,24 @@ function StepCardImpl({
               </span>
             )}
             {xpBadge && (
-              <span
+              <button
+                type="button"
                 data-testid="step-xp"
-                title={gainedTooltip(xpBadge)}
+                title={xpBreakdown}
+                aria-expanded={xpBreakdown ? xpOpen : undefined}
+                aria-label={`+${xpBadge.gained.toLocaleString("en-US")} XP${xpBreakdown ? ", show breakdown" : ""}`}
+                onClick={() => xpBreakdown && setXpOpen((o) => !o)}
                 className="ml-auto shrink-0 rounded border border-bronze-500/50 bg-canvas/95 px-1.5 py-px text-xs font-bold tabular-nums leading-5 text-bronze-300 sm:absolute sm:right-2 sm:top-2 sm:z-10 sm:px-2 sm:py-0.5 sm:text-sm"
               >
                 +{xpBadge.gained.toLocaleString("en-US")} XP
-              </span>
+              </button>
             )}
           </div>
+          {xpOpen && xpBreakdown && (
+            <p data-testid="step-xp-breakdown" className="fade-in text-right text-xs tabular-nums text-bronze-300/80">
+              {xpBreakdown}
+            </p>
+          )}
 
           {/* text */}
           {!collapsed && lines.length > 0 && (

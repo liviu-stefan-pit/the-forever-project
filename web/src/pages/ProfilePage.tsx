@@ -413,6 +413,10 @@ export function ProfilePage() {
           , type /gwe then /reload in game, and pick WTF\Account\&lt;account&gt;\SavedVariables\GuideWebExport.lua here. The file is read in
           your browser only.
         </p>
+        <p className="mt-3 hidden rounded-sm border border-bronze-500/40 bg-frame/60 px-3 py-2 text-sm text-ink touch:block" data-testid="phone-import-note">
+          <strong>On your phone?</strong> GuideWebExport.lua is on the PC you play on. Sync or import it there, press{" "}
+          <strong>Export</strong> on that profile, then open the saved file here with <strong>Import JSON profile</strong>.
+        </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <button
             type="button"

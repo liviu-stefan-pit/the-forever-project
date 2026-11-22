@@ -48,7 +48,7 @@ describe("StepCard", () => {
       ],
       professionHooks: [{ profession: "Cooking", itemName: "Chunk of Boar Meat", qty: 6, note: "Keep the boar meat", ...src }],
     };
-    const html = render(step, { route: "balanced", dungeons: false, cls: "Warrior", role: "tank" });
+    const html = render(step, { route: "balanced", dungeons: false, cls: "Warrior", role: "tank", professions: ["Cooking"] });
     expect(html).toContain("Warrior tank tip");
     expect(html).not.toContain("Hunter tip");
     expect(html).not.toContain("Generic tip");
@@ -56,6 +56,24 @@ describe("StepCard", () => {
     expect(html).toContain("Pull the elite to the hut");
     expect(html).toContain("Cooking");
     expect(html).toContain("6× Chunk of Boar Meat");
+  });
+
+  it("keeps profession notes off the cards until the character has professions", () => {
+    const step: Step = {
+      ...base,
+      professionHooks: [
+        { profession: "Cooking", note: "Keep the boar meat", ...src },
+        { profession: "Mining", note: "Mine copper here", ...src },
+      ],
+    };
+    const none = render(step, { route: "balanced", dungeons: false });
+    expect(none).not.toContain("Keep the boar meat");
+    expect(none).not.toContain("Mine copper here");
+    const picked = render(step, { route: "balanced", dungeons: false, professions: ["Mining"] });
+    expect(picked).toContain("Mine copper here");
+    expect(picked).not.toContain("Keep the boar meat");
+    const synced = render(step, { route: "balanced", dungeons: false, skills: { Cooking: { cur: 10, max: 75 } } });
+    expect(synced).toContain("Keep the boar meat");
   });
 
   it("hides the tip slot when nothing matches", () => {
