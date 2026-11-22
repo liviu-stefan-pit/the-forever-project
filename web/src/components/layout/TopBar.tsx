@@ -451,7 +451,7 @@ export function TopBar() {
         >
           <Icon name="search" className="h-4 w-4" />
           <span className="hidden text-sm lg:inline">Search</span>
-          <kbd className="hidden rounded-sm border border-stroke bg-canvas px-1.5 font-sans text-[10px] text-bronze-500/80 lg:inline">Ctrl K</kbd>
+          <kbd className="hidden rounded-sm border border-stroke bg-canvas px-1.5 font-sans text-[10px] text-bronze-500/80 lg:inline touch:hidden">Ctrl K</kbd>
         </button>
         <Link
           to="/profile"

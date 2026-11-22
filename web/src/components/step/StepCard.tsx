@@ -8,6 +8,7 @@ import { useEngine, useIsCurrent, useStepDone, useStepRequirement, useStepStatus
 import type { ActiveRoute, StepsForQuest } from "../../state/questProgress";
 import { unavailableTag as tagFromRequirement } from "../../state/stepRequirement";
 import { Icon } from "../ui/Icon";
+import { isTouchOnly } from "../../lib/touch";
 import { ActionChips, ConditionBadges, FilterTag } from "./ActionChips";
 import { RichLine } from "./RichLine";
 import { StopBadge } from "./StopBadge";
@@ -35,7 +36,8 @@ export interface StepCardProps {
   until?: { label: string; stepId?: string };
   questName?: QuestNameLookup;
   lineVisible: (f: Filter | undefined) => boolean;
-  onToggle: (step: Step) => void;
+  /** `via: "tap"` = the whole card was tapped on a touch device. */
+  onToggle: (step: Step, via?: "tap") => void;
   onSelect: (step: Step) => void;
   /** Live recompute for the active route. Absent = baked `step.sim`. */
   simOverride?: StepSim;
@@ -143,7 +145,13 @@ function StepCardImpl({
     (collapsed ? "not_applicable" : isDone ? "done" : blocked ? "blocked" : "required");
 
   const onCardClick = (e: MouseEvent) => {
-    if ((e.target as HTMLElement).closest("a,button")) return;
+    const target = e.target as HTMLElement;
+    if (target.closest("a,button,[data-no-tap]")) return;
+    // Phones: tapping anywhere on the card ticks it (no mouse to aim at the small circle).
+    if (!collapsed && isTouchOnly() && !window.getSelection()?.toString()) {
+      onToggle(step, "tap");
+      return;
+    }
     onSelect(step);
   };
 

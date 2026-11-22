@@ -101,7 +101,7 @@ export function SearchDialog() {
             aria-label="Search query"
             className="h-12 min-w-0 flex-1 bg-transparent text-[15px] text-ink placeholder:text-bronze-500/60 focus:outline-none"
           />
-          <kbd className="rounded-sm border border-stroke px-1.5 text-[10px] text-bronze-500/80">Esc</kbd>
+          <kbd className="rounded-sm border border-stroke px-1.5 text-[10px] text-bronze-500/80 touch:hidden">Esc</kbd>
         </div>
         <ul className="parchment max-h-[50vh] overflow-y-auto p-2" role="listbox" aria-label="Results">
           {phase.status === "error" && phase.error && (

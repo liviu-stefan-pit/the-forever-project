@@ -87,7 +87,7 @@ export function GuideHeader({
               {done} / {total} done
             </div>
             <button type="button" onClick={onJumpCurrent} className="inline-flex min-h-touch items-center gap-1 text-bronze-400 transition hover:text-bronze-300 sm:mt-0.5">
-              Jump to current <kbd className="hidden rounded-sm border border-stroke px-1 text-[10px] text-bronze-500/80 sm:inline">n</kbd>
+              Jump to current <kbd className="hidden rounded-sm border border-stroke px-1 text-[10px] text-bronze-500/80 sm:inline touch:hidden">n</kbd>
             </button>
             {onMarkUpToHere && (
               <button type="button" onClick={onMarkUpToHere} className="flex min-h-touch items-center text-left text-[11px] text-bronze-500/80 transition hover:text-ink">

@@ -5,7 +5,8 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
-      screens: { "3xl": "1800px" },
+      // `touch:` = a phone or tablet with no mouse (not a narrow desktop window).
+      screens: { "3xl": "1800px", touch: { raw: "(hover: none) and (pointer: coarse)" } },
       fontFamily: {
         sans: ['"Source Sans 3"', "Segoe UI", "system-ui", "sans-serif"],
         display: ["Cinzel", "Georgia", "serif"],

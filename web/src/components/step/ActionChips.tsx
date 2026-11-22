@@ -84,7 +84,7 @@ function WayChip({ way, label, filter }: { way: string; label: string; filter?: 
           window.setTimeout(() => setCopied(false), 1400);
         }
       }}
-      className="group/way inline-flex min-h-touch items-center gap-1.5 rounded-sm border border-stroke bg-canvas/50 px-2 py-0.5 font-mono text-[11px] text-ink transition hover:border-horde-500/50 hover:text-bronze-300"
+      className="group/way inline-flex min-h-touch touch:hidden items-center gap-1.5 rounded-sm border border-stroke bg-canvas/50 px-2 py-0.5 font-mono text-[11px] text-ink transition hover:border-horde-500/50 hover:text-bronze-300"
       title={`Copy "${way}" (TomTom)`}
       aria-label={`Copy waypoint ${way}`}
     >
@@ -98,7 +98,7 @@ function WayChip({ way, label, filter }: { way: string; label: string; filter?: 
           </>
         ) : (
           <>
-            <Icon name="copy" className="h-3 w-3" /> <span className="hidden sm:inline">/way</span>
+            <Icon name="copy" className="h-3 w-3" /> /way
           </>
         )}
       </span>
@@ -157,7 +157,7 @@ export function ActionChips({
         <WayChip key={p.key} way={p.way} label={`${p.at.x.toFixed(1)}, ${p.at.y.toFixed(1)}`} filter={p.filter} />
       ))}
       {gotos.hiddenCount > 0 && (
-        <span className="inline-flex items-center gap-1 px-1 text-[11px] text-bronze-500/80" title="Hidden path waypoints shape the route line on the map">
+        <span className="inline-flex items-center gap-1 px-1 text-[11px] text-bronze-500/80 touch:hidden" title="Hidden path waypoints shape the route line on the map">
           <Icon name="map" className="h-3 w-3" />
           {gotos.hiddenCount} path point{gotos.hiddenCount === 1 ? "" : "s"}
         </span>
