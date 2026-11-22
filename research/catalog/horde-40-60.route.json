@@ -46094,6 +46094,69 @@
       "verified": true
     },
     {
+      "id": "h4060:winterspring:c4521",
+      "n": 749,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Wild Guardians"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 56.63,
+            "y": 32.11,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4521,
+          "objective": 1,
+          "label": "Raging Owlbeast"
+        },
+        {
+          "type": "complete",
+          "questId": 4521,
+          "objective": 2,
+          "label": "Ragged Owlbeast"
+        },
+        {
+          "type": "mob",
+          "name": "Raging Owlbeast",
+          "npcIds": [
+            7451
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ragged Owlbeast",
+          "npcIds": [
+            7450
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:felwood:t4521",
       "n": 751,
       "tags": {},
@@ -46140,6 +46203,52 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:felwood:c4505",
+      "n": 750,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Well of Corruption"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 32.32,
+            "y": 66.56,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12567,
+          "count": 1,
+          "questId": 4505,
+          "objective": 1,
+          "label": "Filled Flasket"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t4505",
@@ -47274,24 +47383,7 @@
           "label": "Wowhead Classic quest 5157 (reference link)"
         }
       ],
-      "verified": true,
-      "tips": [
-        {
-          "kind": "general",
-          "text": "Turn in Collection of the Corrupt Water at Bloodvenom and do not accept Seeking Spiritual Aid.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=5158",
-              "label": "Wowhead Classic quest 5158"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 5157 pre 5155 next 5158; 5158 end npc 5901"
-            }
-          ],
-          "verified": false
-        }
-      ]
+      "verified": true
     },
     {
       "id": "h4060:felwood:a5158",
@@ -47435,24 +47527,7 @@
           "label": "Wowhead Classic quest 8460 (reference link)"
         }
       ],
-      "verified": true,
-      "tips": [
-        {
-          "kind": "general",
-          "text": "Turn in Timbermaw Ally at Grazle (50.93, 85.01) and do not accept Speak to Nafien.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=8462",
-              "label": "Wowhead Classic quest 8462"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 8460 next 8462; Grazle npc 11554 spawn 50.93, 85.01"
-            }
-          ],
-          "verified": false
-        }
-      ]
+      "verified": true
     },
     {
       "id": "h4060:felwood:a8481",
@@ -47887,6 +47962,65 @@
       "verified": true
     },
     {
+      "id": "h4060:felwood:c4102",
+      "n": 778,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Cleansing Felwood"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 57.16,
+            "y": 18.28,
+            "zone": "Felwood"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 11503,
+          "count": 15,
+          "questId": 4102,
+          "objective": 1,
+          "label": "Blood Amber"
+        },
+        {
+          "type": "mob",
+          "name": "Warpwood Moss Flayer",
+          "npcIds": [
+            7100
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Warpwood Shredder",
+          "npcIds": [
+            7101
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:felwood:t4102",
       "n": 779,
       "tags": {},
@@ -47981,6 +48115,82 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:felwood:c8461",
+      "n": 780,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Deadwood of the North"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 62.76,
+            "y": 8.01,
+            "zone": "Felwood"
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 8461,
+          "objective": 1,
+          "label": "Deadwood Den Watcher"
+        },
+        {
+          "type": "complete",
+          "questId": 8461,
+          "objective": 2,
+          "label": "Deadwood Avenger"
+        },
+        {
+          "type": "complete",
+          "questId": 8461,
+          "objective": 3,
+          "label": "Deadwood Shaman"
+        },
+        {
+          "type": "mob",
+          "name": "Deadwood Den Watcher",
+          "npcIds": [
+            7156
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Deadwood Avenger",
+          "npcIds": [
+            7157
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Deadwood Shaman",
+          "npcIds": [
+            7158
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t8461",
@@ -48417,7 +48627,9 @@
     {
       "id": "h4060:felwood:a4506",
       "n": 790,
-      "tags": {},
+      "tags": {
+        "optional": true
+      },
       "text": [
         {
           "segments": [
@@ -48446,8 +48658,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -48461,6 +48672,56 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c4741",
+      "n": 789,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Wild Guardians"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 66.91,
+            "y": 24.88,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4741,
+          "objective": 1,
+          "label": "Moontouched Owlbeast"
+        },
+        {
+          "type": "mob",
+          "name": "Moontouched Owlbeast",
+          "npcIds": [
+            7453
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t4741",
@@ -48511,9 +48772,86 @@
       "verified": true
     },
     {
+      "id": "h4060:felwood:c4506",
+      "n": 790,
+      "tags": {
+        "optional": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Corrupted Sabers"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "Take Winna's kitten to the corrupted moonwell, release it, then bring it back to Winna."
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "Once you have returned to Winna, click on the cat to release it to Winna."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 32.32,
+            "y": 66.56,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4506,
+          "objective": 1,
+          "label": "Release Winna's kitten at the corrupted moonwell"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 34.21,
+            "y": 52.34,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4506,
+          "objective": 2,
+          "label": "Click the cat to release it to Winna"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:felwood:t4506",
       "n": 792,
-      "tags": {},
+      "tags": {
+        "optional": true
+      },
       "text": [
         {
           "segments": [
@@ -48542,8 +48880,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -48703,6 +49040,98 @@
       "verified": true
     },
     {
+      "id": "h4060:felwood:c5165",
+      "n": 795,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Dousing the Flames of Protection"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 36.27,
+            "y": 56.3,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5165,
+          "objective": 1,
+          "label": "Brazier of Pain"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 36.48,
+            "y": 55.19,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5165,
+          "objective": 4,
+          "label": "Brazier of Hatred"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 36.73,
+            "y": 53.27,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5165,
+          "objective": 3,
+          "label": "Brazier of Suffering"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 37.68,
+            "y": 52.69,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5165,
+          "objective": 2,
+          "label": "Brazier of Malice"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:felwood:t5165",
       "n": 796,
       "tags": {},
@@ -48799,6 +49228,85 @@
       "verified": true
     },
     {
+      "id": "h4060:felwood:c5242",
+      "n": 797,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: A Final Blow"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 38.81,
+            "y": 46.87,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5242,
+          "objective": 1,
+          "label": "Moora"
+        },
+        {
+          "type": "complete",
+          "questId": 5242,
+          "objective": 2,
+          "label": "Salia"
+        },
+        {
+          "type": "collect",
+          "itemId": 13207,
+          "count": 1,
+          "questId": 5242,
+          "objective": 3,
+          "label": "Shadow Lord Fel'dan's Head"
+        },
+        {
+          "type": "mob",
+          "name": "Moora",
+          "npcIds": [
+            9861
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Salia",
+          "npcIds": [
+            9860
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Shadow Lord Fel'dan",
+          "npcIds": [
+            9517
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:felwood:t5242",
       "n": 798,
       "tags": {},
@@ -48893,6 +49401,56 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c4721",
+      "n": 799,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Wild Guardians"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 67.28,
+            "y": 25.56,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4721,
+          "objective": 1,
+          "label": "Berserk Owlbeast"
+        },
+        {
+          "type": "mob",
+          "name": "Berserk Owlbeast",
+          "npcIds": [
+            7454
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t4721",
@@ -55681,21 +56239,6 @@
             }
           ],
           "verified": true
-        },
-        {
-          "kind": "general",
-          "text": "Turn in Felnok Steelspring at 61.63, 38.61 and decline the horn quest.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=4808",
-              "label": "Wowhead Classic quest 4808"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 4808 pre 4726, end npc 10468 spawn 61.63, 38.61, map zone 618"
-            }
-          ],
-          "verified": false
         }
       ],
       "pins": [
@@ -56858,24 +57401,7 @@
           "label": "Wowhead Classic quest 5083 (reference link)"
         }
       ],
-      "verified": true,
-      "tips": [
-        {
-          "kind": "general",
-          "text": "Turn in Winterfall Firewater at Donova and do not accept Falling to Corruption.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=5084",
-              "label": "Wowhead Classic quest 5084"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 5083 next 5084; 5084 pre 5083"
-            }
-          ],
-          "verified": false
-        }
-      ]
+      "verified": true
     },
     {
       "id": "h4060:winterspring:t5054",
@@ -57186,23 +57712,6 @@
         }
       ],
       "verified": true,
-      "tips": [
-        {
-          "kind": "general",
-          "text": "Turn in Brumeran of the Chillwind and do not accept Shy-Rotam.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=5056",
-              "label": "Wowhead Classic quest 5056"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 5055 next 5056; 5056 pre 5055"
-            }
-          ],
-          "verified": false
-        }
-      ],
       "classes": [
         "Hunter"
       ]
@@ -58305,7 +58814,7 @@
         {
           "segments": [
             {
-              "t": "Accept Return to the Bulwark from the Writhing Haunt cauldron, then stop the cauldron chain."
+              "t": "Accept: Return to the Bulwark"
             }
           ]
         }
@@ -58324,7 +58833,7 @@
         {
           "type": "accept",
           "questId": 5234,
-          "label": "Accept Return to the Bulwark from the Writhing Haunt cauldron, then stop the cauldron chain."
+          "label": "Return to the Bulwark"
         }
       ],
       "conditions": [],
@@ -58352,7 +58861,7 @@
         {
           "segments": [
             {
-              "t": "Turn the Writhing Haunt bottle in to Shadow Priestess Vandis. Do not accept Target: Gahrron's Wither."
+              "t": "Turn in: Return to the Bulwark"
             }
           ]
         }
@@ -58371,7 +58880,7 @@
         {
           "type": "turnin",
           "questId": 5234,
-          "label": "Turn the Writhing Haunt bottle in to Shadow Priestess Vandis. Do not accept Target: Gahrron's Wither."
+          "label": "Return to the Bulwark"
         }
       ],
       "conditions": [],
@@ -58577,24 +59086,7 @@
           "label": "Wowhead Classic quest 4984 (reference link)"
         }
       ],
-      "verified": true,
-      "tips": [
-        {
-          "kind": "general",
-          "text": "Turn in The Wildlife Suffers Too at Mulgris and do not accept the bear follow-up.",
-          "sources": [
-            {
-              "url": "https://www.wowhead.com/classic/quest=4985",
-              "label": "Wowhead Classic quest 4985"
-            },
-            {
-              "url": "https://github.com/Questie/QuestieDB",
-              "label": "QuestieDB 4984 next 4985; 4984 creature 1817"
-            }
-          ],
-          "verified": false
-        }
-      ]
+      "verified": true
     },
     {
       "id": "h4060:western-plaguelands:a5098",
@@ -59384,6 +59876,56 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:western-plaguelands:c4985",
+      "n": 972,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Wildlife Suffers Too"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1422,
+            "x": 60.47,
+            "y": 51.95,
+            "zone": "Western Plaguelands"
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 4985,
+          "objective": 1,
+          "label": "Diseased Grizzly"
+        },
+        {
+          "type": "mob",
+          "name": "Diseased Grizzly",
+          "npcIds": [
+            1816
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:western-plaguelands:t4985",
@@ -60202,6 +60744,69 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:western-plaguelands:c5235",
+      "n": 989,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Target: Gahrron's Withering"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1422,
+            "x": 62.18,
+            "y": 59.06,
+            "zone": "Western Plaguelands",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 13196,
+          "count": 1,
+          "questId": 5235,
+          "objective": 1,
+          "label": "Gahrron's Withering Cauldron Key"
+        },
+        {
+          "type": "mob",
+          "name": "Cauldron Lord Soulwrath",
+          "npcIds": [
+            11078
+          ]
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1422,
+            "x": 62.54,
+            "y": 58.47,
+            "zone": "Western Plaguelands",
+            "exact": true
+          }
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:western-plaguelands:t5235",
@@ -62460,6 +63065,91 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:eastern-plaguelands:c6133",
+      "n": 1032,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Ranger Lord's Behest"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1423,
+            "x": 45.27,
+            "y": 12.7,
+            "zone": "Eastern Plaguelands",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 6133,
+          "objective": 1,
+          "label": "Pathstrider"
+        },
+        {
+          "type": "complete",
+          "questId": 6133,
+          "objective": 2,
+          "label": "Ranger"
+        },
+        {
+          "type": "complete",
+          "questId": 6133,
+          "objective": 3,
+          "label": "Woodsman"
+        },
+        {
+          "type": "collect",
+          "itemId": 15847,
+          "count": 1,
+          "questId": 6133,
+          "objective": 4,
+          "label": "Quel'Thalas Registry"
+        },
+        {
+          "type": "mob",
+          "name": "Pathstrider",
+          "npcIds": [
+            8565
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ranger",
+          "npcIds": [
+            8564
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Woodsman",
+          "npcIds": [
+            8563
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:eastern-plaguelands:t6133",
@@ -65707,7 +66397,7 @@
         },
         {
           "kind": "general",
-          "text": "Darkwhisper Gorge has high-level demons. Grab the Tainted Foothills flight path before you ride deeper into Mount Hyjal.",
+          "text": "Darkwhisper Gorge has high-level demons.",
           "sources": [
             {
               "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -67845,6 +68535,72 @@
         }
       ],
       "verified": false
+    },
+    {
+      "id": "h4060:mount-hyjal:home-ortak",
+      "n": 0,
+      "tags": {
+        "forever": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Set your hearth to Ortak Lomgok in Mount Hyjal."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 2482,
+            "zone": "Mount Hyjal",
+            "x": 12.93,
+            "y": 52.85,
+            "exact": true
+          }
+        },
+        {
+          "type": "home",
+          "label": "Set hearth to Ortak Lomgok",
+          "place": "Ortak Lomgok"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "pins": [
+        {
+          "kind": "npc",
+          "npcId": 244512,
+          "name": "Ortak Lomgok",
+          "at": {
+            "mapId": 2482,
+            "zone": "Mount Hyjal",
+            "x": 12.93,
+            "y": 52.85
+          },
+          "service": "innkeeper",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
     },
     {
       "id": "h4060:mount-hyjal:a96616",
@@ -70639,6 +71395,88 @@
       "verified": true
     },
     {
+      "id": "h4060:winterspring:c5056",
+      "n": 1168,
+      "tags": {
+        "optional": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Shy-Rotam"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 49.81,
+            "y": 9.8,
+            "zone": "Winterspring",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5056,
+          "objective": 1,
+          "label": "Shy-Rotam"
+        },
+        {
+          "type": "mob",
+          "name": "Shy-Rotam",
+          "npcIds": [
+            10737
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "classes": [
+        "Hunter"
+      ],
+      "elite": [
+        {
+          "name": "Shy-Rotam",
+          "npcId": 10737,
+          "level": 60,
+          "tips": [
+            {
+              "kind": "elite",
+              "text": "Shy-Rotam is an elite.",
+              "sources": [
+                {
+                  "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                  "label": "QuestieDB data/Forever (GPL-3.0)"
+                }
+              ],
+              "verified": false
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
+    },
+    {
       "id": "h4060:winterspring:t5056",
       "n": 1173,
       "tags": {
@@ -70689,6 +71527,51 @@
       "classes": [
         "Hunter"
       ]
+    },
+    {
+      "id": "h4060:winterspring:c969",
+      "n": 1169,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Luck Be With You"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 61.84,
+            "y": 67.99,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12334,
+          "count": 4,
+          "questId": 969,
+          "objective": 1,
+          "label": "Frostmaul Shards"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t969",
@@ -70787,6 +71670,72 @@
       "verified": true
     },
     {
+      "id": "h4060:winterspring:c4809",
+      "n": 1171,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Chillwind Horns"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 59.51,
+            "y": 23.07,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12444,
+          "count": 8,
+          "questId": 4809,
+          "objective": 1,
+          "label": "Uncracked Chillwind Horn"
+        },
+        {
+          "type": "mob",
+          "name": "Fledgling Chillwind",
+          "npcIds": [
+            7447
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Chillwind Chimaera",
+          "npcIds": [
+            7448
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Chillwind Ravager",
+          "npcIds": [
+            7449
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:winterspring:t4809",
       "n": 1176,
       "tags": {},
@@ -70833,6 +71782,65 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c3783",
+      "n": 1172,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Are We There, Yeti?"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 65.3,
+            "y": 39.61,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12366,
+          "count": 10,
+          "questId": 3783,
+          "objective": 1,
+          "label": "Thick Yeti Fur"
+        },
+        {
+          "type": "mob",
+          "name": "Rogue Ice Thistle",
+          "npcIds": [
+            7457
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Yeti",
+          "npcIds": [
+            7458
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t3783",
@@ -71217,6 +72225,57 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:felwood:c5084",
+      "n": 1184,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Falling to Corruption"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "Search the Deadwood furbolg camp in northern Felwood for a clue."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 60.2,
+            "y": 5.84,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5084,
+          "objective": 1,
+          "label": "Deadwood Cauldron"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t5084",
@@ -71889,6 +72948,65 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c977",
+      "n": 1198,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Are We There, Yeti?"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 68.91,
+            "y": 40.97,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12367,
+          "count": 2,
+          "questId": 977,
+          "objective": 1,
+          "label": "Pristine Yeti Horn"
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Matriarch",
+          "npcIds": [
+            7459
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Patriarch",
+          "npcIds": [
+            7460
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t977",
@@ -72906,6 +74024,85 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c5121",
+      "n": 1218,
+      "tags": {
+        "optional": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: High Chief Winterfall"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 69.56,
+            "y": 38.31,
+            "zone": "Winterspring",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5121,
+          "objective": 1,
+          "label": "High Chief Winterfall"
+        },
+        {
+          "type": "mob",
+          "name": "High Chief Winterfall",
+          "npcIds": [
+            10738
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "elite": [
+        {
+          "name": "High Chief Winterfall",
+          "npcId": 10738,
+          "level": 59,
+          "tips": [
+            {
+              "kind": "elite",
+              "text": "High Chief Winterfall is an elite.",
+              "sources": [
+                {
+                  "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                  "label": "QuestieDB data/Forever (GPL-3.0)"
+                }
+              ],
+              "verified": false
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
     },
     {
       "id": "h4060:winterspring:t5121",
@@ -76298,7 +77495,8 @@
       "id": "h4060:mount-hyjal:a96003",
       "n": 1282,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -76328,8 +77526,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -76348,7 +77545,8 @@
       "id": "h4060:mount-hyjal:c96003",
       "n": 1283,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -76399,8 +77597,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "tips": [
         {
@@ -76548,7 +77745,8 @@
       "id": "h4060:mount-hyjal:t96003",
       "n": 1284,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -76578,8 +77776,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -76598,7 +77795,8 @@
       "id": "h4060:mount-hyjal:a96025",
       "n": 1285,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -76628,8 +77826,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -76648,7 +77845,8 @@
       "id": "h4060:mount-hyjal:t96025",
       "n": 1286,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -76678,8 +77876,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -93385,22 +94582,6 @@
       "routes": [
         "balanced"
       ],
-      "tips": [
-        {
-          "kind": "speed",
-          "text": "Balanced only: Cenarion Hold quests are an alternative to Hyjal for the last levels.",
-          "routes": [
-            "speedrun"
-          ],
-          "sources": [
-            {
-              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-              "label": "QuestieDB data/Forever (GPL-3.0)"
-            }
-          ],
-          "verified": true
-        }
-      ],
       "pins": [
         {
           "kind": "npc",
@@ -93481,7 +94662,13 @@
           "label": "Wowhead Classic quest 84155 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Druid"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84156",
@@ -93529,7 +94716,13 @@
           "label": "Wowhead Classic quest 84156 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Hunter"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84157",
@@ -93577,7 +94770,13 @@
           "label": "Wowhead Classic quest 84157 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Mage"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84158",
@@ -93625,7 +94824,13 @@
           "label": "Wowhead Classic quest 84158 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Priest"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84159",
@@ -93673,7 +94878,13 @@
           "label": "Wowhead Classic quest 84159 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Rogue"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84160",
@@ -93721,7 +94932,13 @@
           "label": "Wowhead Classic quest 84160 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Shaman"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84161",
@@ -93769,7 +94986,13 @@
           "label": "Wowhead Classic quest 84161 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Warlock"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a84162",
@@ -93817,7 +95040,13 @@
           "label": "Wowhead Classic quest 84162 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Warrior"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84155",
@@ -93865,7 +95094,13 @@
           "label": "Wowhead Classic quest 84155 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Druid"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84156",
@@ -93913,7 +95148,13 @@
           "label": "Wowhead Classic quest 84156 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Hunter"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84157",
@@ -93961,7 +95202,13 @@
           "label": "Wowhead Classic quest 84157 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Mage"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84158",
@@ -94009,7 +95256,13 @@
           "label": "Wowhead Classic quest 84158 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Priest"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84159",
@@ -94057,7 +95310,13 @@
           "label": "Wowhead Classic quest 84159 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Rogue"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84160",
@@ -94105,7 +95364,13 @@
           "label": "Wowhead Classic quest 84160 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Shaman"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84161",
@@ -94153,7 +95418,13 @@
           "label": "Wowhead Classic quest 84161 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Warlock"
+      ]
     },
     {
       "id": "h4060:orgrimmar:t84162",
@@ -94201,7 +95472,13 @@
           "label": "Wowhead Classic quest 84162 (reference link)"
         }
       ],
-      "verified": true
+      "verified": true,
+      "dungeon": {
+        "name": "Dungeon Set 1"
+      },
+      "classes": [
+        "Warrior"
+      ]
     },
     {
       "id": "h4060:orgrimmar:a3563",
@@ -99254,6 +100531,86 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:silithus:c8283",
+      "n": 1707,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Wanted - Deathclasp, Terror of the Sands"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1451,
+            "x": 45.07,
+            "y": 92.31,
+            "zone": "Silithus",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 20385,
+          "count": 1,
+          "questId": 8283,
+          "objective": 1,
+          "label": "Deathclasp's Pincer"
+        },
+        {
+          "type": "mob",
+          "name": "Deathclasp",
+          "npcIds": [
+            15196
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "elite": [
+        {
+          "name": "Deathclasp",
+          "npcId": 15196,
+          "level": 59,
+          "tips": [
+            {
+              "kind": "elite",
+              "text": "Deathclasp is an elite.",
+              "sources": [
+                {
+                  "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                  "label": "QuestieDB data/Forever (GPL-3.0)"
+                }
+              ],
+              "verified": false
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
     },
     {
       "id": "h4060:silithus:t8283",

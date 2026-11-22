@@ -1247,7 +1247,7 @@
         },
         {
           "kind": "general",
-          "text": "Darkwhisper Gorge has high-level demons. Grab the Tainted Foothills flight path before you ride deeper into Mount Hyjal.",
+          "text": "Darkwhisper Gorge has high-level demons.",
           "sources": [
             {
               "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -3385,6 +3385,72 @@
         }
       ],
       "verified": false
+    },
+    {
+      "id": "h4060:mount-hyjal:home-ortak",
+      "n": 0,
+      "tags": {
+        "forever": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Set your hearth to Ortak Lomgok in Mount Hyjal."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 2482,
+            "zone": "Mount Hyjal",
+            "x": 12.93,
+            "y": 52.85,
+            "exact": true
+          }
+        },
+        {
+          "type": "home",
+          "label": "Set hearth to Ortak Lomgok",
+          "place": "Ortak Lomgok"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "pins": [
+        {
+          "kind": "npc",
+          "npcId": 244512,
+          "name": "Ortak Lomgok",
+          "at": {
+            "mapId": 2482,
+            "zone": "Mount Hyjal",
+            "x": 12.93,
+            "y": 52.85
+          },
+          "service": "innkeeper",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
     },
     {
       "id": "h4060:mount-hyjal:a96616",
@@ -6179,6 +6245,88 @@
       "verified": true
     },
     {
+      "id": "h4060:winterspring:c5056",
+      "n": 1168,
+      "tags": {
+        "optional": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Shy-Rotam"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 49.81,
+            "y": 9.8,
+            "zone": "Winterspring",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5056,
+          "objective": 1,
+          "label": "Shy-Rotam"
+        },
+        {
+          "type": "mob",
+          "name": "Shy-Rotam",
+          "npcIds": [
+            10737
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "classes": [
+        "Hunter"
+      ],
+      "elite": [
+        {
+          "name": "Shy-Rotam",
+          "npcId": 10737,
+          "level": 60,
+          "tips": [
+            {
+              "kind": "elite",
+              "text": "Shy-Rotam is an elite.",
+              "sources": [
+                {
+                  "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                  "label": "QuestieDB data/Forever (GPL-3.0)"
+                }
+              ],
+              "verified": false
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
+    },
+    {
       "id": "h4060:winterspring:t5056",
       "n": 1173,
       "tags": {
@@ -6229,6 +6377,51 @@
       "classes": [
         "Hunter"
       ]
+    },
+    {
+      "id": "h4060:winterspring:c969",
+      "n": 1169,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Luck Be With You"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 61.84,
+            "y": 67.99,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12334,
+          "count": 4,
+          "questId": 969,
+          "objective": 1,
+          "label": "Frostmaul Shards"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t969",
@@ -6327,6 +6520,72 @@
       "verified": true
     },
     {
+      "id": "h4060:winterspring:c4809",
+      "n": 1171,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Chillwind Horns"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 59.51,
+            "y": 23.07,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12444,
+          "count": 8,
+          "questId": 4809,
+          "objective": 1,
+          "label": "Uncracked Chillwind Horn"
+        },
+        {
+          "type": "mob",
+          "name": "Fledgling Chillwind",
+          "npcIds": [
+            7447
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Chillwind Chimaera",
+          "npcIds": [
+            7448
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Chillwind Ravager",
+          "npcIds": [
+            7449
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
+    },
+    {
       "id": "h4060:winterspring:t4809",
       "n": 1176,
       "tags": {},
@@ -6373,6 +6632,65 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c3783",
+      "n": 1172,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Are We There, Yeti?"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 65.3,
+            "y": 39.61,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12366,
+          "count": 10,
+          "questId": 3783,
+          "objective": 1,
+          "label": "Thick Yeti Fur"
+        },
+        {
+          "type": "mob",
+          "name": "Rogue Ice Thistle",
+          "npcIds": [
+            7457
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Yeti",
+          "npcIds": [
+            7458
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t3783",
@@ -6757,6 +7075,57 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:felwood:c5084",
+      "n": 1184,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Falling to Corruption"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "t": "Search the Deadwood furbolg camp in northern Felwood for a clue."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1448,
+            "x": 60.2,
+            "y": 5.84,
+            "zone": "Felwood",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5084,
+          "objective": 1,
+          "label": "Deadwood Cauldron"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:felwood:t5084",
@@ -7429,6 +7798,65 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c977",
+      "n": 1198,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Are We There, Yeti?"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 68.91,
+            "y": 40.97,
+            "zone": "Winterspring"
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 12367,
+          "count": 2,
+          "questId": 977,
+          "objective": 1,
+          "label": "Pristine Yeti Horn"
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Matriarch",
+          "npcIds": [
+            7459
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Ice Thistle Patriarch",
+          "npcIds": [
+            7460
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false
     },
     {
       "id": "h4060:winterspring:t977",
@@ -8446,6 +8874,85 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:winterspring:c5121",
+      "n": 1218,
+      "tags": {
+        "optional": true
+      },
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: High Chief Winterfall"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1452,
+            "x": 69.56,
+            "y": 38.31,
+            "zone": "Winterspring",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 5121,
+          "objective": 1,
+          "label": "High Chief Winterfall"
+        },
+        {
+          "type": "mob",
+          "name": "High Chief Winterfall",
+          "npcIds": [
+            10738
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+      ],
+      "verified": false,
+      "elite": [
+        {
+          "name": "High Chief Winterfall",
+          "npcId": 10738,
+          "level": 59,
+          "tips": [
+            {
+              "kind": "elite",
+              "text": "High Chief Winterfall is an elite.",
+              "sources": [
+                {
+                  "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+                  "label": "QuestieDB data/Forever (GPL-3.0)"
+                }
+              ],
+              "verified": false
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": false
+        }
+      ]
     },
     {
       "id": "h4060:winterspring:t5121",
@@ -11838,7 +12345,8 @@
       "id": "h4060:mount-hyjal:a96003",
       "n": 1282,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -11868,8 +12376,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -11888,7 +12395,8 @@
       "id": "h4060:mount-hyjal:c96003",
       "n": 1283,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -11939,8 +12447,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "tips": [
         {
@@ -12088,7 +12595,8 @@
       "id": "h4060:mount-hyjal:t96003",
       "n": 1284,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -12118,8 +12626,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -12138,7 +12645,8 @@
       "id": "h4060:mount-hyjal:a96025",
       "n": 1285,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -12168,8 +12676,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -12188,7 +12695,8 @@
       "id": "h4060:mount-hyjal:t96025",
       "n": 1286,
       "tags": {
-        "forever": true
+        "forever": true,
+        "optional": true
       },
       "text": [
         {
@@ -12218,8 +12726,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
