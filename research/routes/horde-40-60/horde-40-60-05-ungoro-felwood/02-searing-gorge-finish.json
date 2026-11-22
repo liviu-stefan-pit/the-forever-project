@@ -34,10 +34,129 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3452",
+     "label": "Wowhead Classic quest 3452 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c3452",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Flame's Casing"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 20.81,
+      "y": 35.85,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 10552,
+     "count": 1,
+     "questId": 3452,
+     "objective": 1,
+     "label": "Symbol of Ragnaros"
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Fire Guard",
+     "npcIds": [
+      5861
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Twilight Dark Shaman",
+     "npcIds": [
+      5860
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Twilight Fire Guards at 20.81, 35.85 and Twilight Dark Shamans at 24.06, 34.16 carry the Symbol of Ragnaros.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5861
+     ],
+     "name": "Twilight Fire Guard",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 20.81,
+      "y": 35.85
+     },
+     "radius": 6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5860
+     ],
+     "name": "Twilight Dark Shaman",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 24.06,
+      "y": 34.16
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -81,8 +200,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -128,8 +246,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -175,8 +292,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -222,8 +338,67 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3454",
+     "label": "Wowhead Classic quest 3454 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c3454",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Torch of Retribution"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 39.06,
+      "y": 39.07,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3454,
+     "objective": 1,
+     "label": "Torch of Retribution"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Take the Torch of Retribution from the stand at 39.06, 39.07.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
    ],
    "minutes": 1,
    "sources": [
@@ -269,8 +444,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -316,8 +490,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -363,8 +536,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -410,10 +582,117 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3463",
+     "label": "Wowhead Classic quest 3463 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c3463",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Set Them Ablaze!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 35.67,
+      "y": 60.68,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3463,
+     "objective": 1,
+     "label": "Western Tower Ablaze"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 44.03,
+      "y": 60.91,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3463,
+     "objective": 2,
+     "label": "Southern Tower Ablaze"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 50.07,
+      "y": 54.74,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3463,
+     "objective": 3,
+     "label": "Eastern Tower Ablaze"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 33.3,
+      "y": 54.48,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3463,
+     "objective": 4,
+     "label": "Northern Tower Ablaze"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Light the four sentry braziers: west 35.67, 60.68, south 44.03, 60.91, east 50.07, 54.74, and north 33.30, 54.48.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 10,
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -457,8 +736,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -504,8 +782,67 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3481",
+     "label": "Wowhead Classic quest 3481 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c3481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Trinkets..."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 38.85,
+      "y": 38.99,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3481,
+     "objective": 1,
+     "label": "Hoard of the Black Dragonflight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Open the Hoard of the Black Dragonflight at 38.85, 38.99.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
    ],
    "minutes": 1,
    "sources": [
@@ -551,8 +888,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [

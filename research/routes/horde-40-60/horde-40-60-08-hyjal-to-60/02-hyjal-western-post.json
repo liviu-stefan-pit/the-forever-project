@@ -297,6 +297,71 @@
    "verified": false
   },
   {
+   "id": "h4060:mount-hyjal:home-ortak",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Ortak Lomgok in Mount Hyjal."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2482,
+      "zone": "Mount Hyjal",
+      "x": 12.93,
+      "y": 52.85,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Ortak Lomgok",
+     "place": "Ortak Lomgok"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 244512,
+     "name": "Ortak Lomgok",
+     "at": {
+      "mapId": 2482,
+      "zone": "Mount Hyjal",
+      "x": 12.93,
+      "y": 52.85
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
    "id": "h4060:mount-hyjal:a96616",
    "tags": {
     "forever": true

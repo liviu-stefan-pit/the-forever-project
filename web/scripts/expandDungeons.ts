@@ -1576,6 +1576,8 @@ function emitRun(
   const seenNames = new Set<string>();
   for (const q of block.includedQuestIds) {
     if (NO_RUN_SENTENCE.has(q) || drop.has(q) || !already.has(q)) continue;
+    // Handed in before the run (plan turn-in with beforeRun, e.g. ZF 3520): not "in your log" any more.
+    if (ctx.raceSeen?.turnins[block.route]?.get(race)?.has(q)) continue;
     const name = names.get(q) ?? `#${q}`;
     if (seenNames.has(name)) continue;
     seenNames.add(name);

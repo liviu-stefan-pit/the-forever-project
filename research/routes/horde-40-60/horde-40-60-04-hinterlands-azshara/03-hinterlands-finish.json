@@ -45,8 +45,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 8,
    "sources": [
@@ -95,8 +94,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 8,
    "sources": [
@@ -512,6 +510,98 @@
    "verified": true
   },
   {
+   "id": "h4060:the-hinterlands:c7816",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Gammerita, Mon!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 80.4,
+      "y": 58.23,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 19023,
+     "count": 1,
+     "questId": 7816,
+     "objective": 1,
+     "label": "Katoom's Best Lure"
+    },
+    {
+     "type": "mob",
+     "name": "Gammerita",
+     "npcIds": [
+      7977
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gammerita is on the coast at 80.40, 58.23 with the other turtles.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7977
+     ],
+     "name": "Gammerita",
+     "mapId": 1425,
+     "zone": "The Hinterlands",
+     "center": {
+      "x": 80.4,
+      "y": 58.23
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7816",
+     "label": "Wowhead Classic quest 7816 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:the-hinterlands:a2742",
    "tags": {},
    "text": [
@@ -920,8 +1010,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -1108,8 +1197,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -1215,6 +1303,52 @@
     {
      "url": "https://www.wowhead.com/classic/quest=7815",
      "label": "Wowhead Classic quest 7815 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:the-hinterlands:t7816",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Gammerita, Mon!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 80.33,
+      "y": 81.54,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7816,
+     "label": "Gammerita, Mon!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7816",
+     "label": "Wowhead Classic quest 7816 (reference link)"
     }
    ],
    "verified": true
@@ -1487,53 +1621,6 @@
    "verified": true
   },
   {
-   "id": "h4060:swamp-of-sorrows:a1429",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Atal'ai Exile"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1435,
-      "x": 47.93,
-      "y": 54.78,
-      "zone": "Swamp of Sorrows",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 1429,
-     "label": "The Atal'ai Exile"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=1429",
-     "label": "Wowhead Classic quest 1429 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:the-hinterlands:t1429",
    "tags": {},
    "text": [
@@ -1722,6 +1809,99 @@
    "verified": true
   },
   {
+   "id": "h4060:the-hinterlands:c2934",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Undamaged Venom Sac"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 30.66,
+      "y": 69.72,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 9322,
+     "count": 1,
+     "questId": 2934,
+     "objective": 1,
+     "label": "Undamaged Venom Sac"
+    },
+    {
+     "type": "mob",
+     "name": "Witherbark Broodguard",
+     "npcIds": [
+      2686
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Witherbark Broodguards at 30.66, 69.72 in the Hinterlands drop the Undamaged Venom Sac. Bring it back to Tarren Mill.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2686
+     ],
+     "name": "Witherbark Broodguard",
+     "mapId": 1425,
+     "zone": "The Hinterlands",
+     "center": {
+      "x": 30.66,
+      "y": 69.72
+     },
+     "radius": 6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2934",
+     "label": "Wowhead Classic quest 2934 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:the-hinterlands:t2934",
    "tags": {},
    "text": [
@@ -1814,6 +1994,82 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:the-hinterlands:grind-sr-47",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Stay on the Savage Owlbeast camp until you are halfway from 47 to 48. The camp is dense, with 173 spawns."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1425,
+      "x": 58.4,
+      "y": 50.6,
+      "zone": "The Hinterlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 47,
+     "extra": 64550,
+     "label": "Stay on the Savage Owlbeast camp until you are halfway from 47 to 48. The camp is dense, with 173 spawns.",
+     "mobId": 2929,
+     "mobName": "Savage Owlbeast",
+     "mobLevel": 47
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2929",
+     "label": "Wowhead Classic NPC 2929"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2929
+     ],
+     "name": "Savage Owlbeast",
+     "mapId": 1425,
+     "zone": "The Hinterlands",
+     "center": {
+      "x": 58.4,
+      "y": 50.6
+     },
+     "radius": 14,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2929",
+       "label": "Wowhead Classic NPC 2929"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
    "id": "h4060:swamp-of-sorrows:t1444",

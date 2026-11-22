@@ -98,6 +98,68 @@
    "verified": true
   },
   {
+   "id": "h4060:winterspring:c4521",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Wild Guardians"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 56.63,
+      "y": 32.11,
+      "zone": "Winterspring"
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4521,
+     "objective": 1,
+     "label": "Raging Owlbeast"
+    },
+    {
+     "type": "complete",
+     "questId": 4521,
+     "objective": 2,
+     "label": "Ragged Owlbeast"
+    },
+    {
+     "type": "mob",
+     "name": "Raging Owlbeast",
+     "npcIds": [
+      7451
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Ragged Owlbeast",
+     "npcIds": [
+      7450
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
    "id": "h4060:winterspring:a977",
    "tags": {},
    "text": [
@@ -143,6 +205,64 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:winterspring:c977",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Are We There, Yeti?"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 68.91,
+      "y": 40.97,
+      "zone": "Winterspring"
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12367,
+     "count": 2,
+     "questId": 977,
+     "objective": 1,
+     "label": "Pristine Yeti Horn"
+    },
+    {
+     "type": "mob",
+     "name": "Ice Thistle Matriarch",
+     "npcIds": [
+      7459
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Ice Thistle Patriarch",
+     "npcIds": [
+      7460
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
   },
   {
    "id": "h4060:winterspring:t977",
@@ -1139,6 +1259,84 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:winterspring:c5121",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: High Chief Winterfall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 69.56,
+      "y": 38.31,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5121,
+     "objective": 1,
+     "label": "High Chief Winterfall"
+    },
+    {
+     "type": "mob",
+     "name": "High Chief Winterfall",
+     "npcIds": [
+      10738
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "elite": [
+    {
+     "name": "High Chief Winterfall",
+     "npcId": 10738,
+     "level": 59,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "High Chief Winterfall is an elite.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "h4060:winterspring:t5121",

@@ -192,55 +192,10 @@
    "verified": true
   },
   {
-   "id": "h4060:felwood:a4741",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Wild Guardians"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1448,
-      "x": 34.73,
-      "y": 52.79,
-      "zone": "Felwood",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4741,
-     "label": "Wild Guardians"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4741",
-     "label": "Wowhead Classic quest 4741 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:felwood:a4506",
-   "tags": {},
+   "tags": {
+    "optional": true
+   },
    "text": [
     {
      "segments": [
@@ -269,8 +224,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -286,13 +240,29 @@
    "verified": true
   },
   {
-   "id": "h4060:felwood:t4741",
-   "tags": {},
+   "id": "h4060:felwood:c4506",
+   "tags": {
+    "optional": true
+   },
    "text": [
     {
      "segments": [
       {
-       "t": "Turn in: Wild Guardians"
+       "t": "Complete: Corrupted Sabers"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Take Winna's kitten to the corrupted moonwell, release it, then bring it back to Winna."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Once you have returned to Winna, click on the cat to release it to Winna."
       }
      ]
     }
@@ -302,39 +272,52 @@
      "type": "goto",
      "at": {
       "mapId": 1448,
-      "x": 34.73,
-      "y": 52.79,
+      "x": 32.32,
+      "y": 66.56,
       "zone": "Felwood",
       "exact": true
      }
     },
     {
-     "type": "turnin",
-     "questId": 4741,
-     "label": "Wild Guardians"
+     "type": "complete",
+     "questId": 4506,
+     "objective": 1,
+     "label": "Release Winna's kitten at the corrupted moonwell"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.21,
+      "y": 52.34,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4506,
+     "objective": 2,
+     "label": "Click the cat to release it to Winna"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
-   "minutes": 2,
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
      "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4741",
-     "label": "Wowhead Classic quest 4741 (reference link)"
     }
    ],
-   "verified": true
+   "verified": false
   },
   {
    "id": "h4060:felwood:t4506",
-   "tags": {},
+   "tags": {
+    "optional": true
+   },
    "text": [
     {
      "segments": [
@@ -363,8 +346,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -521,6 +503,97 @@
    "verified": true
   },
   {
+   "id": "h4060:felwood:c5165",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Dousing the Flames of Protection"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 36.27,
+      "y": 56.3,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5165,
+     "objective": 1,
+     "label": "Brazier of Pain"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 36.48,
+      "y": 55.19,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5165,
+     "objective": 4,
+     "label": "Brazier of Hatred"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 36.73,
+      "y": 53.27,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5165,
+     "objective": 3,
+     "label": "Brazier of Suffering"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 37.68,
+      "y": 52.69,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5165,
+     "objective": 2,
+     "label": "Brazier of Malice"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
    "id": "h4060:felwood:t5165",
    "tags": {},
    "text": [
@@ -615,6 +688,84 @@
    "verified": true
   },
   {
+   "id": "h4060:felwood:c5242",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Final Blow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 38.81,
+      "y": 46.87,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5242,
+     "objective": 1,
+     "label": "Moora"
+    },
+    {
+     "type": "complete",
+     "questId": 5242,
+     "objective": 2,
+     "label": "Salia"
+    },
+    {
+     "type": "collect",
+     "itemId": 13207,
+     "count": 1,
+     "questId": 5242,
+     "objective": 3,
+     "label": "Shadow Lord Fel'dan's Head"
+    },
+    {
+     "type": "mob",
+     "name": "Moora",
+     "npcIds": [
+      9861
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Salia",
+     "npcIds": [
+      9860
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Shadow Lord Fel'dan",
+     "npcIds": [
+      9517
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
    "id": "h4060:felwood:t5242",
    "tags": {},
    "text": [
@@ -657,100 +808,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=5242",
      "label": "Wowhead Classic quest 5242 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:felwood:a4721",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Wild Guardians"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1448,
-      "x": 34.73,
-      "y": 52.79,
-      "zone": "Felwood",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4721,
-     "label": "Wild Guardians"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4721",
-     "label": "Wowhead Classic quest 4721 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:felwood:t4721",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Wild Guardians"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1448,
-      "x": 34.73,
-      "y": 52.79,
-      "zone": "Felwood",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 4721,
-     "label": "Wild Guardians"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4721",
-     "label": "Wowhead Classic quest 4721 (reference link)"
     }
    ],
    "verified": true

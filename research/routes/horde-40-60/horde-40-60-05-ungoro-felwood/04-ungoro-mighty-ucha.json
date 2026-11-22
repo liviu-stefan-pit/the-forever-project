@@ -154,100 +154,6 @@
    ]
   },
   {
-   "id": "h4060:un-goro-crater:a4292",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Bait for Lar'korwi"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 71.64,
-      "y": 75.96,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4292,
-     "label": "The Bait for Lar'korwi"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4292",
-     "label": "Wowhead Classic quest 4292 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:un-goro-crater:t4292",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: The Bait for Lar'korwi"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 71.64,
-      "y": 75.96,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 4292,
-     "label": "The Bait for Lar'korwi"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4292",
-     "label": "Wowhead Classic quest 4292 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:un-goro-crater:t4301",
    "tags": {},
    "text": [
@@ -727,100 +633,6 @@
    ]
   },
   {
-   "id": "h4060:un-goro-crater:a4244",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Chasing A-Me 01"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 67.66,
-      "y": 16.76,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4244,
-     "label": "Chasing A-Me 01"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4244",
-     "label": "Wowhead Classic quest 4244 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:un-goro-crater:t4244",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Chasing A-Me 01"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 67.66,
-      "y": 16.76,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 4244,
-     "label": "Chasing A-Me 01"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4244",
-     "label": "Wowhead Classic quest 4244 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:un-goro-crater:t3883",
    "tags": {},
    "text": [
@@ -1150,7 +962,28 @@
    "tips": [
     {
      "kind": "general",
-     "text": "Turn in Larion and Muigin and do not accept Marvon's Workshop.",
+     "text": "Speedrun: hand in Larion and Muigin and skip Marvon's Workshop.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4147",
+       "label": "Wowhead Classic quest 4147"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4145 next 4147; 4147 pre 4145, end npc 8496"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Balanced route: hand in Larion and Muigin, accept Marvon's Workshop, and deliver it to Liv Rizzlefix in Ratchet.",
+     "routes": [
+      "balanced"
+     ],
      "sources": [
       {
        "url": "https://www.wowhead.com/classic/quest=4147",
@@ -1196,8 +1029,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
    "sources": [
@@ -1208,100 +1040,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=4147",
      "label": "Wowhead Classic quest 4147 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:un-goro-crater:a4284",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Crystals of Power"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 41.92,
-      "y": 2.7,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4284,
-     "label": "Crystals of Power"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4284",
-     "label": "Wowhead Classic quest 4284 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:un-goro-crater:t4284",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Crystals of Power"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1449,
-      "x": 41.92,
-      "y": 2.7,
-      "zone": "Un'Goro Crater",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 4284,
-     "label": "Crystals of Power"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4284",
-     "label": "Wowhead Classic quest 4284 (reference link)"
     }
    ],
    "verified": true
@@ -1384,8 +1122,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
