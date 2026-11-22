@@ -38,7 +38,8 @@ Open the guide site's **Profile** page and upload or import `GuideWebExport.lua`
 your browser and marks your completed quests on the matching profile. It also shows your level, skills,
 gold, gear and current quest log. Uploading never unticks a step.
 
-If you run the site locally (`npm run dev`), the **Sync** button can read the file directly. See
+In desktop Chrome or Edge you can choose the file once under **Game sync** on the Profile page; after that
+the **Sync** button re-reads it with one click. See
 [docs/GAME_EXPORT.md](https://github.com/liviu-stefan-pit/the-forever-project/blob/main/docs/GAME_EXPORT.md).
 
 ## What it exports (privacy)

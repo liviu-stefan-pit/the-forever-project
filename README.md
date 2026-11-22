@@ -25,7 +25,9 @@ written for this project from open data (the GPL-3.0 QuestieDB quest database) a
   page, search, and profession hooks along the way.
 - **Local character profiles:** ticks, quests and settings live in your browser. **Export** /
   **Import JSON profile** on the Profile page move them between browsers.
-- **Optional in-game sync** with the GuideWebExport addon (see below).
+- **Optional in-game sync** with the GuideWebExport addon (see below). On the hosted site, desktop
+  Chrome / Edge can remember the chosen `GuideWebExport.lua` for one-click Sync (and re-sync on `/reload`
+  while the tab is open); other browsers use **Import GuideWebExport.lua** on the Profile page.
 - **Credits page** (`#/credits`) generated from [CREDITS.md](CREDITS.md).
 
 Hash routes: `#/` (faction landing page), `#/horde` (dashboard), `#/guide/<slug>`, `#/quest/<id>`,
@@ -95,23 +97,18 @@ No environment variables are required. Optional:
 
 - `PF_PREREQ_CHECK=warn` or `off`: the prerequisite check fails the build by default (`fail`); `warn` lists
   findings in `manifest.json` warnings instead, `off` skips it.
-- `WOW_FOREVER_ROOT`: WoW Forever install root for the local **Sync** button.
 
 Route content follows [docs/ROUTE_SCHEMA.md](docs/ROUTE_SCHEMA.md).
 
-### Sync with the game (local dev only)
+### Sync with the game
 
-While `npm run dev` or `npm run preview` is running, the top-bar **Sync** button (and **Sync now** on the
-Profile page) reads `GuideWebExport.lua` from your WoW Forever `WTF` folder through the local
-`/api/game-sync` endpoint and marks matching completed quests on the active profile. The default location
-is `C:\Program Files (x86)\World of Warcraft\_forever_\WTF\Account\*\SavedVariables\GuideWebExport.lua`
-(newest file). To use another install, set `gwe_saved_variables` or `wow_root` in a repo-root
-`config.local.json` (git-ignored), or set `WOW_FOREVER_ROOT`. The server never takes a path from the
-browser and never writes into the WoW folder.
-
-The static site (Cloudflare Pages or `web/dist/`) has no `/api/game-sync` endpoint. There you upload or
-import the `GuideWebExport.lua` file on the Profile page instead. Full details, character matching and
-troubleshooting: [docs/GAME_EXPORT.md](docs/GAME_EXPORT.md).
+In desktop Chrome or Edge, choose `GuideWebExport.lua` once under **Game sync** on the Profile page
+(`World of Warcraft\_forever_\WTF\Account\<ACCOUNT>\SavedVariables\GuideWebExport.lua`). The browser
+remembers the file, so the top-bar **Sync** button (and **Sync now** on the Profile page) re-reads it with one
+click, and while the tab is open a `/reload` in game is picked up automatically. The file is read in the
+browser and never uploaded. In Firefox, Safari and on mobile, use **Import GuideWebExport.lua** on the Profile
+page instead. This works the same on the hosted site and in `npm run dev`. Full details, character matching
+and troubleshooting: [docs/GAME_EXPORT.md](docs/GAME_EXPORT.md).
 
 ### Map images
 

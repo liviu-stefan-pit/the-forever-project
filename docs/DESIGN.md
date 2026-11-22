@@ -125,7 +125,7 @@ Legend (map header, compact): icon + word for each kind on screen. Hover still o
 
 ## 5. Sync flow (plain sentences)
 
-Keep the addon + `/api/game-sync` behaviour (additive quest marks, name match, no uncheck, `/reload` or logout to flush). Make the states readable:
+Keep the addon + picked-file sync behaviour (additive quest marks, name match, no uncheck, `/reload` or logout to flush). Make the states readable:
 
 | State | Button | Status line |
 |---|---|---|
@@ -135,7 +135,9 @@ Keep the addon + `/api/game-sync` behaviour (additive quest marks, name match, n
 | No profile | Sync, enabled | “Pick a character profile before syncing.” |
 | Name mismatch | Sync, enabled | “The export is for Thrall, but this profile is Rexxar.” |
 | Empty export | Sync, enabled | “No completed quests in the export. Type /gwe, then /reload.” |
-| Server unreachable (static build, no API) | Sync still offers Profile import | “This copy of the app cannot read the game file. Import GuideWebExport.lua from the Profile page.” |
+| No file chosen yet | Sync opens the file picker | “Choose GuideWebExport.lua once, then Sync reads it with one click.” |
+| Browser needs permission again | Sync, enabled | “Click Sync to let the browser read GuideWebExport.lua again.” |
+| Browser without File System Access | Sync hidden; Profile import | “One-click sync needs desktop Chrome or Edge. …” |
 
 Never show a raw path or HTTP code as the only message. Tooltip may repeat: “The game file updates only after /reload or logout.”
 

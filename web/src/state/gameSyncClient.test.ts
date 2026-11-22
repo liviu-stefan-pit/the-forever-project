@@ -37,8 +37,6 @@ describe("gameSyncApplyIsCurrent", () => {
 describe("gameSyncStatusText", () => {
   it("names each outcome", () => {
     expect(gameSyncStatusText({ phase: "syncing" })).toBe("Syncing");
-    expect(gameSyncStatusText({ phase: "not-found" })).toBe("The GuideWebExport addon was not found. Install it, type /gwe in game, then /reload.");
-    expect(gameSyncStatusText({ phase: "unreachable" })).toBe("Could not reach the local app server");
     expect(gameSyncStatusText({ phase: "unavailable" })).toMatch(/Import GuideWebExport\.lua on the Profile page/);
     expect(gameSyncStatusText({ phase: "result", result: { ok: false, reason: "no-profile" } })).toBe("No active profile");
     expect(

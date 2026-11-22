@@ -24,5 +24,5 @@ you in the advisory if you would like.
 ## Scope
 
 The site is static and stores everything in your browser, so the most relevant problems are things like
-cross-site scripting through route data or uploaded files, the local dev server's game-sync endpoint reading
+cross-site scripting through route data or uploaded files, the game-sync file handle reading
 files it should not, and addon or export-script behaviour that writes outside its own files.
