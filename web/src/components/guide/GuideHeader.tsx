@@ -8,7 +8,7 @@ import {
   guideName,
   successorSlug,
 } from "../../lib/nextGuide";
-import { formatExpectedLevel } from "../../lib/xp/checkpointText";
+import { fmtPlayTime, guideMinutes } from "../../lib/timeEstimate";
 import { useGuideCompletion, useRouteStyle } from "../../state/progress";
 import { ExperimentalBadge } from "../ui/ExperimentalBadge";
 import { Icon } from "../ui/Icon";
@@ -50,6 +50,7 @@ export function GuideHeader({
   const bonusXp = added.reduce((n, a) => n + a.xp, 0);
   const frac = total ? done / total : 0;
   const bonusCount = guide.steps.filter((s) => s.bonus).length;
+  const minutes = guideMinutes(index, guide.slug, routeStyle);
 
   return (
     <header className="panel-animate space-y-4">
@@ -69,15 +70,23 @@ export function GuideHeader({
             {expectedLevel != null && (
               <>
                 <span aria-hidden="true">·</span>
-                <span>
-                  Expected level <span className="font-semibold text-ink">{formatExpectedLevel(expectedLevel)}</span>
+                <span title="Where the route's XP estimate puts you at your current step">
+                  You should be level <span className="font-semibold text-ink">{Math.floor(expectedLevel)}</span> here
                 </span>
               </>
             )}
-            <span aria-hidden="true">·</span>
-            <ZoneList zones={guide.zones} />
+            <span aria-hidden="true" className="hidden sm:inline">·</span>
+            <span className="hidden sm:inline">
+              <ZoneList zones={guide.zones} />
+            </span>
             <span aria-hidden="true">·</span>
             <span title={GUIDE_STEP_COUNT_TITLE}>{formatGuideStepCount(total, guide.steps.length)}</span>
+            {minutes !== undefined && (
+              <>
+                <span aria-hidden="true">·</span>
+                <span title="Rough solo play time for this guide on your route">about {fmtPlayTime(minutes)}</span>
+              </>
+            )}
           </p>
         </div>
         <div className="wow-frame flex w-full items-center gap-3 px-3 py-2 sm:w-auto">
@@ -116,7 +125,7 @@ export function GuideHeader({
             (nextInIndex ? (
               <Link
                 to={`/guide/${nextSlug}`}
-                className={`inline-flex items-center gap-1.5 rounded-sm border px-2.5 py-1 transition ${
+                className={`items-center gap-1.5 rounded-sm border px-2.5 py-1 transition ${nextComplete ? "inline-flex" : "hidden sm:inline-flex"} ${
                   nextComplete
                     ? "border-bronze-400 bg-bronze-500/25 font-semibold text-bronze-200 hover:border-bronze-300 hover:bg-bronze-500/35"
                     : "border-bronze-500/60 text-ink hover:border-bronze-400 hover:text-bronze-300"

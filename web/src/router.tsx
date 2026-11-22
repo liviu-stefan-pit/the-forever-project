@@ -32,6 +32,9 @@ const LandingPage = () => import("./pages/LandingPage").then((m) => ({ default: 
 const DashboardPage = () => import("./pages/DashboardPage").then((m) => ({ default: m.DashboardPage }));
 const GuidePage = () => import("./pages/GuidePage").then((m) => ({ default: m.GuidePage }));
 const QuestPage = () => import("./pages/QuestPage").then((m) => ({ default: m.QuestPage }));
+const GoldPage = () => import("./pages/GoldPage").then((m) => ({ default: m.GoldPage }));
+const CurrentGuideRedirect = () => import("./pages/CurrentGuideRedirect").then((m) => ({ default: m.CurrentGuideRedirect }));
+const TransferPage = () => import("./pages/TransferPage").then((m) => ({ default: m.TransferPage }));
 const OverviewPage = () => import("./pages/OverviewPage").then((m) => ({ default: m.OverviewPage }));
 const ProfilePage = () => import("./pages/ProfilePage").then((m) => ({ default: m.ProfilePage }));
 const CreditsPage = () => import("./pages/CreditsPage").then((m) => ({ default: m.CreditsPage }));
@@ -55,7 +58,10 @@ export const router = createHashRouter([
     element: <AppShell />,
     children: [
       { path: HORDE_HOME, element: page(DashboardPage) },
+      { path: "/guide", element: page(CurrentGuideRedirect) },
       { path: "/guide/:slug", element: page(GuidePage) },
+      { path: "/gold", element: page(GoldPage) },
+      { path: "/transfer", element: page(TransferPage) },
       { path: "/quest/:id", element: page(QuestPage) },
       { path: "/overview", element: page(OverviewPage) },
       { path: "/profile", element: page(ProfilePage) },

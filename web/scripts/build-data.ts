@@ -85,7 +85,7 @@ export interface DataManifest {
   byLevel: { label: string; levels: [number, number]; packs: string[] }[];
   /** Pack ids per route (a pack is listed when it has at least one step on that route). */
   routes: Record<RouteStyle, string[]>;
-  files: { guideIndex: string; questsMin: string; questsGeo: string; questsDetail: string; questSteps: string; insights: string; zones: string; classProfessions: string; professionHooks: string; trainers: string; searchIndex: string };
+  files: { guideIndex: string; questsMin: string; questsGeo: string; questsDetail: string; questSteps: string; insights: string; zones: string; classProfessions: string; professionHooks: string; trainers: string; goldPlan: string; searchIndex: string };
   stats: { strippedSteps: number; forcedUnverified: number; hooksJoined: number; hooksSkipped: number };
   /** Dungeon placeholder expansion per leveling pack (see expandDungeons.ts). */
   dungeonExpansion: Record<string, ExpandStats>;
@@ -513,15 +513,64 @@ export function buildIndex(guides: Guide[], generatedAt: string, packBracket?: R
 /** Step ids for every guide the index lists, in bracket order. */
 export function guideIndexEntries(index: GuideIndex, guides: readonly Guide[]): GuideIndex["entries"] {
   const bySlug = new Map(guides.map((g) => [g.slug, g]));
+  const fallback = fallbackStepMinutes(guides);
   const entries: NonNullable<GuideIndex["entries"]> = [];
   for (const bracket of index.brackets) {
     for (const slug of bracket.guides) {
       const g = bySlug.get(slug);
       const stepIds = g?.steps.map((s) => s.id) ?? [];
-      entries.push({ slug, ...(g ? { title: g.displayName } : {}), stepIds, stepCount: stepIds.length });
+      entries.push({
+        slug,
+        ...(g ? { title: g.displayName, minLevel: g.minLevel, maxLevel: g.maxLevel, ...guideMinutes(g, fallback), ...guideStartLevel(g) } : {}),
+        stepIds,
+        stepCount: stepIds.length,
+      });
     }
   }
   return entries;
+}
+
+/** XP-sim level at the first simulated step, per route (the start picker places a level on the route with it). */
+export function guideStartLevel(g: Guide): { startLevel?: Partial<Record<RouteStyle, number>> } {
+  const out: Partial<Record<RouteStyle, number>> = {};
+  for (const r of ["balanced", "speedrun"] as const) {
+    const lv = g.steps.find((s) => s.sim?.[r]?.level !== undefined)?.sim?.[r]?.level;
+    if (lv !== undefined) out[r] = Math.round(lv * 100) / 100;
+  }
+  return Object.keys(out).length ? { startLevel: out } : {};
+}
+
+/**
+ * Minutes per step for steps with no authored `minutes`: the mean of the authored ones (the
+ * 20–60 packs carry per-step minutes; the 1–20 packs do not yet). The mean, not the median: many
+ * authored steps are 0.5-minute hand-ins, and the long kill loops are what make up the time.
+ * 1.5 when nothing is authored.
+ */
+export function fallbackStepMinutes(guides: readonly Guide[]): number {
+  const all = guides.flatMap((g) => g.steps.map((s) => s.minutes).filter((m): m is number => typeof m === "number" && m > 0));
+  if (!all.length) return 1.5;
+  return Math.round((all.reduce((a, b) => a + b, 0) / all.length) * 100) / 100;
+}
+
+/**
+ * Expected play minutes for a guide on each route, solo (dungeon steps left out). `minutesEstimated`
+ * is true when some steps had no authored minutes and used the fallback.
+ */
+export function guideMinutes(g: Guide, fallback: number): { minutes: Record<RouteStyle, number>; minutesEstimated?: true } {
+  const minutes = { balanced: 0, speedrun: 0 } as Record<RouteStyle, number>;
+  let estimated = false;
+  for (const s of g.steps) {
+    // Dungeons off (the default): same rule as `isDungeonHidden` in src/state/visibility.ts.
+    const dungeonCond = s.conditions.find((c) => c.cmd === "dungeon");
+    if (s.dungeon || (!s.dungeonsOff && dungeonCond && !/^\s*!/.test(dungeonCond.args))) continue;
+    const m = typeof s.minutes === "number" && s.minutes > 0 ? s.minutes : ((estimated = true), fallback);
+    // Route membership: same rule as `stepRoutes` (explicit routes, else bonus → balanced only).
+    const routes = s.routes?.length ? s.routes : s.bonus ? (["balanced"] as const) : (["balanced", "speedrun"] as const);
+    for (const r of routes) minutes[r] += m;
+  }
+  minutes.balanced = Math.round(minutes.balanced);
+  minutes.speedrun = Math.round(minutes.speedrun);
+  return estimated ? { minutes, minutesEstimated: true } : { minutes };
 }
 
 /** Published guides omit `step.sources`. A source list with no `verified: true` stays unverified. */
@@ -1046,6 +1095,35 @@ export interface BuildOptions {
   prereqAllowlist?: AllowlistEntry[];
 }
 
+/**
+ * `research/gold/gold-plan.json` (gold milestones, savings pace, per-bracket tips) passed through after a
+ * shape check. Missing or malformed file → null (the site hides the gold plan).
+ */
+export function loadGoldPlan(goldDir: string): unknown {
+  const path = join(goldDir, "gold-plan.json");
+  if (!existsSync(path)) return null;
+  const raw = readJson<Record<string, unknown>>(path);
+  const ok =
+    raw &&
+    Array.isArray(raw.milestones) &&
+    Array.isArray(raw.brackets) &&
+    Array.isArray(raw.sources) &&
+    (raw.milestones as { level?: unknown; gold?: unknown }[]).every((m) => typeof m.level === "number" && typeof m.gold === "number") &&
+    (raw.brackets as { levels?: unknown }[]).every((b) => Array.isArray(b.levels) && b.levels.length === 2);
+  if (!ok) throw new Error(`${path}: not a gold plan (needs milestones[{level,gold}], brackets[{levels:[a,b]}], sources[])`);
+  const ids = new Set((raw.sources as { id: string }[]).map((x) => x.id));
+  const cited = [
+    ...(raw.milestones as { sources?: string[] }[]),
+    ...(raw.brackets as { sources?: string[] }[]),
+    ...((raw.pace as { sources?: string[] }[] | undefined) ?? []),
+    ...((raw.habits as { sources?: string[] }[] | undefined) ?? []),
+    { sources: raw.avoidSources as string[] | undefined },
+  ].flatMap((x) => x.sources ?? []);
+  const missing = cited.filter((id) => !ids.has(id));
+  if (missing.length) throw new Error(`${path}: unknown source ids ${[...new Set(missing)].join(", ")}`);
+  return raw;
+}
+
 /** Unique profession tiers from research/professions/trainers.json. Missing file → []. */
 export function loadTrainerTiers(profDir: string): { profession: string; tier: string; minLevel: number; minSkill: number; skillCap: number }[] {
   const path = join(profDir, "trainers.json");
@@ -1304,6 +1382,7 @@ export function buildData(opts: BuildOptions): DataManifest {
       classProfessions: "class_professions.json",
       professionHooks: "profession_hooks.json",
       trainers: "trainers.json",
+      goldPlan: "gold-plan.json",
       searchIndex: "search-index.json",
     },
     stats: { strippedSteps: stripped, forcedUnverified: forced, hooksJoined, hooksSkipped },
@@ -1337,6 +1416,7 @@ export function buildData(opts: BuildOptions): DataManifest {
   w("class_professions.json", classProf);
   w("profession_hooks.json", rawHooks);
   w("trainers.json", loadTrainerTiers(profDir));
+  w("gold-plan.json", loadGoldPlan(join(opts.research, "gold")));
   w("search-index.json", buildSearchDocs({ index, guides, quests, zones, questSteps }));
   w("landing.json", buildLandingStats(guides, questSteps));
   writeFileSync(join(out, "manifest.json"), JSON.stringify(manifest, null, 2));

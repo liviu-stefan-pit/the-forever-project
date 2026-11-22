@@ -3,6 +3,7 @@
  * current section map slot (P8) + quest details slot (P9).
  */
 import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useKeepAwake, wakeLockSupported } from "../../state/wakeLock";
 import { stepMarkers } from "../../lib/mapMarkers";
 import type { TipContext } from "../../lib/stepExtras";
 import type { StepPoint } from "../../lib/stepPoints";
@@ -92,6 +93,7 @@ export function MobileGuideBar({
   onJumpCurrent?: () => void;
 }) {
   const away = useCurrentStepOffscreen(currentId, !open);
+  const [awake, setAwake] = useKeepAwake();
   const storeDone = useStepDone(currentId ?? "");
   const done = isDone ?? (!!currentId && storeDone);
   useEffect(() => {
@@ -134,6 +136,18 @@ export function MobileGuideBar({
           <button type="button" className={btn} onClick={onNext} aria-label="Next step">
             <Icon name="chevronRight" className="h-4 w-4" />
           </button>
+          {wakeLockSupported() && (
+            <button
+              type="button"
+              className={`${btn} ${awake ? "border-bronze-400 text-bronze-300" : "text-muted"}`}
+              onClick={() => setAwake(!awake)}
+              aria-pressed={awake}
+              aria-label="Keep the screen on"
+              title={awake ? "Screen stays on while this guide is open" : "Keep the screen on while this guide is open"}
+            >
+              <Icon name={awake ? "eye" : "eyeOff"} className="h-4 w-4" />
+            </button>
+          )}
           <button type="button" className={btn} onClick={() => setOpen(true)} aria-label="Show map and quest details" aria-expanded={open}>
             <Icon name="map" className="h-4 w-4" />
             <span className="hidden sm:inline">Map</span>

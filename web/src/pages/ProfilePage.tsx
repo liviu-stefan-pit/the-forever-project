@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { GameSyncPanel } from "../components/GameSyncPanel";
 import { Icon } from "../components/ui/Icon";
 import { EmptyState, ErrorState } from "../components/ui/States";
+import { PhoneTransferPanel } from "../components/PhoneTransferPanel";
 import { parseGuideWebExport, type GameExportCharacter } from "../state/luaExport";
 import { exportProfile } from "../state/profileStore";
 import { useProfileApi } from "../state/profile";
@@ -402,6 +403,8 @@ export function ProfilePage() {
 
       {active && <GameSyncPanel profile={active} />}
 
+      {active && <PhoneTransferPanel profile={active} />}
+
       <section className="wow-frame p-5">
         <h2 className="font-display text-lg font-bold text-bronze-400">Import</h2>
         <p className="mt-1 text-sm text-bronze-300/70">JSON profile, or a GuideWebExport.lua SavedVariables dump from the game.</p>
@@ -414,8 +417,8 @@ export function ProfilePage() {
           your browser only.
         </p>
         <p className="mt-3 hidden rounded-sm border border-bronze-500/40 bg-frame/60 px-3 py-2 text-sm text-ink touch:block" data-testid="phone-import-note">
-          <strong>On your phone?</strong> GuideWebExport.lua is on the PC you play on. Sync or import it there, press{" "}
-          <strong>Export</strong> on that profile, then open the saved file here with <strong>Import JSON profile</strong>.
+          <strong>On your phone?</strong> GuideWebExport.lua is on the PC you play on. Sync there, then open the Profile page on the PC and
+          scan its <strong>Open on your phone</strong> QR code with this phone.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           <button

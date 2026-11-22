@@ -351,7 +351,19 @@ describe("buildData", () => {
       { label: "1-12", guides: ["horde-1-12"], idPrefixes: { "horde-1-12": ["horde-1-12", "p"] } },
     ]);
     expect(idx.starts).toEqual([{ race: ["Orc", "Troll"], label: "Durotar", firstGuide: "horde-1-12" }]);
-    expect(idx.entries).toEqual([{ slug: "horde-1-12", title: "Horde-1-12", stepIds: ["p:1", "p:3", "p:4"], stepCount: 3 }]);
+    expect(idx.entries).toEqual([
+      {
+        slug: "horde-1-12",
+        title: "Horde-1-12",
+        minLevel: 1,
+        maxLevel: 12,
+        // No authored minutes: 1.5 min a step; one step is on Balanced only.
+        minutes: { balanced: 3, speedrun: 2 },
+        minutesEstimated: true,
+        stepIds: ["p:1", "p:3", "p:4"],
+        stepCount: 3,
+      },
+    ]);
 
     const quests = read<{ id: number; start: { name: string; at?: unknown }[]; xp?: number }[]>(out, "quests-min.json");
     expect(quests.map((q) => q.id)).toEqual([100, 95000]);

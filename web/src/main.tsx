@@ -61,6 +61,13 @@ if (onLanding()) {
   startSearchWorker();
 }
 
+/** Offline support and "Add to Home Screen" (production builds only; dev keeps plain reloads). */
+if (import.meta.env.PROD && "serviceWorker" in navigator && window.isSecureContext) {
+  window.addEventListener("load", () => {
+    void navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`, { scope: import.meta.env.BASE_URL }).catch(() => undefined);
+  });
+}
+
 const root = document.getElementById("root");
 if (!root) throw new Error("#root element missing");
 

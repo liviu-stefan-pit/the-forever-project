@@ -6,7 +6,8 @@ import { EmptyState, ErrorState, Skeleton } from "../components/ui/States";
 import { dataOf, guideTitleOf, useGuideIndex, useGuideTitle, useInsights, useQuests } from "../data/hooks";
 import type { GuideIndex } from "../data/schema";
 import { groupOverviewNotes, overviewIssues, overviewZoneMatch } from "../lib/overview";
-import { useGuideCompletion } from "../state/progress";
+import { useGuideCompletion, useRouteStyle } from "../state/progress";
+import { fmtPlayTime, guideMinutes } from "../lib/timeEstimate";
 import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
 
 const OverviewGuideRow = memo(function OverviewGuideRow({
@@ -14,11 +15,13 @@ const OverviewGuideRow = memo(function OverviewGuideRow({
   name,
   zoneFilter,
   stepIds,
+  minutes,
 }: {
   slug: string;
   name: string;
   zoneFilter: string;
   stepIds: readonly string[] | undefined;
+  minutes?: number;
 }) {
   const stats = useGuideCompletion(slug, { stepIds, defer: true });
   if (!overviewZoneMatch(slug, undefined, zoneFilter)) return null;
@@ -36,6 +39,7 @@ const OverviewGuideRow = memo(function OverviewGuideRow({
           <span className="block truncate text-sm font-medium text-ink">{name}</span>
           <span className="block truncate text-[11px] text-bronze-500/80">
             {stepsLabel ?? "Guide"}
+            {minutes !== undefined && ` · about ${fmtPlayTime(minutes)}`}
           </span>
         </span>
         <Icon name="chevronRight" className="h-4 w-4 shrink-0 text-bronze-500/60" />
@@ -45,6 +49,7 @@ const OverviewGuideRow = memo(function OverviewGuideRow({
 });
 
 function BracketList({ index, zoneFilter }: { index: GuideIndex; zoneFilter: string }) {
+  const route = useRouteStyle();
   return (
     <section className="space-y-3">
       {index.brackets.map((b) => (
@@ -52,7 +57,7 @@ function BracketList({ index, zoneFilter }: { index: GuideIndex; zoneFilter: str
           <h2 className="font-display text-base font-bold text-bronze-400">Levels {b.label.replace("-", "–")}</h2>
           <ul className="mt-2 space-y-2">
             {b.guides.map((g) => (
-              <OverviewGuideRow key={g} slug={g} name={guideTitleOf(index, g)} zoneFilter={zoneFilter} stepIds={index.entries?.find((e) => e.slug === g)?.stepIds} />
+              <OverviewGuideRow key={g} slug={g} name={guideTitleOf(index, g)} zoneFilter={zoneFilter} stepIds={index.entries?.find((e) => e.slug === g)?.stepIds} minutes={guideMinutes(index, g, route)} />
             ))}
           </ul>
         </div>

@@ -67,6 +67,15 @@ export interface GuideIndexEntry {
   /** Step ids in route order. Does not include ids absorbed into another card. */
   stepIds: string[];
   stepCount: number;
+  /** Guide level range (so lists and the start picker need not load every guide). */
+  minLevel?: number;
+  maxLevel?: number;
+  /** Expected solo play minutes on each route (dungeon steps left out). */
+  minutes?: Partial<Record<RouteStyle, number>>;
+  /** Some steps had no authored minutes; their time is the route-wide average per step. */
+  minutesEstimated?: boolean;
+  /** XP-sim level at the guide's first simulated step, per route. */
+  startLevel?: Partial<Record<RouteStyle, number>>;
 }
 
 /** `guide_index.json`: brackets in play order plus the race starts. */

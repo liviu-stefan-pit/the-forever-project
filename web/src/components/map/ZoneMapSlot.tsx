@@ -642,8 +642,9 @@ function ZoneMapSlotImpl(props: ZoneMapSlotProps) {
 
   return (
     <header ref={hostRef as Ref<HTMLElement>} className="wow-frame relative overflow-hidden shadow-card">
-      <div className="flex flex-col gap-3 p-3 sm:flex-row sm:p-4">
-        <div className="relative aspect-[3/2] w-full shrink-0 overflow-hidden rounded-sm border border-stroke sm:w-64 md:w-72">
+      {/* Phones: a thumbnail beside the zone name, so the first steps stay on screen (full map: the Map button). */}
+      <div className="flex flex-row gap-3 p-3 sm:p-4">
+        <div className="relative aspect-[3/2] w-32 shrink-0 overflow-hidden rounded-sm border border-stroke sm:w-64 md:w-72">
           {canvas(false, true)}
           <div className="absolute right-1.5 top-1.5 z-[3]">{tools}</div>
         </div>
@@ -652,9 +653,9 @@ function ZoneMapSlotImpl(props: ZoneMapSlotProps) {
             <Icon name="map" className="h-3.5 w-3.5" />
             {position ? `Zone ${position.index} of ${position.total}` : "Zone"}
           </div>
-          <h2 className="font-display text-2xl font-bold leading-tight text-bronze-400 sm:text-[1.7rem]">{section.zone}</h2>
-          <p className="text-xs text-bronze-500/80">{captionLine}</p>
-          <MapLegend kinds={legend} />
+          <h2 className="font-display text-xl font-bold leading-tight text-bronze-400 sm:text-[1.7rem]">{section.zone}</h2>
+          <p className="line-clamp-2 text-xs text-bronze-500/80 sm:line-clamp-none">{captionLine}</p>
+          <MapLegend kinds={legend} className="hidden sm:flex" />
         </div>
       </div>
       {dialog}

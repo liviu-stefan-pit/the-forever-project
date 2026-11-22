@@ -5,7 +5,7 @@ import { useRoutePosition } from "../../state/position";
 export const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `inline-flex min-h-touch items-center rounded-sm px-2.5 text-sm font-medium transition ${isActive ? "bg-horde-700/50 text-bronze-300" : "text-bronze-500/80 hover:text-ink"}`;
 
-/** Dashboard / Guide / Overview. Guide appears once the route position knows the current guide. */
+/** Dashboard / Guide / Overview / Gold. Guide appears once the route position knows the current guide. */
 export function MainNavLinks({ guideSlug, onNavigate, linkClass = navLinkClass }: { guideSlug?: string; onNavigate?: () => void; linkClass?: typeof navLinkClass }) {
   return (
     <>
@@ -19,6 +19,9 @@ export function MainNavLinks({ guideSlug, onNavigate, linkClass = navLinkClass }
       )}
       <NavLink to="/overview" className={linkClass} onClick={onNavigate}>
         Overview
+      </NavLink>
+      <NavLink to="/gold" className={linkClass} onClick={onNavigate}>
+        Gold
       </NavLink>
     </>
   );
