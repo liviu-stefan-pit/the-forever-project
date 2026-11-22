@@ -1,5 +1,6 @@
 /** `#/addons`: download the in-game addons (GuideWebExport, AdventureLog) from GitHub Releases. */
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
+import { copyText } from "../lib/clipboard";
 import { Link } from "react-router";
 import { Icon } from "../components/ui/Icon";
 import { ADVENTURELOG_ZIP_URL, GUIDEWEBEXPORT_ZIP_URL, RELEASES_URL } from "../config";
@@ -38,6 +39,41 @@ function Addon({ id, name, tag, children, download }: { id: string; name: string
   );
 }
 
+/** Phones only: the addons install on the gaming PC, so offer to send this page there instead. */
+function PhoneNotice() {
+  const [copied, setCopied] = useState(false);
+  const url = typeof window !== "undefined" ? window.location.href : "";
+  const send = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Forever Project addons", url });
+        return;
+      }
+    } catch {
+      return; // share sheet dismissed
+    }
+    if (await copyText(url)) {
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1600);
+    }
+  };
+  return (
+    <div className="hidden space-y-3 rounded-sm border border-bronze-500/50 bg-frame/70 p-4 text-sm text-ink touch:block" data-testid="addons-phone-notice">
+      <p>
+        <strong>These install on the PC you play on</strong>, not on your phone. Open this page on that PC to download them.
+      </p>
+      <button
+        type="button"
+        onClick={send}
+        className="press inline-flex min-h-touch items-center gap-2 rounded-sm border border-bronze-500/60 bg-frame px-3 text-sm font-semibold text-ink"
+      >
+        <Icon name={copied ? "check" : "external"} className="h-4 w-4" />
+        {copied ? "Link copied" : "Send this page to your PC"}
+      </button>
+    </div>
+  );
+}
+
 export function AddonsPage() {
   return (
     <div className="mx-auto max-w-3xl space-y-5 px-4 py-6 sm:px-6 sm:py-8">
@@ -51,6 +87,8 @@ export function AddonsPage() {
           . Both are open source; the zips come from the project&apos;s GitHub Releases.
         </p>
       </header>
+
+      <PhoneNotice />
 
       <Addon
         id="guidewebexport"

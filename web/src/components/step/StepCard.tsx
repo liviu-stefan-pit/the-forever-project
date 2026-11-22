@@ -1,13 +1,14 @@
-import { memo, type MouseEvent, type ReactNode } from "react";
+import { memo, useLayoutEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
 import type { Filter, Step, StepSim } from "../../data/schema";
 import type { QuestNameLookup } from "../../lib/actions";
 import { buildBlockedBanner } from "../../lib/blockedBanner";
 import { checkpointNextSentence } from "../../lib/xp/checkpointText";
-import { cardTips, hookReached, hookSkillWarning, hookText, isUnverified, routeMembership, type TipContext } from "../../lib/stepExtras";
+import { cardHooks, cardTips, hookReached, hookSkillWarning, hookText, isUnverified, routeMembership, type TipContext } from "../../lib/stepExtras";
 import { useEngine, useIsCurrent, useStepDone, useStepRequirement, useStepStatus } from "../../state/progress";
 import type { ActiveRoute, StepsForQuest } from "../../state/questProgress";
 import { unavailableTag as tagFromRequirement } from "../../state/stepRequirement";
 import { Icon } from "../ui/Icon";
+import { isTouchOnly } from "../../lib/touch";
 import { ActionChips, ConditionBadges, FilterTag } from "./ActionChips";
 import { RichLine } from "./RichLine";
 import { StopBadge } from "./StopBadge";
@@ -35,7 +36,8 @@ export interface StepCardProps {
   until?: { label: string; stepId?: string };
   questName?: QuestNameLookup;
   lineVisible: (f: Filter | undefined) => boolean;
-  onToggle: (step: Step) => void;
+  /** `via: "tap"` = the whole card was tapped on a touch device. */
+  onToggle: (step: Step, via?: "tap") => void;
   onSelect: (step: Step) => void;
   /** Live recompute for the active route. Absent = baked `step.sim`. */
   simOverride?: StepSim;
@@ -129,12 +131,16 @@ function StepCardImpl({
   const bonus = step.bonus;
   const sim = simOverride ?? step.sim?.[tipCtx.route];
   const levelUpNext = sim?.levelUp != null ? checkpointNextSentence(sim.next) : undefined;
-  const { tip, advice, elite, hooks, professionTips } = cardTips(step, tipCtx);
+  const { tip, advice, elite, professionTips } = cardTips(step, tipCtx);
+  const hooks = cardHooks(step, tipCtx);
+  const [xpOpen, setXpOpen] = useState(false);
   const dungeon = step.dungeon;
   const membership = routeMembership(step);
   const showBalancedExtra = membership === "balanced" && !!tipCtx.guideHasSpeedrun;
   const unverified = isUnverified(step);
   const xpBadge = sim && sim.gained > 0 ? sim : undefined;
+  // Hover tooltip on desktop; tapping the badge shows the same breakdown on phones.
+  const xpBreakdown = xpBadge ? gainedTooltip(xpBadge) : undefined;
   const collapsed = !!unavailableTag;
   const displayDone = isDone || collapsed;
   const requirement =
@@ -143,7 +149,13 @@ function StepCardImpl({
     (collapsed ? "not_applicable" : isDone ? "done" : blocked ? "blocked" : "required");
 
   const onCardClick = (e: MouseEvent) => {
-    if ((e.target as HTMLElement).closest("a,button")) return;
+    const target = e.target as HTMLElement;
+    if (target.closest("a,button,[data-no-tap]")) return;
+    // Phones: tapping anywhere on the card ticks it (no mouse to aim at the small circle).
+    if (!collapsed && isTouchOnly() && !window.getSelection()?.toString()) {
+      onToggle(step, "tap");
+      return;
+    }
     onSelect(step);
   };
 
@@ -166,17 +178,8 @@ function StepCardImpl({
       className={frame}
       onClick={onCardClick}
     >
-      {xpBadge && (
-        <span
-          data-testid="step-xp"
-          title={gainedTooltip(xpBadge)}
-          className="absolute right-2 top-2 z-10 rounded border border-bronze-500/50 bg-canvas/95 px-2 py-0.5 text-sm font-bold tabular-nums leading-5 text-bronze-300"
-        >
-          +{xpBadge.gained.toLocaleString("en-US")} XP
-        </span>
-      )}
       {bonus && <span aria-hidden="true" className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-bronze-400 via-bronze-500 to-bronze-900" />}
-      <div className={`flex gap-3 ${companion ? "px-3 py-2.5" : "px-3.5 py-3 sm:px-4 sm:py-3.5"} ${bonus ? "pl-4 sm:pl-5" : ""} ${xpBadge ? "pr-24 sm:pr-28" : ""}`}>
+      <div className={`flex gap-3 ${companion ? "px-3 py-2.5" : "px-3.5 py-3 sm:px-4 sm:py-3.5"} ${bonus ? "pl-4 sm:pl-5" : ""} ${xpBadge ? "sm:pr-28" : ""}`}>
         {/* done toggle */}
         <button
           type="button"
@@ -270,7 +273,25 @@ function StepCardImpl({
                 )}
               </span>
             )}
+            {xpBadge && (
+              <button
+                type="button"
+                data-testid="step-xp"
+                title={xpBreakdown}
+                aria-expanded={xpBreakdown ? xpOpen : undefined}
+                aria-label={`+${xpBadge.gained.toLocaleString("en-US")} XP${xpBreakdown ? ", show breakdown" : ""}`}
+                onClick={() => xpBreakdown && setXpOpen((o) => !o)}
+                className="ml-auto shrink-0 rounded border border-bronze-500/50 bg-canvas/95 px-1.5 py-px text-xs font-bold tabular-nums leading-5 text-bronze-300 sm:absolute sm:right-2 sm:top-2 sm:z-10 sm:px-2 sm:py-0.5 sm:text-sm"
+              >
+                +{xpBadge.gained.toLocaleString("en-US")} XP
+              </button>
+            )}
           </div>
+          {xpOpen && xpBreakdown && (
+            <p data-testid="step-xp-breakdown" className="fade-in text-right text-xs tabular-nums text-bronze-300/80">
+              {xpBreakdown}
+            </p>
+          )}
 
           {/* text */}
           {!collapsed && lines.length > 0 && (
@@ -364,31 +385,31 @@ function StepCardImpl({
           )}
 
           {!collapsed && tip && (
-            <p className="flex items-start gap-2 text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-tip">
-              <span className="mt-px inline-flex shrink-0 items-center gap-1 rounded border border-tip/40 px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
+            <p className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-tip">
+              <span className="mr-2 inline-flex items-center gap-1 rounded border border-tip/40 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
                 <Icon name={tip.kind === "speed" ? "zap" : "info"} className="h-3 w-3" />
                 {tip.kind === "speed" ? "Speed" : "Tip"}
                 {tip.classes?.length ? ` · ${tip.classes.join("/")}` : tip.roles?.length ? ` · ${tip.roles.join("/")}` : ""}
               </span>
-              <span className="min-w-0">{tip.text}</span>
+              <span>{tip.text}</span>
             </p>
           )}
           {!collapsed && advice && (
-            <p className="flex items-start gap-2 text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-advice">
-              <span className="mt-px inline-flex shrink-0 items-center gap-1 rounded border border-tip/40 px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
+            <p className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-advice">
+              <span className="mr-2 inline-flex items-center gap-1 rounded border border-tip/40 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
                 <Icon name="shield" className="h-3 w-3" />
                 {advice.roles?.join("/")}
                 {advice.classes?.length ? ` · ${advice.classes.join("/")}` : ""}
               </span>
-              <span className="min-w-0">{advice.text}</span>
+              <span>{advice.text}</span>
             </p>
           )}
           {!collapsed && elite.map((e, i) => (
-            <p key={`elite-${i}`} className="flex items-start gap-2 text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-elite">
-              <span className="mt-px inline-flex shrink-0 items-center gap-1 rounded border border-danger/50 px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-danger">
+            <p key={`elite-${i}`} className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-elite">
+              <span className="mr-2 inline-flex items-center gap-1 rounded border border-danger/50 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-danger">
                 <Icon name="skull" className="h-3 w-3" /> Elite
               </span>
-              <span className="min-w-0">
+              <span>
                 {e.name && (
                   <strong className="font-semibold">
                     {e.name}
@@ -405,12 +426,12 @@ function StepCardImpl({
             const reached = hookReached(h, tipCtx?.skills);
             const warn = hookSkillWarning(h, tipCtx?.skills);
             return (
-            <p key={`hook-${i}`} className={`flex items-start gap-2 rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs text-ink ${reached ? "text-muted opacity-70" : ""}`} data-testid="step-profession">
-              <span className={`inline-flex shrink-0 items-center gap-1 font-semibold text-profession ${reached ? "line-through" : ""}`}>
+            <Foldable key={`hook-${i}`} className={`rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs leading-snug text-ink ${reached ? "text-muted opacity-70" : ""}`} testId="step-profession">
+              <span className={`mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession ${reached ? "line-through" : ""}`}>
                 <Icon name="bag" className="h-3.5 w-3.5" />
                 {h.profession}
               </span>
-              <span className="min-w-0">
+              <span>
                 <span className={reached ? "line-through" : undefined}>{hookText(h, tipCtx?.skills)}</span>
                 {warn && <span className="text-bronze-400"> · {warn}</span>}
                 {h.npc && (
@@ -420,16 +441,16 @@ function StepCardImpl({
                   </span>
                 )}
               </span>
-            </p>
+            </Foldable>
             );
           })}
           {!collapsed && professionTips.map((t, i) => (
-            <p key={`ptip-${i}`} className="flex items-start gap-2 rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs text-ink" data-testid="step-profession">
-              <span className="inline-flex shrink-0 items-center gap-1 font-semibold text-profession">
+            <Foldable key={`ptip-${i}`} className="rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs leading-snug text-ink" testId="step-profession">
+              <span className="mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession">
                 <Icon name="bag" className="h-3.5 w-3.5" /> Profession
               </span>
-              <span className="min-w-0">{t.text}</span>
-            </p>
+              <span>{t.text}</span>
+            </Foldable>
           ))}
 
           {!collapsed && (
@@ -463,5 +484,43 @@ function UnverifiedChip({ className = "" }: { className?: string }) {
     <span title="From WoW Forever data, not yet checked in game." data-testid="step-unverified" className={`inline-flex items-center gap-1 whitespace-nowrap rounded border border-stroke px-1.5 py-px text-[10px] font-medium leading-4 text-muted ${className}`}>
       <Icon name="question" className="h-3 w-3" /> Unverified
     </span>
+  );
+}
+
+/**
+ * Long side notes (profession hooks) fold to two lines on phones so the step itself stays easy to scan
+ * while scrolling. "More" opens the full note; wider screens always show it in full.
+ */
+function Foldable({ children, className, testId }: { children: ReactNode; className: string; testId?: string }) {
+  const ref = useRef<HTMLParagraphElement>(null);
+  const [open, setOpen] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el || open) return;
+    const measure = () => setOverflows(el.scrollHeight - el.clientHeight > 2);
+    measure();
+    if (typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [open]);
+  return (
+    <div className={className} data-testid={testId}>
+      <p ref={ref} className={open ? undefined : "line-clamp-2 sm:line-clamp-none"}>
+        {children}
+      </p>
+      {(overflows || open) && (
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="-mb-1 mt-0.5 inline-flex min-h-[32px] items-center gap-1 font-semibold text-profession sm:hidden"
+        >
+          {open ? "Less" : "More"}
+          <Icon name="chevronDown" className={`h-3 w-3 transition ${open ? "rotate-180" : ""}`} />
+        </button>
+      )}
+    </div>
   );
 }

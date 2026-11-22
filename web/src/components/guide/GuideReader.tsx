@@ -308,12 +308,30 @@ export function GuideReader({
   }, [runNav, ui.searchOpen, ui.drawerOpen, sheetOpen, drawerQuestId]);
 
   const onToggle = useCallback(
-    (s: Step) => {
+    (s: Step, via?: "tap") => {
       if (progress.requirement(s, quests).kind === "not_applicable") return;
+      if (via === "tap") {
+        // Card tap on a phone: tick it and move the cursor to the next open step; tap again to undo.
+        try {
+          navigator.vibrate?.(10);
+        } catch {
+          // Haptics are optional.
+        }
+        if (isDone(s.id) || !order.includes(s.id)) {
+          progress.toggle(s.id, s, quests);
+          select(s.id, null);
+          return;
+        }
+        const res = navReducer(s.id, "toggle", { order, isDone, shouldSkip });
+        if (res.toggle) progress.toggle(res.toggle, stepById.get(res.toggle), quests);
+        const next = res.current;
+        if (next) startTransition(() => select(next, null));
+        return;
+      }
       if (s.id === currentId && !isDone(s.id)) runNav("toggle");
       else progress.toggle(s.id, s, quests);
     },
-    [currentId, progress, runNav, isDone, quests],
+    [currentId, progress, runNav, isDone, quests, order, shouldSkip, stepById, select],
   );
   const onSelect = useCallback((s: Step) => select(s.id, null), [select]);
   const onJump = useCallback((id: string) => select(id, "center"), [select]);
@@ -535,6 +553,7 @@ export function GuideReader({
         onPrev={() => runNav("prev")}
         onNext={() => runNav("next")}
         onToggle={() => runNav("toggle")}
+        onJumpCurrent={() => { if (currentId) select(currentId, "center"); }}
       />
       <span className="sr-only" aria-live="polite">
         {currentStep ? `Step ${posInOrder} of ${order.length}${isDone(currentStep.id) ? ", done" : ""}` : ""}

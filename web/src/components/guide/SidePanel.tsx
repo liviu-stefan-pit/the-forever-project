@@ -2,7 +2,7 @@
  * Right panel content (sticky on wide screens, bottom sheet on narrow ones):
  * current section map slot (P8) + quest details slot (P9).
  */
-import { useEffect, useMemo, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { stepMarkers } from "../../lib/mapMarkers";
 import type { TipContext } from "../../lib/stepExtras";
 import type { StepPoint } from "../../lib/stepPoints";
@@ -77,6 +77,7 @@ export function MobileGuideBar({
   onPrev,
   onNext,
   onToggle,
+  onJumpCurrent,
 }: {
   panel: ReactNode;
   stepLabel: string;
@@ -87,7 +88,10 @@ export function MobileGuideBar({
   onPrev: () => void;
   onNext: () => void;
   onToggle: () => void;
+  /** Scroll back to the current step (shown as a pill when it is off screen). */
+  onJumpCurrent?: () => void;
 }) {
+  const away = useCurrentStepOffscreen(currentId, !open);
   const storeDone = useStepDone(currentId ?? "");
   const done = isDone ?? (!!currentId && storeDone);
   useEffect(() => {
@@ -101,6 +105,17 @@ export function MobileGuideBar({
   return (
     <>
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-stroke bg-canvas/90 px-3 py-2 backdrop-blur-md xl:hidden" style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}>
+        {away && onJumpCurrent && (
+          <button
+            type="button"
+            onClick={onJumpCurrent}
+            data-testid="back-to-current"
+            className="fade-in absolute bottom-full left-1/2 mb-2 inline-flex min-h-touch -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full border border-bronze-500/70 bg-frame/95 px-4 text-sm font-semibold text-bronze-300 shadow-lg shadow-black/50 backdrop-blur-md active:scale-[0.97]"
+          >
+            <Icon name="arrowRight" className={`h-4 w-4 ${away === "above" ? "-rotate-90" : "rotate-90"}`} />
+            Back to {stepLabel}
+          </button>
+        )}
         <div className="mx-auto flex max-w-2xl items-center gap-2">
           <button type="button" className={btn} onClick={onPrev} aria-label="Previous step">
             <Icon name="chevronLeft" className="h-4 w-4" />
@@ -141,4 +156,46 @@ export function MobileGuideBar({
       )}
     </>
   );
+}
+
+export type OffscreenSide = "above" | "below" | null;
+
+/** Where the step card sits relative to the visible area (between the top bar and the bottom bar). */
+export function offscreenSide(rect: { top: number; bottom: number } | null, viewTop: number, viewBottom: number): OffscreenSide {
+  if (!rect) return null;
+  if (rect.bottom < viewTop) return "above";
+  if (rect.top > viewBottom) return "below";
+  return null;
+}
+
+/** Tracks whether the current step card has been scrolled out of view (phones read and scroll a lot). */
+function useCurrentStepOffscreen(currentId: string | undefined, enabled: boolean): OffscreenSide {
+  const [side, setSide] = useState<OffscreenSide>(null);
+  useEffect(() => {
+    if (!currentId || !enabled) {
+      setSide(null);
+      return;
+    }
+    let raf = 0;
+    const check = () => {
+      raf = 0;
+      const el = document.getElementById(`step-${currentId}`);
+      // 96px ≈ the bottom bar plus the pill itself.
+      const next = offscreenSide(el ? el.getBoundingClientRect() : null, 24, window.innerHeight - 96);
+      // Still reading the guide intro at the top: the step is simply further down, no need to nag.
+      setSide(next === "below" && window.scrollY < 240 ? null : next);
+    };
+    const onScroll = () => {
+      if (!raf) raf = window.requestAnimationFrame(check);
+    };
+    check();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (raf) window.cancelAnimationFrame(raf);
+    };
+  }, [currentId, enabled]);
+  return side;
 }

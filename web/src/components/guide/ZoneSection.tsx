@@ -32,7 +32,7 @@ export interface ZoneSectionProps {
   currentId: string | undefined;
   questName: QuestNameLookup;
   lineVisible: (f: Filter | undefined) => boolean;
-  onToggle: (s: Step) => void;
+  onToggle: (s: Step, via?: "tap") => void;
   onSelect: (s: Step) => void;
   onJump: (id: string) => void;
   onStopSelect: (s: Stop) => void;

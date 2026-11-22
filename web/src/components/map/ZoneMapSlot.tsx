@@ -428,7 +428,7 @@ function MapCanvas({
             <button
               type="button"
               data-pin="copy"
-              className="shrink-0 inline-flex items-center gap-1 rounded-sm border border-bronze-500/70 bg-parchment px-1.5 py-0.5 font-mono text-[10px] text-parchment-ink hover:border-horde-500 hover:text-horde-400"
+              className="shrink-0 inline-flex items-center gap-1 rounded-sm border border-bronze-500/70 bg-parchment touch:hidden px-1.5 py-0.5 font-mono text-[10px] text-parchment-ink hover:border-horde-500 hover:text-horde-400"
               title={`Copy "${way}" (TomTom)`}
               aria-label={`Copy waypoint ${way}`}
               onClick={async () => {

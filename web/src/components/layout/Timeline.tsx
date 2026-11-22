@@ -189,7 +189,7 @@ export function Timeline({ collapsed = false, onToggleCollapsed }: { collapsed?:
       </div>
 
       {!collapsed && (
-        <div className="border-t border-stroke/70 px-4 py-3 text-[11px] text-bronze-500/80">
+        <div className="border-t border-stroke/70 px-4 py-3 text-[11px] text-bronze-500/80 touch:hidden">
           <div className="flex items-center gap-1.5">
             <Icon name="keyboard" className="h-3.5 w-3.5" />
             <span>

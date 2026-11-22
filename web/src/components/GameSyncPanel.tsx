@@ -95,7 +95,13 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
         Game sync · {profile.name}
       </h2>
       {!sync.available ? (
-        <p className="mt-1 text-sm text-muted" data-testid="game-sync-unavailable">
+        <>
+        <p className="mt-1 hidden text-sm text-muted touch:block" data-testid="game-sync-phone">
+          Game sync runs on the PC you play on (desktop Chrome or Edge). To follow the guide on your phone, sync there, press{" "}
+          <strong className="text-ink">Export</strong> on the profile, and open that file here with{" "}
+          <strong className="text-ink">Import JSON profile</strong>.
+        </p>
+        <p className="mt-1 text-sm text-muted touch:hidden" data-testid="game-sync-unavailable">
           One-click sync needs desktop Chrome or Edge. In this browser, use <strong className="text-ink">Import GuideWebExport.lua</strong>{" "}
           below; you can get the addon on the{" "}
           <Link to="/addons" className="text-bronze-400 hover:text-bronze-300">
@@ -103,6 +109,7 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
           </Link>{" "}
           page. {GAME_FILE_REMINDER.replace(" before you press Sync", " before you import it")}
         </p>
+        </>
       ) : (
       <>
       <p className="mt-1 text-sm text-muted">{GAME_FILE_REMINDER}</p>

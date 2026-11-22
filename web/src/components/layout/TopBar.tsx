@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router";
 import { HORDE_HOME, SITE_NAME } from "../../config";
 import { MainNavLinks } from "./MainNav";
+import { useHideOnScroll } from "./scrollHide";
 import { dataOf, useGuide, useQuests } from "../../data/hooks";
 import { useCurrentGuideSlug, useEngine, useGuideCompletion, useProgressActions, useRouteStyle } from "../../state/progress";
 import { useRoutePosition } from "../../state/position";
@@ -372,8 +373,14 @@ export function TopBar() {
   const profile = useActiveProfileSummary();
   const guideSlug = useCurrentGuideSlug();
   const pos = useRoutePosition();
+  // Phones: the guide is read one-handed while playing, so the bar gets out of the way on scroll down.
+  const onGuide = useLocation().pathname.startsWith("/guide/");
+  const scrollHidden = useHideOnScroll(onGuide && !ui.drawerOpen && !ui.searchOpen);
   return (
-    <header className="sticky top-0 z-40 border-b border-stroke bg-canvas/85 backdrop-blur-md">
+    <header
+      data-scroll-hidden={scrollHidden ? "true" : undefined}
+      className="topbar sticky top-0 z-40 border-b border-stroke bg-canvas/85 backdrop-blur-md"
+    >
       <div className="flex h-14 items-center gap-2 px-3 sm:gap-3 sm:px-4">
         <button
           type="button"
@@ -444,7 +451,7 @@ export function TopBar() {
         >
           <Icon name="search" className="h-4 w-4" />
           <span className="hidden text-sm lg:inline">Search</span>
-          <kbd className="hidden rounded-sm border border-stroke bg-canvas px-1.5 font-sans text-[10px] text-bronze-500/80 lg:inline">Ctrl K</kbd>
+          <kbd className="hidden rounded-sm border border-stroke bg-canvas px-1.5 font-sans text-[10px] text-bronze-500/80 lg:inline touch:hidden">Ctrl K</kbd>
         </button>
         <Link
           to="/profile"

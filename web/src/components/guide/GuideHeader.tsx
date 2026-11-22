@@ -80,14 +80,14 @@ export function GuideHeader({
             <span title={GUIDE_STEP_COUNT_TITLE}>{formatGuideStepCount(total, guide.steps.length)}</span>
           </p>
         </div>
-        <div className="wow-frame flex items-center gap-3 px-3 py-2">
+        <div className="wow-frame flex w-full items-center gap-3 px-3 py-2 sm:w-auto">
           <ProgressRing value={frac} size={40} stroke={4} label={`${Math.round(frac * 100)}%`} />
-          <div className="text-xs leading-tight">
-            <div className="font-semibold text-ink">
+          <div className="flex min-w-0 flex-1 flex-wrap items-center gap-x-4 text-xs leading-tight sm:block">
+            <div className="w-full font-semibold text-ink">
               {done} / {total} done
             </div>
-            <button type="button" onClick={onJumpCurrent} className="mt-0.5 inline-flex min-h-touch items-center gap-1 text-bronze-400 transition hover:text-bronze-300">
-              Jump to current <kbd className="rounded-sm border border-stroke px-1 text-[10px] text-bronze-500/80">n</kbd>
+            <button type="button" onClick={onJumpCurrent} className="inline-flex min-h-touch items-center gap-1 text-bronze-400 transition hover:text-bronze-300 sm:mt-0.5">
+              Jump to current <kbd className="hidden rounded-sm border border-stroke px-1 text-[10px] text-bronze-500/80 sm:inline touch:hidden">n</kbd>
             </button>
             {onMarkUpToHere && (
               <button type="button" onClick={onMarkUpToHere} className="flex min-h-touch items-center text-left text-[11px] text-bronze-500/80 transition hover:text-ink">

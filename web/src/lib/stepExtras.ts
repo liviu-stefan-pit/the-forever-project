@@ -70,6 +70,16 @@ export function cardTips(step: Step, ctx: TipContext): CardTips {
   return result;
 }
 
+/**
+ * Profession notes for step cards. Only for professions the character has (picked on the Profile page,
+ * or synced from the game). With none known they stay in the Professions panel, not on every card.
+ */
+export function cardHooks(step: Step, ctx: TipContext): ProfessionHook[] {
+  const known = ctx.professions?.length ? ctx.professions : (Object.keys(ctx.skills ?? {}) as ProfessionKey[]);
+  if (!known.length) return [];
+  return (step.professionHooks ?? []).filter((h) => known.includes(h.profession));
+}
+
 export type SkillRanks = Partial<Record<ProfessionKey, { cur: number; max: number }>>;
 
 function skillRank(h: ProfessionHook, skills?: SkillRanks): { cur: number; max: number } | undefined {
