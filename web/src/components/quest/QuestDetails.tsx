@@ -1,8 +1,7 @@
 import { Link } from "react-router";
-import { dataOf, useQuestSteps } from "../../data/hooks";
+import { dataOf, guideOfStep, guideTitleOf, useGuideIndex, useQuestSteps } from "../../data/hooks";
 import type { QuestMap, ZoneMap } from "../../data/loader";
 import type { QuestInfo } from "../../data/schema";
-import { prettifySlug } from "../../lib/levels";
 import { namedChain, questLeg, questMapSection, wowheadQuestUrl } from "../../lib/questView";
 import { ZoneMapSlot } from "../map/ZoneMapSlot";
 import { Icon } from "../ui/Icon";
@@ -17,7 +16,17 @@ export function QuestDetails({
   quests?: QuestMap;
   zones?: ZoneMap;
 }) {
-  const stepIds = dataOf(useQuestSteps())?.get(quest.id) ?? [];
+  const guideIndex = dataOf(useGuideIndex());
+  const allStepIds = dataOf(useQuestSteps())?.get(quest.id) ?? [];
+  // One link per guide (its first step for this quest). Step-id prefixes ("horde-20-40", "h4060")
+  // are not guide slugs, so look the guide up in the index.
+  const seen = new Set<string>();
+  const stepIds = allStepIds.filter((sid) => {
+    const slug = guideOfStep(guideIndex, sid) ?? sid.split(":")[0]!;
+    if (seen.has(slug)) return false;
+    seen.add(slug);
+    return true;
+  });
   const wowhead = wowheadQuestUrl(quest);
   const pre = namedChain([...new Set([...quest.pre.single, ...quest.pre.group])], quests);
   const follow = quest.next != null ? namedChain([quest.next], quests) : [];
@@ -139,17 +148,17 @@ export function QuestDetails({
 
       {stepIds.length > 0 && (
         <section>
-          <h3 className="mb-1.5 text-[11px] uppercase tracking-wider text-bronze-500/80">Used by steps</h3>
+          <h3 className="mb-1.5 text-[11px] uppercase tracking-wider text-bronze-500/80">In these guides</h3>
           <ul className="flex flex-wrap gap-1.5">
             {stepIds.map((sid) => {
-              const slug = sid.split(":")[0]!;
+              const slug = guideOfStep(guideIndex, sid) ?? sid.split(":")[0]!;
               return (
                 <li key={sid}>
                   <Link
                     to={`/guide/${slug}?step=${encodeURIComponent(sid)}`}
                     className="inline-flex items-center gap-1 rounded-sm border border-bronze-500/60 px-2 py-0.5 text-xs hover:border-bronze-400"
                   >
-                    {prettifySlug(slug)} <Icon name="arrowRight" className="h-3 w-3" />
+                    {guideTitleOf(guideIndex, slug)} <Icon name="arrowRight" className="h-3 w-3" />
                   </Link>
                 </li>
               );

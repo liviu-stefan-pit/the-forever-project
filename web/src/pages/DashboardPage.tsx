@@ -12,7 +12,7 @@ import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
 import { Icon } from "../components/ui/Icon";
 import { ErrorState, Skeleton } from "../components/ui/States";
 import { publicAsset, type ZonePoint } from "../components/map/route";
-import { dataOf, useGuide, useGuideIndex, useInsights, useQuests, useZones } from "../data/hooks";
+import { dataOf, useGuide, useGuideIndex, useGuideTitle, useInsights, useQuests, useZones } from "../data/hooks";
 import type { Guide, Step, StepSim } from "../data/schema";
 import type { QuestMap } from "../data/loader";
 import { actionChip } from "../lib/actions";
@@ -27,7 +27,6 @@ import {
   type StopGroup,
 } from "../lib/dashboard";
 import { pickNextOpenSteps } from "../lib/guideList";
-import { prettifySlug } from "../lib/levels";
 import { cardTips, type TipContext } from "../lib/stepExtras";
 import { stepSpot } from "../lib/stepPoints";
 import { useRecomputedSim } from "../lib/xp/useRecomputedSim";
@@ -157,6 +156,7 @@ function LevelBadge({ level }: { level: number }) {
 }
 
 function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests: QuestMap }) {
+  const guideTitle = useGuideTitle();
   const progress = useProgress();
   const active = useProfileApi().active;
   const now = model.now;
@@ -166,7 +166,7 @@ function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests:
         <p className="font-semibold">This guide is done.</p>
         {model.nextGuide && (
           <Link to={`/guide/${model.nextGuide}`} className="mt-1 inline-block font-semibold text-bronze-400 hover:text-bronze-300">
-            On to {prettifySlug(model.nextGuide)} →
+            On to {guideTitle(model.nextGuide)} →
           </Link>
         )}
       </div>
@@ -275,6 +275,7 @@ function StopRow({ slug, stop, quests }: { slug: string; stop: StopGroup; quests
 }
 
 function Goals({ model }: { model: Model }) {
+  const guideTitle = useGuideTitle();
   const next = model.milestones[0];
   const rest = model.milestones.slice(1);
   const lvl = Math.floor(model.levelNow);
@@ -327,7 +328,7 @@ function Goals({ model }: { model: Model }) {
           <span className="text-sm text-muted">
             Then:{" "}
             <Link to={`/guide/${model.nextGuide}`} className="font-semibold text-bronze-400 hover:text-bronze-300">
-              {prettifySlug(model.nextGuide)} →
+              {guideTitle(model.nextGuide)} →
             </Link>
           </span>
         )}
@@ -389,6 +390,7 @@ export function DashboardPage() {
   const zones = dataOf(useZones());
   const progress = useProgress();
   const active = useProfileApi().active;
+  const guideTitle = useGuideTitle();
   const guide = pos.guide;
   const model = useDashboardModel(pos, guide, quests);
 
@@ -410,7 +412,7 @@ export function DashboardPage() {
   }
 
   const guideError = guideRes.status === "error" ? guideRes : null;
-  const guideName = guideError ? "Guide unavailable" : (guide?.displayName ?? (pos.guideSlug ? prettifySlug(pos.guideSlug) : ""));
+  const guideName = guideError ? "Guide unavailable" : (guide?.displayName ?? (pos.guideSlug ? guideTitle(pos.guideSlug) : ""));
   const added = pos.guideSlug ? (insights?.added[pos.guideSlug] ?? []) : [];
   const started = !!progress.current;
   const zone = model?.heroMapId !== undefined ? zones?.get(model.heroMapId) : undefined;

@@ -19,7 +19,7 @@ export function Footer({ coffeeUrl = COFFEE_URL }: { coffeeUrl?: string }) {
         <p className="min-w-0 flex-1">Free and fan-made. Not affiliated with Blizzard Entertainment or WoW Forever.</p>
         <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-4">
           <Link to="/" className="link-grow inline-flex min-h-touch items-center hover:text-ink">
-            Choose faction
+            Home
           </Link>
           <Link to="/about" className="link-grow inline-flex min-h-touch items-center hover:text-ink">
             About

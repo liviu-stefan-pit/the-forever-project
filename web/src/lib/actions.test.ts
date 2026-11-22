@@ -66,6 +66,10 @@ describe("misc helpers", () => {
     expect(parseRange("22-30")).toEqual([22, 30]);
     expect(prettifySlug("1-6-durotar")).toBe("1–6 Durotar");
     expect(prettifySlug("22-24-hillsbrad-foothills")).toBe("22–24 Hillsbrad Foothills");
+    // No faction prefix, pack numbering or trailing range in reader-facing names.
+    expect(prettifySlug("horde-20-40-03-stonetalon-ashenvale-hillsbrad")).toBe("Stonetalon Ashenvale Hillsbrad");
+    expect(prettifySlug("barrens-12-20")).toBe("Barrens");
+    expect(prettifySlug("zephras-isle")).toBe("Zephras Isle");
   });
 
   it("hides bonus steps only in Speedrun mode (P6 default visibility)", () => {

@@ -3,26 +3,26 @@ import { Link, useSearchParams } from "react-router";
 import { Icon } from "../components/ui/Icon";
 import { ProgressRing } from "../components/ui/ProgressRing";
 import { EmptyState, ErrorState, Skeleton } from "../components/ui/States";
-import { dataOf, useGuideIndex, useInsights } from "../data/hooks";
+import { dataOf, guideTitleOf, useGuideIndex, useInsights } from "../data/hooks";
 import type { GuideIndex } from "../data/schema";
 import { issueHref, overviewIssues, overviewZoneMatch } from "../lib/overview";
-import { prettifySlug } from "../lib/levels";
 import { useGuideCompletion } from "../state/progress";
 import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
 
 const OverviewGuideRow = memo(function OverviewGuideRow({
   slug,
+  name,
   zoneFilter,
   stepIds,
 }: {
   slug: string;
+  name: string;
   zoneFilter: string;
   stepIds: readonly string[] | undefined;
 }) {
   const stats = useGuideCompletion(slug, { stepIds, defer: true });
   if (!overviewZoneMatch(slug, undefined, zoneFilter)) return null;
   const value = stats && stats.total > 0 ? stats.done / stats.total : undefined;
-  const name = prettifySlug(slug);
   const stepsLabel = stats && stats.total > 0 ? `${stats.done}/${stats.total} steps` : undefined;
 
   return (
@@ -52,7 +52,7 @@ function BracketList({ index, zoneFilter }: { index: GuideIndex; zoneFilter: str
           <h2 className="font-display text-base font-bold text-bronze-400">Levels {b.label.replace("-", "–")}</h2>
           <ul className="mt-2 space-y-2">
             {b.guides.map((g) => (
-              <OverviewGuideRow key={g} slug={g} zoneFilter={zoneFilter} stepIds={index.entries?.find((e) => e.slug === g)?.stepIds} />
+              <OverviewGuideRow key={g} slug={g} name={guideTitleOf(index, g)} zoneFilter={zoneFilter} stepIds={index.entries?.find((e) => e.slug === g)?.stepIds} />
             ))}
           </ul>
         </div>

@@ -57,9 +57,6 @@ export function GuideHeader({
         {bracket && <span className="text-bronze-400">Levels {bracket.replace("-", "–")}</span>}
         {bracket && <span aria-hidden="true">·</span>}
         <span>{guide.subgroup}</span>
-        {guide.source === "builtin" && (
-          <span className="rounded-full border border-stroke px-2 py-px text-[10px] tracking-wider text-bronze-500/80">built-in</span>
-        )}
         <ExperimentalBadge />
       </div>
       <div className="flex flex-wrap items-end justify-between gap-4">

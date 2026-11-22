@@ -383,7 +383,17 @@ export function TopBar() {
         >
           <Icon name="menu" className="h-5 w-5" />
         </button>
-        <Link to={HORDE_HOME} className="flex shrink-0 items-center gap-2.5 whitespace-nowrap" aria-label={`${SITE_NAME} — dashboard`}>
+        <Link
+          to="/"
+          title="Home: choose your faction"
+          aria-label="Home: choose your faction"
+          className="press -mr-1 inline-flex min-h-touch min-w-touch shrink-0 items-center justify-center gap-1 rounded-sm px-1.5 text-sm font-semibold text-bronze-500/80 transition hover:bg-frame hover:text-bronze-300 2xl:pr-2.5"
+        >
+          <Icon name="chevronLeft" className="h-4 w-4" />
+          <span className="hidden 2xl:inline">Home</span>
+        </Link>
+        <span aria-hidden="true" className="hidden h-6 w-px shrink-0 bg-stroke sm:block" />
+        <Link to={HORDE_HOME} className="flex shrink-0 items-center gap-2.5 whitespace-nowrap" aria-label="Horde guide: dashboard">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-bronze-500 bg-gradient-to-br from-horde-500 to-horde-700 text-bronze-300">
             <Emblem className="h-5 w-5" />
           </span>
@@ -391,7 +401,7 @@ export function TopBar() {
             <span className="block font-display text-base font-bold tracking-wide text-bronze-400">
               {SITE_NAME}
             </span>
-            <span className="block text-[10px] font-semibold uppercase tracking-[0.25em] text-bronze-400">Forever · Horde 1–60</span>
+            <span className="block text-[10px] font-semibold uppercase tracking-[0.25em] text-bronze-400">Horde guide · 1–60</span>
           </span>
         </Link>
         <nav aria-label="Main" className="ml-2 hidden items-center gap-1 xl:flex">

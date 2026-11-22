@@ -11,8 +11,11 @@ export function parseRange(label: string): [number, number] {
 
 /** "1-6-durotar" → "1–6 Durotar" (used until the guide JSON is loaded). */
 export function prettifySlug(slug: string): string {
-  const m = /^(\d+)-(\d+)-(.*)$/.exec(slug);
-  const words = (m ? m[3]! : slug)
+  // Fallback only (real titles come from the guide index): drop the faction prefix, the pack
+  // numbering ("20-40-03-") and a trailing level range ("-12-20"), which readers see elsewhere.
+  const base = slug.replace(/^horde-/, "").replace(/^\d+-\d+-\d+-/, "").replace(/(.)-\d+-\d+$/, "$1");
+  const m = /^(\d+)-(\d+)-(.*)$/.exec(base);
+  const words = (m ? m[3]! : base)
     .split("-")
     .filter(Boolean)
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))

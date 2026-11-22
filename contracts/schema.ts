@@ -62,6 +62,8 @@ export type GuideIdPrefixes = Record<string, string[]>;
 /** One indexed guide in `guide_index.json`, with the step ids that guide publishes. */
 export interface GuideIndexEntry {
   slug: string;
+  /** Reader-facing guide title (the guide's `displayName`), so lists need not load every guide. */
+  title?: string;
   /** Step ids in route order. Does not include ids absorbed into another card. */
   stepIds: string[];
   stepCount: number;

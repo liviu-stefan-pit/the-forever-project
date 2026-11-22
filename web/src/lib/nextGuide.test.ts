@@ -56,7 +56,7 @@ describe("successorSlug", () => {
 describe("guideName", () => {
   it("prefers a real displayName over prettifySlug", () => {
     expect(guideName("barrens-12-20", "The Barrens 12-20")).toBe("The Barrens 12-20");
-    expect(guideName("barrens-12-20")).toBe("Barrens 12 20");
+    expect(guideName("barrens-12-20")).toBe("Barrens");
   });
 });
 
