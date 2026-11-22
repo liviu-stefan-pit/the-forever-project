@@ -1,0 +1,1681 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "mulgore-1-12",
+ "title": "Thunder Bluff and the road to the Barrens",
+ "steps": [
+  {
+   "id": "mulgore-1-12:110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Journey into Thunder Bluff to Cairne Bloodhoof"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 775,
+     "label": "Journey into Thunder Bluff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=775",
+     "label": "Wowhead Classic quest 775"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Cairne Bloodhoof is on the top rise of Thunder Bluff.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=775",
+       "label": "Wowhead Classic quest 775"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:127",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rites of the Earthmother from Cairne. Check Arra'chea at 51.25, 24.82. If she is not up, finish the nearby claws and leave. If you have the horn, return it to Cairne at 60.3, 51.68."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 776,
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.68,
+      "zone": "Thunder Bluff",
+      "exact": true
+     },
+     "label": "Rites of the Earthmother"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 51.25,
+      "y": 24.82,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 776,
+     "label": "Rites of the Earthmother"
+    },
+    {
+     "type": "turnin",
+     "questId": 776,
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.68,
+      "zone": "Thunder Bluff",
+      "exact": true
+     },
+     "label": "Rites of the Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=776",
+     "label": "Wowhead Classic quest 776"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:111",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Longwalkers to Cairne Bloodhoof"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98430,
+     "label": "The Longwalkers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/mulgore/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://wowfdb.com/zones/thunder-bluff/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:112",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The High Chieftain to Cairne Bloodhoof"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99082,
+     "label": "The High Chieftain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/mulgore/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://wowfdb.com/zones/thunder-bluff/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:w2-98435-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Thunderhorn's Report to Arch Druid Hamuul Runetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 78.6,
+      "y": 28.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98435,
+     "label": "Thunderhorn's Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=98435",
+     "label": "Wowhead Classic quest 98435"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "mulgore-1-12:113",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Tal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 47,
+      "y": 49.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Tal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2995",
+     "label": "Wowhead Classic NPC 2995"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Get the Thunder Bluff flight path.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2995",
+       "label": "Wowhead Classic NPC 2995"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2995,
+     "name": "Tal",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 47,
+      "y": 49.8
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2995",
+       "label": "Wowhead Classic NPC 2995"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-744-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Preparation for Ceremony from Eyahn Eagletalon."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 37.8,
+      "y": 59.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 744,
+     "label": "Preparation for Ceremony"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead Classic quest 744"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-744-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Preparation for Ceremony."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 37.8,
+      "y": 22.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 744,
+     "objective": 1,
+     "label": "Preparation for Ceremony"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead Classic quest 744"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:grind-sr-a",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill 50 Windfury Matriarchs. Dense camp, 46 spawns. Speedrun only, partway to 12."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 39.1,
+      "y": 26.6,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 11,
+     "extra": 5715,
+     "label": "Kill 50 Windfury Matriarchs. Dense camp, 46 spawns. Speedrun only, partway to 12.",
+     "mobId": 2965,
+     "mobName": "Windfury Matriarch",
+     "mobLevel": 11
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2965",
+     "label": "Wowhead Classic NPC 2965"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2965
+     ],
+     "name": "Windfury Matriarch",
+     "mapId": 1412,
+     "zone": "Mulgore",
+     "center": {
+      "x": 39.1,
+      "y": 26.6
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2965",
+       "label": "Wowhead Classic NPC 2965"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:grind-to-12",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Kodo Matriarchs until you hit 12, about 30 on the speedrun and fewer if you are already close. 23 spawns. Classic kodo leather, Forever unverified."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 42,
+      "y": 41.4,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 12,
+     "extra": 0,
+     "label": "Kill Kodo Matriarchs until you hit 12, about 30 on the speedrun and fewer if you are already close. 23 spawns. Classic kodo leather, Forever unverified.",
+     "mobId": 2974,
+     "mobName": "Kodo Matriarch",
+     "mobLevel": 12
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2974",
+     "label": "Wowhead Classic NPC 2974"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2974
+     ],
+     "name": "Kodo Matriarch",
+     "mapId": 1412,
+     "zone": "Mulgore",
+     "center": {
+      "x": 42,
+      "y": 41.4
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2974",
+       "label": "Wowhead Classic NPC 2974"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-744-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Preparation for Ceremony to Eyahn Eagletalon."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 37.8,
+      "y": 59.6,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 744,
+     "label": "Preparation for Ceremony"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead Classic quest 744"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-768-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gathering Leather from Veren Tallstrider."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 768,
+     "label": "Gathering Leather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=768",
+     "label": "Wowhead Classic quest 768"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-768-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Gathering Leather."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 768,
+     "objective": 1,
+     "label": "Gathering Leather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=768",
+     "label": "Wowhead Classic quest 768"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-768-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gathering Leather to Veren Tallstrider."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 768,
+     "label": "Gathering Leather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=768",
+     "label": "Wowhead Classic quest 768"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-769-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Kodo Hide Bag from Veren Tallstrider."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 769,
+     "label": "Kodo Hide Bag"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=769",
+     "label": "Wowhead Classic quest 769"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-769-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Kodo Hide Bag."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 769,
+     "objective": 1,
+     "label": "Kodo Hide Bag"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=769",
+     "label": "Wowhead Classic quest 769"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-769-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Kodo Hide Bag to Veren Tallstrider."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.4,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 769,
+     "label": "Kodo Hide Bag"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=769",
+     "label": "Wowhead Classic quest 769"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-97485-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Traditions of the Bluff from Eylah Sunhorn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 38,
+      "y": 55.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97485,
+     "label": "Traditions of the Bluff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=97485",
+     "label": "Wowhead Classic quest 97485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-97485-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Traditions of the Bluff."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 53,
+      "y": 87.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97485,
+     "objective": 1,
+     "label": "Traditions of the Bluff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=97485",
+     "label": "Wowhead Classic quest 97485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-97485-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Traditions of the Bluff to Eylah Sunhorn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 38,
+      "y": 55.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97485,
+     "label": "Traditions of the Bluff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=97485",
+     "label": "Wowhead Classic quest 97485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76156-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Stalk With The Earthmother from Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 76156,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76156",
+     "label": "Wowhead Classic quest 76156"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This chain sends you back out of Thunder Bluff three times: into the Venture Co. mine for 5 Seaforium Mining Charges, north of Thunder Bluff for 8 Windfury Cones, and to a fishing spot (or a vendor) for a Raw Brilliant Smallfish. Not on the speedrun.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-76156-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stalk With The Earthmother."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 57.4,
+      "y": 48.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 76156,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76156",
+     "label": "Wowhead Classic quest 76156"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76156-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stalk With The Earthmother to Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 76156,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76156",
+     "label": "Wowhead Classic quest 76156"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76160-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Stalk With The Earthmother from Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 76160,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76160",
+     "label": "Wowhead Classic quest 76160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76160-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stalk With The Earthmother."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 76160,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76160",
+     "label": "Wowhead Classic quest 76160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76160-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stalk With The Earthmother to Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 76160,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76160",
+     "label": "Wowhead Classic quest 76160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76240-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Stalk With The Earthmother from Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 76240,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76240",
+     "label": "Wowhead Classic quest 76240"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76240-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stalk With The Earthmother."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 76240,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76240",
+     "label": "Wowhead Classic quest 76240"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-76240-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stalk With The Earthmother to Boarton Shadetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 76240,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76240",
+     "label": "Wowhead Classic quest 76240"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:126",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sergra Darkthorn from Melor Stonehoof at 61.54, 80.92. Turn it in to Sergra Darkthorn at the Crossroads, 52.23, 31.01."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 860,
+     "at": {
+      "mapId": 1456,
+      "x": 61.54,
+      "y": 80.92,
+      "zone": "Thunder Bluff",
+      "exact": true
+     },
+     "label": "Sergra Darkthorn"
+    },
+    {
+     "type": "turnin",
+     "questId": 860,
+     "at": {
+      "mapId": 1413,
+      "x": 52.23,
+      "y": 31.01,
+      "zone": "The Barrens",
+      "exact": true
+     },
+     "label": "Sergra Darkthorn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=860",
+     "label": "Wowhead Classic quest 860"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:114",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Journey to the Crossroads from Kirge Sternhorn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.88,
+      "y": 58.61,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 854,
+     "label": "Journey to the Crossroads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kirge Sternhorn at Camp Taurajo offers Journey to the Crossroads (exclusive with Plainstrider Menace). Hand it to Thork at the Crossroads.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: add 854 Tauren accept"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=854",
+     "label": "Wowhead Classic quest 854"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: add 854 Tauren accept"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:115",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Leave Thunder Bluff toward the Crossroads and stop at Thork, 51.5, 30.87 in the Barrens. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 51.5,
+      "y": 30.87,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=854",
+     "label": "Wowhead Classic quest 854"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run east out of Mulgore to the Crossroads and continue with the Barrens route.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "The Crossroads is east of Mulgore. Camp Taurajo is a later Barrens stop, not the way out.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3429",
+       "label": "Wowhead Classic NPC 3429"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

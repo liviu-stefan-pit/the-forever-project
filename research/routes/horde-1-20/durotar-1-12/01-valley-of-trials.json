@@ -1,0 +1,3227 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "durotar-1-12",
+ "title": "Valley of Trials",
+ "steps": [
+  {
+   "id": "durotar-1-12:001",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Your Place In The World from Kaltunk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 43.3,
+      "y": 68.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4641,
+     "label": "Your Place In The World"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4641",
+     "label": "Wowhead Classic quest 4641"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Take the quest and run straight to the Den. Kill boars on the way.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4641",
+       "label": "Wowhead Classic quest 4641"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Alt note: Legacy's Talented ranks can move your first talent point as early as level 5, but launch spend is capped at 16 and a first character has few points.",
+     "sources": [
+      {
+       "url": "https://www.icy-veins.com/wow-forever/legacy-system",
+       "label": "Icy Veins Legacy: Talented to level 5; launch spend cap 16"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "professionHooks": [
+    {
+     "itemName": "Peacebloom",
+     "qty": 20,
+     "skillTarget": 50,
+     "note": "Herbalism window: from skill 1 pick Peacebloom in Durotar (76 node spawns; densest patch /way Durotar 40.6 33.8), together with Silverleaf (skill 1, 167 spawns). Stay on this loop while questing here until about 50. WoW Forever DB marks this as the Horde pick. Keep the herbs for Alchemy or First Aid potions, or sell them.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/herbalism/route/",
+       "label": "WoW Forever DB: Herbalism route (Forever node spawns per zone)"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/gathering-trainers/",
+       "label": "Forever Guides: gathering trainers"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/herb-farming/",
+       "label": "Forever Guides: herb farming"
+      }
+     ],
+     "verified": true,
+     "itemId": 2447,
+     "profession": "Herbalism"
+    },
+    {
+     "itemName": "Earthroot",
+     "qty": 20,
+     "skillTarget": 70,
+     "note": "Herbalism window: from skill 15 pick Earthroot in Durotar (50 node spawns; densest patch /way Durotar 41.0 17.1). Stay on this loop while questing here until about 70. WoW Forever DB marks this as the Horde pick. Keep the herbs for Alchemy or First Aid potions, or sell them.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/herbalism/route/",
+       "label": "WoW Forever DB: Herbalism route (Forever node spawns per zone)"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/gathering-trainers/",
+       "label": "Forever Guides: gathering trainers"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/herb-farming/",
+       "label": "Forever Guides: herb farming"
+      }
+     ],
+     "verified": true,
+     "itemId": 2449,
+     "profession": "Herbalism"
+    },
+    {
+     "itemName": "Copper Ore",
+     "qty": 20,
+     "skillTarget": 65,
+     "note": "Mining window: from skill 1 pick Copper in Durotar (236 node spawns; densest patch /way Durotar 43.5 53.4). Stay on this loop while questing here until about 65. WoW Forever DB marks this as the Horde pick. Smelt the ore for Blacksmithing or Engineering, or sell bars.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/mining/route/",
+       "label": "WoW Forever DB: Mining route (Forever node spawns per zone)"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/gathering-trainers/",
+       "label": "Forever Guides: gathering trainers"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/ore-farming/",
+       "label": "Forever Guides: ore farming"
+      }
+     ],
+     "verified": true,
+     "itemId": 2770,
+     "profession": "Mining"
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:002",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Your Place In The World to Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4641,
+     "label": "Your Place In The World"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4641",
+     "label": "Wowhead Classic quest 4641"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ],
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "durotar-1-12:003",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Cutting Teeth from Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 788,
+     "label": "Cutting Teeth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=788",
+     "label": "Wowhead Classic quest 788"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun: pick up every Valley quest before leaving the Den, and do not hand anything in until the boars, apples and weapons are all done.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=788",
+       "label": "Wowhead Classic quest 788"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:004",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wayward Weapons from Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97279,
+     "label": "Wayward Weapons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest. The Abandoned Training Weapons lie on the ground around the Valley; pick them up while you kill boars.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:005",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Cutting Teeth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.5,
+      "y": 64.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 788,
+     "objective": 1,
+     "label": "Cutting Teeth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=788",
+     "label": "Wowhead Classic quest 788"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Do Cutting Teeth, Wayward Weapons and the cactus apples in the same loop around the Valley.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=788",
+       "label": "Wowhead Classic quest 788"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3098
+     ],
+     "name": "Mottled Boar",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 44.5,
+      "y": 64.8
+     },
+     "radius": 8.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3098",
+       "label": "Wowhead Classic NPC 3098"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:150",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Abandoned Training Weapons off the valley floor while you kill Mottled Boars."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.6,
+      "y": 64.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97279,
+     "objective": 1,
+     "label": "Wayward Weapons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 673476 spawns, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97279",
+     "label": "Wowhead quest 97279"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:012",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wayward Weapons to Kzan Thornslash"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.5,
+      "y": 68,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97279,
+     "label": "Wayward Weapons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:006",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Cutting Teeth to Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 788,
+     "label": "Cutting Teeth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=788",
+     "label": "Wowhead Classic quest 788"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:007",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Glyphic Parchment from Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98576,
+     "label": "Glyphic Parchment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Mage"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever lets orcs be mages. Gornek gives orc mages this class letter for the mage trainer in the Den, like the other class letters.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:008",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tainted Tablet from Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98575,
+     "label": "Tainted Tablet"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Warlock"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever lets trolls be warlocks. Troll warlocks get this class letter for Nartok, the warlock trainer in the Den.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:009",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Glyphic Parchment to Mai'ah"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.5,
+      "y": 69,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98576,
+     "label": "Glyphic Parchment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Orc"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Mage"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand it to the mage trainer in the Den.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:010",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tainted Tablet to Nartok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.6,
+      "y": 68.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98575,
+     "label": "Tainted Tablet"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Troll"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Warlock"
+   ]
+  },
+  {
+   "id": "durotar-1-12:158",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Troll priests: take In Favor of Spirituality from Ken'jai and talk to Tai'jin in Razor Hill."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.4,
+      "y": 68.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5649,
+     "label": "In Favor of Spirituality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 3707 and 3706 spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5649",
+     "label": "Wowhead quest 5649"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Priest"
+   ]
+  },
+  {
+   "id": "durotar-1-12:011",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Galgar's Cactus Apple Surprise from Galgar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.7,
+      "y": 67.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4402,
+     "label": "Galgar's Cactus Apple Surprise"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4402",
+     "label": "Wowhead Classic quest 4402"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Cactus Apples grow at the base of the cacti across the Valley. Pick them up between kills.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4402",
+       "label": "Wowhead Classic quest 4402"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:014",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sting of the Scorpid from Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 789,
+     "label": "Sting of the Scorpid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=789",
+     "label": "Wowhead Classic quest 789"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:015",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vile Familiars from Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 792,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=792",
+     "label": "Wowhead Classic quest 792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior",
+    "Paladin",
+    "Hunter",
+    "Rogue",
+    "Priest",
+    "Shaman",
+    "Mage",
+    "Druid"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warlocks get their own Vile Familiars quest from Ruzan (1485) instead.",
+     "classes": [
+      "Warlock"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=792",
+       "label": "Wowhead Classic quest 792"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:016",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vile Familiars from Ruzan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.6,
+      "y": 69,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1485,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1485",
+     "label": "Wowhead Classic quest 1485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warlocks: Ruzan gives you your own Vile Familiars quest (6 Vile Familiar Heads) instead of the one from Zureetha.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1485",
+       "label": "Wowhead Classic quest 1485"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:017",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Lazy Peons from Foreman Thazz'ril"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.6,
+      "y": 68.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5441,
+     "label": "Lazy Peons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5441",
+     "label": "Wowhead Classic quest 5441"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Use the Blackjack on sleeping peons as you pass them; you do not need to go out of your way.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5441",
+       "label": "Wowhead Classic quest 5441"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:018",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sarkoth from Hana'zua"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.6,
+      "y": 62.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 790,
+     "label": "Sarkoth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=790",
+     "label": "Wowhead Classic quest 790"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:019",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Sting of the Scorpid"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 41.5,
+      "y": 62.9,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 789,
+     "objective": 1,
+     "label": "Sting of the Scorpid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=789",
+     "label": "Wowhead Classic quest 789"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Scorpids are north of the Den. Kill them on the way to Hana'za and Sarkoth.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=789",
+       "label": "Wowhead Classic quest 789"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3124
+     ],
+     "name": "Scorpid Worker (Scorpid Worker Tail)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 41.5,
+      "y": 62.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3124",
+       "label": "Wowhead Classic NPC 3124"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4862",
+       "label": "Wowhead Classic item 4862"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3281
+     ],
+     "name": "Sarkoth (Scorpid Worker Tail)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 40.5,
+      "y": 66.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3281",
+       "label": "Wowhead Classic NPC 3281"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4862",
+       "label": "Wowhead Classic item 4862"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:020",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Sarkoth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.5,
+      "y": 66.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 790,
+     "objective": 1,
+     "label": "Sarkoth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=790",
+     "label": "Wowhead Classic quest 790"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sarkoth is a lone level 4 scorpid in the gully north-west of Hana'zua. Pull him away from the other scorpids.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=790",
+       "label": "Wowhead Classic quest 790"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3281
+     ],
+     "name": "Sarkoth (Sarkoth's Mangled Claw)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 40.5,
+      "y": 66.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3281",
+       "label": "Wowhead Classic NPC 3281"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4905",
+       "label": "Wowhead Classic item 4905"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sarkoth to Hana'zua"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.6,
+      "y": 62.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 790,
+     "label": "Sarkoth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=790",
+     "label": "Wowhead Classic quest 790"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:022",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Sarkoth from Hana'zua"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 40.6,
+      "y": 62.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 804,
+     "label": "Sarkoth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=804",
+     "label": "Wowhead Classic quest 804"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:023",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Vile Familiars"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.2,
+      "y": 55.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 792,
+     "objective": 1,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=792",
+     "label": "Wowhead Classic quest 792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior",
+    "Paladin",
+    "Hunter",
+    "Rogue",
+    "Priest",
+    "Shaman",
+    "Mage",
+    "Druid"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Familiars are north of the Den, in front of the Burning Blade cave. Pull two at a time if your class is strong at level 4 (warrior, hunter).",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=792",
+       "label": "Wowhead Classic quest 792"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3101
+     ],
+     "name": "Vile Familiar",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 44.2,
+      "y": 55.5
+     },
+     "radius": 3.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3101",
+       "label": "Wowhead Classic NPC 3101"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:024",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Vile Familiars"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.2,
+      "y": 55.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1485,
+     "objective": 1,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1485",
+     "label": "Wowhead Classic quest 1485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Same familiars, in front of the Burning Blade cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1485",
+       "label": "Wowhead Classic quest 1485"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3101
+     ],
+     "name": "Vile Familiar (Vile Familiar Head)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 44.2,
+      "y": 55.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3101",
+       "label": "Wowhead Classic NPC 3101"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=6487",
+       "label": "Wowhead Classic item 6487"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:025",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Lazy Peons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.3,
+      "y": 63.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5441,
+     "objective": 1,
+     "label": "Lazy Peons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5441",
+     "label": "Wowhead Classic quest 5441"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10556
+     ],
+     "name": "Lazy Peon",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 44.3,
+      "y": 63.6
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10556",
+       "label": "Wowhead Classic NPC 10556"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:151",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Cactus Apples from the plants around the valley while you finish the scorpid tails."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.7,
+      "y": 64.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4402,
+     "objective": 1,
+     "label": "Galgar's Cactus Apple Surprise"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 171938 spawns, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4402",
+     "label": "Wowhead quest 4402"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:013",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Galgar's Cactus Apple Surprise to Galgar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.7,
+      "y": 67.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4402,
+     "label": "Galgar's Cactus Apple Surprise"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4402",
+     "label": "Wowhead Classic quest 4402"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Forever change: Galgar's Cactus Apple Surprise now lets you pick a gathering starter book (Mining for Dummies, Wild Harvest or Pelt Collecting for Beginners) as well as the Cactus Apple Surprise recipe. Pick the one for your planned gathering profession.",
+     "sources": [
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:026",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vile Familiars to Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 792,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=792",
+     "label": "Wowhead Classic quest 792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warrior",
+    "Paladin",
+    "Hunter",
+    "Rogue",
+    "Priest",
+    "Shaman",
+    "Mage",
+    "Druid"
+   ]
+  },
+  {
+   "id": "durotar-1-12:027",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vile Familiars to Ruzan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.6,
+      "y": 69,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1485,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1485",
+     "label": "Wowhead Classic quest 1485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ]
+  },
+  {
+   "id": "durotar-1-12:028",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vile Familiars from Ruzan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.6,
+      "y": 69,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1499,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1499",
+     "label": "Wowhead Classic quest 1499"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ruzan then sends you to Zureetha, who gives you Burning Blade Medallion.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1499",
+       "label": "Wowhead Classic quest 1499"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:029",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vile Familiars to Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1499,
+     "label": "Vile Familiars"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1499",
+     "label": "Wowhead Classic quest 1499"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ]
+  },
+  {
+   "id": "durotar-1-12:030",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Burning Blade Medallion from Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 794,
+     "label": "Burning Blade Medallion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=794",
+     "label": "Wowhead Classic quest 794"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:153",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: take Call of Earth from Canaga and loot two Felstalker hooves in the cave."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.4,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1516,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 5887 and Felstalker 3102, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1516",
+     "label": "Wowhead quest 1516"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "durotar-1-12:031",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Lazy Peons to Foreman Thazz'ril"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.6,
+      "y": 68.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5441,
+     "label": "Lazy Peons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5441",
+     "label": "Wowhead Classic quest 5441"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:032",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Thazz'ril's Pick from Foreman Thazz'ril"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.6,
+      "y": 68.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6394,
+     "label": "Thazz'ril's Pick"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6394",
+     "label": "Wowhead Classic quest 6394"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:152",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grab Thazz'ril's Pick beside the pool in the Burning Blade cave before you kill Yarrog."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 43.73,
+      "y": 53.79,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6394,
+     "objective": 1,
+     "label": "Thazz'ril's Pick"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 178087 spawn, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6394",
+     "label": "Wowhead quest 6394"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:033",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Burning Blade Medallion."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.7,
+      "y": 53,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 794,
+     "objective": 1,
+     "label": "Burning Blade Medallion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=794",
+     "label": "Wowhead Classic quest 794"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Yarrog Baneshadow is at the back of the Burning Blade cave. Thazz'ril's Pick lies inside the same cave, so get both in one run.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=794",
+       "label": "Wowhead Classic quest 794"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Pull the cultists in the cave one at a time; they hit hard for level 5.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=794",
+       "label": "Wowhead Classic quest 794"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Stop and drink between pulls in the cave.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=794",
+       "label": "Wowhead Classic quest 794"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Kill Yarrog quickly; he is a caster, so fight him in melee range or interrupt him.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=794",
+       "label": "Wowhead Classic quest 794"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3183
+     ],
+     "name": "Yarrog Baneshadow (Burning Blade Medallion)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 42.7,
+      "y": 53
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3183",
+       "label": "Wowhead Classic NPC 3183"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4859",
+       "label": "Wowhead Classic item 4859"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3102
+     ],
+     "name": "Felstalker (Felstalker Hoof)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 44,
+      "y": 53.9
+     },
+     "radius": 2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB NPC 3102 spawns, zone 14"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:163",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: loot two Felstalker hooves in this cave for Call of Earth."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.7,
+      "y": 53,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1516,
+     "objective": 1,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1516",
+     "label": "Wowhead quest 1516"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "durotar-1-12:034",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Burning Blade Medallion to Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 794,
+     "label": "Burning Blade Medallion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=794",
+     "label": "Wowhead Classic quest 794"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:156",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the Lost Journal from the barrel beside Zureetha and bring it to Brakk on the way into Razor Hill."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.8,
+      "y": 69.1,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96652,
+     "label": "The Adventurer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 654925 and NPC 265809"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96652",
+     "label": "Wowhead quest 96652"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:162",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: hand the Felstalker hooves to Canaga Earthcaller and take the next Call of Earth."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.4,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1516,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 1517,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 5887, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1516",
+     "label": "Wowhead quest 1516"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "durotar-1-12:154",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: drink the Earth Sapta at Spirit Rock, then speak to the Minor Manifestation of Earth."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44,
+      "y": 76.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1517,
+     "objective": 1,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "turnin",
+     "questId": 1517,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 1518,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 5891 spawn, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1517",
+     "label": "Wowhead quest 1517"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "durotar-1-12:155",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: bring the Rough Quartz back to Canaga Earthcaller."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.4,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1518,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1518",
+     "label": "Wowhead quest 1518"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "durotar-1-12:035",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Thazz'ril's Pick to Foreman Thazz'ril"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 44.6,
+      "y": 68.7,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6394,
+     "label": "Thazz'ril's Pick"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6394",
+     "label": "Wowhead Classic quest 6394"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:036",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sarkoth to Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 804,
+     "label": "Sarkoth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=804",
+     "label": "Wowhead Classic quest 804"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:037",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Sting of the Scorpid to Gornek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 789,
+     "label": "Sting of the Scorpid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=789",
+     "label": "Wowhead Classic quest 789"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:038",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Report to Sen'jin Village from Zureetha Fargaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 42.9,
+      "y": 69.2,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 805,
+     "label": "Report to Sen'jin Village"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=805",
+     "label": "Wowhead Classic quest 805"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun: leave the Valley at 5-6 even if not every quest is done; Sen'jin quests give more XP per minute.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=805",
+       "label": "Wowhead Classic quest 805"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:039",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Visit your class trainer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Train level 6 spells at your class trainer in the Valley before you leave.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: each creature can only be skinned once, so skin your own kills right away before someone else does.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: every profession gets a camp object at skill 20. Push your professions to 20 early to unlock it.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: crafting items to sell to vendors no longer pays (vendor prices were cut on 16 Oct). Craft for skill-ups, your own gear and other players.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "warcraftmaps.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: healing potions are made with First Aid now, so keep your Linen Cloth for First Aid.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cloth-farming/",
+       "label": "theforeverguides.com"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: starter-zone Herbalism and Skinning trainers teach only the first rank. Train the next rank in your capital.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/crafting-trainers/",
+       "label": "theforeverguides.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Alchemy",
+     "itemName": "Recipe: Minor Spellblasting Potion",
+     "skillTarget": 35,
+     "npc": {
+      "id": 3115,
+      "name": "Dustwind Harpy",
+      "zone": "Durotar",
+      "x": 45.9,
+      "y": 33.8
+     },
+     "note": "Kill Dustwind Harpy (Durotar, lvl 7-8): the recipe Recipe: Minor Spellblasting Potion drops here. Forever-new potion recipe; Dustwind harpies in northern Durotar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+       "label": "Wowhead Forever: Alchemy overview (single page spot-check)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=3115",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/items/250976",
+       "label": "Icy Veins WoW Forever DB: item"
+      }
+     ],
+     "verified": false,
+     "itemId": 250976
+    }
+   ]
+  }
+ ]
+}

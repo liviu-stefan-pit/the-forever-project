@@ -1,0 +1,2669 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "silverpine-11-15",
+ "title": "The Sepulcher (Balanced)",
+ "steps": [
+  {
+   "id": "silverpine-11-15:001",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Delivery to Silverpine Forest to Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 445,
+     "label": "Delivery to Silverpine Forest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=445",
+     "label": "Wowhead Classic quest 445"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemId": 3173,
+     "itemName": "Bear Meat",
+     "qty": 40,
+     "skillTarget": 80,
+     "npc": {
+      "id": 3556,
+      "name": "Andrew Hilbert",
+      "zone": "Silverpine Forest",
+      "x": 43.2,
+      "y": 40.7
+     },
+     "note": "Keep Bear Meat from Ferocious Grizzled Bear (Silverpine Forest, lvl 11-12) for Smoked Bear Meat. Buy Recipe: Smoked Bear Meat from Andrew Hilbert (Silverpine Forest 43.2, 40.7) for 2s 50c. Recipe learnable at 40; every craft gives a point until 80 (about 40 crafts). Silverpine bears.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3173",
+       "label": "Wowhead Classic item"
+      },
+      {
+       "url": "https://wowfdb.com/zones/silverpine-forest/map/",
+       "label": "WoW Forever DB zone map (NPC positions)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=3556",
+       "label": "Wowhead Classic NPC"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "profession": "Cooking",
+     "itemId": 3174,
+     "itemName": "Spider Ichor",
+     "qty": 5,
+     "skillTarget": 105,
+     "note": "Keep Spider Ichor from Moss Stalker (Silverpine Forest, lvl 12-13) for Slimy Smoothie. Buy Recipe: Slimy Smoothie from Aza'bek (The Barrens 49.7, 29.4; npc 248198) for 30 Merchant's Favor. Recipe learnable at 100; every craft gives a point until 105 (about 5 crafts). Forever-new smoothie; Silverpine/Stonetalon/Ashenvale spiders. Recipe item id 249886 (Icy Veins DB).",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3174",
+       "label": "Wowhead Classic item"
+      },
+      {
+       "url": "https://theforeverguides.com/professions/merchants-favor/",
+       "label": "Forever Guides: Merchant's Favor"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/map/",
+       "label": "WoW Forever DB zone map (NPC positions)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "QuestieDB v1.1.3 Forever data (project-forever PR #5, content/questie-db)"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/npcs/248198",
+       "label": "Icy Veins WoW Forever DB: NPC (position, vendor stock)"
+      }
+     ],
+     "verified": true,
+     "npc": {
+      "id": 248198,
+      "name": "Aza'bek",
+      "zone": "The Barrens",
+      "x": 49.7,
+      "y": 29.4,
+      "mapId": 1413
+     }
+    },
+    {
+     "itemId": 6272,
+     "itemName": "Pattern: Blue Linen Robe",
+     "qty": 1,
+     "skillTarget": 70,
+     "npc": {
+      "id": 3556,
+      "name": "Andrew Hilbert",
+      "zone": "Silverpine Forest",
+      "x": 43.2,
+      "y": 40.7,
+      "mapId": 1421
+     },
+     "note": "Buy Pattern: Blue Linen Robe from Andrew Hilbert (Silverpine Forest 43.2, 40.7) for  3s . Learnable at 45; the Forever leveling plan uses Blue Linen Robe for skill 65–70 (yellow at 70). Reagents: 4x Bolt of Linen Cloth, 2x Coarse Thread, 2x Blue Dye. Plan the stop when your route passes this zone.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/tailoring/leveling/",
+       "label": "WoW Forever DB: Tailoring leveling (recipe sources, client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/tailoring/recipes/",
+       "label": "WoW Forever DB: Tailoring recipes (reagents, skill colours)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "QuestieDB v1.1.3 Forever data (project-forever PR #5, content/questie-db)"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/npcs/3556",
+       "label": "Icy Veins WoW Forever DB: NPC (position, vendor stock)"
+      }
+     ],
+     "verified": true,
+     "profession": "Tailoring"
+    },
+    {
+     "itemName": "Formula: Enchant Bracer - Minor Intellect",
+     "qty": 1,
+     "skillTarget": 70,
+     "note": "Formula: Enchant Bracer - Minor Intellect drops from Vile Fin Tidehunter (Silverpine Forest, level 13-14). Kill them while questing there; the pattern teaches Enchant Bracer - Minor Intellect (learn at 70), which the Forever leveling plan uses for 105–110. Reagents: 1x Lesser Magic Essence. Drop chance is not published; treat it as a bonus, not a farm.",
+     "sources": [
+      {
+       "url": "https://wowfdb.com/professions/enchanting/leveling/",
+       "label": "WoW Forever DB: Enchanting leveling (recipe sources, client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/enchanting/recipes/",
+       "label": "WoW Forever DB: Enchanting recipes (reagents, skill colours)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "QuestieDB v1.1.3 Forever data (project-forever PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false,
+     "profession": "Enchanting"
+    },
+    {
+     "itemId": 2592,
+     "itemName": "Wool Cloth",
+     "qty": 40,
+     "skillTarget": 150,
+     "note": "Loot Wool Cloth from Dalaran Watcher (Silverpine Forest, level 18-19). 65% of 17 logged kills. Feeds Bolt of Woolen Cloth / Wool Bandage; Tailors and First Aid both want it, so never vendor cloth before 300.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cloth-farming/",
+       "label": "Forever Guides: Cloth farming (beta drop logs + Classic picks)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "QuestieDB v1.1.3 Forever data (project-forever PR #5, content/questie-db)"
+      }
+     ],
+     "verified": true,
+     "profession": "Tailoring"
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:003",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Prove Your Worth from Dalar Dawnweaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 421,
+     "label": "Prove Your Worth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=421",
+     "label": "Wowhead Classic quest 421"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:004",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Lost Deathstalkers from High Executor Hadrec"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 428,
+     "label": "Lost Deathstalkers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=428",
+     "label": "Wowhead Classic quest 428"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:005",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Supplying the Sepulcher from Deathguard Podrig"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 41.7,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6321,
+     "label": "Supplying the Sepulcher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6321",
+     "label": "Wowhead Classic quest 6321"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "silverpine-11-15:002",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Karos Razok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 45.6,
+      "y": 42.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Karos Razok"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2226",
+     "label": "Wowhead Classic NPC 2226"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Get the Sepulcher flight path from the bat handler.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2226",
+       "label": "Wowhead Classic NPC 2226"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2226,
+     "name": "Karos Razok",
+     "at": {
+      "mapId": 1421,
+      "zone": "Silverpine Forest",
+      "x": 45.6,
+      "y": 42.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2226",
+       "label": "Wowhead Classic NPC 2226"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:w2-home-sepulcher",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Bates"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.2,
+      "y": 41.3,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Bates"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=6739",
+     "label": "Wowhead Classic NPC 6739"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6739,
+     "name": "Innkeeper Bates",
+     "at": {
+      "mapId": 1421,
+      "zone": "Silverpine Forest",
+      "x": 43.2,
+      "y": 41.3
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6739",
+       "label": "Wowhead Classic NPC 6739"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:006",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Supplying the Sepulcher to Karos Razok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 45.6,
+      "y": 42.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6321,
+     "label": "Supplying the Sepulcher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6321",
+     "label": "Wowhead Classic quest 6321"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Supplying the Sepulcher is a short walk to the bat handler next door.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6321",
+       "label": "Wowhead Classic quest 6321"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:007",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Prove Your Worth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 52.9,
+      "y": 26.7,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 421,
+     "objective": 1,
+     "label": "Prove Your Worth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=421",
+     "label": "Wowhead Classic quest 421"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Moonrage Whitescalps are north-east of the Sepulcher, on the way to the coast. Kill them on the run north.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=421",
+       "label": "Wowhead Classic quest 421"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1769
+     ],
+     "name": "Moonrage Whitescalp",
+     "mapId": 1421,
+     "zone": "Silverpine Forest",
+     "center": {
+      "x": 52.9,
+      "y": 26.7
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1769",
+       "label": "Wowhead Classic NPC 1769"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:008",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run north along the road to Rane Yorick at the coast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run north along the road to Rane Yorick at the coast.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:009",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Lost Deathstalkers to Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 428,
+     "label": "Lost Deathstalkers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=428",
+     "label": "Wowhead Classic quest 428"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:010",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wild Hearts from Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 429,
+     "label": "Wild Hearts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=429",
+     "label": "Wowhead Classic quest 429"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wild Hearts no longer gives the healing potion recipe. The Discolored Worg Heart count is unverified.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=429",
+       "label": "Wowhead Classic quest 429"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      },
+      {
+       "url": "https://wowfdb.com/zones/silverpine-forest/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:015",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Wild Hearts"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 56.2,
+      "y": 13.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 429,
+     "objective": 1,
+     "label": "Wild Hearts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=429",
+     "label": "Wowhead Classic quest 429"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1766
+     ],
+     "name": "Mottled Worg (Discolored Worg Heart)",
+     "mapId": 1421,
+     "zone": "Silverpine Forest",
+     "center": {
+      "x": 56.2,
+      "y": 13.6
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1766",
+       "label": "Wowhead Classic NPC 1766"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3164",
+       "label": "Wowhead Classic item 3164"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1765
+     ],
+     "name": "Worg (Discolored Worg Heart)",
+     "mapId": 1421,
+     "zone": "Silverpine Forest",
+     "center": {
+      "x": 65.7,
+      "y": 7.6
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1765",
+       "label": "Wowhead Classic NPC 1765"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3164",
+       "label": "Wowhead Classic item 3164"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:011",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Escorting Erland from Deathstalker Erland"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 56.2,
+      "y": 9.2,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 435,
+     "label": "Escorting Erland"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=435",
+     "label": "Wowhead Classic quest 435"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Deathstalker Erland is just north of Rane; the escort is short.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=435",
+       "label": "Wowhead Classic quest 435"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:012",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Escorting Erland"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 435,
+     "objective": 1,
+     "label": "Escorting Erland"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=435",
+     "label": "Wowhead Classic quest 435"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: escort despawn tip for 435"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stay close to Erland and kill the attackers that come for him.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=435",
+       "label": "Wowhead Classic quest 435"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: escort despawn tip for 435"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:013",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Escorting Erland to Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 435,
+     "label": "Escorting Erland"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=435",
+     "label": "Wowhead Classic quest 435"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:014",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Deathstalkers' Report from Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 449,
+     "label": "The Deathstalkers' Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=449",
+     "label": "Wowhead Classic quest 449"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:016",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back south to the Sepulcher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back south to the Sepulcher.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:017",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Deathstalkers' Report to High Executor Hadrec"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 449,
+     "label": "The Deathstalkers' Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=449",
+     "label": "Wowhead Classic quest 449"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:019",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Speak with Renferrel from High Executor Hadrec"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3221,
+     "label": "Speak with Renferrel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3221",
+     "label": "Wowhead Classic quest 3221"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:018",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Prove Your Worth to Dalar Dawnweaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 421,
+     "label": "Prove Your Worth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=421",
+     "label": "Wowhead Classic quest 421"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:020",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Speak with Renferrel to Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3221,
+     "label": "Speak with Renferrel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3221",
+     "label": "Wowhead Classic quest 3221"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:037",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Zinge's Delivery from Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.86,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1359,
+     "label": "Zinge's Delivery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie quest 1359 pre 3221"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Same free handoff as speedrun. Balanced already stands on Renferrel for the 3221 turn-in.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie quest 1359 pre 3221"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wild Hearts to Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 429,
+     "label": "Wild Hearts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=429",
+     "label": "Wowhead Classic quest 429"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:022",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to Quinn from Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 430,
+     "label": "Return to Quinn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=430",
+     "label": "Wowhead Classic quest 430"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:023",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Border Crossings from Shadow Priest Allister"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 477,
+     "label": "Border Crossings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=477",
+     "label": "Wowhead Classic quest 477"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:024",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Quinn to Quinn Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.4,
+      "y": 12.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 430,
+     "label": "Return to Quinn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=430",
+     "label": "Wowhead Classic quest 430"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:025",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wild Eyes from Quinn Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.4,
+      "y": 12.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91920,
+     "label": "Wild Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever: Ivar the Foul now needs this short chain first. Murloc Eyes drop from the Vile Fin Tidecallers and Shredders on the Silverpine coast.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/silverpine-forest/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:026",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Wild Eyes"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 58.57,
+      "y": 17.37,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 91920,
+     "objective": 1,
+     "label": "Wild Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "silverpine-11-15:027",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wild Eyes to Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91920,
+     "label": "Wild Eyes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand the eyes to Apothecary Renferrel at the Sepulcher.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/silverpine-forest/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:028",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to Quinn (Again) from Apothecary Renferrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.8,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91921,
+     "label": "Return to Quinn (Again)"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "silverpine-11-15:029",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Quinn (Again) to Quinn Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.4,
+      "y": 12.6,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91921,
+     "label": "Return to Quinn (Again)"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowfdb.com/zones/silverpine-forest/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back north to Quinn Yorick at the Ivar Patch.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowfdb.com/zones/silverpine-forest/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:030",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ivar the Foul from Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 425,
+     "label": "Ivar the Foul"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=425",
+     "label": "Wowhead Classic quest 425"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:031",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ivar the Foul"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 51.5,
+      "y": 13.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 425,
+     "objective": 1,
+     "label": "Ivar the Foul"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=425",
+     "label": "Wowhead Classic quest 425"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1971
+     ],
+     "name": "Ivar the Foul (Ivar's Head)",
+     "mapId": 1421,
+     "zone": "Silverpine Forest",
+     "center": {
+      "x": 51.5,
+      "y": 13.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1971",
+       "label": "Wowhead Classic NPC 1971"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3621",
+       "label": "Wowhead Classic item 3621"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:032",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ivar the Foul to Rane Yorick"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 53.5,
+      "y": 13.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 425,
+     "label": "Ivar the Foul"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=425",
+     "label": "Wowhead Classic quest 425"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:033",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Border Crossings"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 49.89,
+      "y": 60.33,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 477,
+     "label": "Border Crossings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=477",
+     "label": "Wowhead Classic quest 477"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:034",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Maps and Runes from Dalaran Crate"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 49.9,
+      "y": 60.3,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 478,
+     "label": "Maps and Runes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=478",
+     "label": "Wowhead Classic quest 478"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Dalaran Crate is south of the Sepulcher (see the pin); looting it gives Maps and Runes.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=478",
+       "label": "Wowhead Classic quest 478"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "silverpine-11-15:035",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Maps and Runes to Shadow Priest Allister"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 478,
+     "label": "Maps and Runes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=478",
+     "label": "Wowhead Classic quest 478"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-481-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dalar's Analysis from Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 481,
+     "label": "Dalar's Analysis"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=481",
+     "label": "Wowhead Classic quest 481"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-481-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dalar's Analysis to Dalar Dawnweaver."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 481,
+     "label": "Dalar's Analysis"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=481",
+     "label": "Wowhead Classic quest 481"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-482-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dalaran's Intentions from Dalar Dawnweaver."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 482,
+     "label": "Dalaran's Intentions"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=482",
+     "label": "Wowhead Classic quest 482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-482-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dalaran's Intentions to Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 482,
+     "label": "Dalaran's Intentions"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=482",
+     "label": "Wowhead Classic quest 482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-479-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ambermill Investigations from Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 479,
+     "label": "Ambermill Investigations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=479",
+     "label": "Wowhead Classic quest 479"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-95981-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Watching the Roads from Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95981,
+     "label": "Watching the Roads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=95981",
+     "label": "Wowhead Classic quest 95981"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-479-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ambermill Investigations."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 56.7,
+      "y": 54.4,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 479,
+     "objective": 1,
+     "label": "Ambermill Investigations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=479",
+     "label": "Wowhead Classic quest 479"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-95981-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Watching the Roads."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 64.7,
+      "y": 61.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95981,
+     "objective": 1,
+     "label": "Watching the Roads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=95981",
+     "label": "Wowhead Classic quest 95981"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-479-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ambermill Investigations to Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 479,
+     "label": "Ambermill Investigations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=479",
+     "label": "Wowhead Classic quest 479"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "silverpine-11-15:w2-95981-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Watching the Roads to Shadow Priest Allister."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95981,
+     "label": "Watching the Roads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=95981",
+     "label": "Wowhead Classic quest 95981"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

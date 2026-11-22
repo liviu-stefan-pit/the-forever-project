@@ -5,6 +5,9 @@ Single source of truth: [`contracts/schema.ts`](../contracts/schema.ts) (TypeScr
 `ROUTE_SCHEMA_VERSION = 2`. v2 **extends** the v1 `Step`; every new field is optional so existing
 guides keep loading. The `raw` source-text field is **removed** (no third-party guide text is shown or stored).
 
+How packs are split into files on disk (a `pack.json` manifest plus one file per segment) and the rules for editing
+them are in [ROUTE_FILES.md](ROUTE_FILES.md).
+
 ## Rules every author follows
 
 - Every authored item (step, tip, profession hook, elite tactic, pin, class profession block) has

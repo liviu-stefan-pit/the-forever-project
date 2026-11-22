@@ -1,0 +1,2623 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "barrens-12-20",
+ "title": "Camp Taurajo and wrap-up",
+ "steps": [
+  {
+   "id": "barrens-12-20:117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run south to Camp Taurajo"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 45.6,
+      "y": 59,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run south to Camp Taurajo.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Mankrik at the Crossroads offers Lost in Battle. The beaten corpse is at 49.33, 50.32, on the way toward Camp Taurajo. Skip Her Name Is Olgra after it; that one wants four quillboar drops.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4921",
+       "label": "Wowhead Classic quest 4921"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB npc 10668 Beaten Corpse; quest 95774 pre 4921"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Do not rebind at Camp Taurajo yet. A later step hearths to the Crossroads. Rebind at the Camp Taurajo inn (45.6, 59.0) only after that hearth.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Cozy Sleeping Bag unlocks at 14 from the burnt tower south of Camp Taurajo, but the chain is 90+ minutes for +3% xp. Leave it until after 20.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Omusa Thunderhorn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.5,
+      "y": 59.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Omusa Thunderhorn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=10378",
+     "label": "Wowhead Classic NPC 10378"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Get the Camp Taurajo flight path.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10378",
+       "label": "Wowhead Classic NPC 10378"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10378,
+     "name": "Omusa Thunderhorn",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 44.5,
+      "y": 59.1
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10378",
+       "label": "Wowhead Classic NPC 10378"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:854-accept",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Journey to the Crossroads from Kirge Sternhorn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.88,
+      "y": 58.61,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 854,
+     "label": "Journey to the Crossroads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tauren who skipped Mulgore: accept Journey to the Crossroads from Kirge Sternhorn at Camp Taurajo before turning it in at the Crossroads.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: Barrens 854 Tauren accept for Zephras start"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=854",
+     "label": "Wowhead Classic quest 854"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: Barrens 854 Tauren accept for Zephras start"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:119",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Jorn Skyseer to Jorn Skyseer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.9,
+      "y": 59.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3261,
+     "label": "Jorn Skyseer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3261",
+     "label": "Wowhead Classic quest 3261"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "barrens-12-20:120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ishamuhale from Jorn Skyseer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.9,
+      "y": 59.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 882,
+     "label": "Ishamuhale"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=882",
+     "label": "Wowhead Classic quest 882"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "After Ishamuhale, Jorn offers Enraged Thunder Lizards and then Cry of the Thunderhawk. Stormsnouts are at 48.92, 51.37 and a thunderhawk hatchling is at 46.76, 50.95. Stop before Mahren Skyseer.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=907",
+       "label": "Wowhead Classic quest 907"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=913",
+       "label": "Wowhead Classic quest 913"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB npc 3240 and 3247 spawns; 874 pre 913"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "barrens-12-20:124",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Chol'aruk the Ravener from Gur'ak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.6,
+      "y": 29.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97003,
+     "label": "Chol'aruk the Ravener"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever elite (level 21) in the Thorn Hill lair. It is given by Gur'ak and pays 6,150 XP plus a weapon or shield. Bring a group of 2 or 3.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Chol'aruk the Ravener",
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Hold the boss with its back to you so the others stay out of its swing.",
+       "roles": [
+        "tank"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Keep the tank up; there are adds near the lair.",
+       "roles": [
+        "healer"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Kill the adds first, then the boss.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false,
+     "level": 21,
+     "groupSize": 3
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:130",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Chol'aruk the Ravener"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 57.5,
+      "y": 27.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97003,
+     "objective": 1,
+     "label": "Chol'aruk the Ravener"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Thorn Hill lair, with a group.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      267307
+     ],
+     "name": "Chol'aruk (Chol'aruk's Head)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 57.5,
+      "y": 27.1
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267307",
+       "label": "Wowhead Classic NPC 267307"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:122",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ishamuhale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 59.8,
+      "y": 30.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 882,
+     "objective": 1,
+     "label": "Ishamuhale"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=882",
+     "label": "Wowhead Classic quest 882"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ishamuhale is a named raptor; the quest database has no fixed spawn for him, so follow the in-game quest text.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=882",
+       "label": "Wowhead Classic quest 882"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "barrens-12-20:131",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Chol'aruk the Ravener to Gur'ak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.6,
+      "y": 29.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97003,
+     "label": "Chol'aruk the Ravener"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand in to Gur'ak.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:125",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Raptor Horns to Mebok Mizzyrix"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 865,
+     "label": "Raptor Horns"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=865",
+     "label": "Wowhead Classic quest 865"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Fly to Ratchet at 20 to hand in Raptor Horns and pick up the elite shark quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=865",
+       "label": "Wowhead Classic quest 865"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:127",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept WANTED: Bruuz from WANTED"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.6,
+      "y": 37.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92706,
+     "label": "WANTED: Bruuz"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever elite (20) shark quest from Gazlowe in Ratchet. Group up; it gives 1,950 XP and Ratchet reputation.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Bruuz",
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Bruuz is in the water; pull him to the shore so the group can stand on land.",
+       "roles": [
+        "tank"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Stay behind him and save cooldowns for the start of the fight.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false,
+     "level": 20,
+     "groupSize": 3
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:128",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete WANTED: Bruuz"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 65.3,
+      "y": 39.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92706,
+     "objective": 1,
+     "label": "WANTED: Bruuz"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Do it with the group you formed for the other elites.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      209797
+     ],
+     "name": "Bruuz (Bruuz's Dorsal Fin)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 65.3,
+      "y": 39.2
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=209797",
+       "label": "Wowhead Classic NPC 209797"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:129",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in WANTED: Bruuz to Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92706,
+     "label": "WANTED: Bruuz"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:123",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ishamuhale to Jorn Skyseer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.9,
+      "y": 59.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 882,
+     "label": "Ishamuhale"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=882",
+     "label": "Wowhead Classic quest 882"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "barrens-12-20:134",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Use your hearthstone"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Use your hearthstone"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hearth to the Crossroads and hand in anything left, then follow the 20-30 route (Stonetalon / Ashenvale).",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:008",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Journey to the Crossroads to Thork"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 51.5,
+      "y": 30.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 854,
+     "label": "Journey to the Crossroads"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=854",
+     "label": "Wowhead Classic quest 854"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tauren: hand in Journey to the Crossroads to Thork.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=854",
+       "label": "Wowhead Classic quest 854"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:135",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Harpy Lieutenants to Darsok Swiftdagger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 51.6,
+      "y": 30.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 875,
+     "label": "Harpy Lieutenants"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=875",
+     "label": "Wowhead Classic quest 875"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-819-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Chen's Empty Keg, then accept Chen's Empty Keg."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 819,
+     "label": "Chen's Empty Keg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=819",
+     "label": "Wowhead Classic quest 819"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-819-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Chen's Empty Keg to Brewmaster Drohn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.3,
+      "y": 38.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 819,
+     "label": "Chen's Empty Keg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=819",
+     "label": "Wowhead Classic quest 819"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-821-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Chen's Empty Keg from Brewmaster Drohn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.3,
+      "y": 38.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 821,
+     "label": "Chen's Empty Keg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=821",
+     "label": "Wowhead Classic quest 821"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-821-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Chen's Empty Keg."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.9,
+      "y": 16.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 821,
+     "objective": 1,
+     "label": "Chen's Empty Keg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=821",
+     "label": "Wowhead Classic quest 821"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-821-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Chen's Empty Keg to Brewmaster Drohn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.3,
+      "y": 38.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 821,
+     "label": "Chen's Empty Keg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=821",
+     "label": "Wowhead Classic quest 821"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3921-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wenikee Boltbucket from Sputtervalve."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63,
+      "y": 37.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3921,
+     "label": "Wenikee Boltbucket"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3921",
+     "label": "Wowhead Classic quest 3921"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3921-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wenikee Boltbucket to Wenikee Boltbucket."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49.1,
+      "y": 11.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3921,
+     "label": "Wenikee Boltbucket"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3921",
+     "label": "Wowhead Classic quest 3921"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3922-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Nugget Slugs from Wenikee Boltbucket."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49.1,
+      "y": 11.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3922,
+     "label": "Nugget Slugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3922",
+     "label": "Wowhead Classic quest 3922"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3922-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Nugget Slugs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 55.9,
+      "y": 6.8,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3922,
+     "objective": 1,
+     "label": "Nugget Slugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3922",
+     "label": "Wowhead Classic quest 3922"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3922-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Nugget Slugs to Wenikee Boltbucket."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49.1,
+      "y": 11.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3922,
+     "label": "Nugget Slugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3922",
+     "label": "Wowhead Classic quest 3922"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3923-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Rilli Greasygob from Wenikee Boltbucket."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49.1,
+      "y": 11.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3923,
+     "label": "Rilli Greasygob"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3923",
+     "label": "Wowhead Classic quest 3923"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3923-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rilli Greasygob to Rilli Greasygob."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 76.5,
+      "y": 24.4,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3923,
+     "label": "Rilli Greasygob"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3923",
+     "label": "Wowhead Classic quest 3923"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3924-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Samophlange Manual from Rilli Greasygob."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 76.5,
+      "y": 24.4,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3924,
+     "label": "Samophlange Manual"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3924",
+     "label": "Wowhead Classic quest 3924"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3924-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Samophlange Manual."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 76.5,
+      "y": 24.4,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3924,
+     "objective": 1,
+     "label": "Samophlange Manual"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3924",
+     "label": "Wowhead Classic quest 3924"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3924-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Samophlange Manual to Rilli Greasygob."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 76.5,
+      "y": 24.4,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3924,
+     "label": "Samophlange Manual"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3924",
+     "label": "Wowhead Classic quest 3924"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-3301-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mura Runetotem to Mura Runetotem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 42.9,
+      "y": 42,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3301,
+     "label": "Mura Runetotem"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3301",
+     "label": "Wowhead Classic quest 3301"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:121",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wrongly Blamed, Justly Corrected from Grunt Logmar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.6,
+      "y": 59.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97250,
+     "label": "Wrongly Blamed, Justly Corrected"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever elite quest at the Dustwallow border. Bring a friend or do it at 21-22.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Wrongly Blamed, Justly Corrected needs level 18, so it comes after the Mura Runetotem turn-in, right before the last grind south of Camp Taurajo.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Alliance soldiers (Wrongly Blamed, Justly Corrected)",
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Pull the soldiers one at a time and fight with a wall behind you.",
+       "roles": [
+        "tank"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Do this with a group; the soldiers come in pairs.",
+       "roles": [
+        "healer"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Kill the casters first, and use crowd control on the second soldier.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+         "label": "github.com"
+        },
+        {
+         "url": "https://wowforeverguides.com/zones/the-barrens",
+         "label": "WoW Forever Guides: the Barrens"
+        },
+        {
+         "url": "https://wowfdb.com/zones/the-barrens/",
+         "label": "WoW Forever DB zone page"
+        },
+        {
+         "url": "https://hackverso.com/en/wowforever/leveling/",
+         "label": "Hackverso WoW Forever leveling table"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false,
+     "level": 23,
+     "groupSize": 3
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:132",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Wrongly Blamed, Justly Corrected"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49.1,
+      "y": 77,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97250,
+     "objective": 1,
+     "label": "Wrongly Blamed, Justly Corrected"
+    },
+    {
+     "type": "complete",
+     "questId": 97250,
+     "objective": 2,
+     "label": "Wrongly Blamed, Justly Corrected"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Dustwallow border south-east of Camp Taurajo, with a group.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      268622
+     ],
+     "name": "Encroaching Soldier",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 49.1,
+      "y": 77
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=268622",
+       "label": "Wowhead Classic NPC 268622"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      268623
+     ],
+     "name": "Outraged Pillager",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 49.1,
+      "y": 77
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=268623",
+       "label": "Wowhead Classic NPC 268623"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:133",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wrongly Blamed, Justly Corrected to Grunt Logmar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.6,
+      "y": 59.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97250,
+     "label": "Wrongly Blamed, Justly Corrected"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:grind-to-20",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Stormsnouts south of Camp Taurajo until you reach 20. That closes the gap on worst-case experience: no rested, no food, dungeons off. If you are already 20 from bonuses or from Ragefire, Ruins of Lordaeron, and Wailing Caverns, skip it."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 48.92,
+      "y": 51.37,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 20,
+     "extra": 0,
+     "label": "Kill Stormsnouts south of Camp Taurajo until you reach 20. That closes the gap on worst-case experience: no rested, no food, dungeons off. If you are already 20 from bonuses or from Ragefire, Ruins of Lordaeron, and Wailing Caverns, skip it.",
+     "mobId": 3240,
+     "mobName": "Stormsnout",
+     "mobLevel": 19
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3240",
+     "label": "Wowhead Classic NPC 3240"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3240
+     ],
+     "name": "Stormsnout",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 48.92,
+      "y": 51.37
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3240",
+       "label": "Wowhead Classic NPC 3240"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

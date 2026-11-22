@@ -1,0 +1,2599 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "durotar-1-12",
+ "title": "Razor Hill",
+ "steps": [
+  {
+   "id": "durotar-1-12:060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run north to Razor Hill. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.5,
+      "y": 41.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run north to Razor Hill. On the way, kill Durotar Tigers for Practical Prey when you see them.",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:157",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Sit at Brakk's campfire until the rest buff lands, then turn the quest in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.1,
+      "y": 47.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96652,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 96604,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 96604,
+     "objective": 1,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "turnin",
+     "questId": 96604,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 460003 spawn, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96604",
+     "label": "Wowhead quest 96604"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Campfire buffs (Fish Bowl +8% stats at Fishing 20, and other players' camp items) are optional. The route works with none of them. A Camp Tent only fills rested xp up to 5% of a level and does nothing if you already have more.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 460003 spawn, zone 14"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=96604",
+       "label": "Wowhead quest 96604"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Cooking a basic meal gives Well Fed: +5% kill xp for 15 minutes, if you keep food on hand. The route does not require it.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 460003 spawn, zone 14"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=96604",
+       "label": "Wowhead quest 96604"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Warchief's Blessing is shouted at the Razor Hill guard tower (+300 health, 15% haste, not an xp buff; it drops on death). Optional.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 460003 spawn, zone 14"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=96604",
+       "label": "Wowhead quest 96604"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:061",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Peon's Burden to Innkeeper Grosk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.5,
+      "y": 41.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2161,
+     "label": "A Peon's Burden"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2161",
+     "label": "Wowhead Classic quest 2161"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:159",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Troll priests: lesser-heal Grunt Kor'ja, buff her with Fortitude, and return to Tai'jin."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 53.1,
+      "y": 46.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5649,
+     "label": "In Favor of Spirituality"
+    },
+    {
+     "type": "accept",
+     "questId": 5648,
+     "label": "Garments of Spirituality"
+    },
+    {
+     "type": "complete",
+     "questId": 5648,
+     "objective": 1,
+     "label": "Garments of Spirituality"
+    },
+    {
+     "type": "turnin",
+     "questId": 5648,
+     "label": "Garments of Spirituality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB NPC 12430 spawn, zone 14"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5648",
+     "label": "Wowhead quest 5648"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Priest"
+   ]
+  },
+  {
+   "id": "durotar-1-12:062",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Legging It to Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96821,
+     "label": "Legging It"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Grosk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.5,
+      "y": 41.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Grosk"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=6928",
+     "label": "Wowhead Classic NPC 6928"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Set your hearth in Razor Hill. Every remaining Durotar quest ends near here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6928",
+       "label": "Wowhead Classic NPC 6928"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: hearth is your shortcut back from the Echo Isles at 11-12, so set it here.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6928",
+       "label": "Wowhead Classic NPC 6928"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6928,
+     "name": "Innkeeper Grosk",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 51.5,
+      "y": 41.6
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6928",
+       "label": "Wowhead Classic NPC 6928"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:064",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Orgnil to Orgnil Soulscar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.2,
+      "y": 43.1,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 823,
+     "label": "Report to Orgnil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=823",
+     "label": "Wowhead Classic quest 823"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:065",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dark Storms from Orgnil Soulscar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.2,
+      "y": 43.1,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 806,
+     "label": "Dark Storms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=806",
+     "label": "Wowhead Classic quest 806"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:066",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Missing Hand from Orgnil Soulscar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.2,
+      "y": 43.1,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99048,
+     "label": "A Missing Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever chain from Orgnil: Heglan Shadeeye is just north of Tiragarde Keep, so do it on the keep trip.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "A Missing Hand needs level 8. If you are not 8 yet, take it on your next pass through Razor Hill.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:067",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vanquish the Betrayers from Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 784,
+     "label": "Vanquish the Betrayers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=784",
+     "label": "Wowhead Classic quest 784"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:069",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Break a Few Eggs from Cook Torka"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.1,
+      "y": 42.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 815,
+     "label": "Break a Few Eggs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=815",
+     "label": "Wowhead Classic quest 815"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:071",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept This Fruit Could Bite Back from Cook Torka"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.1,
+      "y": 42.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96825,
+     "label": "This Fruit Could Bite Back"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:072",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Encroachment from Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 837,
+     "label": "Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=837",
+     "label": "Wowhead Classic quest 837"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:068",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Carry Your Weight from Furl Scornbrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 49.9,
+      "y": 40.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 791,
+     "label": "Carry Your Weight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=791",
+     "label": "Wowhead Classic quest 791"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:070",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept For Honor from Turroc"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 54,
+      "y": 42.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96822,
+     "label": "For Honor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Turroc in Razor Hill. The three raider items are at the edge of Tiragarde Keep, so it fits the keep run.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:073",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Missing Hand to Heglan Shadeeye"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 58.6,
+      "y": 45.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99048,
+     "label": "A Missing Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:074",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Threat from Below from Heglan Shadeeye"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 58.6,
+      "y": 45.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99049,
+     "label": "Threat from Below"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This part of Threat from Below needs level 8.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:075",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Threat from Below"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 58.9,
+      "y": 44.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99049,
+     "objective": 1,
+     "label": "Threat from Below"
+    },
+    {
+     "type": "complete",
+     "questId": 99049,
+     "objective": 2,
+     "label": "Threat from Below"
+    },
+    {
+     "type": "complete",
+     "questId": 99049,
+     "objective": 3,
+     "label": "Threat from Below"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The dagger, banner scrap and trident piece lie on the ground around Heglan.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 693674,
+     "name": "Abandoned Dagger",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 58.9,
+      "y": 44.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=693674",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 693670,
+     "name": "Strange Debris",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 60.1,
+      "y": 42.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=693670",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 693669,
+     "name": "Weapon Piece",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 60.1,
+      "y": 44.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=693669",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:076",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Vanquish the Betrayers. On the keep outskirts, take the Raider's Bow, Raider's Battleaxe, and Raider's Shield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 57.4,
+      "y": 57,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 784,
+     "objective": 1,
+     "label": "Vanquish the Betrayers"
+    },
+    {
+     "type": "complete",
+     "questId": 784,
+     "objective": 2,
+     "label": "Vanquish the Betrayers"
+    },
+    {
+     "type": "complete",
+     "questId": 784,
+     "objective": 3,
+     "label": "Vanquish the Betrayers"
+    },
+    {
+     "type": "complete",
+     "questId": 96822,
+     "objective": 1,
+     "label": "For Honor"
+    },
+    {
+     "type": "complete",
+     "questId": 96822,
+     "objective": 2,
+     "label": "For Honor"
+    },
+    {
+     "type": "complete",
+     "questId": 96822,
+     "objective": 3,
+     "label": "For Honor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=784",
+     "label": "Wowhead Classic quest 784"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tiragarde Keep: clear the sailors outside first, then work up the keep for the marines. Lieutenant Benedict is on the top floor. Loot the key he drops: it opens his chest, which starts The Admiral's Orders.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=784",
+       "label": "Wowhead Classic quest 784"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "The marines come in pairs. Fight with your back to a wall so they cannot surround you.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=784",
+       "label": "Wowhead Classic quest 784"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Pull the sailors one at a time; skip marines you do not need.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=784",
+       "label": "Wowhead Classic quest 784"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Benedict has a guard by him. Kill the guard first, then Benedict.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=784",
+       "label": "Wowhead Classic quest 784"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3128
+     ],
+     "name": "Kul Tiras Sailor",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 57.4,
+      "y": 57
+     },
+     "radius": 4.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3128",
+       "label": "Wowhead Classic NPC 3128"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3129
+     ],
+     "name": "Kul Tiras Marine",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 59.4,
+      "y": 56.7
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3129",
+       "label": "Wowhead Classic NPC 3129"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3192
+     ],
+     "name": "Lieutenant Benedict",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 59.7,
+      "y": 58.3
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3192",
+       "label": "Wowhead Classic NPC 3192"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 656180,
+     "name": "Raider's Bow",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 59.39,
+      "y": 56.41
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 656180, zone 14"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "object",
+     "objectId": 656181,
+     "name": "Raider's Battleaxe",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 57.37,
+      "y": 56.43
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 656181, zone 14"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "object",
+     "objectId": 656182,
+     "name": "Raider's Shield",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 56.54,
+      "y": 53
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 656182, zone 14"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:077",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Admiral's Orders"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 59.26,
+      "y": 57.65,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 830,
+     "label": "The Admiral's Orders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=830",
+     "label": "Wowhead Classic quest 830"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Open Benedict's chest on the top floor of the keep with his key. The Aged Envelope inside starts this quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=830",
+       "label": "Wowhead Classic quest 830"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:078",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Carry Your Weight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 57.4,
+      "y": 57,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 791,
+     "objective": 1,
+     "label": "Carry Your Weight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=791",
+     "label": "Wowhead Classic quest 791"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Canvas Scraps drop from the sailors and marines you are already killing.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=791",
+       "label": "Wowhead Classic quest 791"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3128
+     ],
+     "name": "Kul Tiras Sailor (Canvas Scraps)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 57.4,
+      "y": 57
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3128",
+       "label": "Wowhead Classic NPC 3128"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4870",
+       "label": "Wowhead Classic item 4870"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3129
+     ],
+     "name": "Kul Tiras Marine (Canvas Scraps)",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 59.4,
+      "y": 56.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3129",
+       "label": "Wowhead Classic NPC 3129"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=4870",
+       "label": "Wowhead Classic item 4870"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:079",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vanquish the Betrayers to Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 784,
+     "label": "Vanquish the Betrayers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=784",
+     "label": "Wowhead Classic quest 784"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:080",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Threat from Below to Orgnil Soulscar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.2,
+      "y": 43.1,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99049,
+     "label": "Threat from Below"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:081",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Admiral's Orders to Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 830,
+     "label": "The Admiral's Orders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=830",
+     "label": "Wowhead Classic quest 830"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Admiral's Orders from Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 831,
+     "label": "The Admiral's Orders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=831",
+     "label": "Wowhead Classic quest 831"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:083",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Carry Your Weight to Furl Scornbrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 49.9,
+      "y": 40.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 791,
+     "label": "Carry Your Weight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=791",
+     "label": "Wowhead Classic quest 791"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:084",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in For Honor to Turroc"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 54,
+      "y": 42.6,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96822,
+     "label": "For Honor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hand in to Turroc in Razor Hill.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:085",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept From The Wreckage.... from Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 825,
+     "label": "From The Wreckage...."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=825",
+     "label": "Wowhead Classic quest 825"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The wreckage is in the water east of Razor Hill. Gnomish Tools are inside crates on the sea floor; watch your breath.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=825",
+       "label": "Wowhead Classic quest 825"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:086",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete From The Wreckage...."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 62.4,
+      "y": 53.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 825,
+     "objective": 1,
+     "label": "From The Wreckage...."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=825",
+     "label": "Wowhead Classic quest 825"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3236,
+     "name": "Gnomish Toolbox",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 62.4,
+      "y": 53.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3236",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:087",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in From The Wreckage.... to Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 825,
+     "label": "From The Wreckage...."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=825",
+     "label": "Wowhead Classic quest 825"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Visit your class trainer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Level 10: go to your class trainer for your level 10 spells and class quest (Hunter pet quest, Warrior Veteran Uzzek, Shaman Call of Fire, Warlock Gan'rul's Summons and so on).",
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:089",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Encroachment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 48.9,
+      "y": 48.8,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 837,
+     "objective": 1,
+     "label": "Encroachment"
+    },
+    {
+     "type": "complete",
+     "questId": 837,
+     "objective": 2,
+     "label": "Encroachment"
+    },
+    {
+     "type": "complete",
+     "questId": 837,
+     "objective": 3,
+     "label": "Encroachment"
+    },
+    {
+     "type": "complete",
+     "questId": 837,
+     "objective": 4,
+     "label": "Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=837",
+     "label": "Wowhead Classic quest 837"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Razormane quilboar are west of Razor Hill. Get all four kinds, then return. Do the prickly pears in the same area if you took that quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=837",
+       "label": "Wowhead Classic quest 837"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3111
+     ],
+     "name": "Razormane Quilboar",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 48.9,
+      "y": 48.8
+     },
+     "radius": 2.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3111",
+       "label": "Wowhead Classic NPC 3111"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3112
+     ],
+     "name": "Razormane Scout",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 47.2,
+      "y": 49.6
+     },
+     "radius": 3.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3112",
+       "label": "Wowhead Classic NPC 3112"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3113
+     ],
+     "name": "Razormane Dustrunner",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 42.9,
+      "y": 39.3
+     },
+     "radius": 14.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3113",
+       "label": "Wowhead Classic NPC 3113"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3114
+     ],
+     "name": "Razormane Battleguard",
+     "mapId": 1411,
+     "zone": "Durotar",
+     "center": {
+      "x": 42.6,
+      "y": 39.4
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3114",
+       "label": "Wowhead Classic NPC 3114"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:091",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encroachment to Gar'Thok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52,
+      "y": 43.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 837,
+     "label": "Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=837",
+     "label": "Wowhead Classic quest 837"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:092",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete This Fruit Could Bite Back"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 47.1,
+      "y": 49.4,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96825,
+     "objective": 1,
+     "label": "This Fruit Could Bite Back"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Prickly Pear Fruit is in the Razormane Grounds west of Razor Hill, where you just killed quilboar.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/durotar/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 656177,
+     "name": "Prickly Pear Fruit",
+     "at": {
+      "mapId": 1411,
+      "zone": "Durotar",
+      "x": 47.1,
+      "y": 49.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=656177",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "durotar-1-12:093",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in This Fruit Could Bite Back to Cook Torka"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 51.1,
+      "y": 42.5,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96825,
+     "label": "This Fruit Could Bite Back"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://www.hardcorehelper.com/forever/guides/durotar-leveling-guide",
+     "label": "Hardcore Helper WoW Forever zone guide"
+    },
+    {
+     "url": "https://wowfdb.com/zones/durotar/",
+     "label": "WoW Forever DB zone page"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "durotar-1-12:w2-96876-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Ukor's Lost Pack, then accept Ukor's Lost Pack."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 49.2,
+      "y": 56.9,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96876,
+     "label": "Ukor's Lost Pack"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=96876",
+     "label": "Wowhead Classic quest 96876"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "durotar-1-12:w2-96876-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ukor's Lost Pack to Ukor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1411,
+      "x": 52.1,
+      "y": 68.3,
+      "zone": "Durotar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96876,
+     "label": "Ukor's Lost Pack"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=96876",
+     "label": "Wowhead Classic quest 96876"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

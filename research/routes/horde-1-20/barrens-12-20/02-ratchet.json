@@ -1,0 +1,1472 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "barrens-12-20",
+ "title": "Ratchet",
+ "steps": [
+  {
+   "id": "barrens-12-20:033",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run east along the road to Ratchet and kill raptors on the way for Raptor Thieves"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run east along the road to Ratchet and kill raptors on the way for Raptor Thieves.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: after this first run, fly between Ratchet and the Crossroads instead of running.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:034",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Bragok"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.1,
+      "y": 37.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Bragok"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=16227",
+     "label": "Wowhead Classic NPC 16227"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Get the Ratchet flight path.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=16227",
+       "label": "Wowhead Classic NPC 16227"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 16227,
+     "name": "Bragok",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.1,
+      "y": 37.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=16227",
+       "label": "Wowhead Classic NPC 16227"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:035",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wharfmaster Dizzywig to Wharfmaster Dizzywig"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.4,
+      "y": 38.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1492,
+     "label": "Wharfmaster Dizzywig"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1492",
+     "label": "Wowhead Classic quest 1492"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:036",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Southsea Freebooters from Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 887,
+     "label": "Southsea Freebooters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=887",
+     "label": "Wowhead Classic quest 887"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:037",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Samophlange from Sputtervalve"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63,
+      "y": 37.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 894,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=894",
+     "label": "Wowhead Classic quest 894"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sputtervalve can send you to Ziz Fizziks in Stonetalon. Take that talk only as a pointer. Leave the Windshear quests for the Stonetalon route.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1483",
+       "label": "Wowhead Classic quest 1483"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 1483 breadcrumbFor 1093, start npc 3442"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:w2-896-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Miner's Fortune from Wharfmaster Dizzywig before you leave Ratchet for the Sludge Fen."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.4,
+      "y": 38.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 896,
+     "label": "Miner's Fortune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=896",
+     "label": "Wowhead Classic quest 896"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 896, NPC 3453 and Venture Co. Overseer 3286"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:038",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Parts and Pieces from Wrenix the Wretched"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.1,
+      "y": 36.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97253,
+     "label": "Parts and Pieces"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest. The Handfuls of Complicated Parts are south of Ratchet; it rewards a Scuffed Shipping Crate.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Raptor Horns from Mebok Mizzyrix"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 865,
+     "label": "Raptor Horns"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=865",
+     "label": "Wowhead Classic quest 865"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-866-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Root Samples from Mebok Mizzyrix."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 866,
+     "label": "Root Samples"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=866",
+     "label": "Wowhead Classic quest 866"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:043",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept WANTED: Baron Longshore from WANTED"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.6,
+      "y": 37.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 895,
+     "label": "WANTED: Baron Longshore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=895",
+     "label": "Wowhead Classic quest 895"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:039",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Parts and Pieces"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62,
+      "y": 45.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97253,
+     "objective": 1,
+     "label": "Parts and Pieces"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pick up the Handfuls of Complicated Parts south of Ratchet while you clear the pirate camp.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://wowforeverguides.com/zones/the-barrens",
+       "label": "WoW Forever Guides: the Barrens"
+      },
+      {
+       "url": "https://wowfdb.com/zones/the-barrens/",
+       "label": "WoW Forever DB zone page"
+      },
+      {
+       "url": "https://hackverso.com/en/wowforever/leveling/",
+       "label": "Hackverso WoW Forever leveling table"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Accept the Ratchet kill and wanted quests before you leave town, loot the parts piles on the pirate shore, and turn the parts in on the same return as the freebooters.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97253",
+       "label": "Wowhead Forever quest 97253"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB object 660930 beside pirate camps"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 660930,
+     "name": "Pile of Complicated Parts",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62,
+      "y": 45.9
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=660930",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:044",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Southsea Freebooters"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.8,
+      "y": 46.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 887,
+     "objective": 1,
+     "label": "Southsea Freebooters"
+    },
+    {
+     "type": "complete",
+     "questId": 887,
+     "objective": 2,
+     "label": "Southsea Freebooters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=887",
+     "label": "Wowhead Classic quest 887"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Southsea pirates camp on the shore south of Ratchet. Baron Longshore, Stolen Booty and Southsea Freebooters are all in the same camp, so clear it once.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=887",
+       "label": "Wowhead Classic quest 887"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Pull pirates one at a time; they come in groups of two or three near the tents.",
+     "roles": [
+      "tank"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=887",
+       "label": "Wowhead Classic quest 887"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Fight on the edge of the camp so you can drink between pulls.",
+     "roles": [
+      "healer"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=887",
+       "label": "Wowhead Classic quest 887"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "You need 6 cannoneers and 12 brigands; tag the cannoneers when you see them, they are the scarcer of the two.",
+     "roles": [
+      "dps"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=887",
+       "label": "Wowhead Classic quest 887"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3381
+     ],
+     "name": "Southsea Brigand",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 63.8,
+      "y": 46.2
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3381",
+       "label": "Wowhead Classic NPC 3381"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3382
+     ],
+     "name": "Southsea Cannoneer",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 63.7,
+      "y": 47.3
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3382",
+       "label": "Wowhead Classic NPC 3382"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:045",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete WANTED: Baron Longshore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.6,
+      "y": 49.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 895,
+     "objective": 1,
+     "label": "WANTED: Baron Longshore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=895",
+     "label": "Wowhead Classic quest 895"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3467
+     ],
+     "name": "Baron Longshore (Baron Longshore's Head)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 63.6,
+      "y": 49.1
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3467",
+       "label": "Wowhead Classic NPC 3467"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5084",
+       "label": "Wowhead Classic item 5084"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:040",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Parts and Pieces to Wrenix the Wretched"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.1,
+      "y": 36.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97253,
+     "label": "Parts and Pieces"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    },
+    {
+     "url": "https://wowforeverguides.com/zones/the-barrens",
+     "label": "WoW Forever Guides: the Barrens"
+    },
+    {
+     "url": "https://wowfdb.com/zones/the-barrens/",
+     "label": "WoW Forever DB zone page"
+    },
+    {
+     "url": "https://hackverso.com/en/wowforever/leveling/",
+     "label": "Hackverso WoW Forever leveling table"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:046",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Southsea Freebooters to Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 887,
+     "label": "Southsea Freebooters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=887",
+     "label": "Wowhead Classic quest 887"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:047",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Missing Shipment from Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 890,
+     "label": "The Missing Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=890",
+     "label": "Wowhead Classic quest 890"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:048",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Missing Shipment to Wharfmaster Dizzywig"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.4,
+      "y": 38.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 890,
+     "label": "The Missing Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=890",
+     "label": "Wowhead Classic quest 890"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:049",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Missing Shipment from Wharfmaster Dizzywig"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.4,
+      "y": 38.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 892,
+     "label": "The Missing Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=892",
+     "label": "Wowhead Classic quest 892"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wharfmaster Dizzywig is on the Ratchet docks; this hands straight back to Gazlowe.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=892",
+       "label": "Wowhead Classic quest 892"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:050",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Missing Shipment to Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 892,
+     "label": "The Missing Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=892",
+     "label": "Wowhead Classic quest 892"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:051",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Stolen Booty from Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 888,
+     "label": "Stolen Booty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=888",
+     "label": "Wowhead Classic quest 888"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:052",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stolen Booty"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.6,
+      "y": 49.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 888,
+     "objective": 1,
+     "label": "Stolen Booty"
+    },
+    {
+     "type": "complete",
+     "questId": 888,
+     "objective": 2,
+     "label": "Stolen Booty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=888",
+     "label": "Wowhead Classic quest 888"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stolen Booty unlocks only after the Missing Shipment chain, so go back to the pirate camp south of Ratchet for it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=888",
+       "label": "Wowhead Classic quest 888"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3767,
+     "name": "Drizzlik's Emporium",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.6,
+      "y": 49.6
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3767",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 3768,
+     "name": "Fragile - Do Not Drop",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.6,
+      "y": 49.2
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3768",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:053",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stolen Booty to Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 888,
+     "label": "Stolen Booty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=888",
+     "label": "Wowhead Classic quest 888"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:054",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in WANTED: Baron Longshore to Gazlowe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.7,
+      "y": 36.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 895,
+     "label": "WANTED: Baron Longshore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=895",
+     "label": "Wowhead Classic quest 895"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

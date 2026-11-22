@@ -1,0 +1,2525 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "barrens-12-20",
+ "title": "Northern Barrens",
+ "steps": [
+  {
+   "id": "barrens-12-20:055",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Raptor Thieves"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 56,
+      "y": 30.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 869,
+     "objective": 1,
+     "label": "Raptor Thieves"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=869",
+     "label": "Wowhead Classic quest 869"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Raptor heads drop from the Sunscale raptors along the Crossroads-Ratchet road.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=869",
+       "label": "Wowhead Classic quest 869"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3255
+     ],
+     "name": "Sunscale Screecher (Raptor Head)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 56,
+      "y": 30.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3255",
+       "label": "Wowhead Classic NPC 3255"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5062",
+       "label": "Wowhead Classic item 5062"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3256
+     ],
+     "name": "Sunscale Scytheclaw (Raptor Head)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 52.7,
+      "y": 45.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3256",
+       "label": "Wowhead Classic NPC 3256"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5062",
+       "label": "Wowhead Classic item 5062"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "barrens-12-20:w2-866-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Root Samples."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 51.4,
+      "y": 27.1,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 866,
+     "objective": 1,
+     "label": "Root Samples"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=866",
+     "label": "Wowhead Classic quest 866"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:056",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Fungal Spores"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 46.4,
+      "y": 39.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 848,
+     "objective": 1,
+     "label": "Fungal Spores"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=848",
+     "label": "Wowhead Classic quest 848"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Laden Mushrooms for Fungal Spores grow around the Lushwater Oasis south-west of the Crossroads. Do them with Altered Beings.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=848",
+       "label": "Wowhead Classic quest 848"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3640,
+     "name": "Laden Mushroom",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 46.4,
+      "y": 39.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3640",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:057",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 894,
+     "objective": 1,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=894",
+     "label": "Wowhead Classic quest 894"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Samophlange machine is north of the Crossroads in the Sludge Fen. Read the console to start the next parts of the chain.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=894",
+       "label": "Wowhead Classic quest 894"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:w2-896-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Miner's Fortune. Kill Venture Co. Overseers and Enforcers around the Sludge Fen while you are here for the Samophlange."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 61.4,
+      "y": 5.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 896,
+     "objective": 1,
+     "label": "Miner's Fortune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=896",
+     "label": "Wowhead Classic quest 896"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 896, NPC 3453 and Venture Co. Overseer 3286"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:058",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 894,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=894",
+     "label": "Wowhead Classic quest 894"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This part ends at the control console itself.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=894",
+       "label": "Wowhead Classic quest 894"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:059",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Samophlange from Control Console"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 900,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=900",
+     "label": "Wowhead Classic quest 900"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.3,
+      "y": 11.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 900,
+     "objective": 1,
+     "label": "Samophlange"
+    },
+    {
+     "type": "complete",
+     "questId": 900,
+     "objective": 2,
+     "label": "Samophlange"
+    },
+    {
+     "type": "complete",
+     "questId": 900,
+     "objective": 3,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=900",
+     "label": "Wowhead Classic quest 900"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 4072,
+     "name": "Main Control Valve",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 52.3,
+      "y": 11.6
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=4072",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 61936,
+     "name": "Fuel Control Valve",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 52.4,
+      "y": 11.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=61936",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 61935,
+     "name": "Regulator Valve",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 52.3,
+      "y": 11.4
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=61935",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:061",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 900,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=900",
+     "label": "Wowhead Classic quest 900"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:062",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Samophlange from Control Console"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 901,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=901",
+     "label": "Wowhead Classic quest 901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.8,
+      "y": 10.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 901,
+     "objective": 1,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=901",
+     "label": "Wowhead Classic quest 901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3471
+     ],
+     "name": "Tinkerer Sniggles (Console Key)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 52.8,
+      "y": 10.4
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3471",
+       "label": "Wowhead Classic NPC 3471"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5089",
+       "label": "Wowhead Classic item 5089"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:064",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Samophlange"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 901,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=901",
+     "label": "Wowhead Classic quest 901"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tinkerer Sniggles carries the Console Key; he is right next to the console.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=901",
+       "label": "Wowhead Classic quest 901"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:065",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Samophlange from Control Console"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.4,
+      "y": 11.7,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 902,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=902",
+     "label": "Wowhead Classic quest 902"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:066",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bruised Pride and Lion Hides from Vrang Wildgore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95494,
+     "label": "Bruised Pride and Lion Hides"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quests from Vrang Wildgore, a short run west of the Sludge Fen.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:067",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vrang's Game from Vrang Wildgore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95507,
+     "label": "Vrang's Game"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:068",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Vrang's Game"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 45.4,
+      "y": 14,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95507,
+     "objective": 1,
+     "label": "Vrang's Game"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Loot the Sprung Traps on the plains just south of Vrang.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 640104,
+     "name": "Sprung Trap",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 45.4,
+      "y": 14
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=640104",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:069",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Bruised Pride and Lion Hides"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.5,
+      "y": 15.8,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95494,
+     "objective": 1,
+     "label": "Bruised Pride and Lion Hides"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Savannah Patriarchs and Matriarchs (lions) drop the hides; there are some right around Vrang.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3241
+     ],
+     "name": "Savannah Patriarch (Savannah Lion Hide)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 44.5,
+      "y": 15.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3241",
+       "label": "Wowhead Classic NPC 3241"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3416
+     ],
+     "name": "Savannah Matriarch (Savannah Lion Hide)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 61.9,
+      "y": 33.1
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3416",
+       "label": "Wowhead Classic NPC 3416"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:070",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bruised Pride and Lion Hides to Vrang Wildgore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95494,
+     "label": "Bruised Pride and Lion Hides"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:071",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vrang's Game to Vrang Wildgore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95507,
+     "label": "Vrang's Game"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:072",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Hermit Tanner from Vrang Wildgore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 43.8,
+      "y": 12.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95495,
+     "label": "The Hermit Tanner"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:073",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Hermit Tanner to Walton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 42,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95495,
+     "label": "The Hermit Tanner"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Walton the hermit is on the ridge just west of Vrang.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:074",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Trouble in the Valley from Walton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 42,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95621,
+     "label": "Trouble in the Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:075",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Trouble in the Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 41.8,
+      "y": 15.8,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95621,
+     "objective": 1,
+     "label": "Trouble in the Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Benedict's Orders drop from Corporal Adamore at the wrecked caravan south of Walton.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      262119
+     ],
+     "name": "Corporal Adamore (Benedict's Orders)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 41.8,
+      "y": 15.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=262119",
+       "label": "Wowhead Classic NPC 262119"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:076",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Trouble in the Valley to Walton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 42,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95621,
+     "label": "Trouble in the Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:077",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Unwelcome Guests from Walton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 42,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95508,
+     "label": "Unwelcome Guests"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:078",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Unwelcome Guests"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 41.9,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95508,
+     "objective": 1,
+     "label": "Unwelcome Guests"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stay by Walton and kill Terry Longdrink and his marines when they arrive.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      261367
+     ],
+     "name": "Terry Longdrink",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 41.9,
+      "y": 11.4
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=261367",
+       "label": "Wowhead Classic NPC 261367"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:079",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unwelcome Guests to Walton"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 42,
+      "y": 11.4,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95508,
+     "label": "Unwelcome Guests"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+     "label": "github.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "barrens-12-20:087",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Harpy Raiders"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 38.8,
+      "y": 14.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 867,
+     "objective": 1,
+     "label": "Harpy Raiders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=867",
+     "label": "Wowhead Classic quest 867"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Witchwing harpies nest in the hills north-west of the Crossroads. Their talons drop from both the harpies and the slayers.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=867",
+       "label": "Wowhead Classic quest 867"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Kill the Witchwing harpies for Harpy Raiders while you are still at Walton, before you ride east to Wizzlecrank's shredder.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=867",
+       "label": "Wowhead Classic quest 867"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB npc 3276-3280 spawns on the northern ridge"
+      },
+      {
+       "url": "https://www.curseforge.com/wow/addons/openxp",
+       "label": "OpenXP Barrens guide id order: harpies before the shredder return"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3278
+     ],
+     "name": "Witchwing Slayer (Witchwing Talon)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 38.8,
+      "y": 14.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3278",
+       "label": "Wowhead Classic NPC 3278"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5064",
+       "label": "Wowhead Classic item 5064"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3276
+     ],
+     "name": "Witchwing Harpy (Witchwing Talon)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 40.9,
+      "y": 16.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3276",
+       "label": "Wowhead Classic NPC 3276"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5064",
+       "label": "Wowhead Classic item 5064"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:080",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ignition from Wizzlecrank's Shredder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 56.5,
+      "y": 7.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 858,
+     "label": "Ignition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=858",
+     "label": "Wowhead Classic quest 858"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wizzlecrank's Shredder is north of the Sludge Fen. Ignition then leads to the escort The Escape.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=858",
+       "label": "Wowhead Classic quest 858"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:081",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ignition"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 56.3,
+      "y": 8.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 858,
+     "objective": 1,
+     "label": "Ignition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=858",
+     "label": "Wowhead Classic quest 858"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3445
+     ],
+     "name": "Supervisor Lugwizzle (Ignition Key)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 56.3,
+      "y": 8.6
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3445",
+       "label": "Wowhead Classic NPC 3445"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5050",
+       "label": "Wowhead Classic item 5050"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ignition to Wizzlecrank's Shredder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 56.5,
+      "y": 7.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 858,
+     "label": "Ignition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=858",
+     "label": "Wowhead Classic quest 858"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:083",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Escape from Wizzlecrank's Shredder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 56.5,
+      "y": 7.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 863,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=863",
+     "label": "Wowhead Classic quest 863"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Escort: stay close to the shredder and kill the attackers that come at it. If you are low on health, wait until you are full before you start it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=863",
+       "label": "Wowhead Classic quest 863"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:084",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Escape"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 863,
+     "objective": 1,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=863",
+     "label": "Wowhead Classic quest 863"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "D1: escort despawn tip for 863"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: escort despawn tip for 863"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:085",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Escape to Sputtervalve"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63,
+      "y": 37.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 863,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=863",
+     "label": "Wowhead Classic quest 863"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The escort ends with Sputtervalve in Ratchet; hand in the Samophlange at the same time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=863",
+       "label": "Wowhead Classic quest 863"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:086",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Samophlange to Sputtervalve"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63,
+      "y": 37.2,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 902,
+     "label": "Samophlange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=902",
+     "label": "Wowhead Classic quest 902"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun skips the escort: fly to Ratchet from the Crossroads to hand in the Samophlange.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=902",
+       "label": "Wowhead Classic quest 902"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:w2-896-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Miner's Fortune to Wharfmaster Dizzywig."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 63.4,
+      "y": 38.5,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 896,
+     "label": "Miner's Fortune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=896",
+     "label": "Wowhead Classic quest 896"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 896, NPC 3453 and Venture Co. Overseer 3286"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:w2-866-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Root Samples to Mebok Mizzyrix."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.4,
+      "y": 37.6,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 866,
+     "label": "Root Samples"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=866",
+     "label": "Wowhead Classic quest 866"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "barrens-12-20:088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Stagnant Oasis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 55.6,
+      "y": 42.8,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 877,
+     "objective": 1,
+     "label": "The Stagnant Oasis"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=877",
+     "label": "Wowhead Classic quest 877"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Stagnant Oasis is south-east of the Crossroads; the Bubbling Fissure you need to inspect is in the middle of the pool.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=877",
+       "label": "Wowhead Classic quest 877"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 3737,
+     "name": "Bubbling Fissure",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 55.6,
+      "y": 42.8
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=3737",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "barrens-12-20:089",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Prowlers of the Barrens"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 44.2,
+      "y": 24.3,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 903,
+     "objective": 1,
+     "label": "Prowlers of the Barrens"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=903",
+     "label": "Wowhead Classic quest 903"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3425
+     ],
+     "name": "Savannah Prowler (Prowler Claws)",
+     "mapId": 1413,
+     "zone": "The Barrens",
+     "center": {
+      "x": 44.2,
+      "y": 24.3
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3425",
+       "label": "Wowhead Classic NPC 3425"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5096",
+       "label": "Wowhead Classic item 5096"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemId": 5504,
+     "itemName": "Tangy Clam Meat",
+     "qty": 40,
+     "skillTarget": 165,
+     "note": "Keep Tangy Clam Meat from Savannah Prowler (The Barrens, lvl 14-15) for Goblin Deviled Clams. Recipe is taught by Cooking trainers. Recipe learnable at 125; every craft gives a point until 165 (about 40 crafts). Trainer recipe; clams open from many coastal/beast mobs.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=5504",
+       "label": "Wowhead Classic item"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne",
+       "not": true
+      }
+     ]
+    ]
+   }
+  }
+ ]
+}
