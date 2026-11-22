@@ -2396,10 +2396,130 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=3443",
+          "label": "Wowhead Classic quest 3443 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:searing-gorge:c3443",
+      "n": 644,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Forging the Shaft"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 43.12,
+            "y": 40.37,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 10551,
+          "count": 1,
+          "questId": 3443,
+          "objective": 1,
+          "label": "Thorium Plated Dagger"
+        },
+        {
+          "type": "mob",
+          "name": "Dark Iron Taskmaster",
+          "npcIds": [
+            5846
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Dark Iron Slaver",
+          "npcIds": [
+            5844
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Dark Iron Taskmasters at 43.12, 40.37 and Dark Iron Slavers at 42.81, 40.54 drop Thorium Plated Daggers.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5846
+          ],
+          "name": "Dark Iron Taskmaster",
+          "mapId": 1427,
+          "zone": "Searing Gorge",
+          "center": {
+            "x": 43.12,
+            "y": 40.37
+          },
+          "radius": 6,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5844
+          ],
+          "name": "Dark Iron Slaver",
+          "mapId": 1427,
+          "zone": "Searing Gorge",
+          "center": {
+            "x": 42.81,
+            "y": 40.54
+          },
+          "radius": 6,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "minutes": 8,
       "sources": [
         {
           "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -2444,8 +2564,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -2456,55 +2575,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=3443",
           "label": "Wowhead Classic quest 3443 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:searing-gorge:a7701",
-      "n": 646,
-      "tags": {
-        "optional": true
-      },
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: WANTED: Overseer Maltorius"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1427,
-            "x": 37.65,
-            "y": 26.47,
-            "zone": "Searing Gorge",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 7701,
-          "label": "WANTED: Overseer Maltorius"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=7701",
-          "label": "Wowhead Classic quest 7701 (reference link)"
         }
       ],
       "verified": true
@@ -2601,55 +2671,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=7729",
           "label": "Wowhead Classic quest 7729 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:searing-gorge:t7701",
-      "n": 649,
-      "tags": {
-        "optional": true
-      },
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: WANTED: Overseer Maltorius"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1427,
-            "x": 37.74,
-            "y": 26.56,
-            "zone": "Searing Gorge",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 7701,
-          "label": "WANTED: Overseer Maltorius"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=7701",
-          "label": "Wowhead Classic quest 7701 (reference link)"
         }
       ],
       "verified": true
@@ -2974,10 +2995,130 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=3452",
+          "label": "Wowhead Classic quest 3452 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:searing-gorge:c3452",
+      "n": 656,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Flame's Casing"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 20.81,
+            "y": 35.85,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 10552,
+          "count": 1,
+          "questId": 3452,
+          "objective": 1,
+          "label": "Symbol of Ragnaros"
+        },
+        {
+          "type": "mob",
+          "name": "Twilight Fire Guard",
+          "npcIds": [
+            5861
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Twilight Dark Shaman",
+          "npcIds": [
+            5860
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Twilight Fire Guards at 20.81, 35.85 and Twilight Dark Shamans at 24.06, 34.16 carry the Symbol of Ragnaros.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5861
+          ],
+          "name": "Twilight Fire Guard",
+          "mapId": 1427,
+          "zone": "Searing Gorge",
+          "center": {
+            "x": 20.81,
+            "y": 35.85
+          },
+          "radius": 6,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5860
+          ],
+          "name": "Twilight Dark Shaman",
+          "mapId": 1427,
+          "zone": "Searing Gorge",
+          "center": {
+            "x": 24.06,
+            "y": 34.16
+          },
+          "radius": 5,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "minutes": 8,
       "sources": [
         {
           "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -3022,8 +3163,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -3070,8 +3210,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -3118,8 +3257,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -3166,8 +3304,68 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=3454",
+          "label": "Wowhead Classic quest 3454 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:searing-gorge:c3454",
+      "n": 660,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Torch of Retribution"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 39.06,
+            "y": 39.07,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3454,
+          "objective": 1,
+          "label": "Torch of Retribution"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Take the Torch of Retribution from the stand at 39.06, 39.07.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
       ],
       "minutes": 1,
       "sources": [
@@ -3214,8 +3412,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -3262,8 +3459,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -3310,8 +3506,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -3358,10 +3553,118 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=3463",
+          "label": "Wowhead Classic quest 3463 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:searing-gorge:c3463",
+      "n": 664,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Set Them Ablaze!"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 35.67,
+            "y": 60.68,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3463,
+          "objective": 1,
+          "label": "Western Tower Ablaze"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 44.03,
+            "y": 60.91,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3463,
+          "objective": 2,
+          "label": "Southern Tower Ablaze"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 50.07,
+            "y": 54.74,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3463,
+          "objective": 3,
+          "label": "Eastern Tower Ablaze"
+        },
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 33.3,
+            "y": 54.48,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3463,
+          "objective": 4,
+          "label": "Northern Tower Ablaze"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Light the four sentry braziers: west 35.67, 60.68, south 44.03, 60.91, east 50.07, 54.74, and north 33.30, 54.48.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "minutes": 10,
       "sources": [
         {
           "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -3406,8 +3709,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -3454,8 +3756,68 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=3481",
+          "label": "Wowhead Classic quest 3481 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:searing-gorge:c3481",
+      "n": 666,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: Trinkets..."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1427,
+            "x": 38.85,
+            "y": 38.99,
+            "zone": "Searing Gorge",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 3481,
+          "objective": 1,
+          "label": "Hoard of the Black Dragonflight"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Open the Hoard of the Black Dragonflight at 38.85, 38.99.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
       ],
       "minutes": 1,
       "sources": [
@@ -3502,8 +3864,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -5727,102 +6088,6 @@
       ]
     },
     {
-      "id": "h4060:un-goro-crater:a4292",
-      "n": 698,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: The Bait for Lar'korwi"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 71.64,
-            "y": 75.96,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4292,
-          "label": "The Bait for Lar'korwi"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4292",
-          "label": "Wowhead Classic quest 4292 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4292",
-      "n": 699,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: The Bait for Lar'korwi"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 71.64,
-            "y": 75.96,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4292,
-          "label": "The Bait for Lar'korwi"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4292",
-          "label": "Wowhead Classic quest 4292 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
       "id": "h4060:un-goro-crater:t4301",
       "n": 700,
       "tags": {},
@@ -6309,102 +6574,6 @@
       ]
     },
     {
-      "id": "h4060:un-goro-crater:a4244",
-      "n": 707,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Chasing A-Me 01"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 67.66,
-            "y": 16.76,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4244,
-          "label": "Chasing A-Me 01"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4244",
-          "label": "Wowhead Classic quest 4244 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4244",
-      "n": 708,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Chasing A-Me 01"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 67.66,
-            "y": 16.76,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4244,
-          "label": "Chasing A-Me 01"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4244",
-          "label": "Wowhead Classic quest 4244 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
       "id": "h4060:un-goro-crater:t3883",
       "n": 709,
       "tags": {},
@@ -6741,7 +6910,28 @@
       "tips": [
         {
           "kind": "general",
-          "text": "Turn in Larion and Muigin and do not accept Marvon's Workshop.",
+          "text": "Speedrun: hand in Larion and Muigin and skip Marvon's Workshop.",
+          "routes": [
+            "speedrun"
+          ],
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/quest=4147",
+              "label": "Wowhead Classic quest 4147"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB",
+              "label": "QuestieDB 4145 next 4147; 4147 pre 4145, end npc 8496"
+            }
+          ],
+          "verified": false
+        },
+        {
+          "kind": "general",
+          "text": "Balanced route: hand in Larion and Muigin, accept Marvon's Workshop, and deliver it to Liv Rizzlefix in Ratchet.",
+          "routes": [
+            "balanced"
+          ],
           "sources": [
             {
               "url": "https://www.wowhead.com/classic/quest=4147",
@@ -6788,8 +6978,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 1,
       "sources": [
@@ -6800,102 +6989,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=4147",
           "label": "Wowhead Classic quest 4147 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4284",
-      "n": 717,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Crystals of Power"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4284,
-          "label": "Crystals of Power"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4284",
-          "label": "Wowhead Classic quest 4284 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4284",
-      "n": 718,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Crystals of Power"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4284,
-          "label": "Crystals of Power"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4284",
-          "label": "Wowhead Classic quest 4284 (reference link)"
         }
       ],
       "verified": true
@@ -6980,8 +7073,7 @@
       ],
       "conditions": [],
       "routes": [
-        "balanced",
-        "speedrun"
+        "balanced"
       ],
       "minutes": 2,
       "sources": [
@@ -7141,198 +7233,6 @@
       "verified": true
     },
     {
-      "id": "h4060:un-goro-crater:a4245",
-      "n": 724,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Chasing A-Me 01"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 67.66,
-            "y": 16.76,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4245,
-          "label": "Chasing A-Me 01"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4245",
-          "label": "Wowhead Classic quest 4245 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4245",
-      "n": 725,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Chasing A-Me 01"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 46.38,
-            "y": 13.44,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4245,
-          "label": "Chasing A-Me 01"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4245",
-          "label": "Wowhead Classic quest 4245 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4491",
-      "n": 726,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: A Little Help From My Friends"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 51.9,
-            "y": 49.85,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4491,
-          "label": "A Little Help From My Friends"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4491",
-          "label": "Wowhead Classic quest 4491 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4491",
-      "n": 727,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: A Little Help From My Friends"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 43.62,
-            "y": 8.5,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4491,
-          "label": "A Little Help From My Friends"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4491",
-          "label": "Wowhead Classic quest 4491 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
       "id": "h4060:un-goro-crater:t3845",
       "n": 728,
       "tags": {},
@@ -7376,390 +7276,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=3845",
           "label": "Wowhead Classic quest 3845 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4285",
-      "n": 729,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: The Northern Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4285,
-          "label": "The Northern Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4285",
-          "label": "Wowhead Classic quest 4285 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4287",
-      "n": 730,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: The Eastern Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4287,
-          "label": "The Eastern Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4287",
-          "label": "Wowhead Classic quest 4287 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4288",
-      "n": 731,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: The Western Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4288,
-          "label": "The Western Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4288",
-          "label": "Wowhead Classic quest 4288 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4285",
-      "n": 732,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: The Northern Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4285,
-          "label": "The Northern Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4285",
-          "label": "Wowhead Classic quest 4285 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4287",
-      "n": 733,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: The Eastern Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4287,
-          "label": "The Eastern Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4287",
-          "label": "Wowhead Classic quest 4287 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4288",
-      "n": 734,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: The Western Pylon"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4288,
-          "label": "The Western Pylon"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4288",
-          "label": "Wowhead Classic quest 4288 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:a4321",
-      "n": 735,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Making Sense of It"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 4321,
-          "label": "Making Sense of It"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4321",
-          "label": "Wowhead Classic quest 4321 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:un-goro-crater:t4321",
-      "n": 736,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Making Sense of It"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1449,
-            "x": 41.92,
-            "y": 2.7,
-            "zone": "Un'Goro Crater",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 4321,
-          "label": "Making Sense of It"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=4321",
-          "label": "Wowhead Classic quest 4321 (reference link)"
         }
       ],
       "verified": true
@@ -7952,54 +7468,6 @@
       "verified": true
     },
     {
-      "id": "h4060:tanaris:a2641",
-      "n": 741,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Sprinkle's Secret Ingredient"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1446,
-            "x": 51.06,
-            "y": 26.87,
-            "zone": "Tanaris",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 2641,
-          "label": "Sprinkle's Secret Ingredient"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2641",
-          "label": "Wowhead Classic quest 2641 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
       "id": "h4060:tanaris:a113",
       "n": 742,
       "tags": {},
@@ -8048,54 +7516,6 @@
       "verified": true
     },
     {
-      "id": "h4060:tanaris:t2641",
-      "n": 743,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Sprinkle's Secret Ingredient"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1446,
-            "x": 51.06,
-            "y": 26.87,
-            "zone": "Tanaris",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 2641,
-          "label": "Sprinkle's Secret Ingredient"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2641",
-          "label": "Wowhead Classic quest 2641 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
       "id": "h4060:tanaris:t113",
       "n": 744,
       "tags": {},
@@ -8139,102 +7559,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=113",
           "label": "Wowhead Classic quest 113 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:tanaris:a2661",
-      "n": 745,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: Delivery for Marin"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1446,
-            "x": 51.06,
-            "y": 26.87,
-            "zone": "Tanaris",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 2661,
-          "label": "Delivery for Marin"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2661",
-          "label": "Wowhead Classic quest 2661 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:tanaris:t2661",
-      "n": 746,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: Delivery for Marin"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1446,
-            "x": 51.81,
-            "y": 28.66,
-            "zone": "Tanaris",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 2661,
-          "label": "Delivery for Marin"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2661",
-          "label": "Wowhead Classic quest 2661 (reference link)"
         }
       ],
       "verified": true
