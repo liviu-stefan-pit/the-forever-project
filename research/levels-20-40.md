@@ -65,7 +65,7 @@ Inside-instance work belongs to `research/dungeons/`. This pack only has one pic
 
 ## Notes and blockers
 
-- 94532 and 94535 need prerequisite 96109. Pack 07 turns 96109 in and then does both quests on balanced and speedrun. The warning step that told the player to leave them has been removed.
+- 94532 and 94535 (quest level 38) need prerequisite 96109 (level 40). Pack 07 (`horde-20-40-07-swamp-riverglades`) turns 96109 in at Rog'mar and then does both quests on balanced and speedrun.
 - Low-confidence Forever ids 79953 and 81951 (Undercity books) are excluded.
 - Gelkis alliance (1368 → 1370 → 1373 Ongeku) is the Desolace path used here; the exclusive Magram side is skipped.
 - Profession hooks are not pasted onto these steps. Zone and level hooks from the professions pack are joined later by the data build. classProfessions and tipsMatrix for all nine classes, including Paladin, are copied from professions research (PR #15, a8f1d01) at pack level. Aza'bek (NPC 248198) and Dokimi (NPC 256386) are pinned on the Merchant's Favor stop west of the Crossroads because that stop is on this route.
