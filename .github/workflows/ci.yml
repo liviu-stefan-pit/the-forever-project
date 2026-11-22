@@ -48,6 +48,34 @@ jobs:
       - name: Build
         run: npm run build
 
+  # Walks every start (balanced and speedrun) through the XP simulator and fails when a pack ends
+  # below the level the next pack needs (next minLevel − 0.5), the 20–40 band below 39.5, or the
+  # route below 59.5. Ending higher never fails. See web/scripts/xp-gate.ts.
+  xp-gate:
+    name: "Guide: XP level gate"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: web/.node-version
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build route data
+        run: npm run data
+
+      - name: XP level gate
+        run: npm run xp:gate
+
   addons:
     name: "Addons: Lua checks"
     runs-on: ubuntu-latest
