@@ -90,6 +90,19 @@ wow.export already does it.
 - Deadwind Pass (1430) and the continent maps are not in the list. The route only crosses
   Deadwind Pass, and its few points are drawn on the neighbouring zone's map.
 
+## Already-stitched zone maps
+
+If you have whole zone maps instead of tiles, named `Zone_<areaId>_<Name>_<Folder>.png` (1002 × 668, e.g.
+`Zone_14_Durotar_Durotar.png`), convert them in one step:
+
+```
+python -I pipeline/map_images.py --zones <folder with Zone_*.png>
+```
+
+The area id is looked up in `content/questie-db/zones.json` (this covers the Forever zones such as Riverglades,
+Zephras Isle, Shen'dralas and Mount Hyjal); the folder name is the fallback. Then run `npm run data` in `web/`
+so `zones.json` points each zone at its image.
+
 ## Publishing
 
 `web/public/maps/` is committed, so generated images ship with the site. They are Blizzard game art, used under

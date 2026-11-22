@@ -10,6 +10,10 @@ updates:
         update-types:
           - minor
           - patch
+    # Major upgrades (Vite, Tailwind, React plugin, ...) need a planned migration: do them by hand.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /
