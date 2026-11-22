@@ -13,6 +13,20 @@
       --topbar-h: 56px;
     }
   }
+  /* Phones: the top bar slides away while scrolling down through a guide (see scrollHide.ts). */
+  @media (max-width: 767px) {
+    .topbar {
+      transition: transform 220ms ease;
+    }
+    .topbar[data-scroll-hidden="true"] {
+      transform: translateY(-100%);
+    }
+  }
+  @media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+    .topbar {
+      transition: none;
+    }
+  }
   html {
     color-scheme: dark;
     -webkit-tap-highlight-color: transparent;

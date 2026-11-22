@@ -535,6 +535,7 @@ export function GuideReader({
         onPrev={() => runNav("prev")}
         onNext={() => runNav("next")}
         onToggle={() => runNav("toggle")}
+        onJumpCurrent={() => { if (currentId) select(currentId, "center"); }}
       />
       <span className="sr-only" aria-live="polite">
         {currentStep ? `Step ${posInOrder} of ${order.length}${isDone(currentStep.id) ? ", done" : ""}` : ""}

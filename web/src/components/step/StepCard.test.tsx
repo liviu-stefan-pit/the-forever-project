@@ -140,7 +140,7 @@ describe("StepCard", () => {
     };
     const html = render(step, { route: "balanced", dungeons: false });
     expect(html).toContain('data-testid="step-xp"');
-    expect(html).toContain("absolute right-2 top-2");
+    expect(html).toContain("sm:absolute sm:right-2 sm:top-2");
     expect(html).toContain("+1,240 XP");
     expect(html).toContain("Turn-ins +800 XP");
     expect(html).toContain("Kills/grind +440 XP");

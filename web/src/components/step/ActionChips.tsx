@@ -98,7 +98,7 @@ function WayChip({ way, label, filter }: { way: string; label: string; filter?: 
           </>
         ) : (
           <>
-            <Icon name="copy" className="h-3 w-3" /> /way
+            <Icon name="copy" className="h-3 w-3" /> <span className="hidden sm:inline">/way</span>
           </>
         )}
       </span>
@@ -144,30 +144,23 @@ export function ActionChips({
   const secondary = chips.filter((c) => c.secondary);
   const gotos = gotoSummary(shown);
   if (!chips.length && !gotos.points.length && !gotos.hiddenCount) return null;
+  // One wrapping row: on phones the quest chip and its waypoint sit side by side instead of stacking.
   return (
-    <div className="space-y-1.5">
-      {primary.length > 0 && (
-        <div className="flex flex-wrap gap-1.5">
-          {primary.map((c) => (
-            <Chip key={c.key} spec={c} stepId={stepId} />
-          ))}
-        </div>
-      )}
-      {(secondary.length > 0 || gotos.points.length > 0 || gotos.hiddenCount > 0) && (
-        <div className="flex flex-wrap items-center gap-1.5">
-          {secondary.map((c) => (
-            <Chip key={c.key} spec={c} stepId={stepId} />
-          ))}
-          {gotos.points.map((p) => (
-            <WayChip key={p.key} way={p.way} label={`${p.at.x.toFixed(1)}, ${p.at.y.toFixed(1)}`} filter={p.filter} />
-          ))}
-          {gotos.hiddenCount > 0 && (
-            <span className="inline-flex items-center gap-1 px-1 text-[11px] text-bronze-500/80" title="Hidden path waypoints shape the route line on the map">
-              <Icon name="map" className="h-3 w-3" />
-              {gotos.hiddenCount} path point{gotos.hiddenCount === 1 ? "" : "s"}
-            </span>
-          )}
-        </div>
+    <div className="flex flex-wrap items-center gap-1.5">
+      {primary.map((c) => (
+        <Chip key={c.key} spec={c} stepId={stepId} />
+      ))}
+      {secondary.map((c) => (
+        <Chip key={c.key} spec={c} stepId={stepId} />
+      ))}
+      {gotos.points.map((p) => (
+        <WayChip key={p.key} way={p.way} label={`${p.at.x.toFixed(1)}, ${p.at.y.toFixed(1)}`} filter={p.filter} />
+      ))}
+      {gotos.hiddenCount > 0 && (
+        <span className="inline-flex items-center gap-1 px-1 text-[11px] text-bronze-500/80" title="Hidden path waypoints shape the route line on the map">
+          <Icon name="map" className="h-3 w-3" />
+          {gotos.hiddenCount} path point{gotos.hiddenCount === 1 ? "" : "s"}
+        </span>
       )}
     </div>
   );
