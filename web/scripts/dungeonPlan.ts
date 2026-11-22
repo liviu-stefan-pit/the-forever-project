@@ -31,6 +31,11 @@ export interface PlanTurnin {
   questIds: number[];
   dungeonStepIds: string[];
   sameHub?: boolean;
+  /**
+   * The turn-in is meant to happen before the run, for a prerequisite whose follow-up is done inside
+   * (Zul'Farrak 3520 → 3527 tablets). Without it, a turn-in anchored before the run fails validation.
+   */
+  beforeRun?: boolean;
 }
 
 export interface PlanRaceBlock {
@@ -391,8 +396,8 @@ export function validateDungeonPlan(
         });
         continue;
       }
-      // Turn-in before run is illegal unless sameHub and same id (handled above).
-      if (tiIdx < runIdx) {
+      // Turn-in before run is illegal unless sameHub and same id (handled above), or marked beforeRun.
+      if (tiIdx < runIdx && !ti.beforeRun) {
         errors.push({
           code: "turnin-before-run",
           message: `${b.dungeonId}/${b.route}/${b.race}: turnin ${ti.afterStepId} is before run ${runId}`,
