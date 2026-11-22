@@ -337,19 +337,22 @@ function Goals({ model }: { model: Model }) {
   );
 }
 
-function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upcoming: ReadonlySet<string> }) {
+function NoteLine({ slug, note, upcoming, questName }: { slug: string; note: NoteGroup; upcoming: ReadonlySet<string>; questName: (id: number) => string | undefined }) {
   const [open, setOpen] = useState(false);
   const soon = note.steps.filter((s) => upcoming.has(s.id)).length;
   const counts = note.steps.length
     ? `${note.steps.length} step${note.steps.length === 1 ? "" : "s"}${note.quests.length > 1 ? `, ${note.quests.length} quests` : ""}`
-    : undefined;
+    : note.questIds.length
+      ? `${note.questIds.length} quest${note.questIds.length === 1 ? "" : "s"}`
+      : undefined;
+  const expandable = note.quests.length > 0 || note.questIds.length > 0;
   return (
     <li className="border-t border-bronze-900 first:border-t-0">
       <button
         type="button"
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        disabled={!note.quests.length}
+        disabled={!expandable}
         className="flex min-h-touch w-full items-center gap-3 px-4 py-2.5 text-left text-sm text-ink enabled:hover:bg-canvas/40"
       >
         <Icon name={note.severity === "warn" ? "alert" : "info"} className={`h-4 w-4 shrink-0 ${note.severity === "warn" ? "text-rt-warn" : "text-bronze-400"}`} />
@@ -358,7 +361,7 @@ function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upc
           {counts && <span className="text-muted"> · {counts}</span>}
           <span className={soon ? " text-rt-warn" : " text-muted"}>{soon ? ` · ${soon} in your next stops` : note.steps.length ? " · none in your next stops" : ""}</span>
         </span>
-        {note.quests.length > 0 && (
+        {expandable && (
           <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-bronze-400">
             {open ? "Hide" : "Show"}
             <Icon name="chevronDown" className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
@@ -372,6 +375,13 @@ function NoteLine({ slug, note, upcoming }: { slug: string; note: NoteGroup; upc
               {q.name} ·{" "}
               <Link to={stepLink(slug, q.steps[0]!)} className="font-semibold text-bronze-400 hover:text-bronze-300">
                 {stepRange(q.steps)}
+              </Link>
+            </li>
+          ))}
+          {note.questIds.map((id) => (
+            <li key={`q${id}`} className="break-inside-avoid">
+              <Link to={`/quest/${id}`} className="font-semibold text-bronze-400 hover:text-bronze-300">
+                {questName(id) ?? note.questNames[id] ?? `Quest ${id}`}
               </Link>
             </li>
           ))}
@@ -531,7 +541,7 @@ export function DashboardPage() {
               </li>
             ))}
             {notes.map((n) => (
-              <NoteLine key={n.msg} slug={guide.slug} note={n} upcoming={model?.upcomingIds ?? new Set()} />
+              <NoteLine key={n.msg} slug={guide.slug} note={n} upcoming={model?.upcomingIds ?? new Set()} questName={(id) => quests?.get(id)?.name} />
             ))}
           </ul>
         </section>

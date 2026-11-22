@@ -3,9 +3,9 @@ import { Link, useSearchParams } from "react-router";
 import { Icon } from "../components/ui/Icon";
 import { ProgressRing } from "../components/ui/ProgressRing";
 import { EmptyState, ErrorState, Skeleton } from "../components/ui/States";
-import { dataOf, guideTitleOf, useGuideIndex, useInsights } from "../data/hooks";
+import { dataOf, guideTitleOf, useGuideIndex, useGuideTitle, useInsights, useQuests } from "../data/hooks";
 import type { GuideIndex } from "../data/schema";
-import { issueHref, overviewIssues, overviewZoneMatch } from "../lib/overview";
+import { groupOverviewNotes, overviewIssues, overviewZoneMatch } from "../lib/overview";
 import { useGuideCompletion } from "../state/progress";
 import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
 
@@ -67,6 +67,8 @@ export function OverviewPage() {
   const insights = dataOf(insightsRes);
   const [params] = useSearchParams();
   const zoneFilter = params.get("zone") ?? "";
+  const quests = dataOf(useQuests());
+  const guideTitle = useGuideTitle();
 
   if (indexRes.status === "error") {
     return (
@@ -76,7 +78,7 @@ export function OverviewPage() {
     );
   }
 
-  const issues = overviewIssues(insights);
+  const notes = groupOverviewNotes(overviewIssues(insights));
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 px-3 py-7 sm:px-6">
@@ -95,36 +97,58 @@ export function OverviewPage() {
         <BracketList index={indexRes.data} zoneFilter={zoneFilter} />
       )}
 
-      <section className="wow-frame p-4">
-        <h2 className="font-display text-base font-bold text-bronze-400">Issues</h2>
+      <section className="wow-frame p-4" aria-labelledby="route-notes">
+        <h2 id="route-notes" className="font-display text-base font-bold text-bronze-400">
+          Route notes
+        </h2>
+        <p className="mt-1 text-sm text-muted">Things worth knowing before you play a guide. Open a guide to see the exact steps.</p>
         {insightsRes.status === "loading" ? (
           <Skeleton className="mt-3 h-16 w-full" />
-        ) : issues.length === 0 ? (
+        ) : notes.length === 0 ? (
           <div className="mt-3">
-            <EmptyState icon="info" title="No route issues">
-              Insights has nothing to report for this build.
+            <EmptyState icon="info" title="Nothing to note">
+              Every guide in the route is checked.
             </EmptyState>
           </div>
         ) : (
-          <ul className="mt-2 space-y-1.5 text-sm text-ink">
-            {issues.map((i, n) => {
-              const href = issueHref(i);
-              return (
-                <li key={n} className="flex gap-2">
-                  <Icon
-                    name={i.severity === "warn" ? "alert" : "info"}
-                    className={`mt-0.5 h-4 w-4 shrink-0 ${i.severity === "warn" ? "text-rt-warn" : "text-bronze-400"}`}
-                  />
-                  {href ? (
-                    <Link to={href} className="hover:text-bronze-300 hover:underline">
-                      {i.msg}
-                    </Link>
-                  ) : (
-                    <span>{i.msg}</span>
+          <ul className="mt-3 space-y-4 text-sm text-ink">
+            {notes.map((note) => (
+              <li key={note.msg} className="flex gap-2.5">
+                <Icon
+                  name={note.severity === "warn" ? "alert" : "info"}
+                  className={`mt-0.5 h-4 w-4 shrink-0 ${note.severity === "warn" ? "text-rt-warn" : "text-bronze-400"}`}
+                />
+                <div className="min-w-0 flex-1 space-y-2">
+                  <p>{note.msg}</p>
+                  {note.questIds.length > 0 && (
+                    <ul className="flex flex-wrap gap-1.5">
+                      {note.questIds.map((id) => (
+                        <li key={id}>
+                          <Link to={`/quest/${id}`} className="inline-flex min-h-touch items-center rounded-sm border border-stroke px-2 text-xs font-semibold text-bronze-400 hover:border-bronze-500 hover:text-bronze-300">
+                            {quests?.get(id)?.name ?? note.questNames[id] ?? `Quest ${id}`}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   )}
-                </li>
-              );
-            })}
+                  {note.questIds.length === 0 && note.guides.length > 0 && (
+                    <ul className="flex flex-wrap gap-1.5">
+                      {note.guides.map((g) => (
+                        <li key={g.slug}>
+                          <Link
+                            to={g.firstStep ? `/guide/${g.slug}?step=${encodeURIComponent(g.firstStep)}` : `/guide/${g.slug}`}
+                            className="inline-flex min-h-touch items-center gap-1 rounded-sm border border-stroke px-2 text-xs hover:border-bronze-500"
+                          >
+                            <span className="font-semibold text-bronze-400">{guideTitle(g.slug)}</span>
+                            {g.count > 0 && <span className="text-muted">· {g.count} step{g.count === 1 ? "" : "s"}</span>}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </li>
+            ))}
           </ul>
         )}
       </section>

@@ -402,7 +402,15 @@ export interface Insights {
     string,
     { questId: number; xp: number; minutes: number; why: string; insertAfterStep: string }[]
   >;
-  issues: { severity: "info" | "warn"; guide?: string; step?: string; questId?: number; msg: string }[];
+  issues: {
+    severity: "info" | "warn";
+    guide?: string;
+    step?: string;
+    questId?: number;
+    /** Quest name for notes about a quest the site's quest list does not carry (left out of the route). */
+    questName?: string;
+    msg: string;
+  }[];
 }
 
 /** `zones.json` entry. `bounds` in world coordinates (from the P3 addon or a fit). */

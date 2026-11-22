@@ -200,13 +200,13 @@ export function enforceRules(
     if (bad.length) {
       stripped++;
       warnings.push(`${packId}: stripped step ${s.id} (excluded quest ${bad.join(", ")})`);
-      for (const q of bad) issues.push({ severity: "warn", guide: packId, questId: q, msg: `Step ${s.id} removed: quest ${q} is excluded from every route (low-confidence WoW Forever quest).` });
+      for (const q of bad) issues.push({ severity: "warn", guide: packId, questId: q, msg: ISSUE_LEFT_OUT });
       continue;
     }
     if (ids.some(isForever) && s.verified !== false) {
       forced++;
       warnings.push(`${packId}: step ${s.id} uses a Forever quest; verified forced to false`);
-      issues.push({ severity: "info", guide: packId, step: s.id, msg: "Uses a WoW Forever quest; marked unverified until checked in game." });
+      issues.push({ severity: "info", guide: packId, step: s.id, msg: ISSUE_UNCHECKED });
       out.push({ ...s, verified: false });
       continue;
     }
@@ -379,6 +379,10 @@ function sectionsFor(packId: string, steps: Step[]): Section[] {
   }
   return sections;
 }
+
+/** Route notes players read on the dashboard and Overview: plain words, no step or quest ids. */
+export const ISSUE_UNCHECKED = "New WoW Forever quest, not checked in game yet. Names, spots or counts may be slightly off.";
+export const ISSUE_LEFT_OUT = "Left out of the route: a new WoW Forever quest we could not confirm yet.";
 
 /**
  * Reader-facing guide title. Pack titles carry authoring hints ("(Horde)", "13-60", "(dungeons toggle)")
@@ -1326,6 +1330,8 @@ export function buildData(opts: BuildOptions): DataManifest {
   drop("quests.json");
   drop("tips_matrix.json");
   w("quest-steps.json", questSteps);
+  // A quest left out of the route is not in quests-min.json: carry its name so the note can show it.
+  for (const it of issues) if (!it.step && it.questId != null) it.questName ??= db.quests[String(it.questId)]?.name;
   w("insights.json", buildInsights(issues));
   w("zones.json", zones);
   w("class_professions.json", classProf);

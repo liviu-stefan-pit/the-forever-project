@@ -6,6 +6,8 @@ import { describe, expect, it } from "vitest";
 import type { Guide, GuideIndex, Insights, RoutePack, Step, ZoneInfo } from "../../contracts/schema.ts";
 import {
   guideTitle,
+  ISSUE_LEFT_OUT,
+  ISSUE_UNCHECKED,
   applyMapAssets,
   loadMapZoneAssets,
   attachIdPrefixes,
@@ -370,8 +372,8 @@ describe("buildData", () => {
     expect(ins.added).toEqual({});
     expect(ins.nearMisses).toEqual({});
     expect(ins.issues).toEqual([
-      { severity: "warn", guide: "horde-1-12", questId: 79953, msg: expect.stringContaining("Step p:2 removed") },
-      { severity: "info", guide: "horde-1-12", step: "p:3", msg: expect.stringContaining("unverified") },
+      { severity: "warn", guide: "horde-1-12", questId: 79953, questName: "Excluded book", msg: ISSUE_LEFT_OUT },
+      { severity: "info", guide: "horde-1-12", step: "p:3", msg: ISSUE_UNCHECKED },
     ]);
   });
 
