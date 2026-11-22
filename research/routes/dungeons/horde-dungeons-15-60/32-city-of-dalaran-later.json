@@ -1,0 +1,311 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "City of Dalaran (later quests)",
+ "steps": [
+  {
+   "id": "dungeons:forever:city-of-dalaran:accept:96984",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Heart of Disruption `96984` from the Image of Archmage Modera (Silverpine Forest 68.6, 45.1) after Blood in the Streets. Collect the Arcane Mote inside the City of Dalaran."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 68.62,
+      "y": 45.13,
+      "zone": "Silverpine Forest",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96984,
+     "label": "Heart of Disruption"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:complete:96984",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete Heart of Disruption `96984`: collect the Arcane Mote inside the City of Dalaran."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 96984,
+     "objective": 1,
+     "label": "Arcane Mote"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:turnin:96984",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Heart of Disruption `96984` to Magus Wordeen Voidglare in Tarren Mill (Hillsbrad 61.6, 20.9)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.6,
+      "y": 20.85,
+      "zone": "Hillsbrad Foothills",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96984,
+     "label": "Heart of Disruption"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:accept:97287",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Shrewd Negotiations `97287` from Magus Wordeen Voidglare in Tarren Mill after Heart of Disruption. Speak with the Image of Archmage Modera. Prerequisite is 92458 or 96984 (Horde uses 96984). +265 XP."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 61.6,
+      "y": 20.85,
+      "zone": "Hillsbrad Foothills",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97287,
+     "label": "Shrewd Negotiations"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:complete:97287",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete Shrewd Negotiations `97287`: speak with the Image of Archmage Modera in Silverpine Forest (68.6, 45.1)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 68.62,
+      "y": 45.13,
+      "zone": "Silverpine Forest",
+      "exact": false
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97287,
+     "objective": 1,
+     "label": "Shrewd Negotiations"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:turnin:97287",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Shrewd Negotiations `97287` to the Image of Archmage Modera in Silverpine Forest (68.6, 45.1). +265 XP."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 68.62,
+      "y": 45.13,
+      "zone": "Silverpine Forest",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97287,
+     "label": "Shrewd Negotiations"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

@@ -1,0 +1,1084 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Razorfen Downs",
+ "steps": [
+  {
+   "id": "dungeons:razorfen-downs:accept:6626",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6626",
+     "label": "Wowhead Classic: A Host of Evil"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Host of Evil from Myriam Moonsinger in The Barrens (level 28+, quest level 35)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49,
+      "y": 94.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6626,
+     "label": "A Host of Evil"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12866,
+     "name": "Myriam Moonsinger",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 49,
+      "y": 94.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12866",
+       "label": "Wowhead Classic: Myriam Moonsinger"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:accept:6522",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6522",
+     "label": "Wowhead Classic: An Unholy Alliance"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept An Unholy Alliance from the item Small Scroll (drops in the dungeon) (level 28+, quest level 36)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 6522,
+     "label": "An Unholy Alliance"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 3500 XP base, high for level 36.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:accept:3523",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3523",
+     "label": "Wowhead Classic: Scourge of the Downs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Scourge of the Downs from Belnistrasz in Razorfen Downs (level 32+, quest level 37)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 3523,
+     "label": "Scourge of the Downs"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (285 base at level 37); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:accept:3341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3341",
+     "label": "Wowhead Classic: Bring the End"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bring the End from Andrew Brownell in Undercity (level 37+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 74,
+      "y": 33.3,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3341,
+     "label": "Bring the End"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2308,
+     "name": "Andrew Brownell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 74,
+      "y": 33.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2308",
+       "label": "Wowhead Classic: Andrew Brownell"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 4300 XP base, high for level 42.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:run",
+   "section": "Razorfen Downs",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Razorfen Downs (levels 35-45) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49,
+      "y": 93.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6626,
+     "objective": 1,
+     "label": "A Host of Evil: Razorfen Battleguard"
+    },
+    {
+     "type": "complete",
+     "questId": 6626,
+     "objective": 2,
+     "label": "A Host of Evil: Razorfen Thornweaver"
+    },
+    {
+     "type": "complete",
+     "questId": 6626,
+     "objective": 3,
+     "label": "A Host of Evil: Death's Head Cultist"
+    },
+    {
+     "type": "collect",
+     "itemId": 10420,
+     "count": 1,
+     "questId": 3341,
+     "objective": 1,
+     "label": "Bring the End: Skull of the Coldbringer"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:razorfen-downs:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The gong event spawns waves: stack them on one corner where the healer can see you.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=722",
+       "label": "Wowhead Classic: Razorfen Downs"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Undead casters silence; spread slightly and save mana for the Tuten'kash waves.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=722",
+       "label": "Wowhead Classic: Razorfen Downs"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Burn the idol-ritual adds quickly on Extinguishing the Idol; the escort must survive.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=722",
+       "label": "Wowhead Classic: Razorfen Downs"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Razorfen Downs once. Do not reset for Agamaggan blood or extra scourge.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=722",
+     "label": "Wowhead Classic: Razorfen Downs level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:6626",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6626",
+     "label": "Wowhead Classic: A Host of Evil"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Host of Evil to Myriam Moonsinger (The Barrens)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 49,
+      "y": 94.9,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6626,
+     "label": "A Host of Evil"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12866,
+     "name": "Myriam Moonsinger",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 49,
+      "y": 94.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12866",
+       "label": "Wowhead Classic: Myriam Moonsinger"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:6522",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6522",
+     "label": "Wowhead Classic: An Unholy Alliance"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in An Unholy Alliance to Varimathras (Undercity)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6522,
+     "label": "An Unholy Alliance"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:3523",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3523",
+     "label": "Wowhead Classic: Scourge of the Downs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Scourge of the Downs to Belnistrasz (Razorfen Downs)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3523,
+     "label": "Scourge of the Downs"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:3341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3341",
+     "label": "Wowhead Classic: Bring the End"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bring the End to Andrew Brownell (Undercity). Reward choices include Vanquisher's Sword, Amberglow Talisman"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 74,
+      "y": 33.3,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3341,
+     "label": "Bring the End"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2308,
+     "name": "Andrew Brownell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 74,
+      "y": 33.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2308",
+       "label": "Wowhead Classic: Andrew Brownell"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:accept:6521",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6521",
+     "label": "Wowhead Classic: An Unholy Alliance"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept An Unholy Alliance from Varimathras in Undercity (level 28+, quest level 36)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6521,
+     "label": "An Unholy Alliance"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:6521",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6521",
+     "label": "Wowhead Classic: An Unholy Alliance"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in An Unholy Alliance to Varimathras (Undercity). Reward choices include Skullbreaker, Nail Spitter, Zealot's Robe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6521,
+     "label": "An Unholy Alliance"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:accept:3525",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3525",
+     "label": "Wowhead Classic: Extinguishing the Idol"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Extinguishing the Idol from Belnistrasz in Razorfen Downs (level 32+, quest level 37)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 3525,
+     "label": "Extinguishing the Idol"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 4250 XP base, high for level 37.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:3525",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3525",
+     "label": "Wowhead Classic: Extinguishing the Idol"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Razorfen Downs",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Extinguishing the Idol to Belnistrasz (Razorfen Downs). Reward choices include Dragonclaw Ring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 3525,
+     "label": "Extinguishing the Idol"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:razorfen-downs:off",
+   "section": "Razorfen Downs",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Desolace, Dustwallow Marsh and Stranglethorn Vale quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:razorfen-downs:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

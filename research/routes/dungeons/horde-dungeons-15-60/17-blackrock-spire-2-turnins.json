@@ -1,0 +1,5172 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Blackrock Spire (Lower and Upper): turn-ins and follow-ups",
+ "steps": [
+  {
+   "id": "dungeons:blackrock-spire:turnin:4788",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4788",
+     "label": "Wowhead Classic: The Final Tablets"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Final Tablets to Prospector Ironboot (Tanaris)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 66.9,
+      "y": 24,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4788,
+     "label": "The Final Tablets"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10460,
+     "name": "Prospector Ironboot",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 66.9,
+      "y": 24
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10460",
+       "label": "Wowhead Classic: Prospector Ironboot"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4724",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4724",
+     "label": "Wowhead Classic: The Pack Mistress"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Pack Mistress to Galamav the Marksman (Badlands). Reward choices include Astoria Robes, Traphook Jerkin, Jadescale Breastplate"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 6,
+      "y": 47.7,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4724,
+     "label": "The Pack Mistress"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9081,
+     "name": "Galamav the Marksman",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 6,
+      "y": 47.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9081",
+       "label": "Wowhead Classic: Galamav the Marksman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4729",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4729",
+     "label": "Wowhead Classic: Kibler's Exotic Pets"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Kibler's Exotic Pets to Kibler (Burning Steppes). Reward choices include Worg Carrier"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.9,
+      "y": 21.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4729,
+     "label": "Kibler's Exotic Pets"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10260,
+     "name": "Kibler",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.9,
+      "y": 21.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10260",
+       "label": "Wowhead Classic: Kibler"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4862",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4862",
+     "label": "Wowhead Classic: En-Ay-Es-Tee-Why"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in En-Ay-Es-Tee-Why to Kibler (Burning Steppes). Reward choices include Smolderweb Carrier"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.9,
+      "y": 21.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4862,
+     "label": "En-Ay-Es-Tee-Why"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10260,
+     "name": "Kibler",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.9,
+      "y": 21.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10260",
+       "label": "Wowhead Classic: Kibler"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4981",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4981",
+     "label": "Wowhead Classic: Operative Bijou"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Operative Bijou to Bijou (Blackrock Spire)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4981,
+     "label": "Operative Bijou"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4734",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4734",
+     "label": "Wowhead Classic: Egg Freezing"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Egg Freezing to Tinkee Steamboil (Burning Steppes). Reward choices include Eggscilloscope"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4734,
+     "label": "Egg Freezing"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10267,
+     "name": "Tinkee Steamboil",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 24
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10267",
+       "label": "Wowhead Classic: Tinkee Steamboil"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4742",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4742",
+     "label": "Wowhead Classic: Seal of Ascension"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seal of Ascension"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4742,
+     "label": "Seal of Ascension"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4768",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4768",
+     "label": "Wowhead Classic: The Darkstone Tablet"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Darkstone Tablet to Shadowmage Vivian Lagrave (Badlands). Reward choices include Blinkstrike Armguards, Swiftfoot Treads"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4768,
+     "label": "The Darkstone Tablet"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4769",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4769",
+     "label": "Wowhead Classic: Vivian Lagrave and the Darkstone Tablet"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vivian Lagrave and the Darkstone Tablet to Shadowmage Vivian Lagrave (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.9,
+      "y": 47.8,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4769,
+     "label": "Vivian Lagrave and the Darkstone Tablet"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9078,
+     "name": "Shadowmage Vivian Lagrave",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.9,
+      "y": 47.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9078",
+       "label": "Wowhead Classic: Shadowmage Vivian Lagrave"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4866",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4866",
+     "label": "Wowhead Classic: Mother's Milk"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mother's Milk to Ragged John (Burning Steppes). Reward choices include Ragged John's Neverending Cup"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65,
+      "y": 23.8,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4866,
+     "label": "Mother's Milk"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9563,
+     "name": "Ragged John",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65,
+      "y": 23.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9563",
+       "label": "Wowhead Classic: Ragged John"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4867",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4867",
+     "label": "Wowhead Classic: Urok Doomhowl"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Urok Doomhowl to Warosh (Blackrock Spire). Reward choices include Prismcharm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4867,
+     "label": "Urok Doomhowl"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4903",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4903",
+     "label": "Wowhead Classic: Warlord's Command"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Warlord's Command to Warlord Goretooth (Badlands). Reward choices include Wyrmthalak's Shackles, Omokk's Girth Restrainer, Halycon's Muzzle, Vosh'gajin's Strand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4903,
+     "label": "Warlord's Command"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4907",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4907",
+     "label": "Wowhead Classic: Tinkee Steamboil"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tinkee Steamboil to Tinkee Steamboil (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4907,
+     "label": "Tinkee Steamboil"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10267,
+     "name": "Tinkee Steamboil",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 24
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10267",
+       "label": "Wowhead Classic: Tinkee Steamboil"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5047",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5047",
+     "label": "Wowhead Classic: Finkle Einhorn, At Your Service!"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Finkle Einhorn, At Your Service! to Malyfous Darkhammer (Winterspring)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61,
+      "y": 38.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5047,
+     "label": "Finkle Einhorn, At Your Service!"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10637,
+     "name": "Malyfous Darkhammer",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61,
+      "y": 38.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10637",
+       "label": "Wowhead Classic: Malyfous Darkhammer"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5127",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5127",
+     "label": "Wowhead Classic: The Demon Forge"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Demon Forge to Lorax (Winterspring). Reward choices include Elixir of Demonslaying, Plans: Demon Forged Breastplate, Demon Kissed Sack"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 63.8,
+      "y": 73.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5127,
+     "label": "The Demon Forge"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10918,
+     "name": "Lorax",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 63.8,
+      "y": 73.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10918",
+       "label": "Wowhead Classic: Lorax"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Blacksmithing",
+     "itemId": 12696,
+     "itemName": "Plans: Demon Forged Breastplate",
+     "note": "Quest reward recipe: Plans: Demon Forged Breastplate.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/item=12696",
+       "label": "Wowhead Classic: Plans: Demon Forged Breastplate"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB items (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 285,
+     "note": "Requires Blacksmithing 285 to accept.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5127",
+       "label": "Wowhead Classic"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5160",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5160",
+     "label": "Wowhead Classic: The Matron Protectorate"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Matron Protectorate to Haleh (Winterspring)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 54.5,
+      "y": 51.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5160,
+     "label": "The Matron Protectorate"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10929,
+     "name": "Haleh",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 54.5,
+      "y": 51.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10929",
+       "label": "Wowhead Classic: Haleh"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5306",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5306",
+     "label": "Wowhead Classic: Snakestone of the Shadow Huntress"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Snakestone of the Shadow Huntress to Kilram (Winterspring). Reward choices include Plans: Dawn's Edge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.3,
+      "y": 37.1,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5306,
+     "label": "Snakestone of the Shadow Huntress"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11192,
+     "name": "Kilram",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61.3,
+      "y": 37.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11192",
+       "label": "Wowhead Classic: Kilram"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Blacksmithing",
+     "itemId": 12821,
+     "itemName": "Plans: Dawn's Edge",
+     "note": "Quest reward recipe: Plans: Dawn's Edge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/item=12821",
+       "label": "Wowhead Classic: Plans: Dawn's Edge"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB items (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "profession": "Blacksmithing",
+     "skillTarget": 250,
+     "note": "Requires Blacksmithing 250 to accept.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5306",
+       "label": "Wowhead Classic"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6821",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6821",
+     "label": "Wowhead Classic: Eye of the Emberseer"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Eye of the Emberseer to Duke Hydraxis (Azshara)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 79.3,
+      "y": 73.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6821,
+     "label": "Eye of the Emberseer"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13278,
+     "name": "Duke Hydraxis",
+     "at": {
+      "mapId": 1447,
+      "zone": "Azshara",
+      "x": 79.3,
+      "y": 73.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13278",
+       "label": "Wowhead Classic: Duke Hydraxis"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:7761",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7761",
+     "label": "Wowhead Classic: Blackhand's Command"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Blackhand's Command to Drakkisath's Brand (Blackrock Spire)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 7761,
+     "label": "Blackhand's Command"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4982",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4982",
+     "label": "Wowhead Classic: Bijou's Belongings"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bijou's Belongings from Bijou in Blackrock Spire (level 55+, quest level 59)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4982,
+     "label": "Bijou's Belongings"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4982",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4982",
+     "label": "Wowhead Classic: Bijou's Belongings"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bijou's Belongings to Bijou (Blackrock Spire)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4982,
+     "label": "Bijou's Belongings"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4983",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4983",
+     "label": "Wowhead Classic: Bijou's Reconnaissance Report"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bijou's Reconnaissance Report from Bijou in Blackrock Spire (level 55+, quest level 59)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4983,
+     "label": "Bijou's Reconnaissance Report"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6400 XP base, high for level 59.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4983",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4983",
+     "label": "Wowhead Classic: Bijou's Reconnaissance Report"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bijou's Reconnaissance Report to Lexlort (Badlands). Reward choices include Freewind Gloves, Seapost Girdle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.9,
+      "y": 47.6,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4983,
+     "label": "Bijou's Reconnaissance Report"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9080,
+     "name": "Lexlort",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.9,
+      "y": 47.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9080",
+       "label": "Wowhead Classic: Lexlort"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4735",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4735",
+     "label": "Wowhead Classic: Egg Collection"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Egg Collection from Tinkee Steamboil in Burning Steppes (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4735,
+     "label": "Egg Collection"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10267,
+     "name": "Tinkee Steamboil",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 24
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10267",
+       "label": "Wowhead Classic: Tinkee Steamboil"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4735",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4735",
+     "label": "Wowhead Classic: Egg Collection"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Egg Collection to Tinkee Steamboil (Burning Steppes)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4735,
+     "label": "Egg Collection"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10267,
+     "name": "Tinkee Steamboil",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 24
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10267",
+       "label": "Wowhead Classic: Tinkee Steamboil"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4743",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4743",
+     "label": "Wowhead Classic: Seal of Ascension"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Seal of Ascension (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 4743,
+     "label": "Seal of Ascension"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4743",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4743",
+     "label": "Wowhead Classic: Seal of Ascension"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seal of Ascension. Reward choices include Seal of Ascension"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 4743,
+     "label": "Seal of Ascension"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4941",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4941",
+     "label": "Wowhead Classic: Eitrigg's Wisdom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Eitrigg's Wisdom from Warlord Goretooth in Badlands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 5.8,
+      "y": 47.5,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4941,
+     "label": "Eitrigg's Wisdom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9077,
+     "name": "Warlord Goretooth",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 5.8,
+      "y": 47.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=9077",
+       "label": "Wowhead Classic: Warlord Goretooth"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4941",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4941",
+     "label": "Wowhead Classic: Eitrigg's Wisdom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Eitrigg's Wisdom to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4941,
+     "label": "Eitrigg's Wisdom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:4974",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4974",
+     "label": "Wowhead Classic: For The Horde!"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept For The Horde! from Thrall in Orgrimmar (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4974,
+     "label": "For The Horde!"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:4974",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4974",
+     "label": "Wowhead Classic: For The Horde!"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in For The Horde! to Thrall (Orgrimmar). Reward choices include Blackhand's Breadth, Mark of Tyranny, Eye of the Beast"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4974,
+     "label": "For The Horde!"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:5161",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5161",
+     "label": "Wowhead Classic: Wrath of the Blue Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wrath of the Blue Flight from Haleh in Winterspring (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 54.5,
+      "y": 51.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5161,
+     "label": "Wrath of the Blue Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10929,
+     "name": "Haleh",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 54.5,
+      "y": 51.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10929",
+       "label": "Wowhead Classic: Haleh"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5161",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5161",
+     "label": "Wowhead Classic: Wrath of the Blue Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wrath of the Blue Flight to Haleh (Winterspring)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 54.5,
+      "y": 51.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5161,
+     "label": "Wrath of the Blue Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10929,
+     "name": "Haleh",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 54.5,
+      "y": 51.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10929",
+       "label": "Wowhead Classic: Haleh"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:5162",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5162",
+     "label": "Wowhead Classic: Wrath of the Blue Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Wrath of the Blue Flight from Haleh in Winterspring (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 54.5,
+      "y": 51.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5162,
+     "label": "Wrath of the Blue Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10929,
+     "name": "Haleh",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 54.5,
+      "y": 51.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10929",
+       "label": "Wowhead Classic: Haleh"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5162",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5162",
+     "label": "Wowhead Classic: Wrath of the Blue Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Wrath of the Blue Flight to Jeziba (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5162,
+     "label": "Wrath of the Blue Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10976,
+     "name": "Jeziba",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10976",
+       "label": "Wowhead Classic: Jeziba"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:5164",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5164",
+     "label": "Wowhead Classic: Catalogue of the Wayward"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Catalogue of the Wayward from Jeziba in Western Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5164,
+     "label": "Catalogue of the Wayward"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10976,
+     "name": "Jeziba",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10976",
+       "label": "Wowhead Classic: Jeziba"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5164",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5164",
+     "label": "Wowhead Classic: Catalogue of the Wayward"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Catalogue of the Wayward to Catalogue of the Wayward (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.6,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5164,
+     "label": "Catalogue of the Wayward"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 176192,
+     "name": "Catalogue of the Wayward",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.6
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=176192",
+       "label": "Wowhead Classic: Catalogue of the Wayward"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:5166",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5166",
+     "label": "Wowhead Classic: Breastplate of the Chromatic Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Breastplate of the Chromatic Flight from Catalogue of the Wayward in Western Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.6,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5166,
+     "label": "Breastplate of the Chromatic Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 176192,
+     "name": "Catalogue of the Wayward",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.6
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=176192",
+       "label": "Wowhead Classic: Catalogue of the Wayward"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5166",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5166",
+     "label": "Wowhead Classic: Breastplate of the Chromatic Flight"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Breastplate of the Chromatic Flight to Jeziba (Western Plaguelands). Reward choices include Breastplate of the Chromatic Flight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5166,
+     "label": "Breastplate of the Chromatic Flight"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10976,
+     "name": "Jeziba",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10976",
+       "label": "Wowhead Classic: Jeziba"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:5167",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5167",
+     "label": "Wowhead Classic: Legplates of the Chromatic Defier"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Legplates of the Chromatic Defier from Catalogue of the Wayward in Western Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.6,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5167,
+     "label": "Legplates of the Chromatic Defier"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "object",
+     "objectId": 176192,
+     "name": "Catalogue of the Wayward",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.6
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=176192",
+       "label": "Wowhead Classic: Catalogue of the Wayward"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:5167",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5167",
+     "label": "Wowhead Classic: Legplates of the Chromatic Defier"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Legplates of the Chromatic Defier to Jeziba (Western Plaguelands). Reward choices include Legguards of the Chromatic Defier, Legplates of the Chromatic Defier"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.4,
+      "y": 66.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5167,
+     "label": "Legplates of the Chromatic Defier"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10976,
+     "name": "Jeziba",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 39.4,
+      "y": 66.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10976",
+       "label": "Wowhead Classic: Jeziba"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6566",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6566",
+     "label": "Wowhead Classic: What the Wind Carries"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept What the Wind Carries from Thrall in Orgrimmar (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6566,
+     "label": "What the Wind Carries"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6566",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6566",
+     "label": "Wowhead Classic: What the Wind Carries"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in What the Wind Carries to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6566,
+     "label": "What the Wind Carries"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6567",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6567",
+     "label": "Wowhead Classic: The Champion of the Horde"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Champion of the Horde from Thrall in Orgrimmar (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6567,
+     "label": "The Champion of the Horde"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6567",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6567",
+     "label": "Wowhead Classic: The Champion of the Horde"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Champion of the Horde to Rexxar (Feralas)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 46.4,
+      "y": 18.2,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6567,
+     "label": "The Champion of the Horde"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10182,
+     "name": "Rexxar",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 46.4,
+      "y": 18.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10182",
+       "label": "Wowhead Classic: Rexxar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6568",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6568",
+     "label": "Wowhead Classic: The Testament of Rexxar"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Testament of Rexxar from Rexxar in Feralas (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 46.4,
+      "y": 18.2,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6568,
+     "label": "The Testament of Rexxar"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10182,
+     "name": "Rexxar",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 46.4,
+      "y": 18.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10182",
+       "label": "Wowhead Classic: Rexxar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6568",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6568",
+     "label": "Wowhead Classic: The Testament of Rexxar"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Testament of Rexxar to Myranda the Hag (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 50.8,
+      "y": 77.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6568,
+     "label": "The Testament of Rexxar"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11872,
+     "name": "Myranda the Hag",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 50.8,
+      "y": 77.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11872",
+       "label": "Wowhead Classic: Myranda the Hag"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6569",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6569",
+     "label": "Wowhead Classic: Oculus Illusions"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Oculus Illusions from Myranda the Hag in Western Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 50.8,
+      "y": 77.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6569,
+     "label": "Oculus Illusions"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11872,
+     "name": "Myranda the Hag",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 50.8,
+      "y": 77.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11872",
+       "label": "Wowhead Classic: Myranda the Hag"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6569",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6569",
+     "label": "Wowhead Classic: Oculus Illusions"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Oculus Illusions to Myranda the Hag (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 50.8,
+      "y": 77.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6569,
+     "label": "Oculus Illusions"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11872,
+     "name": "Myranda the Hag",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 50.8,
+      "y": 77.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11872",
+       "label": "Wowhead Classic: Myranda the Hag"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6570",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6570",
+     "label": "Wowhead Classic: Emberstrife"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Emberstrife from Myranda the Hag in Western Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 50.8,
+      "y": 77.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6570,
+     "label": "Emberstrife"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11872,
+     "name": "Myranda the Hag",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 50.8,
+      "y": 77.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11872",
+       "label": "Wowhead Classic: Myranda the Hag"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6570",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6570",
+     "label": "Wowhead Classic: Emberstrife"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Emberstrife to Emberstrife (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6570,
+     "label": "Emberstrife"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6582",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6582",
+     "label": "Wowhead Classic: The Test of Skulls, Scryer"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Test of Skulls, Scryer from Emberstrife in Dustwallow Marsh (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6582,
+     "label": "The Test of Skulls, Scryer"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6582",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6582",
+     "label": "Wowhead Classic: The Test of Skulls, Scryer"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Test of Skulls, Scryer to Emberstrife (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6582,
+     "label": "The Test of Skulls, Scryer"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6583",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6583",
+     "label": "Wowhead Classic: The Test of Skulls, Somnus"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Test of Skulls, Somnus from Emberstrife in Dustwallow Marsh (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6583,
+     "label": "The Test of Skulls, Somnus"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6583",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6583",
+     "label": "Wowhead Classic: The Test of Skulls, Somnus"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Test of Skulls, Somnus to Emberstrife (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6583,
+     "label": "The Test of Skulls, Somnus"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6584",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6584",
+     "label": "Wowhead Classic: The Test of Skulls, Chronalis"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Test of Skulls, Chronalis from Emberstrife in Dustwallow Marsh (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6584,
+     "label": "The Test of Skulls, Chronalis"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6584",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6584",
+     "label": "Wowhead Classic: The Test of Skulls, Chronalis"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Test of Skulls, Chronalis to Emberstrife (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6584,
+     "label": "The Test of Skulls, Chronalis"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6585",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6585",
+     "label": "Wowhead Classic: The Test of Skulls, Axtroz"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Test of Skulls, Axtroz from Emberstrife in Dustwallow Marsh (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6585,
+     "label": "The Test of Skulls, Axtroz"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6585",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6585",
+     "label": "Wowhead Classic: The Test of Skulls, Axtroz"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Test of Skulls, Axtroz to Emberstrife (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6585,
+     "label": "The Test of Skulls, Axtroz"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6601",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6601",
+     "label": "Wowhead Classic: Ascension..."
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ascension... from Emberstrife in Dustwallow Marsh (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 56.7,
+      "y": 87.7,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6601,
+     "label": "Ascension..."
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10321,
+     "name": "Emberstrife",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 56.7,
+      "y": 87.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10321",
+       "label": "Wowhead Classic: Emberstrife"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest; take it when you are already in the giver's zone.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6601",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6601",
+     "label": "Wowhead Classic: Ascension..."
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ascension... to Rexxar (Feralas)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 46.4,
+      "y": 18.2,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6601,
+     "label": "Ascension..."
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10182,
+     "name": "Rexxar",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 46.4,
+      "y": 18.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10182",
+       "label": "Wowhead Classic: Rexxar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:accept:6602",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6602",
+     "label": "Wowhead Classic: Blood of the Black Dragon Champion"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Blood of the Black Dragon Champion from Rexxar in Feralas (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 46.4,
+      "y": 18.2,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6602,
+     "label": "Blood of the Black Dragon Champion"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10182,
+     "name": "Rexxar",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 46.4,
+      "y": 18.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10182",
+       "label": "Wowhead Classic: Rexxar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 9950 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:turnin:6602",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Blackrock Spire (Lower and Upper)",
+    "instanceId": 1583,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6602",
+     "label": "Wowhead Classic: Blood of the Black Dragon Champion"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Blackrock Spire (Lower and Upper)",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Blood of the Black Dragon Champion to Rexxar (Feralas). Reward choices include Drakefire Amulet"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 46.4,
+      "y": 18.2,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6602,
+     "label": "Blood of the Black Dragon Champion"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10182,
+     "name": "Rexxar",
+     "at": {
+      "mapId": 1444,
+      "zone": "Feralas",
+      "x": 46.4,
+      "y": 18.2
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10182",
+       "label": "Wowhead Classic: Rexxar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:blackrock-spire:off",
+   "section": "Blackrock Spire (Lower and Upper)",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Eastern Plaguelands, Western Plaguelands, Silithus and Winterspring quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:blackrock-spire:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

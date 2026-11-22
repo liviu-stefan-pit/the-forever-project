@@ -86,19 +86,17 @@ describe("segment folders", () => {
 });
 
 describe("the real research folder", () => {
-  it("loads every pack with unique ids and contiguous n", () => {
+  it("loads every pack as a segment folder with unique ids and contiguous n", () => {
     const research = fileURLToPath(new URL("../../research/", import.meta.url));
     const found = discoverPacks(research);
     const ids = found.map((f) => f.pack.id);
     expect(new Set(ids).size).toBe(ids.length);
-    const leveling = found.filter((f) => f.path.includes("/routes/"));
-    expect(leveling.length).toBe(22);
-    for (const f of leveling) {
+    expect(found.length).toBe(23); // 22 leveling packs + the dungeons pack
+    for (const f of found) {
       expect(f.segments?.length, String(f.pack.id)).toBeGreaterThan(1);
       expect(f.pack.steps.map((s) => s.n)).toEqual(f.pack.steps.map((_, i) => i + 1));
       for (const seg of f.segments!) expect(seg.count, `${String(f.pack.id)} ${seg.file}`).toBeGreaterThan(0);
     }
-    // Only the dungeons pack is still a single file.
-    expect(found.filter((f) => !f.segments).map((f) => f.pack.id)).toEqual(["horde-dungeons-15-60"]);
+    expect(found.find((f) => f.pack.id === "horde-dungeons-15-60")?.path).toContain("routes/dungeons/");
   });
 });

@@ -1,0 +1,3072 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Uldaman",
+ "steps": [
+  {
+   "id": "dungeons:uldaman:accept:1953",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1953",
+     "label": "Wowhead Classic: Return to the Marsh"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to the Marsh from Anastasia Hartwell in Undercity (level 35+, quest level 40)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 85.1,
+      "y": 10,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1953,
+     "label": "Return to the Marsh"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4568,
+     "name": "Anastasia Hartwell",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 85.1,
+      "y": 10
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4568",
+       "label": "Wowhead Classic: Anastasia Hartwell"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:1953",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1953",
+     "label": "Wowhead Classic: Return to the Marsh"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to the Marsh to Tabetha (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1953,
+     "label": "Return to the Marsh"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:1954",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1954",
+     "label": "Wowhead Classic: The Infernal Orb"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Infernal Orb from Tabetha in Dustwallow Marsh (level 35+, quest level 40)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1954,
+     "label": "The Infernal Orb"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:1954",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1954",
+     "label": "Wowhead Classic: The Infernal Orb"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Infernal Orb to Tabetha (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1954,
+     "label": "The Infernal Orb"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:1955",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1955",
+     "label": "Wowhead Classic: The Exorcism"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Exorcism from Tabetha in Dustwallow Marsh (level 35+, quest level 40)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1955,
+     "label": "The Exorcism"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:1955",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1955",
+     "label": "Wowhead Classic: The Exorcism"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Exorcism to Tabetha (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1955,
+     "label": "The Exorcism"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2418",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2418",
+     "label": "Wowhead Classic: Power Stones"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Power Stones from Rigglefuzz in Badlands (level 30+, quest level 36)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 42.4,
+      "y": 52.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2418,
+     "label": "Power Stones"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2817,
+     "name": "Rigglefuzz",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 42.4,
+      "y": 52.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2817",
+       "label": "Wowhead Classic: Rigglefuzz"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 3500 XP base, high for level 36.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:709",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=709",
+     "label": "Wowhead Classic: Solution to Doom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Solution to Doom from Theldurin the Lost in Badlands (level 30+, quest level 40)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 51.4,
+      "y": 76.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 709,
+     "label": "Solution to Doom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2785,
+     "name": "Theldurin the Lost",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 51.4,
+      "y": 76.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2785",
+       "label": "Wowhead Classic: Theldurin the Lost"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:1956",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1956",
+     "label": "Wowhead Classic: Power in Uldaman"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Power in Uldaman from Tabetha in Dustwallow Marsh (level 35+, quest level 40)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1956,
+     "label": "Power in Uldaman"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Class quest (Mage) — show only for that class; usually worth it for the reward.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2283",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2283",
+     "label": "Wowhead Classic: Necklace Recovery"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Necklace Recovery from Dran Droffers in Orgrimmar (level 37+, quest level 41)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 59.5,
+      "y": 36.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2283,
+     "label": "Necklace Recovery"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6986,
+     "name": "Dran Droffers",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 59.5,
+      "y": 36.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6986",
+       "label": "Wowhead Classic: Dran Droffers"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (2450 base at level 41); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2202",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2202",
+     "label": "Wowhead Classic: Uldaman Reagent Run"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Uldaman Reagent Run from Jarkal Mossmeld in Badlands (level 36+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2202,
+     "label": "Uldaman Reagent Run"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2342",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2342",
+     "label": "Wowhead Classic: Reclaimed Treasures"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Reclaimed Treasures from Patrick Garrett in Undercity (level 33+, quest level 43)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 62.3,
+      "y": 48.6,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2342,
+     "label": "Reclaimed Treasures"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5651,
+     "name": "Patrick Garrett",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 62.3,
+      "y": 48.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5651",
+       "label": "Wowhead Classic: Patrick Garrett"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2278",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2278",
+     "label": "Wowhead Classic: The Platinum Discs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Platinum Discs from The Discs of Norgannon in Uldaman (level 40+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 2278,
+     "label": "The Platinum Discs"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 4200 XP base, high for level 47.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:run",
+   "section": "Uldaman",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Uldaman (levels 42-52) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 44.6,
+      "y": 12.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8009,
+     "count": 1,
+     "questId": 2418,
+     "objective": 1,
+     "label": "Power Stones: Dentrium Power Stone"
+    },
+    {
+     "type": "collect",
+     "itemId": 8052,
+     "count": 1,
+     "questId": 2418,
+     "objective": 2,
+     "label": "Power Stones: An'Alleum Power Stone"
+    },
+    {
+     "type": "collect",
+     "itemId": 4631,
+     "count": 1,
+     "questId": 709,
+     "objective": 1,
+     "label": "Solution to Doom: Tablet of Ryun'eh"
+    },
+    {
+     "type": "collect",
+     "itemId": 8053,
+     "count": 1,
+     "questId": 1956,
+     "objective": 1,
+     "label": "Power in Uldaman: Obsidian Power Source"
+    },
+    {
+     "type": "collect",
+     "itemId": 7666,
+     "count": 1,
+     "questId": 2283,
+     "objective": 1,
+     "label": "Necklace Recovery: Shattered Necklace"
+    },
+    {
+     "type": "collect",
+     "itemId": 8047,
+     "count": 1,
+     "questId": 2202,
+     "objective": 1,
+     "label": "Uldaman Reagent Run: Magenta Fungus Cap"
+    },
+    {
+     "type": "collect",
+     "itemId": 8026,
+     "count": 1,
+     "questId": 2342,
+     "objective": 1,
+     "label": "Reclaimed Treasures: Garrett Family Treasure"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:uldaman:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Troggs and dwarves come in mixed packs; earth elementals hit hard, pull them separately.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1337",
+       "label": "Wowhead Classic: Uldaman"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Archaedas activates guardians in waves; position by the entrance so you can see the whole room.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1337",
+       "label": "Wowhead Classic: Uldaman"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Collect Power Stones and Shattered Necklace pieces from the trogg area before descending.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=1337",
+       "label": "Wowhead Classic: Uldaman"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Uldaman once. Do not reset for more power stones.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=1337",
+     "label": "Wowhead Classic: Uldaman level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2418",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2418",
+     "label": "Wowhead Classic: Power Stones"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Power Stones to Rigglefuzz (Badlands). Reward choices include Energized Stone Circle, Duracin Bracers, Everlast Boots"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 42.4,
+      "y": 52.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2418,
+     "label": "Power Stones"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2817,
+     "name": "Rigglefuzz",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 42.4,
+      "y": 52.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2817",
+       "label": "Wowhead Classic: Rigglefuzz"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:709",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=709",
+     "label": "Wowhead Classic: Solution to Doom"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Solution to Doom to Theldurin the Lost (Badlands). Reward choices include Doomsayer's Robe"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 51.4,
+      "y": 76.9,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 709,
+     "label": "Solution to Doom"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2785,
+     "name": "Theldurin the Lost",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 51.4,
+      "y": 76.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2785",
+       "label": "Wowhead Classic: Theldurin the Lost"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:1956",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1956",
+     "label": "Wowhead Classic: Power in Uldaman"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Mage"
+   ],
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Power in Uldaman to Tabetha (Dustwallow Marsh)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "x": 46.1,
+      "y": 57.1,
+      "zone": "Dustwallow Marsh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1956,
+     "label": "Power in Uldaman"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6546,
+     "name": "Tabetha",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 46.1,
+      "y": 57.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6546",
+       "label": "Wowhead Classic: Tabetha"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2283",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2283",
+     "label": "Wowhead Classic: Necklace Recovery"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Necklace Recovery to Dran Droffers (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 59.5,
+      "y": 36.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2283,
+     "label": "Necklace Recovery"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6986,
+     "name": "Dran Droffers",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 59.5,
+      "y": 36.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6986",
+       "label": "Wowhead Classic: Dran Droffers"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2202",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2202",
+     "label": "Wowhead Classic: Uldaman Reagent Run"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Uldaman Reagent Run to Jarkal Mossmeld (Badlands). Reward choices include Restorative Potion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2202,
+     "label": "Uldaman Reagent Run"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2342",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2342",
+     "label": "Wowhead Classic: Reclaimed Treasures"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Reclaimed Treasures to Patrick Garrett (Undercity)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 62.3,
+      "y": 48.6,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2342,
+     "label": "Reclaimed Treasures"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5651,
+     "name": "Patrick Garrett",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 62.3,
+      "y": 48.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5651",
+       "label": "Wowhead Classic: Patrick Garrett"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2278",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2278",
+     "label": "Wowhead Classic: The Platinum Discs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Platinum Discs to The Discs of Norgannon (Uldaman)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 2278,
+     "label": "The Platinum Discs"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:uldaman:accept:2284",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2284",
+     "label": "Wowhead Classic: Necklace Recovery, Take 2"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Necklace Recovery, Take 2 from Dran Droffers in Orgrimmar (level 37+, quest level 41)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 59.5,
+      "y": 36.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2284,
+     "label": "Necklace Recovery, Take 2"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6986,
+     "name": "Dran Droffers",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 59.5,
+      "y": 36.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6986",
+       "label": "Wowhead Classic: Dran Droffers"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (2450 base at level 41); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2284",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2284",
+     "label": "Wowhead Classic: Necklace Recovery, Take 2"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Necklace Recovery, Take 2 to Remains of a Paladin (Uldaman)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 2284,
+     "label": "Necklace Recovery, Take 2"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:uldaman:accept:2318",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2318",
+     "label": "Wowhead Classic: Translating the Journal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Translating the Journal from Remains of a Paladin in Uldaman (level 37+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 2318,
+     "label": "Translating the Journal"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (860 base at level 42); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2318",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2318",
+     "label": "Wowhead Classic: Translating the Journal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Translating the Journal to Jarkal Mossmeld (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2318,
+     "label": "Translating the Journal"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2338",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2338",
+     "label": "Wowhead Classic: Translating the Journal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Translating the Journal from Jarkal Mossmeld in Badlands (level 37+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2338,
+     "label": "Translating the Journal"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (345 base at level 42); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2338",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2338",
+     "label": "Wowhead Classic: Translating the Journal"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Translating the Journal to Jarkal Mossmeld (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2338,
+     "label": "Translating the Journal"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2339",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2339",
+     "label": "Wowhead Classic: Find the Gems and Power Source"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Find the Gems and Power Source from Jarkal Mossmeld in Badlands (level 37+, quest level 44)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2339,
+     "label": "Find the Gems and Power Source"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2339",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2339",
+     "label": "Wowhead Classic: Find the Gems and Power Source"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Find the Gems and Power Source to Jarkal Mossmeld (Badlands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2339,
+     "label": "Find the Gems and Power Source"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2340",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2340",
+     "label": "Wowhead Classic: Deliver the Gems"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Deliver the Gems from Jarkal Mossmeld in Badlands (level 37+, quest level 44)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2340,
+     "label": "Deliver the Gems"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (1850 base at level 44); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2340",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2340",
+     "label": "Wowhead Classic: Deliver the Gems"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Deliver the Gems to Dran Droffers (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 59.5,
+      "y": 36.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2340,
+     "label": "Deliver the Gems"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6986,
+     "name": "Dran Droffers",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 59.5,
+      "y": 36.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6986",
+       "label": "Wowhead Classic: Dran Droffers"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2341",
+     "label": "Wowhead Classic: Necklace Recovery, Take 3"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Necklace Recovery, Take 3 from Dran Droffers in Orgrimmar (level 40+, quest level 44)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 59.5,
+      "y": 36.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2341,
+     "label": "Necklace Recovery, Take 3"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6986,
+     "name": "Dran Droffers",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 59.5,
+      "y": 36.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6986",
+       "label": "Wowhead Classic: Dran Droffers"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5600 XP base, high for level 44.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2341",
+     "label": "Wowhead Classic: Necklace Recovery, Take 3"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Necklace Recovery, Take 3 to Jarkal Mossmeld (Badlands). Reward choices include Jarkal's Enhancing Necklace"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 2.4,
+      "y": 46.1,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2341,
+     "label": "Necklace Recovery, Take 3"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6868,
+     "name": "Jarkal Mossmeld",
+     "at": {
+      "mapId": 1418,
+      "zone": "Badlands",
+      "x": 2.4,
+      "y": 46.1
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6868",
+       "label": "Wowhead Classic: Jarkal Mossmeld"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:accept:2280",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2280",
+     "label": "Wowhead Classic: The Platinum Discs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Platinum Discs from The Discs of Norgannon in Uldaman (level 40+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 2280,
+     "label": "The Platinum Discs"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5250 XP base, high for level 47.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:turnin:2280",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Uldaman",
+    "instanceId": 1337,
+    "levels": [
+     42,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2280",
+     "label": "Wowhead Classic: The Platinum Discs"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Uldaman",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Platinum Discs to Sage Truthseeker (Thunder Bluff)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 34.4,
+      "y": 46.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2280,
+     "label": "The Platinum Discs"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3978,
+     "name": "Sage Truthseeker",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 34.4,
+      "y": 46.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3978",
+       "label": "Wowhead Classic: Sage Truthseeker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:uldaman:off",
+   "section": "Uldaman",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Badlands, Swamp of Sorrows and Stranglethorn Vale quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:uldaman:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

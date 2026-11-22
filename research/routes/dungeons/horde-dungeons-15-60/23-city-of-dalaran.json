@@ -1,0 +1,370 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "City of Dalaran",
+ "steps": [
+  {
+   "id": "dungeons:forever:city-of-dalaran:accept:96986",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Grave Knight `96986` from Melisara (Hillsbrad Foothills): Defeat Atrexis the Grave Knight in the City of Dalaran for Melisara in Tarren Mill."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 62.63,
+      "y": 20.65,
+      "zone": "Hillsbrad Foothills",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96986,
+     "label": "The Grave Knight"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowseer.gg/guides/dalaran-attunement",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://dailyrespawn.com/article/how-to-get-the-dalaran-sewer-key-in-wow-forever-city-of-dalaran-attunement-quest",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:accept:96987",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept Opportunistic Education `96987` from Rexxie Copperclutch (City of Dalaran (inside entrance)): Collect the Founding of Dalaran from the City of Dalaran for Rexxie Copperclutch near the sewer entrance."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 96987,
+     "label": "Opportunistic Education"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://wowseer.gg/guides/dalaran-attunement",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://dailyrespawn.com/article/how-to-get-the-dalaran-sewer-key-in-wow-forever-city-of-dalaran-attunement-quest",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:run",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Run City of Dalaran (levels 28-33, Alterac Mountains). Horde attunement: Key to the City from Magus Wordeen Voidglare (not the Image of Archmage Modera). Open-world Dalaran is hostile to Horde — enter through the sewer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1416,
+      "x": 8,
+      "y": 61,
+      "zone": "Alterac Mountains",
+      "exact": false
+     }
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://news.blizzard.com/en-us/article/24301455/explore-the-new-dungeons-of-world-of-warcraft-forever",
+     "label": "Blizzard: Explore the New Dungeons of WoW: Forever"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run City of Dalaran once for The Grave Knight and Opportunistic Education. Do not pick up Prison Break In again.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 96986, 545 pre group 544 and 93680"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Open-world Dalaran is hostile to Horde; use the sewer entrance with Key to the City from Magus Wordeen Voidglare.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:complete:96987",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "minutes": 1,
+   "section": "City of Dalaran",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete Opportunistic Education `96987`: collect The Founding of Dalaran inside City of Dalaran (there is no map pin for the book)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 275996,
+     "count": 1,
+     "questId": 96987,
+     "objective": 1,
+     "label": "The Founding of Dalaran"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:turnin:96987",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "minutes": 1,
+   "section": "City of Dalaran",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in Opportunistic Education `96987` to Rexxie Copperclutch near the sewer entrance. The end NPC is known but has no map pin (spawn -1,-1)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 96987,
+     "label": "Opportunistic Education"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:forever:city-of-dalaran:turnin:96986",
+   "section": "City of Dalaran",
+   "tags": {
+    "dungeonId": "city-of-dalaran"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Grave Knight `96986` to Melisara (Hillsbrad Foothills)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "x": 62.63,
+      "y": 20.65,
+      "zone": "Hillsbrad Foothills",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96986,
+     "label": "The Grave Knight"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "City of Dalaran",
+    "levels": [
+     28,
+     33
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://wowseer.gg/guides/dalaran-attunement",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://dailyrespawn.com/article/how-to-get-the-dalaran-sewer-key-in-wow-forever-city-of-dalaran-attunement-quest",
+     "label": "WoW Forever fan guide / news"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

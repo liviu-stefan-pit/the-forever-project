@@ -1,0 +1,157 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Razorfen Downs (later quests)",
+ "steps": [
+  {
+   "id": "dungeons:razorfen-downs:accept:97196",
+   "section": "Razorfen Downs",
+   "tags": {
+    "dungeonId": "razorfen-downs"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Accept The Coldbringer's Eye `97196` from Sutara Plainstalker (Mulgore 34.6, 23.0, north of Bloodhoof near the Thunder Bluff lifts). Recover the eye from Razorfen Downs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 34.56,
+      "y": 23,
+      "zone": "Mulgore",
+      "exact": false
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97196,
+     "label": "The Coldbringer's Eye"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:razorfen-downs:complete:97196",
+   "section": "Razorfen Downs",
+   "tags": {
+    "dungeonId": "razorfen-downs"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Complete The Coldbringer's Eye `97196`: recover The Coldbringer's Eye inside Razorfen Downs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "complete",
+     "questId": 97196,
+     "objective": 1,
+     "label": "The Coldbringer's Eye"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:razorfen-downs:turnin:97196",
+   "section": "Razorfen Downs",
+   "tags": {
+    "dungeonId": "razorfen-downs"
+   },
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever] Turn in The Coldbringer's Eye `97196` to Sutara Plainstalker in Mulgore (34.6, 23.0)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 34.56,
+      "y": 23,
+      "zone": "Mulgore",
+      "exact": false
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97196,
+     "label": "The Coldbringer's Eye"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Razorfen Downs",
+    "instanceId": 722,
+    "levels": [
+     35,
+     45
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

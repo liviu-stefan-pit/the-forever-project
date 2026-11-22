@@ -1,0 +1,1549 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Maraudon",
+ "steps": [
+  {
+   "id": "dungeons:maraudon:accept:7068",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7068",
+     "label": "Wowhead Classic: Shadowshard Fragments"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Shadowshard Fragments from Uthel'nay in Orgrimmar (level 38+, quest level 42)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 39.2,
+      "y": 86.3,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7068,
+     "label": "Shadowshard Fragments"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7311,
+     "name": "Uthel'nay",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 39.2,
+      "y": 86.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7311",
+       "label": "Wowhead Classic: Uthel'nay"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7028",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7028",
+     "label": "Wowhead Classic: Twisted Evils"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Twisted Evils from Willow in Desolace (level 41+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 62.2,
+      "y": 39.6,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7028,
+     "label": "Twisted Evils"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13656,
+     "name": "Willow",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 62.2,
+      "y": 39.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13656",
+       "label": "Wowhead Classic: Willow"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5250 XP base, high for level 47.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7029",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7029",
+     "label": "Wowhead Classic: Vyletongue Corruption"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Vyletongue Corruption from Vark Battlescar in Desolace (level 41+, quest level 47)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 23.2,
+      "y": 70.3,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7029,
+     "label": "Vyletongue Corruption"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11823,
+     "name": "Vark Battlescar",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 23.2,
+      "y": 70.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11823",
+       "label": "Wowhead Classic: Vark Battlescar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7067",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7067",
+     "label": "Wowhead Classic: The Pariah's Instructions"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Pariah's Instructions from Centaur Pariah in Desolace (level 39+, quest level 48)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 50.4,
+      "y": 86.7,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7067,
+     "label": "The Pariah's Instructions"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13717,
+     "name": "Centaur Pariah",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 50.4,
+      "y": 86.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13717",
+       "label": "Wowhead Classic: Centaur Pariah"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7044",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7044",
+     "label": "Wowhead Classic: Legends of Maraudon"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Legends of Maraudon from Cavindra in Desolace (level 41+, quest level 49)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 32.1,
+      "y": 64,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7044,
+     "label": "Legends of Maraudon"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13697,
+     "name": "Cavindra",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 32.1,
+      "y": 64
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13697",
+       "label": "Wowhead Classic: Cavindra"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (3400 base at level 49); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7064",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7064",
+     "label": "Wowhead Classic: Corruption of Earth and Seed"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Corruption of Earth and Seed from Selendra in Desolace (level 45+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 26.9,
+      "y": 77.7,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7064,
+     "label": "Corruption of Earth and Seed"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13699,
+     "name": "Selendra",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 26.9,
+      "y": 77.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13699",
+       "label": "Wowhead Classic: Selendra"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6100 XP base, high for level 51.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7066",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7066",
+     "label": "Wowhead Classic: Seed of Life"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Seed of Life (level 45+, quest level 51)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 7066,
+     "label": "Seed of Life"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6100 XP base, high for level 51.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:run",
+   "section": "Maraudon",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Maraudon (levels 45-52) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 29.1,
+      "y": 62.5,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 17756,
+     "count": 1,
+     "questId": 7068,
+     "objective": 1,
+     "label": "Shadowshard Fragments: Shadowshard Fragment"
+    },
+    {
+     "type": "collect",
+     "itemId": 17684,
+     "count": 1,
+     "questId": 7028,
+     "objective": 1,
+     "label": "Twisted Evils: Theradric Crystal Carving"
+    },
+    {
+     "type": "complete",
+     "questId": 7029,
+     "objective": 1,
+     "label": "Vyletongue Corruption: Noxxious Scion"
+    },
+    {
+     "type": "collect",
+     "itemId": 17696,
+     "count": 1,
+     "questId": 7029,
+     "objective": 2,
+     "label": "Vyletongue Corruption: Filled Cerulean Vial"
+    },
+    {
+     "type": "collect",
+     "itemId": 17758,
+     "count": 1,
+     "questId": 7067,
+     "objective": 1,
+     "label": "The Pariah's Instructions: Amulet of Union"
+    },
+    {
+     "type": "collect",
+     "itemId": 17703,
+     "count": 1,
+     "questId": 7044,
+     "objective": 1,
+     "label": "Legends of Maraudon: Celebrian Diamond"
+    },
+    {
+     "type": "collect",
+     "itemId": 17702,
+     "count": 1,
+     "questId": 7044,
+     "objective": 2,
+     "label": "Legends of Maraudon: Celebrian Rod"
+    },
+    {
+     "type": "complete",
+     "questId": 7064,
+     "objective": 1,
+     "label": "Corruption of Earth and Seed: Princess Theradras"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:maraudon:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill elementals and satyrs at corners; on the waterfall side, pull slowly.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2100",
+       "label": "Wowhead Classic: Maraudon"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Princess Theradras knocks back; keep tank and healer near walls.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2100",
+       "label": "Wowhead Classic: Maraudon"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Use the Celebras scepter chain to unlock the shortcut to the inner side on later runs.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2100",
+       "label": "Wowhead Classic: Maraudon"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "WoW Forever change: Maraudon hotfix (Nov 6): Zaetar's Spirit now spawns correctly after Princess Theradras dies.",
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://wowclassicforever.info/dungeons/",
+       "label": "WoW Forever report (unofficial)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Maraudon once, both wings. Do not reset for more shadowshards.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Princess Theradras",
+     "npcId": 12201,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Corruption of Earth and Seed; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=12201",
+         "label": "Wowhead Classic: Princess Theradras"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12201",
+       "label": "Wowhead Classic: Princess Theradras"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=2100",
+     "label": "Wowhead Classic: Maraudon level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7068",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7068",
+     "label": "Wowhead Classic: Shadowshard Fragments"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Shadowshard Fragments to Uthel'nay (Orgrimmar). Reward choices include Zealous Shadowshard Pendant, Prodigious Shadowshard Pendant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 39.2,
+      "y": 86.3,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7068,
+     "label": "Shadowshard Fragments"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7311,
+     "name": "Uthel'nay",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 39.2,
+      "y": 86.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7311",
+       "label": "Wowhead Classic: Uthel'nay"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7028",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7028",
+     "label": "Wowhead Classic: Twisted Evils"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Twisted Evils to Willow (Desolace). Reward choices include Acumen Robes, Sprightring Helm, Relentless Chain, Hulkstone Pauldrons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 62.2,
+      "y": 39.6,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7028,
+     "label": "Twisted Evils"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13656,
+     "name": "Willow",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 62.2,
+      "y": 39.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13656",
+       "label": "Wowhead Classic: Willow"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7029",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7029",
+     "label": "Wowhead Classic: Vyletongue Corruption"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Vyletongue Corruption to Vark Battlescar (Desolace). Reward choices include Woodseed Hoop, Branchclaw Gauntlets, Sagebrush Girdle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 23.2,
+      "y": 70.3,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7029,
+     "label": "Vyletongue Corruption"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11823,
+     "name": "Vark Battlescar",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 23.2,
+      "y": 70.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11823",
+       "label": "Wowhead Classic: Vark Battlescar"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7067",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7067",
+     "label": "Wowhead Classic: The Pariah's Instructions"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Pariah's Instructions to Centaur Pariah (Desolace). Reward choices include Mark of the Chosen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 50.4,
+      "y": 86.7,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7067,
+     "label": "The Pariah's Instructions"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13717,
+     "name": "Centaur Pariah",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 50.4,
+      "y": 86.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13717",
+       "label": "Wowhead Classic: Centaur Pariah"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7044",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7044",
+     "label": "Wowhead Classic: Legends of Maraudon"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Legends of Maraudon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 7044,
+     "label": "Legends of Maraudon"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7064",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7064",
+     "label": "Wowhead Classic: Corruption of Earth and Seed"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Corruption of Earth and Seed to Selendra (Desolace). Reward choices include Thrash Blade, Resurgence Rod, Verdant Keeper's Aim"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "x": 26.9,
+      "y": 77.7,
+      "zone": "Desolace",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7064,
+     "label": "Corruption of Earth and Seed"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13699,
+     "name": "Selendra",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 26.9,
+      "y": 77.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=13699",
+       "label": "Wowhead Classic: Selendra"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7066",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7066",
+     "label": "Wowhead Classic: Seed of Life"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seed of Life to Keeper Remulos (Moonglade)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "x": 36.2,
+      "y": 41.8,
+      "zone": "Moonglade",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7066,
+     "label": "Seed of Life"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11832,
+     "name": "Keeper Remulos",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 36.2,
+      "y": 41.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11832",
+       "label": "Wowhead Classic: Keeper Remulos"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:accept:7046",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7046",
+     "label": "Wowhead Classic: The Scepter of Celebras"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Scepter of Celebras (level 41+, quest level 49)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 7046,
+     "label": "The Scepter of Celebras"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 5700 XP base, high for level 49.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:maraudon:turnin:7046",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7046",
+     "label": "Wowhead Classic: The Scepter of Celebras"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "section": "Maraudon",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Scepter of Celebras. Reward choices include Scepter of Celebras"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 7046,
+     "label": "The Scepter of Celebras"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:maraudon:off",
+   "section": "Maraudon",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Feralas (Camp Mojache), Tanaris and Azshara quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:maraudon:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

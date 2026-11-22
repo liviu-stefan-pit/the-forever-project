@@ -1,0 +1,1661 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Scholomance",
+ "steps": [
+  {
+   "id": "dungeons:scholomance:accept:5522",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5522",
+     "label": "Wowhead Classic: Leonid Barthalomew"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Leonid Barthalomew from Tinkee Steamboil in Burning Steppes (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5522,
+     "label": "Leonid Barthalomew"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10267,
+     "name": "Tinkee Steamboil",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.2,
+      "y": 24
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10267",
+       "label": "Wowhead Classic: Tinkee Steamboil"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5522",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5522",
+     "label": "Wowhead Classic: Leonid Barthalomew"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Leonid Barthalomew to Leonid Barthalomew the Revered (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.9,
+      "y": 48.3,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5522,
+     "label": "Leonid Barthalomew"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11036,
+     "name": "Leonid Barthalomew the Revered",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.9,
+      "y": 48.3
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11036",
+       "label": "Wowhead Classic: Leonid Barthalomew the Revered"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5529",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5529",
+     "label": "Wowhead Classic: Plagued Hatchlings"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Plagued Hatchlings from Betina Bigglezink in Eastern Plaguelands (level 55+, quest level 58)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5529,
+     "label": "Plagued Hatchlings"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6200 XP base, high for level 58.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5341",
+     "label": "Wowhead Classic: Barov Family Fortune"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Barov Family Fortune from Alexi Barov in Tirisfal Glades (level 52+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 71.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5341,
+     "label": "Barov Family Fortune"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11022,
+     "name": "Alexi Barov",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 83.1,
+      "y": 71.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11022",
+       "label": "Wowhead Classic: Alexi Barov"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5382",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5382",
+     "label": "Wowhead Classic: Doctor Theolen Krastinov, the Butcher"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Doctor Theolen Krastinov, the Butcher from Eva Sarkhoff in Western Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5382,
+     "label": "Doctor Theolen Krastinov, the Butcher"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5531",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5531",
+     "label": "Wowhead Classic: Betina Bigglezink"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Betina Bigglezink from Leonid Barthalomew the Revered in Eastern Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.9,
+      "y": 48.3,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5531,
+     "label": "Betina Bigglezink"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11036,
+     "name": "Leonid Barthalomew the Revered",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.9,
+      "y": 48.3
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11036",
+       "label": "Wowhead Classic: Leonid Barthalomew the Revered"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (1650 base at level 60); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:run",
+   "section": "Scholomance",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Scholomance (levels 55-60) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 69.7,
+      "y": 73.2,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5529,
+     "objective": 1,
+     "label": "Plagued Hatchlings: Plagued Hatchling"
+    },
+    {
+     "type": "collect",
+     "itemId": 13471,
+     "count": 1,
+     "questId": 5341,
+     "objective": 1,
+     "label": "Barov Family Fortune: The Deed to Brill"
+    },
+    {
+     "type": "collect",
+     "itemId": 13448,
+     "count": 1,
+     "questId": 5341,
+     "objective": 2,
+     "label": "Barov Family Fortune: The Deed to Caer Darrow"
+    },
+    {
+     "type": "collect",
+     "itemId": 13450,
+     "count": 1,
+     "questId": 5341,
+     "objective": 3,
+     "label": "Barov Family Fortune: The Deed to Southshore"
+    },
+    {
+     "type": "collect",
+     "itemId": 13451,
+     "count": 1,
+     "questId": 5341,
+     "objective": 4,
+     "label": "Barov Family Fortune: The Deed to Tarren Mill"
+    },
+    {
+     "type": "complete",
+     "questId": 5382,
+     "objective": 1,
+     "label": "Doctor Theolen Krastinov, the Butcher: Doctor Theolen Krastinov"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:scholomance:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Scholomance has big trash rooms; control the Viewing Room and the bone-mage rooms with line of sight.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2057",
+       "label": "Wowhead Classic: Scholomance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Ras Frostwhisper hits hard with frost; keep shields and frost resistance ready.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2057",
+       "label": "Wowhead Classic: Scholomance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Key quest chain is long; for leveling, consider it endgame unless your group already has keys.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2057",
+       "label": "Wowhead Classic: Scholomance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Scholomance once. Do not reset for more plaguebat hatchlings.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever quest rows"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Doctor Theolen Krastinov",
+     "npcId": 11261,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Doctor Theolen Krastinov, the Butcher; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=11261",
+         "label": "Wowhead Classic: Doctor Theolen Krastinov"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11261",
+       "label": "Wowhead Classic: Doctor Theolen Krastinov"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=2057",
+     "label": "Wowhead Classic: Scholomance level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5529",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5529",
+     "label": "Wowhead Classic: Plagued Hatchlings"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Plagued Hatchlings to Betina Bigglezink (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5529,
+     "label": "Plagued Hatchlings"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5341",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5341",
+     "label": "Wowhead Classic: Barov Family Fortune"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Barov Family Fortune to Alexi Barov (Tirisfal Glades)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 71.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5341,
+     "label": "Barov Family Fortune"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11022,
+     "name": "Alexi Barov",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 83.1,
+      "y": 71.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11022",
+       "label": "Wowhead Classic: Alexi Barov"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5382",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5382",
+     "label": "Wowhead Classic: Doctor Theolen Krastinov, the Butcher"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Doctor Theolen Krastinov, the Butcher to Eva Sarkhoff (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5382,
+     "label": "Doctor Theolen Krastinov, the Butcher"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5531",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5531",
+     "label": "Wowhead Classic: Betina Bigglezink"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Betina Bigglezink to Betina Bigglezink (Eastern Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5531,
+     "label": "Betina Bigglezink"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:4771",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4771",
+     "label": "Wowhead Classic: Dawn's Gambit"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dawn's Gambit from Betina Bigglezink in Eastern Plaguelands (level 57+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4771,
+     "label": "Dawn's Gambit"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 9950 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:4771",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4771",
+     "label": "Wowhead Classic: Dawn's Gambit"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dawn's Gambit to Betina Bigglezink (Eastern Plaguelands). Reward choices include Windreaper, Dancing Sliver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 71.7,
+      "y": 49.9,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4771,
+     "label": "Dawn's Gambit"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11035,
+     "name": "Betina Bigglezink",
+     "at": {
+      "mapId": 1423,
+      "zone": "Eastern Plaguelands",
+      "x": 71.7,
+      "y": 49.9
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11035",
+       "label": "Wowhead Classic: Betina Bigglezink"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5515",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5515",
+     "label": "Wowhead Classic: Krastinov's Bag of Horrors"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Krastinov's Bag of Horrors from Eva Sarkhoff in Western Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5515,
+     "label": "Krastinov's Bag of Horrors"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 6600 XP base, high for level 60.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5515",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5515",
+     "label": "Wowhead Classic: Krastinov's Bag of Horrors"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Krastinov's Bag of Horrors to Eva Sarkhoff (Western Plaguelands)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5515,
+     "label": "Krastinov's Bag of Horrors"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:accept:5384",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5384",
+     "label": "Wowhead Classic: Kirtonos the Herald"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Kirtonos the Herald from Eva Sarkhoff in Western Plaguelands (level 55+, quest level 60)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5384,
+     "label": "Kirtonos the Herald"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs objectives outside the dungeon, which costs extra travel in a speed run.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:turnin:5384",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Scholomance",
+    "instanceId": 2057,
+    "levels": [
+     55,
+     60
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5384",
+     "label": "Wowhead Classic: Kirtonos the Herald"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Scholomance",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Kirtonos the Herald to Eva Sarkhoff (Western Plaguelands). Reward choices include Spectral Essence, Penelope's Rose, Mirah's Song"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 70.2,
+      "y": 73.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5384,
+     "label": "Kirtonos the Herald"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11216,
+     "name": "Eva Sarkhoff",
+     "at": {
+      "mapId": 1422,
+      "zone": "Western Plaguelands",
+      "x": 70.2,
+      "y": 73.7
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11216",
+       "label": "Wowhead Classic: Eva Sarkhoff"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:scholomance:off",
+   "section": "Scholomance",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Western/Eastern Plaguelands, Winterspring and Silithus quests."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:scholomance:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

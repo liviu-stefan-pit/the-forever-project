@@ -1,0 +1,695 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Shadowfang Keep",
+ "steps": [
+  {
+   "id": "dungeons:shadowfang-keep:accept:1098",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1098",
+     "label": "Wowhead Classic: Deathstalkers in Shadowfang"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Deathstalkers in Shadowfang from High Executor Hadrec in Silverpine Forest (level 18+, quest level 25)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 43.4,
+      "y": 40.9,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1098,
+     "label": "Deathstalkers in Shadowfang"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1952,
+     "name": "High Executor Hadrec",
+     "at": {
+      "mapId": 1421,
+      "zone": "Silverpine Forest",
+      "x": 43.4,
+      "y": 40.9
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1952",
+       "label": "Wowhead Classic: High Executor Hadrec"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Free XP on the main path through SFK.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:shadowfang-keep:accept:1013",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1013",
+     "label": "Wowhead Classic: The Book of Ur"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Book of Ur from Keeper Bel'dugur in Undercity (level 16+, quest level 26)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 53.7,
+      "y": 54.5,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1013,
+     "label": "The Book of Ur"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2934,
+     "name": "Keeper Bel'dugur",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 53.7,
+      "y": 54.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2934",
+       "label": "Wowhead Classic: Keeper Bel'dugur"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Needs the Book of Ur from the library side room and a trip to Undercity; fine on a relaxed route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:shadowfang-keep:accept:1014",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1014",
+     "label": "Wowhead Classic: Arugal Must Die"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Arugal Must Die from Dalar Dawnweaver in Silverpine Forest (level 18+, quest level 27)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1014,
+     "label": "Arugal Must Die"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1938,
+     "name": "Dalar Dawnweaver",
+     "at": {
+      "mapId": 1421,
+      "zone": "Silverpine Forest",
+      "x": 44.2,
+      "y": 39.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1938",
+       "label": "Wowhead Classic: Dalar Dawnweaver"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Biggest XP quest in Shadowfang Keep; Arugal is the end of the run.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:shadowfang-keep:run",
+   "section": "Shadowfang Keep",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Shadowfang Keep (levels 22-30) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.8,
+      "y": 67.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6283,
+     "count": 1,
+     "questId": 1013,
+     "objective": 1,
+     "label": "The Book of Ur: The Book of Ur"
+    },
+    {
+     "type": "collect",
+     "itemId": 5442,
+     "count": 1,
+     "questId": 1014,
+     "objective": 1,
+     "label": "Arugal Must Die: Head of Arugal"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:shadowfang-keep:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Courtyard and stair pulls are packed; use doorways to break line of sight. Fenrus and Nandos add summons in WoW Forever.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=209",
+       "label": "Wowhead Classic: Shadowfang Keep"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Arugal's Void Bolt hurts; stay behind pillars to break line of sight on his teleports.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=209",
+       "label": "Wowhead Classic: Shadowfang Keep"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Burn worgen packs fast; most groups skip optional side rooms because all three Horde quests are on the main path to Arugal.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=209",
+       "label": "Wowhead Classic: Shadowfang Keep"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "WoW Forever change: Shadowfang Keep: Fenrus summons Voidwalkers at 50% health, Nandos summons worgs, and Arugal's table book gives the Black Tome that leads to a secret boss in City of Dalaran.",
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://wowclassicforever.info/dungeons/",
+       "label": "WoW Forever report (unofficial)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Shadowfang Keep once. Do not reset for more worgs.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 1014 zone Shadowfang Keep"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=209",
+     "label": "Wowhead Classic: Shadowfang Keep level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:shadowfang-keep:turnin:1098",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1098",
+     "label": "Wowhead Classic: Deathstalkers in Shadowfang"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Deathstalkers in Shadowfang to Deathstalker Vincent (Shadowfang Keep). Reward choices include Ghostly Mantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 1098,
+     "label": "Deathstalkers in Shadowfang"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:shadowfang-keep:turnin:1013",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1013",
+     "label": "Wowhead Classic: The Book of Ur"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Book of Ur to Keeper Bel'dugur (Undercity). Reward choices include Steel-clasped Bracers, Grizzled Boots"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 53.7,
+      "y": 54.5,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1013,
+     "label": "The Book of Ur"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2934,
+     "name": "Keeper Bel'dugur",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 53.7,
+      "y": 54.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2934",
+       "label": "Wowhead Classic: Keeper Bel'dugur"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:shadowfang-keep:turnin:1014",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Shadowfang Keep",
+    "instanceId": 209,
+    "levels": [
+     22,
+     30
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1014",
+     "label": "Wowhead Classic: Arugal Must Die"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Shadowfang Keep",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Arugal Must Die to Dalar Dawnweaver (Silverpine Forest). Reward choices include Seal of Sylvanas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1421,
+      "x": 44.2,
+      "y": 39.8,
+      "zone": "Silverpine Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1014,
+     "label": "Arugal Must Die"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1938,
+     "name": "Dalar Dawnweaver",
+     "at": {
+      "mapId": 1421,
+      "zone": "Silverpine Forest",
+      "x": 44.2,
+      "y": 39.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1938",
+       "label": "Wowhead Classic: Dalar Dawnweaver"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:shadowfang-keep:off",
+   "section": "Shadowfang Keep",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Silverpine Forest and Hillsbrad Foothills (Tarren Mill) quest hubs cover the same 20-30 band."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:shadowfang-keep:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

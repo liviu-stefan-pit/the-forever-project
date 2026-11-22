@@ -1,0 +1,1936 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-dungeons-15-60",
+ "title": "Ragefire Chasm",
+ "steps": [
+  {
+   "id": "dungeons:ragefire-chasm:accept:5726",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5726",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hidden Enemies from Thrall in Orgrimmar (level 9+, quest level 12)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5726,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "If Hidden Enemies is already turned in to Thrall, do not accept 5726 or 5727 again.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5726, npc 4949 area 1637"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5726",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5726",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hidden Enemies to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5726,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5727",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5727",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hidden Enemies from Thrall in Orgrimmar (level 9+, quest level 12)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5727,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Unlocks a dungeon quest that the speed route skips; take it only on the balanced route.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5727",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5727",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hidden Enemies to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5727,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5723",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5723",
+     "label": "Wowhead Classic: Testing an Enemy's Strength"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Testing an Enemy's Strength from Rahauro in Thunder Bluff (level 9+, quest level 15)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 70.1,
+      "y": 29.5,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5723,
+     "label": "Testing an Enemy's Strength"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11833,
+     "name": "Rahauro",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 70.1,
+      "y": 29.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11833",
+       "label": "Wowhead Classic: Rahauro"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (800 base at level 15); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5722",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5722",
+     "label": "Wowhead Classic: Searching for the Lost Satchel"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Searching for the Lost Satchel from Rahauro in Thunder Bluff (level 9+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 70.1,
+      "y": 29.5,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5722,
+     "label": "Searching for the Lost Satchel"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11833,
+     "name": "Rahauro",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 70.1,
+      "y": 29.5
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11833",
+       "label": "Wowhead Classic: Rahauro"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (880 base at level 16); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5728",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5728",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hidden Enemies from Thrall in Orgrimmar (level 9+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5728,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low XP for the effort (1150 base at level 16); take it only if you pass the giver anyway.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5761",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5761",
+     "label": "Wowhead Classic: Slaying the Beast"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Slaying the Beast from Neeru Fireblade in Orgrimmar (level 9+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 49.5,
+      "y": 50.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5761,
+     "label": "Slaying the Beast"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3216,
+     "name": "Neeru Fireblade",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 49.5,
+      "y": 50.6
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3216",
+       "label": "Wowhead Classic: Neeru Fireblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Kill the last boss you pass anyway; the giver is in Orgrimmar where you train.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5725",
+   "section": "Ragefire Chasm",
+   "tags": {
+    "dungeonId": "ragefire-chasm"
+   },
+   "conditions": [],
+   "verified": true,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Power to Destroy... from Varimathras in Undercity (level 9+, quest level 16). Bring Spells of Shadow and Incantations from the Nether out of Ragefire Chasm."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5725,
+     "label": "The Power to Destroy..."
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2425,
+     "name": "Varimathras",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 56.2,
+      "y": 92.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2425",
+       "label": "Wowhead Classic: Varimathras"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5725",
+     "label": "Wowhead Classic: The Power to Destroy..."
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5725",
+   "section": "Ragefire Chasm",
+   "tags": {
+    "dungeonId": "ragefire-chasm"
+   },
+   "conditions": [],
+   "verified": true,
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Power to Destroy... to Varimathras (Undercity)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 56.2,
+      "y": 92.2,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5725,
+     "label": "The Power to Destroy..."
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5725",
+     "label": "Wowhead Classic: The Power to Destroy..."
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:run",
+   "section": "Ragefire Chasm",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run Ragefire Chasm (levels 13-18) and finish the quests you picked up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 52.6,
+      "y": 49,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5723,
+     "objective": 1,
+     "label": "Testing an Enemy's Strength: Ragefire Trogg"
+    },
+    {
+     "type": "complete",
+     "questId": 5723,
+     "objective": 2,
+     "label": "Testing an Enemy's Strength: Ragefire Shaman"
+    },
+    {
+     "type": "complete",
+     "questId": 5728,
+     "objective": 1,
+     "label": "Hidden Enemies: Bazzalan"
+    },
+    {
+     "type": "complete",
+     "questId": 5728,
+     "objective": 2,
+     "label": "Hidden Enemies: Jergosh the Invoker"
+    },
+    {
+     "type": "collect",
+     "itemId": 14540,
+     "count": 1,
+     "questId": 5761,
+     "objective": 1,
+     "label": "Slaying the Beast: Taragaman the Hungerer's Heart"
+    },
+    {
+     "type": "collect",
+     "itemId": 14395,
+     "count": 1,
+     "questId": 5725,
+     "objective": 1,
+     "label": "The Power to Destroy...: Spells of Shadow"
+    },
+    {
+     "type": "collect",
+     "itemId": 14396,
+     "count": 1,
+     "questId": 5725,
+     "objective": 2,
+     "label": "The Power to Destroy...: Incantations from the Nether"
+    }
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "alternativeTo": [
+    "dungeons:ragefire-chasm:off"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pull troggs in pairs and let casters come to you around corners; Taragaman and Jergosh are the only real threats.",
+     "roles": [
+      "tank"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2437",
+       "label": "Wowhead Classic: Ragefire Chasm"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Mana is the limit at this level; drink after every second pack and stand where the tank can line-of-sight casters to you.",
+     "roles": [
+      "healer"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2437",
+       "label": "Wowhead Classic: Ragefire Chasm"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Kill shaman first; the whole run is a straight line, so skip side caves unless you still need satchel or quest drops.",
+     "roles": [
+      "dps"
+     ],
+     "dungeons": true,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=2437",
+       "label": "Wowhead Classic: Ragefire Chasm"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Run Ragefire Chasm once from the Cleft of Shadow. Do not reset for more troggs or for The Power to Destroy.",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5728 pre 5727, zone 2437"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "At most five dungeon entries/resets per hour. Kill XP inside dungeons is increased by 50%. If any party member would get no XP because the mobs are trivial to them, nobody in the party gets XP.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Ragefire Trogg",
+     "npcId": 11318,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Testing an Enemy's Strength; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=11318",
+         "label": "Wowhead Classic: Ragefire Trogg"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11318",
+       "label": "Wowhead Classic: Ragefire Trogg"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Ragefire Shaman",
+     "npcId": 11319,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Testing an Enemy's Strength; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=11319",
+         "label": "Wowhead Classic: Ragefire Shaman"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11319",
+       "label": "Wowhead Classic: Ragefire Shaman"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Bazzalan",
+     "npcId": 11519,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Hidden Enemies; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=11519",
+         "label": "Wowhead Classic: Bazzalan"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11519",
+       "label": "Wowhead Classic: Bazzalan"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "name": "Jergosh the Invoker",
+     "npcId": 11518,
+     "groupSize": 5,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Quest kill for Hidden Enemies; it is inside the instance, so bring a full group.",
+       "sources": [
+        {
+         "url": "https://www.wowhead.com/classic/npc=11518",
+         "label": "Wowhead Classic: Jergosh the Invoker"
+        },
+        {
+         "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+         "label": "QuestieDB Classic (GPL-3.0)"
+        }
+       ],
+       "verified": true
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11518",
+       "label": "Wowhead Classic: Jergosh the Invoker"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/blob/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Zones/data/dungeons.lua",
+     "label": "QuestieDB dungeon entrances (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/zone=2437",
+     "label": "Wowhead Classic: Ragefire Chasm level range"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5723",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5723",
+     "label": "Wowhead Classic: Testing an Enemy's Strength"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Testing an Enemy's Strength to Rahauro (Thunder Bluff)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 70.1,
+      "y": 29.5,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5723,
+     "label": "Testing an Enemy's Strength"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11833,
+     "name": "Rahauro",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 70.1,
+      "y": 29.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11833",
+       "label": "Wowhead Classic: Rahauro"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5722",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5722",
+     "label": "Wowhead Classic: Searching for the Lost Satchel"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Searching for the Lost Satchel to Maur Grimtotem (Ragefire Chasm)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "turnin",
+     "questId": 5722,
+     "label": "Searching for the Lost Satchel"
+    }
+   ],
+   "pins": []
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5728",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5728",
+     "label": "Wowhead Classic: Hidden Enemies"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hidden Enemies to Thrall (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.7,
+      "y": 37.8,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5728,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.7,
+      "y": 37.8
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4949",
+       "label": "Wowhead Classic: Thrall"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5729",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 5729 pre 5728 next 5730"
+    }
+   ],
+   "verified": false,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hidden Enemies from Thrall and speak to Neeru Fireblade."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.73,
+      "y": 37.82,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5729,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.73,
+      "y": 37.82
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5729 pre 5728 next 5730"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5729",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 5729 end npc 3216"
+    }
+   ],
+   "verified": false,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hidden Enemies to Neeru Fireblade."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 49.47,
+      "y": 50.59,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5729,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3216,
+     "name": "Neeru Fireblade",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 49.47,
+      "y": 50.59
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5729 end npc 3216"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5730",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 5730 pre 5729, no further next"
+    }
+   ],
+   "verified": false,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hidden Enemies from Neeru Fireblade and return to Thrall. Do not take a class weapon quest afterward."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 49.47,
+      "y": 50.59,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5730,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3216,
+     "name": "Neeru Fireblade",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 49.47,
+      "y": 50.59
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5730 pre 5729, no further next"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5730",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie 5730 end npc 4949"
+    }
+   ],
+   "verified": false,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hidden Enemies to Thrall."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 31.73,
+      "y": 37.82,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5730,
+     "label": "Hidden Enemies"
+    }
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4949,
+     "name": "Thrall",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 31.73,
+      "y": 37.82
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "Questie 5730 end npc 4949"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5761",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5761",
+     "label": "Wowhead Classic: Slaying the Beast"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Slaying the Beast to Neeru Fireblade (Orgrimmar)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 49.5,
+      "y": 50.6,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5761,
+     "label": "Slaying the Beast"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3216,
+     "name": "Neeru Fireblade",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 49.5,
+      "y": 50.6
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3216",
+       "label": "Wowhead Classic: Neeru Fireblade"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:accept:5724",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5724",
+     "label": "Wowhead Classic: Returning the Lost Satchel"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Returning the Lost Satchel from Maur Grimtotem in Ragefire Chasm (level 9+, quest level 16)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "accept",
+     "questId": 5724,
+     "label": "Returning the Lost Satchel"
+    }
+   ],
+   "pins": [],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Done entirely inside the run and pays 1450 XP base, high for level 16.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+       "label": "Team route judgement (research/dungeons)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:turnin:5724",
+   "tags": {},
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Ragefire Chasm",
+    "instanceId": 2437,
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5724",
+     "label": "Wowhead Classic: Returning the Lost Satchel"
+    },
+    {
+     "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+     "label": "QuestieDB Classic (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "section": "Ragefire Chasm",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Returning the Lost Satchel to Rahauro (Thunder Bluff). Reward choices include Featherbead Bracers, Savannah Bracers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 70.1,
+      "y": 29.5,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5724,
+     "label": "Returning the Lost Satchel"
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11833,
+     "name": "Rahauro",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 70.1,
+      "y": 29.5
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=11833",
+       "label": "Wowhead Classic: Rahauro"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/tree/e29dc411d70a4f7c6cd5d964f153bd065c5fd834/Database/Classic",
+       "label": "QuestieDB Classic (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dungeons:ragefire-chasm:off",
+   "section": "Ragefire Chasm",
+   "tags": {},
+   "conditions": [],
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dungeons off: Finish Durotar (Razor Hill, Echo Isles) and early Northern Barrens quests from the Crossroads instead; Barrens kill quests out-pace RFC solo."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "dungeonsOff": true,
+   "alternativeTo": [
+    "dungeons:ragefire-chasm:run"
+   ],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/vulkan/dungeons/research/dungeons/README.md",
+     "label": "Team judgement; open-world quest steps come from the zone research lanes"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}
