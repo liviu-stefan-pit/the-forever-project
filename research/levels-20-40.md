@@ -139,3 +139,13 @@ The uncommitted Horde 20–40 route is solo-first. Dungeons are opt-in. The UI l
 **Class steps** use `classes` / `filter`. There is no schema change. Warrior: Affray 1718/1719. Shaman: Call of Air 1531/1532. 79360 Elemental Aid is dungeon-gated (Razorfen Kraul). Tauren druid: Great Cat Spirit 98340/98405/98342. Warlock 1740 is an outdoor accept and turn-in, with dungeon completes in Blackfathom Deeps and Shadowfang Keep. Undead paladin 91858 / Wolfsbane is skipped because the Deadmines lumber NPC has no coordinates. The older "no class chains" drop list is history for the chains this pass put back; it still records why the other dropped class quests stayed off.
 
 **Source conflicts** (detail and URLs in `research/sources-20-40.md`). Journeyman Campfire is Cooking 90, not 140 (Blizzard hotfix, 10 Nov 2026). Drowned City Horde in-dungeon quest XP is 47,650; Method's 50,000 counts the +2,350 follow-up. Dalaran is 37,600 (4 × 9,400). Druid Primal Bite rank 1 is level 40, not 25 (client 1.60.1). Profile `xpMods` (Well Fed, rested, Legacy Well Rested, Sleeping Bag) are player toggles, not route steps.
+
+## Horde 20-30 corrections (22 Nov 2026)
+
+Never Coming Back now runs during the Ashenvale pass after the Mystral elementals. Bears are killed in Ashenvale, and A Void Path (98252) follows it on both routes.
+
+Calling in the Reserves is turned in at the Great Lift on both routes, beside the ore sample.
+
+Thundering Hearts is Balanced only. The kill is Stormheart at Freewind. The turn-in waits for the later Undercity visit. Speedrun does not take it.
+
+Vorsha and A New Ore Sample carry the 9 Nov and 17 Nov hotfix notes.
