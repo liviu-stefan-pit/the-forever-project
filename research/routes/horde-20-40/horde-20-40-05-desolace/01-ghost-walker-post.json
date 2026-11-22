@@ -1,0 +1,1530 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-05-desolace",
+ "title": "Ghost Walker Post",
+ "steps": [
+  {
+   "id": "horde-20-40:accept-1431",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "In Orgrimmar, accept Alliance Relations from Craven Drok, turn it in to Keldran, and take the next Alliance Relations for Takata before you fly toward Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 51.3,
+      "y": 45.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1431,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1432",
+     "label": "Wowhead Classic quest 1432"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 1432 pre 1431, quest 1434 pre 1432"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-1431",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Alliance Relations to Keldran in Orgrimmar.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 22.56,
+      "y": 52.63,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1431,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1432",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Alliance Relations from Keldran in Orgrimmar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 22.56,
+      "y": 52.63,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1432,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:to-desolace",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly to Sun Rock or ride out of Thousand Needles with Alliance Relations already in the log. Land at Ghost Walker Post, clear Sargeron and Thunder Axe, then take the Shadowprey flight path on the way to the west shore."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 21.6,
+      "y": 74.13,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 10,
+   "sources": [
+    {
+     "url": "https://www.curseforge.com/wow/addons/openxp",
+     "label": "OpenXP 33-34 Desolace id order starts at Shadowprey 21.60, 74.13"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB zone 405 uiMapId 1443; quest 1432 ends at npc 5641"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Do not start a Maraudon clear from Shadowprey or the Valley of Spears. A later dungeon pass owns that instance.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/zone=405/desolace",
+       "label": "Wowhead Classic Desolace"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:fp-6726",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Desolace flight path from Thalon."
+      },
+      {
+       "t": "Wulan in Shadowprey Village sells the Expert Cookbook at Cooking 125. Journeyman Campfire needs Cooking 90 (10 Nov 2026 hotfix)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 21.6,
+      "y": 74.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Desolace flight path",
+     "place": "Desolace"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6726,
+     "name": "Thalon",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 21.6,
+      "y": 74.13
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:hearth-11106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Desolace with Innkeeper Sikewa."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 24.09,
+      "y": 68.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Desolace",
+     "place": "Desolace"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11106,
+     "name": "Innkeeper Sikewa",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 24.09,
+      "y": 68.21
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6142",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "On the first Shadowprey stop, accept Clam Bait, Other Fish to Fry, Hand of Iruxos, Hunting in Stranglethorn, and Hate the Hatefury, then accept Sceptre of Light and Claim Rackmore's Treasure on the way up the shore."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 22.64,
+      "y": 71.97,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6142,
+     "label": "Clam Bait"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.curseforge.com/wow/addons/openxp",
+     "label": "OpenXP id order: 6142 and 5741 before the fortress and the caravan"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 6142, 6143, 5381, 5763, 5741, 6161 have no pre; 97265 has no pre"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-6143",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Other Fish to Fry from Drulzegar Skraghook in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 23.32,
+      "y": 72.87,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6143,
+     "label": "Other Fish to Fry"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5381",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hand of Iruxos from Taiga Wisemane in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.82,
+      "y": 68.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5381,
+     "label": "Hand of Iruxos"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-97265",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Hate the Hatefury from Aka'rai in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.32,
+      "y": 67.05,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97265,
+     "label": "Hate the Hatefury"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 97265, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-5763",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hunting in Stranglethorn from Roon Wildmane in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 25.05,
+      "y": 72.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5763,
+     "label": "Hunting in Stranglethorn"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sceptre of Light from Azore Aldamort in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 38.88,
+      "y": 27.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5741,
+     "label": "Sceptre of Light"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6161",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Claim Rackmore's Treasure! from Rackmore's Log in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 36.07,
+      "y": 30.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6161,
+     "label": "Claim Rackmore's Treasure!"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1432",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Alliance Relations to Takata Steelblade in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1432,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1433",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Alliance Relations from Takata Steelblade in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1433,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1433",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Alliance Relations to Maurin Bonesplitter in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1433,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1434",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Befouled by Satyr from Takata Steelblade in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1434,
+     "label": "Befouled by Satyr"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1435",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Burning of Spirits from Maurin Bonesplitter in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1435,
+     "label": "The Burning of Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1480",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Burning Blade cultists north of Ghost Walker Post until a Flayed Demon Skin drops, and use it to start The Corrupter."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.54,
+      "y": 29.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1480,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4663,
+     "name": "Burning Blade Augur",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.54,
+      "y": 29.98
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-1480",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Corrupter.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.54,
+      "y": 29.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1480,
+     "objective": 1,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1435",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Burning of Spirits — Infused Burning Gem.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 55.3,
+      "y": 26.6,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1435,
+     "objective": 1,
+     "label": "The Burning of Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5381",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Hand of Iruxos — Demon Box.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 55,
+      "y": 26.6,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5381,
+     "objective": 1,
+     "label": "Hand of Iruxos"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sceptre of Light — Sceptre of Light."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 55.17,
+      "y": 30.15,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5741,
+     "objective": 1,
+     "label": "Sceptre of Light"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1480",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Corrupter to Maurin Bonesplitter in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1480,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:accept-1481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Corrupter from Maurin Bonesplitter in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1481,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-1481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Corrupter — Shadowstalker Scalp.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 72.65,
+      "y": 13.23,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1481,
+     "objective": 1,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1434",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Befouled by Satyr — Hatefury Rogue, Hatefury Felsworn, Hatefury Betrayer, Hatefury Hellcaller."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 74.7,
+      "y": 17.82,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1434,
+     "objective": 1,
+     "label": "Befouled by Satyr"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill the Hatefury tricksters on this same Sargeron pass so Hate the Hatefury finishes with Befouled by Satyr.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB quest 97265 creatures include 4671 with the 1434 satyr ids, no pre"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-97265",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Finish the work for Hate the Hatefury — Hatefury Trickster, Hatefury Hellcaller, Hatefury Shadowstalker, Hatefury Felsworn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 76.36,
+      "y": 21.02,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97265,
+     "objective": 1,
+     "label": "Hate the Hatefury"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever-new quest 97265. Coordinates come from the quest database; leave this unverified until it is played.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

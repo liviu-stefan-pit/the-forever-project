@@ -91,10 +91,14 @@ describe("the real research folder", () => {
     const found = discoverPacks(research);
     const ids = found.map((f) => f.pack.id);
     expect(new Set(ids).size).toBe(ids.length);
-    for (const id of ["durotar-1-12", "mulgore-1-12", "tirisfal-1-12", "silverpine-11-15", "barrens-12-20", "zephras-isle"]) {
-      const f = found.find((x) => x.pack.id === id);
-      expect(f?.segments?.length, id).toBeGreaterThan(1);
-      expect(f!.pack.steps.map((s) => s.n)).toEqual(f!.pack.steps.map((_, i) => i + 1));
+    const leveling = found.filter((f) => f.path.includes("/routes/"));
+    expect(leveling.length).toBe(22);
+    for (const f of leveling) {
+      expect(f.segments?.length, String(f.pack.id)).toBeGreaterThan(1);
+      expect(f.pack.steps.map((s) => s.n)).toEqual(f.pack.steps.map((_, i) => i + 1));
+      for (const seg of f.segments!) expect(seg.count, `${String(f.pack.id)} ${seg.file}`).toBeGreaterThan(0);
     }
+    // Only the dungeons pack is still a single file.
+    expect(found.filter((f) => !f.segments).map((f) => f.pack.id)).toEqual(["horde-dungeons-15-60"]);
   });
 });

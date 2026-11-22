@@ -1,0 +1,1335 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-03-stonetalon-ashenvale-hillsbrad",
+ "title": "Zoram Strand (Ashenvale)",
+ "steps": [
+  {
+   "id": "horde-20-40:to-zoram",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the Talondeep Path or the north Barrens road into Ashenvale. Do the Zoram Strand first, then cut east to Splintertree Post."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 12.24,
+      "y": 33.8,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 10,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1740-bfd",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "With dungeons on, enter Blackfathom Deeps at the Zoram Strand cave and loot 3 Soran'ruk Fragments from Twilight Acolytes.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 14.5,
+      "y": 14.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1740,
+     "objective": 1,
+     "label": "The Orb of Soran'ruk"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 25,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Warlock"
+   ],
+   "dungeon": {
+    "name": "Blackfathom Deeps",
+    "instanceId": 719,
+    "levels": [
+     24,
+     32
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:fp-11901",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Ashenvale flight path from Andruk."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 12.24,
+      "y": 33.8,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Ashenvale flight path",
+     "place": "Ashenvale"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11901,
+     "name": "Andruk",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 12.24,
+      "y": 33.8
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6442",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Naga at the Zoram Strand from Marukai in Ashenvale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.69,
+      "y": 34.91,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6442,
+     "label": "Naga at the Zoram Strand"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-216",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Between a Rock and a Thistlefur from Karang Amakkar in Ashenvale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 11.9,
+      "y": 34.54,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 216,
+     "label": "Between a Rock and a Thistlefur"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:fp-12616",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Ashenvale flight path from Vhulgra."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.18,
+      "y": 61.59,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Ashenvale flight path",
+     "place": "Ashenvale"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12616,
+     "name": "Vhulgra",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.18,
+      "y": 61.59
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:hearth-12196",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Ashenvale with Innkeeper Kaylisk."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.99,
+      "y": 60.65,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Ashenvale",
+     "place": "Ashenvale"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12196,
+     "name": "Innkeeper Kaylisk",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.99,
+      "y": 60.65
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-25",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Stonetalon Standstill from Mastok at 73.67, 60.0 on the first Splintertree stop, with Ashenvale Outrunners."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.67,
+      "y": 60,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 25,
+     "label": "Stonetalon Standstill"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "Questie quest 25, npc 12737, pre empty"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-6383",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Ashenvale Hunt from Senani Thunderheart in Ashenvale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.78,
+      "y": 61.46,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6383,
+     "label": "The Ashenvale Hunt"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6442",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Naga at the Zoram Strand — Wrathtail Head."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 7.29,
+      "y": 15.19,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6442,
+     "objective": 1,
+     "label": "Naga at the Zoram Strand"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-95042",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Finish the work for Seeking the Kor Gem — Corrupted Kor Gem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 13.55,
+      "y": 12.06,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95042,
+     "objective": 1,
+     "label": "Seeking the Kor Gem"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever-new quest 95042. Coordinates come from the quest database; leave this unverified until it is played.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Seeking the Kor Gem",
+     "level": 25,
+     "groupSize": 2,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Treat Seeking the Kor Gem as a group mob: clear the camp first, then pull with a cooldown ready.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "As the tank, face Seeking the Kor Gem away from the group and let the healer settle before you push.",
+       "roles": [
+        "tank"
+       ],
+       "classes": [
+        "Warrior",
+        "Paladin",
+        "Druid"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-216",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Between a Rock and a Thistlefur — Thistlefur Avenger, Thistlefur Shaman."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 35.45,
+      "y": 37.47,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 216,
+     "objective": 1,
+     "label": "Between a Rock and a Thistlefur"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6503",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Ashenvale Outrunners from Kuray'bin in Ashenvale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 71.11,
+      "y": 68.12,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6503,
+     "label": "Ashenvale Outrunners"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6503",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Ashenvale Outrunners — Ashenvale Outrunner."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.48,
+      "y": 72.25,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6503,
+     "objective": 1,
+     "label": "Ashenvale Outrunners"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-6503",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ashenvale Outrunners to Kuray'bin in Ashenvale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 71.11,
+      "y": 68.12,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6503,
+     "label": "Ashenvale Outrunners"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-25",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stonetalon Standstill on the elementals at 49.36, 69.85."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 49.36,
+      "y": 69.85,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 25,
+     "objective": 1,
+     "label": "Stonetalon Standstill"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "Questie npc 3917 spawns area 331"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-6383",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Ashenvale Hunt to Senani Thunderheart in Ashenvale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 73.78,
+      "y": 61.46,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6383,
+     "label": "The Ashenvale Hunt"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in 6383 at Senani. The next steps kill Sharptalon, Shadumbra, and Ursangous, hand those three in, then turn in The Hunt Completed (247).",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "Questie npcs 12676, 12677, 12678"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:accept-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Sharptalon (level 31) and use the drop to start Sharptalon's Claw."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 74.98,
+      "y": 70.06,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2,
+     "label": "Sharptalon's Claw"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12676,
+     "name": "Sharptalon",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 74.98,
+      "y": 70.06
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Sharptalon's Claw.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 74.98,
+      "y": 70.06,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2,
+     "objective": 1,
+     "label": "Sharptalon's Claw"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-24",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Shadumbra (level 28) and use the drop to start Shadumbra's Head."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 57.5,
+      "y": 56.05,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 24,
+     "label": "Shadumbra's Head"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12677,
+     "name": "Shadumbra",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 57.5,
+      "y": 56.05
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-24",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Shadumbra's Head.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 57.5,
+      "y": 56.05,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 24,
+     "objective": 1,
+     "label": "Shadumbra's Head"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-23",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Ursangous (level 25) and use the drop to start Ursangous's Paw."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 39.76,
+      "y": 65.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 23,
+     "label": "Ursangous's Paw"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 12678,
+     "name": "Ursangous",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 39.76,
+      "y": 65.21
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-23",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Ursangous's Paw.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1440,
+      "zone": "Ashenvale",
+      "x": 39.76,
+      "y": 65.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 23,
+     "objective": 1,
+     "label": "Ursangous's Paw"
+    }
+   ],
+   "conditions": [],
+   "section": "Ashenvale",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

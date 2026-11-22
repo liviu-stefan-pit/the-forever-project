@@ -5,11 +5,15 @@ A route pack is either one `*.json` file (`"schema": "project-forever/route"`) o
 `NN-slug.json` file per segment (`"schema": "project-forever/route-segment"`, with `steps`). See
 docs/ROUTE_FILES.md. The web build joins segments with web/scripts/routeSource.ts; this module mirrors it.
 
-    from route_files import iter_step_files, load_pack, write_json
+    from route_files import iter_packs, iter_step_files, load_pack, write_json, write_pack
 
     for path, doc in iter_step_files(Path("research/routes")):  # every file that holds steps
         ...edit doc["steps"] in place...
         write_json(path, doc)
+
+    for path, pack in iter_packs(Path("research")):           # joined packs (neighbouring steps visible)
+        ...edit pack["steps"][i] in place...
+        write_pack(path, pack)                                # back into the right segment files
 """
 from __future__ import annotations
 
@@ -62,6 +66,49 @@ def load_pack(path: Path) -> dict:
             rest = {k: v for k, v in s.items() if k not in ("id", "n")}
             steps.append({"id": s["id"], "n": len(steps) + 1, **rest})
     return {**fields, "schema": PACK, "steps": steps}
+
+
+def _format_of(raw: str, doc) -> tuple:
+    for ind in (1, 2, None):
+        for ea in (False, True):
+            s = json.dumps(doc, indent=ind, ensure_ascii=ea)
+            for tail in ("\n", ""):
+                if s + tail == raw:
+                    return ind, ea, tail
+    return 1, False, "\n"
+
+
+def write_pack(path: Path, pack: dict) -> None:
+    """Write a joined pack (from `load_pack` / `iter_packs`) back to disk.
+
+    Single-file packs are rewritten whole. For a segment folder, each step goes back to the segment file that
+    holds its id, without `n`; the pack's step ids must be the same set as on disk (edit steps in place, or move
+    them between segment files by hand). Pack-level fields are not written back to `pack.json`."""
+    path = Path(path)
+    if path.is_dir():
+        path = path / MANIFEST_NAME
+    raw = path.read_text(encoding="utf-8")
+    doc = json.loads(raw)
+    if doc.get("schema") == PACK:
+        ind, ea, tail = _format_of(raw, doc)  # keep the file's own formatting (some packs use 2-space indent)
+        path.write_text(json.dumps(pack, indent=ind, ensure_ascii=ea) + tail, encoding="utf-8")
+        return
+    by_id = {s["id"]: s for s in pack["steps"]}
+    seen = set()
+    for seg in segment_paths(path):
+        sdoc = read_json(seg)
+        new_steps = []
+        for old in sdoc["steps"]:
+            if old["id"] not in by_id:
+                raise ValueError(f"{seg}: step {old['id']} is not in the pack being written")
+            new_steps.append({k: v for k, v in by_id[old["id"]].items() if k != "n"})
+            seen.add(old["id"])
+        if new_steps != sdoc["steps"]:
+            sdoc["steps"] = new_steps
+            write_json(seg, sdoc)
+    extra = set(by_id) - seen
+    if extra:
+        raise ValueError(f"{path}: steps not in any segment file: {sorted(extra)[:5]}")
 
 
 def iter_step_files(root: Path) -> Iterator[tuple[Path, dict]]:

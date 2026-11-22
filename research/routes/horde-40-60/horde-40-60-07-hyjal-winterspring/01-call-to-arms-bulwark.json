@@ -1,0 +1,1418 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-07-hyjal-winterspring",
+ "title": "A Call to Arms: the Bulwark",
+ "steps": [
+  {
+   "id": "h4060:western-plaguelands:a5093",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Call to Arms: The Plaguelands!"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "A Call to Arms: The Plaguelands! is offered in Orgrimmar, Undercity and Thunder Bluff; take one.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "x": 37.6,
+      "y": 75.4,
+      "zone": "Orgrimmar",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5093,
+     "label": "A Call to Arms: The Plaguelands!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Set your hearth in Undercity before the Bulwark if you have not already.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "The Bulwark's cauldron chain moves you through the fields in a fixed order; follow it and kill everything on the path.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Most mobs here are undead. Paladins: Exorcism and Holy Wrath hit them hard and Seal of Command procs often. Undead Paladins can Cannibalize on the corpses.",
+     "classes": [
+      "Paladin"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Priests can Shackle Undead the extra mob in a pull; Shadow Word: Pain still works on undead.",
+     "classes": [
+      "Priest"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Abandon quests you are not about to turn in before you fly from Kalimdor to the Plaguelands. The quest log holds 40.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5093",
+     "label": "Wowhead Classic quest 5093 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5093",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Call to Arms: The Plaguelands!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5093,
+     "label": "A Call to Arms: The Plaguelands!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5093",
+     "label": "Wowhead Classic quest 5093 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t6029",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Everlook Report"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "The Everlook Report goes to Argent Officer Garush at the Bulwark.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.2,
+      "y": 68.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6029,
+     "label": "The Everlook Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6029",
+     "label": "Wowhead Classic quest 6029 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5096",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Scarlet Diversions"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5096,
+     "label": "Scarlet Diversions"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "professionHooks": [
+    {
+     "profession": "Tailoring",
+     "itemId": 14047,
+     "itemName": "Runecloth",
+     "note": "Humanoids in Western and Eastern Plaguelands drop Runecloth. Keep it for tailoring, Heavy Runecloth Bandages and the Horde capital runecloth reputation turn-ins.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=14047",
+       "label": "Wowhead Classic item 14047 (reference link)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5096",
+     "label": "Wowhead Classic quest 5096 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5096",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Scarlet Diversions"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5096,
+     "label": "Scarlet Diversions"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5096",
+     "label": "Wowhead Classic quest 5096 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5228",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Scourge Cauldrons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5228,
+     "label": "The Scourge Cauldrons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5228",
+     "label": "Wowhead Classic quest 5228 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5228",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Scourge Cauldrons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5228,
+     "label": "The Scourge Cauldrons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5228",
+     "label": "Wowhead Classic quest 5228 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5229",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Target: Felstone Field"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5229,
+     "label": "Target: Felstone Field"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5229",
+     "label": "Wowhead Classic quest 5229 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:c5229",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Target: Felstone Field"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 36.93,
+      "y": 57.41,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13194,
+     "count": 1,
+     "questId": 5229,
+     "objective": 1,
+     "label": "Felstone Field Cauldron Key"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5229",
+     "label": "Wowhead Classic quest 5229 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5229",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Target: Felstone Field"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 37.2,
+      "y": 56.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5229,
+     "label": "Target: Felstone Field"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5229",
+     "label": "Wowhead Classic quest 5229 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5230",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Return to the Bulwark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 37.2,
+      "y": 56.8,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5230,
+     "label": "Return to the Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5230",
+     "label": "Wowhead Classic quest 5230 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5230",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Return to the Bulwark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5230,
+     "label": "Return to the Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5230",
+     "label": "Wowhead Classic quest 5230 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5231",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Target: Dalson's Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5231,
+     "label": "Target: Dalson's Tears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5231",
+     "label": "Wowhead Classic quest 5231 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:c5231",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Target: Dalson's Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 46.11,
+      "y": 52.61,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13195,
+     "count": 1,
+     "questId": 5231,
+     "objective": 1,
+     "label": "Dalson's Tears Cauldron Key"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5231",
+     "label": "Wowhead Classic quest 5231 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5231",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Target: Dalson's Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 46.2,
+      "y": 51.9,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5231,
+     "label": "Target: Dalson's Tears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5231",
+     "label": "Wowhead Classic quest 5231 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5232",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Return to the Bulwark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 46.2,
+      "y": 51.9,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5232,
+     "label": "Return to the Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5232",
+     "label": "Wowhead Classic quest 5232 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5232",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Return to the Bulwark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5232,
+     "label": "Return to the Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5232",
+     "label": "Wowhead Classic quest 5232 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5233",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Target: Writhing Haunt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83,
+      "y": 71.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5233,
+     "label": "Target: Writhing Haunt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5233",
+     "label": "Wowhead Classic quest 5233 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:c5233",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Target: Writhing Haunt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 52.88,
+      "y": 66.08,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13197,
+     "count": 1,
+     "questId": 5233,
+     "objective": 1,
+     "label": "Writhing Haunt Cauldron Key"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5233",
+     "label": "Wowhead Classic quest 5233 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5233",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Target: Writhing Haunt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53,
+      "y": 65.6,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5233,
+     "label": "Target: Writhing Haunt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5233",
+     "label": "Wowhead Classic quest 5233 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5234",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to the Bulwark from the Writhing Haunt cauldron, then stop the cauldron chain."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.02,
+      "y": 65.61,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5234,
+     "label": "Accept Return to the Bulwark from the Writhing Haunt cauldron, then stop the cauldron chain."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5234",
+     "label": "Wowhead Classic quest 5234"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB object 176393 starts 5234, spawn 53.02, 65.61, zone 28, uiMapId 1422; 5234 pre 5233 next 5235"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:western-plaguelands:t5234",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn the Writhing Haunt bottle in to Shadow Priestess Vandis. Do not accept Target: Gahrron's Wither."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.04,
+      "y": 71.91,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5234,
+     "label": "Turn the Writhing Haunt bottle in to Shadow Priestess Vandis. Do not accept Target: Gahrron's Wither."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5234",
+     "label": "Wowhead Classic quest 5234"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB npc 11055 spawn 83.04, 71.91, zone 85, uiMapId 1420"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:western-plaguelands:a4984",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.7,
+      "y": 64.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4984,
+     "label": "The Wildlife Suffers Too"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4984",
+     "label": "Wowhead Classic quest 4984 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:c4984",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 46.5,
+      "y": 44.9,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4984,
+     "objective": 1,
+     "label": "Diseased Wolf"
+    },
+    {
+     "type": "mob",
+     "name": "Diseased Wolf",
+     "npcIds": [
+      1817
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Diseased Wolf (level 53-54) spawns are densest around 46.5, 44.9 (63 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1817
+     ],
+     "name": "Diseased Wolf",
+     "mapId": 1422,
+     "zone": "Western Plaguelands",
+     "center": {
+      "x": 46.5,
+      "y": 44.9
+     },
+     "radius": 14.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4984",
+     "label": "Wowhead Classic quest 4984 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t4984",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.7,
+      "y": 64.7,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4984,
+     "label": "The Wildlife Suffers Too"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4984",
+     "label": "Wowhead Classic quest 4984 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in The Wildlife Suffers Too at Mulgris and do not accept the bear follow-up.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4985",
+       "label": "Wowhead Classic quest 4985"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4984 next 4985; 4984 creature 1817"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:western-plaguelands:a5098",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: All Along the Watchtowers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5098,
+     "label": "All Along the Watchtowers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5098",
+     "label": "Wowhead Classic quest 5098 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

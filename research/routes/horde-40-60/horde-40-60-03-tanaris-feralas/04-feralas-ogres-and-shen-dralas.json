@@ -1,0 +1,1315 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-03-tanaris-feralas",
+ "title": "Feralas ogres and Shen'dralas",
+ "steps": [
+  {
+   "id": "h4060:feralas:c2975",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.6,
+      "y": 29.8,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2975,
+     "objective": 1,
+     "label": "Gordunni Ogre"
+    },
+    {
+     "type": "complete",
+     "questId": 2975,
+     "objective": 2,
+     "label": "Gordunni Ogre Mage"
+    },
+    {
+     "type": "complete",
+     "questId": 2975,
+     "objective": 3,
+     "label": "Gordunni Brute"
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Ogre",
+     "npcIds": [
+      5229
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Ogre Mage",
+     "npcIds": [
+      5237
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Brute",
+     "npcIds": [
+      5232
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gordunni Ogre (level 40-41) spawns are densest around 76.6, 29.8 (17 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Gordunni Ogre Mage (level 41-42) spawns are densest around 76.3, 32.9 (10 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5229
+     ],
+     "name": "Gordunni Ogre",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 76.6,
+      "y": 29.8
+     },
+     "radius": 5.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5237
+     ],
+     "name": "Gordunni Ogre Mage",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 76.3,
+      "y": 32.9
+     },
+     "radius": 4.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5232
+     ],
+     "name": "Gordunni Brute",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 75.7,
+      "y": 34
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2975",
+     "label": "Wowhead Classic quest 2975 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:c2987",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Gordunni Cobalt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 76.9,
+      "y": 29.7,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 9463,
+     "count": 1,
+     "questId": 2987,
+     "objective": 1,
+     "label": "Gordunni Cobalt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2987",
+     "label": "Wowhead Classic quest 2987 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2903",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Battle Plans"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.9,
+      "y": 42.5,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2903,
+     "label": "The Battle Plans"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2903",
+     "label": "Wowhead Classic quest 2903 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a7731",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stinglasher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 42.46,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7731,
+     "label": "Stinglasher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7731",
+     "label": "Wowhead Classic quest 7731 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a7730",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Zukk'ash Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 42.46,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7730,
+     "label": "Zukk'ash Infestation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7730",
+     "label": "Wowhead Classic quest 7730 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t7731",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stinglasher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 42.46,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7731,
+     "label": "Stinglasher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7731",
+     "label": "Wowhead Classic quest 7731 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t7730",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Zukk'ash Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 74.91,
+      "y": 42.46,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7730,
+     "label": "Zukk'ash Infestation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7730",
+     "label": "Wowhead Classic quest 7730 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2975",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.8,
+      "y": 43.6,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2975,
+     "label": "The Ogres of Feralas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2975",
+     "label": "Wowhead Classic quest 2975 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2987",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Gordunni Cobalt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.7,
+      "y": 44.3,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2987,
+     "label": "Gordunni Cobalt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2987",
+     "label": "Wowhead Classic quest 2987 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a2980",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.8,
+      "y": 43.6,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2980,
+     "label": "The Ogres of Feralas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2980",
+     "label": "Wowhead Classic quest 2980 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:c2980",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 61,
+      "y": 67.9,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2980,
+     "objective": 1,
+     "label": "Gordunni Shaman"
+    },
+    {
+     "type": "complete",
+     "questId": 2980,
+     "objective": 2,
+     "label": "Gordunni Warlock"
+    },
+    {
+     "type": "complete",
+     "questId": 2980,
+     "objective": 3,
+     "label": "Gordunni Mauler"
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Shaman",
+     "npcIds": [
+      5236
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Warlock",
+     "npcIds": [
+      5240
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gordunni Mauler",
+     "npcIds": [
+      5234
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gordunni Shaman (level 44-45) spawns are densest around 61.0, 67.9 (15 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Gordunni Warlock (level 43-44) spawns are densest around 59.5, 64.5 (15 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5236
+     ],
+     "name": "Gordunni Shaman",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 61,
+      "y": 67.9
+     },
+     "radius": 3.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5240
+     ],
+     "name": "Gordunni Warlock",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 59.5,
+      "y": 64.5
+     },
+     "radius": 8.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5234
+     ],
+     "name": "Gordunni Mauler",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 60.9,
+      "y": 58
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2980",
+     "label": "Wowhead Classic quest 2980 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t2980",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Ogres of Feralas"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.8,
+      "y": 43.6,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2980,
+     "label": "The Ogres of Feralas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2980",
+     "label": "Wowhead Classic quest 2980 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a7003",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Zapped Giants"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 44.81,
+      "y": 43.42,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7003,
+     "label": "Zapped Giants"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7003",
+     "label": "Wowhead Classic quest 7003 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:a7721",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Fuel for the Zapping"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 44.81,
+      "y": 43.42,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7721,
+     "label": "Fuel for the Zapping"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7721",
+     "label": "Wowhead Classic quest 7721 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t7003",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Zapped Giants"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 44.81,
+      "y": 43.42,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7003,
+     "label": "Zapped Giants"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7003",
+     "label": "Wowhead Classic quest 7003 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:t7721",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Fuel for the Zapping"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 44.81,
+      "y": 43.42,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7721,
+     "label": "Fuel for the Zapping"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7721",
+     "label": "Wowhead Classic quest 7721 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 5,
+   "id": "h4060:shen-dralas:c93404",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Rot and Regret — loot the Vial of Earth Song Water inside Maraudon. There is no map pin for the vial; grab it during this Maraudon clear."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 258296,
+     "count": 1,
+     "questId": 93404,
+     "objective": 1,
+     "label": "Vial of Earth Song Water"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Maraudon",
+    "instanceId": 2100,
+    "levels": [
+     45,
+     52
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:shen-dralas:t93404",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Return to Shen'dralas and turn in: Rot and Regret to Woodwyrd at the Forlorn Gardens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2652,
+      "x": 69.66,
+      "y": 71.78,
+      "zone": "Shen'dralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93404,
+     "label": "Rot and Regret"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:shen-dralas:a93601",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Passing the Blame from Woodwyrd — seek a quilboar of significance at Bristleback Retreat."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2652,
+      "x": 69.66,
+      "y": 71.78,
+      "zone": "Shen'dralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93601,
+     "label": "Passing the Blame"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:shen-dralas:c93601",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Passing the Blame — speak with Kog'thug the Brave at Bristleback Retreat."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2652,
+      "x": 72.73,
+      "y": 31.17,
+      "zone": "Shen'dralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93601,
+     "objective": 1,
+     "label": "Kog'thug the Brave"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:shen-dralas:t93601",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Passing the Blame to Kog'thug the Brave"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2652,
+      "x": 72.73,
+      "y": 31.17,
+      "zone": "Shen'dralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93601,
+     "label": "Passing the Blame"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "tags": {
+    "forever": true
+   },
+   "conditions": [],
+   "minutes": 1,
+   "id": "h4060:shen-dralas:a93604",
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Agamaggan's Blood from Kog'thug the Brave. This is not an instance quest — finish it in the elite area outside Razorfen Downs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2652,
+      "x": 72.73,
+      "y": 31.17,
+      "zone": "Shen'dralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93604,
+     "label": "Agamaggan's Blood"
+    }
+   ],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tip: Agamaggan's Blood is completable in the elite area outside Razorfen Downs, not inside the instance. Do not treat this as a Downs clear.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

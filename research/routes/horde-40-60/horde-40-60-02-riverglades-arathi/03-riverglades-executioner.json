@@ -1,0 +1,2078 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-02-riverglades-arathi",
+ "title": "Riverglades: Death to the Executioner",
+ "steps": [
+  {
+   "id": "h4060:riverglades:c95433",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Death to the Executioner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 30.2,
+      "y": 40.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 269351,
+     "count": 1,
+     "questId": 95433,
+     "objective": 1,
+     "label": "Executioner's Mace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Executioner Morg (level 46) spawns are densest around 30.2, 40.6. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Death to the Executioner",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Executioner Morg is a named elite. Kill his guards first; a group of three should take him even though his smash was tuned down.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256891
+     ],
+     "name": "Executioner Morg",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 30.2,
+      "y": 40.6
+     },
+     "radius": 4.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95433",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Death to the Executioner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95433,
+     "label": "Death to the Executioner"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94733",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Our Ogre Friend"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67,
+      "y": 17.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94733,
+     "label": "Our Ogre Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94734",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Boar's Delight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67,
+      "y": 17.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94734,
+     "label": "A Boar's Delight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94734",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Boar's Delight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 265808,
+     "count": 1,
+     "questId": 94734,
+     "objective": 1,
+     "label": "Sweetberry"
+    },
+    {
+     "type": "collect",
+     "itemId": 265806,
+     "count": 1,
+     "questId": 94734,
+     "objective": 2,
+     "label": "Riverweed"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94734",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Boar's Delight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67,
+      "y": 17.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94734,
+     "label": "A Boar's Delight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94737",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Treat for a Friend"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67,
+      "y": 17.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94737,
+     "label": "A Treat for a Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94737",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Treat for a Friend"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 65.6,
+      "y": 21.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94737,
+     "label": "A Treat for a Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94965",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Bloodmaster's Ring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 65.6,
+      "y": 21.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94965,
+     "label": "Bloodmaster's Ring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94965",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Bloodmaster's Ring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 65.6,
+      "y": 21.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94965,
+     "label": "Bloodmaster's Ring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95063",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Bloodmaster's Ring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 65.6,
+      "y": 21.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95063,
+     "label": "Bloodmaster's Ring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95063",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Bloodmaster's Ring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95063,
+     "label": "Bloodmaster's Ring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95162",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Paletusk Harvesting"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 70.7,
+      "y": 28.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95162,
+     "label": "Paletusk Harvesting"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Buy 10 Chunk of Boar Meat before this farm. Hand them to Na'zok with Drive Them Back. Do not hunt boars for the meat.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB quest 95162 item 769, 10 Chunks of Boar Meat, giver npc 256728"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:riverglades:a95183",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Step One: Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 69.7,
+      "y": 25.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95183,
+     "label": "Step One: Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95162",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Paletusk Harvesting"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 769,
+     "count": 1,
+     "questId": 95162,
+     "objective": 1,
+     "label": "Chunk of Boar Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95183",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Step One: Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 65.2,
+      "y": 25,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 271892,
+     "count": 1,
+     "questId": 95183,
+     "objective": 1,
+     "label": "Good Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95162",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Paletusk Harvesting"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 70.7,
+      "y": 28.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95162,
+     "label": "Paletusk Harvesting"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95183",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Step One: Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67.2,
+      "y": 21.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95183,
+     "label": "Step One: Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96026",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Step Two: More Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67.2,
+      "y": 21.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96026,
+     "label": "Step Two: More Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c96026",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Step Two: More Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "collect",
+     "itemId": 3241,
+     "count": 1,
+     "questId": 96026,
+     "objective": 1,
+     "label": "Heavy Weightstone"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96026",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Step Two: More Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 67.2,
+      "y": 21.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96026,
+     "label": "Step Two: More Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94556",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Jom-jom's Escape"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 73.4,
+      "y": 24.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94556,
+     "label": "Jom-jom's Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94556",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Jom-jom's Escape"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 64.2,
+      "y": 15.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94556,
+     "label": "Jom-jom's Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95118",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Saltwater Savages"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 79.5,
+      "y": 52.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95118,
+     "label": "Saltwater Savages"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95119",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Unfriendly Competition"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 79.5,
+      "y": 52.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95119,
+     "label": "Unfriendly Competition"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95121",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Taste of the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 79,
+      "y": 54.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95121,
+     "label": "A Taste of the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95121",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Taste of the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 73.7,
+      "y": 68.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 268344,
+     "count": 1,
+     "questId": 95121,
+     "objective": 1,
+     "label": "Saltwater Murloc Eye"
+    },
+    {
+     "type": "collect",
+     "itemId": 268345,
+     "count": 1,
+     "questId": 95121,
+     "objective": 2,
+     "label": "Sand Crawler Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Murloc Oracle (level 38-39) spawns are densest around 73.7, 68.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Sand Crawler (level 36-37) spawns are densest around 68.8, 73.1. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255898
+     ],
+     "name": "Murloc Oracle",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 73.7,
+      "y": 68.8
+     },
+     "radius": 7.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255899
+     ],
+     "name": "Murloc Tideskimmer",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 72.4,
+      "y": 67.7
+     },
+     "radius": 7.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256801
+     ],
+     "name": "Murloc Warrior",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 72.5,
+      "y": 69.6
+     },
+     "radius": 7.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255901
+     ],
+     "name": "Sand Crawler",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 68.8,
+      "y": 73.1
+     },
+     "radius": 12.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256807
+     ],
+     "name": "Shore Crawler",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 86.2,
+      "y": 33.9
+     },
+     "radius": 14.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95118",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Saltwater Savages"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 72.5,
+      "y": 69.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95118,
+     "objective": 1,
+     "label": "Murloc Warrior"
+    },
+    {
+     "type": "complete",
+     "questId": 95118,
+     "objective": 2,
+     "label": "Murloc Oracle"
+    },
+    {
+     "type": "mob",
+     "name": "Murloc Warrior",
+     "npcIds": [
+      256801
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Murloc Oracle",
+     "npcIds": [
+      255898
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Murloc Warrior (level 40-41) spawns are densest around 72.5, 69.6 (281 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Murloc Oracle (level 38-39) spawns are densest around 73.7, 68.8 (274 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256801
+     ],
+     "name": "Murloc Warrior",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 72.5,
+      "y": 69.6
+     },
+     "radius": 7.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255898
+     ],
+     "name": "Murloc Oracle",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 73.7,
+      "y": 68.8
+     },
+     "radius": 7.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95120",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: WANTED: Old Rot-Chum"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 78.5,
+      "y": 53.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95120,
+     "label": "WANTED: Old Rot-Chum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95120",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: WANTED: Old Rot-Chum"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 77.5,
+      "y": 72.5,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 268341,
+     "count": 1,
+     "questId": 95120,
+     "objective": 1,
+     "label": "Rot-Covered Harpoon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Old Rot-Chum (level 42) spawns are densest around 77.5, 72.5. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "WANTED: Old Rot-Chum",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Fight Old Rot-Chum at the water's edge with three people, and do not pull extra crocolisks with him.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      257001
+     ],
+     "name": "Old Rot-Chum",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 77.5,
+      "y": 72.5
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95254",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: WANTED: Trapclaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 78.5,
+      "y": 53.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95254,
+     "label": "WANTED: Trapclaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95121",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Taste of the Sea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 79,
+      "y": 54.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95121,
+     "label": "A Taste of the Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95288",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Smuggler's Paradise"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 77.1,
+      "y": 52.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95288,
+     "label": "Smuggler's Paradise"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95254",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: WANTED: Trapclaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 83.3,
+      "y": 51.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 268586,
+     "count": 1,
+     "questId": 95254,
+     "objective": 1,
+     "label": "Trapclaw's Pincer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Trapclaw (level 42) spawns are densest around 83.3, 51.6. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260235
+     ],
+     "name": "Trapclaw",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 83.3,
+      "y": 51.6
+     },
+     "radius": 4.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

@@ -16,10 +16,12 @@ are skipped: QuestieDB has no single location for them. Nothing is invented; re-
 
 Usage: python3 research/gotos/backfill.py [--check]
 """
-import glob, json, math, sys
+import json, math, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "research/tools"))
+from route_files import iter_packs, write_pack  # noqa: E402
 DB = ROOT / "content/questie-db"
 Q = json.loads((DB / "quests.json").read_text())
 N = json.loads((DB / "npcs.json").read_text())
@@ -150,30 +152,15 @@ def pick(cands, prev, nxt, qid):
 
 
 def packs():
-    for f in sorted(glob.glob(str(ROOT / "research/**/*.json"), recursive=True)):
-        try:
-            raw = open(f, encoding="utf-8").read(); d = json.loads(raw)
-        except Exception:
-            continue
-        if isinstance(d, dict) and d.get("schema") == "project-forever/route" and isinstance(d.get("steps"), list):
-            yield Path(f), raw, d
-
-
-def fmt_of(raw, d):
-    for ind in (1, 2, None):
-        for ea in (False, True):
-            s = json.dumps(d, indent=ind, ensure_ascii=ea)
-            for tail in ("\n", ""):
-                if s + tail == raw:
-                    return ind, ea, tail
-    return 1, False, "\n"
+    """Joined route packs: single files and segment folders (research/tools/route_files.py)."""
+    for path, d in iter_packs(ROOT / "research"):
+        yield path, d
 
 
 def main(check=False):
     report = {"source": SRC, "packs": {}}
     changed = False
-    for path, raw, d in packs():
-        fmt = fmt_of(raw, d)
+    for path, d in packs():
         steps = d["steps"]
         names = {}
         for s in steps:
@@ -206,8 +193,7 @@ def main(check=False):
         if filled:
             changed = True
             if not check:
-                ind, ea, tail = fmt
-                path.write_text(json.dumps(d, indent=ind, ensure_ascii=ea) + tail, encoding="utf-8")
+                write_pack(path, d)
     tot = {k: sum(p[k] for p in report["packs"].values()) for k in ("missingBefore", "filled", "missingAfter")}
     report["total"] = tot
     out = ROOT / "research/gotos/report.json"

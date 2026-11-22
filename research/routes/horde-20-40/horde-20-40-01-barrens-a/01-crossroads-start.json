@@ -1,0 +1,1690 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-01-barrens-a",
+ "title": "Crossroads start (Moonglade for druids)",
+ "steps": [
+  {
+   "id": "horde-20-40:handoff-from-1-20",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Start at the Crossroads, level 20. The 1-20 Barrens guide ends by killing Stormsnouts south of Camp Taurajo until level 20 (skip that grind if you are already 20). Your hearth is already set at Innkeeper Boorand Plainswind. You already have the Crossroads, Ratchet, and Camp Taurajo flight paths. The quest log is empty. Chen's Empty Keg (819 and 821), the Samophlange chain (3921, 3922, 3923, and 3924), and Mura Runetotem (3301) are already finished; do not accept them again, and do not accept Miner's Fortune (896). Pick up Serena Bloodfeather from Darsok Swiftdagger. Later at Camp Taurajo, continue Jorn Skyseer's thunder-lizard chain (Enraged Thunder Lizards, then Cry of the Thunderhawk) only if you are not Skyborne — Ishamuhale is already done. Skyborne skips that chain. When Include dungeons is on, turn-ins for 959, 1487, 6981, and 3369 are inserted immediately after this step. Do not run Wailing Caverns, Ragefire Chasm, or the Ruins of Lordaeron again in this pack."
+      },
+      {
+       "t": "XP buffs live on the Profile page: Well Fed, rested, Legacy Well Rested, and Cozy Sleeping Bag. Turn those on there instead of treating them as extra route steps."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.62,
+      "y": 30.9,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-98340",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Tauren druids: pick up The Great Cat Spirit from Turak Runetotem in Thunder Bluff, then fly to Moonglade. Skyborne druids use a different follow-up and skip this chain."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 76.48,
+      "y": 27.22,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98340,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-98340",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Great Cat Spirit to Dendrite Starblaze in Nighthaven, Moonglade.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 56.21,
+      "y": 30.64,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98340,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:accept-98405",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up the next Great Cat Spirit from Dendrite Starblaze."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 56.21,
+      "y": 30.64,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98405,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-98405",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Speak with the Great Cat Spirit in southern Moonglade.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 58.39,
+      "y": 73.52,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98405,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:accept-98342",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up the relic step of The Great Cat Spirit from the Great Cat Spirit."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 58.39,
+      "y": 73.52,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98342,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:complete-98342-fang",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot the Relic of the Fang in the Stormrage Barrow Den.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 72.41,
+      "y": 65.91,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98342,
+     "objective": 1,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:complete-98342-claw",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot the Relic of the Claw in the Stormrage Barrow Den.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 75.24,
+      "y": 67.33,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98342,
+     "objective": 2,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:complete-98342-shadow",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot the Relic of the Silent Shadow in the Stormrage Barrow Den.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 74.42,
+      "y": 65.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98342,
+     "objective": 3,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-98342",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring the three relics back to the Great Cat Spirit.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "zone": "Moonglade",
+      "x": 58.39,
+      "y": 73.52,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98342,
+     "label": "The Great Cat Spirit"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Druid"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:accept-876",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Serena Bloodfeather from Darsok Swiftdagger in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.62,
+      "y": 30.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 876,
+     "label": "Serena Bloodfeather"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Report to Kadrak from Thork in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.5,
+      "y": 30.87,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6541,
+     "label": "Report to Kadrak"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-899",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Consumed by Hatred from Mankrik in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.95,
+      "y": 31.58,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 899,
+     "label": "Consumed by Hatred"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-4921",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Lost in Battle from Mankrik in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.95,
+      "y": 31.58,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4921,
+     "label": "Lost in Battle"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-868",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Egg Hunt from Korran in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.07,
+      "y": 29.63,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 868,
+     "label": "Egg Hunt"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:merchants-favor",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Just west of the Crossroads, stop at Durotar Supply and Logistics. Turn Shipping Label crates in to Dokimi (Inventory Intake, around 50.1, 29.4) and spend Merchant's Favor at Aza'bek (around 49.7, 29.4)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 49.74,
+      "y": 29.35,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Merchant's Favor crates are turned in at this Horde camp outside the Crossroads. The currency is said to buy about 320 recipes no trainer teaches. Both NPC locations are in the quest database; the recipe count is unverified here.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "WarcraftMaps: Classic vs Forever professions (cited by Sentinel)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Forever profession rules worth using on this route: healing potions moved to First Aid; each corpse can be skinned only once; every profession unlocks a Camp at skill 20; crafting to sell to vendors no longer pays.",
+     "sources": [
+      {
+       "url": "https://warcraftmaps.com/guides/classic-vs-forever-professions",
+       "label": "WarcraftMaps: Classic vs Forever professions (cited by Sentinel)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Optional: outdoor rested XP comes from a Leatherworking Camp Tent (skill 20), which adds 5% of a level if you are below that, not from the campfire itself.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard camping: Basic Campfire is Cooking 1; Camp Tent is the rested object"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/guide/camping-overview-unlock-rewards",
+       "label": "Wowhead Camp Tent row: skill 20, 5% of a level"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 256386,
+     "name": "Dokimi",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 50.13,
+      "y": 29.37
+     },
+     "service": "turnIn",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "npc",
+     "npcId": 248198,
+     "name": "Aza'bek",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 49.74,
+      "y": 29.35
+     },
+     "service": "vendor",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-876",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Serena Bloodfeather — Serena's Head."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 39.16,
+      "y": 12.17,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 876,
+     "objective": 1,
+     "label": "Serena Bloodfeather"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-876",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Serena Bloodfeather to Darsok Swiftdagger in The Barrens.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.62,
+      "y": 30.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 876,
+     "label": "Serena Bloodfeather"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Letter to Jin'Zil from Darsok Swiftdagger in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.62,
+      "y": 30.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1060,
+     "label": "Letter to Jin'Zil"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Letter to Jin'Zil — Letter to Jin'Zil.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.62,
+      "y": 30.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1060,
+     "objective": 1,
+     "label": "Letter to Jin'Zil"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-896",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Skip Miner's Fortune. It is accepted, done, and turned in at Ratchet during the 12-20 Samophlange loop, so do not pick it up again."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.35,
+      "y": 38.45,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-896",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Skip Miner's Fortune. The Cats Eye Emerald is collected in the Sludge Fen on the 12-20 route."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 63.35,
+      "y": 38.45,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-891",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Guns of Northwatch from Captain Thalo'thas Brightsun in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.29,
+      "y": 39.03,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 891,
+     "label": "The Guns of Northwatch"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1483",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Ziz Fizziks from Sputtervalve in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.98,
+      "y": 37.22,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1483,
+     "label": "Ziz Fizziks"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1069",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Deepmoss Spider Eggs from Mebok Mizzyrix in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 62.37,
+      "y": 37.62,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1069,
+     "label": "Deepmoss Spider Eggs"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-6543",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Warsong Reports from Kadrak in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.12,
+      "y": 5.42,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6543,
+     "label": "The Warsong Reports"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6543",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Warsong Reports."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.12,
+      "y": 5.42,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6543,
+     "objective": 1,
+     "label": "The Warsong Reports"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Report to Kadrak."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.12,
+      "y": 5.42,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6541,
+     "objective": 1,
+     "label": "Report to Kadrak"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-857",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Tear of the Moons from Feegly the Exiled in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.97,
+      "y": 86.31,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 857,
+     "label": "The Tear of the Moons"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-857",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Tear of the Moons."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.97,
+      "y": 86.31,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 857,
+     "objective": 1,
+     "label": "The Tear of the Moons"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-857",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tear of the Moons to Feegly the Exiled in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 48.97,
+      "y": 86.31,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 857,
+     "label": "The Tear of the Moons"
+    }
+   ],
+   "conditions": [],
+   "section": "Late Barrens",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

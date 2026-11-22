@@ -1,0 +1,1062 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-08-hyjal-to-60",
+ "title": "Azshara and Return to Nathanos",
+ "steps": [
+  {
+   "id": "h4060:eastern-plaguelands:a6147",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Return to Nathanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 75.21,
+      "y": 71.17,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6147,
+     "label": "Return to Nathanos"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6147",
+     "label": "Wowhead Classic quest 6147 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6147",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Return to Nathanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6147,
+     "label": "Return to Nathanos"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6147",
+     "label": "Wowhead Classic quest 6147 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:a6148",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Scarlet Oracle, Demetria"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6148,
+     "label": "The Scarlet Oracle, Demetria"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6148",
+     "label": "Wowhead Classic quest 6148 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:eastern-plaguelands:t6148",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Scarlet Oracle, Demetria"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1423,
+      "x": 22.23,
+      "y": 63.51,
+      "zone": "Eastern Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6148,
+     "label": "The Scarlet Oracle, Demetria"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6148",
+     "label": "Wowhead Classic quest 6148 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:travel-8b9b3b",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: fly to Valormok (Azshara) for the level 55+ Azshara group quests, then on to Sil"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Balanced: fly to Valormok (Azshara) for the level 55+ Azshara group quests, then on to Silithus."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "Balanced: fly to Valormok (Azshara) for the level 55+ Azshara group quests, then on to Silithus."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:a91611",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Deadliest Catch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 21.8,
+      "y": 52.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91611,
+     "label": "Deadliest Catch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:c91611",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Deadliest Catch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 61.1,
+      "y": 52.2,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 238507,
+     "count": 1,
+     "questId": 91611,
+     "objective": 1,
+     "label": "Mammoth Shark Steak"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Mammoth Shark (level 54) spawns are densest around 61.1, 52.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Deadliest Catch",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "The Mammoth Shark is a level 54 elite that fights in the water. Bring three players and keep a heal ready, because a solo pull dies to the thrash before the steak drops.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12125
+     ],
+     "name": "Mammoth Shark",
+     "mapId": 1447,
+     "zone": "Azshara",
+     "center": {
+      "x": 61.1,
+      "y": 52.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:azshara:t91611",
+   "tags": {
+    "forever": true,
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Deadliest Catch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 21.8,
+      "y": 52.1,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91611,
+     "label": "Deadliest Catch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:felwood:a86814",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Blackmaw Counter-Offensive"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.18,
+      "y": 2.68,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86814,
+     "label": "Blackmaw Counter-Offensive"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86814",
+     "label": "Wowhead Classic quest 86814 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t86814",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Blackmaw Counter-Offensive"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 42.28,
+      "y": 20.13,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86814,
+     "label": "Blackmaw Counter-Offensive"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86814",
+     "label": "Wowhead Classic quest 86814 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3562",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Magatha's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 69.85,
+      "y": 30.91,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3562,
+     "label": "Magatha's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3562",
+     "label": "Wowhead Classic quest 3562 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t3562",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Magatha's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.56,
+      "y": 51.42,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3562,
+     "label": "Magatha's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3562",
+     "label": "Wowhead Classic quest 3562 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:mount-hyjal:a3564",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Andron's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 54.81,
+      "y": 76.33,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3564,
+     "label": "Andron's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3564",
+     "label": "Wowhead Classic quest 3564 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t3564",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Andron's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.56,
+      "y": 51.42,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3564,
+     "label": "Andron's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3564",
+     "label": "Wowhead Classic quest 3564 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a6805",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stormers and Rumblers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 79.28,
+      "y": 73.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6805,
+     "label": "Stormers and Rumblers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6805",
+     "label": "Wowhead Classic quest 6805 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a6804",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Poisoned Water"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 79.28,
+      "y": 73.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6804,
+     "label": "Poisoned Water"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6804",
+     "label": "Wowhead Classic quest 6804 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t6805",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stormers and Rumblers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 79.28,
+      "y": 73.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6805,
+     "label": "Stormers and Rumblers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6805",
+     "label": "Wowhead Classic quest 6805 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t6804",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Poisoned Water"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 79.28,
+      "y": 73.7,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6804,
+     "label": "Poisoned Water"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6804",
+     "label": "Wowhead Classic quest 6804 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:a3565",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Xylem's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 29.25,
+      "y": 40.21,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3565,
+     "label": "Xylem's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3565",
+     "label": "Wowhead Classic quest 3565 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t3565",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Xylem's Payment to Jediga"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1447,
+      "x": 22.56,
+      "y": 51.42,
+      "zone": "Azshara",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3565,
+     "label": "Xylem's Payment to Jediga"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3565",
+     "label": "Wowhead Classic quest 3565 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:a2744",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Demon Hunter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 34.29,
+      "y": 66.14,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2744,
+     "label": "The Demon Hunter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2744",
+     "label": "Wowhead Classic quest 2744 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

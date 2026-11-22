@@ -1,0 +1,2204 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-06-plaguelands",
+ "title": "Flame Crest and Winterspring",
+ "steps": [
+  {
+   "id": "h4060:azshara:fly-3f5199",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly Valormok -> Orgrimmar, then to Flame Crest (Burning Steppes)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly Valormok -> Orgrimmar, then to Flame Crest (Burning Steppes)."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:a4726",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Broodling Essence"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4726,
+     "label": "Broodling Essence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13177,
+     "name": "Vahgruk",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.7,
+      "y": 24.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4726",
+     "label": "Wowhead Classic quest 4726 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:c4726",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Broodling Essence"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 72.4,
+      "y": 28.17,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12283,
+     "count": 1,
+     "questId": 4726,
+     "objective": 1,
+     "label": "Broodling Essence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4726",
+     "label": "Wowhead Classic quest 4726 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:a4296",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Tablet of the Seven"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 23.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4296,
+     "label": "Tablet of the Seven"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4296",
+     "label": "Wowhead Classic quest 4296 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:c4296",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Tablet of the Seven"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 54.12,
+      "y": 40.76,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 11470,
+     "count": 1,
+     "questId": 4296,
+     "objective": 1,
+     "label": "Tablet Transcript"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4296",
+     "label": "Wowhead Classic quest 4296 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:t4726",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Broodling Essence"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4726,
+     "label": "Broodling Essence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4726",
+     "label": "Wowhead Classic quest 4726 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:t4296",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Tablet of the Seven"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 23.9,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4296,
+     "label": "Tablet of the Seven"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4296",
+     "label": "Wowhead Classic quest 4296 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:a4808",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Felnok Steelspring"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Felnok Steelspring is in Everlook; this sends you to Winterspring next.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 65.2,
+      "y": 24,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4808,
+     "label": "Felnok Steelspring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4808",
+     "label": "Wowhead Classic quest 4808 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:badlands:a3821",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Dreadmaul Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.36,
+      "y": 48.06,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3821,
+     "label": "Dreadmaul Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3821",
+     "label": "Wowhead Classic quest 3821 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:t3821",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Dreadmaul Rock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 79.95,
+      "y": 45.4,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3821,
+     "label": "Dreadmaul Rock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3821",
+     "label": "Wowhead Classic quest 3821 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:a3822",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Krom'Grul"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "x": 79.95,
+      "y": 45.4,
+      "zone": "Burning Steppes",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3822,
+     "label": "Krom'Grul"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3822",
+     "label": "Wowhead Classic quest 3822 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:badlands:t3822",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Krom'Grul"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1418,
+      "x": 3.36,
+      "y": 48.06,
+      "zone": "Badlands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3822,
+     "label": "Krom'Grul"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3822",
+     "label": "Wowhead Classic quest 3822 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:burning-steppes:fly-b018aa",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly Flame Crest -> Orgrimmar, then on to Everlook (Winterspring)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1428,
+      "zone": "Burning Steppes",
+      "x": 65.69,
+      "y": 24.22,
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly Flame Crest -> Orgrimmar, then on to Everlook (Winterspring)."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:t4808",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Felnok Steelspring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.6,
+      "y": 38.6,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4808,
+     "label": "Felnok Steelspring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Everlook is the hub; the yeti, owl and Winterfall quests are around the hot springs east and south of town.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Turn in Felnok Steelspring at 61.63, 38.61 and decline the horn quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4808",
+       "label": "Wowhead Classic quest 4808"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4808 pre 4726, end npc 10468 spawn 61.63, 38.61, map zone 618"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11139,
+     "name": "Yugrek",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 60.5,
+      "y": 36.3
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4808",
+     "label": "Wowhead Classic quest 4808 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:home-everlook",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Everlook with Innkeeper Vizzie."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61.36,
+      "y": 38.83,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Everlook",
+     "place": "Everlook"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11118,
+     "name": "Innkeeper Vizzie",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 61.36,
+      "y": 38.83
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:fp-everlook",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Everlook flight path from Yugrek."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 60.47,
+      "y": 36.3,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Everlook flight path",
+     "place": "Everlook"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11139,
+     "name": "Yugrek",
+     "at": {
+      "mapId": 1452,
+      "zone": "Winterspring",
+      "x": 60.47,
+      "y": 36.3
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a6029",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Everlook Report"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.4,
+      "y": 39,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6029,
+     "label": "The Everlook Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "professionHooks": [
+    {
+     "profession": "Herbalism",
+     "itemId": 13465,
+     "itemName": "Mountain Silversage",
+     "note": "Winterspring has the most Mountain Silversage spawns in the game data. Herbalists should gather it while questing here.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=13465",
+       "label": "Wowhead Classic item 13465 (reference link)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6029",
+     "label": "Wowhead Classic quest 6029 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a6030",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Duke Nicholas Zverenhoff"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.4,
+      "y": 39,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6030,
+     "label": "Duke Nicholas Zverenhoff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6030",
+     "label": "Wowhead Classic quest 6030 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a6603",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Trouble in Winterspring!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 60.7,
+      "y": 38.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6603,
+     "label": "Trouble in Winterspring!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6603",
+     "label": "Wowhead Classic quest 6603 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a5054",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Ursius of the Shardtooth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.9,
+      "y": 38.4,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5054,
+     "label": "Ursius of the Shardtooth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5054",
+     "label": "Wowhead Classic quest 5054 (reference link)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ]
+  },
+  {
+   "id": "h4060:winterspring:t980",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The New Springs"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "The New Springs from Un'Goro is handed in to Donova Snowden at the hot springs.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 980,
+     "label": "The New Springs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=980",
+     "label": "Wowhead Classic quest 980 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:t6603",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Trouble in Winterspring!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6603,
+     "label": "Trouble in Winterspring!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6603",
+     "label": "Wowhead Classic quest 6603 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a4842",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Strange Sources"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4842,
+     "label": "Strange Sources"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4842",
+     "label": "Wowhead Classic quest 4842 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a5082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Threat of the Winterfall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5082,
+     "label": "Threat of the Winterfall"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5082",
+     "label": "Wowhead Classic quest 5082 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:c5082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Threat of the Winterfall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 34.7,
+      "y": 37,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5082,
+     "objective": 1,
+     "label": "Winterfall Pathfinder"
+    },
+    {
+     "type": "complete",
+     "questId": 5082,
+     "objective": 2,
+     "label": "Winterfall Den Watcher"
+    },
+    {
+     "type": "complete",
+     "questId": 5082,
+     "objective": 3,
+     "label": "Winterfall Totemic"
+    },
+    {
+     "type": "mob",
+     "name": "Winterfall Pathfinder",
+     "npcIds": [
+      7442
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Winterfall Den Watcher",
+     "npcIds": [
+      7440
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Winterfall Totemic",
+     "npcIds": [
+      7441
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Winterfall Pathfinder (level 53-54) spawns are densest around 34.7, 37.0 (19 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Winterfall Den Watcher (level 55-56) spawns are densest around 66.0, 35.0 (15 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7442
+     ],
+     "name": "Winterfall Pathfinder",
+     "mapId": 1452,
+     "zone": "Winterspring",
+     "center": {
+      "x": 34.7,
+      "y": 37
+     },
+     "radius": 9.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7440
+     ],
+     "name": "Winterfall Den Watcher",
+     "mapId": 1452,
+     "zone": "Winterspring",
+     "center": {
+      "x": 66,
+      "y": 35
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7441
+     ],
+     "name": "Winterfall Totemic",
+     "mapId": 1452,
+     "zone": "Winterspring",
+     "center": {
+      "x": 39.8,
+      "y": 42.7
+     },
+     "radius": 8.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5082",
+     "label": "Wowhead Classic quest 5082 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:c5054",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Ursius of the Shardtooth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 64,
+      "y": 24.1,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5054,
+     "objective": 1,
+     "label": "Ursius"
+    },
+    {
+     "type": "mob",
+     "name": "Ursius",
+     "npcIds": [
+      10806
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Ursius (level 56) spawns are densest around 64.0, 24.1 (1 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "elite": [
+    {
+     "name": "Ursius",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Ursius is a named shardtooth. Clear the bears around the pull, then open with a cooldown so the bleed does not stack on you alone.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        },
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+         "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Tank Ursius with your back to a wall, face him off the group, and wait for a heal before you push damage.",
+       "roles": [
+        "tank"
+       ],
+       "classes": [
+        "Warrior",
+        "Paladin",
+        "Druid"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        },
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+         "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=5054",
+       "label": "Wowhead Classic quest 5054 (reference link)"
+      }
+     ],
+     "verified": true,
+     "npcId": 10806
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10806
+     ],
+     "name": "Ursius",
+     "mapId": 1452,
+     "zone": "Winterspring",
+     "center": {
+      "x": 64,
+      "y": 24.1
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5054",
+     "label": "Wowhead Classic quest 5054 (reference link)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ]
+  },
+  {
+   "id": "h4060:winterspring:c4842",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Strange Sources"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 59.8,
+      "y": 74.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4842",
+     "label": "Wowhead Classic quest 4842 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:t5082",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Threat of the Winterfall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5082,
+     "label": "Threat of the Winterfall"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5082",
+     "label": "Wowhead Classic quest 5082 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:t4842",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Strange Sources"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4842,
+     "label": "Strange Sources"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4842",
+     "label": "Wowhead Classic quest 4842 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:a5083",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Winterfall Firewater"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Starts from a Winterfall Firewater drop; keep the first one.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 32.41,
+      "y": 37.65,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5083,
+     "label": "Winterfall Firewater"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5083",
+     "label": "Wowhead Classic quest 5083 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:winterspring:t5083",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Winterfall Firewater"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 31.3,
+      "y": 45.2,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5083,
+     "label": "Winterfall Firewater"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5083",
+     "label": "Wowhead Classic quest 5083 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Winterfall Firewater at Donova and do not accept Falling to Corruption.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5084",
+       "label": "Wowhead Classic quest 5084"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 5083 next 5084; 5084 pre 5083"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:winterspring:t5054",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Ursius of the Shardtooth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.9,
+      "y": 38.4,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5054,
+     "label": "Ursius of the Shardtooth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5054",
+     "label": "Wowhead Classic quest 5054 (reference link)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ]
+  },
+  {
+   "id": "h4060:winterspring:a5055",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Brumeran of the Chillwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.9,
+      "y": 38.4,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5055,
+     "label": "Brumeran of the Chillwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5055",
+     "label": "Wowhead Classic quest 5055 (reference link)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ]
+  },
+  {
+   "id": "h4060:winterspring:c5055",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Brumeran of the Chillwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 62.5,
+      "y": 57.9,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5055,
+     "objective": 1,
+     "label": "Brumeran"
+    },
+    {
+     "type": "mob",
+     "name": "Brumeran",
+     "npcIds": [
+      10807
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Brumeran (level 58) spawns are densest around 62.5, 57.9 (1 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "elite": [
+    {
+     "name": "Brumeran",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Brumeran is a chillwind chimaera. Pull him with no adds and step out of the frost breath instead of standing in it.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        },
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+         "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Point Brumeran's breath away from the group and call it so the healer can cover the spike.",
+       "roles": [
+        "tank"
+       ],
+       "classes": [
+        "Warrior",
+        "Paladin",
+        "Druid"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+         "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+        },
+        {
+         "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+         "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=5055",
+       "label": "Wowhead Classic quest 5055 (reference link)"
+      }
+     ],
+     "verified": true,
+     "npcId": 10807
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10807
+     ],
+     "name": "Brumeran",
+     "mapId": 1452,
+     "zone": "Winterspring",
+     "center": {
+      "x": 62.5,
+      "y": 57.9
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5055",
+     "label": "Wowhead Classic quest 5055 (reference link)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Hunter"
+   ]
+  },
+  {
+   "id": "h4060:winterspring:t5055",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Brumeran of the Chillwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.9,
+      "y": 38.4,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5055,
+     "label": "Brumeran of the Chillwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5055",
+     "label": "Wowhead Classic quest 5055 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Brumeran of the Chillwind and do not accept Shy-Rotam.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5056",
+       "label": "Wowhead Classic quest 5056"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 5055 next 5056; 5056 pre 5055"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "classes": [
+    "Hunter"
+   ]
+  }
+ ]
+}

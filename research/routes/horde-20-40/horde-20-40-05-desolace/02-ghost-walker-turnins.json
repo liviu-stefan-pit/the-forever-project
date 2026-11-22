@@ -1,0 +1,1595 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-05-desolace",
+ "title": "Ghost Walker Post turn-ins",
+ "steps": [
+  {
+   "id": "horde-20-40:turnin-1481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Corrupter to Maurin Bonesplitter in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1481,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:accept-1482",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Corrupter from Maurin Bonesplitter in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1482,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-1482",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Corrupter — Oracle Crystal.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 33.89,
+      "y": 10.15,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1482,
+     "objective": 1,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-6143",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Other Fish to Fry — Slitherblade Myrmidon, Slitherblade Naga, Slitherblade Sorceress."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 31.64,
+      "y": 14.54,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6143,
+     "objective": 1,
+     "label": "Other Fish to Fry"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1482",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Corrupter to Maurin Bonesplitter in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1482,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:accept-1484",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Corrupter from Maurin Bonesplitter in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1484,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4498,
+     "name": "Maurin Bonesplitter",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:turnin-1484",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Corrupter to Takata Steelblade in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1484,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5641,
+     "name": "Takata Steelblade",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:accept-1488",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Corrupter from Takata Steelblade in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1488,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5641,
+     "name": "Takata Steelblade",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-1488",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Corrupter — Lord Azrethoc, Jugkar Grim'rod.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.95,
+      "y": 75.74,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1488,
+     "objective": 1,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1488",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Corrupter to Takata Steelblade in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1488,
+     "label": "The Corrupter"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5641,
+     "name": "Takata Steelblade",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:turnin-1434",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Befouled by Satyr to Takata Steelblade in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1434,
+     "label": "Befouled by Satyr"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1435",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Burning of Spirits to Maurin Bonesplitter in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.25,
+      "y": 53.44,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1435,
+     "label": "The Burning of Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1436",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Alliance Relations from Takata Steelblade in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 52.57,
+      "y": 54.39,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1436,
+     "label": "Alliance Relations"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1365",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Khan Dez'hepah from Felgur Twocuts in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.19,
+      "y": 59.57,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1365,
+     "label": "Khan Dez'hepah"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-93225",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Carved Centaur Totems from Gurda Wildmane in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.29,
+      "y": 59.68,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93225,
+     "label": "Carved Centaur Totems"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 93225, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-1368",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Gelkis Alliance from Gurda Wildmane in Desolace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.29,
+      "y": 59.68,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1368,
+     "label": "Gelkis Alliance"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1365",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Khan Dez'hepah — Khan Dez'hepah's Head."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 73.74,
+      "y": 45.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1365,
+     "objective": 1,
+     "label": "Khan Dez'hepah"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1365",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Khan Dez'hepah to Felgur Twocuts in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.19,
+      "y": 59.57,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1365,
+     "label": "Khan Dez'hepah"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1366",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "After Khan Dez'hepah, loot 15 centaur ears and 5 carved totems in that village, then turn both in to Felgur and Gurda on the same Ghost Walker stop."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.19,
+      "y": 59.57,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1366,
+     "label": "Centaur Bounty"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.curseforge.com/wow/addons/openxp",
+     "label": "OpenXP id order: 1365 then 1366 at Kolkar, one return to Felgur"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 1366 pre 1365; 93225 has no pre"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-1366",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Centaur Bounty — Centaur Ear."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 69.13,
+      "y": 46.46,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1366,
+     "objective": 1,
+     "label": "Centaur Bounty"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-93225",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Finish the work for Carved Centaur Totems — Carved Centaur Totem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 69.13,
+      "y": 46.46,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93225,
+     "objective": 1,
+     "label": "Carved Centaur Totems"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever-new quest 93225. Coordinates come from the quest database; leave this unverified until it is played.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-93225",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Carved Centaur Totems to Gurda Wildmane in Desolace.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 56.29,
+      "y": 59.68,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93225,
+     "label": "Carved Centaur Totems"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-5088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Arikara from Magatha Grimtotem in Thunder Bluff."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "zone": "Thunder Bluff",
+      "x": 69.85,
+      "y": 30.91,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5088,
+     "label": "Arikara"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-5088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish objective 1 for Arikara around Sacred Fire of Life in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 38.06,
+      "y": 35.37,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5088,
+     "objective": 1,
+     "label": "Arikara"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-5088",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Arikara to Motega Firemane in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 21.54,
+      "y": 32.35,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5088,
+     "label": "Arikara"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Regthar Deathgate from Krusk in Hillsbrad Foothills."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1424,
+      "zone": "Hillsbrad Foothills",
+      "x": 63.24,
+      "y": 20.66,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1361,
+     "label": "Regthar Deathgate"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Regthar Deathgate."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 45.34,
+      "y": 28.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1361,
+     "objective": 1,
+     "label": "Regthar Deathgate"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Regthar Deathgate to Regthar Deathgate in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 45.34,
+      "y": 28.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1361,
+     "label": "Regthar Deathgate"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Kolkar of Desolace from Regthar Deathgate in The Barrens."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 45.34,
+      "y": 28.41,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1362,
+     "label": "The Kolkar of Desolace"
+    }
+   ],
+   "conditions": [],
+   "section": "Desolace",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

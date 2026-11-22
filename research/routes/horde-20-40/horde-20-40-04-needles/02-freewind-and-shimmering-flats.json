@@ -1,0 +1,1444 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-04-needles",
+ "title": "Freewind Post and the Shimmering Flats",
+ "steps": [
+  {
+   "id": "horde-20-40:turnin-1531",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call of Air to Prate Cloudseer in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 53.54,
+      "y": 42.65,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1531,
+     "label": "Call of Air"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "cls": "Shaman"
+      },
+      {
+       "race": "Tauren",
+       "not": true
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-1532",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call of Air to Prate Cloudseer in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 53.54,
+      "y": 42.65,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1532,
+     "label": "Call of Air"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Tauren",
+       "cls": "Shaman"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:accept-79360",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "With dungeons on, pick up Elemental Aid from Prate Cloudseer. It requires defeating Charlga Razorflank in Razorfen Kraul, so it stays off the solo route."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 53.54,
+      "y": 42.65,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 79360,
+     "label": "Elemental Aid"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ],
+   "dungeon": {
+    "name": "Razorfen Kraul",
+    "instanceId": 491,
+    "levels": [
+     32,
+     42
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:complete-79360",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "With dungeons on, enter Razorfen Kraul in the southern Barrens and take the Tattered Note from Charlga Razorflank.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 42.9,
+      "y": 90.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 79360,
+     "objective": 1,
+     "label": "Elemental Aid"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 30,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ],
+   "dungeon": {
+    "name": "Razorfen Kraul",
+    "instanceId": 491,
+    "levels": [
+     32,
+     42
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-79360",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Elemental Aid to Rau Cliffrunner in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 46.14,
+      "y": 51.71,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 79360,
+     "label": "Elemental Aid"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ],
+   "dungeon": {
+    "name": "Razorfen Kraul",
+    "instanceId": 491,
+    "levels": [
+     32,
+     42
+    ]
+   }
+  },
+  {
+   "id": "horde-20-40:turnin-1146",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Swarm Grows to Moktar Krin in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 67.58,
+      "y": 63.94,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1146,
+     "label": "The Swarm Grows"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1147",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Swarm Grows from Moktar Krin in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 67.58,
+      "y": 63.94,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1147,
+     "label": "The Swarm Grows"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-4881",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill a Galak Messenger and use the Assassination Note to start Assassination Plot."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 39.43,
+      "y": 33.1,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4881,
+     "label": "Assassination Plot"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 10617,
+     "name": "Galak Messenger",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 39.43,
+      "y": 33.1
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-4881",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Assassination Plot — warn Kanati Greycloud.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 21.25,
+      "y": 32.06,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4881,
+     "objective": 1,
+     "label": "Assassination Plot"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 3,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-5151",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hypercapacitor Gizmo from Wizlo Bearingshiner in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 21.43,
+      "y": 32.55,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5151,
+     "label": "Hypercapacitor Gizmo"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1148",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill silithids south of the Swarm turn-in and use the Cracked Silithid Carapace to start Parts of the Swarm. Collect a Silithid Heart, 5 Silithid Talons, and 3 Intact Silithid Carapaces."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 71.75,
+      "y": 86.01,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1148,
+     "label": "Parts of the Swarm"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4130,
+     "name": "Silithid Searcher",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 71.75,
+      "y": 86.01
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-1148",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Parts of the Swarm.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 71.75,
+      "y": 86.01,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1148,
+     "objective": 1,
+     "label": "Parts of the Swarm"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1147",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Swarm Grows — Silithid Searcher, Silithid Hive Drone, Silithid Invader."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 69.77,
+      "y": 83.34,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1147,
+     "objective": 1,
+     "label": "The Swarm Grows"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1148",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Parts of the Swarm to Korran at the Crossroads.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.07,
+      "y": 29.63,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1148,
+     "label": "Parts of the Swarm"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3428,
+     "name": "Korran",
+     "at": {
+      "mapId": 1413,
+      "zone": "The Barrens",
+      "x": 51.07,
+      "y": 29.63
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:turnin-1147",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Swarm Grows to Moktar Krin in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 67.58,
+      "y": 63.94,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1147,
+     "label": "The Swarm Grows"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Rocket Car Parts from Kravel Koalbeard in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1110,
+     "label": "Rocket Car Parts"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1111",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Wharfmaster Dizzywig from Kravel Koalbeard in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1111,
+     "label": "Wharfmaster Dizzywig"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1104",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Salt Flat Venom from Fizzle Brassbolts in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.06,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1104,
+     "label": "Salt Flat Venom"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1105",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hardened Shells from Wizzle Brassbolts in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.14,
+      "y": 77.12,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1105,
+     "label": "Hardened Shells"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Rocket Car Parts — Rocket Car Parts."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.46,
+      "y": 71.3,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1110,
+     "objective": 1,
+     "label": "Rocket Car Parts"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1104",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Salt Flat Venom — Salty Scorpid Venom."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.88,
+      "y": 77.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1104,
+     "objective": 1,
+     "label": "Salt Flat Venom"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1111",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Wharfmaster Dizzywig — Kravel's Parts Order.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1111,
+     "objective": 1,
+     "label": "Wharfmaster Dizzywig"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1105",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Hardened Shells — Hardened Tortoise Shell."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 76.44,
+      "y": 58.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1105,
+     "objective": 1,
+     "label": "Hardened Shells"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1104",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Salt Flat Venom to Fizzle Brassbolts in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.06,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1104,
+     "label": "Salt Flat Venom"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1105",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hardened Shells to Wizzle Brassbolts in Thousand Needles.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.14,
+      "y": 77.12,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1105,
+     "label": "Hardened Shells"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1107",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Encrusted Tail Fins from Wizzle Brassbolts in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.14,
+      "y": 77.12,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1107,
+     "label": "Encrusted Tail Fins"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Martek the Exiled from Fizzle Brassbolts in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 78.06,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1106,
+     "label": "Martek the Exiled"
+    }
+   ],
+   "conditions": [],
+   "section": "Thousand Needles and the Shimmering Flats",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

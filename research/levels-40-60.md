@@ -10,7 +10,7 @@ The default route is fully solo to 60. Dungeons appear only when the existing **
 
 Outdoor elites and group quests use the existing conventions: `elite[].groupSize` plus elite tips. Skippable extras sit on `routes: ["balanced"]` and/or `tags.optional` (profile **Show optional**). Class-soloable exceptions use `classes` / `filter`. They are not default-required.
 
-Authoring: edit the catalog monolith `research/catalog/horde-40-60.route.json`, then split-pack. Do not re-run `research/horde-40-60/tools/build.py`.
+Authoring: edit the segment files in `research/routes/horde-40-60/<pack>/` (see [docs/ROUTE_FILES.md](../docs/ROUTE_FILES.md)). The catalog monolith and `split-pack` are gone. Do not re-run `research/horde-40-60/tools/build.py`.
 
 Dungeon steps are authored only in `research/dungeons/` and spliced from `research/dungeons/integration-plan.json` `afterStepId` anchors. Never paste instance quests into leveling packs.
 

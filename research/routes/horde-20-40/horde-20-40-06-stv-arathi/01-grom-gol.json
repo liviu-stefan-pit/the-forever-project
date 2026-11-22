@@ -1,0 +1,1935 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-06-stv-arathi",
+ "title": "Grom'gol and Nesingwary",
+ "steps": [
+  {
+   "id": "horde-20-40:to-stv",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the Orgrimmar zeppelin to Grom'gol. Get the flight path, visit Nesingwary north of the camp, then work the jungle loops and the Booty Bay boat from Ratchet if you still need Goblin Sponsorship."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.54,
+      "y": 29.35,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 12,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:fp-1387",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Stranglethorn Vale flight path from Thysta."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.54,
+      "y": 29.35,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Stranglethorn Vale flight path",
+     "place": "Stranglethorn Vale"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1387,
+     "name": "Thysta",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.54,
+      "y": 29.35
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hunt for Yenniku from Nimboya when you land at Grom'gol, before the road to Booty Bay. The tusks come from the same Bloodscalps as the ears."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.16,
+      "y": 27.72,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 581,
+     "label": "Hunt for Yenniku"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=581",
+     "label": "Wowhead Classic quest 581"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 581 no pre, next 582, start npc Nimboya"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-568",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Defense of Grom'gol from Commander Aggro'gosh in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.17,
+      "y": 28.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 568,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:fp-2858",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Stranglethorn Vale flight path from Gringer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.87,
+      "y": 77.1,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Stranglethorn Vale flight path",
+     "place": "Stranglethorn Vale"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2858,
+     "name": "Gringer",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.87,
+      "y": 77.1
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Singing Blue Shards from Crank Fizzlebub in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.12,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 605,
+     "label": "Singing Blue Shards"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-189",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Bloodscalp Ears from Kebok in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 189,
+     "label": "Bloodscalp Ears"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-213",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hostile Takeover from Kebok in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 213,
+     "label": "Hostile Takeover"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-201",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Investigate the Camp from Krazek in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 201,
+     "label": "Investigate the Camp"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:hearth-5814",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Stranglethorn Vale with Innkeeper Thulbek."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 31.49,
+      "y": 29.75,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Stranglethorn Vale",
+     "place": "Stranglethorn Vale"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5814,
+     "name": "Innkeeper Thulbek",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 31.49,
+      "y": 29.75
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Singing Blue Shards — Singing Crystal Shard."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 34.29,
+      "y": 6.11,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 605,
+     "objective": 1,
+     "label": "Singing Blue Shards"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Singing Blue Shards to Crank Fizzlebub in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.12,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 605,
+     "label": "Singing Blue Shards"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-189",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Bloodscalp Ears — Bloodscalp Ear."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.26,
+      "y": 17.17,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 189,
+     "objective": 1,
+     "label": "Bloodscalp Ears"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-596",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bloody Bone Necklaces from Kin'weelay and collect them with the Bloodscalp ears and tusks. Do not save the necklaces for a second pass."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.27,
+      "y": 27.71,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 596,
+     "label": "Bloody Bone Necklaces"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=596",
+     "label": "Wowhead Classic quest 596"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 596 no pre, item 3915, same zone as 189 and 581"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-95141",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Report to Rog'mar from Commander Aggro'gosh in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.17,
+      "y": 28.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95141,
+     "label": "Report to Rog'mar"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 95141, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-97453",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Weed Whacked from Gemmil in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.78,
+      "y": 28.43,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97453,
+     "label": "Weed Whacked"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 97453, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-596",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Bloody Bone Necklaces — Bloody Bone Necklace."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.26,
+      "y": 17.17,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 596,
+     "objective": 1,
+     "label": "Bloody Bone Necklaces"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-213",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Hostile Takeover — Tumbled Crystal."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 42.91,
+      "y": 19.11,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 213,
+     "objective": 1,
+     "label": "Hostile Takeover"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-568",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Defense of Grom'gol — Lashtail Raptor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 35.05,
+      "y": 23.35,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 568,
+     "objective": 1,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-568",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Defense of Grom'gol to Commander Aggro'gosh in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.17,
+      "y": 28.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 568,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-569",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Defense of Grom'gol from Commander Aggro'gosh in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.17,
+      "y": 28.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 569,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-569",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Defense of Grom'gol — Mosh'Ogg Brute, Mosh'Ogg Witch Doctor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 37.03,
+      "y": 30.98,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 569,
+     "objective": 1,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-201",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "After you accept Investigate the Camp from Krazek, go to Nesingwary's camp. Credit is the visit. Barnil Stonepot stands at 35.66, 10.53."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 35.66,
+      "y": 10.53,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 201,
+     "objective": 1,
+     "label": "Investigate the Camp"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=201",
+     "label": "Wowhead Classic quest 201"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 201 exploration, npc 716 spawn 35.66, 10.53, map 1434"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-583",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept and turn in Welcome to the Jungle at the camp after the Bloodscalp tusks. Do not open the circuit with that visit and then leave."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 35.66,
+      "y": 10.53,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 583,
+     "label": "Welcome to the Jungle"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=583",
+     "label": "Wowhead Classic quest 583"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB npc 716 Barnil Stonepot spawn 35.66, 10.53"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Hunt for Yenniku — Bloodscalp Tusk."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.26,
+      "y": 17.17,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 581,
+     "objective": 1,
+     "label": "Hunt for Yenniku"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-583",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Welcome to the Jungle to Hemet Nesingwary in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 35.66,
+      "y": 10.81,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 583,
+     "label": "Welcome to the Jungle"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-189",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bloodscalp Ears to Kebok in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 189,
+     "label": "Bloodscalp Ears"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-213",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hostile Takeover to Kebok in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27,
+      "y": 77.13,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 213,
+     "label": "Hostile Takeover"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-201",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn Investigate the Camp in to Krazek only after the camp visit. He is at 26.95, 77.21, the same room you accepted it in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 201,
+     "label": "Investigate the Camp"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=201",
+     "label": "Wowhead Classic quest 201"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB npc 773 Krazek spawn 26.95, 77.21"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-569",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Defense of Grom'gol to Commander Aggro'gosh in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.17,
+      "y": 28.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 569,
+     "label": "The Defense of Grom'gol"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-581",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hunt for Yenniku to Nimboya in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.16,
+      "y": 27.72,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 581,
+     "label": "Hunt for Yenniku"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-596",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn Bloody Bone Necklaces in to Kin'weelay on the same Grom'gol stop as Hunt for Yenniku."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.27,
+      "y": 27.71,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 596,
+     "label": "Bloody Bone Necklaces"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=596",
+     "label": "Wowhead Classic quest 596"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 596 end npc Kin'weelay at Grom'gol"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-582",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Headhunting from Nimboya in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.16,
+      "y": 27.72,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 582,
+     "label": "Headhunting"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (second circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Headhunting is the Skullsplitter camp on the second circuit. Leave Bloodscalp Clan Heads and Speaking with Nezzliok for the 40+ file. They need 582 and are level 40 and 41.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=582",
+       "label": "Wowhead Classic quest 582"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 582 pre 581, next 584 level 41, 585 pre 584 level 40"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:forever-extras-stv-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Forever-new quests in Stranglethorn Vale (ids 90000 and above, from the quest database). They are listed separately from the Classic route and every step is unverified."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-97328",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Anything of Value from Thoroughly Scavenged Supplies in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 31.5,
+      "y": 12.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97328,
+     "label": "Anything of Value"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 97328, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-97328",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Finish the work for Anything of Value — Stolen Shipment."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 31.5,
+      "y": 12.86,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97328,
+     "objective": 1,
+     "label": "Anything of Value"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever-new quest 97328. Coordinates come from the quest database; leave this unverified until it is played.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-97328",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Anything of Value to Wharfmaster Lozgil in Stranglethorn Vale.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.35,
+      "y": 73.56,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97328,
+     "label": "Anything of Value"
+    }
+   ],
+   "conditions": [],
+   "section": "Stranglethorn Vale (first circuit)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

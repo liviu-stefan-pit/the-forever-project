@@ -9,7 +9,7 @@ Notes only. Official credit rows live in the repository-root CREDITS.md table. N
 - Pin: release v1.1.3, commit 8b8df2dc12a34e2eb82bc7105b40405dce1c01f7
 - Licence: GPL-3.0 (upstream LICENSE.md); the project name and logo are not used as branding
 - Used for: Horde and neutral quest ids, names, levels, prerequisites, givers, turn-ins, objectives, NPC and object spawn coordinates (zone %), and the forever / foreverConfidence flags in content/questie-db/ on main
-- Files written from those facts: research/levels-20-40.route-v2.json, research/levels-20-40.md
+- Files written from those facts: research/levels-20-40.route-v2.json (now research/routes/horde-20-40/), research/levels-20-40.md
 
 ## Vulkan dungeon research
 

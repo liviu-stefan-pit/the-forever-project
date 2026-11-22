@@ -1,0 +1,1787 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-06-stv-arathi",
+ "title": "Arathi Highlands (Hammerfall)",
+ "steps": [
+  {
+   "id": "horde-20-40:to-arathi",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "From Tarren Mill, run east through Thoradin's Wall to Hammerfall, or fly if you already have the path. Pickup The Hammer May Fall should already be in your log."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.02,
+      "y": 32.7,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:fp-2851",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Arathi Highlands flight path from Urda."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.02,
+      "y": 32.7,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Arathi Highlands flight path",
+     "place": "Arathi Highlands"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 2851,
+     "name": "Urda",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.02,
+      "y": 32.7
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-655",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Hammerfall from Gor'mul in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 72.64,
+      "y": 33.93,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 655,
+     "label": "Hammerfall"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:hearth-9501",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Arathi Highlands with Innkeeper Adegwa."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.84,
+      "y": 32.46,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Arathi Highlands",
+     "place": "Arathi Highlands"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 9501,
+     "name": "Innkeeper Adegwa",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.84,
+      "y": 32.46
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-677",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Call to Arms from Drum Fel in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.24,
+      "y": 33.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 677,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-671",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Foul Magics from Tor'gan with the first Call to Arms. Collect the Bloodstone Amulets before you turn the Witherbark kills in at Hammerfall."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 671,
+     "label": "Foul Magics"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=671",
+     "label": "Wowhead Classic quest 671"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 671 no pre, next 673, item 4495"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:to-deathstalker-13155",
+   "tags": {
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "With dungeons on, meet the Deathstalker Agent on the hill above the Dragonmaw camp in Wetlands. This is the Dragonmaw Rumors handoff outside Excavation Site, not a solo overworld quest."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1437,
+      "zone": "Wetlands",
+      "x": 51.4,
+      "y": 59.2,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeon": {
+    "name": "Excavation Site: Wetlands",
+    "levels": [
+     24,
+     29
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 13155,
+     "name": "Deathstalker Agent",
+     "at": {
+      "mapId": 1437,
+      "zone": "Wetlands",
+      "x": 51.4,
+      "y": 59.2
+     },
+     "service": "questGiver",
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Excavation_Site:_Wetlands",
+       "label": "Deathstalker Agent has no Questie spawn; Wetlands 51.4, 59.2 is the reported hill above the Dragonmaw camp"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://warcraft.wiki.gg/wiki/Excavation_Site:_Wetlands",
+     "label": "Deathstalker Agent has no Questie spawn; Wetlands 51.4, 59.2 is the reported hill above the Dragonmaw camp"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-97539",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Silky Sutures from Doctor Gregory Victor in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 73.41,
+      "y": 36.89,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97539,
+     "label": "Silky Sutures"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 97539, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-95143",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Finding Tan'jani from Tor'gan in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95143,
+     "label": "Finding Tan'jani"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 95143, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:complete-671",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Foul Magics — Bloodstone Amulet."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 32.38,
+      "y": 28.94,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 671,
+     "objective": 1,
+     "label": "Foul Magics"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-671",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Foul Magics to Tor'gan in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 671,
+     "label": "Foul Magics"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-673",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Foul Magics from Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 673,
+     "label": "Foul Magics"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-677",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Call to Arms — Witherbark Axe Thrower, Witherbark Headhunter, Witherbark Witch Doctor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 66.56,
+      "y": 66.84,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 677,
+     "objective": 1,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "If a Witherbark kills drops the Pendant of Myzrael, that item starts Crystal in the Mountains. The complete and turn-in steps are already later in Arathi. Do not detour for the pendant.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=635",
+       "label": "Wowhead Classic quest 635"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 635 start item 4614, npcDrops include 2554, 2555, 2556"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:turnin-677",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call to Arms to Drum Fel in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.24,
+      "y": 33.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 677,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-678",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Call to Arms from Drum Fel in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.24,
+      "y": 33.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 678,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-678",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Call to Arms — Boulderfist Brute, Boulderfist Magus."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 52.87,
+      "y": 75.9,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 678,
+     "objective": 1,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-678",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call to Arms to Drum Fel in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.24,
+      "y": 33.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 678,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-680",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Real Threat from Korin Fel in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.04,
+      "y": 33.07,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 680,
+     "label": "The Real Threat"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-679",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Call to Arms from Drum Fel in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.24,
+      "y": 33.92,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 679,
+     "label": "Call to Arms"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-655",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hammerfall to Tor'gan in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 655,
+     "label": "Hammerfall"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-672",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Raising Spirits from Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 672,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-672",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Raising Spirits — Highland Raptor Eye."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 47.76,
+      "y": 43.16,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 672,
+     "objective": 1,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-97539",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Finish the work for Silky Sutures — Surgical Spidersilk."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 46.58,
+      "y": 48.11,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97539,
+     "objective": 1,
+     "label": "Silky Sutures"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever-new quest 97539. Coordinates come from the quest database; leave this unverified until it is played.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-672",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Raising Spirits to Tor'gan in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 672,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-674",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Raising Spirits from Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 674,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-674",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Raising Spirits — Raptor Talon Amulet.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 674,
+     "objective": 1,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-674",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Raising Spirits to Gor'mul in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 72.64,
+      "y": 33.93,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 674,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-675",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Raising Spirits from Gor'mul in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 72.64,
+      "y": 33.93,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 675,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-675",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Raising Spirits to Tor'gan in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 675,
+     "label": "Raising Spirits"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-701",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Guile of the Raptor from Tor'gan in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 74.72,
+      "y": 36.29,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 701,
+     "label": "Guile of the Raptor"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-642",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Princess Trapped from Shards of Myzrael in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 62.5,
+      "y": 33.73,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 642,
+     "label": "The Princess Trapped"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-642",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for The Princess Trapped — Mote of Myzrael."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 78.94,
+      "y": 38.32,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 642,
+     "objective": 1,
+     "label": "The Princess Trapped"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-642",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Princess Trapped to Iridescent Shards in Arathi Highlands.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 84.31,
+      "y": 30.95,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 642,
+     "label": "The Princess Trapped"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-651",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Stones of Binding from Iridescent Shards in Arathi Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1417,
+      "zone": "Arathi Highlands",
+      "x": 84.31,
+      "y": 30.95,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 651,
+     "label": "Stones of Binding"
+    }
+   ],
+   "conditions": [],
+   "section": "Arathi Highlands",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

@@ -1,0 +1,1584 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-07-hyjal-winterspring",
+ "title": "Western Plaguelands (Andorhal)",
+ "steps": [
+  {
+   "id": "h4060:western-plaguelands:c5098",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: All Along the Watchtowers"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Use the beacon torch at each tower in Andorhal; you can do it while mounted runs between towers.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 40,
+      "y": 71.6,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5098,
+     "objective": 1,
+     "label": "Andorhal Tower One"
+    },
+    {
+     "type": "complete",
+     "questId": 5098,
+     "objective": 2,
+     "label": "Andorhal Tower Two"
+    },
+    {
+     "type": "complete",
+     "questId": 5098,
+     "objective": 3,
+     "label": "Andorhal Tower Three"
+    },
+    {
+     "type": "complete",
+     "questId": 5098,
+     "objective": 4,
+     "label": "Andorhal Tower Four"
+    },
+    {
+     "type": "mob",
+     "name": "Andorhal Tower One",
+     "npcIds": [
+      10902
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Andorhal Tower Two",
+     "npcIds": [
+      10903
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Andorhal Tower Three",
+     "npcIds": [
+      10904
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Andorhal Tower Four",
+     "npcIds": [
+      10905
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Andorhal Tower One (level 1) spawns are densest around 40.0, 71.6 (1 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Andorhal Tower Two (level 1) spawns are densest around 42.3, 66.2 (1 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10902
+     ],
+     "name": "Andorhal Tower One",
+     "mapId": 1422,
+     "zone": "Western Plaguelands",
+     "center": {
+      "x": 40,
+      "y": 71.6
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10903
+     ],
+     "name": "Andorhal Tower Two",
+     "mapId": 1422,
+     "zone": "Western Plaguelands",
+     "center": {
+      "x": 42.3,
+      "y": 66.2
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10904
+     ],
+     "name": "Andorhal Tower Three",
+     "mapId": 1422,
+     "zone": "Western Plaguelands",
+     "center": {
+      "x": 44.3,
+      "y": 63.2
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10905
+     ],
+     "name": "Andorhal Tower Four",
+     "mapId": 1422,
+     "zone": "Western Plaguelands",
+     "center": {
+      "x": 46.6,
+      "y": 71
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5098",
+     "label": "Wowhead Classic quest 5098 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Locked Away"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 47.35,
+      "y": 49.63,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5060,
+     "label": "Locked Away"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5060",
+     "label": "Wowhead Classic quest 5060 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5060",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Locked Away"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 47.35,
+      "y": 49.63,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5060,
+     "label": "Locked Away"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5060",
+     "label": "Wowhead Classic quest 5060 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a4971",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Matter of Time"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.46,
+      "y": 66.76,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4971,
+     "label": "A Matter of Time"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4971",
+     "label": "Wowhead Classic quest 4971 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t4971",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Matter of Time"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.46,
+      "y": 66.76,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4971,
+     "label": "A Matter of Time"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4971",
+     "label": "Wowhead Classic quest 4971 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a4972",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Counting Out Time"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.46,
+      "y": 66.76,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4972,
+     "label": "Counting Out Time"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4972",
+     "label": "Wowhead Classic quest 4972 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t4972",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Counting Out Time"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 39.46,
+      "y": 66.76,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4972,
+     "label": "Counting Out Time"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4972",
+     "label": "Wowhead Classic quest 4972 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a6004",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6004,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6004",
+     "label": "Wowhead Classic quest 6004 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t6004",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6004,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6004",
+     "label": "Wowhead Classic quest 6004 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a6023",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6023,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6023",
+     "label": "Wowhead Classic quest 6023 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t6023",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6023,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6023",
+     "label": "Wowhead Classic quest 6023 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a4985",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.73,
+      "y": 64.66,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4985,
+     "label": "The Wildlife Suffers Too"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4985",
+     "label": "Wowhead Classic quest 4985 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t4985",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.73,
+      "y": 64.66,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4985,
+     "label": "The Wildlife Suffers Too"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4985",
+     "label": "Wowhead Classic quest 4985 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a4987",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Glyphed Oaken Branch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 53.73,
+      "y": 64.66,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4987,
+     "label": "Glyphed Oaken Branch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4987",
+     "label": "Wowhead Classic quest 4987 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Better Late Than Never"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 38.4,
+      "y": 54.05,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5021,
+     "label": "Better Late Than Never"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5021",
+     "label": "Wowhead Classic quest 5021 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Better Late Than Never"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 38.73,
+      "y": 55.24,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5021,
+     "label": "Better Late Than Never"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5021",
+     "label": "Wowhead Classic quest 5021 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5401",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Argent Dawn Commission"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 42.97,
+      "y": 83.55,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5401,
+     "label": "Argent Dawn Commission"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5401",
+     "label": "Wowhead Classic quest 5401 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5401",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Argent Dawn Commission"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 42.97,
+      "y": 83.55,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5401,
+     "label": "Argent Dawn Commission"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5401",
+     "label": "Wowhead Classic quest 5401 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:azshara:t4987",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Glyphed Oaken Branch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 75.65,
+      "y": 31.61,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4987,
+     "label": "Glyphed Oaken Branch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4987",
+     "label": "Wowhead Classic quest 4987 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a6025",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6025,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6025",
+     "label": "Wowhead Classic quest 6025 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t6025",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Unfinished Business"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 51.92,
+      "y": 28.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6025,
+     "label": "Unfinished Business"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6025",
+     "label": "Wowhead Classic quest 6025 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5098",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: All Along the Watchtowers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 68.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5098,
+     "label": "All Along the Watchtowers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5098",
+     "label": "Wowhead Classic quest 5098 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a105",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Alas, Andorhal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.13,
+      "y": 68.94,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 105,
+     "label": "Alas, Andorhal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=105",
+     "label": "Wowhead Classic quest 105 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5524",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Chromatic Mantle of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.26,
+      "y": 68.14,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5524,
+     "label": "Chromatic Mantle of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5524",
+     "label": "Wowhead Classic quest 5524 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5504",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Mantles of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.26,
+      "y": 68.14,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5504,
+     "label": "Mantles of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5504",
+     "label": "Wowhead Classic quest 5504 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t105",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Alas, Andorhal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.13,
+      "y": 68.94,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 105,
+     "label": "Alas, Andorhal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=105",
+     "label": "Wowhead Classic quest 105 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5524",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Chromatic Mantle of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.26,
+      "y": 68.14,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5524,
+     "label": "Chromatic Mantle of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5524",
+     "label": "Wowhead Classic quest 5524 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5504",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Mantles of the Dawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.26,
+      "y": 68.14,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5504,
+     "label": "Mantles of the Dawn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5504",
+     "label": "Wowhead Classic quest 5504 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:a5235",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Target: Gahrron's Withering"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.04,
+      "y": 71.91,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5235,
+     "label": "Target: Gahrron's Withering"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5235",
+     "label": "Wowhead Classic quest 5235 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:t5235",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Target: Gahrron's Withering"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 62.54,
+      "y": 58.47,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5235,
+     "label": "Target: Gahrron's Withering"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5235",
+     "label": "Wowhead Classic quest 5235 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

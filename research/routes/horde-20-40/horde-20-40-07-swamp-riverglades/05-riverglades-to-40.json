@@ -1,0 +1,2924 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-07-swamp-riverglades",
+ "title": "Riverglades to 40",
+ "steps": [
+  {
+   "id": "horde-20-40:fp-255993-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Riverglades flight path from Grakna."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.59,
+      "y": 45.08,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Riverglades flight path",
+     "place": "Riverglades"
+    }
+   ],
+   "conditions": [],
+   "section": "Riverglades (Forever-new)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 255993,
+     "name": "Grakna",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.59,
+      "y": 45.08
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-95936",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Kill Scaldaron and use the Head of Scaldaron to start Hail the Dragonslayer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 29.34,
+      "y": 70.55,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95936,
+     "label": "Hail the Dragonslayer"
+    }
+   ],
+   "conditions": [],
+   "section": "Riverglades (Forever-new)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 263141,
+     "name": "Scaldaron",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 29.34,
+      "y": 70.55
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:complete-95936",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Hail the Dragonslayer.",
+       "kind": "loot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 29.34,
+      "y": 70.55,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95936,
+     "objective": 1,
+     "label": "Hail the Dragonslayer"
+    }
+   ],
+   "conditions": [],
+   "section": "Riverglades (Forever-new)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:turnin-95936",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Turn in Hail the Dragonslayer to Krom'rosh at Rog'mar.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.37,
+      "y": 45.6,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95936,
+     "label": "Hail the Dragonslayer"
+    }
+   ],
+   "conditions": [],
+   "section": "Riverglades (Forever-new)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 256418,
+     "name": "Krom'rosh",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.37,
+      "y": 45.6
+     },
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "horde-20-40:handoff-to-40-60",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "End at Rog'mar in Riverglades, at flight master Grakna (about 59.6, 45.1). You should be around level 40-41 on both routes. Stranglethorn, Arathi and Hillsbrad chains above level 40, and the Dustwallow and Swamp of Sorrows chains, continue on the 40-60 route. All Riverglades quests below 40 are done, including 94483, 96063 and 96104 (the 40-60 route's first accepts need those). This route sides with the Gelkis: Gelkis Alliance (1368), Stealing Supplies (1370), and Ongeku (1373) are on the route. Do not accept Valley of Bones (93034) when you turn in Ongeku; that starts the 40-60 Shen'dralas chapter. The next route begins by flying to Rog'mar. Druid Primal Bite is a level 40 ability, not 25."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.59,
+      "y": 45.08,
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Handoff: you are at Grakna in Rog'mar, ready for the 40-60 route",
+     "place": "Rog'mar"
+    }
+   ],
+   "conditions": [],
+   "section": "Riverglades (Forever-new)",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 255993,
+     "name": "Grakna",
+     "at": {
+      "mapId": 2548,
+      "zone": "Riverglades",
+      "x": 59.59,
+      "y": 45.08
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:travel-4a6965",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "You start at Rog'mar, where the 20-40 route ends (flight master Grakna)"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "You start at Rog'mar, where the 20-40 route ends (flight master Grakna). Set your hearthstone here: you come back to Rog'mar after Stranglethorn."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.6,
+      "y": 45.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "zone",
+     "label": "You start at Rog'mar, where the 20-40 route ends (flight master Grakna). Set your hearthstone here: you come back to Rog'mar after Stranglethorn."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "WoW Forever's Riverglades is 36-44; finish the last Rog'mar rounds and leave once quests turn green.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://foreverquestlog.com/zones/riverglades/",
+       "label": "foreverquestlog.com"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "WoW Forever profession changes to keep in mind from 40 on: healing potions are now made with First Aid, any node or skin can give rare bonus materials, each corpse can be skinned only once, every profession unlocks a Camp feature at skill 20, and Merchant's Favor (from supply crates handed in at the Horde camp outside the Crossroads) buys around 320 recipes. Crafting items just to sell to vendors no longer pays, so craft for skill or for players.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/sentinel/professions/research/professions",
+       "label": "Project Forever research: professions (Sentinel)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Unverified: secondary guides put Apprentice riding at level 40 for 100 gold, including the first racial mount.",
+     "sources": [
+      {
+       "url": "https://games.gg/world-of-warcraft/guides/wow-forever-mount-cost-level-40-riding-prices-and-trainers/",
+       "label": "games.gg: Apprentice riding level 40, 100 gold"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/wow-forever-mount-guide",
+       "label": "Hardcore Helper 2026-11-16: same 100 gold at 40"
+      },
+      {
+       "url": "https://mythic-store.com/blog/wow-forever-leveling-guide-1-60",
+       "label": "Mythic Store 2026-09-21: riding level and gold unpublished"
+      },
+      {
+       "url": "https://www.warcrafttavern.com/forever/news/cozy-sleeping-bag-shendralas-wow-forever-hotfixes-for-november-17/",
+       "label": "Warcraft Tavern: hotfix log does not state training level or base gold"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://foreverquestlog.com/zones/riverglades/",
+     "label": "foreverquestlog.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:prof-0a333a",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Before flying in, bank or buy: 10 Chunk of Boar Meat, 10 Heavy Weightstone, 12 Iron Bar an"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Before flying in, bank or buy: 10 Chunk of Boar Meat, 10 Heavy Weightstone, 12 Iron Bar and 4 Thick Leather. Three Rog'mar quests (including the Krol'dok key quest) ask for them, so having them ready saves a trip to a capital."
+      }
+     ]
+    }
+   ],
+   "actions": [],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 3,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/news/riverglades-is-one-of-the-best-leveling-zones-in-wow-forever-383849",
+     "label": "www.wowhead.com"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:travel-2bcab5",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Riverglades quests of level 40 and up follow, hub by hub"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Riverglades quests of level 40 and up follow, hub by hub. Quests below 40 belong to the 20-40 research; any of their follow-ups listed here assume you did them."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "Riverglades quests of level 40 and up follow, hub by hub. Quests below 40 belong to the 20-40 research; any of their follow-ups listed here assume you did them."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96067",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Rock 'em and Sock 'em"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Needs earlier quest(s) 96063, 96063 from the levels below 40 (covered by the 20-40 research).",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 68.2,
+      "y": 48.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96067,
+     "label": "Rock 'em and Sock 'em"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96067",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Rock 'em and Sock 'em"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 68.2,
+      "y": 48.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96067,
+     "label": "Rock 'em and Sock 'em"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96107",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Feathers for Fletching"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96107,
+     "label": "Feathers for Fletching"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c96107",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Feathers for Fletching"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 63.5,
+      "y": 55.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 271793,
+     "count": 1,
+     "questId": 96107,
+     "objective": 1,
+     "label": "Plains Buzzard Feather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Low Plains Buzzard (level 37-38) spawns are densest around 63.5, 55.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      263343
+     ],
+     "name": "Low Plains Buzzard",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 63.5,
+      "y": 55.8
+     },
+     "radius": 8.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96107",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Feathers for Fletching"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96107,
+     "label": "Feathers for Fletching"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96108",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Poison Tips"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96108,
+     "label": "Poison Tips"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c96108",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Poison Tips"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 62.3,
+      "y": 58.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 271776,
+     "count": 1,
+     "questId": 96108,
+     "objective": 1,
+     "label": "Glade Viper Venom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Glade Viper (level 37-38) spawns are densest around 62.3, 58.4. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      263307
+     ],
+     "name": "Glade Viper",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 62.3,
+      "y": 58.4
+     },
+     "radius": 5.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96108",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Poison Tips"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96108,
+     "label": "Poison Tips"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a96109",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Hunter's Quiver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96109,
+     "label": "A Hunter's Quiver"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c96109",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Hunter's Quiver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.6,
+      "y": 53.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 266888,
+     "count": 1,
+     "questId": 96109,
+     "objective": 1,
+     "label": "Prized Lion Hide"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Wildplains Patriarch (level 38-39) spawns are densest around 59.6, 53.9. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      259054
+     ],
+     "name": "Wildplains Patriarch",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 59.6,
+      "y": 53.9
+     },
+     "radius": 4.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      259055
+     ],
+     "name": "Wildplains Huntress",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 59.4,
+      "y": 53.5
+     },
+     "radius": 4.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t96109",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Hunter's Quiver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96109,
+     "label": "A Hunter's Quiver"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94532",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Gnoll Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94532,
+     "label": "Gnoll Infestation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94533",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Snargl's Snout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94533,
+     "label": "Snargl's Snout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94535",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Bristle Hills Bandits"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.9,
+      "y": 46,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94535,
+     "label": "Bristle Hills Bandits"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94533",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Snargl's Snout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 18.2,
+      "y": 70.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 265357,
+     "count": 1,
+     "questId": 94533,
+     "objective": 1,
+     "label": "Snargl's Snout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Snargl (level 40) spawns are densest around 18.2, 70.1. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "elite": [
+    {
+     "name": "Snargl's Snout",
+     "groupSize": 3,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Tank: pick the elite up first and turn it away from the group.",
+       "roles": [
+        "tank"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Healer: stay at max range and keep a mana break ready between pulls.",
+       "roles": [
+        "healer"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      },
+      {
+       "kind": "elite",
+       "text": "Damage: wait two or three seconds for threat, then use cooldowns.",
+       "roles": [
+        "dps"
+       ],
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+       "label": "github.com"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255906
+     ],
+     "name": "Snargl",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 18.2,
+      "y": 70.1
+     },
+     "radius": 2.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94532",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Gnoll Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 23.9,
+      "y": 63.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 1,
+     "label": "Redridge Mystic"
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 2,
+     "label": "Redridge Trapper"
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 3,
+     "label": "Redridge Brute"
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Mystic",
+     "npcIds": [
+      255770
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Trapper",
+     "npcIds": [
+      255772
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Brute",
+     "npcIds": [
+      255769
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Redridge Mystic (level 36-37) spawns are densest around 23.9, 63.6 (180 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Redridge Trapper (level 36-37) spawns are densest around 26.0, 63.5 (194 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255770
+     ],
+     "name": "Redridge Mystic",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 23.9,
+      "y": 63.6
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255772
+     ],
+     "name": "Redridge Trapper",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 26,
+      "y": 63.5
+     },
+     "radius": 9.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255769
+     ],
+     "name": "Redridge Brute",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 24.9,
+      "y": 64.8
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94532-speedrun",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Gnoll Infestation"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "The Bristle Hills gnolls are a short ride north-west of here.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 23.9,
+      "y": 63.6,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 1,
+     "label": "Redridge Mystic"
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 2,
+     "label": "Redridge Trapper"
+    },
+    {
+     "type": "complete",
+     "questId": 94532,
+     "objective": 3,
+     "label": "Redridge Brute"
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Mystic",
+     "npcIds": [
+      255770
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Trapper",
+     "npcIds": [
+      255772
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Redridge Brute",
+     "npcIds": [
+      255769
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Redridge Mystic (level 36-37) spawns are densest around 23.9, 63.6 (180 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Redridge Trapper (level 36-37) spawns are densest around 26.0, 63.5 (194 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255770
+     ],
+     "name": "Redridge Mystic",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 23.9,
+      "y": 63.6
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255772
+     ],
+     "name": "Redridge Trapper",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 26,
+      "y": 63.5
+     },
+     "radius": 9.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255769
+     ],
+     "name": "Redridge Brute",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 24.9,
+      "y": 64.8
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94535",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Bristle Hills Bandits"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 24.9,
+      "y": 64.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 265358,
+     "count": 1,
+     "questId": 94535,
+     "objective": 1,
+     "label": "Stolen Ore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Redridge Brute (level 37-38) spawns are densest around 24.9, 64.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255769
+     ],
+     "name": "Redridge Brute",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 24.9,
+      "y": 64.8
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255770
+     ],
+     "name": "Redridge Mystic",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 23.9,
+      "y": 63.6
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255772
+     ],
+     "name": "Redridge Trapper",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 26,
+      "y": 63.5
+     },
+     "radius": 9.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94535-speedrun",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Bristle Hills Bandits"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 24.9,
+      "y": 64.8,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 265358,
+     "count": 1,
+     "questId": 94535,
+     "objective": 1,
+     "label": "Stolen Ore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Redridge Brute (level 37-38) spawns are densest around 24.9, 64.8. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255769
+     ],
+     "name": "Redridge Brute",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 24.9,
+      "y": 64.8
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255770
+     ],
+     "name": "Redridge Mystic",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 23.9,
+      "y": 63.6
+     },
+     "radius": 9.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      255772
+     ],
+     "name": "Redridge Trapper",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 26,
+      "y": 63.5
+     },
+     "radius": 9.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94533",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Snargl's Snout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94533,
+     "label": "Snargl's Snout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94532",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Gnoll Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94532,
+     "label": "Gnoll Infestation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94532-speedrun",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Gnoll Infestation"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Hand in at Rog'mar before the Krol'dok step and the flight out.",
+       "kind": "warn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 60.5,
+      "y": 47.9,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94532,
+     "label": "Gnoll Infestation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94535",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Bristle Hills Bandits"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.9,
+      "y": 46,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94535,
+     "label": "Bristle Hills Bandits"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94535-speedrun",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Bristle Hills Bandits"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 59.9,
+      "y": 46,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94535,
+     "label": "Bristle Hills Bandits"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94961",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Biting the Hand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 47.3,
+      "y": 51.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94961,
+     "label": "Biting the Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c94961",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Biting the Hand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 48,
+      "y": 48.2,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 267073,
+     "count": 1,
+     "questId": 94961,
+     "objective": 1,
+     "label": "Twilight Finger Bone"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Twilight Shadowmancer (level 39-40) spawns are densest around 48.0, 48.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      254560
+     ],
+     "name": "Twilight Shadowmancer",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48,
+      "y": 48.2
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256798
+     ],
+     "name": "Twilight Neophyte",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.1,
+      "y": 49.2
+     },
+     "radius": 6.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256952
+     ],
+     "name": "Twilight Raider",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 48.9,
+      "y": 49.9
+     },
+     "radius": 7.2,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94961",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Biting the Hand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 47.3,
+      "y": 51.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94961,
+     "label": "Biting the Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a94963",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Biting the Hand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 47.3,
+      "y": 51.4,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94963,
+     "label": "Biting the Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t94963",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Biting the Hand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 41.6,
+      "y": 47.7,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94963,
+     "label": "Biting the Hand"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:a95163",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Drive Them Back"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 70.7,
+      "y": 28.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95163,
+     "label": "Drive Them Back"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:c95163",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Drive Them Back is the young paletusks by Na'zok's farm. Do not ride to the south river pin until a spawn is confirmed there."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 57.1,
+      "y": 70.5,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95163,
+     "objective": 1,
+     "label": "Young Paletusk"
+    },
+    {
+     "type": "mob",
+     "name": "Young Paletusk",
+     "npcIds": [
+      258331
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Young Paletusk (level 36-37) spawns are densest around 57.1, 70.5 (404 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      258331
+     ],
+     "name": "Young Paletusk",
+     "mapId": 2548,
+     "zone": "Riverglades",
+     "center": {
+      "x": 57.1,
+      "y": 70.5
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quest 95163 creature 258331, giver npc 256728, no spawn coordinates in quests.json"
+    },
+    {
+     "url": "https://www.curseforge.com/wow/addons/guidelime-bethink",
+     "label": "Bethink Horde uses the paletusks across the river from the farm southeast of Bolder'ok"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:t95163",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Drive Them Back"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2548,
+      "x": 70.7,
+      "y": 28.1,
+      "zone": "Riverglades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95163,
+     "label": "Drive Them Back"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/pull/5",
+     "label": "github.com"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:riverglades:fly-9c1b4f",
+   "tags": {
+    "forever": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly Rog'mar -> Kargath (Badlands)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "fly",
+     "label": "Fly Rog'mar -> Kargath (Badlands)."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://foreverquestlog.com/zones/riverglades/",
+     "label": "foreverquestlog.com"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

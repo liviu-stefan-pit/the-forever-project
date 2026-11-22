@@ -15,7 +15,7 @@ Wording here is original. Quest ids, NPC ids, coordinates (zone %), levels and p
 
 ## Sub-packs
 
-The monolith source now lives in `research/catalog/levels-20-40.route-v2.json` (out of discovery). Sub-packs in `research/horde-20-40/` are regenerated from `research/splits/horde-20-40.json` via `web/scripts/split-pack.ts`.
+The packs are edited directly in `research/routes/horde-20-40/<pack>/`, one file per segment (see [docs/ROUTE_FILES.md](../docs/ROUTE_FILES.md)). The old monolith (`research/catalog/levels-20-40.route-v2.json`) and its `split-pack` config were removed in Nov 2026: the packs had been edited by hand since the last split, so re-splitting would have undone those edits. Step counts in the table below are from the original split.
 
 | Slug | Levels | Steps | First step | Last step | Hub |
 |---|---|---:|---|---|---|

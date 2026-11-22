@@ -1,0 +1,1223 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-20-40-07-swamp-riverglades",
+ "title": "Swamp of Sorrows (Stonard)",
+ "steps": [
+  {
+   "id": "horde-20-40:to-sos",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "From Grom'gol or Stonard, work the Swamp of Sorrows quests around Stonard as you close in on level 40."
+      },
+      {
+       "t": "The level 40 mount is 100g. Screeching Canyon harpies in Thousand Needles (about 27, 54, levels 28-31) are a gold farm if the camp is uncontested, not a required grind."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 46.07,
+      "y": 54.83,
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:fp-6026",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Swamp of Sorrows flight path from Breyk."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 46.07,
+      "y": 54.83,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Swamp of Sorrows flight path",
+     "place": "Swamp of Sorrows"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6026,
+     "name": "Breyk",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 46.07,
+      "y": 54.83
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1373",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Ongeku in Swamp of Sorrows for the Draenethyst Shard. Ongeku is only valid after you accept it from Uthek, and that accept requires Stealing Supplies turned in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 65.07,
+      "y": 21.97,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1373,
+     "objective": 1,
+     "label": "Ongeku"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1373",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ongeku to Uthek the Wise in Gelkis Village. Do not accept Valley of Bones (93034); that starts the 40-60 Shen'dralas chapter."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1443,
+      "zone": "Desolace",
+      "x": 36.22,
+      "y": 79.25,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1373,
+     "label": "Ongeku"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:hearth-6930",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearth to Swamp of Sorrows with Innkeeper Karakul."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 45.16,
+      "y": 56.66,
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set hearth to Swamp of Sorrows",
+     "place": "Swamp of Sorrows"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6930,
+     "name": "Innkeeper Karakul",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 45.16,
+      "y": 56.66
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-93663",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "[Forever-new] Pick up Lost in Transit from Dar in Swamp of Sorrows.",
+       "kind": "friendly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 44.7,
+      "y": 57.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93663,
+     "label": "Lost in Transit"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This is a WoW Forever-new quest (id 93663, not in Classic Era). Use it if it is on your path, but treat the details as unverified until it is spot-checked in game.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+       "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "horde-20-40:accept-1418",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Neeka Bloodscar from Helgrum the Swift in Swamp of Sorrows."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "zone": "Swamp of Sorrows",
+      "x": 47.74,
+      "y": 55.2,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1418,
+     "label": "Neeka Bloodscar"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1116",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Dream Dust in the Swamp from Krazek in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1116,
+     "label": "Dream Dust in the Swamp"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1116",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Dream Dust in the Swamp."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1116,
+     "objective": 1,
+     "label": "Dream Dust in the Swamp"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1116",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dream Dust in the Swamp to Krazek in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1116,
+     "label": "Dream Dust in the Swamp"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Rumors for Kravel from Krazek in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 26.95,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1117,
+     "label": "Rumors for Kravel"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Rumors for Kravel."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1117,
+     "objective": 1,
+     "label": "Rumors for Kravel"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rumors for Kravel to Kravel Koalbeard in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1117,
+     "label": "Rumors for Kravel"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Back to Booty Bay from Kravel Koalbeard in Thousand Needles."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1441,
+      "zone": "Thousand Needles",
+      "x": 77.79,
+      "y": 77.27,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1118,
+     "label": "Back to Booty Bay"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1261",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Marg Speaks from Bubbling Cauldron in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 32.22,
+      "y": 27.6,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1261,
+     "label": "Marg Speaks"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1261",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Marg Speaks."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 35.21,
+      "y": 30.66,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1261,
+     "objective": 1,
+     "label": "Marg Speaks"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1261",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Marg Speaks to Nazeer Bloodpike in Dustwallow Marsh."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 35.21,
+      "y": 30.66,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1261,
+     "label": "Marg Speaks"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-1262",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Report to Zor from Nazeer Bloodpike in Dustwallow Marsh."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1445,
+      "zone": "Dustwallow Marsh",
+      "x": 35.21,
+      "y": 30.66,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1262,
+     "label": "Report to Zor"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1262",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Report to Zor."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 38.93,
+      "y": 38.4,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1262,
+     "objective": 1,
+     "label": "Report to Zor"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1262",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Zor to Zor Lonetree in Orgrimmar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 38.93,
+      "y": 38.4,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1262,
+     "label": "Report to Zor"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:accept-7541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Service to the Horde from Zor Lonetree in Orgrimmar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 38.93,
+      "y": 38.4,
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 7541,
+     "label": "Service to the Horde"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-7541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Service to the Horde to Zor Lonetree in Orgrimmar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1454,
+      "zone": "Orgrimmar",
+      "x": 38.93,
+      "y": 38.4,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 7541,
+     "label": "Service to the Horde"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:complete-1118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Finish the work for Back to Booty Bay."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.12,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1118,
+     "objective": 1,
+     "label": "Back to Booty Bay"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "horde-20-40:turnin-1118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Back to Booty Bay to Crank Fizzlebub in Stranglethorn Vale."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1434,
+      "zone": "Stranglethorn Vale",
+      "x": 27.12,
+      "y": 77.21,
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1118,
+     "label": "Back to Booty Bay"
+    }
+   ],
+   "conditions": [],
+   "section": "Swamp of Sorrows",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

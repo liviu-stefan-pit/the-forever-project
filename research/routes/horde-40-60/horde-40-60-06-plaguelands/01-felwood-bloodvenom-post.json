@@ -1,0 +1,2277 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-06-plaguelands",
+ "title": "Felwood (Bloodvenom Post)",
+ "steps": [
+  {
+   "id": "h4060:felwood:a6162",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Husband's Last Battle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.8,
+      "y": 52.7,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6162,
+     "label": "A Husband's Last Battle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6162",
+     "label": "Wowhead Classic quest 6162 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Reach Timbermaw Hold reputation Neutral before you need the Winterspring tunnel.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/research/levels-40-60.md",
+       "label": "Forever horde 40-60 levels note (Timbermaw tunnel)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:felwood:fp-bloodvenom",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Bloodvenom Post flight path from Brakkar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "zone": "Felwood",
+      "x": 34.44,
+      "y": 53.96,
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Bloodvenom Post flight path",
+     "place": "Bloodvenom Post"
+    }
+   ],
+   "conditions": [],
+   "section": "Felwood",
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 11900,
+     "name": "Brakkar",
+     "at": {
+      "mapId": 1448,
+      "zone": "Felwood",
+      "x": 34.44,
+      "y": 53.96
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+       "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "minutes": 0.5,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever release (pinned PR #5, commit 8b8df2d)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/project-forever/blob/0b16829/content/questie-db/README.md",
+     "label": "project-forever QuestieDB import (PR #5, content/questie-db)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:felwood:a4521",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Wild Guardians"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.73,
+      "y": 52.79,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4521,
+     "label": "Wild Guardians"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4521",
+     "label": "Wowhead Classic quest 4521 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a4505",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Well of Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.21,
+      "y": 52.34,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4505,
+     "label": "Well of Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4505",
+     "label": "Wowhead Classic quest 4505 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t4521",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Wild Guardians"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.73,
+      "y": 52.79,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4521,
+     "label": "Wild Guardians"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4521",
+     "label": "Wowhead Classic quest 4521 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t4505",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Well of Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.21,
+      "y": 52.34,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4505,
+     "label": "Well of Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4505",
+     "label": "Wowhead Classic quest 4505 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a5155",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Forces of Jaedenar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.2,
+      "y": 82.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5155,
+     "label": "Forces of Jaedenar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5155",
+     "label": "Wowhead Classic quest 5155 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a5156",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Verifying the Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 50.9,
+      "y": 81.6,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5156,
+     "label": "Verifying the Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5156",
+     "label": "Wowhead Classic quest 5156 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a86577",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: A Sampling of Putrescence"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.14,
+      "y": 81.75,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86577,
+     "label": "A Sampling of Putrescence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86577",
+     "label": "Wowhead Classic quest 86577 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t86577",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Sampling of Putrescence"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.14,
+      "y": 81.75,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86577,
+     "label": "A Sampling of Putrescence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86577",
+     "label": "Wowhead Classic quest 86577 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a8460",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Timbermaw Ally"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 50.9,
+      "y": 85,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8460,
+     "label": "Timbermaw Ally"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8460",
+     "label": "Wowhead Classic quest 8460 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:c5155",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Forces of Jaedenar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 38.4,
+      "y": 61.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5155,
+     "objective": 1,
+     "label": "Jaedenar Hound"
+    },
+    {
+     "type": "complete",
+     "questId": 5155,
+     "objective": 2,
+     "label": "Jaedenar Guardian"
+    },
+    {
+     "type": "complete",
+     "questId": 5155,
+     "objective": 3,
+     "label": "Jaedenar Adept"
+    },
+    {
+     "type": "complete",
+     "questId": 5155,
+     "objective": 4,
+     "label": "Jaedenar Cultist"
+    },
+    {
+     "type": "mob",
+     "name": "Jaedenar Hound",
+     "npcIds": [
+      7125
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Jaedenar Guardian",
+     "npcIds": [
+      7113
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Jaedenar Adept",
+     "npcIds": [
+      7115
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Jaedenar Cultist",
+     "npcIds": [
+      7112
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Jaedenar Hound (level 50-51) spawns are densest around 38.4, 61.1 (9 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Jaedenar Guardian (level 50-51) spawns are densest around 38.1, 60.7 (14 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7125
+     ],
+     "name": "Jaedenar Hound",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 38.4,
+      "y": 61.1
+     },
+     "radius": 2.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7113
+     ],
+     "name": "Jaedenar Guardian",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 38.1,
+      "y": 60.7
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7115
+     ],
+     "name": "Jaedenar Adept",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 37.7,
+      "y": 61.2
+     },
+     "radius": 2.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7112
+     ],
+     "name": "Jaedenar Cultist",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 37.7,
+      "y": 61.3
+     },
+     "radius": 2.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5155",
+     "label": "Wowhead Classic quest 5155 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:c5156",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Verifying the Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 41.7,
+      "y": 40.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5156,
+     "objective": 1,
+     "label": "Entropic Beast"
+    },
+    {
+     "type": "complete",
+     "questId": 5156,
+     "objective": 2,
+     "label": "Entropic Horror"
+    },
+    {
+     "type": "mob",
+     "name": "Entropic Beast",
+     "npcIds": [
+      9878
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Entropic Horror",
+     "npcIds": [
+      9879
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Entropic Beast (level 51-52) spawns are densest around 41.7, 40.1 (21 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Entropic Horror (level 51-54) spawns are densest around 41.7, 40.1 (21 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9878
+     ],
+     "name": "Entropic Beast",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 41.7,
+      "y": 40.1
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9879
+     ],
+     "name": "Entropic Horror",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 41.7,
+      "y": 40.1
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5156",
+     "label": "Wowhead Classic quest 5156 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:c6162",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: A Husband's Last Battle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 48.2,
+      "y": 94.3,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 15879,
+     "count": 1,
+     "questId": 6162,
+     "objective": 1,
+     "label": "Overlord Ror's Claw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Overlord Ror (level 51) spawns are densest around 48.2, 94.3. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9464
+     ],
+     "name": "Overlord Ror",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 48.2,
+      "y": 94.3
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6162",
+     "label": "Wowhead Classic quest 6162 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:c8460",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Timbermaw Ally"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 48.4,
+      "y": 91.4,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 8460,
+     "objective": 1,
+     "label": "Deadwood Warrior"
+    },
+    {
+     "type": "complete",
+     "questId": 8460,
+     "objective": 2,
+     "label": "Deadwood Pathfinder"
+    },
+    {
+     "type": "complete",
+     "questId": 8460,
+     "objective": 3,
+     "label": "Deadwood Gardener"
+    },
+    {
+     "type": "mob",
+     "name": "Deadwood Warrior",
+     "npcIds": [
+      7153
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Deadwood Pathfinder",
+     "npcIds": [
+      7155
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Deadwood Gardener",
+     "npcIds": [
+      7154
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Deadwood Warrior (level 48-49) spawns are densest around 48.4, 91.4 (17 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Deadwood Pathfinder (level 49-50) spawns are densest around 48.3, 89.5 (5 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7153
+     ],
+     "name": "Deadwood Warrior",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 48.4,
+      "y": 91.4
+     },
+     "radius": 2.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7155
+     ],
+     "name": "Deadwood Pathfinder",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 48.3,
+      "y": 89.5
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7154
+     ],
+     "name": "Deadwood Gardener",
+     "mapId": 1448,
+     "zone": "Felwood",
+     "center": {
+      "x": 48.4,
+      "y": 89.8
+     },
+     "radius": 2.3,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8460",
+     "label": "Wowhead Classic quest 8460 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t5155",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Forces of Jaedenar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.2,
+      "y": 82.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5155,
+     "label": "Forces of Jaedenar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5155",
+     "label": "Wowhead Classic quest 5155 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t5156",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Verifying the Corruption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 50.9,
+      "y": 81.6,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5156,
+     "label": "Verifying the Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5156",
+     "label": "Wowhead Classic quest 5156 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a5157",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Collection of the Corrupt Water"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.2,
+      "y": 82.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5157,
+     "label": "Collection of the Corrupt Water"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5157",
+     "label": "Wowhead Classic quest 5157 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:c5157",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Collection of the Corrupt Water"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 35.17,
+      "y": 59.79,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12907,
+     "count": 1,
+     "questId": 5157,
+     "objective": 1,
+     "label": "Corrupt Moonwell Water"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5157",
+     "label": "Wowhead Classic quest 5157 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t5157",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Collection of the Corrupt Water"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.2,
+      "y": 82.1,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5157,
+     "label": "Collection of the Corrupt Water"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5157",
+     "label": "Wowhead Classic quest 5157 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Collection of the Corrupt Water at Bloodvenom and do not accept Seeking Spiritual Aid.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5158",
+       "label": "Wowhead Classic quest 5158"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 5157 pre 5155 next 5158; 5158 end npc 5901"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:felwood:a5158",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Seeking Spiritual Aid"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 51.21,
+      "y": 82.11,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5158,
+     "label": "Seeking Spiritual Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5158",
+     "label": "Wowhead Classic quest 5158 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t6162",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: A Husband's Last Battle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.8,
+      "y": 52.7,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6162,
+     "label": "A Husband's Last Battle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6162",
+     "label": "Wowhead Classic quest 6162 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t8460",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Timbermaw Ally"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 50.9,
+      "y": 85,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8460,
+     "label": "Timbermaw Ally"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8460",
+     "label": "Wowhead Classic quest 8460 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Timbermaw Ally at Grazle (50.93, 85.01) and do not accept Speak to Nafien.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=8462",
+       "label": "Wowhead Classic quest 8462"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 8460 next 8462; Grazle npc 11554 spawn 50.93, 85.01"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:felwood:a8481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Root of All Evil"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.18,
+      "y": 2.68,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8481,
+     "label": "The Root of All Evil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8481",
+     "label": "Wowhead Classic quest 8481 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a6031",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Runecloth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.69,
+      "y": 2.81,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6031,
+     "label": "Runecloth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6031",
+     "label": "Wowhead Classic quest 6031 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a6032",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Sacred Cloth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.69,
+      "y": 2.81,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6032,
+     "label": "Sacred Cloth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6032",
+     "label": "Wowhead Classic quest 6032 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a87346",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Chieftain Bloodmaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.18,
+      "y": 2.68,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 87346,
+     "label": "Chieftain Bloodmaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=87346",
+     "label": "Wowhead Classic quest 87346 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t8481",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Root of All Evil"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.18,
+      "y": 2.68,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8481,
+     "label": "The Root of All Evil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8481",
+     "label": "Wowhead Classic quest 8481 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t6031",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Runecloth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.69,
+      "y": 2.81,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6031,
+     "label": "Runecloth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6031",
+     "label": "Wowhead Classic quest 6031 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t6032",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Sacred Cloth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.69,
+      "y": 2.81,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6032,
+     "label": "Sacred Cloth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6032",
+     "label": "Wowhead Classic quest 6032 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t87346",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Chieftain Bloodmaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 65.18,
+      "y": 2.68,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 87346,
+     "label": "Chieftain Bloodmaw"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=87346",
+     "label": "Wowhead Classic quest 87346 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a4102",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Cleansing Felwood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 46.75,
+      "y": 83.13,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4102,
+     "label": "Cleansing Felwood"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4102",
+     "label": "Wowhead Classic quest 4102 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t4102",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Cleansing Felwood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 46.75,
+      "y": 83.13,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4102,
+     "label": "Cleansing Felwood"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4102",
+     "label": "Wowhead Classic quest 4102 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a8461",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Deadwood of the North"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 64.77,
+      "y": 8.13,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8461,
+     "label": "Deadwood of the North"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8461",
+     "label": "Wowhead Classic quest 8461 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t8461",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Deadwood of the North"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 64.77,
+      "y": 8.13,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8461,
+     "label": "Deadwood of the North"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8461",
+     "label": "Wowhead Classic quest 8461 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:a86612",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stag Lord's Bauble"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 42.05,
+      "y": 47.32,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86612,
+     "label": "Stag Lord's Bauble"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86612",
+     "label": "Wowhead Classic quest 86612 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:felwood:t86612",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stag Lord's Bauble"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 34.21,
+      "y": 52.34,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86612,
+     "label": "Stag Lord's Bauble"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86612",
+     "label": "Wowhead Classic quest 86612 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:the-barrens:t5158",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Seeking Spiritual Aid"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 65.83,
+      "y": 43.78,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5158,
+     "label": "Seeking Spiritual Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5158",
+     "label": "Wowhead Classic quest 5158 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

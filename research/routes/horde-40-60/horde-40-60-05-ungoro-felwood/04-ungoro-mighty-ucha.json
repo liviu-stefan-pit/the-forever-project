@@ -1,0 +1,1404 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-05-ungoro-felwood",
+ "title": "Un'Goro: The Mighty U'cha",
+ "steps": [
+  {
+   "id": "h4060:un-goro-crater:c4301",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Mighty U'cha"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 68.1,
+      "y": 12.6,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 11476,
+     "count": 1,
+     "questId": 4301,
+     "objective": 1,
+     "label": "U'cha's Pelt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "U'cha (level 55) spawns are densest around 68.1, 12.6. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9622
+     ],
+     "name": "U'cha",
+     "mapId": 1449,
+     "zone": "Un'Goro Crater",
+     "center": {
+      "x": 68.1,
+      "y": 12.6
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4301",
+     "label": "Wowhead Classic quest 4301 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4291",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Scent of Lar'korwi"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 71.6,
+      "y": 76,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4291,
+     "label": "The Scent of Lar'korwi"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4291",
+     "label": "Wowhead Classic quest 4291 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in The Scent of Lar'korwi and do not accept The Bait for Lar'korwi.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4292",
+       "label": "Wowhead Classic quest 4292"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4291 next 4292; 4292 pre 4291"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:un-goro-crater:a4292",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Bait for Lar'korwi"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 71.64,
+      "y": 75.96,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4292,
+     "label": "The Bait for Lar'korwi"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4292",
+     "label": "Wowhead Classic quest 4292 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4292",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Bait for Lar'korwi"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 71.64,
+      "y": 75.96,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4292,
+     "label": "The Bait for Lar'korwi"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4292",
+     "label": "Wowhead Classic quest 4292 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4301",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Mighty U'cha"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 71.6,
+      "y": 76,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4301,
+     "label": "The Mighty U'cha"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4301",
+     "label": "Wowhead Classic quest 4301 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:c4501",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Beware of Pterrordax"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 50.1,
+      "y": 61,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4501,
+     "objective": 1,
+     "label": "Pterrordax"
+    },
+    {
+     "type": "complete",
+     "questId": 4501,
+     "objective": 2,
+     "label": "Frenzied Pterrordax"
+    },
+    {
+     "type": "mob",
+     "name": "Pterrordax",
+     "npcIds": [
+      9166
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Frenzied Pterrordax",
+     "npcIds": [
+      9167
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Pterrordax (level 50-52) spawns are densest around 50.1, 61.0 (26 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Frenzied Pterrordax (level 51-54) spawns are densest around 31.2, 45.2 (60 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9166
+     ],
+     "name": "Pterrordax",
+     "mapId": 1449,
+     "zone": "Un'Goro Crater",
+     "center": {
+      "x": 50.1,
+      "y": 61
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      9167
+     ],
+     "name": "Frenzied Pterrordax",
+     "mapId": 1449,
+     "zone": "Un'Goro Crater",
+     "center": {
+      "x": 31.2,
+      "y": 45.2
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4501",
+     "label": "Wowhead Classic quest 4501 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:a974",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Finding the Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 30.9,
+      "y": 50.4,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 974,
+     "label": "Finding the Source"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=974",
+     "label": "Wowhead Classic quest 974 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:c974",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Finding the Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 48.1,
+      "y": 53.3,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 974,
+     "objective": 1,
+     "label": "Krakle's Thermometer"
+    },
+    {
+     "type": "mob",
+     "name": "Krakle's Thermometer",
+     "npcIds": [
+      10541
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Krakle's Thermometer (level 1) spawns are densest around 48.1, 53.3 (5 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10541
+     ],
+     "name": "Krakle's Thermometer",
+     "mapId": 1449,
+     "zone": "Un'Goro Crater",
+     "center": {
+      "x": 48.1,
+      "y": 53.3
+     },
+     "radius": 7.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=974",
+     "label": "Wowhead Classic quest 974 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t974",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Finding the Source"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 30.9,
+      "y": 50.4,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 974,
+     "label": "Finding the Source"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=974",
+     "label": "Wowhead Classic quest 974 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:a980",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The New Springs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 30.9,
+      "y": 50.4,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 980,
+     "label": "The New Springs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=980",
+     "label": "Wowhead Classic quest 980 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4243",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Chasing A-Me 01"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 67.7,
+      "y": 16.8,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4243,
+     "label": "Chasing A-Me 01"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4243",
+     "label": "Wowhead Classic quest 4243 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Chasing A-Me 01 at the robot and do not accept the casing or the escort.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4244",
+       "label": "Wowhead Classic quest 4244"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4243 next 4244; 4244 next 4245; 4245 flagged PARTY_ACCEPT"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:un-goro-crater:a4244",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Chasing A-Me 01"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 67.66,
+      "y": 16.76,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4244,
+     "label": "Chasing A-Me 01"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4244",
+     "label": "Wowhead Classic quest 4244 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4244",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Chasing A-Me 01"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 67.66,
+      "y": 16.76,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4244,
+     "label": "Chasing A-Me 01"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4244",
+     "label": "Wowhead Classic quest 4244 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t3883",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Alien Ecology"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 43.9,
+      "y": 7.2,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3883,
+     "label": "Alien Ecology"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3883",
+     "label": "Wowhead Classic quest 3883 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t3882",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Roll the Bones"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 43.5,
+      "y": 7.4,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3882,
+     "label": "Roll the Bones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3882",
+     "label": "Wowhead Classic quest 3882 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4501",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Beware of Pterrordax"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 43.6,
+      "y": 8.5,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4501,
+     "label": "Beware of Pterrordax"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4501",
+     "label": "Wowhead Classic quest 4501 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t3881",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Expedition Salvation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 44,
+      "y": 7.1,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3881,
+     "label": "Expedition Salvation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3881",
+     "label": "Wowhead Classic quest 3881 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t3884",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn Williden's Journal in to Williden Marshal with the other refuge quests."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 43.95,
+      "y": 7.14,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3884,
+     "label": "Turn Williden's Journal in to Williden Marshal with the other refuge quests."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3884",
+     "label": "Wowhead Classic quest 3884"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB npc 9270 spawn 43.95, 7.14, zone 490, uiMapId 1449"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "h4060:un-goro-crater:t4503",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Shizzle's Flyer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 44.2,
+      "y": 11.6,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4503,
+     "label": "Shizzle's Flyer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4503",
+     "label": "Wowhead Classic quest 4503 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4145",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Larion and Muigin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 45.5,
+      "y": 8.7,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4145,
+     "label": "Larion and Muigin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4145",
+     "label": "Wowhead Classic quest 4145 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in Larion and Muigin and do not accept Marvon's Workshop.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4147",
+       "label": "Wowhead Classic quest 4147"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 4145 next 4147; 4147 pre 4145, end npc 8496"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:un-goro-crater:a4147",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Marvon's Workshop"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 45.54,
+      "y": 8.72,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4147,
+     "label": "Marvon's Workshop"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4147",
+     "label": "Wowhead Classic quest 4147 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:a4284",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Crystals of Power"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 41.92,
+      "y": 2.7,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4284,
+     "label": "Crystals of Power"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4284",
+     "label": "Wowhead Classic quest 4284 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4284",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Crystals of Power"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 41.92,
+      "y": 2.7,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4284,
+     "label": "Crystals of Power"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4284",
+     "label": "Wowhead Classic quest 4284 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:un-goro-crater:t4492",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Lost!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1449,
+      "x": 51.9,
+      "y": 49.85,
+      "zone": "Un'Goro Crater",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4492,
+     "label": "Lost!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4492",
+     "label": "Wowhead Classic quest 4492 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:the-barrens:t4147",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Marvon's Workshop"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 62.45,
+      "y": 38.73,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4147,
+     "label": "Marvon's Workshop"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 2,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4147",
+     "label": "Wowhead Classic quest 4147 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

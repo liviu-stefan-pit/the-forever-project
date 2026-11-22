@@ -1,0 +1,2639 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "horde-40-60-03-tanaris-feralas",
+ "title": "Tanaris (Gadgetzan)",
+ "steps": [
+  {
+   "id": "h4060:tanaris:a1690",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1690,
+     "label": "Wastewander Justice"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gadgetzan and Steamwheedle Port have two rounds of quests; do the pirates and Wastewander bandits together because their camps are next to each other.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Mages: Arcane Explosion AoE on the Wastewander bandit camps is the quickest way through both Wastewander Justice quests.",
+     "classes": [
+      "Mage"
+     ],
+     "sources": [
+      {
+       "url": "https://warcraft.wiki.gg/wiki/Class",
+       "label": "Warcraft Wiki: Classes"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemId": 12208,
+     "itemName": "Tender Wolf Meat",
+     "qty": 40,
+     "skillTarget": 265,
+     "npc": {
+      "id": 8125,
+      "name": "Dirge Quikcleave",
+      "zone": "Tanaris",
+      "x": 52.6,
+      "y": 28.1,
+      "mapId": 1446
+     },
+     "note": "Keep Tender Wolf Meat from Longtooth Runner (Feralas, lvl 40-41) for Tender Wolf Steak. Buy Recipe: Tender Wolf Steak from Dirge Quikcleave (Tanaris 52.6, 28.1) for 1g 20s. Recipe learnable at 225; every craft gives a point until 265 (about 40 crafts). Feralas/Hinterlands/Felwood wolves.",
+     "sources": [
+      {
+       "url": "https://theforeverguides.com/professions/cooking-recipes/",
+       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
+      },
+      {
+       "url": "https://wowfdb.com/professions/cooking/recipes/",
+       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
+       "label": "QuestieDB classicItemDB (GitHub)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=12208",
+       "label": "Wowhead Classic item"
+      },
+      {
+       "url": "https://wowfdb.com/zones/tanaris/map/",
+       "label": "WoW Forever DB zone map (NPC positions)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=8125",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/sentinel/professions/research/professions",
+       "label": "Project Forever research: professions (Sentinel)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "profession": "First Aid",
+     "itemId": 16084,
+     "itemName": "Expert First Aid - Under Wraps",
+     "npc": {
+      "id": 13476,
+      "name": "Balai Lok'Wein",
+      "zone": "Dustwallow Marsh",
+      "x": 36.5,
+      "y": 30.4,
+      "mapId": 1445
+     },
+     "note": "Expert First Aid (150-225) and the Mageweave bandage manuals are sold by Balai Lok'Wein at Brackenwall Village. The Horde Triage quest (Doctor Gregory Victor, Hammerfall) unlocks 225-300. Bank your Mageweave and Runecloth for bandages.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=16084",
+       "label": "Wowhead Classic item 16084 (reference link)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=6622",
+       "label": "Wowhead Classic quest 6622 (reference link)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 7824,
+     "name": "Bulkrek Ragefist",
+     "at": {
+      "mapId": 1446,
+      "zone": "Tanaris",
+      "x": 51.6,
+      "y": 25.4
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1690",
+     "label": "Wowhead Classic quest 1690 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a1707",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Water Pouch Bounty"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1707,
+     "label": "Water Pouch Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1707",
+     "label": "Wowhead Classic quest 1707 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a5863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Dunemaul Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.8,
+      "y": 27.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5863,
+     "label": "The Dunemaul Compound"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5863",
+     "label": "Wowhead Classic quest 5863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a3362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Thistleshrub Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3362,
+     "label": "Thistleshrub Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3362",
+     "label": "Wowhead Classic quest 3362 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a2605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Thirsty Goblin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.8,
+      "y": 28.7,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2605,
+     "label": "The Thirsty Goblin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2605",
+     "label": "Wowhead Classic quest 2605 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a992",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Gadgetzan Water Survey"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.2,
+      "y": 27.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 992,
+     "label": "Gadgetzan Water Survey"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=992",
+     "label": "Wowhead Classic quest 992 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:travel-6e1a1d",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Ride east to Steamwheedle Port."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "zone",
+     "label": "Ride east to Steamwheedle Port."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 4,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Steamwheedle boat to Powderfuse Port is optional travel, about a minute, and it is not tied to Consolation Prize.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 95472 pre 95321; 95321 pre 95312"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:tanaris:t2872",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stoley's Debt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67.1,
+      "y": 24,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2872,
+     "label": "Stoley's Debt"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "professionHooks": [
+    {
+     "profession": "Cooking",
+     "itemName": "Recipe: Undermine Clam Chowder",
+     "npc": {
+      "id": 8139,
+      "name": "Jabbey",
+      "zone": "Tanaris",
+      "x": 67,
+      "y": 22,
+      "mapId": 1446
+     },
+     "note": "Jabbey at Steamwheedle Port sells Recipe: Undermine Clam Chowder; it uses the clam meat you have been saving.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=16767",
+       "label": "Wowhead Classic item 16767 (reference link)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2872",
+     "label": "Wowhead Classic quest 2872 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a2873",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Stoley's Shipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67.1,
+      "y": 24,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2873,
+     "label": "Stoley's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2873",
+     "label": "Wowhead Classic quest 2873 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a8366",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Southsea Shakedown"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67.1,
+      "y": 23.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8366,
+     "label": "Southsea Shakedown"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8366",
+     "label": "Wowhead Classic quest 8366 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c8366",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Southsea Shakedown"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 72,
+      "y": 45.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 8366,
+     "objective": 1,
+     "label": "Southsea Pirate"
+    },
+    {
+     "type": "complete",
+     "questId": 8366,
+     "objective": 2,
+     "label": "Southsea Freebooter"
+    },
+    {
+     "type": "complete",
+     "questId": 8366,
+     "objective": 3,
+     "label": "Southsea Dock Worker"
+    },
+    {
+     "type": "complete",
+     "questId": 8366,
+     "objective": 4,
+     "label": "Southsea Swashbuckler"
+    },
+    {
+     "type": "mob",
+     "name": "Southsea Pirate",
+     "npcIds": [
+      7855
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Southsea Freebooter",
+     "npcIds": [
+      7856
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Southsea Dock Worker",
+     "npcIds": [
+      7857
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Southsea Swashbuckler",
+     "npcIds": [
+      7858
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Southsea Pirate (level 44-45) spawns are densest around 72.0, 45.8 (26 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Southsea Freebooter (level 44-45) spawns are densest around 72.8, 45.3 (27 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7855
+     ],
+     "name": "Southsea Pirate",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 72,
+      "y": 45.8
+     },
+     "radius": 2.8,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7856
+     ],
+     "name": "Southsea Freebooter",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 72.8,
+      "y": 45.3
+     },
+     "radius": 3.1,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7857
+     ],
+     "name": "Southsea Dock Worker",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 74.2,
+      "y": 47.5
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7858
+     ],
+     "name": "Southsea Swashbuckler",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 74.7,
+      "y": 45.8
+     },
+     "radius": 2.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8366",
+     "label": "Wowhead Classic quest 8366 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c2873",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Stoley's Shipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 72.2,
+      "y": 46.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 9244,
+     "count": 1,
+     "questId": 2873,
+     "objective": 1,
+     "label": "Stoley's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2873",
+     "label": "Wowhead Classic quest 2873 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t8366",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Southsea Shakedown"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67.1,
+      "y": 23.9,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 8366,
+     "label": "Southsea Shakedown"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8366",
+     "label": "Wowhead Classic quest 8366 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t2873",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Stoley's Shipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 67.1,
+      "y": 24,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2873,
+     "label": "Stoley's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2873",
+     "label": "Wowhead Classic quest 2873 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c1690",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 63.4,
+      "y": 29.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1690,
+     "objective": 1,
+     "label": "Wastewander Bandit"
+    },
+    {
+     "type": "complete",
+     "questId": 1690,
+     "objective": 2,
+     "label": "Wastewander Thief"
+    },
+    {
+     "type": "mob",
+     "name": "Wastewander Bandit",
+     "npcIds": [
+      5618
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Wastewander Thief",
+     "npcIds": [
+      5616
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Wastewander Bandit (level 41-42) spawns are densest around 63.4, 29.4 (13 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Wastewander Thief (level 40-41) spawns are densest around 62.7, 30.1 (25 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5618
+     ],
+     "name": "Wastewander Bandit",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 63.4,
+      "y": 29.4
+     },
+     "radius": 5.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5616
+     ],
+     "name": "Wastewander Thief",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 62.7,
+      "y": 30.1
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1690",
+     "label": "Wowhead Classic quest 1690 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c1707",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Water Pouch Bounty"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 61.7,
+      "y": 38.2,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8483,
+     "count": 1,
+     "questId": 1707,
+     "objective": 1,
+     "label": "Wastewander Water Pouch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Wastewander Rogue (level 43-44) spawns are densest around 61.7, 38.2. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5615
+     ],
+     "name": "Wastewander Rogue",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 61.7,
+      "y": 38.2
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5616
+     ],
+     "name": "Wastewander Thief",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 62.7,
+      "y": 30.1
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5617
+     ],
+     "name": "Wastewander Shadow Mage",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 62,
+      "y": 35.5
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1707",
+     "label": "Wowhead Classic quest 1707 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c992",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Gadgetzan Water Survey"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 39,
+      "y": 29,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8585,
+     "count": 1,
+     "questId": 992,
+     "objective": 1,
+     "label": "Tapped Dowsing Widget"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=992",
+     "label": "Wowhead Classic quest 992 (reference link)"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
+     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t1690",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1690,
+     "label": "Wastewander Justice"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1690",
+     "label": "Wowhead Classic quest 1690 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a1691",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: More Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1691,
+     "label": "More Wastewander Justice"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1691",
+     "label": "Wowhead Classic quest 1691 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c1691",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: More Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 61.7,
+      "y": 38.2,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1691,
+     "objective": 1,
+     "label": "Wastewander Rogue"
+    },
+    {
+     "type": "complete",
+     "questId": 1691,
+     "objective": 2,
+     "label": "Wastewander Assassin"
+    },
+    {
+     "type": "complete",
+     "questId": 1691,
+     "objective": 3,
+     "label": "Wastewander Shadow Mage"
+    },
+    {
+     "type": "mob",
+     "name": "Wastewander Rogue",
+     "npcIds": [
+      5615
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Wastewander Assassin",
+     "npcIds": [
+      5623
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Wastewander Shadow Mage",
+     "npcIds": [
+      5617
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Wastewander Rogue (level 43-44) spawns are densest around 61.7, 38.2 (22 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Wastewander Assassin (level 44-45) spawns are densest around 60.5, 38.5 (13 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5615
+     ],
+     "name": "Wastewander Rogue",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 61.7,
+      "y": 38.2
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5623
+     ],
+     "name": "Wastewander Assassin",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 60.5,
+      "y": 38.5
+     },
+     "radius": 4.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5617
+     ],
+     "name": "Wastewander Shadow Mage",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 62,
+      "y": 35.5
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1691",
+     "label": "Wowhead Classic quest 1691 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t1707",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Water Pouch Bounty"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1707,
+     "label": "Water Pouch Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+     "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1707",
+     "label": "Wowhead Classic quest 1707 (reference link)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The repeatable follow-up Water Pouch Bounty (1878) no longer gives XP; do not farm Wastewander Water Pouches for experience after this turn-in.",
+     "routes": [
+      "balanced",
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:tanaris:t1691",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: More Wastewander Justice"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.5,
+      "y": 28.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1691,
+     "label": "More Wastewander Justice"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1691",
+     "label": "Wowhead Classic quest 1691 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t992",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Gadgetzan Water Survey"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.2,
+      "y": 27.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 992,
+     "label": "Gadgetzan Water Survey"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=992",
+     "label": "Wowhead Classic quest 992 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a82",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: Noxious Lair Investigation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.2,
+      "y": 27.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 82,
+     "label": "Noxious Lair Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=82",
+     "label": "Wowhead Classic quest 82 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c82",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Noxious Lair Investigation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 33.3,
+      "y": 44.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8587,
+     "count": 1,
+     "questId": 82,
+     "objective": 1,
+     "label": "Centipaar Insect Parts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Centipaar Wasp (level 47-48) spawns are densest around 33.3, 44.4. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5455
+     ],
+     "name": "Centipaar Wasp",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 33.3,
+      "y": 44.4
+     },
+     "radius": 4.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5456
+     ],
+     "name": "Centipaar Stinger",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 33.7,
+      "y": 44.7
+     },
+     "radius": 4.9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5457
+     ],
+     "name": "Centipaar Swarmer",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 34.2,
+      "y": 44.4
+     },
+     "radius": 4.6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=82",
+     "label": "Wowhead Classic quest 82 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t82",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Noxious Lair Investigation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.9,
+      "y": 27,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 82,
+     "label": "Noxious Lair Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=82",
+     "label": "Wowhead Classic quest 82 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:a10",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Scrimshank Redemption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.2,
+      "y": 27.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 10,
+     "label": "The Scrimshank Redemption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=10",
+     "label": "Wowhead Classic quest 10 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c10",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Scrimshank Redemption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 56,
+      "y": 71.2,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8593,
+     "count": 1,
+     "questId": 10,
+     "objective": 1,
+     "label": "Scrimshank's Surveying Gear"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=10",
+     "label": "Wowhead Classic quest 10 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t10",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Scrimshank Redemption"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 50.2,
+      "y": 27.5,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 10,
+     "label": "The Scrimshank Redemption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=10",
+     "label": "Wowhead Classic quest 10 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c2605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Thirsty Goblin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 29.4,
+      "y": 66.3,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 8428,
+     "count": 1,
+     "questId": 2605,
+     "objective": 1,
+     "label": "Laden Dew Gland"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Thistleshrub Dew Collector (level 47-48) spawns are densest around 29.4, 66.3. Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5481
+     ],
+     "name": "Thistleshrub Dew Collector",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 29.4,
+      "y": 66.3
+     },
+     "radius": 2.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2605",
+     "label": "Wowhead Classic quest 2605 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c3362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Thistleshrub Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 29.6,
+      "y": 66.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3362,
+     "objective": 1,
+     "label": "Gnarled Thistleshrub"
+    },
+    {
+     "type": "complete",
+     "questId": 3362,
+     "objective": 2,
+     "label": "Thistleshrub Rootshaper"
+    },
+    {
+     "type": "mob",
+     "name": "Gnarled Thistleshrub",
+     "npcIds": [
+      5490
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Thistleshrub Rootshaper",
+     "npcIds": [
+      5485
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gnarled Thistleshrub (level 48-49) spawns are densest around 29.6, 66.4 (8 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Thistleshrub Rootshaper (level 49-50) spawns are densest around 29.7, 66.3 (11 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5490
+     ],
+     "name": "Gnarled Thistleshrub",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 29.6,
+      "y": 66.4
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5485
+     ],
+     "name": "Thistleshrub Rootshaper",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 29.7,
+      "y": 66.3
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3362",
+     "label": "Wowhead Classic quest 3362 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t2605",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Thirsty Goblin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.8,
+      "y": 28.7,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2605,
+     "label": "The Thirsty Goblin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2605",
+     "label": "Wowhead Classic quest 2605 (reference link)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Turn in The Thirsty Goblin at Marin. In Good Taste is only the talk to Sprinkle in Gadgetzan. Do not take Sprinkle's Secret Ingredient.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB 2605 next 2606; 2606 pre 2605 next 2641; 2641 is a violet tragan"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=2641",
+       "label": "Wowhead Classic quest 2641"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "h4060:tanaris:c5863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Dunemaul Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 40.6,
+      "y": 57.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 1,
+     "label": "Dunemaul Brute"
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 2,
+     "label": "Dunemaul Enforcer"
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 3,
+     "label": "Gor'marok the Ravager"
+    },
+    {
+     "type": "mob",
+     "name": "Dunemaul Brute",
+     "npcIds": [
+      5474
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Dunemaul Enforcer",
+     "npcIds": [
+      5472
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gor'marok the Ravager",
+     "npcIds": [
+      12046
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Dunemaul Brute (level 46-48) spawns are densest around 40.6, 57.4 (30 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Dunemaul Enforcer (level 46-47) spawns are densest around 39.9, 58.0 (25 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5474
+     ],
+     "name": "Dunemaul Brute",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 40.6,
+      "y": 57.4
+     },
+     "radius": 6.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5472
+     ],
+     "name": "Dunemaul Enforcer",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 39.9,
+      "y": 58
+     },
+     "radius": 9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12046
+     ],
+     "name": "Gor'marok the Ravager",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 41.5,
+      "y": 57.8
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5863",
+     "label": "Wowhead Classic quest 5863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t5863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Dunemaul Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.8,
+      "y": 27.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5863,
+     "label": "The Dunemaul Compound"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5863",
+     "label": "Wowhead Classic quest 5863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t3362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Thistleshrub Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3362,
+     "label": "Thistleshrub Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3362",
+     "label": "Wowhead Classic quest 3362 (reference link)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}
