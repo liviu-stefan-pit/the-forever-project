@@ -357,100 +357,6 @@
    "verified": true
   },
   {
-   "id": "h4060:the-barrens:a4502",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Volcanic Activity"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1413,
-      "x": 62.45,
-      "y": 38.73,
-      "zone": "The Barrens",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 4502,
-     "label": "Volcanic Activity"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4502",
-     "label": "Wowhead Classic quest 4502 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:the-barrens:t4502",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Volcanic Activity"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1413,
-      "x": 62.45,
-      "y": 38.73,
-      "zone": "The Barrens",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 4502,
-     "label": "Volcanic Activity"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=4502",
-     "label": "Wowhead Classic quest 4502 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:dustwallow-marsh:a1270",
    "tags": {},
    "text": [
@@ -1020,6 +926,82 @@
     }
    ],
    "verified": false
+  },
+  {
+   "id": "h4060:tanaris:grind-sr-45",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Stay on the Blisterpaw Hyena camp until you are halfway from 45 to 46. The camp is dense, with 128 spawns."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.3,
+      "y": 48.72,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 45,
+     "extra": 58750,
+     "label": "Stay on the Blisterpaw Hyena camp until you are halfway from 45 to 46. The camp is dense, with 128 spawns.",
+     "mobId": 5426,
+     "mobName": "Blisterpaw Hyena",
+     "mobLevel": 45
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=5426",
+     "label": "Wowhead Classic NPC 5426"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5426
+     ],
+     "name": "Blisterpaw Hyena",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 52.3,
+      "y": 48.72
+     },
+     "radius": 22.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5426",
+       "label": "Wowhead Classic NPC 5426"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   }
  ]
 }

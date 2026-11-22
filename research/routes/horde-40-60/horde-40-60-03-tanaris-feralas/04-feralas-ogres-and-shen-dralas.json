@@ -369,6 +369,192 @@
    "verified": true
   },
   {
+   "id": "h4060:feralas:c7730",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Zukk'ash Infestation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 77.28,
+      "y": 64.31,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 18961,
+     "count": 1,
+     "questId": 7730,
+     "objective": 1,
+     "label": "Zukk'ash Carapace"
+    },
+    {
+     "type": "mob",
+     "name": "Zukk'ash Tunneler",
+     "npcIds": [
+      5247
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Zukk'ash Tunnelers at 77.28, 64.31 drop Zukk'ash Carapaces. Wasps, workers, and stingers share the Writhing Deep.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5247
+     ],
+     "name": "Zukk'ash Tunneler",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 77.28,
+      "y": 64.31
+     },
+     "radius": 5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7730",
+     "label": "Wowhead Classic quest 7730 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:feralas:c7731",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Stinglasher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1444,
+      "x": 75.58,
+      "y": 60.85,
+      "zone": "Feralas",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 18962,
+     "count": 1,
+     "questId": 7731,
+     "objective": 1,
+     "label": "Stinglasher's Glands"
+    },
+    {
+     "type": "mob",
+     "name": "Stinglasher",
+     "npcIds": [
+      14661
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Stinglasher is at 75.58, 60.85 in the Writhing Deep.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      14661
+     ],
+     "name": "Stinglasher",
+     "mapId": 1444,
+     "zone": "Feralas",
+     "center": {
+      "x": 75.58,
+      "y": 60.85
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 6,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=7731",
+     "label": "Wowhead Classic quest 7731 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:feralas:t7731",
    "tags": {},
    "text": [
@@ -816,194 +1002,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=2980",
      "label": "Wowhead Classic quest 2980 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:feralas:a7003",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Zapped Giants"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1444,
-      "x": 44.81,
-      "y": 43.42,
-      "zone": "Feralas",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 7003,
-     "label": "Zapped Giants"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7003",
-     "label": "Wowhead Classic quest 7003 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:feralas:a7721",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Fuel for the Zapping"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1444,
-      "x": 44.81,
-      "y": 43.42,
-      "zone": "Feralas",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 7721,
-     "label": "Fuel for the Zapping"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7721",
-     "label": "Wowhead Classic quest 7721 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:feralas:t7003",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Zapped Giants"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1444,
-      "x": 44.81,
-      "y": 43.42,
-      "zone": "Feralas",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 7003,
-     "label": "Zapped Giants"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7003",
-     "label": "Wowhead Classic quest 7003 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:feralas:t7721",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Fuel for the Zapping"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1444,
-      "x": 44.81,
-      "y": 43.42,
-      "zone": "Feralas",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 7721,
-     "label": "Fuel for the Zapping"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7721",
-     "label": "Wowhead Classic quest 7721 (reference link)"
     }
    ],
    "verified": true

@@ -500,56 +500,6 @@
    "verified": true
   },
   {
-   "id": "h4060:swamp-of-sorrows:c1424",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete: Pool of Tears"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1435,
-      "x": 74.6,
-      "y": 51.9,
-      "zone": "Swamp of Sorrows",
-      "exact": true
-     }
-    },
-    {
-     "type": "collect",
-     "itemId": 6175,
-     "count": 1,
-     "questId": 1424,
-     "objective": 1,
-     "label": "Atal'ai Artifact"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 8,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=1424",
-     "label": "Wowhead Classic quest 1424 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:swamp-of-sorrows:t698",
    "tags": {},
    "text": [
@@ -660,8 +610,8 @@
      "type": "goto",
      "at": {
       "mapId": 1435,
-      "x": 83.4,
-      "y": 36.3,
+      "x": 83.8,
+      "y": 95.42,
       "zone": "Swamp of Sorrows",
       "exact": true
      }
@@ -683,7 +633,7 @@
    "tips": [
     {
      "kind": "speed",
-     "text": "Sawtooth Snapper (level 41-42) spawns are densest around 83.4, 36.3. Start there and loop outward.",
+     "text": "Sawtooth Snapper (level 41-42) spawn at 83.8, 95.42 sits on the south shore with the Marsh Murlocs. Collect the claws on this same loop.",
      "sources": [
       {
        "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -703,10 +653,10 @@
      "mapId": 1435,
      "zone": "Swamp of Sorrows",
      "center": {
-      "x": 83.4,
-      "y": 36.3
+      "x": 83.8,
+      "y": 95.42
      },
-     "radius": 15,
+     "radius": 8,
      "sources": [
       {
        "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -1493,6 +1443,56 @@
    "verified": true
   },
   {
+   "id": "h4060:swamp-of-sorrows:c1424",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Pool of Tears"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 74.6,
+      "y": 51.9,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 6175,
+     "count": 1,
+     "questId": 1424,
+     "objective": 1,
+     "label": "Atal'ai Artifact"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1424",
+     "label": "Wowhead Classic quest 1424 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:swamp-of-sorrows:t1430",
    "tags": {},
    "text": [
@@ -1587,6 +1587,53 @@
    "verified": true
   },
   {
+   "id": "h4060:swamp-of-sorrows:a1429",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept: The Atal'ai Exile"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.93,
+      "y": 54.78,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1429,
+     "label": "The Atal'ai Exile"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1429",
+     "label": "Wowhead Classic quest 1429 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:swamp-of-sorrows:a1393",
    "tags": {},
    "text": [
@@ -1617,10 +1664,60 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1393",
+     "label": "Wowhead Classic quest 1393 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:swamp-of-sorrows:travel-e1393a",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Escort Galen from 65.47, 18.16 to his strongbox at 47.81, 39.76."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 65.47,
+      "y": 18.16,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1435,
+      "x": 47.81,
+      "y": 39.76,
+      "zone": "Swamp of Sorrows",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 6,
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -1664,8 +1761,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -1676,100 +1772,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=1393",
      "label": "Wowhead Classic quest 1393 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:swamp-of-sorrows:a93464",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Visiting Mage"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1435,
-      "x": 25.98,
-      "y": 31.4,
-      "zone": "Swamp of Sorrows",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93464,
-     "label": "The Visiting Mage"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93464",
-     "label": "Wowhead Classic quest 93464 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:swamp-of-sorrows:t93464",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: The Visiting Mage"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1443,
-      "x": 38.88,
-      "y": 27.16,
-      "zone": "Desolace",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93464,
-     "label": "The Visiting Mage"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93464",
-     "label": "Wowhead Classic quest 93464 (reference link)"
     }
    ],
    "verified": true

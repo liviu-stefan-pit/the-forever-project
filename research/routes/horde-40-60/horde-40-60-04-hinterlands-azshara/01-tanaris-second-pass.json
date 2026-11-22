@@ -45,6 +45,415 @@
    "verified": true
   },
   {
+   "id": "h4060:tanaris:c5863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Dunemaul Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 40.6,
+      "y": 57.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 1,
+     "label": "Dunemaul Brute"
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 2,
+     "label": "Dunemaul Enforcer"
+    },
+    {
+     "type": "complete",
+     "questId": 5863,
+     "objective": 3,
+     "label": "Gor'marok the Ravager"
+    },
+    {
+     "type": "mob",
+     "name": "Dunemaul Brute",
+     "npcIds": [
+      5474
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Dunemaul Enforcer",
+     "npcIds": [
+      5472
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Gor'marok the Ravager",
+     "npcIds": [
+      12046
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Dunemaul Brute (level 46-48) spawns are densest around 40.6, 57.4 (30 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Dunemaul Enforcer (level 46-47) spawns are densest around 39.9, 58.0 (25 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Gor'marok the Ravager's respawn was sped up on 20 November 2026.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5474
+     ],
+     "name": "Dunemaul Brute",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 40.6,
+      "y": 57.4
+     },
+     "radius": 6.7,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5472
+     ],
+     "name": "Dunemaul Enforcer",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 39.9,
+      "y": 58
+     },
+     "radius": 9,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12046
+     ],
+     "name": "Gor'marok the Ravager",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 41.5,
+      "y": 57.8
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5863",
+     "label": "Wowhead Classic quest 5863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:c3362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Thistleshrub Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 29.6,
+      "y": 66.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3362,
+     "objective": 1,
+     "label": "Gnarled Thistleshrub"
+    },
+    {
+     "type": "complete",
+     "questId": 3362,
+     "objective": 2,
+     "label": "Thistleshrub Rootshaper"
+    },
+    {
+     "type": "mob",
+     "name": "Gnarled Thistleshrub",
+     "npcIds": [
+      5490
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Thistleshrub Rootshaper",
+     "npcIds": [
+      5485
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Gnarled Thistleshrub (level 48-49) spawns are densest around 29.6, 66.4 (8 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "speed",
+     "text": "Thistleshrub Rootshaper (level 49-50) spawns are densest around 29.7, 66.3 (11 spawn points). Start there and loop outward.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5490
+     ],
+     "name": "Gnarled Thistleshrub",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 29.6,
+      "y": 66.4
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5485
+     ],
+     "name": "Thistleshrub Rootshaper",
+     "mapId": 1446,
+     "zone": "Tanaris",
+     "center": {
+      "x": 29.7,
+      "y": 66.3
+     },
+     "radius": 2.4,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3362",
+     "label": "Wowhead Classic quest 3362 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t5863",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: The Dunemaul Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 52.8,
+      "y": 27.4,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5863,
+     "label": "The Dunemaul Compound"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5863",
+     "label": "Wowhead Classic quest 5863 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:tanaris:t3362",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in: Thistleshrub Valley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1446,
+      "x": 51.6,
+      "y": 26.8,
+      "zone": "Tanaris",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3362,
+     "label": "Thistleshrub Valley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3362",
+     "label": "Wowhead Classic quest 3362 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
    "id": "h4060:tanaris:a2741",
    "tags": {},
    "text": [
@@ -134,288 +543,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=2741",
      "label": "Wowhead Classic quest 2741 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:a8747",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Path of the Protector"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 8747,
-     "label": "The Path of the Protector"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8747",
-     "label": "Wowhead Classic quest 8747 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:a8752",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Path of the Conqueror"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 8752,
-     "label": "The Path of the Conqueror"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8752",
-     "label": "Wowhead Classic quest 8752 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:a8757",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: The Path of the Invoker"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 8757,
-     "label": "The Path of the Invoker"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8757",
-     "label": "Wowhead Classic quest 8757 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t8747",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: The Path of the Protector"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 8747,
-     "label": "The Path of the Protector"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8747",
-     "label": "Wowhead Classic quest 8747 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t8752",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: The Path of the Conqueror"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 8752,
-     "label": "The Path of the Conqueror"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8752",
-     "label": "Wowhead Classic quest 8752 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t8757",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: The Path of the Invoker"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 65.27,
-      "y": 50.03,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 8757,
-     "label": "The Path of the Invoker"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8757",
-     "label": "Wowhead Classic quest 8757 (reference link)"
     }
    ],
    "verified": true
@@ -609,100 +736,6 @@
    "verified": true
   },
   {
-   "id": "h4060:tanaris:a84137",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Mechanical Romance"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 59.24,
-      "y": 91.49,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 84137,
-     "label": "Mechanical Romance"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=84137",
-     "label": "Wowhead Classic quest 84137 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t84137",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Mechanical Romance"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 55.29,
-      "y": 95.52,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 84137,
-     "label": "Mechanical Romance"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=84137",
-     "label": "Wowhead Classic quest 84137 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:tanaris:a3161",
    "tags": {},
    "text": [
@@ -797,100 +830,6 @@
    "verified": true
   },
   {
-   "id": "h4060:tanaris:a2874",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Deliver to MacKinley"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 67.11,
-      "y": 23.98,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 2874,
-     "label": "Deliver to MacKinley"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=2874",
-     "label": "Wowhead Classic quest 2874 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:stranglethorn-vale:t2874",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Deliver to MacKinley"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1434,
-      "x": 27.78,
-      "y": 77.07,
-      "zone": "Stranglethorn Vale",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 2874,
-     "label": "Deliver to MacKinley"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=2874",
-     "label": "Wowhead Classic quest 2874 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:tanaris:a2875",
    "tags": {},
    "text": [
@@ -938,60 +877,13 @@
    "verified": true
   },
   {
-   "id": "h4060:tanaris:a8365",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Pirate Hats Ahoy!"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 66.56,
-      "y": 22.27,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 8365,
-     "label": "Pirate Hats Ahoy!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8365",
-     "label": "Wowhead Classic quest 8365 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "h4060:tanaris:a3520",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Accept: Screecher Spirits"
+       "t": "Skip Screecher Spirits. Do not add The Prophecy of Mosh'aru."
       }
      ]
     }
@@ -1006,11 +898,6 @@
       "zone": "Tanaris",
       "exact": true
      }
-    },
-    {
-     "type": "accept",
-     "questId": 3520,
-     "label": "Screecher Spirits"
     }
    ],
    "conditions": [],
@@ -1029,101 +916,20 @@
      "label": "Wowhead Classic quest 3520 (reference link)"
     }
    ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t8365",
-   "tags": {},
-   "text": [
+   "verified": true,
+   "tips": [
     {
-     "segments": [
+     "kind": "general",
+     "text": "The 16 November 2026 hotfix moved Vale Screamers to the Isle of Dread coastline. This guide has no verified pin, and it does not pick the quest up. The old interior Feralas camps are the wrong place to look.",
+     "sources": [
       {
-       "t": "Turn in: Pirate Hats Ahoy!"
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard Forever hotfixes through 20 Nov 2026"
       }
-     ]
+     ],
+     "verified": false
     }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 66.56,
-      "y": 22.27,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 8365,
-     "label": "Pirate Hats Ahoy!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=8365",
-     "label": "Wowhead Classic quest 8365 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t3520",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Screecher Spirits"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 66.99,
-      "y": 22.36,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 3520,
-     "label": "Screecher Spirits"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=3520",
-     "label": "Wowhead Classic quest 3520 (reference link)"
-    }
-   ],
-   "verified": true
+   ]
   },
   {
    "id": "h4060:tanaris:t2875",
@@ -1215,100 +1021,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=95472",
      "label": "Wowhead Classic quest 95472 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:a97540",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: Oasis"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 29.48,
-      "y": 60.51,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 97540,
-     "label": "Oasis"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=97540",
-     "label": "Wowhead Classic quest 97540 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:tanaris:t97540",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: Oasis"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1446,
-      "x": 29.48,
-      "y": 60.51,
-      "zone": "Tanaris",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 97540,
-     "label": "Oasis"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=97540",
-     "label": "Wowhead Classic quest 97540 (reference link)"
     }
    ],
    "verified": true

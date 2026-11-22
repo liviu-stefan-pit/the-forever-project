@@ -114,8 +114,8 @@ Azshara Sin'dorei chain that needs Classic "Betrayed", Riverglades "Key Ingredie
 
 ### Riverglades 94532 / 94535 (added after the 20-40 hand-off)
 
-Gnoll Infestation (94532, Neza Bloodsnout) and Bristle Hills Bandits (94535, Kreza Darkthorn) are level 38 but need A Hunter's Quiver (96109, level 40),
-so the 20-40 route leaves them out. Both routes pick them up at Rog'mar right after 96109 is handed in. Balanced does them on the Snargl's Snout trip to the
+Gnoll Infestation (94532, Neza Bloodsnout) and Bristle Hills Bandits (94535, Kreza Darkthorn) are level 38 but need A Hunter's Quiver (96109, level 40).
+Pack 07 turns 96109 in and then does both quests on balanced and speedrun. Both routes pick them up at Rog'mar right after 96109 is handed in. Balanced does them on the Snargl's Snout trip to the
 Bristle Hills and hands in with it. Speedrun skips Snargl, so it kills the gnolls during the nearby Clear 'em Out / Proof of Profit stop and hands in at Rog'mar
 before the Krol'dok step and the flight out (separate step ids `c/t94532-speedrun`, `c/t94535-speedrun`). Ids, givers and coordinates are from
 `content/questie-db`; all six step kinds are `tags.forever` and `verified: false`.

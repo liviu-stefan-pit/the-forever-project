@@ -1225,10 +1225,129 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 1,
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3443",
+     "label": "Wowhead Classic quest 3443 (reference link)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "h4060:searing-gorge:c3443",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Forging the Shaft"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1427,
+      "x": 43.12,
+      "y": 40.37,
+      "zone": "Searing Gorge",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 10551,
+     "count": 1,
+     "questId": 3443,
+     "objective": 1,
+     "label": "Thorium Plated Dagger"
+    },
+    {
+     "type": "mob",
+     "name": "Dark Iron Taskmaster",
+     "npcIds": [
+      5846
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Dark Iron Slaver",
+     "npcIds": [
+      5844
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Dark Iron Taskmasters at 43.12, 40.37 and Dark Iron Slavers at 42.81, 40.54 drop Thorium Plated Daggers.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5846
+     ],
+     "name": "Dark Iron Taskmaster",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 43.12,
+      "y": 40.37
+     },
+     "radius": 6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5844
+     ],
+     "name": "Dark Iron Slaver",
+     "mapId": 1427,
+     "zone": "Searing Gorge",
+     "center": {
+      "x": 42.81,
+      "y": 40.54
+     },
+     "radius": 6,
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "minutes": 8,
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
@@ -1272,8 +1391,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "minutes": 2,
    "sources": [
@@ -1284,54 +1402,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=3443",
      "label": "Wowhead Classic quest 3443 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:searing-gorge:a7701",
-   "tags": {
-    "optional": true
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept: WANTED: Overseer Maltorius"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1427,
-      "x": 37.65,
-      "y": 26.47,
-      "zone": "Searing Gorge",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 7701,
-     "label": "WANTED: Overseer Maltorius"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "minutes": 1,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7701",
-     "label": "Wowhead Classic quest 7701 (reference link)"
     }
    ],
    "verified": true
@@ -1426,54 +1496,6 @@
     {
      "url": "https://www.wowhead.com/classic/quest=7729",
      "label": "Wowhead Classic quest 7729 (reference link)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "h4060:searing-gorge:t7701",
-   "tags": {
-    "optional": true
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in: WANTED: Overseer Maltorius"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1427,
-      "x": 37.74,
-      "y": 26.56,
-      "zone": "Searing Gorge",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 7701,
-     "label": "WANTED: Overseer Maltorius"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "minutes": 2,
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB data/Forever (GPL-3.0)"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=7701",
-     "label": "Wowhead Classic quest 7701 (reference link)"
     }
    ],
    "verified": true

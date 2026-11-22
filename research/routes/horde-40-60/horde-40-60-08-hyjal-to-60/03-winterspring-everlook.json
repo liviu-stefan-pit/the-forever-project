@@ -292,6 +292,87 @@
    "verified": true
   },
   {
+   "id": "h4060:winterspring:c5056",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Shy-Rotam"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 49.81,
+      "y": 9.8,
+      "zone": "Winterspring",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5056,
+     "objective": 1,
+     "label": "Shy-Rotam"
+    },
+    {
+     "type": "mob",
+     "name": "Shy-Rotam",
+     "npcIds": [
+      10737
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Hunter"
+   ],
+   "elite": [
+    {
+     "name": "Shy-Rotam",
+     "npcId": 10737,
+     "level": 60,
+     "tips": [
+      {
+       "kind": "elite",
+       "text": "Shy-Rotam is an elite.",
+       "sources": [
+        {
+         "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+         "label": "QuestieDB data/Forever (GPL-3.0)"
+        }
+       ],
+       "verified": false
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+       "label": "QuestieDB data/Forever (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
    "id": "h4060:winterspring:t5056",
    "tags": {
     "optional": true
@@ -341,6 +422,50 @@
    "classes": [
     "Hunter"
    ]
+  },
+  {
+   "id": "h4060:winterspring:c969",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Luck Be With You"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 61.84,
+      "y": 67.99,
+      "zone": "Winterspring"
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12334,
+     "count": 4,
+     "questId": 969,
+     "objective": 1,
+     "label": "Frostmaul Shards"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
   },
   {
    "id": "h4060:winterspring:t969",
@@ -437,6 +562,71 @@
    "verified": true
   },
   {
+   "id": "h4060:winterspring:c4809",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Chillwind Horns"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 59.51,
+      "y": 23.07,
+      "zone": "Winterspring"
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12444,
+     "count": 8,
+     "questId": 4809,
+     "objective": 1,
+     "label": "Uncracked Chillwind Horn"
+    },
+    {
+     "type": "mob",
+     "name": "Fledgling Chillwind",
+     "npcIds": [
+      7447
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Chillwind Chimaera",
+     "npcIds": [
+      7448
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Chillwind Ravager",
+     "npcIds": [
+      7449
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
    "id": "h4060:winterspring:t4809",
    "tags": {},
    "text": [
@@ -482,6 +672,64 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:winterspring:c3783",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Are We There, Yeti?"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1452,
+      "x": 65.3,
+      "y": 39.61,
+      "zone": "Winterspring"
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 12366,
+     "count": 10,
+     "questId": 3783,
+     "objective": 1,
+     "label": "Thick Yeti Fur"
+    },
+    {
+     "type": "mob",
+     "name": "Rogue Ice Thistle",
+     "npcIds": [
+      7457
+     ]
+    },
+    {
+     "type": "mob",
+     "name": "Ice Thistle Yeti",
+     "npcIds": [
+      7458
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
   },
   {
    "id": "h4060:winterspring:t3783",
@@ -858,6 +1106,56 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:felwood:c5084",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Falling to Corruption"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Search the Deadwood furbolg camp in northern Felwood for a clue."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1448,
+      "x": 60.2,
+      "y": 5.84,
+      "zone": "Felwood",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5084,
+     "objective": 1,
+     "label": "Deadwood Cauldron"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
   },
   {
    "id": "h4060:felwood:t5084",

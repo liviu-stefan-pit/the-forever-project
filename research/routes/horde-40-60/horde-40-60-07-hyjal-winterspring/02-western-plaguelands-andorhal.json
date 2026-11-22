@@ -733,6 +733,55 @@
    "verified": true
   },
   {
+   "id": "h4060:western-plaguelands:c4985",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: The Wildlife Suffers Too"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 60.47,
+      "y": 51.95,
+      "zone": "Western Plaguelands"
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 4985,
+     "objective": 1,
+     "label": "Diseased Grizzly"
+    },
+    {
+     "type": "mob",
+     "name": "Diseased Grizzly",
+     "npcIds": [
+      1816
+     ]
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
+  },
+  {
    "id": "h4060:western-plaguelands:t4985",
    "tags": {},
    "text": [
@@ -1532,6 +1581,68 @@
     }
    ],
    "verified": true
+  },
+  {
+   "id": "h4060:western-plaguelands:c5235",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete: Target: Gahrron's Withering"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 62.18,
+      "y": 59.06,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    },
+    {
+     "type": "collect",
+     "itemId": 13196,
+     "count": 1,
+     "questId": 5235,
+     "objective": 1,
+     "label": "Gahrron's Withering Cauldron Key"
+    },
+    {
+     "type": "mob",
+     "name": "Cauldron Lord Soulwrath",
+     "npcIds": [
+      11078
+     ]
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1422,
+      "x": 62.54,
+      "y": 58.47,
+      "zone": "Western Plaguelands",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+     "label": "QuestieDB data/Forever (GPL-3.0)"
+    }
+   ],
+   "verified": false
   },
   {
    "id": "h4060:western-plaguelands:t5235",
