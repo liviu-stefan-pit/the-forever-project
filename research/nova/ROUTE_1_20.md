@@ -52,7 +52,7 @@ Hidden Enemies chain, Lost But Not Forgotten, A Sacred Burial, the Wizzlecrank e
 
 **Balanced and Speedrun are filters on the same packs**, not two copies of the route. A step lists `routes`. Both paces see a step tagged with both; a pace-only step is hidden on the other pace.
 
-**What Speedrun skips** (balanced-only on the packs): Lazy Peons 5441 and its follow-up Thazz'ril's Pick 6394, Ukor's Lost Pack 96876, The Family Crypt 408, At War With The Scarlet Crusade (Captain Melrache) 372, and A Husband's Revenge 530.
+**What Speedrun skips** (balanced-only on the packs): Lazy Peons 5441 and its follow-up Thazz'ril's Pick 6394, Ukor's Lost Pack 96876, The Family Crypt 408, At War With The Scarlet Crusade (Captain Melrache) 372, and A Husband's Revenge 530. Since the 22 Nov 2026 research pass also: the Thunder Ridge quests (This Is Spinal Axe 96874, Beasts of Thunder Ridge 96875: crafted items; Halikor's Hoof 96877: level 12 elite), Rear Guard Patrol 99156 (Riptear, level 13 elite) and Stalk With The Earthmother 76156/76160/76240 (three trips back out of Thunder Bluff).
 
 **Both paces** keep the starter bag quests, The Great Outdoors where it is routed (Durotar 96604, Mulgore 96605, Zephras 96101; Tirisfal does not route 96607), Miner's Fortune 896 turned in once at Barrens n=94, and Raptor Horns plus Parts and Pieces (97253).
 
@@ -70,12 +70,12 @@ Balanced = steps tagged `balanced` (including both). Speedrun = steps tagged `sp
 
 | Pack | Steps | Balanced | Speedrun | Unverified |
 |---|---|---|---|---|
-| durotar-1-12 | 177 | 175 | 130 | 51 |
-| mulgore-1-12 | 158 | 157 | 126 | 55 |
-| tirisfal-1-12 | 171 | 169 | 140 | 48 |
+| durotar-1-12 | 177 | 175 | 122 | 51 |
+| mulgore-1-12 | 158 | 157 | 117 | 55 |
+| tirisfal-1-12 | 171 | 169 | 137 | 48 |
 | silverpine-11-15 | 124 | 105 | 72 | 28 |
-| barrens-12-20 | 164 | 164 | 132 | 39 |
-| zephras-isle | 252 | 252 | 225 | 194 |
+| barrens-12-20 | 165 | 165 | 133 | 39 |
+| zephras-isle | 257 | 257 | 230 | 199 |
 
 ## Profession hooks (all vendors and drop sources checked in QuestieDB)
 Scorpid Surprise (Grimtak, Razor Hill), Crispy Bat Wing (Abigail Shiel, Brill), Roasted Kodo Meat (Wunna Darkmane,
@@ -98,16 +98,18 @@ Step ids are positional (`<pack>:<n>`), so steps after an insert or removal get 
 - In Silverpine, Ivar the Foul now needs the Forever chain Wild Eyes (91920) and Return to Quinn (Again) (91921) first.
 
 ## Gaps
-- Silverpine is short (Sepulcher, north coast, 11–15); its Forever-new quests (91920 Wild Eyes, 91921 Return to Quinn (Again), 98298 Arugal's Folly) are not in yet.
-- Left out on purpose: Threat from Below parts 3–4 (Spitelash naga + the elite Aggor the Young on the north coast; too much back-tracking),
-  This Is Spinal Axe / Beasts of Thunder Ridge (need crafted items; Sentinel), Ukor's Lost Pack and Halikor's Hoof (elite item
-  starters), Rear Guard Patrol (elite), the Bandarion Keep chain (12–13, far west Tirisfal) and the Undead Paladin 11–12 chain at
-  Bandarion Keep. All are in `catalog/forever_quests_1_20.json` for a later pass.
-- Barrens Forever quests not routed: Her Name Is Olgra (needs Lost in Battle), ... and that note you found (level 22).
-- Stalk With The Earthmother (76156/76160/76240, Tauren, Thunder Bluff giver) and the Undercity Friend of the Library
-  books are in the catalog but not routed (side trips).
+- Silverpine (Sepulcher, north coast, 11–15) now routes Wild Eyes 91920 and Return to Quinn (Again) 91921 (Balanced) and Arugal's Folly 98298 (both paces).
+  Stop the Spread 98299 and Watching the Roads 95981 are quest level 20 in QuestieDB (required level 9 / 10); check them in game.
+- Balanced only, with elite or crafted-item tips: Threat from Below part 4 (Aggor the Young, level 11 elite), This Is Spinal Axe /
+  Beasts of Thunder Ridge (crafted items), Halikor's Hoof (level 12 elite), Rear Guard Patrol 99156 (level 13 elite), Stalk With The Earthmother.
+- Not routed: Ukor's Lost Pack, the Bandarion Keep chain for all classes (96899 and follow-ups, level 12) and the Undead Paladin chain
+  Murlocs at the Gates 91285 → A Token of Good Faith 95803. All are in `catalog/forever_quests_1_20.json` for a later pass.
+- Her Name Is Olgra 95774 (needs Lost in Battle 4921) is routed in 20–40, not here.
+- Undercity Friend of the Library books are in the catalog but not routed (side trips).
+- Undead Paladin A Second Home (needs 8) and A Lesson in Divinity (needs 12) sit where the worst-case sim is about 5.6 and 9.5–10.5.
+  The step text says "At level 8 / 12"; they were not moved because moving them adds trips to Bandarion Keep.
 - Orgrimmar / Thunder Bluff / Undercity Forever quests are not routed yet.
-- Skyborne starts on `zephras-isle` (252 steps). The pack ends at `zephras-isle:194` (n=252). A join from 95350 into the existing Mulgore route is still unverified.
+- Skyborne starts on `zephras-isle` (257 steps; Shaman Call of Fire 97243–97257 added, Hunter Taming the Beast 94007 dropped because it needs level 10). The pack ends at `zephras-isle:194` (n=257). A join from 95350 into the existing Mulgore route is still unverified.
 
 ## Rebuild
 `tools/route_spec.py` (our route) → `python3 tools/build_route.py` (checks every quest id and name against the
