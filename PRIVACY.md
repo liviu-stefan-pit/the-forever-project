@@ -5,7 +5,12 @@
 There are no accounts and no server-side database. Your characters, ticks and settings are stored only in
 your browser (localStorage) on this device; clearing site data removes them, and Export/Import on the
 Profile page moves them. Files you upload (such as GuideWebExport.lua) are read in your browser and never
-sent anywhere.
+sent anywhere. The site asks the browser to keep this storage persistent so it is not cleared automatically;
+the browser decides (Firefox may ask you).
+
+In desktop Chrome and Edge you can instead choose GuideWebExport.lua once for one-click Sync. The browser
+then keeps a reference to that file in this site's IndexedDB and reads it locally when you sync; the file
+itself is still never uploaded. **Forget** under Game sync removes the reference.
 
 The site is hosted on Cloudflare Pages, which processes standard request data (such as IP address) to
 deliver and protect the site. If visitor statistics are enabled they use Cloudflare Web Analytics, which

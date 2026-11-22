@@ -3,6 +3,7 @@ import type { Profile, ProfessionKey } from "../data/schema";
 import { continentLabel, reactionName, trainerTierLabel } from "../lib/characterReport";
 import { formatMoney, linkKey, type CharacterLink } from "../state/gameSync";
 import { GAME_FILE_REMINDER, useGameSyncUi } from "../state/gameSyncClient";
+import { GAME_FILE_PATH_HINT } from "../state/gameFileHandle";
 import { Icon } from "./ui/Icon";
 import { Money, SkillBar } from "./ui/Money";
 
@@ -95,7 +96,7 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
       </h2>
       {!sync.available ? (
         <p className="mt-1 text-sm text-muted" data-testid="game-sync-unavailable">
-          Automatic sync works only when the site runs as the local app. Here, use <strong className="text-ink">Import GuideWebExport.lua</strong>{" "}
+          One-click sync needs desktop Chrome or Edge. In this browser, use <strong className="text-ink">Import GuideWebExport.lua</strong>{" "}
           below; you can get the addon on the{" "}
           <Link to="/addons" className="text-bronze-400 hover:text-bronze-300">
             Addons
@@ -105,6 +106,39 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
       ) : (
       <>
       <p className="mt-1 text-sm text-muted">{GAME_FILE_REMINDER}</p>
+
+      {sync.mode === "file" && (
+        <div className="mt-3 rounded-sm border border-stroke/70 bg-canvas/40 px-3 py-2 text-sm" data-testid="game-sync-file">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="min-w-0 flex-1 text-ink">
+              {sync.fileName ? (
+                <>
+                  Reading <strong>{sync.fileName}</strong> from your PC. It stays on your PC; nothing is uploaded.
+                </>
+              ) : (
+                "Choose GuideWebExport.lua once. This browser remembers it, so later Syncs need one click."
+              )}
+            </span>
+            <button
+              type="button"
+              className="press inline-flex min-h-touch items-center rounded-sm border border-bronze-500/60 bg-frame px-3 text-sm font-semibold text-ink hover:border-bronze-400 hover:text-bronze-300"
+              onClick={sync.chooseFile}
+            >
+              {sync.fileName ? "Change file" : "Choose file"}
+            </button>
+            {sync.fileName && (
+              <button
+                type="button"
+                className="press inline-flex min-h-touch items-center rounded-sm border border-stroke px-3 text-sm text-muted hover:border-danger/60 hover:text-ink"
+                onClick={sync.forgetFile}
+              >
+                Forget
+              </button>
+            )}
+          </div>
+          {!sync.fileName && <p className="mt-1 break-all text-xs text-muted">{GAME_FILE_PATH_HINT}</p>}
+        </div>
+      )}
 
       <div className="mt-4 flex flex-wrap items-end gap-3">
       <label className="block min-w-[14rem] flex-1 space-y-1 text-sm">

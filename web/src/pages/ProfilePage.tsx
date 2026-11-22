@@ -1,4 +1,4 @@
-import { useRef, useState, type ChangeEvent, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ChangeEvent, type ReactNode } from "react";
 import type { ClassKey, RaceKey, Role } from "../data/schema";
 import { Link } from "react-router";
 import { GameSyncPanel } from "../components/GameSyncPanel";
@@ -7,6 +7,7 @@ import { EmptyState, ErrorState } from "../components/ui/States";
 import { parseGuideWebExport, type GameExportCharacter } from "../state/luaExport";
 import { exportProfile } from "../state/profileStore";
 import { useProfileApi } from "../state/profile";
+import { requestPersistentStorage, type PersistState } from "../state/persistStorage";
 import { CLASS_KEYS, PRIMARY_PROFESSIONS, ROLES, SECONDARY_PROFESSIONS } from "../../../contracts/schema";
 import { ROLE_LABEL } from "../lib/profileExtras";
 import { readXpMods } from "../lib/xp/recomputeSim";
@@ -72,6 +73,19 @@ export function ProfilePage() {
   const jsonInput = useRef<HTMLInputElement>(null);
   const luaInput = useRef<HTMLInputElement>(null);
   const active = api.active;
+  const profileCount = api.profiles.length;
+  const [storage, setStorage] = useState<PersistState | null>(null);
+  useEffect(() => {
+    // Ask only once there is something to keep (Firefox shows a prompt for this).
+    if (profileCount === 0) return;
+    let alive = true;
+    void requestPersistentStorage().then((state) => {
+      if (alive) setStorage(state);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [profileCount]);
 
   const onCreate = () => {
     if (!name.trim() || !race || !cls) {
@@ -377,6 +391,13 @@ export function ProfilePage() {
             licence: <Link to="/about" className="text-bronze-400 hover:text-bronze-300">About</Link>
           </p>
         </section>
+      )}
+
+      {storage === "best-effort" && (
+        <p className="rounded-sm border border-bronze-500/40 bg-frame/60 px-3 py-2 text-sm text-ink" data-testid="storage-best-effort">
+          Profiles are saved in this browser only, and the browser may clear them when disk space runs low or after weeks
+          without a visit. Use <strong>Export</strong> on a profile to keep a backup file.
+        </p>
       )}
 
       {active && <GameSyncPanel profile={active} />}
