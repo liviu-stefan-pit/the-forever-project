@@ -103,3 +103,12 @@ describe("status text for realm-aware sync", () => {
     ).toBe("Marked 1 quest · Updated level 24, 28g 92s 51c");
   });
 });
+
+describe("file-mode status text", () => {
+  it("explains each hosted-site file state", () => {
+    expect(gameSyncStatusText({ phase: "no-file" })).toMatch(/Choose GuideWebExport\.lua/);
+    expect(gameSyncStatusText({ phase: "needs-permission" })).toMatch(/Click Sync/);
+    expect(gameSyncStatusText({ phase: "file-missing" })).toMatch(/moved or deleted/);
+    expect(gameSyncStatusText({ phase: "file-error" })).toMatch(/Could not read/);
+  });
+});

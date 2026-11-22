@@ -2,6 +2,16 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState, ty
 import { parseGuideWebExport, type GameExportCharacter } from "./luaExport";
 import { formatMoney, linkFor, type CharacterLink, type GameSyncResult } from "./gameSync";
 import { useProfileApi } from "./profile";
+import {
+  fileHandleSupported,
+  forgetGameFile,
+  gameFileHandleMtime,
+  loadSavedGameFile,
+  pickGameFile,
+  readGameFileHandle,
+  saveGameFile,
+  type GameFileHandle,
+} from "./gameFileHandle";
 
 const STATUS_URL = "/api/game-sync/status";
 const FILE_URL = "/api/game-sync";
@@ -19,6 +29,14 @@ export type GameSyncPhase =
   | { phase: "unreachable" }
   /** No game-sync endpoint on this host (static build): automatic sync is hidden, upload still works. */
   | { phase: "unavailable" }
+  /** Hosted site, file mode: GuideWebExport.lua has not been chosen yet. */
+  | { phase: "no-file" }
+  /** Hosted site, file mode: the browser wants a click before reading the file again. */
+  | { phase: "needs-permission" }
+  /** Hosted site, file mode: the chosen file was moved or deleted. */
+  | { phase: "file-missing" }
+  /** Hosted site, file mode: the chosen file could not be read or parsed. */
+  | { phase: "file-error" }
   | { phase: "result"; result: GameSyncResult; exportedAtText?: string };
 
 interface StatusJson {
@@ -26,10 +44,24 @@ interface StatusJson {
   mtimeMs?: number | null;
 }
 
+/**
+ * Where Sync reads GuideWebExport.lua from: the local app server, a file the player picked in this
+ * browser (hosted site, File System Access API), or nowhere (manual upload only).
+ */
+export type GameSyncMode = "server" | "file" | "none";
+
 export interface GameSyncUi {
+  mode: GameSyncMode;
+  /** Name of the picked file in "file" mode, null until one is chosen. */
+  fileName: string | null;
+  /** Open the file picker and remember the chosen GuideWebExport.lua ("file" mode). */
+  chooseFile: () => void;
+  /** Forget the remembered file ("file" mode). */
+  forgetFile: () => void;
   /**
-   * False when this host has no game-sync endpoint (the static site). The automatic Sync button
-   * and panel hide then; importing GuideWebExport.lua on the Profile page still works.
+   * False when there is neither a game-sync endpoint (local app) nor File System Access support
+   * (hosted site in Firefox / Safari / mobile). The Sync button and panel hide then; importing
+   * GuideWebExport.lua on the Profile page still works.
    */
   available: boolean;
   busy: boolean;
@@ -131,6 +163,10 @@ export function gameSyncStatusText(state: GameSyncPhase): string {
   if (state.phase === "not-found") return "The GuideWebExport addon was not found. Install it, type /gwe in game, then /reload.";
   if (state.phase === "unreachable") return "Could not reach the local app server";
   if (state.phase === "unavailable") return GAME_SYNC_UNAVAILABLE;
+  if (state.phase === "no-file") return "Choose GuideWebExport.lua once, then Sync reads it with one click.";
+  if (state.phase === "needs-permission") return "Click Sync to let the browser read GuideWebExport.lua again.";
+  if (state.phase === "file-missing") return "GuideWebExport.lua was moved or deleted. Choose it again on the Profile page.";
+  if (state.phase === "file-error") return "Could not read GuideWebExport.lua. Type /reload in game and try again.";
 
   const { result } = state;
   const time = state.exportedAtText ?? (result.exportedAt != null ? formatExportedAt(result.exportedAt) : undefined);
@@ -185,8 +221,15 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const [busy, setBusy] = useState(true);
   // Dev always has the endpoint, so the button shows at once; a production build shows it only
   // after the status request proves the endpoint exists (`vite preview` does, a static host does not).
-  const [available, setAvailable] = useState<boolean>(import.meta.env.DEV);
-  const unavailableRef = useRef(false);
+  // Without the endpoint, browsers with the File System Access API switch to "file" mode.
+  const [mode, setMode] = useState<GameSyncMode>(import.meta.env.DEV ? "server" : "none");
+  const modeRef = useRef(mode);
+  modeRef.current = mode;
+  const [fileName, setFileName] = useState<string | null>(null);
+  /** False once the status request showed there is no local app server on this host. */
+  const serverRef = useRef<boolean | null>(null);
+  const handleRef = useRef<GameFileHandle | null>(null);
+  const handleLoadedRef = useRef(false);
 
   const alive = useRef(true);
   const inflight = useRef(false);
@@ -202,48 +245,84 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     const startedProfileId = activeProfileIdRef.current;
     const current = () => alive.current && gameSyncApplyIsCurrent(startedProfileId, activeProfileIdRef.current);
     if (current()) setPhase({ phase: "syncing" });
-    const loaded = await loadGameFile((url) => fetch(url));
+
+    const applyText = (text: string, mtimeMs: number | null, errorPhase: GameSyncPhase) => {
+      try {
+        const exp = parseGuideWebExport(text);
+        if (!current()) return;
+        setCharacters(exp.characters.map(linkFor));
+        const result = syncFromGameRef.current(exp);
+        if (current()) {
+          setMatched(result.ok ? result.character : null);
+          setPhase({ phase: "result", result });
+        }
+      } catch {
+        if (current()) setPhase(errorPhase);
+      }
+      if (!current()) return;
+      // The mtime read before the download: a newer write since then makes the poller sync again.
+      mtimeRef.current = mtimeMs;
+      baselineRef.current = true;
+    };
+
+    const loaded = serverRef.current === false ? ({ kind: "no-server" } as const) : await loadGameFile((url) => fetch(url));
     if (!alive.current) return;
+
     if (loaded.kind === "no-server") {
-      unavailableRef.current = true;
-      setAvailable(false);
-      setPhase({ phase: "unavailable" });
+      serverRef.current = false;
+      if (!fileHandleSupported()) {
+        setMode("none");
+        setPhase({ phase: "unavailable" });
+        return;
+      }
+      setMode("file");
+      if (!handleLoadedRef.current) {
+        handleLoadedRef.current = true;
+        const saved = await loadSavedGameFile();
+        if (!alive.current) return;
+        // A file picked while the saved handle was loading wins.
+        if (!handleRef.current && saved) handleRef.current = saved;
+        setFileName(handleRef.current?.name ?? null);
+      }
+      if (!current()) return;
+      const handle = handleRef.current;
+      if (!handle) {
+        mtimeRef.current = null;
+        baselineRef.current = true;
+        setPhase({ phase: "no-file" });
+        return;
+      }
+      const read = await readGameFileHandle(handle, false);
+      if (!current()) return;
+      if (read.kind === "file") {
+        applyText(read.text, read.mtimeMs, { phase: "file-error" });
+        return;
+      }
+      mtimeRef.current = null;
+      baselineRef.current = true;
+      if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
+      else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
+      else setPhase({ phase: "file-error" });
       return;
     }
-    setAvailable(true);
+
+    serverRef.current = true;
+    setMode("server");
     if (!current()) return;
     if (loaded.kind === "not-found") {
       mtimeRef.current = null;
       baselineRef.current = true;
-      if (current()) {
-        setCharacters([]);
-        setMatched(null);
-        setPhase({ phase: "not-found" });
-      }
+      setCharacters([]);
+      setMatched(null);
+      setPhase({ phase: "not-found" });
       return;
     }
     if (loaded.kind === "unreachable") {
       baselineRef.current = true;
-      if (current()) setPhase({ phase: "unreachable" });
+      setPhase({ phase: "unreachable" });
       return;
     }
-
-    try {
-      const exp = parseGuideWebExport(loaded.text);
-      if (!current()) return;
-      if (alive.current) setCharacters(exp.characters.map(linkFor));
-      const result = syncFromGameRef.current(exp);
-      if (current()) {
-        setMatched(result.ok ? result.character : null);
-        setPhase({ phase: "result", result });
-      }
-    } catch {
-      if (current()) setPhase({ phase: "unreachable" });
-    }
-    if (!current()) return;
-    // The mtime read before the download: a newer write since then makes the poller sync again.
-    mtimeRef.current = loaded.mtimeMs;
-    baselineRef.current = true;
+    applyText(loaded.text, loaded.mtimeMs, { phase: "unreachable" });
   }, []);
 
   const runSync = useCallback(async () => {
@@ -287,20 +366,27 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let timer: ReturnType<typeof setInterval> | undefined;
 
-    const poll = async () => {
-      if (document.visibilityState !== "visible" || unavailableRef.current) return;
-      let body: StatusJson;
+    /** Last-modified time of the export, or null when there is none / it cannot be read silently. */
+    const currentMtime = async (): Promise<number | null | "skip"> => {
+      if (serverRef.current === false) {
+        const handle = handleRef.current;
+        return handle ? gameFileHandleMtime(handle) : "skip";
+      }
       try {
         const res = await fetch(STATUS_URL);
-        if (!res.ok) return;
+        if (!res.ok) return "skip";
         const json: unknown = await res.json();
-        if (!isStatusJson(json)) return;
-        body = json;
+        if (!isStatusJson(json)) return "skip";
+        return json.found && typeof json.mtimeMs === "number" ? json.mtimeMs : null;
       } catch {
-        return;
+        return "skip";
       }
-      const next = body.found && typeof body.mtimeMs === "number" ? body.mtimeMs : null;
-      if (!baselineRef.current) return;
+    };
+
+    const poll = async () => {
+      if (document.visibilityState !== "visible" || inflight.current) return;
+      const next = await currentMtime();
+      if (next === "skip" || !baselineRef.current) return;
       if (next === mtimeRef.current) return;
       void runSyncRef.current();
     };
@@ -331,9 +417,43 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
-  const sync = useCallback(() => {
-    void runSyncRef.current();
+  const chooseFile = useCallback(() => {
+    // Straight from the click: the picker needs the user gesture.
+    void pickGameFile().then(async (handle) => {
+      if (!handle || !alive.current) return;
+      handleRef.current = handle;
+      handleLoadedRef.current = true;
+      mtimeRef.current = null;
+      setFileName(handle.name);
+      await saveGameFile(handle);
+      void runSyncRef.current();
+    });
   }, []);
+
+  const forgetFile = useCallback(() => {
+    handleRef.current = null;
+    mtimeRef.current = null;
+    setFileName(null);
+    setCharacters([]);
+    setMatched(null);
+    setPhase({ phase: "no-file" });
+    void forgetGameFile();
+  }, []);
+
+  const sync = useCallback(() => {
+    if (modeRef.current === "file") {
+      const handle = handleRef.current;
+      if (!handle) {
+        chooseFile();
+        return;
+      }
+      // Ask for read access inside the click (a no-op when already granted), then sync.
+      const ask = handle.requestPermission?.({ mode: "read" }) ?? Promise.resolve("granted");
+      void ask.catch(() => "denied").finally(() => void runSyncRef.current());
+      return;
+    }
+    void runSyncRef.current();
+  }, [chooseFile]);
 
   const statusText = gameSyncStatusText(phase);
   const title = gameSyncTitle(phase);
@@ -344,7 +464,20 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     },
     [linkGameCharacter],
   );
-  const value: GameSyncUi = { available, busy, statusText, title, sync, characters, matched, linkCharacter };
+  const value: GameSyncUi = {
+    mode,
+    fileName,
+    chooseFile,
+    forgetFile,
+    available: mode !== "none",
+    busy,
+    statusText,
+    title,
+    sync,
+    characters,
+    matched,
+    linkCharacter,
+  };
 
   return <GameSyncUiContext.Provider value={value}>{children}</GameSyncUiContext.Provider>;
 }

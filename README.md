@@ -25,7 +25,9 @@ written for this project from open data (the GPL-3.0 QuestieDB quest database) a
   page, search, and profession hooks along the way.
 - **Local character profiles:** ticks, quests and settings live in your browser. **Export** /
   **Import JSON profile** on the Profile page move them between browsers.
-- **Optional in-game sync** with the GuideWebExport addon (see below).
+- **Optional in-game sync** with the GuideWebExport addon (see below). On the hosted site, desktop
+  Chrome / Edge can remember the chosen `GuideWebExport.lua` for one-click Sync (and re-sync on `/reload`
+  while the tab is open); other browsers use **Import GuideWebExport.lua** on the Profile page.
 - **Credits page** (`#/credits`) generated from [CREDITS.md](CREDITS.md).
 
 Hash routes: `#/` (faction landing page), `#/horde` (dashboard), `#/guide/<slug>`, `#/quest/<id>`,

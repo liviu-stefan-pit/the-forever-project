@@ -5,6 +5,7 @@ import { ProfileApiContext, type ProfileApi } from "./profile";
 import { createMemoryStorage, createProfileEngine, STORAGE_KEY, type ProfileEngine, type StorageLike } from "./profileStore";
 import { EngineContext, ProgressContext, type ProgressStore } from "./progress";
 import { VisibilityContext, createProfileEvaluator } from "./visibility";
+import { requestPersistentStorage } from "./persistStorage";
 
 function browserStorage(): StorageLike {
   try {
@@ -46,6 +47,11 @@ export function ProfileProgressProvider({ children }: { children: ReactNode }) {
       alive = false;
       unsub();
     };
+  }, [engine]);
+
+  useEffect(() => {
+    // Returning players: ask the browser to keep saved profiles (no-op when already granted).
+    if (engine.profiles().length > 0) void requestPersistentStorage();
   }, [engine]);
 
   useEffect(() => {
