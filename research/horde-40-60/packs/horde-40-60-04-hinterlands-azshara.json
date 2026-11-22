@@ -2050,7 +2050,7 @@
         {
           "segments": [
             {
-              "t": "Accept: Screecher Spirits"
+              "t": "Skip Screecher Spirits. Do not add The Prophecy of Mosh'aru."
             }
           ]
         }
@@ -2065,11 +2065,6 @@
             "zone": "Tanaris",
             "exact": true
           }
-        },
-        {
-          "type": "accept",
-          "questId": 3520,
-          "label": "Screecher Spirits"
         }
       ],
       "conditions": [],
@@ -2092,7 +2087,7 @@
       "tips": [
         {
           "kind": "general",
-          "text": "The 16 November 2026 hotfix moved Vale Screamers to the Isle of Dread coastline. This guide has no verified pin for them. The old interior Feralas camps are the wrong place to look.",
+          "text": "The 16 November 2026 hotfix moved Vale Screamers to the Isle of Dread coastline. This guide has no verified pin, and it does not pick the quest up. The old interior Feralas camps are the wrong place to look.",
           "sources": [
             {
               "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
@@ -6303,6 +6298,83 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:the-hinterlands:grind-sr-47",
+      "n": 626,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Savage Owlbeast camp until level 47. The camp is dense, with 173 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1425,
+            "x": 58.4,
+            "y": 50.6,
+            "zone": "The Hinterlands",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 47,
+          "extra": 64550,
+          "label": "Stay on the Savage Owlbeast camp until level 47. The camp is dense, with 173 spawns.",
+          "mobId": 2929,
+          "mobName": "Savage Owlbeast",
+          "mobLevel": 47
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=2929",
+          "label": "Wowhead Classic NPC 2929"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            2929
+          ],
+          "name": "Savage Owlbeast",
+          "mapId": 1425,
+          "zone": "The Hinterlands",
+          "center": {
+            "x": 58.4,
+            "y": 50.6
+          },
+          "radius": 14,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=2929",
+              "label": "Wowhead Classic NPC 2929"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
     },
     {
       "id": "h4060:swamp-of-sorrows:t1444",

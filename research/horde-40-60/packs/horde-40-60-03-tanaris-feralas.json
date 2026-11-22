@@ -7459,6 +7459,83 @@
       ],
       "verified": false,
       "n": 529
+    },
+    {
+      "id": "h4060:tanaris:grind-sr-45",
+      "n": 530,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Blisterpaw Hyena camp until level 45. The camp is dense, with 128 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1446,
+            "x": 52.3,
+            "y": 48.72,
+            "zone": "Tanaris",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 45,
+          "extra": 58750,
+          "label": "Stay on the Blisterpaw Hyena camp until level 45. The camp is dense, with 128 spawns.",
+          "mobId": 5426,
+          "mobName": "Blisterpaw Hyena",
+          "mobLevel": 45
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=5426",
+          "label": "Wowhead Classic NPC 5426"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5426
+          ],
+          "name": "Blisterpaw Hyena",
+          "mapId": 1446,
+          "zone": "Tanaris",
+          "center": {
+            "x": 52.3,
+            "y": 48.72
+          },
+          "radius": 22.2,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=5426",
+              "label": "Wowhead Classic NPC 5426"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
     }
   ],
   "bracket": "40-60",

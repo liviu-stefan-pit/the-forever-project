@@ -11145,6 +11145,83 @@
       "verified": true
     },
     {
+      "id": "h4060:stranglethorn-vale:grind-sr-42",
+      "n": 192,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Jungle Stalker camp until level 42. The camp is dense, with 43 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1434,
+            "x": 28.83,
+            "y": 45.6,
+            "zone": "Stranglethorn Vale",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 42,
+          "extra": 50500,
+          "label": "Stay on the Jungle Stalker camp until level 42. The camp is dense, with 43 spawns.",
+          "mobId": 687,
+          "mobName": "Jungle Stalker",
+          "mobLevel": 41
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=687",
+          "label": "Wowhead Classic NPC 687"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            687
+          ],
+          "name": "Jungle Stalker",
+          "mapId": 1434,
+          "zone": "Stranglethorn Vale",
+          "center": {
+            "x": 28.83,
+            "y": 45.6
+          },
+          "radius": 10,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=687",
+              "label": "Wowhead Classic NPC 687"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
+    },
+    {
       "id": "h4060:stranglethorn-vale:travel-e6bbca",
       "n": 192,
       "tags": {},
@@ -30293,6 +30370,83 @@
       "n": 529
     },
     {
+      "id": "h4060:tanaris:grind-sr-45",
+      "n": 530,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Blisterpaw Hyena camp until level 45. The camp is dense, with 128 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1446,
+            "x": 52.3,
+            "y": 48.72,
+            "zone": "Tanaris",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 45,
+          "extra": 58750,
+          "label": "Stay on the Blisterpaw Hyena camp until level 45. The camp is dense, with 128 spawns.",
+          "mobId": 5426,
+          "mobName": "Blisterpaw Hyena",
+          "mobLevel": 45
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=5426",
+          "label": "Wowhead Classic NPC 5426"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            5426
+          ],
+          "name": "Blisterpaw Hyena",
+          "mapId": 1446,
+          "zone": "Tanaris",
+          "center": {
+            "x": 52.3,
+            "y": 48.72
+          },
+          "radius": 22.2,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=5426",
+              "label": "Wowhead Classic NPC 5426"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
+    },
+    {
       "id": "h4060:feralas:travel-c4e8a1",
       "n": 530,
       "tags": {},
@@ -31187,7 +31341,7 @@
         {
           "segments": [
             {
-              "t": "Accept: Screecher Spirits"
+              "t": "Skip Screecher Spirits. Do not add The Prophecy of Mosh'aru."
             }
           ]
         }
@@ -31202,11 +31356,6 @@
             "zone": "Tanaris",
             "exact": true
           }
-        },
-        {
-          "type": "accept",
-          "questId": 3520,
-          "label": "Screecher Spirits"
         }
       ],
       "conditions": [],
@@ -31229,7 +31378,7 @@
       "tips": [
         {
           "kind": "general",
-          "text": "The 16 November 2026 hotfix moved Vale Screamers to the Isle of Dread coastline. This guide has no verified pin for them. The old interior Feralas camps are the wrong place to look.",
+          "text": "The 16 November 2026 hotfix moved Vale Screamers to the Isle of Dread coastline. This guide has no verified pin, and it does not pick the quest up. The old interior Feralas camps are the wrong place to look.",
           "sources": [
             {
               "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
@@ -35440,6 +35589,83 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:the-hinterlands:grind-sr-47",
+      "n": 626,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Savage Owlbeast camp until level 47. The camp is dense, with 173 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1425,
+            "x": 58.4,
+            "y": 50.6,
+            "zone": "The Hinterlands",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 47,
+          "extra": 64550,
+          "label": "Stay on the Savage Owlbeast camp until level 47. The camp is dense, with 173 spawns.",
+          "mobId": 2929,
+          "mobName": "Savage Owlbeast",
+          "mobLevel": 47
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=2929",
+          "label": "Wowhead Classic NPC 2929"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            2929
+          ],
+          "name": "Savage Owlbeast",
+          "mapId": 1425,
+          "zone": "The Hinterlands",
+          "center": {
+            "x": 58.4,
+            "y": 50.6
+          },
+          "radius": 14,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=2929",
+              "label": "Wowhead Classic NPC 2929"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
     },
     {
       "id": "h4060:swamp-of-sorrows:t1444",
@@ -41896,6 +42122,83 @@
         }
       ],
       "verified": true
+    },
+    {
+      "id": "h4060:un-goro-crater:grind-sr-49",
+      "n": 747,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Stay on the Ravasaur camp until level 49. The camp is dense, with 38 spawns."
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1449,
+            "x": 62.59,
+            "y": 71.99,
+            "zone": "Un'Goro Crater",
+            "exact": true
+          }
+        },
+        {
+          "type": "xp",
+          "level": 49,
+          "extra": 70600,
+          "label": "Stay on the Ravasaur camp until level 49. The camp is dense, with 38 spawns.",
+          "mobId": 6505,
+          "mobName": "Ravasaur",
+          "mobLevel": 49
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "speedrun"
+      ],
+      "sources": [
+        {
+          "url": "https://www.wowhead.com/classic/npc=6505",
+          "label": "Wowhead Classic NPC 6505"
+        },
+        {
+          "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+          "label": "QuestieDB Forever data (GPL-3.0)"
+        }
+      ],
+      "verified": true,
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            6505
+          ],
+          "name": "Ravasaur",
+          "mapId": 1449,
+          "zone": "Un'Goro Crater",
+          "center": {
+            "x": 62.59,
+            "y": 71.99
+          },
+          "radius": 12.8,
+          "sources": [
+            {
+              "url": "https://www.wowhead.com/classic/npc=6505",
+              "label": "Wowhead Classic NPC 6505"
+            },
+            {
+              "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+              "label": "QuestieDB Forever data (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ]
     },
     {
       "id": "h4060:tanaris:fly-a91e44",
@@ -88247,6 +88550,1280 @@
       "verified": true
     },
     {
+      "id": "h4060:swamp-of-sorrows:a2784",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: Fall From Grace"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2784,
+          "label": "Fall From Grace"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2784",
+          "label": "Wowhead Classic quest 2784 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2784",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: Fall From Grace"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2784,
+          "label": "Fall From Grace"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2784",
+          "label": "Wowhead Classic quest 2784 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2621",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Disgraced One"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2621,
+          "label": "The Disgraced One"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2621",
+          "label": "Wowhead Classic quest 2621 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2621",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Disgraced One"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 47.79,
+            "y": 54.94,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2621,
+          "label": "The Disgraced One"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2621",
+          "label": "Wowhead Classic quest 2621 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2622",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Missing Orders"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 47.79,
+            "y": 54.94,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2622,
+          "label": "The Missing Orders"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2622",
+          "label": "Wowhead Classic quest 2622 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2622",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Missing Orders"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 44.97,
+            "y": 57.37,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2622,
+          "label": "The Missing Orders"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2622",
+          "label": "Wowhead Classic quest 2622 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2623",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Swamp Talker"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 44.97,
+            "y": 57.37,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2623,
+          "label": "The Swamp Talker"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2623",
+          "label": "Wowhead Classic quest 2623 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:c2623",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Swamp Talker"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 64.4,
+            "y": 82.4,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "collect",
+          "itemId": 8463,
+          "count": 1,
+          "questId": 2623,
+          "objective": 1,
+          "label": "Warchief's Orders"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Swamp Talker (level 50) spawns are densest around 64.4, 82.4 (27 spawn points). Start there and loop outward.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            950
+          ],
+          "name": "Swamp Talker",
+          "mapId": 1435,
+          "zone": "Swamp of Sorrows",
+          "center": {
+            "x": 64.4,
+            "y": 82.4
+          },
+          "radius": 12.3,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "minutes": 8,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2623",
+          "label": "Wowhead Classic quest 2623 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2623",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Swamp Talker"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2623,
+          "label": "The Swamp Talker"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2623",
+          "label": "Wowhead Classic quest 2623 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2801",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: A Tale of Sorrow"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2801,
+          "label": "A Tale of Sorrow"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2801",
+          "label": "Wowhead Classic quest 2801 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2801",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: A Tale of Sorrow"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2801,
+          "label": "A Tale of Sorrow"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2801",
+          "label": "Wowhead Classic quest 2801 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2681",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Stones That Bind Us"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2681,
+          "label": "The Stones That Bind Us"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2681",
+          "label": "Wowhead Classic quest 2681 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:blasted-lands:c2681",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Complete: The Stones That Bind Us"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1419,
+            "x": 54.09,
+            "y": 52.49,
+            "zone": "Blasted Lands",
+            "exact": true
+          }
+        },
+        {
+          "type": "complete",
+          "questId": 2681,
+          "objective": 1,
+          "label": "Servants of Razelikh Freed"
+        },
+        {
+          "type": "complete",
+          "questId": 2681,
+          "objective": 2,
+          "label": "Servants of Grol Freed"
+        },
+        {
+          "type": "complete",
+          "questId": 2681,
+          "objective": 3,
+          "label": "Servants of Allistarj Freed"
+        },
+        {
+          "type": "complete",
+          "questId": 2681,
+          "objective": 4,
+          "label": "Servants of Sevine Freed"
+        },
+        {
+          "type": "mob",
+          "name": "Servant of Razelikh",
+          "npcIds": [
+            7668
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Servant of Grol",
+          "npcIds": [
+            7669
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Servant of Allistarj",
+          "npcIds": [
+            7670
+          ]
+        },
+        {
+          "type": "mob",
+          "name": "Servant of Sevine",
+          "npcIds": [
+            7671
+          ]
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "tips": [
+        {
+          "kind": "speed",
+          "text": "Servant of Razelikh (level 57) spawns are densest around 54.09, 52.49 (7 spawn points). Start there and loop outward.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "speed",
+          "text": "Servant of Grol (level 53-54) spawns are densest around 41.22, 14.43 (3 spawn points). Start there and loop outward.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "speed",
+          "text": "Servant of Allistarj (level 54-55) spawns are densest around 63.33, 40.83 (3 spawn points). Start there and loop outward.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "speed",
+          "text": "Servant of Sevine (level 55-56) spawns are densest around 40.99, 40.09 (3 spawn points). Start there and loop outward.",
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "pins": [
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            7668
+          ],
+          "name": "Servant of Razelikh",
+          "mapId": 1419,
+          "zone": "Blasted Lands",
+          "center": {
+            "x": 54.09,
+            "y": 52.49
+          },
+          "radius": 9.8,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            7669
+          ],
+          "name": "Servant of Grol",
+          "mapId": 1419,
+          "zone": "Blasted Lands",
+          "center": {
+            "x": 41.22,
+            "y": 14.43
+          },
+          "radius": 29.4,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            7670
+          ],
+          "name": "Servant of Allistarj",
+          "mapId": 1419,
+          "zone": "Blasted Lands",
+          "center": {
+            "x": 63.33,
+            "y": 40.83
+          },
+          "radius": 6.7,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        },
+        {
+          "kind": "mobArea",
+          "npcIds": [
+            7671
+          ],
+          "name": "Servant of Sevine",
+          "mapId": 1419,
+          "zone": "Blasted Lands",
+          "center": {
+            "x": 40.99,
+            "y": 40.09
+          },
+          "radius": 6.8,
+          "sources": [
+            {
+              "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+              "label": "QuestieDB data/Forever (GPL-3.0)"
+            }
+          ],
+          "verified": true
+        }
+      ],
+      "minutes": 8,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2681",
+          "label": "Wowhead Classic quest 2681 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2681",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Stones That Bind Us"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2681,
+          "label": "The Stones That Bind Us"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2681",
+          "label": "Wowhead Classic quest 2681 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2702",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: Heroes of Old"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2702,
+          "label": "Heroes of Old"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2702",
+          "label": "Wowhead Classic quest 2702 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2702",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: Heroes of Old"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 33.49,
+            "y": 65.99,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2702,
+          "label": "Heroes of Old"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2702",
+          "label": "Wowhead Classic quest 2702 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2701",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: Heroes of Old"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 33.49,
+            "y": 65.99,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2701,
+          "label": "Heroes of Old"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2701",
+          "label": "Wowhead Classic quest 2701 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2701",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: Heroes of Old"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 33.26,
+            "y": 66.22,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2701,
+          "label": "Heroes of Old"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2701",
+          "label": "Wowhead Classic quest 2701 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a2721",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: Kirith"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2721,
+          "label": "Kirith"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2721",
+          "label": "Wowhead Classic quest 2721 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:blasted-lands:t2721",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: Kirith"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1419,
+            "x": 68.8,
+            "y": 31.07,
+            "zone": "Blasted Lands",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2721,
+          "label": "Kirith"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2721",
+          "label": "Wowhead Classic quest 2721 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:blasted-lands:a2743",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Cover of Darkness"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1419,
+            "x": 68.8,
+            "y": 31.07,
+            "zone": "Blasted Lands",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 2743,
+          "label": "The Cover of Darkness"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2743",
+          "label": "Wowhead Classic quest 2743 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:t2743",
+      "n": 1579,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Cover of Darkness"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 34.29,
+            "y": 66.14,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 2743,
+          "label": "The Cover of Darkness"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=2743",
+          "label": "Wowhead Classic quest 2743 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
       "id": "h4060:swamp-of-sorrows:a2744",
       "n": 1579,
       "tags": {},
@@ -92096,102 +93673,6 @@
         {
           "url": "https://www.wowhead.com/classic/quest=91497",
           "label": "Wowhead Classic quest 91497 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:feralas:a2976",
-      "n": 1658,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Accept: A Grim Discovery"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1444,
-            "x": 75.94,
-            "y": 42.74,
-            "zone": "Feralas",
-            "exact": true
-          }
-        },
-        {
-          "type": "accept",
-          "questId": 2976,
-          "label": "A Grim Discovery"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 1,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2976",
-          "label": "Wowhead Classic quest 2976 (reference link)"
-        }
-      ],
-      "verified": true
-    },
-    {
-      "id": "h4060:orgrimmar:t2976",
-      "n": 1659,
-      "tags": {},
-      "text": [
-        {
-          "segments": [
-            {
-              "t": "Turn in: A Grim Discovery"
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": "goto",
-          "at": {
-            "mapId": 1454,
-            "x": 75.23,
-            "y": 34.24,
-            "zone": "Orgrimmar",
-            "exact": true
-          }
-        },
-        {
-          "type": "turnin",
-          "questId": 2976,
-          "label": "A Grim Discovery"
-        }
-      ],
-      "conditions": [],
-      "routes": [
-        "balanced",
-        "speedrun"
-      ],
-      "minutes": 2,
-      "sources": [
-        {
-          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-          "label": "QuestieDB data/Forever (GPL-3.0)"
-        },
-        {
-          "url": "https://www.wowhead.com/classic/quest=2976",
-          "label": "Wowhead Classic quest 2976 (reference link)"
         }
       ],
       "verified": true
@@ -98189,6 +99670,102 @@
         {
           "url": "https://www.wowhead.com/classic/quest=1383",
           "label": "Wowhead Classic quest 1383 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:swamp-of-sorrows:a93464",
+      "n": 1781,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Accept: The Visiting Mage"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1435,
+            "x": 25.98,
+            "y": 31.4,
+            "zone": "Swamp of Sorrows",
+            "exact": true
+          }
+        },
+        {
+          "type": "accept",
+          "questId": 93464,
+          "label": "The Visiting Mage"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 1,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=93464",
+          "label": "Wowhead Classic quest 93464 (reference link)"
+        }
+      ],
+      "verified": true
+    },
+    {
+      "id": "h4060:desolace:t93464",
+      "n": 1781,
+      "tags": {},
+      "text": [
+        {
+          "segments": [
+            {
+              "t": "Turn in: The Visiting Mage"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": "goto",
+          "at": {
+            "mapId": 1443,
+            "x": 38.88,
+            "y": 27.16,
+            "zone": "Desolace",
+            "exact": true
+          }
+        },
+        {
+          "type": "turnin",
+          "questId": 93464,
+          "label": "The Visiting Mage"
+        }
+      ],
+      "conditions": [],
+      "routes": [
+        "balanced",
+        "speedrun"
+      ],
+      "minutes": 2,
+      "sources": [
+        {
+          "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
+          "label": "QuestieDB data/Forever (GPL-3.0)"
+        },
+        {
+          "url": "https://www.wowhead.com/classic/quest=93464",
+          "label": "Wowhead Classic quest 93464 (reference link)"
         }
       ],
       "verified": true
