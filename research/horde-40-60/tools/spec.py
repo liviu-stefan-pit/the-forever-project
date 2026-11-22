@@ -14,7 +14,7 @@ def _rf_s(v): return "B" if _el(v) or v.get('name') in CRAFTQ else "S"
 def _rf_tan(v): return "B" if _el(v) or (v.get('level') or 0)>50 else "S"
 def _rf_b(v): return "B"
 RIV_OPS,_=_auto.auto_ops("Riverglades",16591,40,46,[59.6,45.0],_rf_riv)
-# Lyra's 20-40 route leaves out 94532 and 94535 (level 38) because they need 96109 (level 40, on this route).
+# 94532 and 94535 need prerequisite 96109. Pack 07 turns 96109 in and then does both quests on balanced and speedrun.
 def _riv_insert(ops):
     F={"forever5":True,"zoneOverride":16591}
     def at(pred):
