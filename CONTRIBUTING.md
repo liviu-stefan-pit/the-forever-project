@@ -48,7 +48,13 @@ npm run typecheck
 npm run data       # builds web/public/data/, which some tests read
 npm test
 npm run build
+npm run xp:gate    # after npm run data
 ```
+
+`npm run xp:gate` runs every start (balanced and speedrun) through the XP simulator and fails if any pack
+now ends below the level the next pack starts at (with 0.5 slack), the 20–40 band ends below 39.5, or the
+route ends below 59.5. Ending higher than needed always passes. If it fails, the route lost too much XP:
+add quests or a grind step back before the hand-off it names.
 
 If you touch the addons, also check the Lua syntax with `luac5.1 -p` on the files you changed, and if you
 change GuideWebExport, regenerate its sample:

@@ -8,7 +8,7 @@ Closes #<!-- issue number -->
 
 - [ ] This pull request covers **one topic** only.
 - [ ] It links the issue it resolves (or explains why there is none).
-- [ ] Checks pass locally: `cd web && npm run typecheck && npm run data && npm test && npm run build`
+- [ ] Checks pass locally: `cd web && npm run typecheck && npm run data && npm test && npm run build && npm run xp:gate`
       (plus `luac5.1 -p` for addon changes and `python -I -m unittest discover -s pipeline/tests` for pipeline changes).
 - [ ] Every new fact cites a source, and every **new source has a row in `CREDITS.md`** in the same pull request.
 - [ ] No text is copied from other guides (paid or free) or websites; step text and tips are in my own words.

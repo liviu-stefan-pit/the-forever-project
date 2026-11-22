@@ -46,8 +46,8 @@ import { loadSimTables } from "./xp-sim.ts";
 const RACE_CLASSES = ["Warrior", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid", "Paladin"] as const;
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
-const LAST_PACK_MIN_END = 59.5;
-const HANDOFF_SLACK = 0.5;
+export const LAST_PACK_MIN_END = 59.5;
+export const HANDOFF_SLACK = 0.5;
 const EARLY_ACCEPT_FAIL_LEVELS = 3;
 const EARLY_ACCEPT_PRINT_CAP = 40;
 
