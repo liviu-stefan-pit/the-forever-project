@@ -32,17 +32,24 @@ The Forever Project is a free, fan-made, non-commercial project. It is not affil
 sponsored or approved by Blizzard Entertainment, Inc. World of Warcraft, Warcraft and Blizzard
 Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or
 other countries. Game names, map images and other game content are © Blizzard Entertainment, Inc. and are
-used under Blizzard's Fan Content Policy (https://www.blizzard.com/en-us/legal/blizzard-fan-content-policy).
-The guides are provided as is, without warranty of any kind.
+used for this free, non-commercial fan project within the limits Blizzard sets for fan sites (Blizzard
+Legal FAQ: https://www.blizzard.com/en-us/legal/c1ae32ac-7ff9-4ac3-a03b-fc04b8697010/blizzard-legal-faq). Blizzard can withdraw that permission at any time, and we will remove
+anything Blizzard asks us to remove. The site does not use Blizzard logos or faction crests; its sigils
+and icons are drawn for this project.
+
+The guides, the site and the addons are provided as is, without warranty of any kind, and you use them
+at your own risk. Follow Blizzard's terms of use when you play; the project is not responsible for
+anything that happens to your game account, characters or files.
 
 ### Map images
 
-Zone map images, when present in `web/public/maps/`, are extracted from the game client (see
-[docs/MAP_IMAGES.md](docs/MAP_IMAGES.md)). They are © Blizzard Entertainment, Inc., are used under the Fan
-Content Policy, and are **not** covered by the GPL. They are git-ignored and are not part of the source
-repository.
+The zone map images in `web/public/maps/` are stitched from the game client's own world-map tiles (see
+[docs/MAP_IMAGES.md](docs/MAP_IMAGES.md)). They are © Blizzard Entertainment, Inc., are committed to this
+repository and served by the site only so the guide can show each zone, and are **not** covered by the GPL:
+the GPL grants no rights in them. If you fork the project, you need your own basis for using them.
 
 ## Takedown and contact
 
-If you hold rights in something used here and want it changed or removed, please open an issue at
+If you hold rights in something used here and want it changed or removed, email
+liviustefan.petroaia@gmail.com or open an issue at
 https://github.com/liviu-stefan-pit/the-forever-project/issues. We will respond as quickly as we can.

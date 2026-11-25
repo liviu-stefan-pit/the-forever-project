@@ -105,6 +105,6 @@ so `zones.json` points each zone at its image.
 
 ## Publishing
 
-`web/public/maps/` is committed, so generated images ship with the site. They are Blizzard game art, used under
-Blizzard's Fan Content Policy and not covered by the project's GPL licence (see `NOTICE.md`). Commit only the
+`web/public/maps/` is committed, so generated images ship with the site. They are Blizzard game art, used for this
+non-commercial fan project and not covered by the project's GPL licence (see `NOTICE.md`). Commit only the
 stitched `<uiMapId>.webp` files, never raw exports.

@@ -212,7 +212,7 @@ export function LandingPage() {
         </ul>
 
         <footer className="landing-rise mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-center text-xs text-ink/55" style={{ animationDelay: "950ms" }}>
-          <p>Free and fan-made. Not affiliated with Blizzard Entertainment or WoW Forever.</p>
+          <p>Free and fan-made. Not affiliated with or endorsed by Blizzard Entertainment.</p>
           <nav aria-label="Site" className="flex flex-wrap items-center justify-center gap-x-4">
             <Link to="/about" className="link-grow inline-flex min-h-touch items-center hover:text-ink">
               About

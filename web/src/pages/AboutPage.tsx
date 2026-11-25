@@ -5,7 +5,7 @@
 import type { ReactNode } from "react";
 import { Link } from "react-router";
 import { Icon } from "../components/ui/Icon";
-import { ISSUES_URL, LICENSE_URL, REPO_URL, SECURITY_URL, SITE_NAME } from "../config";
+import { CONTACT_EMAIL, ISSUES_URL, LICENSE_URL, MAINTAINER_NAME, PRIVACY_URL, REPO_URL, SECURITY_URL, SITE_NAME } from "../config";
 
 export const ABOUT_SECTIONS = [
   { id: "about", title: "About" },
@@ -19,7 +19,7 @@ export const ABOUT_SECTIONS = [
 
 type SectionId = (typeof ABOUT_SECTIONS)[number]["id"];
 
-const FAN_CONTENT_POLICY_URL = "https://www.blizzard.com/en-us/legal/blizzard-fan-content-policy";
+const BLIZZARD_LEGAL_FAQ_URL = "https://www.blizzard.com/en-us/legal/c1ae32ac-7ff9-4ac3-a03b-fc04b8697010/blizzard-legal-faq";
 
 function Ext({ href, children }: { href: string; children: ReactNode }) {
   return (
@@ -115,6 +115,12 @@ export function AboutPage() {
           If visitor statistics are enabled they use Cloudflare Web Analytics, which sets no cookies. Fonts are served from this site.
         </p>
         <p>Links to Wowhead, GitHub and other sites take you to third-party services with their own privacy policies.</p>
+        <p>
+          {SITE_NAME} is run by {MAINTAINER_NAME}, who is responsible for the personal data described here. For privacy questions, or to
+          use your rights (access, correction, deletion), email <a href={`mailto:${CONTACT_EMAIL}`} className="text-bronze-400 hover:text-bronze-300">{CONTACT_EMAIL}</a>.
+          AdventureLog zips you choose to email there are used only to improve the routes and deleted within 12 months. Read the full{" "}
+          <Ext href={PRIVACY_URL}>privacy notice</Ext>.
+        </p>
       </Section>
 
       <Section id="license">
@@ -140,14 +146,24 @@ export function AboutPage() {
           Entertainment, Inc. in the U.S. and/or other countries.
         </p>
         <p>
-          Game names, map images and other game content are © Blizzard Entertainment, Inc. and are used under Blizzard&apos;s{" "}
-          <Ext href={FAN_CONTENT_POLICY_URL}>Fan Content Policy</Ext>. The guides are provided as is, without warranty of any kind.
+          Game names, map images and other game content are © Blizzard Entertainment, Inc. They are used for this free, non-commercial
+          fan project within the limits Blizzard sets for fan sites (see the <Ext href={BLIZZARD_LEGAL_FAQ_URL}>Blizzard Legal FAQ</Ext>), and
+          will be removed if Blizzard asks.
+        </p>
+        <p>
+          The guides, the site and the addons are provided as is, without warranty of any kind, and you use them at your own risk. Follow
+          Blizzard&apos;s terms of use when you play; the project is not responsible for anything that happens to your game account,
+          characters or files.
         </p>
       </Section>
 
       <Section id="contact">
         <p>
           Bugs, wrong steps and ideas: <Ext href={ISSUES_URL}>GitHub Issues</Ext>.
+        </p>
+        <p>
+          Privacy, takedown requests and anything you would rather not post in public:{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} className="text-bronze-400 hover:text-bronze-300">{CONTACT_EMAIL}</a>.
         </p>
         <p>
           Security problems: please report them privately with <strong>Report a vulnerability</strong> on the repository&apos;s{" "}

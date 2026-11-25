@@ -169,4 +169,4 @@ The site is free, with every feature open to everyone. Every source is credited.
 
 - **Credits page** (`#/credits`, linked from the footer and from Settings): one row per source with its name, link, licence (e.g. GPL-3.0, MIT), and what we used it for (quest ids, NPC coordinates, map shapes, addon code). It is rendered from the root `CREDITS.md` (one file, owned by Sentinel), so a new dataset can't ship without a credit. Text is plain body type, with no logos unless a licence asks for them.
 - **"Buy me a coffee"** link in the footer, as a secondary text link with a small cup icon, placed next to Credits. It is never a modal, banner, toast, or step-card element, and never amber/gold accent. It has no "support to unlock" wording anywhere, because nothing is locked.
-- The footer line reads: "Free and fan-made. Not affiliated with Blizzard Entertainment or WoW Forever." plus the Credits and coffee links.
+- The footer line reads: "Free and fan-made. Not affiliated with or endorsed by Blizzard Entertainment." plus the Credits and coffee links.

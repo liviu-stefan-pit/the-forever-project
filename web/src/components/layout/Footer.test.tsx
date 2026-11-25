@@ -12,7 +12,7 @@ const html = (coffeeUrl: string) => {
 describe("Footer", () => {
   it("shows the fan-made notice and the site links", () => {
     const h = html("");
-    expect(h).toContain("Not affiliated with Blizzard Entertainment or WoW Forever.");
+    expect(h).toContain("Not affiliated with or endorsed by Blizzard Entertainment.");
     expect(h).toContain('href="/about"');
     expect(h).toContain('href="/credits"');
     expect(h).toContain('href="/addons"');

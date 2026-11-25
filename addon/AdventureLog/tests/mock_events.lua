@@ -564,6 +564,38 @@ if not loadOk then
     os.exit(1)
 end
 
+-- Loot and money messages about other players must not keep their text (it names them).
+-- English client strings; the addon builds its patterns from these globals on first use.
+LOOT_ITEM_SELF = "You receive loot: %s."
+LOOT_ITEM_SELF_MULTIPLE = "You receive loot: %sx%d."
+LOOT_ITEM_PUSHED_SELF = "You receive item: %s."
+LOOT_ROLL_YOU_WON = "You won: %s"
+YOU_LOOT_MONEY = "You loot %s"
+LOOT_MONEY_SPLIT = "Your share of the loot is %s."
+do
+    local link = "|cffffffff|Hitem:4865::::::::5:::::::|h[Ruined Pelt]|h|r"
+    local isSelf = AdventureLog.isSelfLootMessage
+    local cases = {
+        { "You receive loot: " .. link .. ".", true },
+        { "You receive loot: " .. link .. "x3.", true },
+        { "You won: " .. link, true },
+        { "Your share of the loot is 12 Copper.", true },
+        { "You loot 5 Copper", true },
+        { "Thrall receives loot: " .. link .. ".", false },
+        { "Thrall won: " .. link, false },
+        { "Need Roll - 87 for " .. link .. " by Thrall", false },
+        { "Thrall loots 5 Copper.", false },
+    }
+    local ok, bad = true, nil
+    for _, c in ipairs(cases) do
+        if isSelf(c[1]) ~= c[2] then
+            ok, bad = false, c[1]
+            break
+        end
+    end
+    report(ok, "loot chat keeps only the player's own messages", bad)
+end
+
 -- ---------------------------------------------------------------------------
 -- Session
 -- ---------------------------------------------------------------------------
@@ -605,6 +637,9 @@ fire("PLAYER_XP_UPDATE", "player")
 P.level = 6
 P.xp = 10
 P.xpMax = 900
+fire("CHAT_MSG_LOOT", "You receive loot: |cffffffff|Hitem:4865::::::::5:::::::|h[Ruined Pelt]|h|r.")
+fire("CHAT_MSG_LOOT", "Grommash receives loot: |cffffffff|Hitem:4865::::::::5:::::::|h[Ruined Pelt]|h|r.")
+flush(1)
 fire("PLAYER_LEVEL_UP", 6)
 fire("PLAYER_LOGOUT")
 
@@ -613,6 +648,15 @@ local sessionOk = type(db) == "table" and type(db.sessions) == "table" and type(
 report(sessionOk, "session recorded", sessionOk and db.sessions[1].id or "no session")
 if not sessionOk then
     os.exit(1)
+end
+
+do
+    local all = table.concat(db.sessions[1].events, "\n")
+    local kept = string.find(all, "You receive loot", 1, true) ~= nil
+    local leaked = string.find(all, "Grommash", 1, true) ~= nil
+    local marked = string.find(all, "textOther", 1, true) ~= nil
+    report(kept and marked and not leaked, "other players' names not stored",
+        "kept " .. tostring(kept) .. ", marked " .. tostring(marked) .. ", leaked " .. tostring(leaked))
 end
 
 local summaryText = db.sessions[1].summary

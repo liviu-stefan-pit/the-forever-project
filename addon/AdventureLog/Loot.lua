@@ -398,12 +398,67 @@ local function itemIdFromText(text)
     return nil
 end
 
+-- Privacy: loot and money messages about other players name them ("Thrall receives loot: ...").
+-- Only messages about the player keep their text. A message counts as the player's own when it
+-- matches one of the client's own "self" format strings (so it works in every locale), or, if
+-- none of those globals exist, when it starts with "You" / "Your".
+local SELF_FORMATS = {
+    "LOOT_ITEM_SELF", "LOOT_ITEM_SELF_MULTIPLE",
+    "LOOT_ITEM_PUSHED_SELF", "LOOT_ITEM_PUSHED_SELF_MULTIPLE",
+    "LOOT_ITEM_CREATED_SELF", "LOOT_ITEM_CREATED_SELF_MULTIPLE",
+    "LOOT_ITEM_REFUND", "LOOT_ITEM_REFUND_MULTIPLE",
+    "LOOT_ROLL_YOU_WON", "LOOT_ROLL_NEED_SELF", "LOOT_ROLL_GREED_SELF", "LOOT_ROLL_PASSED_SELF",
+    "YOU_LOOT_MONEY", "YOU_LOOT_MONEY_GUILD", "LOOT_MONEY_SPLIT", "LOOT_MONEY_SPLIT_GUILD",
+    "LOOT_MONEY_REFUND",
+}
+
+local selfPatterns = nil
+
+local function formatToPattern(fmt)
+    local p = string.gsub(fmt, "([%(%)%.%%%+%-%*%?%[%]%^%$])", "%%%1")
+    p = string.gsub(p, "%%%%%d+%%%$[sd]", ".+")
+    p = string.gsub(p, "%%%%s", ".+")
+    p = string.gsub(p, "%%%%d", "%%d+")
+    return "^" .. p .. "$"
+end
+
+local function buildSelfPatterns()
+    local list = {}
+    for _, name in ipairs(SELF_FORMATS) do
+        local fmt = _G[name]
+        if type(fmt) == "string" and fmt ~= "" and not isSecret(fmt) then
+            list[#list + 1] = formatToPattern(fmt)
+        end
+    end
+    return list
+end
+
+local function isSelfMessage(text)
+    if selfPatterns == nil then
+        selfPatterns = buildSelfPatterns()
+    end
+    if #selfPatterns == 0 then
+        return string.find(text, "^You[r ]") ~= nil
+    end
+    for _, p in ipairs(selfPatterns) do
+        if string.find(text, p) then
+            return true
+        end
+    end
+    return false
+end
+
+AdventureLog.isSelfLootMessage = isSelfMessage
+
 local function chatEvent(kind, text)
     local ev = { e = kind }
     if isSecret(text) then
         ev.textSecret = true
     elseif type(text) ~= "string" then
         ev.textErr = "missing"
+    elseif not isSelfMessage(text) then
+        -- About someone else: keep that it happened, never their name or the message.
+        ev.textOther = true
     else
         ev.text = text
         local itemId = itemIdFromText(text)

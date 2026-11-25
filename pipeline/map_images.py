@@ -9,7 +9,7 @@ your own install) into ``web/public/maps/<uiMapId>.webp`` for every vanilla zone
 ``--zones``: converts already-stitched zone maps named ``Zone_<areaId>_<Name>_<Folder>.png`` (1002 x 668)
 into the same ``web/public/maps/<uiMapId>.webp`` files. The area id is looked up in
 ``content/questie-db/zones.json`` (covers the Forever zones); the folder name is the fallback.
-The images are committed (Blizzard art, used under the Fan Content Policy). See docs/MAP_IMAGES.md.
+The images are committed (Blizzard art, not covered by the GPL; see NOTICE.md). See docs/MAP_IMAGES.md.
 """
 from __future__ import annotations
 

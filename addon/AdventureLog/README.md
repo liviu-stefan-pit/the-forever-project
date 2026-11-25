@@ -58,11 +58,12 @@ Close the game first. If you leave it open, the script still writes the adventur
    - a README
    - a raw copy of the SavedVariables file the game wrote
 
-3. It also makes a zip with the same name, next to that folder, so you can email it.
+3. It also makes a zip with the same name, next to that folder, so you can email it to
+   liviustefan.petroaia@gmail.com if you want to help improve the guides (see [Privacy](#privacy)).
 
 The in-game data is cleared only after the backup, the session files, and the zip all check out, and only if `Wow.exe` is not running. If the game is open, the data is left as it is.
 
-Running the exporter twice does not duplicate sessions. Email the zip.
+Running the exporter twice does not duplicate sessions.
 
 ## Optional: play, then export
 
@@ -90,7 +91,7 @@ Do this once on a throwaway level-1 character, not on the character you care abo
 7. Run **Export Adventure.bat**.
 8. Open the session `.jsonl` and look through it.
 
-A missing value must have an `Err` or `Secret` field next to it. If you see a bare empty value, do not start the real character. Send the file back.
+A missing value must have an `Err`, `Secret` or `textOther` field next to it. If you see a bare empty value, do not start the real character. Send the file back.
 
 `/adv probe` prints how many API checks passed. Run that in game if you want a quick count before you export.
 
@@ -98,6 +99,15 @@ A missing value must have an `Err` or `Secret` field next to it. If you see a ba
 
 AdventureLog writes only to WoW's SavedVariables and, through the export script, to a local folder and zip on
 your PC. Nothing is uploaded anywhere; sharing the zip is your choice.
+
+**What a log contains:** your character's name, realm, race, class and faction; where you went and when
+(real clock time and `/played`); quests, experience, loot, gold, kills, deaths, flights and group size. Loot and
+money messages about other players are not kept: the log records only that one happened, never their name.
+
+**If you email it** to liviustefan.petroaia@gmail.com: the zip is used only to check and improve the guide routes. It is not
+published, and your character name and realm do not appear in anything that goes into the project. The zip is
+deleted when that work is done, and at the latest 12 months after it arrives. Ask at the same address and it is
+deleted sooner. See [PRIVACY.md](https://github.com/liviu-stefan-pit/the-forever-project/blob/main/PRIVACY.md).
 
 ## Licence
 

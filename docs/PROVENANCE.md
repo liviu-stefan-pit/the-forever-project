@@ -31,7 +31,7 @@ The `data/` and `web/public/data/` folders are build output and are git-ignored.
 | Guide index fixture | `contracts/fixtures/guide_index.json` | Written by hand: one bracket and one start |
 | Addon sample | `contracts/fixtures/GuideWebExport.sample.lua`, `addon/tests/mock_client.lua` | Output of our own addon (#4) and a mock client |
 | Web app code | `web/src/**` | No embedded coordinate, outline or pin data. The map draws only what the data files contain |
-| Map images | `web/public/maps/*.webp` | Stitched from the game client's own world-map tiles by `pipeline/map_images.py`. © Blizzard Entertainment, used under Blizzard's Fan Content Policy; not covered by the GPL (see `NOTICE.md`) |
+| Map images | `web/public/maps/*.webp` | Stitched from the game client's own world-map tiles by `pipeline/map_images.py`. © Blizzard Entertainment, used for this non-commercial fan project; not covered by the GPL (see `NOTICE.md`) |
 
 (1) **Coordinate check:** the route packs' points were compared with content/questie-db spawns (±0.15
 zone %). Matches were 96% of dungeon gotos, 99% of the 40-60 pack, and 85–93% of the 1-20 packs.

@@ -16,7 +16,7 @@ export function Footer({ coffeeUrl = COFFEE_URL }: { coffeeUrl?: string }) {
   return (
     <footer className="border-t border-stroke/60 px-4 py-5 text-xs text-muted sm:px-6">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="w-full min-w-0 sm:w-auto sm:flex-1">Free and fan-made. Not affiliated with Blizzard Entertainment or WoW Forever.</p>
+        <p className="w-full min-w-0 sm:w-auto sm:flex-1">Free and fan-made. Not affiliated with or endorsed by Blizzard Entertainment.</p>
         <nav aria-label="Footer" className="flex flex-wrap items-center gap-x-4">
           <Link to="/" className="link-grow inline-flex min-h-touch items-center hover:text-ink">
             Home

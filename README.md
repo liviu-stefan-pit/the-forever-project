@@ -184,6 +184,7 @@ every change before it is published. See [AI_USAGE.md](AI_USAGE.md).
 ## Privacy
 
 No accounts and no server-side database: your profiles stay in your browser. See [PRIVACY.md](PRIVACY.md).
+Privacy and takedown contact: liviustefan.petroaia@gmail.com.
 
 ## Disclaimer
 
@@ -191,5 +192,10 @@ The Forever Project is a free, fan-made, non-commercial project. It is not affil
 sponsored or approved by Blizzard Entertainment, Inc. World of Warcraft, Warcraft and Blizzard
 Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or
 other countries. Game names, map images and other game content are © Blizzard Entertainment, Inc. and are
-used under Blizzard's [Fan Content Policy](https://www.blizzard.com/en-us/legal/blizzard-fan-content-policy).
-The guides are provided as is, without warranty of any kind.
+used for this free, non-commercial fan project within the limits Blizzard sets for fan sites (see the
+[Blizzard Legal FAQ](https://www.blizzard.com/en-us/legal/c1ae32ac-7ff9-4ac3-a03b-fc04b8697010/blizzard-legal-faq)). Blizzard can withdraw that permission at any time; see
+[NOTICE.md](NOTICE.md) for takedown requests.
+
+The guides, the site and the addons are provided as is, without warranty of any kind, and you use them
+at your own risk. Follow Blizzard's terms of use when you play; the project is not responsible for
+anything that happens to your game account, characters or files.

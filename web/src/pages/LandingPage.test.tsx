@@ -39,7 +39,7 @@ describe("LandingPage", () => {
 
   it("keeps the fan-site notice and links to About, Credits and Addons", () => {
     const h = html();
-    expect(h).toContain("Not affiliated with Blizzard Entertainment or WoW Forever.");
+    expect(h).toContain("Not affiliated with or endorsed by Blizzard Entertainment.");
     expect(h).toContain('href="/about"');
     expect(h).toContain('href="/credits"');
     expect(h).toContain('href="/addons"');

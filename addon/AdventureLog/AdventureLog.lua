@@ -761,6 +761,10 @@ function AdventureLog.record(event, ...)
         raw = rawArgs(unpack(current, 1, current.n))
     end
     scrubSecrets(event, {})
+    if raw and event.textOther then
+        -- The message is about another player: its raw args carry their name. Keep only the event name.
+        raw = { raw[1] }
+    end
     if raw then
         event.raw = raw
     end

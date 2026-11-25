@@ -387,6 +387,7 @@ This folder is a JSON export of one character's AdventureLog SavedVariables. An 
 - ``npcId`` - creature id taken from GUID field 6.
 - A field whose name ends in ``Err`` means that API call failed.
 - A field whose name ends in ``Secret`` means the client hid the value.
+- ``textOther`` - on ``loot_chat`` / ``money_chat``: the message was about another player, so its text and raw arguments (which name them) were not kept.
 - ``raw`` - the game event name and its arguments exactly as the client sent them, for re-parsing.
 - ``notReady`` - recorded while the client was still loading; position and XP may be incomplete.
 - ``baseline`` - on ``quest_ready``: the quest was already complete when the session started, so it is not progress made in this session.
