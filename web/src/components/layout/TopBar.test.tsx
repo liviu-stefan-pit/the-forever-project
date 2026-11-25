@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from "vitest";
 import { writeDungeons } from "../../lib/profileExtras";
 import { ROUTE_OPTIONS, routeLabel } from "../../lib/routeStyle";
 import { InMemoryProgressProvider } from "../../state/progress";
-import { ClassChipButton, DungeonToggleView, GuideXpMeter, ROUTE_TOOLBAR_CLASS, RouteStyleSwitch } from "./TopBar";
+import { DungeonToggleView, GuideXpMeter, ROUTE_TOOLBAR_CLASS, RouteStyleSwitch } from "./TopBar";
 
 describe("route picker", () => {
   it("labels the two routes Balanced and Speedrun, never Lean", () => {
@@ -58,16 +58,6 @@ describe("375px route toolbar", () => {
     expect(cls).toContain("3xl:hidden");
   });
 
-  it("class chip shows the class name only; the role stays in the tooltip/popover", () => {
-    const html = renderToStaticMarkup(createElement(ClassChipButton, { cls: "Warrior", role: "tank", open: false, onClick: () => {} }));
-    const visible = html.replace(/title="[^"]*"/, "").replace(/<[^>]+>/g, " ");
-    expect(visible).toContain("Warrior");
-    expect(visible).not.toMatch(/tank/i);
-    expect(html).toMatch(/title="Class: Warrior · Role: Tank/);
-    expect(html).toContain("truncate");
-    expect(html).toContain("min-h-touch");
-  });
-
   it("renders compact guide XP markup with the completed fraction", () => {
     const html = renderToStaticMarkup(
       createElement(GuideXpMeter, {
@@ -86,10 +76,11 @@ describe("375px route toolbar", () => {
     expect(html).toMatch(/width:\s*25%/);
   });
 
-  it("clicking the chip opens the popover", () => {
-    const onClick = vi.fn();
-    const el = ClassChipButton({ cls: "Mage", open: false, onClick }) as ReactElement<{ onClick: () => void }>;
-    el.props.onClick();
-    expect(onClick).toHaveBeenCalled();
+  it("compact XP uses short numbers and keeps exact values in the tooltip", () => {
+    const html = renderToStaticMarkup(
+      createElement(GuideXpMeter, { earned: 12_345, total: 98_765, bracket: "20–30", title: "Guide", compact: true }),
+    );
+    expect(html).toContain("12.3k / 98.8k XP");
+    expect(html).toContain("12,345 / 98,765 XP");
   });
 });

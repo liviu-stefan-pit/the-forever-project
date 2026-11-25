@@ -6,9 +6,7 @@ import { dataOf, useGuide, useQuests } from "../../data/hooks";
 import { useCurrentGuideSlug, useEngine, useGuideCompletion, useProgressActions, useRouteStyle } from "../../state/progress";
 import { useRoutePosition } from "../../state/position";
 import { useGameSyncUi } from "../../state/gameSyncClient";
-import { useEffect, useRef, useState, type Ref } from "react";
-import { CLASS_KEYS, ROLES, type ClassKey, type Role } from "../../../../contracts/schema";
-import { readDungeons, ROLE_LABEL, writeDungeons } from "../../lib/profileExtras";
+import { readDungeons, writeDungeons } from "../../lib/profileExtras";
 import { currentZone } from "../../lib/currentZone";
 import { pickCurrentStepId } from "../../lib/guideList";
 import { guideNearestInput, nearestGotoStep } from "../../lib/profileHints";
@@ -111,111 +109,9 @@ export function XpBonusChip({ className = "" }: { className?: string }) {
   );
 }
 
-/** The chip shows the class only (fits a 375px toolbar); the role lives in the popover and the tooltip. */
-export function ClassChipButton({ cls, role, open, onClick, ref }: { cls: string; role?: Role | null; open: boolean; onClick: () => void; ref?: Ref<HTMLButtonElement> }) {
-  return (
-    <button
-      type="button"
-      aria-haspopup="dialog"
-      aria-expanded={open}
-      ref={ref}
-      title={`Class: ${cls}${role ? ` · Role: ${ROLE_LABEL[role]}` : ""}. Filters class steps and picks tips.`}
-      onClick={onClick}
-      className="press inline-flex min-h-touch max-w-full items-center gap-1.5 rounded-sm border border-stroke bg-frame/80 px-2 text-sm font-semibold text-ink hover:border-bronze-500 sm:px-2.5"
-    >
-      <Icon name="shield" className="hidden h-4 w-4 shrink-0 text-bronze-400 sm:inline" />
-      <span className="min-w-0 truncate">{cls}</span>
-      <Icon name="chevronDown" className={`h-3.5 w-3.5 shrink-0 opacity-70 transition-transform ${open ? "rotate-180" : ""}`} />
-    </button>
-  );
-}
-
-/** Class + role picker popover (DESIGN.md §2: reachable without opening Profile). */
-function ClassChip({ className = "" }: { className?: string }) {
-  const api = useProfileApi();
-  const [open, setOpen] = useState(false);
-  const [pos, setPos] = useState<{ top: number; left: number }>({ top: 0, left: 0 });
-  const ref = useRef<HTMLDivElement>(null);
-  const btnRef = useRef<HTMLButtonElement>(null);
-  const p = api.active;
-  const toggle = () => {
-    const r = btnRef.current?.getBoundingClientRect();
-    if (r) {
-      const w = 256;
-      setPos({ top: r.bottom + 6, left: Math.max(8, Math.min(r.right - w, window.innerWidth - w - 8)) });
-    }
-    setOpen((v) => !v);
-  };
-  useEffect(() => {
-    if (!open) return;
-    const onDown = (e: PointerEvent) => {
-      if (!ref.current?.contains(e.target as Node)) setOpen(false);
-    };
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
-    document.addEventListener("pointerdown", onDown);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("pointerdown", onDown);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [open]);
-  if (!p) {
-    return (
-      <Link
-        to="/profile"
-        className={`press inline-flex min-h-touch min-w-0 shrink items-center gap-1.5 whitespace-nowrap rounded-sm border border-stroke bg-frame/80 px-2 text-sm font-semibold text-ink hover:border-bronze-500 sm:px-2.5 ${className}`}
-      >
-        <Icon name="shield" className="hidden h-4 w-4 shrink-0 text-bronze-400 sm:inline" /> <span className="truncate">Pick class</span>
-      </Link>
-    );
-  }
-  return (
-    <div ref={ref} className={`relative shrink-0 ${className}`}>
-      <ClassChipButton ref={btnRef} cls={p.cls} role={p.role} open={open} onClick={toggle} />
-      {open && (
-        <div role="dialog" aria-label="Class and role" style={{ top: pos.top, left: pos.left }} className="wow-frame panel-animate fixed z-50 w-64 space-y-3 p-3 shadow-glow">
-          <label className="block text-xs font-semibold uppercase tracking-wider text-muted">
-            Class
-            <select
-              value={p.cls}
-              onChange={(e) => api.setCharacter({ cls: e.target.value as ClassKey })}
-              className="mt-1 block min-h-touch w-full rounded-sm border border-stroke bg-canvas px-2 text-sm normal-case tracking-normal text-ink focus:border-bronze-500"
-            >
-              {CLASS_KEYS.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-          </label>
-          <div>
-            <div className="text-xs font-semibold uppercase tracking-wider text-muted">Role</div>
-            <div role="radiogroup" aria-label="Role" className="mt-1 grid grid-cols-4 gap-1">
-              {([undefined, ...ROLES] as (Role | undefined)[]).map((r) => {
-                const on = p.role === r;
-                return (
-                  <button
-                    key={r ?? "any"}
-                    type="button"
-                    role="radio"
-                    aria-checked={on}
-                    onClick={() => api.setCharacter({ role: r ?? null })}
-                    className={`press min-h-touch rounded-sm border text-sm font-semibold ${on ? "border-bronze-500 bg-bronze-500/15 text-bronze-300" : "border-stroke text-muted hover:text-ink"}`}
-                  >
-                    {r ? ROLE_LABEL[r] : "Any"}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-          <Link to="/profile" onClick={() => setOpen(false)} className="block text-xs text-bronze-400 hover:text-bronze-300">
-            More in Profile →
-          </Link>
-        </div>
-      )}
-    </div>
-  );
-}
+const fmtFull = (n: number) => n.toLocaleString("en-US");
+const COMPACT = new Intl.NumberFormat("en-US", { notation: "compact", maximumFractionDigits: 1 });
+const fmtCompact = (n: number) => (n < 10_000 ? fmtFull(n) : COMPACT.format(n).toLowerCase());
 
 /** Compact guide XP meter (presentational; used in both toolbar clusters). */
 export function GuideXpMeter({
@@ -224,20 +120,24 @@ export function GuideXpMeter({
   bracket,
   title,
   className = "",
+  compact = false,
 }: {
   earned: number;
   total: number;
   bracket: string;
   title: string;
   className?: string;
+  /** Short numbers (12.3k) for the crowded main row; exact values stay in the tooltip. */
+  compact?: boolean;
 }) {
   const pct = total > 0 ? (earned / total) * 100 : 0;
+  const fmt = compact ? fmtCompact : fmtFull;
   return (
-    <div className={`flex min-w-0 shrink flex-col justify-center gap-0.5 ${className}`} title={title}>
+    <div className={`flex min-w-0 shrink flex-col justify-center gap-0.5 ${className}`} title={compact ? `${title} · ${fmtFull(earned)} / ${fmtFull(total)} XP` : title}>
       <div className="flex items-baseline justify-end gap-1.5 overflow-hidden whitespace-nowrap text-[10px] leading-none">
         <span className="hidden font-semibold uppercase tracking-wider text-bronze-500/80 min-[400px]:inline">{bracket}</span>
         <span className="tabular-nums font-semibold text-ink">
-          {earned.toLocaleString("en-US")} / {total.toLocaleString("en-US")} XP
+          {fmt(earned)} / {fmt(total)} XP
         </span>
       </div>
       <div
@@ -257,7 +157,7 @@ export function GuideXpMeter({
   );
 }
 
-function GuideXpBar({ className = "" }: { className?: string }) {
+function GuideXpBar({ className = "", compact }: { className?: string; compact?: boolean }) {
   const pos = useRoutePosition();
   const location = useLocation();
   const engine = useEngine();
@@ -282,6 +182,7 @@ function GuideXpBar({ className = "" }: { className?: string }) {
       bracket={`${guide.minLevel}–${guide.maxLevel}`}
       title={`${guide.displayName} · XP from completed steps in this guide`}
       className={className}
+      compact={compact}
     />
   );
 }
@@ -336,29 +237,39 @@ function OverallProgress() {
     navigate(path);
   };
   return (
-    <div className="hidden shrink-0 items-center gap-3 whitespace-nowrap md:flex" title={`Estimated level ${pos.level.toFixed(1)} of 60${guideZone ? ` · guide zone ${guideZone}` : ""}`}>
-      <div className="text-right leading-tight">
-        <div className="flex items-baseline justify-end gap-1 text-xs font-semibold text-ink">
-          Lv <span className="tabular-nums">{Math.floor(pos.level)}</span>
+    // Level, zone, overall % and this guide's XP in one cluster. It is the part of the main row that shrinks
+    // (zone truncates first), so Search and Profile always keep their place on screen.
+    <div className="hidden min-w-0 shrink items-center gap-3 overflow-hidden whitespace-nowrap md:flex" title={`Estimated level ${pos.level.toFixed(1)} of 60${guideZone ? ` · guide zone ${guideZone}` : ""}`}>
+      <div className="min-w-0 overflow-hidden text-right leading-tight">
+        <div className="flex min-w-0 items-baseline justify-end gap-1 text-xs font-semibold text-ink">
+          <span className="shrink-0">
+            Lv <span className="tabular-nums">{Math.floor(pos.level)}</span>
+          </span>
           {zone && (
-            <span className="max-w-[9rem] truncate font-normal text-bronze-300" data-testid="topbar-zone" title={guideZone && liveZone && guideZone !== liveZone ? `Guide zone: ${guideZone}` : undefined}>
+            <span className="min-w-0 max-w-[10rem] truncate font-normal text-bronze-300" data-testid="topbar-zone" title={guideZone && liveZone && guideZone !== liveZone ? `Guide zone: ${guideZone}` : undefined}>
               · {zone}
             </span>
           )}
           {nearest && (
-            <button type="button" onClick={jump} className="press font-semibold text-bronze-400 hover:text-bronze-300" data-testid="jump-nearest-step">
-              Jump to nearest step
+            <button
+              type="button"
+              onClick={jump}
+              title="Jump to nearest step"
+              aria-label="Jump to nearest step"
+              className="press inline-flex shrink-0 items-center gap-0.5 self-center font-semibold text-bronze-400 hover:text-bronze-300"
+              data-testid="jump-nearest-step"
+            >
+              <Icon name="crosshair" className="h-3.5 w-3.5" />
+              <span className="hidden 2xl:inline">Nearest step</span>
             </button>
           )}
         </div>
-        <div className="text-[10px] uppercase tracking-wider text-bronze-500/80">
+        <div className="text-[10px] uppercase tracking-wider text-bronze-500/80" role="progressbar" aria-label="Overall route progress" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
           {pos.bracket && <>{pos.bracket.replace("-", "–")} · </>}
           {pct}% of 1–60
         </div>
       </div>
-      <div className="h-1.5 w-20 overflow-hidden rounded-full bg-stroke 3xl:w-36" role="progressbar" aria-label="Overall route progress" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100}>
-        <div className="h-full rounded-full bg-gradient-to-r from-bronze-500 via-bronze-400 to-bronze-400 transition-[width] duration-700" style={{ width: `${Math.max(2, pct)}%` }} />
-      </div>
+      <GuideXpBar compact className="w-28 shrink-0 border-l border-stroke/60 pl-3 3xl:w-40" />
     </div>
   );
 }
@@ -381,7 +292,7 @@ export function TopBar() {
       data-scroll-hidden={scrollHidden ? "true" : undefined}
       className="topbar sticky top-0 z-40 border-b border-stroke bg-canvas/85 backdrop-blur-md"
     >
-      <div className="flex h-14 items-center gap-2 px-3 sm:gap-3 sm:px-4">
+      <div className="flex h-14 min-w-0 items-center gap-2 px-3 sm:gap-3 sm:px-4">
         <button
           type="button"
           onClick={() => ui.setDrawerOpen(true)}
@@ -421,8 +332,6 @@ export function TopBar() {
           <RouteStyleSwitch />
           <DungeonToggle />
           <XpBonusChip />
-          <ClassChip />
-          <GuideXpBar />
         </div>
         {sync.available && (
         <div className="flex shrink-0 items-center gap-2">
@@ -471,15 +380,16 @@ export function TopBar() {
         <RouteStyleSwitch />
         <DungeonToggle compact />
         <XpBonusChip />
-        <ClassChip />
-        <GuideXpBar className="ml-auto" />
+        {/* From md up the guide XP sits with the level in the main row. */}
+        <GuideXpBar className="ml-auto md:hidden" />
         {sync.available && (
           <span className="hidden min-w-0 flex-1 truncate text-xs text-muted sm:block" title={sync.title}>
             {sync.barText}
           </span>
         )}
       </div>
-      <div className="absolute inset-x-0 bottom-0 h-px md:hidden" aria-hidden="true">
+      {/* Overall 1–60 progress drawn as the header's bottom edge (the % is in the level cluster). */}
+      <div className="absolute inset-x-0 bottom-0 h-px" aria-hidden="true">
         <div className="h-px bg-gradient-to-r from-bronze-500 via-bronze-400 to-bronze-400 transition-[width] duration-700" style={{ width: `${Math.max(1, pos.overall * 100)}%` }} />
       </div>
     </header>

@@ -70,7 +70,7 @@ Keep the shell: sticky top bar, left level timeline (drawer < `lg`), main column
 
 **Top bar (left → right):** emblem + “Forever · Horde 1–60”; nav (Dashboard, Guide, Overview); spacer; level + zone + % of 1–60; **Route** segmented control **Balanced | Speedrun** (rename Lean; Speedrun is the highly optimized line, Balanced is the relaxed one with worthwhile extras); **Dungeons** toggle (see §6); **Class** chip (opens the profile class/role picker — changing it live-filters tips and steps); **Sync** (36px, status on the right of the button, not a truncated 11px ghost line); Search; Profile.
 
-Route, Dungeons and Class must be reachable without opening Profile. On narrow widths, wrap them into a second 36px toolbar under the title, not an overflow menu of 24px icons.
+Route and Dungeons must be reachable without opening Profile (Class and Role live in Profile). On narrow widths, wrap them into a second 36px toolbar under the title, not an overflow menu of 24px icons.
 
 **Guide page**
 
