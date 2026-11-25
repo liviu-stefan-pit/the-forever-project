@@ -425,7 +425,7 @@ export function TopBar() {
           <GuideXpBar />
         </div>
         {sync.available && (
-        <div className="flex min-w-0 shrink items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <button
             type="button"
             onClick={sync.sync}
@@ -437,7 +437,8 @@ export function TopBar() {
             <Icon name="loop" className={`h-4 w-4 ${sync.busy ? "animate-spin motion-reduce:animate-none" : ""}`} />
             Sync
           </button>
-          <span className="hidden min-w-0 max-w-[15rem] text-[11px] leading-tight text-muted lg:line-clamp-2" title={sync.title} aria-live="polite">
+          {/* Only on very wide screens: below that the main row has no room and the status lives in the second row. */}
+          <span className="hidden w-[15rem] text-[11px] leading-tight text-muted min-[2200px]:line-clamp-2" title={sync.title} aria-live="polite">
             {sync.barText}
           </span>
         </div>
@@ -473,7 +474,7 @@ export function TopBar() {
         <ClassChip />
         <GuideXpBar className="ml-auto" />
         {sync.available && (
-          <span className="hidden min-w-0 flex-1 truncate text-xs text-muted sm:block lg:hidden" title={sync.title}>
+          <span className="hidden min-w-0 flex-1 truncate text-xs text-muted sm:block" title={sync.title}>
             {sync.barText}
           </span>
         )}
