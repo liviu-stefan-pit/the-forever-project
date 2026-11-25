@@ -68,11 +68,17 @@ export function DungeonToggleView({ on, onChange, className = "", compact = fals
     >
       <Icon name="skull" className="h-4 w-4" />
       <span className={`whitespace-nowrap ${compact ? "sr-only sm:not-sr-only" : ""}`}>{DUNGEON_LABEL_SHORT}</span>
-      <span aria-hidden="true" className={`relative h-4 w-7 shrink-0 rounded-full transition-colors ${on ? "bg-horde-400" : "bg-stroke"}`}>
-        <span className={`absolute left-0 top-0.5 h-3 w-3 rounded-full bg-ink shadow transition-transform duration-200 ${on ? "translate-x-[14px]" : "translate-x-[2px]"}`} />
-      </span>
+      <SwitchPill on={on} />
       <span className="sr-only">{on ? "on" : "off"}</span>
     </button>
+  );
+}
+
+function SwitchPill({ on }: { on: boolean }) {
+  return (
+    <span aria-hidden="true" className={`relative h-4 w-7 shrink-0 rounded-full transition-colors ${on ? "bg-horde-400" : "bg-stroke"}`}>
+      <span className={`absolute left-0 top-0.5 h-3 w-3 rounded-full bg-ink shadow transition-transform duration-200 ${on ? "translate-x-[14px]" : "translate-x-[2px]"}`} />
+    </span>
   );
 }
 
@@ -89,6 +95,7 @@ export function DungeonToggle({ className, compact }: { className?: string; comp
       >
         <Icon name="skull" className="h-4 w-4" />
         <span className={`whitespace-nowrap ${compact ? "sr-only sm:not-sr-only" : ""}`}>{DUNGEON_LABEL_SHORT}</span>
+        <SwitchPill on={false} />
       </Link>
     );
   }

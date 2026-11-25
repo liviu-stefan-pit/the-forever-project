@@ -489,8 +489,14 @@ export function DashboardPage() {
           ) : (
             <Skeleton className="h-40 w-full" />
           )}
-          {active ? <StartHere defaultOpen={!started && (active.level ?? 1) > 1} /> : <QuickStart />}
+          {active && <StartHere defaultOpen={!started && (active.level ?? 1) > 1} />}
         </div>
+        {/* First visit: full width under the map and the step, so the right column is not taller than the map. */}
+        {!active && (
+          <div className="border-t border-bronze-900 p-5 sm:p-6 md:col-span-2">
+            <QuickStart />
+          </div>
+        )}
       </section>
 
       <div className="grid grid-cols-[minmax(0,1fr)] items-start gap-5 lg:grid-cols-5">
