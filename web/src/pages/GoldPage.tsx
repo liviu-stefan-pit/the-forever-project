@@ -1,5 +1,5 @@
 /**
- * `#/gold` — the gold plan: big purchases on the way to 60, savings pace, where to earn in each
+ * `/gold` — the gold plan: big purchases on the way to 60, savings pace, where to earn in each
  * bracket (your bracket first), habits and farms to avoid. Data: `gold-plan.json`.
  */
 import { GoldGoal } from "../components/dashboard/GoldGoal";

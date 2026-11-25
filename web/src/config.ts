@@ -26,5 +26,5 @@ export const CONTACT_EMAIL = "liviustefan.petroaia@gmail.com";
 export const GUIDEWEBEXPORT_ZIP_URL = `${RELEASES_URL}/download/guidewebexport-latest/GuideWebExport.zip`;
 export const ADVENTURELOG_ZIP_URL = `${RELEASES_URL}/download/adventurelog-latest/AdventureLog.zip`;
 
-/** The Horde dashboard. `#/` is the faction landing page. */
+/** The Horde dashboard. `/` is the faction landing page. */
 export const HORDE_HOME = "/horde";

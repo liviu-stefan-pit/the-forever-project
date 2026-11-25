@@ -1,5 +1,5 @@
 /**
- * `#/transfer?d=<code>` — the phone side of "Open on your phone": shows what the link carries and adds
+ * `/transfer?d=<code>` — the phone side of "Open on your phone": shows what the link carries and adds
  * it as a profile on this device.
  */
 import { useEffect, useState } from "react";

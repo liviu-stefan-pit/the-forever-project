@@ -4,7 +4,7 @@ The Forever Project is a free, fan-made World of Warcraft leveling guide. It is 
 World of Warcraft and Blizzard Entertainment are trademarks of Blizzard Entertainment, Inc. See [NOTICE.md](NOTICE.md) for the full notices.
 
 Every source we take facts, data or code from is listed in the table below, in the same commit that adds it.
-The in-app Credits page (`#/credits`) is generated from this table, so keep the column order and one source per row.
+The in-app Credits page (`/credits`) is generated from this table, so keep the column order and one source per row.
 
 Licence rules for this repo:
 - Free to use with credit: MIT, BSD, Apache-2.0, CC0, CC BY.

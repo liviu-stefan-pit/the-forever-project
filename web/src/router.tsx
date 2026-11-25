@@ -1,13 +1,14 @@
 import { lazy, Suspense, type ComponentType, type ReactNode } from "react";
-import { createHashRouter } from "react-router";
+import { createBrowserRouter } from "react-router";
 import { AppShell } from "./components/layout/AppShell";
 import { InfoShell } from "./components/layout/InfoShell";
 import { GuideSkeleton } from "./components/ui/States";
 import { HORDE_HOME } from "./config";
 
 /**
- * Hash routing: a plain static file server is enough (plan D4).
- * Step deep link: `#/guide/<slug>?step=<step id>` (URL-encoded).
+ * Path routing (`/horde`, no `#`). Cloudflare Pages serves index.html for unknown paths, and
+ * legacyHash.ts turns old `#/…` links into paths before the router starts.
+ * Step deep link: `/guide/<slug>?step=<step id>` (URL-encoded).
  * Pages are lazy; the shell and providers stay in the first chunk.
  */
 function page(load: () => Promise<{ default: ComponentType }>, fallback: ReactNode = <PageFallback />): ReactNode {
@@ -42,7 +43,7 @@ const AboutPage = () => import("./pages/AboutPage").then((m) => ({ default: m.Ab
 const AddonsPage = () => import("./pages/AddonsPage").then((m) => ({ default: m.AddonsPage }));
 const NotFoundPage = () => import("./pages/PlaceholderPages").then((m) => ({ default: m.NotFoundPage }));
 
-export const router = createHashRouter([
+export const router = createBrowserRouter([
   // The faction landing page is full-screen, outside the app shell; it has its own background.
   { path: "/", element: page(LandingPage, null) },
   // Site-wide pages (not part of the Horde section): plain header, shared footer.

@@ -1,6 +1,6 @@
 /**
- * `#/about`: what the site is, its experimental status, use of AI, privacy, licence, disclaimer and
- * contact. Each section has an id (`#/about#privacy`) so other pages can link straight to it.
+ * `/about`: what the site is, its experimental status, use of AI, privacy, licence, disclaimer and
+ * contact. Each section has an id (`/about#privacy`) so other pages can link straight to it.
  */
 import type { ReactNode } from "react";
 import { Link } from "react-router";
@@ -35,7 +35,7 @@ function Section({ id, children }: { id: SectionId; children: ReactNode }) {
   return (
     <section id={id} aria-labelledby={`${id}-heading`} className="wow-frame panel-animate scroll-mt-20 space-y-3 p-5">
       <h2 id={`${id}-heading`} className="font-display text-xl font-bold text-bronze-400">
-        <a href={`#/about#${id}`} className="hover:text-bronze-300">
+        <a href={`#${id}`} className="hover:text-bronze-300">
           {title}
         </a>
       </h2>
@@ -52,7 +52,7 @@ export function AboutPage() {
         <h1 className="font-display text-3xl font-bold text-bronze-400">{SITE_NAME}</h1>
         <nav aria-label="On this page" className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
           {ABOUT_SECTIONS.map((s) => (
-            <a key={s.id} href={`#/about#${s.id}`} className="inline-flex min-h-touch items-center text-bronze-400 hover:text-bronze-300">
+            <a key={s.id} href={`#${s.id}`} className="inline-flex min-h-touch items-center text-bronze-400 hover:text-bronze-300">
               {s.title}
             </a>
           ))}

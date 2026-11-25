@@ -20,7 +20,7 @@ describe("LandingPage", () => {
     expect(h).toContain("Choose your faction.");
     const horde = card(h, "horde");
     expect(horde.startsWith("<a")).toBe(true);
-    expect(horde).toContain('href="#/horde"');
+    expect(horde).toContain('href="/horde"');
     expect(horde).toContain("Available now");
     expect(horde).toContain("Enter");
     expect(horde).toContain("Experimental");

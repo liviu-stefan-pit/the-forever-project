@@ -3,6 +3,7 @@
  * professions (recommended pair for the class, synced skills, this step's hint).
  * Data-driven: `class_professions.json` + `step.tips` / `professionHooks` + synced `Profile.skills`.
  */
+import { Link } from "react-router";
 import type { ClassKey, ClassProfessions, Profile, ProfessionKey, Step } from "../../data/schema";
 import { dataOf, useClassProfessions } from "../../data/hooks";
 import { cardTips, hookReached, hookSkillWarning, hookText, type TipContext } from "../../lib/stepExtras";
@@ -91,9 +92,9 @@ export function ProfessionPanel({ profile, step, ctx }: { profile: Profile | nul
       {hooks.length > 0 && !(ctx.professions?.length || skills.length) && (
         <p className="border-t border-stroke/60 pt-3 text-[11px] leading-snug text-muted" data-testid="profession-pick-hint">
           Pick your professions on the{" "}
-          <a href="#/profile" className="text-bronze-400 hover:text-bronze-300">
+          <Link to="/profile" className="text-bronze-400 hover:text-bronze-300">
             Profile
-          </a>{" "}
+          </Link>{" "}
           page to see these notes on the steps too.
         </p>
       )}

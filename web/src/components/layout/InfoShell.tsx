@@ -19,7 +19,7 @@ const SITE_PAGES = [
 const siteLinkClass = ({ isActive }: { isActive: boolean }) =>
   `inline-flex min-h-touch items-center rounded-sm px-2 text-sm font-medium transition sm:px-2.5 ${isActive ? "bg-bronze-500/15 text-bronze-300" : "text-bronze-500/80 hover:text-ink"}`;
 
-/** `#/about#license`: scroll to the section once it is on the page. */
+/** `/about#license`: scroll to the section once it is on the page. */
 function scrollToHash(hash: string): boolean {
   const id = decodeURIComponent(hash.replace(/^#/, ""));
   if (!id) return false;

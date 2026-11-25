@@ -6,10 +6,9 @@ import { copyText } from "../lib/clipboard";
 import { buildPayload, encodePayload, MAX_QR_URL } from "../lib/transferCode";
 import { Icon } from "./ui/Icon";
 
-/** Link that opens `#/transfer` with the packed profile, on this same site. */
+/** Link that opens `/transfer` with the packed profile, on this same site. */
 export function transferUrl(code: string): string {
-  const { origin, pathname } = window.location;
-  return `${origin}${pathname}#/transfer?d=${code}`;
+  return `${window.location.origin}${import.meta.env.BASE_URL}transfer?d=${code}`;
 }
 
 /** QR code as an SVG (dark modules on white, with the quiet zone scanners need). */

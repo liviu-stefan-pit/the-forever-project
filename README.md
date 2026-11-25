@@ -21,24 +21,24 @@ written for this project from open data (the GPL-3.0 QuestieDB quest database) a
   then the shared route through the Barrens and on to 60.
 - **Dungeons toggle:** the route is solo-first; turn on **Dungeons** to fold dungeon steps into the line.
 - **Class / role picker:** filters steps, tips and the map line for your class and role.
-- **Route maps** per zone, quest pages (`#/quest/<id>`) with givers, turn-ins and objectives, an overview
+- **Route maps** per zone, quest pages (`/quest/<id>`) with givers, turn-ins and objectives, an overview
   page, search, and profession hooks along the way.
 - **Local character profiles:** ticks, quests and settings live in your browser. **Export** /
   **Import JSON profile** on the Profile page move them between browsers.
 - **Optional in-game sync** with the GuideWebExport addon (see below). On the hosted site, desktop
   Chrome / Edge can remember the chosen `GuideWebExport.lua` for one-click Sync (and re-sync on `/reload`
   while the tab is open); other browsers use **Import GuideWebExport.lua** on the Profile page.
-- **Gold plan** (`#/gold`): what to save for (riding at 40, dual spec, riding at 60), a savings pace, and
+- **Gold plan** (`/gold`): what to save for (riding at 40, dual spec, riding at 60), a savings pace, and
   where to earn in each level bracket; tracks your gold after a Sync.
 - **Start at your level:** not level 1? Pick your level on the dashboard and the guide opens at the right
   step with earlier steps marked done. Rough **play-time estimates** per guide and to 60.
 - **Phone as a second screen:** scan the QR code on the Profile page to copy a profile to your phone
   (nothing is uploaded), keep the screen on while a guide is open, and install the site to the home
   screen; guides you have opened keep working offline.
-- **Credits page** (`#/credits`) generated from [CREDITS.md](CREDITS.md).
+- **Credits page** (`/credits`) generated from [CREDITS.md](CREDITS.md).
 
-Hash routes: `#/` (faction landing page), `#/horde` (dashboard), `#/guide/<slug>`, `#/quest/<id>`,
-`#/overview`, `#/gold`, `#/transfer`, `#/profile`, `#/credits`. Alliance is not available yet.
+Routes (plain paths; old `#/…` links redirect): `/` (faction landing page), `/horde` (dashboard), `/guide/<slug>`, `/quest/<id>`,
+`/overview`, `/gold`, `/transfer`, `/profile`, `/credits`. Alliance is not available yet.
 
 ## The addons
 

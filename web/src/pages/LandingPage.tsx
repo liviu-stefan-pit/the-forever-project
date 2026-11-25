@@ -1,7 +1,7 @@
 /**
- * `#/`: the faction landing page. Two big cards on a background where the Horde and Alliance
+ * `/`: the faction landing page. Two big cards on a background where the Horde and Alliance
  * themes meet: Horde is live, Alliance is "coming soon". It sits outside the app shell and loads
- * only `landing.json` (a few bytes), so it paints fast; the Horde dashboard lives at `#/horde`.
+ * only `landing.json` (a few bytes), so it paints fast; the Horde dashboard lives at `/horde`.
  */
 import { useEffect, useRef, useState, type CSSProperties, type MouseEvent } from "react";
 import { Link, useNavigate } from "react-router";
@@ -126,7 +126,7 @@ export function LandingPage() {
         <section aria-label="Factions" className="mx-auto mt-8 grid w-full max-w-5xl flex-1 grid-cols-1 gap-6 sm:mt-12 md:grid-cols-2 md:gap-14">
           <FactionCard
             faction="horde"
-            href={`#${HORDE_HOME}`}
+            href={HORDE_HOME}
             label={returning ? `Horde: continue as ${returning.name}` : "Horde: enter the leveling guide"}
             describedBy="horde-desc"
             onActivate={enterHorde}

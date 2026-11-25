@@ -1,4 +1,4 @@
-/** `#/addons`: download the in-game addons (GuideWebExport, AdventureLog) from GitHub Releases. */
+/** `/addons`: download the in-game addons (GuideWebExport, AdventureLog) from GitHub Releases. */
 import { useState, type ReactNode } from "react";
 import { copyText } from "../lib/clipboard";
 import { Link } from "react-router";

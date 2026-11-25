@@ -23,7 +23,7 @@ for more details.
 | npm dependencies (React, React Router, MiniSearch, Vite, Tailwind CSS and others) | `web/package.json`, `web/package-lock.json` | Each under its own licence, as stated in the package |
 
 Facts from other public sources are listed, with their terms, in [CREDITS.md](CREDITS.md) and on the
-site's Credits page (`#/credits`). No text is copied from other guides, and paid guides are not used as
+site's Credits page (`/credits`). No text is copied from other guides, and paid guides are not used as
 sources.
 
 ## Blizzard Entertainment

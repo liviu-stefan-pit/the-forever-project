@@ -1,6 +1,6 @@
 /**
  * Reset window scroll when the user moves to a different page.
- * Search-param-only changes (e.g. `#/guide/foo?step=…`) must not reset —
+ * Search-param-only changes (e.g. `/guide/foo?step=…`) must not reset —
  * the guide reader owns that scroll (and uses preventScrollReset).
  */
 export function pathForScrollReset(pathname: string): string {

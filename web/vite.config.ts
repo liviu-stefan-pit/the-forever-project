@@ -7,8 +7,8 @@ const projectRoot = fileURLToPath(new URL("..", import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
-  // Relative asset paths so the static build works from any local file server.
-  base: "./",
+  // Absolute asset paths: pages live at real paths (/guide/<slug>), so "./" would break there.
+  base: "/",
   resolve: {
     alias: { "@contracts": contractsDir },
   },

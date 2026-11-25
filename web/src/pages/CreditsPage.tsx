@@ -1,4 +1,4 @@
-/** `#/credits`: every data source and its licence, generated from the root CREDITS.md (DESIGN.md §8). */
+/** `/credits`: every data source and its licence, generated from the root CREDITS.md (DESIGN.md §8). */
 import { Link } from "react-router";
 import { CREDITS, safeUrl } from "../lib/credits";
 import { Icon } from "../components/ui/Icon";

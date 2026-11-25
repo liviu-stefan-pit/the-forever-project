@@ -1,3 +1,4 @@
+import "./legacyHash";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
@@ -30,31 +31,32 @@ function warm(path: string): void {
 
 /** Prime the HTTP cache for the route the loader will fetch. Does not block paint. */
 function warmRouteData(): void {
-  const hash = window.location.hash.startsWith("#") ? window.location.hash.slice(1) : "";
-  const path = hash.split("?")[0] ?? "";
+  const path = window.location.pathname;
   const slug = /^\/guide\/([^/]+)/.exec(path)?.[1];
   if (slug) warm(`guides/${decodeURIComponent(slug)}.json`);
   warm("guide_index.json");
   warm("quest-steps.json");
 }
 
-/** The faction landing page (`#/`) needs none of the guide data: let it paint and animate first. */
+/** The faction landing page (`/`) needs none of the guide data: let it paint and animate first. */
 function onLanding(): boolean {
-  const h = window.location.hash;
-  return h === "" || h === "#" || h === "#/" || h.startsWith("#/?");
+  return window.location.pathname === (import.meta.env.BASE_URL || "/");
 }
 
 if (onLanding()) {
   // Warm up after a short idle, or at once when the visitor leaves the landing page.
   let started = false;
+  let unsubscribe = () => {};
   const start = () => {
     if (started) return;
     started = true;
-    window.removeEventListener("hashchange", start);
+    unsubscribe();
     warmRouteData();
     startSearchWorker();
   };
-  window.addEventListener("hashchange", start);
+  unsubscribe = router.subscribe((state) => {
+    if (state.location.pathname !== "/") start();
+  });
   window.setTimeout(start, 2500);
 } else {
   warmRouteData();
