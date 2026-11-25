@@ -18,7 +18,7 @@ export function useRecomputedSim(steps: readonly Step[] | undefined, route: Rout
   const api = useProfileApi();
   const mods = api.active?.options.xpMods;
   const xpRested = api.active?.xpRested;
-  const dungeons = api.active?.options.dungeons === true;
+  const dungeons = api.progressProfile.options.dungeons === true;
   return useMemo(() => {
     if (!steps) return null;
     if (!dungeons) return recomputeGuideSims(steps, route, mods, mods?.restedPolicy === "fromGame" ? xpRested : undefined);

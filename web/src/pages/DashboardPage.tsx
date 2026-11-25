@@ -67,10 +67,10 @@ function fmtCoord(p: { x: number; y: number }): string {
 function useDashboardModel(pos: RoutePosition, guide: Guide | undefined, quests: QuestMap | undefined) {
   const progress = useProgress();
   const vis = useVisibility();
-  const active = useProfileApi().active;
+  const guestOrActive = useProfileApi().progressProfile;
   const route = progress.routeStyle;
   const recomputed = useRecomputedSim(guide?.steps, route);
-  const dungeons = active?.options.dungeons === true;
+  const dungeons = guestOrActive.options.dungeons === true;
 
   return useMemo(() => {
     if (!guide || !quests) return undefined;
@@ -163,7 +163,7 @@ function LevelBadge({ level }: { level: number }) {
 function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests: QuestMap }) {
   const guideTitle = useGuideTitle();
   const progress = useProgress();
-  const active = useProfileApi().active;
+  const { active, progressProfile: guestOrActive } = useProfileApi();
   const now = model.now;
   if (!now) {
     return (
@@ -177,7 +177,7 @@ function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests:
       </div>
     );
   }
-  const ctx: TipContext = { route: progress.routeStyle, dungeons: active?.options.dungeons ?? false, cls: active?.cls, role: active?.role, professions: active?.professions };
+  const ctx: TipContext = { route: progress.routeStyle, dungeons: guestOrActive.options.dungeons ?? false, cls: active?.cls, role: active?.role, professions: active?.professions };
   const tip = cardTips(now, ctx).tip;
   const up = model.milestones[0]?.stepsAway === 0 ? model.milestones[0].level : undefined;
   const lines = now.text.slice(0, 3);
@@ -233,8 +233,8 @@ function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests:
 
 function StopRow({ slug, stop, quests }: { slug: string; stop: StopGroup; quests: QuestMap }) {
   const progress = useProgress();
-  const active = useProfileApi().active;
-  const ctx: TipContext = { route: progress.routeStyle, dungeons: active?.options.dungeons ?? false, cls: active?.cls, role: active?.role, professions: active?.professions };
+  const { active, progressProfile: guestOrActive } = useProfileApi();
+  const ctx: TipContext = { route: progress.routeStyle, dungeons: guestOrActive.options.dungeons ?? false, cls: active?.cls, role: active?.role, professions: active?.professions };
   const questName = (id: number) => quests.get(id)?.name;
   const chips = stop.steps.flatMap((s) => s.actions.map((a, j) => actionChip(a, j, questName)).filter((c) => c && !c.secondary)).filter((c) => !!c);
   const shown = chips.slice(0, 3);

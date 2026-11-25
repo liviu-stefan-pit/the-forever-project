@@ -115,7 +115,7 @@ export function GuideReader({
   const tipCtx = useMemo<TipContext>(
     () => ({
       route: routeStyle,
-      dungeons: active?.options.dungeons ?? false,
+      dungeons: progressProfile?.options.dungeons ?? false,
       cls: active?.cls,
       role: active?.role,
       professions: active?.professions,

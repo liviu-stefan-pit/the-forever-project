@@ -82,24 +82,10 @@ function SwitchPill({ on }: { on: boolean }) {
   );
 }
 
-/** Dungeons on/off: profile option `dungeons`. Filtering is the route engine's job. */
+/** Dungeons on/off: profile option `dungeons` (the in-memory guest before a profile exists). Filtering is the route engine's job. */
 export function DungeonToggle({ className, compact }: { className?: string; compact?: boolean }) {
   const api = useProfileApi();
-  if (!api.active) {
-    return (
-      <Link
-        to="/profile"
-        title="Create a character profile to include dungeons. Off is a fully solo route."
-        aria-label={`${DUNGEON_LABEL}: off`}
-        className={`press inline-flex min-h-touch shrink-0 items-center gap-2 rounded-sm border border-stroke bg-frame/80 px-2.5 text-sm font-semibold text-muted hover:text-ink ${className ?? ""}`}
-      >
-        <Icon name="skull" className="h-4 w-4" />
-        <span className={`whitespace-nowrap ${compact ? "sr-only sm:not-sr-only" : ""}`}>{DUNGEON_LABEL_SHORT}</span>
-        <SwitchPill on={false} />
-      </Link>
-    );
-  }
-  return <DungeonToggleView on={readDungeons(api.active)} onChange={(v) => writeDungeons(api, v)} className={className} compact={compact} />;
+  return <DungeonToggleView on={readDungeons(api.progressProfile)} onChange={(v) => writeDungeons(api, v)} className={className} compact={compact} />;
 }
 
 /** Quiet label when the profile is off the worst-case XP sim. Hidden when every bonus is off. */

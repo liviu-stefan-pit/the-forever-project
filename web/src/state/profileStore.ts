@@ -1190,7 +1190,7 @@ export function createProfileEngine(opts: EngineOptions = {}) {
         cls: input.cls,
         level: input.level,
         routeStyle: copyGuest ? guest.routeStyle : "balanced",
-        options: { showOptional: true, hideDone: false },
+        options: { showOptional: true, hideDone: false, ...(copyGuest && guest.options.dungeons ? { dungeons: true } : {}) },
         steps: copyGuest ? { ...guest.steps } : {},
         quests: copyGuest ? { ...guest.quests } : {},
         addedQuests: [],
@@ -1234,8 +1234,9 @@ export function createProfileEngine(opts: EngineOptions = {}) {
       if (!state.profiles.some((p) => p.id === pid) || state.activeId === pid) return;
       persist({ ...state, activeId: pid });
     },
+    /** Without a profile this changes the in-memory guest, so the Dungeons toggle works before a character exists. */
     setOptions(partial: Partial<Profile["options"]>): void {
-      mutateActive((p) => {
+      mutateProgress((p) => {
         const options = { ...p.options, ...partial };
         if ("xpMods" in partial) {
           const xpMods = packXpMods(partial.xpMods);
