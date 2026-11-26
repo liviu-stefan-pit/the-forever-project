@@ -78,6 +78,25 @@ Each event can carry these time fields:
 - `pt` is your total `/played` time. That is the speedrun clock. Time spent logged out is not counted.
 - `afk` is idle time.
 
+The session header's `playedAnchor` is the first `/played` answer of the session, and `playedAnchorT` is the `t` it arrived at. Every event's `pt` equals `playedAnchor + (t - playedAnchorT)`. Later answers (each level up, logout) are logged as `played` events with their `drift` and kept in the header as `playedAnchorLast`; they do not move `pt`.
+
+## Changes in 1.2.0
+
+Nothing was renamed or removed: old fields keep their names and meaning, new ones are added.
+
+- **Idle and AFK no longer count as active time.** An idle or AFK span still open when you log out is now closed (`idle_end` / `afk_end` with `closedBy: "logout"`). Each end event carries `credited`, the seconds it added after overlap with the other kind. The summary takes that time out of `sessionActive`, out of each zone's `activeSec` (into `idleSec`) and out of each level's `activeSec`, and adds `totals.awaySec`.
+- **No false abandons.** Item-collection quests leave the log just before `QUEST_TURNED_IN`. A removal now waits 1.5 seconds and is logged as `quest_abandon` only if no turn-in follows.
+- **Header and `pt` agree** (see Timestamps). Before, the header kept the last `/played` answer while events used the first.
+- **`level_up`** has `from` and `to`. `level` is unchanged (the level you left). Summary level rows now use `from`; before, they were one level too low.
+- **`xp`** has `source` (`kill`, `quest`, `explore`, `other`), `npcId` and `mob` for kills, `questId` for quests, `area` for exploration, `restedBonus` and `groupBonus` from the kill line, `restedUsed` from the rested pool, and `gained` (correct across a level, where `delta` goes negative). An XP update that arrives before its turn-in waits up to 1 second for it.
+- **Objective names.** Objectives logged before their names load are marked `textIncomplete` and the event `namesPending`. When the names load, `quest_progress` is logged again with `namesResolved: true`.
+- **Quest giver and ender.** `quest_accept` has `giverNpcId` (or `giverObjectId`), `giverName`, `giverType`, `giverX` / `giverY` / `giverMap` (your position at the dialog), `giverFrame`, and `giverItemId` for item-started quests. `quest_turnin` has the same fields with the `ender` prefix. Without a dialog: `giverErr`.
+- **Quest rewards.** `quest_turnin` has `rewardChoices`, `rewardItems`, `rewardMoney`, `rewardXp`, and the pick as `chosenIndex`, `chosenItemId`, `chosenName`.
+- **Trainers.** `trainer` has `npcId`, `trainerType` and `numServices`. Each purchase logs `trainer_learn` (name, rank text, cost, skill line, reagents when the client exposes them; Forever does not, so `reagentsErr`). `trainer_close` has `spent` and `learned`.
+- **Object use.** `object_use` logs a quest pickup, a searched object or a note: `objectId`, `name`, `via` (`loot`, `spell`, `gossip`, `detail`, `complete`, `text`) and your position. Loot slots from an object have `sourceType: "GameObject"` and `objectId` (`npcId` stays for old readers); the summary keeps them out of mob drop tables.
+- **Group credit.** `mob_kill` has `via` (`xp_chat` or `unit_dead`), `tracked`, `inFight`, `grouped`, `groupSize`, `groupCredit` (grouped and not in your fight), `groupBonus` / `restedBonus`, and `killSecShort` when the mob was first seen less than a second before it died.
+- `/adv probe` also checks the APIs these use.
+
 ## Before a serious run
 
 Do this once on a throwaway level-1 character, not on the character you care about:

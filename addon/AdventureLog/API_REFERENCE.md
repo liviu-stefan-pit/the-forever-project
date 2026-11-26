@@ -128,6 +128,22 @@ local realm = safe(GetRealmName)
 | `BAG_UPDATE_DELAYED` | Yes — ContainerDocumentation.lua | none | `UniqueEvent = true` | Scan bags via `C_Container` after the burst. |
 | `COMBAT_LOG_EVENT_UNFILTERED` | Yes — CombatLogDocumentation.lua | **No payload listed.** `HasRestrictions = true`, `CallbackEvent = true`, `SynchronousEvent = true` | Restricted. `C_CombatLogSecure.GetCurrentEventInfo` / `C_CombatLogInternal.GetCurrentEventInfo` document **empty returns** | **Probe only.** See Combat log. Do not parse CLEU. Do not call `CombatLogGetCurrentEventInfo`. |
 
+### Events added in AdventureLog 1.2.0
+
+Checked against the generated docs and the `forever` FrameXML on 2026-11-26. `/adv probe` reports each one in the session header.
+
+| Event | Exists in generated docs? | Payload | How AdventureLog uses it |
+| --- | --- | --- | --- |
+| `QUEST_DETAIL` | Not in generated docs; registered by `Blizzard_UIPanels_Game/Mainline/QuestFrame.lua` | `questStartItemID` (QuestFrame reads it) | Remember the dialog's `"npc"` unit and position for the next `QUEST_ACCEPTED`. |
+| `QUEST_GREETING`, `QUEST_PROGRESS`, `QUEST_COMPLETE` | Not in generated docs; QuestFrame.lua | none | Same; `QUEST_COMPLETE` also reads the rewards on offer. |
+| `QUEST_FINISHED` | Yes — QuestOfferDocumentation.lua | none | Mark the quest dialog closed. |
+| `GOSSIP_SHOW`, `GOSSIP_CLOSED` | Yes — GossipInfoDocumentation.lua | none | Dialog source; a GameObject `"npc"` is an `object_use`. |
+| `ITEM_TEXT_BEGIN` | Yes — ItemTextDocumentation.lua | none | A readable object (note, plaque) is an `object_use`. |
+| `PLAYER_SOFT_INTERACT_CHANGED` | Yes — UnitDocumentation.lua | `oldTarget: WOWGUID`, `newTarget: WOWGUID` (`SecretWhenUnitIdentityRestricted`) | Remember the GameObject you can interact with (id from GUID field 6, name from `UnitName("softinteract")`). |
+| `UNIT_SPELLCAST_SENT` | Yes — UnitDocumentation.lua | `unitTarget`, `target: cstring` (`ConditionalSecret`), `castGUID`, `spellID` | Player only. A cast whose target is the soft-interact object becomes `object_use` on `UNIT_SPELLCAST_SUCCEEDED`. |
+| `TRAINER_CLOSED` | Yes — TrainerDocumentation.lua | none | Money spent at the trainer. |
+| `CHAT_MSG_SYSTEM` | Yes — ChatInfoDocumentation.lua | standard chat payload | Exploration XP line only (`ERR_ZONE_EXPLORED_XP`, English fallback). |
+
 ## Functions table
 
 | Function | Exists in generated docs? | Signature | Returns / struct | Secrets | How AdventureLog should call it |
@@ -202,6 +218,34 @@ local realm = safe(GetRealmName)
 | `C_DeathRecap` | Yes — DeathRecapDocumentation.lua | See list below | `DeathRecapEventInfo` **fields are empty in the generated table** | `SecretArguments = AllowedWhenUntainted` on all four functions | Namespace exists. Event struct fields are **UNKNOWN**. Optional death breadcrumb via `HasRecapEvents` / `GetRecapMaxHealth` only. |
 | `C_CombatLog.IsCombatLogRestricted` | Yes — CombatLogDocumentation.lua | `()` | `restricted: bool` | none listed | Probe at login / entering world. Expect true. Still do not subscribe to CLEU for data. |
 | `GetInventoryItemDurability` | **UNKNOWN** in generated docs | UNKNOWN | UNKNOWN | UNKNOWN | GuideWebExport: **slot only**, `pcall(GetInventoryItemDurability, slot)` → `cur, maxv` for slots 1–18. Do not pass a unit. |
+
+### Functions added in AdventureLog 1.2.0
+
+The quest-frame and trainer globals are **not** in the generated docs. They are called by the `forever` FrameXML (`QuestFrame.lua`, `QuestInfo.lua`, `Blizzard_TrainerUI.lua`), which is the evidence that they exist on 1.60.1. Every call is guarded and wrapped in `pcall`; when one is missing, the field is written as `<field>Err`.
+
+| Function | Source | Signature as the FrameXML calls it | Use |
+| --- | --- | --- | --- |
+| `GetQuestID` | QuestFrame.lua | `() -> questID` (0 when none) | Quest of the open dialog. |
+| `GetNumQuestChoices`, `GetNumQuestRewards` | QuestFrame.lua, QuestInfo.lua | `() -> number` | Reward rows. |
+| `GetQuestItemInfo` | QuestFrame.lua | `(type: "choice"/"reward"/"required", index) -> name, texture, count, quality, isUsable, itemID` | Six returns: read with a packed `pcall` (`safe` keeps four). |
+| `GetQuestItemLink` | QuestInfo.lua | `(type, index) -> itemLink` | itemId fallback. |
+| `GetRewardMoney`, `GetRewardXP` | QuestInfo.lua | `() -> number` | Reward money / XP shown. |
+| `GetQuestReward` | QuestFrame.lua | `(itemChoice)` | Post-hooked with `hooksecurefunc` to learn the chosen index. Never called by the addon. |
+| `GetNumTrainerServices` | Blizzard_TrainerUI.lua | `() -> number` | |
+| `GetTrainerServiceInfo` | Blizzard_TrainerUI.lua | `(index) -> name, serviceType, texture, reqLevel, subText, category` | Packed `pcall`. |
+| `GetTrainerServiceCost` | Blizzard_TrainerUI.lua | `(index) -> moneyCost, isProfession` | |
+| `GetTrainerServiceSkillLine` | Blizzard_TrainerUI.lua | `(index) -> skill line name` | |
+| `BuyTrainerService` | Blizzard_TrainerUI.lua | `(index)` | Post-hooked; never called by the addon. |
+| `C_Trainer.GetTrainerType` | Yes — TrainerDocumentation.lua | `() -> TrainerType` (General=0, TalentsObsolete=1, Tradeskills=2, Pet=3) | `trainer.trainerType`. |
+| `GetTrainerServiceNumReagents` / `GetTrainerServiceReagentInfo` | **Not used by the Forever trainer UI** | UNKNOWN | Called only if present; otherwise `reagentsErr = "not a function"`. |
+| `hooksecurefunc` | Global | `(name, fn)` | Post-hooks above; does not taint the UI. |
+| `GetNumGroupMembers` | **UNKNOWN** in generated docs; already used by the `group` event, which logs sizes on Forever | `() -> number` | `mob_kill.groupSize`. |
+| `IsInGroup` | **UNKNOWN** in generated docs | `() -> bool` | `mob_kill.grouped`; if missing, `grouped = groupSize > 1`. |
+| `UnitIsTapDenied` | Yes — UnitDocumentation.lua | `(unit) -> bool` | `mob_kill.tapDenied` on nameplate deaths. |
+| `C_QuestLog.IsQuestFlaggedCompleted` | Yes — QuestLogDocumentation.lua | `(questID) -> bool` | Second guard against a false `quest_abandon`. |
+| `UnitGUID("npc")`, `UnitName("npc")`, `UnitGUID/UnitName("softinteract")` | UnitDocumentation.lua | see above | npc/object id from GUID field 6; Player GUIDs are dropped. |
+
+Still not used: `COMBAT_LOG_EVENT_UNFILTERED` and `C_CombatLog` data. Group credit and object use are inferred from chat, unit and dialog events.
 
 ### `C_DamageMeter` functions (generated)
 

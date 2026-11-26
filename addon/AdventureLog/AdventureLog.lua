@@ -212,8 +212,16 @@ function AdventureLog.encode(value)
 end
 
 -- Clocks, /played anchor, and readiness. Quest/combat/loot stay in other files.
+-- playedAnchor is the FIRST /played answer of the session. Every event's pt is
+-- playedAnchor + (GetTime() - playedAnchorAt), so the header and the events agree.
+-- Later answers (level up) are logged as "played" events and kept in the header as
+-- playedAnchorLast; they never move pt.
 local playedAnchor = nil
 local playedAnchorAt = nil
+local playedFirstThisLevel = nil
+local playedLast = nil
+local playedLastAt = nil
+local playedLastThisLevel = nil
 local expectingPlayed = false
 local playedToken = 0
 local readyAttempts = 0
@@ -244,11 +252,24 @@ local function writeHeader()
     if AdventureLog.readyErr ~= nil then
         payload.readyErr = AdventureLog.readyErr
     end
+    local start = AdventureLog.sessionStart
     if playedAnchor ~= nil and not isSecret(playedAnchor) then
         payload.playedAnchor = playedAnchor
+        if type(playedAnchorAt) == "number" and type(start) == "number" then
+            payload.playedAnchorT = playedAnchorAt - start
+        end
     end
-    if AdventureLog.playedThisLevel ~= nil and not isSecret(AdventureLog.playedThisLevel) then
-        payload.playedThisLevel = AdventureLog.playedThisLevel
+    if playedFirstThisLevel ~= nil and not isSecret(playedFirstThisLevel) then
+        payload.playedThisLevel = playedFirstThisLevel
+    end
+    if playedLast ~= nil and not isSecret(playedLast) then
+        payload.playedAnchorLast = playedLast
+        if type(playedLastAt) == "number" and type(start) == "number" then
+            payload.playedAnchorLastT = playedLastAt - start
+        end
+    end
+    if playedLastThisLevel ~= nil and not isSecret(playedLastThisLevel) then
+        payload.playedThisLevelLast = playedLastThisLevel
     end
     if type(AdventureLog.probeReport) == "table" then
         payload.probe = AdventureLog.probeReport
@@ -545,6 +566,85 @@ function AdventureLog.position()
     return out
 end
 
+-- GUID kind and id. Creature/Vehicle/Pet/GameObject keep field 6 (npc or
+-- object id). Player GUIDs return kind "Player" and no id; they are never stored.
+function AdventureLog.parseGuid(guid)
+    if isSecret(guid) then
+        return nil, nil, true
+    end
+    if type(guid) ~= "string" then
+        return nil, nil, false
+    end
+    local fields = {}
+    for part in string.gmatch(guid, "[^-]+") do
+        fields[#fields + 1] = part
+    end
+    local kind = fields[1]
+    if kind ~= "Creature" and kind ~= "Vehicle" and kind ~= "Pet" and kind ~= "GameObject" then
+        return kind, nil, false
+    end
+    return kind, tonumber(fields[6]), false
+end
+
+-- Identity of an NPC/object unit token ("npc", "softinteract", ...).
+-- Returns a table with kind, id, name (each only when readable), or nil and
+-- a reason ("no unit", "player", "secret").
+function AdventureLog.unitIdentity(unit)
+    local guid = safe(UnitGUID, unit)
+    if isSecret(guid) then
+        return nil, "secret"
+    end
+    if type(guid) ~= "string" or guid == "" then
+        return nil, "no unit"
+    end
+    local kind, id = AdventureLog.parseGuid(guid)
+    if kind == "Player" then
+        return nil, "player"
+    end
+    local out = {}
+    if type(kind) == "string" then
+        out.kind = kind
+    end
+    if type(id) == "number" then
+        out.id = id
+    end
+    local name = safe(UnitName, unit)
+    if isSecret(name) then
+        out.nameSecret = true
+    elseif type(name) == "string" and name ~= "" then
+        out.name = name
+    end
+    return out
+end
+
+-- Group size the way the client reports it: 0 solo, else members including you.
+function AdventureLog.groupState()
+    local size = nil
+    if type(GetNumGroupMembers) == "function" then
+        local n = safe(GetNumGroupMembers)
+        if type(n) == "number" and not isSecret(n) then
+            size = n
+        end
+    end
+    if size == nil and type(GetNumPartyMembers) == "function" then
+        local n = safe(GetNumPartyMembers)
+        if type(n) == "number" and not isSecret(n) then
+            size = n
+        end
+    end
+    local grouped = nil
+    if type(IsInGroup) == "function" then
+        local g = safe(IsInGroup)
+        if type(g) == "boolean" and not isSecret(g) then
+            grouped = g
+        end
+    end
+    if grouped == nil and type(size) == "number" then
+        grouped = size > 1
+    end
+    return grouped, size
+end
+
 local function scrubSecrets(t, seen)
     if type(t) ~= "table" then
         return
@@ -757,6 +857,11 @@ function AdventureLog.record(event, ...)
     end
     local raw = rawArgs(...)
     local current = AdventureLog.currentRaw
+    -- An event recorded later than it happened (deferred XP or abandon) brings
+    -- its own raw; do not replace it with the event that flushed it.
+    if raw == nil and type(event.raw) == "table" then
+        raw = event.raw
+    end
     if raw == nil and type(current) == "table" then
         raw = rawArgs(unpack(current, 1, current.n))
     end
@@ -885,16 +990,50 @@ AdventureLog.on("TIME_PLAYED_MSG", function(_, totalTimePlayed, timePlayedThisLe
         AdventureLog.playedSecret = true
         return
     end
-    if type(totalTimePlayed) == "number" then
-        playedAnchor = totalTimePlayed
-        local now = safe(GetTime)
-        if type(now) == "number" and not isSecret(now) then
-            playedAnchorAt = now
-        end
+    local now = safe(GetTime)
+    if type(now) ~= "number" or isSecret(now) then
+        now = nil
     end
     if type(timePlayedThisLevel) == "number" then
         AdventureLog.playedThisLevel = timePlayedThisLevel
     end
+    if type(totalTimePlayed) ~= "number" then
+        return
+    end
+    if playedAnchor == nil or playedAnchorAt == nil then
+        if now == nil then
+            return
+        end
+        playedAnchor = totalTimePlayed
+        playedAnchorAt = now
+        if type(timePlayedThisLevel) == "number" then
+            playedFirstThisLevel = timePlayedThisLevel
+        end
+        return
+    end
+    playedLast = totalTimePlayed
+    playedLastAt = now
+    if type(timePlayedThisLevel) == "number" then
+        playedLastThisLevel = timePlayedThisLevel
+    end
+    -- A later answer is logged, not used to re-anchor pt. drift is how far the
+    -- server total is from the pt this session computes at the same moment.
+    local ev = { e = "played", total = totalTimePlayed }
+    if type(timePlayedThisLevel) == "number" then
+        ev.thisLevel = timePlayedThisLevel
+    end
+    if now ~= nil then
+        ev.drift = totalTimePlayed - (playedAnchor + (now - playedAnchorAt))
+    end
+    local pos = AdventureLog.position()
+    if type(pos) == "table" then
+        for k, v in pairs(pos) do
+            if ev[k] == nil then
+                ev[k] = v
+            end
+        end
+    end
+    AdventureLog.record(ev)
 end)
 
 AdventureLog.on("PLAYER_LEVEL_UP", function()
@@ -903,6 +1042,11 @@ end)
 
 AdventureLog.on("PLAYER_LOGOUT", function()
     requestPlayed()
+    -- Close open idle/AFK spans first so the time is counted and session_end
+    -- carries the final afk total.
+    if type(AdventureLog.closeAway) == "function" then
+        pcall(AdventureLog.closeAway, "logout")
+    end
     AdventureLog.record({ e = "session_end" })
     writeHeader()
 end)

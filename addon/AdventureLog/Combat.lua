@@ -309,7 +309,34 @@ local function hostilePlate(unit)
     return false
 end
 
-local function markKill(entry)
+-- Group credit: a kill you get XP for while grouped may be one you never
+-- fought (a party member's kill). grouped/groupSize come from the client,
+-- inFight is whether you were in combat, tracked whether the mob was in your
+-- fight table, groupCredit is grouped and not tracked in your fight.
+local function addCredit(ev, tracked, via)
+    ev.via = via
+    ev.tracked = tracked and true or false
+    ev.inFight = (inCombat or fight ~= nil) and true or false
+    if type(AdventureLog.groupState) == "function" then
+        local grouped, size = AdventureLog.groupState()
+        if type(grouped) == "boolean" then
+            ev.grouped = grouped
+        end
+        if type(size) == "number" then
+            ev.groupSize = size
+        end
+        if grouped == true and not tracked then
+            ev.groupCredit = true
+        end
+    end
+end
+
+local function shareKill(ev)
+    local t = nowSeconds()
+    AdventureLog.lastKill = { at = t, npcId = ev.npcId, name = ev.name }
+end
+
+local function markKill(entry, via, chat)
     if not entry or entry.killed then
         return
     end
@@ -340,7 +367,25 @@ local function markKill(entry)
     local t = nowSeconds()
     if type(t) == "number" and type(entry.firstSeen) == "number" then
         ev.killSec = t - entry.firstSeen
+        -- Seen less than a second before it died: you met it already dying,
+        -- so killSec is not a kill time.
+        if ev.killSec < 1 then
+            ev.killSecShort = true
+        end
     end
+    addCredit(ev, true, via or "unit_dead")
+    if via ~= "xp_chat" and type(entry.unit) == "string" and type(UnitIsTapDenied) == "function" then
+        local denied = safe(UnitIsTapDenied, entry.unit)
+        if type(denied) == "boolean" and not isSecret(denied) then
+            ev.tapDenied = denied
+        end
+    end
+    if type(chat) == "table" then
+        for k, v in pairs(chat) do
+            ev[k] = v
+        end
+    end
+    shareKill(ev)
     emit(ev)
 end
 
@@ -366,7 +411,26 @@ local function checkDeadUnit(unit)
     if isSecret(dead) or dead ~= true then
         return
     end
-    markKill(entry)
+    entry.unit = unit
+    markKill(entry, "unit_dead")
+end
+
+-- Bonus parts of a kill XP line: "(+6 group bonus)", "(+14 exp Rested bonus)".
+local function chatBonuses(text)
+    local out = {}
+    local group = string.match(text, "%(%+(%d+) group bonus%)")
+    if group then
+        out.groupBonus = tonumber(group)
+    end
+    local rested = string.match(text, "%(%+(%d+) exp [Rr]ested bonus%)")
+    if rested then
+        out.restedBonus = tonumber(rested)
+    end
+    local amount = string.match(text, "dies, you gain (%d+) experience")
+    if amount then
+        out.xpAmount = tonumber(amount)
+    end
+    return out
 end
 
 -- "<name> dies, you gain N experience." is the only reliable kill signal
@@ -390,11 +454,17 @@ local function onXpChat(_, text)
             end
         end
         if best then
-            markKill(best)
+            markKill(best, "xp_chat", chatBonuses(text))
             return
         end
     end
-    emit({ e = "mob_kill", name = name, killSecErr = "not tracked in a fight" })
+    local ev = { e = "mob_kill", name = name, killSecErr = "not tracked in a fight" }
+    addCredit(ev, false, "xp_chat")
+    for k, v in pairs(chatBonuses(text)) do
+        ev[k] = v
+    end
+    shareKill(ev)
+    emit(ev)
 end
 
 local function mobSnapshot(entry, withStats)

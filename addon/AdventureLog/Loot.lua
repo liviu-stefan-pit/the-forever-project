@@ -70,9 +70,11 @@ end
 
 -- Union of idle and AFK intervals. afkAccumulatedUntil is the end of the
 -- latest covered range; overlapping seconds are added once.
+-- Returns the seconds newly added to AdventureLog.afkTotal (0 when the span was
+-- already covered by an overlapping idle/AFK span).
 local function creditAfk(from, to)
     if not plainNumber(from) or not plainNumber(to) or to <= from then
-        return
+        return 0
     end
     local add = to - from
     local i = 1
@@ -123,6 +125,44 @@ local function creditAfk(from, to)
     if #afkCovered > 0 then
         afkAccumulatedUntil = afkCovered[#afkCovered][2]
     end
+    return add
+end
+
+-- idle_end / afk_end carry dur (this span) and credited (seconds this span
+-- added to the session's away total, after removing overlap with the other
+-- kind). Summing credited gives the away time without double counting.
+local function endIdle(now, reason)
+    local start = idleSince
+    idle = false
+    idleSince = nil
+    local ev = { e = "idle_end" }
+    if plainNumber(start) and plainNumber(now) then
+        ev.dur = now - start
+        ev.credited = creditAfk(start, now)
+    else
+        ev.durErr = "idle start missing"
+    end
+    if reason then
+        ev.closedBy = reason
+    end
+    emit(ev)
+end
+
+local function endAfk(now, reason)
+    local start = afkSince
+    afk = false
+    afkSince = nil
+    local ev = { e = "afk_end" }
+    if plainNumber(start) and plainNumber(now) then
+        ev.dur = now - start
+        ev.credited = creditAfk(start, now)
+    else
+        ev.durErr = "afk clock failed"
+    end
+    if reason then
+        ev.closedBy = reason
+    end
+    emit(ev)
 end
 
 function AdventureLog.noteActivity()
@@ -135,17 +175,24 @@ function AdventureLog.noteActivity()
     if not idle then
         return
     end
-    local start = idleSince
-    idle = false
-    idleSince = nil
-    local ev = { e = "idle_end" }
-    if plainNumber(start) then
-        ev.dur = now - start
-        creditAfk(start, now)
-    else
-        ev.durErr = "idle start missing"
+    endIdle(now)
+end
+
+-- Called by AdventureLog.lua on logout before session_end: an idle or AFK span
+-- still open when you log out is closed and counted.
+function AdventureLog.closeAway(reason)
+    local now = nowSeconds()
+    if idle then
+        endIdle(now, reason)
     end
-    emit(ev)
+    if afk then
+        endAfk(now, reason)
+    end
+end
+
+-- True while an idle or AFK span is open.
+function AdventureLog.isAway()
+    return idle or afk
 end
 
 local function checkIdle()
@@ -217,7 +264,7 @@ local function guidNpcId(guid)
             npcId = tonumber(part)
         end
     end
-    return npcId
+    return npcId, nil, kind
 end
 
 local function readSlot(slot)
@@ -285,6 +332,7 @@ local function readSlot(slot)
     local sawSource = false
     local dropNpc = false
     local npcId = nil
+    local sourceKind = nil
     if type(GetLootSourceInfo) ~= "function" then
         entry.sourceErr = "not a function"
     else
@@ -300,11 +348,12 @@ local function readSlot(slot)
                     dropNpc = true
                 elseif type(guid) == "string" then
                     sawSource = true
-                    local id, why = guidNpcId(guid)
+                    local id, why, kind = guidNpcId(guid)
                     if why == "player" or why == "secret" then
                         dropNpc = true
                     elseif type(id) == "number" and npcId == nil then
                         npcId = id
+                        sourceKind = kind
                     end
                 end
                 i = i + 2
@@ -312,7 +361,14 @@ local function readSlot(slot)
         end
     end
     if sawSource and not dropNpc and type(npcId) == "number" then
+        -- npcId is kept for old readers; for a GameObject it is the object id.
         entry.npcId = npcId
+        if type(sourceKind) == "string" then
+            entry.sourceType = sourceKind
+        end
+        if sourceKind == "GameObject" then
+            entry.objectId = npcId
+        end
     end
     if not entry.itemId and not entry.name then
         entry.empty = true
@@ -385,6 +441,22 @@ local function publishLoot(fromClose, autoLoot, isFromItem)
     end
     emit(ev)
     lootRecorded = true
+    -- Looting a world object (quest pickup, chest, herb node) is an object use.
+    if type(AdventureLog.noteObjectUse) == "function" and type(ev.slots) == "table" then
+        local objectId, items = nil, {}
+        for i = 1, #ev.slots do
+            local slot = ev.slots[i]
+            if type(slot) == "table" and slot.sourceType == "GameObject" and type(slot.objectId) == "number" then
+                objectId = objectId or slot.objectId
+                if type(slot.itemId) == "number" then
+                    items[#items + 1] = slot.itemId
+                end
+            end
+        end
+        if objectId then
+            pcall(AdventureLog.noteObjectUse, { via = "loot", objectId = objectId, itemIds = items })
+        end
+    end
 end
 
 local function itemIdFromText(text)
@@ -745,6 +817,111 @@ AdventureLog.on("LEARNED_SPELL_IN_TAB", function(_, spellId)
     emit(ev)
 end)
 
+-- Trainer purchases. The trainer UI calls BuyTrainerService(index); a post-hook
+-- reads that service's name, rank text, cost and (when the client has them)
+-- reagents. Forever's trainer UI has no reagent API, so reagentsErr is the usual
+-- result. Money actually spent is the GetMoney difference at TRAINER_CLOSED.
+local trainerOpen = nil
+local TRAINER_TYPES = { [0] = "general", [1] = "talents", [2] = "tradeskills", [3] = "pet" }
+
+local function trainerServiceInfo(index)
+    local row = { index = index }
+    if type(GetTrainerServiceInfo) ~= "function" then
+        row.infoErr = "not a function"
+    else
+        -- Packed pcall: AdventureLog.safe keeps only four returns.
+        local packed = { pcall(GetTrainerServiceInfo, index) }
+        if not packed[1] then
+            row.infoErr = tostring(packed[2])
+        end
+        local name, kind, reqLevel, subText, category = packed[2], packed[3], packed[5], packed[6], packed[7]
+        if isSecret(name) then
+            row.nameSecret = true
+        elseif plainString(name) and name ~= "" then
+            row.name = name
+        else
+            row.nameErr = "empty"
+        end
+        if plainString(kind) then
+            row.serviceType = kind
+        end
+        if plainNumber(reqLevel) then
+            row.reqLevel = reqLevel
+        end
+        if plainString(subText) and subText ~= "" then
+            row.subText = subText
+        end
+        if plainString(category) and category ~= "" then
+            row.category = category
+        end
+    end
+    if type(GetTrainerServiceCost) == "function" then
+        local cost, isProfession = AdventureLog.safe(GetTrainerServiceCost, index)
+        if plainNumber(cost) then
+            row.cost = cost
+        elseif isSecret(cost) then
+            row.costSecret = true
+        end
+        if type(isProfession) == "boolean" and not isSecret(isProfession) then
+            row.isProfession = isProfession
+        end
+    else
+        row.costErr = "not a function"
+    end
+    if type(GetTrainerServiceSkillLine) == "function" then
+        local line = AdventureLog.safe(GetTrainerServiceSkillLine, index)
+        if plainString(line) and line ~= "" then
+            row.skillLine = line
+        end
+    end
+    if type(GetTrainerServiceNumReagents) == "function" and type(GetTrainerServiceReagentInfo) == "function" then
+        local n = AdventureLog.safe(GetTrainerServiceNumReagents, index)
+        if plainNumber(n) then
+            local reagents = {}
+            local limit = n
+            if limit > 10 then
+                limit = 10
+            end
+            for r = 1, limit do
+                local rName, _, rCount = AdventureLog.safe(GetTrainerServiceReagentInfo, index, r)
+                local reagent = {}
+                if plainString(rName) then
+                    reagent.name = rName
+                end
+                if plainNumber(rCount) then
+                    reagent.count = rCount
+                end
+                if type(GetTrainerServiceReagentLink) == "function" then
+                    reagent.itemId = itemIdFromText(AdventureLog.safe(GetTrainerServiceReagentLink, index, r))
+                end
+                reagents[#reagents + 1] = reagent
+            end
+            row.reagents = reagents
+        else
+            row.reagentsErr = "GetTrainerServiceNumReagents failed"
+        end
+    else
+        row.reagentsErr = "not a function"
+    end
+    return row
+end
+
+local function trainerTypeName()
+    if C_Trainer and type(C_Trainer.GetTrainerType) == "function" then
+        local kind = AdventureLog.safe(C_Trainer.GetTrainerType)
+        if plainNumber(kind) then
+            return TRAINER_TYPES[kind] or tostring(kind)
+        end
+    end
+    if type(IsTradeskillTrainer) == "function" then
+        local trade = AdventureLog.safe(IsTradeskillTrainer)
+        if trade == true then
+            return "tradeskills"
+        end
+    end
+    return nil
+end
+
 AdventureLog.on("TRAINER_SHOW", function()
     local ev = { e = "trainer" }
     local name, why = trainerName()
@@ -757,6 +934,68 @@ AdventureLog.on("TRAINER_SHOW", function()
     elseif why then
         ev.nameErr = why
     end
+    if why ~= "player" and type(AdventureLog.unitIdentity) == "function" then
+        local who = AdventureLog.unitIdentity("npc")
+        if type(who) == "table" and type(who.id) == "number" then
+            ev.npcId = who.id
+        end
+    end
+    local kind = trainerTypeName()
+    if kind then
+        ev.trainerType = kind
+    end
+    if type(GetNumTrainerServices) == "function" then
+        local n = AdventureLog.safe(GetNumTrainerServices)
+        if plainNumber(n) then
+            ev.numServices = n
+        end
+    end
+    local money = AdventureLog.safe(GetMoney)
+    trainerOpen = { money = plainNumber(money) and money or nil, learned = {}, npcId = ev.npcId, name = ev.name }
+    emit(ev)
+end)
+
+local function onTrainerBuy(index)
+    if not plainNumber(index) then
+        return
+    end
+    local ev = trainerServiceInfo(index)
+    ev.e = "trainer_learn"
+    if trainerOpen then
+        ev.trainerNpcId = trainerOpen.npcId
+        ev.trainerName = trainerOpen.name
+        trainerOpen.learned[#trainerOpen.learned + 1] = ev.name or ("#" .. tostring(index))
+    end
+    emit(ev)
+end
+
+if type(hooksecurefunc) == "function" and type(BuyTrainerService) == "function" then
+    pcall(hooksecurefunc, "BuyTrainerService", function(index)
+        pcall(onTrainerBuy, index)
+    end)
+    AdventureLog.trainerHook = true
+else
+    AdventureLog.trainerHook = false
+end
+
+AdventureLog.on("TRAINER_CLOSED", function()
+    if not trainerOpen then
+        return
+    end
+    local ev = { e = "trainer_close", count = #trainerOpen.learned }
+    if #trainerOpen.learned > 0 then
+        ev.learned = trainerOpen.learned
+    end
+    local money, err = AdventureLog.safe(GetMoney)
+    if plainNumber(money) and plainNumber(trainerOpen.money) then
+        ev.spent = trainerOpen.money - money
+    else
+        ev.spentErr = err or "GetMoney failed"
+    end
+    if not AdventureLog.trainerHook then
+        ev.learnedErr = "BuyTrainerService hook unavailable"
+    end
+    trainerOpen = nil
     emit(ev)
 end)
 
@@ -797,18 +1036,7 @@ AdventureLog.on("PLAYER_FLAGS_CHANGED", function(_, unit)
         afkSince = nowSeconds()
         emit({ e = "afk_start" })
     elseif (not flag) and afk then
-        local start = afkSince
-        local now = nowSeconds()
-        afk = false
-        afkSince = nil
-        local ev = { e = "afk_end" }
-        if plainNumber(start) and plainNumber(now) then
-            ev.dur = now - start
-            creditAfk(start, now)
-        else
-            ev.durErr = "afk clock failed"
-        end
-        emit(ev)
+        endAfk(nowSeconds())
     end
 end)
 

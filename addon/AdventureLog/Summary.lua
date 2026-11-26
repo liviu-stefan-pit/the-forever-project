@@ -149,7 +149,7 @@ local function foldLoot(event)
     local i = 1
     while slots[i] ~= nil do
         local slot = slots[i]
-        if type(slot) == "table" and slot.empty ~= true then
+        if type(slot) == "table" and slot.empty ~= true and slot.sourceType ~= "GameObject" then
             local npcId = fieldNum(slot, "npcId")
             local itemId = fieldNum(slot, "itemId")
             if npcId and itemId then
@@ -210,11 +210,21 @@ local function foldQuest(event)
     end
 end
 
+-- Idle and AFK spans can overlap. While either is open, time between position
+-- samples is not active. Each idle_end/afk_end carries credited, the seconds it
+-- added after removing overlap, so summing credited counts away time once.
+local idleOpen = false
+local afkOpen = false
+
+local function away()
+    return idleOpen or afkOpen
+end
+
 local function foldPosition(event)
     local t = fieldNum(event, "t")
     local mapId = fieldNum(event, "map")
     local zoneName = fieldString(event, "zone")
-    if t and lastSampleT then
+    if t and lastSampleT and not away() then
         local delta = t - lastSampleT
         if delta > 0 and mapId then
             local row = zoneRow(mapId, zoneName)
@@ -228,17 +238,49 @@ local function foldPosition(event)
 end
 
 local function foldIdle(event)
-    local dur = fieldNum(event, "dur")
+    local e = event.e
     local mapId = fieldNum(event, "map")
     local zoneName = fieldString(event, "zone")
-    if dur and dur > 0 and mapId then
-        local row = zoneRow(mapId, zoneName)
-        row.sec = row.sec + dur
-        row.idleSec = row.idleSec + dur
-        levelIdle = levelIdle + dur
-    end
     local t = fieldNum(event, "t")
-    if t then
+    if e == "idle_start" or e == "afk_start" then
+        -- Close the active stretch up to the moment you went away.
+        if not away() and t and lastSampleT and mapId then
+            local delta = t - lastSampleT
+            if delta > 0 then
+                local row = zoneRow(mapId, zoneName)
+                row.sec = row.sec + delta
+                row.activeSec = row.activeSec + delta
+            end
+        end
+        if e == "idle_start" then
+            idleOpen = true
+        else
+            afkOpen = true
+        end
+        if t then
+            lastSampleT = t
+        end
+        return
+    end
+    local credited = fieldNum(event, "credited")
+    if credited == nil then
+        credited = fieldNum(event, "dur")
+    end
+    if credited and credited > 0 then
+        summary.totals.awaySec = (num(summary.totals.awaySec) or 0) + credited
+        levelIdle = levelIdle + credited
+        if mapId then
+            local row = zoneRow(mapId, zoneName)
+            row.sec = row.sec + credited
+            row.idleSec = row.idleSec + credited
+        end
+    end
+    if e == "idle_end" then
+        idleOpen = false
+    else
+        afkOpen = false
+    end
+    if t and not away() then
         lastSampleT = t
     end
 end
@@ -290,14 +332,16 @@ local function foldLevel(event)
     elseif t and num(levelT) then
         sec = t - levelT
     end
-    local level = fieldNum(event, "level")
+    -- from is the level you left (1.2.0+). Older events only have level, which
+    -- is UnitLevel at the event (also the level you left).
+    local level = fieldNum(event, "from") or fieldNum(event, "level")
     if level and sec and sec >= 0 then
         local activeSec = sec - levelIdle
         if activeSec < 0 then
             activeSec = 0
         end
         local row = {
-            level = level - 1,
+            level = level,
             sec = sec,
             activeSec = activeSec,
             xp = levelXp,
@@ -319,7 +363,8 @@ local function fold(event)
     if e == "mob_kill" then
         foldKill(event)
     elseif e == "xp" then
-        local amount = fieldNum(event, "delta")
+        -- gained also counts the XP that crosses a level; delta goes negative there.
+        local amount = fieldNum(event, "gained") or fieldNum(event, "delta")
         if amount and amount > 0 then
             addTotalXp(amount)
         end
@@ -334,7 +379,7 @@ local function fold(event)
         foldQuest(event)
     elseif e == "breadcrumb" or e == "zone" then
         foldPosition(event)
-    elseif e == "idle_start" or e == "idle_end" then
+    elseif e == "idle_start" or e == "idle_end" or e == "afk_start" or e == "afk_end" then
         foldIdle(event)
     elseif e == "death" then
         foldDeath(event)
@@ -470,6 +515,7 @@ local function exportSummary()
     putTotal("playedTotal")
     putTotal("sessionPlayed")
     putTotal("sessionActive")
+    putTotal("awaySec")
     putTotal("kills")
     putTotal("deaths")
     putTotal("questsTurnedIn")

@@ -246,6 +246,58 @@ function AdventureLog.runProbe()
         return true, "missing"
     end)
 
+    -- 1.2.0 additions. Each is optional: when missing, the matching field is
+    -- written as <field>Err instead.
+    local function fnCheck(label, fn, optional)
+        check(label, function()
+            if isFn(fn) then
+                return true, "function"
+            end
+            if optional then
+                return true, "missing (optional)"
+            end
+            return false, "missing"
+        end)
+    end
+    local function eventCheck(name)
+        check(name, function()
+            local valid = eventState(name)
+            if valid == false then
+                return false, "missing"
+            end
+            if valid == nil then
+                return true, "unchecked"
+            end
+            return true, "event"
+        end)
+    end
+    eventCheck("QUEST_DETAIL")
+    eventCheck("QUEST_COMPLETE")
+    eventCheck("GOSSIP_SHOW")
+    eventCheck("PLAYER_SOFT_INTERACT_CHANGED")
+    eventCheck("UNIT_SPELLCAST_SENT")
+    eventCheck("TRAINER_CLOSED")
+    fnCheck("hooksecurefunc", hooksecurefunc)
+    fnCheck("GetQuestID", GetQuestID)
+    fnCheck("GetNumQuestChoices", GetNumQuestChoices)
+    fnCheck("GetQuestItemInfo", GetQuestItemInfo)
+    fnCheck("GetQuestItemLink", GetQuestItemLink)
+    fnCheck("GetRewardMoney", GetRewardMoney)
+    fnCheck("GetQuestReward", GetQuestReward)
+    fnCheck("GetNumTrainerServices", GetNumTrainerServices)
+    fnCheck("GetTrainerServiceInfo", GetTrainerServiceInfo)
+    fnCheck("GetTrainerServiceCost", GetTrainerServiceCost)
+    fnCheck("BuyTrainerService", BuyTrainerService)
+    fnCheck("GetTrainerServiceNumReagents", GetTrainerServiceNumReagents, true)
+    fnCheck("IsInGroup", IsInGroup)
+    fnCheck("UnitIsTapDenied", UnitIsTapDenied)
+    check("C_QuestLog.IsQuestFlaggedCompleted", function()
+        if C_QuestLog ~= nil and isFn(C_QuestLog.IsQuestFlaggedCompleted) then
+            return true, "function"
+        end
+        return false, "missing"
+    end)
+
     check("UnitName", function()
         if not isFn(UnitName) then
             return false, "missing"
