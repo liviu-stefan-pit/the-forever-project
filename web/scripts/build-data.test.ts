@@ -247,6 +247,21 @@ describe("joinHooks", () => {
     expect(steps[0]!.professionHooks).toHaveLength(1);
     expect(steps[0]!.pins).toEqual([expect.objectContaining({ kind: "npc", npcId: 11, at: { mapId: 1411, zone: "Durotar", x: 30, y: 40 } })]);
   });
+
+  it("joins a hook with stepId to that step only, ignoring level, and skips packs without it", () => {
+    const steps = [
+      step("s1", { actions: [{ type: "goto", at: at(40, 60) }] }),
+      step("s2", { actions: [{ type: "goto", at: at(45, 45) }] }),
+    ];
+    const pinned = { ...hook("pin", "Durotar", "1-14"), stepId: "s2" };
+    expect(joinHooks(steps, [1, 6], [pinned], () => 1411)).toBe(1);
+    expect(steps[0]!.professionHooks).toBeUndefined();
+    expect(steps[1]!.professionHooks!.map((h) => h.note)).toEqual(["Keep items (pin)"]);
+
+    const other = [step("o1", { actions: [{ type: "goto", at: at(40, 60) }] })];
+    expect(joinHooks(other, [5], [pinned], () => 1411)).toBe(0);
+    expect(other[0]!.professionHooks).toBeUndefined();
+  });
 });
 
 describe("ensureHookPins", () => {

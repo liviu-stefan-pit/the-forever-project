@@ -10,7 +10,91 @@
     {
      "segments": [
       {
-       "t": "Hand The Adventurer over to Raan Wildwind."
+       "t": "Town stop 1, Shen'dar Village (level 6). Take everything here before going out:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Raan Wildwind (west edge, by the tent): turn in The Adventurer, accept The Great Outdoors. Sit at his campfire until you get Boosted Rest (about a minute), then turn it in. You don't need Cooking for it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Raan Wildwind: accept Camping 101: Cooking and Camping 101: First Aid (270 XP each), plus the Camping 101 for any primary profession you'll learn here."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Constable Aonda: turn in The Next Step, accept Welcome to Shen'dar Village."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Illaya Amberwind: talk to her for Welcome, accept The Windshapers, listen to her, turn it in, accept Meddlesome Mages."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Coriella Calmbreeze (innkeeper): talk to her for Welcome."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Constable Aonda: turn in Welcome to Shen'dar Village, accept The Criminal Element."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Teeri Wellwind: accept Pilfered Windstones and Hippogryph Harassment."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Taleen Shimmerthread: accept A Little Beauty."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Indari Sunseam: accept The Problem With Prideclaws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Zerril Softbreeze: learn Cooking, turn in Camping 101: Cooking, accept Restocking the Larders."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Bounty board: accept WANTED: Vulgara the Insatiable."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Naleeia Tattermend: learn First Aid. Camping 101: First Aid finishes at skill 20, so make Linen Bandages as you get cloth."
       }
      ]
     }
@@ -30,6 +114,234 @@
      "type": "turnin",
      "questId": 96638,
      "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 96101,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 96101,
+     "objective": 1,
+     "label": "Sit near the campfire"
+    },
+    {
+     "type": "complete",
+     "questId": 96101,
+     "objective": 2,
+     "label": "Boosted Rest"
+    },
+    {
+     "type": "turnin",
+     "questId": 96101,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "accept",
+     "questId": 96646,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "accept",
+     "questId": 97965,
+     "label": "Camping 101: First Aid"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.67,
+      "y": 45.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92472,
+     "label": "The Next Step"
+    },
+    {
+     "type": "accept",
+     "questId": 92514,
+     "label": "Welcome to Shen'dar Village"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.51,
+      "y": 44.77,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92514,
+     "objective": 1,
+     "label": "Speak with Illaya Amberwind"
+    },
+    {
+     "type": "accept",
+     "questId": 92595,
+     "label": "The Windshapers"
+    },
+    {
+     "type": "complete",
+     "questId": 92595,
+     "objective": 1,
+     "label": "Listen to Illaya"
+    },
+    {
+     "type": "turnin",
+     "questId": 92595,
+     "label": "The Windshapers"
+    },
+    {
+     "type": "accept",
+     "questId": 94411,
+     "label": "Meddlesome Mages"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.01,
+      "y": 43.23,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92514,
+     "objective": 2,
+     "label": "Speak with the Innkeeper"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.67,
+      "y": 45.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92514,
+     "label": "Welcome to Shen'dar Village"
+    },
+    {
+     "type": "accept",
+     "questId": 92517,
+     "label": "The Criminal Element"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.46,
+      "y": 44.96,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93319,
+     "label": "Pilfered Windstones"
+    },
+    {
+     "type": "accept",
+     "questId": 92516,
+     "label": "Hippogryph Harassment"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.88,
+      "y": 44.28,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93951,
+     "label": "A Little Beauty"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.68,
+      "y": 44.52,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92515,
+     "label": "The Problem With Prideclaws"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.85,
+      "y": 43.84,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn Cooking from Zerril Softbreeze"
+    },
+    {
+     "type": "turnin",
+     "questId": 96646,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "accept",
+     "questId": 92553,
+     "label": "Restocking the Larders"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 45.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93318,
+     "label": "WANTED: Vulgara the Insatiable"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.08,
+      "y": 46.31,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn First Aid from Naleeia Tattermend"
     }
    ],
    "conditions": [],
@@ -45,155 +357,92 @@
     {
      "url": "https://www.wowhead.com/classic/quest=96638",
      "label": "Wowhead quest 96638"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:059",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Great Outdoors from Raan Wildwind. The objective is to sit near Raan's Basic Campfire and wait until you receive the Boosted Rest buff."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 41.69,
-      "y": 44.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 96101,
-     "label": "The Great Outdoors"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96101"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=96101",
      "label": "Wowhead quest 96101"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:060",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through The Great Outdoors at Basic Campfire."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 41.73,
-      "y": 44.78,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "complete",
-     "questId": 96101,
-     "objective": 1,
-     "label": "The Great Outdoors"
+     "url": "https://www.wowhead.com/classic/quest=96646",
+     "label": "Wowhead quest 96646"
     },
     {
-     "type": "complete",
-     "questId": 96101,
-     "objective": 2,
-     "label": "The Great Outdoors"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96101"
+     "url": "https://www.wowhead.com/classic/quest=97965",
+     "label": "Wowhead quest 97965"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=96101",
-     "label": "Wowhead quest 96101"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:061",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Great Outdoors over to Raan Wildwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 41.69,
-      "y": 44.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
+     "url": "https://www.wowhead.com/classic/quest=92472",
+     "label": "Wowhead quest 92472"
     },
     {
-     "type": "turnin",
-     "questId": 96101,
-     "label": "The Great Outdoors"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96101"
+     "url": "https://www.wowhead.com/classic/quest=92514",
+     "label": "Wowhead quest 92514"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=96101",
-     "label": "Wowhead quest 96101"
+     "url": "https://www.wowhead.com/classic/quest=92595",
+     "label": "Wowhead quest 92595"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94411",
+     "label": "Wowhead quest 94411"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92517",
+     "label": "Wowhead quest 92517"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93319",
+     "label": "Wowhead quest 93319"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92516",
+     "label": "Wowhead quest 92516"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93951",
+     "label": "Wowhead quest 93951"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92515",
+     "label": "Wowhead quest 92515"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92553",
+     "label": "Wowhead quest 92553"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93318",
+     "label": "Wowhead quest 93318"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false,
+   "verified": true,
    "tips": [
+    {
+     "kind": "general",
+     "text": "The Great Outdoors does not need Cooking. In the playtest it was done and handed in before Cooking was learned.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Camping 101 quests give 270 XP each. Cooking is instant once you learn it at Zerril, who is on this stop anyway. First Aid finishes at skill 20, which comes on its own if you bandage up between pulls. Fishing to 20 took about 7 minutes at Windsong Lake, so it's only worth it on Balanced.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
+    },
     {
      "kind": "general",
      "text": "Campfire buffs (Fish Bowl +8% stats at Fishing 20, and other players' camp items) are optional. The route works with none of them. A Camp Tent only fills rested xp up to 5% of a level and does nothing if you already have more.",
@@ -227,13 +476,20 @@
    ]
   },
   {
-   "id": "zephras-isle:058",
+   "id": "zephras-isle:082",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand The Next Step over to Constable Aonda."
+       "t": "Highlands west of the village: kill Prideclaws until you have 10 Prideclaw Pelts (about 13 kills)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Kill Galestriders in the same field for 8 Strider Meat and 3 Small Eggs (about 12 kills). There are more of them a bit further south-west."
       }
      ]
     }
@@ -243,115 +499,39 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92472,
-     "label": "The Next Step"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92472"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92472",
-     "label": "Wowhead quest 92472"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:062",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Welcome to Shen'dar Village from Constable Aonda. The follow-up conversation is with Illaya Amberwind and Coriella Calmbreeze in Shen'dar Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92514,
-     "label": "Welcome to Shen'dar Village"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92514"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92514",
-     "label": "Wowhead quest 92514"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:063",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Welcome to Shen'dar Village at Illaya Amberwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.51,
-      "y": 44.77,
+      "x": 39.4,
+      "y": 44.0,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
      "type": "complete",
-     "questId": 92514,
+     "questId": 92515,
      "objective": 1,
-     "label": "Welcome to Shen'dar Village"
+     "label": "Prideclaw Pelts"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 39.4,
+      "y": 42.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
     },
     {
      "type": "complete",
-     "questId": 92514,
+     "questId": 92553,
+     "objective": 1,
+     "label": "Small Eggs"
+    },
+    {
+     "type": "complete",
+     "questId": 92553,
      "objective": 2,
-     "label": "Welcome to Shen'dar Village"
+     "label": "Strider Meat"
     }
    ],
    "conditions": [],
@@ -362,23 +542,52 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92514"
+     "label": "QuestieDB quests.json id 92515"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=92514",
-     "label": "Wowhead quest 92514"
+     "url": "https://www.wowhead.com/classic/quest=92515",
+     "label": "Wowhead quest 92515"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92553",
+     "label": "Wowhead quest 92553"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
-   "id": "zephras-isle:064",
+   "id": "zephras-isle:083",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand Welcome to Shen'dar Village over to Constable Aonda."
+       "t": "Town stop 2 (level ~7). You pass the village on the way north-east anyway:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Zerril Softbreeze: turn in Restocking the Larders."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Indari Sunseam: turn in The Problem With Prideclaws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "If you have a primary profession, learn or train it now and hand in its Camping 101."
       }
      ]
     }
@@ -388,140 +597,17 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
+      "x": 43.85,
+      "y": 43.84,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
      "type": "turnin",
-     "questId": 92514,
-     "label": "Welcome to Shen'dar Village"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92514"
+     "questId": 92553,
+     "label": "Restocking the Larders"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92514",
-     "label": "Wowhead quest 92514"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:075",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Pilfered Windstones from Teeri Wellwind. Bring back 10 Pilfered Windstones from the Highlands Bandits in the Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.46,
-      "y": 44.96,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93319,
-     "label": "Pilfered Windstones"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93319"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93319",
-     "label": "Wowhead quest 93319"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:078",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Hippogryph Harassment from Teeri Wellwind. The kill count is 8 Hippogryph Youths, 6 Hippogryph Protectors and a Hippogryph Matriarch in the Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.46,
-      "y": 44.96,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92516,
-     "label": "Hippogryph Harassment"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92516"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92516",
-     "label": "Wowhead quest 92516"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:081",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Problem With Prideclaws from Indari Sunseam. Bring back 10 Prideclaw Pelts from the Prideclaws in Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -533,36 +619,50 @@
      }
     },
     {
-     "type": "accept",
+     "type": "turnin",
      "questId": 92515,
      "label": "The Problem With Prideclaws"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92515"
+     "label": "QuestieDB quests.json id 92553"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92553",
+     "label": "Wowhead quest 92553"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92515",
      "label": "Wowhead quest 92515"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
-   "id": "zephras-isle:084",
+   "id": "zephras-isle:070",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Pick up A Little Beauty from Taleen Shimmerthread. Bring back 8 Hippogryph Down feathers in the Shen'dar Highlands."
+       "t": "Windsong Standing (north-east): kill 6 High Order Apprentices."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Bandit camp and Bandit Hideout further north-east: kill 10 Highlands Bandits and \"Badwind\" Bennic (inside the hideout). Pilfered Windstones drop from the same bandits. Expect about 18 kills for all 10."
       }
      ]
     }
@@ -572,62 +672,55 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 44.88,
-      "y": 44.28,
+      "x": 46.3,
+      "y": 39.0,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
-     "type": "accept",
-     "questId": 93951,
-     "label": "A Little Beauty"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93951"
+     "type": "complete",
+     "questId": 94411,
+     "objective": 1,
+     "label": "High Order Apprentice"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93951",
-     "label": "Wowhead quest 93951"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:072",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Criminal Element from Constable Aonda. The kill count is 10 Highlands Bandits and their leader, \"Badwind\" Bennic in the Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
+      "x": 48.9,
+      "y": 37.5,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
-     "type": "accept",
+     "type": "complete",
      "questId": 92517,
-     "label": "The Criminal Element"
+     "objective": 1,
+     "label": "Highlands Bandit"
+    },
+    {
+     "type": "complete",
+     "questId": 93319,
+     "objective": 1,
+     "label": "Pilfered Windstones"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 50.62,
+      "y": 34.27,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92517,
+     "objective": 2,
+     "label": "\"Badwind\" Bennic"
     }
    ],
    "conditions": [],
@@ -638,161 +731,76 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92517"
+     "label": "QuestieDB quests.json id 94411"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94411",
+     "label": "Wowhead quest 94411"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92517",
      "label": "Wowhead quest 92517"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93319",
+     "label": "Wowhead quest 93319"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The playtest player grouped up with other players inside the Bandit Hideout, so solo this part will take a bit longer than the log shows. There were no deaths.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
-   "id": "zephras-isle:w2-92553-1",
+   "id": "zephras-isle:071",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Accept Restocking the Larders from Zerril Softbreeze."
+       "t": "Town stop 3 (level 7-8):"
       }
      ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.9,
-      "y": 43.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
-    {
-     "type": "accept",
-     "questId": 92553,
-     "label": "Restocking the Larders"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=92553",
-     "label": "Wowhead Classic quest 92553"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:w2-93318-1",
-   "tags": {},
-   "text": [
     {
      "segments": [
       {
-       "t": "Accept WANTED: Vulgara the Insatiable from Bounty Available: Vulgara the Insatiable!."
+       "t": "Illaya Amberwind: turn in Meddlesome Mages."
       }
      ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.4,
-      "y": 45.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
-    {
-     "type": "accept",
-     "questId": 93318,
-     "label": "WANTED: Vulgara the Insatiable"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=93318",
-     "label": "Wowhead Classic quest 93318"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:067",
-   "tags": {},
-   "text": [
     {
      "segments": [
       {
-       "t": "Pick up The Windshapers from Illaya Amberwind. Stay and listen: to what Illaya Amberwind has to say."
+       "t": "Teeri Wellwind: turn in Pilfered Windstones."
       }
      ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.51,
-      "y": 44.77,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
-    {
-     "type": "accept",
-     "questId": 92595,
-     "label": "The Windshapers"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92595"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92595",
-     "label": "Wowhead quest 92595"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:068",
-   "tags": {},
-   "text": [
     {
      "segments": [
       {
-       "t": "Hand The Windshapers over to Illaya Amberwind."
+       "t": "Constable Aonda: turn in The Criminal Element, accept Infiltrating the Cult."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Sania Silverstream (next to Aonda): turn in Infiltrating the Cult, accept Falaath Village."
       }
      ]
     }
@@ -810,54 +818,63 @@
     },
     {
      "type": "turnin",
-     "questId": 92595,
-     "label": "The Windshapers"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92595"
+     "questId": 94411,
+     "label": "Meddlesome Mages"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92595",
-     "label": "Wowhead quest 92595"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:069",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Meddlesome Mages from Illaya Amberwind. The kill count is 6 High Order Apprentices in Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 43.51,
-      "y": 44.77,
+      "x": 44.46,
+      "y": 44.96,
       "zone": "Zephras Isle",
       "exact": true
      }
+    },
+    {
+     "type": "turnin",
+     "questId": 93319,
+     "label": "Pilfered Windstones"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.67,
+      "y": 45.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92517,
+     "label": "The Criminal Element"
     },
     {
      "type": "accept",
-     "questId": 94411,
-     "label": "Meddlesome Mages"
+     "questId": 93036,
+     "label": "Infiltrating the Cult"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.88,
+      "y": 45.53,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93036,
+     "label": "Infiltrating the Cult"
+    },
+    {
+     "type": "accept",
+     "questId": 92529,
+     "label": "Falaath Village"
     }
    ],
    "conditions": [],
@@ -873,165 +890,65 @@
     {
      "url": "https://www.wowhead.com/classic/quest=94411",
      "label": "Wowhead quest 94411"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:070",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Meddlesome Mages at High Order Apprentice."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 46.47,
-      "y": 38.94,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 94411,
-     "objective": 1,
-     "label": "Meddlesome Mages"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 94411"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=94411",
-     "label": "Wowhead quest 94411"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:073",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through The Criminal Element at Highlands Bandit."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 48.77,
-      "y": 37.55,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92517,
-     "objective": 1,
-     "label": "The Criminal Element"
-    },
-    {
-     "type": "complete",
-     "questId": 92517,
-     "objective": 2,
-     "label": "The Criminal Element"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92517"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92517",
-     "label": "Wowhead quest 92517"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:076",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Pilfered Windstones at Highlands Bandit."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 48.77,
-      "y": 37.55,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 93319,
-     "objective": 1,
-     "label": "Pilfered Windstones"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93319"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=93319",
      "label": "Wowhead quest 93319"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92517",
+     "label": "Wowhead quest 92517"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93036",
+     "label": "Wowhead quest 93036"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92529",
+     "label": "Wowhead quest 92529"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "XP check: level 8 needs 4500 XP into level 7. In the playtest the Sania hand-in gave exactly level 8, but only thanks to two extra primary-profession Camping 101 quests (540 XP). Without them you arrive about 700 XP short, roughly 11 bandits. If you are 8 already, train now at Aarnor Galestrike (next to Illaya); otherwise train at town stop 4.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
-   "id": "zephras-isle:082",
+   "id": "zephras-isle:sr-handins-shendar-3",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Work through The Problem With Prideclaws at Prideclaw."
+       "t": "Speedrun: you skipped town stop 2, so hand those in now as well."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Zerril Softbreeze: turn in Restocking the Larders."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Indari Sunseam: turn in The Problem With Prideclaws."
       }
      ]
     }
@@ -1041,79 +958,53 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 45.14,
-      "y": 52.68,
+      "x": 43.85,
+      "y": 43.84,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
-     "type": "complete",
+     "type": "turnin",
+     "questId": 92553,
+     "label": "Restocking the Larders"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.68,
+      "y": 44.52,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
      "questId": 92515,
-     "objective": 1,
      "label": "The Problem With Prideclaws"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
     "speedrun"
    ],
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92515"
+     "label": "QuestieDB quests.json id 92553"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92553",
+     "label": "Wowhead quest 92553"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92515",
      "label": "Wowhead quest 92515"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-93318-2",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete WANTED: Vulgara the Insatiable."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.7,
-      "y": 52.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "complete",
-     "questId": 93318,
-     "objective": 1,
-     "label": "WANTED: Vulgara the Insatiable"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=93318",
-     "label": "Wowhead Classic quest 93318"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
    "verified": true
@@ -1125,7 +1016,21 @@
     {
      "segments": [
       {
-       "t": "Work through Hippogryph Harassment at Hippogryph Youth."
+       "t": "South of the village: kill Vulgara the Insatiable on the way and take her head."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Hippogryph nests south-west: kill 8 Hippogryph Youths, then 6 Hippogryph Protectors and the Hippogryph Matriarch further west."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick up 8 Hippogryph Down from the ground as you go. It's scattered between the nests."
       }
      ]
     }
@@ -1135,8 +1040,24 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 38.3,
-      "y": 54.14,
+      "x": 42.66,
+      "y": 52.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93318,
+     "objective": 1,
+     "label": "Vulgara's Head"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 38.1,
+      "y": 52.2,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -1145,113 +1066,35 @@
      "type": "complete",
      "questId": 92516,
      "objective": 1,
-     "label": "Hippogryph Harassment"
-    },
-    {
-     "type": "complete",
-     "questId": 92516,
-     "objective": 2,
-     "label": "Hippogryph Harassment"
-    },
-    {
-     "type": "complete",
-     "questId": 92516,
-     "objective": 3,
-     "label": "Hippogryph Harassment"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92516"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92516",
-     "label": "Wowhead quest 92516"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:085",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through A Little Beauty at Hippogryph Down."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 36.5,
-      "y": 54.07,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
+     "label": "Hippogryph Youth"
     },
     {
      "type": "complete",
      "questId": 93951,
      "objective": 1,
-     "label": "A Little Beauty"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93951"
+     "label": "Hippogryph Down"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93951",
-     "label": "Wowhead quest 93951"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-92553-2",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Restocking the Larders."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
-      "mapId": 1412,
+      "mapId": 2521,
       "x": 35.5,
-      "y": 78.5,
-      "zone": "Mulgore",
+      "y": 52.8,
+      "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
      "type": "complete",
-     "questId": 92553,
-     "objective": 1,
-     "label": "Restocking the Larders"
+     "questId": 92516,
+     "objective": 2,
+     "label": "Hippogryph Protector"
+    },
+    {
+     "type": "complete",
+     "questId": 92516,
+     "objective": 3,
+     "label": "Hippogryph Matriarch"
     }
    ],
    "conditions": [],
@@ -1261,24 +1104,50 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=92553",
-     "label": "Wowhead Classic quest 92553"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93318"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=93318",
+     "label": "Wowhead quest 93318"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92516",
+     "label": "Wowhead quest 92516"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93951",
+     "label": "Wowhead quest 93951"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
    "verified": true
   },
   {
-   "id": "zephras-isle:077",
+   "id": "zephras-isle:090",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand Pilfered Windstones over to Teeri Wellwind."
+       "t": "Head east to Falaath Village before going back to town (it's on the way, and it saves a second trip out here):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Missionary Jasaan (village entrance): turn in Falaath Village, accept Among the Faithful."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Search the village: the wardrobe north-east of Jasaan finishes Among the Faithful."
       }
      ]
     }
@@ -1288,16 +1157,37 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 44.46,
-      "y": 44.96,
+      "x": 46.89,
+      "y": 56.23,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
      "type": "turnin",
-     "questId": 93319,
-     "label": "Pilfered Windstones"
+     "questId": 92529,
+     "label": "Falaath Village"
+    },
+    {
+     "type": "accept",
+     "questId": 92528,
+     "label": "Among the Faithful"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.9,
+      "y": 53.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92528,
+     "objective": 1,
+     "label": "Learn about the cultists' plans"
     }
    ],
    "conditions": [],
@@ -1308,106 +1198,35 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93319"
+     "label": "QuestieDB quests.json id 92529"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=93319",
-     "label": "Wowhead quest 93319"
+     "url": "https://www.wowhead.com/classic/quest=92529",
+     "label": "Wowhead quest 92529"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92528",
+     "label": "Wowhead quest 92528"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:080",
-   "tags": {},
-   "text": [
+   "verified": true,
+   "tips": [
     {
-     "segments": [
+     "kind": "general",
+     "text": "In the playtest the player went back to town after the hippogryphs and then walked out here and back again, about 3 minutes for 700 XP. Doing it from the hippogryph field saves that round trip.",
+     "sources": [
       {
-       "t": "Hand Hippogryph Harassment over to Teeri Wellwind."
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
       }
-     ]
+     ],
+     "verified": true
     }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.46,
-      "y": 44.96,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92516,
-     "label": "Hippogryph Harassment"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92516"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92516",
-     "label": "Wowhead quest 92516"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:083",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Problem With Prideclaws over to Indari Sunseam."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.68,
-      "y": 44.52,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92515,
-     "label": "The Problem With Prideclaws"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92515"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92515",
-     "label": "Wowhead quest 92515"
-    }
-   ],
-   "verified": false
+   ]
   },
   {
    "id": "zephras-isle:086",
@@ -1416,7 +1235,42 @@
     {
      "segments": [
       {
-       "t": "Hand A Little Beauty over to Taleen Shimmerthread."
+       "t": "Town stop 4 (level 8):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Taleen Shimmerthread: turn in A Little Beauty."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Teeri Wellwind: turn in Hippogryph Harassment."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Danarii Bellowveil: turn in WANTED: Vulgara the Insatiable, accept Stolen Supplies."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Constable Aonda: turn in Among the Faithful, accept Havoc in the Highlands and The Western Watch."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Naleeia Tattermend: turn in Camping 101: First Aid if you're at First Aid 20."
       }
      ]
     }
@@ -1436,6 +1290,76 @@
      "type": "turnin",
      "questId": 93951,
      "label": "A Little Beauty"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 44.46,
+      "y": 44.96,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92516,
+     "label": "Hippogryph Harassment"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.24,
+      "y": 45.18,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93318,
+     "label": "WANTED: Vulgara the Insatiable"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.67,
+      "y": 45.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92528,
+     "label": "Among the Faithful"
+    },
+    {
+     "type": "accept",
+     "questId": 92550,
+     "label": "Havoc in the Highlands"
+    },
+    {
+     "type": "accept",
+     "questId": 93926,
+     "label": "The Western Watch"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.08,
+      "y": 46.31,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97965,
+     "label": "Camping 101: First Aid"
     }
    ],
    "conditions": [],
@@ -1451,608 +1375,121 @@
     {
      "url": "https://www.wowhead.com/classic/quest=93951",
      "label": "Wowhead quest 93951"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:074",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Criminal Element over to Constable Aonda."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "turnin",
-     "questId": 92517,
-     "label": "The Criminal Element"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92517"
+     "url": "https://www.wowhead.com/classic/quest=92516",
+     "label": "Wowhead quest 92516"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92517",
-     "label": "Wowhead quest 92517"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:071",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Meddlesome Mages over to Illaya Amberwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.51,
-      "y": 44.77,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 94411,
-     "label": "Meddlesome Mages"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 94411"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=94411",
-     "label": "Wowhead quest 94411"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-93318-3",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in WANTED: Vulgara the Insatiable to Danarii Bellowveil."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.2,
-      "y": 45.2,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93318,
-     "label": "WANTED: Vulgara the Insatiable"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
     {
      "url": "https://www.wowhead.com/classic/quest=93318",
-     "label": "Wowhead Classic quest 93318"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:w2-92553-3",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Restocking the Larders to Zerril Softbreeze."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.9,
-      "y": 43.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92553,
-     "label": "Restocking the Larders"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=92553",
-     "label": "Wowhead Classic quest 92553"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:087",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Infiltrating the Cult from Constable Aonda. The follow-up conversation is with Sania Silverstream in Shen'dar Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93036,
-     "label": "Infiltrating the Cult"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93036"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93036",
-     "label": "Wowhead quest 93036"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:088",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Infiltrating the Cult over to Sania Silverstream."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.88,
-      "y": 45.53,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93036,
-     "label": "Infiltrating the Cult"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93036"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93036",
-     "label": "Wowhead quest 93036"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:089",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Falaath Village from Sania Silverstream. Check in with Missionary Jasaan near the entrance to Falaath Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 44.88,
-      "y": 45.53,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92529,
-     "label": "Falaath Village"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92529"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92529",
-     "label": "Wowhead quest 92529"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:090",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Falaath Village over to Missionary Jasaan."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 46.89,
-      "y": 56.23,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92529,
-     "label": "Falaath Village"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92529"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92529",
-     "label": "Wowhead quest 92529"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:091",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Among the Faithful from Missionary Jasaan. Search Falaath Village to learn about the cult's intentions in the Shen'dar Highlands."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 46.89,
-      "y": 56.23,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92528,
-     "label": "Among the Faithful"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92528"
+     "label": "Wowhead quest 93318"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92528",
      "label": "Wowhead quest 92528"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:092",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Among the Faithful at Wardrobe."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 48.84,
-      "y": 53.93,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92528,
-     "objective": 1,
-     "label": "Among the Faithful"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92528"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92528",
-     "label": "Wowhead quest 92528"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:093",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Among the Faithful over to Constable Aonda."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92528,
-     "label": "Among the Faithful"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92528"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92528",
-     "label": "Wowhead quest 92528"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:094",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Western Watch from Constable Aonda. Locate Peacekeeper Vaaniel at the western watchtower."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93926,
-     "label": "The Western Watch"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93926"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93926",
-     "label": "Wowhead quest 93926"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:096",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Havoc in the Highlands from Constable Aonda. The next place is the ruins of Falaath Village and slay 6 Al'Aketh Stormcallers, 4 Living Lightning and take the head of Commander Cyclas."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92550,
-     "label": "Havoc in the Highlands"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92550"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92550",
      "label": "Wowhead quest 92550"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93926",
+     "label": "Wowhead quest 93926"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97965",
+     "label": "Wowhead quest 97965"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:train-shaman-8",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shaman: train your level 8 spells at Aarnor Galestrike (skip this if you already trained at town stop 3)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.45,
+      "y": 44.87,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Aarnor Galestrike"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:fishing-shendar",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Fenn Fairweather (south edge, by the lake) trains Fishing. Raan's Camping 101: Fishing finishes at Fishing 20, about 7 minutes of fishing at Windsong Lake, for 270 XP."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.02,
+      "y": 48.44,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn Fishing from Fenn Fairweather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+    }
+   ],
+   "verified": true
   },
   {
    "id": "zephras-isle:097",
@@ -2061,7 +1498,14 @@
     {
      "segments": [
       {
-       "t": "Work through Havoc in the Highlands at Al'Aketh Stormcaller."
+       "t": "Falaath Village ruins: kill 6 Al'Aketh Stormcallers and 4 Living Lightning, and take the head of Commander Cyclas (east edge)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Stolen Shen'dar Supplies drop from the same Stormcallers. Expect about 19 Stormcaller kills for all 10."
       }
      ]
     }
@@ -2071,8 +1515,8 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 49.03,
-      "y": 53.82,
+      "x": 47.9,
+      "y": 56.7,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -2081,19 +1525,29 @@
      "type": "complete",
      "questId": 92550,
      "objective": 1,
-     "label": "Havoc in the Highlands"
+     "label": "Al'Aketh Stormcaller"
     },
     {
      "type": "complete",
      "questId": 92550,
      "objective": 2,
-     "label": "Havoc in the Highlands"
+     "label": "Living Lightning"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 50.39,
+      "y": 56.96,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
     },
     {
      "type": "complete",
      "questId": 92550,
      "objective": 3,
-     "label": "Havoc in the Highlands"
+     "label": "Head of Commander Cyclas"
     }
    ],
    "conditions": [],
@@ -2109,9 +1563,13 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92550",
      "label": "Wowhead quest 92550"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
    "id": "zephras-isle:095",
@@ -2120,7 +1578,14 @@
     {
      "segments": [
       {
-       "t": "Hand The Western Watch over to Peacekeeper Vaaniel."
+       "t": "Western watchtower (south-west): Peacekeeper Vaaniel: turn in The Western Watch, accept A Last Request."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick up and read the note by the dead peacekeeper next to him, then kill Skypriest Aanders at the West Pylon Watchtower just south-west."
       }
      ]
     }
@@ -2140,6 +1605,33 @@
      "type": "turnin",
      "questId": 93926,
      "label": "The Western Watch"
+    },
+    {
+     "type": "accept",
+     "questId": 93927,
+     "label": "A Last Request"
+    },
+    {
+     "type": "complete",
+     "questId": 93927,
+     "objective": 2,
+     "label": "Collect and read the note"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 41.1,
+      "y": 64.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93927,
+     "objective": 1,
+     "label": "Skypriest Aanders"
     }
    ],
    "conditions": [],
@@ -2155,120 +1647,41 @@
     {
      "url": "https://www.wowhead.com/classic/quest=93926",
      "label": "Wowhead quest 93926"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:099",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up A Last Request from Peacekeeper Vaaniel. Pick up the note you found near the dead peacekeeper and read it to determine your next steps."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.34,
-      "y": 61.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93927,
-     "label": "A Last Request"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93927"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=93927",
      "label": "Wowhead quest 93927"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:100",
-   "tags": {},
-   "text": [
+   "verified": true,
+   "tips": [
     {
-     "segments": [
+     "kind": "general",
+     "text": "Skypriest Aanders was at the West Pylon Watchtower (41.1, 64.1) in the playtest, not in Falaath where our NPC data puts him.",
+     "sources": [
       {
-       "t": "Work through A Last Request at Skypriest Aanders."
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
       }
-     ]
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "This detour costs about 3 minutes for 875 XP (around 280 XP/min, well above grinding), and both To Valanaar and Deliver the Signet need A Last Request done. Don't skip it.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
     }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 41.3,
-      "y": 63.55,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 93927,
-     "objective": 1,
-     "label": "A Last Request"
-    },
-    {
-     "type": "complete",
-     "questId": 93927,
-     "objective": 2,
-     "label": "A Last Request"
-    },
-    {
-     "type": "complete",
-     "questId": 93927,
-     "objective": 3,
-     "label": "A Last Request"
-    },
-    {
-     "type": "complete",
-     "questId": 93927,
-     "objective": 4,
-     "label": "A Last Request"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93927"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93927",
-     "label": "Wowhead quest 93927"
-    }
-   ],
-   "verified": false
+   ]
   },
   {
    "id": "zephras-isle:098",
@@ -2277,12 +1690,36 @@
     {
      "segments": [
       {
-       "t": "Hand Havoc in the Highlands over to Constable Aonda."
+       "t": "Town stop 5 (level 9). Last stop in Shen'dar:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Danarii Bellowveil: turn in Stolen Supplies."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Constable Aonda: turn in Havoc in the Highlands and A Last Request, accept To Valanaar and Deliver the Signet."
       }
      ]
     }
    ],
    "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.24,
+      "y": 45.18,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
     {
      "type": "goto",
      "at": {
@@ -2297,139 +1734,16 @@
      "type": "turnin",
      "questId": 92550,
      "label": "Havoc in the Highlands"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92550"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92550",
-     "label": "Wowhead quest 92550"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:101",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand A Last Request over to Constable Aonda."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "turnin",
      "questId": 93927,
      "label": "A Last Request"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93927"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93927",
-     "label": "Wowhead quest 93927"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:102",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up To Valanaar from Constable Aonda. Hand over Aonda's Written Report to Valennia Stormfist in Valanaar. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 92579,
      "label": "To Valanaar"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92579"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92579",
-     "label": "Wowhead quest 92579"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:104",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Deliver the Signet from Constable Aonda. Hand over the Shadowsong Family Signet to Talaanis Shadowsong in Valanaar."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 45.67,
-      "y": 45.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
@@ -2445,14 +1759,30 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93948"
+     "label": "QuestieDB quests.json id 92550"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92550",
+     "label": "Wowhead quest 92550"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93927",
+     "label": "Wowhead quest 93927"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92579",
+     "label": "Wowhead quest 92579"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=93948",
      "label": "Wowhead quest 93948"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   }
  ]
 }

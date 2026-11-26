@@ -1,8 +1,9 @@
-# Zephras Isle route rework — plan (playtest 1: Shaman, levels 1–6)
+# Zephras Isle route rework — plan (playtest 1: Shaman 1–6, playtest 2: Shaman 6–9)
 
-Source: AdventureLog of **Nero Clover** (Windshaper Skyborne Shaman), session of 2026-11-26.
-`/played` 34.5 → 82.8 min for levels 1 → 6, all of it in segment `01-rorians-camp`. The 34 minutes before the first quest are character creation and idle time. They are not counted.
-Segments 02–07 have not been played yet. This plan rebuilds segment 01 from real data and sets the rules the other segments will follow once they are played.
+Source: AdventureLog of **Nero Clover** (Windshaper Skyborne Shaman), sessions of 2026-11-26.
+Playtest 1: `/played` 34.5 → 82.8 min for levels 1 → 6, all of it in segment `01-rorians-camp`. The 34 minutes before the first quest are character creation and idle time. They are not counted.
+Playtest 2 (§7): levels 6 → 9, all of segment `02-shendar-village`, up to the A Last Request hand-in.
+Segments 03–07 have not been played yet. §1–§6 rebuild segment 01 and set the rules the other segments follow. §7 applies them to segment 02. The sessions already read are listed in §8.
 
 ---
 
@@ -153,8 +154,9 @@ Every trainer is in **Shen'dar Village**, which the route reaches at about level
 | First Aid | Naleeia Tattermend `/way 43.1 46.3` | **Linen Cloth** (humanoids: Al'Aketh, bandits; none dropped in segment 01 so far) |
 | Herbalism / Mining / Skinning | Shen'dar (see `profession_hooks.json`) | nothing to carry; learn on arrival |
 
-- Move the six hooks from `zephras-isle:001` to the Shen'dar arrival hub (step 056/058 area). Replace them at 001 with the single line "Keep: Stringy Wolf Meat, Linen Cloth".
-- **To verify in game:** the Cooking note says "Camping needs skill 20" and **The Great Outdoors (campfire, step 059)** comes right after arriving. If Camping really needs Cooking 20, the Shen'dar hub must be: train Cooking at Zerril → cook the carried meat to 20 → *then* the campfire. Raan's camp (41.7, 44.8) is about 2 yards from Zerril, so it costs almost nothing. Unconfirmed: check it on the next playtest.
+- ✅ The six isle hooks (`p2-081`, `p2-097`…`p2-101`) now carry `"stepId": "zephras-isle:056"`, so they join the Shen'dar arrival town stop. `joinHooks` attaches a hook with `stepId` to that step only. Step 001 has one tip instead: keep Stringy Wolf Meat and Linen Cloth.
+- ✅ **Answered (playtest 2):** The Great Outdoors does **not** need Cooking. It was accepted, done (sat at Raan's fire about 60 s for Boosted Rest) and handed in at 8141–8209 s `/played`. Cooking was first learned at 8318 s. The Cooking hook note was corrected.
+- **Camping 101** (from Raan Wildwind, 270 XP each): Cooking = learn Cooking (instant). First Aid / Fishing / Leatherworking = raise the skill to 20. Skinning was ready on accept, because the character already had it. The secondary ones (Cooking, First Aid) are route actions in town stop 1. The primary ones and Fishing are text only.
 - Recipe reagents in Forever (Minor Healing Potion moved to First Aid) are not in our data yet. Record them from the trainer window next playtest.
 
 ---
@@ -164,13 +166,110 @@ Every trainer is in **Shen'dar Village**, which the route reaches at about level
 1. ✅ **Fix** `stepIsShown` so **Show** reveals class-filtered steps. They open read-only ("Not for your character") and stay out of navigation and the map.
 2. ✅ **Data fix:** Harvesting Windstones is accepted at town stop 2 and finished in the east field step.
 3. ✅ **Re-author segment 01:** 59 steps → 19 (4 town stops, field steps, one step per class intro). Old ids are kept on the merged steps, so saved progress still matches.
-4. **Field-step text:** replace the "Work through" generator output with counts + mob + area (all segments).
+4. **Field-step text:** replace the "Work through" generator output with counts + mob + area. ✅ Segments 01–02. Segments 03–07 are still to do, after they are played.
 5. **XP callouts:** surface `sim.next.xpGap` before hubs/trainers ("31 XP to 6 · ~1 Vuldren"). Use live XP when synced.
-6. **Professions:** move hooks to Shen'dar; "keep in bags" line before that.
-7. **Speedrun:** after playtest 2 (segments 02–03), score each quest with the grind-rate rule (§3) and mark the cuts `routes: ["balanced"]`.
+6. ✅ **Professions:** hooks moved to Shen'dar (`stepId`), with a "keep in bags" tip on step 001.
+7. **Speedrun:** score each quest with the grind-rate rule (§3) and mark the cuts `routes: ["balanced"]`. ✅ Segment 02 (§7.4): no quest falls under the grind rate. Speedrun skips town stop 2 and carries its hand-ins to stop 3.
+9. **Quest data:** Stolen Supplies (92551, Danarii Bellowveil, 525 XP, 10 Stolen Shen'dar Supplies from Al'Aketh Stormcallers) is missing from `quests.json`. It is text-only in steps 086/097/098 until it is added. Skypriest Aanders' NPC spawn (48.9, 54.6) is wrong: he was at the West Pylon Watchtower, 41.1, 64.1.
 8. **Quest rewards:** add reward items to the quest data so rule 3 (good gear) can be checked.
 
 ## 6. Next playtest: please capture
-- Whether The Great Outdoors needs Cooking 20.
 - Trainer windows (Cooking, First Aid) so the reagents are recorded.
+- Whether Stolen Supplies (92551) is offered by Danarii only after Among the Faithful, or earlier.
 - Export the AdventureLog after the session (`Export Adventure.bat`), or just leave it in SavedVariables. Either works for analysis.
+
+---
+
+## 7. Playtest 2: segment 02, Shen'dar Village (Shaman 6 → 9)
+
+Sessions `20261126-1531-34b5` and `20261126-1814-5af9` (`/played` 7984 → 14721 s). `20261126-1327-17ae` and `20261126-1348-1c89` are about 50 minutes AFK in Thendal Grove with no events, and `20261126-1607-3d06` is a 1-minute login. None of them are counted. Active play: **110 min for levels 6 → 9** (ding 7 at 9504 s, 8 at 11103 s, 9 at 13692 s). **No deaths.** Last quest handed in: **A Last Request** (14678 s), then To Valanaar and Deliver the Signet were accepted at the same NPC. Everything from step 103 (segment 03) on is untouched.
+
+### 7.1 What the log shows
+
+| `/played` | Where | What happened |
+|---|---|---|
+| 7984–8817 | Shen'dar arrival (11.3 min) | Adventurer, Great Outdoors (campfire 68 s), four Camping 101s, five trainers, all eleven quest pickups. About 5 min of it is profession and vendor work. |
+| 8817–9736 | West Highlands 39–40, 41–46 | 13 Prideclaws (10 pelts) + 12 Galestriders (8 meat, 3 eggs). Ding 7. |
+| 9736–10101 | Town | Hand in Restocking + Prideclaws, then about 5 min of Leatherworking/vendor. Town is on the way from west to north-east. |
+| 10346–11033 | Windsong Standing 46, 39 → Bandit camp/Hideout 47–51, 33–39 | 6 Apprentices, 18 Bandits + Bennic, 10 Windstones. **Grouped with other players in the Hideout.** |
+| 11033–11344 | Town | Mages, Windstones, Criminal Element, Infiltrating the Cult → **ding 8 on the Sania hand-in**, accept Falaath Village, Shaman trainer. |
+| 11344–12043 | South: Vulgara 42.6, 52.1 → hippogryphs 35–39, 50–54 | Vulgara, 7+ Youths, 7 Protectors, Matriarch 35.5, 54.2, 8 Down from the ground. First Aid reached 20. |
+| 12043–12323 | Town | Hand in Down, Harassment, Vulgara, First Aid Camping. |
+| 12323–12492 | **Falaath round trip** | Jasaan turn-in + wardrobe (48.9, 53.9), then **back to town**, only to hand in Among the Faithful to Aonda. |
+| 12500–13201 | Windsong Lake | Fishing 1 → 20 (about 7 min), Camping 101: Fishing, then Among the Faithful hand-in, Havoc + Western Watch + Stolen Supplies pickups. |
+| 13201–14001 | Falaath ruins 47–50, 53–59 | 19 Stormcallers, 6 Living Lightning, Cyclas 50.7, 56.7 (ding 9), 10 Stolen Supplies. |
+| 14001–14262 | Western watchtower 42.3, 62.0 | Vaaniel, note, Skypriest Aanders at **41.1, 64.1**, walk back. |
+| 14262–14721 | Town | Stolen Supplies, Havoc, A Last Request → To Valanaar + Deliver the Signet. About 6 min of vendor time first. |
+
+### 7.2 Findings that changed the route
+
+1. **51 one-NPC steps → 14 steps** (5 town stops, 4 field areas, Falaath, Western Watch, Shaman training, Fishing, Speedrun hand-ins). Merged steps keep an old id (056, 082, 083, 070, 071, 079, 090, 086, 097, 095, 098). New ids: `sr-handins-shendar-3`, `train-shaman-8`, `fishing-shendar`.
+2. **Wrong locations in the old steps:** Restocking the Larders pointed to 35.5, 78.5 (the meat and eggs drop from Galestriders right next to the Prideclaws at 39, 43). Prideclaws pointed to 45.1, 52.7 (they are at 39–40, 41–46). Hippogryphs were at 38.3, 54.1 (Youths 38, 52; Protectors and Matriarch 35.5, 52–54).
+3. **Wasted Falaath round trip (~3 min):** Among the Faithful only unlocks at Aonda, but Falaath Village is already in the log before the hippogryph field. The route now goes hippogryphs → Falaath (Jasaan + wardrobe) → town, so it's one trip out.
+4. **Level 8 at town stop 3 only came from extra profession XP.** Two primary-profession Camping 101s (540 XP) and a little rested XP gave exactly level 8 on the last hand-in. Without them the sim lands at 7.76 (about 700 XP short). Training moved to town stop 4 (sim 8.54), with an XP-check tip at stop 3.
+5. **Western Watch / A Last Request look like a long walk, but they're required:** To Valanaar and Deliver the Signet need both Havoc **and** A Last Request (QuestieDB `pre.group`).
+6. **Town time was the biggest loss:** about 25 of the 110 minutes were vendor, profession training and crafting in Shen'dar. That's a player choice, but it is why Speedrun keeps profession lines out of the town stops except Cooking/First Aid Camping 101.
+7. No deaths, so there are no danger tips. The Bandit Hideout was done in a group; the step says solo will be slower.
+
+### 7.3 Grind rate (measured, mob kills only, gaps under 90 s between kills)
+
+| Level | Kills | XP/kill | s/kill (incl. walking) | XP/min |
+|---|---|---|---|---|
+| 6 → 7 | 24 | 68 (first 2 rested) | 27.6 | ~150 |
+| 7 → 8 | 29 | 58 | 24.2 | ~148 |
+| 8 → 9 | 33 | 66 | 29.0 | ~140 |
+| 9 (Falaath ruins only) | 15 | 60 | 21.5 | ~180 (dense pack, small sample) |
+
+Speedrun threshold for 6–9: **~150 XP/min**.
+
+### 7.4 Segment 02 scored with the rule
+
+"Extra" = time on top of the route: walking, waiting, talking, pickups. Kills count as free.
+
+| Quest | XP | Extra (from log) | XP/extra min | Verdict |
+|---|---|---|---|---|
+| The Adventurer | 410 | 0 (arrival) | — | keep |
+| The Great Outdoors | 410 | 68 s campfire wait | ~360 | keep (+ Boosted Rest) |
+| Camping 101: Cooking | 270 | ~10 s at Zerril (on the stop) | ~1600 | keep, both routes |
+| Camping 101: First Aid | 270 | ~20 s Naleeia + bandages in downtime | ~500+ | keep, both routes (bandages save downtime) |
+| Camping 101: Fishing | 270 | ~7 min fishing | ~40 | **Balanced only** (text step `fishing-shendar`) |
+| Camping 101: primary professions | 270 each | at the trainer you visit anyway | — | text only; depends on the player's professions |
+| The Next Step | 230 | 0 | — | keep |
+| Welcome to Shen'dar Village + The Windshapers | 140 + 140 | ~160 s talking/innkeeper | ~105 | keep: **unlocks** every Shen'dar quest + Meddlesome Mages |
+| Meddlesome Mages | 410 | 0 (Windsong Standing is on the way north-east) | — | keep |
+| The Criminal Element / Pilfered Windstones | 480 / 475 | kills (~18 bandits) | — | keep |
+| The Problem With Prideclaws / Restocking the Larders | 540 / 405 | kills | — | keep |
+| Hippogryph Harassment | 630 | kills | — | keep |
+| A Little Beauty | 475 | ~1 min of Down pickups | ~475 | keep |
+| WANTED: Vulgara the Insatiable | 780 | ~50 s (one kill on the way) | ~900 | keep |
+| Infiltrating the Cult | 70 | 9 s | — | keep: unlocks Falaath |
+| Falaath Village + Among the Faithful | 350 + 350 | ~1 min with the new order (was ~3 min) | ~700 | keep: unlocks Havoc, Western Watch, Stolen Supplies |
+| Havoc in the Highlands / Stolen Supplies | 700 / 525 | kills (~19 Stormcallers) | — | keep |
+| The Western Watch + A Last Request | 350 + 530 | ~3.1 min detour | ~285 | keep (and required for To Valanaar) |
+
+**Result:** nothing in segment 02 falls under ~150 XP/min. Speedrun changes are about order, not cuts:
+- **Town stop 2** (Restocking + Prideclaws hand-ins only) is `["balanced"]`. Speedrun carries both to town stop 3 (step `sr-handins-shendar-3`), so it never stops in town only for hand-ins.
+- Fishing is Balanced only. Primary-profession lines are text, not route actions.
+- Rule amendment: a profession quest that is pure XP above the grind rate (Camping 101: Cooking) stays in Speedrun. The "no profession steps except First Aid" rule is about detours and grinding skill, not free XP.
+
+---
+
+## 8. Analyzed sessions
+
+The next analysis skips these (AdventureLog session ids):
+
+| Session | Content |
+|---|---|
+| 20261126-1142-ff01 | playtest 1 (login) |
+| 20261126-1143-ff42 | playtest 1 |
+| 20261126-1219-07ab | playtest 1 (reload) |
+| 20261126-1219-07b4 | playtest 1 (reload) |
+| 20261126-1220-07d3 | playtest 1 (reload) |
+| 20261126-1221-0830 | playtest 1 (reload) |
+| 20261126-1221-083b | playtest 1, levels 1–6 |
+| 20261126-1305-1269 | playtest 1 (end, `/played` ≈ 4970 s) |
+| 20261126-1327-17ae | idle / AFK, no play |
+| 20261126-1348-1c89 | idle / AFK, no play |
+| 20261126-1531-34b5 | playtest 2, levels 6–7 |
+| 20261126-1607-3d06 | login only |
+| 20261126-1814-5af9 | playtest 2, levels 7–9, ends after the A Last Request hand-in (`/played` 14721 s) |

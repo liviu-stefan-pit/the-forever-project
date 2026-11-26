@@ -119,6 +119,8 @@ export interface HookEntry {
   zone?: string;
   levels?: string;
   kind?: string;
+  /** Pin the hook to this step id (e.g. a town's arrival step) instead of the first step in zone + level range. */
+  stepId?: string;
   professionHook: ProfessionHook & Record<string, unknown>;
 }
 
@@ -267,7 +269,8 @@ function hookKey(h: ProfessionHook): string {
 
 /**
  * Attach each hook to the first step (per pack) whose zone matches the hook zone (or, failing that, the hook
- * NPC's zone, e.g. writ turn-ins) and whose estimated level lies in the hook level range. No duplicates.
+ * NPC's zone, e.g. writ turn-ins) and whose estimated level lies in the hook level range. A hook with `stepId`
+ * attaches to that step only. No duplicates.
  * Hooks with an NPC with coordinates also add an NPC pin; hooks without one get no pin. Verified flags are kept.
  */
 export function joinHooks(
@@ -282,9 +285,14 @@ export function joinHooks(
     const hook = cleanHook(h.professionHook);
     const zones = [h.zone, hook.npc?.zone].filter((z): z is string => !!z);
     let idx = -1;
-    for (const z of zones) {
-      idx = steps.findIndex((s, i) => stepZone(s) === z && (!range || (levels[i]! >= range[0] && levels[i]! <= range[1])));
-      if (idx >= 0) break;
+    if (h.stepId) {
+      // A pinned hook joins only its own step; in other packs it is skipped, never placed by level.
+      idx = steps.findIndex((s) => s.id === h.stepId);
+    } else {
+      for (const z of zones) {
+        idx = steps.findIndex((s, i) => stepZone(s) === z && (!range || (levels[i]! >= range[0] && levels[i]! <= range[1])));
+        if (idx >= 0) break;
+      }
     }
     if (idx < 0) continue;
     const step = steps[idx]!;
