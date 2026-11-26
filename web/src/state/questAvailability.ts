@@ -43,15 +43,27 @@ function logEntry(profile: Profile, questId: number): NonNullable<Profile["quest
   return index.get(questId);
 }
 
-/** Unmet prerequisite quest ids (group = all required; single = at least one when non-empty). */
-export function unmetPrereqs(info: QuestInfo, profile: Profile): number[] {
+/**
+ * Unmet prerequisite quest ids (group = all required; single = at least one when non-empty).
+ * `satisfied` widens "done" (e.g. the viewed route turns the quest in earlier). One satisfied member of
+ * `single` satisfies the whole list, so an other-faction alternative is never reported on its own.
+ */
+export function unmetPrereqs(
+  info: QuestInfo,
+  profile: Profile,
+  satisfied: (id: number) => boolean = () => false,
+  quests?: QuestLookup,
+): number[] {
+  const ok = (id: number) => profile.quests[id] === "done" || satisfied(id);
   const missing: number[] = [];
   for (const id of info.pre.group) {
-    if (profile.quests[id] !== "done") missing.push(id);
+    if (!ok(id)) missing.push(id);
   }
-  if (info.pre.single.length > 0 && !info.pre.single.some((id) => profile.quests[id] === "done")) {
-    for (const id of info.pre.single) {
-      if (profile.quests[id] !== "done" && !missing.includes(id)) missing.push(id);
+  if (info.pre.single.length > 0 && !info.pre.single.some(ok)) {
+    // Name the alternatives we know; a list of only unknown ids is still reported as is.
+    const known = quests ? info.pre.single.filter((id) => lookupQuest(quests, id)) : [];
+    for (const id of known.length ? known : info.pre.single) {
+      if (!missing.includes(id)) missing.push(id);
     }
   }
   return missing;
