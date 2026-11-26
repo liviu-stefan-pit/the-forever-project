@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Link } from "react-router";
 import type { Profile, ProfessionKey } from "../data/schema";
 import { continentLabel, reactionName, trainerTierLabel } from "../lib/characterReport";
@@ -53,6 +54,7 @@ export function formatZoneCoord(n: number): string {
 /** Plain readout of the game Sync link and the synced fields. Built from the saved profile. */
 export function GameSyncPanel({ profile }: { profile: Profile }) {
   const sync = useGameSyncUi();
+  const onceInput = useRef<HTMLInputElement>(null);
   const options = linkOptions(sync.characters, profile.character);
   const matched = sync.matched;
   const skills = Object.entries(profile.skills ?? {}) as [ProfessionKey, { cur: number; max: number }][];
@@ -133,6 +135,26 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
             >
               {sync.fileName ? "Change file" : "Choose file"}
             </button>
+            <button
+              type="button"
+              className="press inline-flex min-h-touch items-center rounded-sm border border-stroke px-3 text-sm text-muted hover:border-bronze-400 hover:text-ink"
+              title="Read GuideWebExport.lua one time without remembering it. Works when Chrome refuses the folder (WoW under Program Files)."
+              onClick={() => onceInput.current?.click()}
+            >
+              Open once
+            </button>
+            <input
+              ref={onceInput}
+              type="file"
+              accept=".lua,text/plain"
+              className="hidden"
+              data-testid="game-sync-once-input"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                e.target.value = "";
+                if (file) sync.readFileOnce(file);
+              }}
+            />
             {sync.fileName && (
               <button
                 type="button"
@@ -144,6 +166,13 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
             )}
           </div>
           {!sync.fileName && <p className="mt-1 break-all text-xs text-muted">{GAME_FILE_PATH_HINT}</p>}
+          {!sync.fileName && (
+            <p className="mt-1 text-xs text-muted" data-testid="game-sync-program-files">
+              WoW installed under <strong className="text-ink">Program Files</strong>? Chrome refuses to remember files there and says the
+              folder &ldquo;contains system files&rdquo;. Use <strong className="text-ink">Open once</strong> instead, or move World of Warcraft
+              to a folder like <code>C:\Games</code> to keep one-click Sync.
+            </p>
+          )}
         </div>
       )}
 

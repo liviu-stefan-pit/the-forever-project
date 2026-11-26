@@ -20,6 +20,9 @@ export const GAME_FILE_REMINDER =
 export const GAME_SYNC_UNAVAILABLE =
   "One-click sync needs desktop Chrome or Edge. Import GuideWebExport.lua on the Profile page instead.";
 
+export const GAME_FILE_BLOCKED =
+  "No file chosen. If Chrome said the folder contains system files (WoW installed under Program Files), use Open once under Game sync on the Profile page, or move World of Warcraft out of Program Files.";
+
 export type GameSyncPhase =
   | { phase: "idle" }
   | { phase: "syncing" }
@@ -33,6 +36,11 @@ export type GameSyncPhase =
   | { phase: "file-missing" }
   /** The chosen file could not be read or parsed. */
   | { phase: "file-error" }
+  /**
+   * The picker closed without a file. Chrome also lands here when it refuses a protected folder
+   * (WoW installed under Program Files): "can't open files in this folder because it contains system files".
+   */
+  | { phase: "picker-closed" }
   | { phase: "result"; result: GameSyncResult; exportedAtText?: string };
 
 /**
@@ -49,6 +57,8 @@ export interface GameSyncUi {
   chooseFile: () => void;
   /** Forget the remembered file ("file" mode). */
   forgetFile: () => void;
+  /** Sync from a file picked with a plain file input. Works in folders Chrome will not remember (Program Files). */
+  readFileOnce: (file: File) => void;
   /**
    * False without File System Access support (Firefox, Safari, mobile). The Sync button and panel hide then; importing
    * GuideWebExport.lua on the Profile page still works.
@@ -110,6 +120,7 @@ export function gameSyncStatusText(state: GameSyncPhase): string {
   if (state.phase === "needs-permission") return "Click Sync to let the browser read GuideWebExport.lua again.";
   if (state.phase === "file-missing") return "GuideWebExport.lua was moved or deleted. Choose it again on the Profile page.";
   if (state.phase === "file-error") return "Could not read GuideWebExport.lua. Type /reload in game and try again.";
+  if (state.phase === "picker-closed") return GAME_FILE_BLOCKED;
 
   const { result } = state;
   const time = state.exportedAtText ?? (result.exportedAt != null ? formatExportedAt(result.exportedAt) : undefined);
@@ -179,29 +190,29 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const activeProfileIdRef = useRef(activeProfileId);
   activeProfileIdRef.current = activeProfileId;
 
+  const applyText = useCallback((text: string, mtimeMs: number | null, current: () => boolean) => {
+    try {
+      const exp = parseGuideWebExport(text);
+      if (!current()) return;
+      setCharacters(exp.characters.map(linkFor));
+      const result = syncFromGameRef.current(exp);
+      if (current()) {
+        setMatched(result.ok ? result.character : null);
+        setPhase({ phase: "result", result });
+      }
+    } catch {
+      if (current()) setPhase({ phase: "file-error" });
+    }
+    if (!current()) return;
+    // The mtime read before the download: a newer write since then makes the poller sync again.
+    mtimeRef.current = mtimeMs;
+    baselineRef.current = true;
+  }, []);
+
   const applyFile = useCallback(async () => {
     const startedProfileId = activeProfileIdRef.current;
     const current = () => alive.current && gameSyncApplyIsCurrent(startedProfileId, activeProfileIdRef.current);
     if (current()) setPhase({ phase: "syncing" });
-
-    const applyText = (text: string, mtimeMs: number | null, errorPhase: GameSyncPhase) => {
-      try {
-        const exp = parseGuideWebExport(text);
-        if (!current()) return;
-        setCharacters(exp.characters.map(linkFor));
-        const result = syncFromGameRef.current(exp);
-        if (current()) {
-          setMatched(result.ok ? result.character : null);
-          setPhase({ phase: "result", result });
-        }
-      } catch {
-        if (current()) setPhase(errorPhase);
-      }
-      if (!current()) return;
-      // The mtime read before the download: a newer write since then makes the poller sync again.
-      mtimeRef.current = mtimeMs;
-      baselineRef.current = true;
-    };
 
     if (modeRef.current === "none") {
       setPhase({ phase: "unavailable" });
@@ -226,7 +237,7 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     const read = await readGameFileHandle(handle, false);
     if (!current()) return;
     if (read.kind === "file") {
-      applyText(read.text, read.mtimeMs, { phase: "file-error" });
+      applyText(read.text, read.mtimeMs, current);
       return;
     }
     mtimeRef.current = null;
@@ -234,7 +245,7 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
     else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
     else setPhase({ phase: "file-error" });
-  }, []);
+  }, [applyText]);
 
   const runSync = useCallback(async () => {
     if (inflight.current) {
@@ -320,7 +331,11 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const chooseFile = useCallback(() => {
     // Straight from the click: the picker needs the user gesture.
     void pickGameFile().then(async (handle) => {
-      if (!handle || !alive.current) return;
+      if (!alive.current) return;
+      if (!handle) {
+        if (!handleRef.current) setPhase({ phase: "picker-closed" });
+        return;
+      }
       handleRef.current = handle;
       handleLoadedRef.current = true;
       mtimeRef.current = null;
@@ -329,6 +344,19 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
       void runSyncRef.current();
     });
   }, []);
+
+  const readFileOnce = useCallback(
+    (file: File) => {
+      const startedProfileId = activeProfileIdRef.current;
+      const current = () => alive.current && gameSyncApplyIsCurrent(startedProfileId, activeProfileIdRef.current);
+      setPhase({ phase: "syncing" });
+      file.text().then(
+        (text) => applyText(text, file.lastModified, current),
+        () => current() && setPhase({ phase: "file-error" }),
+      );
+    },
+    [applyText],
+  );
 
   const forgetFile = useCallback(() => {
     handleRef.current = null;
@@ -369,6 +397,7 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     fileName,
     chooseFile,
     forgetFile,
+    readFileOnce,
     available: mode !== "none",
     busy,
     statusText,
