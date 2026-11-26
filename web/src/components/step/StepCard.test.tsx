@@ -159,7 +159,7 @@ describe("StepCard", () => {
     };
     const html = render(step, { route: "balanced", dungeons: false });
     expect(html).toContain('data-testid="step-xp"');
-    expect(html).toContain("sm:absolute sm:right-2 sm:top-2");
+    expect(html).not.toContain("sm:absolute");
     expect(html).toContain("+1,240 XP");
     expect(html).toContain("Turn-ins +800 XP");
     expect(html).toContain("Kills/grind +440 XP");
@@ -227,53 +227,117 @@ describe("StepCard", () => {
     expect(html).toContain("disabled");
   });
 
-  describe("area layout", () => {
+  describe("lines and waypoints", () => {
     const goto = (x: number, y: number) => ({ type: "goto" as const, at: { mapId: 1, x, y, zone: "Zephras Isle", exact: true } });
-    const areaStep: Step = {
-      ...base,
-      text: [
-        { segments: [{ t: "West grove: kill Scrawny Ursera until you have 6 Claws." }] },
-        { segments: [{ t: "Den: kill 8 Ursera Scavengers." }] },
-      ],
-      actions: [
-        goto(39.8, 27.6),
-        { type: "complete", questId: 1, objective: 1, label: "Scrawny Ursera Claws" },
-        goto(37.8, 26.1),
-        { type: "complete", questId: 2, objective: 1, label: "Ursera Scavengers" },
-      ],
-    };
 
-    it("puts each waypoint on the row of the place it belongs to", () => {
-      const html = render(areaStep);
-      expect(html.match(/data-testid="step-area"/g)?.length).toBe(2);
-      expect(html).toContain(">West grove<");
-      expect(html).toContain("kill Scrawny Ursera until you have 6 Claws.");
-      expect(html).not.toContain("West grove: kill");
-      expect(html.indexOf("West grove")).toBeLessThan(html.indexOf("39.8, 27.6"));
-      expect(html.indexOf("39.8, 27.6")).toBeLessThan(html.indexOf(">Den<"));
-    });
-
-    it("drops the objective chips that repeat the line when nothing is synced", () => {
-      const html = render(areaStep);
-      expect(html).not.toContain(">Complete<");
-      expect(html).not.toContain("step-objectives");
-    });
-
-    it("shows quest hand-ins as chips instead of repeating the line", () => {
+    it("puts each waypoint on the line that names its quest, with the place in bold", () => {
       const html = render({
         ...base,
-        text: [{ segments: [{ t: "Rorian the Dayseeker: turn in Return to Rorian." }] }],
-        actions: [goto(42, 23.5), { type: "turnin", questId: 5, label: "Return to Rorian" }],
+        text: [
+          { segments: [{ t: "Town stop 4 (level 6). Last stop:" }] },
+          { segments: [{ t: "Valreaa Valewind: turn in Aggressive Encroachment." }] },
+          { segments: [{ t: "Aetheen of the Gales: turn in Foul Matriarch, accept The Adventurer." }] },
+          { segments: [{ t: "Train your level 6 spells." }] },
+        ],
+        actions: [
+          goto(42.4, 25.2),
+          { type: "turnin", questId: 1, label: "Aggressive Encroachment" },
+          goto(42.8, 23.7),
+          { type: "turnin", questId: 2, label: "Foul Matriarch" },
+          { type: "accept", questId: 3, label: "The Adventurer" },
+          { type: "trainer", label: "Visit your class trainer" },
+        ],
       });
-      expect(html).toContain(">Rorian the Dayseeker<");
-      expect(html).not.toContain("turn in Return to Rorian.");
-      expect(html).toContain("Return to Rorian");
+      const lines = html.split('data-testid="step-line"').slice(1);
+      expect(lines).toHaveLength(4);
+      expect(lines[1]).toContain(">Valreaa Valewind: <");
+      expect(lines[1]).toContain("42.4, 25.2");
+      expect(lines[2]).toContain("42.8, 23.7");
+      expect(lines[0]).not.toContain("step-way");
+      expect(lines[3]).not.toContain("step-way");
+      // quests are highlighted in the sentence, not repeated as chips
+      expect(html.match(/data-testid="mark-turnin"/g)?.length).toBe(2);
+      expect(html.match(/data-testid="mark-accept"/g)?.length).toBe(1);
+      expect(html).not.toContain(">Turn in<");
+      // "Train your level 6 spells" already says it, so no trainer chip
+      expect(html).not.toContain("Visit your class trainer");
     });
 
-    it("falls back to the plain layout when lines and waypoints don't pair up", () => {
-      const html = render({ ...areaStep, actions: areaStep.actions.slice(0, 2) });
-      expect(html).not.toContain("step-area");
-      expect(html).toContain("West grove: kill");
+    it("keeps a chip for an action the text never mentions", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Pick up the crate by the well." }] }],
+        actions: [{ type: "trainer", label: "Visit your class trainer" }],
+      });
+      expect(html).toContain("Visit your class trainer");
+    });
+
+    it("puts a single waypoint on the line without a place label", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Hand The Adventurer over to Raan Wildwind." }] }],
+        actions: [goto(41.7, 44.8), { type: "turnin", questId: 3, label: "The Adventurer" }],
+      });
+      expect(html.match(/data-testid="step-way"/g)?.length).toBe(1);
+      expect(html).toContain("mark-turnin");
+    });
+
+    it("doesn't read a quest name with a colon as a place", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Accept WANTED: Vulgara the Insatiable." }] }],
+        actions: [goto(43.4, 45.8), { type: "accept", questId: 4, label: "WANTED: Vulgara the Insatiable" }],
+      });
+      expect(html).not.toContain("<strong");
+      expect(html).toContain("mark-accept");
+    });
+
+    it("keeps the place when the NPC and the quest share a name", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Aetheen of the Gales: turn in Aetheen of the Gales." }] }],
+        actions: [goto(42.8, 23.7), { type: "turnin", questId: 5, label: "Aetheen of the Gales" }],
+      });
+      expect(html).toContain(">Aetheen of the Gales: <");
+      expect(html).toContain("mark-turnin");
+    });
+
+    it("gives each NPC line its own waypoint when a quest name shows up on two lines", () => {
+      const html = render({
+        ...base,
+        text: [
+          { segments: [{ t: "Rorian the Dayseeker: turn in Return to Rorian, accept Aetheen of the Gales." }] },
+          { segments: [{ t: "Aetheen of the Gales: turn in Aetheen of the Gales, accept Foul Matriarch." }] },
+        ],
+        actions: [
+          goto(42.0, 23.5),
+          { type: "turnin", questId: 7, label: "Return to Rorian" },
+          { type: "accept", questId: 8, label: "Aetheen of the Gales" },
+          goto(42.8, 23.7),
+          { type: "turnin", questId: 8, label: "Aetheen of the Gales" },
+          { type: "accept", questId: 9, label: "Foul Matriarch" },
+        ],
+      });
+      const lines = html.split('data-testid="step-line"').slice(1);
+      expect(lines[0]).toContain("42.0, 23.5");
+      expect(lines[0]).not.toContain("42.8, 23.7");
+      expect(lines[1]).toContain("42.8, 23.7");
+      expect(lines[1]).toContain(">Aetheen of the Gales: <");
+    });
+
+    it("hides objective chips the text already says when nothing is synced", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Den: kill 8 Ursera Scavengers and Urs'anah, and take her head." }] }],
+        actions: [
+          goto(37.8, 26.1),
+          { type: "complete", questId: 6, objective: 1, label: "Ursera Scavengers" },
+          { type: "complete", questId: 6, objective: 2, label: "Head of Urs'anah" },
+        ],
+      });
+      expect(html).not.toContain(">Complete<");
+      expect(html).not.toContain("Head of Urs'anah");
+      expect(html).not.toContain("step-count");
     });
   });
 
