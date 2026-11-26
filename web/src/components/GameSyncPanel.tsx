@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router";
 import type { Profile, ProfessionKey } from "../data/schema";
 import { continentLabel, reactionName, trainerTierLabel } from "../lib/characterReport";
@@ -55,6 +55,7 @@ export function formatZoneCoord(n: number): string {
 export function GameSyncPanel({ profile }: { profile: Profile }) {
   const sync = useGameSyncUi();
   const onceInput = useRef<HTMLInputElement>(null);
+  const [dragging, setDragging] = useState(false);
   const options = linkOptions(sync.characters, profile.character);
   const matched = sync.matched;
   const skills = Object.entries(profile.skills ?? {}) as [ProfessionKey, { cur: number; max: number }][];
@@ -116,8 +117,42 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
       <>
       <p className="mt-1 text-sm text-muted">{GAME_FILE_REMINDER}</p>
 
+      {sync.mode === "server" && (
+        <div className="mt-3 rounded-sm border border-stroke/70 bg-canvas/40 px-3 py-2 text-sm" data-testid="game-sync-server">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="min-w-0 flex-1 text-ink">
+              {sync.serverPath ? (
+                <>
+                  The local app reads <strong className="break-all">{sync.serverPath}</strong> straight from your WoW folder. Nothing to
+                  choose; Sync picks up every /reload.
+                </>
+              ) : (
+                "The local app reads GuideWebExport.lua straight from your WoW folder."
+              )}
+            </span>
+          </div>
+        </div>
+      )}
+
       {sync.mode === "file" && (
-        <div className="mt-3 rounded-sm border border-stroke/70 bg-canvas/40 px-3 py-2 text-sm" data-testid="game-sync-file">
+        <div
+          className={`mt-3 rounded-sm border px-3 py-2 text-sm transition ${
+            dragging ? "border-bronze-400 bg-bronze-500/10" : "border-stroke/70 bg-canvas/40"
+          }`}
+          data-testid="game-sync-file"
+          onDragOver={(e) => {
+            if (!Array.from(e.dataTransfer.types).includes("Files")) return;
+            e.preventDefault();
+            e.dataTransfer.dropEffect = "copy";
+            setDragging(true);
+          }}
+          onDragLeave={() => setDragging(false)}
+          onDrop={(e) => {
+            e.preventDefault();
+            setDragging(false);
+            sync.dropFile(e.dataTransfer);
+          }}
+        >
           <div className="flex flex-wrap items-center gap-2">
             <span className="min-w-0 flex-1 text-ink">
               {sync.fileName ? (
@@ -125,7 +160,10 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
                   Reading <strong>{sync.fileName}</strong> from your PC. It stays on your PC; nothing is uploaded.
                 </>
               ) : (
-                "Choose GuideWebExport.lua once. This browser remembers it, so later Syncs need one click."
+                <>
+                  <strong>Drag GuideWebExport.lua here</strong> from File Explorer, or choose it. This browser remembers it, so later
+                  Syncs need one click.
+                </>
               )}
             </span>
             <button
@@ -138,7 +176,7 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
             <button
               type="button"
               className="press inline-flex min-h-touch items-center rounded-sm border border-stroke px-3 text-sm text-muted hover:border-bronze-400 hover:text-ink"
-              title="Read GuideWebExport.lua one time without remembering it. Works when Chrome refuses the folder (WoW under Program Files)."
+              title="Read GuideWebExport.lua one time without remembering it."
               onClick={() => onceInput.current?.click()}
             >
               Open once
@@ -168,9 +206,9 @@ export function GameSyncPanel({ profile }: { profile: Profile }) {
           {!sync.fileName && <p className="mt-1 break-all text-xs text-muted">{GAME_FILE_PATH_HINT}</p>}
           {!sync.fileName && (
             <p className="mt-1 text-xs text-muted" data-testid="game-sync-program-files">
-              WoW installed under <strong className="text-ink">Program Files</strong>? Chrome refuses to remember files there and says the
-              folder &ldquo;contains system files&rdquo;. Use <strong className="text-ink">Open once</strong> instead, or move World of Warcraft
-              to a folder like <code>C:\Games</code> to keep one-click Sync.
+              WoW installed under <strong className="text-ink">Program Files</strong>? Chrome&rsquo;s file picker refuses that folder and says it
+              &ldquo;contains system files&rdquo;. Open the SavedVariables folder in File Explorer and drag GuideWebExport.lua onto this box
+              instead: Chrome remembers a dropped file.
             </p>
           )}
         </div>

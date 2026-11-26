@@ -39,13 +39,25 @@ type ScrollMode = "center" | "nearest";
 
 const EMPTY_ADDED: readonly number[] = [];
 
-/** Filter mismatches stay hidden. A deep link or "show" reveal can still open other hidden reasons. */
+/**
+ * A "show" reveal opens any hidden step, including one for another class or race, so the
+ * player can read it. A deep link alone never opens a filter mismatch.
+ */
 export function stepIsShown(
   visibility: StepVisibility,
   opts: { revealed: boolean; deepLinked: boolean },
 ): boolean {
-  if (!visibility.visible && visibility.reason === "filter") return false;
+  if (!visibility.visible && visibility.reason === "filter") return opts.revealed;
   return visibility.visible || opts.revealed || opts.deepLinked;
+}
+
+/** Shown and part of the player's route: a revealed step for another character is read-only. */
+export function stepIsRouted(
+  visibility: StepVisibility,
+  opts: { revealed: boolean; deepLinked: boolean },
+): boolean {
+  if (!visibility.visible && visibility.reason === "filter") return false;
+  return stepIsShown(visibility, opts);
 }
 
 function prefersReducedMotion() {
@@ -159,7 +171,12 @@ export function GuideReader({
     (s: Step) => stepIsShown(vis.step(s), { revealed: revealed.has(s.id), deepLinked: s.id === deepStep }),
     [vis, revealed, deepStep],
   );
-  const order = useMemo(() => guide.steps.filter(isShown).map((s) => s.id), [guide, isShown]);
+  // Navigation, the map and the step counter skip revealed steps meant for another character.
+  const isRouted = useCallback(
+    (s: Step) => stepIsRouted(vis.step(s), { revealed: revealed.has(s.id), deepLinked: s.id === deepStep }),
+    [vis, revealed, deepStep],
+  );
+  const order = useMemo(() => guide.steps.filter(isRouted).map((s) => s.id), [guide, isRouted]);
 
   const allStepIds = useMemo(() => guide.steps.map((s) => s.id), [guide]);
   const mappedDeep = useMemo(
@@ -418,18 +435,18 @@ export function GuideReader({
         ? sectionStepPoints({
             steps: panelBlock.steps,
             mapId: panelMapId,
-            isShown,
+            isShown: isRouted,
             isDone,
             omit: (s) => !countsStep(s),
             currentId,
             lineVisible: vis.line,
           })
         : undefined,
-    [panelBlock, panelMapId, isShown, currentId, vis.line, isDone, countsStep],
+    [panelBlock, panelMapId, isRouted, currentId, vis.line, isDone, countsStep],
   );
   const panelRoute = useMemo(
-    () => (panelBlock && panelMapId !== undefined ? visibleRoutePolyline(panelBlock.steps, panelMapId, isShown, vis.line) : undefined),
-    [panelBlock, panelMapId, isShown, vis.line],
+    () => (panelBlock && panelMapId !== undefined ? visibleRoutePolyline(panelBlock.steps, panelMapId, isRouted, vis.line) : undefined),
+    [panelBlock, panelMapId, isRouted, vis.line],
   );
   const panel = (
     <SidePanel

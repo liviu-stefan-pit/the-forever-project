@@ -118,10 +118,10 @@ export function AddonsPage() {
           </li>
         </ol>
         <p className="rounded-sm border border-bronze-500/40 bg-canvas/40 px-3 py-2 text-sm">
-          <strong>WoW under Program Files?</strong> Chrome and Edge refuse to remember files in that folder for one-click Sync and show
-          &ldquo;can&apos;t open files in this folder because it contains system files&rdquo;. Use <strong>Open once</strong> under Game sync,
-          or <strong>Import GuideWebExport.lua</strong>, which read the file each time you pick it. To keep one-click Sync, move World of
-          Warcraft to a folder outside Program Files, such as <Code>C:\Games\World of Warcraft</Code>.
+          <strong>WoW under Program Files?</strong> Chrome and Edge refuse to pick files in that folder and show
+          &ldquo;can&apos;t open files in this folder because it contains system files&rdquo;. Open the <Code>SavedVariables</Code> folder in
+          File Explorer and drag <Code>GuideWebExport.lua</Code> onto the Game sync box on the Profile page instead: Chrome remembers a
+          dropped file, so one-click Sync keeps working.
         </p>
       </Addon>
 

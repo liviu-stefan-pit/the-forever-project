@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { fileHandleSupported, gameFileHandleMtime, readGameFileHandle, type GameFileHandle } from "./gameFileHandle";
+import { fileHandleSupported, gameFileHandleMtime, handleFromDrop, readGameFileHandle, type GameFileHandle } from "./gameFileHandle";
 
 function handle(opts: {
   permission?: "granted" | "prompt" | "denied";
@@ -58,5 +58,20 @@ describe("gameFileHandleMtime", () => {
 describe("fileHandleSupported", () => {
   it("is false in Node (no picker)", () => {
     expect(fileHandleSupported()).toBe(false);
+  });
+});
+
+describe("handleFromDrop", () => {
+  it("returns the dropped file's handle", async () => {
+    const h = handle({});
+    const items = [{ kind: "string" }, { kind: "file", getAsFileSystemHandle: async () => h }];
+    expect(await handleFromDrop(items)).toBe(h);
+  });
+
+  it("resolves null without handle support, for a directory, or on a rejection", async () => {
+    expect(await handleFromDrop([{ kind: "file" }])).toBeNull();
+    expect(await handleFromDrop([{ kind: "file", getAsFileSystemHandle: async () => ({ kind: "directory" }) }])).toBeNull();
+    expect(await handleFromDrop([{ kind: "file", getAsFileSystemHandle: () => Promise.reject(new Error("no")) }])).toBeNull();
+    expect(await handleFromDrop(null)).toBeNull();
   });
 });

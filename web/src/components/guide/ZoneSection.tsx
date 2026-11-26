@@ -179,6 +179,7 @@ function ZoneSectionImpl(p: ZoneSectionProps) {
           companion={companion}
           isCurrent={s.id === currentId}
           isDone={isDone(s.id)}
+          preview={vis.step(s).reason === "filter"}
           until={!companion && s.tags.completeWith ? resolveCompleteWith(s, guide.steps) : undefined}
           questName={p.questName}
           lineVisible={p.lineVisible}

@@ -399,6 +399,19 @@ describe("createProfileEngine", () => {
     expect(e.countDone("horde-20-40-04-needles")).toBe(1);
   });
 
+  it("syncFromGame skips an export saved before the character loaded (level 1, 0/0 XP)", () => {
+    const e = memoryEngine();
+    e.create({ name: "Nero Clover", race: "Troll", cls: "Shaman", level: 1 });
+    const good = { key: "Nero Clover-", name: "Nero Clover", level: 6, xp: 44, xpMax: 3600, money: 442, completedQuests: [788], schemaVersion: 4 };
+    expect(e.syncFromGame({ characters: [good] }).ok).toBe(true);
+    expect(e.active()!.level).toBe(6);
+
+    const broken = { ...good, level: 1, xp: 0, xpMax: 0, money: 0, completedQuests: [] };
+    expect(e.syncFromGame({ characters: [broken] })).toMatchObject({ ok: false, reason: "stale-export", exportLevel: 1, profileLevel: 6 });
+    expect(e.active()!.level).toBe(6);
+    expect(e.active()!.money).toBe(442);
+  });
+
   it("syncFromGame adds completed quests, updates level, and leaves race, class, and absent progress alone", () => {
     const e = memoryEngine();
     e.create({ name: "Thrall", race: "Orc", cls: "Warrior", level: 5 });

@@ -99,6 +99,35 @@ export async function pickGameFile(): Promise<GameFileHandle | null> {
   }
 }
 
+interface DropItem {
+  kind: string;
+  getAsFileSystemHandle?: () => Promise<unknown>;
+}
+
+/**
+ * The file handle of a dragged-in file, for remembering it like a picked one. Chrome's picker refuses
+ * Program Files ("contains system files"); a dropped file is an explicit choice and still gives a
+ * handle there. Must be called synchronously inside the drop event: the items empty afterwards.
+ * Resolves null when the browser gives no handle (then read the dropped File once).
+ */
+export function handleFromDrop(items: ArrayLike<DropItem> | null | undefined): Promise<GameFileHandle | null> {
+  const item = items ? Array.from(items).find((i) => i.kind === "file") : undefined;
+  if (!item?.getAsFileSystemHandle) return Promise.resolve(null);
+  let pending: Promise<unknown>;
+  try {
+    pending = item.getAsFileSystemHandle();
+  } catch {
+    return Promise.resolve(null);
+  }
+  return pending.then(
+    (h) => {
+      const handle = h as GameFileHandle | null;
+      return handle && handle.kind === "file" && typeof handle.getFile === "function" ? handle : null;
+    },
+    () => null,
+  );
+}
+
 /* ---------- IndexedDB persistence of the handle ---------- */
 
 const DB_NAME = "forever-game-file";

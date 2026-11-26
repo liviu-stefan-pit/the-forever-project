@@ -73,6 +73,27 @@ profile. While the tab is visible it notices a newer file about every 8 seconds.
 restart Chrome may ask again: the status says "Click Sync…", and one click allows it. **Forget**
 drops the handle.
 
+**WoW under Program Files.** Chrome's file picker refuses anything under Program Files ("can't open
+files in this folder because it contains system files"), which is where WoW installs by default.
+Open the `SavedVariables` folder in File Explorer and drag `GuideWebExport.lua` onto the **Game sync**
+box instead: a dropped file gives the same remembered handle. **Open once** reads the file one time
+without remembering it.
+
+**Local app (`npm run dev`, `run-app.bat`, `vite preview`).** The local server reads the file itself,
+so nothing needs choosing, Program Files included. It answers `GET /api/game-sync/status` and
+`GET /api/game-sync` on localhost only and picks the newest
+`WTF\Account\*\SavedVariables\GuideWebExport.lua` under
+`C:\Program Files (x86)\World of Warcraft\_forever_`. Override with `wow_root` or
+`gwe_saved_variables` in `config.local.json`, or the `WOW_FOREVER_ROOT` environment variable. There is no
+file to choose on localhost (Chrome's picker would refuse Program Files anyway); use those settings to
+read another account.
+
+**Incomplete snapshots.** While the world is loading, or already tearing down at logout, the client
+can report an empty player (level 1, 0/0 XP, no money, no completed quests). The addon never stores
+such a snapshot over a saved one for the same character: no XP data, a lower level, or zero completed
+quests where the last export had some, and it keeps the previous export (`/gwe` says so). The site
+also skips an export with no XP data whose level is below the profile's, and says to `/reload`.
+
 Firefox, Safari and mobile browsers have no File System Access API: the Sync button is hidden there
 and **Import GuideWebExport.lua** on the Profile page does the same one-off.
 
