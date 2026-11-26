@@ -20,7 +20,7 @@ export const PRIVACY_URL = `${REPO_URL}/blob/main/PRIVACY.md`;
 
 /** Who runs the site (GDPR controller) and the contact for privacy, takedown and AdventureLog zips. */
 export const MAINTAINER_NAME = "Liviu-Stefan Petroaia";
-export const CONTACT_EMAIL = "liviustefan.petroaia@gmail.com";
+export const CONTACT_EMAIL = "contact@theforeverproject.app";
 
 /** Addon downloads: the release workflow keeps these "latest" tags pointing at the newest zip. */
 export const GUIDEWEBEXPORT_ZIP_URL = `${RELEASES_URL}/download/guidewebexport-latest/GuideWebExport.zip`;

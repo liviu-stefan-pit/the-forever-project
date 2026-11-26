@@ -11,7 +11,7 @@ written for this project from open data (the GPL-3.0 QuestieDB quest database) a
 > often, and some steps are still marked unverified. Expect mistakes, and please
 > [report them](https://github.com/liviu-stefan-pit/the-forever-project/issues/new/choose).
 
-**Live site:** `https://<your-site>.pages.dev` <!-- TODO(maintainer): replace with the real Cloudflare Pages URL -->
+**Live site:** https://theforeverproject.app
 
 ## Features
 
@@ -184,7 +184,7 @@ every change before it is published. See [AI_USAGE.md](AI_USAGE.md).
 ## Privacy
 
 No accounts and no server-side database: your profiles stay in your browser. See [PRIVACY.md](PRIVACY.md).
-Privacy and takedown contact: liviustefan.petroaia@gmail.com.
+Privacy and takedown contact: contact@theforeverproject.app.
 
 ## Disclaimer
 

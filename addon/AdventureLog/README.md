@@ -59,7 +59,7 @@ Close the game first. If you leave it open, the script still writes the adventur
    - a raw copy of the SavedVariables file the game wrote
 
 3. It also makes a zip with the same name, next to that folder, so you can email it to
-   liviustefan.petroaia@gmail.com if you want to help improve the guides (see [Privacy](#privacy)).
+   contact@theforeverproject.app if you want to help improve the guides (see [Privacy](#privacy)).
 
 The in-game data is cleared only after the backup, the session files, and the zip all check out, and only if `Wow.exe` is not running. If the game is open, the data is left as it is.
 
@@ -104,7 +104,7 @@ your PC. Nothing is uploaded anywhere; sharing the zip is your choice.
 (real clock time and `/played`); quests, experience, loot, gold, kills, deaths, flights and group size. Loot and
 money messages about other players are not kept: the log records only that one happened, never their name.
 
-**If you email it** to liviustefan.petroaia@gmail.com: the zip is used only to check and improve the guide routes. It is not
+**If you email it** to contact@theforeverproject.app: the zip is used only to check and improve the guide routes. It is not
 published, and your character name and realm do not appear in anything that goes into the project. The zip is
 deleted when that work is done, and at the latest 12 months after it arrives. Ask at the same address and it is
 deleted sooner. See [PRIVACY.md](https://github.com/liviu-stefan-pit/the-forever-project/blob/main/PRIVACY.md).

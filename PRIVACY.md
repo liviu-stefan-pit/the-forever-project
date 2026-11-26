@@ -1,12 +1,12 @@
 # Privacy
 
-_Last updated: 25 November 2026_
+_Last updated: 26 November 2026_
 
 ## Who is responsible
 
 The Forever Project is run by its maintainer, **Liviu-Stefan Petroaia**, who is the controller for the little
 personal data described here (EU General Data Protection Regulation, GDPR). Contact for anything about privacy,
-including the rights below: **liviustefan.petroaia@gmail.com**.
+including the rights below: **contact@theforeverproject.app**.
 
 The project has no accounts, no ads, no tracking cookies, and does not sell or share personal data.
 
@@ -56,7 +56,7 @@ Sharing those files is always your choice.
 
 ## AdventureLog zips you email to the project
 
-If you choose to email an AdventureLog zip to liviustefan.petroaia@gmail.com:
+If you choose to email an AdventureLog zip to contact@theforeverproject.app:
 
 - **What:** the contents above (character name, realm, race, class, faction, positions and times, quests,
   loot, gold, kills, deaths), plus your email address and anything you write in the email.
@@ -65,14 +65,15 @@ If you choose to email an AdventureLog zip to liviustefan.petroaia@gmail.com:
 - **Who sees it:** only the maintainer, who may use the AI coding assistants described in
   [AI_USAGE.md](AI_USAGE.md) (Anthropic's Claude) to compare a log with the routes. Your character name and realm are not published or added to the project;
   only route facts (for example, "quest 840 was turned in at these coordinates") are.
-- **Where:** the email is stored by Google (Gmail), the maintainer's email provider.
+- **Where:** mail to the project address is forwarded by Cloudflare (Email Routing) to the maintainer's
+  Gmail inbox, where it is stored by Google.
 - **How long:** deleted when the route work it was for is done, and at the latest 12 months after it arrives.
 
 ## Your rights
 
 You can ask for access to, correction or deletion of personal data the project holds about you, ask for its
 processing to be restricted, object to it, or ask for a copy in a portable format. Email
-liviustefan.petroaia@gmail.com. For the website itself the project holds nothing about you; your browser
+contact@theforeverproject.app. For the website itself the project holds nothing about you; your browser
 data is on your device and you can delete it yourself. You also have the right to complain to a data
 protection authority, for example the one in the EU country where you live.
 

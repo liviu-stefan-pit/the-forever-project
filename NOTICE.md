@@ -51,5 +51,5 @@ the GPL grants no rights in them. If you fork the project, you need your own bas
 ## Takedown and contact
 
 If you hold rights in something used here and want it changed or removed, email
-liviustefan.petroaia@gmail.com or open an issue at
+contact@theforeverproject.app or open an issue at
 https://github.com/liviu-stefan-pit/the-forever-project/issues. We will respond as quickly as we can.
