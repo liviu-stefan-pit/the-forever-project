@@ -1,5 +1,6 @@
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
+import { MemoryRouter } from "react-router";
 import { describe, expect, it } from "vitest";
 import type { Step } from "../../data/schema";
 import type { TipContext } from "../../lib/stepExtras";
@@ -18,7 +19,7 @@ const base: Step = {
 
 const render = (step: Step, ctx?: TipContext) =>
   renderToStaticMarkup(
-    createElement(StepCard, {
+    createElement(MemoryRouter, null, createElement(StepCard, {
       step,
       isCurrent: false,
       isDone: false,
@@ -26,7 +27,7 @@ const render = (step: Step, ctx?: TipContext) =>
       onToggle: () => {},
       onSelect: () => {},
       tipCtx: ctx,
-    }),
+    })),
   );
 
 describe("StepCard", () => {
@@ -107,9 +108,9 @@ describe("StepCard", () => {
     expect(render(base)).not.toContain("step-unverified");
   });
 
-  it("puts the unverified chip after the objective line", () => {
+  it("puts the unverified chip once, in the top row before the objectives", () => {
     const html = render({ ...base, sources: [], verified: false });
-    expect(html.indexOf("Kill boars")).toBeLessThan(html.indexOf("step-unverified"));
+    expect(html.indexOf("step-unverified")).toBeLessThan(html.indexOf("Kill boars"));
     expect(html.match(/step-unverified/g)?.length).toBe(1);
     const noText = render({ ...base, text: [], sources: [], verified: false });
     expect(noText.match(/step-unverified/g)?.length).toBe(1);
@@ -204,5 +205,84 @@ describe("StepCard", () => {
     expect(html).not.toContain("Mark step 1 not done");
     expect(html).toContain("tick-pop");
     expect(html).toContain("Unavailable");
+  });
+
+  it("shows a revealed step for another class in full, but read-only", () => {
+    const html = renderToStaticMarkup(
+      createElement(StepCard, {
+        step: base,
+        isCurrent: false,
+        isDone: false,
+        lineVisible: () => true,
+        onToggle: () => {},
+        onSelect: () => {},
+        unavailableTag: "Unavailable",
+        preview: true,
+      }),
+    );
+    expect(html).toContain("Kill boars");
+    expect(html).toContain("Not for your character");
+    expect(html).toContain('data-collapsed="false"');
+    expect(html).toContain('data-done="false"');
+    expect(html).toContain("disabled");
+  });
+
+  describe("area layout", () => {
+    const goto = (x: number, y: number) => ({ type: "goto" as const, at: { mapId: 1, x, y, zone: "Zephras Isle", exact: true } });
+    const areaStep: Step = {
+      ...base,
+      text: [
+        { segments: [{ t: "West grove: kill Scrawny Ursera until you have 6 Claws." }] },
+        { segments: [{ t: "Den: kill 8 Ursera Scavengers." }] },
+      ],
+      actions: [
+        goto(39.8, 27.6),
+        { type: "complete", questId: 1, objective: 1, label: "Scrawny Ursera Claws" },
+        goto(37.8, 26.1),
+        { type: "complete", questId: 2, objective: 1, label: "Ursera Scavengers" },
+      ],
+    };
+
+    it("puts each waypoint on the row of the place it belongs to", () => {
+      const html = render(areaStep);
+      expect(html.match(/data-testid="step-area"/g)?.length).toBe(2);
+      expect(html).toContain(">West grove<");
+      expect(html).toContain("kill Scrawny Ursera until you have 6 Claws.");
+      expect(html).not.toContain("West grove: kill");
+      expect(html.indexOf("West grove")).toBeLessThan(html.indexOf("39.8, 27.6"));
+      expect(html.indexOf("39.8, 27.6")).toBeLessThan(html.indexOf(">Den<"));
+    });
+
+    it("drops the objective chips that repeat the line when nothing is synced", () => {
+      const html = render(areaStep);
+      expect(html).not.toContain(">Complete<");
+      expect(html).not.toContain("step-objectives");
+    });
+
+    it("shows quest hand-ins as chips instead of repeating the line", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Rorian the Dayseeker: turn in Return to Rorian." }] }],
+        actions: [goto(42, 23.5), { type: "turnin", questId: 5, label: "Return to Rorian" }],
+      });
+      expect(html).toContain(">Rorian the Dayseeker<");
+      expect(html).not.toContain("turn in Return to Rorian.");
+      expect(html).toContain("Return to Rorian");
+    });
+
+    it("falls back to the plain layout when lines and waypoints don't pair up", () => {
+      const html = render({ ...areaStep, actions: areaStep.actions.slice(0, 2) });
+      expect(html).not.toContain("step-area");
+      expect(html).toContain("West grove: kill");
+    });
+  });
+
+  it("folds a finished step to one line", () => {
+    const html = renderToStaticMarkup(
+      createElement(StepCard, { step: base, isCurrent: false, isDone: true, lineVisible: () => true, onToggle: () => {}, onSelect: () => {} }),
+    );
+    expect(html).toContain('data-testid="step-fold"');
+    expect(html).toContain('data-testid="step-summary"');
+    expect(html).not.toContain("step-areas");
   });
 });

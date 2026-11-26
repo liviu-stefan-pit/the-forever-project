@@ -19,7 +19,8 @@
  *   search-index.json        MiniSearch corpus
  *
  * Rules: quests 79953 and 81951 (low-confidence Forever quests) are stripped from every route with a warning;
- * any step that uses a `forever: true` quest is forced to `verified: false` (warning when it said true).
+ * any step that uses a `forever: true` quest is forced to `verified: false` (warning when it said true),
+ * unless it says `verified: true` and cites a playtest under `research/playtests/`.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, unlinkSync, writeFileSync } from "node:fs";
 import { join, relative, resolve } from "node:path";
@@ -162,7 +163,15 @@ export function stepQuestIds(step: Step): number[] {
   return [...ids];
 }
 
-/** Strip excluded quests and force `verified: false` on steps using Forever quests. Returns new steps. */
+/** A step backed by a recorded in-game run (a file under `research/playtests/`). */
+export function citesPlaytest(s: Step): boolean {
+  return (s.sources ?? []).some((src) => /research\/playtests\//.test(src.url));
+}
+
+/**
+ * Strip excluded quests and force `verified: false` on steps using Forever quests, unless the step is
+ * marked `verified: true` and cites a playtest (it was checked in game). Returns new steps.
+ */
 export function enforceRules(
   packId: string,
   steps: readonly Step[],
@@ -182,7 +191,7 @@ export function enforceRules(
       for (const q of bad) issues.push({ severity: "warn", guide: packId, questId: q, msg: ISSUE_LEFT_OUT });
       continue;
     }
-    if (ids.some(isForever) && s.verified !== false) {
+    if (ids.some(isForever) && s.verified !== false && !(s.verified === true && citesPlaytest(s))) {
       forced++;
       warnings.push(`${packId}: step ${s.id} uses a Forever quest; verified forced to false`);
       issues.push({ severity: "info", guide: packId, step: s.id, msg: ISSUE_UNCHECKED });

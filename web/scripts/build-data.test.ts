@@ -122,14 +122,18 @@ describe("rules", () => {
         step("book2", { actions: [{ type: "turnin", questId: 81951, label: "x" }] }),
         step("new", { actions: [{ type: "accept", questId: 95000, label: "x" }] }),
         step("newAlready", { verified: false, actions: [{ type: "accept", questId: 95000, label: "x" }] }),
+        step("played", { verified: true, sources: [{ url: "https://github.com/o/r/blob/main/research/playtests/plan.md", label: "Playtest" }], actions: [{ type: "accept", questId: 95000, label: "x" }] }),
+        step("claimed", { verified: true, sources: [{ url: "https://www.wowhead.com/quest=95000", label: "Wowhead" }], actions: [{ type: "accept", questId: 95000, label: "x" }] }),
       ],
       (id) => id === 95000 || id === 79953,
       warnings,
     );
-    expect(r.steps.map((s) => s.id)).toEqual(["keep", "new", "newAlready"]);
+    expect(r.steps.map((s) => s.id)).toEqual(["keep", "new", "newAlready", "played", "claimed"]);
     expect(r.steps.find((s) => s.id === "new")!.verified).toBe(false);
-    expect([r.stripped, r.forced]).toEqual([2, 1]);
-    expect(warnings).toHaveLength(3);
+    expect(r.steps.find((s) => s.id === "played")!.verified).toBe(true);
+    expect(r.steps.find((s) => s.id === "claimed")!.verified).toBe(false);
+    expect([r.stripped, r.forced]).toEqual([2, 2]);
+    expect(warnings).toHaveLength(4);
   });
 
   it("estimates step levels from quest levels and xp targets", () => {

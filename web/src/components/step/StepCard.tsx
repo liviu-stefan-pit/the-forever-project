@@ -11,7 +11,9 @@ import { Icon } from "../ui/Icon";
 import { isTouchOnly } from "../../lib/touch";
 import { ActionChips, ConditionBadges, FilterTag } from "./ActionChips";
 import { RichLine } from "./RichLine";
+import { StepAreas } from "./StepAreas";
 import { StopBadge } from "./StopBadge";
+import { stepLayout } from "../../lib/stepAreas";
 
 export interface BlockedBannerProps {
   /** Full banner text from `buildBlockedBanner`. */
@@ -49,6 +51,8 @@ export interface StepCardProps {
   blocked?: BlockedBannerProps;
   /** Display-only: the step looks done and collapsed, without writing the quest complete. */
   unavailableTag?: "Breadcrumb" | "Unavailable";
+  /** Read-only: a step for another class or race that the player opened with Show. */
+  preview?: boolean;
   requirementKind?: "required" | "done" | "blocked" | "not_applicable";
   /** Used to build the blocked banner inside the card so the section does not re-render. */
   stepsForQuest?: StepsForQuest;
@@ -89,6 +93,7 @@ function StepCardImpl({
   tipCtx = NO_CTX,
   blocked: blockedProp,
   unavailableTag: unavailableTagProp,
+  preview = false,
   requirementKind,
   stepsForQuest,
   resolveStep,
@@ -141,8 +146,15 @@ function StepCardImpl({
   const xpBadge = sim && sim.gained > 0 ? sim : undefined;
   // Hover tooltip on desktop; tapping the badge shows the same breakdown on phones.
   const xpBreakdown = xpBadge ? gainedTooltip(xpBadge) : undefined;
-  const collapsed = !!unavailableTag;
-  const displayDone = isDone || collapsed;
+  // A preview shows its full text but can't be ticked: it isn't on this character's route.
+  const collapsed = !!unavailableTag && !preview;
+  const displayDone = !preview && (isDone || collapsed);
+  // Finished steps fold to one line; the chevron (or a click on the card) opens them again.
+  const [openDone, setOpenDone] = useState(false);
+  const foldable = displayDone && !collapsed && !isCurrent;
+  const folded = foldable && !openDone;
+  const hidden = collapsed || folded;
+  const layout = hidden ? null : stepLayout(lines, step.actions.filter((a) => lineVisible(a.filter)));
   const requirement =
     requirementKind ??
     (engine ? storeRequirement.kind : undefined) ??
@@ -151,8 +163,12 @@ function StepCardImpl({
   const onCardClick = (e: MouseEvent) => {
     const target = e.target as HTMLElement;
     if (target.closest("a,button,[data-no-tap]")) return;
+    if (folded) {
+      setOpenDone(true);
+      return;
+    }
     // Phones: tapping anywhere on the card ticks it (no mouse to aim at the small circle).
-    if (!collapsed && isTouchOnly() && !window.getSelection()?.toString()) {
+    if (!collapsed && !preview && isTouchOnly() && !window.getSelection()?.toString()) {
       onToggle(step, "tap");
       return;
     }
@@ -183,9 +199,9 @@ function StepCardImpl({
         {/* done toggle */}
         <button
           type="button"
-          disabled={collapsed}
+          disabled={collapsed || preview}
           onClick={() => {
-            if (collapsed) return;
+            if (collapsed || preview) return;
             onToggle(step);
           }}
           aria-pressed={displayDone}
@@ -216,7 +232,13 @@ function StepCardImpl({
                 <Icon name="check" className="h-3 w-3" strokeWidth={3} /> Done
               </span>
             )}
-            {unavailableTag && <Tag tone="slate">{unavailableTag}</Tag>}
+            {preview ? (
+              <Tag tone="slate" title="Shown because you pressed Show. It is not on your character's route.">
+                Not for your character
+              </Tag>
+            ) : (
+              unavailableTag && <Tag tone="slate">{unavailableTag}</Tag>
+            )}
             {dungeon && (
               <Tag tone="dungeon" title="Dungeon step: shown because dungeons are on">
                 <Icon name="skull" className="h-3 w-3" /> Dungeon{dungeon.name ? ` · ${dungeon.name}` : ""}
@@ -235,7 +257,7 @@ function StepCardImpl({
                         : tags.dungeonPart}
               </Tag>
             )}
-            {unverified && lines.length === 0 && <UnverifiedChip />}
+            {unverified && !hidden && <UnverifiedChip />}
             {showBalancedExtra && (
               <Tag title="Not on the Speedrun route">
                 <Icon name="sparkle" className="h-3 w-3" /> Balanced extra
@@ -273,6 +295,18 @@ function StepCardImpl({
                 )}
               </span>
             )}
+            {foldable && (
+              <button
+                type="button"
+                data-testid="step-fold"
+                aria-expanded={!folded}
+                aria-label={folded ? `Show step ${step.n}` : `Hide step ${step.n}`}
+                onClick={() => setOpenDone((o) => !o)}
+                className={`${xpBadge ? "" : "ml-auto"} inline-flex h-6 w-6 items-center justify-center rounded text-muted hover:text-bronze-300 sm:absolute sm:right-2 sm:z-10 ${xpBadge ? "sm:top-10" : "sm:top-2"}`}
+              >
+                <Icon name="chevronDown" className={`h-4 w-4 transition ${folded ? "" : "rotate-180"}`} />
+              </button>
+            )}
             {xpBadge && (
               <button
                 type="button"
@@ -294,7 +328,16 @@ function StepCardImpl({
           )}
 
           {/* text */}
-          {!collapsed && lines.length > 0 && (
+          {folded && lines[0] && (
+            <p data-testid="step-summary" className="truncate text-[13px] text-muted">
+              <RichLine line={lines[0]} />
+              {lines.length > 1 ? " …" : ""}
+            </p>
+          )}
+          {layout && (
+            <StepAreas layout={layout} questName={questName} profile={tipCtx?.profile} quests={tipCtx?.quests} stepId={step.id} compact={companion} />
+          )}
+          {!hidden && !layout && lines.length > 0 && (
             <div className={`space-y-1 ${companion ? "text-[13px]" : "text-sm sm:text-[15px]"} leading-relaxed text-ink`}>
               {lines.map((l, i) => (
                 <p key={i} className="break-words">
@@ -304,19 +347,18 @@ function StepCardImpl({
                       <FilterTag filter={l.filter} />
                     </span>
                   )}
-                  {unverified && i === lines.length - 1 && <UnverifiedChip className="ml-2 align-middle" />}
                 </p>
               ))}
             </div>
           )}
 
-          {!collapsed && sim?.grindSkip && (
+          {!hidden && sim?.grindSkip && (
             <p className="text-xs text-muted">Already at this level — skip this grind.</p>
           )}
-          {!collapsed && !sim?.grindSkip && sim?.grindKillXp != null && step.actions.some((a) => a.type === "xp") && (
+          {!hidden && !sim?.grindSkip && sim?.grindKillXp != null && step.actions.some((a) => a.type === "xp") && (
             <p className="text-xs text-muted">Remaining kill experience: {sim.grindKillXp.toLocaleString("en-US")}.</p>
           )}
-          {!collapsed && blocked && (
+          {!hidden && blocked && (
             <div
               data-testid="step-blocked"
               className="flex items-start gap-1.5 rounded-sm border border-warn/40 bg-warn/10 px-2.5 py-1.5 text-xs text-ink"
@@ -353,7 +395,7 @@ function StepCardImpl({
               </div>
             </div>
           )}
-          {!collapsed && bonus && (
+          {!hidden && bonus && (
             <p className="flex items-start gap-1.5 rounded-sm border border-bronze-500/25 bg-bronze-900/25 px-2.5 py-1.5 text-xs text-bronze-300">
               <Icon name="star" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
               <span>
@@ -362,7 +404,7 @@ function StepCardImpl({
               </span>
             </p>
           )}
-          {!collapsed && step.mayBeSkipped && (
+          {!hidden && step.mayBeSkipped && (
             <p className="flex items-start gap-1.5 rounded-sm border border-horde-500/20 bg-horde-700/20 px-2.5 py-1.5 text-xs text-bronze-300">
               <Icon name="info" className="mt-0.5 h-3.5 w-3.5 shrink-0" />
               <span>
@@ -371,91 +413,10 @@ function StepCardImpl({
               </span>
             </p>
           )}
-          {!collapsed && sim?.levelUp != null && (
-            <p
-              data-testid="step-level-up"
-              className="flex items-start gap-1.5 rounded-sm border border-done/35 bg-done/10 px-2.5 py-1.5 text-xs text-ink"
-            >
-              <Icon name="star" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-done" />
-              <span>
-                <strong className="font-semibold text-done">Level {sim.levelUp}!</strong>
-                {levelUpNext ? ` ${levelUpNext}` : null}
-              </span>
-            </p>
-          )}
 
-          {!collapsed && tip && (
-            <p className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-tip">
-              <span className="mr-2 inline-flex items-center gap-1 rounded border border-tip/40 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
-                <Icon name={tip.kind === "speed" ? "zap" : "info"} className="h-3 w-3" />
-                {tip.kind === "speed" ? "Speed" : "Tip"}
-                {tip.classes?.length ? ` · ${tip.classes.join("/")}` : tip.roles?.length ? ` · ${tip.roles.join("/")}` : ""}
-              </span>
-              <span>{tip.text}</span>
-            </p>
-          )}
-          {!collapsed && advice && (
-            <p className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-advice">
-              <span className="mr-2 inline-flex items-center gap-1 rounded border border-tip/40 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-tip">
-                <Icon name="shield" className="h-3 w-3" />
-                {advice.roles?.join("/")}
-                {advice.classes?.length ? ` · ${advice.classes.join("/")}` : ""}
-              </span>
-              <span>{advice.text}</span>
-            </p>
-          )}
-          {!collapsed && elite.map((e, i) => (
-            <p key={`elite-${i}`} className="text-[13px] leading-snug text-ink sm:text-sm" data-testid="step-elite">
-              <span className="mr-2 inline-flex items-center gap-1 rounded border border-danger/50 align-[1px] px-1.5 py-px text-[10px] font-bold uppercase tracking-wider text-danger">
-                <Icon name="skull" className="h-3 w-3" /> Elite
-              </span>
-              <span>
-                {e.name && (
-                  <strong className="font-semibold">
-                    {e.name}
-                    {e.level ? ` (${e.level})` : ""}
-                    {e.groupSize && e.groupSize > 1 ? ` · group of ${e.groupSize}` : ""}
-                    {e.tip ? ": " : ""}
-                  </strong>
-                )}
-                {e.tip?.text}
-              </span>
-            </p>
-          ))}
-          {!collapsed && hooks.map((h, i) => {
-            const reached = hookReached(h, tipCtx?.skills);
-            const warn = hookSkillWarning(h, tipCtx?.skills);
-            return (
-            <Foldable key={`hook-${i}`} className={`rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs leading-snug text-ink ${reached ? "text-muted opacity-70" : ""}`} testId="step-profession">
-              <span className={`mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession ${reached ? "line-through" : ""}`}>
-                <Icon name="bag" className="h-3.5 w-3.5" />
-                {h.profession}
-              </span>
-              <span>
-                <span className={reached ? "line-through" : undefined}>{hookText(h, tipCtx?.skills)}</span>
-                {warn && <span className="text-bronze-400"> · {warn}</span>}
-                {h.npc && (
-                  <span className="text-muted no-underline">
-                    {" "}
-                    · {h.npc.name}, {h.npc.x.toFixed(1)}, {h.npc.y.toFixed(1)} {h.npc.zone}
-                  </span>
-                )}
-              </span>
-            </Foldable>
-            );
-          })}
-          {!collapsed && professionTips.map((t, i) => (
-            <Foldable key={`ptip-${i}`} className="rounded-sm border border-profession/30 bg-profession/10 px-2.5 py-1.5 text-xs leading-snug text-ink" testId="step-profession">
-              <span className="mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession">
-                <Icon name="bag" className="h-3.5 w-3.5" /> Profession
-              </span>
-              <span>{t.text}</span>
-            </Foldable>
-          ))}
-
-          {!collapsed && (
+          {!hidden && (
             <>
-              <ActionChips
+              {!layout && <ActionChips
                 actions={step.actions}
                 questName={questName}
                 lineVisible={lineVisible}
@@ -463,9 +424,91 @@ function StepCardImpl({
                 quests={tipCtx?.quests}
                 stepId={step.id}
                 stepText={step.text.map((l) => l.segments.map((g) => g.t).join("")).join(" ")}
-              />
+              />}
               <ConditionBadges conditions={step.conditions} stepId={step.id} />
             </>
+          )}
+          {!hidden && (sim?.levelUp != null || tip || advice || elite.length > 0 || hooks.length > 0 || professionTips.length > 0) && (
+            <div className="space-y-1.5 border-t border-stroke/60 pt-2.5 text-[13px] leading-snug text-ink">
+              {sim?.levelUp != null && (
+                <p data-testid="step-level-up" className="flex items-start gap-2">
+                  <Icon name="star" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-done" />
+                  <span>
+                    <strong className="font-semibold text-done">Level {sim.levelUp}!</strong>
+                    {levelUpNext ? ` ${levelUpNext}` : null}
+                  </span>
+                </p>
+              )}
+              {tip && (
+                <p className="flex items-start gap-2" data-testid="step-tip">
+                  <Icon name={tip.kind === "speed" ? "zap" : "alert"} className="mt-0.5 h-3.5 w-3.5 shrink-0 text-tip" />
+                  <span>
+                    <span className="sr-only">{tip.kind === "speed" ? "Speed tip: " : "Tip: "}</span>
+                    {tip.classes?.length ? <span className="text-tip">{tip.classes.join("/")}: </span> : tip.roles?.length ? <span className="text-tip">{tip.roles.join("/")}: </span> : null}
+                    {tip.text}
+                  </span>
+                </p>
+              )}
+              {advice && (
+                <p className="flex items-start gap-2" data-testid="step-advice">
+                  <Icon name="shield" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-tip" />
+                  <span>
+                    <span className="text-tip">
+                      {advice.roles?.join("/")}
+                      {advice.classes?.length ? ` · ${advice.classes.join("/")}` : ""}:{" "}
+                    </span>
+                    {advice.text}
+                  </span>
+                </p>
+              )}
+              {elite.map((e, i) => (
+                <p key={`elite-${i}`} className="flex items-start gap-2" data-testid="step-elite">
+                  <Icon name="skull" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-danger" />
+                  <span>
+                    <span className="font-semibold text-danger">Elite </span>
+                    {e.name && (
+                      <strong className="font-semibold">
+                        {e.name}
+                        {e.level ? ` (${e.level})` : ""}
+                        {e.groupSize && e.groupSize > 1 ? ` · group of ${e.groupSize}` : ""}
+                        {e.tip ? ": " : ""}
+                      </strong>
+                    )}
+                    {e.tip?.text}
+                  </span>
+                </p>
+              ))}
+              {hooks.map((h, i) => {
+                const reached = hookReached(h, tipCtx?.skills);
+                const warn = hookSkillWarning(h, tipCtx?.skills);
+                return (
+                  <Foldable key={`hook-${i}`} className={`text-[13px] leading-snug ${reached ? "text-muted opacity-70" : "text-ink"}`} testId="step-profession">
+                    <span className={`mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession ${reached ? "line-through" : ""}`}>
+                      <Icon name="bag" className="h-3.5 w-3.5" />
+                      {h.profession}
+                    </span>
+                    <span>
+                      <span className={reached ? "line-through" : undefined}>{hookText(h, tipCtx?.skills)}</span>
+                      {warn && <span className="text-bronze-400"> · {warn}</span>}
+                      {h.npc && (
+                        <span className="text-muted no-underline">
+                          {" "}
+                          · {h.npc.name}, {h.npc.x.toFixed(1)}, {h.npc.y.toFixed(1)} {h.npc.zone}
+                        </span>
+                      )}
+                    </span>
+                  </Foldable>
+                );
+              })}
+              {professionTips.map((t, i) => (
+                <Foldable key={`ptip-${i}`} className="text-[13px] leading-snug text-ink" testId="step-profession">
+                  <span className="mr-1.5 inline-flex items-center gap-1 align-[-2px] font-semibold text-profession">
+                    <Icon name="bag" className="h-3.5 w-3.5" /> Profession
+                  </span>
+                  <span>{t.text}</span>
+                </Foldable>
+              ))}
+            </div>
           )}
 
         </div>
