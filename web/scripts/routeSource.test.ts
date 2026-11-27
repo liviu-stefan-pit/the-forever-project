@@ -97,6 +97,6 @@ describe("the real research folder", () => {
       expect(f.pack.steps.map((s) => s.n)).toEqual(f.pack.steps.map((_, i) => i + 1));
       for (const seg of f.segments!) expect(seg.count, `${String(f.pack.id)} ${seg.file}`).toBeGreaterThan(0);
     }
-    expect(found.find((f) => f.pack.id === "horde-dungeons-15-60")?.path).toContain("routes/dungeons/");
+    expect(found.find((f) => f.pack.id === "horde-dungeons-15-60")?.path.replaceAll("\\", "/")).toContain("routes/dungeons/");
   });
 });
