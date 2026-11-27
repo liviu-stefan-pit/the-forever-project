@@ -8,10 +8,10 @@
  *
  * Bump VERSION to drop every old cache on the next visit.
  */
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL = `tfp-shell-${VERSION}`;
 const RUNTIME = `tfp-runtime-${VERSION}`;
-const SHELL_FILES = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg", "./icons/icon-192.png"];
+const SHELL_FILES = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg?v=2", "./icons/icon-192.png?v=2"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
