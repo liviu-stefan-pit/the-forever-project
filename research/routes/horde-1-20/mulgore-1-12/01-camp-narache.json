@@ -10,7 +10,21 @@
     {
      "segments": [
       {
-       "t": "Accept The Hunt Begins from Grull Hawkwind"
+       "t": "Town stop 1 (level 1). Take both quests before going out:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grull Hawkwind: accept The Hunt Begins."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Chief Hawkwind: accept A Humble Task."
       }
      ]
     }
@@ -20,7 +34,7 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 44.5,
+      "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
@@ -30,44 +44,13 @@
      "type": "accept",
      "questId": 747,
      "label": "The Hunt Begins"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=747",
-     "label": "Wowhead Classic quest 747"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:002",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept A Humble Task from Chief Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
+      "x": 43.89,
+      "y": 76.66,
       "zone": "Mulgore",
       "exact": true
      }
@@ -85,15 +68,36 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=752",
-     "label": "Wowhead Classic quest 752"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=747",
+     "label": "Wowhead quest 747 (The Hunt Begins)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=752",
+     "label": "Wowhead quest 752 (A Humble Task)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true
+   "verified": true,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Professions: Herbalism (Garan Sunstrider) and Skinning (Nawka Wildsong) trainers stand in Camp Narache. Cooking and First Aid are taught in Bloodhoof Village, so keep Linen Cloth and meat in your bags until then.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "mulgore-1-12:003",
@@ -102,7 +106,21 @@
     {
      "segments": [
       {
-       "t": "Complete The Hunt Begins"
+       "t": "Plains south-east of camp: kill Plainstriders for 7 Plainstrider Meat and 7 Plainstrider Feathers on the way to the well."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Greatmother Hawkwind (at the well): turn in A Humble Task, accept the next A Humble Task."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Take a Water Pitcher from the well right next to her."
       }
      ]
     }
@@ -129,113 +147,13 @@
      "questId": 747,
      "objective": 2,
      "label": "The Hunt Begins"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=747",
-     "label": "Wowhead Classic quest 747"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Plainstriders and mountain cougars are all around Camp Narache. Kill them on the way to Greatmother Hawkwind.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=747",
-       "label": "Wowhead Classic quest 747"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2955
-     ],
-     "name": "Plainstrider (Plainstrider Meat)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 47.5,
-      "y": 81.5
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2955",
-       "label": "Wowhead Classic NPC 2955"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4739",
-       "label": "Wowhead Classic item 4739"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2955
-     ],
-     "name": "Plainstrider (Plainstrider Feather)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 47.5,
-      "y": 81.5
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2955",
-       "label": "Wowhead Classic NPC 2955"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4740",
-       "label": "Wowhead Classic item 4740"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:004",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in A Humble Task to Greatmother Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 48.8,
-      "y": 80.9,
+      "x": 48.77,
+      "y": 80.92,
       "zone": "Mulgore",
       "exact": true
      }
@@ -244,89 +162,17 @@
      "type": "turnin",
      "questId": 752,
      "label": "A Humble Task"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=752",
-     "label": "Wowhead Classic quest 752"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:005",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept A Humble Task from Greatmother Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 48.8,
-      "y": 80.9,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 753,
      "label": "A Humble Task"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=753",
-     "label": "Wowhead Classic quest 753"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:006",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete A Humble Task"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 49,
+      "x": 49.0,
       "y": 81.1,
       "zone": "Mulgore",
       "exact": true
@@ -346,33 +192,38 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=753",
-     "label": "Wowhead Classic quest 753"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=747",
+     "label": "Wowhead quest 747 (The Hunt Begins)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=752",
+     "label": "Wowhead quest 752 (A Humble Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=753",
+     "label": "Wowhead quest 753 (A Humble Task)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": true,
-   "pins": [
+   "tips": [
     {
-     "kind": "object",
-     "objectId": 2907,
-     "name": "Water Pitcher",
-     "at": {
-      "mapId": 1412,
-      "zone": "Mulgore",
-      "x": 49,
-      "y": 81.1
-     },
+     "kind": "general",
+     "text": "Plainstriders are everywhere between the camp and the well. Kill the ones on your path; the quest finishes on the walk.",
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/object=2907",
-       "label": "www.wowhead.com"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
+     "verified": false
     }
    ]
   },
@@ -383,7 +234,28 @@
     {
      "segments": [
       {
-       "t": "Turn in A Humble Task to Chief Hawkwind"
+       "t": "Town stop 2 (level 2). Hand in both, then take the next two:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Chief Hawkwind: turn in A Humble Task, accept Rites of the Earthmother."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grull Hawkwind: turn in The Hunt Begins, accept The Hunt Continues."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grull also gives you your class note (next step). Train your level 2 spells."
       }
      ]
     }
@@ -393,8 +265,8 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
+      "x": 43.89,
+      "y": 76.66,
       "zone": "Mulgore",
       "exact": true
      }
@@ -403,43 +275,17 @@
      "type": "turnin",
      "questId": 753,
      "label": "A Humble Task"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=753",
-     "label": "Wowhead Classic quest 753"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:008",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in The Hunt Begins to Grull Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
+     "type": "accept",
+     "questId": 755,
+     "label": "Rites of the Earthmother"
+    },
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 44.5,
+      "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
@@ -449,6 +295,15 @@
      "type": "turnin",
      "questId": 747,
      "label": "The Hunt Begins"
+    },
+    {
+     "type": "accept",
+     "questId": 750,
+     "label": "The Hunt Continues"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
     }
    ],
    "conditions": [],
@@ -458,15 +313,44 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=747",
-     "label": "Wowhead Classic quest 747"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=753",
+     "label": "Wowhead quest 753 (A Humble Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=755",
+     "label": "Wowhead quest 755 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=747",
+     "label": "Wowhead quest 747 (The Hunt Begins)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=750",
+     "label": "Wowhead quest 750 (The Hunt Continues)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Break Sharptusk! (Brave Windfeather) needs level 3 and you are about level 2.3 here. Take it at town stop 3.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "mulgore-1-12:116",
@@ -475,35 +359,45 @@
     {
      "segments": [
       {
-       "t": "Accept Simple Note from Grull Hawkwind, then turn it in to Harutt Thunderhorn at 43.75, 76.72."
+       "t": "Warrior: accept Simple Note from Grull Hawkwind and hand it to Harutt Thunderhorn, who trains you."
       }
      ]
     }
    ],
    "actions": [
     {
-     "type": "accept",
-     "questId": 3091,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3091,
      "label": "Simple Note"
     },
     {
-     "type": "turnin",
-     "questId": 3091,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 43.75,
       "y": 76.72,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3091,
      "label": "Simple Note"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Harutt Thunderhorn"
     }
    ],
    "conditions": [],
@@ -513,8 +407,16 @@
    ],
    "sources": [
     {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
      "url": "https://www.wowhead.com/classic/quest=3091",
-     "label": "Wowhead Classic quest 3091"
+     "label": "Wowhead quest 3091 (Simple Note)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -529,35 +431,45 @@
     {
      "segments": [
       {
-       "t": "Accept Etched Note from Grull Hawkwind, then turn it in to Lanka Farshot at 43.96, 76.35."
+       "t": "Hunter: accept Etched Note from Grull Hawkwind and hand it to Lanka Farshot, who trains you."
       }
      ]
     }
    ],
    "actions": [
     {
-     "type": "accept",
-     "questId": 3092,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3092,
      "label": "Etched Note"
     },
     {
-     "type": "turnin",
-     "questId": 3092,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 43.96,
       "y": 76.35,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3092,
      "label": "Etched Note"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Lanka Farshot"
     }
    ],
    "conditions": [],
@@ -567,8 +479,16 @@
    ],
    "sources": [
     {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
      "url": "https://www.wowhead.com/classic/quest=3092",
-     "label": "Wowhead Classic quest 3092"
+     "label": "Wowhead quest 3092 (Etched Note)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -583,35 +503,45 @@
     {
      "segments": [
       {
-       "t": "Accept Rune-Inscribed Note from Grull Hawkwind, then turn it in to Meela Dawnstrider at 44.58, 76.56."
+       "t": "Shaman: accept Rune-Inscribed Note from Grull Hawkwind and hand it to Meela Dawnstrider, who trains you."
       }
      ]
     }
    ],
    "actions": [
     {
-     "type": "accept",
-     "questId": 3093,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3093,
      "label": "Rune-Inscribed Note"
     },
     {
-     "type": "turnin",
-     "questId": 3093,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.58,
       "y": 76.56,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3093,
      "label": "Rune-Inscribed Note"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Meela Dawnstrider"
     }
    ],
    "conditions": [],
@@ -621,8 +551,16 @@
    ],
    "sources": [
     {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
      "url": "https://www.wowhead.com/classic/quest=3093",
-     "label": "Wowhead Classic quest 3093"
+     "label": "Wowhead quest 3093 (Rune-Inscribed Note)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -637,35 +575,45 @@
     {
      "segments": [
       {
-       "t": "Accept Verdant Note from Grull Hawkwind, then turn it in to Gart Mistrunner at 44.65, 76.55."
+       "t": "Druid: accept Verdant Note from Grull Hawkwind and hand it to Gart Mistrunner, who trains you."
       }
      ]
     }
    ],
    "actions": [
     {
-     "type": "accept",
-     "questId": 3094,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3094,
      "label": "Verdant Note"
     },
     {
-     "type": "turnin",
-     "questId": 3094,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.65,
       "y": 76.55,
       "zone": "Mulgore",
       "exact": true
-     },
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3094,
      "label": "Verdant Note"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Gart Mistrunner"
     }
    ],
    "conditions": [],
@@ -675,8 +623,16 @@
    ],
    "sources": [
     {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
      "url": "https://www.wowhead.com/classic/quest=3094",
-     "label": "Wowhead Classic quest 3094"
+     "label": "Wowhead quest 3094 (Verdant Note)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -685,105 +641,27 @@
    ]
   },
   {
-   "id": "mulgore-1-12:009",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept The Hunt Continues from Grull Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 44.5,
-      "y": 77.5,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 750,
-     "label": "The Hunt Continues"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=750",
-     "label": "Wowhead Classic quest 750"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:010",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rites of the Earthmother from Chief Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 755,
-     "label": "Rites of the Earthmother"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=755",
-     "label": "Wowhead Classic quest 755"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "mulgore-1-12:011",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Complete The Hunt Continues"
+       "t": "South: kill Mountain Cougars for 10 Mountain Cougar Pelts. They fill the hills between camp, Seer Graytongue and the shrine."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Seer Graytongue (south of camp): turn in Rites of the Earthmother, accept Rite of Strength and Grace of An'she and Mu'sha."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grace of An'she and Mu'sha: carry the Smoldering Incense east to the Ritual Fire at the shrine (10 minutes, plenty) and hand it in there. Finish the pelts on the way."
       }
      ]
     }
@@ -804,71 +682,13 @@
      "questId": 750,
      "objective": 1,
      "label": "The Hunt Continues"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=750",
-     "label": "Wowhead Classic quest 750"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2961
-     ],
-     "name": "Mountain Cougar (Mountain Cougar Pelt)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 47.5,
-      "y": 88.7
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2961",
-       "label": "Wowhead Classic NPC 2961"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4742",
-       "label": "Wowhead Classic item 4742"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:012",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Rites of the Earthmother to Seer Graytongue"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 42.5,
-      "y": 90.1,
+      "x": 42.54,
+      "y": 90.13,
       "zone": "Mulgore",
       "exact": true
      }
@@ -877,247 +697,17 @@
      "type": "turnin",
      "questId": 755,
      "label": "Rites of the Earthmother"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=755",
-     "label": "Wowhead Classic quest 755"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Seer Graytongue is south of Camp Narache.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=755",
-       "label": "Wowhead Classic quest 755"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "professionHooks": [
-    {
-     "profession": "Cooking",
-     "itemId": 5467,
-     "itemName": "Kodo Meat",
-     "qty": 40,
-     "skillTarget": 75,
-     "npc": {
-      "id": 3081,
-      "name": "Wunna Darkmane",
-      "zone": "Mulgore",
-      "x": 45.6,
-      "y": 61.7
-     },
-     "note": "Keep Kodo Meat from Kodo Calf (Mulgore, lvl 7-8) for Roasted Kodo Meat. Buy Recipe: Roasted Kodo Meat from Wunna Darkmane (Mulgore 45.6, 61.7) for 2s 40c. Recipe learnable at 35; every craft gives a point until 75 (about 40 crafts). Kodo in Mulgore and the Barrens.",
-     "sources": [
-      {
-       "url": "https://theforeverguides.com/professions/cooking-recipes/",
-       "label": "Forever Guides: Cooking recipes (client-datamined vendor lists)"
-      },
-      {
-       "url": "https://wowfdb.com/professions/cooking/recipes/",
-       "label": "WoW Forever DB: Cooking recipes (client build 1.60.1.71037)"
-      },
-      {
-       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicItemDB.lua",
-       "label": "QuestieDB classicItemDB (GitHub)"
-      },
-      {
-       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
-       "label": "QuestieDB classicNpcDB (GitHub)"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=5467",
-       "label": "Wowhead Classic item"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/map/",
-       "label": "WoW Forever DB zone map (NPC positions)"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/npc=3081",
-       "label": "Wowhead Classic NPC"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
-       "label": "QuestieDB v1.1.3 Forever (content/questie-db/npcs.json, mob spawns)"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:013",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rite of Strength from Seer Graytongue"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 42.5,
-      "y": 90.1,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 757,
      "label": "Rite of Strength"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=757",
-     "label": "Wowhead Classic quest 757"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:014",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Grace of An'she and Mu'sha from Seer Graytongue"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 42.5,
-      "y": 90.1,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 95805,
      "label": "Grace of An'she and Mu'sha"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
     },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   },
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Forever quest from Seer Graytongue: you have 10 minutes to bring the Smoldering Incense to the An'she and Mu'sha shrine in the south-east hills, so go straight there.",
-     "sources": [
-      {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
-      {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
-      }
-     ],
-     "verified": false
-    },
-    {
-     "kind": "general",
-     "text": "Carry the incense straight to the Ritual Fire at 56.61, 88.7 before you hunt battleboars. It burns out in ten minutes.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=95805",
-       "label": "Wowhead Classic quest 95805"
-      }
-     ],
-     "verified": false
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:015",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Use the Smoldering Incense at the Ritual Fire at 56.61, 88.7."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -1131,55 +721,7 @@
     {
      "type": "complete",
      "questId": 95805,
-     "objective": 1,
      "label": "Grace of An'she and Mu'sha"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=95805",
-     "label": "Wowhead Classic quest 95805"
-    }
-   ],
-   "verified": false,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:016",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Grace of An'she and Mu'sha to Ritual Fire"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 56.6,
-      "y": 88.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "turnin",
@@ -1189,48 +731,152 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced"
+    "balanced",
+    "speedrun"
    ],
    "sources": [
     {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
+     "url": "https://www.wowhead.com/classic/quest=750",
+     "label": "Wowhead quest 750 (The Hunt Continues)"
     },
     {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
+     "url": "https://www.wowhead.com/classic/quest=755",
+     "label": "Wowhead quest 755 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=757",
+     "label": "Wowhead quest 757 (Rite of Strength)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=95805",
+     "label": "Wowhead quest 95805 (Grace of An'she and Mu'sha)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   },
    "tips": [
     {
      "kind": "general",
-     "text": "Hand it in at the Ritual Fire at the shrine.",
+     "text": "Carry the incense straight to the Ritual Fire at 56.61, 88.7 before you hunt battleboars. It burns out in ten minutes.",
      "sources": [
       {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
+       "url": "https://www.wowhead.com/classic/quest=95805",
+       "label": "Wowhead Classic quest 95805"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "The shrine is on the way to Brambleblade Ravine, so the incense costs almost no extra walking from here.",
+     "sources": [
       {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:021",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
       {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
+       "t": "Brambleblade Ravine (north of the shrine): kill Bristleback quilboar for 12 Bristleback Belts. Fight at the entrance, where they come one or two at a time."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Loot the Dirt-stained Map in the ravine (59.8, 82.2). It starts Attack on Camp Narache."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Leave the chief and his guards for the next trip; you can't take Break Sharptusk! yet."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 57.5,
+      "y": 79.5,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 757,
+     "objective": 1,
+     "label": "Rite of Strength"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 59.8,
+      "y": 82.2,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 781,
+     "label": "Attack on Camp Narache"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=757",
+     "label": "Wowhead quest 757 (Rite of Strength)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=781",
+     "label": "Wowhead quest 781 (Attack on Camp Narache)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "XP check: the belts and the three hand-ins at camp should take you to level 4. Shaman: Call of Earth needs 4, and you get it at the next town stop.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
      "verified": false
@@ -1244,7 +890,35 @@
     {
      "segments": [
       {
-       "t": "Turn in The Hunt Continues to Grull Hawkwind"
+       "t": "Town stop 3 (level ~4). Hand in, then take everything for the second trip:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grull Hawkwind: turn in The Hunt Continues, accept The Battleboars."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Chief Hawkwind: turn in Rite of Strength and Attack on Camp Narache, accept Rites of the Earthmother (for Bloodhoof) and The Adventurer."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Brave Windfeather: accept Break Sharptusk!"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 4 spells."
       }
      ]
     }
@@ -1254,7 +928,7 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 44.5,
+      "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
@@ -1264,90 +938,48 @@
      "type": "turnin",
      "questId": 750,
      "label": "The Hunt Continues"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=750",
-     "label": "Wowhead Classic quest 750"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:018",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept The Battleboars from Grull Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 44.5,
-      "y": 77.5,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 780,
      "label": "The Battleboars"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=780",
-     "label": "Wowhead Classic quest 780"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:019",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Break Sharptusk! from Brave Windfeather"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 44.2,
-      "y": 77,
+      "x": 43.89,
+      "y": 76.66,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 757,
+     "label": "Rite of Strength"
+    },
+    {
+     "type": "turnin",
+     "questId": 781,
+     "label": "Attack on Camp Narache"
+    },
+    {
+     "type": "accept",
+     "questId": 763,
+     "label": "Rites of the Earthmother"
+    },
+    {
+     "type": "accept",
+     "questId": 96659,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.18,
+      "y": 77.03,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1356,6 +988,10 @@
      "type": "accept",
      "questId": 3376,
      "label": "Break Sharptusk!"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
     }
    ],
    "conditions": [],
@@ -1365,15 +1001,43 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=3376",
-     "label": "Wowhead Classic quest 3376"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=750",
+     "label": "Wowhead quest 750 (The Hunt Continues)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=780",
+     "label": "Wowhead quest 780 (The Battleboars)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=757",
+     "label": "Wowhead quest 757 (Rite of Strength)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=781",
+     "label": "Wowhead quest 781 (Attack on Camp Narache)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=763",
+     "label": "Wowhead quest 763 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96659",
+     "label": "Wowhead quest 96659 (The Adventurer)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3376",
+     "label": "Wowhead quest 3376 (Break Sharptusk!)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true
+   "verified": false
   },
   {
    "id": "mulgore-1-12:120",
@@ -1382,49 +1046,25 @@
     {
      "segments": [
       {
-       "t": "Accept Call of Earth from Seer Ravenfeather at 44.35, 76.77. Loot two Ritual Salves from Bristleback Shamans at 62.17, 78.12 and turn them in to the seer."
+       "t": "Shaman: Seer Ravenfeather: accept Call of Earth. The Ritual Salves drop from the Bristleback Shamans at the ravine entrance, on this trip."
       }
      ]
     }
    ],
    "actions": [
     {
-     "type": "accept",
-     "questId": 1519,
+     "type": "goto",
      "at": {
       "mapId": 1412,
       "x": 44.35,
       "y": 76.77,
-      "zone": "Mulgore",
-      "exact": true
-     },
-     "label": "Call of Earth"
-    },
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 62.17,
-      "y": 78.12,
       "zone": "Mulgore",
       "exact": true
      }
     },
     {
-     "type": "complete",
+     "type": "accept",
      "questId": 1519,
-     "label": "Call of Earth"
-    },
-    {
-     "type": "turnin",
-     "questId": 1519,
-     "at": {
-      "mapId": 1412,
-      "x": 44.35,
-      "y": 76.77,
-      "zone": "Mulgore",
-      "exact": true
-     },
      "label": "Call of Earth"
     }
    ],
@@ -1434,127 +1074,17 @@
     "speedrun"
    ],
    "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
     {
      "url": "https://www.wowhead.com/classic/quest=1519",
-     "label": "Wowhead Classic quest 1519"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "mulgore-1-12:121",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept the next Call of Earth and turn it in to the Minor Manifestation of Earth at Kodo Rock, 51.99, 80.4."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "accept",
-     "questId": 1520,
-     "at": {
-      "mapId": 1412,
-      "x": 44.35,
-      "y": 76.77,
-      "zone": "Mulgore",
-      "exact": true
-     },
-     "label": "Call of Earth"
+     "label": "Wowhead quest 1519 (Call of Earth)"
     },
     {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 51.99,
-      "y": 80.4,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 1520,
-     "at": {
-      "mapId": 1412,
-      "x": 51.99,
-      "y": 80.4,
-      "zone": "Mulgore",
-      "exact": true
-     },
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=1520",
-     "label": "Wowhead Classic quest 1520"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "mulgore-1-12:122",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept the last Call of Earth at Kodo Rock and turn it in to Seer Ravenfeather at 44.35, 76.77."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "accept",
-     "questId": 1521,
-     "at": {
-      "mapId": 1412,
-      "x": 51.99,
-      "y": 80.4,
-      "zone": "Mulgore",
-      "exact": true
-     },
-     "label": "Call of Earth"
-    },
-    {
-     "type": "turnin",
-     "questId": 1521,
-     "at": {
-      "mapId": 1412,
-      "x": 44.35,
-      "y": 76.77,
-      "zone": "Mulgore",
-      "exact": true
-     },
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=1521",
-     "label": "Wowhead Classic quest 1521"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -1569,7 +1099,14 @@
     {
      "segments": [
       {
-       "t": "Complete The Battleboars"
+       "t": "East of camp: kill Battleboars for 8 Battleboar Snouts and 8 Battleboar Flanks on the way to the ravine."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Brambleblade Ravine: Chief Sharptusk Thornmantle is at the back with guards. Pull the guards to the entrance one at a time, drink to full, then take the chief's head."
       }
      ]
     }
@@ -1596,346 +1133,13 @@
      "questId": 780,
      "objective": 2,
      "label": "The Battleboars"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=780",
-     "label": "Wowhead Classic quest 780"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Battleboars roam east of Camp Narache, on the way to Brambleblade Ravine.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=780",
-       "label": "Wowhead Classic quest 780"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2966
-     ],
-     "name": "Battleboar (Battleboar Snout)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 53.5,
-      "y": 82.5
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2966",
-       "label": "Wowhead Classic NPC 2966"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4848",
-       "label": "Wowhead Classic item 4848"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2954
-     ],
-     "name": "Bristleback Battleboar (Battleboar Snout)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 59.2,
-      "y": 78.7
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2954",
-       "label": "Wowhead Classic NPC 2954"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4848",
-       "label": "Wowhead Classic item 4848"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2966
-     ],
-     "name": "Battleboar (Battleboar Flank)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 53.5,
-      "y": 82.5
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2966",
-       "label": "Wowhead Classic NPC 2966"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4849",
-       "label": "Wowhead Classic item 4849"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2954
-     ],
-     "name": "Bristleback Battleboar (Battleboar Flank)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 59.2,
-      "y": 78.7
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2954",
-       "label": "Wowhead Classic NPC 2954"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4849",
-       "label": "Wowhead Classic item 4849"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:021",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Rite of Strength"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 58.1,
-      "y": 79,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 757,
-     "objective": 1,
-     "label": "Rite of Strength"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=757",
-     "label": "Wowhead Classic quest 757"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "The Bristleback quilboar are in Brambleblade Ravine. Fight at the entrance, where they come one or two at a time.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=757",
-       "label": "Wowhead Classic quest 757"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2952
-     ],
-     "name": "Bristleback Quilboar (Bristleback Belt)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 58.1,
-      "y": 79
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2952",
-       "label": "Wowhead Classic NPC 2952"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4770",
-       "label": "Wowhead Classic item 4770"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2953
-     ],
-     "name": "Bristleback Shaman (Bristleback Belt)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 60,
-      "y": 77.8
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2953",
-       "label": "Wowhead Classic NPC 2953"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4770",
-       "label": "Wowhead Classic item 4770"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:023",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Attack on Camp Narache"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 59.8,
-      "y": 82.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 781,
-     "label": "Attack on Camp Narache"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=781",
-     "label": "Wowhead Classic quest 781"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/releases/tag/v1.1.3",
-     "label": "QuestieDB v1.1.3 Forever (content/questie-db)"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "The Dirt-stained Map drops in the ravine and starts Attack on Camp Narache.",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=781",
-       "label": "Wowhead Classic quest 781"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:022",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Break Sharptusk!"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 61,
-      "y": 78,
+      "x": 61.0,
+      "y": 78.0,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1954,122 +1158,73 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=3376",
-     "label": "Wowhead Classic quest 3376"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=780",
+     "label": "Wowhead quest 780 (The Battleboars)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3376",
+     "label": "Wowhead quest 3376 (Break Sharptusk!)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": true,
    "tips": [
     {
      "kind": "general",
-     "text": "Chief Sharptusk Thornmantle is at the back of the ravine with guards. Clear his guards first.",
+     "text": "Shaman: kill Bristleback Shamans at the ravine entrance for 2 Ritual Salves (Call of Earth).",
+     "classes": [
+      "Shaman"
+     ],
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/quest=3376",
-       "label": "Wowhead Classic quest 3376"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
+     "verified": false
     },
     {
      "kind": "general",
-     "text": "Pull the guards to the ravine entrance one at a time before you take the chief.",
-     "roles": [
-      "tank"
-     ],
+     "text": "XP check: you should reach camp around level 5. Most classes get nothing new at 5, so there is no reason to grind before Bloodhoof.",
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/quest=3376",
-       "label": "Wowhead Classic quest 3376"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
-    },
-    {
-     "kind": "general",
-     "text": "Drink to full before the chief.",
-     "roles": [
-      "healer"
-     ],
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=3376",
-       "label": "Wowhead Classic quest 3376"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "general",
-     "text": "Burst the chief once the guards are dead.",
-     "roles": [
-      "dps"
-     ],
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/quest=3376",
-       "label": "Wowhead Classic quest 3376"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      8554
-     ],
-     "name": "Chief Sharptusk Thornmantle (Chief Sharptusk Thornmantle's Head)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 61,
-      "y": 78
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=8554",
-       "label": "Wowhead Classic NPC 8554"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=10459",
-       "label": "Wowhead Classic item 10459"
-      }
-     ],
-     "verified": true
+     "verified": false
     }
    ]
   },
   {
-   "id": "mulgore-1-12:024",
+   "id": "mulgore-1-12:026",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Turn in The Battleboars to Grull Hawkwind"
+       "t": "Town stop 4 (level ~5). Last stop in Camp Narache:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Brave Windfeather: turn in Break Sharptusk!"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Grull Hawkwind: turn in The Battleboars."
       }
      ]
     }
@@ -2079,7 +1234,22 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 44.5,
+      "x": 44.18,
+      "y": 77.03,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3376,
+     "label": "Break Sharptusk!"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.47,
       "y": 77.5,
       "zone": "Mulgore",
       "exact": true
@@ -2098,283 +1268,24 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=780",
-     "label": "Wowhead Classic quest 780"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:025",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Rite of Strength to Chief Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 757,
-     "label": "Rite of Strength"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=757",
-     "label": "Wowhead Classic quest 757"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:w2-96659-1",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "After Rite of Strength, take The Adventurer from Chief Hawkwind and carry the Supply Bundle to Kaga Wildhoof near Bloodhoof Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 96659,
-     "label": "The Adventurer"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96659 / 96605, NPC 265810"
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
-    {
-     "url": "https://www.wowhead.com/classic/npc=265810",
-     "label": "Wowhead NPC 265810"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "mulgore-1-12:026",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Break Sharptusk! to Brave Windfeather"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 44.2,
-      "y": 77,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 3376,
-     "label": "Break Sharptusk!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
     {
      "url": "https://www.wowhead.com/classic/quest=3376",
-     "label": "Wowhead Classic quest 3376"
+     "label": "Wowhead quest 3376 (Break Sharptusk!)"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:027",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Attack on Camp Narache to Chief Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
+     "url": "https://www.wowhead.com/classic/quest=780",
+     "label": "Wowhead quest 780 (The Battleboars)"
     },
     {
-     "type": "turnin",
-     "questId": 781,
-     "label": "Attack on Camp Narache"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=781",
-     "label": "Wowhead Classic quest 781"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:028",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rites of the Earthmother from Chief Hawkwind"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 43.9,
-      "y": 76.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 763,
-     "label": "Rites of the Earthmother"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=763",
-     "label": "Wowhead Classic quest 763"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:029",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Visit your class trainer"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "trainer",
-     "label": "Visit your class trainer"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB/tree/master/data/Forever",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": true,
    "tips": [
-    {
-     "kind": "general",
-     "text": "Train level 6 spells before leaving Camp Narache.",
-     "sources": [],
-     "verified": true
-    },
     {
      "kind": "profession",
      "text": "Forever: each creature can only be skinned once, so skin your own kills right away before someone else does.",
@@ -2426,6 +1337,137 @@
       {
        "url": "https://theforeverguides.com/professions/crafting-trainers/",
        "label": "theforeverguides.com"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:121",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shaman: Seer Ravenfeather: turn in Call of Earth, accept the next Call of Earth."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Kodo Rock (east, by the battleboars): drink the Earth Sapta, turn in Call of Earth to the Minor Manifestation of Earth, accept the last Call of Earth."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Seer Ravenfeather: turn in Call of Earth. This gives you your earth totem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.35,
+      "y": 76.77,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1519,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 1520,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 51.99,
+      "y": 80.4,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1520,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 1521,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.35,
+      "y": 76.77,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1521,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1519",
+     "label": "Wowhead quest 1519 (Call of Earth)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1520",
+     "label": "Wowhead quest 1520 (Call of Earth)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1521",
+     "label": "Wowhead quest 1521 (Call of Earth)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Shaman"
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This round trip is about 2 minutes for 625 XP and the Stoneskin totem, so it stays on Speedrun too.",
+     "classes": [
+      "Shaman"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
      "verified": false

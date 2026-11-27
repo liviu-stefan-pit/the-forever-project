@@ -1,0 +1,1331 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "mulgore-1-12",
+ "title": "Red Rocks, Thunder Bluff and the way out",
+ "steps": [
+  {
+   "id": "mulgore-1-12:088",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Venture Co. Clearclutter (elite, north of the mine): take the Clearcutter Key."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 56.8,
+      "y": 42.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98427,
+     "objective": 1,
+     "label": "Ceasing Operations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98427",
+     "label": "Wowhead quest 98427 (Ceasing Operations)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever elite: the Clearcutter Key drops from the Venture Co. Clearclutter north of the mine. Bring a friend or wait until 13.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/mulgore/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:104",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Plains north of the village: kill Prairie Wolf Alphas for 8 Prairie Alpha Teeth as you walk north."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Flatland Prowlers (around 51, 29): loot 4 Flatland Prowler Claws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Red Rocks: talk to the Ancestral Spirit to turn in Rite of Wisdom, accept Journey into Thunder Bluff."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Lorekeeper Raintotem (next to the burial ground): accept A Sacred Burial, kill 8 Bristleback Interlopers right there, turn it in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 48.9,
+      "y": 33.0,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 759,
+     "objective": 1,
+     "label": "Wildmane Totem"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 51.1,
+      "y": 29.0,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 861,
+     "objective": 1,
+     "label": "The Hunter's Way"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 58.31,
+      "y": 30.7,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 773,
+     "label": "Rite of Wisdom"
+    },
+    {
+     "type": "accept",
+     "questId": 775,
+     "label": "Journey into Thunder Bluff"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 56.98,
+      "y": 34.55,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 833,
+     "label": "A Sacred Burial"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 58.2,
+      "y": 30.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 833,
+     "objective": 1,
+     "label": "A Sacred Burial"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 56.98,
+      "y": 34.55,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 833,
+     "label": "A Sacred Burial"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=759",
+     "label": "Wowhead quest 759 (Wildmane Totem)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=861",
+     "label": "Wowhead quest 861 (The Hunter's Way)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=773",
+     "label": "Wowhead quest 773 (Rite of Wisdom)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=775",
+     "label": "Wowhead quest 775 (Journey into Thunder Bluff)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=833",
+     "label": "Wowhead quest 833 (A Sacred Burial)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "A Sacred Burial is 630 XP for 8 kills next to the spirit you visit anyway, so it is on Speedrun now too.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Prairie Wolf Alphas and Flatland Prowlers share the plains between the village and Red Rocks. Most of the teeth and claws come on the walk.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Thunder Bluff (west of Red Rocks, take the lift up). Town stop (level ~11):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Cairne Bloodhoof (top rise): turn in Journey into Thunder Bluff, The High Chieftain and The Longwalkers. Accept Rites of the Earthmother."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Melor Stonehoof (Hunter Rise): turn in The Hunter's Way, accept Sergra Darkthorn."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Tal (central rise): get the flight path."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Eyahn Eagletalon: accept Preparation for Ceremony."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.68,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 775,
+     "label": "Journey into Thunder Bluff"
+    },
+    {
+     "type": "turnin",
+     "questId": 99082,
+     "label": "The High Chieftain"
+    },
+    {
+     "type": "turnin",
+     "questId": 98430,
+     "label": "The Longwalkers"
+    },
+    {
+     "type": "accept",
+     "questId": 776,
+     "label": "Rites of the Earthmother"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 61.54,
+      "y": 80.92,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 861,
+     "label": "The Hunter's Way"
+    },
+    {
+     "type": "accept",
+     "questId": 860,
+     "label": "Sergra Darkthorn"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 47.0,
+      "y": 49.83,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Tal"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 37.75,
+      "y": 59.57,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 744,
+     "label": "Preparation for Ceremony"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=775",
+     "label": "Wowhead quest 775 (Journey into Thunder Bluff)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99082",
+     "label": "Wowhead quest 99082 (The High Chieftain)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98430",
+     "label": "Wowhead quest 98430 (The Longwalkers)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=776",
+     "label": "Wowhead quest 776 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=861",
+     "label": "Wowhead quest 861 (The Hunter's Way)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=860",
+     "label": "Wowhead quest 860 (Sergra Darkthorn)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead quest 744 (Preparation for Ceremony)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Cairne Bloodhoof is on the top rise of Thunder Bluff.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=775",
+       "label": "Wowhead Classic quest 775"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "profession",
+     "text": "Thunder Bluff has no profession trainer you need for the next part. Skinning, Herbalism and Mining trainers for the next rank are here if you want them.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-768-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Skinners: Veren Tallstrider: accept Gathering Leather and Kodo Hide Bag. Hand in 12 Light Leather and then 4 Light Leather + 4 Coarse Thread. The bag is worth it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Skip this step if you don't have the leather."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 44.39,
+      "y": 44.7,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 768,
+     "label": "Gathering Leather"
+    },
+    {
+     "type": "complete",
+     "questId": 768,
+     "objective": 1,
+     "label": "Gathering Leather"
+    },
+    {
+     "type": "turnin",
+     "questId": 768,
+     "label": "Gathering Leather"
+    },
+    {
+     "type": "accept",
+     "questId": 769,
+     "label": "Kodo Hide Bag"
+    },
+    {
+     "type": "complete",
+     "questId": 769,
+     "objective": 1,
+     "label": "Kodo Hide Bag"
+    },
+    {
+     "type": "turnin",
+     "questId": 769,
+     "label": "Kodo Hide Bag"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=768",
+     "label": "Wowhead quest 768 (Gathering Leather)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=769",
+     "label": "Wowhead quest 769 (Kodo Hide Bag)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:w2-97485-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Eylah Sunhorn: accept Traditions of the Bluff. Buy the four supplies from the vendors she names, make the Prepared Incense, burn it at the Incense Burner on the lower rise, and turn it in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 38.0,
+      "y": 55.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97485,
+     "label": "Traditions of the Bluff"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 53.0,
+      "y": 87.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97485,
+     "objective": 1,
+     "label": "Traditions of the Bluff"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 38.0,
+      "y": 55.9,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97485,
+     "label": "Traditions of the Bluff"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97485",
+     "label": "Wowhead quest 97485 (Traditions of the Bluff)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Four vendors on different rises and the burner on the lower rise: about 3 minutes for 420 XP. That is under what grinding gives at 11, so Speedrun skips it.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-76156-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Boarton Shadetotem: accept Stalk With The Earthmother."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 76156,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=76156",
+     "label": "Wowhead quest 76156 (Stalk With The Earthmother)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This chain sends you back out of Thunder Bluff three times: into the Venture Co. mine for 5 Seaforium Mining Charges, north of Thunder Bluff for 8 Windfury Cones, and to a fishing spot (or a vendor) for a Raw Brilliant Smallfish. Not on the speedrun.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-744-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Harpy camp below Thunder Bluff: kill Windfury Sorceresses for 6 Azure Feathers and Windfury Matriarchs for 6 Bronze Feathers."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Arra'chea (big kodo, east at 51.2, 24.8): kill her for the Horn of Arra'chea if she's up. If not, come back to her after the harpies."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.3,
+      "y": 31.0,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 744,
+     "objective": 1,
+     "label": "Preparation for Ceremony"
+    },
+    {
+     "type": "complete",
+     "questId": 744,
+     "objective": 2,
+     "label": "Preparation for Ceremony"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 51.25,
+      "y": 24.82,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 776,
+     "objective": 1,
+     "label": "Rites of the Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead quest 744 (Preparation for Ceremony)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=776",
+     "label": "Wowhead quest 776 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Arra'chea is level 11 and walks alone. Rites of the Earthmother is 1,250 XP, the biggest quest in the zone.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Speedrun: this camp is also where you grind the rest of the way (next step), so don't leave it early.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:grind-sr-a",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Speedrun: keep killing Windfury Matriarchs until you are about 2,950 XP short of 12 (5,850 XP into level 11). The hand-ins still ahead (Preparation for Ceremony, Rites of the Earthmother, Wildmane Totem, Sergra Darkthorn) give exactly that. If Arra'chea isn't up or you have no leather for Veren, grind that much longer (Arra'chea is 1,250 XP, the leather quests 1,300)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.5,
+      "y": 31.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 11,
+     "extra": 5835,
+     "label": "Kill Windfury Matriarchs until you are ~2,950 XP short of 12",
+     "mobId": 2965,
+     "mobName": "Windfury Matriarch",
+     "mobLevel": 11
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2965
+     ],
+     "name": "Windfury Matriarch",
+     "mapId": 1412,
+     "zone": "Mulgore",
+     "center": {
+      "x": 39.1,
+      "y": 26.6
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2965",
+       "label": "Wowhead Classic NPC 2965"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-76156-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Venture Co. Mine (far east): loot 5 Seaforium Mining Charges from the blasting supplies carts, then go back to Boarton."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Boarton Shadetotem: turn in Stalk With The Earthmother, take the next two. Windfury Cones are in the harpy camp you just cleared, and the Raw Brilliant Smallfish can be bought from a vendor in Thunder Bluff."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 59.2,
+      "y": 46.9,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 76156,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 39.4,
+      "y": 65.8,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 76156,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "accept",
+     "questId": 76160,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "complete",
+     "questId": 76160,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "turnin",
+     "questId": 76160,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "accept",
+     "questId": 76240,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "complete",
+     "questId": 76240,
+     "objective": 1,
+     "label": "Stalk With The Earthmother"
+    },
+    {
+     "type": "turnin",
+     "questId": 76240,
+     "label": "Stalk With The Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=76156",
+     "label": "Wowhead quest 76156 (Stalk With The Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=76160",
+     "label": "Wowhead quest 76160 (Stalk With The Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=76240",
+     "label": "Wowhead quest 76240 (Stalk With The Earthmother)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This chain is about 2,170 XP for a long walk back to the mine and back. Balanced only, and only if you want it: the route does not need the XP.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:w2-744-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Thunder Bluff, last stop:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Eyahn Eagletalon: turn in Preparation for Ceremony."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Cairne Bloodhoof: turn in Rites of the Earthmother."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 37.75,
+      "y": 59.57,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 744,
+     "label": "Preparation for Ceremony"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1456,
+      "x": 60.3,
+      "y": 51.68,
+      "zone": "Thunder Bluff",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 776,
+     "label": "Rites of the Earthmother"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=744",
+     "label": "Wowhead quest 744 (Preparation for Ceremony)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=776",
+     "label": "Wowhead quest 776 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "mulgore-1-12:hearth-bloodhoof-exit",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hearth to Bloodhoof Village. It is closer to the Barrens than Thunder Bluff, so the hearth saves walking."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: turn in Wildmane Totem."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Hearth to Bloodhoof Village"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.52,
+      "y": 63.58,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 759,
+     "label": "Wildmane Totem"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=759",
+     "label": "Wowhead quest 759 (Wildmane Totem)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wildmane Cleansing (Mull's next quest) is a well in the far north, so the route stops the chain here. The old Thunderhorn's Report hand-in in Thunder Bluff goes with it.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:089",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Morin Cloudstalker (east, on the road out): turn in Ceasing Operations."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 54.76,
+      "y": 64.27,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98427,
+     "label": "Ceasing Operations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98427",
+     "label": "Wowhead quest 98427 (Ceasing Operations)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:115",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the road east out of Mulgore into the Barrens and north to the Crossroads."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Sergra Darkthorn: turn in Sergra Darkthorn. Thork is next to her, where the Barrens guide starts."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 52.23,
+      "y": 31.01,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 860,
+     "label": "Sergra Darkthorn"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1413,
+      "x": 51.5,
+      "y": 30.87,
+      "zone": "The Barrens",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=860",
+     "label": "Wowhead quest 860 (Sergra Darkthorn)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Run east out of Mulgore to the Crossroads and continue with the Barrens route.",
+     "sources": [],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Balanced arrives at about 11.8 and does not grind: the first Crossroads quests need level 9-10, and you are 12 before Harpy Raiders (needs 12).",
+     "routes": [
+      "balanced"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Kirge Sternhorn's Journey to the Crossroads (Camp Taurajo) is not on this route: you already go to the Crossroads for Sergra, and it would lock you out of Plainstrider Menace.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}
