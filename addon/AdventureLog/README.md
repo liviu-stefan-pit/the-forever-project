@@ -1,5 +1,7 @@
 # AdventureLog
 
+<img src="branding/icon-128.png" alt="AdventureLog icon: an open journal with a quill tracing a route, and a red recording light" width="96" height="96">
+
 AdventureLog is a World of Warcraft Forever addon. It keeps a diary of one character while you play. A friend can install this folder by itself; the rest of the guide project is not required.
 
 It is part of [The Forever Project](https://github.com/liviu-stefan-pit/the-forever-project).
@@ -127,6 +129,25 @@ money messages about other players are not kept: the log records only that one h
 published, and your character name and realm do not appear in anything that goes into the project. The zip is
 deleted when that work is done, and at the latest 12 months after it arrives. Ask at the same address and it is
 deleted sooner. See [PRIVACY.md](https://github.com/liviu-stefan-pit/the-forever-project/blob/main/PRIVACY.md).
+
+## Icon and store images
+
+The icon shows an open journal with a quill tracing a route, and a red recording light, on the guide site's Horde/Alliance disc. The master is
+[`branding/icon.svg`](branding/icon.svg) (animated with CSS, still under *reduce motion*); everything else is
+rendered from it with `node web/scripts/render-addon-icons.mjs AdventureLog` (needs Chrome or Edge and ffmpeg).
+
+| File | Use it for |
+| --- | --- |
+| `media/icon.tga` | In game: the AddOns list shows it next to the name (`## IconTexture:` in the `.toc`). Ships in the zip. |
+| `branding/icon-400.png` | **CurseForge** project avatar (square, 400 x 400). Also the **Wago** project icon. |
+| `branding/icon-256.png` | Wago or anywhere that asks for a smaller square logo. |
+| `branding/icon.gif` | **WoWInterface**: no project avatar there, so add it as the first screenshot. Also forums and Discord (256 px, animated). |
+| `branding/icon.webp` | Animated, 400 px, transparent corners, for pages that take WebP. |
+| `branding/icon-128.png`, `icon-64.png` | Small still versions (READMEs, link previews). |
+| `branding/icon.svg` | The guide site's Addons page (a copy lives in `web/public/addons/`). |
+
+Store sites change their size rules, so check the upload form; the 400 px PNG is the safe default.
+`branding/` is left out of the release zip; only `media/` ships.
 
 ## Licence
 

@@ -62,7 +62,7 @@ jobs:
           is_dev_only() {
             case "$1" in
               tests/*|*/tests/*) return 0 ;;
-              API_REFERENCE.md|.*|*/.*) return 0 ;;
+              API_REFERENCE.md|branding/*|.*|*/.*) return 0 ;;
               *) return 1 ;;
             esac
           }

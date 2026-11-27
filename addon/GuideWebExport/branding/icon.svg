@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- GuideWebExport: the guide site's F inside two sync arrows (game to site and back), on the
+       site icon's disc (Horde crimson top-left, Alliance navy bottom-right, waving gold seam,
+       embers and frost). Every animation divides a 6 s loop so the GIF/WebP exports loop
+       seamlessly; the SVG stays still under prefers-reduced-motion.
+       Exports: web/scripts/render-addon-icons.mjs. -->
+  <style>
+    .wave { animation: wave 6s linear infinite; }
+    .seam { animation: wave 6s linear infinite, seamPulse 3s ease-in-out infinite; }
+    .glint { transform-box: view-box; transform-origin: 32px 32px; animation: spin 6s linear infinite; }
+    .shine { animation: shine 6s ease-in-out infinite; }
+    .ember { animation: ember 3s ease-out infinite; }
+    .e2 { animation-delay: -1s; }
+    .e3 { animation-delay: -0.4s; animation-duration: 2s; }
+    .mote { animation: mote 6s ease-in-out infinite; }
+    .m2 { animation-delay: -2s; animation-duration: 3s; }
+    .m3 { animation-delay: -4s; }
+    .forge { animation: forge 3s ease-in-out infinite; }
+    .frost { animation: frost 6s ease-in-out infinite; }
+    .sync { transform-box: view-box; transform-origin: 32px 32px; animation: sync 6s infinite; }
+    .flow { animation: flow 1s linear infinite; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    @keyframes wave { to { transform: translateX(-16px); } }
+    @keyframes seamPulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes shine { 0%, 55% { transform: translate(-40px, -40px); } 85%, 100% { transform: translate(40px, 40px); } }
+    @keyframes ember { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: 1; } 100% { transform: translateY(-14px); opacity: 0; } }
+    @keyframes mote { 0%, 100% { transform: translate(0, 0); opacity: .25; } 50% { transform: translate(2px, -2px); opacity: .95; } }
+    @keyframes forge { 0%, 100% { opacity: .7; } 40% { opacity: 1; } 55% { opacity: .82; } }
+    @keyframes frost { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+    /* A half turn, a rest, another half turn: one full sync every 6 s. */
+    @keyframes sync {
+      0%, 25% { transform: rotate(0deg); animation-timing-function: cubic-bezier(.65, 0, .35, 1); }
+      45%, 75% { transform: rotate(180deg); animation-timing-function: cubic-bezier(.65, 0, .35, 1); }
+      95%, 100% { transform: rotate(360deg); }
+    }
+    @keyframes flow { to { stroke-dashoffset: -4; } }
+    @keyframes pulse { 0%, 100% { opacity: .35; } 50% { opacity: .85; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="horde" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8383a"/>
+      <stop offset="1" stop-color="#5c1414"/>
+    </linearGradient>
+    <linearGradient id="alliance" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2056a6"/>
+      <stop offset="1" stop-color="#0b1630"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd98a"/>
+      <stop offset="0.3" stop-color="#c6a15a"/>
+      <stop offset="0.7" stop-color="#9cb0c9"/>
+      <stop offset="1" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="glyph" gradientUnits="userSpaceOnUse" x1="16" y1="16" x2="48" y2="48">
+      <stop offset="0" stop-color="#ffe9a3"/>
+      <stop offset="0.45" stop-color="#f6ead0"/>
+      <stop offset="1" stop-color="#dfe9f8"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0.35" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity=".85"/>
+      <stop offset="0.65" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="forgeGlow" cx="0.3" cy="0.3" r="0.45">
+      <stop offset="0" stop-color="#ff7a3c" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#ff7a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="frostGlow" cx="0.72" cy="0.72" r="0.45">
+      <stop offset="0" stop-color="#9cc3f5" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#9cc3f5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0.6" stop-color="#040408" stop-opacity="0"/>
+      <stop offset="1" stop-color="#040408" stop-opacity=".55"/>
+    </radialGradient>
+    <radialGradient id="spark">
+      <stop offset="0" stop-color="#fff4c8"/>
+      <stop offset="1" stop-color="#ff9a4a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="flake">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#9cc3f5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#fff1c4" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff1c4" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="disc"><circle cx="32" cy="32" r="28"/></clipPath>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.4"/></filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.1"/></filter>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.2" flood-color="#000" flood-opacity=".6"/>
+    </filter>
+    <path id="edge" d="M-40 32q4-1.8 8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0"/>
+    <!-- Two clockwise arcs of radius 15 around the centre, each ending in an arrowhead. -->
+    <path id="arcTop" d="M17.9 26.87A15 15 0 0 1 44.99 24.5"/>
+    <path id="arcBottom" d="M46.1 37.13A15 15 0 0 1 19.01 39.5"/>
+    <path id="heads" d="M47.6 29L49.1 22.1L41.2 26.6ZM16.4 35L14.9 41.9L22.8 37.4Z"/>
+    <path id="fPath" d="M27.5 40.5V23.5h10M27.5 31.5h7.5"/>
+    <mask id="fMask"><use href="#fPath" fill="none" stroke="#fff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></mask>
+  </defs>
+
+  <circle cx="32" cy="32" r="31" fill="#0e0c12"/>
+  <g clip-path="url(#disc)">
+    <rect width="64" height="64" fill="url(#horde)"/>
+    <g transform="rotate(-45 32 32)">
+      <g class="wave" filter="url(#soft)">
+        <path d="M-40 32q4-1.8 8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0t8 0V120H-40Z" fill="url(#alliance)"/>
+      </g>
+    </g>
+    <circle class="forge" cx="32" cy="32" r="32" fill="url(#forgeGlow)"/>
+    <circle class="frost" cx="32" cy="32" r="32" fill="url(#frostGlow)"/>
+    <g transform="rotate(-45 32 32)">
+      <g class="seam">
+        <use href="#edge" fill="none" stroke="#ffcf6e" stroke-width="2.4" filter="url(#glow)"/>
+        <use href="#edge" fill="none" stroke="#fff1c4" stroke-width=".6"/>
+      </g>
+    </g>
+    <circle class="ember" cx="11" cy="40" r="1.7" fill="url(#spark)"/>
+    <circle class="ember e2" cx="17" cy="16" r="1.3" fill="url(#spark)"/>
+    <circle class="ember e3" cx="9" cy="30" r="1.2" fill="url(#spark)"/>
+    <circle class="mote" cx="53" cy="40" r="1.6" fill="url(#flake)"/>
+    <circle class="mote m2" cx="42" cy="54" r="1.3" fill="url(#flake)"/>
+    <circle class="mote m3" cx="24" cy="54" r="1.2" fill="url(#flake)"/>
+    <circle cx="32" cy="32" r="32" fill="url(#vignette)"/>
+  </g>
+
+  <circle cx="32" cy="32" r="29" fill="none" stroke="url(#rim)" stroke-width="3.6"/>
+  <g class="glint">
+    <circle cx="32" cy="32" r="29" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="1.4" stroke-linecap="round" pathLength="100" stroke-dasharray="7 93" filter="url(#glow)"/>
+  </g>
+  <circle cx="32" cy="32" r="27.4" fill="none" stroke="#000" stroke-opacity=".35" stroke-width=".8"/>
+
+  <!-- Sync arrows: a half turn every 3 s, with data flowing along them. -->
+  <circle class="pulse" cx="32" cy="32" r="13" fill="url(#core)"/>
+  <g class="sync">
+    <g filter="url(#lift)">
+      <use href="#arcTop" fill="none" stroke="url(#glyph)" stroke-width="4.4" stroke-linecap="round"/>
+      <use href="#arcBottom" fill="none" stroke="url(#glyph)" stroke-width="4.4" stroke-linecap="round"/>
+      <use href="#heads" fill="url(#glyph)" stroke="url(#glyph)" stroke-width="1.2" stroke-linejoin="round"/>
+    </g>
+    <g class="flow" fill="none" stroke="#b07f2c" stroke-opacity=".8" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="0.1 3.9">
+      <use href="#arcTop"/>
+      <use href="#arcBottom"/>
+    </g>
+  </g>
+
+  <!-- The guide site's F. -->
+  <use href="#fPath" fill="none" stroke="url(#glyph)" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round" filter="url(#lift)"/>
+  <g mask="url(#fMask)">
+    <rect class="shine" x="0" y="0" width="64" height="64" fill="url(#band)"/>
+  </g>
+</svg>

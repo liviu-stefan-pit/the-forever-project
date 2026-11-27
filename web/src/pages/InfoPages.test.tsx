@@ -1,3 +1,5 @@
+import { existsSync } from "node:fs";
+import { resolve } from "node:path";
 import { createElement, type ReactElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { MemoryRouter } from "react-router";
@@ -29,6 +31,15 @@ describe("Addons page", () => {
     expect(h).toContain("https://github.com/liviu-stefan-pit/the-forever-project/releases/download/adventurelog-latest/AdventureLog.zip");
     expect(h).toContain('href="https://github.com/liviu-stefan-pit/the-forever-project/releases"');
     expect(h).toContain("1.60.x only");
+  });
+  it("shows each addon's animated icon with a PNG fallback and alt text", () => {
+    const h = render(createElement(AddonsPage));
+    for (const id of ["guidewebexport", "adventurelog"]) {
+      expect(h).toContain(`srcSet="/addons/${id}.svg"`);
+      expect(h).toMatch(new RegExp(`<img src="/addons/${id}-128.png" alt="[^"]+ icon: [^"]+"`));
+      expect(existsSync(resolve(__dirname, `../../public/addons/${id}.svg`))).toBe(true);
+      expect(existsSync(resolve(__dirname, `../../public/addons/${id}-128.png`))).toBe(true);
+    }
   });
 });
 
