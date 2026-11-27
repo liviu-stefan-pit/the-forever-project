@@ -47,9 +47,12 @@ const LOST_TURNIN = "silverpine-11-15:009";
 /** Speedrun accept :sr04 was compacted into the Prove Your Worth accept. */
 const LOST_ACCEPT_SR = "silverpine-11-15:sr03";
 const LOST_TURNIN_SR = "silverpine-11-15:sr07";
+/** Last Deathknell town stop (hand-ins + trainer). Every quest on it is done in the snapshot. */
 const TRAINER = "tirisfal-1-12:040";
-/** First open Tirisfal quest after passed travel: accept Whispering Horror Residue. grind-to-11 is gone. */
-const TIRISFAL_NEXT = "tirisfal-1-12:w2-95328-1";
+/** First open Tirisfal step: the Agamand Mills field step, which also accepts A Letter Undelivered (361, never taken). */
+const TIRISFAL_NEXT = "tirisfal-1-12:096";
+/** Balanced exit to Silverpine: a travel step with no actions. */
+const TIRISFAL_EXIT = "tirisfal-1-12:119";
 const BARRENS_EXIT = "silverpine-11-15:036";
 
 function stepById(guide: Guide, id: string): Step {
@@ -206,32 +209,25 @@ describe("live Silverpine snapshot", () => {
 
   it("shows a completed breadcrumb as done", () => {
     // 363 (Rude Awakening) is Undead starting content. The check is breadcrumb + completed, for every class.
-    const accept = stepById(tirisfal, "tirisfal-1-12:001");
-    const turnin = stepById(tirisfal, "tirisfal-1-12:002");
-    expect.soft(stepStatus(profile, accept, none, quests).status).toBe("done");
-    expect.soft(stepStatus(profile, turnin, none, quests).status).toBe("done");
-    expect.soft(isStepDone(profile, accept.id, none, accept, quests)).toBe(true);
-    expect.soft(isStepDone(profile, turnin.id, none, turnin, quests)).toBe(true);
+    // Town stop 1 accepts and turns in 363, then accepts 364.
+    const stop = stepById(tirisfal, "tirisfal-1-12:001");
+    expect.soft(stepStatus(profile, stop, none, quests).status).toBe("done");
+    expect.soft(isStepDone(profile, stop.id, none, stop, quests)).toBe(true);
   });
 
   it("leaves trainer and travel steps open when a later quest step is already done", () => {
-    const trainer = stepById(tirisfal, TRAINER);
-    const runToBrill = stepById(tirisfal, "tirisfal-1-12:043");
-    const hearth = stepById(tirisfal, "tirisfal-1-12:044");
+    // Tirisfal's trainer lines now sit on town stops with quests, so its open travel step is the exit.
+    const exit = stepById(tirisfal, TIRISFAL_EXIT);
     const runNorth = stepById(silverpine, "silverpine-11-15:008");
     const leave = stepById(silverpine, BARRENS_EXIT);
-    expect(isStepDone(profile, trainer.id, none, trainer, quests)).toBe(false);
-    expect(isStepDone(profile, runToBrill.id, none, runToBrill, quests)).toBe(false);
-    expect(isStepDone(profile, hearth.id, none, hearth, quests)).toBe(false);
+    expect(isStepDone(profile, exit.id, none, exit, quests)).toBe(false);
     expect(isStepDone(profile, runNorth.id, none, runNorth, quests)).toBe(false);
     expect(isStepDone(profile, leave.id, none, leave, quests)).toBe(false);
-    expect(stepStatus(profile, trainer, none, quests).status).not.toBe("done");
   });
 
   it("does not pick the trainer or a goto that sits before a later done quest step", () => {
-    // Last done quest step on visible Tirisfal is tirisfal-1-12:116 (turn in 405).
-    // :040 trainer, :043/:044/:115 gotos are earlier and stay open. grind-to-11 is gone;
-    // the first open quest is Whispering Horror Residue (w2-95328-1), which sits before :116.
+    // A cursor or deep link on a passed town stop (:040, all quests done) moves on to the first open step,
+    // the Agamand Mills field step (:096), which is open because 361 was never accepted.
     const steps = visibleSteps(tirisfal, profile, "balanced");
     expect.soft(pick(steps, profile)).toBe(TIRISFAL_NEXT);
     expect.soft(pick(steps, profile, { cursorStep: TRAINER, deepStep: TRAINER })).toBe(TIRISFAL_NEXT);
@@ -256,9 +252,7 @@ describe("live Silverpine snapshot", () => {
         },
       );
     };
-    const trainer = stepById(tirisfal, TRAINER);
     const runNorth = stepById(silverpine, "silverpine-11-15:008");
-    expect(isStepDone(profile, trainer.id, none, trainer, quests)).toBe(false);
     expect(isStepDone(profile, runNorth.id, none, runNorth, quests)).toBe(false);
     const fromTrainer = dashboardNext(tirisfal, TRAINER);
     expect(fromTrainer[0]).toBe(TIRISFAL_NEXT);

@@ -1,0 +1,1148 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "tirisfal-1-12",
+ "title": "North trip: gnolls, Garren's Haunt and Agamand Mills",
+ "steps": [
+  {
+   "id": "tirisfal-1-12:087",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "North of Brill, from the graveyard up to Garren's Haunt:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Rot Hide Graverobbers (53-58, 39-46) and Rot Hide Mongrels (56-61, 31-38): kill the ones Graverobbers asks for and loot 8 Embalming Ichor (the Rot Hide Gnolls drop it too)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick 10 Doom Weed. It grows between the gnoll camps (55-59, 34-43)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Greater Duskbats east of the gnolls (60-65, 40-46): 5 Duskbat Pelts."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 55.9,
+      "y": 42.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "label": "Graverobbers",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.0,
+      "y": 34.1,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "label": "Graverobbers",
+     "objective": 2
+    },
+    {
+     "type": "complete",
+     "questId": 358,
+     "label": "Graverobbers",
+     "objective": 3
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.1,
+      "y": 39.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5482,
+     "label": "Doom Weed",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 62.8,
+      "y": 43.0,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 375,
+     "label": "The Chill of Death",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead quest 358 (Graverobbers)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead quest 5482 (Doom Weed)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=375",
+     "label": "Wowhead quest 375 (The Chill of Death)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1941
+     ],
+     "name": "Rot Hide Graverobber",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 55.8,
+      "y": 42.5
+     },
+     "radius": 3.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1941",
+       "label": "Wowhead Classic NPC 1941"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1675
+     ],
+     "name": "Rot Hide Mongrel",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 33.7
+     },
+     "radius": 2.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1675",
+       "label": "Wowhead Classic NPC 1675"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1941
+     ],
+     "name": "Rot Hide Graverobber (Embalming Ichor)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 55.8,
+      "y": 42.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1941",
+       "label": "Wowhead Classic NPC 1941"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2834",
+       "label": "Wowhead Classic item 2834"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1675
+     ],
+     "name": "Rot Hide Mongrel (Embalming Ichor)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 33.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1675",
+       "label": "Wowhead Classic NPC 1675"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2834",
+       "label": "Wowhead Classic item 2834"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 176753,
+     "name": "Doom Weed",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 57.1,
+      "y": 39.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=176753",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:096",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Agamand Mills (west of the gnolls, 42-51, 28-44):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Gregor Agamand (45.8, 29.4), Thurman Agamand (42.8, 32.5) and Nissa Agamand (49.7, 36.3): kill each for their remains. They are level 10, pull them alone."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Thurman also drops A Letter to Yvette: accept A Letter Undelivered."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Cracked Skull Soldiers (north) and Rattlecage Soldiers (south) drop 5 Notched Ribs; Darkeye Bonecasters (everywhere) drop 3 Blackened Skulls."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Devlin Agamand (in the south mill, 47.2, 40.0): kill him for Devlin's Remains."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Then head north-east to Garren's Haunt (next step) and come home along the coast road."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 45.8,
+      "y": 29.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 354,
+     "label": "Deaths in the Family",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 42.8,
+      "y": 32.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 354,
+     "label": "Deaths in the Family",
+     "objective": 3
+    },
+    {
+     "type": "accept",
+     "questId": 361,
+     "label": "A Letter Undelivered"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 49.7,
+      "y": 36.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 354,
+     "label": "Deaths in the Family",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 47.4,
+      "y": 32.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 426,
+     "label": "The Mills Overrun",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 426,
+     "label": "The Mills Overrun",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 47.3,
+      "y": 40.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 362,
+     "label": "The Haunted Mills",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=354",
+     "label": "Wowhead quest 354 (Deaths in the Family)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=361",
+     "label": "Wowhead quest 361 (A Letter Undelivered)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=426",
+     "label": "Wowhead quest 426 (The Mills Overrun)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=362",
+     "label": "Wowhead quest 362 (The Haunted Mills)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1523
+     ],
+     "name": "Cracked Skull Soldier (Notched Rib)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 47.4,
+      "y": 32.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1523",
+       "label": "Wowhead Classic NPC 1523"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3162",
+       "label": "Wowhead Classic item 3162"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1520
+     ],
+     "name": "Rattlecage Soldier (Notched Rib)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 47.7,
+      "y": 40.4
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1520",
+       "label": "Wowhead Classic NPC 1520"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3162",
+       "label": "Wowhead Classic item 3162"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1522
+     ],
+     "name": "Darkeye Bonecaster (Blackened Skull)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 47.1,
+      "y": 35
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1522",
+       "label": "Wowhead Classic NPC 1522"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3163",
+       "label": "Wowhead Classic item 3163"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1657
+     ],
+     "name": "Devlin Agamand (Devlin's Remains)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 47.3,
+      "y": 40.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1657",
+       "label": "Wowhead Classic NPC 1657"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2831",
+       "label": "Wowhead Classic item 2831"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:097",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "On the way back east: Maggot Eye (level 11, in the house at Garren's Haunt, 58.7, 30.8): kill him for Maggot Eye's Paw. Clear the gnolls around the house first and pull him alone."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "North coast just past him (58-65, 26-31): kill Vile Fin Puddlejumpers and Minor Oracles for 5 Vile Fin Scales. The Minor Oracles also drop the 3 Vile Fin Murloc Skins for Shelene."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.7,
+      "y": 30.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 398,
+     "label": "WANTED: Maggot Eye",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 62.0,
+      "y": 28.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 368,
+     "label": "A New Plague",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 97558,
+     "label": "Hides for the Forsaken",
+     "objective": 3
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=398",
+     "label": "Wowhead quest 398 (WANTED: Maggot Eye)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=368",
+     "label": "Wowhead quest 368 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97558",
+     "label": "Wowhead quest 97558 (Hides for the Forsaken)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1753
+     ],
+     "name": "Maggot Eye (Maggot Eye's Paw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 30.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1753",
+       "label": "Wowhead Classic NPC 1753"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=3635",
+       "label": "Wowhead Classic item 3635"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1545
+     ],
+     "name": "Vile Fin Muckdweller (Vile Fin Scale)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 67.3,
+      "y": 27.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1545",
+       "label": "Wowhead Classic NPC 1545"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2859",
+       "label": "Wowhead Classic item 2859"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1544
+     ],
+     "name": "Vile Fin Minor Oracle (Vile Fin Scale)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.4,
+      "y": 29.9
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1544",
+       "label": "Wowhead Classic NPC 1544"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2859",
+       "label": "Wowhead Classic item 2859"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 3, Brill (level ~9.5). Hand in everything from the north:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Magistrate Sevren: turn in Graverobbers, accept Forsaken Duties."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Junior Apothecary Holland: turn in Doom Weed, accept Tomb Weed."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Dillinger: turn in The Mills Overrun."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Executor Zygand: turn in Wanted: Maggot Eye."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Coleman Farthing: turn in The Haunted Mills and Deaths in the Family, accept Speak with Sevren. Yvette Farthing (upstairs): turn in A Letter Undelivered."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Magistrate Sevren: turn in Speak with Sevren."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Gretchen Dedmar: turn in The Chill of Death."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Apothecary Johaan: turn in A New Plague, accept the next one (spider venom, east trip)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Nurse Neela: turn in Camping 101: First Aid if your First Aid is 20."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.26,
+      "y": 50.84,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 358,
+     "label": "Graverobbers"
+    },
+    {
+     "type": "accept",
+     "questId": 359,
+     "label": "Forsaken Duties"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.44,
+      "y": 48.85,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5482,
+     "label": "Doom Weed"
+    },
+    {
+     "type": "accept",
+     "questId": 99142,
+     "label": "Tomb Weed"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.45,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 426,
+     "label": "The Mills Overrun"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.59,
+      "y": 51.76,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 398,
+     "label": "WANTED: Maggot Eye"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.72,
+      "y": 52.29,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 362,
+     "label": "The Haunted Mills"
+    },
+    {
+     "type": "turnin",
+     "questId": 354,
+     "label": "Deaths in the Family"
+    },
+    {
+     "type": "accept",
+     "questId": 355,
+     "label": "Speak with Sevren"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.58,
+      "y": 52.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 361,
+     "label": "A Letter Undelivered"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.26,
+      "y": 50.84,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 355,
+     "label": "Speak with Sevren"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.89,
+      "y": 52.73,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 375,
+     "label": "The Chill of Death"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.45,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 368,
+     "label": "A New Plague"
+    },
+    {
+     "type": "accept",
+     "questId": 369,
+     "label": "A New Plague"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.82,
+      "y": 52.83,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97955,
+     "label": "Camping 101: First Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead quest 358 (Graverobbers)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=359",
+     "label": "Wowhead quest 359 (Forsaken Duties)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead quest 5482 (Doom Weed)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99142",
+     "label": "Wowhead quest 99142 (Tomb Weed)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=426",
+     "label": "Wowhead quest 426 (The Mills Overrun)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=398",
+     "label": "Wowhead quest 398 (WANTED: Maggot Eye)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=362",
+     "label": "Wowhead quest 362 (The Haunted Mills)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=354",
+     "label": "Wowhead quest 354 (Deaths in the Family)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=355",
+     "label": "Wowhead quest 355 (Speak with Sevren)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=361",
+     "label": "Wowhead quest 361 (A Letter Undelivered)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=375",
+     "label": "Wowhead quest 375 (The Chill of Death)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=368",
+     "label": "Wowhead quest 368 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=369",
+     "label": "Wowhead quest 369 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97955",
+     "label": "Wowhead quest 97955 (Camping 101: First Aid)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:089",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Magistrate Sevren: also accept The Prodigal Lich (Undercity) and The Family Crypt. Apothecary Johaan: accept Delivery to Silverpine Forest."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.26,
+      "y": 50.84,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 405,
+     "label": "The Prodigal Lich"
+    },
+    {
+     "type": "accept",
+     "questId": 408,
+     "label": "The Family Crypt"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.45,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 445,
+     "label": "Delivery to Silverpine Forest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=405",
+     "label": "Wowhead quest 405 (The Prodigal Lich)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=408",
+     "label": "Wowhead quest 408 (The Family Crypt)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=445",
+     "label": "Wowhead quest 445 (Delivery to Silverpine Forest)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  }
+ ]
+}
