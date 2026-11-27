@@ -1,5 +1,5 @@
 /**
- * `/about`: what the site is, its experimental status, use of AI, privacy, licence, disclaimer and
+ * `/about`: what the site is, its experimental and play-tested status, use of AI, privacy, licence, disclaimer and
  * contact. Each section has an id (`/about#privacy`) so other pages can link straight to it.
  */
 import type { ReactNode } from "react";
@@ -10,6 +10,7 @@ import { CONTACT_EMAIL, ISSUES_URL, LICENSE_URL, MAINTAINER_NAME, PRIVACY_URL, R
 export const ABOUT_SECTIONS = [
   { id: "about", title: "About" },
   { id: "experimental", title: "Experimental" },
+  { id: "play-tested", title: "Play-tested" },
   { id: "ai", title: "Use of AI" },
   { id: "privacy", title: "Privacy" },
   { id: "license", title: "License" },
@@ -72,7 +73,7 @@ export function AboutPage() {
 
       <Section id="experimental">
         <p>
-          <strong className="text-warn">Experimental.</strong> These routes have not been fully play-tested yet. Expect mistakes: a quest in the
+          <strong className="text-warn">Experimental.</strong> Routes marked Experimental have not been play-tested yet. Expect mistakes: a quest in the
           wrong order, a wrong coordinate, a step that does not fit your level. If you find one, please{" "}
           <Ext href={ISSUES_URL}>report it on GitHub</Ext>; it helps everyone who levels after you.
         </p>
@@ -82,6 +83,22 @@ export function AboutPage() {
             AdventureLog
           </Link>
           .
+        </p>
+      </Section>
+
+      <Section id="play-tested">
+        <p>
+          <strong className="text-done">Play-tested.</strong> A route marked Play-tested was played through in the live game with{" "}
+          <Link to="/addons" className="text-bronze-400 hover:text-bronze-300">
+            AdventureLog
+          </Link>{" "}
+          recording the run. Its quest order, quest locations and XP were checked against that log. The guide header says which class played it
+          and over which levels.
+        </p>
+        <p>
+          One run covers one class. Class quests for other classes are still unconfirmed, and so is any quest the run did not see. Those steps
+          carry a small <strong className="font-semibold">Unconfirmed</strong> label. Pages that cover several routes, like the dashboard,
+          stay Experimental until every route in them is play-tested.
         </p>
       </Section>
 

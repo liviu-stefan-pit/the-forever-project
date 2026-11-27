@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router";
 import { FactionCard, type Faction } from "../components/landing/FactionCard";
 import { FusionBackground } from "../components/landing/FusionBackground";
 import { AllianceSigil, HordeSigil } from "../components/landing/Sigils";
-import { EXPERIMENTAL_HREF, ExperimentalBadge } from "../components/ui/ExperimentalBadge";
+import { EXPERIMENTAL_HREF, StatusBadge } from "../components/ui/ExperimentalBadge";
 import { Icon, type IconName } from "../components/ui/Icon";
 import { HORDE_HOME, SITE_NAME } from "../config";
 import { loadLandingStats, type LandingStats } from "../data/loader";
@@ -139,7 +139,7 @@ export function LandingPage() {
                 Available now
               </span>
               {/* The whole card is a link, so the badge is plain text here; the footer links to About. */}
-              <ExperimentalBadge link={false} className="py-1" />
+              <StatusBadge status={stats?.status} link={false} className="py-1" />
             </span>
             <span className="sigil-float mt-5 block">
               <HordeSigil className="h-32 w-32 drop-shadow-[0_10px_30px_rgba(155,44,44,0.65)] transition-transform duration-500 group-hover:scale-105 sm:h-40 sm:w-40" />

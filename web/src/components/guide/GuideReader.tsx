@@ -135,10 +135,11 @@ export function GuideReader({
       profile: active,
       quests,
       guideHasSpeedrun,
+      playtested: guide.status === "play-tested" ? guide.playtested : undefined,
     }),
     // profileKey covers character / options identity without step ticks
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [routeStyle, profileKey, quests, guideHasSpeedrun],
+    [routeStyle, profileKey, quests, guideHasSpeedrun, guide.status, guide.playtested],
   );
 
   const slug = guide.slug;

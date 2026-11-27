@@ -10,7 +10,7 @@ import {
 } from "../../lib/nextGuide";
 import { fmtPlayTime, guideMinutes } from "../../lib/timeEstimate";
 import { useGuideCompletion, useRouteStyle } from "../../state/progress";
-import { ExperimentalBadge } from "../ui/ExperimentalBadge";
+import { StatusBadge } from "../ui/ExperimentalBadge";
 import { Icon } from "../ui/Icon";
 import { ProgressRing } from "../ui/ProgressRing";
 
@@ -51,6 +51,10 @@ export function GuideHeader({
   const frac = total ? done / total : 0;
   const bonusCount = guide.steps.filter((s) => s.bonus).length;
   const minutes = guideMinutes(index, guide.slug, routeStyle);
+  // The guide JSON carries its pack status; the index entry is the fallback for guides cached before it did.
+  const entry = index?.entries?.find((e) => e.slug === guide.slug);
+  const status = guide.status ?? entry?.status;
+  const playtested = guide.playtested ?? entry?.playtested;
 
   return (
     <header className="panel-animate space-y-4">
@@ -58,7 +62,7 @@ export function GuideHeader({
         {bracket && <span className="text-bronze-400">Levels {bracket.replace("-", "–")}</span>}
         {bracket && <span aria-hidden="true">·</span>}
         <span>{guide.subgroup}</span>
-        <ExperimentalBadge />
+        <StatusBadge status={status} playtested={playtested} />
       </div>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div className="min-w-0">

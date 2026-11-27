@@ -108,3 +108,14 @@ describe("GuideHeader next guide", () => {
     expect(markup).not.toContain("0 steps");
   });
 });
+
+describe("GuideHeader status badge", () => {
+  it("shows the green Play-tested badge for a play-tested guide and Experimental otherwise", () => {
+    const tested = render({ routeStyle: "balanced", g: guide({ status: "play-tested", playtested: { date: "2026-11-27", class: "Shaman", levels: [1, 13] } }) });
+    expect(tested).toContain('data-testid="badge-playtested"');
+    expect(tested).not.toContain('data-testid="badge-experimental"');
+    const plain = render({ routeStyle: "balanced" });
+    expect(plain).toContain('data-testid="badge-experimental"');
+    expect(plain).not.toContain('data-testid="badge-playtested"');
+  });
+});

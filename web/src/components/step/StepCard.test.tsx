@@ -350,3 +350,37 @@ describe("StepCard", () => {
     expect(html).not.toContain("step-areas");
   });
 });
+
+describe("StepCard Unconfirmed label (play-tested guide)", () => {
+  const playtested = { date: "2026-11-27", class: "Shaman" as const, levels: [1, 13] as [number, number] };
+  const ctx: TipContext = { route: "balanced", dungeons: false, playtested };
+
+  it("labels another class's step that is not verified, and drops the generic Unverified chip", () => {
+    const html = render({ ...base, classes: ["Warrior"], sources: [], verified: false }, ctx);
+    expect(html).toContain('data-testid="step-unconfirmed"');
+    expect(html).toContain("Unconfirmed");
+    expect(html).toContain("the play-test was on a Shaman");
+    expect(html).not.toContain("step-unverified");
+  });
+
+  it("does not label the played class's step, a verified class step, or a class step outside play-tested guides", () => {
+    expect(render({ ...base, classes: ["Shaman"], sources: [], verified: true }, ctx)).not.toContain("step-unconfirmed");
+    expect(render({ ...base, classes: ["Warrior"], sources: [], verified: true }, ctx)).not.toContain("step-unconfirmed");
+    expect(render({ ...base, classes: ["Warrior"], sources: [], verified: false })).not.toContain("step-unconfirmed");
+  });
+
+  it("labels a step with a filter-restricted class too", () => {
+    const step: Step = { ...base, filter: { any: [[{ cls: "Mage" }]] } };
+    expect(render(step, ctx)).toContain("step-unconfirmed");
+  });
+
+  it("labels a step whose quest data is unconfirmed, from the action or from the quest lookup", () => {
+    const onAction: Step = { ...base, verified: true, actions: [{ type: "accept", questId: 1, label: "Q", dataStatus: "unconfirmed" }] };
+    expect(render(onAction, ctx)).toContain("step-unconfirmed");
+    const quests = new Map([[2, { id: 2, dataStatus: "unconfirmed" }]]) as unknown as TipContext["quests"];
+    const inLookup: Step = { ...base, verified: true, actions: [{ type: "turnin", questId: 2, label: "Q" }] };
+    expect(render(inLookup, { ...ctx, quests })).toContain("step-unconfirmed");
+    const confirmed: Step = { ...base, verified: true, actions: [{ type: "accept", questId: 1, label: "Q", dataStatus: "confirmed" }] };
+    expect(render(confirmed, ctx)).not.toContain("step-unconfirmed");
+  });
+});
