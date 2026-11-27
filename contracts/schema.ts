@@ -59,6 +59,28 @@ export interface MapPoint {
  */
 export type GuideIdPrefixes = Record<string, string[]>;
 
+/**
+ * How far a route pack has been checked. `play-tested`: played end to end in the live game with AdventureLog.
+ * Missing = `experimental` (older data builds, and every pack without a `status` in its `pack.json`).
+ */
+export type GuideStatus = "experimental" | "play-tested";
+
+/** Who played a play-tested pack, and how far (`pack.json` `playtested`). */
+export interface GuidePlaytest {
+  /** ISO date (YYYY-MM-DD) of the run. */
+  date: string;
+  /** The class the run was played on. Class steps for other classes stay unconfirmed. */
+  class: ClassKey;
+  /** Character levels the run covered, `[from, to]`. */
+  levels: [number, number];
+}
+
+/**
+ * Where a quest's facts come from: `confirmed` = seen in the live game (AdventureLog),
+ * `unconfirmed` = authored but not yet seen, `questie` = QuestieDB only. Missing = unknown.
+ */
+export type QuestDataStatus = "confirmed" | "unconfirmed" | "questie";
+
 /** One indexed guide in `guide_index.json`, with the step ids that guide publishes. */
 export interface GuideIndexEntry {
   slug: string;
@@ -76,6 +98,9 @@ export interface GuideIndexEntry {
   minutesEstimated?: boolean;
   /** XP-sim level at the guide's first simulated step, per route. */
   startLevel?: Partial<Record<RouteStyle, number>>;
+  /** Pack status from `pack.json`. Missing = experimental. */
+  status?: GuideStatus;
+  playtested?: GuidePlaytest;
 }
 
 /** `guide_index.json`: brackets in play order plus the race starts. */
@@ -109,6 +134,10 @@ export interface Guide {
   /** Guide-level `<< …` filter (other than the faction line). */
   filter?: Filter;
   source: "import" | "builtin";
+  /** Pack status from `pack.json`. Missing = experimental. */
+  status?: GuideStatus;
+  /** Set when `status` is `play-tested`. */
+  playtested?: GuidePlaytest;
   /** Split at zone changes (P4). */
   sections: Section[];
   /** Guide steps + bonus steps from P5, in route order. */
@@ -281,9 +310,9 @@ export type Action = ActionBase &
          */
         raw?: { zone?: string; a: number; b: number; instance?: number };
       }
-    | { type: "accept" | "turnin"; questId: number; label: string }
-    | { type: "complete"; questId: number; objective: number; label: string }
-    | { type: "collect"; itemId: number; count: number; questId?: number; objective?: number; label: string }
+    | { type: "accept" | "turnin"; questId: number; label: string; dataStatus?: QuestDataStatus }
+    | { type: "complete"; questId: number; objective: number; label: string; dataStatus?: QuestDataStatus }
+    | { type: "collect"; itemId: number; count: number; questId?: number; objective?: number; label: string; dataStatus?: QuestDataStatus }
     | { type: "train"; spellId: number; label: string }
     | {
         type: "fly" | "fp" | "home" | "hs" | "zone" | "subzone" | "deathskip" | "vendor" | "trainer";
@@ -315,6 +344,8 @@ export interface QuestInfo {
   classes: number;
   /** Forever-only quest: no Wowhead link. */
   custom: boolean;
+  /** Where this quest's facts come from. Missing = unknown. */
+  dataStatus?: QuestDataStatus;
   start: Giver[];
   end: Giver[];
   objectivesText: string[];
@@ -358,6 +389,7 @@ export interface QuestMin {
   races: number;
   classes: number;
   custom: boolean;
+  dataStatus?: QuestDataStatus;
   pre: { group: number[]; single: number[] };
   exclusiveTo: number[];
   breadcrumbFor?: number;
@@ -723,6 +755,10 @@ export interface RoutePack {
   next?: string;
   /** Successor per route style when the two lines diverge. `next` stays the balanced default. */
   nextByRoute?: Partial<Record<RouteStyle, string>>;
+  /** Missing = experimental. Copied into the guide index entry and the guide JSON by build-data. */
+  status?: GuideStatus;
+  /** The play-test run behind `status: "play-tested"`. */
+  playtested?: GuidePlaytest;
   steps: Step[];
   classProfessions?: ClassProfessionsFile;
   tipsMatrix?: TipsMatrixFile;
