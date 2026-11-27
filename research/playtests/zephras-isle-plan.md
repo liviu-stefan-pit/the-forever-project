@@ -1,9 +1,12 @@
-# Zephras Isle route rework — plan (playtest 1: Shaman 1–6, playtest 2: Shaman 6–9)
+# Zephras Isle route rework — plan (playtests 1–3: Shaman 1–14)
 
-Source: AdventureLog of **Nero Clover** (Windshaper Skyborne Shaman), sessions of 2026-11-26.
+Source: AdventureLog of **Nero Clover** (Windshaper Skyborne Shaman), sessions of 2026-11-26 and 2026-11-27.
 Playtest 1: `/played` 34.5 → 82.8 min for levels 1 → 6, all of it in segment `01-rorians-camp`. The 34 minutes before the first quest are character creation and idle time. They are not counted.
 Playtest 2 (§7): levels 6 → 9, all of segment `02-shendar-village`, up to the A Last Request hand-in.
-Segments 03–07 have not been played yet. §1–§6 rebuild segment 01 and set the rules the other segments follow. §7 applies them to segment 02. The sessions already read are listed in §8.
+Playtest 3 (§9): levels 9 → 14, segments 03–07, from the Valanaar arrival to The Earthen Ring.
+§1–§6 rebuild segment 01 and set the rules the other segments follow. §7 applies them to segment 02, §9 to segments 03–07. The sessions already read are listed in §8.
+
+**Status (2026-11-27): the pack is play-tested end to end for Shaman, levels 1 → 14.** Every step the Shaman played is `verified`. Other classes' class-quest steps (Warrior, Druid and the other level-2 intros) and the Strange Hermit side chain were not seen in the log and stay unverified.
 
 ---
 
@@ -166,12 +169,14 @@ Every trainer is in **Shen'dar Village**, which the route reaches at about level
 1. ✅ **Fix** `stepIsShown` so **Show** reveals class-filtered steps. They open read-only ("Not for your character") and stay out of navigation and the map.
 2. ✅ **Data fix:** Harvesting Windstones is accepted at town stop 2 and finished in the east field step.
 3. ✅ **Re-author segment 01:** 59 steps → 19 (4 town stops, field steps, one step per class intro). Old ids are kept on the merged steps, so saved progress still matches.
-4. **Field-step text:** replace the "Work through" generator output with counts + mob + area. ✅ Segments 01–02. Segments 03–07 are still to do, after they are played.
-5. **XP callouts:** surface `sim.next.xpGap` before hubs/trainers ("31 XP to 6 · ~1 Vuldren"). Use live XP when synced.
-6. ✅ **Professions:** hooks moved to Shen'dar (`stepId`), with a "keep in bags" tip on step 001.
-7. **Speedrun:** score each quest with the grind-rate rule (§3) and mark the cuts `routes: ["balanced"]`. ✅ Segment 02 (§7.4): no quest falls under the grind rate. Speedrun skips town stop 2 and carries its hand-ins to stop 3.
-9. **Quest data:** Stolen Supplies (92551, Danarii Bellowveil, 525 XP, 10 Stolen Shen'dar Supplies from Al'Aketh Stormcallers) is missing from `quests.json`. It is text-only in steps 086/097/098 until it is added. Skypriest Aanders' NPC spawn (48.9, 54.6) is wrong: he was at the West Pylon Watchtower, 41.1, 64.1.
-8. **Quest rewards:** add reward items to the quest data so rule 3 (good gear) can be checked.
+4. ✅ **Field-step text:** replace the "Work through" generator output with counts + mob + area. Segments 01–07 (§9 for 03–07).
+5. **XP callouts:** surface `sim.next.xpGap` before hubs/trainers ("31 XP to 6 · ~1 Vuldren"). Use live XP when synced. Hand-written XP-check tips are in place at town stops 2, 3 and 6 (§9).
+6. ✅ **Professions:** hooks moved to Shen'dar (`stepId`), with a "keep in bags" tip on step 001. Playtest 3 showed no better place for any hook (§9.6).
+7. ✅ **Speedrun:** score each quest with the grind-rate rule (§3) and mark the cuts `routes: ["balanced"]`. Segment 02 (§7.4) and segments 03–07 (§9.5): no quest falls under the grind rate, so the differences are order, hand-in timing and profession time, not cuts.
+9. **Quest data:** Stolen Supplies (92551, Danarii Bellowveil, 525 XP, 10 Stolen Shen'dar Supplies from Al'Aketh Stormcallers) is missing from `quests.json`. It is text-only in steps 086/097/098 until it is added (job C: our own `tpf-db`). Skypriest Aanders' NPC spawn (48.9, 54.6) is wrong: he was at the West Pylon Watchtower, 41.1, 64.1. Kuramaa's Stump (object 660848, 42.5, 68.9) is missing from `objects.json`.
+8. **Quest rewards:** add reward items to the quest data so rule 3 (good gear) can be checked. AdventureLog 1.2.0 now records the reward choices; §9.5 uses them by hand, and `tpf-db` (job C) stores them.
+10. **Open:** Hunter's Taming the Beast (94007) starts in Shen'dar (Elayaa Easewind, 45.3, 44.2) and needs level 10, but the route leaves Shen'dar at 9. It is not in the route. Decide whether Hunters get a trip back or the quest is left out.
+11. **Open:** a "neither route" membership for story-only steps does not exist (`routes: []` falls back to both). Optional steps use `tags.optional` + `routes: ["balanced"]`, which the XP sim counts on Balanced (§9.7).
 
 ## 6. Next playtest: please capture
 - Trainer windows (Cooking, First Aid) so the reagents are recorded.
@@ -273,3 +278,122 @@ The next analysis skips these (AdventureLog session ids):
 | 20261126-1531-34b5 | playtest 2, levels 6–7 |
 | 20261126-1607-3d06 | login only |
 | 20261126-1814-5af9 | playtest 2, levels 7–9, ends after the A Last Request hand-in (`/played` 14721 s) |
+| 20261126-1929-6c83 | idle / AFK in Shen'dar, no quest or kill events |
+| 20261126-2012-767c | playtest 3, levels 9–13, Valanaar arrival → Making Our Move (part); 29 min AFK at Ayessa not counted |
+| 20261127-0000-ac07 | login only |
+| 20261127-0910-2d03 | playtest 3, levels 13–14, Making Our Move → The Earthen Ring, level 14 training (`/played` 31492 s) |
+
+---
+
+## 9. Playtest 3: segments 03–07, Valanaar to The Earthen Ring (Shaman 9 → 14)
+
+Sessions `20261126-2012-767c` and `20261127-0910-2d03` (AdventureLog 1.2.0: XP source, quest givers and rewards, trainer spells, object use, group flags). `20261126-1929-6c83` (idle in Shen'dar) and `20261127-0000-ac07` (login) are not counted, nor the 29-minute AFK at Ayessa (`/played` 16809–18558). **Active play: about 217 min for levels 9.5 → 14** (ding 10 at active 17539 s, 11 at 20079, 12 at 22917, 13 at 24772, 14 at 30237). **Two deaths** (§9.4). Every quest was on Zephras Isle; the character did not board the skycutter, so the Mulgore hand-in is not play-tested.
+
+### 9.1 What the log shows
+
+Times are active seconds (`/played` minus AFK).
+
+| Active | Where | What happened |
+|---|---|---|
+| 15939–16930 | Valanaar stop 1 (16.5 min) | Crab Season, hearth, Blood Tithe, Unnerving Silence, To Valanaar, Deliver the Signet, Bugged, Refugees + Loved One, Grand Skyseer/Adventure, Broken Construct 1–2, Unwelcome Spirits. 13 Skyhoppers (8 counted). **Death 1** (fall, 158 s). |
+| 16930–18800 | Windfield Orchard (31 min) | Blood Tithe → MYU, Flutterfly Dust, Galestriders, What Is My Purpose?, Hills Have Eyes, Standing Our Ground. Air Construct Core at the bandit camp. Ding 10. |
+| 18800–19283 | Shriekling Den → Valanaar stop 2 | Crystallized Lightning in the den, Deliver the News, Call of Fire, train 10. |
+| 19283–19782 | Olariaan (51.2, 86.1) → Faladiel (64.4, 63.7) | Call of Fire 1, Faladiel's Heart (**grouped kill** with another player). |
+| 20079–22923 | Northern hollows (47 min) | Elegael ×2 hand-in rounds, Vayn, Ban'aethal ruins, Nightclaw Cavern. Ding 11 at Elegael, 12 on the second round. ~2.5 min reading lore books. |
+| 22923–23496 | Windsong Lake | Enchanted Gyrozephyr, 13 Crawlers for 6 Crab Meat. |
+| 23496–24158 | Call of Fire 2–4 | Olariaan → Kuramaa (42.5, 68.9) → Olariaan → Eternal Flame to Valanaar (124 s). |
+| 24158–24772 | Valanaar stop 3 | Train 12, eight hand-ins, ~4 min crafting by Nyalah. Ding 13 on the last hand-in. |
+| 24772–25129 | A Firm Response round trip (6 min) | Belathaan at 59.9, 57.0; 2 Living Storms (0 XP). |
+| 25129–26347 | East Pylon Watchtower (20 min) | Tower Defense, Disrupting Logistics, Breaking the Breaker, Blood for Blood (charms from the Brawlers here), Return to Valanaar. 14 kills before Disrupting Logistics was accepted. |
+| 26347–27547 | Turncoat house + Valanaar stop 5 | Turncoat, Assassins, Unfortunate News, Cult's True Plans (2.5 min watching), Desperate Times, Prepare for Battle. |
+| 27547–30226 | Shrine of Akir | Making Our Move across both sessions. **Death 2**, then **grouped**. |
+| 30226–30953 | Sanctum, Rohashi Spires, Valanaar | Inner Sanctum (ding 14), Confront Lorthuna (grouped, Duke Anvillaxx elite 13), teleported back, Fate of Zephras, What Comes Next, The Earthen Ring, train 14. |
+
+### 9.2 Findings that changed the route
+
+1. **147 steps → 56** in segments 03–07, in the order the Shaman played: stop 1 → Windfield → stop 2 (+ Call of Fire 1, Faladiel) → northern hollows → Windsong Lake → (Call of Fire 2–4) → stop 3 → Firm Response → East Pylon → cult → finale → exit. The old route put the northern hollows last and Windfield Balanced-only. Segment files now follow that order: `05-northern-hollows.json` (new), `06-valanaar-defense-and-call-of-fire.json` and `07-the-cult-and-lorthuna.json` (renumbered), and `07-northern-hollows-and-departure.json` is gone.
+2. **Merged ids** (each merged step keeps one old id): 103, 107, 110, 122, 124, 125, 127, 135, 136, 141, 142, 145, 146, 153, 155, 156, 167, 171, 174, 181, 183, 184, 186, 188, w2-94484-2, w2-93165-1, w2-93165-3, w2-94487-2, w2-93736-2, w2-94486-2, w2-94485-3, w2-94488-2, w2-94488-3, w2-93159-1, w2-93317-2, w2-98512-1, w2-98512-3. Kept as they were: the Shaman cof-1…cof-7 (rewritten), Warrior 163–165, Druid 118/119/160–162, 194. **New ids:** `shriekling-den`, `confront-lorthuna`, `leave-zephras`.
+3. **Wrong locations in the old steps** (QuestieDB spawns were right; our `goto`s were not):
+   - Blood for Blood (old 150) sent you to the Stormchasers in the north (63.8, 37.6). The charms dropped from **Al'Aketh Brawlers at the East Pylon** (64.5–67.4, 64.8–69.4), next to Disrupting Logistics.
+   - Crab Season (old w2-93317-2) pointed to 42.7, 68.8. The Crawlers are at **Windsong Lake**, 52–55.5, 44–53.
+   - Galestriders (old 127): 55.9, 72.6 → **49–53, 78–82.5**, east of the orchard. Flutterfly Dust (old 130): 50.4, 78.8 → 47–48.6, 77–79.5.
+   - Feathers for Binding (old w2-94486-2): 52.4, 40.8 → **56–63, 36–41**. Unwanted / Mercy Falls: 60.2, 34.4 → 63–65.5, 36.5–39. Unwelcome Spirits / Refugees: 56.8, 34–35 → 57–58, 29–33. Al'Aketh Assassins: 53.5, 57.5 → 55.8–56.7, 59.3–61.
+   - Aamelia Windfield stands at her house (46.7, 81.9, as in QuestieDB) **and** at the field edge (47.5, 78.5) at different times.
+   - Bugged needs Deliver the Signet turned in first, so it is accepted on a second word with Valennia.
+   - Only the Skyhopper with npc id 251727 counts for Bugged. 5 of 13 kills were on the other Skyhopper (251314).
+4. **Round trips cut:** Bugged is handed in at stop 2 instead of a walk back east at stop 1 (~2 min). The Air Construct Core is picked up in the bandit-camp step. Kill the East Pylon mobs only after taking Disrupting Logistics (14 kills were wasted for it).
+5. **Quest XP does not drop with level here.** Every turn-in paid QuestieDB's base XP (ratio 0.98–1.03), even level-9 quests at 13. Only kill XP drops (level 8–10 mobs give 32–59 XP at 13). The island stays worth questing to the end; see §9.5.
+6. The sim tracked the log well: Balanced 14.21, Speedrun 14.04 at the last stop (real: 14 at the Sanctum). Real play was about 0.4–0.5 levels ahead from Windfield on (profession Camping 101s in segment 02, rested XP, extra kills).
+7. **Training:** 10 at stop 2 (sim 10.27), Shaman 12 at Sessaria after Call of Fire (sim 12.15–12.41), other classes 12 at the **end** of stop 3 (without Call of Fire the Speedrun sim arrives at 11.9), 14 at the last stop (Speedrun sim reaches 14 only on What Comes Next).
+8. **Grouped:** Skypriest Faladiel (another player), the Shrine of Akir after death 2, the Inner Sanctum and the Rohashi Spires (Duke Anvillaxx, elite 13). Those kills are left out of the grind rate, and the steps say solo will be slower.
+
+### 9.3 Grind rate (solo, tracked kills only, gaps under 90 s)
+
+| Level | Kills | XP/kill | s/kill (incl. walking) | XP/min |
+|---|---|---|---|---|
+| 9 (Skyhoppers only, grey) | 16 | 26 | 22.1 | ~70 |
+| 10 | 33 | 65 | 30.6 | ~127 |
+| 11 | 54 | 82 | 39.2 | ~125 |
+| 12 (Windsong Crawlers, small sample) | 10 | 43 | 24.7 | ~106 |
+| 13 (21 grouped kills left out) | 47 | 38 | 20.3 | ~111 |
+
+**Island grind rate at 10–13: ~115–125 XP/min.** It falls because the island mobs are 1–4 levels below you. On-level mobs paid 95 XP at 10 and 100 at 11 (= 45 + 5 × level), so **grinding on-level mobs elsewhere at 13 would be ~110 XP per ~30 s ≈ 200–220 XP/min**. That is an estimate, not measured: it is the bar for "leave the island now".
+
+### 9.4 Deaths
+
+| # | Where | What killed you | Lost | Tip |
+|---|---|---|---|---|
+| 1 | 60.1, 81.2, south edge of Valanaar below Ayessa (level 9) | No enemy in combat, `killers` empty, after a 30 s walk south-west from 63.2, 78.8: most likely a **fall** off the ledge | 158 s corpse run | step 107: walk around the edge |
+| 2 | 59.4, 51.3, west entrance of the Shrine of Akir (level 13) | **Two Al'Aketh Spiritcallers** (level 10) at once | 36 s | step 183: pull one at a time, Spiritcallers first |
+
+### 9.5 Drops, pickups and the per-quest Speedrun score
+
+Drop rates (kills of that mob while the quest was in the log, against items received):
+
+| Quest | Item | Mob | Kills | Items | Drop % | First kill → done | Tail | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| Ornery Ornery Galestriders | Lowlands Galestrider Tenderloin | Ornery Galestrider (8–9) | 19 | 7 | **37%** | 11.1 min | 11 min (all of it after the orchard) | keep: ~130 XP/min during the tail = grind rate; boots/bracers/pants |
+| The Hills Have Eyes | Blood-Stained Bandit Mask | Bandit Highwayman | 10 | 7 | 70% | 5.3 min | 0 | keep |
+| Unwanted and Unworthy | Bloody Heirloom | Al'Aketh Stormchaser / Footsoldier | 12 (11 looted) | 10 | 83% (91% of loots) | 7.5 min | 0 | keep |
+| Mercy Falls on Deaf Ears | Al'Aketh Cultist's Ear | same mobs | 14 (13 looted) | 5 | **36%** | 8.3 min | 1.6 min after the heirlooms | keep |
+| Feathers for Binding | Pristine Shriekling Feather (2–4 per drop) | Shadowgale Shriekling | 13 | 20 (7 drops) | 54% of kills | spread over 38 min of other work | — | keep |
+| Unwelcome Spirits | Wind Hollow Essence | Wind Hollow (10–11) | 28 | 10 | **36%** | 16 min | 11 min after the Belongings | keep: Wind Hollows give ~92 XP, ~159 XP/min during the tail |
+| Crab Season | Windsong Crawler Meat | Windsong Crawler (8–9) | 13 | 6 | 46% | 7.3 min | 5.5 min after the Gyrozephyr | keep: ~1.5 extra min → ~400 XP/extra min |
+| Blood for Blood | Al'Aketh Windstone Charm | Al'Aketh Brawler (+1 Pillager) | 20 | 10 | 50% (53% of loots) | 12.4 min | 0.4 min | keep |
+
+Ground and object pickups: Ripe Stormapple 10/10 pickups in 4.9 min (46–47, 79–80); Flutterfly Dust 5/5 in 4.6 min (47–48.6, 77–79.5); Lady's Tear Moss 8/8 spread over 12 min (58.8–62.2, 36.4–40.4); Abandoned Belongings 9 pickups for 8 in 7.5 min (56.7–58.7, 27–33.5); Construct Parts 4 piles for 3 parts (the Shriekling Den has two; the second gave the part). None needed a respawn wait.
+
+Per-quest score ("extra" = time on top of the route; kills count as free unless the mob is grey):
+
+| Quest(s) | XP | Extra (from log) | XP/extra min | Verdict |
+|---|---|---|---|---|
+| To Valanaar, Deliver the Signet | 570 | 0 (arrival) | — | keep |
+| The Grand Skyseer + A Grand Adventure | 170 | ~1.5 min (listening) | ~110 | keep: unlocks Broken Construct, Unwelcome Spirits |
+| Bugged | 700 | ~3 min (Skyhoppers give 6 XP) | ~230 | keep |
+| Unnerving Silence | 220 | 0 (carried north) | — | keep: unlocks Elegael's six quests |
+| Windfield: Blood Tithe … Deliver the News (8 quests) | 4,140 | whole block 31 min at 226 XP/min incl. kills | — | **keep, both routes** (was Balanced only); the Air Construct Core is there anyway |
+| The Broken Construct ×3 | 1,975 | ~3 min (Shriekling Den, pickups) | ~650 | keep: required for A Firm Response |
+| Call of Fire ×4 (Shaman) | 3,170 | ~20 min of walking | ~160 | keep: Fire Totem (class spell) |
+| Northern hollows (Elegael ×6, Vayn, Ban'aethal ×3, Fate of the Den) | 9,560 | whole block 47 min at 234 XP/min incl. kills | — | keep |
+| Tears of the Lady | 230 | ~1.5 min of moss | ~150 | keep: unlocks Ties / Wounds / Missive (2,675 XP) |
+| Crab Season | 600 | ~1.5 min | ~400 | keep |
+| A Firm Response | 600 | 6 min round trip | ~100 | keep: unlocks In Service, Tower Defense, Blood for Blood; Windshaped Shield |
+| East Pylon chain (6 quests) | 2,840 | block 20 min at 155 XP/min incl. kills | — | keep: bracers, gauntlets, a weapon; unlocks the cult chain |
+| The Turncoat, Al'Aketh Assassins, Unfortunate News | 2,055 | 11 min at 327 XP/min incl. kills | — | keep |
+| The Cult's True Plans, Desperate Times, Prepare for Battle | 1,550 | ~8.7 min (watching, talking) | ~180 | keep: unlocks the finale; chest reward |
+| Making Our Move, The Inner Sanctum, Confront Lorthuna | 2,260 | ~20 min grouped at 185–240 XP/min incl. kills | — | keep: Empyrean gear (slower solo) |
+| The Fate of Zephras, What Comes Next | 920 | 3.8 min | ~360 | keep |
+
+**Result: no quest in segments 03–07 falls below the grind rate** that is not also a chain unlock, a gear upgrade or a class spell. Speedrun cuts nothing here. The Speedrun/Balanced differences are crafting time (the Nyalah tip) and the unplayed Strange Hermit chain (Balanced, optional).
+
+### 9.6 Professions
+
+Skinning 72 → 81 on the way (Galestriders), and ~4 min of crafting next to Nyalah in Valanaar (Leatherworking 39 → 49, First Aid 32 → 44, Cooking 16 → 17). Nyalah's trainer window had nothing new at 9 or 12. Crab Season rewards Recipe: Pincer Bites. No hook moves: the log shows no better place than the Shen'dar town stop (`zephras-isle:056`).
+
+### 9.7 Where each route leaves the island
+
+- **Both routes exit at the same step**, `leave-zephras`, after The Earthen Ring is accepted (sim: Balanced 14.21, Speedrun 14.04; real: 14, reached at the Sanctum of Storms). Next: skycutter to Mulgore (step 194, not play-tested), then the Crossroads and `barrens-12-20` (pack.json `next` and `nextByRoute` are both `barrens-12-20`).
+- Why not earlier: island quest XP did not drop with level (§9.2.5), and every remaining block paid at or above the off-island estimate (~200–220 XP/min, §9.3) or unlocked one that did. The weakest link, Cult's True Plans + Desperate Times (~180 XP/extra min), unlocks the finale, which paid ~200–360 XP/min and the Empyrean gear.
+- **Story note:** the route already covers the whole story up to The Earthen Ring, so there is no "story continuation" after the exit. What's left on the island is the Strange Hermit chain (`w2-93159-1`, Balanced, `tags.optional`, label "Not play-tested", 1,590 XP by QuestieDB), More Al'Aketh Ears (not offered or not taken; not in the route), A Sacrifice in Vain (the alternative breadcrumb to Elegael) and other classes' class quests.
+- The guide's only optional mechanism is `tags.optional` (hidden when "show optional" is off; shown by default). It needs a route membership, and `routes: []` means both routes, so a step cannot belong to neither. To show story-only steps outside both routes, the guide would need a third membership (e.g. `routes: ["story"]` shown only with "show optional") that the XP sim skips.
+- pack.json: title "Zephras Isle 1-14 (Horde Skyborne)", levels [1, 14].

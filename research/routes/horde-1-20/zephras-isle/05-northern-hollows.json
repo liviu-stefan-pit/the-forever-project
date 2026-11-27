@@ -1,0 +1,1586 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle",
+ "title": "Valanaar stop 2 and the northern hollows",
+ "steps": [
+  {
+   "id": "zephras-isle:141",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 2, Valanaar (level 10):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Alvarion Windfield: turn in Deliver the News. The Planting Shovel, Roofing Hammer and Trusty Wrench are one-handed weapons; take the one for your class."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist: turn in Bugged."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells at your class trainer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92703,
+     "label": "Deliver the News"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93949,
+     "label": "Bugged"
+    },
+    {
+     "type": "trainer",
+     "label": "Train level 10"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92703"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92703",
+     "label": "Wowhead quest 92703"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93949",
+     "label": "Wowhead quest 93949"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "XP check: you reach 10 in the Windfield fields (the playtest dinged on a Bandit Highwayman with Deliver the News still to hand in). If you're still 9, the orchard bandits next door give about 75 XP each.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:cof-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shaman: Sessaria Skystride: accept Call of Fire, then train Flame Shock, Flametongue Weapon and Strength of Earth Totem."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Call of Fire sends you to Olariaan Swiftburn at the Shrine of Flames, south of Windfield (51.2, 86.1)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.31,
+      "y": 78.44,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97243,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Sessaria Skystride"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 97243"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97243",
+     "label": "Wowhead quest 97243"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:163",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Skybreaker Bulwark from Seena Skybreaker. Recover the Skybreaker Bulwark from Zaal Stormshield at the Shrine of Akir."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.89,
+      "y": 72.87,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94003,
+     "label": "The Skybreaker Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94003"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94003",
+     "label": "Wowhead quest 94003"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Warrior"
+   ]
+  },
+  {
+   "id": "zephras-isle:118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up The Great Ursera Spirit from Lotheluum Starbreeze. The follow-up conversation is with Urs'endris near the falls northeast of Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.99,
+      "y": 75.08,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94006,
+     "label": "The Great Ursera Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94006"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94006",
+     "label": "Wowhead quest 94006"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:119",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand The Great Ursera Spirit over to Urs'endris."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 69.81,
+      "y": 61.71,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94006,
+     "label": "The Great Ursera Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94006"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94006",
+     "label": "Wowhead quest 94006"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:160",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Strength and Mercy from Urs'endris. Find and kill Ur'endra in the Shen'dar Highlands."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 69.81,
+      "y": 61.71,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94638,
+     "label": "Strength and Mercy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94638"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94638",
+     "label": "Wowhead quest 94638"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:161",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through Strength and Mercy at Ur'endra."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 54.17,
+      "y": 64.63,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94638,
+     "objective": 1,
+     "label": "Strength and Mercy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94638"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94638",
+     "label": "Wowhead quest 94638"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:162",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand Strength and Mercy over to Urs'endris."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 69.81,
+      "y": 61.71,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94638,
+     "label": "Strength and Mercy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94638"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94638",
+     "label": "Wowhead quest 94638"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Druid"
+   ]
+  },
+  {
+   "id": "zephras-isle:cof-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shaman: Olariaan Swiftburn at the Shrine of Flames: turn in Call of Fire and take the next one: Faladiel's Heart from Skypriest Faladiel, east of the road north (64.4, 63.7)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 51.24,
+      "y": 86.12,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97243,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "accept",
+     "questId": 97244,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 97243"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97243",
+     "label": "Wowhead quest 97243"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97244",
+     "label": "Wowhead quest 97244"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:cof-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shaman: kill Skypriest Faladiel (level 10) at 64.4, 63.7 and loot Faladiel's Heart. Keep the heart: you go north first and hand it to Olariaan on the way back."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "On the way there, the Al'Aketh Preachers and Pillagers along the road (54-62, 63-75) give 75-95 XP each at level 10."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.43,
+      "y": 63.71,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97244,
+     "objective": 1,
+     "label": "Faladiel's Heart"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 97244"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97244",
+     "label": "Wowhead quest 97244"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "In the playtest another player was fighting Faladiel too and they killed him in a group. Solo he is a normal level 10, not an elite.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:164",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Work through The Skybreaker Bulwark at Zaal Stormshield."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.63,
+      "y": 50.37,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94003,
+     "objective": 1,
+     "label": "The Skybreaker Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94003"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94003",
+     "label": "Wowhead quest 94003"
+    }
+   ],
+   "verified": false,
+   "classes": [
+    "Warrior"
+   ]
+  },
+  {
+   "id": "zephras-isle:w2-94484-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shadowgale Forest, north. Elegael Thornpaw (61.7, 39.1): turn in Unnerving Silence, accept Tears of the Lady, Feathers for Binding and Unwanted and Unworthy."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.74,
+      "y": 39.13,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94484,
+     "label": "Unnerving Silence"
+    },
+    {
+     "type": "accept",
+     "questId": 94485,
+     "label": "Tears of the Lady"
+    },
+    {
+     "type": "accept",
+     "questId": 94486,
+     "label": "Feathers for Binding"
+    },
+    {
+     "type": "accept",
+     "questId": 94487,
+     "label": "Unwanted and Unworthy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94484"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94484",
+     "label": "Wowhead quest 94484"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94485",
+     "label": "Wowhead quest 94485"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94486",
+     "label": "Wowhead quest 94486"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94487",
+     "label": "Wowhead quest 94487"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The playtest reached level 11 on the Unnerving Silence hand-in.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:w2-93165-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Vayn Moongaze at the Nightclaw Cavern entrance (63.8, 36.1): accept Mercy Falls on Deaf Ears."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.79,
+      "y": 36.12,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93165,
+     "label": "Mercy Falls on Deaf Ears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93165"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93165",
+     "label": "Wowhead quest 93165"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-94487-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Al'Aketh camp east of Elegael (63-65.5, 36.5-39): kill Al'Aketh Stormchasers and Footsoldiers. 10 Bloody Heirlooms drop from almost every kill (10 from 11 looted, 91%). The 5 Al'Aketh Cultist's Ears are slower: 5 from 13 looted (38%), so expect about 14 kills for both."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick up 8 Lady's Tear Moss from the ground as you go. It grows between Elegael and the camp (58.8-62.2, 36.4-40.4), 8 pickups over about 12 minutes of other work."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Commander Haalien stands in the camp (65.2, 36.4). You need his head later for The Ties That Bind, so leave him for now or kill him again then."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.0,
+      "y": 37.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94487,
+     "objective": 1,
+     "label": "Bloody Heirloom"
+    },
+    {
+     "type": "complete",
+     "questId": 93165,
+     "objective": 1,
+     "label": "Al'Aketh Cultist's Ear"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 60.8,
+      "y": 38.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94485,
+     "objective": 1,
+     "label": "Lady's Tear Moss"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94487"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94487",
+     "label": "Wowhead quest 94487"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93165",
+     "label": "Wowhead quest 93165"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94485",
+     "label": "Wowhead quest 94485"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-93165-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Vayn Moongaze: turn in Mercy Falls on Deaf Ears (gloves, pants or boots)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.79,
+      "y": 36.12,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93165,
+     "label": "Mercy Falls on Deaf Ears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93165"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93165",
+     "label": "Wowhead quest 93165"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-93736-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Ruins of Ban'aethal, north-west (56.7-59, 27-34): loot 8 Abandoned Belongings from the ground and find Resaan's Heirloom (57.0, 29.4). Kill Wind Hollows for 10 Wind Hollow Essence."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Low drop rate: 10 Essences took 28 Wind Hollows (36%), about 16 minutes. The Belongings and the Heirloom were done after 5 minutes, so the last 11 minutes were Wind Hollows only. They're level 10-11 and give about 92 XP each, so it's still close to grinding speed. Most Wind Hollows are at 57-58, 29-31."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 57.6,
+      "y": 31.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94896,
+     "objective": 1,
+     "label": "Abandoned Belongings"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 57.0,
+      "y": 29.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94897,
+     "objective": 1,
+     "label": "Resaan's Heirloom"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 57.6,
+      "y": 31.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93736,
+     "objective": 1,
+     "label": "Wind Hollow Essence"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94896"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94896",
+     "label": "Wowhead quest 94896"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94897",
+     "label": "Wowhead quest 94897"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93736",
+     "label": "Wowhead quest 93736"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-94486-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shadowgale Shrieklings between the ruins and Elegael (56-63, 36-41): 20 Pristine Shriekling Feathers. Each drop is a bundle of 2-4 feathers, and about half the Shrieklings drop one, so plan on 12-13 Shrieklings. They give 80-100 XP each."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 57.5,
+      "y": 38.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94486,
+     "objective": 1,
+     "label": "Pristine Shriekling Feathers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94486"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94486",
+     "label": "Wowhead quest 94486"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-94485-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Elegael Thornpaw: turn in Tears of the Lady, Feathers for Binding and Unwanted and Unworthy. Accept The Ties That Bind and The Wounds of Betrayal."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.74,
+      "y": 39.17,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94485,
+     "label": "Tears of the Lady"
+    },
+    {
+     "type": "turnin",
+     "questId": 94486,
+     "label": "Feathers for Binding"
+    },
+    {
+     "type": "turnin",
+     "questId": 94487,
+     "label": "Unwanted and Unworthy"
+    },
+    {
+     "type": "accept",
+     "questId": 94488,
+     "label": "The Ties That Bind"
+    },
+    {
+     "type": "accept",
+     "questId": 94489,
+     "label": "The Wounds of Betrayal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94485"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94485",
+     "label": "Wowhead quest 94485"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94486",
+     "label": "Wowhead quest 94486"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94487",
+     "label": "Wowhead quest 94487"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94488",
+     "label": "Wowhead quest 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94489",
+     "label": "Wowhead quest 94489"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-94488-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Commander Haalien (65.2, 36.4) for his head. He also drops a Ripped Missive: right-click it to accept Ripped Missive."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Go into the Nightclaw Cavern next to Vayn: heal 7 Injured Druids (64.5-66, 33-35) and find Jorel Windsinger at the back (64.4, 31.9)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "The books in the cave (The Rebellion In Eldre'Thalas and others) are lore only. The playtest spent about 2.5 minutes reading them."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.2,
+      "y": 36.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94488,
+     "objective": 1,
+     "label": "Commander Haalien's Severed Head"
+    },
+    {
+     "type": "accept",
+     "questId": 94490,
+     "label": "Ripped Missive"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.9,
+      "y": 34.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94489,
+     "label": "Heal 7 Injured Druids"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.4,
+      "y": 31.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94489,
+     "objective": 1,
+     "label": "Find Jorel Windsinger"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94488",
+     "label": "Wowhead quest 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94490",
+     "label": "Wowhead quest 94490"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94489",
+     "label": "Wowhead quest 94489"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-94488-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Elegael Thornpaw: turn in The Ties That Bind, The Wounds of Betrayal and Ripped Missive, then accept The Fate of the Den. It's done on accept; hand it to Lotheluum in Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.77,
+      "y": 39.12,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94488,
+     "label": "The Ties That Bind"
+    },
+    {
+     "type": "turnin",
+     "questId": 94489,
+     "label": "The Wounds of Betrayal"
+    },
+    {
+     "type": "turnin",
+     "questId": 94490,
+     "label": "Ripped Missive"
+    },
+    {
+     "type": "accept",
+     "questId": 94491,
+     "label": "The Fate of the Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94488",
+     "label": "Wowhead quest 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94489",
+     "label": "Wowhead quest 94489"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94490",
+     "label": "Wowhead quest 94490"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94491",
+     "label": "Wowhead quest 94491"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The playtest reached level 12 on this hand-in.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:w2-93159-1",
+   "tags": {
+    "optional": true,
+    "label": "Not play-tested"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Not play-tested: the Strange Hermit (54.0, 38.9), between the ruins and the lake, offers The Strange Hermit, then The Forest's Bounty and Free the Hollows. The playtest character walked past without taking them, so their order and timing are not checked."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 54.0,
+      "y": 38.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93159,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "complete",
+     "questId": 93159,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "turnin",
+     "questId": 93159,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "accept",
+     "questId": 93160,
+     "label": "The Forest's Bounty"
+    },
+    {
+     "type": "accept",
+     "questId": 93172,
+     "label": "Free the Hollows"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 55.7,
+      "y": 39.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93160,
+     "label": "The Forest's Bounty"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.8,
+      "y": 35.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93172,
+     "label": "Free the Hollows"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 54.0,
+      "y": 38.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93160,
+     "label": "The Forest's Bounty"
+    },
+    {
+     "type": "turnin",
+     "questId": 93172,
+     "label": "Free the Hollows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93159"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93159",
+     "label": "Wowhead quest 93159"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93160",
+     "label": "Wowhead quest 93160"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93172",
+     "label": "Wowhead quest 93172"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle:w2-93317-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Windsong Lake on the way south (52-55.5, 44-53): loot the Construct Parts on the lake shore (52.5, 45.7) for the Enchanted Gyrozephyr. Kill Windsong Crawlers for 6 Windsong Crawler Meat."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "6 Meat took 13 Crawlers (46%), about 6 minutes. At level 12 they give only about 49 XP each. They're densest on the south-east shore (51.8-55.5, 49-53)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 52.5,
+      "y": 45.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93737,
+     "objective": 3,
+     "label": "Enchanted Gyrozephyr"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 53.5,
+      "y": 50.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93317,
+     "objective": 1,
+     "label": "Windsong Crawler Meat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93737"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93737",
+     "label": "Wowhead quest 93737"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93317",
+     "label": "Wowhead quest 93317"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

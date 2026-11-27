@@ -1,0 +1,1162 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle",
+ "title": "The cult, Lorthuna and departure",
+ "steps": [
+  {
+   "id": "zephras-isle:167",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 4, Valanaar (level 13):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist: turn in Return to Valanaar (Honed Greathammer, Quickblade's Dagger or Balanced Quarterstaff), accept The High Elder's Request."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Talaanis Shadowsong: turn it in, accept The Turncoat."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ayessa Dawnsinger, on your way out west: turn in Blood for Blood."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92880,
+     "label": "Return to Valanaar"
+    },
+    {
+     "type": "accept",
+     "questId": 92881,
+     "label": "The High Elder's Request"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.17,
+      "y": 76.51,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92881,
+     "label": "The High Elder's Request"
+    },
+    {
+     "type": "accept",
+     "questId": 92643,
+     "label": "The Turncoat"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.15,
+      "y": 79.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93740,
+     "label": "Blood for Blood"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92880"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92880",
+     "label": "Wowhead quest 92880"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92881",
+     "label": "Wowhead quest 92881"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92643",
+     "label": "Wowhead quest 92643"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93740",
+     "label": "Wowhead quest 93740"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-98512-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fendaal Windstone on the road north-west (56.8, 61.0): accept Al'Aketh Assassins."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.8,
+      "y": 61.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98512,
+     "label": "Al'Aketh Assassins"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 98512"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98512",
+     "label": "Wowhead quest 98512"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:171",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "The secluded house just north of Fendaal (56.1, 60.8): find the house and the turncoat. He is the Dead Cultist (56.0, 58.8): turn in The Turncoat, accept Unfortunate News."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Kill 10 Al'Aketh Assassins around the house (55.8-56.7, 59.3-61.0), about 4 minutes."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.1,
+      "y": 60.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92643,
+     "objective": 1,
+     "label": "Find the secluded house"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.0,
+      "y": 58.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92643,
+     "objective": 2,
+     "label": "Find the Al'Aketh Turncoat"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.0,
+      "y": 58.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92643,
+     "label": "The Turncoat"
+    },
+    {
+     "type": "accept",
+     "questId": 92644,
+     "label": "Unfortunate News"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 55.9,
+      "y": 60.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98512,
+     "objective": 1,
+     "label": "Al'Aketh Assassin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92643"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92643",
+     "label": "Wowhead quest 92643"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92644",
+     "label": "Wowhead quest 92644"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98512",
+     "label": "Wowhead quest 98512"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:w2-98512-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fendaal Windstone: turn in Al'Aketh Assassins."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.8,
+      "y": 61.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98512,
+     "label": "Al'Aketh Assassins"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 98512"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98512",
+     "label": "Wowhead quest 98512"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:174",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 5, Valanaar:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Talaanis Shadowsong: turn in Unfortunate News (pants, tunic or mail), accept The Cult's True Plans and watch the crystal (about 2.5 minutes), turn it in, accept Desperate Times."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Desperate Times: speak with Valennia Stormfist, recruit the Windshapers at Ayessa Dawnsinger (59.1, 79.7), recruit the High Order at Elaadrin Evengale (66.6, 79.9), then turn it in at Valennia (chest, leggings or gloves). Accept Prepare for Battle."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.17,
+      "y": 76.51,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92644,
+     "label": "Unfortunate News"
+    },
+    {
+     "type": "accept",
+     "questId": 94568,
+     "label": "The Cult's True Plans"
+    },
+    {
+     "type": "complete",
+     "questId": 94568,
+     "objective": 1,
+     "label": "Learn what you can from the crystal"
+    },
+    {
+     "type": "turnin",
+     "questId": 94568,
+     "label": "The Cult's True Plans"
+    },
+    {
+     "type": "accept",
+     "questId": 92640,
+     "label": "Desperate Times"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92640,
+     "objective": 1,
+     "label": "Speak with Valennia Stormfist"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.11,
+      "y": 79.67,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92640,
+     "objective": 2,
+     "label": "Recruit the Windshapers"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.6,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92640,
+     "objective": 3,
+     "label": "Recruit the High Order"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92640,
+     "label": "Desperate Times"
+    },
+    {
+     "type": "accept",
+     "questId": 93065,
+     "label": "Prepare for Battle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92644"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92644",
+     "label": "Wowhead quest 92644"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94568",
+     "label": "Wowhead quest 94568"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92640",
+     "label": "Wowhead quest 92640"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93065",
+     "label": "Wowhead quest 93065"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:181",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist waits on the road north-west of Valanaar (61.2, 71.0): turn in Prepare for Battle, accept Making Our Move."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.15,
+      "y": 70.97,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93065,
+     "label": "Prepare for Battle"
+    },
+    {
+     "type": "accept",
+     "questId": 92947,
+     "label": "Making Our Move"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93065"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93065",
+     "label": "Wowhead quest 93065"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92947",
+     "label": "Wowhead quest 92947"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:183",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shrine of Akir (59-63, 49.8-52.4): kill 7 Al'Aketh Guardians, 7 Al'Aketh Spiritcallers and 7 Al'Aketh Blademasters."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pull one at a time: the Spiritcallers stand in pairs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.0,
+      "y": 51.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 1,
+     "label": "Al'Aketh Guardian"
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 2,
+     "label": "Al'Aketh Spiritcaller"
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 3,
+     "label": "Al'Aketh Blademaster"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92947"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92947",
+     "label": "Wowhead quest 92947"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Danger: the playtest character died at 59.4, 51.3, at the west entrance of the shrine, to two Al'Aketh Spiritcallers at once, even at level 13 against level 10 mobs. Pull them one at a time and kill the Spiritcallers first.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "After that death the playtest player joined a group for the shrine, the Inner Sanctum and Lorthuna. Solo, expect these three steps to take longer than the log shows (about 22 minutes grouped).",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:184",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hyusaa Quickbreeze at the shrine (63.8, 50.5): report to finish Making Our Move, turn it in, accept The Inner Sanctum."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.79,
+      "y": 50.54,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 4,
+     "label": "Report to Hyusaa Quickbreeze"
+    },
+    {
+     "type": "turnin",
+     "questId": 92947,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "accept",
+     "questId": 93958,
+     "label": "The Inner Sanctum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92947"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92947",
+     "label": "Wowhead quest 92947"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93958",
+     "label": "Wowhead quest 93958"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle:186",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Sanctum of Storms, just east (65-67, 50-51.4): fight past the Al'Aketh Skypriests and Honor Guards to Valennia Stormfist (65.2, 50.4). Turn in The Inner Sanctum, accept Confront Lorthuna."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.19,
+      "y": 50.35,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93958,
+     "label": "The Inner Sanctum"
+    },
+    {
+     "type": "accept",
+     "questId": 92646,
+     "label": "Confront Lorthuna"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 93958"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93958",
+     "label": "Wowhead quest 93958"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92646",
+     "label": "Wowhead quest 92646"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The playtest reached level 14 on entering the Sanctum of Storms.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:confront-lorthuna",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the portal up to the Rohashi Spires (68.4, 50.6) and fight to Lorthuna at the far end (75.2, 53.2), past more Skypriests and Honor Guards, two Malevolent Storms (level 12) and Duke Anvillaxx (level 13 elite)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "When Lorthuna is dealt with you are sent back to Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 68.4,
+      "y": 50.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 75.2,
+      "y": 53.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92646,
+     "label": "Confront Lorthuna"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92646"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92646",
+     "label": "Wowhead quest 92646"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Duke Anvillaxx is a level 13 elite. The playtest did this part in a group.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:188",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 6, Valanaar (level 14), the last one:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ayessa Dawnsinger: turn in Confront Lorthuna (Belt of Blades, Empyrean Shoes, Empyrean Greatsword or Empyrean Treads), accept The Fate of Zephras."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Talaanis Shadowsong: turn it in, accept What Comes Next."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ayessa Dawnsinger: turn in What Comes Next, accept The Earthen Ring."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 14 spells."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.11,
+      "y": 79.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92646,
+     "label": "Confront Lorthuna"
+    },
+    {
+     "type": "accept",
+     "questId": 93836,
+     "label": "The Fate of Zephras"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.17,
+      "y": 76.51,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93836,
+     "label": "The Fate of Zephras"
+    },
+    {
+     "type": "accept",
+     "questId": 93090,
+     "label": "What Comes Next"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.15,
+      "y": 79.73,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93090,
+     "label": "What Comes Next"
+    },
+    {
+     "type": "accept",
+     "questId": 95349,
+     "label": "The Earthen Ring"
+    },
+    {
+     "type": "trainer",
+     "label": "Train level 14"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92646"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92646",
+     "label": "Wowhead quest 92646"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93836",
+     "label": "Wowhead quest 93836"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93090",
+     "label": "Wowhead quest 93090"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=95349",
+     "label": "Wowhead quest 95349"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "XP check: the guide's Speedrun sim reaches 14 only on the What Comes Next hand-in, with about 500 XP to spare (Balanced about 3,000). The playtest was 14 since the Sanctum of Storms. If you're still 13, train at the next trainer after Mulgore instead of grinding here.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:leave-zephras",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "You're done with Zephras Isle, at about level 14, on both routes. Every island quest the playtest did paid more XP per minute than grinding, so neither route leaves early."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Next: take the skycutter ship to Mulgore and hand The Earthen Ring to Alaana Stormwalker, then run east out of Mulgore to the Crossroads. The guide continues with The Barrens 12-20 (Horde). Skip its first step: Conscript of the Horde starts in Razor Hill, which you never visited."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Full story: this route already includes the whole island story up to The Earthen Ring. The only island quests left out are the Strange Hermit's three quests (optional step above, not play-tested) and other classes' class quests."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.15,
+      "y": 79.73,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The ship ride and the walk from Mulgore to the Crossroads were not part of the playtest.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:194",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Mulgore: hand The Earthen Ring to Alaana Stormwalker when the skycutter lands. Then continue with The Barrens 12-20."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.37,
+      "y": 22.57,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95349,
+     "label": "The Earthen Ring"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 95349"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=95349",
+     "label": "Wowhead quest 95349"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This pack ends with Alaana Stormwalker after The Earthen Ring. Quest 95350, from the same NPC, points at Thrall in Orgrimmar. A join from here into the existing Mulgore 1-12 leveling route is not in the quest text and stays unverified. No flight-master coordinates were added.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB quests.json id 95349"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=95349",
+       "label": "Wowhead quest 95349"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}
