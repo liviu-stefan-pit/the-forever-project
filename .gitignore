@@ -49,13 +49,21 @@ venv/
 Thumbs.db
 Desktop.ini
 
-# Editors. Shared .vscode/ and .cursor/ settings can be committed.
-# Ignore only user-specific files.
+# Editors and AI tools: per-person setup (MCP servers, keys, rules, launch configs). Never shared.
 .idea/
+.vscode/
+.cursor/
+.windsurf/
+.zed/
 *.suo
 *.user
-.vscode/*.local.json
-.cursor/*.local.json
+.mcp.json
+
+# Test and tool output
+test-results/
+playwright-report/
+blob-report/
+*.log
 
 # Confidential / private (plans, agent briefs, local launch config)
 plan.md
