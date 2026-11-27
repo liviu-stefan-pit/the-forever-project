@@ -10,7 +10,7 @@
 import type { SearchDoc } from "../search/types";
 import type { GoldPlan } from "../lib/goldPlan";
 import { setStepPickQuestCatalog } from "../state/profileStore";
-import type { ClassProfessionsFile, Guide, GuideIndex, Insights, QuestDetail, QuestGeo, QuestInfo, QuestMin, ZoneInfo } from "./schema";
+import type { ClassProfessionsFile, Guide, GuideIndex, GuideStatus, Insights, QuestDetail, QuestGeo, QuestInfo, QuestMin, ZoneInfo } from "./schema";
 
 export class DataError extends Error {
   constructor(
@@ -135,6 +135,8 @@ export interface LandingStats {
   steps: number;
   quests: number;
   zones: number;
+  /** All Horde packs together (see `routeStatus`). Missing = experimental. */
+  status?: GuideStatus;
 }
 export function loadLandingStats(): Promise<LandingStats> {
   return cached(keys.landing, async () => {

@@ -14,6 +14,7 @@ import { RichLine } from "./RichLine";
 import { StepLines } from "./StepLines";
 import { StopBadge } from "./StopBadge";
 import { stepLines } from "../../lib/stepLines";
+import { unconfirmedReason, unconfirmedText } from "../../lib/packStatus";
 
 export interface BlockedBannerProps {
   /** Full banner text from `buildBlockedBanner`. */
@@ -142,7 +143,9 @@ function StepCardImpl({
   const dungeon = step.dungeon;
   const membership = routeMembership(step);
   const showBalancedExtra = membership === "balanced" && !!tipCtx.guideHasSpeedrun;
-  const unverified = isUnverified(step);
+  // In a play-tested guide, steps the run did not cover say "Unconfirmed" instead of the generic "Unverified".
+  const unconfirmed = unconfirmedReason(step, tipCtx.playtested, tipCtx.quests);
+  const unverified = !unconfirmed && isUnverified(step);
   const xpBadge = sim && sim.gained > 0 ? sim : undefined;
   // Hover tooltip on desktop; tapping the badge shows the same breakdown on phones.
   const xpBreakdown = xpBadge ? gainedTooltip(xpBadge) : undefined;
@@ -192,6 +195,7 @@ function StepCardImpl({
       ) : (
         unavailableTag && <Tag tone="slate">{unavailableTag}</Tag>
       )}
+      {unconfirmed && tipCtx.playtested && <UnconfirmedChip text={unconfirmedText(unconfirmed, tipCtx.playtested)} />}
       {unverified && <UnverifiedChip />}
       {dungeon && (
         <Tag tone="dungeon" title="Dungeon step: shown because dungeons are on">
@@ -492,6 +496,15 @@ function UnverifiedChip({ className = "" }: { className?: string }) {
   return (
     <span title="From WoW Forever data, not yet checked in game." data-testid="step-unverified" className={`inline-flex items-center gap-1 whitespace-nowrap rounded border border-stroke px-1.5 py-px text-[10px] font-medium leading-4 text-muted ${className}`}>
       <Icon name="question" className="h-3 w-3" /> Unverified
+    </span>
+  );
+}
+
+/** A step in a play-tested guide that the run did not cover (another class's step, or an unconfirmed quest). */
+function UnconfirmedChip({ text }: { text: string }) {
+  return (
+    <span title={text} data-testid="step-unconfirmed" className="inline-flex items-center gap-1 whitespace-nowrap rounded border border-warn/50 px-1.5 py-px text-[10px] font-medium leading-4 text-warn">
+      <Icon name="question" className="h-3 w-3" /> Unconfirmed
     </span>
   );
 }

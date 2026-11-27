@@ -11,7 +11,7 @@ import { StartHere } from "../components/dashboard/StartHere";
 import { RouteMap } from "../components/dashboard/RouteMap";
 import { TONE } from "../components/step/ActionChips";
 import { RichLine } from "../components/step/RichLine";
-import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
+import { StatusBadge } from "../components/ui/ExperimentalBadge";
 import { Icon } from "../components/ui/Icon";
 import { ErrorState, Skeleton } from "../components/ui/States";
 import { publicAsset, type ZonePoint } from "../components/map/route";
@@ -30,6 +30,7 @@ import {
   type StopGroup,
 } from "../lib/dashboard";
 import { pickNextOpenSteps } from "../lib/guideList";
+import { routeStatus } from "../lib/packStatus";
 import { cardTips, type TipContext } from "../lib/stepExtras";
 import { stepSpot } from "../lib/stepPoints";
 import { fmtDays, fmtPlayTime, minutesToSixty } from "../lib/timeEstimate";
@@ -474,7 +475,7 @@ export function DashboardPage() {
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-bronze-400">{started ? "Welcome back" : "Your journey starts here"}</p>
-              <ExperimentalBadge />
+              <StatusBadge status={routeStatus(dataOf(indexRes))} />
             </div>
             <h1 id="hero-title" className="font-display text-3xl font-bold leading-tight text-bronze-400 sm:text-4xl">
               {guideName ? guideName : <Skeleton className="h-9 w-56" />}
