@@ -115,6 +115,7 @@ function findHits(text: string): Hit[] {
   let match: RegExpExecArray | null;
   while ((match = re.exec(text))) {
     const race = match[1];
+    if (!race) continue;
     const after = text.slice(match.index + match[0].length);
     if (/^is skipped\b/i.test(after)) {
       const rest = after.slice("is skipped".length).replace(/^\.?\s*/, "");
@@ -153,6 +154,7 @@ function peelShared(sentences: string[], secondary: readonly string[], race: str
   let cut = sentences.length;
   for (let i = sentences.length - 1; i >= 0; i--) {
     const sentence = sentences[i];
+    if (sentence === undefined) break;
     const shared = coveredBySecondary(sentence, secondary) || SHARED_START.test(sentence);
     if (shared && !raceRe.test(sentence)) cut = i;
     else break;
@@ -171,7 +173,7 @@ export function parseProfessionReason(reason: string, secondaryReasons: readonly
   const blocks: RaceBlock[] = [];
   const tail: string[] = [];
   hits.forEach((hit, i) => {
-    const end = i + 1 < hits.length ? hits[i + 1].index : reason.length;
+    const end = hits[i + 1]?.index ?? reason.length;
     const sentences = splitSentences(reason.slice(hit.contentStart, end));
     const peeled = peelShared(sentences, secondaryReasons, hit.race, hit.skipped);
     blocks.push({

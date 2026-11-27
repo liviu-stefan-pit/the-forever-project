@@ -16,7 +16,7 @@ function reasons(cls: { secondary: { reason: string }[] }): string[] {
 }
 
 describe("parseProfessionReason", () => {
-  const notes = parseProfessionReason(file.Shaman.primary[0].reason, reasons(file.Shaman));
+  const notes = parseProfessionReason(file.Shaman.primary[0]!.reason, reasons(file.Shaman));
 
   it("splits the Shaman reason into race and spec blocks", () => {
     const orc = notes.blocks.filter((block) => block.race === "Orc").map((block) => block.spec);
@@ -62,11 +62,11 @@ describe("parseProfessionReason", () => {
   });
 
   it("marks a skipped race from the real Mage and Hunter notes", () => {
-    const mage = parseProfessionReason(file.Mage.primary[0].reason, reasons(file.Mage));
+    const mage = parseProfessionReason(file.Mage.primary[0]!.reason, reasons(file.Mage));
     expect(mage.blocks.some((block) => block.race === "Tauren" && block.skipped)).toBe(true);
     expect(mage.blocks.some((block) => block.race === "Skyborne" && block.skipped)).toBe(true);
 
-    const hunter = parseProfessionReason(file.Hunter.primary[0].reason, reasons(file.Hunter));
+    const hunter = parseProfessionReason(file.Hunter.primary[0]!.reason, reasons(file.Hunter));
     const undead = hunter.blocks.find((block) => block.race === "Undead");
     expect(undead?.skipped).toBe(true);
     expect(undead?.sentences.map((sentence) => sentence.text).join(" ")).toContain("Skins come from beasts");
@@ -79,7 +79,7 @@ describe("parseProfessionReason", () => {
       ["First Aid, Cooking, and Fishing stay secondary for both priest roles. Bandages spend the cloth."],
     );
     expect(parsed.tail.map((sentence) => sentence.text)).toEqual([]);
-    expect(parsed.blocks[0].sentences.map((sentence) => sentence.text)).toEqual(["Both roles take the pair."]);
+    expect(parsed.blocks[0]!.sentences.map((sentence) => sentence.text)).toEqual(["Both roles take the pair."]);
   });
 
   it("keeps a reason with no race label as tail bullets", () => {
@@ -93,7 +93,7 @@ describe("parseProfessionReason", () => {
 
   it("parses every class without dropping the reason", () => {
     for (const [name, row] of Object.entries(file) as [string, { primary: { reason: string }[]; secondary: { reason: string }[] }][]) {
-      const parsed = parseProfessionReason(row.primary[0].reason, reasons(row));
+      const parsed = parseProfessionReason(row.primary[0]!.reason, reasons(row));
       const rendered = [...parsed.blocks.flatMap((block) => block.sentences), ...parsed.tail].map((sentence) => sentence.text).join(" ");
       expect(rendered.length, name).toBeGreaterThan(20);
       expect(parsed.blocks.every((block) => block.race.length > 0), name).toBe(true);
@@ -101,20 +101,20 @@ describe("parseProfessionReason", () => {
   });
 
   it("reads 'Tauren is skipped' with no colon", () => {
-    const rogue = parseProfessionReason(file.Rogue.primary[0].reason, reasons(file.Rogue));
+    const rogue = parseProfessionReason(file.Rogue.primary[0]!.reason, reasons(file.Rogue));
     expect(rogue.blocks.some((block) => block.race === "Tauren" && block.skipped)).toBe(true);
   });
 });
 
 describe("arrangeProfessionNotes", () => {
-  const notes = parseProfessionReason(file.Shaman.primary[0].reason, reasons(file.Shaman));
+  const notes = parseProfessionReason(file.Shaman.primary[0]!.reason, reasons(file.Shaman));
 
   it("opens the player's race and role, and collapses the rest", () => {
     const arranged = arrangeProfessionNotes(notes, "Orc", "dps");
     expect(arranged.focused).toBe(true);
     expect(arranged.open.map((group) => group.race)).toEqual(["Orc"]);
-    expect(arranged.open[0].shown.map((block) => block.spec)).toEqual(["enhancement", "elemental"]);
-    expect(arranged.open[0].other.map((block) => block.spec)).toEqual(["restoration"]);
+    expect(arranged.open[0]!.shown.map((block) => block.spec)).toEqual(["enhancement", "elemental"]);
+    expect(arranged.open[0]!.other.map((block) => block.spec)).toEqual(["restoration"]);
     expect(arranged.others.map((group) => group.race)).toEqual(["Troll", "Tauren", "Skyborne"]);
   });
 
@@ -123,8 +123,8 @@ describe("arrangeProfessionNotes", () => {
     expect(arranged.focused).toBe(false);
     expect(arranged.others).toEqual([]);
     expect(arranged.open.map((group) => group.race)).toEqual(["Orc", "Troll", "Tauren", "Skyborne"]);
-    expect(arranged.open[0].shown.map((block) => block.spec)).toEqual(["restoration"]);
-    expect(arranged.open[0].other.map((block) => block.spec)).toEqual(["enhancement", "elemental"]);
+    expect(arranged.open[0]!.shown.map((block) => block.spec)).toEqual(["restoration"]);
+    expect(arranged.open[0]!.other.map((block) => block.spec)).toEqual(["enhancement", "elemental"]);
   });
 });
 
