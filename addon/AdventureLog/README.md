@@ -1,5 +1,7 @@
 # AdventureLog
 
+<img src="branding/icon-128.png" alt="AdventureLog icon: an open journal with a quill tracing a route, and a red recording light" width="96" height="96">
+
 AdventureLog is a World of Warcraft Forever addon. It keeps a diary of one character while you play. A friend can install this folder by itself; the rest of the guide project is not required.
 
 It is part of [The Forever Project](https://github.com/liviu-stefan-pit/the-forever-project).
@@ -78,6 +80,25 @@ Each event can carry these time fields:
 - `pt` is your total `/played` time. That is the speedrun clock. Time spent logged out is not counted.
 - `afk` is idle time.
 
+The session header's `playedAnchor` is the first `/played` answer of the session, and `playedAnchorT` is the `t` it arrived at. Every event's `pt` equals `playedAnchor + (t - playedAnchorT)`. Later answers (each level up, logout) are logged as `played` events with their `drift` and kept in the header as `playedAnchorLast`; they do not move `pt`.
+
+## Changes in 1.2.0
+
+Nothing was renamed or removed: old fields keep their names and meaning, new ones are added.
+
+- **Idle and AFK no longer count as active time.** An idle or AFK span still open when you log out is now closed (`idle_end` / `afk_end` with `closedBy: "logout"`). Each end event carries `credited`, the seconds it added after overlap with the other kind. The summary takes that time out of `sessionActive`, out of each zone's `activeSec` (into `idleSec`) and out of each level's `activeSec`, and adds `totals.awaySec`.
+- **No false abandons.** Item-collection quests leave the log just before `QUEST_TURNED_IN`. A removal now waits 1.5 seconds and is logged as `quest_abandon` only if no turn-in follows.
+- **Header and `pt` agree** (see Timestamps). Before, the header kept the last `/played` answer while events used the first.
+- **`level_up`** has `from` and `to`. `level` is unchanged (the level you left). Summary level rows now use `from`; before, they were one level too low.
+- **`xp`** has `source` (`kill`, `quest`, `explore`, `other`), `npcId` and `mob` for kills, `questId` for quests, `area` for exploration, `restedBonus` and `groupBonus` from the kill line, `restedUsed` from the rested pool, and `gained` (correct across a level, where `delta` goes negative). An XP update that arrives before its turn-in waits up to 1 second for it.
+- **Objective names.** Objectives logged before their names load are marked `textIncomplete` and the event `namesPending`. When the names load, `quest_progress` is logged again with `namesResolved: true`.
+- **Quest giver and ender.** `quest_accept` has `giverNpcId` (or `giverObjectId`), `giverName`, `giverType`, `giverX` / `giverY` / `giverMap` (your position at the dialog), `giverFrame`, and `giverItemId` for item-started quests. `quest_turnin` has the same fields with the `ender` prefix. Without a dialog: `giverErr`.
+- **Quest rewards.** `quest_turnin` has `rewardChoices`, `rewardItems`, `rewardMoney`, `rewardXp`, and the pick as `chosenIndex`, `chosenItemId`, `chosenName`.
+- **Trainers.** `trainer` has `npcId`, `trainerType` and `numServices`. Each purchase logs `trainer_learn` (name, rank text, cost, skill line, reagents when the client exposes them; Forever does not, so `reagentsErr`). `trainer_close` has `spent` and `learned`.
+- **Object use.** `object_use` logs a quest pickup, a searched object or a note: `objectId`, `name`, `via` (`loot`, `spell`, `gossip`, `detail`, `complete`, `text`) and your position. Loot slots from an object have `sourceType: "GameObject"` and `objectId` (`npcId` stays for old readers); the summary keeps them out of mob drop tables.
+- **Group credit.** `mob_kill` has `via` (`xp_chat` or `unit_dead`), `tracked`, `inFight`, `grouped`, `groupSize`, `groupCredit` (grouped and not in your fight), `groupBonus` / `restedBonus`, and `killSecShort` when the mob was first seen less than a second before it died.
+- `/adv probe` also checks the APIs these use.
+
 ## Before a serious run
 
 Do this once on a throwaway level-1 character, not on the character you care about:
@@ -108,6 +129,25 @@ money messages about other players are not kept: the log records only that one h
 published, and your character name and realm do not appear in anything that goes into the project. The zip is
 deleted when that work is done, and at the latest 12 months after it arrives. Ask at the same address and it is
 deleted sooner. See [PRIVACY.md](https://github.com/liviu-stefan-pit/the-forever-project/blob/main/PRIVACY.md).
+
+## Icon and store images
+
+The icon shows an open journal with a quill tracing a route, and a red recording light, on the guide site's Horde/Alliance disc. The master is
+[`branding/icon.svg`](branding/icon.svg) (animated with CSS, still under *reduce motion*); everything else is
+rendered from it with `node web/scripts/render-addon-icons.mjs AdventureLog` (needs Chrome or Edge and ffmpeg).
+
+| File | Use it for |
+| --- | --- |
+| `media/icon.tga` | In game: the AddOns list shows it next to the name (`## IconTexture:` in the `.toc`). Ships in the zip. |
+| `branding/icon-400.png` | **CurseForge** project avatar (square, 400 x 400). Also the **Wago** project icon. |
+| `branding/icon-256.png` | Wago or anywhere that asks for a smaller square logo. |
+| `branding/icon.gif` | **WoWInterface**: no project avatar there, so add it as the first screenshot. Also forums and Discord (256 px, animated). |
+| `branding/icon.webp` | Animated, 400 px, transparent corners, for pages that take WebP. |
+| `branding/icon-128.png`, `icon-64.png` | Small still versions (READMEs, link previews). |
+| `branding/icon.svg` | The guide site's Addons page (a copy lives in `web/public/addons/`). |
+
+Store sites change their size rules, so check the upload form; the 400 px PNG is the safe default.
+`branding/` is left out of the release zip; only `media/` ships.
 
 ## Licence
 

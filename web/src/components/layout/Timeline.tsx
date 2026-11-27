@@ -7,6 +7,7 @@ import { isBalancedOnlyPack } from "../../lib/nextGuide";
 import { useCurrentGuideSlug, useGuideCompletion, useRouteStyle } from "../../state/progress";
 import { useRoutePosition } from "../../state/position";
 import { pickRaceStart, useActiveProfileSummary } from "../../state/profile";
+import { PLAYTESTED_LABEL } from "../ui/ExperimentalBadge";
 import { Icon } from "../ui/Icon";
 import { ProgressRing } from "../ui/ProgressRing";
 import { Skeleton } from "../ui/States";
@@ -17,6 +18,7 @@ const GuideRow = memo(function GuideRow({
   collapsed,
   current,
   offRoute,
+  tested,
 }: {
   slug: string;
   name: string;
@@ -24,12 +26,14 @@ const GuideRow = memo(function GuideRow({
   current: boolean;
   /** On speedrun, Silverpine is not part of the route — dimmed but still clickable. */
   offRoute: boolean;
+  /** The pack's status is play-tested: a small green "Tested" tag next to the name (a check would read as "you finished it"). */
+  tested: boolean;
 }) {
   const stats = useGuideCompletion(slug, { defer: true });
   const value = stats && stats.total > 0 ? stats.done / stats.total : undefined;
   const pct = value === undefined ? undefined : Math.round(value * 100);
   const stepsLabel = stats && stats.total > 0 ? `${stats.done}/${stats.total} steps` : undefined;
-  const titleBits = [name, offRoute ? "Balanced" : undefined, pct !== undefined ? `${pct}%` : undefined].filter(Boolean);
+  const titleBits = [name, tested ? PLAYTESTED_LABEL : undefined, offRoute ? "Balanced" : undefined, pct !== undefined ? `${pct}%` : undefined].filter(Boolean);
 
   return (
     <li>
@@ -50,6 +54,15 @@ const GuideRow = memo(function GuideRow({
           <span className="min-w-0 flex-1">
             <span className="flex items-center gap-1.5">
               <span className="min-w-0 truncate text-[13px] font-medium">{name}</span>
+              {tested && (
+                <span
+                  title={`${PLAYTESTED_LABEL}: we played this route in the game and checked it`}
+                  data-testid="timeline-tested"
+                  className="shrink-0 rounded-sm border border-done/50 bg-done/10 px-1 text-[9px] font-semibold uppercase tracking-wider text-done"
+                >
+                  Tested
+                </span>
+              )}
               {offRoute && (
                 <span className="shrink-0 rounded-sm border border-stroke px-1 text-[9px] font-semibold uppercase tracking-wider text-bronze-500/90">
                   Balanced
@@ -178,6 +191,7 @@ export function Timeline({ collapsed = false, onToggleCollapsed }: { collapsed?:
                         collapsed={collapsed}
                         current={slug === currentSlug}
                         offRoute={routeStyle === "speedrun" && isBalancedOnlyPack(slug)}
+                        tested={indexRes.data.entries?.find((e) => e.slug === slug)?.status === "play-tested"}
                       />
                     ))}
                   </ul>

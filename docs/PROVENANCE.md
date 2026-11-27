@@ -18,6 +18,9 @@ The `data/` and `web/public/data/` folders are build output and are git-ignored.
 | Area | Files | Source |
 |---|---|---|
 | Quest / NPC / object / item / zone DB | `content/questie-db/*` | Pinned QuestieDB release v1.1.3 (GPL-3.0), fetched by `pipeline/questie_import.py` with sha256 checks; see that folder's README |
+| Our own game DB (tpf-db), confirmed | `content/tpf-db/*` except `unconfirmed/` | **CC BY 4.0.** Built by `pipeline/adventurelog/` (MIT) only from our own AdventureLog play logs: quests, NPCs, objects, items, drop rates, XP, spawns, trainers, each record with session + event evidence. No field comes from QuestieDB or Wowhead. See the folder's README (3) |
+| tpf-db, unconfirmed | `content/tpf-db/unconfirmed/*` | **GPL-3.0.** QuestieDB records (from `content/questie-db`) for zone quests no log has shown yet; `source` on each record. Moved into the confirmed files when a log shows them |
+| tpf-db vs QuestieDB report | `data/reports/tpf-vs-questie.json` (build output, git-ignored) | Written by `web/scripts/build-data.ts`: ids, positions and XP that differ. A comparison, not data |
 | 1-20 route packs | `research/routes/horde-1-20/` (one folder per pack, one file per segment), `research/nova/catalog/*` | Written by Nova from content/questie-db, the QuestieDB Forever data (`tools/dump.lua`) and Wowhead quest pages, which each step cites in `sources[]` (1) |
 | 40-60 route pack, gold, pre-BiS | `research/horde-40-60/*` | Built by `research/horde-40-60/tools/*` from content/questie-db plus cited Wowhead pages (1) |
 | Dungeon chains | `research/dungeons/*` | Built by `research/dungeons/tools/*` from QuestieDB (`dump.lua`, `dumpfv.lua`) plus cited pages (1) |
@@ -49,6 +52,14 @@ content/questie-db) does the following.
 - **Rebuilt:** the section route and stops.
 - **References:** the step ids in `quests.json` and `insights.json` were rewritten.
 - **Text:** one statistic line in insights was replaced with our own sample text.
+
+(3) **tpf-db licences:** confirmed files are CC BY 4.0 (`content/tpf-db/LICENSE`; credit: "Data from The
+Forever Project tpf-db (CC BY 4.0), https://github.com/liviu-stefan-pit/the-forever-project"). `unconfirmed/`
+stays GPL-3.0 (`content/tpf-db/unconfirmed/LICENSE`) because it is QuestieDB data. The parser
+`pipeline/adventurelog/` is MIT (`pipeline/adventurelog/LICENSE`). The build prefers, per Zephras Isle quest:
+tpf-db confirmed, then tpf-db unconfirmed, then QuestieDB; each quest in the guide data says which in
+`dataStatus` (`confirmed`, `unconfirmed`, `questie`). Fields tpf-db lacks (quest level, race / class masks,
+objective text) still come from QuestieDB at build time; that mix is build output, never written back to tpf-db.
 
 ## Research pass (2026-11-21)
 

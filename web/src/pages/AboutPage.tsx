@@ -1,5 +1,5 @@
 /**
- * `/about`: what the site is, its experimental status, use of AI, privacy, licence, disclaimer and
+ * `/about`: what the site is, its experimental and play-tested status, use of AI, privacy, licence, disclaimer and
  * contact. Each section has an id (`/about#privacy`) so other pages can link straight to it.
  */
 import type { ReactNode } from "react";
@@ -10,6 +10,7 @@ import { CONTACT_EMAIL, ISSUES_URL, LICENSE_URL, MAINTAINER_NAME, PRIVACY_URL, R
 export const ABOUT_SECTIONS = [
   { id: "about", title: "About" },
   { id: "experimental", title: "Experimental" },
+  { id: "play-tested", title: "Tested in game" },
   { id: "ai", title: "Use of AI" },
   { id: "privacy", title: "Privacy" },
   { id: "license", title: "License" },
@@ -72,7 +73,7 @@ export function AboutPage() {
 
       <Section id="experimental">
         <p>
-          <strong className="text-warn">Experimental.</strong> These routes have not been fully play-tested yet. Expect mistakes: a quest in the
+          <strong className="text-warn">Experimental.</strong> Routes marked Experimental have not been play-tested yet. Expect mistakes: a quest in the
           wrong order, a wrong coordinate, a step that does not fit your level. If you find one, please{" "}
           <Ext href={ISSUES_URL}>report it on GitHub</Ext>; it helps everyone who levels after you.
         </p>
@@ -82,6 +83,17 @@ export function AboutPage() {
             AdventureLog
           </Link>
           .
+        </p>
+      </Section>
+
+      <Section id="play-tested">
+        <p>
+          <strong className="text-done">Tested in game.</strong> We played a route marked Tested in game ourselves and checked its quest order,
+          locations and XP.
+        </p>
+        <p>
+          Class quests for classes we did not play, and any quest we did not see, carry a small{" "}
+          <strong className="font-semibold">Unconfirmed</strong> label.
         </p>
       </Section>
 

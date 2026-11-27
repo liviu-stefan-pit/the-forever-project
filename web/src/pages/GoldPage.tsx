@@ -3,10 +3,11 @@
  * bracket (your bracket first), habits and farms to avoid. Data: `gold-plan.json`.
  */
 import { GoldGoal } from "../components/dashboard/GoldGoal";
-import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
+import { StatusBadge } from "../components/ui/ExperimentalBadge";
 import { Icon } from "../components/ui/Icon";
 import { ErrorState, Skeleton } from "../components/ui/States";
-import { useGoldPlan } from "../data/hooks";
+import { dataOf, useGoldPlan, useGuideIndex } from "../data/hooks";
+import { routeStatus } from "../lib/packStatus";
 import { bracketFor, fmtGold, isHonoredHome, milestoneDone, milestonePrice, sourcesFor, type GoldBracket, type GoldPlan } from "../lib/goldPlan";
 import { useProfileApi } from "../state/profile";
 import { useRoutePosition } from "../state/position";
@@ -75,6 +76,7 @@ function Bracket({ plan, b, current }: { plan: GoldPlan; b: GoldBracket; current
 
 export function GoldPage() {
   const res = useGoldPlan();
+  const index = dataOf(useGuideIndex());
   const pos = useRoutePosition();
   const active = useProfileApi().active;
   const level = Math.max(1, Math.floor(active?.level ?? pos.level ?? 1));
@@ -111,7 +113,7 @@ export function GoldPage() {
       <header className="space-y-2">
         <div className="flex flex-wrap items-center gap-2">
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-bronze-400">Horde · levels 1–60</p>
-          <ExperimentalBadge />
+          <StatusBadge status={routeStatus(index)} />
         </div>
         <h1 className="font-display text-3xl font-bold text-bronze-400">Gold plan</h1>
         <p className="text-sm text-muted">

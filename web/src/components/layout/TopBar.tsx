@@ -3,7 +3,7 @@ import { HORDE_HOME, SITE_NAME } from "../../config";
 import { MainNavLinks } from "./MainNav";
 import { useHideOnScroll } from "./scrollHide";
 import { dataOf, useGuide, useQuests } from "../../data/hooks";
-import { useCurrentGuideSlug, useEngine, useGuideCompletion, useProgressActions, useRouteStyle } from "../../state/progress";
+import { useEngine, useGuideCompletion, useProgressActions, useRouteStyle } from "../../state/progress";
 import { useRoutePosition } from "../../state/position";
 import { useGameSyncUi } from "../../state/gameSyncClient";
 import { readDungeons, writeDungeons } from "../../lib/profileExtras";
@@ -275,7 +275,6 @@ export function TopBar() {
   const ui = useUi();
   const sync = useGameSyncUi();
   const profile = useActiveProfileSummary();
-  const guideSlug = useCurrentGuideSlug();
   const pos = useRoutePosition();
   // Phones: the guide is read one-handed while playing, so the bar gets out of the way on scroll down.
   const onGuide = useLocation().pathname.startsWith("/guide/");
@@ -316,7 +315,7 @@ export function TopBar() {
           </span>
         </Link>
         <nav aria-label="Main" className="ml-2 hidden items-center gap-1 xl:flex">
-          <MainNavLinks guideSlug={guideSlug} />
+          <MainNavLinks guideSlug={pos.guideSlug} />
         </nav>
 
         <div className="flex-1" />

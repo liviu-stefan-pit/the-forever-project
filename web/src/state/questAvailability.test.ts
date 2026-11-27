@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Profile, QuestInfo } from "../data/schema";
-import { questAvailability } from "./questAvailability";
+import { questAvailability, unmetPrereqs } from "./questAvailability";
 
 function profile(partial: Partial<Profile> = {}): Profile {
   return {
@@ -54,6 +54,17 @@ describe("questAvailability", () => {
     const quests = { 10: info };
     expect(questAvailability(10, profile(), quests)).toBe("locked");
     expect(questAvailability(10, profile({ quests: { 2: "done" } }), quests)).toBe("available");
+  });
+
+  it("pre.single is met when one alternative is satisfied by the route, and never reports the other alone", () => {
+    // Shen'dar quests need either Welcome to Shen'dar Village (92514) or 93461 (not in our data).
+    const info = quest({ id: 10, pre: { group: [], single: [92514, 93461] } });
+    const quests = { 10: info, 92514: quest({ id: 92514 }) };
+    expect(unmetPrereqs(info, profile(), (id) => id === 92514, quests)).toEqual([]);
+    // Nothing satisfied: name only the alternative we know about.
+    expect(unmetPrereqs(info, profile(), () => false, quests)).toEqual([92514]);
+    // Without quest data, every id is listed as before.
+    expect(unmetPrereqs(info, profile())).toEqual([92514, 93461]);
   });
 
   it("exclusive sibling done => excluded", () => {

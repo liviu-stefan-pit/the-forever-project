@@ -1,5 +1,7 @@
 # GuideWebExport
 
+<img src="branding/icon-128.png" alt="GuideWebExport icon: the guide site's F inside two sync arrows (game to site and back)" width="96" height="96">
+
 GuideWebExport is a small World of Warcraft addon for **WoW: Forever 1.60.1**. It saves your character's
 progress to a file on your PC so The Forever Project's guide site can tick off the quests you have already
 done. It is part of [The Forever Project](https://github.com/liviu-stefan-pit/the-forever-project).
@@ -62,6 +64,25 @@ For the character you are playing, the file contains:
 
 It also stores the game version and the map bounds of each zone, which the project uses to check
 coordinates.
+
+## Icon and store images
+
+The icon shows the guide site's F inside two sync arrows (game to site and back), on the guide site's Horde/Alliance disc. The master is
+[`branding/icon.svg`](branding/icon.svg) (animated with CSS, still under *reduce motion*); everything else is
+rendered from it with `node web/scripts/render-addon-icons.mjs GuideWebExport` (needs Chrome or Edge and ffmpeg).
+
+| File | Use it for |
+| --- | --- |
+| `media/icon.tga` | In game: the AddOns list shows it next to the name (`## IconTexture:` in the `.toc`). Ships in the zip. |
+| `branding/icon-400.png` | **CurseForge** project avatar (square, 400 x 400). Also the **Wago** project icon. |
+| `branding/icon-256.png` | Wago or anywhere that asks for a smaller square logo. |
+| `branding/icon.gif` | **WoWInterface**: no project avatar there, so add it as the first screenshot. Also forums and Discord (256 px, animated). |
+| `branding/icon.webp` | Animated, 400 px, transparent corners, for pages that take WebP. |
+| `branding/icon-128.png`, `icon-64.png` | Small still versions (READMEs, link previews). |
+| `branding/icon.svg` | The guide site's Addons page (a copy lives in `web/public/addons/`). |
+
+Store sites change their size rules, so check the upload form; the 400 px PNG is the safe default.
+`branding/` is left out of the release zip; only `media/` ships.
 
 ## Licence
 

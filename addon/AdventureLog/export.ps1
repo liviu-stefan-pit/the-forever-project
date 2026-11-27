@@ -20,7 +20,8 @@ $PlannedEventTypes = @(
     'xp', 'xp_chat', 'level_up', 'fight_start', 'fight_end', 'mob_seen', 'mob_kill',
     'death', 'death_recap', 'release', 'revive',
     'loot', 'loot_chat', 'money_chat', 'vendor', 'skill', 'spells_changed', 'trainer',
-    'gather', 'idle_start', 'idle_end', 'afk_start', 'afk_end', 'probe'
+    'gather', 'idle_start', 'idle_end', 'afk_start', 'afk_end', 'probe',
+    'played', 'object_use', 'trainer_learn', 'trainer_close'
 )
 
 function Write-Utf8File {
@@ -393,7 +394,16 @@ This folder is a JSON export of one character's AdventureLog SavedVariables. An 
 - ``baseline`` - on ``quest_ready``: the quest was already complete when the session started, so it is not progress made in this session.
 - ``death`` then ``release`` (spirit released, now a ghost) then ``revive`` with ``how`` = ``corpse`` (corpse run), ``spiritHealer``, or ``resurrected`` (by another player), and ``timeLost`` seconds since the death.
 - ``mob_kill.killSec`` - seconds from first seeing the mob in the fight to its death.
-- Summary ``totals``: ``playedTotal`` is lifetime ``/played`` at session end; ``sessionPlayed`` and ``sessionActive`` (minus AFK) cover this session; ``xp`` is the sum of XP gains.
+- Summary ``totals``: ``playedTotal`` is lifetime ``/played`` at session end; ``sessionPlayed`` and ``sessionActive`` (minus AFK) cover this session; ``awaySec`` is the idle/AFK time taken out; ``xp`` is the sum of XP gains.
+- Session header ``playedAnchor`` / ``playedAnchorT``: every ``pt`` is ``playedAnchor + (t - playedAnchorT)``. Later ``/played`` answers are ``played`` events (``drift``) and ``playedAnchorLast``.
+- ``idle_end`` / ``afk_end``: ``credited`` is the time added after overlap; ``closedBy`` = ``logout`` when the span was still open at logout.
+- ``level_up``: ``from`` / ``to``; ``level`` is the level you left.
+- ``xp``: ``source`` (``kill``, ``quest``, ``explore``, ``other``) with ``npcId`` / ``questId`` / ``area``, ``restedBonus``, ``groupBonus``, ``restedUsed``, and ``gained`` (correct across a level).
+- ``quest_progress``: ``namesPending`` when objective names had not loaded, ``namesResolved`` when they are logged again with names.
+- ``quest_accept`` ``giver*`` and ``quest_turnin`` ``ender*``: NPC or object id, name, type and your position at the dialog. ``quest_turnin`` ``rewardChoices``, ``chosenItemId``, ``chosenName``, ``rewardMoney``.
+- ``object_use``: an object you looted, searched or read (``objectId``, ``name``, ``via``). Loot slots from an object have ``sourceType`` = ``GameObject``.
+- ``mob_kill``: ``via``, ``tracked``, ``inFight``, ``grouped``, ``groupSize``, ``groupCredit``, ``killSecShort``.
+- ``trainer_learn``: a purchase (name, ``subText`` rank, ``cost``); ``trainer_close``: ``spent``.
 
 ## Event types in this export
 

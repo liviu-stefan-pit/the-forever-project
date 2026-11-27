@@ -38,3 +38,18 @@ describe("file-mode status text", () => {
     expect(gameSyncStatusText({ phase: "file-error" })).toMatch(/Could not read/);
   });
 });
+
+describe("local app status text", () => {
+  it("tells the player to restart the local app instead of picking a file", () => {
+    expect(gameSyncStatusText({ phase: "server-down" })).toMatch(/Restart run-app\.bat/);
+    expect(gameSyncStatusText({ phase: "server-missing" })).toMatch(/found no GuideWebExport\.lua/);
+  });
+});
+
+describe("stale export status text", () => {
+  it("explains a skipped level-1 export", () => {
+    expect(
+      gameSyncStatusText({ phase: "result", result: { ok: false, reason: "stale-export", exportLevel: 1, profileLevel: 6 } }),
+    ).toMatch(/export says level 1 but this profile is level 6.*\/reload/);
+  });
+});

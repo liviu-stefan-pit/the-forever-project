@@ -377,6 +377,23 @@ flushTimers()
 completedSet[868] = true
 fire("TAXIMAP_OPENED")
 flushTimers()
+
+-- Logout while the client has already dropped the player (seen live: level 1,
+-- 0/0 XP, no money, no completed quests). The saved snapshot must survive.
+do
+    local saved = GuideWebExportDB.characters["Zugrok Grimfang-Forever"]
+    local savedAt = GuideWebExportDB.exportedAt
+    local real = { level = P.level, xp = P.xp, xpMax = P.xpMax, money = P.money }
+    P.level, P.xp, P.xpMax, P.money = 1, 0, 0, 0
+    fire("PLAYER_LOGOUT")
+    assert(GuideWebExportDB.characters["Zugrok Grimfang-Forever"] == saved, "unready logout replaced the snapshot")
+    assert(GuideWebExportDB.exportedAt == savedAt, "unready logout restamped the export")
+    -- A lower level for the same character is refused even with XP data.
+    P.level, P.xpMax, P.money = 5, 2800, real.money
+    fire("PLAYER_LOGOUT")
+    assert(GuideWebExportDB.characters["Zugrok Grimfang-Forever"] == saved, "level went down")
+    P.level, P.xp, P.xpMax, P.money = real.level, real.xp, real.xpMax, real.money
+end
 fire("PLAYER_LOGOUT")
 
 assert(SKILLS[4].isExpanded == false, "collapsed skill header was not restored")

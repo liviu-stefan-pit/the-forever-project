@@ -6,9 +6,10 @@ import { EmptyState, ErrorState, Skeleton } from "../components/ui/States";
 import { dataOf, guideTitleOf, useGuideIndex, useGuideTitle, useInsights, useQuests } from "../data/hooks";
 import type { GuideIndex } from "../data/schema";
 import { groupOverviewNotes, overviewIssues, overviewZoneMatch } from "../lib/overview";
+import { routeStatus } from "../lib/packStatus";
 import { useGuideCompletion, useRouteStyle } from "../state/progress";
 import { fmtPlayTime, guideMinutes } from "../lib/timeEstimate";
-import { ExperimentalBadge } from "../components/ui/ExperimentalBadge";
+import { StatusBadge } from "../components/ui/ExperimentalBadge";
 
 const OverviewGuideRow = memo(function OverviewGuideRow({
   slug,
@@ -90,7 +91,7 @@ export function OverviewPage() {
       <header className="panel-animate space-y-2">
         <div className="flex flex-wrap items-center gap-2">
           <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-bronze-400">Route</p>
-          <ExperimentalBadge />
+          <StatusBadge status={routeStatus(dataOf(indexRes))} />
         </div>
         <h1 className="font-display text-3xl font-bold text-bronze-400">Overview</h1>
         {zoneFilter && <p className="text-sm text-bronze-300/70">Showing guides that mention {zoneFilter}.</p>}

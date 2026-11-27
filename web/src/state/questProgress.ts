@@ -592,6 +592,8 @@ export function stepStatus(
 
   const logKnown = hasQuestLogSnapshot(profile);
   const missing: number[] = [];
+  // Following the viewed route turns this prerequisite in before this step.
+  const routeDone = (id: number) => routeTurnsInByStep(id, step.id, route, indexes);
 
   for (const action of required) {
     const qid = actionQuestId(action)!;
@@ -600,8 +602,7 @@ export function stepStatus(
 
     if (action.type === "accept") {
       if (avail === "locked" && info) {
-        for (const id of unmetPrereqs(info, profile)) {
-          if (routeTurnsInByStep(id, step.id, route, indexes)) continue;
+        for (const id of unmetPrereqs(info, profile, routeDone, quests)) {
           if (!missing.includes(id)) missing.push(id);
         }
       }
@@ -610,8 +611,7 @@ export function stepStatus(
 
     // complete / collect / turnin
     if (avail === "locked" && info) {
-      for (const id of unmetPrereqs(info, profile)) {
-        if (routeTurnsInByStep(id, step.id, route, indexes)) continue;
+      for (const id of unmetPrereqs(info, profile, routeDone, quests)) {
         if (!missing.includes(id)) missing.push(id);
       }
       continue;

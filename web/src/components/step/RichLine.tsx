@@ -1,3 +1,4 @@
+import { Fragment, type ReactNode } from "react";
 import type { RichText } from "../../data/schema";
 import { KIND_CLASS, tokenizeLine, type IconGlyph } from "../../lib/richtext";
 import { Icon } from "../ui/Icon";
@@ -21,9 +22,37 @@ function Glyph({ glyph, src }: { glyph: IconGlyph; src: string }) {
   );
 }
 
+/** A phrase to draw differently where the line says it (a quest name the step acts on). */
+export interface LineHighlight {
+  label: string;
+  render: (text: string) => ReactNode;
+}
+
+/** Splits plain text at the first unused occurrence of each highlight (longest wins at the same spot). */
+function highlightText(text: string, marks: readonly LineHighlight[], used: Set<number>, key: string): ReactNode[] {
+  const lower = text.toLowerCase();
+  let best: { at: number; idx: number } | null = null;
+  marks.forEach((m, idx) => {
+    if (used.has(idx) || !m.label) return;
+    const at = lower.indexOf(m.label.toLowerCase());
+    if (at < 0) return;
+    if (!best || at < best.at || (at === best.at && m.label.length > marks[best.idx]!.label.length)) best = { at, idx };
+  });
+  if (!best) return [text];
+  const { at, idx } = best as { at: number; idx: number };
+  used.add(idx);
+  const end = at + marks[idx]!.label.length;
+  return [
+    text.slice(0, at),
+    <Fragment key={`${key}-m${idx}`}>{marks[idx]!.render(text.slice(at, end))}</Fragment>,
+    ...highlightText(text.slice(end), marks, used, `${key}-r`),
+  ];
+}
+
 /** One line of guide rich text (coloured segments, item names, glyphs, links). */
-export function RichLine({ line, className = "" }: { line: RichText; className?: string }) {
+export function RichLine({ line, className = "", marks }: { line: RichText; className?: string; marks?: readonly LineHighlight[] }) {
   const tokens = tokenizeLine(line);
+  const used = new Set<number>();
   return (
     <span className={className}>
       {tokens.map((t, i) => {
@@ -53,14 +82,16 @@ export function RichLine({ line, className = "" }: { line: RichText; className?:
                 {t.text}
               </span>
             );
-          case "text":
+          case "text": {
+            const body = marks?.length ? highlightText(t.text, marks, used, String(i)) : t.text;
             return t.kind ? (
               <span key={i} data-kind={t.kind} className={`font-medium ${KIND_CLASS[t.kind]}`}>
-                {t.text}
+                {body}
               </span>
             ) : (
-              <span key={i}>{t.text}</span>
+              <span key={i}>{body}</span>
             );
+          }
         }
       })}
     </span>

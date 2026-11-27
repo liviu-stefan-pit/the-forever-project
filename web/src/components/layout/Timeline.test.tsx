@@ -10,6 +10,11 @@ const index: GuideIndex = {
   generatedAt: "t",
   brackets: [{ label: "1-12", guides: ["tirisfal-1-12", "silverpine-11-15", "barrens-12-20"] }],
   starts: [{ race: ["Scourge"], label: "Tirisfal", firstGuide: "tirisfal-1-12" }],
+  entries: [
+    { slug: "tirisfal-1-12", stepIds: [], stepCount: 0, status: "play-tested" },
+    { slug: "silverpine-11-15", stepIds: [], stepCount: 0 },
+    { slug: "barrens-12-20", stepIds: [], stepCount: 0, status: "experimental" },
+  ],
 };
 
 vi.mock("../../data/hooks", async () => {
@@ -47,5 +52,13 @@ describe("Timeline Silverpine row", () => {
     expect(markup).toContain('href="/guide/silverpine-11-15"');
     expect(markup).not.toMatch(/href="\/guide\/silverpine-11-15"[^>]*>[\s\S]*Balanced/);
     expect(markup).not.toContain("opacity-55");
+  });
+});
+
+describe("Timeline tested-in-game check", () => {
+  it("marks only play-tested packs", () => {
+    const markup = render("balanced");
+    expect(markup.match(/data-testid="timeline-tested"/g)).toHaveLength(1);
+    expect(markup).toMatch(/href="\/guide\/tirisfal-1-12"[\s\S]*?timeline-tested[\s\S]*?href="\/guide\/silverpine-11-15"/);
   });
 });

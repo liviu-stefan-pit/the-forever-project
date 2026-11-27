@@ -1,5 +1,6 @@
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
+import { MemoryRouter } from "react-router";
 import { describe, expect, it } from "vitest";
 import type { Step } from "../../data/schema";
 import type { TipContext } from "../../lib/stepExtras";
@@ -18,7 +19,7 @@ const base: Step = {
 
 const render = (step: Step, ctx?: TipContext) =>
   renderToStaticMarkup(
-    createElement(StepCard, {
+    createElement(MemoryRouter, null, createElement(StepCard, {
       step,
       isCurrent: false,
       isDone: false,
@@ -26,7 +27,7 @@ const render = (step: Step, ctx?: TipContext) =>
       onToggle: () => {},
       onSelect: () => {},
       tipCtx: ctx,
-    }),
+    })),
   );
 
 describe("StepCard", () => {
@@ -107,9 +108,9 @@ describe("StepCard", () => {
     expect(render(base)).not.toContain("step-unverified");
   });
 
-  it("puts the unverified chip after the objective line", () => {
+  it("puts the unverified chip once, in the top row before the objectives", () => {
     const html = render({ ...base, sources: [], verified: false });
-    expect(html.indexOf("Kill boars")).toBeLessThan(html.indexOf("step-unverified"));
+    expect(html.indexOf("step-unverified")).toBeLessThan(html.indexOf("Kill boars"));
     expect(html.match(/step-unverified/g)?.length).toBe(1);
     const noText = render({ ...base, text: [], sources: [], verified: false });
     expect(noText.match(/step-unverified/g)?.length).toBe(1);
@@ -158,7 +159,7 @@ describe("StepCard", () => {
     };
     const html = render(step, { route: "balanced", dungeons: false });
     expect(html).toContain('data-testid="step-xp"');
-    expect(html).toContain("sm:absolute sm:right-2 sm:top-2");
+    expect(html).not.toContain("sm:absolute");
     expect(html).toContain("+1,240 XP");
     expect(html).toContain("Turn-ins +800 XP");
     expect(html).toContain("Kills/grind +440 XP");
@@ -204,5 +205,182 @@ describe("StepCard", () => {
     expect(html).not.toContain("Mark step 1 not done");
     expect(html).toContain("tick-pop");
     expect(html).toContain("Unavailable");
+  });
+
+  it("shows a revealed step for another class in full, but read-only", () => {
+    const html = renderToStaticMarkup(
+      createElement(StepCard, {
+        step: base,
+        isCurrent: false,
+        isDone: false,
+        lineVisible: () => true,
+        onToggle: () => {},
+        onSelect: () => {},
+        unavailableTag: "Unavailable",
+        preview: true,
+      }),
+    );
+    expect(html).toContain("Kill boars");
+    expect(html).toContain("Not for your character");
+    expect(html).toContain('data-collapsed="false"');
+    expect(html).toContain('data-done="false"');
+    expect(html).toContain("disabled");
+  });
+
+  describe("lines and waypoints", () => {
+    const goto = (x: number, y: number) => ({ type: "goto" as const, at: { mapId: 1, x, y, zone: "Zephras Isle", exact: true } });
+
+    it("puts each waypoint on the line that names its quest, with the place in bold", () => {
+      const html = render({
+        ...base,
+        text: [
+          { segments: [{ t: "Town stop 4 (level 6). Last stop:" }] },
+          { segments: [{ t: "Valreaa Valewind: turn in Aggressive Encroachment." }] },
+          { segments: [{ t: "Aetheen of the Gales: turn in Foul Matriarch, accept The Adventurer." }] },
+          { segments: [{ t: "Train your level 6 spells." }] },
+        ],
+        actions: [
+          goto(42.4, 25.2),
+          { type: "turnin", questId: 1, label: "Aggressive Encroachment" },
+          goto(42.8, 23.7),
+          { type: "turnin", questId: 2, label: "Foul Matriarch" },
+          { type: "accept", questId: 3, label: "The Adventurer" },
+          { type: "trainer", label: "Visit your class trainer" },
+        ],
+      });
+      const lines = html.split('data-testid="step-line"').slice(1);
+      expect(lines).toHaveLength(4);
+      expect(lines[1]).toContain(">Valreaa Valewind: <");
+      expect(lines[1]).toContain("42.4, 25.2");
+      expect(lines[2]).toContain("42.8, 23.7");
+      expect(lines[0]).not.toContain("step-way");
+      expect(lines[3]).not.toContain("step-way");
+      // quests are highlighted in the sentence, not repeated as chips
+      expect(html.match(/data-testid="mark-turnin"/g)?.length).toBe(2);
+      expect(html.match(/data-testid="mark-accept"/g)?.length).toBe(1);
+      expect(html).not.toContain(">Turn in<");
+      // "Train your level 6 spells" already says it, so no trainer chip
+      expect(html).not.toContain("Visit your class trainer");
+    });
+
+    it("keeps a chip for an action the text never mentions", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Pick up the crate by the well." }] }],
+        actions: [{ type: "trainer", label: "Visit your class trainer" }],
+      });
+      expect(html).toContain("Visit your class trainer");
+    });
+
+    it("puts a single waypoint on the line without a place label", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Hand The Adventurer over to Raan Wildwind." }] }],
+        actions: [goto(41.7, 44.8), { type: "turnin", questId: 3, label: "The Adventurer" }],
+      });
+      expect(html.match(/data-testid="step-way"/g)?.length).toBe(1);
+      expect(html).toContain("mark-turnin");
+    });
+
+    it("doesn't read a quest name with a colon as a place", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Accept WANTED: Vulgara the Insatiable." }] }],
+        actions: [goto(43.4, 45.8), { type: "accept", questId: 4, label: "WANTED: Vulgara the Insatiable" }],
+      });
+      expect(html).not.toContain("<strong");
+      expect(html).toContain("mark-accept");
+    });
+
+    it("keeps the place when the NPC and the quest share a name", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Aetheen of the Gales: turn in Aetheen of the Gales." }] }],
+        actions: [goto(42.8, 23.7), { type: "turnin", questId: 5, label: "Aetheen of the Gales" }],
+      });
+      expect(html).toContain(">Aetheen of the Gales: <");
+      expect(html).toContain("mark-turnin");
+    });
+
+    it("gives each NPC line its own waypoint when a quest name shows up on two lines", () => {
+      const html = render({
+        ...base,
+        text: [
+          { segments: [{ t: "Rorian the Dayseeker: turn in Return to Rorian, accept Aetheen of the Gales." }] },
+          { segments: [{ t: "Aetheen of the Gales: turn in Aetheen of the Gales, accept Foul Matriarch." }] },
+        ],
+        actions: [
+          goto(42.0, 23.5),
+          { type: "turnin", questId: 7, label: "Return to Rorian" },
+          { type: "accept", questId: 8, label: "Aetheen of the Gales" },
+          goto(42.8, 23.7),
+          { type: "turnin", questId: 8, label: "Aetheen of the Gales" },
+          { type: "accept", questId: 9, label: "Foul Matriarch" },
+        ],
+      });
+      const lines = html.split('data-testid="step-line"').slice(1);
+      expect(lines[0]).toContain("42.0, 23.5");
+      expect(lines[0]).not.toContain("42.8, 23.7");
+      expect(lines[1]).toContain("42.8, 23.7");
+      expect(lines[1]).toContain(">Aetheen of the Gales: <");
+    });
+
+    it("hides objective chips the text already says when nothing is synced", () => {
+      const html = render({
+        ...base,
+        text: [{ segments: [{ t: "Den: kill 8 Ursera Scavengers and Urs'anah, and take her head." }] }],
+        actions: [
+          goto(37.8, 26.1),
+          { type: "complete", questId: 6, objective: 1, label: "Ursera Scavengers" },
+          { type: "complete", questId: 6, objective: 2, label: "Head of Urs'anah" },
+        ],
+      });
+      expect(html).not.toContain(">Complete<");
+      expect(html).not.toContain("Head of Urs'anah");
+      expect(html).not.toContain("step-count");
+    });
+  });
+
+  it("folds a finished step to one line", () => {
+    const html = renderToStaticMarkup(
+      createElement(StepCard, { step: base, isCurrent: false, isDone: true, lineVisible: () => true, onToggle: () => {}, onSelect: () => {} }),
+    );
+    expect(html).toContain('data-testid="step-fold"');
+    expect(html).toContain('data-testid="step-summary"');
+    expect(html).not.toContain("step-areas");
+  });
+});
+
+describe("StepCard Unconfirmed label (play-tested guide)", () => {
+  const playtested = { date: "2026-11-27", class: "Shaman" as const, levels: [1, 13] as [number, number] };
+  const ctx: TipContext = { route: "balanced", dungeons: false, playtested };
+
+  it("labels another class's step that is not verified, and drops the generic Unverified chip", () => {
+    const html = render({ ...base, classes: ["Warrior"], sources: [], verified: false }, ctx);
+    expect(html).toContain('data-testid="step-unconfirmed"');
+    expect(html).toContain("Unconfirmed");
+    expect(html).toContain("the play-test was on a Shaman");
+    expect(html).not.toContain("step-unverified");
+  });
+
+  it("does not label the played class's step, a verified class step, or a class step outside play-tested guides", () => {
+    expect(render({ ...base, classes: ["Shaman"], sources: [], verified: true }, ctx)).not.toContain("step-unconfirmed");
+    expect(render({ ...base, classes: ["Warrior"], sources: [], verified: true }, ctx)).not.toContain("step-unconfirmed");
+    expect(render({ ...base, classes: ["Warrior"], sources: [], verified: false })).not.toContain("step-unconfirmed");
+  });
+
+  it("labels a step with a filter-restricted class too", () => {
+    const step: Step = { ...base, filter: { any: [[{ cls: "Mage" }]] } };
+    expect(render(step, ctx)).toContain("step-unconfirmed");
+  });
+
+  it("labels a step whose quest data is unconfirmed, from the action or from the quest lookup", () => {
+    const onAction: Step = { ...base, verified: true, actions: [{ type: "accept", questId: 1, label: "Q", dataStatus: "unconfirmed" }] };
+    expect(render(onAction, ctx)).toContain("step-unconfirmed");
+    const quests = new Map([[2, { id: 2, dataStatus: "unconfirmed" }]]) as unknown as TipContext["quests"];
+    const inLookup: Step = { ...base, verified: true, actions: [{ type: "turnin", questId: 2, label: "Q" }] };
+    expect(render(inLookup, { ...ctx, quests })).toContain("step-unconfirmed");
+    const confirmed: Step = { ...base, verified: true, actions: [{ type: "accept", questId: 1, label: "Q", dataStatus: "confirmed" }] };
+    expect(render(confirmed, ctx)).not.toContain("step-unconfirmed");
   });
 });

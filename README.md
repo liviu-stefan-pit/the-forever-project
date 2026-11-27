@@ -114,8 +114,10 @@ In desktop Chrome or Edge, choose `GuideWebExport.lua` once under **Game sync** 
 (`World of Warcraft\_forever_\WTF\Account\<ACCOUNT>\SavedVariables\GuideWebExport.lua`). The browser
 remembers the file, so the top-bar **Sync** button (and **Sync now** on the Profile page) re-reads it with one
 click, and while the tab is open a `/reload` in game is picked up automatically. The file is read in the
-browser and never uploaded. In Firefox, Safari and on mobile, use **Import GuideWebExport.lua** on the Profile
-page instead. This works the same on the hosted site and in `npm run dev`. Full details, character matching
+browser and never uploaded. WoW under Program Files? Chrome's picker refuses that folder, so drag the file
+from File Explorer onto the **Game sync** box instead; Chrome remembers a dropped file. In `npm run dev`
+(and `run-app.bat`) the local server reads the file straight from the WoW folder, so there is nothing to
+choose. In Firefox, Safari and on mobile, use **Import GuideWebExport.lua** on the Profile page instead. Full details, character matching
 and troubleshooting: [docs/GAME_EXPORT.md](docs/GAME_EXPORT.md).
 
 ### Map images

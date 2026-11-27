@@ -304,8 +304,9 @@ function GetMoney()
     return P.money
 end
 
+P.rested = nil
 function GetXPExhaustion()
-    return 0
+    return P.rested
 end
 
 function GetRestState()
@@ -324,8 +325,12 @@ function UnitPosition()
     return 100, 200, 0, 1
 end
 
+-- /played follows the mock clock (which starts at 1000), so a later answer
+-- (level up, logout) is a different number from the first one.
+local CLOCK0 = 1000
 function RequestTimePlayed()
-    fire("TIME_PLAYED_MSG", 1000, 100)
+    local elapsed = math.floor(clock - CLOCK0)
+    fire("TIME_PLAYED_MSG", 1000 + elapsed, 100 + elapsed)
 end
 
 function UnitOnTaxi()
@@ -437,8 +442,30 @@ end
 function C_QuestLog.GetInfo()
     return nil
 end
-function C_QuestLog.GetQuestObjectives()
-    return {}
+-- questObjectives[id] = { names = false|true, rows = { {name, need, kind} } }
+-- While names is false the text comes back blank the way the client sends it
+-- before the creature/item name has loaded ("0/10   slain", "0/15  ").
+local questObjectives = {}
+function C_QuestLog.GetQuestObjectives(questId)
+    local q = questObjectives[questId]
+    if not q then
+        return {}
+    end
+    local out = {}
+    for i, row in ipairs(q.rows) do
+        local text
+        if q.names then
+            text = "0/" .. row.need .. " " .. row.name .. (row.kind == "monster" and " slain" or "")
+        else
+            text = "0/" .. row.need .. "  " .. (row.kind == "monster" and " slain" or "")
+        end
+        out[i] = { text = text, type = row.kind, finished = false, numFulfilled = 0, numRequired = row.need }
+    end
+    return out
+end
+local flaggedCompleted = {}
+function C_QuestLog.IsQuestFlaggedCompleted(questId)
+    return flaggedCompleted[questId] == true
 end
 function C_QuestLog.GetNumQuestLogEntries()
     return 0, 0
@@ -487,8 +514,9 @@ function GetLootSlotLink()
     return "item:2589:"
 end
 
+local lootSource = MOB_GUID
 function GetLootSourceInfo()
-    return MOB_GUID, 1
+    return lootSource, 1
 end
 
 C_DamageMeter = {}
@@ -521,6 +549,88 @@ function C_TaxiMap.GetTaxiMapID()
 end
 
 function ChatFrame_AddMessageEventFilter()
+end
+
+-- 1.2.0 mocks: quest dialogs, rewards, trainer, group, soft interact.
+function hooksecurefunc(name, fn)
+    local orig = _G[name]
+    _G[name] = function(...)
+        local out = { orig(...) }
+        fn(...)
+        return unpack(out)
+    end
+end
+
+local dialog = { questId = 0, choices = {}, rewards = {}, money = 0, xp = 0 }
+function GetQuestID()
+    return dialog.questId
+end
+function GetNumQuestChoices()
+    return #dialog.choices
+end
+function GetNumQuestRewards()
+    return #dialog.rewards
+end
+function GetQuestItemInfo(kind, i)
+    local row = (kind == "choice" and dialog.choices or dialog.rewards)[i]
+    if not row then
+        return nil
+    end
+    return row.name, 134400, row.count, row.quality, true, row.itemId
+end
+function GetQuestItemLink(kind, i)
+    local row = (kind == "choice" and dialog.choices or dialog.rewards)[i]
+    if not row then
+        return nil
+    end
+    return "|Hitem:" .. row.itemId .. "::::|h[" .. row.name .. "]|h"
+end
+function GetRewardMoney()
+    return dialog.money
+end
+function GetRewardXP()
+    return dialog.xp
+end
+function GetQuestReward()
+end
+
+local trainerServices = {
+    { name = "Cooking", kind = "available", subText = "Apprentice", cost = 100, skillLine = "Cooking" },
+}
+C_Trainer = {}
+function C_Trainer.GetTrainerType()
+    return 2
+end
+function GetNumTrainerServices()
+    return #trainerServices
+end
+function GetTrainerServiceInfo(i)
+    local s = trainerServices[i]
+    return s.name, s.kind, 136243, 5, s.subText, ""
+end
+function GetTrainerServiceCost(i)
+    return trainerServices[i].cost, true
+end
+function GetTrainerServiceSkillLine(i)
+    return trainerServices[i].skillLine
+end
+function BuyTrainerService()
+end
+
+local group = { inGroup = false, size = 0 }
+function IsInGroup()
+    return group.inGroup
+end
+function GetNumGroupMembers()
+    return group.size
+end
+function UnitIsTapDenied()
+    return false
+end
+
+P.afk = false
+function UnitIsAFK()
+    return P.afk
 end
 
 DEFAULT_CHAT_FRAME = {
@@ -632,15 +742,136 @@ fire("PLAYER_DEAD")
 
 fire("QUEST_TURNED_IN", 876, 250, 100)
 
-P.xp = 400
+P.xp = 250
 fire("PLAYER_XP_UPDATE", "player")
-P.level = 6
-P.xp = 10
-P.xpMax = 900
 fire("CHAT_MSG_LOOT", "You receive loot: |cffffffff|Hitem:4865::::::::5:::::::|h[Ruined Pelt]|h|r.")
 fire("CHAT_MSG_LOOT", "Grommash receives loot: |cffffffff|Hitem:4865::::::::5:::::::|h[Ruined Pelt]|h|r.")
 flush(1)
+
+-- ---------------------------------------------------------------------------
+-- 1.2.0 scenario. Each block feeds one numbered fix; checks come after logout.
+-- ---------------------------------------------------------------------------
+
+local function advance(sec)
+    clock = clock + sec
+end
+
+-- 7 + 6: accept from an NPC; objective names load a few seconds later.
+units.npc = { name = "Ilthalaine", guid = "Creature-0-1-2-3-2079-77", player = false }
+dialog.questId = 92517
+questObjectives[92517] = { names = false, rows = { { name = "Highlands Bandit", need = 10, kind = "monster" } } }
+fire("QUEST_DETAIL", 0)
+advance(1)
+fire("QUEST_ACCEPTED", 92517)
+fire("QUEST_FINISHED")
+flush(2)
+questObjectives[92517].names = true
+flush(4)
+
+-- 8: reward dialog with two choices; the player picks the second.
+dialog.questId = 92517
+dialog.choices = {
+    { name = "Bandit Gloves", itemId = 60001, count = 1, quality = 2 },
+    { name = "Bandit Staff", itemId = 60002, count = 1, quality = 2 },
+}
+dialog.rewards = { { name = "Healing Potion", itemId = 929, count = 2, quality = 1 } }
+dialog.money = 175
+dialog.xp = 480
+fire("QUEST_COMPLETE")
+advance(2)
+GetQuestReward(2)
+fire("QUEST_TURNED_IN", 92517, 480, 175)
+P.xp = P.xp + 480
+fire("PLAYER_XP_UPDATE", "player")
+fire("QUEST_FINISHED")
+units.npc = nil
+dialog.questId = 0
+dialog.choices = {}
+dialog.rewards = {}
+flush(2)
+
+-- 2 + 5: item quest: QUEST_REMOVED and the XP arrive before QUEST_TURNED_IN.
+fire("QUEST_REMOVED", 92553, false)
+P.xp = P.xp + 410
+fire("PLAYER_XP_UPDATE", "player")
+advance(0.05)
+fire("QUEST_TURNED_IN", 92553, 410, 65)
+flaggedCompleted[92553] = true
+flush(3)
+-- A real abandon.
+fire("QUEST_REMOVED", 93000, false)
+flush(3)
+
+-- 5 + 11: in-fight kill with rested bonus, then a party member's kill while grouped.
+units.target = { name = "Plainstrider", guid = "Creature-0-1-2-3-448-100", level = 7, class = "normal",
+    player = false, dead = false, combat = true, attack = true }
+P.rested = 200
+fire("PLAYER_XP_UPDATE", "player")
+flush(2)
+fire("PLAYER_REGEN_DISABLED")
+advance(9)
+fire("CHAT_MSG_COMBAT_XP_GAIN", "Plainstrider dies, you gain 98 experience. (+49 exp Rested bonus)")
+P.xp = P.xp + 98
+P.rested = 151
+fire("PLAYER_XP_UPDATE", "player")
+fire("PLAYER_REGEN_ENABLED")
+flush(3)
+group.inGroup = true
+group.size = 2
+fire("GROUP_ROSTER_UPDATE")
+fire("CHAT_MSG_COMBAT_XP_GAIN", "Highlands Bandit dies, you gain 47 experience. (+5 group bonus)")
+P.xp = P.xp + 47
+fire("PLAYER_XP_UPDATE", "player")
+flush(3)
+group.inGroup = false
+group.size = 0
+
+-- 5: exploration XP (system message after the XP update).
+P.xp = P.xp + 25
+fire("PLAYER_XP_UPDATE", "player")
+fire("CHAT_MSG_SYSTEM", "Discovered Thendal Grove: 25 experience gained")
+flush(2)
+
+-- 10: object pickup by loot, a searched wardrobe by spell, a note by gossip.
+fire("LOOT_CLOSED") -- the first scripted loot window was never closed
+lootSource = "GameObject-0-1-2-3-617839-5"
+lootNum = 1
+fire("LOOT_OPENED", true, false)
+fire("LOOT_CLOSED")
+lootSource = MOB_GUID
+lootNum = 0
+advance(4)
+units.softinteract = { name = "Old Wardrobe", guid = "GameObject-0-1-2-3-500001-9", player = false }
+fire("PLAYER_SOFT_INTERACT_CHANGED", "", "GameObject-0-1-2-3-500001-9")
+fire("UNIT_SPELLCAST_SENT", "player", "Old Wardrobe", "Cast-1", 6478)
+advance(2)
+fire("UNIT_SPELLCAST_SUCCEEDED", "player", "Cast-1", 6478)
+units.npc = { name = "Torn Note", guid = "GameObject-0-1-2-3-500002-1", player = false }
+fire("GOSSIP_SHOW")
+fire("GOSSIP_CLOSED")
+units.npc = nil
+flush(2)
+
+-- 9: profession trainer, one purchase.
+units.npc = { name = "Fenn Fairweather", guid = "Creature-0-1-2-3-3399-2", player = false }
+fire("TRAINER_SHOW")
+BuyTrainerService(1)
+P.money = P.money - 100
+fire("TRAINER_CLOSED")
+units.npc = nil
+flush(2)
+
+-- 4: level up.
+P.level = 6
+P.xp = 10
+P.xpMax = 900
 fire("PLAYER_LEVEL_UP", 6)
+
+-- 1: go idle, then /afk, then log out while still away.
+flush(240)
+P.afk = true
+fire("PLAYER_FLAGS_CHANGED", "player")
+flush(600)
 fire("PLAYER_LOGOUT")
 
 local db = AdventureLogDB
@@ -658,6 +889,279 @@ do
     report(kept and marked and not leaked, "other players' names not stored",
         "kept " .. tostring(kept) .. ", marked " .. tostring(marked) .. ", leaked " .. tostring(leaked))
 end
+
+-- ---------------------------------------------------------------------------
+-- 1.2.0 checks on decoded events
+-- ---------------------------------------------------------------------------
+
+local function decodeJson(s)
+    local i = 1
+    local value
+    local function ws()
+        i = string.find(s, "[^ \t\r\n]", i) or (#s + 1)
+    end
+    local function str()
+        i = i + 1
+        local out = {}
+        while true do
+            local c = string.sub(s, i, i)
+            if c == '"' then
+                i = i + 1
+                return table.concat(out)
+            elseif c == "\\" then
+                local n = string.sub(s, i + 1, i + 1)
+                local map = { n = "\n", r = "\r", t = "\t", b = "\b", f = "\f" }
+                if n == "u" then
+                    out[#out + 1] = string.char(tonumber(string.sub(s, i + 2, i + 5), 16) % 256)
+                    i = i + 6
+                else
+                    out[#out + 1] = map[n] or n
+                    i = i + 2
+                end
+            else
+                out[#out + 1] = c
+                i = i + 1
+            end
+        end
+    end
+    value = function()
+        ws()
+        local c = string.sub(s, i, i)
+        if c == "{" then
+            local t = {}
+            i = i + 1
+            ws()
+            if string.sub(s, i, i) == "}" then
+                i = i + 1
+                return t
+            end
+            while true do
+                ws()
+                local k = str()
+                ws()
+                i = i + 1 -- :
+                t[k] = value()
+                ws()
+                local d = string.sub(s, i, i)
+                i = i + 1
+                if d == "}" then
+                    return t
+                end
+            end
+        elseif c == "[" then
+            local t = {}
+            i = i + 1
+            ws()
+            if string.sub(s, i, i) == "]" then
+                i = i + 1
+                return t
+            end
+            while true do
+                t[#t + 1] = value()
+                ws()
+                local d = string.sub(s, i, i)
+                i = i + 1
+                if d == "]" then
+                    return t
+                end
+            end
+        elseif c == '"' then
+            return str()
+        elseif string.sub(s, i, i + 3) == "true" then
+            i = i + 4
+            return true
+        elseif string.sub(s, i, i + 4) == "false" then
+            i = i + 5
+            return false
+        elseif string.sub(s, i, i + 3) == "null" then
+            i = i + 4
+            return nil
+        end
+        local num = string.match(s, "^-?[%d%.eE%+%-]+", i)
+        i = i + #num
+        return tonumber(num)
+    end
+    return value()
+end
+
+local events = {}
+for _, line in ipairs(db.sessions[1].events) do
+    events[#events + 1] = decodeJson(line)
+end
+
+local function find(e, match)
+    local out = {}
+    for _, ev in ipairs(events) do
+        if ev.e == e then
+            local ok = true
+            for k, v in pairs(match or {}) do
+                if ev[k] ~= v then
+                    ok = false
+                    break
+                end
+            end
+            if ok then
+                out[#out + 1] = ev
+            end
+        end
+    end
+    return out
+end
+
+local function show(ev)
+    if not ev then
+        return "missing"
+    end
+    return AdventureLog.encode(ev)
+end
+
+-- 1: AFK/idle open at logout is closed and counted; summary active excludes it.
+do
+    local idleEnd = find("idle_end", { closedBy = "logout" })[1]
+    local afkEnd = find("afk_end", { closedBy = "logout" })[1]
+    local summary = decodeJson(db.sessions[1].summary)
+    local totals = summary.totals or {}
+    local away = (idleEnd and idleEnd.credited or 0) + (afkEnd and afkEnd.credited or 0)
+    local ok = idleEnd ~= nil and afkEnd ~= nil and away > 600
+        and type(totals.sessionActive) == "number" and type(totals.sessionPlayed) == "number"
+        and math.abs((totals.sessionPlayed - totals.sessionActive) - away) < 1
+        and type(totals.awaySec) == "number" and math.abs(totals.awaySec - away) < 1
+    report(ok, "1 idle/AFK open at logout is excluded from sessionActive",
+        "away " .. tostring(away) .. ", played " .. tostring(totals.sessionPlayed) .. ", active " .. tostring(totals.sessionActive))
+    local zoneOk = false
+    for _, row in pairs(summary.zones or {}) do
+        if row.idleSec and row.idleSec > 600 and math.abs(row.sec - row.activeSec - row.idleSec) < 0.01 then
+            zoneOk = true
+        end
+    end
+    report(zoneOk, "1 zone idleSec holds the away time, activeSec does not", AdventureLog.encode(summary.zones))
+    local levelOk = false
+    for _, row in ipairs(summary.levels or {}) do
+        if row.level == 5 then
+            levelOk = true
+        end
+    end
+    report(levelOk, "4 summary level row is the level you left", AdventureLog.encode(summary.levels))
+end
+
+-- 2: no abandon for a quest removed just before its turn-in; a real abandon stays.
+do
+    local fake = find("quest_abandon", { questId = 92553 })
+    local real = find("quest_abandon", { questId = 93000 })
+    report(#fake == 0 and #real == 1, "2 turn-in after QUEST_REMOVED is not an abandon",
+        "false " .. #fake .. ", real " .. #real)
+end
+
+-- 3: header playedAnchor is the anchor the event pt values use.
+do
+    local header = decodeJson(db.sessions[1].header)
+    local ok, detail = false, show(header)
+    local first = nil
+    for _, ev in ipairs(events) do
+        if type(ev.pt) == "number" and type(ev.t) == "number" then
+            first = ev
+            break
+        end
+    end
+    if first and type(header.playedAnchor) == "number" and type(header.playedAnchorT) == "number" then
+        local expect = header.playedAnchor + (first.t - header.playedAnchorT)
+        ok = math.abs(first.pt - expect) < 0.01 and header.playedAnchorLast ~= nil and header.playedAnchorLast ~= header.playedAnchor
+        detail = "anchor " .. header.playedAnchor .. ", first pt " .. first.pt .. ", expected " .. expect .. ", last " .. tostring(header.playedAnchorLast)
+    end
+    report(ok, "3 header playedAnchor matches event pt", detail)
+    local played = find("played")
+    report(#played >= 1 and type(played[1].drift) == "number" and math.abs(played[1].drift) < 1,
+        "3 later /played answers are logged with drift", show(played[1]))
+end
+
+-- 4: level_up has from/to and keeps level.
+do
+    local ev = find("level_up")[1]
+    report(ev ~= nil and ev.from == 5 and ev.to == 6 and ev.level ~= nil, "4 level_up from/to", show(ev))
+end
+
+-- 5: xp source attribution.
+do
+    local kill = find("xp", { source = "kill", npcId = 448 })[1]
+    report(kill ~= nil and kill.restedBonus == 49 and kill.restedUsed == 49, "5 kill xp has npcId and rested bonus", show(kill))
+    local quest = find("xp", { source = "quest", questId = 92517 })[1]
+    report(quest ~= nil, "5 quest xp after turn-in", show(quest))
+    local early = find("xp", { source = "quest", questId = 92553 })[1]
+    report(early ~= nil and type(early.raw) == "table" and early.raw[1] == "PLAYER_XP_UPDATE",
+        "5 quest xp that arrived before the turn-in", show(early))
+    local explore = find("xp", { source = "explore" })[1]
+    report(explore ~= nil and explore.area == "Thendal Grove", "5 exploration xp", show(explore))
+    local group = find("xp", { source = "kill", groupBonus = 5 })[1]
+    report(group ~= nil, "5 group-bonus kill xp", show(group))
+end
+
+-- 6: blank objective names are logged again once loaded.
+do
+    local pending = find("quest_progress", { questId = 92517, namesPending = true })[1]
+    local resolved = find("quest_progress", { questId = 92517, namesResolved = true })[1]
+    local text = resolved and resolved.objectives and resolved.objectives[1] and resolved.objectives[1].text
+    report(pending ~= nil and text == "0/10 Highlands Bandit slain", "6 quest_progress re-emitted when names resolve", show(resolved))
+end
+
+-- 7: quest giver on accept, ender on turn-in.
+do
+    local ev = find("quest_accept", { questId = 92517 })[1]
+    report(ev ~= nil and ev.giverNpcId == 2079 and ev.giverName == "Ilthalaine" and ev.giverType == "Creature"
+        and type(ev.giverX) == "number" and ev.giverFrame == "detail", "7 quest_accept giver", show(ev))
+    local early = find("quest_accept", { questId = 876 })[1]
+    report(early ~= nil and early.giverErr ~= nil, "7 accept without a dialog says why", show(early))
+end
+
+-- 8: rewards on turn-in.
+do
+    local ev = find("quest_turnin", { questId = 92517 })[1]
+    local ok = ev ~= nil and type(ev.rewardChoices) == "table" and #ev.rewardChoices == 2
+        and ev.chosenIndex == 2 and ev.chosenItemId == 60002 and ev.chosenName == "Bandit Staff"
+        and ev.rewardMoney == 175 and ev.moneyReward == 175 and type(ev.rewardItems) == "table"
+        and ev.enderNpcId == 2079
+    report(ok, "8 quest_turnin reward choices and chosen item", show(ev))
+end
+
+-- 9: trainer purchase.
+do
+    local learn = find("trainer_learn")[1]
+    local close = find("trainer_close")[1]
+    local show1 = find("trainer", { npcId = 3399 })[1]
+    report(learn ~= nil and learn.name == "Cooking" and learn.cost == 100 and learn.subText == "Apprentice"
+        and learn.reagentsErr ~= nil and close ~= nil and close.spent == 100 and close.count == 1
+        and show1 ~= nil and show1.trainerType == "tradeskills", "9 trainer learn and cost", show(learn) .. " / " .. show(close))
+end
+
+-- 10: object use.
+do
+    local loot = find("object_use", { via = "loot", objectId = 617839 })[1]
+    local spell = find("object_use", { via = "spell", objectId = 500001, name = "Old Wardrobe" })[1]
+    local note = find("object_use", { via = "gossip", objectId = 500002, name = "Torn Note" })[1]
+    report(loot ~= nil and type(loot.x) == "number", "10 object_use from GameObject loot", show(loot))
+    report(spell ~= nil, "10 object_use from a cast on the soft-interact object", show(spell))
+    report(note ~= nil, "10 object_use from an object dialog", show(note))
+    local slot = nil
+    for _, ev in ipairs(find("loot")) do
+        if ev.slots and ev.slots[1] and ev.slots[1].sourceType == "GameObject" then
+            slot = ev.slots[1]
+        end
+    end
+    report(slot ~= nil and slot.objectId == 617839 and slot.npcId == 617839, "10 loot slot marks a GameObject source", show(slot))
+end
+
+-- 11: group credit on kills.
+do
+    local party = find("mob_kill", { name = "Highlands Bandit" })[1]
+    report(party ~= nil and party.grouped == true and party.groupSize == 2 and party.inFight == false
+        and party.groupCredit == true and party.groupBonus == 5 and party.via == "xp_chat", "11 party kill flagged as group credit", show(party))
+    local own = find("mob_kill", { name = "Plainstrider", via = "xp_chat" })[1]
+    report(own ~= nil and own.inFight == true and own.tracked == true and own.groupCredit == nil and own.grouped == false,
+        "11 own kill in a fight", show(own))
+    local plate = find("mob_kill", { via = "unit_dead" })[1]
+    report(plate ~= nil and plate.killSecShort == true and plate.tracked == true, "11 kill seen only as it died is marked killSecShort", show(plate))
+end
+
+report(AdventureLog.lastHandlerErr == nil, "no event handler raised an error", tostring(AdventureLog.lastHandlerErr))
 
 local summaryText = db.sessions[1].summary
 local dangerous = type(summaryText) == "string" and string.find(summaryText, '"dangerous":true', 1, true)

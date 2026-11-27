@@ -6,12 +6,14 @@ import {
   fileHandleSupported,
   forgetGameFile,
   gameFileHandleMtime,
+  handleFromDrop,
   loadSavedGameFile,
   pickGameFile,
   readGameFileHandle,
   saveGameFile,
   type GameFileHandle,
 } from "./gameFileHandle";
+import { fetchServerStatus, isLocalAppHost, loadServerFile } from "./gameSyncServer";
 
 const POLL_MS = 8000;
 export const GAME_FILE_REMINDER =
@@ -21,7 +23,21 @@ export const GAME_SYNC_UNAVAILABLE =
   "One-click sync needs desktop Chrome or Edge. Import GuideWebExport.lua on the Profile page instead.";
 
 export const GAME_FILE_BLOCKED =
-  "No file chosen. If Chrome said the folder contains system files (WoW installed under Program Files), use Open once under Game sync on the Profile page, or move World of Warcraft out of Program Files.";
+  "No file chosen. If Chrome said the folder contains system files (WoW under Program Files), drag GuideWebExport.lua from File Explorer onto Game sync on the Profile page instead. Chrome remembers a dropped file.";
+
+export const GAME_SERVER_MISSING =
+  "The local app found no GuideWebExport.lua in the WoW folder. Install the addon, type /gwe then /reload in game, or set wow_root in config.local.json.";
+
+export const GAME_SERVER_DOWN =
+  "The local app's sync server did not answer. Restart run-app.bat (or npm run dev), reload this page, then press Sync.";
+
+function onLocalApp(): boolean {
+  try {
+    return isLocalAppHost(globalThis.location?.hostname ?? "");
+  } catch {
+    return false;
+  }
+}
 
 export type GameSyncPhase =
   | { phase: "idle" }
@@ -36,6 +52,10 @@ export type GameSyncPhase =
   | { phase: "file-missing" }
   /** The chosen file could not be read or parsed. */
   | { phase: "file-error" }
+  /** The local app's endpoint looked in the WoW folder and found no GuideWebExport.lua. */
+  | { phase: "server-missing" }
+  /** On localhost, but the local app's sync endpoint did not answer. */
+  | { phase: "server-down" }
   /**
    * The picker closed without a file. Chrome also lands here when it refuses a protected folder
    * (WoW installed under Program Files): "can't open files in this folder because it contains system files".
@@ -44,15 +64,26 @@ export type GameSyncPhase =
   | { phase: "result"; result: GameSyncResult; exportedAtText?: string };
 
 /**
- * Where Sync reads GuideWebExport.lua from: a file the player picked in this browser (File System
- * Access API, desktop Chrome / Edge), or nowhere (manual upload on the Profile page only).
+ * Where Sync reads GuideWebExport.lua from: a file the player picked or dropped in this browser
+ * (File System Access API, desktop Chrome / Edge), the local app's server reading the WoW folder
+ * (`npm run dev`, run-app.bat; no picking at all), or nowhere (manual upload only).
+ * A picked file wins over the server, so a player can point Sync at another account.
  */
-export type GameSyncMode = "file" | "none";
+export type GameSyncMode = "file" | "server" | "none";
 
 export interface GameSyncUi {
   mode: GameSyncMode;
   /** Name of the picked file in "file" mode, null until one is chosen. */
   fileName: string | null;
+  /** Full path the local app reads in "server" mode. */
+  serverPath: string | null;
+  /** True when a file picker / drop is possible here (desktop Chrome / Edge). */
+  canPick: boolean;
+  /**
+   * A file dragged onto the page. Call synchronously from the drop event: the handle is remembered
+   * like a picked file (works under Program Files); without one the file is read once.
+   */
+  dropFile: (data: DataTransfer) => void;
   /** Open the file picker and remember the chosen GuideWebExport.lua ("file" mode). */
   chooseFile: () => void;
   /** Forget the remembered file ("file" mode). */
@@ -120,6 +151,8 @@ export function gameSyncStatusText(state: GameSyncPhase): string {
   if (state.phase === "needs-permission") return "Click Sync to let the browser read GuideWebExport.lua again.";
   if (state.phase === "file-missing") return "GuideWebExport.lua was moved or deleted. Choose it again on the Profile page.";
   if (state.phase === "file-error") return "Could not read GuideWebExport.lua. Type /reload in game and try again.";
+  if (state.phase === "server-missing") return GAME_SERVER_MISSING;
+  if (state.phase === "server-down") return GAME_SERVER_DOWN;
   if (state.phase === "picker-closed") return GAME_FILE_BLOCKED;
 
   const { result } = state;
@@ -143,6 +176,13 @@ export function gameSyncStatusText(state: GameSyncPhase): string {
       return withExportTime(`Linked character ${result.linkKey ?? "unknown"} is not in the export`, time);
     }
     if (result.reason === "empty") return withExportTime("No completed quests in the export", time);
+    if (result.reason === "stale-export") {
+      return withExportTime(
+        `Skipped: the export says level ${result.exportLevel ?? "?"} but this profile is level ${result.profileLevel ?? "?"}. ` +
+          "The game saved the file before your character loaded. Type /reload in game, then Sync",
+        time,
+      );
+    }
     return withExportTime("The GuideWebExport addon was not found. Install it, type /gwe in game, then /reload.", time);
   }
 
@@ -173,10 +213,14 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const [characters, setCharacters] = useState<CharacterLink[]>([]);
   const [matched, setMatched] = useState<GameExportCharacter | null>(null);
   const [busy, setBusy] = useState(true);
-  const [mode] = useState<GameSyncMode>(() => (fileHandleSupported() ? "file" : "none"));
-  const modeRef = useRef(mode);
-  modeRef.current = mode;
+  const [canPick] = useState(() => fileHandleSupported());
   const [fileName, setFileName] = useState<string | null>(null);
+  /** "server" once the local endpoint answered; until then a local page assumes it will. */
+  const [serverState, setServerState] = useState<"unknown" | "present" | "absent">(() => (onLocalApp() ? "unknown" : "absent"));
+  const serverStateRef = useRef(serverState);
+  serverStateRef.current = serverState;
+  const [serverPath, setServerPath] = useState<string | null>(null);
+  const mode: GameSyncMode = fileName ? "file" : serverState !== "absent" ? "server" : canPick ? "file" : "none";
   const handleRef = useRef<GameFileHandle | null>(null);
   const handleLoadedRef = useRef(false);
 
@@ -214,11 +258,7 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     const current = () => alive.current && gameSyncApplyIsCurrent(startedProfileId, activeProfileIdRef.current);
     if (current()) setPhase({ phase: "syncing" });
 
-    if (modeRef.current === "none") {
-      setPhase({ phase: "unavailable" });
-      return;
-    }
-    if (!handleLoadedRef.current) {
+    if (canPick && !handleLoadedRef.current) {
       handleLoadedRef.current = true;
       const saved = await loadSavedGameFile();
       if (!alive.current) return;
@@ -227,25 +267,54 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
       setFileName(handleRef.current?.name ?? null);
     }
     if (!current()) return;
+
     const handle = handleRef.current;
-    if (!handle) {
+    if (handle) {
+      const read = await readGameFileHandle(handle, false);
+      if (!current()) return;
+      if (read.kind === "file") {
+        applyText(read.text, read.mtimeMs, current);
+        return;
+      }
       mtimeRef.current = null;
       baselineRef.current = true;
-      setPhase({ phase: "no-file" });
+      if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
+      else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
+      else setPhase({ phase: "file-error" });
       return;
     }
-    const read = await readGameFileHandle(handle, false);
-    if (!current()) return;
-    if (read.kind === "file") {
-      applyText(read.text, read.mtimeMs, current);
-      return;
+
+    if (serverStateRef.current !== "absent") {
+      const load = await loadServerFile((url, init) => fetch(url, init));
+      if (!current()) return;
+      if (load.kind !== "no-server") {
+        setServerState("present");
+        if (load.kind === "file") {
+          setServerPath(load.path);
+          applyText(load.text, load.mtimeMs, current);
+          return;
+        }
+        setServerPath(null);
+        mtimeRef.current = null;
+        baselineRef.current = true;
+        setPhase({ phase: load.kind === "not-found" ? "server-missing" : "file-error" });
+        return;
+      }
+      if (onLocalApp()) {
+        // The local app always has the endpoint: a miss means the server is restarting or stopped.
+        // Never fall back to the file picker here; Chrome refuses Program Files anyway.
+        mtimeRef.current = null;
+        baselineRef.current = true;
+        setPhase({ phase: "server-down" });
+        return;
+      }
+      setServerState("absent");
     }
+
     mtimeRef.current = null;
     baselineRef.current = true;
-    if (read.kind === "needs-permission") setPhase({ phase: "needs-permission" });
-    else if (read.kind === "not-found") setPhase({ phase: "file-missing" });
-    else setPhase({ phase: "file-error" });
-  }, [applyText]);
+    setPhase({ phase: canPick ? "no-file" : "unavailable" });
+  }, [applyText, canPick]);
 
   const runSync = useCallback(async () => {
     if (inflight.current) {
@@ -288,10 +357,13 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let timer: ReturnType<typeof setInterval> | undefined;
 
-    /** Last-modified time of the picked file, or null when it cannot be read without a prompt. */
+    /** Last-modified time of the file Sync reads, or null when it cannot be read without a prompt. */
     const currentMtime = async (): Promise<number | null | "skip"> => {
       const handle = handleRef.current;
-      return handle ? gameFileHandleMtime(handle) : "skip";
+      if (handle) return gameFileHandleMtime(handle);
+      if (serverStateRef.current !== "present") return "skip";
+      const status = await fetchServerStatus((url, init) => fetch(url, init));
+      return status.kind === "status" && status.found ? status.mtimeMs : null;
     };
 
     const poll = async () => {
@@ -328,6 +400,15 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     };
   }, []);
 
+  const remember = useCallback(async (handle: GameFileHandle) => {
+    handleRef.current = handle;
+    handleLoadedRef.current = true;
+    mtimeRef.current = null;
+    setFileName(handle.name);
+    await saveGameFile(handle);
+    void runSyncRef.current();
+  }, []);
+
   const chooseFile = useCallback(() => {
     // Straight from the click: the picker needs the user gesture.
     void pickGameFile().then(async (handle) => {
@@ -336,14 +417,9 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
         if (!handleRef.current) setPhase({ phase: "picker-closed" });
         return;
       }
-      handleRef.current = handle;
-      handleLoadedRef.current = true;
-      mtimeRef.current = null;
-      setFileName(handle.name);
-      await saveGameFile(handle);
-      void runSyncRef.current();
+      await remember(handle);
     });
-  }, []);
+  }, [remember]);
 
   const readFileOnce = useCallback(
     (file: File) => {
@@ -358,30 +434,48 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
     [applyText],
   );
 
+  const dropFile = useCallback(
+    (data: DataTransfer) => {
+      // Both must be taken now: the drop's items are emptied once the event returns.
+      const pending = handleFromDrop(data.items);
+      const file = data.files?.[0] ?? null;
+      void pending.then(async (handle) => {
+        if (!alive.current) return;
+        if (handle) {
+          await remember(handle);
+          return;
+        }
+        if (file) readFileOnce(file);
+      });
+    },
+    [readFileOnce, remember],
+  );
+
   const forgetFile = useCallback(() => {
     handleRef.current = null;
     mtimeRef.current = null;
     setFileName(null);
     setCharacters([]);
     setMatched(null);
-    setPhase({ phase: "no-file" });
     void forgetGameFile();
+    // The local app's server takes over again when there is one.
+    void runSyncRef.current();
   }, []);
 
   const sync = useCallback(() => {
-    if (modeRef.current === "file") {
-      const handle = handleRef.current;
-      if (!handle) {
-        chooseFile();
-        return;
-      }
+    const handle = handleRef.current;
+    if (handle) {
       // Ask for read access inside the click (a no-op when already granted), then sync.
       const ask = handle.requestPermission?.({ mode: "read" }) ?? Promise.resolve("granted");
       void ask.catch(() => "denied").finally(() => void runSyncRef.current());
       return;
     }
+    if (serverStateRef.current === "absent" && canPick) {
+      chooseFile();
+      return;
+    }
     void runSyncRef.current();
-  }, [chooseFile]);
+  }, [chooseFile, canPick]);
 
   const statusText = gameSyncStatusText(phase);
   const title = gameSyncTitle(phase);
@@ -395,6 +489,9 @@ export function GameSyncProvider({ children }: { children: ReactNode }) {
   const value: GameSyncUi = {
     mode,
     fileName,
+    serverPath,
+    canPick,
+    dropFile,
     chooseFile,
     forgetFile,
     readFileOnce,

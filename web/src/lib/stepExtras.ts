@@ -3,7 +3,7 @@
  * elite tactics, profession hooks, the dungeon badge and route membership. Filtering uses the
  * engine's own `tipApplies` / `hookApplies` / `stepRoutes`, never a second rule set.
  */
-import type { ClassKey, EliteTactic, ProfessionHook, ProfessionKey, Profile, Role, RouteStyle, Step, Tip } from "../data/schema";
+import type { ClassKey, EliteTactic, GuidePlaytest, ProfessionHook, ProfessionKey, Profile, Role, RouteStyle, Step, Tip } from "../data/schema";
 import type { QuestLookup } from "../state/questAvailability";
 import { stepRoutes } from "../state/visibility";
 import { hookApplies, tipApplies } from "./resolveRoute";
@@ -21,6 +21,8 @@ export interface TipContext {
   quests?: QuestLookup;
   /** Current guide contains at least one speedrun (or unrestricted) step. */
   guideHasSpeedrun?: boolean;
+  /** Set when the current guide is play-tested: steps the run did not cover get an "Unconfirmed" label. */
+  playtested?: GuidePlaytest;
 }
 
 /** Specificity: class + role beats class beats role beats everyone. */

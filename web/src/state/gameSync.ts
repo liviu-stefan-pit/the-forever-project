@@ -22,7 +22,12 @@ export type GameSyncFailure =
   /** Several exported characters share the profile's name on different realms; link one. */
   | "ambiguous"
   /** The profile is linked to a character that is not in the export. */
-  | "link-missing";
+  | "link-missing"
+  /**
+   * The export's level is below the profile's: the game saved the file before the character
+   * loaded (level 1, 0/0 XP). Nothing is applied, so good data is never overwritten.
+   */
+  | "stale-export";
 
 export type GameSyncResult =
   | {
@@ -35,6 +40,9 @@ export type GameSyncResult =
       /** "Name-Realm" of the linked character, for `link-missing`. */
       linkKey?: string;
       exportedAt?: number;
+      /** `stale-export`: the export's level and the profile's. */
+      exportLevel?: number;
+      profileLevel?: number;
     }
   | {
       ok: true;
@@ -51,6 +59,20 @@ export type GameSyncResult =
       /** Short diff vs the profile before this sync (quest log, flight paths, skills, hearth). */
       changeSummary?: string;
     };
+
+/**
+ * True when the game saved the file before the character loaded: no XP data (0/0 XP below level 60)
+ * and a level below the profile's. Applying it would throw away good data. A lower level with real
+ * XP data is still applied (an older save restored on purpose).
+ */
+export function isStaleExport(
+  character: Pick<GameExportCharacter, "level" | "xpMax">,
+  profile: { level?: number },
+): boolean {
+  const level = character.level;
+  if (typeof level !== "number" || typeof profile.level !== "number" || level >= profile.level) return false;
+  return !(typeof character.xpMax === "number" && character.xpMax > 0) && level < 60;
+}
 
 /** Trim, lowercase, treat "-" as a space, collapse internal whitespace. */
 function normName(name: string): string {

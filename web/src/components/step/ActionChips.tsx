@@ -33,7 +33,7 @@ export function FilterTag({ filter }: { filter: Filter | undefined }) {
   );
 }
 
-function Chip({ spec, stepId, echo = false }: { spec: ChipSpec; stepId?: string; echo?: boolean }) {
+export function Chip({ spec, stepId, echo = false }: { spec: ChipSpec; stepId?: string; echo?: boolean }) {
   const size = spec.secondary ? "px-2 py-0.5 text-[11px]" : "px-2.5 py-1 text-xs";
   const strike = spec.unavailable ? "line-through opacity-70" : "";
   const cls = `inline-flex max-w-full items-center gap-1.5 rounded-sm border ${size} transition ${strike} ${TONE[spec.tone]}`;
@@ -73,7 +73,7 @@ function Chip({ spec, stepId, echo = false }: { spec: ChipSpec; stepId?: string;
   );
 }
 
-function WayChip({ way, label, filter }: { way: string; label: string; filter?: Filter }) {
+export function WayChip({ way, label, filter }: { way: string; label: string; filter?: Filter }) {
   const [copied, setCopied] = useState(false);
   return (
     <>
@@ -114,6 +114,32 @@ function WayChip({ way, label, filter }: { way: string; label: string; filter?: 
   );
 }
 
+/** Chip specs for actions, with live objective counts and level warnings from the profile. */
+export function buildChips(
+  actions: readonly Action[],
+  questName: QuestNameLookup | undefined,
+  profile: Profile | null | undefined,
+  quests: QuestLookup | undefined,
+  keyOffset = 0,
+): ChipSpec[] {
+  return actions
+    .map((a, i) => {
+      const spec = actionChip(a, i + keyOffset, questName);
+      if (!spec) return null;
+      const live = chipLive(a, profile, quests);
+      const unavailable = profile ? actionUnavailableTag(profile, a, quests) : undefined;
+      const title = [spec.title, live.title, unavailable].filter(Boolean).join(" · ");
+      return {
+        ...spec,
+        ...(unavailable ? { unavailable } : {}),
+        ...(live.count ? { count: live.count } : {}),
+        ...(live.warn ? { warn: live.warn } : {}),
+        ...(title ? { title } : {}),
+      };
+    })
+    .filter((c): c is ChipSpec => c !== null);
+}
+
 /** Action chips: primary (quests, travel, training, xp), then secondary (targets, items) + waypoints. */
 export function ActionChips({
   actions,
@@ -135,22 +161,7 @@ export function ActionChips({
   stepText?: string;
 }) {
   const shown = actions.filter((a) => lineVisible(a.filter));
-  const chips = shown
-    .map((a, i) => {
-      const spec = actionChip(a, i, questName);
-      if (!spec) return null;
-      const live = chipLive(a, profile, quests);
-      const unavailable = profile ? actionUnavailableTag(profile, a, quests) : undefined;
-      const title = [spec.title, live.title, unavailable].filter(Boolean).join(" · ");
-      return {
-        ...spec,
-        ...(unavailable ? { unavailable } : {}),
-        ...(live.count ? { count: live.count } : {}),
-        ...(live.warn ? { warn: live.warn } : {}),
-        ...(title ? { title } : {}),
-      };
-    })
-    .filter((c): c is ChipSpec => c !== null);
+  const chips = buildChips(shown, questName, profile, quests);
   const primary = chips.filter((c) => !c.secondary);
   const secondary = chips.filter((c) => c.secondary);
   const gotos = gotoSummary(shown);

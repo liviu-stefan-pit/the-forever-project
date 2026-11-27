@@ -8,6 +8,7 @@ const RACE_KEYS: readonly RaceKey[] = ["Orc", "Troll", "Tauren", "Undead", "Skyb
 import type { GameExport, GameExportCharacter } from "./luaExport";
 import {
   evaluateGameSync,
+  isStaleExport,
   linkFor,
   mergeFlightPaths,
   mergeProfessions,
@@ -1498,6 +1499,17 @@ export function createProfileEngine(opts: EngineOptions = {}) {
       const p = active();
       const result = evaluateGameSync(exp, p?.name, p?.character);
       if (!result.ok || !p) return result.ok ? { ok: false, reason: "no-profile" } : result;
+      if (isStaleExport(result.character, p)) {
+        return {
+          ok: false,
+          reason: "stale-export",
+          exportName: result.character.name?.trim(),
+          profileName: p.name,
+          exportLevel: result.character.level,
+          profileLevel: p.level,
+          ...(result.exportedAt !== undefined ? { exportedAt: result.exportedAt } : {}),
+        };
+      }
       let newlyMarked = 0;
       for (const qid of result.questIds) {
         if (p.quests[qid] !== "done") newlyMarked++;

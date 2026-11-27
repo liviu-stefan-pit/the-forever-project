@@ -122,14 +122,18 @@ describe("rules", () => {
         step("book2", { actions: [{ type: "turnin", questId: 81951, label: "x" }] }),
         step("new", { actions: [{ type: "accept", questId: 95000, label: "x" }] }),
         step("newAlready", { verified: false, actions: [{ type: "accept", questId: 95000, label: "x" }] }),
+        step("played", { verified: true, sources: [{ url: "https://github.com/o/r/blob/main/research/playtests/plan.md", label: "Playtest" }], actions: [{ type: "accept", questId: 95000, label: "x" }] }),
+        step("claimed", { verified: true, sources: [{ url: "https://www.wowhead.com/quest=95000", label: "Wowhead" }], actions: [{ type: "accept", questId: 95000, label: "x" }] }),
       ],
       (id) => id === 95000 || id === 79953,
       warnings,
     );
-    expect(r.steps.map((s) => s.id)).toEqual(["keep", "new", "newAlready"]);
+    expect(r.steps.map((s) => s.id)).toEqual(["keep", "new", "newAlready", "played", "claimed"]);
     expect(r.steps.find((s) => s.id === "new")!.verified).toBe(false);
-    expect([r.stripped, r.forced]).toEqual([2, 1]);
-    expect(warnings).toHaveLength(3);
+    expect(r.steps.find((s) => s.id === "played")!.verified).toBe(true);
+    expect(r.steps.find((s) => s.id === "claimed")!.verified).toBe(false);
+    expect([r.stripped, r.forced]).toEqual([2, 2]);
+    expect(warnings).toHaveLength(4);
   });
 
   it("estimates step levels from quest levels and xp targets", () => {
@@ -242,6 +246,21 @@ describe("joinHooks", () => {
     expect(n).toBe(0);
     expect(steps[0]!.professionHooks).toHaveLength(1);
     expect(steps[0]!.pins).toEqual([expect.objectContaining({ kind: "npc", npcId: 11, at: { mapId: 1411, zone: "Durotar", x: 30, y: 40 } })]);
+  });
+
+  it("joins a hook with stepId to that step only, ignoring level, and skips packs without it", () => {
+    const steps = [
+      step("s1", { actions: [{ type: "goto", at: at(40, 60) }] }),
+      step("s2", { actions: [{ type: "goto", at: at(45, 45) }] }),
+    ];
+    const pinned = { ...hook("pin", "Durotar", "1-14"), stepId: "s2" };
+    expect(joinHooks(steps, [1, 6], [pinned], () => 1411)).toBe(1);
+    expect(steps[0]!.professionHooks).toBeUndefined();
+    expect(steps[1]!.professionHooks!.map((h) => h.note)).toEqual(["Keep items (pin)"]);
+
+    const other = [step("o1", { actions: [{ type: "goto", at: at(40, 60) }] })];
+    expect(joinHooks(other, [5], [pinned], () => 1411)).toBe(0);
+    expect(other[0]!.professionHooks).toBeUndefined();
   });
 });
 
@@ -360,6 +379,8 @@ describe("buildData", () => {
         // No authored minutes: 1.5 min a step; one step is on Balanced only.
         minutes: { balanced: 3, speedrun: 2 },
         minutesEstimated: true,
+        // No `status` in the pack: experimental.
+        status: "experimental",
         stepIds: ["p:1", "p:3", "p:4"],
         stepCount: 3,
       },

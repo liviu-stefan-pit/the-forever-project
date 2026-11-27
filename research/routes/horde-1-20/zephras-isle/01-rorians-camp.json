@@ -10,7 +10,28 @@
     {
      "segments": [
       {
-       "t": "Pick up Coming of Age from Ailee Farheart. The follow-up conversation is with Rorian the Dayseeker in Thendal Grove."
+       "t": "Town stop 1 (level 1). Take everything here before going out:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ailee Farheart: accept Coming of Age → hand it to Rorian the Dayseeker next to her."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Rorian the Dayseeker: accept Harmony in Balance."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Elatrell Featherlight: accept Infestation Investigation."
       }
      ]
     }
@@ -30,38 +51,7 @@
      "type": "accept",
      "questId": 92460,
      "label": "Coming of Age"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92460"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92460",
-     "label": "Wowhead quest 92460"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:002",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Coming of Age over to Rorian the Dayseeker."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -76,6 +66,26 @@
      "type": "turnin",
      "questId": 92460,
      "label": "Coming of Age"
+    },
+    {
+     "type": "accept",
+     "questId": 92461,
+     "label": "Harmony in Balance"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.44,
+      "y": 24.79,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92462,
+     "label": "Infestation Investigation"
     }
    ],
    "conditions": [],
@@ -91,55 +101,34 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92460",
      "label": "Wowhead quest 92460"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:003",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Harmony in Balance from Rorian the Dayseeker. The kill count is 8 Vuldren Juveniles in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.05,
-      "y": 23.49,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92461,
-     "label": "Harmony in Balance"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92461"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92461",
      "label": "Wowhead quest 92461"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92462",
+     "label": "Wowhead quest 92462"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Professions: keep Stringy Wolf Meat (Cooking) and Linen Cloth (First Aid) in your bags. Every profession trainer is in Shen'dar Village, and the guide lists them there.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 6-9, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
    "id": "zephras-isle:004",
@@ -148,7 +137,14 @@
     {
      "segments": [
       {
-       "t": "Work through Harmony in Balance at Juvenile Vuldren."
+       "t": "Grove east of camp: kill 8 Juvenile Vuldren and 8 Pesky Cirrusflies. They share the field."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Keep any Stringy Wolf Meat for Cooking later."
       }
      ]
     }
@@ -168,7 +164,23 @@
      "type": "complete",
      "questId": 92461,
      "objective": 1,
-     "label": "Harmony in Balance"
+     "label": "Juvenile Vuldren"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 46.2,
+      "y": 27.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92462,
+     "objective": 1,
+     "label": "Pesky Cirrusfly"
     }
    ],
    "conditions": [],
@@ -184,9 +196,33 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92461",
      "label": "Wowhead quest 92461"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92462",
+     "label": "Wowhead quest 92462"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill 2-3 extra Vuldren before going back. With the hand-ins at camp that gets you to level 3, which Call of Earth needs, so you can take it now and do it in the same trip as Agitators (the Signet drops from the same Al'Aketh Converts).",
+     "classes": [
+      "Shaman"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
    "id": "zephras-isle:005",
@@ -195,7 +231,49 @@
     {
      "segments": [
       {
-       "t": "Hand Harmony in Balance over to Rorian the Dayseeker."
+       "t": "Town stop 2 (level 2-3). Hand in both, then take everything:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Rorian the Dayseeker: turn in Harmony in Balance, accept Elemental Unrest."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ventaari Brightwish: accept The Gift of Skysight."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Elatrell Featherlight: turn in Infestation Investigation, accept The Cirrusfly Queen."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Dalia the Collector: accept Harvesting Windstones."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Halaan Hawk-Eye: accept and turn in The Anchors of Zephras."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Myriaal Mistwake: accept Falling With Style, jump off the watchtower using Walk on Air, then hand it to Rorian."
       }
      ]
     }
@@ -215,6 +293,117 @@
      "type": "turnin",
      "questId": 92461,
      "label": "Harmony in Balance"
+    },
+    {
+     "type": "accept",
+     "questId": 92464,
+     "label": "Elemental Unrest"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.6,
+      "y": 24.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92598,
+     "label": "The Gift of Skysight"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.44,
+      "y": 24.79,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92462,
+     "label": "Infestation Investigation"
+    },
+    {
+     "type": "accept",
+     "questId": 92463,
+     "label": "The Cirrusfly Queen"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93552,
+     "label": "Harvesting Windstones"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.8,
+      "y": 24.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94414,
+     "label": "The Anchors of Zephras"
+    },
+    {
+     "type": "turnin",
+     "questId": 94414,
+     "label": "The Anchors of Zephras"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.7,
+      "y": 24.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92474,
+     "label": "Falling With Style"
+    },
+    {
+     "type": "complete",
+     "questId": 92474,
+     "objective": 1,
+     "label": "Falling With Style"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.05,
+      "y": 23.49,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92474,
+     "label": "Falling With Style"
     }
    ],
    "conditions": [],
@@ -230,385 +419,45 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92461",
      "label": "Wowhead quest 92461"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:006",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Infestation Investigation from Elatrell Featherlight. The kill count is 8 Pesky Cirrusflies in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.44,
-      "y": 24.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "accept",
-     "questId": 92462,
-     "label": "Infestation Investigation"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92462"
+     "url": "https://www.wowhead.com/classic/quest=92464",
+     "label": "Wowhead quest 92464"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92462",
      "label": "Wowhead quest 92462"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:007",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Infestation Investigation at Pesky Cirrusfly."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 46.22,
-      "y": 27.06,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92462,
-     "objective": 1,
-     "label": "Infestation Investigation"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92462"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92462",
-     "label": "Wowhead quest 92462"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:008",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Infestation Investigation over to Elatrell Featherlight."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.44,
-      "y": 24.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92462,
-     "label": "Infestation Investigation"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92462"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92462",
-     "label": "Wowhead quest 92462"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:009",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Cirrusfly Queen from Elatrell Featherlight. Destroy the Cirrusfly Queen in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.44,
-      "y": 24.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92463,
-     "label": "The Cirrusfly Queen"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92463"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92463",
      "label": "Wowhead quest 92463"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:010",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through The Cirrusfly Queen at Cirrusfly Queen."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 48.41,
-      "y": 28.53,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "complete",
-     "questId": 92463,
-     "objective": 1,
-     "label": "The Cirrusfly Queen"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92463"
+     "url": "https://www.wowhead.com/classic/quest=92598",
+     "label": "Wowhead quest 92598"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=92463",
-     "label": "Wowhead quest 92463"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:011",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Cirrusfly Queen over to Elatrell Featherlight."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.44,
-      "y": 24.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
+     "url": "https://www.wowhead.com/classic/quest=94414",
+     "label": "Wowhead quest 94414"
     },
     {
-     "type": "turnin",
-     "questId": 92463,
-     "label": "The Cirrusfly Queen"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92463"
+     "url": "https://www.wowhead.com/classic/quest=92474",
+     "label": "Wowhead quest 92474"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=92463",
-     "label": "Wowhead quest 92463"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:012",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Way of the Hunter from Rorian the Dayseeker. Open the Scribbled Note and then speak with Tai'ree Farsight in Thendal Grove and do what it asks."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.05,
-      "y": 23.49,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
+     "url": "https://www.wowhead.com/classic/quest=93552",
+     "label": "Wowhead Classic quest 93552"
     },
     {
-     "type": "accept",
-     "questId": 92482,
-     "label": "The Way of the Hunter"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92482"
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=92482",
-     "label": "Wowhead quest 92482"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false,
-   "classes": [
-    "Hunter"
-   ]
-  },
-  {
-   "id": "zephras-isle:013",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Way of the Hunter over to Tai'ree Farsight."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.49,
-      "y": 23.79,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92482,
-     "label": "The Way of the Hunter"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92482"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92482",
-     "label": "Wowhead quest 92482"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Hunter"
-   ]
+   "verified": true
   },
   {
    "id": "zephras-isle:014",
@@ -617,7 +466,14 @@
     {
      "segments": [
       {
-       "t": "Pick up Embracing the Elements from Rorian the Dayseeker. Inspect the Humming Recall Crystal then speak with Windshaper Boro in Thendal Grove."
+       "t": "Shaman: accept Embracing the Elements from Rorian, hand it to Windshaper Boro and train."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Windshaper Boro: accept Call of Earth (needs level 3; if you're not 3 yet, take it at the next town stop)."
       }
      ]
     }
@@ -637,41 +493,7 @@
      "type": "accept",
      "questId": 92484,
      "label": "Embracing the Elements"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92484"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92484",
-     "label": "Wowhead quest 92484"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:015",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Embracing the Elements over to Windshaper Boro."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -686,6 +508,15 @@
      "type": "turnin",
      "questId": 92484,
      "label": "Embracing the Elements"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Windshaper Boro"
+    },
+    {
+     "type": "accept",
+     "questId": 92466,
+     "label": "Call of Earth"
     }
    ],
    "conditions": [],
@@ -701,11 +532,87 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92484",
      "label": "Wowhead quest 92484"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92466",
+     "label": "Wowhead quest 92466"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:012",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hunter: accept The Way of the Hunter from Rorian, then hand it to Tai'ree Farsight, who trains you."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.05,
+      "y": 23.49,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92482,
+     "label": "The Way of the Hunter"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.5,
+      "y": 23.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92482,
+     "label": "The Way of the Hunter"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Tai'ree Farsight"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92482"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92482",
+     "label": "Wowhead quest 92482"
     }
    ],
    "verified": false,
    "classes": [
-    "Shaman"
+    "Hunter"
    ]
   },
   {
@@ -715,7 +622,7 @@
     {
      "segments": [
       {
-       "t": "Pick up A Student of Nature from Rorian the Dayseeker. Open the Folded Parchment then speak with Xyton Silverwind in Thendal Grove and do what it asks."
+       "t": "Druid: accept A Student of Nature from Rorian, then hand it to Xyton Silverwind, who trains you."
       }
      ]
     }
@@ -735,47 +642,13 @@
      "type": "accept",
      "questId": 92485,
      "label": "A Student of Nature"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92485"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92485",
-     "label": "Wowhead quest 92485"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Druid"
-   ]
-  },
-  {
-   "id": "zephras-isle:017",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand A Student of Nature over to Xyton Silverwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 41.86,
-      "y": 23.41,
+      "x": 41.9,
+      "y": 23.4,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -784,6 +657,10 @@
      "type": "turnin",
      "questId": 92485,
      "label": "A Student of Nature"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Xyton Silverwind"
     }
    ],
    "conditions": [],
@@ -813,7 +690,7 @@
     {
      "segments": [
       {
-       "t": "Pick up At Home in the Shadows from Rorian the Dayseeker. Open the Simple Note then speak with Akeri Duskblade within the watchtower in Thendal Grove and do what it asks."
+       "t": "Rogue: accept At Home in the Shadows from Rorian, then hand it to Akeri Duskblade (in the watchtower), who trains you."
       }
      ]
     }
@@ -833,47 +710,13 @@
      "type": "accept",
      "questId": 92483,
      "label": "At Home in the Shadows"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92483"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92483",
-     "label": "Wowhead quest 92483"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Rogue"
-   ]
-  },
-  {
-   "id": "zephras-isle:019",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand At Home in the Shadows over to Akeri Duskblade."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 43.74,
-      "y": 24.36,
+      "x": 43.7,
+      "y": 24.4,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -882,6 +725,10 @@
      "type": "turnin",
      "questId": 92483,
      "label": "At Home in the Shadows"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Akeri Duskblade (in the watchtower)"
     }
    ],
    "conditions": [],
@@ -911,7 +758,7 @@
     {
      "segments": [
       {
-       "t": "Pick up The Warrior's Path from Rorian the Dayseeker. Open the Crumpled Note you've been given, then seek out Blademaster Ren inside the Thendal Village watchtower and do what it asks."
+       "t": "Warrior: accept The Warrior's Path from Rorian, then hand it to Blademaster Ren, who trains you."
       }
      ]
     }
@@ -931,47 +778,13 @@
      "type": "accept",
      "questId": 92532,
      "label": "The Warrior's Path"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92532"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92532",
-     "label": "Wowhead quest 92532"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Warrior"
-   ]
-  },
-  {
-   "id": "zephras-isle:021",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Warrior's Path over to Blademaster Ren."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 43.65,
-      "y": 24.11,
+      "x": 43.6,
+      "y": 24.1,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -980,6 +793,10 @@
      "type": "turnin",
      "questId": 92532,
      "label": "The Warrior's Path"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Blademaster Ren"
     }
    ],
    "conditions": [],
@@ -1001,52 +818,6 @@
    "classes": [
     "Warrior"
    ]
-  },
-  {
-   "id": "zephras-isle:022",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Elemental Unrest from Rorian the Dayseeker. Continue the talk with Yala Windwatcher in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.05,
-      "y": 23.49,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92464,
-     "label": "Elemental Unrest"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92464"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92464",
-     "label": "Wowhead quest 92464"
-    }
-   ],
-   "verified": false
   },
   {
    "id": "zephras-isle:023",
@@ -1055,7 +826,7 @@
     {
      "segments": [
       {
-       "t": "Hand Elemental Unrest over to Yala Windwatcher."
+       "t": "Yala Windwatcher (north-east): turn in Elemental Unrest, accept Agitators."
       }
      ]
     }
@@ -1065,8 +836,8 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 47.25,
-      "y": 21.98,
+      "x": 47.2,
+      "y": 22,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -1075,565 +846,6 @@
      "type": "turnin",
      "questId": 92464,
      "label": "Elemental Unrest"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92464"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92464",
-     "label": "Wowhead quest 92464"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:024",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Gift of Skysight from Ventaari Brightwish. The item this step wants used is your Skysight racial ability at the Elemental Convergence in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.61,
-      "y": 24.38,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92598,
-     "label": "The Gift of Skysight"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92598"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92598",
-     "label": "Wowhead quest 92598"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:025",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through The Gift of Skysight at Elemental Convergence."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 48.28,
-      "y": 20.62,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92598,
-     "objective": 1,
-     "label": "The Gift of Skysight"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92598"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92598",
-     "label": "Wowhead quest 92598"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:026",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Gift of Skysight over to Ventaari Brightwish."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.61,
-      "y": 24.38,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92598,
-     "label": "The Gift of Skysight"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92598"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92598",
-     "label": "Wowhead quest 92598"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:027",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Anchors of Zephras from Halaan Hawk-Eye. The follow-up conversation is with Halaan Hawk-Eye and borrow his gift to view the anchor pylon in the distance."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.76,
-      "y": 24.06,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 94414,
-     "label": "The Anchors of Zephras"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 94414"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=94414",
-     "label": "Wowhead quest 94414"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:028",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Anchors of Zephras over to Halaan Hawk-Eye."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.76,
-      "y": 24.06,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 94414,
-     "label": "The Anchors of Zephras"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 94414"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=94414",
-     "label": "Wowhead quest 94414"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:029",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Falling With Style from Myriaal Mistwake. Make the jump from the top of the watchtower in Thendal Grove and use your Walk on Air ability to slow your fall."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.68,
-      "y": 24.09,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92474,
-     "label": "Falling With Style"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92474"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92474",
-     "label": "Wowhead quest 92474"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:030",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Falling With Style at the objective."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 43.68,
-      "y": 24.09,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92474,
-     "objective": 1,
-     "label": "Falling With Style"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92474"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92474",
-     "label": "Wowhead quest 92474"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:031",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Falling With Style over to Rorian the Dayseeker."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.05,
-      "y": 23.49,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92474,
-     "label": "Falling With Style"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92474"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92474",
-     "label": "Wowhead quest 92474"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:032",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Call of Earth from Windshaper Boro. Carry a Signet of Akir to Windshaper Boro."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.79,
-      "y": 23.58,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92466,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92466"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92466",
-     "label": "Wowhead quest 92466"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:033",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Call of Earth at Al'Aketh Convert."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 47.19,
-      "y": 19.88,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92466,
-     "objective": 1,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92466"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92466",
-     "label": "Wowhead quest 92466"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:034",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Call of Earth over to Windshaper Boro."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.79,
-      "y": 23.58,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92466,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92466"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92466",
-     "label": "Wowhead quest 92466"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:035",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Agitators from Yala Windwatcher. The kill count is 6 Roiling Winds and 7 Al'Aketh Converts in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 47.25,
-      "y": 21.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
@@ -1649,14 +861,22 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92465"
+     "label": "QuestieDB quests.json id 92464"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92464",
+     "label": "Wowhead quest 92464"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92465",
      "label": "Wowhead quest 92465"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
    "id": "zephras-isle:036",
@@ -1665,7 +885,28 @@
     {
      "segments": [
       {
-       "t": "Work through Agitators at Roiling Winds."
+       "t": "Standing Stones: kill 6 Roiling Winds and 7 Al'Aketh Converts."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Use Skysight at the Elemental Convergence."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Loot Windstone Clusters as you pass them. They are all over the east side, so the quest finishes on its own."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Shaman: the Signet of Akir for Call of Earth drops from the same Converts."
       }
      ]
     }
@@ -1685,13 +926,50 @@
      "type": "complete",
      "questId": 92465,
      "objective": 1,
-     "label": "Agitators"
+     "label": "Roiling Winds"
     },
     {
      "type": "complete",
      "questId": 92465,
      "objective": 2,
-     "label": "Agitators"
+     "label": "Al'Aketh Converts"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.3,
+      "y": 20.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92598,
+     "objective": 1,
+     "label": "The Gift of Skysight"
+    },
+    {
+     "type": "complete",
+     "questId": 93552,
+     "objective": 1,
+     "label": "Windstone Clusters"
+    },
+    {
+     "type": "complete",
+     "questId": 92466,
+     "objective": 1,
+     "label": "Signet of Akir",
+     "filter": {
+      "any": [
+       [
+        {
+         "cls": "Shaman"
+        }
+       ]
+      ]
+     }
     }
    ],
    "conditions": [],
@@ -1707,9 +985,29 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92465",
      "label": "Wowhead quest 92465"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92598",
+     "label": "Wowhead quest 92598"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92466",
+     "label": "Wowhead quest 92466"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93552",
+     "label": "Wowhead Classic quest 93552"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
    "id": "zephras-isle:037",
@@ -1718,7 +1016,7 @@
     {
      "segments": [
       {
-       "t": "Hand Agitators over to Yala Windwatcher."
+       "t": "Yala Windwatcher: turn in Agitators, accept Return to Rorian."
       }
      ]
     }
@@ -1728,8 +1026,8 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 47.25,
-      "y": 21.98,
+      "x": 47.2,
+      "y": 22,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -1738,6 +1036,11 @@
      "type": "turnin",
      "questId": 92465,
      "label": "Agitators"
+    },
+    {
+     "type": "accept",
+     "questId": 92469,
+     "label": "Return to Rorian"
     }
    ],
    "conditions": [],
@@ -1753,18 +1056,26 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92465",
      "label": "Wowhead quest 92465"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92469",
+     "label": "Wowhead quest 92469"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
-   "id": "zephras-isle:038",
+   "id": "zephras-isle:010",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Pick up Return to Rorian from Yala Windwatcher. Carry word of the Al'Aketh to Rorian the Dayseeker in Thendal Grove."
+       "t": "Kill the Cirrusfly Queen to the south, then head back to camp."
       }
      ]
     }
@@ -1774,16 +1085,17 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 47.25,
-      "y": 21.98,
+      "x": 48.41,
+      "y": 28.53,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
-     "type": "accept",
-     "questId": 92469,
-     "label": "Return to Rorian"
+     "type": "complete",
+     "questId": 92463,
+     "objective": 1,
+     "label": "Cirrusfly Queen"
     }
    ],
    "conditions": [],
@@ -1794,28 +1106,119 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92469"
+     "label": "QuestieDB quests.json id 92463"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=92469",
-     "label": "Wowhead quest 92469"
+     "url": "https://www.wowhead.com/classic/quest=92463",
+     "label": "Wowhead quest 92463"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
-   "id": "zephras-isle:039",
+   "id": "zephras-isle:026",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand Return to Rorian over to Rorian the Dayseeker."
+       "t": "Town stop 3 (level ~4). Hand in everything, then take the west quests:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ventaari Brightwish: turn in The Gift of Skysight."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Elatrell Featherlight: turn in The Cirrusfly Queen."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Dalia the Collector: turn in Harvesting Windstones."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Rorian the Dayseeker: turn in Return to Rorian, accept Aetheen of the Gales."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Aetheen of the Gales: turn in Aetheen of the Gales, accept Foul Matriarch."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valreaa Valewind: accept Aggressive Encroachment."
       }
      ]
     }
    ],
    "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.6,
+      "y": 24.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92598,
+     "label": "The Gift of Skysight"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.44,
+      "y": 24.79,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92463,
+     "label": "The Cirrusfly Queen"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93552,
+     "label": "Harvesting Windstones"
+    },
     {
      "type": "goto",
      "at": {
@@ -1830,90 +1233,18 @@
      "type": "turnin",
      "questId": 92469,
      "label": "Return to Rorian"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92469"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92469",
-     "label": "Wowhead quest 92469"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:040",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Aetheen of the Gales from Rorian the Dayseeker. The follow-up conversation is with Aetheen of the Gales in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.05,
-      "y": 23.49,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 92471,
      "label": "Aetheen of the Gales"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92471"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92471",
-     "label": "Wowhead quest 92471"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:041",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Aetheen of the Gales over to Aetheen of the Gales."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 42.76,
-      "y": 23.66,
+      "x": 42.8,
+      "y": 23.7,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -1922,286 +1253,18 @@
      "type": "turnin",
      "questId": 92471,
      "label": "Aetheen of the Gales"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92471"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92471",
-     "label": "Wowhead quest 92471"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:042",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Call of Earth from Windshaper Boro. Locate the Rise of Spirits and drink the Earth Sapta."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.79,
-      "y": 23.58,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92467,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92467"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92467",
-     "label": "Wowhead quest 92467"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:043",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Call of Earth over to Minor Manifestation of Earth."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 49.67,
-      "y": 23.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92467,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92467"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92467",
-     "label": "Wowhead quest 92467"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:044",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Call of Earth from Minor Manifestation of Earth. Carry the Rough Quartz to Windshaper Boros in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 49.67,
-      "y": 23.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92468,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92468"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92468",
-     "label": "Wowhead quest 92468"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:045",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Call of Earth over to Windshaper Boro."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.79,
-      "y": 23.58,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92468,
-     "label": "Call of Earth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92468"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92468",
-     "label": "Wowhead quest 92468"
-    }
-   ],
-   "verified": false,
-   "classes": [
-    "Shaman"
-   ]
-  },
-  {
-   "id": "zephras-isle:046",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Foul Matriarch from Aetheen of the Gales. The kill count is 8 Ursera Scavengers and collect the head of the den mother, Urs'anah in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.76,
-      "y": 23.66,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 92470,
      "label": "Foul Matriarch"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92470"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92470",
-     "label": "Wowhead quest 92470"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:049",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Aggressive Encroachment from Valreaa Valewind. Bring back 6 Scrawny Ursera Claws from Scrawny Ursera in Thendal Grove."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 42.41,
-      "y": 25.17,
+      "x": 42.4,
+      "y": 25.2,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -2220,23 +1283,55 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92473"
+     "label": "QuestieDB quests.json id 92598"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92598",
+     "label": "Wowhead quest 92598"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92463",
+     "label": "Wowhead quest 92463"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93552",
+     "label": "Wowhead Classic quest 93552"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92469",
+     "label": "Wowhead quest 92469"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92471",
+     "label": "Wowhead quest 92471"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92470",
+     "label": "Wowhead quest 92470"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92473",
      "label": "Wowhead quest 92473"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
-   "id": "zephras-isle:w2-93552-1",
+   "id": "zephras-isle:034",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Accept Harvesting Windstones from Dalia the Collector."
+       "t": "Shaman: Windshaper Boro: turn in Call of Earth, accept the next Call of Earth, train."
       }
      ]
     }
@@ -2246,16 +1341,25 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 43.4,
-      "y": 24,
+      "x": 42.79,
+      "y": 23.58,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
+     "type": "turnin",
+     "questId": 92466,
+     "label": "Call of Earth"
+    },
+    {
      "type": "accept",
-     "questId": 93552,
-     "label": "Harvesting Windstones"
+     "questId": 92467,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "trainer",
+     "label": "Train at Windshaper Boro"
     }
    ],
    "conditions": [],
@@ -2265,24 +1369,42 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=93552",
-     "label": "Wowhead Classic quest 93552"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92466"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=92466",
+     "label": "Wowhead quest 92466"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92467",
+     "label": "Wowhead quest 92467"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": true
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
   },
   {
-   "id": "zephras-isle:052",
+   "id": "zephras-isle:043",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Pick up Al'Aketh Thugs from Hanaa Nightwind. The kill count is 6 Al'Aketh Brutes, 4 Al'Aketh Neophytes, and Malduko Cloudcrush in Thendal Grove."
+       "t": "Shaman: at the Rise of Spirits, drink the Earth Sapta and talk to the Minor Manifestation of Earth, then bring the Rough Quartz back to Boro."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Do it now, before the west: the earth totem helps a lot in the Urs'anah den."
       }
      ]
     }
@@ -2292,8 +1414,85 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 38.31,
-      "y": 30.18,
+      "x": 49.7,
+      "y": 23.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92467,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 92468,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.79,
+      "y": 23.58,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92468,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92467"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92467",
+     "label": "Wowhead quest 92467"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92468",
+     "label": "Wowhead quest 92468"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "classes": [
+    "Shaman"
+   ]
+  },
+  {
+   "id": "zephras-isle:052",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hanaa Nightwind (west): accept Al'Aketh Thugs."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 38.3,
+      "y": 30.2,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -2317,9 +1516,13 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92544",
      "label": "Wowhead quest 92544"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
    "id": "zephras-isle:047",
@@ -2328,12 +1531,42 @@
     {
      "segments": [
       {
-       "t": "Work through Foul Matriarch at Ursera Scavenger."
+       "t": "West grove: kill Scrawny Ursera until you have 6 Scrawny Ursera Claws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Den: kill 8 Ursera Scavengers and Urs'anah, and take her head."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "South: kill 6 Al'Aketh Brutes, 4 Al'Aketh Neophytes and Malduko Cloudcrush."
       }
      ]
     }
    ],
    "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 39.8,
+      "y": 27.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92473,
+     "objective": 1,
+     "label": "Scrawny Ursera Claws"
+    },
     {
      "type": "goto",
      "at": {
@@ -2348,139 +1581,14 @@
      "type": "complete",
      "questId": 92470,
      "objective": 1,
-     "label": "Foul Matriarch"
+     "label": "Ursera Scavengers"
     },
     {
      "type": "complete",
      "questId": 92470,
      "objective": 2,
-     "label": "Foul Matriarch"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92470"
+     "label": "Head of Urs'anah"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92470",
-     "label": "Wowhead quest 92470"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:050",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Aggressive Encroachment at Scrawny Ursera."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 39.8,
-      "y": 27.55,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92473,
-     "objective": 1,
-     "label": "Aggressive Encroachment"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92473"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92473",
-     "label": "Wowhead quest 92473"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-93552-2",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Harvesting Windstones."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 35.8,
-      "y": 30.8,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 93552,
-     "objective": 1,
-     "label": "Harvesting Windstones"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=93552",
-     "label": "Wowhead Classic quest 93552"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:053",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through Al'Aketh Thugs at Al'Aketh Neophyte."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -2495,111 +1603,19 @@
      "type": "complete",
      "questId": 92544,
      "objective": 1,
-     "label": "Al'Aketh Thugs"
+     "label": "Al'Aketh Brutes"
     },
     {
      "type": "complete",
      "questId": 92544,
      "objective": 2,
-     "label": "Al'Aketh Thugs"
+     "label": "Al'Aketh Neophytes"
     },
     {
      "type": "complete",
      "questId": 92544,
      "objective": 3,
-     "label": "Al'Aketh Thugs"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92544"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92544",
-     "label": "Wowhead quest 92544"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:054",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Al'Aketh Thugs over to Hanaa Nightwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 38.31,
-      "y": 30.18,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92544,
-     "label": "Al'Aketh Thugs"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92544"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92544",
-     "label": "Wowhead quest 92544"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:048",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Foul Matriarch over to Aetheen of the Gales."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.76,
-      "y": 23.66,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92470,
-     "label": "Foul Matriarch"
+     "label": "Malduko Cloudcrush"
     }
    ],
    "conditions": [],
@@ -2615,18 +1631,43 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92470",
      "label": "Wowhead quest 92470"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92473",
+     "label": "Wowhead quest 92473"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92544",
+     "label": "Wowhead quest 92544"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The den is cramped and the playtest character died there. Pull one at a time, and drop a totem before Urs'anah.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
-   "id": "zephras-isle:w2-93552-3",
+   "id": "zephras-isle:054",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Turn in Harvesting Windstones to Dalia the Collector."
+       "t": "Hanaa Nightwind: turn in Al'Aketh Thugs."
       }
      ]
     }
@@ -2636,16 +1677,16 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 43.4,
-      "y": 24,
+      "x": 38.3,
+      "y": 30.2,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
      "type": "turnin",
-     "questId": 93552,
-     "label": "Harvesting Windstones"
+     "questId": 92544,
+     "label": "Al'Aketh Thugs"
     }
    ],
    "conditions": [],
@@ -2655,24 +1696,62 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=93552",
-     "label": "Wowhead Classic quest 93552"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92544"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=92544",
+     "label": "Wowhead quest 92544"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": true
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "XP check: after this hand-in you should be one or two kills short of level 6. Get them on the way back, so you train only once at camp.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   },
   {
-   "id": "zephras-isle:051",
+   "id": "zephras-isle:048",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand Aggressive Encroachment over to Valreaa Valewind."
+       "t": "Town stop 4 (level 6). Last stop before Shen'dar Village:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valreaa Valewind: turn in Aggressive Encroachment."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Aetheen of the Gales: turn in Foul Matriarch, accept The Adventurer and The Next Step."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 6 spells."
       }
      ]
     }
@@ -2682,8 +1761,8 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 42.41,
-      "y": 25.17,
+      "x": 42.4,
+      "y": 25.2,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -2692,98 +1771,35 @@
      "type": "turnin",
      "questId": 92473,
      "label": "Aggressive Encroachment"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92473"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92473",
-     "label": "Wowhead quest 92473"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:055",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Adventurer from Aetheen of the Gales. Continue the talk with Raan Wildwind near Shen'dar Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 42.76,
-      "y": 23.66,
+      "x": 42.8,
+      "y": 23.7,
       "zone": "Zephras Isle",
       "exact": true
      }
+    },
+    {
+     "type": "turnin",
+     "questId": 92470,
+     "label": "Foul Matriarch"
     },
     {
      "type": "accept",
      "questId": 96638,
      "label": "The Adventurer"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96638"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=96638",
-     "label": "Wowhead quest 96638"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:057",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Next Step from Aetheen of the Gales. Check in with Constable Aonda in Shen'dar Village."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 42.76,
-      "y": 23.66,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 92472,
      "label": "The Next Step"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
     }
    ],
    "conditions": [],
@@ -2794,14 +1810,30 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92472"
+     "label": "QuestieDB quests.json id 92470"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92470",
+     "label": "Wowhead quest 92470"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92473",
+     "label": "Wowhead quest 92473"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96638",
+     "label": "Wowhead quest 96638"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92472",
      "label": "Wowhead quest 92472"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-26 (Shaman 1-6, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   }
  ]
 }

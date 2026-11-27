@@ -24,14 +24,53 @@ function DownloadButton({ href, children }: { href: string; children: ReactNode 
   );
 }
 
-function Addon({ id, name, tag, children, download }: { id: string; name: string; tag: string; children: ReactNode; download: ReactNode }) {
+/**
+ * The addon's icon (sources in addon/<Name>/branding/, copied by web/scripts/render-addon-icons.mjs).
+ * The SVG animates itself and holds still under prefers-reduced-motion; the PNG is the fallback.
+ */
+function AddonIcon({ id, alt }: { id: string; alt: string }) {
+  return (
+    <picture className="shrink-0">
+      <source type="image/svg+xml" srcSet={`/addons/${id}.svg`} />
+      <img
+        src={`/addons/${id}-128.png`}
+        alt={alt}
+        width={64}
+        height={64}
+        loading="lazy"
+        decoding="async"
+        className="h-14 w-14 drop-shadow-[0_4px_10px_rgba(0,0,0,0.55)] sm:h-16 sm:w-16"
+        data-testid={`addon-icon-${id}`}
+      />
+    </picture>
+  );
+}
+
+function Addon({
+  id,
+  name,
+  tag,
+  iconAlt,
+  children,
+  download,
+}: {
+  id: string;
+  name: string;
+  tag: string;
+  iconAlt: string;
+  children: ReactNode;
+  download: ReactNode;
+}) {
   return (
     <section id={id} aria-labelledby={`${id}-heading`} className="wow-frame panel-animate scroll-mt-20 space-y-4 p-5">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 id={`${id}-heading`} className="font-display text-xl font-bold text-bronze-400">
-          {name}
-        </h2>
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">{tag}</span>
+      <div className="flex items-center gap-4">
+        <AddonIcon id={id} alt={iconAlt} />
+        <div className="flex min-w-0 flex-1 flex-wrap items-baseline justify-between gap-2">
+          <h2 id={`${id}-heading`} className="font-display text-xl font-bold text-bronze-400">
+            {name}
+          </h2>
+          <span className="text-[11px] font-semibold uppercase tracking-wider text-muted">{tag}</span>
+        </div>
       </div>
       <div className="space-y-3 text-sm leading-relaxed text-ink">{children}</div>
       <div className="flex flex-wrap items-center gap-3">{download}</div>
@@ -94,6 +133,7 @@ export function AddonsPage() {
         id="guidewebexport"
         name="GuideWebExport"
         tag="Recommended"
+        iconAlt="GuideWebExport icon: the guide site's F inside two sync arrows"
         download={<DownloadButton href={GUIDEWEBEXPORT_ZIP_URL}>Download GuideWebExport.zip</DownloadButton>}
       >
         <p>
@@ -118,10 +158,10 @@ export function AddonsPage() {
           </li>
         </ol>
         <p className="rounded-sm border border-bronze-500/40 bg-canvas/40 px-3 py-2 text-sm">
-          <strong>WoW under Program Files?</strong> Chrome and Edge refuse to remember files in that folder for one-click Sync and show
-          &ldquo;can&apos;t open files in this folder because it contains system files&rdquo;. Use <strong>Open once</strong> under Game sync,
-          or <strong>Import GuideWebExport.lua</strong>, which read the file each time you pick it. To keep one-click Sync, move World of
-          Warcraft to a folder outside Program Files, such as <Code>C:\Games\World of Warcraft</Code>.
+          <strong>WoW under Program Files?</strong> Chrome and Edge refuse to pick files in that folder and show
+          &ldquo;can&apos;t open files in this folder because it contains system files&rdquo;. Open the <Code>SavedVariables</Code> folder in
+          File Explorer and drag <Code>GuideWebExport.lua</Code> onto the Game sync box on the Profile page instead: Chrome remembers a
+          dropped file, so one-click Sync keeps working.
         </p>
       </Addon>
 
@@ -129,6 +169,7 @@ export function AddonsPage() {
         id="adventurelog"
         name="AdventureLog"
         tag="Optional · for testers"
+        iconAlt="AdventureLog icon: an open journal with a quill tracing a route"
         download={<DownloadButton href={ADVENTURELOG_ZIP_URL}>Download AdventureLog.zip</DownloadButton>}
       >
         <p>

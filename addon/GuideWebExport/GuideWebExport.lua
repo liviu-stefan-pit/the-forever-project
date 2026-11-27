@@ -782,6 +782,28 @@ local function stamp(db)
     db.exportedAtText = date("%Y-%m-%d %H:%M:%S")
 end
 
+local MAX_LEVEL = 60
+
+-- While the world is still loading, or already tearing down at logout, the
+-- client answers with an empty player: level 1, 0/0 XP, no money, no completed
+-- quests. Seen live on Forever 1.60.1: a level 6 snapshot was overwritten by
+-- exactly that 37 seconds later. Such a snapshot must never replace a real one.
+-- Returns a reason string when `c` looks unready, nil when it is fine to store.
+local function unreadyReason(c, old)
+    if not isNum(c.level) or c.level < 1 then return "no level" end
+    if c.level < MAX_LEVEL and isNum(c.xpMax) and c.xpMax <= 0 then return "no XP data" end
+    if type(old) ~= "table" or old.guid == nil or old.guid ~= c.guid then return nil end
+    -- Same character: levels and completed quests never go down.
+    if isNum(old.level) and c.level < old.level then
+        return string.format("level %d is below the saved %d", c.level, old.level)
+    end
+    if (c.completedCount or 0) == 0 and isNum(old.completedCount) and old.completedCount > 0 then
+        return "completed quests not loaded"
+    end
+    return nil
+end
+
+-- Store the snapshot. Returns the key, or nil and a reason when it was skipped.
 local function storeCharacter(c)
     local db = GuideWebExportDB
     local realm = tostring(c.realm or "?")
@@ -789,10 +811,12 @@ local function storeCharacter(c)
     -- Schema 2 keyed on the first UnitName return only ("Throgar-").
     local legacyKey = tostring(c.firstName or c.name or "?") .. "-" .. realm
     db.characters = db.characters or {}
+    local old = db.characters[key]
+    local why = unreadyReason(c, old)
+    if why then return nil, why end
     if legacyKey ~= key then
         db.characters[legacyKey] = nil
     end
-    local old = db.characters[key]
     local taxi = {}
     if type(old) == "table" and type(old.taxi) == "table" then
         for id, node in pairs(old.taxi) do taxi[id] = node end
@@ -811,9 +835,8 @@ end
 -- Full export: map bounds + character snapshot (/gwe and the post-login quest log).
 local function run(reason)
     exportDepth = exportDepth + 1
-    local ok, count, withBounds = pcall(function()
+    local ok, count, withBounds, stored = pcall(function()
         local db = GuideWebExportDB
-        stamp(db)
         local version, build, buildDate, toc = safe(GetBuildInfo)
         db.build = { version = version, build = build, date = buildDate, toc = toc }
         db.projectID = WOW_PROJECT_ID
@@ -823,18 +846,25 @@ local function run(reason)
         db.mapCount = mapCount
 
         local c = exportCharacter()
-        local key = storeCharacter(c)
+        local key, skipped = storeCharacter(c)
+        if not key then
+            -- Not stamped either, so the file's export time stays the good snapshot's.
+            msg("character not loaded yet (" .. skipped .. "); kept the last good export. Try /gwe again in a moment.")
+            return mapCount, bounded, false
+        end
+        stamp(db)
 
         msg(string.format("exported %d maps (%d with bounds), %d completed quests, %d skills and %d gear slots for %s (%s).",
             mapCount, bounded, c.completedCount or 0, #c.skills, #c.gear, key, reason or "manual"))
         if reason == "/gwe" then
             msg("Type /reload (or log out) now so WoW writes the SavedVariables file.")
         end
-        return mapCount, bounded
+        return mapCount, bounded, true
     end)
     exportDepth = exportDepth - 1
     if not ok then error(count) end
-    fullDone = true
+    -- A skipped snapshot leaves fullDone false, so the next quest log update retries.
+    fullDone = stored and true or false
     return count, withBounds
 end
 
@@ -842,8 +872,8 @@ end
 local function refresh()
     exportDepth = exportDepth + 1
     local ok, err = pcall(function()
-        stamp(GuideWebExportDB)
-        storeCharacter(exportCharacter())
+        -- An unready snapshot is dropped silently; the next event tries again.
+        if storeCharacter(exportCharacter()) then stamp(GuideWebExportDB) end
     end)
     exportDepth = exportDepth - 1
     if not ok then error(err) end

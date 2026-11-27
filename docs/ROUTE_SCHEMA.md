@@ -11,7 +11,7 @@ them are in [ROUTE_FILES.md](ROUTE_FILES.md).
 ## Rules every author follows
 
 - Every authored item (step, tip, profession hook, elite tactic, pin, class profession block) has
-  `sources: [{ url, label }]` and `verified: boolean`. `verified: false` is shown as **unverified** and QA flags it.
+  `sources: [{ url, label }]` and `verified: boolean`. `verified: false` is shown as **unverified** and QA flags it. A step that uses a WoW Forever quest is forced to `verified: false` at build time, unless it says `verified: true` and cites a playtest under `research/playtests/` in `sources`.
 - Coordinates are **zone %** (0–100), the same space as QuestieDB spawns; `mapId` is the UiMap id (1411 Durotar …).
 - Quests are referenced by **quest id** (`accept` / `turnin` / `complete` actions). Quest-giver, turn-in and
   objective (mob / object / item) pins are **derived** from quest data (`web/src/lib/pins.ts`), not hand-placed.

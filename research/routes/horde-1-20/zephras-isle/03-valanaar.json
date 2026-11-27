@@ -10,7 +10,56 @@
     {
      "segments": [
       {
-       "t": "Hand To Valanaar over to Valennia Stormfist."
+       "t": "Town stop 1, Valanaar east side (level 9). Walk in from the west and take everything on the way to the east end:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Nyalah Brightfire (cooking trainer): accept Crab Season. The crawlers are at Windsong Lake, much later."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Donaal Downbreeze (innkeeper): set your hearthstone here."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Alvarion Windfield: accept Blood Tithe. You don't need to listen to his story; it's optional."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Lotheluum Starbreeze: accept Unnerving Silence. It's a breadcrumb to Elegael Thornpaw in the north, so just carry it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist: turn in To Valanaar (pick any of the three rewards), accept The Grand Skyseer."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Talaanis Shadowsong (next to her): turn in Deliver the Signet. Then back to Valennia: accept Bugged, which needs the Signet handed in first."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ealaane Nimbuswalker: accept Aid For The Refugees and The Fate of a Loved One. Both are done in the Ruins of Ban'aethal up north."
       }
      ]
     }
@@ -20,48 +69,17 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 66.14,
-      "y": 76.63,
+      "x": 60.64,
+      "y": 72.73,
       "zone": "Zephras Isle",
       "exact": true
      }
     },
     {
-     "type": "turnin",
-     "questId": 92579,
-     "label": "To Valanaar"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92579"
+     "type": "accept",
+     "questId": 93317,
+     "label": "Crab Season"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92579",
-     "label": "Wowhead quest 92579"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-home-valanaar",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Set your hearthstone at Donaal Downbreeze"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
@@ -75,20 +93,172 @@
     {
      "type": "home",
      "label": "Set your hearthstone at Donaal Downbreeze"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.05,
+      "y": 75.11,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94484,
+     "label": "Unnerving Silence"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92579,
+     "label": "To Valanaar"
+    },
+    {
+     "type": "accept",
+     "questId": 92700,
+     "label": "The Grand Skyseer"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.17,
+      "y": 76.51,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93948,
+     "label": "Deliver the Signet"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93949,
+     "label": "Bugged"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.95,
+      "y": 74.37,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94896,
+     "label": "Aid For The Refugees"
+    },
+    {
+     "type": "accept",
+     "questId": 94897,
+     "label": "The Fate of a Loved One"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB NPC 255940 Donaal Downbreeze"
+     "label": "QuestieDB quests.json id 93317"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93317",
+     "label": "Wowhead quest 93317"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94484",
+     "label": "Wowhead quest 94484"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92579",
+     "label": "Wowhead quest 92579"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92700",
+     "label": "Wowhead quest 92700"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93948",
+     "label": "Wowhead quest 93948"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93949",
+     "label": "Wowhead quest 93949"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94896",
+     "label": "Wowhead quest 94896"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=94897",
+     "label": "Wowhead quest 94897"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
     }
    ],
    "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shaman: Call of Fire (Sessaria Skystride) needs level 10. You arrive at about 9.0, so take it at town stop 2 when you come back from Windfield.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ],
    "pins": [
     {
      "kind": "npc",
@@ -112,18 +282,62 @@
    ]
   },
   {
-   "id": "zephras-isle:105",
+   "id": "zephras-isle:sr-valanaar-1",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Hand Deliver the Signet over to Talaanis Shadowsong."
+       "t": "Speedrun: town stop 1, Valanaar (level 9). Take only what you finish before leaving the island:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Alvarion Windfield: accept Blood Tithe."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist: turn in To Valanaar (pick any reward), then Talaanis Shadowsong next to her: turn in Deliver the Signet. Back to Valennia: accept Bugged."
       }
      ]
     }
    ],
    "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92579,
+     "label": "To Valanaar"
+    },
     {
      "type": "goto",
      "at": {
@@ -138,44 +352,13 @@
      "type": "turnin",
      "questId": 93948,
      "label": "Deliver the Signet"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93948"
     },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93948",
-     "label": "Wowhead quest 93948"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:106",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up Bugged from Valennia Stormfist. Clear Skyhoppers in Valanaar until you've eliminated 8 Enchanted Skyhoppers."
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 66.14,
-      "y": 76.63,
+      "x": 66.22,
+      "y": 76.64,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -188,20 +371,35 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
     "speedrun"
    ],
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93949"
+     "label": "QuestieDB quests.json id 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92579",
+     "label": "Wowhead quest 92579"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93948",
+     "label": "Wowhead quest 93948"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=93949",
      "label": "Wowhead quest 93949"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
     }
    ],
-   "verified": false
+   "verified": true
   },
   {
    "id": "zephras-isle:107",
@@ -210,7 +408,14 @@
     {
      "segments": [
       {
-       "t": "Work through Bugged at Skyhopper."
+       "t": "Bugged: kill 8 Enchanted Skyhoppers as you cross Valanaar to the west side. They hop around Valennia (63-65, 76-79) and around Riaani on the west side (58-60, 74-77)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Only the Enchanted ones count. Plain Skyhoppers look the same and give no credit (5 of 13 kills in the playtest were wasted on them). Both give only 5-7 XP, so don't hunt them; hit them on the way."
       }
      ]
     }
@@ -220,8 +425,8 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 62.25,
-      "y": 75.76,
+      "x": 63.24,
+      "y": 78.8,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -230,7 +435,17 @@
      "type": "complete",
      "questId": 93949,
      "objective": 1,
-     "label": "Bugged"
+     "label": "Enchanted Skyhopper"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.5,
+      "y": 75.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
     }
    ],
    "conditions": [],
@@ -246,116 +461,24 @@
     {
      "url": "https://www.wowhead.com/classic/quest=93949",
      "label": "Wowhead quest 93949"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:108",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand Bugged over to Valennia Stormfist."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 66.14,
-      "y": 76.63,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
     {
-     "type": "turnin",
-     "questId": 93949,
-     "label": "Bugged"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
     }
    ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93949"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93949",
-     "label": "Wowhead quest 93949"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:109",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Grand Skyseer from Valennia Stormfist. Locate Ayessa Dawnsinger in Valanaar."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 66.14,
-      "y": 76.63,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92700,
-     "label": "The Grand Skyseer"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92700"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92700",
-     "label": "Wowhead quest 92700"
-    }
-   ],
-   "verified": false,
+   "verified": true,
    "tips": [
     {
      "kind": "general",
-     "text": "This quest is tagged with the classic Tauren race bit and leaves the Skyborne bit unset. Treat the offer as unverified until the quest is actually available on a Windshaper.",
+     "text": "Danger: in the playtest the character died at 60.1, 81.2, the south edge of Valanaar below Ayessa Dawnsinger, with no enemy in combat. Most likely a fall off the ledge. The corpse run cost about 2.5 minutes. Walk around the edge, not over it.",
      "sources": [
       {
-       "url": "https://github.com/Questie/QuestieDB",
-       "label": "QuestieDB quests.json id 92700"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/quest=92700",
-       "label": "Wowhead quest 92700"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
       }
      ],
-     "verified": false
+     "verified": true
     }
    ]
   },
@@ -366,7 +489,35 @@
     {
      "segments": [
       {
-       "t": "Hand The Grand Skyseer over to Ayessa Dawnsinger."
+       "t": "Town stop 1, west side:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ayessa Dawnsinger: turn in The Grand Skyseer, accept A Grand Adventure and stand still while she talks (about 80 seconds), turn it in, accept The Broken Construct."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Endaria Mistgaze (next to the Shaman trainer): accept Unwelcome Spirits. The Wind Hollows are in the Ruins of Ban'aethal up north."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Riaani Nightwind: turn in The Broken Construct, accept the next The Broken Construct and listen to him. The three parts are at the Windfield bandit camp, the Shriekling Den and Windsong Lake, all on the route."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Keep Bugged in your bags: Valennia is at the east end, so hand it in at town stop 2."
       }
      ]
     }
@@ -377,7 +528,7 @@
      "at": {
       "mapId": 2521,
       "x": 59.15,
-      "y": 79.78,
+      "y": 79.73,
       "zone": "Zephras Isle",
       "exact": true
      }
@@ -386,12 +537,73 @@
      "type": "turnin",
      "questId": 92700,
      "label": "The Grand Skyseer"
+    },
+    {
+     "type": "accept",
+     "questId": 92708,
+     "label": "A Grand Adventure"
+    },
+    {
+     "type": "complete",
+     "questId": 92708,
+     "objective": 1,
+     "label": "Listen to Ayessa"
+    },
+    {
+     "type": "turnin",
+     "questId": 92708,
+     "label": "A Grand Adventure"
+    },
+    {
+     "type": "accept",
+     "questId": 93735,
+     "label": "The Broken Construct"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.22,
+      "y": 78.39,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93736,
+     "label": "Unwelcome Spirits"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.06,
+      "y": 73.06,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93735,
+     "label": "The Broken Construct"
+    },
+    {
+     "type": "accept",
+     "questId": 93737,
+     "label": "The Broken Construct"
+    },
+    {
+     "type": "complete",
+     "questId": 93737,
+     "objective": 1,
+     "label": "Listen to Riaani Nightwind"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -401,396 +613,42 @@
     {
      "url": "https://www.wowhead.com/classic/quest=92700",
      "label": "Wowhead quest 92700"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:111",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up A Grand Adventure from Ayessa Dawnsinger. Stay and listen: to what Ayessa Dawnsinger has to say."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.15,
-      "y": 79.78,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 92708,
-     "label": "A Grand Adventure"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92708"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=92708",
      "label": "Wowhead quest 92708"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:112",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand A Grand Adventure over to Ayessa Dawnsinger."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.15,
-      "y": 79.78,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92708,
-     "label": "A Grand Adventure"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92708"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92708",
-     "label": "Wowhead quest 92708"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:113",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Broken Construct from Ayessa Dawnsinger. Locate Riaani Nightwind on the west side of Valanaar."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.15,
-      "y": 79.78,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93735,
-     "label": "The Broken Construct"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93735"
     },
     {
      "url": "https://www.wowhead.com/classic/quest=93735",
      "label": "Wowhead quest 93735"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:114",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Broken Construct over to Riaani Nightwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.06,
-      "y": 72.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
     },
-    {
-     "type": "turnin",
-     "questId": 93735,
-     "label": "The Broken Construct"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93735"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93735",
-     "label": "Wowhead quest 93735"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:115",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Pick up The Broken Construct from Riaani Nightwind. The follow-up conversation is with Riaani Nightwind and listen to what he has to say."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.06,
-      "y": 72.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93737,
-     "label": "The Broken Construct"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93737"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93737",
-     "label": "Wowhead quest 93737"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:116",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Work through The Broken Construct at Riaani Nightwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.06,
-      "y": 72.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 93737,
-     "objective": 1,
-     "label": "The Broken Construct"
-    },
-    {
-     "type": "complete",
-     "questId": 93737,
-     "objective": 2,
-     "label": "The Broken Construct"
-    },
-    {
-     "type": "complete",
-     "questId": 93737,
-     "objective": 3,
-     "label": "The Broken Construct"
-    },
-    {
-     "type": "complete",
-     "questId": 93737,
-     "objective": 4,
-     "label": "The Broken Construct"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93737"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93737",
-     "label": "Wowhead quest 93737"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:117",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Hand The Broken Construct over to Riaani Nightwind."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.06,
-      "y": 72.98,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93737,
-     "label": "The Broken Construct"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93737"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93737",
-     "label": "Wowhead quest 93737"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "zephras-isle:w2-93736-1",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Unwelcome Spirits from Endaria Mistgaze."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 58.1,
-      "y": 78.3,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 93736,
-     "label": "Unwelcome Spirits"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
     {
      "url": "https://www.wowhead.com/classic/quest=93736",
-     "label": "Wowhead Classic quest 93736"
+     "label": "Wowhead quest 93736"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=93737",
+     "label": "Wowhead quest 93737"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
     }
    ],
-   "verified": true
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shaman: Sessaria Skystride (58.3, 78.5) has nothing new at level 9. Skip her until town stop 2.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": true
+    }
+   ]
   }
  ]
 }
