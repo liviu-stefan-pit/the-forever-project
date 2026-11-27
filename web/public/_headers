@@ -17,3 +17,11 @@
 
 /manifest.webmanifest
   Cache-Control: no-cache
+
+# Guide JSON changes on deploy, not per visitor. One hour at the edge.
+# Both lines: a single-segment splat does not cover /data/guides/*.json.
+/data/*
+  Cache-Control: public, max-age=3600
+
+/data/guides/*
+  Cache-Control: public, max-age=3600

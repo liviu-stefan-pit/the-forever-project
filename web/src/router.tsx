@@ -6,8 +6,9 @@ import { GuideSkeleton } from "./components/ui/States";
 import { HORDE_HOME } from "./config";
 
 /**
- * Path routing (`/horde`, no `#`). Cloudflare Pages serves index.html for unknown paths, and
- * legacyHash.ts turns old `#/…` links into paths before the router starts.
+ * Path routing (`/horde`, no `#`). Public pages and guides are real HTML files; `_redirects`
+ * serves index.html only for /quest/*, /profile, /transfer and bare /guide. Unknown paths are
+ * 404.html. legacyHash.ts turns old `#/…` links into paths before the router starts.
  * Step deep link: `/guide/<slug>?step=<step id>` (URL-encoded).
  * Pages are lazy; the shell and providers stay in the first chunk.
  */
