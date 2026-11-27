@@ -30,6 +30,8 @@ import {
   type SimReport,
 } from "../src/lib/xp/simulate.ts";
 
+import { loadTpfDb, mergeQuestDb, type MergeableDb } from "./tpf-db.ts";
+
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
 
 function readJson<T>(p: string): T {
@@ -42,10 +44,22 @@ export function loadSimTables(root = ROOT): {
   items: Map<number, SimItem>;
   overrides: Record<string, QuestXpOverride>;
 } {
-  const questsRaw = readJson<Record<string, SimQuest>>(join(root, "content/questie-db/quests.json"));
-  const npcsRaw = readJson<Record<string, SimNpc>>(join(root, "content/questie-db/npcs.json"));
   const itemsPath = join(root, "content/questie-db/items.json");
-  const itemsRaw = existsSync(itemsPath) ? readJson<Record<string, SimItem>>(itemsPath) : {};
+  const zonesPath = join(root, "content/questie-db/zones.json");
+  // QuestieDB with tpf-db on top (same merge as the data build), so quests only tpf-db knows still give XP.
+  const merged = mergeQuestDb(
+    {
+      quests: readJson<MergeableDb["quests"]>(join(root, "content/questie-db/quests.json")),
+      npcs: readJson<MergeableDb["npcs"]>(join(root, "content/questie-db/npcs.json")),
+      objects: {},
+      items: existsSync(itemsPath) ? readJson<MergeableDb["items"]>(itemsPath) : {},
+      zones: existsSync(zonesPath) ? readJson<MergeableDb["zones"]>(zonesPath) : {},
+    },
+    loadTpfDb(join(root, "content/tpf-db")),
+  );
+  const questsRaw = merged.quests as unknown as Record<string, SimQuest>;
+  const npcsRaw = merged.npcs as unknown as Record<string, SimNpc>;
+  const itemsRaw = merged.items as unknown as Record<string, SimItem>;
   const ovPath = join(root, "content/game-data/quest-xp-overrides.json");
   const overrides = existsSync(ovPath) ? readJson<Record<string, QuestXpOverride>>(ovPath) : {};
   const quests = new Map<number, SimQuest>();

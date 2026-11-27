@@ -18,6 +18,10 @@
  *   class_professions.json, profession_hooks.json (tips_matrix.json is not published)
  *   search-index.json        MiniSearch corpus
  *
+ * Quest data: content/questie-db, with content/tpf-db (our own AdventureLog-built database) on top for Zephras
+ * Isle: tpf-db confirmed, then tpf-db unconfirmed, then QuestieDB (see tpf-db.ts). Every quest row and every
+ * quest action in the guide JSON says which in `dataStatus`. `main` also writes data/reports/tpf-vs-questie.json.
+ *
  * Rules: quests 79953 and 81951 (low-confidence Forever quests) are stripped from every route with a warning;
  * any step that uses a `forever: true` quest is forced to `verified: false` (warning when it said true),
  * unless it says `verified: true` and cites a playtest under `research/playtests/`.
@@ -38,6 +42,7 @@ import type {
   MapPoint,
   Pin,
   ProfessionHook,
+  QuestDataStatus,
   QuestInfo,
   RoutePack,
   RouteStyle,
@@ -56,6 +61,7 @@ import { enrichCompleteSteps } from "./enrich-complete.ts";
 import { compactSteps } from "./compact-steps.ts";
 import { runXpSimPipeline, writeDungeonOnSim } from "./xp-sim.ts";
 import { discoverPacks as discoverRoutePacks } from "./routeSource.ts";
+import { compareTpfQuestie, loadTpfDb, mergeQuestDb } from "./tpf-db.ts";
 import { isChainTerminal, resolveNextGuide } from "../src/lib/routeChains.ts";
 
 const ROOT = fileURLToPath(new URL("../../", import.meta.url));
@@ -111,6 +117,8 @@ export interface QuestDb {
   objects: Record<string, QdbSpawned>;
   items: Record<string, QdbSpawned>;
   zones: Record<string, QdbZone>;
+  /** Where each quest's data came from (tpf-db.ts). Quests not listed are QuestieDB ("questie"). */
+  dataStatus?: Record<string, QuestDataStatus>;
 }
 
 /** Raw entry of research/professions/profession_hooks.json. */
@@ -409,6 +417,8 @@ export function packToGuide(pack: RoutePack, steps: Step[]): Guide {
     maxLevel: max,
     zones,
     source: "builtin",
+    status: pack.status ?? "experimental",
+    ...(pack.playtested ? { playtested: pack.playtested } : {}),
     sections,
     steps: numbered,
   };
@@ -518,6 +528,7 @@ export function guideIndexEntries(index: GuideIndex, guides: readonly Guide[]): 
       entries.push({
         slug,
         ...(g ? { title: g.displayName, minLevel: g.minLevel, maxLevel: g.maxLevel, ...guideMinutes(g, fallback), ...guideStartLevel(g) } : {}),
+        ...(g ? { status: g.status ?? "experimental", ...(g.playtested ? { playtested: g.playtested } : {}) } : {}),
         stepIds,
         stepCount: stepIds.length,
       });
@@ -599,6 +610,7 @@ export function splitQuestFiles(quests: readonly QuestInfo[]): { min: QuestMin[]
       end: q.end.map(giver),
     };
     if (q.zone) row.zone = q.zone;
+    if (q.dataStatus) row.dataStatus = q.dataStatus;
     if (q.breadcrumbFor != null) row.breadcrumbFor = q.breadcrumbFor;
     if (q.xp != null) row.xp = q.xp;
     min.push(row);
@@ -654,6 +666,35 @@ export function buildInsights(issues: Insights["issues"]): Insights {
 export function loadQuestDb(dir = join(ROOT, "content/questie-db")): QuestDb {
   const r = <T>(f: string) => (existsSync(join(dir, f)) ? readJson<T>(join(dir, f)) : ({} as T));
   return { quests: r("quests.json"), npcs: r("npcs.json"), objects: r("objects.json"), items: r("items.json"), zones: r("zones.json") };
+}
+
+/** The build's quest data: QuestieDB with tpf-db merged on top (tpf-db.ts). */
+export function loadBuildQuestDb(questieDir = join(ROOT, "content/questie-db"), tpfDir = join(ROOT, "content/tpf-db")): QuestDb {
+  return mergeQuestDb(loadQuestDb(questieDir), loadTpfDb(tpfDir));
+}
+
+/**
+ * Copy a quest's `dataStatus` onto every guide action that names it (accept, turnin, complete, collect) when it
+ * is `confirmed` or `unconfirmed`. `questie` stays on the quest row only (quests-min.json): rendered guide text
+ * never names the quest data source (display-text.test.ts), and readers fall back to the quest row.
+ */
+export function annotateDataStatus(guides: readonly Guide[], quests: readonly QuestInfo[]): number {
+  const by = new Map(quests.filter((q) => q.dataStatus === "confirmed" || q.dataStatus === "unconfirmed").map((q) => [q.id, q.dataStatus]));
+  let n = 0;
+  for (const g of guides) {
+    for (const s of g.steps) {
+      for (const a of s.actions) {
+        const id = (a as { questId?: unknown }).questId;
+        if (typeof id !== "number") continue;
+        const st = by.get(id);
+        if (st) {
+          (a as { dataStatus?: QuestDataStatus }).dataStatus = st;
+          n++;
+        }
+      }
+    }
+  }
+  return n;
 }
 
 /** QuestXP.1.60.1.71037.csv: table[questLevel][tier] = Difficulty_`tier`. */
@@ -755,6 +796,7 @@ export function buildQuests(db: QuestDb, questIds: Iterable<number>): QuestInfo[
       races: q.races ?? 0,
       classes: q.classes ?? 0,
       custom: !!q.forever,
+      dataStatus: db.dataStatus?.[String(id)] ?? "questie",
       start: [
         ...giver("npc", q.start?.npc),
         ...giver("object", q.start?.object),
@@ -788,7 +830,7 @@ export function buildQuests(db: QuestDb, questIds: Iterable<number>): QuestInfo[
     out.push(info);
   }
   if (missingFromDb.length) {
-    console.warn(`[data] guide quest ids missing from QuestieDB (skipped, not written to quests.json): ${missingFromDb.join(", ")}`);
+    console.warn(`[data] guide quest ids missing from QuestieDB and tpf-db (skipped, not written to quests.json): ${missingFromDb.join(", ")}`);
   }
   console.warn(`[data] quest XP tiers: ${withTier}/${out.length} matched; ${mismatches.length} mismatches`);
   if (mismatches.length) console.warn(`[data] quest XP mismatches: ${mismatches.join("; ")}`);
@@ -1153,7 +1195,7 @@ export function loadTrainerTiers(profDir: string): { profession: string; tier: s
 
 export function buildData(opts: BuildOptions): DataManifest {
   const v = makeValidators();
-  const db = opts.questDb ?? loadQuestDb();
+  const db = opts.questDb ?? loadBuildQuestDb();
   const warnings: string[] = [];
   const errors: string[] = [];
   // Leveling packs first (by level), dungeon packs last: hooks join to leveling steps before dungeon steps.
@@ -1396,6 +1438,7 @@ export function buildData(opts: BuildOptions): DataManifest {
     const p = join(out, rel);
     if (existsSync(p)) unlinkSync(p);
   };
+  annotateDataStatus(guides, quests);
   for (const g of guides) w(`guides/${g.slug}.json`, publishGuide(g));
   w("guide_index.json", index);
   const split = splitQuestFiles(quests);
@@ -1457,6 +1500,14 @@ function main(argv: string[]): number {
       console.log(
         `[data] dungeon anchors: ${m.anchorBlocks ?? 0} plan blocks applied, ${anchorInserted} steps inserted, ${placeholdersDropped} placeholders dropped`,
       );
+    }
+    const tpf = loadTpfDb();
+    if (tpf) {
+      const cmp = compareTpfQuestie(loadQuestDb(), tpf);
+      const reportDir = join(ROOT, "data/reports");
+      mkdirSync(reportDir, { recursive: true });
+      writeFileSync(join(reportDir, "tpf-vs-questie.json"), `${JSON.stringify(cmp, null, 2)}\n`);
+      console.log(`[data] tpf-db vs QuestieDB: ${Object.entries(cmp.summary).map(([k, v]) => `${k}=${v}`).join(" ")} -> data/reports/tpf-vs-questie.json`);
     }
     const integrity = runIntegrity({ dataDir: out, failOnError: false });
     console.log(`[data] integrity: ${integrity.errors} errors, ${integrity.warnings} warnings, ${integrity.info} info`);

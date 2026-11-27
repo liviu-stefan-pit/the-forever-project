@@ -379,6 +379,8 @@ describe("buildData", () => {
         // No authored minutes: 1.5 min a step; one step is on Balanced only.
         minutes: { balanced: 3, speedrun: 2 },
         minutesEstimated: true,
+        // No `status` in the pack: experimental.
+        status: "experimental",
         stepIds: ["p:1", "p:3", "p:4"],
         stepCount: 3,
       },
