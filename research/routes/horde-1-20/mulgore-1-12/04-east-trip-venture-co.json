@@ -1,0 +1,623 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "mulgore-1-12",
+ "title": "East trip: the Venture Co. mine and the Galak",
+ "steps": [
+  {
+   "id": "mulgore-1-12:123",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Thunderhorn Water Well (north of the village, on the way to the mine): use the Thunderhorn Cleansing Totem at the well."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.48,
+      "y": 50.72,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 758,
+     "label": "Thunderhorn Cleansing"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=758",
+     "label": "Wowhead quest 758 (Thunderhorn Cleansing)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "You hand this in at town stop 4, so the well costs no extra trip.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:076",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Venture Co. Mine (north-east): kill 14 Venture Co. Workers and 6 Venture Co. Supervisors."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Supervisor Fizsprocket is at the top of the mine area (61.2, 49.3). Clear the workers around him, take Fizsprocket's Clipboard, and loot the Mulgore Expansion Plans he drops: they start Fizsprocket's Notes."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Fizsprocket's Notes: collect the three missing pages in the same mine (58.6, 47.3 · 61.7, 47.3 · 59.0, 46.4)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 59.1,
+      "y": 47.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 764,
+     "objective": 1,
+     "label": "The Venture Co."
+    },
+    {
+     "type": "complete",
+     "questId": 764,
+     "objective": 2,
+     "label": "The Venture Co."
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 61.2,
+      "y": 49.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 765,
+     "objective": 1,
+     "label": "Supervisor Fizsprocket"
+    },
+    {
+     "type": "accept",
+     "questId": 98424,
+     "label": "Fizsprocket's Notes"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 58.63,
+      "y": 47.31,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98424,
+     "objective": 1,
+     "label": "Fizsprocket's Notes"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 61.67,
+      "y": 47.31,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98424,
+     "objective": 2,
+     "label": "Fizsprocket's Notes"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 59.02,
+      "y": 46.41,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98424,
+     "objective": 3,
+     "label": "Fizsprocket's Notes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=764",
+     "label": "Wowhead quest 764 (The Venture Co.)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=765",
+     "label": "Wowhead quest 765 (Supervisor Fizsprocket)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98424",
+     "label": "Wowhead quest 98424 (Fizsprocket's Notes)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Supervisor Fizsprocket is at the top of the Venture Co. mine area. Clear the workers around him first.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=765",
+       "label": "Wowhead Classic quest 765"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:094",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Galak camp (south-east, at the zone edge): kill 6 Galak Centaurs and 4 Galak Outrunners, and take the head of Herak the Pillager (level 11, west side of the camp)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 64.0,
+      "y": 61.6,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99080,
+     "objective": 1,
+     "label": "Drive Them Out"
+    },
+    {
+     "type": "complete",
+     "questId": 99080,
+     "objective": 2,
+     "label": "Drive Them Out"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 60.3,
+      "y": 61.0,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99080,
+     "objective": 3,
+     "label": "Drive Them Out"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99080",
+     "label": "Wowhead quest 99080 (Drive Them Out)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Galak centaurs and Herak the Pillager camp on the eastern edge of Mulgore.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/mulgore/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Only six of each centaur spawn here, so you may have to wait for a respawn or two.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Herak is level 11 and you are about 9.5. Pull him away from the centaurs.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:084",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Morin Cloudstalker (on the way back west): turn in The Venture Co., Supervisor Fizsprocket and Fizsprocket's Notes."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 54.76,
+      "y": 64.27,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 764,
+     "label": "The Venture Co."
+    },
+    {
+     "type": "turnin",
+     "questId": 765,
+     "label": "Supervisor Fizsprocket"
+    },
+    {
+     "type": "turnin",
+     "questId": 98424,
+     "label": "Fizsprocket's Notes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=764",
+     "label": "Wowhead quest 764 (The Venture Co.)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=765",
+     "label": "Wowhead quest 765 (Supervisor Fizsprocket)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98424",
+     "label": "Wowhead quest 98424 (Fizsprocket's Notes)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:087",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Morin Cloudstalker: accept Ceasing Operations. The Clearcutter Key drops from the Venture Co. Clearclutter (elite) north of the mine, which you pass on the north trip."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 54.76,
+      "y": 64.27,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98427,
+     "label": "Ceasing Operations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98427",
+     "label": "Wowhead quest 98427 (Ceasing Operations)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:095",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 4 (level ~10). Last Bloodhoof stop before the north:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: turn in Thunderhorn Cleansing, accept Wildmane Totem."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Baine Bloodhoof: turn in Drive Them Out, accept The High Chieftain."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Skorn Whitecloud: accept The Hunter's Way (needs level 10)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.52,
+      "y": 63.58,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 758,
+     "label": "Thunderhorn Cleansing"
+    },
+    {
+     "type": "accept",
+     "questId": 759,
+     "label": "Wildmane Totem"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.67,
+      "y": 63.38,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99080,
+     "label": "Drive Them Out"
+    },
+    {
+     "type": "accept",
+     "questId": 99082,
+     "label": "The High Chieftain"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.03,
+      "y": 63.44,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 861,
+     "label": "The Hunter's Way"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=758",
+     "label": "Wowhead quest 758 (Thunderhorn Cleansing)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=759",
+     "label": "Wowhead quest 759 (Wildmane Totem)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99080",
+     "label": "Wowhead quest 99080 (Drive Them Out)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99082",
+     "label": "Wowhead quest 99082 (The High Chieftain)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=861",
+     "label": "Wowhead quest 861 (The Hunter's Way)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Class quests at 10 (Shaman Call of Fire, Druid, Hunter and Warrior class quests) start in Bloodhoof and Thunder Bluff. They lead out of Mulgore, so this guide doesn't follow them.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

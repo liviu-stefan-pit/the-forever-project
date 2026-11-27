@@ -1,0 +1,675 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "mulgore-1-12",
+ "title": "West trip: the vision, Bael'dun and Palemane Rock",
+ "steps": [
+  {
+   "id": "mulgore-1-12:101",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Zarlman Two-Moons: drink the Water of the Seers at the fire in front of him. Follow the vision north-west to Seer Wiserunner."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Plains on the way (around the Thunderhorn well): kill Prairie Stalkers for 6 Stalker Claws and Flatland Cougars for 6 Cougar Claws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Same field: Swoops for 8 Trophy Swoop Quills and a Swoop Gizzard, Flatland Cougars for the Flatland Cougar Femur (Mazzranache)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Seer Wiserunner: turn in Rite of Vision, accept Rite of Wisdom (that one is for the north trip at the end)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.88,
+      "y": 61.19,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.9,
+      "y": 48.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 756,
+     "objective": 1,
+     "label": "Thunderhorn Totem"
+    },
+    {
+     "type": "complete",
+     "questId": 756,
+     "objective": 2,
+     "label": "Thunderhorn Totem"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.8,
+      "y": 49.2,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 761,
+     "objective": 1,
+     "label": "Swoop Hunting"
+    },
+    {
+     "type": "complete",
+     "questId": 766,
+     "objective": 4,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "complete",
+     "questId": 766,
+     "objective": 2,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 34.31,
+      "y": 43.29,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 772,
+     "label": "Rite of Vision"
+    },
+    {
+     "type": "accept",
+     "questId": 773,
+     "label": "Rite of Wisdom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=756",
+     "label": "Wowhead quest 756 (Thunderhorn Totem)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=761",
+     "label": "Wowhead quest 761 (Swoop Hunting)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=766",
+     "label": "Wowhead quest 766 (Mazzranache)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=772",
+     "label": "Wowhead quest 772 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=773",
+     "label": "Wowhead quest 773 (Rite of Wisdom)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Our spawn data puts the stalkers, flatland cougars and swoops all together around 42-50, 42-55, which is exactly where the vision walks. Old steps pointed you there separately three times.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Mazzranache himself (rare, level 9) walks the same field. You don't need to kill him: his parts drop from ordinary beasts.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:081",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Windfury harpy camp just south of Wiserunner: kill Windfury Harpies and Wind Witches for 8 Windfury Talons."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 34.5,
+      "y": 48.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 743,
+     "objective": 1,
+     "label": "Dangers of the Windfury"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=743",
+     "label": "Wowhead quest 743 (Dangers of the Windfury)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wind Witches cast from range. Close the gap or kill them first.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "The harpy camp next to Wiserunner is on this trip. The old route used the south-east camp, which needed its own trip.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:080",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bael'dun Digsite (south): kill Bael'dun Diggers and Appraisers for 5 Prospector's Picks."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Use the picks at the forge in the digsite to turn them into 5 Broken Tools."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.6,
+      "y": 54.0,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.1,
+      "y": 54.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 746,
+     "objective": 1,
+     "label": "Dwarven Digging"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=746",
+     "label": "Wowhead quest 746 (Dwarven Digging)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "mulgore-1-12:048",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Palemane Rock (south): Perith Stormhoof is held here. Accept The Longwalkers and escort him out."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Chakuyak (on the way back east, 39.5, 66.2): kill her and take Chakuyak's Pelt."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 33.11,
+      "y": 65.95,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98430,
+     "label": "The Longwalkers"
+    },
+    {
+     "type": "complete",
+     "questId": 98430,
+     "label": "The Longwalkers"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 39.5,
+      "y": 66.2,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96130,
+     "objective": 1,
+     "label": "Chakuyak"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=98430",
+     "label": "Wowhead quest 98430 (The Longwalkers)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96130",
+     "label": "Wowhead quest 96130 (Chakuyak)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "D1: escort despawn tip for The Longwalkers"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "The Longwalkers is turned in to Cairne in Thunder Bluff, which you visit anyway. The escort is a couple of minutes for 700 XP, so both routes take it.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "mulgore-1-12:059",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 3 (level ~9). Hand in everything:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Harken Windtotem: turn in Swoop Hunting."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: turn in Thunderhorn Totem, accept Thunderhorn Cleansing."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Maur Raincaller: turn in Mazzranache."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ruul Eagletalon: turn in Dangers of the Windfury."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Baine Bloodhoof: turn in Dwarven Digging."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Yaw Sharpmane: turn in Chakuyak."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Vira Younghoof: turn in Camping 101: First Aid if you're at First Aid 20."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 8 spells."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.67,
+      "y": 62.68,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 761,
+     "label": "Swoop Hunting"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.52,
+      "y": 63.58,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 756,
+     "label": "Thunderhorn Totem"
+    },
+    {
+     "type": "accept",
+     "questId": 758,
+     "label": "Thunderhorn Cleansing"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.23,
+      "y": 60.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 766,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.54,
+      "y": 64.94,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 743,
+     "label": "Dangers of the Windfury"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.67,
+      "y": 63.38,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 746,
+     "label": "Dwarven Digging"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.93,
+      "y": 59.65,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96130,
+     "label": "Chakuyak"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.08,
+      "y": 63.96,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97931,
+     "label": "Camping 101: First Aid"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=761",
+     "label": "Wowhead quest 761 (Swoop Hunting)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=756",
+     "label": "Wowhead quest 756 (Thunderhorn Totem)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=758",
+     "label": "Wowhead quest 758 (Thunderhorn Cleansing)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=766",
+     "label": "Wowhead quest 766 (Mazzranache)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=743",
+     "label": "Wowhead quest 743 (Dangers of the Windfury)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=746",
+     "label": "Wowhead quest 746 (Dwarven Digging)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96130",
+     "label": "Wowhead quest 96130 (Chakuyak)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97931",
+     "label": "Wowhead quest 97931 (Camping 101: First Aid)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

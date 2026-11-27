@@ -10,7 +10,7 @@
     {
      "segments": [
       {
-       "t": "Accept A Task Unfinished from Antur Fallow. On the speedrun, move on once the local quests turn green; lower-level kills give less xp than in Classic."
+       "t": "Leave Camp Narache down the road. Antur Fallow stands at the bottom of it: accept A Task Unfinished (hand-in at the Bloodhoof inn)."
       }
      ]
     }
@@ -20,8 +20,8 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 39.2,
-      "y": 81.2,
+      "x": 39.16,
+      "y": 81.24,
       "zone": "Mulgore",
       "exact": true
      }
@@ -39,12 +39,16 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=1656",
-     "label": "Wowhead Classic quest 1656"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=1656",
+     "label": "Wowhead quest 1656 (A Task Unfinished)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": true,
@@ -67,176 +71,6 @@
    ]
   },
   {
-   "id": "mulgore-1-12:031",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Rites of the Earthmother to Baine Bloodhoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.7,
-      "y": 63.4,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 763,
-     "label": "Rites of the Earthmother"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=763",
-     "label": "Wowhead Classic quest 763"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:032",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in A Task Unfinished to Innkeeper Kauth"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 45.9,
-      "y": 64.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 1656,
-     "label": "A Task Unfinished"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=1656",
-     "label": "Wowhead Classic quest 1656"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:033",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Set your hearthstone at Innkeeper Kauth"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 45.9,
-      "y": 64.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "home",
-     "label": "Set your hearthstone at Innkeeper Kauth"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/npc=6747",
-     "label": "Wowhead Classic NPC 6747"
-    }
-   ],
-   "verified": true,
-   "tips": [
-    {
-     "kind": "speed",
-     "text": "Speedrun: take every Bloodhoof quest at once; most objectives overlap on the plains around the village.",
-     "routes": [
-      "speedrun"
-     ],
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=6747",
-       "label": "Wowhead Classic NPC 6747"
-      }
-     ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "npc",
-     "npcId": 6747,
-     "name": "Innkeeper Kauth",
-     "at": {
-      "mapId": 1412,
-      "zone": "Mulgore",
-      "x": 45.9,
-      "y": 64.2
-     },
-     "service": "innkeeper",
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=6747",
-       "label": "Wowhead Classic NPC 6747"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
    "id": "mulgore-1-12:w2-96605-1",
    "tags": {
     "label": "New in Forever"
@@ -245,7 +79,14 @@
     {
      "segments": [
       {
-       "t": "Turn The Adventurer in to Kaga Wildhoof, then sit at Kaga's campfire until the rest buff lands and turn in The Great Outdoors."
+       "t": "Kaga Wildhoof (on the road just south of Bloodhoof): turn in The Adventurer, accept The Great Outdoors. Sit at his campfire until you get Boosted Rest (about a minute), then turn it in."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Kaga Wildhoof: accept Camping 101: Cooking and Camping 101: First Aid (270 XP each)."
       }
      ]
     }
@@ -255,7 +96,7 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 46.2,
+      "x": 46.18,
       "y": 67.3,
       "zone": "Mulgore",
       "exact": true
@@ -281,6 +122,16 @@
      "type": "turnin",
      "questId": 96605,
      "label": "The Great Outdoors"
+    },
+    {
+     "type": "accept",
+     "questId": 96661,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "accept",
+     "questId": 97931,
+     "label": "Camping 101: First Aid"
     }
    ],
    "conditions": [],
@@ -291,11 +142,27 @@
    "sources": [
     {
      "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 96659 / 96605, NPC 265810"
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://www.wowhead.com/classic/npc=265810",
-     "label": "Wowhead NPC 265810"
+     "url": "https://www.wowhead.com/classic/quest=96659",
+     "label": "Wowhead quest 96659 (The Adventurer)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96605",
+     "label": "Wowhead quest 96605 (The Great Outdoors)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96661",
+     "label": "Wowhead quest 96661 (Camping 101: Cooking)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97931",
+     "label": "Wowhead quest 97931 (Camping 101: First Aid)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
@@ -329,37 +196,112 @@
       }
      ],
      "verified": false
-    }
-   ],
-   "pins": [
+    },
     {
-     "kind": "npc",
-     "npcId": 265810,
-     "name": "Kaga Wildhoof",
-     "at": {
-      "mapId": 1412,
-      "zone": "Mulgore",
-      "x": 46.2,
-      "y": 67.3
-     },
+     "kind": "profession",
+     "text": "The Camping 101s for primary professions come from Kaga too. Take the one for the profession you train in Bloodhoof (Skinning, Leatherworking) or Thunder Bluff; it finishes at skill 20.",
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/npc=265810",
-       "label": "Wowhead NPC 265810"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
+     "verified": false
     }
    ]
   },
   {
-   "id": "mulgore-1-12:035",
+   "id": "mulgore-1-12:031",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Accept Sharing the Land from Baine Bloodhoof"
+       "t": "Town stop 1, Bloodhoof Village (level ~5.8). Take everything here before going out:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Baine Bloodhoof: turn in Rites of the Earthmother, accept Sharing the Land and Rite of Vision."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Innkeeper Kauth: turn in A Task Unfinished, set your hearthstone."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Zarlman Two-Moons: turn in Rite of Vision, accept the next Rite of Vision."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: accept Poison Water."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ruul Eagletalon: accept Dangers of the Windfury."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Harken Windtotem: accept Swoop Hunting."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Maur Raincaller: accept Mazzranache."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Yaw Sharpmane: accept Chakuyak."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ahab Wheathoof (north edge): accept Kyle's Gone Missing!"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Brave Wildrunner (next to Baine): accept Longwalker Malah."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pyall Silentstride: learn Cooking, turn in Camping 101: Cooking."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Vira Younghoof: learn First Aid."
       }
      ]
     }
@@ -369,192 +311,72 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 46.7,
-      "y": 63.4,
+      "x": 46.67,
+      "y": 63.38,
       "zone": "Mulgore",
       "exact": true
      }
+    },
+    {
+     "type": "turnin",
+     "questId": 763,
+     "label": "Rites of the Earthmother"
     },
     {
      "type": "accept",
      "questId": 745,
      "label": "Sharing the Land"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=745",
-     "label": "Wowhead Classic quest 745"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:036",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rite of Vision from Baine Bloodhoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.7,
-      "y": 63.4,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 767,
      "label": "Rite of Vision"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=767",
-     "label": "Wowhead Classic quest 767"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:040",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Dwarven Digging from Baine Bloodhoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 46.7,
-      "y": 63.4,
+      "x": 45.93,
+      "y": 64.16,
       "zone": "Mulgore",
       "exact": true
      }
     },
     {
-     "type": "accept",
-     "questId": 746,
-     "label": "Dwarven Digging"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=746",
-     "label": "Wowhead Classic quest 746"
+     "type": "turnin",
+     "questId": 1656,
+     "label": "A Task Unfinished"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:037",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Swoop Hunting from Harken Windtotem"
-      }
-     ]
-    }
-   ],
-   "actions": [
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Kauth"
+    },
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 47.7,
-      "y": 62.7,
+      "x": 46.88,
+      "y": 61.19,
       "zone": "Mulgore",
       "exact": true
      }
     },
     {
-     "type": "accept",
-     "questId": 761,
-     "label": "Swoop Hunting"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=761",
-     "label": "Wowhead Classic quest 761"
+     "type": "turnin",
+     "questId": 767,
+     "label": "Rite of Vision"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:038",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Poison Water from Mull Thunderhorn"
-      }
-     ]
-    }
-   ],
-   "actions": [
+     "type": "accept",
+     "questId": 771,
+     "label": "Rite of Vision"
+    },
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 47.5,
-      "y": 63.6,
+      "x": 47.52,
+      "y": 63.58,
       "zone": "Mulgore",
       "exact": true
      }
@@ -563,53 +385,13 @@
      "type": "accept",
      "questId": 748,
      "label": "Poison Water"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=748",
-     "label": "Wowhead Classic quest 748"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:039",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Dangers of the Windfury from Ruul Eagletalon"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 46.5,
-      "y": 64.9,
+      "x": 46.54,
+      "y": 64.94,
       "zone": "Mulgore",
       "exact": true
      }
@@ -618,6 +400,114 @@
      "type": "accept",
      "questId": 743,
      "label": "Dangers of the Windfury"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.67,
+      "y": 62.68,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 761,
+     "label": "Swoop Hunting"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.23,
+      "y": 60.8,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 766,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.93,
+      "y": 59.65,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96130,
+     "label": "Chakuyak"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.28,
+      "y": 57.63,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99411,
+     "label": "Kyle's Gone Missing!"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.68,
+      "y": 63.83,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99079,
+     "label": "Longwalker Malah"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 44.92,
+      "y": 61.67,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn Cooking from Pyall Silentstride"
+    },
+    {
+     "type": "turnin",
+     "questId": 96661,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.08,
+      "y": 63.96,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn First Aid from Vira Younghoof"
     }
    ],
    "conditions": [],
@@ -627,15 +517,132 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=743",
-     "label": "Wowhead Classic quest 743"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=763",
+     "label": "Wowhead quest 763 (Rites of the Earthmother)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=745",
+     "label": "Wowhead quest 745 (Sharing the Land)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=767",
+     "label": "Wowhead quest 767 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1656",
+     "label": "Wowhead quest 1656 (A Task Unfinished)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=771",
+     "label": "Wowhead quest 771 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=748",
+     "label": "Wowhead quest 748 (Poison Water)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=743",
+     "label": "Wowhead quest 743 (Dangers of the Windfury)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=761",
+     "label": "Wowhead quest 761 (Swoop Hunting)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=766",
+     "label": "Wowhead quest 766 (Mazzranache)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96130",
+     "label": "Wowhead quest 96130 (Chakuyak)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99411",
+     "label": "Wowhead quest 99411 (Kyle's Gone Missing!)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99079",
+     "label": "Wowhead quest 99079 (Longwalker Malah)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96661",
+     "label": "Wowhead quest 96661 (Camping 101: Cooking)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true
+   "verified": false,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun: take every Bloodhoof quest at once; most objectives overlap on the plains around the village.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6747",
+       "label": "Wowhead Classic NPC 6747"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "general",
+     "text": "Forever quest from Yaw Sharpmane in Bloodhoof (needs Rite of Strength done).",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/mulgore/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Forever quest (returns from The Burning Crusade): feed Kyle the puppy for Ahab Wheathoof in Bloodhoof Village.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
+       "label": "github.com"
+      },
+      {
+       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
+       "label": "Hardcore Helper WoW Forever zone guide"
+      },
+      {
+       "url": "https://wowfdb.com/zones/mulgore/",
+       "label": "WoW Forever DB zone page"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Dwarven Digging (Baine) needs level 6 and you arrive at about 5.8, so you take it at town stop 2. It is done on the west trip anyway.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "mulgore-1-12:042",
@@ -646,7 +653,7 @@
     {
      "segments": [
       {
-       "t": "Accept Sparring Match from Krang Stonehoof"
+       "t": "Krang Stonehoof (warrior trainer, east side): accept Sparring Match. Beat 3 Novice Warriors in the ring next to him (or duel players), then turn it in."
       }
      ]
     }
@@ -656,8 +663,8 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 48.4,
-      "y": 63.7,
+      "x": 48.35,
+      "y": 63.74,
       "zone": "Mulgore",
       "exact": true
      }
@@ -666,28 +673,71 @@
      "type": "accept",
      "questId": 99108,
      "label": "Sparring Match"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 48.7,
+      "y": 63.7,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99108,
+     "objective": 1,
+     "label": "Sparring Match"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 48.35,
+      "y": 63.74,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99108,
+     "label": "Sparring Match"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced"
+    "balanced",
+    "speedrun"
    ],
    "sources": [
     {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
+     "url": "https://www.wowhead.com/classic/quest=99108",
+     "label": "Wowhead quest 99108 (Sparring Match)"
     },
     {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
    "tips": [
+    {
+     "kind": "general",
+     "text": "Sparring Match is about a minute for 270 XP and the Novice Warriors stand right next to Krang, so it stays on Speedrun.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    },
     {
      "kind": "general",
      "text": "Forever quest from Krang Stonehoof: win 3 duels against players or Novice Warriors.",
@@ -710,295 +760,41 @@
    ]
   },
   {
-   "id": "mulgore-1-12:043",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Mazzranache from Maur Raincaller"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.2,
-      "y": 60.8,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 766,
-     "label": "Mazzranache"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=766",
-     "label": "Wowhead Classic quest 766"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:034",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Chakuyak from Yaw Sharpmane"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.9,
-      "y": 59.6,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 96130,
-     "label": "Chakuyak"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Forever quest from Yaw Sharpmane in Bloodhoof (needs Rite of Strength done).",
-     "sources": [
-      {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
-      {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
-      }
-     ],
-     "verified": false
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:041",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Kyle's Gone Missing! from Ahab Wheathoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 47.3,
-      "y": 57.6,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 99411,
-     "label": "Kyle's Gone Missing!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Forever quest (returns from The Burning Crusade): feed Kyle the puppy for Ahab Wheathoof in Bloodhoof Village.",
-     "sources": [
-      {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
-      {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
-      }
-     ],
-     "verified": false
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:044",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Rite of Vision to Zarlman Two-Moons"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.9,
-      "y": 61.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 767,
-     "label": "Rite of Vision"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=767",
-     "label": "Wowhead Classic quest 767"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:045",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rite of Vision from Zarlman Two-Moons"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.9,
-      "y": 61.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 771,
-     "label": "Rite of Vision"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=771",
-     "label": "Wowhead Classic quest 771"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
    "id": "mulgore-1-12:047",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Complete Sharing the Land"
+       "t": "South of the village (around Kaga's camp): kill Prairie Wolves for 6 Prairie Wolf Paws and Plainstriders for 4 Plainstrider Talons."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Keep the Prairie Wolf Heart and the Plainstrider Scale for Mazzranache, and the Tender Strider Meat (Adult Plainstriders) for Kyle."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick up 2 Ambercorn from the ground on the way. The acorns lie all over the plains around the village."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Palemane camp south-east of Kaga: kill 10 Palemane Tanners, 8 Palemane Skinners and 5 Palemane Poachers."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Winterhoof Water Well (east of the camp): loot 2 Well Stones around the well."
       }
      ]
     }
@@ -1008,8 +804,58 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 36.8,
-      "y": 66.1,
+      "x": 49.3,
+      "y": 69.5,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 748,
+     "objective": 1,
+     "label": "Poison Water"
+    },
+    {
+     "type": "complete",
+     "questId": 748,
+     "objective": 2,
+     "label": "Poison Water"
+    },
+    {
+     "type": "complete",
+     "questId": 766,
+     "objective": 1,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "complete",
+     "questId": 766,
+     "objective": 3,
+     "label": "Mazzranache"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.9,
+      "y": 70.1,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 771,
+     "objective": 2,
+     "label": "Rite of Vision"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 49.5,
+      "y": 73.4,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1031,384 +877,13 @@
      "questId": 745,
      "objective": 3,
      "label": "Sharing the Land"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=745",
-     "label": "Wowhead Classic quest 745"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2949
-     ],
-     "name": "Palemane Tanner",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 36.8,
-      "y": 66.1
-     },
-     "radius": 13,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2949",
-       "label": "Wowhead Classic NPC 2949"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2950
-     ],
-     "name": "Palemane Skinner",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 36.3,
-      "y": 66.1
-     },
-     "radius": 14.1,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2950",
-       "label": "Wowhead Classic NPC 2950"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2951
-     ],
-     "name": "Palemane Poacher",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 33,
-      "y": 64.8
-     },
-     "radius": 1.5,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2951",
-       "label": "Wowhead Classic NPC 2951"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:052",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Chakuyak"
-      }
-     ]
-    }
-   ],
-   "actions": [
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 39.5,
-      "y": 66.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 96130,
-     "objective": 1,
-     "label": "Chakuyak"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      268558
-     ],
-     "name": "Chakuyak (Chakuyak's Pelt)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 39.5,
-      "y": 66.2
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=268558",
-       "label": "Wowhead Classic NPC 268558"
-      },
-      {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
-       "label": "github.com"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:080",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Finish Dwarven Digging at the Bael'dun forge, 33.1, 54.8, before you leave the Palemane hills."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 33.1,
-      "y": 54.8,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 746,
-     "objective": 1,
-     "label": "Dwarven Digging"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=746",
-     "label": "Wowhead Classic quest 746"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "mulgore-1-12:048",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept The Longwalkers from Perith Stormhoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 33.1,
-      "y": 66,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 98430,
-     "label": "The Longwalkers"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    },
-    {
-     "url": "https://wowfdb.com/zones/thunder-bluff/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "Forever escort: Perith Stormhoof is held at Palemane Rock, where you kill the Palemane for Sharing the Land. The turn-in is Cairne in Thunder Bluff.",
-     "sources": [
-      {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
-      {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
-      },
-      {
-       "url": "https://wowfdb.com/zones/thunder-bluff/",
-       "label": "WoW Forever DB zone page"
-      }
-     ],
-     "verified": false
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:049",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Start the escort at Perith Stormhoof, 33.11, 65.95, and stay with him until he is clear."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 33.11,
-      "y": 65.95,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 98430,
-     "objective": 1,
-     "label": "The Longwalkers"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=98430",
-     "label": "Wowhead Classic quest 98430"
-    },
-    {
-     "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
-     "label": "D1: escort despawn tip for The Longwalkers"
-    }
-   ],
-   "verified": false,
-   "tips": [
-    {
-     "kind": "general",
-     "text": "The escort NPC can despawn or stall; abandon and re-accept if it vanishes.",
-     "sources": [
-      {
-       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
-       "label": "D1: escort despawn tip for The Longwalkers"
-      }
-     ],
-     "verified": false
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:050",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Rite of Vision"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 44.3,
-      "y": 51.2,
+      "x": 51.84,
+      "y": 67.93,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1418,12 +893,6 @@
      "questId": 771,
      "objective": 1,
      "label": "Rite of Vision"
-    },
-    {
-     "type": "complete",
-     "questId": 771,
-     "objective": 2,
-     "label": "Rite of Vision"
     }
    ],
    "conditions": [],
@@ -1433,319 +902,93 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=771",
-     "label": "Wowhead Classic quest 771"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "pins": [
-    {
-     "kind": "object",
-     "objectId": 2910,
-     "name": "Well Stone",
-     "at": {
-      "mapId": 1412,
-      "zone": "Mulgore",
-      "x": 44.3,
-      "y": 51.2
-     },
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/object=2910",
-       "label": "www.wowhead.com"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "object",
-     "objectId": 2912,
-     "name": "Ambercorn",
-     "at": {
-      "mapId": 1412,
-      "zone": "Mulgore",
-      "x": 47.3,
-      "y": 61.4
-     },
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/object=2912",
-       "label": "www.wowhead.com"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:046",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Poison Water"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 48.7,
-      "y": 50.9,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 748,
-     "objective": 1,
-     "label": "Poison Water"
-    },
-    {
-     "type": "complete",
-     "questId": 748,
-     "objective": 2,
-     "label": "Poison Water"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
     {
      "url": "https://www.wowhead.com/classic/quest=748",
-     "label": "Wowhead Classic quest 748"
+     "label": "Wowhead quest 748 (Poison Water)"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=766",
+     "label": "Wowhead quest 766 (Mazzranache)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=771",
+     "label": "Wowhead quest 771 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=745",
+     "label": "Wowhead quest 745 (Sharing the Land)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   },
+   "verified": false,
    "tips": [
     {
      "kind": "general",
-     "text": "Poison Water and Swoop Hunting overlap around Bloodhoof; kill the swoops and prairie wolves as you go.",
+     "text": "The old route sent you to Palemane Rock in the far west for Sharing the Land. Our spawn data has a second Palemane camp right here (12 Tanners, 11 Skinners, 7 Poachers at 46-53, 72-74), next to Poison Water and the well, so the west trip only needs Palemane Rock for Perith.",
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/quest=748",
-       "label": "Wowhead Classic quest 748"
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
       },
       {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
-    }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2959
-     ],
-     "name": "Prairie Stalker (Prairie Wolf Paw)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 48.7,
-      "y": 50.9
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2959",
-       "label": "Wowhead Classic NPC 2959"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4758",
-       "label": "Wowhead Classic item 4758"
-      }
-     ],
-     "verified": true
+     "verified": false
     },
     {
-     "kind": "mobArea",
-     "npcIds": [
-      2958
-     ],
-     "name": "Prairie Wolf (Prairie Wolf Paw)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 40,
-      "y": 68.2
-     },
-     "radius": 4,
+     "kind": "general",
+     "text": "Rite of Vision used to point at the Thunderhorn well in the north. The Winterhoof well has the same Well Stones and is next to this field.",
      "sources": [
       {
-       "url": "https://www.wowhead.com/classic/npc=2958",
-       "label": "Wowhead Classic NPC 2958"
+       "url": "https://github.com/Questie/QuestieDB",
+       "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
       },
       {
-       "url": "https://www.wowhead.com/classic/item=4758",
-       "label": "Wowhead Classic item 4758"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2957
-     ],
-     "name": "Elder Plainstrider (Plainstrider Talon)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 49.8,
-      "y": 34.8
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2957",
-       "label": "Wowhead Classic NPC 2957"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4759",
-       "label": "Wowhead Classic item 4759"
-      }
-     ],
-     "verified": true
+     "verified": false
     }
    ]
   },
   {
-   "id": "mulgore-1-12:051",
+   "id": "mulgore-1-12:074",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Complete Swoop Hunting"
+       "t": "Malah Longwind (east, near the zone edge): turn in Longwalker Malah, accept Grim Tidings."
       }
      ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 48.2,
-      "y": 50.1,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
-    {
-     "type": "complete",
-     "questId": 761,
-     "objective": 1,
-     "label": "Swoop Hunting"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=761",
-     "label": "Wowhead Classic quest 761"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2970
-     ],
-     "name": "Swoop (Trophy Swoop Quill)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 48.2,
-      "y": 50.1
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2970",
-       "label": "Wowhead Classic NPC 2970"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4769",
-       "label": "Wowhead Classic item 4769"
-      }
-     ],
-     "verified": true
-    },
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      2971
-     ],
-     "name": "Taloned Swoop (Trophy Swoop Quill)",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 50.9,
-      "y": 31.9
-     },
-     "radius": 4,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=2971",
-       "label": "Wowhead Classic NPC 2971"
-      },
-      {
-       "url": "https://www.wowhead.com/classic/item=4769",
-       "label": "Wowhead Classic item 4769"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:053",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
     {
      "segments": [
       {
-       "t": "Turn in Chakuyak to Yaw Sharpmane"
+       "t": "Morin Cloudstalker (on the way back west): accept The Ravaged Caravan."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Ravaged Caravan (north): read the Sealed Supply Crate to turn it in, and accept the next The Ravaged Caravan from it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Morin Cloudstalker: turn in The Ravaged Caravan, accept The Venture Co. and Supervisor Fizsprocket."
       }
      ]
     }
@@ -1755,37 +998,136 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 46.9,
-      "y": 59.6,
+      "x": 57.6,
+      "y": 63.2,
       "zone": "Mulgore",
       "exact": true
      }
     },
     {
      "type": "turnin",
-     "questId": 96130,
-     "label": "Chakuyak"
+     "questId": 99079,
+     "label": "Longwalker Malah"
+    },
+    {
+     "type": "accept",
+     "questId": 99081,
+     "label": "Grim Tidings"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 54.76,
+      "y": 64.27,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 749,
+     "label": "The Ravaged Caravan"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 51.9,
+      "y": 53.4,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 749,
+     "label": "The Ravaged Caravan"
+    },
+    {
+     "type": "accept",
+     "questId": 751,
+     "label": "The Ravaged Caravan"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 54.76,
+      "y": 64.27,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 751,
+     "label": "The Ravaged Caravan"
+    },
+    {
+     "type": "accept",
+     "questId": 764,
+     "label": "The Venture Co."
+    },
+    {
+     "type": "accept",
+     "questId": 765,
+     "label": "Supervisor Fizsprocket"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced"
+    "balanced",
+    "speedrun"
    ],
    "sources": [
     {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
+     "url": "https://www.wowhead.com/classic/quest=99079",
+     "label": "Wowhead quest 99079 (Longwalker Malah)"
     },
     {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
+     "url": "https://www.wowhead.com/classic/quest=99081",
+     "label": "Wowhead quest 99081 (Grim Tidings)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=749",
+     "label": "Wowhead quest 749 (The Ravaged Caravan)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=751",
+     "label": "Wowhead quest 751 (The Ravaged Caravan)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=764",
+     "label": "Wowhead quest 764 (The Venture Co.)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=765",
+     "label": "Wowhead quest 765 (Supervisor Fizsprocket)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": false
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The crate is about a minute north of Morin. Doing both halves of The Ravaged Caravan now (1,060 XP) means the Venture Co. trip later starts straight from the village.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "mulgore-1-12:054",
@@ -1794,7 +1136,49 @@
     {
      "segments": [
       {
-       "t": "Turn in Poison Water to Mull Thunderhorn"
+       "t": "Town stop 2 (level ~7.5). Hand in, then take the west quests:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: turn in Poison Water, accept Winterhoof Cleansing."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Baine Bloodhoof: turn in Sharing the Land, accept Dwarven Digging."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Zarlman Two-Moons: turn in Rite of Vision, accept the next Rite of Vision."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Feed Kyle the Frenzied (the puppy running around the village) a Tender Strider Meat, then turn in Kyle's Gone Missing! to Ahab Wheathoof."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Brave Wildrunner: turn in Grim Tidings, accept Our Ancient Enemy. Baine: turn it in, accept Drive Them Out."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 6 spells, and 7 if you have it (Bloodhoof has every Tauren class trainer)."
       }
      ]
     }
@@ -1804,8 +1188,8 @@
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 47.5,
-      "y": 63.6,
+      "x": 47.52,
+      "y": 63.58,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1814,61 +1198,126 @@
      "type": "turnin",
      "questId": 748,
      "label": "Poison Water"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=748",
-     "label": "Wowhead Classic quest 748"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:055",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Winterhoof Cleansing from Mull Thunderhorn"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 47.5,
-      "y": 63.6,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
      "questId": 754,
      "label": "Winterhoof Cleansing"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.67,
+      "y": 63.38,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 745,
+     "label": "Sharing the Land"
+    },
+    {
+     "type": "accept",
+     "questId": 746,
+     "label": "Dwarven Digging"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.88,
+      "y": 61.19,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 771,
+     "label": "Rite of Vision"
+    },
+    {
+     "type": "accept",
+     "questId": 772,
+     "label": "Rite of Vision"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.3,
+      "y": 62.3,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99411,
+     "objective": 1,
+     "label": "Kyle's Gone Missing!"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 47.28,
+      "y": 57.63,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99411,
+     "label": "Kyle's Gone Missing!"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.68,
+      "y": 63.83,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99081,
+     "label": "Grim Tidings"
+    },
+    {
+     "type": "accept",
+     "questId": 99101,
+     "label": "Our Ancient Enemy"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 46.67,
+      "y": 63.38,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99101,
+     "label": "Our Ancient Enemy"
+    },
+    {
+     "type": "accept",
+     "questId": 99080,
+     "label": "Drive Them Out"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
     }
    ],
    "conditions": [],
@@ -1878,24 +1327,68 @@
    ],
    "sources": [
     {
-     "url": "https://www.wowhead.com/classic/quest=754",
-     "label": "Wowhead Classic quest 754"
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
+     "url": "https://www.wowhead.com/classic/quest=748",
+     "label": "Wowhead quest 748 (Poison Water)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=754",
+     "label": "Wowhead quest 754 (Winterhoof Cleansing)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=745",
+     "label": "Wowhead quest 745 (Sharing the Land)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=746",
+     "label": "Wowhead quest 746 (Dwarven Digging)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=771",
+     "label": "Wowhead quest 771 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=772",
+     "label": "Wowhead quest 772 (Rite of Vision)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99411",
+     "label": "Wowhead quest 99411 (Kyle's Gone Missing!)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99081",
+     "label": "Wowhead quest 99081 (Grim Tidings)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99101",
+     "label": "Wowhead quest 99101 (Our Ancient Enemy)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99080",
+     "label": "Wowhead quest 99080 (Drive Them Out)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
+   "verified": false,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "First Aid: Camping 101: First Aid finishes at skill 20. Bandage between pulls with the Linen Cloth from the gnolls and hand it in to Vira Younghoof at any later stop.",
+     "sources": [
       {
-       "race": "Tauren"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
-     ]
-    ]
-   }
+     ],
+     "verified": false
+    }
+   ]
   },
   {
    "id": "mulgore-1-12:065",
@@ -1904,7 +1397,14 @@
     {
      "segments": [
       {
-       "t": "Use the Winterhoof Cleansing Totem at the Well Stone cluster at 51.84, 67.93."
+       "t": "Winterhoof Water Well (a minute south-east): use the Winterhoof Cleansing Totem at the well."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Mull Thunderhorn: turn in Winterhoof Cleansing, accept Thunderhorn Totem."
       }
      ]
     }
@@ -1923,51 +1423,14 @@
     {
      "type": "complete",
      "questId": 754,
-     "objective": 1,
      "label": "Winterhoof Cleansing"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=754",
-     "label": "Wowhead Classic quest 754"
-    }
-   ],
-   "verified": false,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:066",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Winterhoof Cleansing to Mull Thunderhorn"
-      }
-     ]
-    }
-   ],
-   "actions": [
+    },
     {
      "type": "goto",
      "at": {
       "mapId": 1412,
-      "x": 47.5,
-      "y": 63.6,
+      "x": 47.52,
+      "y": 63.58,
       "zone": "Mulgore",
       "exact": true
      }
@@ -1976,56 +1439,6 @@
      "type": "turnin",
      "questId": 754,
      "label": "Winterhoof Cleansing"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=754",
-     "label": "Wowhead Classic quest 754"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:067",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Thunderhorn Totem from Mull Thunderhorn"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 47.5,
-      "y": 63.6,
-      "zone": "Mulgore",
-      "exact": true
-     }
     },
     {
      "type": "accept",
@@ -2040,540 +1453,36 @@
    ],
    "sources": [
     {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=754",
+     "label": "Wowhead quest 754 (Winterhoof Cleansing)"
+    },
+    {
      "url": "https://www.wowhead.com/classic/quest=756",
-     "label": "Wowhead Classic quest 756"
+     "label": "Wowhead quest 756 (Thunderhorn Totem)"
     },
     {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true,
-   "filter": {
-    "any": [
-     [
-      {
-       "race": "Tauren"
-      }
-     ]
-    ]
-   }
-  },
-  {
-   "id": "mulgore-1-12:056",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Sharing the Land to Baine Bloodhoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.7,
-      "y": 63.4,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 745,
-     "label": "Sharing the Land"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=745",
-     "label": "Wowhead Classic quest 745"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:057",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Rite of Vision to Zarlman Two-Moons"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.9,
-      "y": 61.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 771,
-     "label": "Rite of Vision"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=771",
-     "label": "Wowhead Classic quest 771"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:058",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Rite of Vision from Zarlman Two-Moons"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.9,
-      "y": 61.2,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 772,
-     "label": "Rite of Vision"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=772",
-     "label": "Wowhead Classic quest 772"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:059",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Swoop Hunting to Harken Windtotem"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 47.7,
-      "y": 62.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 761,
-     "label": "Swoop Hunting"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://www.wowhead.com/classic/quest=761",
-     "label": "Wowhead Classic quest 761"
-    },
-    {
-     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
-     "label": "QuestieDB Forever data (GPL-3.0)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "mulgore-1-12:060",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Kyle's Gone Missing!"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.3,
-      "y": 62.3,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 99411,
-     "objective": 1,
-     "label": "Kyle's Gone Missing!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false,
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      277154
-     ],
-     "name": "Kyle the Frenzied",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 46.3,
-      "y": 62.3
-     },
-     "radius": 1.5,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=277154",
-       "label": "Wowhead Classic NPC 277154"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
-   ]
-  },
-  {
-   "id": "mulgore-1-12:061",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Kyle's Gone Missing! to Ahab Wheathoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 47.3,
-      "y": 57.6,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 99411,
-     "label": "Kyle's Gone Missing!"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "mulgore-1-12:062",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Accept Longwalker Malah from Brave Wildrunner"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 46.7,
-      "y": 63.8,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "accept",
-     "questId": 99079,
-     "label": "Longwalker Malah"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false
-  },
-  {
-   "id": "mulgore-1-12:063",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Complete Sparring Match"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 48.8,
-      "y": 63.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 99108,
-     "objective": 1,
-     "label": "Sparring Match"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+     "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
     }
    ],
    "verified": false,
    "tips": [
     {
      "kind": "general",
-     "text": "Duel players in Bloodhoof or beat Novice Warriors.",
+     "text": "This is the only hop out of town in Mulgore. It is about 1.5 minutes for 540 XP and it opens Thunderhorn Totem, which you do on the west trip you start next.",
      "sources": [
       {
-       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-       "label": "github.com"
-      },
-      {
-       "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-       "label": "Hardcore Helper WoW Forever zone guide"
-      },
-      {
-       "url": "https://wowfdb.com/zones/mulgore/",
-       "label": "WoW Forever DB zone page"
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/mulgore-plan.md",
+       "label": "Mulgore route plan 2026-11-27 (research pass, not play-tested yet)"
       }
      ],
      "verified": false
     }
-   ],
-   "pins": [
-    {
-     "kind": "mobArea",
-     "npcIds": [
-      10721
-     ],
-     "name": "Novice Warrior",
-     "mapId": 1412,
-     "zone": "Mulgore",
-     "center": {
-      "x": 48.8,
-      "y": 63.7
-     },
-     "radius": 1.5,
-     "sources": [
-      {
-       "url": "https://www.wowhead.com/classic/npc=10721",
-       "label": "Wowhead Classic NPC 10721"
-      },
-      {
-       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
-       "label": "QuestieDB Forever data (GPL-3.0)"
-      }
-     ],
-     "verified": true
-    }
    ]
-  },
-  {
-   "id": "mulgore-1-12:064",
-   "tags": {
-    "label": "New in Forever"
-   },
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Turn in Sparring Match to Krang Stonehoof"
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 1412,
-      "x": 48.4,
-      "y": 63.7,
-      "zone": "Mulgore",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 99108,
-     "label": "Sparring Match"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/quests.json",
-     "label": "github.com"
-    },
-    {
-     "url": "https://www.hardcorehelper.com/forever/guides/mulgore-leveling-guide",
-     "label": "Hardcore Helper WoW Forever zone guide"
-    },
-    {
-     "url": "https://wowfdb.com/zones/mulgore/",
-     "label": "WoW Forever DB zone page"
-    }
-   ],
-   "verified": false
   }
  ]
 }
