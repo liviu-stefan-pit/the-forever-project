@@ -1,0 +1,820 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle-alliance",
+ "title": "Leaving Zephras Isle",
+ "steps": [
+  {
+   "id": "zephras-isle-alliance:turnin-93835",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Confront Lorthuna to Elaadrin Evengale; Turn in Avenged Tenfold to Elaadrin Evengale; Accept The Fate of Zephras from Elaadrin Evengale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.6,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93835,
+     "label": "Confront Lorthuna"
+    },
+    {
+     "type": "turnin",
+     "questId": 92834,
+     "label": "Avenged Tenfold"
+    },
+    {
+     "type": "accept",
+     "questId": 94369,
+     "label": "The Fate of Zephras"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93835",
+     "label": "Wowhead Forever quest 93835"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92834",
+     "label": "Wowhead Forever quest 92834"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94369",
+     "label": "Wowhead Forever quest 94369"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94369",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Fate of Zephras: Talaanis Shadowsong; Turn in The Fate of Zephras to Talaanis Shadowsong; Accept What Comes Next from Talaanis Shadowsong"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.2,
+      "y": 76.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94369,
+     "objective": 1,
+     "label": "The Fate of Zephras"
+    },
+    {
+     "type": "turnin",
+     "questId": 94369,
+     "label": "The Fate of Zephras"
+    },
+    {
+     "type": "accept",
+     "questId": 93089,
+     "label": "What Comes Next"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94369",
+     "label": "Wowhead Forever quest 94369"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93089",
+     "label": "Wowhead Forever quest 93089"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252476
+     ],
+     "name": "Talaanis Shadowsong",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 66.2,
+      "y": 76.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252476",
+       "label": "Wowhead NPC 252476"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92741",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unwelcome Visitors to Iaadaria Bitterwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.3,
+      "y": 79.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92741,
+     "label": "Unwelcome Visitors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92741",
+     "label": "Wowhead Forever quest 92741"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94491",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Fate of the Den to Lotheluum Starbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.0,
+      "y": 75.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94491,
+     "label": "The Fate of the Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94491",
+     "label": "Wowhead Forever quest 94491"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94896",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Aid For The Refugees to Ealaane Nimbuswalker; Turn in The Fate of a Loved One to Ealaane Nimbuswalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.0,
+      "y": 74.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94896,
+     "label": "Aid For The Refugees"
+    },
+    {
+     "type": "turnin",
+     "questId": 94897,
+     "label": "The Fate of a Loved One"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94896",
+     "label": "Wowhead Forever quest 94896"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94897",
+     "label": "Wowhead Forever quest 94897"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94003",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Skybreaker Bulwark to Seena Skybreaker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.9,
+      "y": 72.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94003,
+     "label": "The Skybreaker Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94003",
+     "label": "Wowhead Forever quest 94003"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:trainer-9",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Last visit to your Valanaar trainer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Last visit to your Valanaar trainer."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93089",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in What Comes Next to Elaadrin Evengale; Accept The Magical City of Dalaran from Elaadrin Evengale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.6,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93089,
+     "label": "What Comes Next"
+    },
+    {
+     "type": "accept",
+     "questId": 94946,
+     "label": "The Magical City of Dalaran"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93089",
+     "label": "Wowhead Forever quest 93089"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94946",
+     "label": "Wowhead Forever quest 94946"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "When you are done on the island, take the Valanaar Skycutter from the town dock to Dalaran. There is no way back by flight path.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93089",
+       "label": "Wowhead Forever quest 93089"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=94946",
+       "label": "Wowhead Forever quest 94946"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94946",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Magical City of Dalaran to Denaaris Stargale; Accept Welcome to Azeroth from Denaaris Stargale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1416,
+      "x": 12.3,
+      "y": 56.3,
+      "zone": "Alterac Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94946,
+     "label": "The Magical City of Dalaran"
+    },
+    {
+     "type": "accept",
+     "questId": 94947,
+     "label": "Welcome to Azeroth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94946",
+     "label": "Wowhead Forever quest 94946"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94947",
+     "label": "Wowhead Forever quest 94947"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94947",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Welcome to Azeroth: Skyborne Portal to Stormwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1416,
+      "x": 12.0,
+      "y": 56.2,
+      "zone": "Alterac Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94947,
+     "objective": 1,
+     "label": "Welcome to Azeroth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94947",
+     "label": "Wowhead Forever quest 94947"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Skyborne Portal to Stormwind stands next to Denaaris Stargale.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94947",
+       "label": "Wowhead Forever quest 94947"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94947",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Welcome to Azeroth to Highlord Bolvar Fordragon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 80.2,
+      "y": 38.4,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94947,
+     "label": "Welcome to Azeroth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94947",
+     "label": "Wowhead Forever quest 94947"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Leave the capital tour (Exploring the Alliance) for later and head straight out to Westfall.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94947",
+       "label": "Wowhead Forever quest 94947"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93963",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Exploring the Alliance from Highlord Bolvar Fordragon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 80.2,
+      "y": 38.4,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93963,
+     "label": "Exploring the Alliance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93963",
+     "label": "Wowhead Forever quest 93963"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Exploring the Alliance is a tour of Stormwind, Ironforge and Darnassus. Start it now and finish the visits whenever your route passes those cities.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93963",
+       "label": "Wowhead Forever quest 93963"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93963",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Exploring the Alliance: Randal Emerson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 79.0,
+      "y": 45.0,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93963,
+     "objective": 1,
+     "label": "Exploring the Alliance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93963",
+     "label": "Wowhead Forever quest 93963"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Randal Emerson is inside Stormwind Keep. The other three visits stay in your log for later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93963",
+       "label": "Wowhead Forever quest 93963"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      275491
+     ],
+     "name": "Randal Emerson",
+     "mapId": 1453,
+     "zone": "Stormwind City",
+     "center": {
+      "x": 79.0,
+      "y": 45.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=275491",
+       "label": "Wowhead NPC 275491"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

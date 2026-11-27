@@ -1,0 +1,2315 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle-alliance",
+ "title": "Thendal Grove",
+ "steps": [
+  {
+   "id": "zephras-isle-alliance:accept-92460",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Coming of Age from Ailee Farheart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.8,
+      "y": 23.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92460,
+     "label": "Coming of Age"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92460",
+     "label": "Wowhead Forever quest 92460"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Your first stop is the small camp in the northwest of the island. Everything in this segment stays within a few minutes of the watchtower.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92460",
+       "label": "Wowhead Forever quest 92460"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92460",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Coming of Age to Rorian the Dayseeker; Accept Harmony in Balance from Rorian the Dayseeker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92460,
+     "label": "Coming of Age"
+    },
+    {
+     "type": "accept",
+     "questId": 92461,
+     "label": "Harmony in Balance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92460",
+     "label": "Wowhead Forever quest 92460"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92461",
+     "label": "Wowhead Forever quest 92461"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92462",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Infestation Investigation from Elatrell Featherlight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92462,
+     "label": "Infestation Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92462",
+     "label": "Wowhead Forever quest 92462"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92461",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Harmony in Balance: 8 Juvenile Vuldren; Complete Infestation Investigation: 8 Pesky Cirrusfly"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.2,
+      "y": 25.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92461,
+     "objective": 1,
+     "label": "Harmony in Balance"
+    },
+    {
+     "type": "complete",
+     "questId": 92462,
+     "objective": 1,
+     "label": "Infestation Investigation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92461",
+     "label": "Wowhead Forever quest 92461"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92462",
+     "label": "Wowhead Forever quest 92462"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Juvenile Vuldren and Pesky Cirrusflies share the same meadow east of camp; kill both as they come.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92461",
+       "label": "Wowhead Forever quest 92461"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92462",
+       "label": "Wowhead Forever quest 92462"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      250873
+     ],
+     "name": "Juvenile Vuldren",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 45.2,
+      "y": 25.3
+     },
+     "radius": 5.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=250873",
+       "label": "Wowhead NPC 250873"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251169
+     ],
+     "name": "Pesky Cirrusfly",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 46.0,
+      "y": 26.8
+     },
+     "radius": 3.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251169",
+       "label": "Wowhead NPC 251169"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92461",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Harmony in Balance to Rorian the Dayseeker; Accept Elemental Unrest from Rorian the Dayseeker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92461,
+     "label": "Harmony in Balance"
+    },
+    {
+     "type": "accept",
+     "questId": 92464,
+     "label": "Elemental Unrest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92461",
+     "label": "Wowhead Forever quest 92461"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92464",
+     "label": "Wowhead Forever quest 92464"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92481",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Student of the Arcane from Rorian the Dayseeker; Turn in A Student of the Arcane to Dorii Brightwhisper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92481,
+     "label": "A Student of the Arcane"
+    },
+    {
+     "type": "turnin",
+     "questId": 92481,
+     "label": "A Student of the Arcane"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92481",
+     "label": "Wowhead Forever quest 92481"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92482",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Way of the Hunter from Rorian the Dayseeker; Turn in The Way of the Hunter to Tai'ree Farsight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92482,
+     "label": "The Way of the Hunter"
+    },
+    {
+     "type": "turnin",
+     "questId": 92482,
+     "label": "The Way of the Hunter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92482",
+     "label": "Wowhead Forever quest 92482"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92483",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept At Home in the Shadows from Rorian the Dayseeker; Turn in At Home in the Shadows to Akeri Duskblade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92483,
+     "label": "At Home in the Shadows"
+    },
+    {
+     "type": "turnin",
+     "questId": 92483,
+     "label": "At Home in the Shadows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92483",
+     "label": "Wowhead Forever quest 92483"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92485",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Student of Nature from Rorian the Dayseeker; Turn in A Student of Nature to Xyton Silverwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92485,
+     "label": "A Student of Nature"
+    },
+    {
+     "type": "turnin",
+     "questId": 92485,
+     "label": "A Student of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92485",
+     "label": "Wowhead Forever quest 92485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92532",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Warrior's Path from Rorian the Dayseeker; Turn in The Warrior's Path to Blademaster Ren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92532,
+     "label": "The Warrior's Path"
+    },
+    {
+     "type": "turnin",
+     "questId": 92532,
+     "label": "The Warrior's Path"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92532",
+     "label": "Wowhead Forever quest 92532"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:trainer",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your level 2 spells while you are at the class trainer."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your level 2 spells while you are at the class trainer."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92597",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Reading the Leylines from Falorne Fallwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.3,
+      "y": 24.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92597,
+     "label": "Reading the Leylines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92597",
+     "label": "Wowhead Forever quest 92597"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92462",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Infestation Investigation to Elatrell Featherlight; Accept The Cirrusfly Queen from Elatrell Featherlight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92462,
+     "label": "Infestation Investigation"
+    },
+    {
+     "type": "accept",
+     "questId": 92463,
+     "label": "The Cirrusfly Queen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92462",
+     "label": "Wowhead Forever quest 92462"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92463",
+     "label": "Wowhead Forever quest 92463"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93552",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Harvesting Windstones from Dalia the Collector"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93552,
+     "label": "Harvesting Windstones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93552",
+     "label": "Wowhead Forever quest 93552"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-94414",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Anchors of Zephras from Halaan Hawk-Eye; Complete The Anchors of Zephras: Halaan Hawk-Eye; Turn in The Anchors of Zephras to Halaan Hawk-Eye"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.8,
+      "y": 24.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94414,
+     "label": "The Anchors of Zephras"
+    },
+    {
+     "type": "complete",
+     "questId": 94414,
+     "objective": 1,
+     "label": "The Anchors of Zephras"
+    },
+    {
+     "type": "turnin",
+     "questId": 94414,
+     "label": "The Anchors of Zephras"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94414",
+     "label": "Wowhead Forever quest 94414"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Just talk to Halaan and look through his gift at the pylon; it takes a few seconds.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94414",
+       "label": "Wowhead Forever quest 94414"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      257554
+     ],
+     "name": "Halaan Hawk-Eye",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 43.8,
+      "y": 24.1
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=257554",
+       "label": "Wowhead NPC 257554"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92474",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Falling With Style from Myriaal Mistwake"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.7,
+      "y": 24.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92474,
+     "label": "Falling With Style"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92474",
+     "label": "Wowhead Forever quest 92474"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Climb the watchtower, jump off and use Walk on Air before you land. Turn it in to Rorian right after.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92474",
+       "label": "Wowhead Forever quest 92474"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92474",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Falling With Style to Rorian the Dayseeker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92474,
+     "label": "Falling With Style"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92474",
+     "label": "Wowhead Forever quest 92474"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92464",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Elemental Unrest to Yala Windwatcher; Accept Agitators from Yala Windwatcher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 47.2,
+      "y": 22.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92464,
+     "label": "Elemental Unrest"
+    },
+    {
+     "type": "accept",
+     "questId": 92465,
+     "label": "Agitators"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92464",
+     "label": "Wowhead Forever quest 92464"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92465",
+     "label": "Wowhead Forever quest 92465"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92465",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Agitators: 7 Al'Aketh Convert, 6 Roiling Winds; Complete Reading the Leylines: Ley Line"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 47.1,
+      "y": 20.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92465,
+     "objective": 1,
+     "label": "Agitators"
+    },
+    {
+     "type": "complete",
+     "questId": 92465,
+     "objective": 2,
+     "label": "Agitators"
+    },
+    {
+     "type": "complete",
+     "questId": 92597,
+     "objective": 1,
+     "label": "Reading the Leylines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92465",
+     "label": "Wowhead Forever quest 92465"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92597",
+     "label": "Wowhead Forever quest 92597"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Ley Line sits just north of the Al'Aketh camp. Use Read Leyline on it while you clear Converts and Roiling Winds.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92465",
+       "label": "Wowhead Forever quest 92465"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92597",
+       "label": "Wowhead Forever quest 92597"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251160,
+      251143
+     ],
+     "name": "Al'Aketh Convert",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 47.1,
+      "y": 20.2
+     },
+     "radius": 5.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251160",
+       "label": "Wowhead NPC 251160"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92465",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Agitators to Yala Windwatcher; Accept Return to Rorian from Yala Windwatcher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 47.2,
+      "y": 22.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92465,
+     "label": "Agitators"
+    },
+    {
+     "type": "accept",
+     "questId": 92469,
+     "label": "Return to Rorian"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92465",
+     "label": "Wowhead Forever quest 92465"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92469",
+     "label": "Wowhead Forever quest 92469"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92463",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Cirrusfly Queen: Cirrusfly Queen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 48.4,
+      "y": 28.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92463,
+     "objective": 1,
+     "label": "The Cirrusfly Queen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92463",
+     "label": "Wowhead Forever quest 92463"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Cirrusfly Queen is alone south of the meadow; at level 3 she is an easy kill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92463",
+       "label": "Wowhead Forever quest 92463"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251404
+     ],
+     "name": "Cirrusfly Queen",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 48.4,
+      "y": 28.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251404",
+       "label": "Wowhead NPC 251404"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93552",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Harvesting Windstones: 15 Windstone Cluster"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 45.0,
+      "y": 26.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93552,
+     "objective": 1,
+     "label": "Harvesting Windstones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93552",
+     "label": "Wowhead Forever quest 93552"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Raw Windstones dot the meadow between the Queen and camp. Loot them on the walk back.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93552",
+       "label": "Wowhead Forever quest 93552"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93552",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Harvesting Windstones to Dalia the Collector"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93552,
+     "label": "Harvesting Windstones"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93552",
+     "label": "Wowhead Forever quest 93552"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92463",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Cirrusfly Queen to Elatrell Featherlight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.4,
+      "y": 24.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92463,
+     "label": "The Cirrusfly Queen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92463",
+     "label": "Wowhead Forever quest 92463"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92597",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Reading the Leylines to Falorne Fallwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 43.3,
+      "y": 24.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92597,
+     "label": "Reading the Leylines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92597",
+     "label": "Wowhead Forever quest 92597"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92469",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Rorian to Rorian the Dayseeker; Accept Aetheen of the Gales from Rorian the Dayseeker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.0,
+      "y": 23.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92469,
+     "label": "Return to Rorian"
+    },
+    {
+     "type": "accept",
+     "questId": 92471,
+     "label": "Aetheen of the Gales"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92469",
+     "label": "Wowhead Forever quest 92469"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92471",
+     "label": "Wowhead Forever quest 92471"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92471",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Aetheen of the Gales to Aetheen of the Gales; Accept Foul Matriarch from Aetheen of the Gales"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.8,
+      "y": 23.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92471,
+     "label": "Aetheen of the Gales"
+    },
+    {
+     "type": "accept",
+     "questId": 92470,
+     "label": "Foul Matriarch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92471",
+     "label": "Wowhead Forever quest 92471"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92470",
+     "label": "Wowhead Forever quest 92470"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92473",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Aggressive Encroachment from Valreaa Valewind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.4,
+      "y": 25.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92473,
+     "label": "Aggressive Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92473",
+     "label": "Wowhead Forever quest 92473"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92544",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Al'Aketh Thugs from Hanaa Nightwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 38.3,
+      "y": 30.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92544,
+     "label": "Al'Aketh Thugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92544",
+     "label": "Wowhead Forever quest 92544"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hanaa Nightwind stands on the road southwest of camp, next to the ursera den.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92544",
+       "label": "Wowhead Forever quest 92544"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92473",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Aggressive Encroachment: 6 Scrawny Ursera Claw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 39.7,
+      "y": 28.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92473,
+     "objective": 1,
+     "label": "Aggressive Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92473",
+     "label": "Wowhead Forever quest 92473"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Scrawny Ursera are all over the slope west of camp; the claws drop often.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92473",
+       "label": "Wowhead Forever quest 92473"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      250926
+     ],
+     "name": "Scrawny Ursera",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 39.7,
+      "y": 28.3
+     },
+     "radius": 6.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=250926",
+       "label": "Wowhead NPC 250926"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92470",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Foul Matriarch: 8 Ursera Scavenger, Head of Urs'anah"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 37.8,
+      "y": 26.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92470,
+     "objective": 1,
+     "label": "Foul Matriarch"
+    },
+    {
+     "type": "complete",
+     "questId": 92470,
+     "objective": 2,
+     "label": "Foul Matriarch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92470",
+     "label": "Wowhead Forever quest 92470"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Urs'anah is the den mother at the back of the den. Clear the Scavengers on the way in so you fight her alone.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92470",
+       "label": "Wowhead Forever quest 92470"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      250937,
+      251115
+     ],
+     "name": "Ursera Scavenger",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 37.8,
+      "y": 26.1
+     },
+     "radius": 3.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=250937",
+       "label": "Wowhead NPC 250937"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92544",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Al'Aketh Thugs: 6 Al'Aketh Brute, 4 Al'Aketh Neophyte, Malduko Cloudcrush"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 37.3,
+      "y": 32.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92544,
+     "objective": 1,
+     "label": "Al'Aketh Thugs"
+    },
+    {
+     "type": "complete",
+     "questId": 92544,
+     "objective": 2,
+     "label": "Al'Aketh Thugs"
+    },
+    {
+     "type": "complete",
+     "questId": 92544,
+     "objective": 3,
+     "label": "Al'Aketh Thugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92544",
+     "label": "Wowhead Forever quest 92544"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Malduko Cloudcrush stands in the middle of the thug camp. Pull Brutes and Neophytes one or two at a time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92544",
+       "label": "Wowhead Forever quest 92544"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "If you are low on health after Malduko, die and take the spirit healer; it is close to Shen'dar.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92544",
+       "label": "Wowhead Forever quest 92544"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251145,
+      251448,
+      256935
+     ],
+     "name": "Al'Aketh Brute",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 37.3,
+      "y": 32.8
+     },
+     "radius": 3.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251145",
+       "label": "Wowhead NPC 251145"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92544",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Al'Aketh Thugs to Hanaa Nightwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 38.3,
+      "y": 30.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92544,
+     "label": "Al'Aketh Thugs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92544",
+     "label": "Wowhead Forever quest 92544"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92473",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Aggressive Encroachment to Valreaa Valewind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.4,
+      "y": 25.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92473,
+     "label": "Aggressive Encroachment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92473",
+     "label": "Wowhead Forever quest 92473"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92470",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Foul Matriarch to Aetheen of the Gales; Accept The Next Step from Aetheen of the Gales; Accept The Adventurer from Aetheen of the Gales"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 42.8,
+      "y": 23.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92470,
+     "label": "Foul Matriarch"
+    },
+    {
+     "type": "accept",
+     "questId": 92472,
+     "label": "The Next Step"
+    },
+    {
+     "type": "accept",
+     "questId": 96638,
+     "label": "The Adventurer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92470",
+     "label": "Wowhead Forever quest 92470"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92472",
+     "label": "Wowhead Forever quest 92472"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96638",
+     "label": "Wowhead Forever quest 96638"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:trainer-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your new spells before you leave Thendal Grove."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your new spells before you leave Thendal Grove."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

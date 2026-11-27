@@ -1,0 +1,1955 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle-alliance",
+ "title": "Valanaar and the Missing Scholar",
+ "steps": [
+  {
+   "id": "zephras-isle-alliance:home-255940",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Donaal Downbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.2,
+      "y": 72.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Donaal Downbreeze"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=255940",
+     "label": "Wowhead NPC 255940"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Valanaar is the island's city. Set your hearthstone at the inn; the rest of the island is quested from here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=255940",
+       "label": "Wowhead NPC 255940"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 255940,
+     "name": "Donaal Downbreeze",
+     "at": {
+      "mapId": 2521,
+      "zone": "Zephras Isle",
+      "x": 62.2,
+      "y": 72.6
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=255940",
+       "label": "Wowhead NPC 255940"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92679",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Blood Tithe from Alvarion Windfield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92679",
+     "label": "Wowhead Forever quest 92679"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93317",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Crab Season from Nyalah Brightfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 60.6,
+      "y": 72.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93317,
+     "label": "Crab Season"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93317",
+     "label": "Wowhead Forever quest 93317"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93948",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Deliver the Signet to Talaanis Shadowsong"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.2,
+      "y": 76.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93948,
+     "label": "Deliver the Signet"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93948",
+     "label": "Wowhead Forever quest 93948"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92701",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in To Valanaar to Valennia Stormfist; Accept The Supreme Magister from Valennia Stormfist; Accept Bugged from Valennia Stormfist"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.1,
+      "y": 76.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92701,
+     "label": "To Valanaar"
+    },
+    {
+     "type": "accept",
+     "questId": 92699,
+     "label": "The Supreme Magister"
+    },
+    {
+     "type": "accept",
+     "questId": 93949,
+     "label": "Bugged"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92701",
+     "label": "Wowhead Forever quest 92701"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92699",
+     "label": "Wowhead Forever quest 92699"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93949",
+     "label": "Wowhead Forever quest 93949"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92699",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Supreme Magister to Elaadrin Evengale; Accept A Grand Adventure from Elaadrin Evengale; Complete A Grand Adventure: Elaadrin Evengale; Turn in A Grand Adventure to Elaadrin Evengale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.6,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92699,
+     "label": "The Supreme Magister"
+    },
+    {
+     "type": "accept",
+     "questId": 92709,
+     "label": "A Grand Adventure"
+    },
+    {
+     "type": "complete",
+     "questId": 92709,
+     "objective": 1,
+     "label": "A Grand Adventure"
+    },
+    {
+     "type": "turnin",
+     "questId": 92709,
+     "label": "A Grand Adventure"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92699",
+     "label": "Wowhead Forever quest 92699"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92709",
+     "label": "Wowhead Forever quest 92709"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "A Grand Adventure is just a conversation with Elaadrin Evengale.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92699",
+       "label": "Wowhead Forever quest 92699"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92709",
+       "label": "Wowhead Forever quest 92709"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252475
+     ],
+     "name": "Elaadrin Evengale",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 66.6,
+      "y": 79.9
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252475",
+       "label": "Wowhead NPC 252475"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:accept-92727",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Missing Scholar from Dondallion Whisperwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.3,
+      "y": 79.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92727,
+     "label": "The Missing Scholar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92727",
+     "label": "Wowhead Forever quest 92727"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93949",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Bugged: 8 Skyhopper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.2,
+      "y": 76.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93949,
+     "objective": 1,
+     "label": "Bugged"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93949",
+     "label": "Wowhead Forever quest 93949"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Skyhoppers hop around the streets and gardens of Valanaar. Kill them on the way out of town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93949",
+       "label": "Wowhead Forever quest 93949"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251727
+     ],
+     "name": "Skyhopper",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 63.2,
+      "y": 76.4
+     },
+     "radius": 5.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251727",
+       "label": "Wowhead NPC 251727"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92727",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Missing Scholar at the Bloodstained Satchel; Accept The Missing Scholar at the Bloodstained Satchel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 53.3,
+      "y": 72.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92727,
+     "label": "The Missing Scholar"
+    },
+    {
+     "type": "accept",
+     "questId": 92849,
+     "label": "The Missing Scholar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92727",
+     "label": "Wowhead Forever quest 92727"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92849",
+     "label": "Wowhead Forever quest 92849"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92849",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Missing Scholar: Fillion Flamebreeze, Dusty Bedroll"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 51.4,
+      "y": 67.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92849,
+     "objective": 1,
+     "label": "The Missing Scholar"
+    },
+    {
+     "type": "complete",
+     "questId": 92849,
+     "objective": 2,
+     "label": "The Missing Scholar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92849",
+     "label": "Wowhead Forever quest 92849"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Check the bedroll first, then follow the trail north to find Fillion.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92849",
+       "label": "Wowhead Forever quest 92849"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      253002
+     ],
+     "name": "Fillion Flamebreeze",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 51.4,
+      "y": 67.4
+     },
+     "radius": 2.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=253002",
+       "label": "Wowhead NPC 253002"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92849",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Missing Scholar to Fillion Flamebreeze; Accept The Missing Scholar from Fillion Flamebreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 52.1,
+      "y": 69.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92849,
+     "label": "The Missing Scholar"
+    },
+    {
+     "type": "accept",
+     "questId": 92850,
+     "label": "The Missing Scholar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92849",
+     "label": "Wowhead Forever quest 92849"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92850",
+     "label": "Wowhead Forever quest 92850"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92850",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Missing Scholar: Shriekling Matriarch's Head"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 52.0,
+      "y": 66.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92850,
+     "objective": 1,
+     "label": "The Missing Scholar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92850",
+     "label": "Wowhead Forever quest 92850"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Shriekling Matriarch sits deep in the Shriekling Den. Pull the shrieklings on the way in one at a time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92850",
+       "label": "Wowhead Forever quest 92850"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      253283
+     ],
+     "name": "Shriekling Matriarch",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 52.0,
+      "y": 66.2
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=253283",
+       "label": "Wowhead NPC 253283"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93317",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Crab Season: 6 Windsong Crawler Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.3,
+      "y": 72.0,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93317,
+     "objective": 1,
+     "label": "Crab Season"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93317",
+     "label": "Wowhead Forever quest 93317"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Windsong Crawlers line the water just west of town and along the stream north to the den; the meat drops often.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93317",
+       "label": "Wowhead Forever quest 93317"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      254588
+     ],
+     "name": "Windsong Crawler",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 56.3,
+      "y": 72.0
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=254588",
+       "label": "Wowhead NPC 254588"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:hs",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hearth to Valanaar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Hearth to Valanaar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Hearth back to Valanaar if it is up; the turn-ins are all in town.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93949",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bugged to Valennia Stormfist"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.1,
+      "y": 76.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93949,
+     "label": "Bugged"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93949",
+     "label": "Wowhead Forever quest 93949"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-92850",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Missing Scholar to Fillion Flamebreeze; Accept Fillion's Mission from Fillion Flamebreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.2,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92850,
+     "label": "The Missing Scholar"
+    },
+    {
+     "type": "accept",
+     "questId": 99260,
+     "label": "Fillion's Mission"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92850",
+     "label": "Wowhead Forever quest 92850"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99260",
+     "label": "Wowhead Forever quest 99260"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-99260",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Fillion's Mission to Elaadrin Evengale; Accept Catching Wind from Elaadrin Evengale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.6,
+      "y": 79.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99260,
+     "label": "Fillion's Mission"
+    },
+    {
+     "type": "accept",
+     "questId": 92840,
+     "label": "Catching Wind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99260",
+     "label": "Wowhead Forever quest 99260"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92840",
+     "label": "Wowhead Forever quest 92840"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93317",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Crab Season to Nyalah Brightfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 60.6,
+      "y": 72.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93317,
+     "label": "Crab Season"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93317",
+     "label": "Wowhead Forever quest 93317"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93791",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Speak with Belann from Anathamaas Aetherwind; Turn in Speak with Belann to Belann Windwood; Accept Boughs in the Wind from Belann Windwood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.9,
+      "y": 80.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93791,
+     "label": "Speak with Belann"
+    },
+    {
+     "type": "turnin",
+     "questId": 93791,
+     "label": "Speak with Belann"
+    },
+    {
+     "type": "accept",
+     "questId": 93797,
+     "label": "Boughs in the Wind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93791",
+     "label": "Wowhead Forever quest 93791"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93797",
+     "label": "Wowhead Forever quest 93797"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-94006",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Great Ursera Spirit from Lotheluum Starbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.0,
+      "y": 75.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94006,
+     "label": "The Great Ursera Spirit"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94006",
+     "label": "Wowhead Forever quest 94006"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-94003",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Skybreaker Bulwark from Seena Skybreaker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.9,
+      "y": 72.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94003,
+     "label": "The Skybreaker Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94003",
+     "label": "Wowhead Forever quest 94003"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:trainer-6",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells and talents in Valanaar."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your level 10 spells and talents in Valanaar."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "zephras-isle-alliance:accept-94978",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Taming the Beast from Quel'ana Quickgale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.6,
+      "y": 72.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94978,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94978",
+     "label": "Wowhead Forever quest 94978"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Quel'ana Quickgale starts the taming chain directly; you don't need the breadcrumb from Shen'dar. All three tames are just outside the west gate.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94978",
+       "label": "Wowhead Forever quest 94978"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94978",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Windsong Crawler"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 57.0,
+      "y": 73.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94978,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94978",
+     "label": "Wowhead Forever quest 94978"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Use the Taming Rod on a Windsong Crawler by the water west of town, then return the rod.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94978",
+       "label": "Wowhead Forever quest 94978"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      254588
+     ],
+     "name": "Windsong Crawler",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 57.0,
+      "y": 73.1
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=254588",
+       "label": "Wowhead NPC 254588"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94978",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Quel'ana Quickgale; Accept Taming the Beast from Quel'ana Quickgale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.6,
+      "y": 72.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94978,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94979,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94978",
+     "label": "Wowhead Forever quest 94978"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94979",
+     "label": "Wowhead Forever quest 94979"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94979",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Ornery Galestrider"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.4,
+      "y": 71.1,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94979,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94979",
+     "label": "Wowhead Forever quest 94979"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ornery Galestriders graze on the same slope west of town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94979",
+       "label": "Wowhead Forever quest 94979"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251707
+     ],
+     "name": "Ornery Galestrider",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 58.4,
+      "y": 71.1
+     },
+     "radius": 7.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251707",
+       "label": "Wowhead NPC 251707"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94979",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Quel'ana Quickgale; Accept Taming the Beast from Quel'ana Quickgale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.6,
+      "y": 72.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94979,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94013,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94979",
+     "label": "Wowhead Forever quest 94979"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94013",
+     "label": "Wowhead Forever quest 94013"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94013",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Vuldren Alpha"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.1,
+      "y": 71.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94013,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94013",
+     "label": "Wowhead Forever quest 94013"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Vuldren Alphas roam among the galestriders. After the quest you can keep this pet or tame another.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94013",
+       "label": "Wowhead Forever quest 94013"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      250874
+     ],
+     "name": "Vuldren Alpha",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 58.1,
+      "y": 71.5
+     },
+     "radius": 6.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=250874",
+       "label": "Wowhead NPC 250874"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94013",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Quel'ana Quickgale; Accept Training the Beast from Quel'ana Quickgale; Turn in Training the Beast to Quel'dora Quickgale"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.6,
+      "y": 72.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94013,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94050,
+     "label": "Training the Beast"
+    },
+    {
+     "type": "turnin",
+     "questId": 94050,
+     "label": "Training the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94013",
+     "label": "Wowhead Forever quest 94013"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94050",
+     "label": "Wowhead Forever quest 94050"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

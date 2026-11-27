@@ -1,0 +1,579 @@
+{
+  "id": "zephras-isle-alliance",
+  "title": "Zephras Isle 1-13 (Alliance Skyborne)",
+  "levels": [
+    1,
+    13
+  ],
+  "next": "westfall-12-17",
+  "races": [
+    "Skyborne"
+  ],
+  "maps": [
+    2521
+  ],
+  "enterLevel": 1,
+  "carry": [
+    93963
+  ],
+  "segments": [
+    {
+      "file": "01-thendal-grove.json",
+      "title": "Thendal Grove",
+      "routes": null,
+      "steps": [
+        {
+          "do": "A 92460",
+          "tip": "Your first stop is the small camp in the northwest of the island. Everything in this segment stays within a few minutes of the watchtower."
+        },
+        "T 92460; A 92461",
+        "A 92462",
+        {
+          "do": "C 92461; C 92462",
+          "tip": "Juvenile Vuldren and Pesky Cirrusflies share the same meadow east of camp; kill both as they come."
+        },
+        "T 92461; A 92464",
+        "A 92481; T 92481",
+        "A 92482; T 92482",
+        "A 92483; T 92483",
+        "A 92485; T 92485",
+        "A 92532; T 92532",
+        {
+          "do": "trainer",
+          "text": "Train your level 2 spells while you are at the class trainer."
+        },
+        "A 92597",
+        "T 92462; A 92463",
+        {
+          "do": "A 93552"
+        },
+        {
+          "do": "A 94414; C 94414; T 94414",
+          "tip": "Just talk to Halaan and look through his gift at the pylon; it takes a few seconds."
+        },
+        {
+          "do": "A 92474",
+          "tip": "Climb the watchtower, jump off and use Walk on Air before you land. Turn it in to Rorian right after."
+        },
+        "T 92474",
+        "T 92464; A 92465",
+        {
+          "do": "C 92465; C 92597",
+          "tip": "The Ley Line sits just north of the Al'Aketh camp. Use Read Leyline on it while you clear Converts and Roiling Winds."
+        },
+        "T 92465; A 92469",
+        {
+          "do": "C 92463",
+          "tip": "The Cirrusfly Queen is alone south of the meadow; at level 3 she is an easy kill."
+        },
+        {
+          "do": "C 93552",
+          "tip": "The Raw Windstones dot the meadow between the Queen and camp. Loot them on the walk back."
+        },
+        {
+          "do": "T 93552"
+        },
+        "T 92463",
+        "T 92597",
+        "T 92469; A 92471",
+        "T 92471; A 92470",
+        "A 92473",
+        {
+          "do": "A 92544",
+          "tip": "Hanaa Nightwind stands on the road southwest of camp, next to the ursera den."
+        },
+        {
+          "do": "C 92473",
+          "tip": "Scrawny Ursera are all over the slope west of camp; the claws drop often."
+        },
+        {
+          "do": "C 92470",
+          "tip": "Urs'anah is the den mother at the back of the den. Clear the Scavengers on the way in so you fight her alone."
+        },
+        {
+          "do": "C 92544",
+          "tip": "Malduko Cloudcrush stands in the middle of the thug camp. Pull Brutes and Neophytes one or two at a time.",
+          "speed": "If you are low on health after Malduko, die and take the spirit healer; it is close to Shen'dar."
+        },
+        "T 92544",
+        "T 92473",
+        "T 92470; A 92472; A 96638",
+        {
+          "do": "trainer",
+          "text": "Train your new spells before you leave Thendal Grove."
+        }
+      ]
+    },
+    {
+      "file": "02-shendar-village.json",
+      "title": "Shen'dar Village, the highlands and Falaath",
+      "routes": null,
+      "steps": [
+        {
+          "do": "T 96638; A 96101; C 96101; T 96101",
+          "tip": "Raan Wildwind is at the west edge of the village. Sit by his campfire until Boosted Rest appears, about a minute."
+        },
+        {
+          "do": "A 96646",
+          "prof": "Camping 101: Cooking is a free 270 XP: you only need to learn Cooking from Zerril Softbreeze in the village."
+        },
+        {
+          "do": "A 97965",
+          "routes": "b",
+          "prof": "Camping 101: First Aid is handed in once your First Aid skill is high enough. Make Linen Bandages from cloth while you quest."
+        },
+        "T 92472; A 93461",
+        {
+          "do": "C 93461.1; A 92596; C 92596; T 92596; A 94413",
+          "tip": "Sit on the bench next to Rathiril Sunlance to start the conversation."
+        },
+        {
+          "do": "C 93461.2",
+          "tip": "Coriella Calmbreeze is the innkeeper at the north end of the village."
+        },
+        "T 93461; A 92517",
+        "A 93319; A 92516",
+        "A 93951",
+        "A 92515",
+        {
+          "do": "C 96646; T 96646",
+          "text": "Learn Cooking from Zerril Softbreeze and turn in Camping 101: Cooking."
+        },
+        "A 93318",
+        {
+          "do": "trainer",
+          "text": "Train at your class trainer in Shen'dar Village if you have new ranks."
+        },
+        {
+          "do": "C 94413",
+          "tip": "The Novice Seers stand in the open highlands just west of the village. They are casters, so close the gap fast."
+        },
+        {
+          "do": "C 92515",
+          "at": [
+            42.0,
+            51.0
+          ],
+          "tip": "Prideclaws roam the whole highlands. Pick up pelts from here on whenever one is in your way; you don't need a dedicated loop."
+        },
+        "T 94413",
+        {
+          "do": "C 92517; C 93319",
+          "tip": "Highlands Bandits camp north of Shen'dar. Badwind Bennic is at the far end of their camp and drops a windstone too."
+        },
+        "T 92517; T 93319; A 93036",
+        "T 93036; A 92529",
+        {
+          "do": "C 93318",
+          "tip": "Vulgara the Insatiable is a single level 8 rare-style mob south of the village. Pull her alone."
+        },
+        {
+          "do": "C 92516; C 93951",
+          "tip": "Hippogryph Down feathers lie on the ground among the nests. The Matriarch stands at the west end of the area."
+        },
+        "T 92529; A 92528",
+        {
+          "do": "C 92528",
+          "tip": "Walk through Falaath Village with the Mark of Akir up; the cult leaves you alone. Inspect the wardrobe in the house."
+        },
+        "T 93951",
+        "T 92516",
+        "T 93318",
+        "T 92515",
+        "T 92528; A 92550; A 93926",
+        "A 92551",
+        {
+          "do": "trainer",
+          "text": "Train before going back into Falaath."
+        },
+        {
+          "do": "C 92550.1,2; C 92551",
+          "at": [
+            47.9,
+            56.7
+          ],
+          "tip": "This time the cult is hostile. The Stolen Supplies drop from the Stormcallers you kill for Havoc in the Highlands."
+        },
+        {
+          "do": "C 92550.3",
+          "tip": "Commander Cyclas waits at the south end of the village. Clear around him first."
+        },
+        "C 93926; T 93926; A 93927",
+        {
+          "do": "C 93927",
+          "tip": "Kill Skypriest Aanders by the tower, then loot the note and the two keepsakes from the bodies around it."
+        },
+        "T 92551",
+        "T 92550; T 93927; A 92701; A 93948",
+        {
+          "do": "C 97965; T 97965",
+          "routes": "b",
+          "prof": "Hand this in at Naleeia Tattermend once your First Aid is high enough; skip it if you are not there yet."
+        },
+        {
+          "do": "trainer",
+          "text": "Last training in Shen'dar. Valanaar has every trainer from here on.",
+          "speed": "The run to Valanaar is long. Use it to drink up and sell; there is no flight path on the island."
+        }
+      ]
+    },
+    {
+      "file": "03-valanaar.json",
+      "title": "Valanaar and the Missing Scholar",
+      "routes": null,
+      "steps": [
+        {
+          "do": "home 255940",
+          "tip": "Valanaar is the island's city. Set your hearthstone at the inn; the rest of the island is quested from here."
+        },
+        "A 92679",
+        {
+          "do": "A 93317"
+        },
+        "T 93948",
+        "T 92701; A 92699; A 93949",
+        {
+          "do": "T 92699; A 92709; C 92709; T 92709",
+          "tip": "A Grand Adventure is just a conversation with Elaadrin Evengale."
+        },
+        "A 92727",
+        {
+          "do": "C 93949",
+          "tip": "Skyhoppers hop around the streets and gardens of Valanaar. Kill them on the way out of town."
+        },
+        "T 92727; A 92849",
+        {
+          "do": "C 92849",
+          "tip": "Check the bedroll first, then follow the trail north to find Fillion."
+        },
+        "T 92849; A 92850",
+        {
+          "do": "C 92850",
+          "tip": "The Shriekling Matriarch sits deep in the Shriekling Den. Pull the shrieklings on the way in one at a time."
+        },
+        {
+          "do": "C 93317",
+          "tip": "Windsong Crawlers line the water just west of town and along the stream north to the den; the meat drops often."
+        },
+        {
+          "do": "hs Valanaar",
+          "routes": "s",
+          "speed": "Hearth back to Valanaar if it is up; the turn-ins are all in town."
+        },
+        "T 93949",
+        "T 92850; A 99260",
+        "T 99260; A 92840",
+        {
+          "do": "T 93317"
+        },
+        "A 93791; T 93791; A 93797",
+        "A 94006",
+        "A 94003",
+        {
+          "do": "trainer",
+          "text": "Train your level 10 spells and talents in Valanaar."
+        },
+        {
+          "do": "A 94978",
+          "tip": "Quel'ana Quickgale starts the taming chain directly; you don't need the breadcrumb from Shen'dar. All three tames are just outside the west gate."
+        },
+        {
+          "do": "C 94978",
+          "tip": "Use the Taming Rod on a Windsong Crawler by the water west of town, then return the rod."
+        },
+        "T 94978; A 94979",
+        {
+          "do": "C 94979",
+          "tip": "Ornery Galestriders graze on the same slope west of town."
+        },
+        "T 94979; A 94013",
+        {
+          "do": "C 94013",
+          "tip": "Vuldren Alphas roam among the galestriders. After the quest you can keep this pet or tame another."
+        },
+        "T 94013; A 94050; T 94050"
+      ]
+    },
+    {
+      "file": "04-windfield-orchard.json",
+      "title": "Overlook Standing Stones and the Windfield Orchard",
+      "routes": null,
+      "steps": [
+        {
+          "do": "C 92840",
+          "tip": "Use the Index Esoteria on the Windstone Formations at the Overlook Standing Stones."
+        },
+        {
+          "do": "C 93797",
+          "tip": "The Wind-Infused Bough is right next to the standing stones."
+        },
+        "C 92679; T 92679; A 92682; A 92683; A 92684",
+        {
+          "do": "C 92682",
+          "tip": "Stormapples sit on the ground under the orchard trees; the Hungry Bandits wander between them.",
+          "speed": "Do the apples, dust, galestriders and masks in one sweep; the Highwaymen hills are next to the dust field."
+        },
+        {
+          "do": "A 92698; T 92698",
+          "tip": "The Malfunctioning Cyclone Construct is by the barn. Talk to it, then report to Aamelia."
+        },
+        {
+          "do": "C 92683",
+          "tip": "Flutterfly Dust floats over the Gustberry Lowlands east of the orchard."
+        },
+        {
+          "do": "C 92684",
+          "at": [
+            50.5,
+            80.0
+          ],
+          "tip": "Ornery Galestriders graze all over the lowlands."
+        },
+        "T 92682; T 92683; T 92684; A 92685",
+        {
+          "do": "C 92685",
+          "tip": "Bandit Highwaymen hold the hills north of the orchard. Not every one drops a mask."
+        },
+        "T 92685; A 92693",
+        {
+          "do": "C 92693",
+          "tip": "Tell Aamelia you are ready and follow her to Ferauu the Bludgeon. Kill his guards first."
+        },
+        "T 92693; A 92703",
+        "T 92703",
+        "T 92840; A 92860; A 92834",
+        "T 92860; A 93320",
+        "T 93797",
+        {
+          "do": "trainer",
+          "text": "Train if you have new ranks."
+        }
+      ]
+    },
+    {
+      "file": "05-eastern-watch-and-turncoat.json",
+      "title": "The eastern watchtower and the turncoat",
+      "routes": null,
+      "steps": [
+        "T 93320; A 92642; A 92645",
+        {
+          "do": "T 94006; A 94638",
+          "tip": "Urs'endris waits at the falls just north of the watchtower."
+        },
+        {
+          "do": "C 92642; C 92645",
+          "tip": "Healers and Brawlers camp below the tower. Kill the Healers first, they keep their friends alive. Commander Belguilos stands in the middle."
+        },
+        "T 92642; T 92645; A 92880",
+        "T 92880; A 92881",
+        "T 92881; A 92643",
+        {
+          "do": "A 98512",
+          "tip": "Fendaal Windstone stands next to the turncoat's house."
+        },
+        "C 92643",
+        "T 92643; A 92644",
+        {
+          "do": "C 98512",
+          "tip": "The Assassins stealth around the house. Kill them as they show up while you work the area."
+        },
+        "T 98512",
+        {
+          "do": "C 94638",
+          "tip": "Ur'endra roams the slope south of the house toward the Shriekling Den."
+        },
+        {
+          "do": "hs Valanaar",
+          "routes": "s",
+          "speed": "Hearth to Valanaar; everything next is in town."
+        },
+        "T 92644; A 94568; C 94568; T 94568; A 92640",
+        "C 92640.1",
+        "C 92640.3",
+        {
+          "do": "C 92640.2",
+          "tip": "Ayessa Dawnsinger is at the west side of Valanaar; the other two are in the council area."
+        },
+        "T 92640; A 93065",
+        {
+          "do": "A 92741",
+          "routes": "b"
+        },
+        {
+          "do": "A 94484",
+          "routes": "b",
+          "tip": "Lotheluum's Shadowgale Forest chain is a long optional block, but it fills the gap to level 13 comfortably."
+        },
+        {
+          "do": "A 94896; A 94897",
+          "routes": "b"
+        },
+        {
+          "do": "trainer",
+          "text": "Train before the assault on the Shrine of Akir."
+        },
+        "C 93065; T 93065; A 92947"
+      ]
+    },
+    {
+      "file": "06-shrine-of-akir.json",
+      "title": "Shrine of Akir and Shadowgale Forest",
+      "routes": null,
+      "steps": [
+        {
+          "do": "T 94638",
+          "tip": "On the way north to the shrine, hand in Strength and Mercy at the falls."
+        },
+        {
+          "do": "C 92947.1,2,3; C 92834",
+          "tip": "Guardians, Spiritcallers and Blademasters fill the shrine grounds. The Windstone Charms for Elaadrin drop from the same cultists.",
+          "speed": "Fight on the edge of the shrine and pull two at a time; you need about 21 kills here and the charms come along with them."
+        },
+        {
+          "do": "C 94003",
+          "tip": "Zaal Stormshield stands at the west side of the shrine. He carries the shield you need."
+        },
+        "C 92947.4; T 92947; A 93958",
+        {
+          "do": "T 93958; A 93835",
+          "speed": "Speedrun skips Shadowgale Forest and goes straight up the portal."
+        },
+        {
+          "do": "T 94484; A 94485; A 94486; A 94487",
+          "routes": "b"
+        },
+        {
+          "do": "A 93165",
+          "routes": "b"
+        },
+        {
+          "do": "C 94487; C 93165",
+          "routes": "b",
+          "tip": "Footsoldiers and Stormchasers drop both the heirlooms and the ears."
+        },
+        {
+          "do": "C 94485",
+          "routes": "b"
+        },
+        {
+          "do": "T 93165",
+          "routes": "b"
+        },
+        {
+          "do": "A 93159; C 93159; T 93159; A 93160; A 93172",
+          "routes": "b"
+        },
+        {
+          "do": "C 94896; C 94897",
+          "routes": "b",
+          "tip": "The belongings lie in the ruins of Ban'aethal. Resaan is at the north end of the ruins."
+        },
+        {
+          "do": "C 93172",
+          "routes": "b"
+        },
+        {
+          "do": "C 93160",
+          "routes": "b"
+        },
+        {
+          "do": "C 94486; C 92741",
+          "routes": "b",
+          "tip": "Shadowgale Shrieklings drop feathers and talons together."
+        },
+        {
+          "do": "T 93160; T 93172",
+          "routes": "b"
+        },
+        {
+          "do": "T 94485; T 94486; T 94487; A 94488; A 94489",
+          "routes": "b"
+        },
+        {
+          "do": "C 94488",
+          "routes": "b",
+          "tip": "Commander Haalien drops his head and the Ripped Missive; loot both."
+        },
+        {
+          "do": "A 94490",
+          "routes": "b"
+        },
+        {
+          "do": "C 94489",
+          "routes": "b",
+          "tip": "Heal the wounded druids inside the Nightfang Den and find Jorel at the back."
+        },
+        {
+          "do": "T 94488; T 94489; T 94490; A 94491",
+          "routes": "b"
+        },
+        {
+          "do": "goto",
+          "at": [
+            68.4,
+            50.6
+          ],
+          "text": "Take the portal at the Shrine of Akir up to the Rohashi Spires.",
+          "tip": "The spire is packed with Skypriests and Honor Guards, with a level 13 elite on the way. Rest to full before each pull."
+        },
+        {
+          "do": "goto",
+          "at": [
+            75.2,
+            53.2
+          ],
+          "text": "Fight to High Priestess Lorthuna at the far end of the Rohashi Spires and join the confrontation. You are sent back to Valanaar afterwards."
+        }
+      ]
+    },
+    {
+      "file": "07-leaving-zephras.json",
+      "title": "Leaving Zephras Isle",
+      "routes": null,
+      "steps": [
+        "T 93835; T 92834; A 94369",
+        "C 94369; T 94369; A 93089",
+        {
+          "do": "T 92741",
+          "routes": "b"
+        },
+        {
+          "do": "T 94491",
+          "routes": "b"
+        },
+        {
+          "do": "T 94896; T 94897",
+          "routes": "b"
+        },
+        "T 94003",
+        {
+          "do": "trainer",
+          "text": "Last visit to your Valanaar trainer."
+        },
+        {
+          "do": "T 93089; A 94946",
+          "tip": "When you are done on the island, take the Valanaar Skycutter from the town dock to Dalaran. There is no way back by flight path."
+        },
+        "T 94946; A 94947",
+        {
+          "do": "C 94947",
+          "tip": "The Skyborne Portal to Stormwind stands next to Denaaris Stargale."
+        },
+        {
+          "do": "T 94947",
+          "speed": "Leave the capital tour (Exploring the Alliance) for later and head straight out to Westfall."
+        },
+        {
+          "do": "A 93963",
+          "routes": "b",
+          "tip": "Exploring the Alliance is a tour of Stormwind, Ironforge and Darnassus. Start it now and finish the visits whenever your route passes those cities."
+        },
+        {
+          "do": "C 93963.1",
+          "routes": "b",
+          "tip": "Randal Emerson is inside Stormwind Keep. The other three visits stay in your log for later."
+        }
+      ]
+    }
+  ]
+}

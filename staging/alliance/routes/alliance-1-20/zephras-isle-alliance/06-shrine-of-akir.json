@@ -1,0 +1,1874 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "zephras-isle-alliance",
+ "title": "Shrine of Akir and Shadowgale Forest",
+ "steps": [
+  {
+   "id": "zephras-isle-alliance:turnin-94638",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Strength and Mercy to Urs'endris"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 69.8,
+      "y": 61.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94638,
+     "label": "Strength and Mercy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94638",
+     "label": "Wowhead Forever quest 94638"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "On the way north to the shrine, hand in Strength and Mercy at the falls.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94638",
+       "label": "Wowhead Forever quest 94638"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92947",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Making Our Move: 7 Al'Aketh Guardian, 7 Al'Aketh Spiritcaller, 7 Al'Aketh Blademaster; Complete Avenged Tenfold: 10 Al'Aketh Windstone Charm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.1,
+      "y": 51.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 1,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 2,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 3,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "complete",
+     "questId": 92834,
+     "objective": 1,
+     "label": "Avenged Tenfold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92947",
+     "label": "Wowhead Forever quest 92947"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92834",
+     "label": "Wowhead Forever quest 92834"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Guardians, Spiritcallers and Blademasters fill the shrine grounds. The Windstone Charms for Elaadrin drop from the same cultists.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92947",
+       "label": "Wowhead Forever quest 92947"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92834",
+       "label": "Wowhead Forever quest 92834"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Fight on the edge of the shrine and pull two at a time; you need about 21 kills here and the charms come along with them.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92947",
+       "label": "Wowhead Forever quest 92947"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92834",
+       "label": "Wowhead Forever quest 92834"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252762,
+      252763,
+      252765
+     ],
+     "name": "Al'Aketh Guardian",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 63.1,
+      "y": 51.4
+     },
+     "radius": 5.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252762",
+       "label": "Wowhead NPC 252762"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252664,
+      252665,
+      252762,
+      252763,
+      252764,
+      252765
+     ],
+     "name": "Al'Aketh Stormchaser",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 64.5,
+      "y": 63.4
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252664",
+       "label": "Wowhead NPC 252664"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94003",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Skybreaker Bulwark: Skybreaker Bulwark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 56.6,
+      "y": 50.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94003,
+     "objective": 1,
+     "label": "The Skybreaker Bulwark"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94003",
+     "label": "Wowhead Forever quest 94003"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Zaal Stormshield stands at the west side of the shrine. He carries the shield you need.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94003",
+       "label": "Wowhead Forever quest 94003"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      257196
+     ],
+     "name": "Zaal Stormshield",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 56.6,
+      "y": 50.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=257196",
+       "label": "Wowhead NPC 257196"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-92947-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Making Our Move: Hyusaa Quickbreeze; Turn in Making Our Move to Hyusaa Quickbreeze; Accept The Inner Sanctum from Hyusaa Quickbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.8,
+      "y": 50.5,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92947,
+     "objective": 4,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "turnin",
+     "questId": 92947,
+     "label": "Making Our Move"
+    },
+    {
+     "type": "accept",
+     "questId": 93958,
+     "label": "The Inner Sanctum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92947",
+     "label": "Wowhead Forever quest 92947"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93958",
+     "label": "Wowhead Forever quest 93958"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      253576
+     ],
+     "name": "Hyusaa Quickbreeze",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 63.8,
+      "y": 50.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=253576",
+       "label": "Wowhead NPC 253576"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93958",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Inner Sanctum to Valennia Stormfist; Accept Confront Lorthuna from Valennia Stormfist"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.2,
+      "y": 50.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93958,
+     "label": "The Inner Sanctum"
+    },
+    {
+     "type": "accept",
+     "questId": 93835,
+     "label": "Confront Lorthuna"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93958",
+     "label": "Wowhead Forever quest 93958"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93835",
+     "label": "Wowhead Forever quest 93835"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun skips Shadowgale Forest and goes straight up the portal.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=93958",
+       "label": "Wowhead Forever quest 93958"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=93835",
+       "label": "Wowhead Forever quest 93835"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94484",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Unnerving Silence to Elegael Thornpaw; Accept Tears of the Lady from Elegael Thornpaw; Accept Feathers for Binding from Elegael Thornpaw; Accept Unwanted and Unworthy from Elegael Thornpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.7,
+      "y": 39.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94484,
+     "label": "Unnerving Silence"
+    },
+    {
+     "type": "accept",
+     "questId": 94485,
+     "label": "Tears of the Lady"
+    },
+    {
+     "type": "accept",
+     "questId": 94486,
+     "label": "Feathers for Binding"
+    },
+    {
+     "type": "accept",
+     "questId": 94487,
+     "label": "Unwanted and Unworthy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94484",
+     "label": "Wowhead Forever quest 94484"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94485",
+     "label": "Wowhead Forever quest 94485"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94486",
+     "label": "Wowhead Forever quest 94486"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94487",
+     "label": "Wowhead Forever quest 94487"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93165",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Mercy Falls on Deaf Ears from Vayn Moongaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.8,
+      "y": 35.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93165,
+     "label": "Mercy Falls on Deaf Ears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93165",
+     "label": "Wowhead Forever quest 93165"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94487",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Unwanted and Unworthy: 10 Bloody Heirloom; Complete Mercy Falls on Deaf Ears: 5 Al'Aketh Cultist's Ear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.7,
+      "y": 37.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94487,
+     "objective": 1,
+     "label": "Unwanted and Unworthy"
+    },
+    {
+     "type": "complete",
+     "questId": 93165,
+     "objective": 1,
+     "label": "Mercy Falls on Deaf Ears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94487",
+     "label": "Wowhead Forever quest 94487"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93165",
+     "label": "Wowhead Forever quest 93165"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Footsoldiers and Stormchasers drop both the heirlooms and the ears.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94487",
+       "label": "Wowhead Forever quest 94487"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=93165",
+       "label": "Wowhead Forever quest 93165"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252664,
+      252665
+     ],
+     "name": "Al'Aketh Stormchaser",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 63.7,
+      "y": 37.4
+     },
+     "radius": 4.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252664",
+       "label": "Wowhead NPC 252664"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      252664,
+      252665,
+      252762,
+      252763,
+      252764,
+      252765
+     ],
+     "name": "Al'Aketh Stormchaser",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 64.0,
+      "y": 50.3
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=252664",
+       "label": "Wowhead NPC 252664"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94485",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Tears of the Lady: 8 Lady's Tear Moss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 60.8,
+      "y": 38.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94485,
+     "objective": 1,
+     "label": "Tears of the Lady"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94485",
+     "label": "Wowhead Forever quest 94485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93165",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mercy Falls on Deaf Ears to Vayn Moongaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 63.8,
+      "y": 35.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93165,
+     "label": "Mercy Falls on Deaf Ears"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93165",
+     "label": "Wowhead Forever quest 93165"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:accept-93159",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Strange Hermit from Strange Hermit; Complete The Strange Hermit: Strange Hermit; Turn in The Strange Hermit to Strange Hermit; Accept The Forest's Bounty from Strange Hermit; Accept Free the Hollows from Strange Hermit"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 54.0,
+      "y": 38.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93159,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "complete",
+     "questId": 93159,
+     "objective": 1,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "turnin",
+     "questId": 93159,
+     "label": "The Strange Hermit"
+    },
+    {
+     "type": "accept",
+     "questId": 93160,
+     "label": "The Forest's Bounty"
+    },
+    {
+     "type": "accept",
+     "questId": 93172,
+     "label": "Free the Hollows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93159",
+     "label": "Wowhead Forever quest 93159"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93160",
+     "label": "Wowhead Forever quest 93160"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93172",
+     "label": "Wowhead Forever quest 93172"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251684
+     ],
+     "name": "Strange Hermit",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 54.0,
+      "y": 38.9
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251684",
+       "label": "Wowhead NPC 251684"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94896",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Aid For The Refugees: 8 Abandoned Belongings; Complete The Fate of a Loved One: Resaan's Heirloom"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.2,
+      "y": 32.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94896,
+     "objective": 1,
+     "label": "Aid For The Refugees"
+    },
+    {
+     "type": "complete",
+     "questId": 94897,
+     "objective": 1,
+     "label": "The Fate of a Loved One"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94896",
+     "label": "Wowhead Forever quest 94896"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94897",
+     "label": "Wowhead Forever quest 94897"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The belongings lie in the ruins of Ban'aethal. Resaan is at the north end of the ruins.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94896",
+       "label": "Wowhead Forever quest 94896"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=94897",
+       "label": "Wowhead Forever quest 94897"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      259013
+     ],
+     "name": "Resaan Nimbuswalker",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 57.0,
+      "y": 29.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=259013",
+       "label": "Wowhead NPC 259013"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93172",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Free the Hollows: 10 Wind Hollow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 58.4,
+      "y": 32.4,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93172,
+     "objective": 1,
+     "label": "Free the Hollows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93172",
+     "label": "Wowhead Forever quest 93172"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251676
+     ],
+     "name": "Wind Hollow",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 58.4,
+      "y": 32.4
+     },
+     "radius": 6.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251676",
+       "label": "Wowhead NPC 251676"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:complete-93160",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Forest's Bounty: Zephyrseed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.3,
+      "y": 38.8,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 93160,
+     "objective": 1,
+     "label": "The Forest's Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93160",
+     "label": "Wowhead Forever quest 93160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94486",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Feathers for Binding: 20 Pristine Shriekling Feather; Complete Unwelcome Visitors: 8 Shriekling Talons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 59.2,
+      "y": 38.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94486,
+     "objective": 1,
+     "label": "Feathers for Binding"
+    },
+    {
+     "type": "complete",
+     "questId": 92741,
+     "objective": 1,
+     "label": "Unwelcome Visitors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94486",
+     "label": "Wowhead Forever quest 94486"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92741",
+     "label": "Wowhead Forever quest 92741"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shadowgale Shrieklings drop feathers and talons together.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94486",
+       "label": "Wowhead Forever quest 94486"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92741",
+       "label": "Wowhead Forever quest 92741"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      256092
+     ],
+     "name": "Shadowgale Shriekling",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 59.2,
+      "y": 38.9
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=256092",
+       "label": "Wowhead NPC 256092"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251247,
+      256092
+     ],
+     "name": "Shadowgale Manticore",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 59.2,
+      "y": 38.9
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251247",
+       "label": "Wowhead NPC 251247"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-93160",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Forest's Bounty to Strange Hermit; Turn in Free the Hollows to Strange Hermit"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 54.0,
+      "y": 38.9,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93160,
+     "label": "The Forest's Bounty"
+    },
+    {
+     "type": "turnin",
+     "questId": 93172,
+     "label": "Free the Hollows"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=93160",
+     "label": "Wowhead Forever quest 93160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=93172",
+     "label": "Wowhead Forever quest 93172"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94485",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tears of the Lady to Elegael Thornpaw; Turn in Feathers for Binding to Elegael Thornpaw; Turn in Unwanted and Unworthy to Elegael Thornpaw; Accept The Ties That Bind from Elegael Thornpaw; Accept The Wounds of Betrayal from Elegael Thornpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.7,
+      "y": 39.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94485,
+     "label": "Tears of the Lady"
+    },
+    {
+     "type": "turnin",
+     "questId": 94486,
+     "label": "Feathers for Binding"
+    },
+    {
+     "type": "turnin",
+     "questId": 94487,
+     "label": "Unwanted and Unworthy"
+    },
+    {
+     "type": "accept",
+     "questId": 94488,
+     "label": "The Ties That Bind"
+    },
+    {
+     "type": "accept",
+     "questId": 94489,
+     "label": "The Wounds of Betrayal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94485",
+     "label": "Wowhead Forever quest 94485"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94486",
+     "label": "Wowhead Forever quest 94486"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94487",
+     "label": "Wowhead Forever quest 94487"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94488",
+     "label": "Wowhead Forever quest 94488"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94489",
+     "label": "Wowhead Forever quest 94489"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94488",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Ties That Bind: Commander Haalien's Severed Head"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.5,
+      "y": 36.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94488,
+     "objective": 1,
+     "label": "The Ties That Bind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94488",
+     "label": "Wowhead Forever quest 94488"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Commander Haalien drops his head and the Ripped Missive; loot both.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94488",
+       "label": "Wowhead Forever quest 94488"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      253622
+     ],
+     "name": "Commander Haalien",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 65.5,
+      "y": 36.3
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=253622",
+       "label": "Wowhead NPC 253622"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:accept-94490",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Ripped Missive and accept Ripped Missive"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 65.5,
+      "y": 36.3,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94490,
+     "label": "Ripped Missive"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94490",
+     "label": "Wowhead Forever quest 94490"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:complete-94489",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Wounds of Betrayal: Jorel Windsinger, Naaleos Leafwhisper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 64.9,
+      "y": 33.7,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94489,
+     "objective": 1,
+     "label": "The Wounds of Betrayal"
+    },
+    {
+     "type": "complete",
+     "questId": 94489,
+     "objective": 2,
+     "label": "The Wounds of Betrayal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94489",
+     "label": "Wowhead Forever quest 94489"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Heal the wounded druids inside the Nightfang Den and find Jorel at the back.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94489",
+       "label": "Wowhead Forever quest 94489"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      258130,
+      258134,
+      258137,
+      258138,
+      258275,
+      258277
+     ],
+     "name": "Jorel Windsinger",
+     "mapId": 2521,
+     "zone": "Zephras Isle",
+     "center": {
+      "x": 64.9,
+      "y": 33.7
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=258130",
+       "label": "Wowhead NPC 258130"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:turnin-94488",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Ties That Bind to Elegael Thornpaw; Turn in The Wounds of Betrayal to Elegael Thornpaw; Turn in Ripped Missive to Elegael Thornpaw; Accept The Fate of the Den from Elegael Thornpaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 61.7,
+      "y": 39.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94488,
+     "label": "The Ties That Bind"
+    },
+    {
+     "type": "turnin",
+     "questId": 94489,
+     "label": "The Wounds of Betrayal"
+    },
+    {
+     "type": "turnin",
+     "questId": 94490,
+     "label": "Ripped Missive"
+    },
+    {
+     "type": "accept",
+     "questId": 94491,
+     "label": "The Fate of the Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94488",
+     "label": "Wowhead Forever quest 94488"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94489",
+     "label": "Wowhead Forever quest 94489"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94490",
+     "label": "Wowhead Forever quest 94490"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94491",
+     "label": "Wowhead Forever quest 94491"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "zephras-isle-alliance:goto-151",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the portal at the Shrine of Akir up to the Rohashi Spires."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 68.4,
+      "y": 50.6,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The spire is packed with Skypriests and Honor Guards, with a level 13 elite on the way. Rest to full before each pull.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle-alliance:goto-152",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fight to High Priestess Lorthuna at the far end of the Rohashi Spires and join the confrontation. You are sent back to Valanaar afterwards."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 75.2,
+      "y": 53.2,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}
