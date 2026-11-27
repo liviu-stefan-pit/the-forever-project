@@ -1,0 +1,405 @@
+{
+  "format": 1,
+  "pins": {
+    "questiedb": {
+      "repo": "https://github.com/Questie/QuestieDB",
+      "commit": "5b857c29e32c1f0a6bc095bde64f6c5c05dd86ff",
+      "checkout": "research/external/github/QuestieDB",
+      "baseline": "data/Forever",
+      "eraIds": "data/Classic",
+      "correctionOrder": [
+        "src/corrections/Forever/legacy",
+        "src/corrections/Forever/generated",
+        "src/corrections/Forever/traces",
+        "src/corrections/Forever/forever*Fixes.lua"
+      ]
+    },
+    "evidence": {
+      "traces": "src/corrections/Forever/traces/foreverQuestTraces.lua",
+      "deltaBase": "src/corrections/Forever/generated/foreverBaseQuest.lua",
+      "authoredFixes": "src/corrections/Forever/foreverQuestFixes.lua"
+    },
+    "questie": {
+      "repo": "https://github.com/Questie/Questie",
+      "commit": "99bef7a7b721aefb4ba070029ef91d62e9108d61",
+      "checkout": "research/external/github/Questie"
+    }
+  },
+  "faction": "Alliance (Alliance + neutral quests; Horde-only NPCs dropped unless a kept quest references them)",
+  "coordinates": "zone % (0-100) keyed by AreaTable zone id, Forever map frames (QuestieDB conversion)",
+  "foreverFlag": "true when the id is absent from data/Classic at the same QuestieDB commit",
+  "counts": {
+    "quests": 4230,
+    "questsForever": 1315,
+    "npcs": 9327,
+    "npcsForever": 2389,
+    "objects": 999,
+    "objectsForever": 286,
+    "items": 3058,
+    "itemsForever": 791,
+    "zones": 2815,
+    "questZoneFromGiver": 981,
+    "questsForeverHigh": 1308,
+    "questsForeverLow": 7
+  },
+  "foreverConfidence": "high: id >= 90000 (Forever's own quest id range) or Forever-specific evidence (player traces from Forever clients, or a wowhead.com/forever page cited in the generated delta-base); low: id < 90000 (season-era id reused) with no such evidence",
+  "foreverQuestsByZone": {
+    "unknown": 190,
+    "Mount Hyjal": 138,
+    "Zephras Isle": 122,
+    "Riverglades": 111,
+    "Elwynn Forest": 51,
+    "Ironforge": 50,
+    "Dun Morogh": 48,
+    "Azshara": 42,
+    "Stormwind City": 41,
+    "Undercity": 37,
+    "Wetlands": 32,
+    "Teldrassil": 30,
+    "Shen'dralas": 25,
+    "Duskwood": 24,
+    "Stranglethorn Vale": 23,
+    "Alterac Mountains": 22,
+    "Desolace": 22,
+    "Feralas": 22,
+    "The Hinterlands": 22,
+    "Westfall": 19,
+    "The Barrens": 15,
+    "Tanaris": 14,
+    "Arathi Highlands": 13,
+    "Loch Modan": 12,
+    "Darnassus": 11,
+    "Dustwallow Marsh": 11,
+    "sort:PRIEST": 11,
+    "Ashenvale": 10,
+    "Moonglade": 10,
+    "Blasted Lands": 9,
+    "Darkshore": 9,
+    "Excavation Site: Wetlands": 9,
+    "Eastern Plaguelands": 8,
+    "Swamp of Sorrows": 8,
+    "Felwood": 7,
+    "Hillsbrad Foothills": 6,
+    "Redridge Mountains": 6,
+    "sort:PALADIN": 6,
+    "Badlands": 5,
+    "Stonetalon Mountains": 5,
+    "Winterspring": 5,
+    "City of Dalaran": 4,
+    "Durotar": 4,
+    "Ruins of Lordaeron": 4,
+    "Silverpine Forest": 4,
+    "The Hall of Thanes": 4,
+    "Scarlet Monastery": 3,
+    "Mulgore": 2,
+    "Orgrimmar": 2,
+    "Razorfen Downs": 2,
+    "Thousand Needles": 2,
+    "Un'Goro Crater": 2,
+    "sort:LUNAR_FESTIVAL": 2,
+    "sort:ROGUE": 2,
+    "Anvilmar": 1,
+    "Blackfathom Deeps": 1,
+    "Blackrock Depths": 1,
+    "Burning Steppes": 1,
+    "Dire Maul": 1,
+    "Gnomeregan": 1,
+    "Maraudon": 1,
+    "Stonewrought Dam": 1,
+    "The Deadmines": 1,
+    "Thoradin's Wall": 1,
+    "Warsong Gulch": 1,
+    "Western Plaguelands": 1,
+    "Zul'Farrak": 1,
+    "sort:CAMPING": 1,
+    "sort:INVASION": 1,
+    "sort:SEASONAL": 1,
+    "sort:WARRIOR": 1
+  },
+  "foreverQuestsByZoneConfidence": {
+    "unknown": {
+      "high": 190,
+      "low": 0
+    },
+    "Mount Hyjal": {
+      "high": 138,
+      "low": 0
+    },
+    "Zephras Isle": {
+      "high": 122,
+      "low": 0
+    },
+    "Riverglades": {
+      "high": 111,
+      "low": 0
+    },
+    "Elwynn Forest": {
+      "high": 51,
+      "low": 0
+    },
+    "Ironforge": {
+      "high": 49,
+      "low": 1
+    },
+    "Dun Morogh": {
+      "high": 48,
+      "low": 0
+    },
+    "Azshara": {
+      "high": 42,
+      "low": 0
+    },
+    "Stormwind City": {
+      "high": 41,
+      "low": 0
+    },
+    "Undercity": {
+      "high": 35,
+      "low": 2
+    },
+    "Wetlands": {
+      "high": 32,
+      "low": 0
+    },
+    "Teldrassil": {
+      "high": 29,
+      "low": 1
+    },
+    "Shen'dralas": {
+      "high": 25,
+      "low": 0
+    },
+    "Duskwood": {
+      "high": 24,
+      "low": 0
+    },
+    "Stranglethorn Vale": {
+      "high": 23,
+      "low": 0
+    },
+    "Alterac Mountains": {
+      "high": 22,
+      "low": 0
+    },
+    "Desolace": {
+      "high": 22,
+      "low": 0
+    },
+    "Feralas": {
+      "high": 22,
+      "low": 0
+    },
+    "The Hinterlands": {
+      "high": 22,
+      "low": 0
+    },
+    "Westfall": {
+      "high": 19,
+      "low": 0
+    },
+    "The Barrens": {
+      "high": 15,
+      "low": 0
+    },
+    "Tanaris": {
+      "high": 14,
+      "low": 0
+    },
+    "Arathi Highlands": {
+      "high": 13,
+      "low": 0
+    },
+    "Loch Modan": {
+      "high": 12,
+      "low": 0
+    },
+    "Darnassus": {
+      "high": 9,
+      "low": 2
+    },
+    "Dustwallow Marsh": {
+      "high": 11,
+      "low": 0
+    },
+    "sort:PRIEST": {
+      "high": 11,
+      "low": 0
+    },
+    "Ashenvale": {
+      "high": 10,
+      "low": 0
+    },
+    "Moonglade": {
+      "high": 10,
+      "low": 0
+    },
+    "Blasted Lands": {
+      "high": 9,
+      "low": 0
+    },
+    "Darkshore": {
+      "high": 8,
+      "low": 1
+    },
+    "Excavation Site: Wetlands": {
+      "high": 9,
+      "low": 0
+    },
+    "Eastern Plaguelands": {
+      "high": 8,
+      "low": 0
+    },
+    "Swamp of Sorrows": {
+      "high": 8,
+      "low": 0
+    },
+    "Felwood": {
+      "high": 7,
+      "low": 0
+    },
+    "Hillsbrad Foothills": {
+      "high": 6,
+      "low": 0
+    },
+    "Redridge Mountains": {
+      "high": 6,
+      "low": 0
+    },
+    "sort:PALADIN": {
+      "high": 6,
+      "low": 0
+    },
+    "Badlands": {
+      "high": 5,
+      "low": 0
+    },
+    "Stonetalon Mountains": {
+      "high": 5,
+      "low": 0
+    },
+    "Winterspring": {
+      "high": 5,
+      "low": 0
+    },
+    "City of Dalaran": {
+      "high": 4,
+      "low": 0
+    },
+    "Durotar": {
+      "high": 4,
+      "low": 0
+    },
+    "Ruins of Lordaeron": {
+      "high": 4,
+      "low": 0
+    },
+    "Silverpine Forest": {
+      "high": 4,
+      "low": 0
+    },
+    "The Hall of Thanes": {
+      "high": 4,
+      "low": 0
+    },
+    "Scarlet Monastery": {
+      "high": 3,
+      "low": 0
+    },
+    "Mulgore": {
+      "high": 2,
+      "low": 0
+    },
+    "Orgrimmar": {
+      "high": 2,
+      "low": 0
+    },
+    "Razorfen Downs": {
+      "high": 2,
+      "low": 0
+    },
+    "Thousand Needles": {
+      "high": 2,
+      "low": 0
+    },
+    "Un'Goro Crater": {
+      "high": 2,
+      "low": 0
+    },
+    "sort:LUNAR_FESTIVAL": {
+      "high": 2,
+      "low": 0
+    },
+    "sort:ROGUE": {
+      "high": 2,
+      "low": 0
+    },
+    "Anvilmar": {
+      "high": 1,
+      "low": 0
+    },
+    "Blackfathom Deeps": {
+      "high": 1,
+      "low": 0
+    },
+    "Blackrock Depths": {
+      "high": 1,
+      "low": 0
+    },
+    "Burning Steppes": {
+      "high": 1,
+      "low": 0
+    },
+    "Dire Maul": {
+      "high": 1,
+      "low": 0
+    },
+    "Gnomeregan": {
+      "high": 1,
+      "low": 0
+    },
+    "Maraudon": {
+      "high": 1,
+      "low": 0
+    },
+    "Stonewrought Dam": {
+      "high": 1,
+      "low": 0
+    },
+    "The Deadmines": {
+      "high": 1,
+      "low": 0
+    },
+    "Thoradin's Wall": {
+      "high": 1,
+      "low": 0
+    },
+    "Warsong Gulch": {
+      "high": 1,
+      "low": 0
+    },
+    "Western Plaguelands": {
+      "high": 1,
+      "low": 0
+    },
+    "Zul'Farrak": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:CAMPING": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:INVASION": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:SEASONAL": {
+      "high": 1,
+      "low": 0
+    },
+    "sort:WARRIOR": {
+      "high": 1,
+      "low": 0
+    }
+  }
+}

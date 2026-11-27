@@ -39,6 +39,9 @@ from pipeline.common.paths import PROJECT_ROOT  # noqa: E402
 
 FORMAT_VERSION = 1
 OUT_DIR = PROJECT_ROOT / "content" / "questie-db"
+# ``--faction alliance`` writes here, so the Horde snapshot the site reads is untouched.
+ALLIANCE_OUT_DIR = PROJECT_ROOT / "content" / "questie-db-alliance"
+FACTIONS = ("horde", "alliance")
 CACHE_DIR = PROJECT_ROOT / "data" / "cache" / "questie"
 
 QDB_COMMIT = "5b857c29e32c1f0a6bc095bde64f6c5c05dd86ff"
@@ -244,13 +247,13 @@ def compact_item(i: Mapping[str, Any], base_ids: set[int]) -> dict[str, Any]:
     })
 
 
-def keep_npc(n: Mapping[str, Any], referenced: set[int]) -> bool:
-    """Keep every NPC a Horde quest references, plus any spawned NPC that is not Alliance-only friendly."""
+def keep_npc(n: Mapping[str, Any], referenced: set[int], faction: str = "horde") -> bool:
+    """Keep every NPC a kept quest references, plus any spawned NPC that is not friendly only to the other faction."""
     if n["id"] in referenced:
         return True
     if not n.get("spawns") or n.get("blacklisted"):
         return False
-    return n.get("friendlyToFaction") != "A"
+    return n.get("friendlyToFaction") != ("H" if faction == "alliance" else "A")
 
 
 def referenced_npcs(quests: Iterable[Mapping[str, Any]], items: Mapping[int, Mapping[str, Any]]) -> set[int]:
@@ -347,7 +350,8 @@ def dump_lines(obj: Mapping[Any, Any]) -> str:
 # ---------------------------------------------------------------------------------------------
 
 def lua_exe(root: Path) -> Path:
-    for rel in ("tools/lua-binary/lua.exe", "tools/lua-binary/linux-x64/lua"):
+    rels = ("tools/lua-binary/lua.exe", "tools/lua-binary/linux-x64/lua")
+    for rel in (rels if sys.platform == "win32" else rels[::-1]):
         p = root / rel
         if p.is_file():
             return p
@@ -451,12 +455,13 @@ def _referenced(quests: Iterable[Mapping[str, Any]], items: Mapping[int, Mapping
 
 
 def build_zones(qdb: Path, questie: Path, quests: Mapping[int, Mapping[str, Any]],
-                npcs: Mapping[int, Mapping[str, Any]], objects: Mapping[int, Mapping[str, Any]]) -> dict[str, dict[str, Any]]:
+                npcs: Mapping[int, Mapping[str, Any]], objects: Mapping[int, Mapping[str, Any]],
+                faction: str = "horde") -> dict[str, dict[str, Any]]:
     from pipeline.p2 import support
 
     support_dir = qdb / "support" / "Forever"
     maps = support.load_zone_maps(support_dir)
-    dungeons = support.load_dungeons(support_dir, horde=True)
+    dungeons = support.load_dungeons(support_dir, horde=(faction == "horde"))
     names = support.load_zone_names(questie)
     a2u, sub = maps["areaIdToUiMapId"], maps["subZoneToParentZone"]
     areas: set[int] = set(a2u) | set(sub) | set(sub.values()) | set(names) | set(dungeons)
@@ -481,7 +486,7 @@ def build_zones(qdb: Path, questie: Path, quests: Mapping[int, Mapping[str, Any]
     return out
 
 
-def load_source(qdb: Path, questie: Path, verbose: bool = False) -> dict[str, Any]:
+def load_source(qdb: Path, questie: Path, verbose: bool = False, faction: str = "horde") -> dict[str, Any]:
     from pipeline.p2.horde import horde_mask, races_ok
     from pipeline.p2.meta import load_meta
     from pipeline.p2.normalize import named_row
@@ -506,7 +511,8 @@ def load_source(qdb: Path, questie: Path, verbose: bool = False) -> dict[str, An
     xp = support.load_xp(qdb / "support" / "Forever")
     for q in named["Quest"].values():
         decorate_quest(q, sort_keys, xp)
-    mask = horde_mask(_HORDE_RACE_KEYS)
+    mask = horde_mask(_HORDE_RACE_KEYS) if faction == "horde" else int(_HORDE_RACE_KEYS["ALL_ALLIANCE"])
+    other = "A" if faction == "horde" else "H"
     horde_quests: dict[int, dict[str, Any]] = {}
     npcs = named["Npc"]
     for qid, q in named["Quest"].items():
@@ -516,7 +522,7 @@ def load_source(qdb: Path, questie: Path, verbose: bool = False) -> dict[str, An
             st = q.get("startedBy") or {}
             starters = st.get("npc") or []
             if starters and not st.get("object") and not st.get("item") and all(
-                    npcs.get(n, {}).get("friendlyToFaction") == "A" for n in starters):
+                    npcs.get(n, {}).get("friendlyToFaction") == other for n in starters):
                 continue
         horde_quests[qid] = q
     ref_n, ref_o, ref_i = _referenced(horde_quests.values(), named["Item"])
@@ -527,13 +533,13 @@ def load_source(qdb: Path, questie: Path, verbose: bool = False) -> dict[str, An
         "items": {i: it for i, it in named["Item"].items() if i in ref_i},
         "base": base,
         "ref_npcs": ref_n,
-        "zones": build_zones(qdb, questie, horde_quests, npcs, named["Object"]),
+        "zones": build_zones(qdb, questie, horde_quests, npcs, named["Object"], faction),
         "evidence": {k: (qdb / rel).read_text(encoding="utf-8") for k, rel in PINS["evidence"].items()},
     }
 
 
-def run(qdb: Path, questie: Path, out_dir: Path, verbose: bool = False) -> dict[str, Any]:
-    src = load_source(qdb, questie, verbose)
+def run(qdb: Path, questie: Path, out_dir: Path, verbose: bool = False, faction: str = "horde") -> dict[str, Any]:
+    src = load_source(qdb, questie, verbose, faction)
     base = src["base"]
     zones_raw = src["zones"]
     hq = src["horde_quests"]
@@ -544,7 +550,7 @@ def run(qdb: Path, questie: Path, out_dir: Path, verbose: bool = False) -> dict[
     ev = evidence_ids(src["evidence"]["traces"], src["evidence"]["deltaBase"], src["evidence"]["authoredFixes"])
     apply_confidence(quests, ev)
     refs = src["ref_npcs"]
-    npcs = {int(n["id"]): compact_npc(n, base["Npc"]) for n in npcs_by_id.values() if keep_npc(n, refs)}
+    npcs = {int(n["id"]): compact_npc(n, base["Npc"]) for n in npcs_by_id.values() if keep_npc(n, refs, faction)}
     objects = {int(o["id"]): compact_object(o, base["Object"]) for o in objs_by_id.values()}
     items = {int(i["id"]): compact_item(i, base["Item"]) for i in src["items"].values()}
     zones = zones_raw
@@ -563,7 +569,9 @@ def run(qdb: Path, questie: Path, out_dir: Path, verbose: bool = False) -> dict[
     meta = {
         "format": FORMAT_VERSION,
         "pins": PINS,
-        "faction": "Horde (Horde + neutral quests; Alliance-only NPCs dropped unless a kept quest references them)",
+        "faction": ("Horde (Horde + neutral quests; Alliance-only NPCs dropped unless a kept quest references them)"
+                    if faction == "horde" else
+                    "Alliance (Alliance + neutral quests; Horde-only NPCs dropped unless a kept quest references them)"),
         "coordinates": "zone % (0-100) keyed by AreaTable zone id, Forever map frames (QuestieDB conversion)",
         "foreverFlag": "true when the id is absent from data/Classic at the same QuestieDB commit",
         "counts": counts,
@@ -584,7 +592,8 @@ def run(qdb: Path, questie: Path, out_dir: Path, verbose: bool = False) -> dict[
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--verbose", action="store_true")
-    ap.add_argument("--out", default=str(OUT_DIR))
+    ap.add_argument("--faction", choices=FACTIONS, default="horde")
+    ap.add_argument("--out", default=None, help="output folder (default: content/questie-db, or content/questie-db-alliance)")
     ap.add_argument("--questiedb-dir", default=str(DEFAULT_QDB), help="QuestieDB git checkout (source tree)")
     ap.add_argument("--questie-dir", default=str(DEFAULT_QUESTIE), help="Questie addon checkout (zone names)")
     args = ap.parse_args(argv)
@@ -595,8 +604,8 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit(f"Questie checkout not found at {questie}")
     staging = Path(tempfile.mkdtemp(prefix="questie-db-"))
     try:
-        meta = run(qdb, questie, staging, args.verbose)
-        out = Path(args.out)
+        meta = run(qdb, questie, staging, args.verbose, args.faction)
+        out = Path(args.out or (ALLIANCE_OUT_DIR if args.faction == "alliance" else OUT_DIR))
         out.mkdir(parents=True, exist_ok=True)
         for name in ("quests", "npcs", "objects", "items", "zones", "meta"):
             shutil.move(str(staging / f"{name}.json"), str(out / f"{name}.json"))

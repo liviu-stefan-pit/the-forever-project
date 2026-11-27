@@ -1,0 +1,565 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Finish to 20",
+ "steps": [
+  {
+   "id": "redridge-17-20:accept-34",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept An Unwelcome Guest from Martie Jainrose"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 16.8,
+      "y": 46.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 34,
+     "label": "An Unwelcome Guest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=34",
+     "label": "Wowhead Classic quest 34"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Bellygrub is a level 24 boar west of Lakeshire. Skip it below 20 unless you have a partner or a strong pet.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=34",
+       "label": "Wowhead Classic quest 34"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-34",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete An Unwelcome Guest: Bellygrub's Tusk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 10.6,
+      "y": 49.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 34,
+     "objective": 1,
+     "label": "An Unwelcome Guest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=34",
+     "label": "Wowhead Classic quest 34"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      345
+     ],
+     "name": "Bellygrub",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 10.6,
+      "y": 49.3
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=345",
+       "label": "Wowhead NPC 345"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-34",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in An Unwelcome Guest to Martie Jainrose"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 16.8,
+      "y": 46.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 34,
+     "label": "An Unwelcome Guest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=34",
+     "label": "Wowhead Classic quest 34"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:grind-20",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grind murlocs on the east shore of Lake Everstill to level 20"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 53.3,
+      "y": 61.5,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 20,
+     "label": "Grind murlocs on the east shore of Lake Everstill to level 20",
+     "mobId": 422,
+     "mobName": "Murloc Flesheater",
+     "mobLevel": 18
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=422",
+     "label": "Wowhead NPC 422"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Murlocs on the east shore are the densest camp near Lakeshire. Grind them to 20, then head to Duskwood or Wetlands for 20-30.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      422
+     ],
+     "name": "Murloc Flesheater",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 53.3,
+      "y": 61.5
+     },
+     "radius": 3.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:grind-20-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If you are not yet 20, grind murlocs on the east shore of Lake Everstill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 53.3,
+      "y": 61.5,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 20,
+     "label": "If you are not yet 20, grind murlocs on the east shore of Lake Everstill",
+     "mobId": 422,
+     "mobName": "Murloc Flesheater",
+     "mobLevel": 18
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=422",
+     "label": "Wowhead NPC 422"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Once you are 20, Murloc Poachers from Dockmaster Baren uses the same murlocs.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      422
+     ],
+     "name": "Murloc Flesheater",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 53.3,
+      "y": 61.5
+     },
+     "radius": 3.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-150",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Murloc Poachers from Dockmaster Baren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 22.6,
+      "y": 47.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 150,
+     "label": "Murloc Poachers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=150",
+     "label": "Wowhead Classic quest 150"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:complete-150",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Murloc Poachers: 8 Murloc Fin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 36.6,
+      "y": 50.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 150,
+     "objective": 1,
+     "label": "Murloc Poachers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=150",
+     "label": "Wowhead Classic quest 150"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      422,
+      544,
+      545,
+      548,
+      578,
+      1024
+     ],
+     "name": "Murloc Flesheater",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 36.6,
+      "y": 50.0
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-150",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Murloc Poachers to Dockmaster Baren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 22.6,
+      "y": 47.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 150,
+     "label": "Murloc Poachers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=150",
+     "label": "Wowhead Classic quest 150"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Next for 20-30: Duskwood (walk west through Three Corners to Darkshire) or Wetlands via Menethil Harbor.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=150",
+       "label": "Wowhead Classic quest 150"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

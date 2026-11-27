@@ -1,0 +1,580 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Gnolls of the southwest",
+ "steps": [
+  {
+   "id": "redridge-17-20:complete-246",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Assessing the Threat: 10 Redridge Mongrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 10.5,
+      "y": 62.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 246,
+     "objective": 1,
+     "label": "Assessing the Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=246",
+     "label": "Wowhead Classic quest 246"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mongrels roam the hills south of the Lakeshire bridge; pull them one at a time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=246",
+       "label": "Wowhead Classic quest 246"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      423
+     ],
+     "name": "Redridge Mongrel",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 10.5,
+      "y": 62.4
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=423",
+       "label": "Wowhead NPC 423"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-246-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Assessing the Threat: 6 Redridge Poacher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 26.7,
+      "y": 82.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 246,
+     "objective": 2,
+     "label": "Assessing the Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=246",
+     "label": "Wowhead Classic quest 246"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Poachers stand in pairs by their camps; use line of sight to split them.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=246",
+       "label": "Wowhead Classic quest 246"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      424
+     ],
+     "name": "Redridge Poacher",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 26.7,
+      "y": 82.3
+     },
+     "radius": 4.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=424",
+       "label": "Wowhead NPC 424"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-98407",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Show of Force: 5 Spiked Collar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 10.4,
+      "y": 64.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98407,
+     "objective": 1,
+     "label": "Show of Force"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98407",
+     "label": "Wowhead Forever quest 98407"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      712
+     ],
+     "name": "Redridge Thrasher",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 10.4,
+      "y": 64.6
+     },
+     "radius": 3.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=712",
+       "label": "Wowhead NPC 712"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-129",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Free Lunch to Guard Parker; Accept Visit the Herbalist from Guard Parker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 10.4,
+      "y": 71.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 129,
+     "label": "A Free Lunch"
+    },
+    {
+     "type": "accept",
+     "questId": 130,
+     "label": "Visit the Herbalist"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=129",
+     "label": "Wowhead Classic quest 129"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=130",
+     "label": "Wowhead Classic quest 130"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:complete-92",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Tarantulas south of the Three Corners road for Crisp Spider Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 48.8,
+      "y": 42.8,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92,
+     "objective": 3,
+     "label": "Redridge Goulash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92",
+     "label": "Wowhead Classic quest 92"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Only if Tarantulas are on your path; the Greater Tarantulas at Alther's Mill drop the same meat later.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=92",
+       "label": "Wowhead Classic quest 92"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      217,
+      442,
+      505,
+      539,
+      569,
+      574
+     ],
+     "name": "Venom Web Spider",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 48.8,
+      "y": 42.8
+     },
+     "radius": 7.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=217",
+       "label": "Wowhead NPC 217"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-246",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Assessing the Threat to Deputy Feldon; Turn in Show of Force to Deputy Feldon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.6,
+      "y": 60.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 246,
+     "label": "Assessing the Threat"
+    },
+    {
+     "type": "turnin",
+     "questId": 98407,
+     "label": "Show of Force"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=246",
+     "label": "Wowhead Classic quest 246"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98407",
+     "label": "Wowhead Forever quest 98407"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "redridge-17-20:turnin-130",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Visit the Herbalist to Martie Jainrose; Accept Delivering Daffodils from Martie Jainrose"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 16.8,
+      "y": 46.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 130,
+     "label": "Visit the Herbalist"
+    },
+    {
+     "type": "accept",
+     "questId": 131,
+     "label": "Delivering Daffodils"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=130",
+     "label": "Wowhead Classic quest 130"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=131",
+     "label": "Wowhead Classic quest 131"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-131",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Delivering Daffodils to Darcy"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 21.5,
+      "y": 44.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 131,
+     "label": "Delivering Daffodils"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=131",
+     "label": "Wowhead Classic quest 131"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

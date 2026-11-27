@@ -51,6 +51,10 @@ class CompactTest(unittest.TestCase):
         self.assertTrue(qi.keep_npc(alliance, {3}))
         self.assertTrue(qi.keep_npc({"id": 4, "spawns": {"14": [[1, 2]]}}, set()))
         self.assertFalse(qi.keep_npc({"id": 5}, set()))
+        horde = {"id": 6, "friendlyToFaction": "H", "spawns": {"14": [[1, 2]]}}
+        self.assertTrue(qi.keep_npc(alliance, set(), "alliance"))
+        self.assertFalse(qi.keep_npc(horde, set(), "alliance"))
+        self.assertTrue(qi.keep_npc(horde, {6}, "alliance"))
         c = qi.compact_npc({"id": 4, "name": "N", "npcFlags": 8, "spawns": {"14": [[1.5, 2.5]]}}, {4})
         self.assertEqual(c["services"], ["flightMaster"])
         self.assertNotIn("forever", c)
@@ -176,6 +180,27 @@ class CommittedContentTest(unittest.TestCase):
         for q in self.data["quests"].values():
             races = q.get("races", 0)
             self.assertTrue(races == 0 or races & horde_bits, q["id"])
+
+
+class AllianceOutputTest(unittest.TestCase):
+    """The committed content/questie-db-alliance/ snapshot (``--faction alliance``)."""
+
+    def setUp(self) -> None:
+        if not (qi.ALLIANCE_OUT_DIR / "quests.json").is_file():
+            self.skipTest("content/questie-db-alliance not generated")
+        self.quests = json.loads((qi.ALLIANCE_OUT_DIR / "quests.json").read_text(encoding="utf-8"))
+        self.meta = json.loads((qi.ALLIANCE_OUT_DIR / "meta.json").read_text(encoding="utf-8"))
+
+    def test_no_horde_only_quests(self) -> None:
+        alliance_bits = 1 | 4 | 8 | 64 | (1 << 32)
+        for q in self.quests.values():
+            races = q.get("races", 0)
+            self.assertTrue(races == 0 or races & alliance_bits, q["id"])
+
+    def test_known_alliance_start_quest_and_meta(self) -> None:
+        self.assertEqual(self.quests["783"]["name"], "A Threat Within")
+        self.assertTrue(self.meta["faction"].startswith("Alliance"))
+        self.assertEqual(self.meta["counts"]["quests"], len(self.quests))
 
 
 if __name__ == "__main__":

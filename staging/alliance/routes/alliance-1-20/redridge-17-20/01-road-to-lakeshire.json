@@ -1,0 +1,338 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Stormwind to Lakeshire",
+ "steps": [
+  {
+   "id": "redridge-17-20:fp-352",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Learn the Stormwind flight path from Dungar Longdrink if you don't have it yet"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 71.3,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Learn the Stormwind flight path from Dungar Longdrink if you don't have it yet"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=352",
+     "label": "Wowhead NPC 352"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Dwarves and Gnomes arrive from Ironforge on the Deeprun Tram. You need this flight path later in the pack.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 352,
+     "name": "Dungar Longdrink",
+     "at": {
+      "mapId": 1453,
+      "zone": "Stormwind City",
+      "x": 71.3,
+      "y": 72.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-244",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Take the road east through Elwynn into Redridge. Accept Encroaching Gnolls from Guard Parker at the bridge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 10.4,
+      "y": 71.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 244,
+     "label": "Encroaching Gnolls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=244",
+     "label": "Wowhead Classic quest 244"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Follow the road from Goldshire east past Stone Cairn Lake; Guard Parker stands where it crosses into Redridge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=244",
+       "label": "Wowhead Classic quest 244"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-244",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encroaching Gnolls to Deputy Feldon; Accept Assessing the Threat from Deputy Feldon; Accept Show of Force from Deputy Feldon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.6,
+      "y": 60.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 244,
+     "label": "Encroaching Gnolls"
+    },
+    {
+     "type": "accept",
+     "questId": 246,
+     "label": "Assessing the Threat"
+    },
+    {
+     "type": "accept",
+     "questId": 98407,
+     "label": "Show of Force"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=244",
+     "label": "Wowhead Classic quest 244"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=246",
+     "label": "Wowhead Classic quest 246"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98407",
+     "label": "Wowhead Forever quest 98407"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Show of Force is new in Forever. Its Spiked Collars drop from the thrashers right next to the mongrels.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=244",
+       "label": "Wowhead Classic quest 244"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=246",
+       "label": "Wowhead Classic quest 246"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=98407",
+       "label": "Wowhead Forever quest 98407"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:fp-931",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Ariena Stormfeather"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.5,
+      "y": 59.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Ariena Stormfeather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=931",
+     "label": "Wowhead NPC 931"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Grab the flight path now; the Stormwind errand later is a flight, not a walk.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=931",
+       "label": "Wowhead NPC 931"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 931,
+     "name": "Ariena Stormfeather",
+     "at": {
+      "mapId": 1433,
+      "zone": "Redridge Mountains",
+      "x": 25.5,
+      "y": 59.4
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=931",
+       "label": "Wowhead NPC 931"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

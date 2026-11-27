@@ -1,0 +1,533 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Lake Everstill",
+ "steps": [
+  {
+   "id": "redridge-17-20:complete-125",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Swim to the Sunken Chest on the lake bed and take Oslow's Toolbox"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 36.4,
+      "y": 54.7,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 125,
+     "objective": 1,
+     "label": "The Lost Tools"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=125",
+     "label": "Wowhead Classic quest 125"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The chest sits deep; take a breath at the surface first if a murloc chases you down.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=125",
+       "label": "Wowhead Classic quest 125"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-92-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Great Goretusks on the south shore for 5 Great Goretusk Snouts"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 26.7,
+      "y": 70.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92,
+     "objective": 1,
+     "label": "Redridge Goulash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92",
+     "label": "Wowhead Classic quest 92"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      345,
+      547,
+      258617
+     ],
+     "name": "Bellygrub",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 26.7,
+      "y": 70.3
+     },
+     "radius": 4.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=345",
+       "label": "Wowhead NPC 345"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-127",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill murlocs along the east shore of the lake for 10 Spotted Sunfish"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 36.6,
+      "y": 50.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 127,
+     "objective": 1,
+     "label": "Selling Fish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=127",
+     "label": "Wowhead Classic quest 127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Pull murlocs to the shore edge; they run when hurt and bring friends.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=127",
+       "label": "Wowhead Classic quest 127"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      422,
+      544,
+      545,
+      548,
+      578,
+      1083
+     ],
+     "name": "Murloc Flesheater",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 36.6,
+      "y": 50.0
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=422",
+       "label": "Wowhead NPC 422"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-92-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Dire Condors in the hills east of the lake for 5 Tough Condor Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 41.7,
+      "y": 33.9,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92,
+     "objective": 2,
+     "label": "Redridge Goulash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92",
+     "label": "Wowhead Classic quest 92"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      428
+     ],
+     "name": "Dire Condor",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 41.7,
+      "y": 33.9
+     },
+     "radius": 4.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=428",
+       "label": "Wowhead NPC 428"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-3741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back in Lakeshire, turn in Hilary's Necklace to Hilary on the dock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 24.1,
+      "y": 53.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3741,
+     "label": "Hilary's Necklace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3741",
+     "label": "Wowhead Classic quest 3741"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-125",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Lost Tools to Foreman Oslow; Accept The Everstill Bridge from Foreman Oslow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 27.1,
+      "y": 48.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 125,
+     "label": "The Lost Tools"
+    },
+    {
+     "type": "accept",
+     "questId": 89,
+     "label": "The Everstill Bridge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=125",
+     "label": "Wowhead Classic quest 125"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=89",
+     "label": "Wowhead Classic quest 89"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-127",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Selling Fish to Dockmaster Baren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 22.6,
+      "y": 47.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 127,
+     "label": "Selling Fish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=127",
+     "label": "Wowhead Classic quest 127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-92",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Redridge Goulash to Chef Breanna"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 17.6,
+      "y": 43.8,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92,
+     "label": "Redridge Goulash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92",
+     "label": "Wowhead Classic quest 92"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "If one goulash part is missing, finish it at Alther's Mill and hand in later.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=92",
+       "label": "Wowhead Classic quest 92"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

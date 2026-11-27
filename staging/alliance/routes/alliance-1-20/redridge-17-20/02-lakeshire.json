@@ -1,0 +1,514 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Lakeshire",
+ "steps": [
+  {
+   "id": "redridge-17-20:home-6727",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Brianna"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 21.9,
+      "y": 44.8,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Brianna"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=6727",
+     "label": "Wowhead NPC 6727"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6727,
+     "name": "Innkeeper Brianna",
+     "at": {
+      "mapId": 1433,
+      "zone": "Redridge Mountains",
+      "x": 21.9,
+      "y": 44.8
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6727",
+       "label": "Wowhead NPC 6727"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-129",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Free Lunch from Darcy"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 21.5,
+      "y": 44.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 129,
+     "label": "A Free Lunch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=129",
+     "label": "Wowhead Classic quest 129"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "A Free Lunch goes back to Guard Parker; you pass him on the gnoll loop, so it costs almost nothing.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=129",
+       "label": "Wowhead Classic quest 129"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-3741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hilary's Necklace from Shawn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 24.2,
+      "y": 53.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3741,
+     "label": "Hilary's Necklace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3741",
+     "label": "Wowhead Classic quest 3741"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:accept-125",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Lost Tools from Foreman Oslow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 27.1,
+      "y": 48.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 125,
+     "label": "The Lost Tools"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=125",
+     "label": "Wowhead Classic quest 125"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:accept-92",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Redridge Goulash from Chef Breanna"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 17.6,
+      "y": 43.8,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92,
+     "label": "Redridge Goulash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=92",
+     "label": "Wowhead Classic quest 92"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Keep the goulash objectives in mind all pack: snouts by the lake, condors east of it, spider meat in the southwest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=92",
+       "label": "Wowhead Classic quest 92"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Price of Shoes from Verner Osgood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.9,
+      "y": 47.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 118,
+     "label": "The Price of Shoes"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=118",
+     "label": "Wowhead Classic quest 118"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:accept-120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Messenger to Stormwind from Magistrate Solomon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 24.9,
+      "y": 44.5,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 120,
+     "label": "Messenger to Stormwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=120",
+     "label": "Wowhead Classic quest 120"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Messenger to Stormwind pairs with The Price of Shoes: one flight covers both.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=120",
+       "label": "Wowhead Classic quest 120"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:accept-127",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Selling Fish from Dockmaster Baren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 22.6,
+      "y": 47.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 127,
+     "label": "Selling Fish"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=127",
+     "label": "Wowhead Classic quest 127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:complete-3741",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Dig in the Glinting Mud along the shore by the dock for Hilary's Necklace"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 24.0,
+      "y": 54.1,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3741,
+     "objective": 1,
+     "label": "Hilary's Necklace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3741",
+     "label": "Wowhead Classic quest 3741"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Several mud piles spawn along the water east of the dock; check them all, only one holds the necklace.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3741",
+       "label": "Wowhead Classic quest 3741"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

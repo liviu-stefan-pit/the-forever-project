@@ -28,6 +28,9 @@ consent may be "all rights reserved". We use the data under GPLv3 as the Questie
 py -3 -I pipeline/questie_import.py --verbose
 ```
 
+`--faction alliance` writes the Alliance snapshot to [`content/questie-db-alliance/`](../questie-db-alliance/) instead; this
+folder stays Horde.
+
 Requires the QuestieDB and Questie checkouts under `research/external/github/` and QuestieDB's bundled Lua. Output is deterministic.
 
 ## Files

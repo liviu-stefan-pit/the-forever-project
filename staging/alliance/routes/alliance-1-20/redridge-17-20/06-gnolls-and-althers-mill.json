@@ -1,0 +1,846 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "redridge-17-20",
+ "title": "Northern gnolls and Alther's Mill",
+ "steps": [
+  {
+   "id": "redridge-17-20:complete-124",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "North of Lakeshire, kill Redridge Brutes and Mystics; collect 5 Iron Pikes and 5 Iron Rivets from the gnolls"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 24.0,
+      "y": 31.5,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 124,
+     "objective": 1,
+     "label": "A Baying of Gnolls"
+    },
+    {
+     "type": "complete",
+     "questId": 124,
+     "objective": 2,
+     "label": "A Baying of Gnolls"
+    },
+    {
+     "type": "complete",
+     "questId": 89,
+     "objective": 1,
+     "label": "The Everstill Bridge"
+    },
+    {
+     "type": "complete",
+     "questId": 89,
+     "objective": 2,
+     "label": "The Everstill Bridge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=124",
+     "label": "Wowhead Classic quest 124"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=89",
+     "label": "Wowhead Classic quest 89"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Both quests use the same gnoll camp, so do them together.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=124",
+       "label": "Wowhead Classic quest 124"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=89",
+       "label": "Wowhead Classic quest 89"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Mystics heal; kill them first.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=124",
+       "label": "Wowhead Classic quest 124"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=89",
+       "label": "Wowhead Classic quest 89"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      426,
+      430
+     ],
+     "name": "Redridge Brute",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 18.7,
+      "y": 36.2
+     },
+     "radius": 6.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=426",
+       "label": "Wowhead NPC 426"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      426,
+      430,
+      446,
+      580
+     ],
+     "name": "Redridge Brute",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 19.6,
+      "y": 31.5
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=426",
+       "label": "Wowhead NPC 426"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-124",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Baying of Gnolls to Verner Osgood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.9,
+      "y": 47.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 124,
+     "label": "A Baying of Gnolls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=124",
+     "label": "Wowhead Classic quest 124"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Skip Howling in the Hills (Yowler is level 25).",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=124",
+       "label": "Wowhead Classic quest 124"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-89",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Everstill Bridge to Foreman Oslow; Accept Alther's Mill from Foreman Oslow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 27.1,
+      "y": 48.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 89,
+     "label": "The Everstill Bridge"
+    },
+    {
+     "type": "accept",
+     "questId": 98386,
+     "label": "Alther's Mill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=89",
+     "label": "Wowhead Classic quest 89"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98386",
+     "label": "Wowhead Forever quest 98386"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "redridge-17-20:complete-98386",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "At Alther's Mill, kill 12 Greater Tarantulas and destroy 6 Tarantula Eggs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 48.6,
+      "y": 42.2,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98386,
+     "objective": 1,
+     "label": "Alther's Mill"
+    },
+    {
+     "type": "complete",
+     "questId": 98386,
+     "objective": 2,
+     "label": "Alther's Mill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98386",
+     "label": "Wowhead Forever quest 98386"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. The mill area is packed with spiders, so move through it slowly.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98386",
+       "label": "Wowhead Forever quest 98386"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      505,
+      271898,
+      271988
+     ],
+     "name": "Greater Tarantula",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 48.6,
+      "y": 42.2
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=505",
+       "label": "Wowhead NPC 505"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-20",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Blackrock Renegades east of Alther's Mill for 10 Battleworn Axes"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 62.2,
+      "y": 54.5,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 20,
+     "objective": 1,
+     "label": "Blackrock Menace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=20",
+     "label": "Wowhead Classic quest 20"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Renegades are level 21-22: pull singles from the camp edge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=20",
+       "label": "Wowhead Classic quest 20"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      435,
+      436,
+      437,
+      440,
+      485,
+      615
+     ],
+     "name": "Blackrock Champion",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 62.2,
+      "y": 54.5
+     },
+     "radius": 7.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=435",
+       "label": "Wowhead NPC 435"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-122",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Black Dragon Whelps south of the lake for 6 Underbelly Whelp Scales"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 39.4,
+      "y": 33.4,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 122,
+     "objective": 1,
+     "label": "Underbelly Scales"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=122",
+     "label": "Wowhead Classic quest 122"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Whelps sit in groups; burn one, then line of sight the rest.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=122",
+       "label": "Wowhead Classic quest 122"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      441,
+      14272
+     ],
+     "name": "Black Dragon Whelp",
+     "mapId": 1433,
+     "zone": "Redridge Mountains",
+     "center": {
+      "x": 39.4,
+      "y": 33.4
+     },
+     "radius": 7.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=441",
+       "label": "Wowhead NPC 441"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:complete-98387",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "In the southeast orc camp, loot 8 Stolen Weapons from the weapon racks and 10 Blackrock Supplies"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 70.1,
+      "y": 76.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98387,
+     "objective": 1,
+     "label": "Blackrock Blockade"
+    },
+    {
+     "type": "complete",
+     "questId": 98387,
+     "objective": 2,
+     "label": "Blackrock Blockade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98387",
+     "label": "Wowhead Forever quest 98387"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. The racks and supply piles are objects; loot them between pulls and avoid the camp centre.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98387",
+       "label": "Wowhead Forever quest 98387"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "redridge-17-20:turnin-98386",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Alther's Mill to Foreman Oslow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 27.1,
+      "y": 48.6,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98386,
+     "label": "Alther's Mill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98386",
+     "label": "Wowhead Forever quest 98386"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "redridge-17-20:turnin-122",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Underbelly Scales to Verner Osgood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 25.9,
+      "y": 47.3,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 122,
+     "label": "Underbelly Scales"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=122",
+     "label": "Wowhead Classic quest 122"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-20",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Blackrock Menace to Marshal Marris"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 28.4,
+      "y": 49.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 20,
+     "label": "Blackrock Menace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=20",
+     "label": "Wowhead Classic quest 20"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "redridge-17-20:turnin-98387",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Blackrock Blockade to Marshal Marris"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1433,
+      "x": 28.4,
+      "y": 49.0,
+      "zone": "Redridge Mountains",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98387,
+     "label": "Blackrock Blockade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98387",
+     "label": "Wowhead Forever quest 98387"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

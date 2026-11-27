@@ -1,0 +1,289 @@
+{
+ "id": "redridge-17-20",
+ "title": "Redridge Mountains 17-20 (Alliance)",
+ "levels": [
+  17,
+  20
+ ],
+ "races": [
+  "Human",
+  "Dwarf",
+  "Gnome",
+  "Skyborne"
+ ],
+ "maps": [
+  1433,
+  1453,
+  1429
+ ],
+ "enterLevel": 17,
+ "after": {
+  "Human": [
+   "elwynn-1-12",
+   "westfall-12-17"
+  ],
+  "Skyborne": [
+   "zephras-isle-alliance",
+   "westfall-12-17"
+  ],
+  "Dwarf": [
+   "dunmorogh-1-12",
+   "lochmodan-12-17"
+  ],
+  "Gnome": [
+   "dunmorogh-1-12",
+   "lochmodan-12-17"
+  ]
+ },
+ "segments": [
+  {
+   "file": "01-road-to-lakeshire.json",
+   "title": "Stormwind to Lakeshire",
+   "steps": [
+    {
+     "do": "fp 352",
+     "text": "Learn the Stormwind flight path from Dungar Longdrink if you don't have it yet",
+     "tip": "Dwarves and Gnomes arrive from Ironforge on the Deeprun Tram. You need this flight path later in the pack."
+    },
+    {
+     "do": "A 244",
+     "text": "Take the road east through Elwynn into Redridge. Accept Encroaching Gnolls from Guard Parker at the bridge",
+     "tip": "Follow the road from Goldshire east past Stone Cairn Lake; Guard Parker stands where it crosses into Redridge."
+    },
+    {
+     "do": "T 244; A 246; A 98407",
+     "tip": "Show of Force is new in Forever. Its Spiked Collars drop from the thrashers right next to the mongrels."
+    },
+    {
+     "do": "fp 931",
+     "speed": "Grab the flight path now; the Stormwind errand later is a flight, not a walk."
+    }
+   ]
+  },
+  {
+   "file": "02-lakeshire.json",
+   "title": "Lakeshire",
+   "steps": [
+    "home 6727",
+    {
+     "do": "A 129",
+     "tip": "A Free Lunch goes back to Guard Parker; you pass him on the gnoll loop, so it costs almost nothing."
+    },
+    "A 3741",
+    "A 125",
+    {
+     "do": "A 92",
+     "tip": "Keep the goulash objectives in mind all pack: snouts by the lake, condors east of it, spider meat in the southwest."
+    },
+    "A 118",
+    {
+     "do": "A 120",
+     "tip": "Messenger to Stormwind pairs with The Price of Shoes: one flight covers both."
+    },
+    "A 127",
+    {
+     "do": "C 3741",
+     "text": "Dig in the Glinting Mud along the shore by the dock for Hilary's Necklace",
+     "tip": "Several mud piles spawn along the water east of the dock; check them all, only one holds the necklace."
+    }
+   ]
+  },
+  {
+   "file": "03-southwest-loop.json",
+   "title": "Gnolls of the southwest",
+   "steps": [
+    {
+     "do": "C 246.1",
+     "tip": "Mongrels roam the hills south of the Lakeshire bridge; pull them one at a time."
+    },
+    {
+     "do": "C 246.2",
+     "speed": "Poachers stand in pairs by their camps; use line of sight to split them."
+    },
+    {
+     "do": "C 98407"
+    },
+    {
+     "do": "T 129; A 130"
+    },
+    {
+     "do": "C 92.3",
+     "text": "Kill Tarantulas south of the Three Corners road for Crisp Spider Meat",
+     "speed": "Only if Tarantulas are on your path; the Greater Tarantulas at Alther's Mill drop the same meat later."
+    },
+    {
+     "do": "T 246; T 98407"
+    },
+    {
+     "do": "T 130; A 131"
+    },
+    {
+     "do": "T 131"
+    }
+   ]
+  },
+  {
+   "file": "04-lake-everstill.json",
+   "title": "Lake Everstill",
+   "steps": [
+    {
+     "do": "C 125",
+     "text": "Swim to the Sunken Chest on the lake bed and take Oslow's Toolbox",
+     "tip": "The chest sits deep; take a breath at the surface first if a murloc chases you down."
+    },
+    {
+     "do": "C 92.1",
+     "text": "Kill Great Goretusks on the south shore for 5 Great Goretusk Snouts"
+    },
+    {
+     "do": "C 127",
+     "text": "Kill murlocs along the east shore of the lake for 10 Spotted Sunfish",
+     "speed": "Pull murlocs to the shore edge; they run when hurt and bring friends."
+    },
+    {
+     "do": "C 92.2",
+     "text": "Kill Dire Condors in the hills east of the lake for 5 Tough Condor Meat"
+    },
+    {
+     "do": "T 3741",
+     "text": "Back in Lakeshire, turn in Hilary's Necklace to Hilary on the dock"
+    },
+    {
+     "do": "T 125; A 89"
+    },
+    {
+     "do": "T 127"
+    },
+    {
+     "do": "T 92",
+     "speed": "If one goulash part is missing, finish it at Alther's Mill and hand in later."
+    }
+   ]
+  },
+  {
+   "file": "05-stormwind-errands.json",
+   "title": "Stormwind and Goldshire errand",
+   "steps": [
+    {
+     "do": "fly 931 Stormwind",
+     "speed": "Use the flight time to set up talents or bags."
+    },
+    {
+     "do": "T 120; A 121"
+    },
+    {
+     "do": "T 118; A 119",
+     "text": "Walk out to Goldshire. Turn in The Price of Shoes to Smith Argus and accept Return to Verner"
+    },
+    {
+     "do": "hs Lakeshire",
+     "tip": "Hearth back; it is set in Lakeshire."
+    },
+    {
+     "do": "T 121"
+    },
+    {
+     "do": "T 119; A 122; A 124"
+    },
+    {
+     "do": "A 20; A 98387 @b",
+     "text": "Accept Blackrock Menace and Blackrock Blockade from Marshal Marris",
+     "tip": "Battleworn Axes drop from the orcs just east of Alther's Mill. The Blockade camp is in the far southeast; balanced only."
+    }
+   ]
+  },
+  {
+   "file": "06-gnolls-and-althers-mill.json",
+   "title": "Northern gnolls and Alther's Mill",
+   "steps": [
+    {
+     "do": "C 124; C 89",
+     "text": "North of Lakeshire, kill Redridge Brutes and Mystics; collect 5 Iron Pikes and 5 Iron Rivets from the gnolls",
+     "at": [
+      24.0,
+      31.5
+     ],
+     "map": 1433,
+     "tip": "Both quests use the same gnoll camp, so do them together.",
+     "speed": "Mystics heal; kill them first."
+    },
+    {
+     "do": "T 124",
+     "speed": "Skip Howling in the Hills (Yowler is level 25)."
+    },
+    {
+     "do": "T 89; A 98386"
+    },
+    {
+     "do": "C 98386",
+     "text": "At Alther's Mill, kill 12 Greater Tarantulas and destroy 6 Tarantula Eggs",
+     "tip": "New in Forever. The mill area is packed with spiders, so move through it slowly."
+    },
+    {
+     "do": "C 20 @b",
+     "text": "Kill Blackrock Renegades east of Alther's Mill for 10 Battleworn Axes",
+     "tip": "Renegades are level 21-22: pull singles from the camp edge."
+    },
+    {
+     "do": "C 122",
+     "text": "Kill Black Dragon Whelps south of the lake for 6 Underbelly Whelp Scales",
+     "speed": "Whelps sit in groups; burn one, then line of sight the rest."
+    },
+    {
+     "do": "C 98387 @b",
+     "text": "In the southeast orc camp, loot 8 Stolen Weapons from the weapon racks and 10 Blackrock Supplies",
+     "tip": "New in Forever. The racks and supply piles are objects; loot them between pulls and avoid the camp centre."
+    },
+    {
+     "do": "T 98386"
+    },
+    {
+     "do": "T 122"
+    },
+    {
+     "do": "T 20 @b"
+    },
+    "T 98387 @b"
+   ]
+  },
+  {
+   "file": "07-wrapup.json",
+   "title": "Finish to 20",
+   "steps": [
+    {
+     "do": "A 34 @b",
+     "optional": true,
+     "tip": "Bellygrub is a level 24 boar west of Lakeshire. Skip it below 20 unless you have a partner or a strong pet."
+    },
+    {
+     "do": "C 34 @b",
+     "optional": true
+    },
+    {
+     "do": "T 34 @b",
+     "optional": true
+    },
+    {
+     "do": "xp 20 422 @s",
+     "text": "Grind murlocs on the east shore of Lake Everstill to level 20",
+     "speed": "Murlocs on the east shore are the densest camp near Lakeshire. Grind them to 20, then head to Duskwood or Wetlands for 20-30."
+    },
+    {
+     "do": "xp 20 422 @b",
+     "text": "If you are not yet 20, grind murlocs on the east shore of Lake Everstill",
+     "tip": "Once you are 20, Murloc Poachers from Dockmaster Baren uses the same murlocs."
+    },
+    {
+     "do": "A 150 @b"
+    },
+    {
+     "do": "C 150 @b"
+    },
+    {
+     "do": "T 150 @b",
+     "tip": "Next for 20-30: Duskwood (walk west through Three Corners to Darkshire) or Wetlands via Menethil Harbor."
+    }
+   ]
+  }
+ ]
+}
