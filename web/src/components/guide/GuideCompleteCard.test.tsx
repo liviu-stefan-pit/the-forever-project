@@ -11,6 +11,7 @@ function html(props: { nextSlug?: string; nextName?: string; expectedLevel?: num
 describe("GuideCompleteCard", () => {
   it("continues to Barrens when the speedrun handoff is Barrens", () => {
     const markup = html({ nextSlug: "barrens-12-20", nextName: "The Barrens 12-20", expectedLevel: 19.4 });
+    expect(markup).toContain('id="guide-complete"');
     expect(markup).toContain("Guide complete");
     expect(markup).toContain("Lok&#x27;tar ogar!");
     expect(markup).toContain("Continue to The Barrens 12-20");

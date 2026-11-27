@@ -3,6 +3,8 @@ import { HORDE_HOME } from "../../config";
 import { formatExpectedLevel } from "../../lib/xp/checkpointText";
 import { Icon } from "../ui/Icon";
 
+export const GUIDE_COMPLETE_ID = "guide-complete";
+
 export function GuideCompleteCard({
   nextSlug,
   nextName,
@@ -14,7 +16,7 @@ export function GuideCompleteCard({
   expectedLevel?: number;
 }) {
   return (
-    <section className="wow-frame panel-animate border-bronze-500/40 bg-bronze-900/25 p-5 text-center">
+    <section id={GUIDE_COMPLETE_ID} className="wow-frame panel-animate border-bronze-500/40 bg-bronze-900/25 p-5 text-center">
       <h2 className="font-display text-xl font-bold text-bronze-400">Guide complete</h2>
       <p className="mt-1 text-sm text-bronze-300/80">Lok&apos;tar ogar!</p>
       {expectedLevel != null && (

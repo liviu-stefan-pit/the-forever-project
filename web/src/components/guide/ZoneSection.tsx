@@ -37,6 +37,15 @@ export interface ZoneSectionProps {
   onJump: (id: string) => void;
   onStopSelect: (s: Stop) => void;
   onReveal: (ids: string[]) => void;
+  /** Folds a run that Show opened. Omit to keep the one-way Show row. */
+  onHide?: (ids: string[]) => void;
+  /** Session reveals. A hidden run stays one group until every id in it is here. */
+  revealed?: ReadonlySet<string>;
+  /**
+   * Which steps render as their own cards. Defaults to `isShown`.
+   * Pass engine visibility (ignoring session reveal) so a revealed run can be hidden again.
+   */
+  groupVisible?: (s: Step) => boolean;
   quests?: QuestMap;
   nearMisses?: readonly NearMiss[];
   addedQuests?: readonly number[];
@@ -78,6 +87,13 @@ export function questIdsInGuide(steps: readonly Step[]): Set<number> {
   return ids;
 }
 
+const EMPTY_REVEALED: ReadonlySet<string> = new Set();
+
+/** A hidden run is open only after Show has revealed every step in it. */
+export function hiddenRunRevealed(ids: readonly string[], revealed: ReadonlySet<string>): boolean {
+  return ids.length > 0 && ids.every((id) => revealed.has(id));
+}
+
 function hiddenSummary(steps: Step[], vis: VisibilityEvaluator): string {
   const reasons = new Set<HiddenReason>();
   for (const s of steps) {
@@ -89,7 +105,8 @@ function hiddenSummary(steps: Step[], vis: VisibilityEvaluator): string {
 
 function ZoneSectionImpl(p: ZoneSectionProps) {
   const { guide, block, vis, isShown, isDone, currentId } = p;
-  const items = useMemo(() => buildSectionItems(block.steps, isShown), [block.steps, isShown]);
+  const groupVisible = p.groupVisible ?? isShown;
+  const items = useMemo(() => buildSectionItems(block.steps, groupVisible), [block.steps, groupVisible]);
   const visibleSteps = useMemo(() => block.steps.filter(isShown), [block.steps, isShown]);
 
   const currentStep = currentId ? block.steps.find((s) => s.id === currentId) : undefined;
@@ -243,26 +260,28 @@ function ZoneSectionImpl(p: ZoneSectionProps) {
         <h2 className="font-display text-lg font-bold text-bronze-400">Steps</h2>
       )}
       <ol className="space-y-2.5">
-        {items.map((it) =>
-          it.kind === "group" ? (
-            renderGroup(it.group)
-          ) : (
-            <li key={it.key}>
+        {items.map((it) => {
+          if (it.kind === "group") return renderGroup(it.group);
+          const ids = it.steps.map((s) => s.id);
+          const open = !!p.onHide && hiddenRunRevealed(ids, p.revealed ?? EMPTY_REVEALED);
+          return (
+            <li key={it.key} className={open ? "space-y-2.5" : undefined}>
               <button
                 type="button"
-                onClick={() => p.onReveal(it.steps.map((s) => s.id))}
+                aria-expanded={open}
+                onClick={() => (open ? p.onHide!(ids) : p.onReveal(ids))}
                 className="flex w-full items-center gap-2 rounded-sm border border-dashed border-stroke px-3.5 py-2 text-left text-xs text-bronze-500/80 transition hover:border-bronze-500/50 hover:text-ink"
               >
-                <Icon name="eyeOff" className="h-3.5 w-3.5 shrink-0" />
+                <Icon name={open ? "eye" : "eyeOff"} className="h-3.5 w-3.5 shrink-0" />
                 <span className="min-w-0 flex-1">
                   {it.steps.length} step{it.steps.length === 1 ? "" : "s"} hidden <span className="text-bronze-500/60">·</span> {hiddenSummary(it.steps, vis)}
                 </span>
-                <span className="font-semibold text-bronze-400">Show</span>
+                <span className="font-semibold text-bronze-400">{open ? "Hide" : "Show"}</span>
               </button>
-              {it.steps.flatMap((s) => extrasAfter(s.id) ?? [])}
+              {open ? it.steps.map((s) => renderCard(s, false)) : it.steps.flatMap((s) => extrasAfter(s.id) ?? [])}
             </li>
-          ),
-        )}
+          );
+        })}
       </ol>
       {p.onToggleNearMiss && (
         <NearMissBlock

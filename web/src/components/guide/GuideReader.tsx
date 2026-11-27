@@ -2,7 +2,7 @@
  * The guide reader: header, zone sections (map header slot + steps), sticky right panel,
  * keyboard navigation, `?step=<id>` deep links and the mobile bottom bar.
  */
-import { startTransition, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { startTransition, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router";
 import { dataOf, useGuide, useQuestSteps } from "../../data/hooks";
 import type { QuestMap, ZoneMap } from "../../data/loader";
@@ -25,17 +25,17 @@ import { useUi } from "../../state/ui";
 import { useVisibility, useVisibilityLayoutKey, type StepVisibility, type VisibilityEvaluator } from "../../state/visibility";
 import { stepLeg, visibleRoutePolyline } from "../map/route";
 import { QuestDrawer } from "../quest/QuestDrawer";
-import { GuideCompleteCard } from "./GuideCompleteCard";
+import { GUIDE_COMPLETE_ID, GuideCompleteCard } from "./GuideCompleteCard";
 import { GuideHeader } from "./GuideHeader";
 import { MobileGuideBar, SidePanel } from "./SidePanel";
 import { ZoneSection } from "./ZoneSection";
 import { useProgressiveSections } from "./useProgressiveSections";
-import { isUserScrollIntent, mapAnchorAcrossVisibility, pickCurrentStepId, takeScrollRequest } from "../../lib/guideList";
+import { guideAtEnd, isUserScrollIntent, mapAnchorAcrossVisibility, pickCurrentStepId, scrollColumnToEnd, takeScrollRequest } from "../../lib/guideList";
 import { stepPickShouldSkip, stopIsComplete } from "../../state/questProgress";
 import { countsInProgress } from "../../state/stepRequirement";
 import { useRecomputedSim } from "../../lib/xp/useRecomputedSim";
 
-type ScrollMode = "center" | "nearest";
+type ScrollMode = "center" | "nearest" | "end";
 
 const EMPTY_ADDED: readonly number[] = [];
 
@@ -172,6 +172,11 @@ export function GuideReader({
     (s: Step) => stepIsShown(vis.step(s), { revealed: revealed.has(s.id), deepLinked: s.id === deepStep }),
     [vis, revealed, deepStep],
   );
+  // Grouping ignores the session reveal so a shown run stays one group and can be hidden again.
+  const isGrouped = useCallback(
+    (s: Step) => stepIsShown(vis.step(s), { revealed: false, deepLinked: s.id === deepStep }),
+    [vis, deepStep],
+  );
   // Navigation, the map and the step counter skip revealed steps meant for another character.
   const isRouted = useCallback(
     (s: Step) => stepIsRouted(vis.step(s), { revealed: revealed.has(s.id), deepLinked: s.id === deepStep }),
@@ -193,6 +198,7 @@ export function GuideReader({
     [mappedDeep, mappedCursor, order, isDone, shouldSkip, quests],
   );
   const currentStep = currentId ? stepById.get(currentId) : undefined;
+  const atEnd = guideAtEnd(completion?.done, completion?.total, order, isDone, shouldSkip);
   const visibleInBlock = useCallback((block: (typeof blocks)[number]) => block.steps.filter(isShown).length, [isShown]);
   const progressive = useProgressiveSections({
     slug,
@@ -200,7 +206,7 @@ export function GuideReader({
     blocks,
     order,
     currentId,
-    pinnedStepId: scrollReq.current?.id,
+    pinnedStepId: scrollReq.current?.id === GUIDE_COMPLETE_ID ? order.at(-1) : scrollReq.current?.id,
     allStepIds,
     visibleIn: visibleInBlock,
   });
@@ -231,6 +237,7 @@ export function GuideReader({
   // Deep link (?step=) → cursor + centre scroll. Also on first mount with a stored cursor.
   const mounted = useRef<string | null>(null);
   useEffect(() => {
+    if (mounted.current !== slug) userMoved.current = false;
     if (ignoreDeepStep) {
       // Highlighted step: stored cursor when it is visible, otherwise the first visible step.
       // Scroll only while ignoring a stale deep link, not on a normal mount of a pasted ?step=.
@@ -257,6 +264,18 @@ export function GuideReader({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deepStep, slug, ignoreDeepStep]);
 
+  // A finished guide opens at the end. An open ?step= still wins. A done step in the URL is the old cursor, not a request to stay there.
+  const finishedScrollSlug = useRef<string | null>(null);
+  useEffect(() => {
+    if (!atEnd) return;
+    if (deepStep && !isDone(deepStep) && !shouldSkip(deepStep)) return;
+    if (finishedScrollSlug.current === slug) return;
+    finishedScrollSlug.current = slug;
+    if (userMoved.current) return;
+    scrollReq.current = { id: GUIDE_COMPLETE_ID, mode: "end" };
+    setScrollTick((n) => n + 1);
+  }, [atEnd, deepStep, slug, isDone, shouldSkip]);
+
   // A manual scroll drops any in-flight jump / deep-link retry.
   useEffect(() => {
     const onUser = (e: Event) => {
@@ -277,8 +296,34 @@ export function GuideReader({
     };
   }, []);
 
+  // End-of-guide jumps stay armed across section mounts. One scrollIntoView stops
+  // short: content-visibility placeholders grow the page only after the scroll passes them.
+  useLayoutEffect(() => {
+    if (scrollReq.current?.id !== GUIDE_COMPLETE_ID) return;
+    if (userMoved.current) {
+      scrollReq.current = null;
+      return;
+    }
+    const root = document.scrollingElement;
+    if (!root) return;
+    const lastId = order.at(-1);
+    const lastMounted = !lastId || !!document.getElementById(`step-${lastId}`);
+    const max = root.scrollHeight - root.clientHeight;
+    const already = max <= 1 || root.scrollTop >= max - 1;
+    // Drop the jump only once a later layout finds us already at the true bottom.
+    // Clearing on the same pass would miss the sections that mount because of this scroll.
+    if (already && lastMounted && document.getElementById(GUIDE_COMPLETE_ID)) {
+      scrollReq.current = null;
+      return;
+    }
+    scrollColumnToEnd(root);
+    document.getElementById(GUIDE_COMPLETE_ID)?.scrollIntoView({ block: "end", behavior: "auto" });
+    scrollColumnToEnd(root);
+  }, [scrollTick, atEnd, order, progressive.isMounted]);
+
   // Perform requested scrolls once the target is rendered (keep the request if it is still a placeholder).
   useEffect(() => {
+    if (scrollReq.current?.id === GUIDE_COMPLETE_ID) return;
     const decision = takeScrollRequest(
       scrollReq.current,
       currentId,
@@ -295,12 +340,28 @@ export function GuideReader({
     const el = document.getElementById(`step-${req.id}`);
     if (!el) return;
     // Effects run after commit, so layout is ready; no rAF (it never fires in background tabs).
-    el.scrollIntoView({ block: req.mode, behavior: prefersReducedMotion() || req.mode === "center" ? "auto" : "smooth" });
+    el.scrollIntoView({ block: req.mode, behavior: prefersReducedMotion() || req.mode === "center" || req.mode === "end" ? "auto" : "smooth" });
   }, [scrollTick, currentId]);
+
+  const jumpToCurrent = useCallback(() => {
+    if (atEnd) {
+      userMoved.current = false;
+      scrollReq.current = { id: GUIDE_COMPLETE_ID, mode: "end" };
+      setScrollTick((n) => n + 1);
+      return;
+    }
+    if (currentId) select(currentId, "center");
+  }, [atEnd, currentId, select]);
 
   const runNav = useCallback(
     (cmd: NavCommand) => {
       const res = navReducer(currentId, cmd, { order, isDone, shouldSkip });
+      if (cmd === "nextUnchecked" && atEnd && res.current === currentId) {
+        userMoved.current = false;
+        scrollReq.current = { id: GUIDE_COMPLETE_ID, mode: "end" };
+        setScrollTick((n) => n + 1);
+        return;
+      }
       if (res.toggle) progress.toggle(res.toggle, stepById.get(res.toggle), quests);
       if (res.current) {
         const advance = () => select(res.current!, res.current !== currentId ? "nearest" : null);
@@ -308,7 +369,7 @@ export function GuideReader({
         else advance();
       }
     },
-    [currentId, order, progress, stepById, select, isDone, shouldSkip, quests],
+    [currentId, order, progress, stepById, select, isDone, shouldSkip, quests, atEnd],
   );
 
   // Keyboard: j/k/space/n (search is handled by the shell).
@@ -361,6 +422,14 @@ export function GuideReader({
     [order, select],
   );
   const onReveal = useCallback((ids: string[]) => setRevealed((r) => new Set([...r, ...ids])), []);
+  const onHide = useCallback((ids: string[]) => {
+    setRevealed((r) => {
+      if (!ids.some((id) => r.has(id))) return r;
+      const next = new Set(r);
+      for (const id of ids) next.delete(id);
+      return next;
+    });
+  }, []);
   const questName = useCallback((id: number) => quests?.get(id)?.name, [quests]);
   const addedQuests = progressProfile?.addedQuests ?? EMPTY_ADDED;
   const onToggleNearMiss = useCallback(
@@ -490,7 +559,7 @@ export function GuideReader({
             total={completion?.total}
             bonusHidden={bonusHidden}
             expectedLevel={(currentStep && simByStep?.get(currentStep.id)?.level) ?? currentStep?.sim?.[routeStyle]?.level}
-            onJumpCurrent={() => { if (currentId) select(currentId, "center"); }}
+            onJumpCurrent={jumpToCurrent}
             onMarkUpToHere={
               currentStep
                 ? () => {
@@ -520,6 +589,9 @@ export function GuideReader({
                   onJump={onJump}
                   onStopSelect={onStopSelect}
                   onReveal={onReveal}
+                  onHide={onHide}
+                  revealed={revealed}
+                  groupVisible={isGrouped}
                   quests={quests}
                   nearMisses={insights?.nearMisses[guide.slug]}
                   addedQuests={addedQuests}
@@ -550,7 +622,7 @@ export function GuideReader({
               />
             ),
           )}
-          {completion && completion.total > 0 && completion.done >= completion.total && (
+          {atEnd && (
             <GuideCompleteCard
               nextSlug={nextSlug}
               nextName={nextSlug ? guideName(nextSlug, nextLoaded?.displayName) : undefined}
@@ -571,7 +643,7 @@ export function GuideReader({
         onPrev={() => runNav("prev")}
         onNext={() => runNav("next")}
         onToggle={() => runNav("toggle")}
-        onJumpCurrent={() => { if (currentId) select(currentId, "center"); }}
+        onJumpCurrent={jumpToCurrent}
       />
       <span className="sr-only" aria-live="polite">
         {currentStep ? `Step ${posInOrder} of ${order.length}${isDone(currentStep.id) ? ", done" : ""}` : ""}

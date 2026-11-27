@@ -270,7 +270,42 @@ export function pickCurrentStepId(
   for (const id of order) {
     if (!opts.isDone(id) && !opts.shouldSkip?.(id)) return id;
   }
-  return order[0];
+  // Nothing left to do: stand at the end of the route, not on step 1.
+  return order.at(-1);
+}
+
+/**
+ * The route is finished when the completion counter says so, or when no visible
+ * step is still open. Jump to current then goes to the end of the page.
+ */
+export function guideAtEnd(
+  done: number | undefined,
+  total: number | undefined,
+  order: readonly string[],
+  isDone: (id: string) => boolean,
+  shouldSkip?: (id: string) => boolean,
+): boolean {
+  if (total != null && total > 0 && done != null && done >= total) return true;
+  // Counter not in yet: every visible step is done (a skipped-only list is not a finished route).
+  return order.length > 0 && order.some((id) => isDone(id)) && order.every((id) => isDone(id) || !!shouldSkip?.(id));
+}
+
+/**
+ * Move a scrolling column to its bottom. Placeholders using content-visibility
+ * grow `scrollHeight` only as the scroll position passes them, so one assignment
+ * stops short. Returns true once the column is actually at the end.
+ */
+export function scrollColumnToEnd(
+  root: { scrollTop: number; scrollHeight: number; clientHeight: number },
+  passes = 12,
+): boolean {
+  for (let i = 0; i < passes; i++) {
+    const max = root.scrollHeight - root.clientHeight;
+    if (max <= 1 || root.scrollTop >= max - 1) return true;
+    root.scrollTop = root.scrollHeight;
+  }
+  const max = root.scrollHeight - root.clientHeight;
+  return max <= 1 || root.scrollTop >= max - 1;
 }
 
 /**

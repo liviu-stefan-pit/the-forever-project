@@ -6,7 +6,9 @@ import {
   expandMounted,
   nearestVisibleId,
   mapAnchorAcrossVisibility,
+  guideAtEnd,
   pickCurrentStepId,
+  scrollColumnToEnd,
   pickNextOpenSteps,
   guideStepPickReady,
   nextIgnoreDeepStep,
@@ -244,6 +246,43 @@ describe("pickCurrentStepId", () => {
   it("skips blocked / not_applicable when picking the first open step", () => {
     const shouldSkip = (id: string) => id === "b";
     expect(pickCurrentStepId(order, { isDone, shouldSkip })).toBe("c");
+  });
+
+  it("treats a full counter or no open step as the end of the route", () => {
+    const done = (id: string) => id !== "c";
+    expect(guideAtEnd(4, 4, order, () => false)).toBe(true);
+    expect(guideAtEnd(3, 4, order, () => true)).toBe(true);
+    expect(guideAtEnd(3, 4, order, done)).toBe(false);
+    expect(guideAtEnd(0, 4, order, () => false, () => true)).toBe(false);
+    expect(guideAtEnd(undefined, undefined, [], () => true)).toBe(false);
+  });
+
+  it("keeps scrolling until a growing column is actually at the end", () => {
+    let scrollTop = 0;
+    let scrollHeight = 400;
+    const root = {
+      clientHeight: 100,
+      get scrollHeight() {
+        return scrollHeight;
+      },
+      get scrollTop() {
+        return scrollTop;
+      },
+      set scrollTop(value: number) {
+        scrollTop = value;
+        if (scrollHeight < 1600) scrollHeight += 400;
+      },
+    };
+    expect(scrollColumnToEnd(root)).toBe(true);
+    expect(root.scrollTop).toBeGreaterThanOrEqual(root.scrollHeight - root.clientHeight - 1);
+  });
+
+  it("stands on the last step when every step is done or skipped", () => {
+    expect(pickCurrentStepId(order, { isDone: () => true })).toBe("d");
+    expect(pickCurrentStepId(order, { cursorStep: "a", isDone: () => true })).toBe("d");
+    expect(pickCurrentStepId(order, { deepStep: "b", isDone: () => true })).toBe("d");
+    expect(pickCurrentStepId([], { isDone: () => true })).toBeUndefined();
+    expect(pickCurrentStepId(order, { isDone: () => false, shouldSkip: () => true })).toBe("d");
   });
 
   it("does not treat a partially done mixed step as finished or skippable", () => {
