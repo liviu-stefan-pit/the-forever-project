@@ -3,12 +3,13 @@
  *
  * - Pages: network first, so a new deploy is picked up at once; the cached shell when offline.
  * - /assets/ (hashed file names): cache first.
- * - Guide data and map images: served from the cache when present and refreshed in the
- *   background, so guides you have opened keep working with no signal.
+ * - Guide data (/data/): network first, so a route change shows up on the next load after a
+ *   deploy; the cached copy when offline, so guides you have opened keep working with no signal.
+ * - Map images and icons: served from the cache when present and refreshed in the background.
  *
  * Bump VERSION to drop every old cache on the next visit.
  */
-const VERSION = "v2";
+const VERSION = "v3";
 const SHELL = `tfp-shell-${VERSION}`;
 const RUNTIME = `tfp-runtime-${VERSION}`;
 const SHELL_FILES = ["./", "./index.html", "./manifest.webmanifest", "./favicon.svg?v=2", "./icons/icon-192.png?v=2"];
@@ -46,6 +47,17 @@ async function networkFirst(request) {
   }
 }
 
+async function dataNetworkFirst(request) {
+  const cache = await caches.open(RUNTIME);
+  try {
+    const res = await fetch(request);
+    if (res.ok) await cache.put(request, res.clone());
+    return res;
+  } catch {
+    return (await cache.match(request)) || Response.error();
+  }
+}
+
 async function cacheFirst(request) {
   const hit = await caches.match(request);
   if (hit) return hit;
@@ -80,7 +92,9 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(networkFirst(req));
   } else if (path.startsWith("assets/")) {
     event.respondWith(cacheFirst(req));
-  } else if (path.startsWith("data/") || path.startsWith("maps/") || path.startsWith("icons/")) {
+  } else if (path.startsWith("data/")) {
+    event.respondWith(dataNetworkFirst(req));
+  } else if (path.startsWith("maps/") || path.startsWith("icons/")) {
     event.respondWith(staleWhileRevalidate(event));
   }
 });

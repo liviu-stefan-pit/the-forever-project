@@ -18,10 +18,11 @@
 /manifest.webmanifest
   Cache-Control: no-cache
 
-# Guide JSON changes on deploy, not per visitor. One hour at the edge.
+# Guide JSON changes with every route edit. no-cache: browsers keep a copy but check it on every
+# load (a 304 when nothing changed), so a deploy shows up at once instead of after an hour.
 # Both lines: a single-segment splat does not cover /data/guides/*.json.
 /data/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: no-cache
 
 /data/guides/*
-  Cache-Control: public, max-age=3600
+  Cache-Control: no-cache
