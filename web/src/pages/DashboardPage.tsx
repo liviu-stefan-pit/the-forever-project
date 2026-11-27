@@ -13,6 +13,7 @@ import { TONE } from "../components/step/ActionChips";
 import { RichLine } from "../components/step/RichLine";
 import { StatusBadge } from "../components/ui/ExperimentalBadge";
 import { Icon } from "../components/ui/Icon";
+import { START_AT_TOP_STATE } from "../lib/guideList";
 import { ErrorState, Skeleton } from "../components/ui/States";
 import { publicAsset, type ZonePoint } from "../components/map/route";
 import { dataOf, useGuide, useGuideIndex, useGuideTitle, useInsights, useQuests, useZones } from "../data/hooks";
@@ -184,7 +185,7 @@ function NowCard({ guide, model, quests }: { guide: Guide; model: Model; quests:
       <div className="rounded-sm border border-done/50 bg-canvas/40 p-4 text-sm text-ink">
         <p className="font-semibold">This guide is done.</p>
         {model.nextGuide && (
-          <Link to={`/guide/${model.nextGuide}`} className="mt-1 inline-block font-semibold text-bronze-400 hover:text-bronze-300">
+          <Link to={`/guide/${model.nextGuide}`} state={START_AT_TOP_STATE} className="mt-1 inline-block font-semibold text-bronze-400 hover:text-bronze-300">
             On to {guideTitle(model.nextGuide)} →
           </Link>
         )}
@@ -367,7 +368,7 @@ function Goals({ model, slug }: { model: Model; slug: string }) {
         {model.nextGuide && (
           <span className="text-sm text-muted">
             Then:{" "}
-            <Link to={`/guide/${model.nextGuide}`} className="font-semibold text-bronze-400 hover:text-bronze-300">
+            <Link to={`/guide/${model.nextGuide}`} state={START_AT_TOP_STATE} className="font-semibold text-bronze-400 hover:text-bronze-300">
               {guideTitle(model.nextGuide)} →
             </Link>
           </span>

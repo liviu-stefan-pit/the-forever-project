@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { HORDE_HOME } from "../../config";
+import { START_AT_TOP_STATE } from "../../lib/guideList";
 import { formatExpectedLevel } from "../../lib/xp/checkpointText";
 import { Icon } from "../ui/Icon";
 
@@ -27,6 +28,7 @@ export function GuideCompleteCard({
       {nextSlug ? (
         <Link
           to={`/guide/${nextSlug}`}
+          state={START_AT_TOP_STATE}
           className="press mt-4 inline-flex min-h-touch items-center gap-2 rounded-sm border border-bronze-500 bg-horde-500 px-5 py-3 font-semibold text-ink shadow-lg shadow-horde-700/40 hover:bg-horde-400"
         >
           Continue to {nextName ?? nextSlug} <Icon name="arrowRight" className="h-4 w-4" />

@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { dataOf, useGuide } from "../../data/hooks";
 import type { Guide, GuideIndex, Insights } from "../../data/schema";
 import { bracketOf } from "../../lib/levels";
+import { START_AT_TOP_STATE } from "../../lib/guideList";
 import {
   formatGuideStepCount,
   GUIDE_STEP_COUNT_TITLE,
@@ -129,6 +130,7 @@ export function GuideHeader({
             (nextInIndex ? (
               <Link
                 to={`/guide/${nextSlug}`}
+                state={START_AT_TOP_STATE}
                 className={`items-center gap-1.5 rounded-sm border px-2.5 py-1 transition ${nextComplete ? "inline-flex" : "hidden sm:inline-flex"} ${
                   nextComplete
                     ? "border-bronze-400 bg-bronze-500/25 font-semibold text-bronze-200 hover:border-bronze-300 hover:bg-bronze-500/35"

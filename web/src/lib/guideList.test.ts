@@ -24,6 +24,8 @@ import {
   takeScrollRequest,
   topVisiblePlaceholderId,
   topVisibleStepId,
+  START_AT_TOP_STATE,
+  wantsStartAtTop,
 } from "./guideList";
 
 describe("pickListAnchor", () => {
@@ -495,5 +497,14 @@ describe("mapAnchorAcrossVisibility", () => {
   it("returns undefined rather than the first step when nothing else survives", () => {
     expect(mapAnchorAcrossVisibility(off, [first], all)).toBeUndefined();
     expect(mapAnchorAcrossVisibility(undefined, onList, all)).toBeUndefined();
+  });
+});
+
+describe("wantsStartAtTop", () => {
+  it("is true only for the next-guide link state", () => {
+    expect(wantsStartAtTop(START_AT_TOP_STATE)).toBe(true);
+    expect(wantsStartAtTop(null)).toBe(false);
+    expect(wantsStartAtTop(undefined)).toBe(false);
+    expect(wantsStartAtTop({ startAtTop: "yes" })).toBe(false);
   });
 });

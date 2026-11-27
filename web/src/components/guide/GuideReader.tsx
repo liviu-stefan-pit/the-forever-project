@@ -3,7 +3,7 @@
  * keyboard navigation, `?step=<id>` deep links and the mobile bottom bar.
  */
 import { startTransition, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import { useSearchParams } from "react-router";
+import { useLocation, useNavigate, useSearchParams } from "react-router";
 import { dataOf, useGuide, useQuestSteps } from "../../data/hooks";
 import type { QuestMap, ZoneMap } from "../../data/loader";
 import type { Guide, GuideIndex, Insights, RouteStyle, Step, StepSim, Stop } from "../../data/schema";
@@ -30,7 +30,15 @@ import { GuideHeader } from "./GuideHeader";
 import { MobileGuideBar, SidePanel } from "./SidePanel";
 import { ZoneSection } from "./ZoneSection";
 import { useProgressiveSections } from "./useProgressiveSections";
-import { guideAtEnd, isUserScrollIntent, mapAnchorAcrossVisibility, pickCurrentStepId, scrollColumnToEnd, takeScrollRequest } from "../../lib/guideList";
+import {
+  guideAtEnd,
+  isUserScrollIntent,
+  mapAnchorAcrossVisibility,
+  pickCurrentStepId,
+  scrollColumnToEnd,
+  takeScrollRequest,
+  wantsStartAtTop,
+} from "../../lib/guideList";
 import { stepPickShouldSkip, stopIsComplete } from "../../state/questProgress";
 import { countsInProgress } from "../../state/stepRequirement";
 import { useRecomputedSim } from "../../lib/xp/useRecomputedSim";
@@ -119,6 +127,9 @@ export function GuideReader({
   const scrollReq = useRef<{ id: string; mode: ScrollMode } | null>(null);
   const [scrollTick, setScrollTick] = useState(0);
   const userMoved = useRef(false);
+  // "Continue to …" / "Next guide" open the guide at its top. Read once: the reader is keyed per guide.
+  const location = useLocation();
+  const startAtTop = useRef(wantsStartAtTop(location.state));
 
   const progressProfile = engine ? engine.progressProfile() : undefined;
   const active = engine?.active() ?? null;
@@ -238,6 +249,10 @@ export function GuideReader({
   const mounted = useRef<string | null>(null);
   useEffect(() => {
     if (mounted.current !== slug) userMoved.current = false;
+    if (startAtTop.current && !deepStep) {
+      mounted.current = slug;
+      return;
+    }
     if (ignoreDeepStep) {
       // Highlighted step: stored cursor when it is visible, otherwise the first visible step.
       // Scroll only while ignoring a stale deep link, not on a normal mount of a pasted ?step=.
@@ -271,10 +286,22 @@ export function GuideReader({
     if (deepStep && !isDone(deepStep) && !shouldSkip(deepStep)) return;
     if (finishedScrollSlug.current === slug) return;
     finishedScrollSlug.current = slug;
-    if (userMoved.current) return;
+    if (userMoved.current || startAtTop.current) return;
     scrollReq.current = { id: GUIDE_COMPLETE_ID, mode: "end" };
     setScrollTick((n) => n + 1);
   }, [atEnd, deepStep, slug, isDone, shouldSkip]);
+
+  // Arriving from the previous guide's "Continue": the old page's scroll offset must not carry over.
+  // Drop the flag from history afterwards so a reload or Back resumes at the cursor as usual.
+  const navigate = useNavigate();
+  useLayoutEffect(() => {
+    if (!startAtTop.current) return;
+    window.scrollTo(0, 0);
+    if (wantsStartAtTop(location.state)) {
+      navigate({ pathname: location.pathname, search: location.search, hash: location.hash }, { replace: true, state: null, preventScrollReset: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // A manual scroll drops any in-flight jump / deep-link retry.
   useEffect(() => {

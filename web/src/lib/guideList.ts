@@ -290,6 +290,13 @@ export function guideAtEnd(
   return order.length > 0 && order.some((id) => isDone(id)) && order.every((id) => isDone(id) || !!shouldSkip?.(id));
 }
 
+/** Router state for links that move on to another guide: open it at the top, not at the cursor or the end. */
+export const START_AT_TOP_STATE = { startAtTop: true } as const;
+
+export function wantsStartAtTop(state: unknown): boolean {
+  return typeof state === "object" && state !== null && (state as { startAtTop?: unknown }).startAtTop === true;
+}
+
 /**
  * Move a scrolling column to its bottom. Placeholders using content-visibility
  * grow `scrollHeight` only as the scroll position passes them, so one assignment
