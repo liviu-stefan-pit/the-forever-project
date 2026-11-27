@@ -30,7 +30,6 @@ import {
   type StopGroup,
 } from "../lib/dashboard";
 import { pickNextOpenSteps } from "../lib/guideList";
-import { routeStatus } from "../lib/packStatus";
 import { cardTips, type TipContext } from "../lib/stepExtras";
 import { stepSpot } from "../lib/stepPoints";
 import { fmtDays, fmtPlayTime, minutesToSixty } from "../lib/timeEstimate";
@@ -62,6 +61,18 @@ function npcOf(step: Step, quests: QuestMap): string | undefined {
 
 function fmtCoord(p: { x: number; y: number }): string {
   return `${p.x.toFixed(1)}, ${p.y.toFixed(1)}`;
+}
+
+/** Map most of a guide's last 10 steps are on; undefined when none has a map. */
+function finishedMapId(steps: readonly Step[], mapOf: (s: Step) => number | undefined): number | undefined {
+  const counts = new Map<number, number>();
+  for (const s of steps.slice(-10)) {
+    const m = mapOf(s);
+    if (m !== undefined) counts.set(m, (counts.get(m) ?? 0) + 1);
+  }
+  let best: number | undefined;
+  for (const [m, n] of counts) if (best === undefined || n > counts.get(best)!) best = m;
+  return best;
 }
 
 /** Everything the dashboard derives from the current guide. Undefined until the guide and quests load. */
@@ -111,11 +122,13 @@ function useDashboardModel(pos: RoutePosition, guide: Guide | undefined, quests:
     });
 
     // Map: the zone of the current step (else the first stop), with the recent trail on that map.
-    const heroMapId = (now && mapOf(now)) ?? (stops[0]?.steps[0] && mapOf(stops[0].steps[0]));
+    // A finished guide has neither: show the zone most of its last steps are in, with the trail that led there
+    // (the very last step can be a hand-in on another map).
+    const heroMapId = (now && mapOf(now)) ?? (stops[0]?.steps[0] && mapOf(stops[0].steps[0])) ?? finishedMapId(visible, mapOf);
     const nowSpot = now ? spotOf(now) : undefined;
     const trail: ZonePoint[] = [];
-    if (now && heroMapId !== undefined) {
-      const at = visible.indexOf(now);
+    if (heroMapId !== undefined && (now || stops.length === 0)) {
+      const at = now ? visible.indexOf(now) : visible.length;
       for (let i = Math.max(0, at - 10); i < at; i++) {
         const s = visible[i]!;
         if (mapOf(s) !== heroMapId) continue;
@@ -475,7 +488,7 @@ export function DashboardPage() {
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-bronze-400">{started ? "Welcome back" : "Your journey starts here"}</p>
-              <StatusBadge status={routeStatus(dataOf(indexRes))} />
+              <StatusBadge status={guide?.status} playtested={guide?.playtested} />
             </div>
             <h1 id="hero-title" className="font-display text-3xl font-bold leading-tight text-bronze-400 sm:text-4xl">
               {guideName ? guideName : <Skeleton className="h-9 w-56" />}

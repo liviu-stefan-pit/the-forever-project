@@ -12,13 +12,11 @@ export const EXPERIMENTAL_TEXT = "Experimental — these routes have not been fu
 export const EXPERIMENTAL_HREF = "/about#experimental";
 export const PLAYTESTED_HREF = "/about#play-tested";
 
-/** Tooltip for the green badge, with the run's class, levels and date when known. */
-export function playtestedText(p?: GuidePlaytest): string {
-  const run = p ? ` on a ${p.class}, levels ${p.levels[0]}–${p.levels[1]}, ${p.date}` : "";
-  return (
-    `Play-tested — played through in the live game with AdventureLog${run}. Quest order, locations and XP were checked. ` +
-    "Class quests for other classes are still unconfirmed."
-  );
+export const PLAYTESTED_LABEL = "Tested in game";
+
+/** Tooltip for the green badge. The run's details stay in the data; the badge only says the route was played. */
+export function playtestedText(_p?: GuidePlaytest): string {
+  return "Tested in game — we played this route in the game and checked it.";
 }
 
 const PILL = "inline-flex shrink-0 items-center gap-1 rounded-full border px-2 py-px text-[10px] font-bold uppercase tracking-[0.18em]";
@@ -77,7 +75,7 @@ export function ExperimentalBadge({ link = true, className = "" }: { link?: bool
 }
 
 export function PlaytestedBadge({ playtested, link = true, className = "" }: { playtested?: GuidePlaytest; link?: boolean; className?: string }) {
-  return <Pill tone="done" icon="check" label="Play-tested" text={playtestedText(playtested)} href={PLAYTESTED_HREF} link={link} className={className} testId="badge-playtested" />;
+  return <Pill tone="done" icon="check" label={PLAYTESTED_LABEL} text={playtestedText(playtested)} href={PLAYTESTED_HREF} link={link} className={className} testId="badge-playtested" />;
 }
 
 /** Green when the status is `play-tested`, amber otherwise (missing status = experimental). */

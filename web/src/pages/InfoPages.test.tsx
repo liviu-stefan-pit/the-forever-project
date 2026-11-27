@@ -73,10 +73,11 @@ describe("Play-tested badge per pack", () => {
     const h = render(createElement(StatusBadge, { status: "play-tested", playtested: run }));
     expect(PLAYTESTED_HREF).toBe("/about#play-tested");
     expect(h).toContain('href="/about#play-tested"');
-    expect(h).toContain("Play-tested");
+    expect(h).toContain("Tested in game");
     expect(h).toContain("text-done");
-    expect(h).toContain("AdventureLog on a Shaman, levels 1–13, 2026-11-27");
-    expect(h).toContain("Class quests for other classes are still unconfirmed.");
+    // The badge says the route was played, not how or on which class.
+    expect(h).not.toContain("AdventureLog");
+    expect(h).not.toContain("Shaman");
     expect(h).not.toContain("Experimental");
   });
 
@@ -85,7 +86,7 @@ describe("Play-tested badge per pack", () => {
       const h = render(createElement(StatusBadge, { status }));
       expect(h).toContain('href="/about#experimental"');
       expect(h).toContain("Experimental");
-      expect(h).not.toContain("Play-tested");
+      expect(h).not.toContain("Tested in game");
     }
   });
 

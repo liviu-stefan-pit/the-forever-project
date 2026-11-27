@@ -311,8 +311,8 @@ Times are active seconds (`/played` minus AFK).
 
 ### 9.2 Findings that changed the route
 
-1. **147 steps → 56** in segments 03–07, in the order the Shaman played: stop 1 → Windfield → stop 2 (+ Call of Fire 1, Faladiel) → northern hollows → Windsong Lake → (Call of Fire 2–4) → stop 3 → Firm Response → East Pylon → cult → finale → exit. The old route put the northern hollows last and Windfield Balanced-only. Segment files now follow that order: `05-northern-hollows.json` (new), `06-valanaar-defense-and-call-of-fire.json` and `07-the-cult-and-lorthuna.json` (renumbered), and `07-northern-hollows-and-departure.json` is gone.
-2. **Merged ids** (each merged step keeps one old id): 103, 107, 110, 122, 124, 125, 127, 135, 136, 141, 142, 145, 146, 153, 155, 156, 167, 171, 174, 181, 183, 184, 186, 188, w2-94484-2, w2-93165-1, w2-93165-3, w2-94487-2, w2-93736-2, w2-94486-2, w2-94485-3, w2-94488-2, w2-94488-3, w2-93159-1, w2-93317-2, w2-98512-1, w2-98512-3. Kept as they were: the Shaman cof-1…cof-7 (rewritten), Warrior 163–165, Druid 118/119/160–162, 194. **New ids:** `shriekling-den`, `confront-lorthuna`, `leave-zephras`.
+1. **147 steps → 56** in segments 03–07, in the order the Shaman played: stop 1 → Windfield → stop 2 (+ Call of Fire 1, Faladiel) → northern hollows → Windsong Lake → (Call of Fire 2–4) → stop 3 → Firm Response → East Pylon → cult → finale → exit. The old route put the northern hollows last and Windfield Balanced-only. Segment files now follow that order: `05-northern-hollows.json` (new), `06-valanaar-defense-and-call-of-fire.json` (renumbered) and `07-extended-story.json` (the optional story, §9.7), and `07-northern-hollows-and-departure.json` is gone.
+2. **Merged ids** (each merged step keeps one old id): 103, 107, 110, 122, 124, 125, 127, 135, 136, 141, 142, 145, 146, 153, 155, 156, 167, 171, 174, 181, 183, 184, 186, 188, w2-94484-2, w2-93165-1, w2-93165-3, w2-94487-2, w2-93736-2, w2-94486-2, w2-94485-3, w2-94488-2, w2-94488-3, w2-93159-1, w2-93317-2, w2-98512-1, w2-98512-3. Kept as they were: the Shaman cof-1…cof-7 (rewritten), Warrior 163–165, Druid 118/119/160–162, 194. **New ids:** `shriekling-den`, `confront-lorthuna`, `leave-zephras`, and after the review `sr-valanaar-1`, `construct-core`, `leave-zephras-speedrun`, `sr-mulgore-grind-12`, `leave-zephras-balanced`, `extended-story`.
 3. **Wrong locations in the old steps** (QuestieDB spawns were right; our `goto`s were not):
    - Blood for Blood (old 150) sent you to the Stormchasers in the north (63.8, 37.6). The charms dropped from **Al'Aketh Brawlers at the East Pylon** (64.5–67.4, 64.8–69.4), next to Disrupting Logistics.
    - Crab Season (old w2-93317-2) pointed to 42.7, 68.8. The Crawlers are at **Windsong Lake**, 52–55.5, 44–53.
@@ -322,7 +322,7 @@ Times are active seconds (`/played` minus AFK).
    - Bugged needs Deliver the Signet turned in first, so it is accepted on a second word with Valennia.
    - Only the Skyhopper with npc id 251727 counts for Bugged. 5 of 13 kills were on the other Skyhopper (251314).
 4. **Round trips cut:** Bugged is handed in at stop 2 instead of a walk back east at stop 1 (~2 min). The Air Construct Core is picked up in the bandit-camp step. Kill the East Pylon mobs only after taking Disrupting Logistics (14 kills were wasted for it).
-5. **Quest XP does not drop with level here.** Every turn-in paid QuestieDB's base XP (ratio 0.98–1.03), even level-9 quests at 13. Only kill XP drops (level 8–10 mobs give 32–59 XP at 13). The island stays worth questing to the end; see §9.5.
+5. **Quest XP does not drop with level here.** Every turn-in paid QuestieDB's base XP (ratio 0.98–1.03), even level-9 quests at 13. Only kill XP drops (level 8–10 mobs give 32–59 XP at 13). That does not make the island worth finishing: it is slower than the mainland (§9.7).
 6. The sim tracked the log well: Balanced 14.33, Speedrun 14.14 at the last stop (with Stolen Supplies back as a quest action) (real: 14 at the Sanctum). Real play was about 0.4–0.5 levels ahead from Windfield on (profession Camping 101s in segment 02, rested XP, extra kills).
 7. **Training:** 10 at stop 2 (sim 10.27), Shaman 12 at Sessaria after Call of Fire (sim 12.15–12.41), other classes 12 at the **end** of stop 3 (without Call of Fire the Speedrun sim arrives at exactly 12.0), 14 at the last stop (both sims reach 14 at the Sanctum, Speedrun at 14.03).
 8. **Grouped:** Skypriest Faladiel (another player), the Shrine of Akir after death 2, the Inner Sanctum and the Rohashi Spires (Duke Anvillaxx, elite 13). Those kills are left out of the grind rate, and the steps say solo will be slower.
@@ -384,16 +384,24 @@ Per-quest score ("extra" = time on top of the route; kills count as free unless 
 | Making Our Move, The Inner Sanctum, Confront Lorthuna | 2,260 | ~20 min grouped at 185–240 XP/min incl. kills | — | keep: Empyrean gear (slower solo) |
 | The Fate of Zephras, What Comes Next | 920 | 3.8 min | ~360 | keep |
 
-**Result: no quest in segments 03–07 falls below the grind rate** that is not also a chain unlock, a gear upgrade or a class spell. Speedrun cuts nothing here. The Speedrun/Balanced differences are crafting time (the Nyalah tip) and the unplayed Strange Hermit chain (Balanced, optional).
+**Result:** against the island's own grind rate nothing falls out, but against the mainland (§9.7) the late island does. The exits in §9.7 replace the per-quest cuts.
 
 ### 9.6 Professions
 
 Skinning 72 → 81 on the way (Galestriders), and ~4 min of crafting next to Nyalah in Valanaar (Leatherworking 39 → 49, First Aid 32 → 44, Cooking 16 → 17). Nyalah's trainer window had nothing new at 9 or 12. Crab Season rewards Recipe: Pincer Bites. No hook moves: the log shows no better place than the Shen'dar town stop (`zephras-isle:056`).
 
-### 9.7 Where each route leaves the island
+### 9.7 Where each route leaves the island (revised 2026-11-27 after review)
 
-- **Both routes exit at the same step**, `leave-zephras`, after The Earthen Ring is accepted (sim: Balanced 14.33, Speedrun 14.14; real: 14, reached at the Sanctum of Storms). Next: skycutter to Mulgore (step 194, not play-tested), then the Crossroads and `barrens-12-20` (pack.json `next` and `nextByRoute` are both `barrens-12-20`).
-- Why not earlier: island quest XP did not drop with level (§9.2.5), and every remaining block paid at or above the off-island estimate (~200–220 XP/min, §9.3) or unlocked one that did. The weakest link, Cult's True Plans + Desperate Times (~180 XP/extra min), unlocks the finale, which paid ~200–360 XP/min and the Empyrean gear.
-- **Story note:** the route already covers the whole story up to The Earthen Ring, so there is no "story continuation" after the exit. What's left on the island is the Strange Hermit chain (`w2-93159-1`, Balanced, `tags.optional`, label "Not play-tested", 1,590 XP by QuestieDB), More Al'Aketh Ears (not offered or not taken; not in the route), A Sacrifice in Vain (the alternative breadcrumb to Elegael) and other classes' class quests.
-- The guide's only optional mechanism is `tags.optional` (hidden when "show optional" is off; shown by default). It needs a route membership, and `routes: []` means both routes, so a step cannot belong to neither. To show story-only steps outside both routes, the guide would need a third membership (e.g. `routes: ["story"]` shown only with "show optional") that the XP sim skips.
-- pack.json: title "Zephras Isle 1-14 (Horde Skyborne)", levels [1, 14].
+The first version had both routes finish the story at 14. That was wrong: island quests still pay full XP, but they're slow (most blocks after Windfield paid 105–234 XP/min, kills included), and the mainland is faster. Our model puts the Barrens at about 480 XP/min (Balanced) and 600 (Speedrun); the same model said 178 min for Zephras where the playtest took about 375, so corrected it's about 230–290 XP/min. Players leave early.
+
+| Route | Leaves after | Sim level | Playtest level there | Then |
+|---|---|---|---|---|
+| **Speedrun** | Windfield + town stop 2 (`leave-zephras-speedrun`) | 10.39 | 10.8 | skycutter from Valanaar to Mulgore (no quest needed), grind Windfury Matriarchs to 12 (`sr-mulgore-grind-12`, same camp as the Mulgore guide), Crossroads → `barrens-12-20` |
+| **Balanced** | the northern hollows, Windsong Lake, (Shaman) Call of Fire and town stop 3 (`leave-zephras-balanced`) | 13.11 | 13.0 | skycutter to Mulgore, Crossroads → `barrens-12-20` |
+| **Extended** (optional, Balanced only) | A Firm Response → The Earthen Ring (`07-extended-story.json`) | 14.33 | 14 | The Earthen Ring hand-in in Mulgore (step 194), Crossroads |
+
+- Speedrun takes only what it hands in before leaving: a Speedrun-only stop 1 (`sr-valanaar-1`: Blood Tithe, To Valanaar, Deliver the Signet, Bugged). The Broken Construct parts (`construct-core`, `shriekling-den`) are Balanced only.
+- **Extended:** in the playtest, A Firm Response to The Earthen Ring took about **70 minutes for about 14,600 XP** (about 210 XP/min, partly grouped). The Balanced exit step says so. Every Extended step has `tags.optional` and the label "Extended", and the segment opens with the intro step `extended-story` (it also takes A Firm Response, moved out of town stop 3).
+- The guide has no authored sections (they're split by zone), so "Extended" is a segment file, an intro step and a tag on every step. A real titled section in the reader would need `build-data` to carry segment titles into `sections` and the reader to show them.
+- The XP sim counts optional steps on Balanced, so the guide's Balanced levels after the exit include Extended. Changing that would shift every pack that uses `tags.optional` (hundreds of steps), so it's left as is.
+- pack.json: title "Zephras Isle 1-13 (Horde Skyborne)", levels [1, 13]. The play-test itself covered 1–14 (`playtested.levels`).

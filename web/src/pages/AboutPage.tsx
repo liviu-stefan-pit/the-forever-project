@@ -10,7 +10,7 @@ import { CONTACT_EMAIL, ISSUES_URL, LICENSE_URL, MAINTAINER_NAME, PRIVACY_URL, R
 export const ABOUT_SECTIONS = [
   { id: "about", title: "About" },
   { id: "experimental", title: "Experimental" },
-  { id: "play-tested", title: "Play-tested" },
+  { id: "play-tested", title: "Tested in game" },
   { id: "ai", title: "Use of AI" },
   { id: "privacy", title: "Privacy" },
   { id: "license", title: "License" },
@@ -88,17 +88,12 @@ export function AboutPage() {
 
       <Section id="play-tested">
         <p>
-          <strong className="text-done">Play-tested.</strong> A route marked Play-tested was played through in the live game with{" "}
-          <Link to="/addons" className="text-bronze-400 hover:text-bronze-300">
-            AdventureLog
-          </Link>{" "}
-          recording the run. Its quest order, quest locations and XP were checked against that log. The guide header says which class played it
-          and over which levels.
+          <strong className="text-done">Tested in game.</strong> We played a route marked Tested in game ourselves and checked its quest order,
+          locations and XP.
         </p>
         <p>
-          One run covers one class. Class quests for other classes are still unconfirmed, and so is any quest the run did not see. Those steps
-          carry a small <strong className="font-semibold">Unconfirmed</strong> label. Pages that cover several routes, like the dashboard,
-          stay Experimental until every route in them is play-tested.
+          Class quests for classes we did not play, and any quest we did not see, carry a small{" "}
+          <strong className="font-semibold">Unconfirmed</strong> label.
         </p>
       </Section>
 

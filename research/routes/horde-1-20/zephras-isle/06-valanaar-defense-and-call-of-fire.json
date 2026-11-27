@@ -1,7 +1,7 @@
 {
  "schema": "project-forever/route-segment",
  "pack": "zephras-isle",
- "title": "Call of Fire and the defense of Valanaar",
+ "title": "Call of Fire, town stop 3 and leaving (Balanced)",
  "steps": [
   {
    "id": "zephras-isle:cof-4",
@@ -39,8 +39,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -97,8 +96,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -177,8 +175,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -238,8 +235,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -295,7 +291,7 @@
     {
      "segments": [
       {
-       "t": "Ayessa Dawnsinger: turn in The Broken Construct, accept A Firm Response."
+       "t": "Ayessa Dawnsinger: turn in The Broken Construct."
       }
      ]
     },
@@ -388,11 +384,6 @@
      "label": "The Broken Construct"
     },
     {
-     "type": "accept",
-     "questId": 93746,
-     "label": "A Firm Response"
-    },
-    {
      "type": "goto",
      "at": {
       "mapId": 2521,
@@ -434,8 +425,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -459,10 +449,6 @@
      "label": "Wowhead quest 93317"
     },
     {
-     "url": "https://www.wowhead.com/classic/quest=93746",
-     "label": "Wowhead quest 93746"
-    },
-    {
      "url": "https://www.wowhead.com/classic/quest=94491",
      "label": "Wowhead quest 94491"
     },
@@ -483,7 +469,7 @@
    "tips": [
     {
      "kind": "general",
-     "text": "XP check: without Call of Fire (Shaman only, about 3,200 XP) the guide's Speedrun sim arrives here at 12.0 with almost nothing to spare. That's why training is at the end of this stop, after the hand-ins. The playtest Shaman was already 12 from the northern hollows.",
+     "text": "XP check: without Call of Fire (Shaman only, about 3,200 XP) other classes arrive here at about 12.0 with almost nothing to spare. That's why training is at the end of this stop, after the hand-ins. The playtest Shaman was already 12 from the northern hollows.",
      "sources": [
       {
        "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
@@ -547,8 +533,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -566,13 +551,27 @@
    ]
   },
   {
-   "id": "zephras-isle:145",
+   "id": "zephras-isle:leave-zephras-balanced",
    "tags": {},
    "text": [
     {
      "segments": [
       {
-       "t": "Road north towards the Shrine of Akir: confront Belathaan Brightwish (59.9, 57.0). Two Living Storms spawn; they're level 9 and give no XP at 13, so kill them quickly or walk away."
+       "t": "Balanced: leave Zephras Isle here, at about level 13. Take the skycutter from the dock in Valanaar to Mulgore (no quest needed)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Then run east out of Mulgore to the Crossroads and continue with The Barrens 12-20 (Horde). Skip its first step: Conscript of the Horde starts in Razor Hill."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Want the island's whole story? Keep going with the Extended steps below, up to The Earthen Ring from Ayessa Dawnsinger. In the playtest that took about 70 minutes for about 14,600 XP and ended at level 14."
       }
      ]
     }
@@ -582,383 +581,18 @@
      "type": "goto",
      "at": {
       "mapId": 2521,
-      "x": 59.94,
-      "y": 57.02,
+      "x": 62.0,
+      "y": 75.0,
       "zone": "Zephras Isle",
-      "exact": true
+      "exact": false
      }
-    },
-    {
-     "type": "complete",
-     "questId": 93746,
-     "objective": 1,
-     "label": "Confront Belathaan Brightwish"
     }
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93746"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93746",
-     "label": "Wowhead quest 93746"
-    },
-    {
-     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
-     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:146",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Back in Valanaar:"
-      }
-     ]
-    },
-    {
-     "segments": [
-      {
-       "t": "Ayessa Dawnsinger: turn in A Firm Response (Windshaped Shield or a Minor Mageblood Elixir), accept Blood for Blood and In Service of Zephras."
-      }
-     ]
-    },
-    {
-     "segments": [
-      {
-       "t": "Valennia Stormfist: turn in In Service of Zephras, accept Tower Defense."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 59.11,
-      "y": 79.67,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93746,
-     "label": "A Firm Response"
-    },
-    {
-     "type": "accept",
-     "questId": 93740,
-     "label": "Blood for Blood"
-    },
-    {
-     "type": "accept",
-     "questId": 92871,
-     "label": "In Service of Zephras"
-    },
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 66.22,
-      "y": 76.64,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92871,
-     "label": "In Service of Zephras"
-    },
-    {
-     "type": "accept",
-     "questId": 93320,
-     "label": "Tower Defense"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93746"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93746",
-     "label": "Wowhead quest 93746"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93740",
-     "label": "Wowhead quest 93740"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92871",
-     "label": "Wowhead quest 92871"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93320",
-     "label": "Wowhead quest 93320"
-    },
-    {
-     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
-     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:153",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "East Pylon Watchtower (69.6, 67.1). Yorana Windyreed: turn in Tower Defense (bracers, slippers or legguards), accept Disrupting Logistics and Breaking the Breaker."
-      }
-     ]
-    },
-    {
-     "segments": [
-      {
-       "t": "Walk straight to her. In the playtest 14 Brawlers and Healers died on the way before Disrupting Logistics was in the log, and they didn't count for it (they did count for Blood for Blood)."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 69.65,
-      "y": 67.07,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 93320,
-     "label": "Tower Defense"
-    },
-    {
-     "type": "accept",
-     "questId": 92642,
-     "label": "Disrupting Logistics"
-    },
-    {
-     "type": "accept",
-     "questId": 92645,
-     "label": "Breaking the Breaker"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 93320"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93320",
-     "label": "Wowhead quest 93320"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92642",
-     "label": "Wowhead quest 92642"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92645",
-     "label": "Wowhead quest 92645"
-    },
-    {
-     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
-     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:155",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Gustberry Lowlands east, below the watchtower (64.5-69, 64.8-69.4): kill 8 Al'Aketh Brawlers and 4 Al'Aketh Healers, and Commander Belguilos (65.7, 65.5)."
-      }
-     ]
-    },
-    {
-     "segments": [
-      {
-       "t": "Blood for Blood: 10 Al'Aketh Windstone Charms drop from the Brawlers here (10 from 19 looted, 53%), so about 20 Brawlers. Our old route sent you to the Stormchasers in the north for them; that was wrong."
-      }
-     ]
-    },
-    {
-     "segments": [
-      {
-       "t": "At level 13 these mobs are 8-10 and give only 32-59 XP each."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 66.0,
-      "y": 66.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92642,
-     "objective": 2,
-     "label": "Al'Aketh Brawler"
-    },
-    {
-     "type": "complete",
-     "questId": 92642,
-     "objective": 1,
-     "label": "Al'Aketh Healer"
-    },
-    {
-     "type": "complete",
-     "questId": 93740,
-     "objective": 1,
-     "label": "Al'Aketh Windstone Charm"
-    },
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 65.7,
-      "y": 65.5,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "complete",
-     "questId": 92645,
-     "objective": 1,
-     "label": "Commander Belguilos"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92642"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92642",
-     "label": "Wowhead quest 92642"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=93740",
-     "label": "Wowhead quest 93740"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92645",
-     "label": "Wowhead quest 92645"
-    },
-    {
-     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
-     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
-    }
-   ],
-   "verified": true
-  },
-  {
-   "id": "zephras-isle:156",
-   "tags": {},
-   "text": [
-    {
-     "segments": [
-      {
-       "t": "Yorana Windyreed: turn in Disrupting Logistics and Breaking the Breaker (Hunter's Cord, Windsong Bangles or Breaker's Gauntlets), accept Return to Valanaar."
-      }
-     ]
-    }
-   ],
-   "actions": [
-    {
-     "type": "goto",
-     "at": {
-      "mapId": 2521,
-      "x": 69.65,
-      "y": 67.17,
-      "zone": "Zephras Isle",
-      "exact": true
-     }
-    },
-    {
-     "type": "turnin",
-     "questId": 92642,
-     "label": "Disrupting Logistics"
-    },
-    {
-     "type": "turnin",
-     "questId": 92645,
-     "label": "Breaking the Breaker"
-    },
-    {
-     "type": "accept",
-     "questId": 92880,
-     "label": "Return to Valanaar"
-    }
-   ],
-   "conditions": [],
-   "routes": [
-    "balanced",
-    "speedrun"
-   ],
-   "sources": [
-    {
-     "url": "https://github.com/Questie/QuestieDB",
-     "label": "QuestieDB quests.json id 92642"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92642",
-     "label": "Wowhead quest 92642"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92645",
-     "label": "Wowhead quest 92645"
-    },
-    {
-     "url": "https://www.wowhead.com/classic/quest=92880",
-     "label": "Wowhead quest 92880"
-    },
     {
      "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
      "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"

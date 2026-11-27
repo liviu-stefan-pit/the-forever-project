@@ -1,7 +1,7 @@
 {
  "schema": "project-forever/route-segment",
  "pack": "zephras-isle",
- "title": "Valanaar stop 2 and the northern hollows",
+ "title": "Valanaar stop 2 (Speedrun leaves) and the northern hollows",
  "steps": [
   {
    "id": "zephras-isle:141",
@@ -111,6 +111,158 @@
    ]
   },
   {
+   "id": "zephras-isle:leave-zephras-speedrun",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Speedrun: leave Zephras Isle here, at about level 10.5 (the playtest was 10.8 at this point). The rest of the island pays less per minute than the mainland."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Take the skycutter from the dock in Valanaar to Mulgore. No quest is needed to board it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "In Mulgore, grind to 12 (next step), then run east to the Crossroads and continue with The Barrens 12-20 (Horde). Skip its first step: Conscript of the Horde starts in Razor Hill, which you never visited."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.0,
+      "y": 75.0,
+      "zone": "Zephras Isle",
+      "exact": false
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Island blocks after this point paid 105-234 XP/min in the playtest, kills included. Our model puts the Barrens at about 230-290 XP/min once corrected by the real island times.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "zephras-isle:sr-mulgore-grind-12",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Speedrun, in Mulgore: Kill Windfury Matriarchs on Windfury Ridge until you reach 12, about 50 from 10.5. Dense camp, 46 spawns, near where the skycutter lands. Then run east out of Mulgore to the Crossroads."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1412,
+      "x": 39.1,
+      "y": 26.6,
+      "zone": "Mulgore",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 12,
+     "extra": 0,
+     "label": "Kill Windfury Matriarchs on Windfury Ridge until you reach 12, about 50 from 10.5. Dense camp, 46 spawns, near where the skycutter lands.",
+     "mobId": 2965,
+     "mobName": "Windfury Matriarch",
+     "mobLevel": 11
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=2965",
+     "label": "Wowhead Classic NPC 2965"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0)"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2965
+     ],
+     "name": "Windfury Matriarch",
+     "mapId": 1412,
+     "zone": "Mulgore",
+     "center": {
+      "x": 39.1,
+      "y": 26.6
+     },
+     "radius": 3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2965",
+       "label": "Wowhead Classic NPC 2965"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Not part of the playtest. Every other start zone's Speedrun closes the gap to 12 with a short grind like this before the Barrens.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+       "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
    "id": "zephras-isle:cof-1",
    "tags": {},
    "text": [
@@ -152,8 +304,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -205,8 +356,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -254,8 +404,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -303,8 +452,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -352,8 +500,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -402,8 +549,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -451,8 +597,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -505,8 +650,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -570,8 +714,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -637,8 +780,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -701,8 +843,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -776,8 +917,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -863,8 +1003,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -921,8 +1060,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1011,8 +1149,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1070,8 +1207,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1140,8 +1276,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1257,8 +1392,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1330,8 +1464,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -1559,8 +1692,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {

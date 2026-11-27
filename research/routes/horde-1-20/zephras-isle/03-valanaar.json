@@ -197,8 +197,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
@@ -281,6 +280,126 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "zephras-isle:sr-valanaar-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Speedrun: town stop 1, Valanaar (level 9). Take only what you finish before leaving the island:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Alvarion Windfield: accept Blood Tithe."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Valennia Stormfist: turn in To Valanaar (pick any reward), then Talaanis Shadowsong next to her: turn in Deliver the Signet. Back to Valennia: accept Bugged."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 62.1,
+      "y": 73.34,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92679,
+     "label": "Blood Tithe"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92579,
+     "label": "To Valanaar"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.17,
+      "y": 76.51,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 93948,
+     "label": "Deliver the Signet"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 2521,
+      "x": 66.22,
+      "y": 76.64,
+      "zone": "Zephras Isle",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 93949,
+     "label": "Bugged"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB quests.json id 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92679",
+     "label": "Wowhead quest 92679"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=92579",
+     "label": "Wowhead quest 92579"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93948",
+     "label": "Wowhead quest 93948"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=93949",
+     "label": "Wowhead quest 93949"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/zephras-isle-plan.md",
+     "label": "Playtest 2026-11-27 (Shaman 9-14, AdventureLog)"
+    }
+   ],
+   "verified": true
   },
   {
    "id": "zephras-isle:107",
@@ -484,8 +603,7 @@
    ],
    "conditions": [],
    "routes": [
-    "balanced",
-    "speedrun"
+    "balanced"
    ],
    "sources": [
     {
