@@ -1,0 +1,2093 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "tirisfal-1-12",
+ "title": "Brill and the west trip",
+ "steps": [
+  {
+   "id": "tirisfal-1-12:041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Road east to Brill. Three quest givers stand on it:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Calvin Montague (just north of the road, 38.2, 56.8): accept A Rogue's Deal. It's a letter for the Brill innkeeper."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Simmer (on the road, 40.9, 54.2): accept Fields of Grief. The pumpkins are for the west trip, so just carry it."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Gordo (on the road, 43.1, 54.7): accept Gordo's Task. Pick 3 Gloom Weed: it grows beside the road all the way to Brill."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 38.23,
+      "y": 56.79,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 8,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 40.91,
+      "y": 54.17,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 365,
+     "label": "Fields of Grief"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 43.06,
+      "y": 54.69,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5481,
+     "label": "Gordo's Task"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 46.3,
+      "y": 55.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5481,
+     "label": "Gordo's Task",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8",
+     "label": "Wowhead quest 8 (A Rogue's Deal)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead quest 365 (Fields of Grief)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5481",
+     "label": "Wowhead quest 5481 (Gordo's Task)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:adventurer-96656",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Eleanor Shackleton (camp just south-west of Brill): turn in The Adventurer, accept The Great Outdoors. Sit at her campfire until you get Boosted Rest (about a minute), then turn it in."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Eleanor Shackleton: accept Camping 101: Cooking and Camping 101: First Aid (270 XP each)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.28,
+      "y": 55.49,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96656,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 96607,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 96607,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "turnin",
+     "questId": 96607,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "accept",
+     "questId": 96658,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "accept",
+     "questId": 97955,
+     "label": "Camping 101: First Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96656",
+     "label": "Wowhead quest 96656 (The Adventurer)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96607",
+     "label": "Wowhead quest 96607 (The Great Outdoors)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96658",
+     "label": "Wowhead quest 96658 (Camping 101: Cooking)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97955",
+     "label": "Wowhead quest 97955 (Camping 101: First Aid)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Camping 101: Cooking is done the moment you learn Cooking in Brill. First Aid needs skill 20, so it's handed in later.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+       "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:044",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 1, Brill (level ~6). Take everything here before going out:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Innkeeper Renee: set your hearthstone, turn in A Rogue's Deal."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Executor Zygand: turn in Vital Intelligence, accept At War With The Scarlet Crusade, Discipline and Patience."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Discipline: use the item on 5 Deathguards. They stand all around Brill."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Dillinger: accept A Putrid Task. Patience: take his report while you're there."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Bartholomew (next to him): accept Sticks and Bones."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Apothecary Johaan: accept A New Plague (needs level 6)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Magistrate Sevren (town hall): accept Graverobbers."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Junior Apothecary Holland (graveyard, north-west edge): turn in Gordo's Task, accept Doom Weed."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "William Pickman: learn Cooking, turn in Camping 101: Cooking. Nurse Neela: learn First Aid."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 6 spells."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.72,
+      "y": 52.05,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Renee"
+    },
+    {
+     "type": "turnin",
+     "questId": 8,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.59,
+      "y": 51.76,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 383,
+     "label": "Vital Intelligence"
+    },
+    {
+     "type": "accept",
+     "questId": 427,
+     "label": "At War With The Scarlet Crusade"
+    },
+    {
+     "type": "accept",
+     "questId": 99134,
+     "label": "Discipline"
+    },
+    {
+     "type": "accept",
+     "questId": 99141,
+     "label": "Patience"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.6,
+      "y": 52.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99134,
+     "label": "Discipline",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.45,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 404,
+     "label": "A Putrid Task"
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "label": "Patience",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.47,
+      "y": 51.39,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86784,
+     "label": "Sticks and Bones"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.45,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 367,
+     "label": "A New Plague"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.26,
+      "y": 50.84,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 358,
+     "label": "Graverobbers"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.44,
+      "y": 48.85,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5481,
+     "label": "Gordo's Task"
+    },
+    {
+     "type": "accept",
+     "questId": 5482,
+     "label": "Doom Weed"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.75,
+      "y": 51.44,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn Cooking from William Pickman"
+    },
+    {
+     "type": "turnin",
+     "questId": 96658,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.82,
+      "y": 52.83,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "trainer",
+     "label": "Learn First Aid from Nurse Neela"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=8",
+     "label": "Wowhead quest 8 (A Rogue's Deal)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=383",
+     "label": "Wowhead quest 383 (Vital Intelligence)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead quest 427 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99134",
+     "label": "Wowhead quest 99134 (Discipline)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99141",
+     "label": "Wowhead quest 99141 (Patience)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead quest 404 (A Putrid Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86784",
+     "label": "Wowhead quest 86784 (Sticks and Bones)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead quest 367 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=358",
+     "label": "Wowhead quest 358 (Graverobbers)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5481",
+     "label": "Wowhead quest 5481 (Gordo's Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5482",
+     "label": "Wowhead quest 5482 (Doom Weed)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96658",
+     "label": "Wowhead quest 96658 (Camping 101: Cooking)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "If you're still short of 6 at Johaan, take A New Plague after the east hop: it starts with the darkhounds right outside town.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+       "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 5688,
+     "name": "Innkeeper Renee",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 61.7,
+      "y": 52
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5688",
+       "label": "Wowhead Classic NPC 5688"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:046",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladin: Shari Stilwell: turn in Continue Your Training."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.22,
+      "y": 52.66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91209,
+     "label": "Continue Your Training"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=91209",
+     "label": "Wowhead quest 91209 (Continue Your Training)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:priest-5650",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Priest: Dark Cleric Beryl (inn): turn in In Favor of Darkness, accept Garments of Darkness. Deathguard Kel stands at the north edge of town (59.2, 46.5): heal him with Lesser Heal (Rank 2), buff him with Power Word: Fortitude, then turn it in to Beryl."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.57,
+      "y": 52.19,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5651,
+     "label": "In Favor of Darkness"
+    },
+    {
+     "type": "accept",
+     "questId": 5650,
+     "label": "Garments of Darkness"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.18,
+      "y": 46.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5650,
+     "label": "Garments of Darkness",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.57,
+      "y": 52.19,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5650,
+     "label": "Garments of Darkness"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5651",
+     "label": "Wowhead quest 5651 (In Favor of Darkness)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5650",
+     "label": "Wowhead quest 5650 (Garments of Darkness)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Priest"
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:065",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "East hop (about 3 minutes): Decrepit Darkhounds roam the fields between Brill and the Undercity (62-69, 46-59). Kill them for 5 Darkhound Blood."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Linnea's camp (65.5, 60.2): Deathguard Kristof: take his report (Patience). Shelene Rhobart: accept Hides for the Forsaken."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "From now on keep every Duskbat Wing Membrane, Darkhound Hide and Vile Fin Murloc Skin: they are for Shelene."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 64.4,
+      "y": 52.0,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 367,
+     "label": "A New Plague",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.25,
+      "y": 60.2,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "label": "Patience",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.43,
+      "y": 60.12,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97558,
+     "label": "Hides for the Forsaken"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead quest 367 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99141",
+     "label": "Wowhead quest 99141 (Patience)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97558",
+     "label": "Wowhead quest 97558 (Hides for the Forsaken)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shelene's camp is the one you come back to on the east trip at level 10, so Hides is handed in there.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+       "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1548
+     ],
+     "name": "Cursed Darkhound (Darkhound Blood)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 64.2,
+      "y": 58.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1548",
+       "label": "Wowhead Classic NPC 1548"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2858",
+       "label": "Wowhead Classic item 2858"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1547
+     ],
+     "name": "Decrepit Darkhound (Darkhound Blood)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.7,
+      "y": 49.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1547",
+       "label": "Wowhead Classic NPC 1547"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2858",
+       "label": "Wowhead Classic item 2858"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1496
+     ],
+     "name": "Deathguard Dillinger (Dillinger's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 58.2,
+      "y": 51.5
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1496",
+       "label": "Wowhead Classic NPC 1496"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      251001
+     ],
+     "name": "Deathguard Kristof (Kristof's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 65.2,
+      "y": 60.2
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=251001",
+       "label": "Wowhead Classic NPC 251001"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      10666
+     ],
+     "name": "Gordo (Gordo's Report)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 43.1,
+      "y": 54.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=10666",
+       "label": "Wowhead Classic NPC 10666"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:066",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fields west of Brill (50-56, 46-58), on the way to the west trip:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Kill Rotting Dead and Ravaged Corpses for 7 Putrid Claws."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick up 6 Dry Branches from the ground (54-59, 51-56)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Gordo (on the road, 43.1, 54.7): take Gordo's Report (Patience)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Greater Duskbats along the road (40-47, 53-59): 8 Duskbat Wing Membranes."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 53.5,
+      "y": 53.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 404,
+     "label": "A Putrid Task",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 56.2,
+      "y": 53.3,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 86784,
+     "label": "Sticks and Bones",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 43.06,
+      "y": 54.69,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99141,
+     "label": "Patience",
+     "objective": 3
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 44.5,
+      "y": 56.0,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97558,
+     "label": "Hides for the Forsaken",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead quest 404 (A Putrid Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86784",
+     "label": "Wowhead quest 86784 (Sticks and Bones)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99141",
+     "label": "Wowhead quest 99141 (Patience)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97558",
+     "label": "Wowhead quest 97558 (Hides for the Forsaken)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1525
+     ],
+     "name": "Rotting Dead (Putrid Claw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 53.5,
+      "y": 53.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1525",
+       "label": "Wowhead Classic NPC 1525"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2855",
+       "label": "Wowhead Classic item 2855"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1526
+     ],
+     "name": "Ravaged Corpse (Putrid Claw)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 52.7,
+      "y": 52.8
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1526",
+       "label": "Wowhead Classic NPC 1526"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/item=2855",
+       "label": "Wowhead Classic item 2855"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 671154,
+     "name": "Dry Branch",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 56.2,
+      "y": 53.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=671154",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:063",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "West trip: Solliden Farm and the Crusader's Outpost, north of Deathknell:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Decrepit Darkhounds north of the road (37-43, 40-47): 6 Darkhound Hides."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Solliden Farm (32-38, 47-52): take 10 Tirisfal Pumpkins from the fields."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Crusader's Outpost next to it (30-34, 46-51): kill 10 Scarlet Warriors."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Bareth Dawnstone (inside the outpost, 32.0, 46.4): accept Seeking Refuge and get him out. Clear the warriors first, it's easier."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 39.6,
+      "y": 43.0,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97558,
+     "label": "Hides for the Forsaken",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 35.8,
+      "y": 50.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 365,
+     "label": "Fields of Grief",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 32.1,
+      "y": 47.7,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 427,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 31.96,
+      "y": 46.35,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99144,
+     "label": "Seeking Refuge"
+    },
+    {
+     "type": "complete",
+     "questId": 99144,
+     "label": "Seeking Refuge",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97558",
+     "label": "Wowhead quest 97558 (Hides for the Forsaken)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead quest 365 (Fields of Grief)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead quest 427 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99144",
+     "label": "Wowhead quest 99144 (Seeking Refuge)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Leave the Vile Fin murlocs by the lake west of here: they are level 7-9, and A New Plague's scales come from the north coast later, at level 9.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+       "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1535
+     ],
+     "name": "Scarlet Warrior",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 32.1,
+      "y": 47.7
+     },
+     "radius": 3.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1535",
+       "label": "Wowhead Classic NPC 1535"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 375,
+     "name": "Tirisfal Pumpkin",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 35.8,
+      "y": 50.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=375",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ],
+   "professionHooks": [
+    {
+     "profession": "Alchemy",
+     "itemName": "Recipe: Minor Mender's Potion",
+     "skillTarget": 30,
+     "npc": {
+      "id": 1934,
+      "name": "Tirisfal Farmer",
+      "zone": "Tirisfal Glades",
+      "x": 37.9,
+      "y": 50.6
+     },
+     "note": "Kill Tirisfal Farmer (Tirisfal Glades, lvl 6-7): the recipe Recipe: Minor Mender's Potion drops here. Forever-new potion recipe; drops from Tirisfal Farmer (also Gnarlpine Mystic, Alliance zone).",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/guide/professions/alchemy-overview-trainer-locations-recipes",
+       "label": "Wowhead Forever: Alchemy overview (single page spot-check)"
+      },
+      {
+       "url": "https://github.com/Questie/Questie/blob/master/Database/Classic/classicNpcDB.lua",
+       "label": "QuestieDB classicNpcDB (GitHub)"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/npc=1934",
+       "label": "Wowhead Classic NPC"
+      },
+      {
+       "url": "https://db.icy-veins.com/wow-forever/items/250988",
+       "label": "Icy Veins WoW Forever DB: item"
+      }
+     ],
+     "verified": false,
+     "itemId": 250988
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Calvin Montague (38.2, 56.8, on your way back): accept A Rogue's Deal, beat him in the duel, turn it in."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 38.23,
+      "y": 56.79,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "complete",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    },
+    {
+     "type": "turnin",
+     "questId": 590,
+     "label": "A Rogue's Deal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=590",
+     "label": "Wowhead quest 590 (A Rogue's Deal)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:072",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 2, Brill (level ~7.9). Hand in, then take the north quests:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Eleanor Shackleton (on the way in): turn in Sticks and Bones."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Executor Zygand: turn in At War With The Scarlet Crusade, Discipline and Patience, accept the next At War With The Scarlet Crusade."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Burgess: accept Proof of Demise. Keep every Scarlet Insignia Ring from now on."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Apothecary Johaan: turn in Fields of Grief and A New Plague, accept the next A New Plague. Take the Laced Pumpkin down to the Captured Scarlet Zealot in the inn's cellar."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Shari Stilwell: turn in Seeking Refuge."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Dillinger: turn in A Putrid Task, accept The Mills Overrun."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Coleman Farthing (inn): accept The Haunted Mills and Deaths in the Family (both need level 7)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Gretchen Dedmar (inn): accept The Chill of Death. Buy 1 Coarse Thread from the trade goods vendor."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Wanted! poster outside the town hall: accept Wanted: Maggot Eye."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 8 spells. ⚡ You arrive about 1-2 mobs short of 8: kill one more Scarlet or Rotting Dead on the walk in so you only train once."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.28,
+      "y": 55.49,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86784,
+     "label": "Sticks and Bones"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.59,
+      "y": 51.76,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 427,
+     "label": "At War With The Scarlet Crusade"
+    },
+    {
+     "type": "turnin",
+     "questId": 99134,
+     "label": "Discipline"
+    },
+    {
+     "type": "turnin",
+     "questId": 99141,
+     "label": "Patience"
+    },
+    {
+     "type": "accept",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.93,
+      "y": 52.01,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 374,
+     "label": "Proof of Demise"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.45,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 365,
+     "label": "Fields of Grief"
+    },
+    {
+     "type": "turnin",
+     "questId": 367,
+     "label": "A New Plague"
+    },
+    {
+     "type": "accept",
+     "questId": 407,
+     "label": "Fields of Grief"
+    },
+    {
+     "type": "accept",
+     "questId": 368,
+     "label": "A New Plague"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.97,
+      "y": 51.29,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 407,
+     "label": "Fields of Grief"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.22,
+      "y": 52.66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99144,
+     "label": "Seeking Refuge"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 58.2,
+      "y": 51.45,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 404,
+     "label": "A Putrid Task"
+    },
+    {
+     "type": "accept",
+     "questId": 426,
+     "label": "The Mills Overrun"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.72,
+      "y": 52.29,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 362,
+     "label": "The Haunted Mills"
+    },
+    {
+     "type": "accept",
+     "questId": 354,
+     "label": "Deaths in the Family"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.89,
+      "y": 52.73,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 375,
+     "label": "The Chill of Death"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.74,
+      "y": 51.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 398,
+     "label": "WANTED: Maggot Eye"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86784",
+     "label": "Wowhead quest 86784 (Sticks and Bones)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=427",
+     "label": "Wowhead quest 427 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99134",
+     "label": "Wowhead quest 99134 (Discipline)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99141",
+     "label": "Wowhead quest 99141 (Patience)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=370",
+     "label": "Wowhead quest 370 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=374",
+     "label": "Wowhead quest 374 (Proof of Demise)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=365",
+     "label": "Wowhead quest 365 (Fields of Grief)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=367",
+     "label": "Wowhead quest 367 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=407",
+     "label": "Wowhead quest 407 (Fields of Grief)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=368",
+     "label": "Wowhead quest 368 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99144",
+     "label": "Wowhead quest 99144 (Seeking Refuge)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=404",
+     "label": "Wowhead quest 404 (A Putrid Task)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=426",
+     "label": "Wowhead quest 426 (The Mills Overrun)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=362",
+     "label": "Wowhead quest 362 (The Haunted Mills)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=354",
+     "label": "Wowhead quest 354 (Deaths in the Family)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=375",
+     "label": "Wowhead quest 375 (The Chill of Death)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=398",
+     "label": "Wowhead quest 398 (WANTED: Maggot Eye)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:w2-95314-1",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Carolai Anise (next to Johaan): accept That Shadowvale Green Elixir. Shadowvale is the balanced west trip at level 12."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.43,
+      "y": 52.19,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95314,
+     "label": "That Shadowvale Green Elixir"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=95314",
+     "label": "Wowhead quest 95314 (That Shadowvale Green Elixir)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:126",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "At level 8, accept A Second Home from Shari Stilwell and report to Breton Samuels at Bandarion Keep"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.22,
+      "y": 52.66,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 91282,
+     "label": "A Second Home"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 21.85,
+      "y": 45.23,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91282,
+     "label": "A Second Home"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB 91282, npcs 246152 and 246349"
+    },
+    {
+     "url": "https://github.com/Ludovicus-Maior/WoW-Pro-Guides/blob/main/WoWPro_Leveling/Forever/Horde/01_12_Hendo_Tirisfal_Glades.lua",
+     "label": "WoW-Pro Forever Tirisfal (id and order only)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "classes": [
+    "Paladin"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1464 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "tirisfal-1-12",
+ "title": "South and east: Perrine, the Cult and Balnir",
+ "steps": [
+  {
+   "id": "tirisfal-1-12:093",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "South: the Scarlet camp on the lake shore (49-54, 64-70). Kill Captain Perrine (51.1, 67.8), 3 Scarlet Zealots and 3 Scarlet Missionaries (more Missionaries at 43-48, 64-66)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Every Scarlet here can drop a Scarlet Insignia Ring for Proof of Demise."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 51.1,
+      "y": 67.8,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 2
+    },
+    {
+     "type": "complete",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 3
+    },
+    {
+     "type": "complete",
+     "questId": 374,
+     "label": "Proof of Demise",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=370",
+     "label": "Wowhead quest 370 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=374",
+     "label": "Wowhead quest 374 (Proof of Demise)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1662
+     ],
+     "name": "Captain Perrine",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 51.1,
+      "y": 67.8
+     },
+     "radius": 1.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1662",
+       "label": "Wowhead Classic NPC 1662"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1537
+     ],
+     "name": "Scarlet Zealot",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 77.8,
+      "y": 56.1
+     },
+     "radius": 15,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1537",
+       "label": "Wowhead Classic NPC 1537"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1536
+     ],
+     "name": "Scarlet Missionary",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 50.1,
+      "y": 66.8
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1536",
+       "label": "Wowhead Classic NPC 1536"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:100",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 4, Brill (quick, level ~9.7), on the way east:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Executor Zygand: turn in At War With The Scarlet Crusade, accept the next one (Captain Vachon)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells when you get there (on the east trip, so at the next stop)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.59,
+      "y": 51.76,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 370,
+     "label": "At War With The Scarlet Crusade"
+    },
+    {
+     "type": "accept",
+     "questId": 371,
+     "label": "At War With The Scarlet Crusade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=370",
+     "label": "Wowhead quest 370 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=371",
+     "label": "Wowhead quest 371 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Coming back through Brill costs about 1.5 minutes, and it unlocks Captain Vachon, who stands next to Balnir on this trip.",
+     "sources": [
+      {
+       "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+       "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:113",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Deathguard Linnea's camp (65.5, 60.2), the east camp stop:"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Linnea: turn in Forsaken Duties, accept Return to the Magistrate and Rear Guard Patrol."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Shelene Rhobart: turn in Hides for the Forsaken."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.49,
+      "y": 60.25,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 359,
+     "label": "Forsaken Duties"
+    },
+    {
+     "type": "accept",
+     "questId": 360,
+     "label": "Return to the Magistrate"
+    },
+    {
+     "type": "accept",
+     "questId": 356,
+     "label": "Rear Guard Patrol"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.43,
+      "y": 60.12,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97558,
+     "label": "Hides for the Forsaken"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=359",
+     "label": "Wowhead quest 359 (Forsaken Duties)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=360",
+     "label": "Wowhead quest 360 (Return to the Magistrate)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=356",
+     "label": "Wowhead quest 356 (Rear Guard Patrol)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=97558",
+     "label": "Wowhead quest 97558 (Hides for the Forsaken)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:122",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balnir Farmstead (east, 74-79, 58-63): kill 8 Bleeding Horrors and 8 Wandering Spirits."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Pick 5 Tomb Weed in the same fields."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 76.2,
+      "y": 60.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 356,
+     "label": "Rear Guard Patrol",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 356,
+     "label": "Rear Guard Patrol",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 76.0,
+      "y": 61.0,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99142,
+     "label": "Tomb Weed",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=356",
+     "label": "Wowhead quest 356 (Rear Guard Patrol)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99142",
+     "label": "Wowhead quest 99142 (Tomb Weed)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:124",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Scarlet Watch Post just north of Balnir (78-82, 53-57): kill Captain Vachon (78.8, 56.1, level 11) and 5 Scarlet Friars. The Zealots here drop Scarlet Insignia Rings too."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 78.82,
+      "y": 56.13,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 371,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 371,
+     "label": "At War With The Scarlet Crusade",
+     "objective": 2
+    },
+    {
+     "type": "complete",
+     "questId": 374,
+     "label": "Proof of Demise",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=371",
+     "label": "Wowhead quest 371 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=374",
+     "label": "Wowhead quest 374 (Proof of Demise)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:w2-369-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Venomweb Vale (further east, 83-90, 49-56): kill Vicious Night Web Spiders for 4 Vicious Night Web Spider Venoms."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 86.0,
+      "y": 52.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 369,
+     "label": "A New Plague",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=369",
+     "label": "Wowhead quest 369 (A New Plague)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": true,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:rear-guard-356",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back to Linnea's camp: Deathguard Linnea: turn in Rear Guard Patrol."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.49,
+      "y": 60.25,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 356,
+     "label": "Rear Guard Patrol"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=356",
+     "label": "Wowhead quest 356 (Rear Guard Patrol)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:w2-99156-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: Deathguard Linnea: accept Rear Guard Patrol (Riptear). Riptear (level 13) roams Venomweb Vale (79-87, 38-53): take his heart back to Linnea."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.49,
+      "y": 60.25,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99156,
+     "label": "Rear Guard Patrol"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 83.1,
+      "y": 46.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99156,
+     "label": "Rear Guard Patrol",
+     "objective": 1
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.49,
+      "y": 60.25,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99156,
+     "label": "Rear Guard Patrol"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99156",
+     "label": "Wowhead quest 99156 (Rear Guard Patrol)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:w2-492-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Town stop 5, Brill (level ~11):"
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Executor Zygand: turn in At War With The Scarlet Crusade."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Burgess: turn in Proof of Demise."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Apothecary Johaan: turn in A New Plague, accept the last one and take Johaan's Special Drink to the Captured Mountaineer in the inn's cellar."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Junior Apothecary Holland: turn in Tomb Weed."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Magistrate Sevren: turn in Return to the Magistrate."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Deathguard Terrence (south side of town, 61.5, 53.5): accept The Argent Emissary (needs level 10)."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells (12 comes at the cult camp)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.59,
+      "y": 51.76,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 371,
+     "label": "At War With The Scarlet Crusade"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 60.93,
+      "y": 52.01,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 374,
+     "label": "Proof of Demise"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 59.45,
+      "y": 52.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 369,
+     "label": "A New Plague"
+    },
+    {
+     "type": "accept",
+     "questId": 492,
+     "label": "A New Plague"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.94,
+      "y": 51.4,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 492,
+     "label": "A New Plague"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 57.44,
+      "y": 48.85,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99142,
+     "label": "Tomb Weed"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.26,
+      "y": 50.84,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 360,
+     "label": "Return to the Magistrate"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.5,
+      "y": 53.5,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96895,
+     "label": "The Argent Emissary"
+    },
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=371",
+     "label": "Wowhead quest 371 (At War With The Scarlet Crusade)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=374",
+     "label": "Wowhead quest 374 (Proof of Demise)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=369",
+     "label": "Wowhead quest 369 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=492",
+     "label": "Wowhead quest 492 (A New Plague)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=99142",
+     "label": "Wowhead quest 99142 (Tomb Weed)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=360",
+     "label": "Wowhead quest 360 (Return to the Magistrate)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96895",
+     "label": "Wowhead quest 96895 (The Argent Emissary)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:103",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back east to Deathguard Linnea's camp. Hadric Harlson (65.9, 61.1): turn in The Argent Emissary, accept The Cult of the Damned and Remnants of War."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.93,
+      "y": 61.13,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96895,
+     "label": "The Argent Emissary"
+    },
+    {
+     "type": "accept",
+     "questId": 96897,
+     "label": "The Cult of the Damned"
+    },
+    {
+     "type": "accept",
+     "questId": 96898,
+     "label": "Remnants of War"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96895",
+     "label": "Wowhead quest 96895 (The Argent Emissary)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96897",
+     "label": "Wowhead quest 96897 (The Cult of the Damned)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96898",
+     "label": "Wowhead quest 96898 (Remnants of War)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:106",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Cult camp right next to the camp (62-72, 59-67): kill 8 Dark Neophytes and 8 Dark Enforcers."
+      }
+     ]
+    },
+    {
+     "segments": [
+      {
+       "t": "Collect 12 Necrotic Crystal Fragments: they drop from both and lie on the ground in the middle of the camp (67-69, 63-67)."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 68.3,
+      "y": 64.1,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96897,
+     "label": "The Cult of the Damned",
+     "objective": 1
+    },
+    {
+     "type": "complete",
+     "questId": 96897,
+     "label": "The Cult of the Damned",
+     "objective": 2
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 67.8,
+      "y": 64.6,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96898,
+     "label": "Remnants of War",
+     "objective": 1
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96897",
+     "label": "Wowhead quest 96897 (The Cult of the Damned)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96898",
+     "label": "Wowhead quest 96898 (Remnants of War)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      267006
+     ],
+     "name": "Dark Neophyte",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 68.3,
+      "y": 64.1
+     },
+     "radius": 4.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267006",
+       "label": "Wowhead Classic NPC 267006"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      275437
+     ],
+     "name": "Dark Enforcer",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 68,
+      "y": 63.7
+     },
+     "radius": 6.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=275437",
+       "label": "Wowhead Classic NPC 275437"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      267006
+     ],
+     "name": "Dark Neophyte (Necrotic Crystal Fragment)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 68.3,
+      "y": 64.1
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267006",
+       "label": "Wowhead Classic NPC 267006"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      275437
+     ],
+     "name": "Dark Enforcer (Necrotic Crystal Fragment)",
+     "mapId": 1420,
+     "zone": "Tirisfal Glades",
+     "center": {
+      "x": 68,
+      "y": 63.7
+     },
+     "radius": 4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=275437",
+       "label": "Wowhead Classic NPC 275437"
+      },
+      {
+       "url": "https://github.com/liviu-stefan-pit/project-forever/tree/main/content/questie-db/items.json",
+       "label": "github.com"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "object",
+     "objectId": 656366,
+     "name": "Naxxramas Crystal Fragment",
+     "at": {
+      "mapId": 1420,
+      "zone": "Tirisfal Glades",
+      "x": 67.9,
+      "y": 64.5
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/object=656366",
+       "label": "www.wowhead.com"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "tirisfal-1-12:108",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hadric Harlson: turn in The Cult of the Damned and Remnants of War."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 65.93,
+      "y": 61.13,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96897,
+     "label": "The Cult of the Damned"
+    },
+    {
+     "type": "turnin",
+     "questId": 96898,
+     "label": "Remnants of War"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96897",
+     "label": "Wowhead quest 96897 (The Cult of the Damned)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=96898",
+     "label": "Wowhead quest 96898 (Remnants of War)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "id": "tirisfal-1-12:115",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Balanced: the Undercity (entrance just west of Linnea's camp, 61.9, 58.9). Bethor Iceshard (Magic Quarter): turn in The Prodigal Lich, accept The Lich's Identity. Michael Garrett (bat handler): get the flight path."
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1420,
+      "x": 61.9,
+      "y": 58.9,
+      "zone": "Tirisfal Glades",
+      "exact": true
+     }
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 84.07,
+      "y": 17.45,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 405,
+     "label": "The Prodigal Lich"
+    },
+    {
+     "type": "accept",
+     "questId": 357,
+     "label": "The Lich's Identity"
+    },
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1458,
+      "x": 63.25,
+      "y": 48.56,
+      "zone": "Undercity",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Michael Garrett"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB",
+     "label": "QuestieDB (GPL-3.0) quests, NPC and object spawns"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=405",
+     "label": "Wowhead quest 405 (The Prodigal Lich)"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=357",
+     "label": "Wowhead quest 357 (The Lich's Identity)"
+    },
+    {
+     "url": "https://github.com/liviu-stefan-pit/the-forever-project/blob/main/research/playtests/tirisfal-plan.md",
+     "label": "Tirisfal Glades route plan 2026-11-27 (research pass, not play-tested yet)"
+    }
+   ],
+   "verified": false,
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Undead"
+      }
+     ]
+    ]
+   },
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 4551,
+     "name": "Michael Garrett",
+     "at": {
+      "mapId": 1458,
+      "zone": "Undercity",
+      "x": 63.2,
+      "y": 48.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=4551",
+       "label": "Wowhead Classic NPC 4551"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}
