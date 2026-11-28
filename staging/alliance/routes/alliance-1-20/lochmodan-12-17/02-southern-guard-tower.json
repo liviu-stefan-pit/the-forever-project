@@ -1,0 +1,767 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "The southern guard tower",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:accept-224",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept In Defense of the King's Lands from Mountaineer Cobbleflint"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 22.1,
+      "y": 73.1,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 224,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=224",
+     "label": "Wowhead Classic quest 224"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The southern guard tower is on the road to the Badlands, southwest of Thelsamar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=224",
+       "label": "Wowhead Classic quest 224"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:accept-267",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Trogg Threat from Captain Rugelfuss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.2,
+      "y": 73.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 267,
+     "label": "The Trogg Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=267",
+     "label": "Wowhead Classic quest 267"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-94465",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: turn in Call of Fire to Braldir Ashmantle below the Shrine of Eternal Flame and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.2,
+      "y": 66.0,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94465,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "accept",
+     "questId": 94466,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94465",
+     "label": "Wowhead Forever quest 94465"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94466",
+     "label": "Wowhead Forever quest 94466"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Reagent Pouch drops from Stonesplinter Seers here; the Fire Tar comes from Tunnel Rat Geomancers in the Silver Stream Mine later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94465",
+       "label": "Wowhead Forever quest 94465"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=94466",
+       "label": "Wowhead Forever quest 94466"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-224",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete In Defense of the King's Lands: 10 Stonesplinter Trogg, 10 Stonesplinter Scout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.6,
+      "y": 73.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 224,
+     "objective": 1,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "complete",
+     "questId": 224,
+     "objective": 2,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=224",
+     "label": "Wowhead Classic quest 224"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stonesplinter Troggs and Scouts fill the valley mouth east of the tower.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=224",
+       "label": "Wowhead Classic quest 224"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1161,
+      1162
+     ],
+     "name": "Stonesplinter Trogg",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 32.6,
+      "y": 73.7
+     },
+     "radius": 4.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1161",
+       "label": "Wowhead NPC 1161"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-267",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Trogg Threat: Trogg Stone Tooth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 33.5,
+      "y": 85.3,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 267,
+     "objective": 1,
+     "label": "The Trogg Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=267",
+     "label": "Wowhead Classic quest 267"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "You get most of the teeth from the 20 troggs you kill anyway.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=267",
+       "label": "Wowhead Classic quest 267"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1161,
+      1162,
+      1163,
+      1164,
+      1165,
+      1166
+     ],
+     "name": "Stonesplinter Trogg",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 33.5,
+      "y": 85.3
+     },
+     "radius": 6.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1161",
+       "label": "Wowhead NPC 1161"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-224",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Defense of the King's Lands to Mountaineer Cobbleflint and accept the next part from Mountaineer Gravelgaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 22.1,
+      "y": 73.1,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 224,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "accept",
+     "questId": 237,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=224",
+     "label": "Wowhead Classic quest 224"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=237",
+     "label": "Wowhead Classic quest 237"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-267",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Trogg Threat to Captain Rugelfuss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.2,
+      "y": 73.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 267,
+     "label": "The Trogg Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=267",
+     "label": "Wowhead Classic quest 267"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:complete-237",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete In Defense of the King's Lands: 10 Stonesplinter Skullthumper, 10 Stonesplinter Seer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.4,
+      "y": 84.8,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 237,
+     "objective": 1,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "complete",
+     "questId": 237,
+     "objective": 2,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=237",
+     "label": "Wowhead Classic quest 237"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Skullthumpers stand deeper in Stonesplinter Valley; Seers are on the hill near the shrine. Seers heal, so kill them first.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=237",
+       "label": "Wowhead Classic quest 237"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1163,
+      1166
+     ],
+     "name": "Stonesplinter Skullthumper",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 32.4,
+      "y": 84.8
+     },
+     "radius": 5.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1163",
+       "label": "Wowhead NPC 1163"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-94466",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Call of Fire: Reagent Pouch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.7,
+      "y": 85.3,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94466,
+     "objective": 2,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94466",
+     "label": "Wowhead Forever quest 94466"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3199,
+      1166
+     ],
+     "name": "Burning Blade Cultist",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 32.7,
+      "y": 85.3
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3199",
+       "label": "Wowhead NPC 3199"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-237",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Defense of the King's Lands to Gravelgaw and accept the last part from Mountaineer Wallbang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.5,
+      "y": 76.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 237,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "accept",
+     "questId": 263,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=237",
+     "label": "Wowhead Classic quest 237"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=263",
+     "label": "Wowhead Classic quest 263"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Shaman and Bonesnapper troggs for this one are level 15-16. Come back for them later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=237",
+       "label": "Wowhead Classic quest 237"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=263",
+       "label": "Wowhead Classic quest 263"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

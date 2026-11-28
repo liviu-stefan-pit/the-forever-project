@@ -1,0 +1,2840 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "teldrassil-1-12",
+ "title": "Shadowglen",
+ "steps": [
+  {
+   "id": "teldrassil-1-12:accept-456",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Balance of Nature from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 456,
+     "label": "The Balance of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=456",
+     "label": "Wowhead Classic quest 456"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Young nightsabers and thistle boars wander all around the base of Aldrassil. Start killing as soon as you leave the conservator.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=456",
+       "label": "Wowhead Classic quest 456"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-458",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Woodland Protector from Melithar Staghelm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.9,
+      "y": 42.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 458,
+     "label": "The Woodland Protector"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=458",
+     "label": "Wowhead Classic quest 458"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Melithar stands just north of Ilthalaine. The dryad is a short walk south-west.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=458",
+       "label": "Wowhead Classic quest 458"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-456",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Balance of Nature: 7 Young Nightsaber, 4 Young Thistle Boar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.9,
+      "y": 43.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 456,
+     "objective": 1,
+     "label": "The Balance of Nature"
+    },
+    {
+     "type": "complete",
+     "questId": 456,
+     "objective": 2,
+     "label": "The Balance of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=456",
+     "label": "Wowhead Classic quest 456"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Loop around Aldrassil. Tag anything near you; the two mob types share the same ground.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=456",
+       "label": "Wowhead Classic quest 456"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2031,
+      1984
+     ],
+     "name": "Young Nightsaber",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 59.9,
+      "y": 43.3
+     },
+     "radius": 5.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2031",
+       "label": "Wowhead NPC 2031"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-456",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Balance of Nature to Conservator Ilthalaine; Accept The Balance of Nature from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 456,
+     "label": "The Balance of Nature"
+    },
+    {
+     "type": "accept",
+     "questId": 457,
+     "label": "The Balance of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=456",
+     "label": "Wowhead Classic quest 456"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=457",
+     "label": "Wowhead Classic quest 457"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-3116",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Simple Sigil from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3116,
+     "label": "Simple Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3116",
+     "label": "Wowhead Classic quest 3116"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Your class letter. Hand it to your trainer inside Aldrassil for a little XP and your first spells.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3116",
+       "label": "Wowhead Classic quest 3116"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-3117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Etched Sigil from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3117,
+     "label": "Etched Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3117",
+     "label": "Wowhead Classic quest 3117"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-3118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Encrypted Sigil from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3118,
+     "label": "Encrypted Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3118",
+     "label": "Wowhead Classic quest 3118"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-3119",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hallowed Sigil from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3119,
+     "label": "Hallowed Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3119",
+     "label": "Wowhead Classic quest 3119"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-3120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Verdant Sigil from Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3120,
+     "label": "Verdant Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3120",
+     "label": "Wowhead Classic quest 3120"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-458",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Woodland Protector to Tarindrella; Accept The Woodland Protector from Tarindrella; Accept Nature's Call from Tarindrella"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 45.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 458,
+     "label": "The Woodland Protector"
+    },
+    {
+     "type": "accept",
+     "questId": 459,
+     "label": "The Woodland Protector"
+    },
+    {
+     "type": "accept",
+     "questId": 97977,
+     "label": "Nature's Call"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=458",
+     "label": "Wowhead Classic quest 458"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=459",
+     "label": "Wowhead Classic quest 459"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=97977",
+     "label": "Wowhead Forever quest 97977"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Nature's Call is a Forever quest: the Gnarlpine Totems sit in the same grell camp west of Aldrassil, so do both together.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=458",
+       "label": "Wowhead Classic quest 458"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=459",
+       "label": "Wowhead Classic quest 459"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=97977",
+       "label": "Wowhead Forever quest 97977"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3116",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Simple Sigil to Alyissia"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.6,
+      "y": 38.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3116,
+     "label": "Simple Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3116",
+     "label": "Wowhead Classic quest 3116"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3117",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Etched Sigil to Ayanna Everstride"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 40.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3117,
+     "label": "Etched Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3117",
+     "label": "Wowhead Classic quest 3117"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encrypted Sigil to Frahun Shadewhisper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.6,
+      "y": 38.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3118,
+     "label": "Encrypted Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3118",
+     "label": "Wowhead Classic quest 3118"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3119",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hallowed Sigil to Shanda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.2,
+      "y": 40.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3119,
+     "label": "Hallowed Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3119",
+     "label": "Wowhead Classic quest 3119"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3120",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Verdant Sigil to Mardant Strongoak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.6,
+      "y": 40.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3120,
+     "label": "Verdant Sigil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3120",
+     "label": "Wowhead Classic quest 3120"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-97979",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Goddess Provides from Shanda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.2,
+      "y": 40.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97979,
+     "label": "The Goddess Provides"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97979",
+     "label": "Wowhead Forever quest 97979"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever racial quest from Shanda: cast Elune's Light and Shadowmeld, then talk to her again.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97979",
+       "label": "Wowhead Forever quest 97979"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-97979",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Goddess Provides to Shanda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.2,
+      "y": 40.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97979,
+     "label": "The Goddess Provides"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97979",
+     "label": "Wowhead Forever quest 97979"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:trainer",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your level 2-4 spells inside Aldrassil"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your level 2-4 spells inside Aldrassil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:npc-267335",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Optional: pick a gathering profession from the junior trainers around Aldrassil"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.9,
+      "y": 41.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=267335",
+     "label": "Wowhead NPC 267335"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Forever adds junior Herbalism, Mining and Skinning trainers in the starting areas. They teach the first rank, so you can gather from level 1.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267335",
+       "label": "Wowhead NPC 267335"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Herbalism pairs well with Teldrassil: Peacebloom and Silverleaf grow along every path here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267335",
+       "label": "Wowhead NPC 267335"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 267335,
+     "name": "Eleyna Duskbreeze",
+     "at": {
+      "mapId": 1438,
+      "zone": "Teldrassil",
+      "x": 59.9,
+      "y": 41.3
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267335",
+       "label": "Wowhead NPC 267335"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-459",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Woodland Protector: 8 Fel Moss; Complete Nature's Call: 4 Gnarlpine Totem"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.1,
+      "y": 42.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 459,
+     "objective": 1,
+     "label": "The Woodland Protector"
+    },
+    {
+     "type": "complete",
+     "questId": 97977,
+     "objective": 1,
+     "label": "Nature's Call"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=459",
+     "label": "Wowhead Classic quest 459"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=97977",
+     "label": "Wowhead Forever quest 97977"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Grells drop the Fel Moss. Grab the totems on the ground between pulls.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=459",
+       "label": "Wowhead Classic quest 459"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=97977",
+       "label": "Wowhead Forever quest 97977"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1988,
+      1989,
+      1990
+     ],
+     "name": "Grell",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 55.1,
+      "y": 42.5
+     },
+     "radius": 8.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1988",
+       "label": "Wowhead NPC 1988"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-459",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Woodland Protector to Tarindrella; Turn in Nature's Call to Tarindrella"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 45.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 459,
+     "label": "The Woodland Protector"
+    },
+    {
+     "type": "turnin",
+     "questId": 97977,
+     "label": "Nature's Call"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=459",
+     "label": "Wowhead Classic quest 459"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=97977",
+     "label": "Wowhead Forever quest 97977"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:accept-916",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Webwood Venom from Gilshalan Windwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 41.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 916,
+     "label": "Webwood Venom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=916",
+     "label": "Wowhead Classic quest 916"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Webwood spiders live up the slope north of Aldrassil, at the Shadowthread Cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=916",
+       "label": "Wowhead Classic quest 916"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-4495",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Good Friend from Dirania Silvershine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.9,
+      "y": 42.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4495,
+     "label": "A Good Friend"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4495",
+     "label": "Wowhead Classic quest 4495"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Dirania stands on the east edge of Shadowglen.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4495",
+       "label": "Wowhead Classic quest 4495"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-457",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Balance of Nature: 7 Mangy Nightsaber, 7 Thistle Boar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.4,
+      "y": 36.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 457,
+     "objective": 1,
+     "label": "The Balance of Nature"
+    },
+    {
+     "type": "complete",
+     "questId": 457,
+     "objective": 2,
+     "label": "The Balance of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=457",
+     "label": "Wowhead Classic quest 457"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Mangy Nightsabers and Thistle Boars roam north of Aldrassil, on the way to the spider cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=457",
+       "label": "Wowhead Classic quest 457"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2032,
+      1985
+     ],
+     "name": "Mangy Nightsaber",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 60.4,
+      "y": 36.5
+     },
+     "radius": 5.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2032",
+       "label": "Wowhead NPC 2032"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-4495",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Good Friend to Iverron; Accept A Friend in Need from Iverron"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 54.6,
+      "y": 33.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4495,
+     "label": "A Good Friend"
+    },
+    {
+     "type": "accept",
+     "questId": 3519,
+     "label": "A Friend in Need"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4495",
+     "label": "Wowhead Classic quest 4495"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3519",
+     "label": "Wowhead Classic quest 3519"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Iverron lies poisoned at the mouth of the Shadowthread Cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4495",
+       "label": "Wowhead Classic quest 4495"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=3519",
+       "label": "Wowhead Classic quest 3519"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-916",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Webwood Venom: 10 Webwood Venom Sac"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.8,
+      "y": 29.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 916,
+     "objective": 1,
+     "label": "Webwood Venom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=916",
+     "label": "Wowhead Classic quest 916"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stay near the cave entrance; the spiders outside respawn fast enough.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=916",
+       "label": "Wowhead Classic quest 916"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1986,
+      1987
+     ],
+     "name": "Webwood Spider",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 56.8,
+      "y": 29.2
+     },
+     "radius": 5.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1986",
+       "label": "Wowhead NPC 1986"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-97236",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Fang of Githyiss and accept Fang of Githyiss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.6,
+      "y": 26.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97236,
+     "label": "Fang of Githyiss"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97236",
+     "label": "Wowhead Forever quest 97236"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Githyiss the Vile is a named spider just inside the cave. The fang starts a Forever quest worth 450 XP.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97236",
+       "label": "Wowhead Forever quest 97236"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: only if Githyiss is up when you pass; do not wait for a respawn.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97236",
+       "label": "Wowhead Forever quest 97236"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-916",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Back at Aldrassil: turn in Webwood Venom and accept Webwood Egg from Gilshalan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 41.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 916,
+     "label": "Webwood Venom"
+    },
+    {
+     "type": "accept",
+     "questId": 917,
+     "label": "Webwood Egg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=916",
+     "label": "Wowhead Classic quest 916"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=917",
+     "label": "Wowhead Classic quest 917"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-97236",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Fang of Githyiss to Gilshalan Windwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 41.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97236,
+     "label": "Fang of Githyiss"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97236",
+     "label": "Wowhead Forever quest 97236"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3519",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Friend in Need to Dirania Silvershine; Accept Iverron's Antidote from Dirania Silvershine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.9,
+      "y": 42.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3519,
+     "label": "A Friend in Need"
+    },
+    {
+     "type": "accept",
+     "questId": 3521,
+     "label": "Iverron's Antidote"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3519",
+     "label": "Wowhead Classic quest 3519"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3521",
+     "label": "Wowhead Classic quest 3521"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-457",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Balance of Nature to Conservator Ilthalaine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.7,
+      "y": 44.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 457,
+     "label": "The Balance of Nature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=457",
+     "label": "Wowhead Classic quest 457"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:complete-3521",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Iverron's Antidote: 7 Hyacinth Mushroom, 4 Moonpetal Lily"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.2,
+      "y": 41.1,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3521,
+     "objective": 1,
+     "label": "Iverron's Antidote"
+    },
+    {
+     "type": "complete",
+     "questId": 3521,
+     "objective": 2,
+     "label": "Iverron's Antidote"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3521",
+     "label": "Wowhead Classic quest 3521"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hyacinth Mushrooms grow around the base of Aldrassil; the Moonpetal Lily is near the pool just north of it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3521",
+       "label": "Wowhead Classic quest 3521"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1988,
+      1989
+     ],
+     "name": "Grell",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 57.2,
+      "y": 41.1
+     },
+     "radius": 8.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1988",
+       "label": "Wowhead NPC 1988"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-917",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Webwood Egg: Webwood Egg"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.8,
+      "y": 26.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 917,
+     "objective": 1,
+     "label": "Webwood Egg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=917",
+     "label": "Wowhead Classic quest 917"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The eggs are at the very back of the Shadowthread Cave. Kill spiders on the way for the Webwood Ichor.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=917",
+       "label": "Wowhead Classic quest 917"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-3521-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Iverron's Antidote: Webwood Ichor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.7,
+      "y": 28.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3521,
+     "objective": 3,
+     "label": "Iverron's Antidote"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3521",
+     "label": "Wowhead Classic quest 3521"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Any Webwood Spider can drop the Ichor.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3521",
+       "label": "Wowhead Classic quest 3521"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1986
+     ],
+     "name": "Webwood Spider",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 56.7,
+      "y": 28.4
+     },
+     "radius": 4.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1986",
+       "label": "Wowhead NPC 1986"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3521",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Iverron's Antidote to Dirania Silvershine; Accept Iverron's Antidote from Dirania Silvershine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.9,
+      "y": 42.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3521,
+     "label": "Iverron's Antidote"
+    },
+    {
+     "type": "accept",
+     "questId": 3522,
+     "label": "Iverron's Antidote"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3521",
+     "label": "Wowhead Classic quest 3521"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3522",
+     "label": "Wowhead Classic quest 3522"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The antidote is on a timer. Go straight to Iverron and skip the other turn-ins for now.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3521",
+       "label": "Wowhead Classic quest 3521"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=3522",
+       "label": "Wowhead Classic quest 3522"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: run back to Iverron right away, the timer is generous but the walk is long.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3521",
+       "label": "Wowhead Classic quest 3521"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=3522",
+       "label": "Wowhead Classic quest 3522"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-3522",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Iverron's Antidote to Iverron"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 54.6,
+      "y": 33.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3522,
+     "label": "Iverron's Antidote"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3522",
+     "label": "Wowhead Classic quest 3522"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-917",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Webwood Egg to Gilshalan and accept Tenaron's Summons"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 41.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 917,
+     "label": "Webwood Egg"
+    },
+    {
+     "type": "accept",
+     "questId": 920,
+     "label": "Tenaron's Summons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=917",
+     "label": "Wowhead Classic quest 917"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=920",
+     "label": "Wowhead Classic quest 920"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-920",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tenaron's Summons to Tenaron Stormgrip; Accept Crown of the Earth from Tenaron Stormgrip"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.1,
+      "y": 39.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 920,
+     "label": "Tenaron's Summons"
+    },
+    {
+     "type": "accept",
+     "questId": 921,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=920",
+     "label": "Wowhead Classic quest 920"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=921",
+     "label": "Wowhead Classic quest 921"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:complete-921",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Crown of the Earth: Filled Crystal Phial"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.0,
+      "y": 33.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 921,
+     "objective": 1,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=921",
+     "label": "Wowhead Classic quest 921"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Shadowglen moonwell is a short walk north of Aldrassil.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=921",
+       "label": "Wowhead Classic quest 921"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-921",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Crown of the Earth to Tenaron Stormgrip; Accept Crown of the Earth from Tenaron Stormgrip"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.1,
+      "y": 39.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 921,
+     "label": "Crown of the Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 928,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=921",
+     "label": "Wowhead Classic quest 921"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=928",
+     "label": "Wowhead Classic quest 928"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-96630",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Adventurer at the Lost Journal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.1,
+      "y": 39.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96630,
+     "label": "The Adventurer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96630",
+     "label": "Wowhead Forever quest 96630"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever Camping quest: read the Lost Journal near Tenaron. It sends you to Lyreena in Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96630",
+       "label": "Wowhead Forever quest 96630"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: worth it. The Camping chain gives over 1,000 XP for two minutes of walking inside Dolanaar.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96630",
+       "label": "Wowhead Forever quest 96630"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-5622",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept In Favor of Elune from Shanda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 59.2,
+      "y": 40.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5622,
+     "label": "In Favor of Elune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5622",
+     "label": "Wowhead Classic quest 5622"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Priests: Shanda sends you to Laurna in Dolanaar for your next spell quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5622",
+       "label": "Wowhead Classic quest 5622"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:trainer-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your new spells before leaving Shadowglen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your new spells before leaving Shadowglen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-2159",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dolanaar Delivery from Porthannius"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 61.2,
+      "y": 47.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2159,
+     "label": "Dolanaar Delivery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2159",
+     "label": "Wowhead Classic quest 2159"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Porthannius waits on the road south out of Shadowglen. The delivery ends at the Dolanaar inn on your way.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2159",
+       "label": "Wowhead Classic quest 2159"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

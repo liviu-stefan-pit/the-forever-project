@@ -1,0 +1,501 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Westbrook Garrison and Forest's Edge",
+ "steps": [
+  {
+   "id": "elwynn-1-12:turnin-114",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Escape to Maybell Maclure"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.1,
+      "y": 89.6,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 114,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=114",
+     "label": "Wowhead Classic quest 114"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Maybell is at the Maclure farm south of Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=114",
+       "label": "Wowhead Classic quest 114"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-88",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Princess Must Die! to Ma Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.7,
+      "y": 84.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 88,
+     "label": "Princess Must Die!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=88",
+     "label": "Wowhead Classic quest 88"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ma Stonefield is at the farm to the west, on the way to Westbrook.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=88",
+       "label": "Wowhead Classic quest 88"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-239",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Westbrook Garrison Needs Help! to Deputy Rainer; Accept Riverpaw Gnoll Bounty from Deputy Rainer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 24.2,
+      "y": 74.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 239,
+     "label": "Westbrook Garrison Needs Help!"
+    },
+    {
+     "type": "accept",
+     "questId": 11,
+     "label": "Riverpaw Gnoll Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=239",
+     "label": "Wowhead Classic quest 239"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=11",
+     "label": "Wowhead Classic quest 11"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Westbrook Garrison sits on the road west of Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=239",
+       "label": "Wowhead Classic quest 239"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=11",
+       "label": "Wowhead Classic quest 11"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:accept-176",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept WANTED: \"Hogger\" at the Wanted Poster"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 24.6,
+      "y": 74.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 176,
+     "label": "WANTED: \"Hogger\""
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=176",
+     "label": "Wowhead Classic quest 176"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "elite",
+     "text": "Hogger is an elite level 11 gnoll with others around him. Bring a friend, or skip it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=176",
+       "label": "Wowhead Classic quest 176"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-11",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Riverpaw Gnoll Bounty: 8 Painted Gnoll Armband"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 27.2,
+      "y": 86.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 11,
+     "objective": 1,
+     "label": "Riverpaw Gnoll Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=11",
+     "label": "Wowhead Classic quest 11"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Riverpaw gnolls fill Forest's Edge south of the garrison.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=11",
+       "label": "Wowhead Classic quest 11"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      97,
+      478
+     ],
+     "name": "Riverpaw Runt",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 27.2,
+      "y": 86.9
+     },
+     "radius": 7.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=97",
+       "label": "Wowhead NPC 97"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-176",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete WANTED: \"Hogger\": Huge Gnoll Claw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 25.0,
+      "y": 92.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 176,
+     "objective": 1,
+     "label": "WANTED: \"Hogger\""
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=176",
+     "label": "Wowhead Classic quest 176"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "elite",
+     "text": "Hogger walks the south end of Forest's Edge. Pull him away from the other gnolls.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=176",
+       "label": "Wowhead Classic quest 176"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      448
+     ],
+     "name": "Hogger",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 25.0,
+      "y": 92.9
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=448",
+       "label": "Wowhead NPC 448"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-11",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Riverpaw Gnoll Bounty to Deputy Rainer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 24.2,
+      "y": 74.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 11,
+     "label": "Riverpaw Gnoll Bounty"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=11",
+     "label": "Wowhead Classic quest 11"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

@@ -1,0 +1,984 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Brewnall Village, Gnomeregan and Frostmane Hold",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:accept-312",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tundra MacGrann's Stolen Stash from Tundra MacGrann"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 34.6,
+      "y": 51.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 312,
+     "label": "Tundra MacGrann's Stolen Stash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=312",
+     "label": "Wowhead Classic quest 312"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tundra MacGrann camps on the road west of Kharanos. His meat locker is in Old Icebeard's cave, which you pass on the way back.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=312",
+       "label": "Wowhead Classic quest 312"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-318",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "In Brewnall Village, turn in Evershine to Rejold Barleybrew and accept A Favor for Evershine and The Perfect Stout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.2,
+      "y": 45.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 318,
+     "label": "Evershine"
+    },
+    {
+     "type": "accept",
+     "questId": 319,
+     "label": "A Favor for Evershine"
+    },
+    {
+     "type": "accept",
+     "questId": 315,
+     "label": "The Perfect Stout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=318",
+     "label": "Wowhead Classic quest 318"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=319",
+     "label": "Wowhead Classic quest 319"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=315",
+     "label": "Wowhead Classic quest 315"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-310",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bitter Rivals from Marleth Barleybrew"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.2,
+      "y": 45.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 310,
+     "label": "Bitter Rivals"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=310",
+     "label": "Wowhead Classic quest 310"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-98326",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Frosthowl from Gretta Ganter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 31.5,
+      "y": 44.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98326,
+     "label": "Frosthowl"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98326",
+     "label": "Wowhead Forever quest 98326"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. Frosthowl is a named wolf near the Grizzled Den, so you get it on the way back east.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98326",
+       "label": "Wowhead Forever quest 98326"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-315",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Perfect Stout: 6 Shimmerweed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 41.8,
+      "y": 35.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 315,
+     "objective": 1,
+     "label": "The Perfect Stout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=315",
+     "label": "Wowhead Classic quest 315"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shimmer Ridge is the hill northeast of Brewnall. Loot the Shimmerweed baskets and kill the Frostmane Seers; both give weed.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=315",
+       "label": "Wowhead Classic quest 315"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1397
+     ],
+     "name": "Frostmane Seer",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 41.8,
+      "y": 35.3
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1397",
+       "label": "Wowhead NPC 1397"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-412",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Operation Recombobulation: 8 Restabilization Cog, 8 Gyromechanic Gear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 26.2,
+      "y": 39.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 412,
+     "objective": 1,
+     "label": "Operation Recombobulation"
+    },
+    {
+     "type": "complete",
+     "questId": 412,
+     "objective": 2,
+     "label": "Operation Recombobulation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=412",
+     "label": "Wowhead Classic quest 412"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Leper Gnomes wander outside the Gnomeregan entrance. Both parts drop from them; Gibblewilt is a named one with better odds.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=412",
+       "label": "Wowhead Classic quest 412"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1211,
+      8503
+     ],
+     "name": "Leper Gnome",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 26.2,
+      "y": 39.5
+     },
+     "radius": 4.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1211",
+       "label": "Wowhead NPC 1211"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-287",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Frostmane Hold: 5 Frostmane Headhunter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 23.6,
+      "y": 51.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 287,
+     "objective": 1,
+     "label": "Frostmane Hold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=287",
+     "label": "Wowhead Classic quest 287"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Frostmane Hold is the troll cave southwest of Brewnall. The Headhunters throw axes, so fight them at the entrance instead of inside.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=287",
+       "label": "Wowhead Classic quest 287"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1123
+     ],
+     "name": "Frostmane Headhunter",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 23.6,
+      "y": 51.7
+     },
+     "radius": 3.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1123",
+       "label": "Wowhead NPC 1123"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-98326",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Frosthowl: Sack of Fish"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 39.3,
+      "y": 48.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98326,
+     "objective": 1,
+     "label": "Frosthowl"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98326",
+     "label": "Wowhead Forever quest 98326"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      271587
+     ],
+     "name": "Frosthowl",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 39.3,
+      "y": 48.8
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=271587",
+       "label": "Wowhead NPC 271587"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-319",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Favor for Evershine: 6 Ice Claw Bear, 8 Elder Crag Boar, 8 Snow Leopard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 58.5,
+      "y": 57.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 319,
+     "objective": 1,
+     "label": "A Favor for Evershine"
+    },
+    {
+     "type": "complete",
+     "questId": 319,
+     "objective": 2,
+     "label": "A Favor for Evershine"
+    },
+    {
+     "type": "complete",
+     "questId": 319,
+     "objective": 3,
+     "label": "A Favor for Evershine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=319",
+     "label": "Wowhead Classic quest 319"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ice Claw Bears, Elder Crag Boars and Snow Leopards share the open ground between the Grizzled Den and Kharanos.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=319",
+       "label": "Wowhead Classic quest 319"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1196,
+      1127,
+      1201
+     ],
+     "name": "Ice Claw Bear",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 58.5,
+      "y": 57.2
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1196",
+       "label": "Wowhead NPC 1196"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-312",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Tundra MacGrann's Stolen Stash: MacGrann's Dried Meats"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 38.5,
+      "y": 53.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 312,
+     "objective": 1,
+     "label": "Tundra MacGrann's Stolen Stash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=312",
+     "label": "Wowhead Classic quest 312"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Old Icebeard's cave is just east of Tundra's camp. Old Icebeard himself is level 11, so pull the Wendigos one by one and grab the locker without waking him if you can.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=312",
+       "label": "Wowhead Classic quest 312"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-312",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Walk back west to Tundra MacGrann and turn in his stash"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 34.6,
+      "y": 51.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 312,
+     "label": "Tundra MacGrann's Stolen Stash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=312",
+     "label": "Wowhead Classic quest 312"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-310",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Go down into the Thunderbrew Distillery basement in Kharanos and swap the barrel: turn in Bitter Rivals and accept Return to Marleth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.7,
+      "y": 52.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 310,
+     "label": "Bitter Rivals"
+    },
+    {
+     "type": "accept",
+     "questId": 311,
+     "label": "Return to Marleth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=310",
+     "label": "Wowhead Classic quest 310"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=311",
+     "label": "Wowhead Classic quest 311"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Jarven guards the barrel. Talk to him first and buy him a Thunder Ale from the innkeeper, or he will not move.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=310",
+       "label": "Wowhead Classic quest 310"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=311",
+       "label": "Wowhead Classic quest 311"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-287",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Frostmane Hold to Senir Whitebeard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.7,
+      "y": 53.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 287,
+     "label": "Frostmane Hold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=287",
+     "label": "Wowhead Classic quest 287"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-412",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Operation Recombobulation to Razzle Sprysprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.9,
+      "y": 49.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 412,
+     "label": "Operation Recombobulation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=412",
+     "label": "Wowhead Classic quest 412"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

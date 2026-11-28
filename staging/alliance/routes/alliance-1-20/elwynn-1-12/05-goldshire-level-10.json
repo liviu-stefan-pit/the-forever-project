@@ -1,0 +1,1153 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Goldshire: level 10 class quests",
+ "steps": [
+  {
+   "id": "elwynn-1-12:turnin-39",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Deliver Thomas' Report to Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 39,
+     "label": "Deliver Thomas' Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=39",
+     "label": "Wowhead Classic quest 39"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-59",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Cloth and Leather Armor from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 59,
+     "label": "Cloth and Leather Armor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=59",
+     "label": "Wowhead Classic quest 59"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This one goes back to Sara in the logging camp; you return east later on the balanced route.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=59",
+       "label": "Wowhead Classic quest 59"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-76",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Jasperlode Mine to Marshal Dughan; Accept Westbrook Garrison Needs Help! from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 76,
+     "label": "The Jasperlode Mine"
+    },
+    {
+     "type": "accept",
+     "questId": 239,
+     "label": "Westbrook Garrison Needs Help!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=76",
+     "label": "Wowhead Classic quest 76"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=239",
+     "label": "Wowhead Classic quest 239"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-112",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Collecting Kelp to William Pestle; Accept The Escape from William Pestle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 112,
+     "label": "Collecting Kelp"
+    },
+    {
+     "type": "accept",
+     "questId": 114,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=112",
+     "label": "Wowhead Classic quest 112"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=114",
+     "label": "Wowhead Classic quest 114"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-109",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Report to Gryan Stoutmantle from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 109,
+     "label": "Report to Gryan Stoutmantle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=109",
+     "label": "Wowhead Classic quest 109"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This sends you to Sentinel Hill in Westfall; keep it for the next pack.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=109",
+       "label": "Wowhead Classic quest 109"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:trainer-5",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train level 10 spells and pick up your class quest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train level 10 spells and pick up your class quest"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-1638",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Warrior's Training from Lyria Du Lac"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.1,
+      "y": 65.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1638,
+     "label": "A Warrior's Training"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1638",
+     "label": "Wowhead Classic quest 1638"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-1860",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Speak with Jennea from Zaldimar Wefhellt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.2,
+      "y": 66.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1860,
+     "label": "Speak with Jennea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1860",
+     "label": "Wowhead Classic quest 1860"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-1685",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gakin's Summons from Remen Marcot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.5,
+      "y": 66.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1685,
+     "label": "Gakin's Summons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1685",
+     "label": "Wowhead Classic quest 1685"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-2205",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Seek out SI: 7 from Keryn Sylvius"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.9,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2205,
+     "label": "Seek out SI: 7"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2205",
+     "label": "Wowhead Classic quest 2205"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-94774",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Divine Grace from Priestess Josetta"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94774,
+     "label": "Divine Grace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94774",
+     "label": "Wowhead Forever quest 94774"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:accept-94792",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Taming the Beast from Josephine Carson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.1,
+      "y": 66.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94792,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94792",
+     "label": "Wowhead Forever quest 94792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever: Human Hunters learn to tame from Josephine Carson in Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94792",
+       "label": "Wowhead Forever quest 94792"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-94792",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Rockhide Boar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 54.0,
+      "y": 76.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94792,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94792",
+     "label": "Wowhead Forever quest 94792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rockhide Boars roam south of Goldshire toward the Maclure farm. Use the Taming Rod on one.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94792",
+       "label": "Wowhead Forever quest 94792"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      524
+     ],
+     "name": "Rockhide Boar",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 54.0,
+      "y": 76.8
+     },
+     "radius": 7.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=524",
+       "label": "Wowhead NPC 524"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-94792",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Josephine Carson; Accept Taming the Beast from Josephine Carson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.1,
+      "y": 66.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94792,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94863,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94792",
+     "label": "Wowhead Forever quest 94792"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94863",
+     "label": "Wowhead Forever quest 94863"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:complete-94863",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Gray Forest Wolf"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 61.0,
+      "y": 64.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94863,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94863",
+     "label": "Wowhead Forever quest 94863"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gray Forest Wolves prowl east of Crystal Lake.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94863",
+       "label": "Wowhead Forever quest 94863"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1922
+     ],
+     "name": "Gray Forest Wolf",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 61.0,
+      "y": 64.8
+     },
+     "radius": 5.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1922",
+       "label": "Wowhead NPC 1922"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-94863",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Josephine Carson; Accept Taming the Beast from Josephine Carson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.1,
+      "y": 66.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94863,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94864,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94863",
+     "label": "Wowhead Forever quest 94863"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94864",
+     "label": "Wowhead Forever quest 94864"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:complete-94864",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Young Forest Bear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 61.3,
+      "y": 77.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94864,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94864",
+     "label": "Wowhead Forever quest 94864"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Young Forest Bears wander the woods south-west of the Tower of Azora.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94864",
+       "label": "Wowhead Forever quest 94864"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      822
+     ],
+     "name": "Young Forest Bear",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 61.3,
+      "y": 77.5
+     },
+     "radius": 7.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=822",
+       "label": "Wowhead NPC 822"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-94864",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Josephine Carson; Accept Training the Beast from Josephine Carson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.1,
+      "y": 66.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94864,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 94793,
+     "label": "Training the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94864",
+     "label": "Wowhead Forever quest 94864"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94793",
+     "label": "Wowhead Forever quest 94793"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-94793",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Training the Beast to Isaac Chan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.8,
+      "y": 66.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94793,
+     "label": "Training the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94793",
+     "label": "Wowhead Forever quest 94793"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

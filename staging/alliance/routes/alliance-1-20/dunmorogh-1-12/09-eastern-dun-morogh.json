@@ -1,0 +1,2072 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Amberstill Ranch, Gol'Bolar Quarry and the gates",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:accept-314",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Protecting the Herd from Rudra Amberstill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 63.1,
+      "y": 49.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 314,
+     "label": "Protecting the Herd"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=314",
+     "label": "Wowhead Classic quest 314"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-95212",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Never Saddle on Quality from Rudra Amberstill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 63.1,
+      "y": 49.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95212,
+     "label": "Never Saddle on Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95212",
+     "label": "Wowhead Forever quest 95212"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. The Elder Snow Leopards are east of the quarry, so you collect pelts while doing the trogg quests.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=95212",
+       "label": "Wowhead Forever quest 95212"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-314",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Protecting the Herd: Fang of Vagash"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 62.6,
+      "y": 46.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 314,
+     "objective": 1,
+     "label": "Protecting the Herd"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=314",
+     "label": "Wowhead Classic quest 314"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Vagash is an elite level 11 wolf in the hills just north of the ranch. Bring a friend or come back at 12; skip it if you are alone and low.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=314",
+       "label": "Wowhead Classic quest 314"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1388
+     ],
+     "name": "Vagash",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 62.6,
+      "y": 46.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1388",
+       "label": "Wowhead NPC 1388"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-314",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Protecting the Herd to Rudra Amberstill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 63.1,
+      "y": 49.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 314,
+     "label": "Protecting the Herd"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=314",
+     "label": "Wowhead Classic quest 314"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-96408",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Climb to Earthseer Farsen's camp on the ridge above Gol'Bolar Quarry, turn in A Visitor to Dun Morogh and accept Farsen's Watch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 64.9,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96408,
+     "label": "A Visitor to Dun Morogh"
+    },
+    {
+     "type": "accept",
+     "questId": 96392,
+     "label": "Farsen's Watch"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96408",
+     "label": "Wowhead Forever quest 96408"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96392",
+     "label": "Wowhead Forever quest 96392"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-96392",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Ask Farsen for his far sight, watch the Dark Iron camp, then turn in Farsen's Watch and accept Nip 'Em in the Bud"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 64.9,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96392,
+     "objective": 1,
+     "label": "Farsen's Watch"
+    },
+    {
+     "type": "turnin",
+     "questId": 96392,
+     "label": "Farsen's Watch"
+    },
+    {
+     "type": "accept",
+     "questId": 96390,
+     "label": "Nip 'Em in the Bud"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96392",
+     "label": "Wowhead Forever quest 96392"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96390",
+     "label": "Wowhead Forever quest 96390"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      264936
+     ],
+     "name": "Earthseer Farsen",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 64.9,
+      "y": 58.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=264936",
+       "label": "Wowhead NPC 264936"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-432",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Those Blasted Troggs! from Foreman Stonebrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 69.1,
+      "y": 56.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 432,
+     "label": "Those Blasted Troggs!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=432",
+     "label": "Wowhead Classic quest 432"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-433",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Public Servant from Senator Mehr Stonehallow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 68.7,
+      "y": 56.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 433,
+     "label": "The Public Servant"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=433",
+     "label": "Wowhead Classic quest 433"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-432",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Those Blasted Troggs!: 6 Rockjaw Skullthumper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 70.3,
+      "y": 56.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 432,
+     "objective": 1,
+     "label": "Those Blasted Troggs!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=432",
+     "label": "Wowhead Classic quest 432"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Skullthumpers are on the quarry floor and around the mine entrance.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=432",
+       "label": "Wowhead Classic quest 432"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1115
+     ],
+     "name": "Rockjaw Skullthumper",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 70.3,
+      "y": 56.0
+     },
+     "radius": 5.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1115",
+       "label": "Wowhead NPC 1115"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-95213",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Empty Powder Keg and accept Stolen Blasting Powder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 71.4,
+      "y": 54.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95213,
+     "label": "Stolen Blasting Powder"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95213",
+     "label": "Wowhead Forever quest 95213"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "If an Empty Powder Keg drops from a trogg, it starts a Forever quest at the quarry.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=95213",
+       "label": "Wowhead Forever quest 95213"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-95213",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stolen Blasting Powder: Empty Powder Keg"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 71.3,
+      "y": 54.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95213,
+     "objective": 1,
+     "label": "Stolen Blasting Powder"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95213",
+     "label": "Wowhead Forever quest 95213"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1115,
+      1116,
+      1117,
+      1118
+     ],
+     "name": "Rockjaw Skullthumper",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 71.3,
+      "y": 54.7
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1115",
+       "label": "Wowhead NPC 1115"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-95213",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring the Empty Powder Keg to Quarrymaster Thesten and accept the follow-up"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 69.2,
+      "y": 54.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95213,
+     "label": "Stolen Blasting Powder"
+    },
+    {
+     "type": "accept",
+     "questId": 95214,
+     "label": "Stolen Blasting Powder"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95213",
+     "label": "Wowhead Forever quest 95213"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=95214",
+     "label": "Wowhead Forever quest 95214"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-433",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Public Servant: 10 Rockjaw Bonesnapper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 73.5,
+      "y": 54.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 433,
+     "objective": 1,
+     "label": "The Public Servant"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=433",
+     "label": "Wowhead Classic quest 433"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Bonesnappers patrol east of the quarry. Pull them one at a time; they hit hard for their level.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=433",
+       "label": "Wowhead Classic quest 433"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1117
+     ],
+     "name": "Rockjaw Bonesnapper",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 73.5,
+      "y": 54.5
+     },
+     "radius": 7.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1117",
+       "label": "Wowhead NPC 1117"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-95214",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Stolen Blasting Powder: 16 Stolen Blasting Powder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 74.9,
+      "y": 55.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95214,
+     "objective": 1,
+     "label": "Stolen Blasting Powder"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95214",
+     "label": "Wowhead Forever quest 95214"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1116,
+      1118
+     ],
+     "name": "Rockjaw Ambusher",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 74.9,
+      "y": 55.2
+     },
+     "radius": 5.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1116",
+       "label": "Wowhead NPC 1116"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-95212",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Never Saddle on Quality: 6 Pristine Leopard Pelt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 76.0,
+      "y": 56.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95212,
+     "objective": 1,
+     "label": "Never Saddle on Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95212",
+     "label": "Wowhead Forever quest 95212"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      260157
+     ],
+     "name": "Elder Snow Leopard",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 76.0,
+      "y": 56.0
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=260157",
+       "label": "Wowhead NPC 260157"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-1681",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ironband's Compound: Umbral Ore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 78.0,
+      "y": 62.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1681,
+     "objective": 1,
+     "label": "Ironband's Compound"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1681",
+     "label": "Wowhead Classic quest 1681"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ironband's Strongbox is inside the compound by the lake. Dark Iron Spies wander here; they also drop the map for the Hall of Thanes later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1681",
+       "label": "Wowhead Classic quest 1681"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-96390",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Nip 'Em in the Bud: 10 Dark Iron Spy"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 77.5,
+      "y": 61.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96390,
+     "objective": 1,
+     "label": "Nip 'Em in the Bud"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96390",
+     "label": "Wowhead Forever quest 96390"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Dark Iron Spies walk around Ironband's Compound by the lake. There are only about a dozen, so tag what you can when others are here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96390",
+       "label": "Wowhead Forever quest 96390"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "If a Dark Iron Map drops, keep it. It starts Underground Map, the way into the Hall of Thanes quests around level 15.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96390",
+       "label": "Wowhead Forever quest 96390"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6123
+     ],
+     "name": "Dark Iron Spy",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 77.5,
+      "y": 61.2
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6123",
+       "label": "Wowhead NPC 6123"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-96390",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Nip 'Em in the Bud to Earthseer Farsen"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 64.9,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96390,
+     "label": "Nip 'Em in the Bud"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96390",
+     "label": "Wowhead Forever quest 96390"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:accept-96391",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If a Dark Iron Map dropped from the spies, open it to start Underground Map"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 77.6,
+      "y": 61.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96391,
+     "label": "Underground Map"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96391",
+     "label": "Wowhead Forever quest 96391"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-96391",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Give the map to Earthseer Farsen and accept Old Ironforge Incursion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 64.9,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96391,
+     "label": "Underground Map"
+    },
+    {
+     "type": "accept",
+     "questId": 96393,
+     "label": "Old Ironforge Incursion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96391",
+     "label": "Wowhead Forever quest 96391"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96393",
+     "label": "Wowhead Forever quest 96393"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Keep it for the Hall of Thanes run at the end of Loch Modan.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96391",
+       "label": "Wowhead Forever quest 96391"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=96393",
+       "label": "Wowhead Forever quest 96393"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-432",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Those Blasted Troggs! to Foreman Stonebrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 69.1,
+      "y": 56.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 432,
+     "label": "Those Blasted Troggs!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=432",
+     "label": "Wowhead Classic quest 432"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-433",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Public Servant to Senator Mehr Stonehallow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 68.7,
+      "y": 56.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 433,
+     "label": "The Public Servant"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=433",
+     "label": "Wowhead Classic quest 433"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-95214",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stolen Blasting Powder to Quarrymaster Thesten"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 69.2,
+      "y": 54.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95214,
+     "label": "Stolen Blasting Powder"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95214",
+     "label": "Wowhead Forever quest 95214"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-95212",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Never Saddle on Quality to Rudra Amberstill at the ranch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 63.1,
+      "y": 49.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95212,
+     "label": "Never Saddle on Quality"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95212",
+     "label": "Wowhead Forever quest 95212"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:accept-419",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Lost Pilot from Pilot Hammerfoot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 83.9,
+      "y": 39.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 419,
+     "label": "The Lost Pilot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=419",
+     "label": "Wowhead Classic quest 419"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pilot Hammerfoot is at the North Gate Pass, up the road northeast of the quarry.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=419",
+       "label": "Wowhead Classic quest 419"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-419",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Find the dwarven corpse west of the North Gate, turn in The Lost Pilot and accept A Pilot's Revenge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 79.7,
+      "y": 36.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 419,
+     "label": "The Lost Pilot"
+    },
+    {
+     "type": "accept",
+     "questId": 417,
+     "label": "A Pilot's Revenge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=419",
+     "label": "Wowhead Classic quest 419"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=417",
+     "label": "Wowhead Classic quest 417"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-417",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Pilot's Revenge: Mangy Claw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 78.3,
+      "y": 37.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 417,
+     "objective": 1,
+     "label": "A Pilot's Revenge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=417",
+     "label": "Wowhead Classic quest 417"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mangeclaw roams near the corpse. He is a level 11 leopard; fight him with full health.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=417",
+       "label": "Wowhead Classic quest 417"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1961
+     ],
+     "name": "Mangeclaw",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 78.3,
+      "y": 37.8
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1961",
+       "label": "Wowhead NPC 1961"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-417",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Pilot's Revenge to Pilot Hammerfoot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 83.9,
+      "y": 39.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 417,
+     "label": "A Pilot's Revenge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=417",
+     "label": "Wowhead Classic quest 417"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-413",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Go to the South Gate Outpost, turn in Shimmer Stout to Mountaineer Barleybrew and accept Stout to Kadrell"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 86.3,
+      "y": 48.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 413,
+     "label": "Shimmer Stout"
+    },
+    {
+     "type": "accept",
+     "questId": 414,
+     "label": "Stout to Kadrell"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=413",
+     "label": "Wowhead Classic quest 413"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=414",
+     "label": "Wowhead Classic quest 414"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-94449",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: turn in Call of Fire to Bruegs Kindleborn north of the gate and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 87.9,
+      "y": 44.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94449,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "accept",
+     "questId": 94465,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94449",
+     "label": "Wowhead Forever quest 94449"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94465",
+     "label": "Wowhead Forever quest 94465"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The bug report about With Wind Beneath Your Wings (79365) does not affect you here: that quest is not in our data, so this route skips it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94449",
+       "label": "Wowhead Forever quest 94449"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=94465",
+       "label": "Wowhead Forever quest 94465"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:grind-12",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grind Rockjaw Backbreakers east of the quarry until level 12 if you are short"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 79.6,
+      "y": 55.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 12,
+     "label": "Grind Rockjaw Backbreakers east of the quarry until level 12 if you are short",
+     "mobId": 1118,
+     "mobName": "Rockjaw Backbreaker",
+     "mobLevel": 12
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1118",
+     "label": "Wowhead NPC 1118"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Only grind what you are missing. Backbreakers give the best XP here; Loch Modan's first quests start at level 10-12, so a few percent short is fine.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1118",
+       "label": "Wowhead NPC 1118"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1118
+     ],
+     "name": "Rockjaw Backbreaker",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 79.6,
+      "y": 55.6
+     },
+     "radius": 2.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1118",
+       "label": "Wowhead NPC 1118"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

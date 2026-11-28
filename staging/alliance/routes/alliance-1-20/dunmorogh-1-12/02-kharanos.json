@@ -1,0 +1,2174 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Kharanos and the Grizzled Den",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:turnin-420",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Senir's Observations to Senir Whitebeard outside the Kharanos inn, then accept Secure the Mountain"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.7,
+      "y": 53.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 420,
+     "label": "Senir's Observations"
+    },
+    {
+     "type": "accept",
+     "questId": 98322,
+     "label": "Secure the Mountain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=420",
+     "label": "Wowhead Classic quest 420"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98322",
+     "label": "Wowhead Forever quest 98322"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-96628",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hand the Supply Bundle to Eric Brighthammer by the campfire next to Senir and accept The Great Outdoors"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.6,
+      "y": 53.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96628,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 96608,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96628",
+     "label": "Wowhead Forever quest 96628"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96608",
+     "label": "Wowhead Forever quest 96608"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-96608",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Great Outdoors: Basic Campfire, Basic Campfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.7,
+      "y": 53.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96608,
+     "objective": 1,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 96608,
+     "objective": 2,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96608",
+     "label": "Wowhead Forever quest 96608"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sit at Eric's Basic Campfire until the Boosted Rest buff appears; it takes a little while, so make food or drink meanwhile.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96608",
+       "label": "Wowhead Forever quest 96608"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-96608",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Great Outdoors and accept the Camping 101 quests from Eric"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.6,
+      "y": 53.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96608,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "accept",
+     "questId": 96629,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "accept",
+     "questId": 96047,
+     "label": "Camping 101: First Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96608",
+     "label": "Wowhead Forever quest 96608"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96629",
+     "label": "Wowhead Forever quest 96629"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96047",
+     "label": "Wowhead Forever quest 96047"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-2160",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Supplies to Tannok to Tannok Frosthammer inside the inn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.2,
+      "y": 52.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2160,
+     "label": "Supplies to Tannok"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2160",
+     "label": "Wowhead Classic quest 2160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:home-1247",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Belm in Kharanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.4,
+      "y": 52.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Belm in Kharanos"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1247",
+     "label": "Wowhead NPC 1247"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1247,
+     "name": "Innkeeper Belm",
+     "at": {
+      "mapId": 1426,
+      "zone": "Dun Morogh",
+      "x": 47.4,
+      "y": 52.5
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1247",
+       "label": "Wowhead NPC 1247"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-96629",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Gremlock Pilsnor, the cooking trainer in the inn, to finish Camping 101: Cooking"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.7,
+      "y": 52.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96629,
+     "objective": 1,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "turnin",
+     "questId": 96629,
+     "label": "Camping 101: Cooking"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96629",
+     "label": "Wowhead Forever quest 96629"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "This also teaches the Basic Campfire, so you can make your own rest spot later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96629",
+       "label": "Wowhead Forever quest 96629"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1699
+     ],
+     "name": "Gremlock Pilsnor",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 47.7,
+      "y": 52.3
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1699",
+       "label": "Wowhead NPC 1699"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-96047",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Thamner Pol, the first aid trainer in the inn, to finish Camping 101: First Aid"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.2,
+      "y": 52.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96047,
+     "objective": 1,
+     "label": "Camping 101: First Aid"
+    },
+    {
+     "type": "turnin",
+     "questId": 96047,
+     "label": "Camping 101: First Aid"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96047",
+     "label": "Wowhead Forever quest 96047"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Learn First Aid from Thamner first; the Camping 101 turn-in expects you to have the skill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96047",
+       "label": "Wowhead Forever quest 96047"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2326
+     ],
+     "name": "Thamner Pol",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 47.2,
+      "y": 52.6
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2326",
+       "label": "Wowhead NPC 2326"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-5626",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Priests: turn in In Favor of the Light to Maxan Anvol inside the inn and accept Garments of the Light"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.3,
+      "y": 52.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5626,
+     "label": "In Favor of the Light"
+    },
+    {
+     "type": "accept",
+     "questId": 5625,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5626",
+     "label": "Wowhead Classic quest 5626"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5625",
+     "label": "Wowhead Classic quest 5625"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-384",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Beer Basted Boar Ribs from Ragnar Thunderbrew"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.8,
+      "y": 52.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 384,
+     "label": "Beer Basted Boar Ribs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=384",
+     "label": "Wowhead Classic quest 384"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Buy the Rhapsody Malt from Innkeeper Belm when you come back; the ribs drop from any Crag Boar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=384",
+       "label": "Wowhead Classic quest 384"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-400",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tools for Steelgrill from Tharek Blackstone"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.0,
+      "y": 51.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 400,
+     "label": "Tools for Steelgrill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=400",
+     "label": "Wowhead Classic quest 400"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-98321",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Flintfire's Shipment from Tognus Flintfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.3,
+      "y": 51.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98321,
+     "label": "Flintfire's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98321",
+     "label": "Wowhead Forever quest 98321"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-400",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Walk north to Steelgrill's Depot: turn in Tools for Steelgrill to Beldin Steelgrill and accept Stocking Jetsteam from Pilot Bellowfiz"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 50.4,
+      "y": 49.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 400,
+     "label": "Tools for Steelgrill"
+    },
+    {
+     "type": "accept",
+     "questId": 317,
+     "label": "Stocking Jetsteam"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=400",
+     "label": "Wowhead Classic quest 400"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=317",
+     "label": "Wowhead Classic quest 317"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-313",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Grizzled Den from Pilot Stonegear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 49.6,
+      "y": 48.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 313,
+     "label": "The Grizzled Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=313",
+     "label": "Wowhead Classic quest 313"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-5541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ammo for Rumbleshot from Loslor Rudge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 50.1,
+      "y": 49.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5541,
+     "label": "Ammo for Rumbleshot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5541",
+     "label": "Wowhead Classic quest 5541"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-5625",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Garments of the Light: Mountaineer Dolf"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.8,
+      "y": 54.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5625,
+     "objective": 1,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5625",
+     "label": "Wowhead Classic quest 5625"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mountaineer Dolf is the wounded dwarf on the road just south of Kharanos. Use Lesser Heal rank 2, then Power Word: Fortitude.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5625",
+       "label": "Wowhead Classic quest 5625"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12427
+     ],
+     "name": "Mountaineer Dolf",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 45.8,
+      "y": 54.6
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12427",
+       "label": "Wowhead NPC 12427"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-384",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Crag Boars around Kharanos for 6 Crag Boar Ribs"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.5,
+      "y": 56.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 384,
+     "objective": 1,
+     "label": "Beer Basted Boar Ribs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=384",
+     "label": "Wowhead Classic quest 384"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1125,
+      1126,
+      1127,
+      1689
+     ],
+     "name": "Crag Boar",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 47.5,
+      "y": 56.8
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1125",
+       "label": "Wowhead NPC 1125"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98322",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Secure the Mountain to Mountaineer Gretchen west of Kharanos and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 44.1,
+      "y": 57.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98322,
+     "label": "Secure the Mountain"
+    },
+    {
+     "type": "accept",
+     "questId": 98319,
+     "label": "Secure the Mountain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98322",
+     "label": "Wowhead Forever quest 98322"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98319",
+     "label": "Wowhead Forever quest 98319"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-5541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot the Ammo Crate next to Mountaineer Gretchen's camp"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 44.1,
+      "y": 57.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5541,
+     "objective": 1,
+     "label": "Ammo for Rumbleshot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5541",
+     "label": "Wowhead Classic quest 5541"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Blizzard fixed the ammo loot on 9 November, so the crate gives Rumbleshot's Ammo again.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5541",
+       "label": "Wowhead Classic quest 5541"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-5541",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ammo for Rumbleshot to Hegnar Rumbleshot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 40.7,
+      "y": 65.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5541,
+     "label": "Ammo for Rumbleshot"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5541",
+     "label": "Wowhead Classic quest 5541"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Hegnar Rumbleshot's hut is down the slope south of the road. He also sells ammo for Hunters and gun users.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5541",
+       "label": "Wowhead Classic quest 5541"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-317",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill bears for 2 Thick Bear Furs and Crag Boars for 4 Chunks of Boar Meat on the way to the Grizzled Den"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 41.2,
+      "y": 60.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 317,
+     "objective": 2,
+     "label": "Stocking Jetsteam"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=317",
+     "label": "Wowhead Classic quest 317"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Young Black Bears are on the hills west of Kharanos; any Crag Boar drops the meat.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=317",
+       "label": "Wowhead Classic quest 317"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1128,
+      1196,
+      1129,
+      246589
+     ],
+     "name": "Young Black Bear",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 41.2,
+      "y": 60.8
+     },
+     "radius": 6.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1128",
+       "label": "Wowhead NPC 1128"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-313",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Grizzled Den: 8 Wendigo Mane"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 41.6,
+      "y": 49.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 313,
+     "objective": 1,
+     "label": "The Grizzled Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=313",
+     "label": "Wowhead Classic quest 313"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wendigos fill the Grizzled Den cave and the snowfield outside it. Clear the outside first.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=313",
+       "label": "Wowhead Classic quest 313"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1134,
+      1135,
+      1137,
+      1271,
+      1388,
+      271486
+     ],
+     "name": "Young Wendigo",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 41.6,
+      "y": 49.7
+     },
+     "radius": 6.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1134",
+       "label": "Wowhead NPC 1134"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-98321",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Flintfire's Shipment: 8 Flintfire's Shipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 41.3,
+      "y": 48.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98321,
+     "objective": 1,
+     "label": "Flintfire's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98321",
+     "label": "Wowhead Forever quest 98321"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Flintfire Shipments are small crates on the cave floor; grab them while you kill Wendigos.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98321",
+       "label": "Wowhead Forever quest 98321"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-98319",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Secure the Mountain: Mountaineer Cornelius"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 43.0,
+      "y": 49.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98319,
+     "objective": 1,
+     "label": "Secure the Mountain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98319",
+     "label": "Wowhead Forever quest 98319"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mountaineer Cornelius is deeper inside the Grizzled Den.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98319",
+       "label": "Wowhead Forever quest 98319"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      278166
+     ],
+     "name": "Mountaineer Cornelius",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 43.0,
+      "y": 49.6
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=278166",
+       "label": "Wowhead NPC 278166"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98319",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Return to Mountaineer Gretchen, turn in Secure the Mountain and accept her report"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 44.1,
+      "y": 57.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98319,
+     "label": "Secure the Mountain"
+    },
+    {
+     "type": "accept",
+     "questId": 98323,
+     "label": "Secure the Mountain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98319",
+     "label": "Wowhead Forever quest 98319"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98323",
+     "label": "Wowhead Forever quest 98323"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98323",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Secure the Mountain to Senir Whitebeard in Kharanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.7,
+      "y": 53.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98323,
+     "label": "Secure the Mountain"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98323",
+     "label": "Wowhead Forever quest 98323"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-5625",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Priests: turn in Garments of the Light to Maxan Anvol"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.3,
+      "y": 52.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5625,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5625",
+     "label": "Wowhead Classic quest 5625"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98321",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Flintfire's Shipment to Tognus Flintfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.3,
+      "y": 51.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98321,
+     "label": "Flintfire's Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98321",
+     "label": "Wowhead Forever quest 98321"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-384",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Buy a Rhapsody Malt from Innkeeper Belm, then turn in Beer Basted Boar Ribs to Ragnar Thunderbrew"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.8,
+      "y": 52.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 384,
+     "label": "Beer Basted Boar Ribs"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=384",
+     "label": "Wowhead Classic quest 384"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-99158",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dawn in the Mountains from Maxan Anvol"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 47.3,
+      "y": 52.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99158,
+     "label": "Dawn in the Mountains"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99158",
+     "label": "Wowhead Forever quest 99158"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "This candle crate opens the new Misty Pine Refuge quests east of Kharanos. Keep it until you head east.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99158",
+       "label": "Wowhead Forever quest 99158"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:trainer-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train at the Kharanos trainers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train at the Kharanos trainers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-287",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Frostmane Hold from Senir Whitebeard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 46.7,
+      "y": 53.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 287,
+     "label": "Frostmane Hold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=287",
+     "label": "Wowhead Classic quest 287"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-412",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Operation Recombobulation from Razzle Sprysprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.9,
+      "y": 49.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 412,
+     "label": "Operation Recombobulation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=412",
+     "label": "Wowhead Classic quest 412"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-313",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Grizzled Den to Pilot Stonegear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 49.6,
+      "y": 48.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 313,
+     "label": "The Grizzled Den"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=313",
+     "label": "Wowhead Classic quest 313"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-317",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Stocking Jetsteam to Pilot Bellowfiz and accept Evershine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 49.4,
+      "y": 48.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 317,
+     "label": "Stocking Jetsteam"
+    },
+    {
+     "type": "accept",
+     "questId": 318,
+     "label": "Evershine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=317",
+     "label": "Wowhead Classic quest 317"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=318",
+     "label": "Wowhead Classic quest 318"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

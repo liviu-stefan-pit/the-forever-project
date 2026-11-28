@@ -1,0 +1,428 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Stonewrought Dam",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:accept-250",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Dark Threat Looms from Chief Engineer Hinderweir VII"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 46.0,
+      "y": 13.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 250,
+     "label": "A Dark Threat Looms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=250",
+     "label": "Wowhead Classic quest 250"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Chief Engineer Hinderweir stands on top of the Stonewrought Dam at the north end of the loch.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=250",
+       "label": "Wowhead Classic quest 250"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-250",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Search the eastern ramp of the dam for the Suspicious Barrel, turn in A Dark Threat Looms and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 56.0,
+      "y": 13.2,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 250,
+     "label": "A Dark Threat Looms"
+    },
+    {
+     "type": "accept",
+     "questId": 199,
+     "label": "A Dark Threat Looms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=250",
+     "label": "Wowhead Classic quest 250"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=199",
+     "label": "Wowhead Classic quest 199"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-199",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring the clue back to Chief Engineer Hinderweir"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 46.0,
+      "y": 13.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 199,
+     "label": "A Dark Threat Looms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=199",
+     "label": "Wowhead Classic quest 199"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The chain continues into the Wetlands. Leave it for now; you go to Redridge next.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=199",
+       "label": "Wowhead Classic quest 199"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-2038",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Bingles' Missing Supplies: Bingles' Wrench, Bingles' Screwdriver, Bingles' Hammer, Bingles' Blastencapper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 50.8,
+      "y": 25.3,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2038,
+     "objective": 1,
+     "label": "Bingles' Missing Supplies"
+    },
+    {
+     "type": "complete",
+     "questId": 2038,
+     "objective": 2,
+     "label": "Bingles' Missing Supplies"
+    },
+    {
+     "type": "complete",
+     "questId": 2038,
+     "objective": 3,
+     "label": "Bingles' Missing Supplies"
+    },
+    {
+     "type": "complete",
+     "questId": 2038,
+     "objective": 4,
+     "label": "Bingles' Missing Supplies"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2038",
+     "label": "Wowhead Classic quest 2038"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The tool buckets are near the north shore just south of the dam; the Blastencapper is the furthest east.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2038",
+       "label": "Wowhead Classic quest 2038"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-2038",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring the tools back to Bingles Blastenheimer on the east shore"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 63.6,
+      "y": 47.9,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2038,
+     "label": "Bingles' Missing Supplies"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2038",
+     "label": "Wowhead Classic quest 2038"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:grind-17",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grind Elder Mountain Boars and Black Bear Patriarchs in the hills east of the loch until level 17"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 64.6,
+      "y": 39.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 17,
+     "label": "Grind Elder Mountain Boars and Black Bear Patriarchs in the hills east of the loch until level 17",
+     "mobId": 1192,
+     "mobName": "Elder Mountain Boar",
+     "mobLevel": 16
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "dungeonsOff": true,
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1192",
+     "label": "Wowhead NPC 1192"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Loch Modan runs out of solo quests around level 16. With dungeons on, the Hall of Thanes quests in Ironforge cover this instead.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1192",
+       "label": "Wowhead NPC 1192"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Grind only what you are missing; Redridge's first quests start at 15-17, so a little short is fine.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1192",
+       "label": "Wowhead NPC 1192"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1192
+     ],
+     "name": "Elder Mountain Boar",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 64.6,
+      "y": 39.6
+     },
+     "radius": 5.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1192",
+       "label": "Wowhead NPC 1192"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

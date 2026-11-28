@@ -1,0 +1,744 @@
+{
+ "id": "lochmodan-12-17",
+ "title": "Loch Modan 12-17 (Alliance)",
+ "levels": [
+  12,
+  17
+ ],
+ "next": "redridge-17-20",
+ "races": [
+  "Dwarf",
+  "Gnome"
+ ],
+ "maps": [
+  1432,
+  1455,
+  1426
+ ],
+ "enterLevel": 12,
+ "after": {
+  "*": [
+   "dunmorogh-1-12"
+  ]
+ },
+ "segments": [
+  {
+   "file": "01-algaz-and-thelsamar.json",
+   "title": "Algaz Station and Thelsamar",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 307",
+     "tip": "Mountaineer Stormpike stands in Algaz Station, the first outpost after the tunnel from Dun Morogh. You come back here after the mine."
+    },
+    {
+     "do": "T 414; A 416; A 1339",
+     "text": "Follow the road south to Thelsamar: turn in Stout to Kadrell to Mountaineer Kadrell and accept Rat Catching and Mountaineer Stormpike's Task"
+    },
+    {
+     "do": "A 418",
+     "tip": "All three ingredients drop around Algaz Station in the north: Mountain Boars, Elder Black Bears and Forest Lurkers."
+    },
+    {
+     "do": "A 6387",
+     "tip": "Brock's list sends you on a gryphon round trip to Ironforge. Keep it until you have other business there."
+    },
+    {
+     "do": "A 86667",
+     "text": "Accept Snowbound from Grenhild Darktalon and take the Jar of Snow"
+    },
+    {
+     "do": "C 86667",
+     "at": [
+      36.5,
+      48.3
+     ],
+     "noPin": true,
+     "text": "Keep the Jar of Snow for Norric Lochthane on the northwest shore"
+    },
+    {
+     "do": "fp 1572",
+     "text": "Get the Thelsamar flight path from Thorgrum Borrelson"
+    },
+    {
+     "do": "home 6734",
+     "text": "Set your hearthstone at Innkeeper Hearthstove in Thelsamar"
+    }
+   ]
+  },
+  {
+   "file": "02-southern-guard-tower.json",
+   "title": "The southern guard tower",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 224",
+     "tip": "The southern guard tower is on the road to the Badlands, southwest of Thelsamar."
+    },
+    {
+     "do": "A 267"
+    },
+    {
+     "do": "T 94465; A 94466",
+     "races": [
+      "Dwarf"
+     ],
+     "text": "Shamans: turn in Call of Fire to Braldir Ashmantle below the Shrine of Eternal Flame and accept the next part",
+     "tip": "The Reagent Pouch drops from Stonesplinter Seers here; the Fire Tar comes from Tunnel Rat Geomancers in the Silver Stream Mine later."
+    },
+    {
+     "do": "C 224",
+     "tip": "Stonesplinter Troggs and Scouts fill the valley mouth east of the tower."
+    },
+    {
+     "do": "C 267",
+     "speed": "You get most of the teeth from the 20 troggs you kill anyway."
+    },
+    {
+     "do": "T 224; A 237",
+     "text": "Turn in In Defense of the King's Lands to Mountaineer Cobbleflint and accept the next part from Mountaineer Gravelgaw"
+    },
+    {
+     "do": "T 267"
+    },
+    {
+     "do": "C 237",
+     "tip": "Skullthumpers stand deeper in Stonesplinter Valley; Seers are on the hill near the shrine. Seers heal, so kill them first."
+    },
+    {
+     "do": "C 94466.2",
+     "races": [
+      "Dwarf"
+     ]
+    },
+    {
+     "do": "T 237; A 263",
+     "text": "Turn in In Defense of the King's Lands to Gravelgaw and accept the last part from Mountaineer Wallbang",
+     "tip": "The Shaman and Bonesnapper troggs for this one are level 15-16. Come back for them later."
+    }
+   ]
+  },
+  {
+   "file": "03-silver-stream-mine.json",
+   "title": "Algaz and the Silver Stream Mine",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 418.1",
+     "text": "Kill Mountain Boars south of Algaz Station for 3 Boar Intestines"
+    },
+    {
+     "do": "C 418.2",
+     "text": "Kill Elder Black Bears in the hills north of Algaz for 3 Bear Meat"
+    },
+    {
+     "do": "C 418.3",
+     "text": "Kill Forest Lurkers in the woods by Algaz for 3 Spider Ichor"
+    },
+    {
+     "do": "C 416",
+     "tip": "The Tunnel Rats are outside and inside the Silver Stream Mine. Geomancers cast fire, so interrupt or burst them."
+    },
+    {
+     "do": "C 94466.1",
+     "races": [
+      "Dwarf"
+     ],
+     "text": "Shamans: loot Fire Tar from the Tunnel Rat Geomancers"
+    },
+    {
+     "do": "C 307",
+     "tip": "Miners' League crates sit along the mine tunnels. Clear the rats around each crate first."
+    },
+    {
+     "do": "T 307; T 1339; A 1338",
+     "text": "Back at Algaz Station, turn in Filthy Paws and Mountaineer Stormpike's Task to Mountaineer Stormpike, then accept Stormpike's Order",
+     "tip": "Stormpike's Order is a letter for Stormwind. This guide ends there on the way to Redridge, so just keep it."
+    },
+    {
+     "do": "T 86667",
+     "text": "Deliver the Jar of Snow to Norric Lochthane's house on the northwest shore of the loch"
+    },
+    {
+     "do": "A 86614",
+     "text": "Walk down the shore and pick up the Discarded Fishing Toolbox to start Silver of the Waves",
+     "tip": "New in Forever. The toolbox lies on the beach northeast of Thelsamar."
+    },
+    {
+     "do": "T 86614",
+     "text": "Return the hair clip to Khara Deepwater at the fishing dock north of Thelsamar"
+    },
+    {
+     "do": "T 416",
+     "text": "Turn in Rat Catching to Mountaineer Kadrell in Thelsamar"
+    },
+    {
+     "do": "T 418"
+    },
+    {
+     "do": "trainer",
+     "text": "Train if you have new spells; the nearest trainers are in Ironforge, or the Hunter trainer at the Farstrider Lodge"
+    }
+   ]
+  },
+  {
+   "file": "04-farstrider-lodge.json",
+   "title": "The Farstrider Lodge and the eastern shore",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 298",
+     "tip": "Prospector Ironband's camp is at the excavation on the southeast shore. Follow the road east along the south of the loch."
+    },
+    {
+     "do": "A 385",
+     "tip": "The Farstrider Lodge is the hunting lodge in the far east. Marek gives both crocolisk quests."
+    },
+    {
+     "do": "A 86758"
+    },
+    {
+     "do": "A 257"
+    },
+    {
+     "do": "C 257",
+     "tip": "15-minute timer. Mountain Buzzards circle the hills just south of the lodge."
+    },
+    {
+     "do": "T 257; A 258",
+     "text": "Turn in A Hunter's Boast to Daryl the Youngling and accept A Hunter's Challenge",
+     "tip": "Only accept the challenge when you are ready to go; the timer is 12 minutes."
+    },
+    {
+     "do": "C 258",
+     "tip": "Elder Mountain Boars roam the hills northwest of the lodge. They are level 16-17, so eat between pulls."
+    },
+    {
+     "do": "T 258"
+    },
+    {
+     "do": "C 86758",
+     "tip": "Daggerfang is a named crocolisk that swims along the east shore of the loch; check the water between Bingles' camp and the lodge."
+    },
+    {
+     "do": "C 385",
+     "tip": "Loch Crocolisks crowd the east shore. Stay out of deep water so you do not pull two at once."
+    },
+    {
+     "do": "A 2038",
+     "tip": "Bingles camps on the east shore. His tools are scattered along the north shore near the dam, which you reach later."
+    },
+    {
+     "do": "T 385; T 86758",
+     "text": "Turn in Crocolisk Hunting and Twisting the Knife to Marek Ironheart at the Farstrider Lodge"
+    },
+    {
+     "do": "hs Thelsamar",
+     "text": "Hearth back to Thelsamar",
+     "speed": "The walk back west is long; always hearth here."
+    },
+    {
+     "do": "T 298",
+     "text": "Turn in Excavation Progress Report to Jern Hornhelm"
+    },
+    {
+     "do": "A 301"
+    }
+   ]
+  },
+  {
+   "file": "05-ironforge.json",
+   "title": "Ironforge errands",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 6387; A 6391",
+     "text": "Give Brock's List to Thorgrum Borrelson at the Thelsamar gryphon post, accept Ride to Ironforge and fly to Ironforge"
+    },
+    {
+     "do": "T 6391; A 6388",
+     "text": "Bring Brock's List to Golnir Bouldertoe in the Great Forge and accept Gryth Thurden"
+    },
+    {
+     "do": "T 6388; A 6392",
+     "text": "Give the picks to Gryth Thurden, the Ironforge gryphon master, and accept Return to Brock"
+    },
+    {
+     "do": "T 301; A 302",
+     "text": "Turn in Report to Ironforge to Prospector Stormpike in the Hall of Explorers and accept Powder to Ironband"
+    },
+    {
+     "do": "T 1681; A 1682; T 1682 @b",
+     "text": "Warriors: bring the Umbral Ore to Tormus Deepforge in the Great Forge, then accept and turn in Grey Iron Weapons for your weapon"
+    },
+    {
+     "do": "A 2999 @b",
+     "tip": "Paladins: this starts the Redemption quest line. It ends at Narm Faulk in eastern Dun Morogh, so you walk back to Loch Modan instead of flying."
+    },
+    {
+     "do": "T 2999; A 1645; T 1645 @b",
+     "text": "Paladins: talk to Tiza Battleforge in the Mystic Ward and take the Tome of Divinity"
+    },
+    {
+     "do": "A 1646; T 1646; A 1647 @b",
+     "at": [
+      27.6,
+      12.2
+     ],
+     "map": 1455,
+     "text": "Paladins: read the Tome of Divinity, hand it to Tiza Battleforge and accept the next part"
+    },
+    {
+     "do": "T 1647; A 1648 @b",
+     "text": "Paladins: find John Turner in the outer ring of Ironforge"
+    },
+    {
+     "do": "C 1648; T 1648; A 1778 @b",
+     "at": [
+      23.3,
+      61.9
+     ],
+     "map": 1455,
+     "noPin": true,
+     "text": "Paladins: give John Turner 10 Linen Cloth from your bags and accept the next part"
+    },
+    {
+     "do": "T 1778; A 1779 @b",
+     "text": "Paladins: return to Tiza Battleforge"
+    },
+    {
+     "do": "T 1779; A 1783 @b",
+     "text": "Paladins: take the Symbol of Life to Muiredon Battleforge and accept the next part"
+    },
+    {
+     "do": "A 96403",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "pickup",
+     "tip": "New Forever dungeon under Ironforge. Pick this up now and run it at the end of Loch Modan, on your way to the tram.",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "fly 1573 Thelsamar @b",
+     "classes": [
+      "Warrior",
+      "Hunter",
+      "Rogue",
+      "Priest",
+      "Shaman",
+      "Mage",
+      "Warlock"
+     ],
+     "text": "Fly back to Thelsamar"
+    },
+    {
+     "do": "fly 1573 Thelsamar @s",
+     "text": "Fly back to Thelsamar"
+    },
+    {
+     "do": "C 1783 @b",
+     "text": "Paladins: walk out of Ironforge to Narm Faulk's body by Helm's Bed Lake in eastern Dun Morogh and use the Symbol of Life on him"
+    },
+    {
+     "do": "T 1783; A 1784 @b",
+     "text": "Paladins: turn in The Tome of Divinity to Narm Faulk and accept the next part"
+    },
+    {
+     "do": "C 1784 @b",
+     "tip": "The Dark Iron Spies around Ironband's Compound drop the script. Then take the tunnel at the South Gate back into Loch Modan."
+    }
+   ]
+  },
+  {
+   "file": "06-ironbands-excavation.json",
+   "title": "Ironband's Excavation",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 6392",
+     "text": "Turn in Return to Brock to Brock Stoneseeker in Thelsamar"
+    },
+    {
+     "do": "T 302; A 273",
+     "text": "Turn in Powder to Ironband to Jern Hornhelm and accept Resupplying the Excavation"
+    },
+    {
+     "do": "A 436"
+    },
+    {
+     "do": "C 273; T 273; A 454",
+     "text": "Find Huldar at the ambushed cart on the road to the excavation, turn in Resupplying the Excavation and accept After the Ambush"
+    },
+    {
+     "do": "T 454; A 309",
+     "text": "Talk to Miran next to Huldar and accept Protecting the Shipment",
+     "tip": "Troggs ambush the cart once you start. Keep Miran alive; the Dark Iron dwarves do not hit hard."
+    },
+    {
+     "do": "T 309",
+     "text": "Turn in Protecting the Shipment to Prospector Ironband at the excavation"
+    },
+    {
+     "do": "T 436; A 297",
+     "text": "Turn in Ironband's Excavation to Magmar Fellhew and accept Gathering Idols"
+    },
+    {
+     "do": "A 86613",
+     "tip": "New in Forever. Loot any Excavation Tools pile in the dig site to start this."
+    },
+    {
+     "do": "C 297",
+     "tip": "The idol troggs in the dig site are level 17-19. Pull one at a time and leave if it gets crowded."
+    },
+    {
+     "do": "C 86613"
+    },
+    {
+     "do": "T 297"
+    },
+    {
+     "do": "T 86613"
+    }
+   ]
+  },
+  {
+   "file": "07-stonesplinter-valley.json",
+   "title": "Stonesplinter Valley and Grawmug",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 94466; A 94467",
+     "races": [
+      "Dwarf"
+     ],
+     "text": "Shamans: turn in the Fire Tar and Reagent Pouch to Braldir Ashmantle and accept the next Call of Fire"
+    },
+    {
+     "do": "C 94467",
+     "races": [
+      "Dwarf"
+     ],
+     "tip": "The Minor Manifestation of Fire waits at the shrine on the hill above Braldir."
+    },
+    {
+     "do": "T 94467; A 94468",
+     "races": [
+      "Dwarf"
+     ],
+     "text": "Shamans: place the Glowing Ember in the brazier and accept the last part, which ends at Bruegs Kindleborn by the Dun Morogh South Gate"
+    },
+    {
+     "do": "C 263",
+     "tip": "Stonesplinter Shamans are deep in the valley; Bonesnappers stand on the northern slopes toward the loch."
+    },
+    {
+     "do": "T 263",
+     "text": "Turn in In Defense of the King's Lands to Mountaineer Wallbang"
+    },
+    {
+     "do": "A 217"
+    },
+    {
+     "do": "A 86585",
+     "tip": "New in Forever. Mountaineer Ylva is at the south end of the valley, near Grawmug's camp."
+    },
+    {
+     "do": "C 86585",
+     "tip": "Raise the banner and Headsplitter comes to you. Clear nearby troggs first."
+    },
+    {
+     "do": "C 217",
+     "tip": "Grawmug and his two guards are together at the back of the valley. Pull a guard first if you can, or bring a friend."
+    },
+    {
+     "do": "T 217; T 86585",
+     "text": "Turn in In Defense of the King's Lands and Banner of the Fallen to Captain Rugelfuss at the southern guard tower",
+     "speed": "The Thelsamar spirit healer is close to the dam road. If you are low after Grawmug, a death walks you most of the way north."
+    },
+    {
+     "do": "xp 16 1164",
+     "text": "If you are not level 16 yet, kill Stonesplinter Bonesnappers on the valley's north slopes until you are",
+     "tip": "The dam quests need level 16."
+    }
+   ]
+  },
+  {
+   "file": "08-stonewrought-dam.json",
+   "title": "Stonewrought Dam",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 250",
+     "tip": "Chief Engineer Hinderweir stands on top of the Stonewrought Dam at the north end of the loch."
+    },
+    {
+     "do": "T 250; A 199",
+     "text": "Search the eastern ramp of the dam for the Suspicious Barrel, turn in A Dark Threat Looms and accept the next part"
+    },
+    {
+     "do": "T 199",
+     "text": "Bring the clue back to Chief Engineer Hinderweir",
+     "tip": "The chain continues into the Wetlands. Leave it for now; you go to Redridge next."
+    },
+    {
+     "do": "C 2038",
+     "tip": "The tool buckets are near the north shore just south of the dam; the Blastencapper is the furthest east."
+    },
+    {
+     "do": "T 2038",
+     "text": "Bring the tools back to Bingles Blastenheimer on the east shore"
+    },
+    {
+     "do": "xp 17 1192",
+     "dungeonsOff": true,
+     "text": "Grind Elder Mountain Boars and Black Bear Patriarchs in the hills east of the loch until level 17",
+     "tip": "Loch Modan runs out of solo quests around level 16. With dungeons on, the Hall of Thanes quests in Ironforge cover this instead.",
+     "speed": "Grind only what you are missing; Redridge's first quests start at 15-17, so a little short is fine."
+    }
+   ]
+  },
+  {
+   "file": "09-ironforge-and-the-hall-of-thanes.json",
+   "title": "Ironforge and the Hall of Thanes",
+   "routes": null,
+   "steps": [
+    {
+     "do": "hs Thelsamar",
+     "text": "Hearth back to Thelsamar",
+     "speed": "If the hearth is still on cooldown, ride; do not wait for it."
+    },
+    {
+     "do": "T 94468",
+     "races": [
+      "Dwarf"
+     ],
+     "text": "Shamans: walk through the Algaz tunnel and give the Torch to Bruegs Kindleborn just past the Dun Morogh South Gate, then continue to Ironforge on foot"
+    },
+    {
+     "do": "fly 1572 Ironforge",
+     "classes": [
+      "Warrior",
+      "Hunter",
+      "Rogue",
+      "Priest",
+      "Mage",
+      "Warlock",
+      "Paladin"
+     ],
+     "text": "Fly from Thelsamar to Ironforge"
+    },
+    {
+     "do": "T 1784; A 1785; T 1785 @b",
+     "text": "Paladins: give the Dark Iron Script to Muiredon Battleforge, then report to Tiza Battleforge"
+    },
+    {
+     "do": "trainer",
+     "text": "Train in Ironforge",
+     "tip": "When you are done in Ironforge, take the Deeprun Tram from Tinker Town to Stormwind."
+    },
+    "A 5639",
+    "A 1715",
+    {
+     "do": "A 2041 @b",
+     "tip": "Speak with Shoni sends you to Stormwind, where the tram drops you anyway."
+    },
+    {
+     "do": "C 96394",
+     "at": [
+      32.2,
+      44.5
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Run the Hall of Thanes: kill the Enraged Apparitions and Tormented Souls for The Restless Dead",
+     "tip": "The dungeon is reached from Old Ironforge below the city. Level 15 or higher is comfortable.",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "C 96403",
+     "at": [
+      32.2,
+      44.5
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Loot 8 Dwarven Heirlooms in the Hall of Thanes",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "A 96395; C 96395; T 96395",
+     "at": [
+      32.2,
+      44.5
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Talk to the Ghostly Attendant inside, put Faldrim Anvilmar to rest and report back to the Attendant",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "C 96393",
+     "at": [
+      32.2,
+      44.5
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Kill Durgen Dirgehammer, the last boss, for his head",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "A 98423",
+     "at": [
+      32.2,
+      44.5
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Read the Treaty of Understanding tablet in the last vault to start the quest",
+     "tip": "Everyone has to loot the tablet themselves; it cannot be shared.",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "T 96403",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "turnin",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "T 96393; T 98423",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "turnin",
+     "text": "Bring Durgen's head and the Treaty to King Magni Bronzebeard in the High Seat",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    },
+    {
+     "do": "T 96394",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "turnin",
+     "tip": "Afadra waits at the camp west of Kharanos. It is a walk, so skip it if you are in a hurry to reach Redridge.",
+     "routes": "b",
+     "races": [
+      "Dwarf",
+      "Gnome"
+     ]
+    }
+   ]
+  },
+  {
+   "file": "10-stormwind.json",
+   "title": "Stormwind",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 1338",
+     "text": "Ride the Deeprun Tram to Stormwind and deliver Stormpike's Order to Furen Longbeard in the Dwarven District"
+    },
+    {
+     "do": "T 2041 @b",
+     "text": "Turn in Speak with Shoni to Shoni the Shilent in the Dwarven District",
+     "tip": "Her follow-up is a Gnomeregan quest for later."
+    },
+    {
+     "do": "T 5639",
+     "text": "Priests: turn in Desperate Prayer to High Priestess Laurena in the Cathedral of Light"
+    },
+    {
+     "do": "T 1715",
+     "text": "Warlocks: turn in The Slaughtered Lamb to Gakin the Darkbinder in the Mage Quarter",
+     "tip": "Gakin's next quest, Surena Caledon, gets you the Voidwalker in Elwynn Forest."
+    }
+   ]
+  }
+ ]
+}

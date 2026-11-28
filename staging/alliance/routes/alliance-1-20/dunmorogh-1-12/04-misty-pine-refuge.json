@@ -1,0 +1,795 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Misty Pine Refuge",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:turnin-99158",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring the candles to Father Gavin at Misty Pine Refuge and accept Finding Warmth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 57.7,
+      "y": 44.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99158,
+     "label": "Dawn in the Mountains"
+    },
+    {
+     "type": "accept",
+     "questId": 99159,
+     "label": "Finding Warmth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99158",
+     "label": "Wowhead Forever quest 99158"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99159",
+     "label": "Wowhead Forever quest 99159"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Misty Pine Refuge is new in Forever, on the hill east of the Ironforge road.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99158",
+       "label": "Wowhead Forever quest 99158"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=99159",
+       "label": "Wowhead Forever quest 99159"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99159",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Finding Warmth: 14 Mostly Dry Firewood"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 55.8,
+      "y": 50.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99159,
+     "objective": 1,
+     "label": "Finding Warmth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99159",
+     "label": "Wowhead Forever quest 99159"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Fallen logs lie in the pine woods south of the refuge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99159",
+       "label": "Wowhead Forever quest 99159"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-99159",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Finding Warmth and accept Rime's Wrath and Treacherous Cold"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 57.7,
+      "y": 44.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99159,
+     "label": "Finding Warmth"
+    },
+    {
+     "type": "accept",
+     "questId": 99160,
+     "label": "Rime's Wrath"
+    },
+    {
+     "type": "accept",
+     "questId": 99162,
+     "label": "Treacherous Cold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99159",
+     "label": "Wowhead Forever quest 99159"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99160",
+     "label": "Wowhead Forever quest 99160"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99162",
+     "label": "Wowhead Forever quest 99162"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99160",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Rime's Wrath: 10 Minor Ice Elemental"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 55.3,
+      "y": 45.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99160,
+     "objective": 1,
+     "label": "Rime's Wrath"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99160",
+     "label": "Wowhead Forever quest 99160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Minor Ice Elementals drift around the snowfield west of the refuge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99160",
+       "label": "Wowhead Forever quest 99160"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      276003
+     ],
+     "name": "Minor Ice Elemental",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 55.3,
+      "y": 45.5
+     },
+     "radius": 6.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=276003",
+       "label": "Wowhead NPC 276003"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99162",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Coalbeard's Rifle in the snow west of the elementals"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 52.1,
+      "y": 44.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99162,
+     "objective": 3,
+     "label": "Treacherous Cold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99162",
+     "label": "Wowhead Forever quest 99162"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-99160",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rime's Wrath to Father Gavin; Accept Rime's Wrath from Father Gavin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 57.7,
+      "y": 44.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99160,
+     "label": "Rime's Wrath"
+    },
+    {
+     "type": "accept",
+     "questId": 99161,
+     "label": "Rime's Wrath"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99160",
+     "label": "Wowhead Forever quest 99160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99161",
+     "label": "Wowhead Forever quest 99161"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99161",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Rime's Wrath: Avala's Core"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 58.3,
+      "y": 42.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99161,
+     "objective": 1,
+     "label": "Rime's Wrath"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99161",
+     "label": "Wowhead Forever quest 99161"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Avala is a bigger ice elemental north of the refuge. Clear the small ones nearby first.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99161",
+       "label": "Wowhead Forever quest 99161"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      276009
+     ],
+     "name": "Avala",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 58.3,
+      "y": 42.1
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=276009",
+       "label": "Wowhead NPC 276009"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-99161",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rime's Wrath to Father Gavin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 57.7,
+      "y": 44.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99161,
+     "label": "Rime's Wrath"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99161",
+     "label": "Wowhead Forever quest 99161"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99162-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Sunhammer's Rifle in the snow southeast of the refuge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 59.9,
+      "y": 50.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99162,
+     "objective": 2,
+     "label": "Treacherous Cold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99162",
+     "label": "Wowhead Forever quest 99162"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-99162-3",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Pick up Stoneanvil's Rifle in the snow to the south, then go back to Father Gavin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 53.2,
+      "y": 58.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99162,
+     "objective": 1,
+     "label": "Treacherous Cold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99162",
+     "label": "Wowhead Forever quest 99162"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-99162",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Treacherous Cold to Father Gavin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 57.7,
+      "y": 44.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99162,
+     "label": "Treacherous Cold"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99162",
+     "label": "Wowhead Forever quest 99162"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:grind-10",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If you are still short of level 10, kill Minor Ice Elementals around the refuge until you ding"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 55.3,
+      "y": 45.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 10,
+     "label": "If you are still short of level 10, kill Minor Ice Elementals around the refuge until you ding",
+     "mobId": 276003,
+     "mobName": "Minor Ice Elemental",
+     "mobLevel": 8
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=276003",
+     "label": "Wowhead NPC 276003"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Most players reach 10 here without grinding. The level 10 class quests in Kharanos need it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=276003",
+       "label": "Wowhead NPC 276003"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      276003
+     ],
+     "name": "Minor Ice Elemental",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 55.3,
+      "y": 45.5
+     },
+     "radius": 6.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=276003",
+       "label": "Wowhead NPC 276003"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

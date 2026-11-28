@@ -1,0 +1,1261 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Ironforge errands",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:turnin-6387",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Give Brock's List to Thorgrum Borrelson at the Thelsamar gryphon post, accept Ride to Ironforge and fly to Ironforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 33.9,
+      "y": 51.0,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6387,
+     "label": "Honor Students"
+    },
+    {
+     "type": "accept",
+     "questId": 6391,
+     "label": "Ride to Ironforge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6387",
+     "label": "Wowhead Classic quest 6387"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6391",
+     "label": "Wowhead Classic quest 6391"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-6391",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring Brock's List to Golnir Bouldertoe in the Great Forge and accept Gryth Thurden"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 51.5,
+      "y": 26.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6391,
+     "label": "Ride to Ironforge"
+    },
+    {
+     "type": "accept",
+     "questId": 6388,
+     "label": "Gryth Thurden"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6391",
+     "label": "Wowhead Classic quest 6391"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6388",
+     "label": "Wowhead Classic quest 6388"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-6388",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Give the picks to Gryth Thurden, the Ironforge gryphon master, and accept Return to Brock"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 55.5,
+      "y": 47.7,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6388,
+     "label": "Gryth Thurden"
+    },
+    {
+     "type": "accept",
+     "questId": 6392,
+     "label": "Return to Brock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6388",
+     "label": "Wowhead Classic quest 6388"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6392",
+     "label": "Wowhead Classic quest 6392"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-301",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Ironforge to Prospector Stormpike in the Hall of Explorers and accept Powder to Ironband"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 74.6,
+      "y": 11.7,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 301,
+     "label": "Report to Ironforge"
+    },
+    {
+     "type": "accept",
+     "questId": 302,
+     "label": "Powder to Ironband"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=301",
+     "label": "Wowhead Classic quest 301"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=302",
+     "label": "Wowhead Classic quest 302"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1681",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warriors: bring the Umbral Ore to Tormus Deepforge in the Great Forge, then accept and turn in Grey Iron Weapons for your weapon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 48.6,
+      "y": 42.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1681,
+     "label": "Ironband's Compound"
+    },
+    {
+     "type": "accept",
+     "questId": 1682,
+     "label": "Grey Iron Weapons"
+    },
+    {
+     "type": "turnin",
+     "questId": 1682,
+     "label": "Grey Iron Weapons"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1681",
+     "label": "Wowhead Classic quest 1681"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1682",
+     "label": "Wowhead Classic quest 1682"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-2999",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tome of Divinity from Brandur Ironhammer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 23.1,
+      "y": 6.1,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2999,
+     "label": "Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2999",
+     "label": "Wowhead Classic quest 2999"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Paladins: this starts the Redemption quest line. It ends at Narm Faulk in eastern Dun Morogh, so you walk back to Loch Modan instead of flying.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2999",
+       "label": "Wowhead Classic quest 2999"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-2999",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: talk to Tiza Battleforge in the Mystic Ward and take the Tome of Divinity"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 27.6,
+      "y": 12.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2999,
+     "label": "Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1645,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "turnin",
+     "questId": 1645,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2999",
+     "label": "Wowhead Classic quest 2999"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1645",
+     "label": "Wowhead Classic quest 1645"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-1646",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: read the Tome of Divinity, hand it to Tiza Battleforge and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 27.6,
+      "y": 12.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1646,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "turnin",
+     "questId": 1646,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1647,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1646",
+     "label": "Wowhead Classic quest 1646"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1647",
+     "label": "Wowhead Classic quest 1647"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1647",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: find John Turner in the outer ring of Ironforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 23.3,
+      "y": 61.9,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1647,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1648,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1647",
+     "label": "Wowhead Classic quest 1647"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1648",
+     "label": "Wowhead Classic quest 1648"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:complete-1648",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: give John Turner 10 Linen Cloth from your bags and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 23.3,
+      "y": 61.9,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1648,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "turnin",
+     "questId": 1648,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1778,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1648",
+     "label": "Wowhead Classic quest 1648"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1778",
+     "label": "Wowhead Classic quest 1778"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1778",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: return to Tiza Battleforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 27.6,
+      "y": 12.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1778,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1779,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1778",
+     "label": "Wowhead Classic quest 1778"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1779",
+     "label": "Wowhead Classic quest 1779"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1779",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: take the Symbol of Life to Muiredon Battleforge and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 23.5,
+      "y": 8.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1779,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1783,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1779",
+     "label": "Wowhead Classic quest 1779"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1783",
+     "label": "Wowhead Classic quest 1783"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Important Heirlooms from Thom Filch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96403,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New Forever dungeon under Ironforge. Pick this up now and run it at the end of Loch Modan, on your way to the tram.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96403",
+       "label": "Wowhead Forever quest 96403"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:fly-1573",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly back to Thelsamar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 55.5,
+      "y": 47.7,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly back to Thelsamar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior",
+    "Hunter",
+    "Rogue",
+    "Priest",
+    "Shaman",
+    "Mage",
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1573",
+     "label": "Wowhead NPC 1573"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1573,
+     "name": "Gryth Thurden",
+     "at": {
+      "mapId": 1455,
+      "zone": "Ironforge",
+      "x": 55.5,
+      "y": 47.7
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1573",
+       "label": "Wowhead NPC 1573"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:fly-1573-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly back to Thelsamar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 55.5,
+      "y": 47.7,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly back to Thelsamar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1573",
+     "label": "Wowhead NPC 1573"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1573,
+     "name": "Gryth Thurden",
+     "at": {
+      "mapId": 1455,
+      "zone": "Ironforge",
+      "x": 55.5,
+      "y": 47.7
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1573",
+       "label": "Wowhead NPC 1573"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-1783",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: walk out of Ironforge to Narm Faulk's body by Helm's Bed Lake in eastern Dun Morogh and use the Symbol of Life on him"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 78.3,
+      "y": 58.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1783,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1783",
+     "label": "Wowhead Classic quest 1783"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6177
+     ],
+     "name": "Narm Faulk",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 78.3,
+      "y": 58.1
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6177",
+       "label": "Wowhead NPC 6177"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1783",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: turn in The Tome of Divinity to Narm Faulk and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 78.3,
+      "y": 58.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1783,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1784,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1783",
+     "label": "Wowhead Classic quest 1783"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1784",
+     "label": "Wowhead Classic quest 1784"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:complete-1784",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Tome of Divinity: Dark Iron Script"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 77.5,
+      "y": 61.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1784,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1784",
+     "label": "Wowhead Classic quest 1784"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Dark Iron Spies around Ironband's Compound drop the script. Then take the tunnel at the South Gate back into Loch Modan.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1784",
+       "label": "Wowhead Classic quest 1784"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6123
+     ],
+     "name": "Dark Iron Spy",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 77.5,
+      "y": 61.2
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6123",
+       "label": "Wowhead NPC 6123"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

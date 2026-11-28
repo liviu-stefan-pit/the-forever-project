@@ -1,0 +1,523 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Back west to Westfall",
+ "steps": [
+  {
+   "id": "elwynn-1-12:turnin-1688-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Surena Caledon to Gakin the Darkbinder; Accept The Binding from Gakin the Darkbinder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1688,
+     "label": "Surena Caledon"
+    },
+    {
+     "type": "accept",
+     "questId": 1689,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1688",
+     "label": "Wowhead Classic quest 1688"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warlocks: back to Gakin in Stormwind.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1688",
+       "label": "Wowhead Classic quest 1688"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1689",
+       "label": "Wowhead Classic quest 1689"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-1689-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Binding: Summoned Voidwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1689,
+     "objective": 1,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Summon the Voidwalker with the choker in Gakin's cellar and beat it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1689",
+       "label": "Wowhead Classic quest 1689"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1689-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Binding to Gakin the Darkbinder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1689,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-114-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Escape to Maybell Maclure"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.1,
+      "y": 89.6,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 114,
+     "label": "The Escape"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=114",
+     "label": "Wowhead Classic quest 114"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Maybell is at the Maclure farm south of Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=114",
+       "label": "Wowhead Classic quest 114"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-2206-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Snatch and Grab: Defias Shipping Schedule"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 48.1,
+      "y": 87.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2206,
+     "objective": 1,
+     "label": "Snatch and Grab"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2206",
+     "label": "Wowhead Classic quest 2206"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: the Defias Dockmaster stands on Jerod's Landing south-east of the Maclure farm, with a bodyguard. Turn it in on your next Stormwind visit.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2206",
+       "label": "Wowhead Classic quest 2206"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6846
+     ],
+     "name": "Defias Dockmaster",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 48.1,
+      "y": 87.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6846",
+       "label": "Wowhead NPC 6846"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-88-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Princess Must Die! to Ma Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.7,
+      "y": 84.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 88,
+     "label": "Princess Must Die!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=88",
+     "label": "Wowhead Classic quest 88"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ma Stonefield is at the farm west of Maclure.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=88",
+       "label": "Wowhead Classic quest 88"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:grind-12-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Top off to level 12 on Defias Bandits west of Goldshire if you are short"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 27.9,
+      "y": 60.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 12,
+     "label": "Top off to level 12 on Defias Bandits west of Goldshire if you are short",
+     "mobId": 116,
+     "mobName": "Defias Bandit",
+     "mobLevel": 8
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=116",
+     "label": "Wowhead NPC 116"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Bandits drop Red Linen; head west over the bridge into Westfall when you are 12.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=116",
+       "label": "Wowhead NPC 116"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "general",
+     "text": "Paladins: at 12, Brother Wilhelm in Goldshire starts the Tome of Divinity chain (Duthorian Rall in Stormwind); pick it up when you next pass through.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=116",
+       "label": "Wowhead NPC 116"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      116
+     ],
+     "name": "Defias Bandit",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 27.9,
+      "y": 60.5
+     },
+     "radius": 5.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=116",
+       "label": "Wowhead NPC 116"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

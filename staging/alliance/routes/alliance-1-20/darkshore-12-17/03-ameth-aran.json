@@ -1,0 +1,1778 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "darkshore-12-17",
+ "title": "Ameth'Aran and the Blackwood Camp",
+ "steps": [
+  {
+   "id": "darkshore-12-17:turnin-4812",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in As Water Cascades at the Mysterious Red Crystal; Accept The Fragments Within at the Mysterious Red Crystal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 47.3,
+      "y": 48.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4812,
+     "label": "As Water Cascades"
+    },
+    {
+     "type": "accept",
+     "questId": 4813,
+     "label": "The Fragments Within"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4812",
+     "label": "Wowhead Classic quest 4812"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4813",
+     "label": "Wowhead Classic quest 4813"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pour the water on the Red Crystal east of town; it gives you the next step on the spot.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4812",
+       "label": "Wowhead Classic quest 4812"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=4813",
+       "label": "Wowhead Classic quest 4813"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-2138",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Cleansing of the Infected: 20 Rabid Thistle Bear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 40.3,
+      "y": 63.9,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2138,
+     "objective": 1,
+     "label": "Cleansing of the Infected"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2138",
+     "label": "Wowhead Classic quest 2138"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill Rabid Thistle Bears on the hills between the crystal and Ameth'Aran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2138",
+       "label": "Wowhead Classic quest 2138"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: the bears are good XP at this level. Finish the 20 as you pass through, do not hunt them down.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2138",
+       "label": "Wowhead Classic quest 2138"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2164
+     ],
+     "name": "Rabid Thistle Bear",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 40.3,
+      "y": 63.9
+     },
+     "radius": 6.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2164",
+       "label": "Wowhead NPC 2164"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-1002",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Buzzbox 323: 6 Moonstalker Fang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 40.8,
+      "y": 69.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1002,
+     "objective": 1,
+     "label": "Buzzbox 323"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1002",
+     "label": "Wowhead Classic quest 1002"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Moonstalkers prowl the woods south of the crystal.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1002",
+       "label": "Wowhead Classic quest 1002"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2069,
+      2070,
+      2071,
+      2237
+     ],
+     "name": "Moonstalker",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 40.8,
+      "y": 69.4
+     },
+     "radius": 8.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2069",
+       "label": "Wowhead NPC 2069"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:goto-36",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Scout the Blackwood furbolg camp south of Auberdine for How Big a Threat?"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 40.0,
+      "y": 54.0,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Just get close to the camp; you will come back to clear it.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-953",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Fall of Ameth'Aran from Sentinel Tysha Moonblade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 40.3,
+      "y": 59.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 953,
+     "label": "The Fall of Ameth'Aran"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=953",
+     "label": "Wowhead Classic quest 953"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sentinel Tysha guards the road at the west edge of Ameth'Aran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=953",
+       "label": "Wowhead Classic quest 953"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-4722",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Beached Sea Turtle at the Beached Sea Turtle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.1,
+      "y": 62.2,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4722,
+     "label": "Beached Sea Turtle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4722",
+     "label": "Wowhead Classic quest 4722"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Another beached turtle lies on the beach west of Ameth'Aran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4722",
+       "label": "Wowhead Classic quest 4722"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-953",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Fall of Ameth'Aran: The Lay of Ameth'Aran, The Fall of Ameth'Aran"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 43.0,
+      "y": 60.9,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 953,
+     "objective": 1,
+     "label": "The Fall of Ameth'Aran"
+    },
+    {
+     "type": "complete",
+     "questId": 953,
+     "objective": 2,
+     "label": "The Fall of Ameth'Aran"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=953",
+     "label": "Wowhead Classic quest 953"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The two tablets are inside the ruined buildings: one in the north half of Ameth'Aran, one in the south.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=953",
+       "label": "Wowhead Classic quest 953"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-958",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Tools of the Highborne: 7 Highborne Relic"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 42.7,
+      "y": 60.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 958,
+     "objective": 1,
+     "label": "Tools of the Highborne"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=958",
+     "label": "Wowhead Classic quest 958"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Cursed Highborne and Writhing Highborne drop the relics all over the ruins.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=958",
+       "label": "Wowhead Classic quest 958"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2176,
+      2177,
+      2178,
+      210528
+     ],
+     "name": "Cursed Highborne",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 42.7,
+      "y": 60.4
+     },
+     "radius": 3.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2176",
+       "label": "Wowhead NPC 2176"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-957",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Bashal'Aran: Ancient Flame"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 42.4,
+      "y": 61.8,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 957,
+     "objective": 1,
+     "label": "Bashal'Aran"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=957",
+     "label": "Wowhead Classic quest 957"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Ancient Flame burns in the building at the south end of the ruins.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=957",
+       "label": "Wowhead Classic quest 957"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-963",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete For Love Eternal: Anaya's Pendant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 41.8,
+      "y": 60.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 963,
+     "objective": 1,
+     "label": "For Love Eternal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=963",
+     "label": "Wowhead Classic quest 963"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Anaya Dawnrunner walks with the other ghosts in the ruins. She is level 16, so pull her alone and keep your cooldowns.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=963",
+       "label": "Wowhead Classic quest 963"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      3667
+     ],
+     "name": "Anaya Dawnrunner",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 41.8,
+      "y": 60.7
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3667",
+       "label": "Wowhead NPC 3667"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-98025",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete WANTED: Jai'vhanel: Feather of Jai'vhanel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 44.6,
+      "y": 58.3,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98025,
+     "objective": 1,
+     "label": "WANTED: Jai'vhanel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98025",
+     "label": "Wowhead Forever quest 98025"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever bounty: Jai'vhanel patrols with the furbolgs on the east side of the ruins.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98025",
+       "label": "Wowhead Forever quest 98025"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      270196
+     ],
+     "name": "Jai'vhanel",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 44.6,
+      "y": 58.3
+     },
+     "radius": 3.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=270196",
+       "label": "Wowhead NPC 270196"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-953",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Fall of Ameth'Aran to Sentinel Tysha Moonblade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 40.3,
+      "y": 59.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 953,
+     "label": "The Fall of Ameth'Aran"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=953",
+     "label": "Wowhead Classic quest 953"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:accept-4728",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Beached Sea Creature at the Beached Sea Creature"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.0,
+      "y": 70.9,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4728,
+     "label": "Beached Sea Creature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4728",
+     "label": "Wowhead Classic quest 4728"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "One more Beached Sea Creature lies further down the coast.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4728",
+       "label": "Wowhead Classic quest 4728"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:hs",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hearth to Auberdine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Hearth to Auberdine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Speedrun: hearth here; walking back gives nothing new.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-4813",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Fragments Within to Sentinel Glynda Nal'Shea; Turn in WANTED: Jai'vhanel to Sentinel Glynda Nal'Shea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.7,
+      "y": 43.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4813,
+     "label": "The Fragments Within"
+    },
+    {
+     "type": "turnin",
+     "questId": 98025,
+     "label": "WANTED: Jai'vhanel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4813",
+     "label": "Wowhead Classic quest 4813"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98025",
+     "label": "Wowhead Forever quest 98025"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Glynda takes both.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4813",
+       "label": "Wowhead Classic quest 4813"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=98025",
+       "label": "Wowhead Forever quest 98025"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-958",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tools of the Highborne to Thundris Windweaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.4,
+      "y": 40.1,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 958,
+     "label": "Tools of the Highborne"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=958",
+     "label": "Wowhead Classic quest 958"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:turnin-2138",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Cleansing of the Infected to Tharnariun Treetender"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 38.8,
+      "y": 43.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2138,
+     "label": "Cleansing of the Infected"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2138",
+     "label": "Wowhead Classic quest 2138"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:accept-2139",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tharnariun's Hope from Tharnariun Treetender"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 38.8,
+      "y": 43.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2139,
+     "label": "Tharnariun's Hope"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2139",
+     "label": "Wowhead Classic quest 2139"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tharnariun's Hope is the Den Mother, a level 18-19 bear. Keep it for the last northern loop.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2139",
+       "label": "Wowhead Classic quest 2139"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-984",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in How Big a Threat? to Terenthis; Accept How Big a Threat? from Terenthis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 39.4,
+      "y": 43.5,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 984,
+     "label": "How Big a Threat?"
+    },
+    {
+     "type": "accept",
+     "questId": 985,
+     "label": "How Big a Threat?"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=984",
+     "label": "Wowhead Classic quest 984"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=985",
+     "label": "Wowhead Classic quest 985"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Terenthis wants eight of each furbolg type. Do that on your way to the Grove of the Ancients.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=984",
+       "label": "Wowhead Classic quest 984"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=985",
+       "label": "Wowhead Classic quest 985"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-4761",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Thundris Windweaver from Terenthis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 39.4,
+      "y": 43.5,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4761,
+     "label": "Thundris Windweaver"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4761",
+     "label": "Wowhead Classic quest 4761"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "A short breadcrumb from Terenthis to Thundris, who stands nearby.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=4761",
+       "label": "Wowhead Classic quest 4761"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-4761",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Thundris Windweaver to Thundris Windweaver; Accept The Cliffspring River from Thundris Windweaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.4,
+      "y": 40.1,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4761,
+     "label": "Thundris Windweaver"
+    },
+    {
+     "type": "accept",
+     "questId": 4762,
+     "label": "The Cliffspring River"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4761",
+     "label": "Wowhead Classic quest 4761"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=4762",
+     "label": "Wowhead Classic quest 4762"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:turnin-963",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in For Love Eternal to Cerellean Whiteclaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 35.7,
+      "y": 43.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 963,
+     "label": "For Love Eternal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=963",
+     "label": "Wowhead Classic quest 963"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:turnin-4722",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Beached Sea Turtle to Gwennyth Bly'Leggonde"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.6,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4722,
+     "label": "Beached Sea Turtle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4722",
+     "label": "Wowhead Classic quest 4722"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:turnin-4728",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Beached Sea Creature to Gwennyth Bly'Leggonde"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.6,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 4728,
+     "label": "Beached Sea Creature"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4728",
+     "label": "Wowhead Classic quest 4728"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:accept-965",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Tower of Althalaxx from Sentinel Elissa Starbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 39.0,
+      "y": 43.5,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 965,
+     "label": "The Tower of Althalaxx"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=965",
+     "label": "Wowhead Classic quest 965"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Tower of Althalaxx is in the far north-east, past the Cliffspring River.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=965",
+       "label": "Wowhead Classic quest 965"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-982",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Deep Ocean, Vast Sea from Gorbold Steelhand"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 38.1,
+      "y": 41.2,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 982,
+     "label": "Deep Ocean, Vast Sea"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=982",
+     "label": "Wowhead Classic quest 982"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gorbold sends you to two shipwrecks off the coast north of Auberdine. Both lockboxes are underwater.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=982",
+       "label": "Wowhead Classic quest 982"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-947",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Cave Mushrooms from Barithras Moonshade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.3,
+      "y": 43.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 947,
+     "label": "Cave Mushrooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=947",
+     "label": "Wowhead Classic quest 947"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Barithras wants mushrooms from the cave by the Cliffspring Falls.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=947",
+       "label": "Wowhead Classic quest 947"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

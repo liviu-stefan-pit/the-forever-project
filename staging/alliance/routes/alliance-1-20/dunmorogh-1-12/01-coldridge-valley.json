@@ -1,0 +1,3793 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Coldridge Valley",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:accept-179",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Dwarven Outfitters from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 179,
+     "label": "Dwarven Outfitters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=179",
+     "label": "Wowhead Classic quest 179"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sten stands just outside Anvilmar. The Ragged Young Wolves are all around the starting area, so you finish this on the walk.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=179",
+       "label": "Wowhead Classic quest 179"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-179",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Dwarven Outfitters: 8 Tough Wolf Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 74.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 179,
+     "objective": 1,
+     "label": "Dwarven Outfitters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=179",
+     "label": "Wowhead Classic quest 179"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Hit every Rockjaw Trogg you pass as well; they count for A New Threat in a minute.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=179",
+       "label": "Wowhead Classic quest 179"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      69,
+      299,
+      704,
+      705,
+      1979,
+      1980
+     ],
+     "name": "Timber Wolf",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 28.8,
+      "y": 74.1
+     },
+     "radius": 5.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=69",
+       "label": "Wowhead NPC 69"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-179",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dwarven Outfitters to Sten Stoutarm, then accept Coldridge Valley Mail Delivery from him and A New Threat from Balir Frosthammer beside him"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 179,
+     "label": "Dwarven Outfitters"
+    },
+    {
+     "type": "accept",
+     "questId": 233,
+     "label": "Coldridge Valley Mail Delivery"
+    },
+    {
+     "type": "accept",
+     "questId": 170,
+     "label": "A New Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=179",
+     "label": "Wowhead Classic quest 179"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=233",
+     "label": "Wowhead Classic quest 233"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=170",
+     "label": "Wowhead Classic quest 170"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Simple Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3106,
+     "label": "Simple Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3106",
+     "label": "Wowhead Classic quest 3106"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3107",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Consecrated Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3107,
+     "label": "Consecrated Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3107",
+     "label": "Wowhead Classic quest 3107"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3108",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Etched Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3108,
+     "label": "Etched Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3108",
+     "label": "Wowhead Classic quest 3108"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3109",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Encrypted Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3109,
+     "label": "Encrypted Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3109",
+     "label": "Wowhead Classic quest 3109"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hallowed Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3110,
+     "label": "Hallowed Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3110",
+     "label": "Wowhead Classic quest 3110"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-98581",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Archaic Rune from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98581,
+     "label": "Archaic Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98581",
+     "label": "Wowhead Forever quest 98581"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shaman is new for Dwarves in Forever. Your trainer Teo Hammerstorm is inside Anvilmar with the others.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98581",
+       "label": "Wowhead Forever quest 98581"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3112",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Simple Memorandum from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3112,
+     "label": "Simple Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3112",
+     "label": "Wowhead Classic quest 3112"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3113",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Encrypted Memorandum from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3113,
+     "label": "Encrypted Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3113",
+     "label": "Wowhead Classic quest 3113"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3114",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Glyphic Memorandum from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3114,
+     "label": "Glyphic Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3114",
+     "label": "Wowhead Classic quest 3114"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3115",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tainted Memorandum from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3115,
+     "label": "Tainted Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3115",
+     "label": "Wowhead Classic quest 3115"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-98574",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Hallowed Memorandum from Sten Stoutarm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.9,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98574,
+     "label": "Hallowed Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98574",
+     "label": "Wowhead Forever quest 98574"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Priest is new for Gnomes in Forever; you train with Branstock Khalder like Dwarf priests.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98574",
+       "label": "Wowhead Forever quest 98574"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Simple Rune to Thran Khorman"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 67.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3106,
+     "label": "Simple Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3106",
+     "label": "Wowhead Classic quest 3106"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3107",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Consecrated Rune to Bromos Grummner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 68.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3107,
+     "label": "Consecrated Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3107",
+     "label": "Wowhead Classic quest 3107"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3108",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Etched Rune to Thorgas Grimson"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.2,
+      "y": 67.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3108,
+     "label": "Etched Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3108",
+     "label": "Wowhead Classic quest 3108"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3109",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encrypted Rune to Solm Hargrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.4,
+      "y": 67.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3109,
+     "label": "Encrypted Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3109",
+     "label": "Wowhead Classic quest 3109"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3110",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hallowed Rune to Branstock Khalder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3110,
+     "label": "Hallowed Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3110",
+     "label": "Wowhead Classic quest 3110"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98581",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Archaic Rune to Teo Hammerstorm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 66.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98581,
+     "label": "Archaic Rune"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98581",
+     "label": "Wowhead Forever quest 98581"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3112",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Simple Memorandum to Thran Khorman"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 67.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3112,
+     "label": "Simple Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3112",
+     "label": "Wowhead Classic quest 3112"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3113",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Encrypted Memorandum to Solm Hargrin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.4,
+      "y": 67.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3113,
+     "label": "Encrypted Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3113",
+     "label": "Wowhead Classic quest 3113"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3114",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Glyphic Memorandum to Marryk Nurribit"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.7,
+      "y": 66.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3114,
+     "label": "Glyphic Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3114",
+     "label": "Wowhead Classic quest 3114"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3115",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tainted Memorandum to Alamar Grimm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3115,
+     "label": "Tainted Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3115",
+     "label": "Wowhead Classic quest 3115"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98574",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Hallowed Memorandum to Branstock Khalder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98574,
+     "label": "Hallowed Memorandum"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98574",
+     "label": "Wowhead Forever quest 98574"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:npc-267337",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Optional: pick up a gathering profession from the junior trainers by the Anvilmar door (mining, herbalism or skinning)"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.9,
+      "y": 67.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=267337",
+     "label": "Wowhead NPC 267337"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "profession",
+     "text": "Forever adds junior gathering trainers to the starting areas, so you can start mining, herbalism or skinning at level 1 instead of waiting for Kharanos or Ironforge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267337",
+       "label": "Wowhead NPC 267337"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 267337,
+     "name": "Sally Swiftwrench",
+     "at": {
+      "mapId": 1426,
+      "zone": "Dun Morogh",
+      "x": 28.9,
+      "y": 67.7
+     },
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=267337",
+       "label": "Wowhead NPC 267337"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-170",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A New Threat: 6 Rockjaw Trogg, 6 Burly Rockjaw Trogg"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 27.4,
+      "y": 74.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 170,
+     "objective": 1,
+     "label": "A New Threat"
+    },
+    {
+     "type": "complete",
+     "questId": 170,
+     "objective": 2,
+     "label": "A New Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=170",
+     "label": "Wowhead Classic quest 170"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Plain troggs are around the valley floor; the Burly ones sit further west toward the frozen pond.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=170",
+       "label": "Wowhead Classic quest 170"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      707,
+      724
+     ],
+     "name": "Rockjaw Trogg",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 27.4,
+      "y": 74.7
+     },
+     "radius": 8.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=707",
+       "label": "Wowhead NPC 707"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-170",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A New Threat to Balir Frosthammer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.7,
+      "y": 71.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 170,
+     "label": "A New Threat"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=170",
+     "label": "Wowhead Classic quest 170"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-233",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in the mail to Talin Keeneye at his camp in the west, then accept the next delivery and The Boar Hunter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 22.6,
+      "y": 71.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 233,
+     "label": "Coldridge Valley Mail Delivery"
+    },
+    {
+     "type": "accept",
+     "questId": 234,
+     "label": "Coldridge Valley Mail Delivery"
+    },
+    {
+     "type": "accept",
+     "questId": 183,
+     "label": "The Boar Hunter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=233",
+     "label": "Wowhead Classic quest 233"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=234",
+     "label": "Wowhead Classic quest 234"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=183",
+     "label": "Wowhead Classic quest 183"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-183",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Boar Hunter: 12 Small Crag Boar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 22.6,
+      "y": 71.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 183,
+     "objective": 1,
+     "label": "The Boar Hunter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=183",
+     "label": "Wowhead Classic quest 183"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Small Crag Boars roam the slope right behind Talin's camp.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=183",
+       "label": "Wowhead Classic quest 183"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      708
+     ],
+     "name": "Small Crag Boar",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 22.6,
+      "y": 71.5
+     },
+     "radius": 6.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=708",
+       "label": "Wowhead NPC 708"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-183",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Boar Hunter to Talin Keeneye"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 22.6,
+      "y": 71.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 183,
+     "label": "The Boar Hunter"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=183",
+     "label": "Wowhead Classic quest 183"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-234",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Deliver the letter to Grelin Whitebeard at the camp south of Talin and accept The Troll Cave"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.1,
+      "y": 75.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 234,
+     "label": "Coldridge Valley Mail Delivery"
+    },
+    {
+     "type": "accept",
+     "questId": 182,
+     "label": "The Troll Cave"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=234",
+     "label": "Wowhead Classic quest 234"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=182",
+     "label": "Wowhead Classic quest 182"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3364",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Scalding Mornbrew Delivery from Nori Pridedrift"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.0,
+      "y": 76.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3364,
+     "label": "Scalding Mornbrew Delivery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3364",
+     "label": "Wowhead Classic quest 3364"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The mug of Mornbrew goes cold after five minutes. Run straight up to Anvilmar and do not stop to fight.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3364",
+       "label": "Wowhead Classic quest 3364"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3364",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Scalding Mornbrew Delivery to Durnan Furcutter inside Anvilmar and take back the empty mug"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 66.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3364,
+     "label": "Scalding Mornbrew Delivery"
+    },
+    {
+     "type": "accept",
+     "questId": 3365,
+     "label": "Bring Back the Mug"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3364",
+     "label": "Wowhead Classic quest 3364"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=3365",
+     "label": "Wowhead Classic quest 3365"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-3361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Refugee's Quandary from Felix Whindlebolt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 67.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3361,
+     "label": "A Refugee's Quandary"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3361",
+     "label": "Wowhead Classic quest 3361"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-1599",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Beginnings from Alamar Grimm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1599,
+     "label": "Beginnings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1599",
+     "label": "Wowhead Classic quest 1599"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warlocks: the Feather Charms drop from the Frostmane Novices at the troll camp, next to Grik'nir.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1599",
+       "label": "Wowhead Classic quest 1599"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-94373",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Call of Earth from Teo Hammerstorm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 66.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94373,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94373",
+     "label": "Wowhead Forever quest 94373"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shamans: the bear pendants drop from the same trolls you kill for The Troll Cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94373",
+       "label": "Wowhead Forever quest 94373"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:trainer",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your new level 2-4 spells"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your new level 2-4 spells"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-182",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Troll Cave: 14 Frostmane Troll Whelp"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 26.3,
+      "y": 79.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 182,
+     "objective": 1,
+     "label": "The Troll Cave"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=182",
+     "label": "Wowhead Classic quest 182"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kill the Troll Whelps around the camp before you go into the cave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=182",
+       "label": "Wowhead Classic quest 182"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      706
+     ],
+     "name": "Frostmane Troll Whelp",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 26.3,
+      "y": 79.6
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=706",
+       "label": "Wowhead NPC 706"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-94373",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Call of Earth: 2 Iceclaw Bear Pendant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 26.7,
+      "y": 79.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94373,
+     "objective": 1,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94373",
+     "label": "Wowhead Forever quest 94373"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      706,
+      946
+     ],
+     "name": "Frostmane Troll Whelp",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 26.7,
+      "y": 79.8
+     },
+     "radius": 7.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=706",
+       "label": "Wowhead NPC 706"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-3361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grab Felix's Box northwest of the troll camp"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 20.9,
+      "y": 76.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3361,
+     "objective": 1,
+     "label": "A Refugee's Quandary"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3361",
+     "label": "Wowhead Classic quest 3361"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-3361-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grab Felix's Chest on the west side of the troll camp"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 22.8,
+      "y": 80.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3361,
+     "objective": 2,
+     "label": "A Refugee's Quandary"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3361",
+     "label": "Wowhead Classic quest 3361"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-3361-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grab Felix's Bucket of Bolts inside the troll camp"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 26.3,
+      "y": 79.3,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 3361,
+     "objective": 3,
+     "label": "A Refugee's Quandary"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3361",
+     "label": "Wowhead Classic quest 3361"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-182",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Troll Cave to Grelin Whitebeard and accept The Stolen Journal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.1,
+      "y": 75.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 182,
+     "label": "The Troll Cave"
+    },
+    {
+     "type": "accept",
+     "questId": 218,
+     "label": "The Stolen Journal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=182",
+     "label": "Wowhead Classic quest 182"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=218",
+     "label": "Wowhead Classic quest 218"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-218",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Stolen Journal: Grelin Whitebeard's Journal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.5,
+      "y": 80.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 218,
+     "objective": 1,
+     "label": "The Stolen Journal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=218",
+     "label": "Wowhead Classic quest 218"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Grik'nir the Cold waits at the back of the cave. Clear the Novices on the way in; they come in pairs.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=218",
+       "label": "Wowhead Classic quest 218"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      808
+     ],
+     "name": "Grik'nir the Cold",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 30.5,
+      "y": 80.2
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=808",
+       "label": "Wowhead NPC 808"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-1599",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Beginnings: 3 Feather Charm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 29.7,
+      "y": 81.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1599,
+     "objective": 1,
+     "label": "Beginnings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1599",
+     "label": "Wowhead Classic quest 1599"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      946
+     ],
+     "name": "Frostmane Novice",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 29.7,
+      "y": 81.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=946",
+       "label": "Wowhead NPC 946"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-218",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Stolen Journal to Grelin and accept Senir's Observations"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.1,
+      "y": 75.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 218,
+     "label": "The Stolen Journal"
+    },
+    {
+     "type": "accept",
+     "questId": 282,
+     "label": "Senir's Observations"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=218",
+     "label": "Wowhead Classic quest 218"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=282",
+     "label": "Wowhead Classic quest 282"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3365",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bring Back the Mug to Nori Pridedrift"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.0,
+      "y": 76.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3365,
+     "label": "Bring Back the Mug"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3365",
+     "label": "Wowhead Classic quest 3365"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-3361",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Refugee's Quandary to Felix Whindlebolt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 67.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 3361,
+     "label": "A Refugee's Quandary"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3361",
+     "label": "Wowhead Classic quest 3361"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-1599",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Beginnings to Alamar Grimm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.1,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1599,
+     "label": "Beginnings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1599",
+     "label": "Wowhead Classic quest 1599"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-94373",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call of Earth to Teo Hammerstorm and accept the next part"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 66.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94373,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 94374,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94373",
+     "label": "Wowhead Forever quest 94373"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94374",
+     "label": "Wowhead Forever quest 94374"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:accept-5626",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept In Favor of the Light from Branstock Khalder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.6,
+      "y": 66.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5626,
+     "label": "In Favor of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5626",
+     "label": "Wowhead Classic quest 5626"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Priests: this sends you to Maxan Anvol in Kharanos for your first robe quest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5626",
+       "label": "Wowhead Classic quest 5626"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-97277",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Grund and Gozwin from Grund Drokda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.7,
+      "y": 67.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 97277,
+     "label": "Grund and Gozwin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97277",
+     "label": "Wowhead Forever quest 97277"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. Grund stands inside Anvilmar; his partner's camp is up the hill to the northwest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97277",
+       "label": "Wowhead Forever quest 97277"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:complete-97277",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Grund and Gozwin: Snow Leopard Prowler, Gozwin's Mechanic's Log"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 27.3,
+      "y": 62.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 97277,
+     "objective": 1,
+     "label": "Grund and Gozwin"
+    },
+    {
+     "type": "complete",
+     "questId": 97277,
+     "objective": 2,
+     "label": "Grund and Gozwin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97277",
+     "label": "Wowhead Forever quest 97277"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Snow Leopard Prowler is a single tougher cat at the camp. Pull it away from the tents before you loot the log.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=97277",
+       "label": "Wowhead Forever quest 97277"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      269075
+     ],
+     "name": "Snow Leopard Prowler",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 27.3,
+      "y": 62.9
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=269075",
+       "label": "Wowhead NPC 269075"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-94374",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Drink the Earth Sapta at the Spirit Stone northwest of Anvilmar, talk to the Minor Manifestation of Earth and accept the last Call of Earth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 24.8,
+      "y": 61.9,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94374,
+     "label": "Call of Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 94375,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94374",
+     "label": "Wowhead Forever quest 94374"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94375",
+     "label": "Wowhead Forever quest 94375"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-97277",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Grund and Gozwin to Grund Drokda"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.7,
+      "y": 67.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 97277,
+     "label": "Grund and Gozwin"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=97277",
+     "label": "Wowhead Forever quest 97277"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-94375",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Call of Earth to Teo Hammerstorm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 28.8,
+      "y": 66.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94375,
+     "label": "Call of Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94375",
+     "label": "Wowhead Forever quest 94375"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Teo gives you your Earth Totem. Train before you leave the valley.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94375",
+       "label": "Wowhead Forever quest 94375"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:trainer-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Visit your class trainer before leaving Coldridge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Visit your class trainer before leaving Coldridge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-282",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Senir's Observations to Mountaineer Thalos at the tunnel and accept the follow-up plus The Adventurer"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 33.5,
+      "y": 71.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 282,
+     "label": "Senir's Observations"
+    },
+    {
+     "type": "accept",
+     "questId": 420,
+     "label": "Senir's Observations"
+    },
+    {
+     "type": "accept",
+     "questId": 96628,
+     "label": "The Adventurer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=282",
+     "label": "Wowhead Classic quest 282"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=420",
+     "label": "Wowhead Classic quest 420"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96628",
+     "label": "Wowhead Forever quest 96628"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Adventurer is a Forever camping quest. It sends you to Eric Brighthammer outside the Kharanos inn.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=282",
+       "label": "Wowhead Classic quest 282"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=420",
+       "label": "Wowhead Classic quest 420"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=96628",
+       "label": "Wowhead Forever quest 96628"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-2160",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Supplies to Tannok from Hands Springsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 33.9,
+      "y": 72.2,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2160,
+     "label": "Supplies to Tannok"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2160",
+     "label": "Wowhead Classic quest 2160"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Run through the tunnel to Kharanos now. Nothing else in the valley is worth going back for.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2160",
+       "label": "Wowhead Classic quest 2160"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

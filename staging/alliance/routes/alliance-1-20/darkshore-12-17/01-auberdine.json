@@ -1,0 +1,953 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "darkshore-12-17",
+ "title": "Auberdine",
+ "steps": [
+  {
+   "id": "darkshore-12-17:turnin-6342",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Flight to Auberdine to Laird"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.8,
+      "y": 44.3,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6342,
+     "label": "Flight to Auberdine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6342",
+     "label": "Wowhead Classic quest 6342"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Laird sells fish at the end of the Auberdine pier, right where the hippogryph lands.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6342",
+       "label": "Wowhead Classic quest 6342"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-6343",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Return to Nessa from Laird"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.8,
+      "y": 44.3,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6343,
+     "label": "Return to Nessa"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6343",
+     "label": "Wowhead Classic quest 6343"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Return to Nessa sends you back to Rut'theran. Keep it for the Darnassus trip later in this pack.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6343",
+       "label": "Wowhead Classic quest 6343"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:fp-3841",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Caylais Moonfeather to make sure you have the Auberdine flight path"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.3,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Talk to Caylais Moonfeather to make sure you have the Auberdine flight path"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3841",
+     "label": "Wowhead NPC 3841"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever adds a boat between Auberdine and Stormwind Harbor. It is an alternative if you would rather level in the Eastern Kingdoms after Teldrassil.",
+     "sources": [
+      {
+       "url": "https://classicwowforever.com/boats-and-zeppelins",
+       "label": "classicwowforever.com: boats and zeppelins"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3841,
+     "name": "Caylais Moonfeather",
+     "at": {
+      "mapId": 1439,
+      "zone": "Darkshore",
+      "x": 36.3,
+      "y": 45.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3841",
+       "label": "Wowhead NPC 3841"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:home-6737",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at the Auberdine inn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.0,
+      "y": 44.1,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at the Auberdine inn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=6737",
+     "label": "Wowhead NPC 6737"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Auberdine is your base for the whole zone; every loop here ends with a hearth back.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6737",
+       "label": "Wowhead NPC 6737"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6737,
+     "name": "Innkeeper Shaussiy",
+     "at": {
+      "mapId": 1439,
+      "zone": "Darkshore",
+      "x": 37.0,
+      "y": 44.1
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6737",
+       "label": "Wowhead NPC 6737"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-983",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Buzzbox 827 from Wizbang Cranktoggle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.0,
+      "y": 44.1,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 983,
+     "label": "Buzzbox 827"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=983",
+     "label": "Wowhead Classic quest 983"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wizbang stands in the inn. Pygmy Tide Crawlers line the beach right below Auberdine.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=983",
+       "label": "Wowhead Classic quest 983"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-3524",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Washed Ashore from Gwennyth Bly'Leggonde"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.6,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 3524,
+     "label": "Washed Ashore"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=3524",
+     "label": "Wowhead Classic quest 3524"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gwennyth is on the pier. Her chain sends you to bones and beached animals up and down the coast; pick each one up as you pass it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=3524",
+       "label": "Wowhead Classic quest 3524"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-98025",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept WANTED: Jai'vhanel at the WANTED: Murkdeep!"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.2,
+      "y": 44.2,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98025,
+     "label": "WANTED: Jai'vhanel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98025",
+     "label": "Wowhead Forever quest 98025"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever bounty on the board outside the inn. Jai'vhanel is a named furbolg near Ameth'Aran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98025",
+       "label": "Wowhead Forever quest 98025"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-4811",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Red Crystal from Sentinel Glynda Nal'Shea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.7,
+      "y": 43.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 4811,
+     "label": "The Red Crystal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=4811",
+     "label": "Wowhead Classic quest 4811"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:accept-2118",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Plagued Lands from Tharnariun Treetender"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 38.8,
+      "y": 43.4,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2118,
+     "label": "Plagued Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2118",
+     "label": "Wowhead Classic quest 2118"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:accept-984",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept How Big a Threat? from Terenthis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 39.4,
+      "y": 43.5,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 984,
+     "label": "How Big a Threat?"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=984",
+     "label": "Wowhead Classic quest 984"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Terenthis only wants you to find the Blackwood camp for now; you will kill furbolgs for him later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=984",
+       "label": "Wowhead Classic quest 984"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-963",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept For Love Eternal from Cerellean Whiteclaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 35.7,
+      "y": 43.7,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 963,
+     "label": "For Love Eternal"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=963",
+     "label": "Wowhead Classic quest 963"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Anaya's spirit is level 16. Take the quest now and kill her when you reach Ameth'Aran if you feel strong enough.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=963",
+       "label": "Wowhead Classic quest 963"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:accept-954",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bashal'Aran from Thundris Windweaver; Accept Tools of the Highborne from Thundris Windweaver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 37.4,
+      "y": 40.1,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 954,
+     "label": "Bashal'Aran"
+    },
+    {
+     "type": "accept",
+     "questId": 958,
+     "label": "Tools of the Highborne"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=954",
+     "label": "Wowhead Classic quest 954"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=958",
+     "label": "Wowhead Classic quest 958"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Thundris Windweaver is at the north end of Auberdine. Both quests point you to the ruins east and south of town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=954",
+       "label": "Wowhead Classic quest 954"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=958",
+       "label": "Wowhead Classic quest 958"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-1686",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Shade of Elura: Elunite Ore, Elura's Medallion"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 32.5,
+      "y": 44.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1686,
+     "objective": 1,
+     "label": "The Shade of Elura"
+    },
+    {
+     "type": "complete",
+     "questId": 1686,
+     "objective": 2,
+     "label": "The Shade of Elura"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1686",
+     "label": "Wowhead Classic quest 1686"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warriors: the Elunite crates and the Shade of Elura are in the sunken ship west of Auberdine. Watch your breath bar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1686",
+       "label": "Wowhead Classic quest 1686"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6133
+     ],
+     "name": "Shade of Elura",
+     "mapId": 1439,
+     "zone": "Darkshore",
+     "center": {
+      "x": 32.5,
+      "y": 44.6
+     },
+     "radius": 2.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6133",
+       "label": "Wowhead NPC 6133"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:complete-6001",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Druids: use the Cenarion Moondust at the Moonkin Stone east of Auberdine and defeat Lunaclaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 43.4,
+      "y": 45.8,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6001,
+     "objective": 1,
+     "label": "Body and Heart"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6001",
+     "label": "Wowhead Classic quest 6001"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Druids: Lunaclaw appears when you use the moondust. After the fight, talk to the Lunaclaw Spirit before you leave.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6001",
+       "label": "Wowhead Classic quest 6001"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

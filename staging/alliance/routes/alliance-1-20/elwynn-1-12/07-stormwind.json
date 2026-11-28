@@ -1,0 +1,1399 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Stormwind",
+ "steps": [
+  {
+   "id": "elwynn-1-12:turnin-61",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Shipment to Stormwind to Morgan Pestle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 63.2,
+      "y": 74.4,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 61,
+     "label": "Shipment to Stormwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=61",
+     "label": "Wowhead Classic quest 61"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stormwind's gate is north of Westbrook. Morgan Pestle is in the Trade District.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=61",
+       "label": "Wowhead Classic quest 61"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:fp-352",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Dungar Longdrink"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 71.3,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Dungar Longdrink"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=352",
+     "label": "Wowhead NPC 352"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Grab the Stormwind flight path in Old Town; Westfall's quests fly you back here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 352,
+     "name": "Dungar Longdrink",
+     "at": {
+      "mapId": 1453,
+      "zone": "Stormwind City",
+      "x": 71.3,
+      "y": 72.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-94774",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Divine Grace to High Priestess Laurena"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.5,
+      "y": 44.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94774,
+     "label": "Divine Grace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94774",
+     "label": "Wowhead Forever quest 94774"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-1638",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Warrior's Training to Harry Burlguard; Accept Bartleby the Drunk from Harry Burlguard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 77.1,
+      "y": 53.3,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1638,
+     "label": "A Warrior's Training"
+    },
+    {
+     "type": "accept",
+     "questId": 1639,
+     "label": "Bartleby the Drunk"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1638",
+     "label": "Wowhead Classic quest 1638"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1639",
+     "label": "Wowhead Classic quest 1639"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warriors: Harry Burlguard is in the Pig and Whistle in Old Town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1638",
+       "label": "Wowhead Classic quest 1638"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1639",
+       "label": "Wowhead Classic quest 1639"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bartleby the Drunk to Bartleby; Accept Beat Bartleby from Bartleby"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 76.8,
+      "y": 52.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1639,
+     "label": "Bartleby the Drunk"
+    },
+    {
+     "type": "accept",
+     "questId": 1640,
+     "label": "Beat Bartleby"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1639",
+     "label": "Wowhead Classic quest 1639"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1640",
+     "label": "Wowhead Classic quest 1640"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-1640",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Beat Bartleby: Bartleby"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 76.8,
+      "y": 52.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1640,
+     "objective": 1,
+     "label": "Beat Bartleby"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1640",
+     "label": "Wowhead Classic quest 1640"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Beat Bartleby; he gives up at low health.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1640",
+       "label": "Wowhead Classic quest 1640"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6090
+     ],
+     "name": "Bartleby",
+     "mapId": 1453,
+     "zone": "Stormwind City",
+     "center": {
+      "x": 76.8,
+      "y": 52.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6090",
+       "label": "Wowhead NPC 6090"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1640",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Beat Bartleby to Bartleby; Accept Bartleby's Mug from Bartleby"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 76.8,
+      "y": 52.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1640,
+     "label": "Beat Bartleby"
+    },
+    {
+     "type": "accept",
+     "questId": 1665,
+     "label": "Bartleby's Mug"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1640",
+     "label": "Wowhead Classic quest 1640"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1665",
+     "label": "Wowhead Classic quest 1665"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-1665",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bartleby's Mug to Harry Burlguard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 77.1,
+      "y": 53.3,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1665,
+     "label": "Bartleby's Mug"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1665",
+     "label": "Wowhead Classic quest 1665"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-1666",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Marshal Haggard from Harry Burlguard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 77.1,
+      "y": 53.3,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1666,
+     "label": "Marshal Haggard"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1666",
+     "label": "Wowhead Classic quest 1666"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-2205",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seek out SI: 7 to Master Mathias Shaw; Accept Snatch and Grab from Master Mathias Shaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 78.3,
+      "y": 70.7,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2205,
+     "label": "Seek out SI: 7"
+    },
+    {
+     "type": "accept",
+     "questId": 2206,
+     "label": "Snatch and Grab"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2205",
+     "label": "Wowhead Classic quest 2205"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2206",
+     "label": "Wowhead Classic quest 2206"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: Mathias Shaw is in SI:7 in Old Town. Snatch and Grab's dockmaster is at Jerod's Landing; turn it in on your next city visit.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2205",
+       "label": "Wowhead Classic quest 2205"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=2206",
+       "label": "Wowhead Classic quest 2206"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1685",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gakin's Summons to Gakin the Darkbinder; Accept Surena Caledon from Gakin the Darkbinder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1685,
+     "label": "Gakin's Summons"
+    },
+    {
+     "type": "accept",
+     "questId": 1688,
+     "label": "Surena Caledon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1685",
+     "label": "Wowhead Classic quest 1685"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1688",
+     "label": "Wowhead Classic quest 1688"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warlocks: Gakin is in the Slaughtered Lamb cellar in the Mage Quarter.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1685",
+       "label": "Wowhead Classic quest 1685"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1688",
+       "label": "Wowhead Classic quest 1688"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1860",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Speak with Jennea to Jennea Cannon; Accept Mirror Lake from Jennea Cannon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.6,
+      "y": 85.8,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1860,
+     "label": "Speak with Jennea"
+    },
+    {
+     "type": "accept",
+     "questId": 1861,
+     "label": "Mirror Lake"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1860",
+     "label": "Wowhead Classic quest 1860"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1861",
+     "label": "Wowhead Classic quest 1861"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mages: Jennea Cannon is in the Wizard's Sanctum in the Mage Quarter.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1860",
+       "label": "Wowhead Classic quest 1860"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1861",
+       "label": "Wowhead Classic quest 1861"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-1861",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Mirror Lake: Mirror Lake Water Sample"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 28.6,
+      "y": 61.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1861,
+     "objective": 1,
+     "label": "Mirror Lake"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1861",
+     "label": "Wowhead Classic quest 1861"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mirror Lake is just outside the city gate to the south-west. Use the empty vial at the waterfall.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1861",
+       "label": "Wowhead Classic quest 1861"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1861",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mirror Lake to Jennea Cannon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.6,
+      "y": 85.8,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1861,
+     "label": "Mirror Lake"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1861",
+     "label": "Wowhead Classic quest 1861"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-1688",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Surena Caledon: Surena's Choker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 71.0,
+      "y": 80.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1688,
+     "objective": 1,
+     "label": "Surena Caledon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1688",
+     "label": "Wowhead Classic quest 1688"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Surena Caledon is in the Brackwell Pumpkin Patch in eastern Elwynn. It is a long walk, but this unlocks your Voidwalker.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1688",
+       "label": "Wowhead Classic quest 1688"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      881
+     ],
+     "name": "Surena Caledon",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 71.0,
+      "y": 80.8
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=881",
+       "label": "Wowhead NPC 881"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1688",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Surena Caledon to Gakin the Darkbinder; Accept The Binding from Gakin the Darkbinder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1688,
+     "label": "Surena Caledon"
+    },
+    {
+     "type": "accept",
+     "questId": 1689,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1688",
+     "label": "Wowhead Classic quest 1688"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-1689",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Binding: Summoned Voidwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1689,
+     "objective": 1,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Summon the Voidwalker with the choker in Gakin's cellar and beat it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1689",
+       "label": "Wowhead Classic quest 1689"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-1689",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Binding to Gakin the Darkbinder"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1689,
+     "label": "The Binding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1689",
+     "label": "Wowhead Classic quest 1689"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-2206",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Snatch and Grab: Defias Shipping Schedule"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 48.1,
+      "y": 87.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2206,
+     "objective": 1,
+     "label": "Snatch and Grab"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2206",
+     "label": "Wowhead Classic quest 2206"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: the Defias Dockmaster stands on Jerod's Landing south-east of Maclure. Turn it in on your next Stormwind visit.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2206",
+       "label": "Wowhead Classic quest 2206"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6846
+     ],
+     "name": "Defias Dockmaster",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 48.1,
+      "y": 87.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6846",
+       "label": "Wowhead NPC 6846"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:grind-12",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Grind Riverpaw gnolls at Forest's Edge to 12 on the way to Westfall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 26.7,
+      "y": 88.1,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 12,
+     "label": "Grind Riverpaw gnolls at Forest's Edge to 12 on the way to Westfall",
+     "mobId": 478,
+     "mobName": "Riverpaw Outrunner",
+     "mobLevel": 10
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=478",
+     "label": "Wowhead NPC 478"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Skip the grind if you already killed everything on the way; Westfall's first quests are fine at 11.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=478",
+       "label": "Wowhead NPC 478"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      478
+     ],
+     "name": "Riverpaw Outrunner",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 26.7,
+      "y": 88.1
+     },
+     "radius": 7.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=478",
+       "label": "Wowhead NPC 478"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

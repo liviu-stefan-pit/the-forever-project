@@ -1,0 +1,833 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "westfall-12-17",
+ "title": "Gold Coast Quarry and Jangolode Mine",
+ "steps": [
+  {
+   "id": "westfall-12-17:complete-92745",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The State of the Mines: 6 Riverpaw Miner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 29.8,
+      "y": 48.1,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92745,
+     "objective": 2,
+     "label": "The State of the Mines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92745",
+     "label": "Wowhead Forever quest 92745"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Riverpaw Miners work the Gold Coast Quarry on the west coast.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92745",
+       "label": "Wowhead Forever quest 92745"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: run straight to the quarry and the mine; skip the treasure hunt and Ozwin's second order.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92745",
+       "label": "Wowhead Forever quest 92745"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1426
+     ],
+     "name": "Riverpaw Miner",
+     "mapId": 1436,
+     "zone": "Westfall",
+     "center": {
+      "x": 29.8,
+      "y": 48.1
+     },
+     "radius": 2.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1426",
+       "label": "Wowhead NPC 1426"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-136",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Captain Sander's Hidden Treasure at the Captain's Footlocker; Accept Captain Sander's Hidden Treasure at the Captain's Footlocker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 25.9,
+      "y": 47.8,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 136,
+     "label": "Captain Sander's Hidden Treasure"
+    },
+    {
+     "type": "accept",
+     "questId": 138,
+     "label": "Captain Sander's Hidden Treasure"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=136",
+     "label": "Wowhead Classic quest 136"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=138",
+     "label": "Wowhead Classic quest 138"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The captain's footlocker sits on the beach just west of the quarry.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=136",
+       "label": "Wowhead Classic quest 136"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=138",
+       "label": "Wowhead Classic quest 138"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-92911",
+   "tags": {
+    "label": "New in Forever",
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Harvesting the Harvesters: 4 Copper Modulator, Crude Scope"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 30.5,
+      "y": 48.8,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92911,
+     "objective": 2,
+     "label": "Harvesting the Harvesters"
+    },
+    {
+     "type": "complete",
+     "questId": 92911,
+     "objective": 3,
+     "label": "Harvesting the Harvesters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92911",
+     "label": "Wowhead Forever quest 92911"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Murloc Hunters on the beach drop the scope and modulators.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92911",
+       "label": "Wowhead Forever quest 92911"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      36,
+      114,
+      115,
+      458,
+      480,
+      573
+     ],
+     "name": "Harvest Golem",
+     "mapId": 1436,
+     "zone": "Westfall",
+     "center": {
+      "x": 30.5,
+      "y": 48.8
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=36",
+       "label": "Wowhead NPC 36"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-138",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Captain Sander's Hidden Treasure at the Broken Barrel; Accept Captain Sander's Hidden Treasure at the Broken Barrel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 40.5,
+      "y": 47.8,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 138,
+     "label": "Captain Sander's Hidden Treasure"
+    },
+    {
+     "type": "accept",
+     "questId": 139,
+     "label": "Captain Sander's Hidden Treasure"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=138",
+     "label": "Wowhead Classic quest 138"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=139",
+     "label": "Wowhead Classic quest 139"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The broken barrel is by the ruined chimney east of the quarry.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=138",
+       "label": "Wowhead Classic quest 138"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=139",
+       "label": "Wowhead Classic quest 139"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-92745-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The State of the Mines: 4 Kobold Digger"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 45.3,
+      "y": 20.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92745,
+     "objective": 1,
+     "label": "The State of the Mines"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92745",
+     "label": "Wowhead Forever quest 92745"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Kobold Diggers are inside Jangolode Mine in the north. Trappers outside also drop bandanas.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92745",
+       "label": "Wowhead Forever quest 92745"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1236
+     ],
+     "name": "Kobold Digger",
+     "mapId": 1436,
+     "zone": "Westfall",
+     "center": {
+      "x": 45.3,
+      "y": 20.0
+     },
+     "radius": 3.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1236",
+       "label": "Wowhead NPC 1236"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-139",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Captain Sander's Hidden Treasure at the Old Jug; Accept Captain Sander's Hidden Treasure at the Old Jug"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 40.6,
+      "y": 17.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 139,
+     "label": "Captain Sander's Hidden Treasure"
+    },
+    {
+     "type": "accept",
+     "questId": 140,
+     "label": "Captain Sander's Hidden Treasure"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=139",
+     "label": "Wowhead Classic quest 139"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=140",
+     "label": "Wowhead Classic quest 140"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The old jug stands by the windmill near the mine.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=139",
+       "label": "Wowhead Classic quest 139"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=140",
+       "label": "Wowhead Classic quest 140"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-140",
+   "tags": {
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Captain Sander's Hidden Treasure at the Locked Chest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 26.0,
+      "y": 16.9,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 140,
+     "label": "Captain Sander's Hidden Treasure"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=140",
+     "label": "Wowhead Classic quest 140"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The locked chest is on the north-west shore.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=140",
+       "label": "Wowhead Classic quest 140"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-92911-2",
+   "tags": {
+    "label": "New in Forever",
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Harvesting the Harvesters: 8 Golem Isospring"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 53.8,
+      "y": 23.6,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92911,
+     "objective": 1,
+     "label": "Harvesting the Harvesters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92911",
+     "label": "Wowhead Forever quest 92911"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Finish the isosprings on Harvest Golems on the way back south.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92911",
+       "label": "Wowhead Forever quest 92911"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      36,
+      114,
+      115,
+      480,
+      276061
+     ],
+     "name": "Harvest Golem",
+     "mapId": 1436,
+     "zone": "Westfall",
+     "center": {
+      "x": 53.8,
+      "y": 23.6
+     },
+     "radius": 7.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=36",
+       "label": "Wowhead NPC 36"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-92911",
+   "tags": {
+    "label": "New in Forever",
+    "optional": true
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Harvesting the Harvesters to Ozwin Ironsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 51.5,
+      "y": 32.3,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92911,
+     "label": "Harvesting the Harvesters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92911",
+     "label": "Wowhead Forever quest 92911"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:turnin-92745",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The State of the Mines to Alba Fairmoon; Accept Moonbrook Espionage from Alba Fairmoon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 52.5,
+      "y": 53.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92745,
+     "label": "The State of the Mines"
+    },
+    {
+     "type": "accept",
+     "questId": 92747,
+     "label": "Moonbrook Espionage"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92745",
+     "label": "Wowhead Forever quest 92745"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92747",
+     "label": "Wowhead Forever quest 92747"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back to Alba at Sentinel Hill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92745",
+       "label": "Wowhead Forever quest 92745"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92747",
+       "label": "Wowhead Forever quest 92747"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2834 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "westfall-12-17",
+ "title": "Stormwind trip",
+ "steps": [
+  {
+   "id": "westfall-12-17:fly-523",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly to Stormwind"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.5,
+      "y": 52.6,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly to Stormwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=523",
+     "label": "Wowhead NPC 523"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Thor flies you to Stormwind. Humans need this flight for Lewis's note anyway.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=523",
+       "label": "Wowhead NPC 523"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 523,
+     "name": "Thor",
+     "at": {
+      "mapId": 1436,
+      "zone": "Westfall",
+      "x": 56.5,
+      "y": 52.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=523",
+       "label": "Wowhead NPC 523"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-6281",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Continue to Stormwind to Osric Strang; Accept Dungar Longdrink from Osric Strang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 77.2,
+      "y": 61.0,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6281,
+     "label": "Continue to Stormwind"
+    },
+    {
+     "type": "accept",
+     "questId": 6261,
+     "label": "Dungar Longdrink"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6281",
+     "label": "Wowhead Classic quest 6281"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6261",
+     "label": "Wowhead Classic quest 6261"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Osric Strang's shop is in Old Town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6281",
+       "label": "Wowhead Classic quest 6281"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=6261",
+       "label": "Wowhead Classic quest 6261"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-6261",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dungar Longdrink to Dungar Longdrink; Accept Return to Lewis from Dungar Longdrink"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 71.3,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6261,
+     "label": "Dungar Longdrink"
+    },
+    {
+     "type": "accept",
+     "questId": 6285,
+     "label": "Return to Lewis"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6261",
+     "label": "Wowhead Classic quest 6261"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6285",
+     "label": "Wowhead Classic quest 6285"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-399",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Humble Beginnings from Baros Alexston"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 57.7,
+      "y": 47.9,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 399,
+     "label": "Humble Beginnings"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=399",
+     "label": "Wowhead Classic quest 399"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Baros Alexston in Cathedral Square wants his old compass from his Westfall farmhouse. You hand it in when you leave Westfall through Stormwind.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=399",
+       "label": "Wowhead Classic quest 399"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-2206",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Snatch and Grab to Master Mathias Shaw"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 78.3,
+      "y": 70.7,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2206,
+     "label": "Snatch and Grab"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2206",
+     "label": "Wowhead Classic quest 2206"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: hand Shaw the shipping schedule from Jerod's Landing.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2206",
+       "label": "Wowhead Classic quest 2206"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-92748",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Explosive Consultation to Sprite Jumpsprocket; Accept Detonation at a Distance from Sprite Jumpsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92748,
+     "label": "Explosive Consultation"
+    },
+    {
+     "type": "accept",
+     "questId": 92750,
+     "label": "Detonation at a Distance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92748",
+     "label": "Wowhead Forever quest 92748"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92750",
+     "label": "Wowhead Forever quest 92750"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sprite Jumpsprocket is in the Dwarven District.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92748",
+       "label": "Wowhead Forever quest 92748"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92750",
+       "label": "Wowhead Forever quest 92750"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-92750",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Detonation at a Distance to Jasper Fel; Accept Detonation at a Distance from Jasper Fel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 80.3,
+      "y": 70.1,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92750,
+     "label": "Detonation at a Distance"
+    },
+    {
+     "type": "accept",
+     "questId": 92751,
+     "label": "Detonation at a Distance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92750",
+     "label": "Wowhead Forever quest 92750"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=92751",
+     "label": "Wowhead Forever quest 92751"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Jasper Fel is in SI:7 in Old Town.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92750",
+       "label": "Wowhead Forever quest 92750"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=92751",
+       "label": "Wowhead Forever quest 92751"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-92751",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Detonation at a Distance to Sprite Jumpsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92751,
+     "label": "Detonation at a Distance"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92751",
+     "label": "Wowhead Forever quest 92751"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back to Sprite. The next step needs 10 Rough Dynamite from an engineer or the auction house; only bother if you plan to run the Deadmines.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92751",
+       "label": "Wowhead Forever quest 92751"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-92749",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "prep"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Dynamite Plan from Sprite Jumpsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92749,
+     "label": "A Dynamite Plan"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92749",
+     "label": "Wowhead Forever quest 92749"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "If you plan to run the Deadmines: Sprite also wants 10 Rough Dynamite (engineers or the auction house).",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92749",
+       "label": "Wowhead Forever quest 92749"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-92749",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "prep"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Dynamite Plan: 10 Rough Dynamite"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 92749,
+     "objective": 1,
+     "label": "A Dynamite Plan"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92749",
+     "label": "Wowhead Forever quest 92749"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:turnin-92749",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "prep"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Dynamite Plan to Sprite Jumpsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 92749,
+     "label": "A Dynamite Plan"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92749",
+     "label": "Wowhead Forever quest 92749"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:accept-92752",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "prep"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Explosive Consultation from Sprite Jumpsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 61.9,
+      "y": 30.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92752,
+     "label": "Explosive Consultation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92752",
+     "label": "Wowhead Forever quest 92752"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:turnin-2998",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Tome of Divinity to Duthorian Rall, then start The Tome of Divinity from the book he hands you"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 50.5,
+      "y": 47.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2998,
+     "label": "Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1642,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2998",
+     "label": "Wowhead Classic quest 2998"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1642",
+     "label": "Wowhead Classic quest 1642"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Paladins: Duthorian Rall is in the Cathedral of Light. The Tome of Divinity chain ends with Redemption.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2998",
+       "label": "Wowhead Classic quest 2998"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1642",
+       "label": "Wowhead Classic quest 1642"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-1642",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Duthorian Rall; Accept The Tome of Divinity from Duthorian Rall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 50.5,
+      "y": 47.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1642,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1643,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1642",
+     "label": "Wowhead Classic quest 1642"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1643",
+     "label": "Wowhead Classic quest 1643"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:turnin-1643",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Stephanie Turner; Accept The Tome of Divinity from Stephanie Turner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 63.8,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1643,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1644,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1643",
+     "label": "Wowhead Classic quest 1643"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1644",
+     "label": "Wowhead Classic quest 1644"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stephanie Turner is in the Trade District.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1643",
+       "label": "Wowhead Classic quest 1643"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1644",
+       "label": "Wowhead Classic quest 1644"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-1644",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Tome of Divinity: 10 Linen Cloth"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 63.8,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1644,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1644",
+     "label": "Wowhead Classic quest 1644"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Bring 10 Linen Cloth; you should have plenty from the Defias.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1644",
+       "label": "Wowhead Classic quest 1644"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-1644",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Stephanie Turner; Accept The Tome of Divinity from Stephanie Turner"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 63.8,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1644,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1780,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1644",
+     "label": "Wowhead Classic quest 1644"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1780",
+     "label": "Wowhead Classic quest 1780"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:turnin-1780",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Duthorian Rall; Accept The Tome of Divinity from Duthorian Rall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 50.5,
+      "y": 47.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1780,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1781,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1780",
+     "label": "Wowhead Classic quest 1780"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1781",
+     "label": "Wowhead Classic quest 1781"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:turnin-1781",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Gazin Tenorm; Accept The Tome of Divinity from Gazin Tenorm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.5,
+      "y": 45.0,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1781,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1786,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1781",
+     "label": "Wowhead Classic quest 1781"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1786",
+     "label": "Wowhead Classic quest 1786"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:complete-1786",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Tome of Divinity: Henze Faulk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 72.6,
+      "y": 51.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1786,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1786",
+     "label": "Wowhead Classic quest 1786"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Henze Faulk lies by the road near Stone Cairn Lake in eastern Elwynn; use the Symbol of Life on him.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1786",
+       "label": "Wowhead Classic quest 1786"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6172
+     ],
+     "name": "Henze Faulk",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 72.6,
+      "y": 51.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6172",
+       "label": "Wowhead NPC 6172"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-1786",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Henze Faulk; Accept The Tome of Divinity from Henze Faulk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 72.6,
+      "y": 51.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1786,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1787,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1786",
+     "label": "Wowhead Classic quest 1786"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1787",
+     "label": "Wowhead Classic quest 1787"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:complete-1787",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Tome of Divinity: Defias Script"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 74.1,
+      "y": 51.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1787,
+     "objective": 1,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1787",
+     "label": "Wowhead Classic quest 1787"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Defias Script drops from Rogue Wizards north of Stone Cairn Lake.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1787",
+       "label": "Wowhead Classic quest 1787"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      474,
+      6866
+     ],
+     "name": "Defias Rogue Wizard",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 74.1,
+      "y": 51.5
+     },
+     "radius": 5.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=474",
+       "label": "Wowhead NPC 474"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-1787",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Gazin Tenorm; Accept The Tome of Divinity from Gazin Tenorm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.5,
+      "y": 45.0,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1787,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1788,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1787",
+     "label": "Wowhead Classic quest 1787"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1788",
+     "label": "Wowhead Classic quest 1788"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back to Gazin Tenorm in the Cathedral.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1787",
+       "label": "Wowhead Classic quest 1787"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1788",
+       "label": "Wowhead Classic quest 1788"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-1788",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Tome of Divinity to Duthorian Rall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 50.5,
+      "y": 47.5,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1788,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1788",
+     "label": "Wowhead Classic quest 1788"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-168",
+   "tags": {
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Collecting Memories from Wilder Thistlenettle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 70.3,
+      "y": 40.8,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 168,
+     "label": "Collecting Memories"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=168",
+     "label": "Wowhead Classic quest 168"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Wilder Thistlenettle in the Dwarven District wants union cards from the Deadmines.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=168",
+       "label": "Wowhead Classic quest 168"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-167",
+   "tags": {
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Oh Brother. . . from Wilder Thistlenettle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 70.3,
+      "y": 40.8,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 167,
+     "label": "Oh Brother. . ."
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=167",
+     "label": "Wowhead Classic quest 167"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-2040",
+   "tags": {
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Underground Assault from Shoni the Shilent"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 62.6,
+      "y": 34.1,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2040,
+     "label": "Underground Assault"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "The Deadmines",
+    "levels": [
+     17,
+     24
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2040",
+     "label": "Wowhead Classic quest 2040"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shoni is in the Dwarven District next to the tram.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2040",
+       "label": "Wowhead Classic quest 2040"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Important Heirlooms from Thom Filch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96403,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Take the Deeprun Tram from the Dwarven District to Ironforge. Thom Filch wants heirlooms from the new Hall of Thanes.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96403",
+       "label": "Wowhead Forever quest 96403"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:goto-87",
+   "tags": {
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Enter the Hall of Thanes from Old Ironforge, off the Throne Room"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. A full party at 15 is comfortable. Instance entries are capped per hour, so don't reset carelessly.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301455",
+       "label": "Blizzard: Hall of Thanes announcement"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-96395",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept An Ancient Grudge from the Ghostly Attendant inside the Hall of Thanes"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96395,
+     "label": "An Ancient Grudge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96395",
+     "label": "Wowhead Forever quest 96395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Ghostly Attendant inside the dungeon gives this one.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96395",
+       "label": "Wowhead Forever quest 96395"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Important Heirlooms: 8 Dwarven Heirloom"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96403,
+     "objective": 1,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Heirlooms are glowing objects along the halls; everyone in the party can loot them.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96403",
+       "label": "Wowhead Forever quest 96403"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:complete-96395",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete An Ancient Grudge: Faldrim Anvilmar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96395,
+     "objective": 1,
+     "label": "An Ancient Grudge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96395",
+     "label": "Wowhead Forever quest 96395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:accept-98423",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Treaty of Understanding and accept The Treaty of Understanding"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98423,
+     "label": "The Treaty of Understanding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98423",
+     "label": "Wowhead Forever quest 98423"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Treaty of Understanding is in the last vault. It cannot be shared; each player loots their own.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98423",
+       "label": "Wowhead Forever quest 98423"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-96395",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in An Ancient Grudge to the Ghostly Attendant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96395,
+     "label": "An Ancient Grudge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96395",
+     "label": "Wowhead Forever quest 96395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:turnin-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Important Heirlooms to Thom Filch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96403,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:turnin-98423",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Treaty of Understanding to King Magni Bronzebeard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98423,
+     "label": "The Treaty of Understanding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ],
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98423",
+     "label": "Wowhead Forever quest 98423"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Magni is in the Throne Room. Take the tram back to Stormwind afterwards.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98423",
+       "label": "Wowhead Forever quest 98423"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:fly-352",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly to Sentinel Hill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 71.3,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly to Sentinel Hill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=352",
+     "label": "Wowhead NPC 352"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Fly back to Westfall.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 352,
+     "name": "Dungar Longdrink",
+     "at": {
+      "mapId": 1453,
+      "zone": "Stormwind City",
+      "x": 71.3,
+      "y": 72.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-6285",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Lewis to Quartermaster Lewis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 57.0,
+      "y": 47.2,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6285,
+     "label": "Return to Lewis"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6285",
+     "label": "Wowhead Classic quest 6285"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Quartermaster Lewis is at the top of Sentinel Hill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6285",
+       "label": "Wowhead Classic quest 6285"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

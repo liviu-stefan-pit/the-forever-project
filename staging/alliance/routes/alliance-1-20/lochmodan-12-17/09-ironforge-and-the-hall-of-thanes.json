@@ -1,0 +1,1109 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Ironforge and the Hall of Thanes",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:hs-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hearth back to Thelsamar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Hearth back to Thelsamar"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "If the hearth is still on cooldown, ride; do not wait for it.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-94468",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: walk through the Algaz tunnel and give the Torch to Bruegs Kindleborn just past the Dun Morogh South Gate, then continue to Ironforge on foot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 87.9,
+      "y": 44.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94468,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94468",
+     "label": "Wowhead Forever quest 94468"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:fly-1572",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly from Thelsamar to Ironforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 33.9,
+      "y": 51.0,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly from Thelsamar to Ironforge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior",
+    "Hunter",
+    "Rogue",
+    "Priest",
+    "Mage",
+    "Warlock",
+    "Paladin"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1572",
+     "label": "Wowhead NPC 1572"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1572,
+     "name": "Thorgrum Borrelson",
+     "at": {
+      "mapId": 1432,
+      "zone": "Loch Modan",
+      "x": 33.9,
+      "y": 51.0
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1572",
+       "label": "Wowhead NPC 1572"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1784",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Paladins: give the Dark Iron Script to Muiredon Battleforge, then report to Tiza Battleforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 23.5,
+      "y": 8.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1784,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "accept",
+     "questId": 1785,
+     "label": "The Tome of Divinity"
+    },
+    {
+     "type": "turnin",
+     "questId": 1785,
+     "label": "The Tome of Divinity"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Paladin"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1784",
+     "label": "Wowhead Classic quest 1784"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1785",
+     "label": "Wowhead Classic quest 1785"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:trainer-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train in Ironforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train in Ironforge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "When you are done in Ironforge, take the Deeprun Tram from Tinker Town to Stormwind.",
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:accept-5639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Desperate Prayer from High Priest Rohan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 24.7,
+      "y": 8.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 5639,
+     "label": "Desperate Prayer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5639",
+     "label": "Wowhead Classic quest 5639"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-1715",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Slaughtered Lamb from Lago Blackwrench"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 47.6,
+      "y": 9.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 1715,
+     "label": "The Slaughtered Lamb"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1715",
+     "label": "Wowhead Classic quest 1715"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-2041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Speak with Shoni from Gnoarn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 69.2,
+      "y": 50.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2041,
+     "label": "Speak with Shoni"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2041",
+     "label": "Wowhead Classic quest 2041"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Speak with Shoni sends you to Stormwind, where the tram drops you anyway.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2041",
+       "label": "Wowhead Classic quest 2041"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-96394",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Run the Hall of Thanes: kill the Enraged Apparitions and Tormented Souls for The Restless Dead"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96394,
+     "objective": 1,
+     "label": "The Restless Dead"
+    },
+    {
+     "type": "complete",
+     "questId": 96394,
+     "objective": 2,
+     "label": "The Restless Dead"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96394",
+     "label": "Wowhead Forever quest 96394"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The dungeon is reached from Old Ironforge below the city. Level 15 or higher is comfortable.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96394",
+       "label": "Wowhead Forever quest 96394"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot 8 Dwarven Heirlooms in the Hall of Thanes"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96403,
+     "objective": 1,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:accept-96395",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to the Ghostly Attendant inside, put Faldrim Anvilmar to rest and report back to the Attendant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96395,
+     "label": "An Ancient Grudge"
+    },
+    {
+     "type": "complete",
+     "questId": 96395,
+     "objective": 1,
+     "label": "An Ancient Grudge"
+    },
+    {
+     "type": "turnin",
+     "questId": 96395,
+     "label": "An Ancient Grudge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96395",
+     "label": "Wowhead Forever quest 96395"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:complete-96393",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Kill Durgen Dirgehammer, the last boss, for his head"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96393,
+     "objective": 1,
+     "label": "Old Ironforge Incursion"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96393",
+     "label": "Wowhead Forever quest 96393"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:accept-98423",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "run"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Read the Treaty of Understanding tablet in the last vault to start the quest"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98423,
+     "label": "The Treaty of Understanding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98423",
+     "label": "Wowhead Forever quest 98423"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Everyone has to loot the tablet themselves; it cannot be shared.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98423",
+       "label": "Wowhead Forever quest 98423"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-96403",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Important Heirlooms to Thom Filch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 32.2,
+      "y": 44.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96403,
+     "label": "Important Heirlooms"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96403",
+     "label": "Wowhead Forever quest 96403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:turnin-96393",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Bring Durgen's head and the Treaty to King Magni Bronzebeard in the High Seat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.1,
+      "y": 56.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96393,
+     "label": "Old Ironforge Incursion"
+    },
+    {
+     "type": "turnin",
+     "questId": 98423,
+     "label": "The Treaty of Understanding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96393",
+     "label": "Wowhead Forever quest 96393"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98423",
+     "label": "Wowhead Forever quest 98423"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:turnin-96394",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "turnin"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Restless Dead to Afadra Dunwall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 34.6,
+      "y": 51.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96394,
+     "label": "The Restless Dead"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ],
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96394",
+     "label": "Wowhead Forever quest 96394"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Afadra waits at the camp west of Kharanos. It is a walk, so skip it if you are in a hurry to reach Redridge.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96394",
+       "label": "Wowhead Forever quest 96394"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

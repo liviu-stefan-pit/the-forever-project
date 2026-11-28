@@ -1,0 +1,1892 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "teldrassil-1-12",
+ "title": "Darnassus and the Oracle Glade",
+ "steps": [
+  {
+   "id": "teldrassil-1-12:complete-98403",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Twisted Hatred: 8 Befouled Webwood, Mature Fel Moss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 49.9,
+      "y": 46.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98403,
+     "objective": 1,
+     "label": "Twisted Hatred"
+    },
+    {
+     "type": "complete",
+     "questId": 98403,
+     "objective": 2,
+     "label": "Twisted Hatred"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98403",
+     "label": "Wowhead Forever quest 98403"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Befouled Webwoods crawl around the hill north of Fel Rock. Xethorr is a named spider among them.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98403",
+       "label": "Wowhead Forever quest 98403"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      272096,
+      272116
+     ],
+     "name": "Befouled Webwood",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 49.9,
+      "y": 46.8
+     },
+     "radius": 8.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=272096",
+       "label": "Wowhead NPC 272096"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-490",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bounty: Gnarlpine Furbolg to Sentinel Shayla Nightbreeze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 40.5,
+      "y": 50.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 490,
+     "label": "Bounty: Gnarlpine Furbolg"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=490",
+     "label": "Wowhead Forever quest 490"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shayla is at the bend in the road below Darnassus.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=490",
+       "label": "Wowhead Forever quest 490"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-922",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rellian Greenspyre to Rellian Greenspyre; Accept Tumors from Rellian Greenspyre"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 38.2,
+      "y": 21.6,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 922,
+     "label": "Rellian Greenspyre"
+    },
+    {
+     "type": "accept",
+     "questId": 923,
+     "label": "Tumors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=922",
+     "label": "Wowhead Classic quest 922"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=923",
+     "label": "Wowhead Classic quest 923"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rellian is in the Cenarion Enclave, in the north-west of Darnassus. Mossy Tumors drop from the bigger Timberlings near the Oracle Glade.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=922",
+       "label": "Wowhead Classic quest 922"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=923",
+       "label": "Wowhead Classic quest 923"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-1684",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Elanaria to Elanaria; Accept Vorlus Vilehoof from Elanaria"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 57.3,
+      "y": 34.6,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1684,
+     "label": "Elanaria"
+    },
+    {
+     "type": "accept",
+     "questId": 1683,
+     "label": "Vorlus Vilehoof"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1684",
+     "label": "Wowhead Classic quest 1684"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1683",
+     "label": "Wowhead Classic quest 1683"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warriors: Vorlus Vilehoof is just east of the barrow den. Do him when you head back toward Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1684",
+       "label": "Wowhead Classic quest 1684"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1683",
+       "label": "Wowhead Classic quest 1683"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-2241",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Apple Falls to Syurna; Accept Destiny Calls from Syurna"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 37.0,
+      "y": 21.9,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2241,
+     "label": "The Apple Falls"
+    },
+    {
+     "type": "accept",
+     "questId": 2242,
+     "label": "Destiny Calls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2241",
+     "label": "Wowhead Classic quest 2241"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2242",
+     "label": "Wowhead Classic quest 2242"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: Sethir the Ancient sits on a hill north of the Oracle Glade.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2241",
+       "label": "Wowhead Classic quest 2241"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=2242",
+       "label": "Wowhead Classic quest 2242"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-5925",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Heeding the Call to Mathrengyl Bearwalker; Accept Moonglade from Mathrengyl Bearwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 35.4,
+      "y": 8.4,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5925,
+     "label": "Heeding the Call"
+    },
+    {
+     "type": "accept",
+     "questId": 5921,
+     "label": "Moonglade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5925",
+     "label": "Wowhead Classic quest 5925"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5921",
+     "label": "Wowhead Classic quest 5921"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Druids: keep Moonglade in your log. You go there from Darnassus on your last visit.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5925",
+       "label": "Wowhead Classic quest 5925"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=5921",
+       "label": "Wowhead Classic quest 5921"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-5629",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Returning Home to Priestess Alathea"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 39.5,
+      "y": 81.2,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5629,
+     "label": "Returning Home"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5629",
+     "label": "Wowhead Classic quest 5629"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Priests: Alathea trains you in the Temple of the Moon.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5629",
+       "label": "Wowhead Classic quest 5629"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-98391",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Sisterhood of Elune to Sister Aquinne; Accept The Temple of the Moon from Sister Aquinne"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 28.9,
+      "y": 45.8,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98391,
+     "label": "The Sisterhood of Elune"
+    },
+    {
+     "type": "accept",
+     "questId": 2519,
+     "label": "The Temple of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98391",
+     "label": "Wowhead Forever quest 98391"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2519",
+     "label": "Wowhead Classic quest 2519"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:turnin-2519",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Temple of the Moon to Priestess A'moora; Accept Tears of the Moon from Priestess A'moora"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 36.6,
+      "y": 85.9,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2519,
+     "label": "The Temple of the Moon"
+    },
+    {
+     "type": "accept",
+     "questId": 2518,
+     "label": "Tears of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2519",
+     "label": "Wowhead Classic quest 2519"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2518",
+     "label": "Wowhead Classic quest 2518"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Lady Sathrah is a big spider on the ridge north of the Oracle Glade.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2519",
+       "label": "Wowhead Classic quest 2519"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=2518",
+       "label": "Wowhead Classic quest 2518"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-2518",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Tears of the Moon from Priestess A'moora"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 36.6,
+      "y": 85.9,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2518,
+     "label": "Tears of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2518",
+     "label": "Wowhead Classic quest 2518"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Priestess A'moora is in the Temple of the Moon. You do not need the breadcrumb to take Tears of the Moon.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2518",
+       "label": "Wowhead Classic quest 2518"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: skip the Sisterhood breadcrumbs and take Tears of the Moon straight from A'moora; Sathrah and the fountain step together pay over 2,000 XP.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2518",
+       "label": "Wowhead Classic quest 2518"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-99046",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Lost Runner to Sentinel Eralya Leafshadow; Accept Not Dead Yet from Sentinel Eralya Leafshadow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 37.5,
+      "y": 36.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99046,
+     "label": "The Lost Runner"
+    },
+    {
+     "type": "accept",
+     "questId": 99047,
+     "label": "Not Dead Yet"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99046",
+     "label": "Wowhead Forever quest 99046"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99047",
+     "label": "Wowhead Forever quest 99047"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Eralya lies wounded on the road to the Oracle Glade. Byancie in Dolanaar can help her.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99046",
+       "label": "Wowhead Forever quest 99046"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=99047",
+       "label": "Wowhead Forever quest 99047"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-937",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Enchanted Glade from Sentinel Arynia Cloudsbreak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 38.3,
+      "y": 34.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 937,
+     "label": "The Enchanted Glade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=937",
+     "label": "Wowhead Classic quest 937"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Arynia guards the Oracle Glade. The Bloodfeather harpies nest on the slopes all around it.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=937",
+       "label": "Wowhead Classic quest 937"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-7383",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Crown of the Earth: Filled Amethyst Phial"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 38.4,
+      "y": 34.1,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 7383,
+     "objective": 1,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=7383",
+     "label": "Wowhead Classic quest 7383"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Oracle Glade moonwell is right next to Arynia.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=7383",
+       "label": "Wowhead Classic quest 7383"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-937",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Enchanted Glade: 6 Bloodfeather Belt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 34.7,
+      "y": 34.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 937,
+     "objective": 1,
+     "label": "The Enchanted Glade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=937",
+     "label": "Wowhead Classic quest 937"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Harpies cast and run; pull them away from their friends.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=937",
+       "label": "Wowhead Classic quest 937"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2015,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+     ],
+     "name": "Bloodfeather Harpy",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 34.7,
+      "y": 34.8
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2015",
+       "label": "Wowhead NPC 2015"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-937",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Enchanted Glade to Sentinel Arynia Cloudsbreak; Accept Darkness in the Glade from Sentinel Arynia Cloudsbreak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 38.3,
+      "y": 34.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 937,
+     "label": "The Enchanted Glade"
+    },
+    {
+     "type": "accept",
+     "questId": 98392,
+     "label": "Darkness in the Glade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=937",
+     "label": "Wowhead Classic quest 937"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98392",
+     "label": "Wowhead Forever quest 98392"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest: three named harpies, each at a different nest around the glade.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=937",
+       "label": "Wowhead Classic quest 937"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=98392",
+       "label": "Wowhead Forever quest 98392"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-98392",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Darkness in the Glade: Hatescreech's Amulet, Windmistress Gaedress' Amulet, Witchmother Arysa's Amulet"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 34.1,
+      "y": 37.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 98392,
+     "objective": 1,
+     "label": "Darkness in the Glade"
+    },
+    {
+     "type": "complete",
+     "questId": 98392,
+     "objective": 2,
+     "label": "Darkness in the Glade"
+    },
+    {
+     "type": "complete",
+     "questId": 98392,
+     "objective": 3,
+     "label": "Darkness in the Glade"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98392",
+     "label": "Wowhead Forever quest 98392"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The three named harpies each hold a nest around the glade. Clear the adds before you engage.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98392",
+       "label": "Wowhead Forever quest 98392"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      272034,
+      272044,
+      272046
+     ],
+     "name": "Hatescreech",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 34.1,
+      "y": 37.7
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=272034",
+       "label": "Wowhead NPC 272034"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-938",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Mist from Mist"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 31.5,
+      "y": 31.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 938,
+     "label": "Mist"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=938",
+     "label": "Wowhead Classic quest 938"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Mist is a lost nightsaber cub among the harpies. She follows you back to Arynia; do not run too far ahead.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=938",
+       "label": "Wowhead Classic quest 938"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-931",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Shimmering Frond at the Strange Fronded Plant"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 34.6,
+      "y": 28.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 931,
+     "label": "The Shimmering Frond"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=931",
+     "label": "Wowhead Classic quest 931"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Strange Fronded Plant grows by the water north-west of the glade.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=931",
+       "label": "Wowhead Classic quest 931"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-938",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mist to Sentinel Arynia Cloudsbreak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 38.3,
+      "y": 34.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 938,
+     "label": "Mist"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=938",
+     "label": "Wowhead Classic quest 938"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-98392",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Darkness in the Glade to Sentinel Arynia Cloudsbreak; Accept The Oracle Tree from Sentinel Arynia Cloudsbreak"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 38.3,
+      "y": 34.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98392,
+     "label": "Darkness in the Glade"
+    },
+    {
+     "type": "accept",
+     "questId": 98398,
+     "label": "The Oracle Tree"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98392",
+     "label": "Wowhead Forever quest 98392"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=98398",
+     "label": "Wowhead Forever quest 98398"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:turnin-98398",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Oracle Tree at the Oracle Tree Bark; Accept Teldrassil at the Oracle Tree Bark"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 37.0,
+      "y": 34.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98398,
+     "label": "The Oracle Tree"
+    },
+    {
+     "type": "accept",
+     "questId": 940,
+     "label": "Teldrassil"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98398",
+     "label": "Wowhead Forever quest 98398"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=940",
+     "label": "Wowhead Classic quest 940"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Touch the Oracle Tree bark. Teldrassil goes to Fandral in Darnassus and opens Grove of the Ancients in Darkshore.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98398",
+       "label": "Wowhead Forever quest 98398"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=940",
+       "label": "Wowhead Classic quest 940"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-2242",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Destiny Calls: Sethir's Journal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 37.1,
+      "y": 22.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2242,
+     "objective": 1,
+     "label": "Destiny Calls"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2242",
+     "label": "Wowhead Classic quest 2242"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Rogues: Sethir is up the hill to the north. Clear around him before you pull.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2242",
+       "label": "Wowhead Classic quest 2242"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6909
+     ],
+     "name": "Sethir the Ancient",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 37.1,
+      "y": 22.8
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6909",
+       "label": "Wowhead NPC 6909"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-2518",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Tears of the Moon: Silvery Spinnerets"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 42.9,
+      "y": 25.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2518,
+     "objective": 1,
+     "label": "Tears of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2518",
+     "label": "Wowhead Classic quest 2518"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Lady Sathrah drifts around the ridge with her spiders. She is level 12; use a full health and mana bar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2518",
+       "label": "Wowhead Classic quest 2518"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7319
+     ],
+     "name": "Lady Sathrah",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 42.9,
+      "y": 25.5
+     },
+     "radius": 5.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7319",
+       "label": "Wowhead NPC 7319"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-923",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Tumors: 5 Mossy Tumor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 43.4,
+      "y": 30.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 923,
+     "objective": 1,
+     "label": "Tumors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=923",
+     "label": "Wowhead Classic quest 923"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Elder Timberlings and Mire Beasts around the Wellspring lake drop the tumors.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=923",
+       "label": "Wowhead Classic quest 923"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2027,
+      2029,
+      2030
+     ],
+     "name": "Timberling Trampler",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 43.4,
+      "y": 30.2
+     },
+     "radius": 5.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2027",
+       "label": "Wowhead NPC 2027"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-927",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Moss-twined Heart and accept The Moss-twined Heart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 43.3,
+      "y": 28.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 927,
+     "label": "The Moss-twined Heart"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=927",
+     "label": "Wowhead Classic quest 927"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Blackmoss the Fetid is a level 13 timberling by the Wellspring. His heart starts a good quest for Denalan; skip him if he is too strong for you.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=927",
+       "label": "Wowhead Classic quest 927"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

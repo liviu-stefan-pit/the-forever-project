@@ -1,0 +1,330 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Ironforge turn-ins",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:turnin-1678",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warriors: in Ironforge, bring Vejrek's head to Muren Stormpike and accept Tormus Deepforge"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 70.8,
+      "y": 90.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1678,
+     "label": "Vejrek"
+    },
+    {
+     "type": "accept",
+     "questId": 1680,
+     "label": "Tormus Deepforge"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1678",
+     "label": "Wowhead Classic quest 1678"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1680",
+     "label": "Wowhead Classic quest 1680"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-1680",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warriors: turn in Tormus Deepforge in the Great Forge and accept Ironband's Compound"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 48.6,
+      "y": 42.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1680,
+     "label": "Tormus Deepforge"
+    },
+    {
+     "type": "accept",
+     "questId": 1681,
+     "label": "Ironband's Compound"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1680",
+     "label": "Wowhead Classic quest 1680"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1681",
+     "label": "Wowhead Classic quest 1681"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-1880",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Mage-tastic Gizmonitor to Bink"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 27.2,
+      "y": 8.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1880,
+     "label": "Mage-tastic Gizmonitor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1880",
+     "label": "Wowhead Classic quest 1880"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-2239",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Onin's Report to Hulfdan Blackbeard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 52.0,
+      "y": 14.8,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2239,
+     "label": "Onin's Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2239",
+     "label": "Wowhead Classic quest 2239"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-95041",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Data Hoarders to Jemma Quikswitch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 67.7,
+      "y": 44.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95041,
+     "label": "Data Hoarders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95041",
+     "label": "Wowhead Forever quest 95041"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-6086",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hunters: turn in Training the Beast to Belia Thundergranite in the Hall of Arms"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 70.9,
+      "y": 85.8,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6086,
+     "label": "Training the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6086",
+     "label": "Wowhead Classic quest 6086"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

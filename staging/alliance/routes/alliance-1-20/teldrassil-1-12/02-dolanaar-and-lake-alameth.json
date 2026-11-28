@@ -1,0 +1,2271 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "teldrassil-1-12",
+ "title": "Dolanaar, Starbreeze and Lake Al'Ameth",
+ "steps": [
+  {
+   "id": "teldrassil-1-12:turnin-2159",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Dolanaar Delivery to Innkeeper Keldamyr"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 59.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2159,
+     "label": "Dolanaar Delivery"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2159",
+     "label": "Wowhead Classic quest 2159"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Dolanaar is your hub for the rest of Teldrassil.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2159",
+       "label": "Wowhead Classic quest 2159"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:home-6736",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at the Dolanaar inn"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 59.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at the Dolanaar inn"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=6736",
+     "label": "Wowhead NPC 6736"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 6736,
+     "name": "Innkeeper Keldamyr",
+     "at": {
+      "mapId": 1438,
+      "zone": "Teldrassil",
+      "x": 55.6,
+      "y": 59.8
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6736",
+       "label": "Wowhead NPC 6736"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-928",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Crown of the Earth to Corithras Moonrage; Accept Crown of the Earth from Corithras Moonrage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.1,
+      "y": 61.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 928,
+     "label": "Crown of the Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 929,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=928",
+     "label": "Wowhead Classic quest 928"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=929",
+     "label": "Wowhead Classic quest 929"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-5622",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Favor of Elune to Laurna Morninglight; Accept Garments of the Moon from Laurna Morninglight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 56.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5622,
+     "label": "In Favor of Elune"
+    },
+    {
+     "type": "accept",
+     "questId": 5621,
+     "label": "Garments of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5622",
+     "label": "Wowhead Classic quest 5622"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5621",
+     "label": "Wowhead Classic quest 5621"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-997",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Denalan's Earth from Syral Bladeleaf"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.1,
+      "y": 57.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 997,
+     "label": "Denalan's Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=997",
+     "label": "Wowhead Classic quest 997"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-475",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Troubling Breeze from Athridas Bearmantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.0,
+      "y": 57.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 475,
+     "label": "A Troubling Breeze"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=475",
+     "label": "Wowhead Classic quest 475"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-2438",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Emerald Dreamcatcher from Tallonkai Swiftroot; Accept Twisted Hatred from Tallonkai Swiftroot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 57.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2438,
+     "label": "The Emerald Dreamcatcher"
+    },
+    {
+     "type": "accept",
+     "questId": 932,
+     "label": "Twisted Hatred"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2438",
+     "label": "Wowhead Classic quest 2438"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=932",
+     "label": "Wowhead Classic quest 932"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Twisted Hatred needs Lord Melenas in Fel Rock, north of Dolanaar. Keep it for the western loop at level 8.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2438",
+       "label": "Wowhead Classic quest 2438"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=932",
+       "label": "Wowhead Classic quest 932"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-87288",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Soft Saber Pelts from Aldia"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.5,
+      "y": 57.1,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 87288,
+     "label": "Soft Saber Pelts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=87288",
+     "label": "Wowhead Forever quest 87288"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Forever quest from Aldia. The pelts come off the Nightsabers right outside Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=87288",
+       "label": "Wowhead Forever quest 87288"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-96630",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Adventurer to Lyreena Duskblade; Accept The Great Outdoors from Lyreena Duskblade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.6,
+      "y": 56.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96630,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 96606,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96630",
+     "label": "Wowhead Forever quest 96630"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96606",
+     "label": "Wowhead Forever quest 96606"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Lyreena teaches you Camping. Build the campfire right next to her.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard: Gather around the campfire"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-96606",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Great Outdoors: Basic Campfire, Basic Campfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.7,
+      "y": 56.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96606,
+     "objective": 1,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 96606,
+     "objective": 2,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96606",
+     "label": "Wowhead Forever quest 96606"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:turnin-96606",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Great Outdoors to Lyreena Duskblade; Accept Camping 101: Cooking from Lyreena Duskblade"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.6,
+      "y": 56.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96606,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "accept",
+     "questId": 96634,
+     "label": "Camping 101: Cooking"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96606",
+     "label": "Wowhead Forever quest 96606"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96634",
+     "label": "Wowhead Forever quest 96634"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Camping 101 has one quest per profession and you can only take one. Cooking is the shortest, since Zarrin is in Dolanaar; pick another if you plan that profession.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard: Gather around the campfire"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "profession",
+     "text": "Forever: every profession unlocks a camp feature at skill 20, and Cooking gives the Basic Campfire at skill 1.",
+     "sources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard: Gather around the campfire"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-96634",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Zarrin, the cook in Dolanaar, and turn in Camping 101: Cooking"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.1,
+      "y": 61.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96634,
+     "objective": 1,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "turnin",
+     "questId": 96634,
+     "label": "Camping 101: Cooking"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96634",
+     "label": "Wowhead Forever quest 96634"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6286
+     ],
+     "name": "Zarrin",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 57.1,
+      "y": 61.3
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6286",
+       "label": "Wowhead NPC 6286"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:accept-488",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Zenn's Bidding from Zenn Foulhoof"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.4,
+      "y": 56.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 488,
+     "label": "Zenn's Bidding"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=488",
+     "label": "Wowhead Classic quest 488"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Zenn waits just east of the village. Every fang, feather and silk comes from mobs around Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=488",
+       "label": "Wowhead Classic quest 488"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-488",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Zenn's Bidding: 3 Nightsaber Fang, 3 Strigid Owl Feather, Webwood Spider Silk; Complete Soft Saber Pelts: 6 Soft Nightsaber Pelt"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 53.9,
+      "y": 58.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 488,
+     "objective": 1,
+     "label": "Zenn's Bidding"
+    },
+    {
+     "type": "complete",
+     "questId": 488,
+     "objective": 2,
+     "label": "Zenn's Bidding"
+    },
+    {
+     "type": "complete",
+     "questId": 488,
+     "objective": 3,
+     "label": "Zenn's Bidding"
+    },
+    {
+     "type": "complete",
+     "questId": 87288,
+     "objective": 1,
+     "label": "Soft Saber Pelts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=488",
+     "label": "Wowhead Classic quest 488"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=87288",
+     "label": "Wowhead Forever quest 87288"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Nightsabers, Strigid Owls and Webwood Lurkers all live in the woods between Dolanaar and the road east.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=488",
+       "label": "Wowhead Classic quest 488"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=87288",
+       "label": "Wowhead Forever quest 87288"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2033,
+      2034,
+      2042,
+      2043,
+      14430,
+      1995
+     ],
+     "name": "Elder Nightsaber",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 53.9,
+      "y": 58.4
+     },
+     "radius": 7.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2033",
+       "label": "Wowhead NPC 2033"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2042
+     ],
+     "name": "Nightsaber",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 59.4,
+      "y": 59.9
+     },
+     "radius": 7.2,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2042",
+       "label": "Wowhead NPC 2042"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-5621",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Garments of the Moon: Sentinel Shaya"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.2,
+      "y": 63.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5621,
+     "objective": 1,
+     "label": "Garments of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5621",
+     "label": "Wowhead Classic quest 5621"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sentinel Shaya is south of Dolanaar. Heal her with Lesser Heal (Rank 2), then buff her with Power Word: Fortitude.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5621",
+       "label": "Wowhead Classic quest 5621"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12429
+     ],
+     "name": "Sentinel Shaya",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 57.2,
+      "y": 63.5
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12429",
+       "label": "Wowhead NPC 12429"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-475",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Troubling Breeze to Gaerolas Talvethren; Accept Gnarlpine Corruption from Gaerolas Talvethren"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 66.3,
+      "y": 58.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 475,
+     "label": "A Troubling Breeze"
+    },
+    {
+     "type": "accept",
+     "questId": 476,
+     "label": "Gnarlpine Corruption"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=475",
+     "label": "Wowhead Classic quest 475"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=476",
+     "label": "Wowhead Classic quest 476"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gaerolas hides in a hut in Starbreeze Village, east of Dolanaar. The Gnarlpine there hit harder than the wildlife, so pull one at a time.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=475",
+       "label": "Wowhead Classic quest 475"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=476",
+       "label": "Wowhead Classic quest 476"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-929",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Crown of the Earth: Filled Jade Phial"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 63.4,
+      "y": 58.1,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 929,
+     "objective": 1,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=929",
+     "label": "Wowhead Classic quest 929"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Starbreeze moonwell is at the west edge of the village.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=929",
+       "label": "Wowhead Classic quest 929"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-2438",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Emerald Dreamcatcher: Emerald Dreamcatcher"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 68.0,
+      "y": 59.6,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2438,
+     "objective": 1,
+     "label": "The Emerald Dreamcatcher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2438",
+     "label": "Wowhead Classic quest 2438"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Tallonkai's Dresser is in the house at the far east end of Starbreeze.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2438",
+       "label": "Wowhead Classic quest 2438"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-488",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Zenn's Bidding to Zenn Foulhoof; Accept Seek Redemption! from Sentinel Kyra Starsong"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.4,
+      "y": 56.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 488,
+     "label": "Zenn's Bidding"
+    },
+    {
+     "type": "accept",
+     "questId": 489,
+     "label": "Seek Redemption!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=488",
+     "label": "Wowhead Classic quest 488"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=489",
+     "label": "Wowhead Classic quest 489"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Zenn is on your way back to Dolanaar. Fel Cones fall near the trees south of Dolanaar, by Lake Al'Ameth.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=488",
+       "label": "Wowhead Classic quest 488"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=489",
+       "label": "Wowhead Classic quest 489"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-929",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Crown of the Earth to Corithras Moonrage; Accept Crown of the Earth from Corithras Moonrage"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.1,
+      "y": 61.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 929,
+     "label": "Crown of the Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 933,
+     "label": "Crown of the Earth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=929",
+     "label": "Wowhead Classic quest 929"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=933",
+     "label": "Wowhead Classic quest 933"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-476",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gnarlpine Corruption to Athridas Bearmantle; Accept The Relics of Wakening from Athridas Bearmantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.0,
+      "y": 57.3,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 476,
+     "label": "Gnarlpine Corruption"
+    },
+    {
+     "type": "accept",
+     "questId": 483,
+     "label": "The Relics of Wakening"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=476",
+     "label": "Wowhead Classic quest 476"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=483",
+     "label": "Wowhead Classic quest 483"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-2438",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Emerald Dreamcatcher to Tallonkai Swiftroot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 57.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2438,
+     "label": "The Emerald Dreamcatcher"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2438",
+     "label": "Wowhead Classic quest 2438"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:accept-2459",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ferocitas the Dream Eater from Tallonkai Swiftroot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 57.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 2459,
+     "label": "Ferocitas the Dream Eater"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2459",
+     "label": "Wowhead Classic quest 2459"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-87288",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Soft Saber Pelts to Aldia"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.5,
+      "y": 57.1,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 87288,
+     "label": "Soft Saber Pelts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=87288",
+     "label": "Wowhead Forever quest 87288"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "teldrassil-1-12:turnin-5621",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Garments of the Moon to Laurna Morninglight"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 56.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5621,
+     "label": "Garments of the Moon"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5621",
+     "label": "Wowhead Classic quest 5621"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:complete-2459",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Ferocitas the Dream Eater: 7 Gnarlpine Mystic, Tallonkai's Jewel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 68.9,
+      "y": 52.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 2459,
+     "objective": 1,
+     "label": "Ferocitas the Dream Eater"
+    },
+    {
+     "type": "complete",
+     "questId": 2459,
+     "objective": 2,
+     "label": "Ferocitas the Dream Eater"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2459",
+     "label": "Wowhead Classic quest 2459"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Gnarlpine Mystics camp north of Starbreeze Village. One of them carries the jewel.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2459",
+       "label": "Wowhead Classic quest 2459"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    },
+    {
+     "kind": "speed",
+     "text": "Speedrun: the mystics are a short run from Starbreeze and the quest pays well. Pick up Gnarlpine kills on the way.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2459",
+       "label": "Wowhead Classic quest 2459"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      7235
+     ],
+     "name": "Gnarlpine Mystic",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 68.9,
+      "y": 52.8
+     },
+     "radius": 2.6,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=7235",
+       "label": "Wowhead NPC 7235"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-2459",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ferocitas the Dream Eater to Tallonkai Swiftroot"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.6,
+      "y": 57.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2459,
+     "label": "Ferocitas the Dream Eater"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2459",
+     "label": "Wowhead Classic quest 2459"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-997",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Denalan's Earth to Denalan; Accept Timberling Seeds from Denalan; Accept Timberling Sprouts from Denalan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.9,
+      "y": 68.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 997,
+     "label": "Denalan's Earth"
+    },
+    {
+     "type": "accept",
+     "questId": 918,
+     "label": "Timberling Seeds"
+    },
+    {
+     "type": "accept",
+     "questId": 919,
+     "label": "Timberling Sprouts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=997",
+     "label": "Wowhead Classic quest 997"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=918",
+     "label": "Wowhead Classic quest 918"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=919",
+     "label": "Wowhead Classic quest 919"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Denalan tends his planters on the south shore of Lake Al'Ameth.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=997",
+       "label": "Wowhead Classic quest 997"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=918",
+       "label": "Wowhead Classic quest 918"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=919",
+       "label": "Wowhead Classic quest 919"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-918",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Timberling Seeds: 8 Timberling Seed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.8,
+      "y": 67.8,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 918,
+     "objective": 1,
+     "label": "Timberling Seeds"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=918",
+     "label": "Wowhead Classic quest 918"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Timberlings walk the shore around the lake. Kill them for seeds and pick up sprouts in the same loop.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=918",
+       "label": "Wowhead Classic quest 918"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      2022,
+      2025,
+      2027,
+      2029,
+      2030,
+      2166
+     ],
+     "name": "Timberling",
+     "mapId": 1438,
+     "zone": "Teldrassil",
+     "center": {
+      "x": 57.8,
+      "y": 67.8
+     },
+     "radius": 6.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=2022",
+       "label": "Wowhead NPC 2022"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-919",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Timberling Sprouts: 12 Timberling Sprout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 57.3,
+      "y": 68.7,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 919,
+     "objective": 1,
+     "label": "Timberling Sprouts"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=919",
+     "label": "Wowhead Classic quest 919"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Timberling Sprouts are small plants on the ground west of the lake.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=919",
+       "label": "Wowhead Classic quest 919"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:complete-489",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Seek Redemption!: 3 Fel Cone"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 55.2,
+      "y": 64.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 489,
+     "objective": 1,
+     "label": "Seek Redemption!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=489",
+     "label": "Wowhead Classic quest 489"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Fel Cones lie under the trees north-west of the lake, toward Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=489",
+       "label": "Wowhead Classic quest 489"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "teldrassil-1-12:turnin-918",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Timberling Seeds to Denalan; Turn in Timberling Sprouts to Denalan; Accept Rellian Greenspyre from Denalan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.9,
+      "y": 68.5,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 918,
+     "label": "Timberling Seeds"
+    },
+    {
+     "type": "turnin",
+     "questId": 919,
+     "label": "Timberling Sprouts"
+    },
+    {
+     "type": "accept",
+     "questId": 922,
+     "label": "Rellian Greenspyre"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=918",
+     "label": "Wowhead Classic quest 918"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=919",
+     "label": "Wowhead Classic quest 919"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=922",
+     "label": "Wowhead Classic quest 922"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "teldrassil-1-12:turnin-489",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Seek Redemption! to Zenn Foulhoof"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 60.4,
+      "y": 56.2,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 489,
+     "label": "Seek Redemption!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=489",
+     "label": "Wowhead Classic quest 489"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Zenn is a short run north, just east of Dolanaar.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=489",
+       "label": "Wowhead Classic quest 489"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

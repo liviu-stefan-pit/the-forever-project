@@ -1,0 +1,1326 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Back to Brewnall",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:accept-96394",
+   "tags": {
+    "label": "New in Forever",
+    "dungeonPart": "pickup"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Restless Dead from Afadra Dunwall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 34.6,
+      "y": 51.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96394,
+     "label": "The Restless Dead"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "dungeon": {
+    "name": "Hall of Thanes",
+    "levels": [
+     13,
+     18
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96394",
+     "label": "Wowhead Forever quest 96394"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Afadra Dunwall camps beside Tundra MacGrann. Her quest is for the Hall of Thanes, a new level 13-18 dungeon under Ironforge that this guide runs at the end of Loch Modan.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96394",
+       "label": "Wowhead Forever quest 96394"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-311",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Marleth to Marleth Barleybrew in Brewnall"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.2,
+      "y": 45.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 311,
+     "label": "Return to Marleth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=311",
+     "label": "Wowhead Classic quest 311"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-319",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Favor for Evershine to Rejold Barleybrew and accept Return to Bellowfiz"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.2,
+      "y": 45.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 319,
+     "label": "A Favor for Evershine"
+    },
+    {
+     "type": "accept",
+     "questId": 320,
+     "label": "Return to Bellowfiz"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=319",
+     "label": "Wowhead Classic quest 319"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=320",
+     "label": "Wowhead Classic quest 320"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-315",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Perfect Stout and accept Shimmer Stout"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.2,
+      "y": 45.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 315,
+     "label": "The Perfect Stout"
+    },
+    {
+     "type": "accept",
+     "questId": 413,
+     "label": "Shimmer Stout"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=315",
+     "label": "Wowhead Classic quest 315"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=413",
+     "label": "Wowhead Classic quest 413"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Shimmer Stout goes all the way to the South Gate, and the next part ends in Thelsamar. Keep it for the trip to Loch Modan.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=315",
+       "label": "Wowhead Classic quest 315"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=413",
+       "label": "Wowhead Classic quest 413"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-98326",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Frosthowl to Gretta Ganter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 31.5,
+      "y": 44.6,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98326,
+     "label": "Frosthowl"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98326",
+     "label": "Wowhead Forever quest 98326"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-95041",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Data Hoarders: 7 Gnomeregan Archival Data"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 26.3,
+      "y": 41.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95041,
+     "objective": 1,
+     "label": "Data Hoarders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95041",
+     "label": "Wowhead Forever quest 95041"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:complete-1880",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Mage-tastic Gizmonitor: Mage-tastic Gizmonitor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 27.7,
+      "y": 36.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1880,
+     "objective": 1,
+     "label": "Mage-tastic Gizmonitor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1880",
+     "label": "Wowhead Classic quest 1880"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Bink's Toolbox lies outside the Gnomeregan entrance among the Leper Gnomes.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1880",
+       "label": "Wowhead Classic quest 1880"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-2238",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Rogues: find Onin MacHammar near Gnomeregan, turn in Simple Subterfugin' and accept Onin's Report"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 25.2,
+      "y": 44.5,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2238,
+     "label": "Simple Subterfugin'"
+    },
+    {
+     "type": "accept",
+     "questId": 2239,
+     "label": "Onin's Report"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2238",
+     "label": "Wowhead Classic quest 2238"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2239",
+     "label": "Wowhead Classic quest 2239"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-1678",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Vejrek: Vejrek's Head"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 27.8,
+      "y": 58.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 1678,
+     "objective": 1,
+     "label": "Vejrek"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1678",
+     "label": "Wowhead Classic quest 1678"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Vejrek is a level 11 troll south of Frostmane Hold. Pull him alone.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1678",
+       "label": "Wowhead Classic quest 1678"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      6113
+     ],
+     "name": "Vejrek",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 27.8,
+      "y": 58.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=6113",
+       "label": "Wowhead NPC 6113"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:hs",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Hearth to Kharanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Hearth to Kharanos"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "Hearth back to Kharanos instead of walking. If the hearth is on cooldown, the road east past Tundra's camp is the quickest way.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:trainer-5",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your level 10 spells in Kharanos"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your level 10 spells in Kharanos"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:accept-94449-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Call of Fire from Eldrun Stormbreaker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 47.1,
+      "y": 13.8,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 94449,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94449",
+     "label": "Wowhead Forever quest 94449"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Ingrid Dunwald trains Shamans here in Kharanos. Your fire totem quest sends you east to the South Gate.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94449",
+       "label": "Wowhead Forever quest 94449"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:accept-6064-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Taming the Beast from Grif Wildheart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.8,
+      "y": 53.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6064,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6064",
+     "label": "Wowhead Classic quest 6064"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-6064-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Large Crag Boar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 41.3,
+      "y": 47.7,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6064,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6064",
+     "label": "Wowhead Classic quest 6064"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Use the Taming Rod on a Large Crag Boar from range, then just let the channel finish.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6064",
+       "label": "Wowhead Classic quest 6064"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1126
+     ],
+     "name": "Large Crag Boar",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 41.3,
+      "y": 47.7
+     },
+     "radius": 7.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1126",
+       "label": "Wowhead NPC 1126"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-6064-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Grif Wildheart; Accept Taming the Beast from Grif Wildheart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.8,
+      "y": 53.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6064,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 6084,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6064",
+     "label": "Wowhead Classic quest 6064"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6084",
+     "label": "Wowhead Classic quest 6084"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-6084-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Snow Leopard"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 55.3,
+      "y": 57.8,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6084,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6084",
+     "label": "Wowhead Classic quest 6084"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1201
+     ],
+     "name": "Snow Leopard",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 55.3,
+      "y": 57.8
+     },
+     "radius": 7.1,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1201",
+       "label": "Wowhead NPC 1201"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-6084-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Taming the Beast to Grif Wildheart; Accept Taming the Beast from Grif Wildheart"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.8,
+      "y": 53.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6084,
+     "label": "Taming the Beast"
+    },
+    {
+     "type": "accept",
+     "questId": 6085,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6084",
+     "label": "Wowhead Classic quest 6084"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6085",
+     "label": "Wowhead Classic quest 6085"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:complete-6085-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Taming the Beast: Ice Claw Bear"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 30.1,
+      "y": 46.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 6085,
+     "objective": 1,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6085",
+     "label": "Wowhead Classic quest 6085"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1196
+     ],
+     "name": "Ice Claw Bear",
+     "mapId": 1426,
+     "zone": "Dun Morogh",
+     "center": {
+      "x": 30.1,
+      "y": 46.0
+     },
+     "radius": 7.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1196",
+       "label": "Wowhead NPC 1196"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-6085-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in the last Taming the Beast, then tame the pet you want to keep"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 45.8,
+      "y": 53.0,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6085,
+     "label": "Taming the Beast"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Hunter"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6085",
+     "label": "Wowhead Classic quest 6085"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-320",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Bellowfiz to Pilot Bellowfiz at Steelgrill's Depot, then accept A Visitor to Dun Morogh from Beldin Steelgrill"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1426,
+      "x": 49.4,
+      "y": 48.4,
+      "zone": "Dun Morogh",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 320,
+     "label": "Return to Bellowfiz"
+    },
+    {
+     "type": "accept",
+     "questId": 96408,
+     "label": "A Visitor to Dun Morogh"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=320",
+     "label": "Wowhead Classic quest 320"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=96408",
+     "label": "Wowhead Forever quest 96408"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "A Visitor to Dun Morogh is new in Forever and leads to the Dark Iron quests above Gol'Bolar Quarry.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=320",
+       "label": "Wowhead Classic quest 320"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=96408",
+       "label": "Wowhead Forever quest 96408"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

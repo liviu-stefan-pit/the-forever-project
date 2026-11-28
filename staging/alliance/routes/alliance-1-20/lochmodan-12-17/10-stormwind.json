@@ -1,0 +1,239 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Stormwind",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:turnin-1338",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Ride the Deeprun Tram to Stormwind and deliver Stormpike's Order to Furen Longbeard in the Dwarven District"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 64.6,
+      "y": 37.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1338,
+     "label": "Stormpike's Order"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1338",
+     "label": "Wowhead Classic quest 1338"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-2041",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Speak with Shoni to Shoni the Shilent in the Dwarven District"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 62.6,
+      "y": 34.1,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2041,
+     "label": "Speak with Shoni"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2041",
+     "label": "Wowhead Classic quest 2041"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Her follow-up is a Gnomeregan quest for later.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=2041",
+       "label": "Wowhead Classic quest 2041"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-5639",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Priests: turn in Desperate Prayer to High Priestess Laurena in the Cathedral of Light"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 49.5,
+      "y": 44.6,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5639,
+     "label": "Desperate Prayer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5639",
+     "label": "Wowhead Classic quest 5639"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-1715",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warlocks: turn in The Slaughtered Lamb to Gakin the Darkbinder in the Mage Quarter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 39.2,
+      "y": 85.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1715,
+     "label": "The Slaughtered Lamb"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warlock"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1715",
+     "label": "Wowhead Classic quest 1715"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Gakin's next quest, Surena Caledon, gets you the Voidwalker in Elwynn Forest.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1715",
+       "label": "Wowhead Classic quest 1715"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

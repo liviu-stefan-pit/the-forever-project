@@ -1,0 +1,686 @@
+{
+ "id": "darkshore-12-17",
+ "title": "Darkshore 12-17 (Alliance)",
+ "levels": [
+  12,
+  17
+ ],
+ "races": [
+  "NightElf"
+ ],
+ "maps": [
+  1439,
+  1438,
+  1457
+ ],
+ "after": {
+  "*": [
+   "teldrassil-1-12"
+  ]
+ },
+ "segments": [
+  {
+   "file": "01-auberdine.json",
+   "title": "Auberdine",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 6342",
+     "tip": "Laird sells fish at the end of the Auberdine pier, right where the hippogryph lands."
+    },
+    {
+     "do": "A 6343 @b",
+     "tip": "Return to Nessa sends you back to Rut'theran. Keep it for the Darnassus trip later in this pack."
+    },
+    {
+     "do": "fp 3841",
+     "text": "Talk to Caylais Moonfeather to make sure you have the Auberdine flight path",
+     "tip": "Forever adds a boat between Auberdine and Stormwind Harbor. It is an alternative if you would rather level in the Eastern Kingdoms after Teldrassil.",
+     "tipSources": [
+      {
+       "url": "https://classicwowforever.com/boats-and-zeppelins",
+       "label": "classicwowforever.com: boats and zeppelins"
+      }
+     ]
+    },
+    {
+     "do": "home 6737",
+     "text": "Set your hearthstone at the Auberdine inn",
+     "tip": "Auberdine is your base for the whole zone; every loop here ends with a hearth back."
+    },
+    {
+     "do": "A 983",
+     "tip": "Wizbang stands in the inn. Pygmy Tide Crawlers line the beach right below Auberdine."
+    },
+    {
+     "do": "A 3524",
+     "tip": "Gwennyth is on the pier. Her chain sends you to bones and beached animals up and down the coast; pick each one up as you pass it."
+    },
+    {
+     "do": "A 98025",
+     "tip": "Forever bounty on the board outside the inn. Jai'vhanel is a named furbolg near Ameth'Aran."
+    },
+    "A 4811",
+    "A 2118",
+    {
+     "do": "A 984",
+     "tip": "Terenthis only wants you to find the Blackwood camp for now; you will kill furbolgs for him later."
+    },
+    {
+     "do": "A 963",
+     "routes": "b",
+     "tip": "Anaya's spirit is level 16. Take the quest now and kill her when you reach Ameth'Aran if you feel strong enough."
+    },
+    {
+     "do": "A 954; A 958",
+     "tip": "Thundris Windweaver is at the north end of Auberdine. Both quests point you to the ruins east and south of town."
+    },
+    {
+     "do": "C 1686",
+     "tip": "Warriors: the Elunite crates and the Shade of Elura are in the sunken ship west of Auberdine. Watch your breath bar."
+    },
+    {
+     "do": "C 6001",
+     "at": [
+      43.4,
+      45.8
+     ],
+     "unverified": true,
+     "text": "Druids: use the Cenarion Moondust at the Moonkin Stone east of Auberdine and defeat Lunaclaw",
+     "tip": "Druids: Lunaclaw appears when you use the moondust. After the fight, talk to the Lunaclaw Spirit before you leave."
+    }
+   ]
+  },
+  {
+   "file": "02-coast-and-bashalaran.json",
+   "title": "The North Coast and Bashal'Aran",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 983",
+     "tip": "The crawlers walk the beach just below Auberdine. Pull them one at a time; they come back fast."
+    },
+    {
+     "do": "T 983; A 1001",
+     "tip": "Buzzbox 827 is on the beach south of the pier. Each Buzzbox hands you the next one."
+    },
+    {
+     "do": "C 1001",
+     "tip": "Darkshore Threshers swim just offshore. Fight them close to the beach so you can pull back to land."
+    },
+    {
+     "do": "T 1001",
+     "tip": "Buzzbox 411 sits on the shore further north."
+    },
+    {
+     "do": "A 1002 @b",
+     "tip": "Moonstalker fangs come from the cats in the woods south of Auberdine; you pass them on the way to Ameth'Aran."
+    },
+    {
+     "do": "T 954; A 955",
+     "tip": "Asterion waits at the ruins of Bashal'Aran, east of the coast road."
+    },
+    {
+     "do": "C 955",
+     "tip": "Vile Sprites and Wild Grells fill the ruins around Asterion."
+    },
+    {
+     "do": "T 955; A 956",
+     "tip": "The Deth'ryll satyrs are on the east side of the ruins. One of them drops the seal."
+    },
+    "C 956",
+    {
+     "do": "T 956; A 957",
+     "tip": "The Ancient Flame is in Ameth'Aran to the south. You come back to Asterion on your way north later."
+    },
+    {
+     "do": "C 2118",
+     "tip": "Use the trap near a Rabid Thistle Bear and lead it in. The bears roam the hills south-east of Auberdine."
+    },
+    {
+     "do": "C 4811",
+     "tip": "The Mysterious Red Crystal is in a clearing on the hill east of the bears."
+    },
+    {
+     "do": "C 3524",
+     "tip": "The Beached Sea Creature bones are on the beach south of Auberdine."
+    },
+    {
+     "do": "T 2118; A 2138",
+     "tip": "Back in Auberdine. Cleansing of the Infected asks for 20 Rabid Thistle Bears; kill them whenever they cross your path."
+    },
+    "T 4811; A 4812",
+    {
+     "do": "C 4812",
+     "tip": "Fill the tube at the Auberdine moonwell, right in town."
+    },
+    "T 3524; A 4681",
+    {
+     "do": "C 4681",
+     "tip": "The Skeletal Sea Turtle is on the sea floor west of Auberdine. Swim out, loot it, swim back."
+    },
+    "T 4681"
+   ]
+  },
+  {
+   "file": "03-ameth-aran.json",
+   "title": "Ameth'Aran and the Blackwood Camp",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 4812; A 4813",
+     "tip": "Pour the water on the Red Crystal east of town; it gives you the next step on the spot."
+    },
+    {
+     "do": "C 2138",
+     "tip": "Kill Rabid Thistle Bears on the hills between the crystal and Ameth'Aran.",
+     "speed": "Speedrun: the bears are good XP at this level. Finish the 20 as you pass through, do not hunt them down."
+    },
+    {
+     "do": "C 1002",
+     "routes": "b",
+     "tip": "Moonstalkers prowl the woods south of the crystal."
+    },
+    {
+     "do": "goto",
+     "at": [
+      40.0,
+      54.0
+     ],
+     "text": "Scout the Blackwood furbolg camp south of Auberdine for How Big a Threat?",
+     "tip": "Just get close to the camp; you will come back to clear it."
+    },
+    {
+     "do": "A 953",
+     "tip": "Sentinel Tysha guards the road at the west edge of Ameth'Aran."
+    },
+    {
+     "do": "A 4722",
+     "tip": "Another beached turtle lies on the beach west of Ameth'Aran."
+    },
+    {
+     "do": "C 953",
+     "tip": "The two tablets are inside the ruined buildings: one in the north half of Ameth'Aran, one in the south."
+    },
+    {
+     "do": "C 958",
+     "tip": "Cursed Highborne and Writhing Highborne drop the relics all over the ruins."
+    },
+    {
+     "do": "C 957",
+     "tip": "The Ancient Flame burns in the building at the south end of the ruins."
+    },
+    {
+     "do": "C 963",
+     "routes": "b",
+     "tip": "Anaya Dawnrunner walks with the other ghosts in the ruins. She is level 16, so pull her alone and keep your cooldowns."
+    },
+    {
+     "do": "C 98025",
+     "tip": "Forever bounty: Jai'vhanel patrols with the furbolgs on the east side of the ruins."
+    },
+    "T 953",
+    {
+     "do": "A 4728 @b",
+     "tip": "One more Beached Sea Creature lies further down the coast."
+    },
+    {
+     "do": "hs Auberdine",
+     "speed": "Speedrun: hearth here; walking back gives nothing new."
+    },
+    {
+     "do": "T 4813; T 98025",
+     "tip": "Glynda takes both."
+    },
+    "T 958",
+    {
+     "do": "T 2138"
+    },
+    {
+     "do": "A 2139 @b",
+     "tip": "Tharnariun's Hope is the Den Mother, a level 18-19 bear. Keep it for the last northern loop."
+    },
+    {
+     "do": "T 984; A 985",
+     "tip": "Terenthis wants eight of each furbolg type. Do that on your way to the Grove of the Ancients."
+    },
+    {
+     "do": "A 4761",
+     "tip": "A short breadcrumb from Terenthis to Thundris, who stands nearby."
+    },
+    "T 4761; A 4762",
+    {
+     "do": "T 963",
+     "routes": "b"
+    },
+    "T 4722",
+    {
+     "do": "T 4728",
+     "routes": "b"
+    },
+    {
+     "do": "A 965",
+     "tip": "The Tower of Althalaxx is in the far north-east, past the Cliffspring River."
+    },
+    {
+     "do": "A 982",
+     "tip": "Gorbold sends you to two shipwrecks off the coast north of Auberdine. Both lockboxes are underwater."
+    },
+    {
+     "do": "A 947",
+     "tip": "Barithras wants mushrooms from the cave by the Cliffspring Falls."
+    }
+   ]
+  },
+  {
+   "file": "04-darnassus-trip.json",
+   "title": "Darnassus Trip",
+   "routes": null,
+   "steps": [
+    {
+     "do": "fly 3841 Rut'theran Village",
+     "routes": "b",
+     "text": "Fly to Rut'theran Village",
+     "tip": "Balanced: one trip back for Nessa's reward and your class quests. Speedrun skips this unless you are a warrior or druid."
+    },
+    {
+     "do": "fly 3841 Rut'theran Village",
+     "routes": "s",
+     "classes": [
+      "Warrior",
+      "Druid"
+     ],
+     "text": "Warriors and druids: fly to Rut'theran Village for your class quests"
+    },
+    {
+     "do": "T 6343 @b",
+     "tip": "Nessa is at the fishing dock in Rut'theran."
+    },
+    {
+     "do": "T 1686; A 1692",
+     "tip": "Warriors: Elanaria is on the warrior terrace. Take the portal up from Rut'theran."
+    },
+    {
+     "do": "T 1692; A 1693",
+     "tip": "Smith Mathiel works on the Tradesmen's Terrace."
+    },
+    {
+     "do": "T 1693",
+     "tip": "Pick the Elunite weapon that fits your build."
+    },
+    {
+     "do": "T 6001; A 6121",
+     "tip": "Druids: Mathrengyl teaches you Bear Form. Lessons Anew starts the Cure Poison quests."
+    },
+    {
+     "do": "trainer",
+     "text": "Train your new spells while you are in the city"
+    },
+    {
+     "do": "fly 3838 Auberdine",
+     "routes": "b",
+     "classes": [
+      "Warrior",
+      "Hunter",
+      "Rogue",
+      "Priest"
+     ],
+     "text": "Go back down to Rut'theran and fly to Auberdine"
+    },
+    {
+     "do": "fly 3838 Auberdine",
+     "routes": "s",
+     "classes": [
+      "Warrior"
+     ],
+     "text": "Go back down to Rut'theran and fly to Auberdine"
+    },
+    {
+     "do": "T 6121; A 6122",
+     "text": "Druids: Teleport to Moonglade and turn in Lessons Anew to Dendrite Starblaze",
+     "tip": "Druids: hearth to Auberdine afterwards; the falls sample is in Darkshore."
+    },
+    {
+     "do": "hs Auberdine",
+     "classes": [
+      "Druid"
+     ],
+     "text": "Druids: hearth back to Auberdine"
+    }
+   ]
+  },
+  {
+   "file": "05-cliffspring-and-althalaxx.json",
+   "title": "Cliffspring River and the Tower of Althalaxx",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 982",
+     "tip": "The two wrecks lie offshore north of Auberdine. Swim straight to each lockbox; the murlocs nearby do not follow far."
+    },
+    {
+     "do": "T 957",
+     "tip": "Asterion at Bashal'Aran, on your way north-east."
+    },
+    {
+     "do": "A 4723",
+     "tip": "A Beached Sea Creature lies on the shore north-west of Bashal'Aran. Click it to take the quest; it turns in to Gwennyth."
+    },
+    {
+     "do": "C 4762",
+     "tip": "Fill the sample at the pool under the first waterfall of the Cliffspring River."
+    },
+    {
+     "do": "C 947",
+     "tip": "The Scaber Stalks and the Death Cap grow inside the cave behind the falls. The cave is full of Cliffspring mobs; pull carefully."
+    },
+    {
+     "do": "C 6122",
+     "tip": "Druids: fill the sampler at the mouth of the same cave."
+    },
+    {
+     "do": "T 965; A 966",
+     "tip": "Balthule Shadowstrike hides in the trees near the Tower of Althalaxx."
+    },
+    {
+     "do": "C 966",
+     "tip": "Dark Strand Fanatics camp around the tower. The parchments drop from them."
+    },
+    {
+     "do": "xp 15 2336 @s",
+     "text": "Speedrun: kill Dark Strand Fanatics around the tower until level 15",
+     "speed": "Remtravel's quest back in Auberdine needs level 15. The fanatics are already in front of you."
+    },
+    {
+     "do": "T 966; A 967",
+     "tip": "The next step is in Ashenvale. You pass Maestra's Post at the end of this pack."
+    },
+    {
+     "do": "T 1002; A 1003 @b",
+     "text": "Turn in Buzzbox 411's fangs at Buzzbox 323 and take Buzzbox 525",
+     "tip": "Buzzbox 323 is by the Cliffspring River, west of the tower. The next box is far south, near the Grove."
+    },
+    {
+     "do": "hs Auberdine",
+     "speed": "Speedrun: hearth from the tower; the run back is long."
+    },
+    "T 982",
+    "T 4723",
+    {
+     "do": "T 947; A 948",
+     "tip": "Onu is at the Grove of the Ancients in the south."
+    },
+    {
+     "do": "T 4762",
+     "tip": "Skip The Blackwood Corrupted: it is a long multi-camp quest for the end of the zone."
+    },
+    {
+     "do": "T 6122; A 6123",
+     "tip": "Druids: Earthroot grows near Ameth'Aran and the Lunar Fungus is near the bear hills. Do both on your way south."
+    },
+    {
+     "do": "A 729",
+     "tip": "Hollee sends you to Prospector Remtravel at his dig in the south."
+    },
+    {
+     "do": "A 4740 @b",
+     "tip": "Murkdeep comes out at the murloc huts on the south coast after you kill a few waves of murlocs."
+    }
+   ]
+  },
+  {
+   "file": "06-grove-and-masters-glaive.json",
+   "title": "The Grove of the Ancients and the Master's Glaive",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 985",
+     "tip": "The Blackwood camp is south of Auberdine. Kill the Pathfinders and Windtalkers around the bonfire."
+    },
+    {
+     "do": "C 6123",
+     "tip": "Druids: Earthroot grows near Ameth'Aran, the Lunar Fungus near the bear hills."
+    },
+    {
+     "do": "T 952; T 948; A 944",
+     "tip": "Onu is the ancient in the Grove of the Ancients. Grove of the Ancients came from Fandral in Darnassus."
+    },
+    {
+     "do": "T 729; A 731",
+     "tip": "Remtravel's dig is on the coast west of the Grove. He wanders while he searches; stay close and kill what attacks him."
+    },
+    {
+     "do": "A 4730",
+     "tip": "Beached Sea Creature on the beach north of Remtravel's dig."
+    },
+    {
+     "do": "A 4731",
+     "tip": "Three more beached animals lie along the shore south of the dig. Click each as you pass."
+    },
+    "A 4732",
+    "A 4733",
+    {
+     "do": "C 4740 @b",
+     "tip": "Clear the murlocs at the huts on the beach until Murkdeep and his hound come out. Rest between waves."
+    },
+    {
+     "do": "C 1003 @b",
+     "tip": "Grizzled Thistle Bears roam the hills near Buzzbox 525."
+    },
+    {
+     "do": "T 1003 @b"
+    },
+    {
+     "do": "T 944; A 949",
+     "tip": "The Scrying Bowl is in the Twilight camp at the Master's Glaive. Clear a path to it."
+    },
+    {
+     "do": "T 949; A 950; A 98042",
+     "tip": "Forever quest from the Twilight Tome: a Peerless Eye from the Twilight cultists."
+    },
+    {
+     "do": "C 98042",
+     "tip": "Twilight Disciples and Thugs at the Glaive both drop the eye."
+    },
+    {
+     "do": "A 945 @b",
+     "tip": "Therylune is held at the Master's Glaive. She runs out by herself once you start the escort; you report to her sister in Ashenvale."
+    },
+    {
+     "do": "T 950; A 951",
+     "tip": "Back to Onu at the Grove. Mathystra Relics sends you to the naga ruins in the far north for the last loop of the zone."
+    },
+    {
+     "do": "A 98013",
+     "tip": "Forever quest from Arbal next to Onu: 12 of each Stormscale naga at the same northern ruins."
+    },
+    {
+     "do": "hs Auberdine"
+    },
+    {
+     "do": "T 731",
+     "tip": "Skip the next step: it sends you to Darnassus and then the Wetlands."
+    },
+    {
+     "do": "T 98042",
+     "tip": "Thundris takes the Peerless Eye."
+    },
+    "T 4730",
+    "T 4731",
+    "T 4732",
+    "T 4733",
+    {
+     "do": "T 4740 @b"
+    },
+    "T 985",
+    {
+     "do": "A 986 @b",
+     "tip": "A Lost Master needs pelts from the Moonstalker Matriarchs in the far north, next to the naga ruins you visit next."
+    },
+    {
+     "do": "T 6123; A 6124",
+     "tip": "Druids: the Sickly Deer wander the woods just south-east of Auberdine. Use the salve on them."
+    },
+    {
+     "do": "C 6124"
+    },
+    {
+     "do": "T 6124; A 6125",
+     "text": "Druids: Teleport to Moonglade and turn in Curing the Sick"
+    },
+    {
+     "do": "T 6125",
+     "tip": "Druids: take the druid flight from Nighthaven to Rut'theran, learn Cure Poison from Mathrengyl, then fly back to Auberdine."
+    }
+   ]
+  },
+  {
+   "file": "07-mathystra-and-maestras-post.json",
+   "title": "Mathystra and the Road to Ashenvale",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 1138 @b",
+     "tip": "Gubber wants crab chunks from the big crawlers on the coast; you pass them on the way north."
+    },
+    {
+     "do": "A 4725 @b",
+     "tip": "Another turtle lies on the beach further west."
+    },
+    {
+     "do": "A 4727 @b",
+     "tip": "A Beached Sea Turtle lies on the north shore."
+    },
+    {
+     "do": "C 1138",
+     "tip": "Reef and Encrusted Tide Crawlers line the beaches; the crab chunks drop from both.",
+     "routes": "b"
+    },
+    {
+     "do": "C 2139",
+     "routes": "b",
+     "optional": true,
+     "tip": "The Den Mother is a level 18-19 bear with cubs, in the hills south of the river. Bring a friend or come back later."
+    },
+    {
+     "do": "C 951",
+     "tip": "The relics lie on the ground in the ruins of Mathystra. Grab them between naga pulls."
+    },
+    {
+     "do": "C 98013",
+     "tip": "Myrmidons and Sorceresses are in the western half of the ruins, Warriors deeper east. Pull one at a time; the sorceresses net you.",
+     "routes": "b"
+    },
+    {
+     "do": "C 98013 @s",
+     "tip": "Speedrun: the naga ruins are the best XP in the zone at this level. Kill everything on your way through the relics.",
+     "speed": "Speedrun: if Swelling Forces is not finished when the relics are, keep going anyway; the kills are worth it."
+    },
+    {
+     "do": "C 986 @b",
+     "tip": "Moonstalker Matriarchs prowl the hills north of the naga ruins. They hit hard; fight them one at a time."
+    },
+    {
+     "do": "xp 17 2181 @s",
+     "text": "Kill Stormscale Myrmidons in the ruins until level 17 (skip if you are already there)",
+     "speed": "Kerlonian's escort needs level 17. Grind only what you need here."
+    },
+    {
+     "do": "hs Auberdine",
+     "speed": "Speedrun: hearth from the ruins."
+    },
+    {
+     "do": "T 986; A 993 @b",
+     "tip": "Volcor is hiding at the south end of the zone, near the Ashenvale border. You pass him on the way to Maestra's Post."
+    },
+    "T 1138 @b",
+    "T 2139 @b",
+    {
+     "do": "T 4725 @b"
+    },
+    {
+     "do": "T 4727 @b"
+    },
+    {
+     "do": "T 951; T 98013",
+     "text": "Run south to the Grove and turn in Mathystra Relics to Onu and Swelling Forces to Arbal"
+    },
+    {
+     "do": "A 5321",
+     "tip": "Kerlonian Evershade sleeps at the Grove of the Ancients. Forever hotfix: he falls asleep less often and hands you the Horn of Awakening at the start; use it whenever he dozes off on the way to Ashenvale.",
+     "tipSources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard: WoW Forever hotfixes"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ]
+    },
+    {
+     "do": "T 993 @b",
+     "tip": "Volcor hides south of the Grove, near the road to Ashenvale. Skip his escape quest; it sends you back to Auberdine."
+    },
+    {
+     "do": "A 5713",
+     "tip": "Sentinel Aynasha is on a hill south of the Grove, on the way to Ashenvale. Stay next to her and kill whatever attacks her."
+    },
+    {
+     "do": "T 5713",
+     "tip": "Onaeya is at Maestra's Post, the first Alliance camp in northern Ashenvale."
+    },
+    {
+     "do": "T 5321",
+     "tip": "Liladris Moonriver stands at Maestra's Post. Kerlonian runs ahead when you arrive."
+    },
+    {
+     "do": "T 967; A 970",
+     "tip": "Delgren the Purifier stands at Maestra's Post. The soul gem drops from the Dark Strand cultists in their camp nearby."
+    },
+    {
+     "do": "C 970",
+     "tip": "The Dark Strand camp is a short walk north-east of Maestra's Post. Pull the cultists one at a time."
+    },
+    "T 970",
+    {
+     "do": "T 945 @b",
+     "tip": "Therysil is at the Shrine of Aessina, south-west of Maestra's Post."
+    },
+    {
+     "do": "hs Auberdine",
+     "text": "Hearth to Auberdine"
+    },
+    {
+     "do": "goto",
+     "at": [
+      32.4,
+      43.8
+     ],
+     "map": 1439,
+     "id": "boat-stormwind",
+     "text": "Take the boat from the Auberdine docks to Stormwind Harbor, then continue with Redridge Mountains 17-20",
+     "tip": [
+      "New in Forever: a direct Auberdine to Stormwind boat replaces the old run through Wetlands. The dock position is unconfirmed; ask a dockhand if the pier differs.",
+      "Alternative: stay in Kalimdor and take the road to Astranaar in Ashenvale for 18-25."
+     ],
+     "tipSources": [
+      {
+       "url": "https://classicwowforever.com/boats-and-zeppelins/",
+       "label": "ClassicWoWForever: boats and zeppelins (unverified)"
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://classicwowforever.com/boats-and-zeppelins/",
+       "label": "ClassicWoWForever: boats and zeppelins (unverified)"
+      }
+     ],
+     "unverified": true
+    }
+   ]
+  }
+ ],
+ "next": "redridge-17-20"
+}

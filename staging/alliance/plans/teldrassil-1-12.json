@@ -1,0 +1,711 @@
+{
+ "id": "teldrassil-1-12",
+ "title": "Teldrassil 1-12 (Alliance)",
+ "levels": [
+  1,
+  12
+ ],
+ "next": "darkshore-12-17",
+ "races": [
+  "NightElf"
+ ],
+ "maps": [
+  1438,
+  1457
+ ],
+ "enterLevel": 1,
+ "carry": [
+  6342,
+  952,
+  6001,
+  1686
+ ],
+ "segments": [
+  {
+   "file": "01-shadowglen.json",
+   "title": "Shadowglen",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 456",
+     "tip": "Young nightsabers and thistle boars wander all around the base of Aldrassil. Start killing as soon as you leave the conservator."
+    },
+    {
+     "do": "A 458",
+     "tip": "Melithar stands just north of Ilthalaine. The dryad is a short walk south-west."
+    },
+    {
+     "do": "C 456",
+     "tip": "Loop around Aldrassil. Tag anything near you; the two mob types share the same ground."
+    },
+    {
+     "do": "T 456; A 457"
+    },
+    {
+     "do": "A 3116",
+     "tip": "Your class letter. Hand it to your trainer inside Aldrassil for a little XP and your first spells."
+    },
+    "A 3117",
+    "A 3118",
+    "A 3119",
+    "A 3120",
+    {
+     "do": "T 458; A 459; A 97977",
+     "tip": "Nature's Call is a Forever quest: the Gnarlpine Totems sit in the same grell camp west of Aldrassil, so do both together."
+    },
+    "T 3116",
+    "T 3117",
+    "T 3118",
+    "T 3119",
+    "T 3120",
+    {
+     "do": "A 97979",
+     "tip": "Forever racial quest from Shanda: cast Elune's Light and Shadowmeld, then talk to her again."
+    },
+    "T 97979",
+    {
+     "do": "trainer",
+     "text": "Train your level 2-4 spells inside Aldrassil"
+    },
+    {
+     "do": "npc 267335",
+     "routes": "b",
+     "optional": true,
+     "text": "Optional: pick a gathering profession from the junior trainers around Aldrassil",
+     "prof": [
+      "Forever adds junior Herbalism, Mining and Skinning trainers in the starting areas. They teach the first rank, so you can gather from level 1.",
+      "Herbalism pairs well with Teldrassil: Peacebloom and Silverleaf grow along every path here."
+     ]
+    },
+    {
+     "do": "C 459; C 97977",
+     "tip": "Grells drop the Fel Moss. Grab the totems on the ground between pulls."
+    },
+    "T 459; T 97977",
+    {
+     "do": "A 916",
+     "tip": "The Webwood spiders live up the slope north of Aldrassil, at the Shadowthread Cave."
+    },
+    {
+     "do": "A 4495",
+     "tip": "Dirania stands on the east edge of Shadowglen."
+    },
+    {
+     "do": "C 457",
+     "tip": "The Mangy Nightsabers and Thistle Boars roam north of Aldrassil, on the way to the spider cave."
+    },
+    {
+     "do": "T 4495; A 3519",
+     "tip": "Iverron lies poisoned at the mouth of the Shadowthread Cave."
+    },
+    {
+     "do": "C 916",
+     "tip": "Stay near the cave entrance; the spiders outside respawn fast enough."
+    },
+    {
+     "do": "A 97236",
+     "tip": "Githyiss the Vile is a named spider just inside the cave. The fang starts a Forever quest worth 450 XP.",
+     "speed": "Speedrun: only if Githyiss is up when you pass; do not wait for a respawn."
+    },
+    {
+     "do": "T 916; A 917",
+     "text": "Back at Aldrassil: turn in Webwood Venom and accept Webwood Egg from Gilshalan"
+    },
+    "T 97236",
+    "T 3519; A 3521",
+    "T 457",
+    {
+     "do": "C 3521.1,2",
+     "tip": "Hyacinth Mushrooms grow around the base of Aldrassil; the Moonpetal Lily is near the pool just north of it."
+    },
+    {
+     "do": "C 917",
+     "tip": "The eggs are at the very back of the Shadowthread Cave. Kill spiders on the way for the Webwood Ichor."
+    },
+    {
+     "do": "C 3521.3",
+     "tip": "Any Webwood Spider can drop the Ichor."
+    },
+    {
+     "do": "T 3521; A 3522",
+     "tip": "The antidote is on a timer. Go straight to Iverron and skip the other turn-ins for now.",
+     "speed": "Speedrun: run back to Iverron right away, the timer is generous but the walk is long."
+    },
+    "T 3522",
+    {
+     "do": "T 917; A 920",
+     "text": "Turn in Webwood Egg to Gilshalan and accept Tenaron's Summons"
+    },
+    "T 920; A 921",
+    {
+     "do": "C 921",
+     "tip": "The Shadowglen moonwell is a short walk north of Aldrassil."
+    },
+    "T 921; A 928",
+    {
+     "do": "A 96630",
+     "tip": "Forever Camping quest: read the Lost Journal near Tenaron. It sends you to Lyreena in Dolanaar.",
+     "speed": "Speedrun: worth it. The Camping chain gives over 1,000 XP for two minutes of walking inside Dolanaar."
+    },
+    {
+     "do": "A 5622",
+     "tip": "Priests: Shanda sends you to Laurna in Dolanaar for your next spell quest."
+    },
+    {
+     "do": "trainer",
+     "text": "Train your new spells before leaving Shadowglen"
+    },
+    {
+     "do": "A 2159",
+     "tip": "Porthannius waits on the road south out of Shadowglen. The delivery ends at the Dolanaar inn on your way."
+    }
+   ]
+  },
+  {
+   "file": "02-dolanaar-and-lake-alameth.json",
+   "title": "Dolanaar, Starbreeze and Lake Al'Ameth",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 2159",
+     "tip": "Dolanaar is your hub for the rest of Teldrassil."
+    },
+    {
+     "do": "home 6736",
+     "text": "Set your hearthstone at the Dolanaar inn"
+    },
+    "T 928; A 929",
+    "T 5622; A 5621",
+    "A 997",
+    "A 475",
+    {
+     "do": "A 2438; A 932",
+     "tip": "Twisted Hatred needs Lord Melenas in Fel Rock, north of Dolanaar. Keep it for the western loop at level 8."
+    },
+    {
+     "do": "A 87288",
+     "tip": "Forever quest from Aldia. The pelts come off the Nightsabers right outside Dolanaar."
+    },
+    {
+     "do": "T 96630; A 96606",
+     "tip": "Lyreena teaches you Camping. Build the campfire right next to her.",
+     "tipSources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard: Gather around the campfire"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ]
+    },
+    {
+     "do": "C 96606"
+    },
+    {
+     "do": "T 96606; A 96634",
+     "tip": "Camping 101 has one quest per profession and you can only take one. Cooking is the shortest, since Zarrin is in Dolanaar; pick another if you plan that profession.",
+     "prof": "Forever: every profession unlocks a camp feature at skill 20, and Cooking gives the Basic Campfire at skill 1.",
+     "tipSources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301516/gather-around-the-campfire-in-world-of-warcraft-forever",
+       "label": "Blizzard: Gather around the campfire"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0)"
+      }
+     ]
+    },
+    {
+     "do": "C 96634; T 96634",
+     "text": "Talk to Zarrin, the cook in Dolanaar, and turn in Camping 101: Cooking"
+    },
+    {
+     "do": "A 488",
+     "tip": "Zenn waits just east of the village. Every fang, feather and silk comes from mobs around Dolanaar."
+    },
+    {
+     "do": "C 488; C 87288",
+     "tip": "Nightsabers, Strigid Owls and Webwood Lurkers all live in the woods between Dolanaar and the road east."
+    },
+    {
+     "do": "C 5621",
+     "tip": "Sentinel Shaya is south of Dolanaar. Heal her with Lesser Heal (Rank 2), then buff her with Power Word: Fortitude."
+    },
+    {
+     "do": "T 475; A 476",
+     "tip": "Gaerolas hides in a hut in Starbreeze Village, east of Dolanaar. The Gnarlpine there hit harder than the wildlife, so pull one at a time."
+    },
+    {
+     "do": "C 929",
+     "tip": "The Starbreeze moonwell is at the west edge of the village."
+    },
+    {
+     "do": "C 2438",
+     "tip": "Tallonkai's Dresser is in the house at the far east end of Starbreeze."
+    },
+    {
+     "do": "T 488; A 489",
+     "tip": "Zenn is on your way back to Dolanaar. Fel Cones fall near the trees south of Dolanaar, by Lake Al'Ameth."
+    },
+    "T 929; A 933",
+    "T 476; A 483",
+    "T 2438",
+    "A 2459",
+    "T 87288",
+    "T 5621",
+    {
+     "do": "C 2459",
+     "tip": "The Gnarlpine Mystics camp north of Starbreeze Village. One of them carries the jewel.",
+     "speed": "Speedrun: the mystics are a short run from Starbreeze and the quest pays well. Pick up Gnarlpine kills on the way."
+    },
+    {
+     "do": "T 2459"
+    },
+    {
+     "do": "T 997; A 918; A 919",
+     "tip": "Denalan tends his planters on the south shore of Lake Al'Ameth."
+    },
+    {
+     "do": "C 918",
+     "tip": "Timberlings walk the shore around the lake. Kill them for seeds and pick up sprouts in the same loop."
+    },
+    {
+     "do": "C 919",
+     "tip": "Timberling Sprouts are small plants on the ground west of the lake."
+    },
+    {
+     "do": "C 489",
+     "tip": "Fel Cones lie under the trees north-west of the lake, toward Dolanaar."
+    },
+    "T 918; T 919; A 922",
+    {
+     "do": "T 489",
+     "tip": "Zenn is a short run north, just east of Dolanaar."
+    }
+   ]
+  },
+  {
+   "file": "03-fel-rock-and-banethil.json",
+   "title": "Fel Rock and Ban'ethil Barrow Den",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 487",
+     "tip": "Moon Priestess Amara stands on the road west of Dolanaar."
+    },
+    {
+     "do": "C 932",
+     "tip": "Fel Rock is the cave north of the road. Lord Melenas is at the back; the satyrs inside come in pairs, so rest before each pull."
+    },
+    {
+     "do": "C 487",
+     "tip": "The Ambushers hide in the trees on both sides of the road further west."
+    },
+    {
+     "do": "A 490",
+     "routes": "b",
+     "tip": "Shayla stands on the road just outside Darnassus. Gnarlpine Shamans in the barrow den drop the fangs."
+    },
+    {
+     "do": "A 2541",
+     "tip": "Oben Rageclaw sleeps at the entrance of Ban'ethil Barrow Den, south of the road."
+    },
+    {
+     "do": "C 2541",
+     "tip": "Gnarlpine Shamans are in and around the barrow den entrance."
+    },
+    {
+     "do": "C 490",
+     "routes": "b",
+     "tip": "Fifteen fangs is a lot; keep killing Gnarlpine here and you will finish it before you leave the den."
+    },
+    "T 2541; A 2561",
+    {
+     "do": "C 483",
+     "tip": "The four relic chests are spread through the barrow den. Clear the furbolgs room by room and loot each chest as you reach it."
+    },
+    {
+     "do": "C 2561",
+     "tip": "Rageclaw is in the deepest chamber of the den. When he dies, use the Voodoo Charm on his body."
+    },
+    {
+     "do": "A 99053",
+     "tip": "Forever escort. Sentinel Lynessa is held in the barrow den; talk to her and walk her out. You report to Sentinel Kyra in Dolanaar."
+    },
+    "T 2561",
+    {
+     "do": "T 487",
+     "text": "Back on the road east: turn in The Road to Darnassus to Moon Priestess Amara"
+    },
+    {
+     "do": "T 932; A 98403",
+     "tip": "Forever follow-up: the Befouled Webwoods and Xethorr are just north of Fel Rock, on the way to Darnassus."
+    },
+    "T 483; A 486",
+    {
+     "do": "T 99053",
+     "tip": "Sentinel Kyra stands in the middle of Dolanaar."
+    },
+    {
+     "do": "A 99046",
+     "tip": "Forever quest: Sentinel Eralya is on the road to the Oracle Glade, which you reach after Darnassus."
+    },
+    {
+     "do": "A 98391",
+     "routes": "b",
+     "tip": "Forever breadcrumb from Laurna to the Sisterhood of Elune in Darnassus. It opens Tears of the Moon, a good level 12 quest."
+    }
+   ]
+  },
+  {
+   "file": "04-pools-and-gnarlpine-hold.json",
+   "title": "Pools of Arlithrien and Gnarlpine Hold",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 933",
+     "tip": "Pools of Arlithrien are south of the barrow den. Fill the phial at the moonwell."
+    },
+    {
+     "do": "A 930",
+     "tip": "The Strange Fruited Plant grows on the hillside south of the pools. Take it now; the quest ends at Denalan."
+    },
+    {
+     "do": "C 486",
+     "tip": "Ursal the Mauler roams Gnarlpine Hold, just west of the fruit plant. He hits hard; pull him away from the furbolgs and fight him alone.",
+     "speed": "Speedrun: after Ursal, die on purpose and take the spirit healer just south of Dolanaar instead of walking back."
+    },
+    {
+     "do": "xp 10 2012",
+     "text": "If you are not level 10 yet, kill Gnarlpine Pathfinders around the hold until you are",
+     "tip": "The class quests in Dolanaar need level 10. A handful of kills here is usually enough."
+    },
+    {
+     "do": "T 930",
+     "text": "Lake Al'Ameth: turn in The Glowing Fruit to Denalan",
+     "tip": "Denalan is on your way back north to Dolanaar."
+    },
+    {
+     "do": "T 933; A 7383",
+     "text": "Back in Dolanaar: turn in Crown of the Earth to Corithras and accept the next step"
+    },
+    "T 486",
+    {
+     "do": "trainer",
+     "text": "At level 10, train your spells and pick up your class quest in Dolanaar"
+    },
+    {
+     "do": "A 1684",
+     "tip": "Warriors: Kyra Windblade sends you to Elanaria in Darnassus."
+    },
+    {
+     "do": "A 2241",
+     "tip": "Rogues: Jannok sends you to Syurna in Darnassus."
+    },
+    {
+     "do": "A 5629",
+     "tip": "Priests: Laurna sends you to Priestess Alathea in the Temple of the Moon."
+    },
+    {
+     "do": "A 5925",
+     "tip": "Druids: Kal sends you to Mathrengyl in Darnassus to start the bear form quests."
+    },
+    {
+     "do": "A 6063",
+     "tip": "Hunters: tame a Webwood Lurker with the Taming Rod. They are just south of Dolanaar."
+    },
+    {
+     "do": "C 6063",
+     "tip": "Use the rod from range and stand still for the whole cast."
+    },
+    "T 6063; A 6101"
+   ]
+  },
+  {
+   "file": "05-darnassus-and-oracle-glade.json",
+   "title": "Darnassus and the Oracle Glade",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 98403",
+     "tip": "The Befouled Webwoods crawl around the hill north of Fel Rock. Xethorr is a named spider among them."
+    },
+    {
+     "do": "T 490",
+     "routes": "b",
+     "tip": "Shayla is at the bend in the road below Darnassus."
+    },
+    {
+     "do": "T 922; A 923",
+     "tip": "Rellian is in the Cenarion Enclave, in the north-west of Darnassus. Mossy Tumors drop from the bigger Timberlings near the Oracle Glade."
+    },
+    {
+     "do": "T 1684; A 1683",
+     "tip": "Warriors: Vorlus Vilehoof is just east of the barrow den. Do him when you head back toward Dolanaar."
+    },
+    {
+     "do": "T 2241; A 2242",
+     "tip": "Rogues: Sethir the Ancient sits on a hill north of the Oracle Glade."
+    },
+    {
+     "do": "T 5925; A 5921",
+     "tip": "Druids: keep Moonglade in your log. You go there from Darnassus on your last visit."
+    },
+    {
+     "do": "T 5629",
+     "tip": "Priests: Alathea trains you in the Temple of the Moon."
+    },
+    {
+     "do": "T 98391; A 2519",
+     "routes": "b"
+    },
+    {
+     "do": "T 2519; A 2518",
+     "routes": "b",
+     "tip": "Lady Sathrah is a big spider on the ridge north of the Oracle Glade."
+    },
+    {
+     "do": "A 2518 @s",
+     "tip": "Priestess A'moora is in the Temple of the Moon. You do not need the breadcrumb to take Tears of the Moon.",
+     "speed": "Speedrun: skip the Sisterhood breadcrumbs and take Tears of the Moon straight from A'moora; Sathrah and the fountain step together pay over 2,000 XP."
+    },
+    {
+     "do": "T 99046; A 99047",
+     "tip": "Eralya lies wounded on the road to the Oracle Glade. Byancie in Dolanaar can help her."
+    },
+    {
+     "do": "A 937",
+     "tip": "Arynia guards the Oracle Glade. The Bloodfeather harpies nest on the slopes all around it."
+    },
+    {
+     "do": "C 7383",
+     "tip": "The Oracle Glade moonwell is right next to Arynia."
+    },
+    {
+     "do": "C 937",
+     "tip": "Harpies cast and run; pull them away from their friends."
+    },
+    {
+     "do": "T 937; A 98392",
+     "tip": "Forever quest: three named harpies, each at a different nest around the glade."
+    },
+    {
+     "do": "C 98392",
+     "tip": "The three named harpies each hold a nest around the glade. Clear the adds before you engage."
+    },
+    {
+     "do": "A 938",
+     "routes": "b",
+     "tip": "Mist is a lost nightsaber cub among the harpies. She follows you back to Arynia; do not run too far ahead."
+    },
+    {
+     "do": "A 931",
+     "tip": "The Strange Fronded Plant grows by the water north-west of the glade."
+    },
+    {
+     "do": "T 938",
+     "routes": "b"
+    },
+    "T 98392; A 98398",
+    {
+     "do": "T 98398; A 940",
+     "tip": "Touch the Oracle Tree bark. Teldrassil goes to Fandral in Darnassus and opens Grove of the Ancients in Darkshore."
+    },
+    {
+     "do": "C 2242",
+     "tip": "Rogues: Sethir is up the hill to the north. Clear around him before you pull."
+    },
+    {
+     "do": "C 2518",
+     "tip": "Lady Sathrah drifts around the ridge with her spiders. She is level 12; use a full health and mana bar."
+    },
+    {
+     "do": "C 923",
+     "tip": "Elder Timberlings and Mire Beasts around the Wellspring lake drop the tumors."
+    },
+    {
+     "do": "A 927",
+     "routes": "b",
+     "tip": "Blackmoss the Fetid is a level 13 timberling by the Wellspring. His heart starts a good quest for Denalan; skip him if he is too strong for you."
+    }
+   ]
+  },
+  {
+   "file": "06-darnassus-and-the-lake.json",
+   "title": "Darnassus and Lake Al'Ameth",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 923; A 2498",
+     "tip": "Back in the Cenarion Enclave."
+    },
+    {
+     "do": "T 940; A 952",
+     "tip": "Grove of the Ancients ends at Onu in southern Darkshore. Keep it for the next pack."
+    },
+    {
+     "do": "T 2518; A 2520"
+    },
+    {
+     "do": "C 2520; T 2520",
+     "text": "Use the fountain in the Temple of the Moon and turn in Sathrah's Sacrifice"
+    },
+    {
+     "do": "T 2242",
+     "tip": "Rogues: Syurna gives you the reward right away."
+    },
+    {
+     "do": "hs Dolanaar",
+     "tip": "Hearth back to Dolanaar instead of walking across the island."
+    },
+    {
+     "do": "T 99047; A 99050",
+     "tip": "Back in Dolanaar. Buy an Empty Vial from Narret and one Refreshing Spring Water from Danlyia right here; the quest needs both."
+    },
+    "T 7383; A 935",
+    "T 98403",
+    {
+     "do": "T 2498; A 2499",
+     "tip": "Denalan at Lake Al'Ameth."
+    },
+    {
+     "do": "T 931; A 2399",
+     "tip": "Plant the frond, then use the sprouted frond next to Denalan."
+    },
+    {
+     "do": "T 2399",
+     "tip": "Click the Sprouted Frond by Denalan's planters."
+    },
+    {
+     "do": "T 927; A 941",
+     "routes": "b"
+    },
+    {
+     "do": "T 941",
+     "routes": "b",
+     "text": "Plant the heart in Denalan's Planter"
+    },
+    {
+     "do": "C 99050",
+     "tip": "Forever change: lashers are no longer immune to Nature, so druids can use Wrath on them. Lasher Sproutlings cover the shore around the lake.",
+     "tipSources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24315281/wow-forever-hotfixes-november-20-2026",
+       "label": "Blizzard: WoW Forever hotfixes"
+      }
+     ]
+    },
+    {
+     "do": "C 2499",
+     "tip": "Oakenscowl is a big timberling in the cave south of the lake."
+    },
+    {
+     "do": "C 6101",
+     "tip": "Hunters: Nightsaber Stalkers prowl the woods west of the lake. Tame one, then dismiss it and keep going."
+    },
+    {
+     "do": "C 1683",
+     "tip": "Warriors: Vorlus Vilehoof is east of Ban'ethil Barrow Den. He is level 10; start at full health and save Bloodrage for the pull."
+    },
+    {
+     "do": "T 2499",
+     "text": "Back at the lake: turn in Oakenscowl to Denalan"
+    },
+    {
+     "do": "T 99050",
+     "tip": "Byancie trains First Aid as well; learn it now if you have not."
+    },
+    {
+     "do": "A 99073",
+     "routes": "b",
+     "tip": "Easing Suffering takes the salve back to Eralya on the road to the Oracle Glade. Do it on your way to Darnassus."
+    },
+    {
+     "do": "T 6101; A 6102",
+     "tip": "Hunters: Strigid Screechers perch in the trees west of Lake Al'Ameth. Tame one and come back."
+    },
+    {
+     "do": "C 6102",
+     "tip": "Hunters: Strigid Screechers sit in the trees west of the lake."
+    },
+    {
+     "do": "T 6102; A 6103",
+     "tip": "Hunters: Training the Beast ends at Jocaste in Darnassus, where you learn pet training."
+    },
+    {
+     "do": "trainer",
+     "text": "Train your new spells in Dolanaar"
+    },
+    {
+     "do": "T 99073",
+     "routes": "b",
+     "text": "On the way west, turn in Easing Suffering to Sentinel Eralya"
+    }
+   ]
+  },
+  {
+   "file": "07-darnassus-and-rutheran.json",
+   "title": "Darnassus and Rut'theran Village",
+   "routes": null,
+   "steps": [
+    {
+     "do": "T 935; A 98046",
+     "tip": "Fandral sends you to the Temple of the Moon for the last steps of Crown of the Earth."
+    },
+    {
+     "do": "T 98046; A 98065",
+     "tip": "Forever chain: Lariia waits outside the temple."
+    },
+    {
+     "do": "T 98065",
+     "tip": "Tyrande Whisperwind herself turns in the last step."
+    },
+    {
+     "do": "T 1683; A 1686",
+     "tip": "Warriors: the Shade of Elura is on the coast of Darkshore. Keep the quest for the next pack."
+    },
+    {
+     "do": "T 6103",
+     "tip": "Hunters: Jocaste teaches you to train your pet."
+    },
+    {
+     "do": "T 5921; A 5929",
+     "text": "Druids: Teleport to Moonglade and turn in Moonglade to Dendrite Starblaze",
+     "tip": "Druids learn Teleport: Moonglade at level 10. Dendrite is in Nighthaven."
+    },
+    {
+     "do": "C 5929",
+     "tip": "The Great Bear Spirit is in the hills west of Nighthaven. Just talk to it."
+    },
+    "T 5929; A 5931",
+    {
+     "do": "T 5931; A 6001",
+     "tip": "Druids: from Nighthaven, take the druid flight to Rut'theran and walk up through the portal to Mathrengyl. Body and Heart is done in Darkshore."
+    },
+    {
+     "do": "A 6344",
+     "tip": "Mydrannul is on the Tradesmen's Terrace. Then take the portal down to Rut'theran Village."
+    },
+    {
+     "do": "T 6344; A 6341",
+     "text": "Rut'theran Village: turn in Nessa Shadowsong and accept The Bounty of Teldrassil"
+    },
+    {
+     "do": "fp 3838"
+    },
+    {
+     "do": "T 6341; A 6342",
+     "tip": "Flight to Auberdine ends at Laird in Auberdine; the next pack starts there."
+    },
+    {
+     "do": "fly 3838 Auberdine",
+     "text": "Fly to Auberdine in Darkshore",
+     "tip": "There is also a boat from the Rut'theran dock to Auberdine if you would rather save the flight money."
+    }
+   ]
+  }
+ ]
+}

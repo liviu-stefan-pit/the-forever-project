@@ -1,0 +1,822 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "darkshore-12-17",
+ "title": "Darnassus Trip",
+ "steps": [
+  {
+   "id": "darkshore-12-17:fly-3841",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Fly to Rut'theran Village"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.3,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Fly to Rut'theran Village"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3841",
+     "label": "Wowhead NPC 3841"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Balanced: one trip back for Nessa's reward and your class quests. Speedrun skips this unless you are a warrior or druid.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3841",
+       "label": "Wowhead NPC 3841"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3841,
+     "name": "Caylais Moonfeather",
+     "at": {
+      "mapId": 1439,
+      "zone": "Darkshore",
+      "x": 36.3,
+      "y": 45.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3841",
+       "label": "Wowhead NPC 3841"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:fly-3841-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warriors and druids: fly to Rut'theran Village for your class quests"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1439,
+      "x": 36.3,
+      "y": 45.6,
+      "zone": "Darkshore",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Warriors and druids: fly to Rut'theran Village for your class quests"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior",
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3841",
+     "label": "Wowhead NPC 3841"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3841,
+     "name": "Caylais Moonfeather",
+     "at": {
+      "mapId": 1439,
+      "zone": "Darkshore",
+      "x": 36.3,
+      "y": 45.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3841",
+       "label": "Wowhead NPC 3841"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-6343",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Nessa to Nessa Shadowsong"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 56.3,
+      "y": 92.4,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6343,
+     "label": "Return to Nessa"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6343",
+     "label": "Wowhead Classic quest 6343"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Nessa is at the fishing dock in Rut'theran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6343",
+       "label": "Wowhead Classic quest 6343"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-1686",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Shade of Elura to Elanaria; Accept Smith Mathiel from Elanaria"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 57.3,
+      "y": 34.6,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1686,
+     "label": "The Shade of Elura"
+    },
+    {
+     "type": "accept",
+     "questId": 1692,
+     "label": "Smith Mathiel"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1686",
+     "label": "Wowhead Classic quest 1686"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1692",
+     "label": "Wowhead Classic quest 1692"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Warriors: Elanaria is on the warrior terrace. Take the portal up from Rut'theran.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1686",
+       "label": "Wowhead Classic quest 1686"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1692",
+       "label": "Wowhead Classic quest 1692"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-1692",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Smith Mathiel to Mathiel; Accept Weapons of Elunite from Mathiel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 59.5,
+      "y": 45.4,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1692,
+     "label": "Smith Mathiel"
+    },
+    {
+     "type": "accept",
+     "questId": 1693,
+     "label": "Weapons of Elunite"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1692",
+     "label": "Wowhead Classic quest 1692"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1693",
+     "label": "Wowhead Classic quest 1693"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Smith Mathiel works on the Tradesmen's Terrace.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1692",
+       "label": "Wowhead Classic quest 1692"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=1693",
+       "label": "Wowhead Classic quest 1693"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-1693",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Weapons of Elunite to Mathiel"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 59.5,
+      "y": 45.4,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1693,
+     "label": "Weapons of Elunite"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1693",
+     "label": "Wowhead Classic quest 1693"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Pick the Elunite weapon that fits your build.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=1693",
+       "label": "Wowhead Classic quest 1693"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-6001",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Body and Heart to Mathrengyl Bearwalker; Accept Lessons Anew from Mathrengyl Bearwalker"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1457,
+      "x": 35.4,
+      "y": 8.4,
+      "zone": "Darnassus",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6001,
+     "label": "Body and Heart"
+    },
+    {
+     "type": "accept",
+     "questId": 6121,
+     "label": "Lessons Anew"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6001",
+     "label": "Wowhead Classic quest 6001"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6121",
+     "label": "Wowhead Classic quest 6121"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Druids: Mathrengyl teaches you Bear Form. Lessons Anew starts the Cure Poison quests.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6001",
+       "label": "Wowhead Classic quest 6001"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=6121",
+       "label": "Wowhead Classic quest 6121"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:trainer",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train your new spells while you are in the city"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train your new spells while you are in the city"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "darkshore-12-17:fly-3838",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Go back down to Rut'theran and fly to Auberdine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.4,
+      "y": 94.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Go back down to Rut'theran and fly to Auberdine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior",
+    "Hunter",
+    "Rogue",
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3838",
+     "label": "Wowhead NPC 3838"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3838,
+     "name": "Vesprystus",
+     "at": {
+      "mapId": 1438,
+      "zone": "Teldrassil",
+      "x": 58.4,
+      "y": 94.0
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3838",
+       "label": "Wowhead NPC 3838"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:fly-3838-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Go back down to Rut'theran and fly to Auberdine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1438,
+      "x": 58.4,
+      "y": 94.0,
+      "zone": "Teldrassil",
+      "exact": true
+     }
+    },
+    {
+     "type": "fly",
+     "label": "Go back down to Rut'theran and fly to Auberdine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=3838",
+     "label": "Wowhead NPC 3838"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 3838,
+     "name": "Vesprystus",
+     "at": {
+      "mapId": 1438,
+      "zone": "Teldrassil",
+      "x": 58.4,
+      "y": 94.0
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=3838",
+       "label": "Wowhead NPC 3838"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:turnin-6121",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Druids: Teleport to Moonglade and turn in Lessons Anew to Dendrite Starblaze"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1450,
+      "x": 56.2,
+      "y": 30.6,
+      "zone": "Moonglade",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6121,
+     "label": "Lessons Anew"
+    },
+    {
+     "type": "accept",
+     "questId": 6122,
+     "label": "The Principal Source"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6121",
+     "label": "Wowhead Classic quest 6121"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6122",
+     "label": "Wowhead Classic quest 6122"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Druids: hearth to Auberdine afterwards; the falls sample is in Darkshore.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6121",
+       "label": "Wowhead Classic quest 6121"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=6122",
+       "label": "Wowhead Classic quest 6122"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "darkshore-12-17:hs-2",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Druids: hearth back to Auberdine"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "hs",
+     "label": "Druids: hearth back to Auberdine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Druid"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

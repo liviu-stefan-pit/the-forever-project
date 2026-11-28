@@ -1,0 +1,1498 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Goldshire and Crystal Lake",
+ "steps": [
+  {
+   "id": "elwynn-1-12:turnin-54",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Goldshire to Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 54,
+     "label": "Report to Goldshire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=54",
+     "label": "Wowhead Classic quest 54"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-91772",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Shhh! We're Hunting Kobolds to Marshal Dughan; Accept Book Return from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91772,
+     "label": "Shhh! We're Hunting Kobolds"
+    },
+    {
+     "type": "accept",
+     "questId": 91775,
+     "label": "Book Return"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=91772",
+     "label": "Wowhead Forever quest 91772"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=91775",
+     "label": "Wowhead Forever quest 91775"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:accept-62",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Fargodeep Mine from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 62,
+     "label": "The Fargodeep Mine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=62",
+     "label": "Wowhead Classic quest 62"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-2158",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Rest and Relaxation to Innkeeper Farley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.8,
+      "y": 65.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2158,
+     "label": "Rest and Relaxation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2158",
+     "label": "Wowhead Classic quest 2158"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:home-295",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Farley"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.8,
+      "y": 65.8,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Farley"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=295",
+     "label": "Wowhead NPC 295"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Set your hearthstone here; Goldshire is the hub for the rest of the zone.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=295",
+       "label": "Wowhead NPC 295"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 295,
+     "name": "Innkeeper Farley",
+     "at": {
+      "mapId": 1429,
+      "zone": "Elwynn Forest",
+      "x": 43.8,
+      "y": 65.8
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=295",
+       "label": "Wowhead NPC 295"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:accept-60",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Kobold Candles from William Pestle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 60,
+     "label": "Kobold Candles"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=60",
+     "label": "Wowhead Classic quest 60"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-47",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Gold Dust Exchange from Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 47,
+     "label": "Gold Dust Exchange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=47",
+     "label": "Wowhead Classic quest 47"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-5623",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Favor of the Light to Priestess Josetta; Accept Garments of the Light from Priestess Josetta"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5623,
+     "label": "In Favor of the Light"
+    },
+    {
+     "type": "accept",
+     "questId": 5624,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5623",
+     "label": "Wowhead Classic quest 5623"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=5624",
+     "label": "Wowhead Classic quest 5624"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-96627",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Adventurer to Sam Sarsaparilla; Accept The Great Outdoors from Sam Sarsaparilla"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.9,
+      "y": 63.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 96627,
+     "label": "The Adventurer"
+    },
+    {
+     "type": "accept",
+     "questId": 95998,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96627",
+     "label": "Wowhead Forever quest 96627"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=95998",
+     "label": "Wowhead Forever quest 95998"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sam sits at a campfire just north-east of Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96627",
+       "label": "Wowhead Forever quest 96627"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=95998",
+       "label": "Wowhead Forever quest 95998"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-95998",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete The Great Outdoors: Basic Campfire, Basic Campfire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.9,
+      "y": 63.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 95998,
+     "objective": 1,
+     "label": "The Great Outdoors"
+    },
+    {
+     "type": "complete",
+     "questId": 95998,
+     "objective": 2,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95998",
+     "label": "Wowhead Forever quest 95998"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sit by the fire until the Boosted Rest buff shows.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=95998",
+       "label": "Wowhead Forever quest 95998"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-95998",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Great Outdoors to Sam Sarsaparilla"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.9,
+      "y": 63.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 95998,
+     "label": "The Great Outdoors"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95998",
+     "label": "Wowhead Forever quest 95998"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:accept-96626",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Camping 101: Cooking from Sam Sarsaparilla"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.9,
+      "y": 63.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 96626,
+     "label": "Camping 101: Cooking"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96626",
+     "label": "Wowhead Forever quest 96626"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever: every Camping 101 path is exclusive. Cooking is the useful pick for everyone; choose your own profession's version instead if you have one.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=96626",
+       "label": "Wowhead Forever quest 96626"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-96626",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Tomas the cook in Goldshire and turn in Camping 101: Cooking"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 44.4,
+      "y": 66.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 96626,
+     "objective": 1,
+     "label": "Camping 101: Cooking"
+    },
+    {
+     "type": "turnin",
+     "questId": 96626,
+     "label": "Camping 101: Cooking"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=96626",
+     "label": "Wowhead Forever quest 96626"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1430
+     ],
+     "name": "Tomas",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 44.4,
+      "y": 66.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1430",
+       "label": "Wowhead NPC 1430"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:trainer-3",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train level 6 spells in Goldshire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train level 6 spells in Goldshire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-99127",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Net Disaster from Jason Mathers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.5,
+      "y": 62.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99127,
+     "label": "A Net Disaster"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99127",
+     "label": "Wowhead Forever quest 99127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:accept-99143",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Bottles and Baubles from Lee Brown"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.6,
+      "y": 62.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 99143,
+     "label": "Bottles and Baubles"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99143",
+     "label": "Wowhead Forever quest 99143"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:complete-99127",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete A Net Disaster: Half-Eaten Fish"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 48.4,
+      "y": 64.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99127,
+     "objective": 1,
+     "label": "A Net Disaster"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99127",
+     "label": "Wowhead Forever quest 99127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The traps float along the west shore of Crystal Lake, just east of Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99127",
+       "label": "Wowhead Forever quest 99127"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-5624",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Garments of the Light: Guard Roberts"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 48.1,
+      "y": 68.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 5624,
+     "objective": 1,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5624",
+     "label": "Wowhead Classic quest 5624"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Heal Guard Roberts with Lesser Heal rank 2, then buff him with Fortitude.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=5624",
+       "label": "Wowhead Classic quest 5624"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      12423
+     ],
+     "name": "Guard Roberts",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 48.1,
+      "y": 68.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=12423",
+       "label": "Wowhead NPC 12423"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-99127",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Net Disaster to Jason Mathers; Accept Slimy Menace from Jason Mathers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.5,
+      "y": 62.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99127,
+     "label": "A Net Disaster"
+    },
+    {
+     "type": "accept",
+     "questId": 99128,
+     "label": "Slimy Menace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99127",
+     "label": "Wowhead Forever quest 99127"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99128",
+     "label": "Wowhead Forever quest 99128"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:complete-99128",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Slimy Menace: 7 Murloc, 4 Murloc Streamrunner; Complete Bottles and Baubles: 6 Shiny Junk"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 53.3,
+      "y": 66.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99128,
+     "objective": 1,
+     "label": "Slimy Menace"
+    },
+    {
+     "type": "complete",
+     "questId": 99128,
+     "objective": 2,
+     "label": "Slimy Menace"
+    },
+    {
+     "type": "complete",
+     "questId": 99143,
+     "objective": 1,
+     "label": "Bottles and Baubles"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99128",
+     "label": "Wowhead Forever quest 99128"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99143",
+     "label": "Wowhead Forever quest 99143"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The murloc huts are on the east shore. Junk piles sit between the huts; grab them while you kill.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99128",
+       "label": "Wowhead Forever quest 99128"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=99143",
+       "label": "Wowhead Forever quest 99143"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      285,
+      735
+     ],
+     "name": "Murloc",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 53.3,
+      "y": 66.0
+     },
+     "radius": 5.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=285",
+       "label": "Wowhead NPC 285"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-99128",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Slimy Menace to Jason Mathers; Accept A Man About a Murloc from Jason Mathers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.5,
+      "y": 62.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99128,
+     "label": "Slimy Menace"
+    },
+    {
+     "type": "accept",
+     "questId": 99129,
+     "label": "A Man About a Murloc"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99128",
+     "label": "Wowhead Forever quest 99128"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99129",
+     "label": "Wowhead Forever quest 99129"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-99143",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Bottles and Baubles to Lee Brown"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.6,
+      "y": 62.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99143,
+     "label": "Bottles and Baubles"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99143",
+     "label": "Wowhead Forever quest 99143"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-99129",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Man About a Murloc to Remy \"Two Times\"; Accept An Enticing Offer from Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99129,
+     "label": "A Man About a Murloc"
+    },
+    {
+     "type": "accept",
+     "questId": 99130,
+     "label": "An Enticing Offer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99129",
+     "label": "Wowhead Forever quest 99129"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99130",
+     "label": "Wowhead Forever quest 99130"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-99129-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Man About a Murloc to Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99129,
+     "label": "A Man About a Murloc"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99129",
+     "label": "Wowhead Forever quest 99129"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-5624",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Garments of the Light to Priestess Josetta"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 5624,
+     "label": "Garments of the Light"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=5624",
+     "label": "Wowhead Classic quest 5624"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}

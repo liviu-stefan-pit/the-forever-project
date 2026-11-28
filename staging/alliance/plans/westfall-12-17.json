@@ -1,0 +1,879 @@
+{
+ "id": "westfall-12-17",
+ "title": "Westfall 12-17 (Alliance)",
+ "levels": [
+  12,
+  17
+ ],
+ "next": "redridge-17-20",
+ "races": [
+  "Human",
+  "Skyborne"
+ ],
+ "maps": [
+  1436,
+  1453,
+  1429
+ ],
+ "enterLevel": 12,
+ "after": {
+  "Human": [
+   "elwynn-1-12"
+  ],
+  "Skyborne": [
+   "zephras-isle-alliance"
+  ]
+ },
+ "segments": [
+  {
+   "file": "01-furlbrow-and-saldean.json",
+   "title": "Into Westfall: Furlbrow's farm and Saldean's Farm",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 98021",
+     "tip": "Skyborne: Bolvar sends you on to Westfall. Leave the city through the main gate and follow the road south-west through Elwynn."
+    },
+    {
+     "do": "fp 352",
+     "races": [
+      "Skyborne"
+     ],
+     "tip": "Grab the Stormwind flight path in Old Town before you leave; Westfall quests send you back here."
+    },
+    {
+     "do": "A 64",
+     "tip": "Farmer Furlbrow and his wife camp by the road just after the bridge from Elwynn."
+    },
+    "A 151; A 36",
+    {
+     "do": "A 109",
+     "races": [
+      "Skyborne"
+     ],
+     "tip": "Skyborne can take this bounty too; it ends at the same captain."
+    },
+    {
+     "do": "T 36; A 38",
+     "tip": "Saldean's Farm is further south along the road."
+    },
+    "A 22",
+    "A 9",
+    {
+     "do": "A 92909",
+     "tip": "New in Forever: Ozwin wants golem parts. Harvest golems drop them, so do it with The Killing Fields."
+    },
+    {
+     "do": "T 109",
+     "tip": "Sentinel Hill is the stone tower in the middle of Westfall."
+    },
+    "T 98021",
+    "A 12",
+    "A 102",
+    {
+     "do": "A 153",
+     "tip": "Red Leather Bandanas drop from every Defias in Westfall; they fill up while you do the other quests."
+    },
+    {
+     "do": "A 6181",
+     "tip": "Humans: Lewis's note chain flies you to Stormwind and back for good XP."
+    },
+    {
+     "do": "A 92742",
+     "tip": "New in Forever: Alba Fairmoon's chain ends in the Deadmines, but the first parts are open-world."
+    },
+    "A 92744",
+    "fp 523",
+    {
+     "do": "home 8931",
+     "tip": "Make Sentinel Hill your home; every loop in Westfall starts and ends here."
+    },
+    "T 6181; A 6281"
+   ]
+  },
+  {
+   "file": "02-northern-westfall.json",
+   "title": "Northern Westfall: Molsen Farm, Jangolode and the coast",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 22; C 38.1,3",
+     "tip": "Young Goretusks and Young Fleshrippers roam the fields around Saldean's Farm."
+    },
+    {
+     "do": "C 92742.2",
+     "tip": "The Molsen Farm well is in the farmyard west of Saldean's."
+    },
+    {
+     "do": "C 9; C 38.4",
+     "tip": "Harvest Watchers fill the fields around the Molsen Farm. Okra drops from any golem."
+    },
+    {
+     "do": "C 92909",
+     "tip": "The parts drop from Harvest Watchers and Golems while you clear the fields."
+    },
+    {
+     "do": "C 151",
+     "tip": "Oat sacks lie in every field here; click them between pulls."
+    },
+    {
+     "do": "A 92910",
+     "routes": "b",
+     "optional": true,
+     "tip": "If a golem drops a Precessive Autocognition Assembly, it starts a new quest for Ozwin."
+    },
+    {
+     "do": "C 12",
+     "tip": "Defias Trappers and Smugglers camp in the fields north of the Molsen Farm, toward the Jangolode Mine."
+    },
+    {
+     "do": "C 64",
+     "tip": "The wardrobe is inside the old Furlbrow farmhouse, guarded by Defias."
+    },
+    {
+     "do": "C 92742.1",
+     "tip": "The Jansen Stead well is just west of Farmer Furlbrow's camp."
+    },
+    "T 64",
+    "T 151",
+    {
+     "do": "C 92744; C 38.2",
+     "tip": "Murlocs line the north coast. Both gills and eyes drop from any of them."
+    },
+    {
+     "do": "A 136",
+     "routes": "b",
+     "optional": true,
+     "tip": "Coast murlocs sometimes drop Captain Sander's Treasure Map. If you get it, the treasure hunt fits into the west-coast loop."
+    },
+    {
+     "do": "C 102",
+     "tip": "Riverpaw Gnolls camp in the hills above the north coast.",
+     "at": [
+      49.0,
+      15.0
+     ],
+     "noPin": true
+    },
+    {
+     "do": "T 22",
+     "tip": "Head back south to Saldean's Farm."
+    },
+    "T 38",
+    "T 9",
+    {
+     "do": "T 92909"
+    },
+    {
+     "do": "T 92910; A 92911",
+     "routes": "b",
+     "optional": true
+    },
+    {
+     "do": "T 12; A 13",
+     "tip": "Back to Sentinel Hill."
+    },
+    "T 102",
+    "T 92742",
+    "T 92744",
+    "A 92745"
+   ]
+  },
+  {
+   "file": "03-gold-coast-and-jangolode.json",
+   "title": "Gold Coast Quarry and Jangolode Mine",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 92745.2",
+     "tip": "Riverpaw Miners work the Gold Coast Quarry on the west coast.",
+     "speed": "Speedrun: run straight to the quarry and the mine; skip the treasure hunt and Ozwin's second order."
+    },
+    {
+     "do": "T 136; A 138",
+     "optional": true,
+     "tip": "The captain's footlocker sits on the beach just west of the quarry.",
+     "routes": "b"
+    },
+    {
+     "do": "C 92911.2,3",
+     "optional": true,
+     "tip": "Murloc Hunters on the beach drop the scope and modulators.",
+     "routes": "b"
+    },
+    {
+     "do": "T 138; A 139",
+     "optional": true,
+     "tip": "The broken barrel is by the ruined chimney east of the quarry.",
+     "routes": "b"
+    },
+    {
+     "do": "C 92745.1",
+     "tip": "Kobold Diggers are inside Jangolode Mine in the north. Trappers outside also drop bandanas."
+    },
+    {
+     "do": "T 139; A 140",
+     "optional": true,
+     "tip": "The old jug stands by the windmill near the mine.",
+     "routes": "b"
+    },
+    {
+     "do": "T 140",
+     "optional": true,
+     "tip": "The locked chest is on the north-west shore.",
+     "routes": "b"
+    },
+    {
+     "do": "C 92911.1",
+     "optional": true,
+     "tip": "Finish the isosprings on Harvest Golems on the way back south.",
+     "routes": "b"
+    },
+    {
+     "do": "T 92911",
+     "optional": true,
+     "routes": "b"
+    },
+    {
+     "do": "T 92745; A 92747",
+     "tip": "Back to Alba at Sentinel Hill."
+    }
+   ]
+  },
+  {
+   "file": "04-dagger-hills-and-moonbrook.json",
+   "title": "The Dagger Hills and Moonbrook",
+   "routes": null,
+   "steps": [
+    {
+     "do": "C 13",
+     "tip": "Defias Pillagers and Looters hold the Dagger Hills and the road into Moonbrook. Pillagers cast; kill them first."
+    },
+    {
+     "do": "C 92747",
+     "tip": "The suspicious crates sit around the Moonbrook buildings."
+    },
+    {
+     "do": "C 153",
+     "tip": "Finish the bandanas on the Defias in and around Moonbrook."
+    },
+    {
+     "do": "A 103",
+     "tip": "Captain Grayson keeps the lighthouse on the south-west tip. His oil comes from the harvest golems you meet later; skip The Coast Isn't Clear for now, its murlocs are 16-19 and spread along the whole coast."
+    },
+    {
+     "do": "hs Sentinel Hill",
+     "tip": "Hearth back to Sentinel Hill.",
+     "speed": "If your hearth is down, die near Moonbrook and take the spirit healer at Sentinel Hill."
+    },
+    "T 13",
+    "T 153",
+    {
+     "do": "T 92747; A 92748"
+    }
+   ]
+  },
+  {
+   "file": "05-stormwind-trip.json",
+   "title": "Stormwind trip",
+   "routes": null,
+   "steps": [
+    {
+     "do": "fly 523 Stormwind",
+     "tip": "Thor flies you to Stormwind. Humans need this flight for Lewis's note anyway."
+    },
+    {
+     "do": "T 6281; A 6261",
+     "tip": "Osric Strang's shop is in Old Town."
+    },
+    {
+     "do": "T 6261; A 6285"
+    },
+    {
+     "do": "A 399",
+     "tip": "Baros Alexston in Cathedral Square wants his old compass from his Westfall farmhouse. You hand it in when you leave Westfall through Stormwind."
+    },
+    {
+     "do": "T 2206",
+     "tip": "Rogues: hand Shaw the shipping schedule from Jerod's Landing.",
+     "races": [
+      "Human"
+     ]
+    },
+    {
+     "do": "T 92748; A 92750",
+     "tip": "Sprite Jumpsprocket is in the Dwarven District."
+    },
+    {
+     "do": "T 92750; A 92751",
+     "tip": "Jasper Fel is in SI:7 in Old Town."
+    },
+    {
+     "do": "T 92751",
+     "tip": "Back to Sprite. The next step needs 10 Rough Dynamite from an engineer or the auction house; only bother if you plan to run the Deadmines."
+    },
+    {
+     "do": "A 92749",
+     "routes": "b",
+     "at": [
+      61.9,
+      30.6
+     ],
+     "map": 1453,
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "prep",
+     "tip": "If you plan to run the Deadmines: Sprite also wants 10 Rough Dynamite (engineers or the auction house)."
+    },
+    {
+     "do": "C 92749",
+     "routes": "b",
+     "at": [
+      61.9,
+      30.6
+     ],
+     "map": 1453,
+     "noPin": true,
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "prep"
+    },
+    {
+     "do": "T 92749",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "prep"
+    },
+    {
+     "do": "A 92752",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "prep"
+    },
+    {
+     "do": "T 2998; A 1642",
+     "routes": "b",
+     "at": [
+      50.5,
+      47.5
+     ],
+     "map": 1453,
+     "tip": "Paladins: Duthorian Rall is in the Cathedral of Light. The Tome of Divinity chain ends with Redemption.",
+     "text": "Turn in Tome of Divinity to Duthorian Rall, then start The Tome of Divinity from the book he hands you"
+    },
+    {
+     "do": "T 1642; A 1643",
+     "routes": "b"
+    },
+    {
+     "do": "T 1643; A 1644",
+     "routes": "b",
+     "tip": "Stephanie Turner is in the Trade District."
+    },
+    {
+     "do": "C 1644",
+     "routes": "b",
+     "at": [
+      63.8,
+      72.2
+     ],
+     "map": 1453,
+     "noPin": true,
+     "tip": "Bring 10 Linen Cloth; you should have plenty from the Defias."
+    },
+    {
+     "do": "T 1644; A 1780",
+     "routes": "b"
+    },
+    {
+     "do": "T 1780; A 1781",
+     "routes": "b"
+    },
+    {
+     "do": "T 1781; A 1786",
+     "routes": "b"
+    },
+    {
+     "do": "C 1786",
+     "routes": "b",
+     "tip": "Henze Faulk lies by the road near Stone Cairn Lake in eastern Elwynn; use the Symbol of Life on him."
+    },
+    {
+     "do": "T 1786; A 1787",
+     "routes": "b"
+    },
+    {
+     "do": "C 1787",
+     "routes": "b",
+     "tip": "The Defias Script drops from Rogue Wizards north of Stone Cairn Lake."
+    },
+    {
+     "do": "T 1787; A 1788",
+     "routes": "b",
+     "tip": "Back to Gazin Tenorm in the Cathedral."
+    },
+    {
+     "do": "T 1788",
+     "routes": "b"
+    },
+    {
+     "do": "A 168",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "pickup",
+     "tip": "Wilder Thistlenettle in the Dwarven District wants union cards from the Deadmines."
+    },
+    {
+     "do": "A 167",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "pickup"
+    },
+    {
+     "do": "A 2040",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "pickup",
+     "tip": "Shoni is in the Dwarven District next to the tram."
+    },
+    {
+     "do": "A 96403",
+     "routes": "b",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "pickup",
+     "tip": "Take the Deeprun Tram from the Dwarven District to Ironforge. Thom Filch wants heirlooms from the new Hall of Thanes.",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "goto",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "text": "Enter the Hall of Thanes from Old Ironforge, off the Throne Room",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "tipSources": [
+      {
+       "url": "https://news.blizzard.com/en-us/article/24301455",
+       "label": "Blizzard: Hall of Thanes announcement"
+      }
+     ],
+     "tip": "New in Forever. A full party at 15 is comfortable. Instance entries are capped per hour, so don't reset carelessly.",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "A 96395",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "The Ghostly Attendant inside the dungeon gives this one.",
+     "text": "Accept An Ancient Grudge from the Ghostly Attendant inside the Hall of Thanes",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "C 96403",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "noPin": true,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "Heirlooms are glowing objects along the halls; everyone in the party can loot them.",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "C 96395",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "noPin": true,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "A 98423",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "The Treaty of Understanding is in the last vault. It cannot be shared; each player loots their own.",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "T 96395",
+     "routes": "b",
+     "at": [
+      39.1,
+      56.2
+     ],
+     "map": 1455,
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "run",
+     "text": "Turn in An Ancient Grudge to the Ghostly Attendant",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "T 96403",
+     "routes": "b",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "turnin",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "T 98423",
+     "routes": "b",
+     "dungeon": {
+      "name": "Hall of Thanes",
+      "levels": [
+       13,
+       18
+      ]
+     },
+     "dungeonPart": "turnin",
+     "tip": "Magni is in the Throne Room. Take the tram back to Stormwind afterwards.",
+     "races": [
+      "Human",
+      "Skyborne"
+     ]
+    },
+    {
+     "do": "fly 352 Sentinel Hill",
+     "tip": "Fly back to Westfall."
+    },
+    {
+     "do": "T 6285",
+     "tip": "Quartermaster Lewis is at the top of Sentinel Hill."
+    }
+   ]
+  },
+  {
+   "file": "06-finishing-westfall.json",
+   "title": "Finishing Westfall",
+   "routes": null,
+   "steps": [
+    {
+     "do": "A 14",
+     "tip": "The last militia order is tougher: Highwaymen are 17-18. Pull one at a time."
+    },
+    {
+     "do": "C 103",
+     "tip": "Harvest Golems in the fields west of Sentinel Hill drop the Flasks of Oil.",
+     "at": [
+      45.0,
+      43.0
+     ],
+     "noPin": true
+    },
+    {
+     "do": "C 399",
+     "tip": "Alexston's chest is in the ruined farmhouse on the way to Moonbrook."
+    },
+    {
+     "do": "C 14",
+     "tip": "Highwaymen, Pathstalkers and Knuckledusters hold the roads and ridges around Moonbrook."
+    },
+    {
+     "do": "xp 17 122",
+     "text": "If you are still short of 17, keep killing Defias Highwaymen around Moonbrook",
+     "tip": "The route's XP count assumes no extra kills, so most players are already close. With dungeons on, the Deadmines run covers this instead.",
+     "speed": "Pull Highwaymen in pairs along the Moonbrook road; stop the moment you hit 17."
+    },
+    {
+     "do": "T 103",
+     "tip": "Down to the lighthouse with the oil."
+    },
+    {
+     "do": "T 14",
+     "tip": "Back to Gryan at Sentinel Hill.",
+     "speed": "Hearth or deathskip back to Sentinel Hill."
+    },
+    {
+     "do": "T 92752; A 92753",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "pickup",
+     "tip": "Alba gives you the explosives for the Deadmines forge."
+    },
+    {
+     "do": "C 168",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "The entrance is in the Moonbrook house on the hill. Union cards drop from the undead miners in the first tunnels."
+    },
+    {
+     "do": "C 167",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "run"
+    },
+    {
+     "do": "C 92753",
+     "routes": "b",
+     "at": [
+      42.0,
+      83.0
+     ],
+     "noPin": true,
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "Plant the explosives next to the goblin forge."
+    },
+    {
+     "do": "C 2040",
+     "routes": "b",
+     "at": [
+      42.0,
+      83.0
+     ],
+     "noPin": true,
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "run",
+     "tip": "Sneed's Shredder drops the Gnoam Sprecklesprocket."
+    },
+    {
+     "do": "T 92753; A 92819",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin",
+     "tip": "Alba waits outside the Deadmines exit on the coast."
+    },
+    {
+     "do": "C 92819",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin"
+    },
+    {
+     "do": "T 92819",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin"
+    },
+    {
+     "do": "fly 523 Stormwind",
+     "tip": "Fly to Stormwind; Redridge starts from there."
+    },
+    "T 399",
+    {
+     "do": "T 168",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin"
+    },
+    {
+     "do": "T 167",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin"
+    },
+    {
+     "do": "T 2040",
+     "routes": "b",
+     "dungeon": {
+      "name": "The Deadmines",
+      "levels": [
+       17,
+       24
+      ]
+     },
+     "dungeonPart": "turnin"
+    }
+   ]
+  }
+ ],
+ "carry": [
+  93963
+ ]
+}

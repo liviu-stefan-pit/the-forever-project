@@ -1,0 +1,878 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Stonesplinter Valley and Grawmug",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:turnin-94466",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: turn in the Fire Tar and Reagent Pouch to Braldir Ashmantle and accept the next Call of Fire"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.2,
+      "y": 66.0,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94466,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "accept",
+     "questId": 94467,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94466",
+     "label": "Wowhead Forever quest 94466"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94467",
+     "label": "Wowhead Forever quest 94467"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:complete-94467",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Call of Fire: Glowing Ember"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.0,
+      "y": 64.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 94467,
+     "objective": 1,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94467",
+     "label": "Wowhead Forever quest 94467"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The Minor Manifestation of Fire waits at the shrine on the hill above Braldir.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=94467",
+       "label": "Wowhead Forever quest 94467"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      5893,
+      268763
+     ],
+     "name": "Minor Manifestation of Fire",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 32.0,
+      "y": 64.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=5893",
+       "label": "Wowhead NPC 5893"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-94467",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Shamans: place the Glowing Ember in the brazier and accept the last part, which ends at Bruegs Kindleborn by the Dun Morogh South Gate"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 31.8,
+      "y": 64.5,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94467,
+     "label": "Call of Fire"
+    },
+    {
+     "type": "accept",
+     "questId": 94468,
+     "label": "Call of Fire"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "classes": [
+    "Shaman"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Dwarf"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94467",
+     "label": "Wowhead Forever quest 94467"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=94468",
+     "label": "Wowhead Forever quest 94468"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:complete-263",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete In Defense of the King's Lands: 10 Stonesplinter Shaman, 10 Stonesplinter Bonesnapper"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 35.9,
+      "y": 91.8,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 263,
+     "objective": 1,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "complete",
+     "questId": 263,
+     "objective": 2,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=263",
+     "label": "Wowhead Classic quest 263"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stonesplinter Shamans are deep in the valley; Bonesnappers stand on the northern slopes toward the loch.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=263",
+       "label": "Wowhead Classic quest 263"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1197,
+      1164
+     ],
+     "name": "Stonesplinter Shaman",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 35.9,
+      "y": 91.8
+     },
+     "radius": 5.8,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1197",
+       "label": "Wowhead NPC 1197"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-263",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Defense of the King's Lands to Mountaineer Wallbang"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.5,
+      "y": 74.5,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 263,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=263",
+     "label": "Wowhead Classic quest 263"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-217",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept In Defense of the King's Lands from Captain Rugelfuss"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.2,
+      "y": 73.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 217,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=217",
+     "label": "Wowhead Classic quest 217"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-86585",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Banner of the Fallen from Mountaineer Ylva"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 31.8,
+      "y": 86.3,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86585,
+     "label": "Banner of the Fallen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=86585",
+     "label": "Wowhead Forever quest 86585"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. Mountaineer Ylva is at the south end of the valley, near Grawmug's camp.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=86585",
+       "label": "Wowhead Forever quest 86585"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-86585",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Banner of the Fallen: Headsplitter"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 32.2,
+      "y": 85.0,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 86585,
+     "objective": 1,
+     "label": "Banner of the Fallen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=86585",
+     "label": "Wowhead Forever quest 86585"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Raise the banner and Headsplitter comes to you. Clear nearby troggs first.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=86585",
+       "label": "Wowhead Forever quest 86585"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      269185
+     ],
+     "name": "Headsplitter",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 32.2,
+      "y": 85.0
+     },
+     "radius": 4.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=269185",
+       "label": "Wowhead NPC 269185"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-217",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete In Defense of the King's Lands: Grawmug, Gnasher, Brawler"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 34.7,
+      "y": 90.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 217,
+     "objective": 1,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "complete",
+     "questId": 217,
+     "objective": 2,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "complete",
+     "questId": 217,
+     "objective": 3,
+     "label": "In Defense of the King's Lands"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=217",
+     "label": "Wowhead Classic quest 217"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Grawmug and his two guards are together at the back of the valley. Pull a guard first if you can, or bring a friend.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=217",
+       "label": "Wowhead Classic quest 217"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1205,
+      1206,
+      1207
+     ],
+     "name": "Grawmug",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 34.7,
+      "y": 90.6
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1205",
+       "label": "Wowhead NPC 1205"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-217",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in In Defense of the King's Lands and Banner of the Fallen to Captain Rugelfuss at the southern guard tower"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 23.2,
+      "y": 73.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 217,
+     "label": "In Defense of the King's Lands"
+    },
+    {
+     "type": "turnin",
+     "questId": 86585,
+     "label": "Banner of the Fallen"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=217",
+     "label": "Wowhead Classic quest 217"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=86585",
+     "label": "Wowhead Forever quest 86585"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "speed",
+     "text": "The Thelsamar spirit healer is close to the dam road. If you are low after Grawmug, a death walks you most of the way north.",
+     "routes": [
+      "speedrun"
+     ],
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=217",
+       "label": "Wowhead Classic quest 217"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/forever/quest=86585",
+       "label": "Wowhead Forever quest 86585"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:grind-16",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "If you are not level 16 yet, kill Stonesplinter Bonesnappers on the valley's north slopes until you are"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 35.6,
+      "y": 91.8,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "xp",
+     "level": 16,
+     "label": "If you are not level 16 yet, kill Stonesplinter Bonesnappers on the valley's north slopes until you are",
+     "mobId": 1164,
+     "mobName": "Stonesplinter Bonesnapper",
+     "mobLevel": 16
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1164",
+     "label": "Wowhead NPC 1164"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The dam quests need level 16.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1164",
+       "label": "Wowhead NPC 1164"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1164
+     ],
+     "name": "Stonesplinter Bonesnapper",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 35.6,
+      "y": 91.8
+     },
+     "radius": 5.3,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1164",
+       "label": "Wowhead NPC 1164"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  }
+ ]
+}

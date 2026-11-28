@@ -1,0 +1,721 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "lochmodan-12-17",
+ "title": "Ironband's Excavation",
+ "steps": [
+  {
+   "id": "lochmodan-12-17:turnin-6392",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Return to Brock to Brock Stoneseeker in Thelsamar"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 37.0,
+      "y": 47.8,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6392,
+     "label": "Return to Brock"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6392",
+     "label": "Wowhead Classic quest 6392"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-302",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Powder to Ironband to Jern Hornhelm and accept Resupplying the Excavation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 37.2,
+      "y": 47.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 302,
+     "label": "Powder to Ironband"
+    },
+    {
+     "type": "accept",
+     "questId": 273,
+     "label": "Resupplying the Excavation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=302",
+     "label": "Wowhead Classic quest 302"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=273",
+     "label": "Wowhead Classic quest 273"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-436",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Ironband's Excavation from Jern Hornhelm"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 37.2,
+      "y": 47.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 436,
+     "label": "Ironband's Excavation"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=436",
+     "label": "Wowhead Classic quest 436"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:complete-273",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Find Huldar at the ambushed cart on the road to the excavation, turn in Resupplying the Excavation and accept After the Ambush"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 52.2,
+      "y": 69.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 273,
+     "objective": 1,
+     "label": "Resupplying the Excavation"
+    },
+    {
+     "type": "turnin",
+     "questId": 273,
+     "label": "Resupplying the Excavation"
+    },
+    {
+     "type": "accept",
+     "questId": 454,
+     "label": "After the Ambush"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=273",
+     "label": "Wowhead Classic quest 273"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=454",
+     "label": "Wowhead Classic quest 454"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1379,
+      2057
+     ],
+     "name": "Miran",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 52.2,
+      "y": 69.4
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1379",
+       "label": "Wowhead NPC 1379"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-454",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Talk to Miran next to Huldar and accept Protecting the Shipment"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 52.2,
+      "y": 69.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 454,
+     "label": "After the Ambush"
+    },
+    {
+     "type": "accept",
+     "questId": 309,
+     "label": "Protecting the Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=454",
+     "label": "Wowhead Classic quest 454"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=309",
+     "label": "Wowhead Classic quest 309"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Troggs ambush the cart once you start. Keep Miran alive; the Dark Iron dwarves do not hit hard.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=454",
+       "label": "Wowhead Classic quest 454"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=309",
+       "label": "Wowhead Classic quest 309"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:turnin-309",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Protecting the Shipment to Prospector Ironband at the excavation"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 65.9,
+      "y": 65.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 309,
+     "label": "Protecting the Shipment"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=309",
+     "label": "Wowhead Classic quest 309"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-436",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Ironband's Excavation to Magmar Fellhew and accept Gathering Idols"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 64.9,
+      "y": 66.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 436,
+     "label": "Ironband's Excavation"
+    },
+    {
+     "type": "accept",
+     "questId": 297,
+     "label": "Gathering Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=436",
+     "label": "Wowhead Classic quest 436"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=297",
+     "label": "Wowhead Classic quest 297"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:accept-86613",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Loot Excavation Tools and accept Excavation Tools"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 69.2,
+      "y": 65.2,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 86613,
+     "label": "Excavation Tools"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=86613",
+     "label": "Wowhead Forever quest 86613"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. Loot any Excavation Tools pile in the dig site to start this.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=86613",
+       "label": "Wowhead Forever quest 86613"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-297",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Gathering Idols: 8 Carved Stone Idol"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 70.2,
+      "y": 64.4,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 297,
+     "objective": 1,
+     "label": "Gathering Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=297",
+     "label": "Wowhead Classic quest 297"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "The idol troggs in the dig site are level 17-19. Pull one at a time and leave if it gets crowded.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=297",
+       "label": "Wowhead Classic quest 297"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      1165,
+      1167,
+      1393
+     ],
+     "name": "Stonesplinter Geomancer",
+     "mapId": 1432,
+     "zone": "Loch Modan",
+     "center": {
+      "x": 70.2,
+      "y": 64.4
+     },
+     "radius": 5.9,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1165",
+       "label": "Wowhead NPC 1165"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lochmodan-12-17:complete-86613",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Excavation Tools: 6 Excavation Tools"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 69.1,
+      "y": 64.8,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 86613,
+     "objective": 1,
+     "label": "Excavation Tools"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=86613",
+     "label": "Wowhead Forever quest 86613"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "lochmodan-12-17:turnin-297",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gathering Idols to Magmar Fellhew"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 64.9,
+      "y": 66.7,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 297,
+     "label": "Gathering Idols"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=297",
+     "label": "Wowhead Classic quest 297"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "lochmodan-12-17:turnin-86613",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Excavation Tools to Prospector Ironband"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1432,
+      "x": 65.9,
+      "y": 65.6,
+      "zone": "Loch Modan",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86613,
+     "label": "Excavation Tools"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=86613",
+     "label": "Wowhead Forever quest 86613"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

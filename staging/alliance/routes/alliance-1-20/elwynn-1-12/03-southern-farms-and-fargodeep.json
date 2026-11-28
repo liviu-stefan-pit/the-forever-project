@@ -1,0 +1,1548 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "elwynn-1-12",
+ "title": "Stonefield, Maclure and Fargodeep Mine",
+ "steps": [
+  {
+   "id": "elwynn-1-12:accept-85",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Lost Necklace from \"Auntie\" Bernice Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.5,
+      "y": 84.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 85,
+     "label": "Lost Necklace"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=85",
+     "label": "Wowhead Classic quest 85"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Head south-west down the road to the Stonefield Farm.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=85",
+       "label": "Wowhead Classic quest 85"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:accept-88",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Princess Must Die! from Ma Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.7,
+      "y": 84.5,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 88,
+     "label": "Princess Must Die!"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=88",
+     "label": "Wowhead Classic quest 88"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-85",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Lost Necklace to Billy Maclure; Accept Pie for Billy from Billy Maclure"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.1,
+      "y": 85.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 85,
+     "label": "Lost Necklace"
+    },
+    {
+     "type": "accept",
+     "questId": 86,
+     "label": "Pie for Billy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=85",
+     "label": "Wowhead Classic quest 85"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=86",
+     "label": "Wowhead Classic quest 86"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:accept-106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Young Lovers from Maybell Maclure"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.1,
+      "y": 89.6,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 106,
+     "label": "Young Lovers"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=106",
+     "label": "Wowhead Classic quest 106"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-86",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Pie for Billy: 4 Chunk of Boar Meat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 38.0,
+      "y": 83.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 86,
+     "objective": 1,
+     "label": "Pie for Billy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=86",
+     "label": "Wowhead Classic quest 86"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Stonetusk Boars roam the fields between the two farms.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=86",
+       "label": "Wowhead Classic quest 86"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-99130",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete An Enticing Offer: 6 Vial of Animal Blood, 18 Duskweed Petal"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 37.8,
+      "y": 87.4,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 99130,
+     "objective": 1,
+     "label": "An Enticing Offer"
+    },
+    {
+     "type": "complete",
+     "questId": 99130,
+     "objective": 2,
+     "label": "An Enticing Offer"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99130",
+     "label": "Wowhead Forever quest 99130"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Duskweed grows in the fields around the farms; boars also drop the Animal Blood. 18 petals take a while, so do it while you kill boars.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=99130",
+       "label": "Wowhead Forever quest 99130"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      113,
+      822
+     ],
+     "name": "Stonetusk Boar",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 37.8,
+      "y": 87.4
+     },
+     "radius": 7.7,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=113",
+       "label": "Wowhead NPC 113"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-86",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Pie for Billy to \"Auntie\" Bernice Stonefield; Accept Back to Billy from \"Auntie\" Bernice Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.5,
+      "y": 84.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 86,
+     "label": "Pie for Billy"
+    },
+    {
+     "type": "accept",
+     "questId": 84,
+     "label": "Back to Billy"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=86",
+     "label": "Wowhead Classic quest 86"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=84",
+     "label": "Wowhead Classic quest 84"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-106",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Young Lovers to Tommy Joe Stonefield; Accept Speak with Gramma from Tommy Joe Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 29.8,
+      "y": 86.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 106,
+     "label": "Young Lovers"
+    },
+    {
+     "type": "accept",
+     "questId": 111,
+     "label": "Speak with Gramma"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=106",
+     "label": "Wowhead Classic quest 106"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=111",
+     "label": "Wowhead Classic quest 111"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-111",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Speak with Gramma to Gramma Stonefield; Accept Note to William from Gramma Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.9,
+      "y": 83.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 111,
+     "label": "Speak with Gramma"
+    },
+    {
+     "type": "accept",
+     "questId": 107,
+     "label": "Note to William"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=111",
+     "label": "Wowhead Classic quest 111"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=107",
+     "label": "Wowhead Classic quest 107"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-84",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Back to Billy to Billy Maclure; Accept Goldtooth from Billy Maclure"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.1,
+      "y": 85.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 84,
+     "label": "Back to Billy"
+    },
+    {
+     "type": "accept",
+     "questId": 87,
+     "label": "Goldtooth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=84",
+     "label": "Wowhead Classic quest 84"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=87",
+     "label": "Wowhead Classic quest 87"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:complete-47",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Gold Dust Exchange: 10 Gold Dust; Complete Kobold Candles: 8 Large Candle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 39.8,
+      "y": 80.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 47,
+     "objective": 1,
+     "label": "Gold Dust Exchange"
+    },
+    {
+     "type": "complete",
+     "questId": 60,
+     "objective": 1,
+     "label": "Kobold Candles"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=47",
+     "label": "Wowhead Classic quest 47"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=60",
+     "label": "Wowhead Classic quest 60"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Fargodeep Mine is just north of the Maclure vineyard. Entering it also completes The Fargodeep Mine. Kobolds drop both Gold Dust and Candles.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=47",
+       "label": "Wowhead Classic quest 47"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=60",
+       "label": "Wowhead Classic quest 60"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      40,
+      327,
+      475,
+      476,
+      248464,
+      248474
+     ],
+     "name": "Kobold Miner",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 39.8,
+      "y": 80.9
+     },
+     "radius": 6.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=40",
+       "label": "Wowhead NPC 40"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    },
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      40,
+      327,
+      475,
+      476,
+      248464,
+      248474
+     ],
+     "name": "Kobold Miner",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 39.8,
+      "y": 80.9
+     },
+     "radius": 6.5,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=40",
+       "label": "Wowhead NPC 40"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-91775",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Book Return: Picture Book: Fun with Elementals, 6 Lost Book"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 39.7,
+      "y": 80.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 91775,
+     "objective": 1,
+     "label": "Book Return"
+    },
+    {
+     "type": "complete",
+     "questId": 91775,
+     "objective": 2,
+     "label": "Book Return"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=91775",
+     "label": "Wowhead Forever quest 91775"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Nimsy is a named kobold near the mine; the Lost Books drop from the kobolds inside.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=91775",
+       "label": "Wowhead Forever quest 91775"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      248464,
+      40,
+      475
+     ],
+     "name": "Nimsy",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 39.7,
+      "y": 80.9
+     },
+     "radius": 6.4,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=248464",
+       "label": "Wowhead NPC 248464"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:complete-87",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Complete Goldtooth: Bernice's Necklace"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 41.7,
+      "y": 78.0,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "complete",
+     "questId": 87,
+     "objective": 1,
+     "label": "Goldtooth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=87",
+     "label": "Wowhead Classic quest 87"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Goldtooth sits in the lower part of the mine. Clear your way down; he is a level 8 kobold.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=87",
+       "label": "Wowhead Classic quest 87"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "mobArea",
+     "npcIds": [
+      327
+     ],
+     "name": "Goldtooth",
+     "mapId": 1429,
+     "zone": "Elwynn Forest",
+     "center": {
+      "x": 41.7,
+      "y": 78.0
+     },
+     "radius": 2.0,
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=327",
+       "label": "Wowhead NPC 327"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-87",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Goldtooth to \"Auntie\" Bernice Stonefield"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 34.5,
+      "y": 84.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 87,
+     "label": "Goldtooth"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=87",
+     "label": "Wowhead Classic quest 87"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-62",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Fargodeep Mine to Marshal Dughan; Accept The Jasperlode Mine from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 62,
+     "label": "The Fargodeep Mine"
+    },
+    {
+     "type": "accept",
+     "questId": 76,
+     "label": "The Jasperlode Mine"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=62",
+     "label": "Wowhead Classic quest 62"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=76",
+     "label": "Wowhead Classic quest 76"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Back to Goldshire.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=62",
+       "label": "Wowhead Classic quest 62"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=76",
+       "label": "Wowhead Classic quest 76"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "elwynn-1-12:turnin-47",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Gold Dust Exchange to Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 47,
+     "label": "Gold Dust Exchange"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=47",
+     "label": "Wowhead Classic quest 47"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-60",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Kobold Candles to William Pestle; Accept Shipment to Stormwind from William Pestle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 60,
+     "label": "Kobold Candles"
+    },
+    {
+     "type": "accept",
+     "questId": 61,
+     "label": "Shipment to Stormwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=60",
+     "label": "Wowhead Classic quest 60"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=61",
+     "label": "Wowhead Classic quest 61"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-91775",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Book Return to Marshal Dughan; Accept Rare Books from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91775,
+     "label": "Book Return"
+    },
+    {
+     "type": "accept",
+     "questId": 91777,
+     "label": "Rare Books"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=91775",
+     "label": "Wowhead Forever quest 91775"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=91777",
+     "label": "Wowhead Forever quest 91777"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-91775-2",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Book Return to Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 91775,
+     "label": "Book Return"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=91775",
+     "label": "Wowhead Forever quest 91775"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:turnin-107",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Note to William to William Pestle; Accept Collecting Kelp from William Pestle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 43.3,
+      "y": 65.7,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 107,
+     "label": "Note to William"
+    },
+    {
+     "type": "accept",
+     "questId": 112,
+     "label": "Collecting Kelp"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=107",
+     "label": "Wowhead Classic quest 107"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=112",
+     "label": "Wowhead Classic quest 112"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-99130",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in An Enticing Offer to Remy \"Two Times\"; Accept Baited for Success from Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99130,
+     "label": "An Enticing Offer"
+    },
+    {
+     "type": "accept",
+     "questId": 99131,
+     "label": "Baited for Success"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99130",
+     "label": "Wowhead Forever quest 99130"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/forever/quest=99131",
+     "label": "Wowhead Forever quest 99131"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "elwynn-1-12:accept-40",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Fishy Peril from Remy \"Two Times\""
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 67.3,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 40,
+     "label": "A Fishy Peril"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=40",
+     "label": "Wowhead Classic quest 40"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-40",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Fishy Peril to Marshal Dughan; Accept Further Concerns from Marshal Dughan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 42.1,
+      "y": 65.9,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 40,
+     "label": "A Fishy Peril"
+    },
+    {
+     "type": "accept",
+     "questId": 35,
+     "label": "Further Concerns"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=40",
+     "label": "Wowhead Classic quest 40"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=35",
+     "label": "Wowhead Classic quest 35"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:trainer-4",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Train level 8 spells"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "trainer",
+     "label": "Train level 8 spells"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "elwynn-1-12:turnin-99131",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Baited for Success to Jason Mathers"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1429,
+      "x": 47.5,
+      "y": 62.2,
+      "zone": "Elwynn Forest",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 99131,
+     "label": "Baited for Success"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=99131",
+     "label": "Wowhead Forever quest 99131"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  }
+ ]
+}

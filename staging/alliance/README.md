@@ -130,7 +130,7 @@ Suffix `@b` = balanced only, `@s` = speedrun only (e.g. `"A 5261 @b"`). Object o
 |---|---|---|
 | Human | `elwynn-1-12` → `westfall-12-17` → `redridge-17-20` | Hall of Thanes (dungeons on) via the Deeprun Tram from Westfall |
 | Dwarf, Gnome | `dunmorogh-1-12` → `lochmodan-12-17` → `redridge-17-20` | Hall of Thanes under Ironforge |
-| Night Elf | `teldrassil-1-12` → `darkshore-12-20` | Forever Stormwind ↔ Auberdine boat noted as an alternative |
+| Night Elf | `teldrassil-1-12` → `darkshore-12-17` → `redridge-17-20` | Forever Auberdine → Stormwind boat; Ashenvale named as the Kalimdor alternative |
 | Skyborne (High Order) | `zephras-isle-alliance` (1-13) → `westfall-12-17` → `redridge-17-20` | exits via the Valanaar Skycutter to Dalaran, then Stormwind |
 
 ## Going live (later, not done)
@@ -138,4 +138,24 @@ Suffix `@b` = balanced only, `@s` = speedrun only (e.g. `"A 5261 @b"`). Object o
 The site build reads `content/questie-db` (Horde) for quest names, XP, pins and the prereq/turn-in checks. Before
 the packs can move to `research/routes/`, that build (and `web/scripts/xp-sim.ts`) needs to read
 `content/questie-db-alliance` as well. The UI also needs Alliance races and starts. Until then the packs are
-validated with the real site build in a scratch worktree, with the Alliance data swapped in (see `research/VALIDATION.md`).
+validated with the real site build in a scratch worktree, with the Alliance data swapped in:
+`bash staging/alliance/tools/validate.sh`.
+
+## Status (last validation)
+
+All 8 packs pass the site data build (schema, prerequisite, duplicate turn-in and breadcrumb checks). The site's
+XP sim (worst case: no rested XP, no food, dungeons off) gives these exit levels:
+
+| Pack | Balanced | Speedrun |
+|---|---|---|
+| elwynn-1-12 | 12.44 | 12.00 |
+| dunmorogh-1-12 | 12.80 | 12.00 |
+| teldrassil-1-12 | 12.96 | 12.56 |
+| zephras-isle-alliance | 14.32 | 13.04 |
+| westfall-12-17 | 17.21 | 17.21 |
+| lochmodan-12-17 | 17.27 | 17.15 |
+| darkshore-12-17 | 17.48 | 17.50 |
+| redridge-17-20 | 20.12 | 20.00 |
+
+Nothing has been playtested. Forever-new quests are `verified: false`. See the authors' data doubts in
+`research/data-doubts.md`.

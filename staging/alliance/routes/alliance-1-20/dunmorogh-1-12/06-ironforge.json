@@ -1,0 +1,424 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "dunmorogh-1-12",
+ "title": "Ironforge (class quests)",
+ "steps": [
+  {
+   "id": "dunmorogh-1-12:fp-1573",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the Ironforge flight path from Gryth Thurden"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 55.5,
+      "y": 47.7,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the Ironforge flight path from Gryth Thurden"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=1573",
+     "label": "Wowhead NPC 1573"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 1573,
+     "name": "Gryth Thurden",
+     "at": {
+      "mapId": 1455,
+      "zone": "Ironforge",
+      "x": 55.5,
+      "y": 47.7
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=1573",
+       "label": "Wowhead NPC 1573"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-291",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in The Reports to Senator Barin Redstone in the High Seat"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 39.5,
+      "y": 57.5,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 291,
+     "label": "The Reports"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=291",
+     "label": "Wowhead Classic quest 291"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-1679",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Warriors: turn in Muren Stormpike in the Military Ward and accept Vejrek"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 70.8,
+      "y": 90.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1679,
+     "label": "Muren Stormpike"
+    },
+    {
+     "type": "accept",
+     "questId": 1678,
+     "label": "Vejrek"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Warrior"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1679",
+     "label": "Wowhead Classic quest 1679"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1678",
+     "label": "Wowhead Classic quest 1678"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-1879",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Mages: turn in Speak with Bink in the Mystic Ward and accept Mage-tastic Gizmonitor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 27.2,
+      "y": 8.3,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 1879,
+     "label": "Speak with Bink"
+    },
+    {
+     "type": "accept",
+     "questId": 1880,
+     "label": "Mage-tastic Gizmonitor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Mage"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=1879",
+     "label": "Wowhead Classic quest 1879"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=1880",
+     "label": "Wowhead Classic quest 1880"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-2218",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Rogues: turn in Road to Salvation to Hulfdan Blackbeard and accept Simple Subterfugin'"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 52.0,
+      "y": 14.8,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 2218,
+     "label": "Road to Salvation"
+    },
+    {
+     "type": "accept",
+     "questId": 2238,
+     "label": "Simple Subterfugin'"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Rogue"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=2218",
+     "label": "Wowhead Classic quest 2218"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=2238",
+     "label": "Wowhead Classic quest 2238"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "dunmorogh-1-12:turnin-94824",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Priests: turn in Confounding Flash to High Priestess Mims in the Mystic Ward"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 24.6,
+      "y": 10.0,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 94824,
+     "label": "Confounding Flash"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "classes": [
+    "Priest"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Gnome"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=94824",
+     "label": "Wowhead Forever quest 94824"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "dunmorogh-1-12:accept-95041",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Data Hoarders from Jemma Quikswitch"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1455,
+      "x": 67.7,
+      "y": 44.2,
+      "zone": "Ironforge",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 95041,
+     "label": "Data Hoarders"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=95041",
+     "label": "Wowhead Forever quest 95041"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever. The data cards are in snowdrifts outside Gnomeregan, which you are heading back to.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=95041",
+       "label": "Wowhead Forever quest 95041"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  }
+ ]
+}

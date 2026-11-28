@@ -1,0 +1,1281 @@
+{
+ "schema": "project-forever/route-segment",
+ "pack": "westfall-12-17",
+ "title": "Into Westfall: Furlbrow's farm and Saldean's Farm",
+ "steps": [
+  {
+   "id": "westfall-12-17:accept-98021",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Journey to Sentinel Hill from Highlord Bolvar Fordragon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 80.2,
+      "y": 38.4,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 98021,
+     "label": "Journey to Sentinel Hill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98021",
+     "label": "Wowhead Forever quest 98021"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Skyborne: Bolvar sends you on to Westfall. Leave the city through the main gate and follow the road south-west through Elwynn.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=98021",
+       "label": "Wowhead Forever quest 98021"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:fp-352",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Dungar Longdrink"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1453,
+      "x": 71.3,
+      "y": 72.2,
+      "zone": "Stormwind City",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Dungar Longdrink"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=352",
+     "label": "Wowhead NPC 352"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Grab the Stormwind flight path in Old Town before you leave; Westfall quests send you back here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 352,
+     "name": "Dungar Longdrink",
+     "at": {
+      "mapId": 1453,
+      "zone": "Stormwind City",
+      "x": 71.3,
+      "y": 72.2
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=352",
+       "label": "Wowhead NPC 352"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-64",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Forgotten Heirloom from Farmer Furlbrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 60.0,
+      "y": 19.4,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 64,
+     "label": "The Forgotten Heirloom"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=64",
+     "label": "Wowhead Classic quest 64"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Farmer Furlbrow and his wife camp by the road just after the bridge from Elwynn.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=64",
+       "label": "Wowhead Classic quest 64"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-151",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Poor Old Blanchy from Verna Furlbrow; Accept Westfall Stew from Verna Furlbrow"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 59.9,
+      "y": 19.4,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 151,
+     "label": "Poor Old Blanchy"
+    },
+    {
+     "type": "accept",
+     "questId": 36,
+     "label": "Westfall Stew"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=151",
+     "label": "Wowhead Classic quest 151"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=36",
+     "label": "Wowhead Classic quest 36"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-109",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Report to Gryan Stoutmantle from Farmer Saldean"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.0,
+      "y": 31.2,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 109,
+     "label": "Report to Gryan Stoutmantle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=109",
+     "label": "Wowhead Classic quest 109"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Skyborne can take this bounty too; it ends at the same captain.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=109",
+       "label": "Wowhead Classic quest 109"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-36",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Westfall Stew to Salma Saldean; Accept Westfall Stew from Salma Saldean"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.4,
+      "y": 30.5,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 36,
+     "label": "Westfall Stew"
+    },
+    {
+     "type": "accept",
+     "questId": 38,
+     "label": "Westfall Stew"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=36",
+     "label": "Wowhead Classic quest 36"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=38",
+     "label": "Wowhead Classic quest 38"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Saldean's Farm is further south along the road.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=36",
+       "label": "Wowhead Classic quest 36"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      },
+      {
+       "url": "https://www.wowhead.com/classic/quest=38",
+       "label": "Wowhead Classic quest 38"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-22",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Goretusk Liver Pie from Salma Saldean"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.4,
+      "y": 30.5,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 22,
+     "label": "Goretusk Liver Pie"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=22",
+     "label": "Wowhead Classic quest 22"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-9",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The Killing Fields from Farmer Saldean"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.0,
+      "y": 31.2,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 9,
+     "label": "The Killing Fields"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=9",
+     "label": "Wowhead Classic quest 9"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-92909",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Harvesting the Harvesters from Ozwin Ironsprocket"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 51.5,
+      "y": 32.3,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92909,
+     "label": "Harvesting the Harvesters"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92909",
+     "label": "Wowhead Forever quest 92909"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever: Ozwin wants golem parts. Harvest golems drop them, so do it with The Killing Fields.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92909",
+       "label": "Wowhead Forever quest 92909"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-109",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Report to Gryan Stoutmantle to Gryan Stoutmantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.3,
+      "y": 47.5,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 109,
+     "label": "Report to Gryan Stoutmantle"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=109",
+     "label": "Wowhead Classic quest 109"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Sentinel Hill is the stone tower in the middle of Westfall.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=109",
+       "label": "Wowhead Classic quest 109"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-98021",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in Journey to Sentinel Hill to Gryan Stoutmantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.3,
+      "y": 47.5,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 98021,
+     "label": "Journey to Sentinel Hill"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Skyborne"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=98021",
+     "label": "Wowhead Forever quest 98021"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:accept-12",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept The People's Militia from Gryan Stoutmantle"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.3,
+      "y": 47.5,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 12,
+     "label": "The People's Militia"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=12",
+     "label": "Wowhead Classic quest 12"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-102",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Patrolling Westfall from Captain Danuvin"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.4,
+      "y": 47.6,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 102,
+     "label": "Patrolling Westfall"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=102",
+     "label": "Wowhead Classic quest 102"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true
+  },
+  {
+   "id": "westfall-12-17:accept-153",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Red Leather Bandanas from Scout Galiaan"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 54.0,
+      "y": 53.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 153,
+     "label": "Red Leather Bandanas"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=153",
+     "label": "Wowhead Classic quest 153"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Red Leather Bandanas drop from every Defias in Westfall; they fill up while you do the other quests.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=153",
+       "label": "Wowhead Classic quest 153"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-6181",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept A Swift Message from Quartermaster Lewis"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 57.0,
+      "y": 47.2,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 6181,
+     "label": "A Swift Message"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6181",
+     "label": "Wowhead Classic quest 6181"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Humans: Lewis's note chain flies you to Stormwind and back for good XP.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/quest=6181",
+       "label": "Wowhead Classic quest 6181"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-92742",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Testing the Wells from Alba Fairmoon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 52.5,
+      "y": 53.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92742,
+     "label": "Testing the Wells"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92742",
+     "label": "Wowhead Forever quest 92742"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "New in Forever: Alba Fairmoon's chain ends in the Deadmines, but the first parts are open-world.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/forever/quest=92742",
+       "label": "Wowhead Forever quest 92742"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+       "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+      }
+     ],
+     "verified": false
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:accept-92744",
+   "tags": {
+    "label": "New in Forever"
+   },
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Accept Murloc Gills from Alba Fairmoon"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 52.5,
+      "y": 53.0,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "accept",
+     "questId": 92744,
+     "label": "Murloc Gills"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/forever/quest=92744",
+     "label": "Wowhead Forever quest 92744"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    }
+   ],
+   "verified": false
+  },
+  {
+   "id": "westfall-12-17:fp-523",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Get the flight path from Thor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.5,
+      "y": 52.6,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "fp",
+     "label": "Get the flight path from Thor"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=523",
+     "label": "Wowhead NPC 523"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 523,
+     "name": "Thor",
+     "at": {
+      "mapId": 1436,
+      "zone": "Westfall",
+      "x": 56.5,
+      "y": 52.6
+     },
+     "service": "flightPath",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=523",
+       "label": "Wowhead NPC 523"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:home-8931",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Set your hearthstone at Innkeeper Heather"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 52.9,
+      "y": 53.7,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "home",
+     "label": "Set your hearthstone at Innkeeper Heather"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/npc=8931",
+     "label": "Wowhead NPC 8931"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+     "label": "QuestieDB Forever NPC data (GPL-3.0)"
+    }
+   ],
+   "verified": true,
+   "tips": [
+    {
+     "kind": "general",
+     "text": "Make Sentinel Hill your home; every loop in Westfall starts and ends here.",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8931",
+       "label": "Wowhead NPC 8931"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": false
+    }
+   ],
+   "pins": [
+    {
+     "kind": "npc",
+     "npcId": 8931,
+     "name": "Innkeeper Heather",
+     "at": {
+      "mapId": 1436,
+      "zone": "Westfall",
+      "x": 52.9,
+      "y": 53.7
+     },
+     "service": "innkeeper",
+     "sources": [
+      {
+       "url": "https://www.wowhead.com/classic/npc=8931",
+       "label": "Wowhead NPC 8931"
+      },
+      {
+       "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverNpcDB.lua",
+       "label": "QuestieDB Forever NPC data (GPL-3.0)"
+      }
+     ],
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "westfall-12-17:turnin-6181",
+   "tags": {},
+   "text": [
+    {
+     "segments": [
+      {
+       "t": "Turn in A Swift Message to Thor; Accept Continue to Stormwind from Thor"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "type": "goto",
+     "at": {
+      "mapId": 1436,
+      "x": 56.5,
+      "y": 52.6,
+      "zone": "Westfall",
+      "exact": true
+     }
+    },
+    {
+     "type": "turnin",
+     "questId": 6181,
+     "label": "A Swift Message"
+    },
+    {
+     "type": "accept",
+     "questId": 6281,
+     "label": "Continue to Stormwind"
+    }
+   ],
+   "conditions": [],
+   "routes": [
+    "balanced",
+    "speedrun"
+   ],
+   "filter": {
+    "any": [
+     [
+      {
+       "race": "Human"
+      }
+     ]
+    ]
+   },
+   "sources": [
+    {
+     "url": "https://www.wowhead.com/classic/quest=6181",
+     "label": "Wowhead Classic quest 6181"
+    },
+    {
+     "url": "https://github.com/Questie/QuestieDB/blob/master/data/Forever/foreverQuestDB.lua",
+     "label": "QuestieDB Forever data (GPL-3.0), via content/questie-db-alliance"
+    },
+    {
+     "url": "https://www.wowhead.com/classic/quest=6281",
+     "label": "Wowhead Classic quest 6281"
+    }
+   ],
+   "verified": true
+  }
+ ]
+}
